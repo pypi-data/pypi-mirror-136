@@ -1,0 +1,10 @@
+resman_client/__init__.py,sha256=ywJtfBpxYwnEKFQsUl6GQbSAe_kULVVzhRCrBIG8h8g,162
+resman_client/cli.py,sha256=kMTJbHsAb-6l_0xxajO1tRiZW6ms0sA7ikfztnXJADM,12921
+resman_client/client.py,sha256=osBpfslyQaAyAD1fl4-qEq10JwdOUOpUUZ1k9_7LgZ4,7347
+resman_client/ffmpeg_util.py,sha256=gh_2hg8y8pgF66TICLORqo029AXjRf-qesNQxnTF4n8,2364
+resman_client-1.6.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+resman_client-1.6.dist-info/METADATA,sha256=h79OCkTvr7UTHPHQ-84vWEeiaAeQLJpPRf6q_QsUOB8,2396
+resman_client-1.6.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+resman_client-1.6.dist-info/entry_points.txt,sha256=lNWAMMXV1JQvf7faYMli57NfqO3953qgX26UqHYjNrs,55
+resman_client-1.6.dist-info/top_level.txt,sha256=Aja6WJzParwi1gMFL8yDnOPnWAaGhhy3y7qeko4FAKA,14
+resman_client-1.6.dist-info/RECORD,,
