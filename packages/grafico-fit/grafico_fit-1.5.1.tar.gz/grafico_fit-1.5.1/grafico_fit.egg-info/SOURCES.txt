@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.py
+grafico_fit.egg-info/PKG-INFO
+grafico_fit.egg-info/SOURCES.txt
+grafico_fit.egg-info/dependency_links.txt
+grafico_fit.egg-info/requires.txt
+grafico_fit.egg-info/top_level.txt
+src/grafico_fit/__init__.py
+src/grafico_fit/funzioniFit.py
