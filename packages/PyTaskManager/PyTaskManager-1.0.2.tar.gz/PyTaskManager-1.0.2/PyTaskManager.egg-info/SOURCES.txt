@@ -1,0 +1,9 @@
+README.md
+setup.py
+PyTaskManager/TaskManager.py
+PyTaskManager/__init__.py
+PyTaskManager.egg-info/PKG-INFO
+PyTaskManager.egg-info/SOURCES.txt
+PyTaskManager.egg-info/dependency_links.txt
+PyTaskManager.egg-info/not-zip-safe
+PyTaskManager.egg-info/top_level.txt
