@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: py-netchat-server
+Version: 0.3.7
+Summary: NetChat Server
+Home-page: UNKNOWN
+Author: Ncha
+Author-email: ncha@yandex.ru
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: PyQt5
+Requires-Dist: sqlalchemy
+Requires-Dist: pycryptodome
+Requires-Dist: pycryptodomex
+
+UNKNOWN
+
