@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: nebari
+Version: 0.0.1
+Summary: Nebari
+Home-page: https://github.com/quansight/nebari
+Author: Quansight
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Project-URL: Repository, https://github.com/quansight/nebari
+Description-Content-Type: text/markdown
+
+# Nebari
+
+Stay tuned!
+
