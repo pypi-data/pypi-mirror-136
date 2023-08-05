@@ -1,0 +1,11 @@
+python3 setup.py sdist bdist_wheel
+
+
+Token: pypi-AgEIcHlwaS5vcmcCJDMyOWJmNzhhLThmMTUtNDE4MS1iOTFlLTE4OGIyOWFlNzI1YgACQHsicGVybWlzc2lvbnMiOiB7InByb2plY3RzIjogWyJ0aHJlYWRmaXhwcm9hcGkiXX0sICJ2ZXJzaW9uIjogMX0AAAYgRjP8pZfbTJb7TDt6mWmqAWk2A9heojxo5IxjxuLpEg4
+
+python3 -m twine check dist/*
+
+python3 -m twine upload dist/*
+
+username is __token__
+password is the token
