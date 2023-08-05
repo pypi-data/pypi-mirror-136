@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+mannaggia/__init__.py
+mannaggia/__main__.py
+mannaggia.egg-info/PKG-INFO
+mannaggia.egg-info/SOURCES.txt
+mannaggia.egg-info/dependency_links.txt
+mannaggia.egg-info/entry_points.txt
+mannaggia.egg-info/requires.txt
+mannaggia.egg-info/top_level.txt
+mannaggia/santi/__init__.py
+mannaggia/santi/factory.py
+mannaggia/santi/santo.py
