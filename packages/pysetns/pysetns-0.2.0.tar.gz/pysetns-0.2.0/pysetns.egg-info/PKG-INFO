@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: pysetns
+Version: 0.2.0
+Summary: Python wrapper for setns Linux syscall.
+Home-page: https://github.com/baskiton/pysetns
+Author: Alexander Baskikh
+Author-email: baskiton@gmail.com
+License: MIT
+Project-URL: Source, https://github.com/baskiton/pysetns
+Project-URL: Bug Tracker, https://github.com/baskiton/pysetns/issues
+Keywords: linux kernel namespace setns
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Topic :: System :: Operating System Kernels :: Linux
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# pysetns
+[![PyPI](https://img.shields.io/pypi/v/pysetns)](https://pypi.org/project/pysetns/)
+[![PyPI - Downloads](https://img.shields.io/pypi/dm/pysetns)](https://pypi.org/project/pysetns/)
+[![PyPI - License](https://img.shields.io/pypi/l/pysetns)](https://github.com/baskiton/pysetns/blob/main/LICENSE)
+
+Python wrapper for setns Linux syscall.\
+See [setns manpage][man_setns] for more details.
+
+### IMPORTANT!
+`setns` requires execution from **ROOT**!
+
+## Requirements
+ * Python 3.6+
+
+## Installing
+`pip install pysetns`
+
+## Building
+To build for your platform:
+```
+python -m build
+pip install dist/<target_tar or wheel>
+```
+
+## Usage
+See [examples][examples] directory
+
+[man_setns]: https://man7.org/linux/man-pages/man2/setns.2.html
+[examples]: https://github.com/baskiton/pysetns/blob/main/examples
+
+
