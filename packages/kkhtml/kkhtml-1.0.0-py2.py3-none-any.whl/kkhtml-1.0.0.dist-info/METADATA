@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: kkhtml
+Version: 1.0.0
+Summary: An HTML Serve.
+Home-page: https://gitee.com/kan-zicheng
+Author: kanwuqing
+Author-email: kanwuqing@163.com
+Maintainer: kanwuqing
+Maintainer-email: kanwuqing@163.com
+License: BSD License
+Platform: all
+Classifier: Development Status :: 4 - Beta
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: Implementation
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Libraries
+
+If you find the project interesting, you can send an email to kanwuqing@163.com
+
+Format:
+####################################################################################
+#name: kanwuqing                                                                   #
+#sex: male                                                                         #
+#good at: 'touch the fish'(Write this specialty will not pass(doge))               #
+####################################################################################
+
