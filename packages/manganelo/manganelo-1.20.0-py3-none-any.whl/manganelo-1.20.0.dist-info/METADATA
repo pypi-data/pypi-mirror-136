@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: manganelo
+Version: 1.20.0
+Summary: Unofficial API for the Manganelo/Manganato website.
+Home-page: https://github.com/nixonjoshua98/manganelo
+Author: Joshua Nixon
+Author-email: joshuanixonofficial@gmail.com
+License: MIT
+Download-URL: https://github.com/nixonjoshua98/manganelo/archive/refs/tags/v1.20.0.tar.gz
+Keywords: manga,manganelo,scrapper,web,mangakakalot,thread,comic,manhwa,manganato
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: bs4
+Requires-Dist: requests
+Requires-Dist: reportlab
+Requires-Dist: pillow
+
+[![Downloads](https://pepy.tech/badge/manganelo)](https://pepy.tech/project/manganelo) [![Downloads](https://pepy.tech/badge/manganelo/month)](https://pepy.tech/project/manganelo/month) [![Downloads](https://pepy.tech/badge/manganelo/week)](https://pepy.tech/project/manganelo/week)
+
+# Unofficial Manganelo (Manganato) API
+
+Installation
+-
+**Python 3.7+ (latest version requires Python 3.9+)**
+```cmd
+pip install manganelo
+```
+
+Examples
+-
+```python
+import manganelo
+
+home_page = manganelo.get_home_page()
+
+results = manganelo.get_search_results("Naruto")
+
+for r in results:
+    print(r.title, r.views)
+
+    chapters = r.chapter_list()
+    
+    icon_path = r.download_icon("./icon.png")
+
+    for c in chapters:
+        print(f"#{c.chapter} | {c.title}")
+
+        chapter_path = c.download(f"./Chapter {c.chapter}.pdf")
+```
+
