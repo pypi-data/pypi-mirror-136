@@ -1,0 +1,16 @@
+detprocess/__init__.py,sha256=jOu2w41W4kUZWQhFNgU1XYMpjeeBRkqsjVRVqkzJr98,174
+detprocess/core/__init__.py,sha256=TeEYcYeVVRGvpuHhW1eeKTNvrw4Wpmc-91jAEhJWv0c,69
+detprocess/core/_cut.py,sha256=CzsMS7gR94KYOazRZIZqdnKOmMJ0Z_LvX-TVbkqTfjo,14971
+detprocess/core/_fitting.py,sha256=xocM8_XnHV2sbbdPiP6IpvcnmyEDmwgENZ3nBdAfKNA,7663
+detprocess/core/_plotting.py,sha256=ES5XFwgjf6KiwncWXGSnqOfIs9r7NNiUuG2aUOFnDNQ,27728
+detprocess/io/__init__.py,sha256=kcs2Xlf_sk7-1jo-C0n6aNOGKo9R9PPU_K-1GOc_ess,42
+detprocess/io/_load.py,sha256=W14c-iHw4FVU_-XSjkRRDO-BsbFWdykszc43BiNqKpc,2279
+detprocess/io/_save.py,sha256=aZdkDlqkWwQgqUe3tPMKhNBpK6nA4-vKfeIBMuDohtE,501
+detprocess/process/__init__.py,sha256=opRF6je7L-9DhE27ytl9LUDf9oV8vPvxHrx-Oy3bFUo,49
+detprocess/process/_features.py,sha256=4943qcQsGg-qxPOagTzbzsx7ZZTSzpy8PytuZqGLtwA,10247
+detprocess/process/_process.py,sha256=mlkp5meN2lGPvP_r6QeuA6mANvoy6GSj7A3WTcyzntM,3500
+detprocess-0.1.0.dist-info/LICENSE,sha256=yxolhXDNybrcvFBlINplNPeDwKwKJV4i40whY3RfqEM,1071
+detprocess-0.1.0.dist-info/METADATA,sha256=-B-qJVxApz-DFAyZW8kRbqGkdq8CMx7h3PHYcOQWLas,15220
+detprocess-0.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+detprocess-0.1.0.dist-info/top_level.txt,sha256=37HXfyn6Uzgsg1q8nQndhpprEAAgQFsDFZcty92drrE,11
+detprocess-0.1.0.dist-info/RECORD,,
