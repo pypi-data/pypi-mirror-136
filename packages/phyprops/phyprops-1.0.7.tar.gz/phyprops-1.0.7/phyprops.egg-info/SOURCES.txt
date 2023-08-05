@@ -1,0 +1,7 @@
+setup.py
+phyprops/__init__.py
+phyprops/prop_coolprop.py
+phyprops.egg-info/PKG-INFO
+phyprops.egg-info/SOURCES.txt
+phyprops.egg-info/dependency_links.txt
+phyprops.egg-info/top_level.txt

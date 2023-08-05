@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: phyprops
+Version: 1.0.7
+Summary: The simple interface of CoolProp
+Home-page: UNKNOWN
+Author: Cheng Maohua
+Author-email: cmh@seu.edu.cn
+License: UNKNOWN
+Platform: Windows
+Platform: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+
+.. contents::
+
+The Simple Python Interface of CoolProp
+===============================================
+
+phyprops use **ASHRAE** as  the reference state of enthalpy and entropy 
+
+tc(refrigerant)   Critical point temperature
+
+pc(refrigerant)   Critical point pressure
+
+tx_p(t, x, refrigerant)   tx_h(t, x, refrigerant)  tx_s(t, x, refrigerant)
+
+px_t(p, x, refrigerant)   px_h(p, x, refrigerant)  px_s(p, x, refrigerant)
+
+pt_h(p, t, refrigerant)   pt_s(p, t, refrigerant) 
+
+ps_h(p, s, refrigerant)   ps_t(p, s, refrigerant)   ps_x(p, s, refrigerant) 
+
+ph_s(p, h, refrigerant)   ph_t(p, h, refrigerant)   ph_x(p, h, refrigerant) 
+
+
++---------------------------------------+-------------+----------+
+|       Properties                      |    Unit     |  symbol  |
++=======================================+=============+==========+
+| Pressure                              |   MPa       |  p       |     
++---------------------------------------+-------------+----------+
+| Temperature                           |   °C        |  t       |
++---------------------------------------+-------------+----------+
+| Specific enthalpy                     | kJ/kg       |  h       |
++---------------------------------------+-------------+----------+
+| Specific entropy                      | kJ/(kg·K)   |  s       |
++---------------------------------------+-------------+----------+
+| Steam quality                         |             |  x       |
++---------------------------------------+-------------+----------+
+
+
+
