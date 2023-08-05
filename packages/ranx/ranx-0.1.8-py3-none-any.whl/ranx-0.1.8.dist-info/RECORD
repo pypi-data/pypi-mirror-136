@@ -1,0 +1,15 @@
+ranx/__init__.py,sha256=RfP1VpMYX32H7R8wbi9CuKhGYggjG5Z5-qbfhBYSsX4,546
+ranx/frozenset_dict.py,sha256=Xi35DblAl2RW3ggY4sNAqXHj4lSaJ6GyBkYrEpnugTo,524
+ranx/meta_functions.py,sha256=SK_PGebdlbSzrH4LOw_3_BeIrl-wUGsWetwwLNf1sj8,10121
+ranx/metrics.py,sha256=dS6a3sYbKq-Uk26-FZ3-JeoDjsa19k5K08Y1ratFojY,18162
+ranx/qrels.py,sha256=HcEql9v3kzWTr0WeqYa-qGA7XDPl1CYpVdT7LOO-Nr4,8190
+ranx/qrels_run_common.py,sha256=fvx_Bz2em5z2xpr2F0cyRafJNDVNMhSKf5aieoZTH-g,2749
+ranx/report.py,sha256=e7Ew1B9wP1lJq7Y3mTITnInjJqRHKhFk4X7SIsmnlTw,6736
+ranx/run.py,sha256=gZChXrPKsgLRYpbd5X7PCs6cMnRqC_GK2whftKfc82U,8391
+ranx/statistical_testing.py,sha256=PEwHGj88lYpNjpwnSAJKsBK-RnrQYTKSebNqDNKgBuo,1398
+ranx/utils.py,sha256=qWMDoqynWW7aI5nq_xWxpkWrOB2uPQhS5CMjw-kXJZ0,1782
+ranx-0.1.8.dist-info/LICENSE,sha256=NPaVRLjlEfbRl4ZJsfty3v0-03vKbX-ODstq4oy_91M,1070
+ranx-0.1.8.dist-info/METADATA,sha256=TZIdiXCF7lJNbqqw_BUsYE-J6OcQKasmvfk_Vgn5u8A,6965
+ranx-0.1.8.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+ranx-0.1.8.dist-info/top_level.txt,sha256=Mxi8oc2AH-2aFhI4UWjfdl8xDhxPhZZx95b8xq8quQE,5
+ranx-0.1.8.dist-info/RECORD,,
