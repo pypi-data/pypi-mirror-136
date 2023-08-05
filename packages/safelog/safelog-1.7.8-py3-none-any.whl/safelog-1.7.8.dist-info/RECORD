@@ -1,0 +1,11 @@
+safelog/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+safelog/safelog.asc,sha256=NiN8EIShg_FFJAAw4FqvNYisQsb9QOgqBa3-FM0WBA0,862
+safelog/safelog.py,sha256=UVlMrJa94nEZeONwXykbpAzD_XjtAK5ss2FdN44Vmog,10638
+safelog/safelog.service,sha256=w6Maav4AWgi9uKp3XyPA9eFESErBVKpNC1eAVZW9vNg,286
+safelog/version.py,sha256=tTqC73DBf4CNOYAvNTHHsh3XVvgVrPArgSpEcbx62MI,136
+safelog-1.7.8.data/scripts/safelog,sha256=FQpdvAbzj48ZUx05SzJCnvak3pAztXqjcf8fLqj_leQ,10627
+safelog-1.7.8.dist-info/LICENSE,sha256=7YbDjPqsBp9Y_gf_4s_cU1GngBEEKqkaBSQw3pywKnM,594
+safelog-1.7.8.dist-info/METADATA,sha256=wpDlFI06ySRxE9Lc_LhwmTAtm0AH26ZW4CCJCVqqXEI,1741
+safelog-1.7.8.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+safelog-1.7.8.dist-info/top_level.txt,sha256=dKeFTiqg-Zo43J-1DIHDHVfk9N4UegMlA6SgHunjJWg,8
+safelog-1.7.8.dist-info/RECORD,,
