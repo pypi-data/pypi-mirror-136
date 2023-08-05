@@ -1,0 +1,13 @@
+depdive/__init__.py,sha256=QA0ZqzOv_P528clSn6pAsYyGX0G0hJkfZmE1IaGQCgo,127
+depdive/__main__.py,sha256=W2n3msLXb7Rtwdg6ptRPsZ0JzKyv73sX42uHgHDAHFs,341
+depdive/code_review.py,sha256=w7Bv1guEH_mXMavQk27ZK6KsEeydc-5QLZXeWE2vOzI,14713
+depdive/code_review_checker.py,sha256=nTE1Pe4mTUED4CBPrSp6ESEXaBEyRfTj7F23HKRMO5k,5392
+depdive/common.py,sha256=YFBl_TRFWA1E7pvmeFbVerdaptxsDHeyTX0jMVI3tdM,736
+depdive/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+depdive/registry_diff.py,sha256=GAoYhlh-0F8R1hpKX2diYuJfKA4vYWt99h5JA-fOqwA,1410
+depdive/repository_diff.py,sha256=pdvFmyiY3KzfIONDeOGm6gLIQvx6AqcZ6ZmlzVeCzhQ,21823
+depdive-0.0.26.dist-info/entry_points.txt,sha256=uZutsyICxk2BlroCmQNZ0fJy3z5ySPu3YlIP3VgRuVU,49
+depdive-0.0.26.dist-info/LICENSE,sha256=qhgGSqs83OwOoas7B65NQbGe-jQfr_0q9N5ebVqa9wk,1070
+depdive-0.0.26.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+depdive-0.0.26.dist-info/METADATA,sha256=ETtw8-GvQe0eUqVFyWZTEqeX6FpF6kKTFp24i2wSbkg,3379
+depdive-0.0.26.dist-info/RECORD,,
