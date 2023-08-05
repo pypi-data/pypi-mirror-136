@@ -1,0 +1,14 @@
+SharedData/AWS.py,sha256=ap7dPbl1rGauWIyiIo1PmeMcNhbPBzNOfAeCJ4OJ82k,2861
+SharedData/Logger.py,sha256=1SB4qG1RP9uFywl2-bc3dhsewVEOEzTcSdOjNtw1a6k,4854
+SharedData/Metadata.py,sha256=9UAe1QB3soiJIV44AFREInmMjzN8xHU54bcYd-H-nqM,4457
+SharedData/SharedData.py,sha256=PlXtKNhHaj1dKXBP6f5cbQ5ls2DExUG0mJ_KkSUIxPU,1442
+SharedData/SharedDataFeeder.py,sha256=HVdtRTh3ulcpPtpcCd6M0XCLQ3IsDVjD5zg6oIGI6GU,1322
+SharedData/SharedDataFrame.py,sha256=ogeH2SPAHe0Ld0XVn68giwoXfQb8ScaIsKV-b4GXm-k,7572
+SharedData/SharedDataPeriod.py,sha256=fgiKtUC1FbutIGW8s4iz5A2MHKUojE97F00_A-x4SaQ,4972
+SharedData/SharedDataTimeSeries.py,sha256=b0t0t_I8aWLlNTPmCktX7b0HTbFNOZ1r33YE2dW40QA,13441
+SharedData/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+shareddata-0.0.8.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+shareddata-0.0.8.dist-info/METADATA,sha256=sh87HRO8DgSnt3R2ImWpuKIn8yKI1MMX5sPwrr44LWg,2383
+shareddata-0.0.8.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+shareddata-0.0.8.dist-info/top_level.txt,sha256=fu_DSyp80di-5H_iW3_0AlykF0kSwbFUoPawGY8QQfM,11
+shareddata-0.0.8.dist-info/RECORD,,
