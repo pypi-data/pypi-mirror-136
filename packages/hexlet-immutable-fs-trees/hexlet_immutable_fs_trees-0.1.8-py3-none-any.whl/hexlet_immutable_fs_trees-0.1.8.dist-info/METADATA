@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: hexlet-immutable-fs-trees
+Version: 0.1.8
+Summary: File System Tree
+Home-page: https://github.com/hexlet-components/python-immutable-fs-trees
+License: ISC
+Author: Hexlet Team
+Author-email: info@hexlet.io
+Requires-Python: >=3.6,<4.0
+Classifier: Intended Audience :: Education
+Classifier: License :: OSI Approved
+Classifier: License :: OSI Approved :: ISC License (ISCL)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Education
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Typing :: Typed
+Project-URL: Repository, https://github.com/hexlet-components/python-immutable-fs-trees
+Description-Content-Type: text/markdown
+
+# python-immutable-fs-trees
+
+[![github action status](https://github.com/hexlet-components/python-immutable-fs-trees/workflows/Python%20CI/badge.svg)](https://github.com/hexlet-components/python-immutable-fs-trees/actions)
+
+## Install
+
+```shell
+pip install hexlet-immutable-fs-trees
+```
+
+## Usage example
+
+```python
+
+>>> import hexlet.fs as fs
+>>> fs.is_file(fs.mkfile('config'))
+True
+>>> fs.is_directory(fs.mkdir('etc'))
+True
+>>> tree = fs.mkdir('etc', [fs.mkfile('config'), fs.mkfile('hosts')])
+>>> children = fs.get_children(tree)
+>>> fs.get_name(children[0])
+'config'
+>>> list(map(lambda item: fs.get_name(item), children))
+['config', 'hosts']
+>>>
+```
+
+[![Hexlet Ltd. logo](https://raw.githubusercontent.com/Hexlet/assets/master/images/hexlet_logo128.png)](https://ru.hexlet.io/pages/about)
+
+This repository is created and maintained by the team and the community of Hexlet, an educational project. [Read more about Hexlet (in Russian)](https://ru.hexlet.io/pages/about?utm_source=github&utm_medium=link&utm_campaign=python-immutable-fs-trees).
+
+See most active contributers on [hexlet-friends](https://friends.hexlet.io/).
+
