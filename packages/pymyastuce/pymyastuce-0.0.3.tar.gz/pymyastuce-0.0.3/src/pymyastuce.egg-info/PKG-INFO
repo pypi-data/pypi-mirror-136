@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: pymyastuce
+Version: 0.0.3
+Summary: A small package to fetch next bus/metro/tram at a station of the MyAstuce network in Rouen, France.
+Home-page: https://github.com/Rohja/pymyastuce
+Author: Paul Rohja LESELLIER
+Author-email: rohja@rohja.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/Rohja/pymyastuce/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# pymyastuce
+Python API to request the (weird) "API" from Rouen's MyAstruce servers.
+
+
+Please have a look to `example.py` for a quick overview of how to use it.
+
+
