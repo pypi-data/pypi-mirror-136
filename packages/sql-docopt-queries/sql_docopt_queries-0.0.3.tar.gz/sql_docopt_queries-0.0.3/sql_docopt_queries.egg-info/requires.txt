@@ -1,0 +1,7 @@
+sqlite3
+pathlib
+pandas
+copy
+os
+datetime
+tabulate
