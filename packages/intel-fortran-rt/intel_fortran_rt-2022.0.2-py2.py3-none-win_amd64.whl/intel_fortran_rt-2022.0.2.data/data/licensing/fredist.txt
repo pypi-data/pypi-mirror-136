@@ -1,0 +1,43 @@
+This is the redist.txt file mentioned in the associated Intel End User License 
+Agreement for Developer Tools (Version October 2020) (“Agreement”).  All 
+capitalized terms used but not defined in this file have the same meaning as 
+specified in the Agreement. The Redistributables are listed below, and are 
+subject to all of the terms and conditions of the Agreement.
+
+Please note that Third Party Programs, if any, may also be redistributable. See 
+the “third-party-programs.txt” or other similarly-named text file for more 
+details.”
+
+################################################################################
+###   Intel® Fortran Compiler & Intel® Fortran Compiler Classic 2022.0.2
+################################################################################
+
+<installdir>/Library/bin/libiomp5md.dll
+<installdir>/Library/bin/libiomp5md.pdb
+<installdir>/Library/bin/libiompstubs5md.dll
+<installdir>/Library/bin/omptarget.rtl.opencl.dll
+<installdir>/Library/bin/omptarget.rtl.level0.dll
+<installdir>/Library/bin/omptarget.dll
+<installdir>/Library/bin/libomp-fallback-cstring.spv
+<installdir>/Library/lib/libomp-fallback-cstring.obj
+<installdir>/Library/lib/libomptarget-opencl-optional.bc
+<installdir>/Library/lib/libomptarget-opencl-required.bc
+<installdir>/Library/lib/libomp-spirvdevicertl-optional.obj
+<installdir>/Library/lib/libomp-spirvdevicertl-required.obj
+<installdir>/Library/bin/libchkp.dll
+<installdir>/Library/bin/libirngmd.dll
+<installdir>/Library/bin/libmmd.dll
+<installdir>/Library/bin/libmmd.pdb
+<installdir>/Library/bin/libmmdd.dll
+<installdir>/Library/bin/libmmdd.pdb
+<installdir>/Library/bin/svml_dispmd.dll
+<installdir>/Library/bin/svml_dispmd.pdb
+<installdir>/Library/bin/pi_opencl.dll
+<installdir>/Library/lib/libsycl-fallback-cstring.obj
+<installdir>/Library/bin/ifdlg100.dll
+<installdir>/Library/bin/libicaf.dll
+<installdir>/Library/bin/libifcoremd.dll
+<installdir>/Library/bin/libifcoremdd.dll
+<installdir>/Library/bin/libifcorert.dll
+<installdir>/Library/bin/libifcorertd.dll
+<installdir>/Library/bin/libifportmd.dll
