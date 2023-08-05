@@ -1,0 +1,10 @@
+LICENSE
+setup.py
+excerpt_tool/__init__.py
+excerpt_tool/core.py
+excerpt_tool/main.py
+excerpt_tool.egg-info/PKG-INFO
+excerpt_tool.egg-info/SOURCES.txt
+excerpt_tool.egg-info/dependency_links.txt
+excerpt_tool.egg-info/entry_points.txt
+excerpt_tool.egg-info/top_level.txt
