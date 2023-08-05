@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: volvooncall
+Version: 0.9.2
+Summary: Communicate with VOC
+Home-page: https://github.com/molobrakos/volvooncall
+Author: Erik
+Author-email: error.errorsson@gmail.com
+License: Unlicense
+Platform: UNKNOWN
+Requires-Python: >=3.8
+Provides-Extra: console
+License-File: LICENSE
+
+UNKNOWN
+

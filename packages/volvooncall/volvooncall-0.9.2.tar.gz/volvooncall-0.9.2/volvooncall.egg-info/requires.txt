@@ -1,0 +1,11 @@
+setuptools
+geopy>=1.14.0
+docopt
+pyyaml
+certifi
+amqtt<0.11.0,>=0.10.0
+websockets>=9.0
+aiohttp
+
+[console]
+docopt
