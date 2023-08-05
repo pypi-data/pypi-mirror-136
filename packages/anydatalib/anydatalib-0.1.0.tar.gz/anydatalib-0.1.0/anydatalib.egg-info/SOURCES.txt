@@ -1,0 +1,10 @@
+README.md
+setup.py
+anydatalib/__init__.py
+anydatalib/func.py
+anydatalib.egg-info/PKG-INFO
+anydatalib.egg-info/SOURCES.txt
+anydatalib.egg-info/dependency_links.txt
+anydatalib.egg-info/top_level.txt
+tests/__init__.py
+tests/test_func.py
