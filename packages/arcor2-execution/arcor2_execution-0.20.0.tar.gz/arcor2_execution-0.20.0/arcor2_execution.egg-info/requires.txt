@@ -1,0 +1,9 @@
+aiofiles==0.8.0
+aiologger==0.6.1
+aiorun==2021.10.1
+arcor2_execution_data~=0.15.0
+arcor2_runtime~=0.3.0
+arcor2~=0.23.0
+dataclasses-jsonschema[apispec,fast-validation]==2.15.0
+types-aiofiles==0.8.3
+websockets==10.1
