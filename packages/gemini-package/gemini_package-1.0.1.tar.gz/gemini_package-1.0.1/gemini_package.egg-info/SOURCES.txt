@@ -1,0 +1,9 @@
+LICENSE.txt
+README.rst
+setup.py
+gemini_package/__init__.py
+gemini_package/main.py
+gemini_package.egg-info/PKG-INFO
+gemini_package.egg-info/SOURCES.txt
+gemini_package.egg-info/dependency_links.txt
+gemini_package.egg-info/top_level.txt
