@@ -1,0 +1,3 @@
+[console_scripts]
+ytbdl = ytbdl.application:main
+

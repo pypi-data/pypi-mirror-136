@@ -1,0 +1,35 @@
+# This option can be used to specify arguments to yt-dlp
+
+ytdl_args:
+  - -f
+  - bestaudio[ext=m4a]
+
+
+# This is a Beets config. This will be combined with your beets config before
+# an album is downloaded. Do not remove the lines that say "DO NOT REMOVE"
+
+directory: "{import_dir}" # DO NOT REMOVE
+
+import:
+    move: yes
+
+match:
+    # Automatically accept over 90% similar - requires input less often
+    strong_rec_thresh: 0.10
+    max_rec:
+        # Don't worry so much about missing tracks
+        missing_tracks: strong
+
+pluginpath: "{beetsplug_dir}" # DO NOT REMOVE
+
+plugins: # DO NOT REMOVE
+    - fromdirname # DO NOT REMOVE
+    - fromyoutubetitle # DO NOT REMOVE
+    - fetchart
+    - embedart
+    - zero
+
+fetchart:
+    maxwidth: 512
+embedart:
+    remove_art_file: yes

@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: ytbdl
+Version: 0.0.4
+Summary: Download music with yt-dlp and autotag it with beets
+Home-page: UNKNOWN
+Author: Daniel Lovegrove
+Author-email: d.lovegrove11@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6.0
