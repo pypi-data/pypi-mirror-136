@@ -1,0 +1,15 @@
+inkit/__init__.py,sha256=ccehbnQbRHMyrwzjgSN76h3UtwM-qRFzJAEKRsJz8lw,60
+inkit/client.py,sha256=K8iJO8t6zwyCJMAjmNj-Lppdf6pPLEtwHCSpeS0v3RM,1937
+inkit/exceptions.py,sha256=woikcDjte7ToxcFWncnn8LN4IpThAT07whxZpVtUts8,961
+inkit/extensions.py,sha256=J4yXFaOOIfX3k7n9XjG40FKY16kBw6mt-g-yf3I2YYA,442
+inkit/metaclasses.py,sha256=z0OWj3GtrZUhWEWUmj-DQ58ykrQ6ESUJb5Bogl-9UO8,2893
+inkit/products.py,sha256=85RSTvTLmUZJmM1pNG6JyhcVbUj_-b62Mv9igDoVT-4,173
+inkit/resources.py,sha256=iPlhfjx1HBmox1ICYgl0X3Yg8vLNjj7yz8SMPmORhp4,243
+inkit/response_object.py,sha256=ioil6NSTODRP3Zs0Y9qn_YtqYCbpeu61_NUT9F4CcxE,453
+inkit/router.py,sha256=ls6QoPmDuq0kk_mmrs0lUKQ7JR378tUqQl6LAkdc9RQ,831
+inkit/data/routing-config-map.json,sha256=yTcdHHk2Q7ETJFgUeqU3yysNwYkdJp1L0Xp9yFzXnhc,2414
+inkit-1.0.1.dist-info/LICENSE,sha256=r6YuxIy0ZCjNGgA76fGhD6zQIUo228kydWUDh_CDPG0,486
+inkit-1.0.1.dist-info/METADATA,sha256=DGsuCBu8RvlGCwgfPt17cJHaP5j7h5xQRF4Ofl2qlTk,1745
+inkit-1.0.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+inkit-1.0.1.dist-info/top_level.txt,sha256=4r8Wzf65TBthCApPueb1IFcmOWFvsy6nYbvZxvZGHhc,6
+inkit-1.0.1.dist-info/RECORD,,
