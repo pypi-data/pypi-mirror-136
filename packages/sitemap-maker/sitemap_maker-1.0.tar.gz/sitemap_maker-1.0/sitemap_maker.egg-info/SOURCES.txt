@@ -1,0 +1,11 @@
+README.md
+setup.py
+sitemap_maker.egg-info/PKG-INFO
+sitemap_maker.egg-info/SOURCES.txt
+sitemap_maker.egg-info/dependency_links.txt
+sitemap_maker.egg-info/entry_points.txt
+sitemap_maker.egg-info/requires.txt
+sitemap_maker.egg-info/top_level.txt
+src/__init__.py
+src/__main__.py
+src/sitemap.py
