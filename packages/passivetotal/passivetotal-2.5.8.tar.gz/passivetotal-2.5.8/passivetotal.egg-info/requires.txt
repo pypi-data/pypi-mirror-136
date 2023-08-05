@@ -1,0 +1,7 @@
+requests
+python-dateutil
+future
+tldextract
+
+[pandas]
+pandas
