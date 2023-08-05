@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+couchdbauthenticator/__init__.py
+couchdbauthenticator/authenticator.py
+couchdbauthenticator/metadata.py
+couchdbauthenticator/user_manager.py
+jupyterhub_couchdb_authenticator.egg-info/PKG-INFO
+jupyterhub_couchdb_authenticator.egg-info/SOURCES.txt
+jupyterhub_couchdb_authenticator.egg-info/dependency_links.txt
+jupyterhub_couchdb_authenticator.egg-info/requires.txt
+jupyterhub_couchdb_authenticator.egg-info/top_level.txt
