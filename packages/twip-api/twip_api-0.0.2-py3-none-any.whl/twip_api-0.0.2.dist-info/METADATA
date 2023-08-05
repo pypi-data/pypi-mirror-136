@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: twip-api
+Version: 0.0.2
+Summary: parses the things provided by twip such as donation, follow
+Home-page: https://github.com/junah201/Twip
+Author: Junah201
+Author-email: junah.dev@gmail.com
+License: UNKNOWN
+Keywords: twip,twitch
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3
+License-File: LICENSE
+Requires-Dist: websocket
+Requires-Dist: requests
+
+UNKNOWN
+
