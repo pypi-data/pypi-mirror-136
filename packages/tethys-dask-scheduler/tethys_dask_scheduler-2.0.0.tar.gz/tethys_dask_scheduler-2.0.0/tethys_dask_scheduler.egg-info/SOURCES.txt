@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+tests/__init__.py
+tests/test_tethys_dask_scheduler.py
+tethys_dask_scheduler/__init__.py
+tethys_dask_scheduler/plugin.py
+tethys_dask_scheduler.egg-info/PKG-INFO
+tethys_dask_scheduler.egg-info/SOURCES.txt
+tethys_dask_scheduler.egg-info/dependency_links.txt
+tethys_dask_scheduler.egg-info/requires.txt
+tethys_dask_scheduler.egg-info/top_level.txt
