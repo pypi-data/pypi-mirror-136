@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: pyclassifier
+Version: 0.0.2
+Summary: A module to create classes out of dictionaries
+Home-page: https://github.com/rahmansharifi/pyclassifier
+Author: Rahman Sharifi
+Author-email: sharifi.rahman.4651@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/rahmansharifi/pyclassifier/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# pydictionaryclassifier
+A Python module to create classes and objects out of dictionaries.
+
+
