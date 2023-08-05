@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: miroflowexport
+Version: 0.3.1
+Summary: Derive a Gantt-like plan from Miro sticky note workflow
+Home-page: https://gitlab.com/sven.flake/miroflowexport
+Author: Sven Flake
+Author-email: sven.flake@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: flexlog
+Requires-Dist: coolname
+Requires-Dist: pandas
+Requires-Dist: openpyxl
+
+UNKNOWN
+
