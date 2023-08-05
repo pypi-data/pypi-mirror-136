@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/jinjafy/__init__.py
+src/jinjafy/__main__.py
+src/jinjafy/filters.py
+src/jinjafy_automatist.egg-info/PKG-INFO
+src/jinjafy_automatist.egg-info/SOURCES.txt
+src/jinjafy_automatist.egg-info/dependency_links.txt
+src/jinjafy_automatist.egg-info/entry_points.txt
+src/jinjafy_automatist.egg-info/requires.txt
+src/jinjafy_automatist.egg-info/top_level.txt
