@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/giftwrapped/__init__.py
+src/giftwrapped/giftwrapper.py
+src/giftwrapped.egg-info/PKG-INFO
+src/giftwrapped.egg-info/SOURCES.txt
+src/giftwrapped.egg-info/dependency_links.txt
+src/giftwrapped.egg-info/top_level.txt
