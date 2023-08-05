@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: influence-api
+Version: 0.0.1
+Summary: An API for Influence (influenceth.io)
+Home-page: https://gitlab.com/gamechaingers/influence-api
+Author: GameChaingers, LLC
+Author-email: engineering@gamechaingers.io
+License: BSD 3 Clause
+Platform: UNKNOWN
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: Authlib
+Requires-Dist: requests
+Requires-Dist: requests-cache
+Requires-Dist: requests-oauthlib
+Requires-Dist: Django (<4.0,>=3.1)
+
+# Influence API
+
+A python API for [Influence](https://influenceth.io).
+
+
