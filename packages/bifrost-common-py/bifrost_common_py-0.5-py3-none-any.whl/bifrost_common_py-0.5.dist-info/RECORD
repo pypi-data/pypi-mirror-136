@@ -1,0 +1,13 @@
+bifrost_common_py/DataFrame.py,sha256=lSFUkt5FG44csaUsT1oTpvZieWKVuvBh-i6TuKyn3sY,22100
+bifrost_common_py/Log.py,sha256=-p90xSE24Wf2Rxtp8OVgDjeNjTJjjXr0OIKE-JFFUOM,5077
+bifrost_common_py/SelectFrom.py,sha256=pMyUAvSq4E1HnPC3n7KnNZyavnqvDaiKBQjrAz8PCQw,24475
+bifrost_common_py/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bifrost_common_py/idOfRef.py,sha256=VL1qLfASmxd4XE2Xqh1rrSKwqxc-gUGIIrcm0Rq0sRs,1329
+bifrost_common_py/safepointer.py,sha256=n2oXhaQAAyjZ9U7Ufh2O9bkTEsw7z_3Y3YLe3B8qI5o,1579
+bifrost_common_py/selectors.py,sha256=OLN699sYLXzkKco7O08j2PYlm9BH83VeywFr8ySM5NM,12386
+bifrost_common_py/time.py,sha256=E8sM1qtYvjCzqEK8KznrYyfFPv_MsN7DA1L-7C_GCMI,2105
+bifrost_common_py/tokens.py,sha256=azjZsuG619Yrffh-IKhBn3pLz4kVU91nws1bHcgqoDM,583
+bifrost_common_py-0.5.dist-info/METADATA,sha256=KHxjDALeUuz1v1_6w7fnczZlviBdQXC6eNkktBKWFAw,3394
+bifrost_common_py-0.5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+bifrost_common_py-0.5.dist-info/top_level.txt,sha256=H7d3SExaxBS4cMIC9o65F5MrGyFWPcBkKzLn4CvGVSI,18
+bifrost_common_py-0.5.dist-info/RECORD,,
