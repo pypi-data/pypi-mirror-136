@@ -1,0 +1,13 @@
+reldi_tokeniser/__init__.py,sha256=MlGbyz-b3a6yKJp4twAarNX9uuV5BWbhgrtQVa9FBhE,28
+reldi_tokeniser/bg.abbrev,sha256=J7EyALaiMdvpJAm2c1GaQ1CX-RJQluIznP-aQzKwdi0,2621
+reldi_tokeniser/hr.abbrev,sha256=8_wJZSRjddxhrIPtntJjGjlZQ-aaV6Ooqlgy0HfglGc,950
+reldi_tokeniser/mk.abbrev,sha256=_Eodn0-OK5QcPChCJXpRRoWE8qSCM3D_oboCLh1jUOA,1743
+reldi_tokeniser/punct,sha256=solsSds2J9KGQmhdqRzlC72dumiG12w6IDx0qSonDXM,2470
+reldi_tokeniser/sl.abbrev,sha256=JTtT1JWdePzVNUFv7qAW73PILoUAo8HVGZz3BLeZs3A,1573
+reldi_tokeniser/sr.abbrev,sha256=5iOOKt3Q-T9r52WR7yuvkIZX88Vc5lQu9nRKGv95lDA,2052
+reldi_tokeniser/tokeniser.py,sha256=7peRWd0qGpCK-8wrTzbxuvPaAlr9qi3NfzetbBWYjrg,14592
+reldi_tokeniser-1.0.1.dist-info/LICENSE,sha256=tAkwu8-AdEyGxGoSvJ2gVmQdcicWw3j1ZZueVV74M-E,11357
+reldi_tokeniser-1.0.1.dist-info/METADATA,sha256=bKwKygd_3wi-SiRG-e7x6Mh2IrnsIRaEWI0G9_EN2Z8,3920
+reldi_tokeniser-1.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+reldi_tokeniser-1.0.1.dist-info/top_level.txt,sha256=2idhR0vUlchbeHM_RRldQAkUAXTFVRcO0JzJp_zIgQ8,16
+reldi_tokeniser-1.0.1.dist-info/RECORD,,
