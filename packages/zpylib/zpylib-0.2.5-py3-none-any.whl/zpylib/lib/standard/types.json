@@ -1,0 +1,19 @@
+{
+    "name":"types",
+    "zpy":"types",
+    "functions":[
+        {
+            "name":"deepcopy",
+            "zpy":"深拷贝"
+        },
+        {
+            "name":"Error",
+            "zpy":"错误"
+        },
+        {
+            "name":"copy",
+            "zpy":"副本"
+        }
+    ],
+    "args":[]
+}

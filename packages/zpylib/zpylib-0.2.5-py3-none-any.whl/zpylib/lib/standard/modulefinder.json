@@ -1,0 +1,36 @@
+{
+    "name":"modulefinder",
+    "zpy":"modulefinder",
+    "functions":[
+        {
+            "name":"run_path",
+            "zpy":"运行路径"
+        },
+        {
+            "name":"run_module",
+            "zpy":"运行模块"
+        }
+    ],
+    "args":[
+        {
+            "name":"init_globals",
+            "zpy":"初始化全局变量"
+        },
+        {
+            "name":"file_path",
+            "zpy":"文件路径"
+        },
+        {
+            "name":"run_name",
+            "zpy":"运行的名字"
+        },
+        {
+            "name":"mod_name",
+            "zpy":"国防部的名字"
+        },
+        {
+            "name":"alter_sys",
+            "zpy":"改变系统"
+        }
+    ]
+}

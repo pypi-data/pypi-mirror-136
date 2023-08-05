@@ -1,0 +1,35 @@
+{
+    "name":"sysconfig",
+    "zpy":"sysconfig",
+    "functions":[],
+    "args":[
+        {
+            "name":"upper",
+            "zpy":"大写"
+        },
+        {
+            "name":"UpperCaser",
+            "zpy":"大写字母r"
+        },
+        {
+            "name":"builtins",
+            "zpy":"建成的年代"
+        },
+        {
+            "name":"read",
+            "zpy":"读"
+        },
+        {
+            "name":"path",
+            "zpy":"路径"
+        },
+        {
+            "name":"count",
+            "zpy":"计数"
+        },
+        {
+            "name":"open",
+            "zpy":"开"
+        }
+    ]
+}

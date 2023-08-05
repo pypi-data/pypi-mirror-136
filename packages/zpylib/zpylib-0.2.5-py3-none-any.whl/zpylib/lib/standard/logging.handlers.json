@@ -1,0 +1,28 @@
+{
+    "name":"logging.handlers",
+    "zpy":"logging.handlers",
+    "functions":[
+        {
+            "name":"getpass",
+            "zpy":"获得通过"
+        },
+        {
+            "name":"GetPassWarning",
+            "zpy":"通过预警"
+        },
+        {
+            "name":"getuser",
+            "zpy":"获取用户"
+        }
+    ],
+    "args":[
+        {
+            "name":"prompt",
+            "zpy":"激励"
+        },
+        {
+            "name":"stream",
+            "zpy":"水流"
+        }
+    ]
+}

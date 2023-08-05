@@ -1,0 +1,28 @@
+{
+    "name":"colorsys",
+    "zpy":"colorsys",
+    "functions":[
+        {
+            "name":"what",
+            "zpy":"什么"
+        },
+        {
+            "name":"tests",
+            "zpy":"测验"
+        }
+    ],
+    "args":[
+        {
+            "name":"file",
+            "zpy":"文件"
+        },
+        {
+            "name":"what",
+            "zpy":"什么"
+        },
+        {
+            "name":"imghdr",
+            "zpy":"imgh博士"
+        }
+    ]
+}
