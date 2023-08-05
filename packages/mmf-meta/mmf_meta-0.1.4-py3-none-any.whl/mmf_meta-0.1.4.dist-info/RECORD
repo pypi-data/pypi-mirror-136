@@ -1,0 +1,9 @@
+mmf_meta/__init__.py,sha256=1dJcfaQOktjco6_ZzzZZHbDVIxmvV1z0Sjj2vGf4Gy4,295
+mmf_meta/__main__.py,sha256=bBFQpZEW0vBsX01ct5lT3t5m_StmJC7QLx3ygqGumqY,624
+mmf_meta/autodoc.py,sha256=o7zqLxronj8pJyXYm1H9x9NDXdd7ECOOq6_8LD9fohk,989
+mmf_meta/core.py,sha256=fWIkvsteWy8mU_kSGkn0mvO44MpNpKa45XYzh4rZGqc,4929
+mmf_meta/descriptors.py,sha256=uBPqdUc70ExUqqwANHQGKbE51L1b40LD4fZufYVAQKg,16347
+mmf_meta-0.1.4.dist-info/entry_points.txt,sha256=xk8t8ZHpAjuCrRYIYHgPv5q9RROlo8WpXxc5g8qZ2X4,40
+mmf_meta-0.1.4.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+mmf_meta-0.1.4.dist-info/METADATA,sha256=wD6xIEtBxcQr7Aev0dMLQJRZ6lVuU_g73LnIxucMMS8,1717
+mmf_meta-0.1.4.dist-info/RECORD,,
