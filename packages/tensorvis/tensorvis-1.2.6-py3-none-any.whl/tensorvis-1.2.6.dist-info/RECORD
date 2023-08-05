@@ -1,0 +1,8 @@
+tensorvis/__version__.py,sha256=vMQK58X8_YZGKzRm0ThvPAKFtpfyejGmUnDrY9RQ13w,22
+tensorvis/utils/__init__.py,sha256=fQJzD6L-9uR49C2sq30HBSyro1QfByIg5tdxcJ7hBhA,205
+tensorvis/utils/utils.py,sha256=KikF7kEcGDtnbqt-CdPbjSil5CjuTp6U2pSTQ6tEp1w,6909
+tensorvis/vis.py,sha256=niE3U2rWTZdnOxVpiA9DHAJD6Krg6h034nbh6PWZycQ,11388
+tensorvis-1.2.6.dist-info/entry_points.txt,sha256=-stSTg5F_WvdvDqAL4v1aDr2wf36xLg944NSCaacl7U,47
+tensorvis-1.2.6.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+tensorvis-1.2.6.dist-info/METADATA,sha256=11aaPk-pjntW1L6brlBu97Yvc1W9Z9Aji9VyBDLhkiM,3743
+tensorvis-1.2.6.dist-info/RECORD,,
