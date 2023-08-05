@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: fastapi-returns-router
+Version: 1.0.1
+Summary: This FastAPI Router Implementation bridges the gap between FastAPI and Returns
+Home-page: https://github.com/ikollipara/fastapi-returns
+License: MIT
+Author: Ian Kollipara
+Author-email: ian.kollipara@cune.org
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: fastapi (>=0.72.0,<0.73.0)
+Requires-Dist: returns (>=0.18.0,<0.19.0)
+Project-URL: Repository, https://github.com/ikollipara/fastapi-returns
+Description-Content-Type: text/markdown
+
+# FastAPI Returns Router
+
+## Description
+
+This Project is a simple layer that allows Returns to work within
+FastAPI. It simply allows a person to return the base return's containers
+from a route. It is a drop-in replacement for the normal FastAPI router.
+
+It does require that the route functions have a typed return function.
