@@ -1,0 +1,105 @@
+Metadata-Version: 2.1
+Name: chainit
+Version: 0.1.1
+Summary: Chainable lazy iterators
+Home-page: https://github.com/lukapeschke/chainit
+License: MIT
+Author: Luka Peschke
+Author-email: mail@lukapeschke.com
+Requires-Python: >=3.8,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Typing :: Typed
+Project-URL: Repository, https://github.com/lukapeschke/chainit
+Description-Content-Type: text/markdown
+
+# chainit
+
+Documentation available here: https://lukapeschke.github.io/chainit/
+
+This library provides the `ChainIt` class, a wrapper around stdlib's
+[itertools](https://docs.python.org/3/library/itertools.html) module, allowing to chain
+operations on iterables, resulting in easier-to-read code.
+
+```python
+import typing as t
+
+def fib() -> t.Iterable[int]:
+    a, b = 0, 1
+    while True:
+        yield a
+        next_ = a + b
+        a = b
+        b = next_
+
+# Allows to write things like this...
+(
+    ChainIt(fib())
+    .filter(lambda x: x % 2 == 0)
+    .map(lambda x: x // 2)
+    .flat_map(range)
+    .take_while(lambda x: x < 6)
+    .collect_list()
+)
+
+# ...rather than like this
+from itertools import chain as ichain, islice, takewhile
+
+list(
+    takewhile(
+        lambda x: x < 6,
+        ichain.from_iterable(
+            map(lambda x: range(x // 2), filter(lambda x: x % 2 == 0, fib()))
+        ),
+    )
+)
+```
+
+## Installation
+
+```
+pip install chainit
+```
+
+## Examples
+
+### Decorator
+
+In addition to `ChainIt`, the library provides a `chainit` decorator. It makes a function returning
+an iterable return a `ChainIt` instead:
+
+```python
+@chainit
+def fac():
+    n = 0
+    fac = 1
+    while True:
+        yield fac
+        n += 1
+        fac *= n
+
+assert fac().enumerate().take(5).collect() == ((0, 1), (1, 1), (2, 2), (3, 6), (4, 24))
+```
+
+### Using a `ChainIt` instance as an iterable
+
+```python
+assert list(fac().take(3)) == [1, 1, 2]
+
+for idx, x in fac().enumerate():
+    if idx > 3:
+        break
+    print(x)
+```
+
