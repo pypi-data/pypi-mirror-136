@@ -1,0 +1,42 @@
+[tool.poetry]
+name = "rpcc"
+homepage = "https://storage.bsc.es/gitlab/hpc/rpcc"
+documentation = "https://storage.bsc.es/projects/rpcc"
+version = "0.1.1"
+description = "A compiler for Mercury-based RPCs"
+authors = ["Alberto Miranda <alberto.miranda@bsc.es>"]
+license = "GPLv3"
+readme = "README.md"
+classifiers = [
+    # Trove classifiers
+    # Full list: https://pypi.python.org/pypi?%3Aaction=list_classifiers
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.6",
+    "Topic :: Software Development :: Code Generators"
+]
+
+[tool.poetry.scripts]
+rpcc = "rpcc.__main__:main"
+
+[tool.poetry.dependencies]
+python = "^3.6.2"
+lark = "^1.0.0"
+loguru = "^0.5.3"
+rich = "^10.15.1"
+typing-extensions = "^4.0.1"
+
+[tool.poetry.dev-dependencies]
+Sphinx = "^4.3.1"
+pytest = "^6.2.5"
+pytest-mock = "^3.6.1"
+sphinx-copybutton = "^0.4.0"
+sphinx-multiversion = "^0.2.4"
+sphinx-rtd-theme = "^1.0.0"
+
+[virtualenvs]
+in-project = true
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
