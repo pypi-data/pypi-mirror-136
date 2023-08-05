@@ -1,0 +1,11 @@
+compresso.cpython-310-i386-linux-gnu.so,sha256=PVrMDBtCpzhbXvD3rDWEojNg5h6ILGRJgCE4x05KDo0,6614436
+compresso_cli/cli.py,sha256=b6LTqQColdVktFnZ5215hCAVh6zaal0gxoLN9la8cTE,3574
+compresso_cli/__init__.py,sha256=b1VfA4Miuu-0YE_wHw-wr3KiXYVsnIfhQy2XCeP4VEs,18
+compresso-3.0.0.dist-info/WHEEL,sha256=XLq3x-3-Y468xrHmyGmHh5GMepJPmkXqHhU8YcpY1iA,148
+compresso-3.0.0.dist-info/AUTHORS,sha256=Aa4H7O3dtmfq0lF_eATudy11i8K6QAI8LykzASr9bL0,52
+compresso-3.0.0.dist-info/RECORD,,
+compresso-3.0.0.dist-info/METADATA,sha256=x33KFw2rYn5r-cZ3s_6_0T-yp_Jf4WZ84Am995jIlQE,13463
+compresso-3.0.0.dist-info/COPYING.LESSER,sha256=QY-vetiEQe4Sf_TQTurV8Z2oXnDp9TCfq-RhMtf_D5I,7553
+compresso-3.0.0.dist-info/top_level.txt,sha256=fPvA5iPMKpsUMYb-N471dA14Gp69UC4AWTj9oDoBfew,24
+compresso-3.0.0.dist-info/LICENSE,sha256=nKaEqFRlx8wKp9ElsZVmqu1VzoNC3rIUROw_J8fTX_I,1152
+compresso-3.0.0.dist-info/entry_points.txt,sha256=fm1gEbpXF_zr-ur9qEVL1lCKDDQJE06WQvF5-deY5RA,50
