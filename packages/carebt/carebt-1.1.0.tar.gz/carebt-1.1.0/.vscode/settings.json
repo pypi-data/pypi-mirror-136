@@ -1,0 +1,8 @@
+{
+    "python.testing.pytestArgs": [
+        "tests", "-s", "-vv"
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true,
+    "restructuredtext.confPath": "${workspaceFolder}/docs"
+}
