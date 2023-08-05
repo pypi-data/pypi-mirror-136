@@ -1,0 +1,71 @@
+# TracChecklist
+
+This plugin allows you to define checklists as a wiki page, and then embed 
+them in tickets as templates for recurring tasks. For example, if your workflow
+for a bug ticket includes steps for fix/test/release, each of these can be defined
+as a step and checked off as the assignee works on the ticket. 
+
+This prevents people from forgetting something (e.g. tag a new version), and
+allows for ongoing process improvements by updating the checklist whenever gaps 
+in the existing process are discovered.
+
+This plugin was developed and is maintained by https://sydereal.space
+
+
+## Install
+
+ A plugin can either be deployed globally, or only for a specific environment. 
+ Global deployment is done by installing the plugin:
+
+    cd /path/to/pluginsource
+    python setup.py install
+
+To deploy a plugin only to a specific Trac environment, copy the egg file into
+the plugins directory of that environment:
+
+    cd /path/to/pluginsource
+    python setup.py bdist_egg
+    cp dist/*.egg /path/to/projenv/plugins
+
+
+## Setup
+
+The plugin requires a new database table; update the environment to create it:
+
+    $ trac-admin /path/to/env upgrade 
+
+The plugin uses static resources (CSS, JS).  If you mapped static resources so 
+they are served by the web server, the resources need to be deployed to the 
+location on the filesystem that is served by the web server. Execute the deploy 
+command, as is done during install and upgrade: 
+
+	$ trac-admin /path/to/env deploy /deploy/path
+
+The plugin creates a "wiki:ChecklistTemplates" page as the root below which all
+checklist definitions are located. If you move the page, update the entry in your
+trac.ini file:
+
+    [checklist]
+    template_root = /path/to/ChecklistTemplates
+
+ 
+ Restart the server once fully configured.
+ 
+ 
+ ## Use
+
+Create at least one checklist as a sub-page below the "Ticket Template" page 
+using the provided template. If you can create pages below non-existing parents,
+those parents will be treated as category headers. For exmaple:
+
+    ChecklistTemplates
+    |- Category One
+	   |- Checklist One-1
+	   |- Checklist One-2	   
+    |- Category Two
+	   |- Checklist Two-1
+	   |- Checklist Two-2	   
+	   
+Lastly, use the dropdown menu at the top-right of any ticket description entry 
+box when in edit mode to select & insert a template. The preview will show the 
+checklist in your ticket. 
