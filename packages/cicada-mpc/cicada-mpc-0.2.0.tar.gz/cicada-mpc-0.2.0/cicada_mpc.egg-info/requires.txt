@@ -1,0 +1,5 @@
+netifaces
+numpy
+pynetstring
+pynng
+shamir
