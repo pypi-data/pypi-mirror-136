@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: tmule
+Version: 1.5.9
+Summary: The TMux Launch Engine
+Home-page: https://github.com/marc-hanheide/TMuLe
+Author: Marc Hanheide
+Author-email: marc@hanheide.net
+License: UNKNOWN
+Download-URL: https://github.com/marc-hanheide/TMuLe/archive/1.5.9.tar.gz
+Keywords: autobahn,twisted,libtmux
+Platform: UNKNOWN
+License-File: LICENSE
+
+UNKNOWN
+
