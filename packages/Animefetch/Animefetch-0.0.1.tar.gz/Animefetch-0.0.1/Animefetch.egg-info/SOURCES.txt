@@ -1,0 +1,9 @@
+README.md
+setup.py
+Animefetch/__init__.py
+Animefetch/script.py
+Animefetch.egg-info/PKG-INFO
+Animefetch.egg-info/SOURCES.txt
+Animefetch.egg-info/dependency_links.txt
+Animefetch.egg-info/requires.txt
+Animefetch.egg-info/top_level.txt
