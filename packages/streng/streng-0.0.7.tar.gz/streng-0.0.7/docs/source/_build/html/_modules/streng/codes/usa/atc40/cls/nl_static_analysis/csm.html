@@ -1,0 +1,322 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>streng.codes.usa.atc40.cls.nl_static_analysis.csm &mdash; StrEng 0.0.1 documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../../../../../../../_static/book_icon.png"/>
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../../../../../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../../../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../../../../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../../../../search.html" /> 
+
+  
+  <script src="../../../../../../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../../../../../../index.html" class="icon icon-home"> StrEng
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Codes</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../../codes/eurocodes.html">Eurocodes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../../codes/greek.html">Greek Codes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../../codes/usa.html">USA codes and guidelines</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Common</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../../common/io.html">io</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../../common/math.html">math</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Tools</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../../tools/tools.html">Various tools</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../../../../index.html">StrEng</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../../../../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../../../../../../index.html">Module code</a> &raquo;</li>
+        
+      <li>streng.codes.usa.atc40.cls.nl_static_analysis.csm</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <h1>Source code for streng.codes.usa.atc40.cls.nl_static_analysis.csm</h1><div class="highlight"><pre>
+<span></span><span class="kn">from</span> <span class="nn">dataclasses</span> <span class="k">import</span> <span class="n">dataclass</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">from</span> <span class="nn">...raw.ch8</span> <span class="k">import</span> <span class="n">csm</span> <span class="k">as</span> <span class="n">csm_atc40</span>
+<span class="kn">from</span> <span class="nn">......common.math.numerical</span> <span class="k">import</span> <span class="n">intersection</span>
+<span class="kn">from</span> <span class="nn">......common.io.output_older</span> <span class="k">import</span> <span class="n">Output</span>
+<span class="kn">from</span> <span class="nn">......tools.bilin</span> <span class="k">import</span> <span class="n">Bilin</span>
+<span class="kn">from</span> <span class="nn">......codes.eurocodes.ec8.cls.seismic_action</span> <span class="k">import</span> <span class="n">spectra</span> <span class="k">as</span> <span class="n">spec_ec8</span>
+
+
+
+<div class="viewcode-block" id="StructureProperties"><a class="viewcode-back" href="../../../../../../../codes/usa_atc40_cls.html#streng.codes.usa.atc40.cls.nl_static_analysis.csm.StructureProperties">[docs]</a><span class="nd">@dataclass</span>
+<span class="k">class</span> <span class="nc">StructureProperties</span><span class="p">:</span>
+    <span class="n">φ</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span>
+    <span class="n">m</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span>
+    <span class="n">T0</span><span class="p">:</span> <span class="nb">float</span>
+    <span class="n">pushover_curve_F</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span>
+    <span class="n">pushover_curve_δ</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span>
+    <span class="n">behavior</span><span class="p">:</span> <span class="nb">str</span>
+
+    <span class="k">def</span> <span class="nf">__post_init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">PF1</span> <span class="o">=</span> <span class="n">csm_atc40</span><span class="o">.</span><span class="n">PF1</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">m</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">φ</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">α1</span> <span class="o">=</span> <span class="n">csm_atc40</span><span class="o">.</span><span class="n">α1</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">m</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">φ</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">φroof1</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">φ</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">Sa</span> <span class="o">=</span> <span class="n">csm_atc40</span><span class="o">.</span><span class="n">Sa</span><span class="p">(</span><span class="n">V</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">pushover_curve_F</span><span class="p">,</span>
+                               <span class="n">W</span><span class="o">=</span><span class="nb">sum</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">m</span><span class="p">),</span>
+                               <span class="n">α1</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">α1</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">Sd</span> <span class="o">=</span> <span class="n">csm_atc40</span><span class="o">.</span><span class="n">Sd</span><span class="p">(</span><span class="n">Δroof</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">pushover_curve_δ</span><span class="p">,</span>
+                               <span class="n">PF1</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">PF1</span><span class="p">,</span>
+                               <span class="n">φroof1</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">φroof1</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="Demand"><a class="viewcode-back" href="../../../../../../../codes/usa_atc40_cls.html#streng.codes.usa.atc40.cls.nl_static_analysis.csm.Demand">[docs]</a><span class="nd">@dataclass</span>
+<span class="k">class</span> <span class="nc">Demand</span><span class="p">:</span>
+    <span class="n">T_range</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span>
+    <span class="n">Sa</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span>
+    <span class="n">Sd</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span>
+    <span class="n">TC</span><span class="p">:</span> <span class="nb">float</span>
+
+<div class="viewcode-block" id="Demand.ec8_elastic"><a class="viewcode-back" href="../../../../../../../codes/usa_atc40_cls.html#streng.codes.usa.atc40.cls.nl_static_analysis.csm.Demand.ec8_elastic">[docs]</a>    <span class="k">def</span> <span class="nf">ec8_elastic</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">αgR</span><span class="p">:</span> <span class="nb">float</span><span class="p">,</span> <span class="n">γI</span><span class="p">:</span> <span class="nb">float</span><span class="p">,</span> <span class="n">ground_type</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">spectrum_type</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">η</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">q</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">β</span><span class="o">=</span><span class="mf">0.2</span><span class="p">):</span>
+        <span class="n">_spec_ec8</span> <span class="o">=</span> <span class="n">spec_ec8</span><span class="o">.</span><span class="n">SpectraEc8</span><span class="p">(</span><span class="n">αgR</span><span class="p">,</span> <span class="n">γI</span><span class="p">,</span> <span class="n">ground_type</span><span class="p">,</span> <span class="n">spectrum_type</span><span class="p">,</span> <span class="n">η</span><span class="p">,</span> <span class="n">q</span><span class="p">,</span> <span class="n">β</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">Sa</span> <span class="o">=</span> <span class="n">_spec_ec8</span><span class="o">.</span><span class="n">Se</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">T_range</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">Sd</span> <span class="o">=</span> <span class="n">_spec_ec8</span><span class="o">.</span><span class="n">SDe</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">T_range</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">TC</span> <span class="o">=</span> <span class="n">_spec_ec8</span><span class="o">.</span><span class="n">TC</span></div></div>
+
+
+<div class="viewcode-block" id="CapacitySpectrumMethod"><a class="viewcode-back" href="../../../../../../../codes/usa_atc40_cls.html#streng.codes.usa.atc40.cls.nl_static_analysis.csm.CapacitySpectrumMethod">[docs]</a><span class="nd">@dataclass</span>
+<span class="k">class</span> <span class="nc">CapacitySpectrumMethod</span><span class="p">:</span>
+    <span class="n">structure</span><span class="p">:</span> <span class="n">StructureProperties</span>
+    <span class="n">demand</span><span class="p">:</span> <span class="n">Demand</span>
+    <span class="n">first_try_case</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;intersection&#39;</span>
+
+    <span class="k">def</span> <span class="nf">__post_init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">output</span> <span class="o">=</span> <span class="n">Output</span><span class="p">()</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">Sd_first_try</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">first_try_case</span> <span class="o">==</span> <span class="s1">&#39;intersection&#39;</span><span class="p">:</span>
+            <span class="n">x_solve</span><span class="p">,</span> <span class="n">y_solve</span> <span class="o">=</span> <span class="n">intersection</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">demand</span><span class="o">.</span><span class="n">Sd</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">demand</span><span class="o">.</span><span class="n">Sa</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">structure</span><span class="o">.</span><span class="n">Sd</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">structure</span><span class="o">.</span><span class="n">Sa</span><span class="p">)</span>
+            <span class="k">return</span> <span class="n">x_solve</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+        <span class="k">elif</span> <span class="bp">self</span><span class="o">.</span><span class="n">first_try_case</span> <span class="o">==</span> <span class="s1">&#39;equal displacements&#39;</span><span class="p">:</span>
+            <span class="n">Sd_T0</span> <span class="o">=</span> <span class="mf">100.</span>
+            <span class="n">Sa_T0</span> <span class="o">=</span> <span class="n">Sd_T0</span> <span class="o">*</span> <span class="p">(</span><span class="mi">2</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span> <span class="o">/</span> <span class="bp">self</span><span class="o">.</span><span class="n">structure</span><span class="o">.</span><span class="n">T0</span><span class="p">)</span> <span class="o">**</span> <span class="mi">2</span>
+            <span class="n">Sa_T0_array</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">Sa_T0</span><span class="p">])</span>
+            <span class="n">Sd_T0_array</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">Sd_T0</span><span class="p">])</span>
+            <span class="n">xT0_solve</span><span class="p">,</span> <span class="n">yT0_solve</span> <span class="o">=</span> <span class="n">intersection</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">demand</span><span class="o">.</span><span class="n">Sd</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">demand</span><span class="o">.</span><span class="n">Sa</span><span class="p">,</span> <span class="n">Sd_T0_array</span><span class="p">,</span> <span class="n">Sa_T0_array</span><span class="p">)</span>
+            <span class="k">return</span> <span class="n">xT0_solve</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="mf">0.</span>
+
+    <span class="k">def</span> <span class="nf">__iterate_SR</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x0</span><span class="p">):</span>
+        <span class="n">bl</span> <span class="o">=</span> <span class="n">Bilin</span><span class="p">(</span><span class="n">xtarget</span><span class="o">=</span><span class="n">x0</span><span class="p">)</span>
+        <span class="n">bl</span><span class="o">.</span><span class="n">x_ini</span><span class="p">,</span> <span class="n">bl</span><span class="o">.</span><span class="n">y_ini</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">structure</span><span class="o">.</span><span class="n">Sd</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">structure</span><span class="o">.</span><span class="n">Sa</span>
+        <span class="n">bl</span><span class="o">.</span><span class="n">calc</span><span class="p">()</span>
+
+        <span class="n">β0</span> <span class="o">=</span> <span class="n">bl</span><span class="o">.</span><span class="n">bilinear_curve</span><span class="o">.</span><span class="n">β0</span>
+        <span class="n">βeff</span> <span class="o">=</span> <span class="n">csm_atc40</span><span class="o">.</span><span class="n">βeff</span><span class="p">(</span><span class="mf">0.05</span><span class="p">,</span> <span class="n">β0</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">structure</span><span class="o">.</span><span class="n">behavior</span><span class="p">)</span>
+
+        <span class="n">Teff</span> <span class="o">=</span> <span class="n">bl</span><span class="o">.</span><span class="n">bilinear_curve</span><span class="o">.</span><span class="n">Teq</span>
+
+        <span class="n">SRA</span> <span class="o">=</span> <span class="n">csm_atc40</span><span class="o">.</span><span class="n">SRA</span><span class="p">(</span><span class="n">βeff</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">structure</span><span class="o">.</span><span class="n">behavior</span><span class="p">)</span>
+        <span class="n">SRV</span> <span class="o">=</span> <span class="n">csm_atc40</span><span class="o">.</span><span class="n">SRV</span><span class="p">(</span><span class="n">βeff</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">structure</span><span class="o">.</span><span class="n">behavior</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="n">Teff</span> <span class="o">&gt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">demand</span><span class="o">.</span><span class="n">TC</span><span class="p">:</span>
+            <span class="n">SR</span> <span class="o">=</span> <span class="n">SRV</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">SR</span> <span class="o">=</span> <span class="n">SRA</span>
+
+        <span class="n">_Sa</span> <span class="o">=</span> <span class="n">SR</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">demand</span><span class="o">.</span><span class="n">Sa</span>
+        <span class="n">_Sd</span> <span class="o">=</span> <span class="n">SR</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">demand</span><span class="o">.</span><span class="n">Sd</span>
+
+        <span class="n">x_solve</span><span class="p">,</span> <span class="n">y_solve</span> <span class="o">=</span> <span class="n">intersection</span><span class="p">(</span><span class="n">_Sd</span><span class="p">,</span> <span class="n">_Sa</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">structure</span><span class="o">.</span><span class="n">Sd</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">structure</span><span class="o">.</span><span class="n">Sa</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">x_solve</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+
+<div class="viewcode-block" id="CapacitySpectrumMethod.calc_performance_point"><a class="viewcode-back" href="../../../../../../../codes/usa_atc40_cls.html#streng.codes.usa.atc40.cls.nl_static_analysis.csm.CapacitySpectrumMethod.calc_performance_point">[docs]</a>    <span class="k">def</span> <span class="nf">calc_performance_point</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">output</span><span class="o">.</span><span class="n">log_table</span><span class="o">.</span><span class="n">dict_list</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>
+        <span class="n">x_i</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">Sd_first_try</span>
+        <span class="n">iter_num</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="n">error</span> <span class="o">=</span> <span class="mf">100.</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">output</span><span class="o">.</span><span class="n">log_table</span><span class="o">.</span><span class="n">dict_list</span><span class="o">.</span><span class="n">append</span><span class="p">({</span><span class="s1">&#39;__iteration&#39;</span><span class="p">:</span> <span class="n">iter_num</span><span class="p">,</span> <span class="s1">&#39;Sd&#39;</span><span class="p">:</span> <span class="n">x_i</span><span class="p">,</span> <span class="s1">&#39;error&#39;</span><span class="p">:</span> <span class="kc">None</span><span class="p">})</span>
+        <span class="k">while</span> <span class="n">error</span> <span class="o">&gt;</span> <span class="mf">0.0001</span><span class="p">:</span>
+            <span class="n">x_new</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__iterate_SR</span><span class="p">(</span><span class="n">x_i</span><span class="p">)</span>
+            <span class="n">error</span> <span class="o">=</span> <span class="nb">abs</span><span class="p">((</span><span class="n">x_new</span> <span class="o">-</span> <span class="n">x_i</span><span class="p">)</span> <span class="o">/</span> <span class="n">x_i</span><span class="p">)</span>
+            <span class="n">x_i</span> <span class="o">=</span> <span class="n">x_new</span>
+            <span class="n">iter_num</span> <span class="o">=</span> <span class="n">iter_num</span> <span class="o">+</span> <span class="mi">1</span>
+
+
+            <span class="bp">self</span><span class="o">.</span><span class="n">output</span><span class="o">.</span><span class="n">log_table</span><span class="o">.</span><span class="n">dict_list</span><span class="o">.</span><span class="n">append</span><span class="p">({</span><span class="s1">&#39;__iteration&#39;</span><span class="p">:</span> <span class="n">iter_num</span><span class="p">,</span> <span class="s1">&#39;Sd&#39;</span><span class="p">:</span> <span class="n">x_i</span><span class="p">,</span> <span class="s1">&#39;error&#39;</span><span class="p">:</span> <span class="n">error</span><span class="p">})</span>
+
+            <span class="c1"># print(f&#39;__iteration: {iter_num} x={x_i:.4f} error={error:.2%}&#39;)</span>
+
+
+        <span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;solution: Sd = </span><span class="si">{x_i:.4f}</span><span class="s1">m&#39;</span><span class="p">)</span></div></div>
+</pre></div>
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, panagop
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../../../../../" src="../../../../../../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../../../../../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../../../../../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../../../../../../_static/doctools.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script type="text/javascript" src="https://unpkg.com/mermaid@7.1.0/dist/mermaid.min.js"></script>
+    
+
+  
+
+  <script type="text/javascript" src="../../../../../../../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

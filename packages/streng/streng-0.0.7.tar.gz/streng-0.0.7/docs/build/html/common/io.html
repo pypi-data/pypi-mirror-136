@@ -1,0 +1,534 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Input-Output &mdash; StrEng 0.0.1 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+
+  
+  
+    <link rel="shortcut icon" href="../_static/book_icon.png"/>
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Output classes" href="../jupyters/common/io/output.html" />
+    <link rel="prev" title="FEMA40 - Raw functions" href="../codes/usa_fema440_raw.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> StrEng
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Files structure</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../pyfileslist.html">.py files structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../rstfileslist.html">.rst files structure</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Codes</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../codes/eurocodes.html">Eurocodes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../codes/greek.html">Greek Codes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../codes/usa.html">USA codes and guidelines</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Common</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Input-Output</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#dealing-with-lists-and-dictionaries-and-pandas">Dealing with lists and dictionaries and pandas…</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#module-streng.common.io.lists_and_dicts_and_pandas_etc">Functions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-streng.common.io.output">Classes</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#jupyter-notebooks">Jupyter Notebooks</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../jupyters/common/io/output.html">Output classes</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="math.html">Math</a></li>
+</ul>
+<p class="caption"><span class="caption-text">phd</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../phd/building_models.html">Building Models</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../phd/analyses.html">Input Motions</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Pre-Post-Processing</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../ppp/ppp.html">ppp</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Tools</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../tools/tools.html">Bilin</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/tools.html#module-streng.tools.seismic_motion">Seismic Motions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/tools.html#jupyters">Jupyters</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Excel udfs library</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../xwflib/xwflib.html">Main</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">StrEng</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Input-Output</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/common/io.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  
+<style>
+/* CSS overrides for sphinx_rtd_theme */
+
+/* 24px margin */
+.nbinput.nblast.container,
+.nboutput.nblast.container {
+    margin-bottom: 19px;  /* padding has already 5px */
+}
+
+/* ... except between code cells! */
+.nblast.container + .nbinput.container {
+    margin-top: -19px;
+}
+
+.admonition > p:before {
+    margin-right: 4px;  /* make room for the exclamation icon */
+}
+
+/* Fix math alignment, see https://github.com/rtfd/sphinx_rtd_theme/pull/686 */
+.math {
+    text-align: unset;
+}
+</style>
+<div class="section" id="input-output">
+<h1>Input-Output<a class="headerlink" href="#input-output" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="dealing-with-lists-and-dictionaries-and-pandas">
+<h2>Dealing with lists and dictionaries and pandas…<a class="headerlink" href="#dealing-with-lists-and-dictionaries-and-pandas" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="module-streng.common.io.lists_and_dicts_and_pandas_etc">
+<span id="functions"></span><h3>Functions<a class="headerlink" href="#module-streng.common.io.lists_and_dicts_and_pandas_etc" title="Permalink to this headline">¶</a></h3>
+<p>module to deal with lists, dictionaries and pandas</p>
+<div class="line-block">
+<div class="line">dol: dict of lists</div>
+<div class="line">lod: list of dicts</div>
+<div class="line">pddf: pandas dataframe</div>
+</div>
+<blockquote>
+<div><p class="plantuml">
+<img src="../_images/plantuml-a5292cc799011fc241185df87cbb03c0d077a256.svg" alt="class lists_and_dicts_and_pandas_etc &lt;&lt;(M,#FF7700)&gt;&gt; {
+.. functions ..
++ convert_lod_to_dol(list_of_dicts)
++ convert_dol_to_lod(dict_of_lists)
++ convert_lod_to_md_table(list_of_dicts)
++ convert_lod_to_pddf(list_of_dicts)
++ convert_dict_to_quantity_value(dict)
+}"/></p>
+</div></blockquote>
+<dl class="py function">
+<dt id="streng.common.io.lists_and_dicts_and_pandas_etc.convert_dict_to_quantity_value">
+<code class="sig-prename descclassname"><span class="pre">streng.common.io.lists_and_dicts_and_pandas_etc.</span></code><code class="sig-name descname"><span class="pre">convert_dict_to_quantity_value</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dict</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/streng/common/io/lists_and_dicts_and_pandas_etc.html#convert_dict_to_quantity_value"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#streng.common.io.lists_and_dicts_and_pandas_etc.convert_dict_to_quantity_value" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>dict</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.9)"><em>dict</em></a>) – a dictionary</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>a list of dicts with quantity-value pairs</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.9)">list</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="streng.common.io.lists_and_dicts_and_pandas_etc.convert_dol_to_lod">
+<code class="sig-prename descclassname"><span class="pre">streng.common.io.lists_and_dicts_and_pandas_etc.</span></code><code class="sig-name descname"><span class="pre">convert_dol_to_lod</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dict_of_lists</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/streng/common/io/lists_and_dicts_and_pandas_etc.html#convert_dol_to_lod"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#streng.common.io.lists_and_dicts_and_pandas_etc.convert_dol_to_lod" title="Permalink to this definition">¶</a></dt>
+<dd><p>converts dict of lists –&gt; list of dicts</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="streng.common.io.lists_and_dicts_and_pandas_etc.convert_lod_to_dol">
+<code class="sig-prename descclassname"><span class="pre">streng.common.io.lists_and_dicts_and_pandas_etc.</span></code><code class="sig-name descname"><span class="pre">convert_lod_to_dol</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">list_of_dicts</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/streng/common/io/lists_and_dicts_and_pandas_etc.html#convert_lod_to_dol"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#streng.common.io.lists_and_dicts_and_pandas_etc.convert_lod_to_dol" title="Permalink to this definition">¶</a></dt>
+<dd><p>converts list of dicts –&gt; dict of lists</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="streng.common.io.lists_and_dicts_and_pandas_etc.convert_lod_to_md_table">
+<code class="sig-prename descclassname"><span class="pre">streng.common.io.lists_and_dicts_and_pandas_etc.</span></code><code class="sig-name descname"><span class="pre">convert_lod_to_md_table</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">list_of_dicts</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">table_format</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'pipe'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">float_fmt</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'.3E'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/streng/common/io/lists_and_dicts_and_pandas_etc.html#convert_lod_to_md_table"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#streng.common.io.lists_and_dicts_and_pandas_etc.convert_lod_to_md_table" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="streng.common.io.lists_and_dicts_and_pandas_etc.convert_lod_to_pddf">
+<code class="sig-prename descclassname"><span class="pre">streng.common.io.lists_and_dicts_and_pandas_etc.</span></code><code class="sig-name descname"><span class="pre">convert_lod_to_pddf</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">list_of_dicts</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/streng/common/io/lists_and_dicts_and_pandas_etc.html#convert_lod_to_pddf"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#streng.common.io.lists_and_dicts_and_pandas_etc.convert_lod_to_pddf" title="Permalink to this definition">¶</a></dt>
+<dd><blockquote>
+<div><p>Converts a list of dictionaries to a pandas dataframe</p>
+</div></blockquote>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>list_of_dicts</strong> – a list of dictionaries</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>pandas.DataFrame</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="module-streng.common.io.output">
+<span id="classes"></span><h3>Classes<a class="headerlink" href="#module-streng.common.io.output" title="Permalink to this headline">¶</a></h3>
+<p>Classes for managing output results</p>
+<dl class="py class">
+<dt id="streng.common.io.output.OutputExtended">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">streng.common.io.output.</span></code><code class="sig-name descname"><span class="pre">OutputExtended</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="pre">outputTables:</span> <span class="pre">Dict[str</span></em>, <em class="sig-param"><span class="pre">streng.common.io.output.OutputTable]</span> <span class="pre">=</span> <span class="pre">&lt;factory&gt;</span></em>, <em class="sig-param"><span class="pre">outputStrings:</span> <span class="pre">Dict[str</span></em>, <em class="sig-param"><span class="pre">streng.common.io.output.OutputString]</span> <span class="pre">=</span> <span class="pre">&lt;factory&gt;</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/streng/common/io/output.html#OutputExtended"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#streng.common.io.output.OutputExtended" title="Permalink to this definition">¶</a></dt>
+<dd><p>A class for multiple outputs</p>
+<blockquote>
+<div><p class="plantuml">
+<img src="../_images/plantuml-6d9160cac3af8c3c6d3f7d453f2de89e68add388.svg" alt="class OutputExtended {
+.. members ..
++ outputTables: Dict[str, OutputTable] = field(default_factory=dict)
++ outputStrings: Dict[str, OutputString] = field(default_factory=dict)
+.. properties ..
++ print_all_outputStrings()
+.. methods ..
++ save_tofile_all_outputStrings()
+}"/></p>
+</div></blockquote>
+<dl class="py attribute">
+<dt id="streng.common.io.output.OutputExtended.outputTables">
+<code class="sig-name descname"><span class="pre">outputTables</span></code><a class="headerlink" href="#streng.common.io.output.OutputExtended.outputTables" title="Permalink to this definition">¶</a></dt>
+<dd><p>A dictionary of OutputTables with a string key</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.9)">dict</a>[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)">str</a>, <a class="reference internal" href="#streng.common.io.output.OutputTable" title="streng.common.io.output.OutputTable">OutputTable</a>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="streng.common.io.output.OutputExtended.outputStrings">
+<code class="sig-name descname"><span class="pre">outputStrings</span></code><a class="headerlink" href="#streng.common.io.output.OutputExtended.outputStrings" title="Permalink to this definition">¶</a></dt>
+<dd><p>A dictionary of OutputStrings with a string key</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.9)">dict</a>[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)">str</a>, <a class="reference internal" href="#streng.common.io.output.OutputString" title="streng.common.io.output.OutputString">OutputString</a>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="streng.common.io.output.OutputExtended.save_tofile_all_outputStrings">
+<code class="sig-name descname"><span class="pre">save_tofile_all_outputStrings</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pathfilename</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/streng/common/io/output.html#OutputExtended.save_tofile_all_outputStrings"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#streng.common.io.output.OutputExtended.save_tofile_all_outputStrings" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="id0">
+<code class="sig-name descname"><span class="pre">outputStrings</span></code><em class="property"><span class="pre">:</span> <span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span> </span><a class="reference internal" href="#streng.common.io.output.OutputString" title="streng.common.io.output.OutputString"><span class="pre">streng.common.io.output.OutputString</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#id0" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="id1">
+<code class="sig-name descname"><span class="pre">outputTables</span></code><em class="property"><span class="pre">:</span> <span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span> </span><a class="reference internal" href="#streng.common.io.output.OutputTable" title="streng.common.io.output.OutputTable"><span class="pre">streng.common.io.output.OutputTable</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#id1" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="streng.common.io.output.OutputExtended.print_all_outputStrings">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">print_all_outputStrings</span></code><a class="headerlink" href="#streng.common.io.output.OutputExtended.print_all_outputStrings" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="streng.common.io.output.OutputString">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">streng.common.io.output.</span></code><code class="sig-name descname"><span class="pre">OutputString</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="pre">data:</span> <span class="pre">List[str]</span> <span class="pre">=</span> <span class="pre">&lt;factory&gt;</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/streng/common/io/output.html#OutputString"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#streng.common.io.output.OutputString" title="Permalink to this definition">¶</a></dt>
+<dd><p>An output given as a list of strings</p>
+<blockquote>
+<div><p class="plantuml">
+<img src="../_images/plantuml-7fcbc9261145bfe004fc5d0a86b8feca516bbf9e.svg" alt="class OutputString {
+.. members ..
++ data: List[str] = field(default_factory=list)
+}"/></p>
+</div></blockquote>
+<dl class="py attribute">
+<dt id="streng.common.io.output.OutputString.data">
+<code class="sig-name descname"><span class="pre">data</span></code><a class="headerlink" href="#streng.common.io.output.OutputString.data" title="Permalink to this definition">¶</a></dt>
+<dd><p>A list of strings</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>List[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)">str</a>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="id2">
+<code class="sig-name descname"><span class="pre">data</span></code><em class="property"><span class="pre">:</span> <span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#id2" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="streng.common.io.output.OutputTable">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">streng.common.io.output.</span></code><code class="sig-name descname"><span class="pre">OutputTable</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="pre">data:</span> <span class="pre">List[dict]</span> <span class="pre">=</span> <span class="pre">&lt;factory&gt;</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/streng/common/io/output.html#OutputTable"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#streng.common.io.output.OutputTable" title="Permalink to this definition">¶</a></dt>
+<dd><p>An output table given as a list of dictionaries.</p>
+<blockquote>
+<div><p class="plantuml">
+<img src="../_images/plantuml-f22e3237d20baa92c0a26f011580957053491dc0.svg" alt="class OutputTable {
+.. members ..
++ data: List[dict] = field(default_factory=list)
+.. properties ..
++ to_markdown()
++ to_panda_dataframe()
+.. methods ..
++ retrieve()
++ retrieve_column_to_list()
++ to_quantity_value()
+}"/></p>
+</div></blockquote>
+<p>It can be converted for presentation (or usage) as a pandas dataframe or a markdown table</p>
+<dl class="py attribute">
+<dt id="streng.common.io.output.OutputTable.data">
+<code class="sig-name descname"><span class="pre">data</span></code><a class="headerlink" href="#streng.common.io.output.OutputTable.data" title="Permalink to this definition">¶</a></dt>
+<dd><p>A list of dictionaries</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>List[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.9)">dict</a>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="streng.common.io.output.OutputTable.retrieve">
+<code class="sig-name descname"><span class="pre">retrieve</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">search_field</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">search_value</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">find_field</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/streng/common/io/output.html#OutputTable.retrieve"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#streng.common.io.output.OutputTable.retrieve" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="streng.common.io.output.OutputTable.retrieve_column_to_list">
+<code class="sig-name descname"><span class="pre">retrieve_column_to_list</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">column_name</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/streng/common/io/output.html#OutputTable.retrieve_column_to_list"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#streng.common.io.output.OutputTable.retrieve_column_to_list" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="streng.common.io.output.OutputTable.to_quantity_value">
+<code class="sig-name descname"><span class="pre">to_quantity_value</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">selected_row</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/streng/common/io/output.html#OutputTable.to_quantity_value"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#streng.common.io.output.OutputTable.to_quantity_value" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="id3">
+<code class="sig-name descname"><span class="pre">data</span></code><em class="property"><span class="pre">:</span> <span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.9)"><span class="pre">dict</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#id3" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="streng.common.io.output.OutputTable.to_markdown">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">to_markdown</span></code><a class="headerlink" href="#streng.common.io.output.OutputTable.to_markdown" title="Permalink to this definition">¶</a></dt>
+<dd><p>Converts data (list of dicts) to a markdown table using tabulate.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>a markdown table</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)">str</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="streng.common.io.output.OutputTable.to_panda_dataframe">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">to_panda_dataframe</span></code><a class="headerlink" href="#streng.common.io.output.OutputTable.to_panda_dataframe" title="Permalink to this definition">¶</a></dt>
+<dd><p>Converts data to a pandas dataframe</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>a pandas dataframe</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>pd.DataFrame</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+<div class="section" id="jupyter-notebooks">
+<h2>Jupyter Notebooks<a class="headerlink" href="#jupyter-notebooks" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../jupyters/common/io/output.html">Output classes</a></li>
+</ul>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="../jupyters/common/io/output.html" class="btn btn-neutral float-right" title="Output classes" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="../codes/usa_fema440_raw.html" class="btn btn-neutral float-left" title="FEMA40 - Raw functions" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2020, panagop.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

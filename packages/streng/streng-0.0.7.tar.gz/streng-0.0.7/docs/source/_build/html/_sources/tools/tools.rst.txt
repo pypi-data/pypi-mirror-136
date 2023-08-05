@@ -1,0 +1,29 @@
+*************************************
+Various tools
+*************************************
+
+Bilin
+==================
+.. toctree::
+    :maxdepth: 1
+    
+    ../jupyters/tools/bilin_20181006.ipynb
+
+
+Seismic Motion
+==================
+
+.. toctree::
+    :maxdepth: 1
+    
+    ../jupyters/tools/seismic_motion.ipynb
+
+
+Capacity Spectrum Method
+===========================
+
+.. toctree::
+    :maxdepth: 1
+    
+    ../jupyters/tools/capacity_spectrum_method_charts.ipynb
+    ../jupyters/tools/capacity_spectrum_method_class-Copy1.ipynb

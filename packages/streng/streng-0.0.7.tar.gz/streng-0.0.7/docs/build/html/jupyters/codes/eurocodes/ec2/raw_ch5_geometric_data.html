@@ -1,0 +1,737 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Eurocode 2 - Chapter 5 - Geometric data &mdash; StrEng 0.0.1 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+
+  
+  
+    <link rel="shortcut icon" href="../../../../_static/book_icon.png"/>
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../../" src="../../../../_static/documentation_options.js"></script>
+        <script src="../../../../_static/jquery.js"></script>
+        <script src="../../../../_static/underscore.js"></script>
+        <script src="../../../../_static/doctools.js"></script>
+        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    
+    <script type="text/javascript" src="../../../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" />
+    <link rel="next" title="Eurocode 8" href="../../../../codes/eurocodes.ec8.html" />
+    <link rel="prev" title="Eurocode 2 - Chapter 4 - Concrete cover" href="raw_ch4_concrete_cover.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../../../index.html" class="icon icon-home"> StrEng
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Files structure</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../pyfileslist.html">.py files structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../rstfileslist.html">.rst files structure</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Codes</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../../../codes/eurocodes.html">Eurocodes</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../../../../codes/eurocodes.ec2.html">Eurocode 2</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../../../../codes/eurocodes.ec2.raw.html">Raw functions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../codes/eurocodes.ec2.cls.html">Classes</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="../../../../codes/eurocodes.ec2.jupyter.html">Jupyter notebooks</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="raw_ch3_concrete.html">Eurocode 2 - Chapter 3 - Concrete</a></li>
+<li class="toctree-l4"><a class="reference internal" href="raw_ch3_concrete_tables.html">Eurocode 2 - Chapter 3 - Concrete tables</a></li>
+<li class="toctree-l4"><a class="reference internal" href="raw_ch4_concrete_cover.html">Eurocode 2 - Chapter 4 - Concrete cover</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Eurocode 2 - Chapter 5 - Geometric data</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../codes/eurocodes.ec8.html">Eurocode 8</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../codes/greek.html">Greek Codes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../codes/usa.html">USA codes and guidelines</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Common</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../common/io.html">Input-Output</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../common/math.html">Math</a></li>
+</ul>
+<p class="caption"><span class="caption-text">phd</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../phd/building_models.html">Building Models</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../phd/analyses.html">Input Motions</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Pre-Post-Processing</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../ppp/ppp.html">ppp</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Tools</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../tools/tools.html">Bilin</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../tools/tools.html#module-streng.tools.seismic_motion">Seismic Motions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../tools/tools.html#jupyters">Jupyters</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Excel udfs library</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../xwflib/xwflib.html">Main</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../index.html">StrEng</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../../../../codes/eurocodes.html">Eurocodes</a> &raquo;</li>
+        
+          <li><a href="../../../../codes/eurocodes.ec2.html">Eurocode 2</a> &raquo;</li>
+        
+          <li><a href="../../../../codes/eurocodes.ec2.jupyter.html">Jupyter notebooks</a> &raquo;</li>
+        
+      <li>Eurocode 2 - Chapter 5 - Geometric data</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../../../../_sources/jupyters/codes/eurocodes/ec2/raw_ch5_geometric_data.ipynb.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  
+<style>
+/* CSS for nbsphinx extension */
+
+/* remove conflicting styling from Sphinx themes */
+div.nbinput.container div.prompt *,
+div.nboutput.container div.prompt *,
+div.nbinput.container div.input_area pre,
+div.nboutput.container div.output_area pre,
+div.nbinput.container div.input_area .highlight,
+div.nboutput.container div.output_area .highlight {
+    border: none;
+    padding: 0;
+    margin: 0;
+    box-shadow: none;
+}
+
+div.nbinput.container > div[class*=highlight],
+div.nboutput.container > div[class*=highlight] {
+    margin: 0;
+}
+
+div.nbinput.container div.prompt *,
+div.nboutput.container div.prompt * {
+    background: none;
+}
+
+div.nboutput.container div.output_area .highlight,
+div.nboutput.container div.output_area pre {
+    background: unset;
+}
+
+div.nboutput.container div.output_area div.highlight {
+    color: unset;  /* override Pygments text color */
+}
+
+/* avoid gaps between output lines */
+div.nboutput.container div[class*=highlight] pre {
+    line-height: normal;
+}
+
+/* input/output containers */
+div.nbinput.container,
+div.nboutput.container {
+    display: -webkit-flex;
+    display: flex;
+    align-items: flex-start;
+    margin: 0;
+    width: 100%;
+}
+@media (max-width: 540px) {
+    div.nbinput.container,
+    div.nboutput.container {
+        flex-direction: column;
+    }
+}
+
+/* input container */
+div.nbinput.container {
+    padding-top: 5px;
+}
+
+/* last container */
+div.nblast.container {
+    padding-bottom: 5px;
+}
+
+/* input prompt */
+div.nbinput.container div.prompt pre {
+    color: #307FC1;
+}
+
+/* output prompt */
+div.nboutput.container div.prompt pre {
+    color: #BF5B3D;
+}
+
+/* all prompts */
+div.nbinput.container div.prompt,
+div.nboutput.container div.prompt {
+    width: 4.5ex;
+    padding-top: 5px;
+    position: relative;
+    user-select: none;
+}
+
+div.nbinput.container div.prompt > div,
+div.nboutput.container div.prompt > div {
+    position: absolute;
+    right: 0;
+    margin-right: 0.3ex;
+}
+
+@media (max-width: 540px) {
+    div.nbinput.container div.prompt,
+    div.nboutput.container div.prompt {
+        width: unset;
+        text-align: left;
+        padding: 0.4em;
+    }
+    div.nboutput.container div.prompt.empty {
+        padding: 0;
+    }
+
+    div.nbinput.container div.prompt > div,
+    div.nboutput.container div.prompt > div {
+        position: unset;
+    }
+}
+
+/* disable scrollbars on prompts */
+div.nbinput.container div.prompt pre,
+div.nboutput.container div.prompt pre {
+    overflow: hidden;
+}
+
+/* input/output area */
+div.nbinput.container div.input_area,
+div.nboutput.container div.output_area {
+    -webkit-flex: 1;
+    flex: 1;
+    overflow: auto;
+}
+@media (max-width: 540px) {
+    div.nbinput.container div.input_area,
+    div.nboutput.container div.output_area {
+        width: 100%;
+    }
+}
+
+/* input area */
+div.nbinput.container div.input_area {
+    border: 1px solid #e0e0e0;
+    border-radius: 2px;
+    /*background: #f5f5f5;*/
+}
+
+/* override MathJax center alignment in output cells */
+div.nboutput.container div[class*=MathJax] {
+    text-align: left !important;
+}
+
+/* override sphinx.ext.imgmath center alignment in output cells */
+div.nboutput.container div.math p {
+    text-align: left;
+}
+
+/* standard error */
+div.nboutput.container div.output_area.stderr {
+    background: #fdd;
+}
+
+/* ANSI colors */
+.ansi-black-fg { color: #3E424D; }
+.ansi-black-bg { background-color: #3E424D; }
+.ansi-black-intense-fg { color: #282C36; }
+.ansi-black-intense-bg { background-color: #282C36; }
+.ansi-red-fg { color: #E75C58; }
+.ansi-red-bg { background-color: #E75C58; }
+.ansi-red-intense-fg { color: #B22B31; }
+.ansi-red-intense-bg { background-color: #B22B31; }
+.ansi-green-fg { color: #00A250; }
+.ansi-green-bg { background-color: #00A250; }
+.ansi-green-intense-fg { color: #007427; }
+.ansi-green-intense-bg { background-color: #007427; }
+.ansi-yellow-fg { color: #DDB62B; }
+.ansi-yellow-bg { background-color: #DDB62B; }
+.ansi-yellow-intense-fg { color: #B27D12; }
+.ansi-yellow-intense-bg { background-color: #B27D12; }
+.ansi-blue-fg { color: #208FFB; }
+.ansi-blue-bg { background-color: #208FFB; }
+.ansi-blue-intense-fg { color: #0065CA; }
+.ansi-blue-intense-bg { background-color: #0065CA; }
+.ansi-magenta-fg { color: #D160C4; }
+.ansi-magenta-bg { background-color: #D160C4; }
+.ansi-magenta-intense-fg { color: #A03196; }
+.ansi-magenta-intense-bg { background-color: #A03196; }
+.ansi-cyan-fg { color: #60C6C8; }
+.ansi-cyan-bg { background-color: #60C6C8; }
+.ansi-cyan-intense-fg { color: #258F8F; }
+.ansi-cyan-intense-bg { background-color: #258F8F; }
+.ansi-white-fg { color: #C5C1B4; }
+.ansi-white-bg { background-color: #C5C1B4; }
+.ansi-white-intense-fg { color: #A1A6B2; }
+.ansi-white-intense-bg { background-color: #A1A6B2; }
+
+.ansi-default-inverse-fg { color: #FFFFFF; }
+.ansi-default-inverse-bg { background-color: #000000; }
+
+.ansi-bold { font-weight: bold; }
+.ansi-underline { text-decoration: underline; }
+
+
+div.nbinput.container div.input_area div[class*=highlight] > pre,
+div.nboutput.container div.output_area div[class*=highlight] > pre,
+div.nboutput.container div.output_area div[class*=highlight].math,
+div.nboutput.container div.output_area.rendered_html,
+div.nboutput.container div.output_area > div.output_javascript,
+div.nboutput.container div.output_area:not(.rendered_html) > img{
+    padding: 5px;
+    margin: 0;
+}
+
+/* fix copybtn overflow problem in chromium (needed for 'sphinx_copybutton') */
+div.nbinput.container div.input_area > div[class^='highlight'],
+div.nboutput.container div.output_area > div[class^='highlight']{
+    overflow-y: hidden;
+}
+
+/* hide copybtn icon on prompts (needed for 'sphinx_copybutton') */
+.prompt a.copybtn {
+    display: none;
+}
+
+/* Some additional styling taken form the Jupyter notebook CSS */
+div.rendered_html table {
+  border: none;
+  border-collapse: collapse;
+  border-spacing: 0;
+  color: black;
+  font-size: 12px;
+  table-layout: fixed;
+}
+div.rendered_html thead {
+  border-bottom: 1px solid black;
+  vertical-align: bottom;
+}
+div.rendered_html tr,
+div.rendered_html th,
+div.rendered_html td {
+  text-align: right;
+  vertical-align: middle;
+  padding: 0.5em 0.5em;
+  line-height: normal;
+  white-space: normal;
+  max-width: none;
+  border: none;
+}
+div.rendered_html th {
+  font-weight: bold;
+}
+div.rendered_html tbody tr:nth-child(odd) {
+  background: #f5f5f5;
+}
+div.rendered_html tbody tr:hover {
+  background: rgba(66, 165, 245, 0.2);
+}
+
+/* CSS overrides for sphinx_rtd_theme */
+
+/* 24px margin */
+.nbinput.nblast.container,
+.nboutput.nblast.container {
+    margin-bottom: 19px;  /* padding has already 5px */
+}
+
+/* ... except between code cells! */
+.nblast.container + .nbinput.container {
+    margin-top: -19px;
+}
+
+.admonition > p:before {
+    margin-right: 4px;  /* make room for the exclamation icon */
+}
+
+/* Fix math alignment, see https://github.com/rtfd/sphinx_rtd_theme/pull/686 */
+.math {
+    text-align: unset;
+}
+</style>
+<div class="section" id="Eurocode-2---Chapter-5---Geometric-data">
+<h1>Eurocode 2 - Chapter 5 - Geometric data<a class="headerlink" href="#Eurocode-2---Chapter-5---Geometric-data" title="Permalink to this headline">¶</a></h1>
+<p>raw functions</p>
+<div class="section" id="effective_width">
+<h2>effective_width<a class="headerlink" href="#effective_width" title="Permalink to this headline">¶</a></h2>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[1]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="kn">from</span> <span class="nn">streng.codes.eurocodes.ec2.raw.ch5.geometric_data</span> <span class="kn">import</span> <span class="n">effective_width</span>
+</pre></div>
+</div>
+</div>
+<img alt="beffs" src="http://repfiles.kallipos.gr/html_books/1284/images/Fig_09_14.png" />
+<img alt="l0s" src="http://repfiles.kallipos.gr/html_books/1284/images/inter_09_01_2.png" />
+<div class="section" id="beff">
+<h3>beff<a class="headerlink" href="#beff" title="Permalink to this headline">¶</a></h3>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[2]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="nb">print</span><span class="p">(</span><span class="n">effective_width</span><span class="o">.</span><span class="n">beff</span><span class="o">.</span><span class="vm">__doc__</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+ Effective flange width
+
+        .. image paths are relative to the shpinx source folder that calls this automodule/autoclass
+
+        .. image:: ../../img/ec_beff.png
+
+
+    Args:
+        bw (float): Width of the web
+        beff1 (float): Side 1 effective flange width
+        beff2 (float): Side 2 effective flange width
+        b (float): bw + b1 + b2
+
+    Returns:
+        float: Given using the expression:
+
+        .. math::
+            b_{eff}=\sum{b_{eff,i}} + b_w \le b
+
+
+</pre></div></div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[3]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">beff</span> <span class="o">=</span> <span class="n">effective_width</span><span class="o">.</span><span class="n">beff</span><span class="p">(</span><span class="n">bw</span> <span class="o">=</span> <span class="mf">0.25</span><span class="p">,</span>
+                            <span class="n">beff1</span> <span class="o">=</span> <span class="mf">0.76</span><span class="p">,</span>
+                            <span class="n">beff2</span> <span class="o">=</span> <span class="mf">0.95</span><span class="p">,</span>
+                            <span class="n">b</span> <span class="o">=</span> <span class="mf">2.5</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;beff = </span><span class="si">{</span><span class="n">beff</span><span class="si">:</span><span class="s1">.2f</span><span class="si">}</span><span class="s1">m&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+beff = 1.96m
+</pre></div></div>
+</div>
+</div>
+<div class="section" id="beffi">
+<h3>beffi<a class="headerlink" href="#beffi" title="Permalink to this headline">¶</a></h3>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[4]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="nb">print</span><span class="p">(</span><span class="n">effective_width</span><span class="o">.</span><span class="n">beffi</span><span class="o">.</span><span class="vm">__doc__</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+ Side i effective flange width
+
+        .. image:: ../../img/ec_beff_l0.png
+
+    Args:
+        bi (float): half net length between adjacent beams
+        l0 (float): Distance between points of zero moment
+
+    Returns:
+        float: Given using the expression:
+
+        .. math::
+            b_{eff,i}=0.2\cdot b_i +0.1\cdot l_0 \le 0.2\cdot l_0
+
+
+</pre></div></div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[5]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">beffi</span> <span class="o">=</span> <span class="n">effective_width</span><span class="o">.</span><span class="n">beffi</span><span class="p">(</span><span class="n">bi</span> <span class="o">=</span> <span class="mf">2.20</span><span class="p">,</span> <span class="n">l0</span><span class="o">=</span><span class="mf">3.80</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;beffi = </span><span class="si">{</span><span class="n">beffi</span><span class="si">:</span><span class="s1">.2f</span><span class="si">}</span><span class="s1">m&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+beffi = 0.76m
+</pre></div></div>
+</div>
+</div>
+<div class="section" id="l0">
+<h3>l0<a class="headerlink" href="#l0" title="Permalink to this headline">¶</a></h3>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[6]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="nb">print</span><span class="p">(</span><span class="n">effective_width</span><span class="o">.</span><span class="n">l0</span><span class="o">.</span><span class="vm">__doc__</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+ Distance between points of zero moment
+
+        .. image:: ../../img/ec_beff_l0.png
+
+    Args:
+        l1 (float): μήκος αμφιέρειστης ή ακραίου ανοίγματος
+        l2 (float): μήκος μεσαίουν ανοίγματος
+        l3 (float): μήκος προβόλου
+        zero_moments_case (int): συνθήκες στήριξης. 0: αμφιέρειστη, 1: ακραίο άνοιγμα, 2: μεσαίο άνοιγμα, 3: μεσαία στήριξη, 4: στήριξη προβόλου
+
+    Returns:
+        float: Υποπεριπτώσεις σύμφωνα με το σχήμα
+
+
+
+</pre></div></div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[7]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">l0_amf</span> <span class="o">=</span> <span class="n">effective_width</span><span class="o">.</span><span class="n">l0</span><span class="p">(</span><span class="n">l1</span> <span class="o">=</span> <span class="mf">5.0</span><span class="p">,</span>
+                            <span class="n">zero_moments_case</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;l0 αμφιέρειστης = </span><span class="si">{</span><span class="n">l0_amf</span><span class="si">:</span><span class="s1">.2f</span><span class="si">}</span><span class="s1">m&#39;</span><span class="p">)</span>
+
+<span class="n">l0_akraio</span> <span class="o">=</span> <span class="n">effective_width</span><span class="o">.</span><span class="n">l0</span><span class="p">(</span><span class="n">l1</span> <span class="o">=</span> <span class="mf">5.0</span><span class="p">,</span>
+                               <span class="n">zero_moments_case</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;l0 ακραίο άνοιγμα = </span><span class="si">{</span><span class="n">l0_akraio</span><span class="si">:</span><span class="s1">.2f</span><span class="si">}</span><span class="s1">m&#39;</span><span class="p">)</span>
+
+<span class="n">l0_mesaio</span> <span class="o">=</span> <span class="n">effective_width</span><span class="o">.</span><span class="n">l0</span><span class="p">(</span><span class="n">l2</span> <span class="o">=</span> <span class="mf">5.0</span><span class="p">,</span>
+                               <span class="n">zero_moments_case</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;l0 μεσαίο άνοιγμα = </span><span class="si">{</span><span class="n">l0_mesaio</span><span class="si">:</span><span class="s1">.2f</span><span class="si">}</span><span class="s1">m&#39;</span><span class="p">)</span>
+
+<span class="n">l0_mesaia_stir</span> <span class="o">=</span> <span class="n">effective_width</span><span class="o">.</span><span class="n">l0</span><span class="p">(</span><span class="n">l1</span> <span class="o">=</span> <span class="mf">5.0</span><span class="p">,</span>
+                                    <span class="n">l2</span> <span class="o">=</span> <span class="mf">5.0</span><span class="p">,</span>
+                               <span class="n">zero_moments_case</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;l0 μεσαία στήριξη = </span><span class="si">{</span><span class="n">l0_mesaia_stir</span><span class="si">:</span><span class="s1">.2f</span><span class="si">}</span><span class="s1">m&#39;</span><span class="p">)</span>
+
+<span class="n">l0_prov</span> <span class="o">=</span> <span class="n">effective_width</span><span class="o">.</span><span class="n">l0</span><span class="p">(</span><span class="n">l2</span> <span class="o">=</span> <span class="mf">5.0</span><span class="p">,</span>
+                             <span class="n">l3</span> <span class="o">=</span> <span class="mf">1.5</span><span class="p">,</span>
+                             <span class="n">zero_moments_case</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;l0 στήριξη προβόλου = </span><span class="si">{</span><span class="n">l0_prov</span><span class="si">:</span><span class="s1">.2f</span><span class="si">}</span><span class="s1">m&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+l0 αμφιέρειστης = 5.00m
+l0 ακραίο άνοιγμα = 4.25m
+l0 μεσαίο άνοιγμα = 3.50m
+l0 μεσαία στήριξη = 1.50m
+l0 στήριξη προβόλου = 2.25m
+</pre></div></div>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="../../../../codes/eurocodes.ec8.html" class="btn btn-neutral float-right" title="Eurocode 8" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="raw_ch4_concrete_cover.html" class="btn btn-neutral float-left" title="Eurocode 2 - Chapter 4 - Concrete cover" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2020, panagop.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

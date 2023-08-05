@@ -1,0 +1,416 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Eurocodes &mdash; StrEng 0.0.1 documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../_static/book_icon.png"/>
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Eurocode 2 - Raw functions" href="eurocodes_ec2_raw.html" />
+    <link rel="prev" title="StrEng documentation!" href="../index.html" /> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> StrEng
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Codes</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Eurocodes</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#eurocode-2">Eurocode 2</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="eurocodes_ec2_raw.html">Raw functions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="eurocodes_ec2_cls.html">Classes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="eurocodes_ec2_jupyter.html">Jupyter notebooks</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#eurocode-8">Eurocode 8</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="eurocodes_ec8_raw.html">Raw functions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="eurocodes_ec8_cls.html">Classes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="eurocodes_ec8_jupyter.html">Jupyter notebooks</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#sample-h3">Sample H3</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#sample-h4">Sample H4</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#sample-h5">Sample H5</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="greek.html">Greek Codes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usa.html">USA codes and guidelines</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Common</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../common/io.html">io</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../common/math.html">math</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Tools</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../tools/tools.html">Various tools</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">StrEng</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>Eurocodes</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/codes/eurocodes.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  
+<style>
+/* CSS overrides for sphinx_rtd_theme */
+
+/* 24px margin */
+.nbinput.nblast,
+.nboutput.nblast {
+    margin-bottom: 19px;  /* padding has already 5px */
+}
+
+/* ... except between code cells! */
+.nblast + .nbinput {
+    margin-top: -19px;
+}
+
+.admonition > p:before {
+    margin-right: 4px;  /* make room for the exclamation icon */
+}
+</style>
+<div class="section" id="eurocodes">
+<h1>Eurocodes<a class="headerlink" href="#eurocodes" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="eurocode-2">
+<h2>Eurocode 2<a class="headerlink" href="#eurocode-2" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="eurocodes_ec2_raw.html">Raw functions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="eurocodes_ec2_raw.html#chapter-3-materials">Chapter 3 - Materials</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="eurocodes_ec2_raw.html#concrete">concrete</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="eurocodes_ec2_raw.html#module-streng.codes.eurocodes.ec2.raw.ch3.concrete.elastic_deformation">elastic_deformation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="eurocodes_ec2_raw.html#module-streng.codes.eurocodes.ec2.raw.ch3.concrete.strength">strength</a></li>
+<li class="toctree-l4"><a class="reference internal" href="eurocodes_ec2_raw.html#module-streng.codes.eurocodes.ec2.raw.ch3.concrete.stress_strain">stress_strain</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="eurocodes_ec2_raw.html#chapter-4-durability-and-cover-to-reinforcement">Chapter 4 - Durability and cover to reinforcement</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="eurocodes_ec2_raw.html#module-streng.codes.eurocodes.ec2.raw.ch4.concrete_cover">concrete cover</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="eurocodes_ec2_raw.html#chapter-5-structural-analysis">Chapter 5 - Structural analysis</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="eurocodes_ec2_raw.html#geometric-data">geometric_data</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="eurocodes_ec2_raw.html#module-streng.codes.eurocodes.ec2.raw.ch5.geometric_data.effective_width">effective_width</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="eurocodes_ec2_raw.html#chapter-6-ultimate-limit-states-uls">Chapter 6 - Ultimate limit states (ULS)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="eurocodes_ec2_raw.html#module-streng.codes.eurocodes.ec2.raw.ch6.shear">shear</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="eurocodes_ec2_cls.html">Classes</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="eurocodes_ec2_cls.html#test-class">Test Class</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="eurocodes_ec2_jupyter.html">Jupyter notebooks</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../jupyters/codes/eurocodes/ec2/raw_ch3_concrete.html">Eurocode 2 - Chapter 3 - Concrete</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../jupyters/codes/eurocodes/ec2/raw_ch3_concrete.html#elastic_deformation">elastic_deformation</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../jupyters/codes/eurocodes/ec2/raw_ch3_concrete.html#Ecm">Ecm</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../jupyters/codes/eurocodes/ec2/raw_ch3_concrete.html#ν">ν</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../jupyters/codes/eurocodes/ec2/raw_ch3_concrete.html#strength">strength</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../jupyters/codes/eurocodes/ec2/raw_ch3_concrete.html#fcd">fcd</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../jupyters/codes/eurocodes/ec2/raw_ch3_concrete.html#fcm">fcm</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../jupyters/codes/eurocodes/ec2/raw_ch3_concrete.html#fctm">fctm</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../jupyters/codes/eurocodes/ec2/raw_ch3_concrete.html#fctk005">fctk005</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../jupyters/codes/eurocodes/ec2/raw_ch3_concrete.html#fctk095">fctk095</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../jupyters/codes/eurocodes/ec2/raw_ch3_concrete.html#stress_strain">stress_strain</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../jupyters/codes/eurocodes/ec2/raw_ch3_concrete.html#εc1">εc1</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../jupyters/codes/eurocodes/ec2/raw_ch3_concrete.html#εc2">εc2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../jupyters/codes/eurocodes/ec2/raw_ch3_concrete.html#εc3">εc3</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../jupyters/codes/eurocodes/ec2/raw_ch3_concrete.html#εcu1">εcu1</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../jupyters/codes/eurocodes/ec2/raw_ch3_concrete.html#εcu2">εcu2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../jupyters/codes/eurocodes/ec2/raw_ch3_concrete.html#εcu3">εcu3</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../jupyters/codes/eurocodes/ec2/raw_ch3_concrete.html#n">n</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../jupyters/codes/eurocodes/ec2/raw_ch3_concrete.html#σc_nl">σc_nl</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../jupyters/codes/eurocodes/ec2/raw_ch3_concrete.html#σc_design">σc_design</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../jupyters/codes/eurocodes/ec2/raw_ch3_concrete.html#σc_bilin">σc_bilin</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../jupyters/codes/eurocodes/ec2/raw_ch3_concrete_tables.html">Eurocode 2 - Chapter 3 - Concrete tables</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../jupyters/codes/eurocodes/ec2/raw_ch4_concrete_cover.html">Eurocode 2 - Chapter 4 - Concrete cover</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../jupyters/codes/eurocodes/ec2/raw_ch4_concrete_cover.html#cmindur">cmindur</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../jupyters/codes/eurocodes/ec2/raw_ch5_geometric_data.html">Eurocode 2 - Chapter 5 - Geometric data</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../jupyters/codes/eurocodes/ec2/raw_ch5_geometric_data.html#effective_width">effective_width</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../jupyters/codes/eurocodes/ec2/raw_ch5_geometric_data.html#beff">beff</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../jupyters/codes/eurocodes/ec2/raw_ch5_geometric_data.html#beffi">beffi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../jupyters/codes/eurocodes/ec2/raw_ch5_geometric_data.html#l0">l0</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="eurocode-8">
+<h2>Eurocode 8<a class="headerlink" href="#eurocode-8" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="eurocodes_ec8_raw.html">Raw functions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="eurocodes_ec8_raw.html#chapter-3">Chapter 3</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="eurocodes_ec8_raw.html#module-streng.codes.eurocodes.ec8.raw.ch3.seismic_action.spectra">seismic_action</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="eurocodes_ec8_raw.html#chapter-5">Chapter 5</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="eurocodes_ec8_raw.html#module-streng.codes.eurocodes.ec8.raw.ch5.detailing.beams">detailing</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="eurocodes_ec8_cls.html">Classes</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="eurocodes_ec8_cls.html#seismic-action">seismic_action</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="eurocodes_ec8_cls.html#spectra">spectra</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="eurocodes_ec8_jupyter.html">Jupyter notebooks</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../jupyters/codes/eurocodes/ec8/raw_ch3_seismic_action.html">Eurocode 8 - Chapter 3 - seismic_action</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../jupyters/codes/eurocodes/ec8/raw_ch3_seismic_action.html#spectra">spectra</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../jupyters/codes/eurocodes/ec8/raw_ch3_seismic_action.html#αg">αg</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../jupyters/codes/eurocodes/ec8/raw_ch3_seismic_action.html#S">S</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../jupyters/codes/eurocodes/ec8/raw_ch3_seismic_action.html#TB">TB</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../jupyters/codes/eurocodes/ec8/raw_ch3_seismic_action.html#TC">TC</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../jupyters/codes/eurocodes/ec8/raw_ch3_seismic_action.html#TD">TD</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../jupyters/codes/eurocodes/ec8/raw_ch3_seismic_action.html#Se">Se</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../jupyters/codes/eurocodes/ec8/raw_ch3_seismic_action.html#SDe">SDe</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../jupyters/codes/eurocodes/ec8/raw_ch3_seismic_action.html#dg">dg</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../jupyters/codes/eurocodes/ec8/raw_ch3_seismic_action.html#Sd">Sd</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../jupyters/codes/eurocodes/ec8/raw_ch3_seismic_action.html#η">η</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../jupyters/codes/eurocodes/ec8/cls_seismic_action.html">Eurocode 8 - Seismic Action - Spectra</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../jupyters/codes/eurocodes/ec8/cls_seismic_action.html#Δεδομένα-φάσματος">Δεδομένα φάσματος</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../jupyters/codes/eurocodes/ec8/cls_seismic_action.html#Elastic-spectrum">Elastic spectrum</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../jupyters/codes/eurocodes/ec8/cls_seismic_action.html#Elastic-displacement-spectrum">Elastic displacement spectrum</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../jupyters/codes/eurocodes/ec8/cls_seismic_action.html#Design-ground-displacement">Design ground displacement</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../jupyters/codes/eurocodes/ec8/cls_seismic_action.html#Design-spectrum">Design spectrum</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="sample-h3">
+<h2>Sample H3<a class="headerlink" href="#sample-h3" title="Permalink to this headline">¶</a></h2>
+<p>fdsfsds</p>
+<div class="section" id="sample-h4">
+<h3>Sample H4<a class="headerlink" href="#sample-h4" title="Permalink to this headline">¶</a></h3>
+<p>fdsfsds</p>
+<div class="section" id="sample-h5">
+<h4>Sample H5<a class="headerlink" href="#sample-h5" title="Permalink to this headline">¶</a></h4>
+<p>fdsfsds</p>
+<div class="section" id="sample-h6">
+<h5>Sample H6<a class="headerlink" href="#sample-h6" title="Permalink to this headline">¶</a></h5>
+<p>fdsfsds</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="eurocodes_ec2_raw.html" class="btn btn-neutral float-right" title="Eurocode 2 - Raw functions" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../index.html" class="btn btn-neutral" title="StrEng documentation!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, panagop
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+  
+
+  <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

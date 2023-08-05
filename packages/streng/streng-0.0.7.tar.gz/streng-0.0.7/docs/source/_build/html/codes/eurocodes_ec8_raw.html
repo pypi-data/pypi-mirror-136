@@ -1,0 +1,549 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Eurocode 8 - Raw functions &mdash; StrEng 0.0.1 documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../_static/book_icon.png"/>
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Eurocode 8 - Classes" href="eurocodes_ec8_cls.html" />
+    <link rel="prev" title="Eurocode 2 - Chapter 5 - Geometric data" href="../jupyters/codes/eurocodes/ec2/raw_ch5_geometric_data.html" /> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> StrEng
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Codes</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="eurocodes.html">Eurocodes</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="eurocodes.html#eurocode-2">Eurocode 2</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="eurocodes.html#eurocode-8">Eurocode 8</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Raw functions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#chapter-3">Chapter 3</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#chapter-5">Chapter 5</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="eurocodes_ec8_cls.html">Classes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="eurocodes_ec8_jupyter.html">Jupyter notebooks</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="eurocodes.html#sample-h3">Sample H3</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="greek.html">Greek Codes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usa.html">USA codes and guidelines</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Common</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../common/io.html">io</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../common/math.html">math</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Tools</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../tools/tools.html">Various tools</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">StrEng</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="eurocodes.html">Eurocodes</a> &raquo;</li>
+        
+      <li>Eurocode 8 - Raw functions</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/codes/eurocodes_ec8_raw.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  
+<style>
+/* CSS overrides for sphinx_rtd_theme */
+
+/* 24px margin */
+.nbinput.nblast,
+.nboutput.nblast {
+    margin-bottom: 19px;  /* padding has already 5px */
+}
+
+/* ... except between code cells! */
+.nblast + .nbinput {
+    margin-top: -19px;
+}
+
+.admonition > p:before {
+    margin-right: 4px;  /* make room for the exclamation icon */
+}
+</style>
+<div class="section" id="eurocode-8-raw-functions">
+<h1>Eurocode 8 - Raw functions<a class="headerlink" href="#eurocode-8-raw-functions" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="chapter-3">
+<h2>Chapter 3<a class="headerlink" href="#chapter-3" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="module-streng.codes.eurocodes.ec8.raw.ch3.seismic_action.spectra">
+<span id="seismic-action"></span><h3>seismic_action<a class="headerlink" href="#module-streng.codes.eurocodes.ec8.raw.ch3.seismic_action.spectra" title="Permalink to this headline">¶</a></h3>
+<dl class="function">
+<dt id="streng.codes.eurocodes.ec8.raw.ch3.seismic_action.spectra.S">
+<code class="descclassname">streng.codes.eurocodes.ec8.raw.ch3.seismic_action.spectra.</code><code class="descname">S</code><span class="sig-paren">(</span><em>ground_type</em>, <em>spectrum_type</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/streng/codes/eurocodes/ec8/raw/ch3/seismic_action/spectra.html#S"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#streng.codes.eurocodes.ec8.raw.ch3.seismic_action.spectra.S" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>ground_type</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.7)"><em>str</em></a>) – Ground type (A, B, C, D or E)</li>
+<li><strong>spectrum_type</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.7)"><em>int</em></a>) – Spectrum type 1 or 2</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">soil factor</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)">float</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="streng.codes.eurocodes.ec8.raw.ch3.seismic_action.spectra.SDe">
+<code class="descclassname">streng.codes.eurocodes.ec8.raw.ch3.seismic_action.spectra.</code><code class="descname">SDe</code><span class="sig-paren">(</span><em>T</em>, <em>Se</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/streng/codes/eurocodes/ec8/raw/ch3/seismic_action/spectra.html#SDe"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#streng.codes.eurocodes.ec8.raw.ch3.seismic_action.spectra.SDe" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>T</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – The vibration period of a linear single-degree-of-freedom system</li>
+<li><strong>Se</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – The elastic acceleration response spectrum</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><p>The elastic displacement response spectrum. Given using the expression:</p>
+<div class="math notranslate nohighlight">
+\[S_{De}=S_e(T)\cdot(\dfrac{T}{2π})^2\]</div>
+</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)">float</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="streng.codes.eurocodes.ec8.raw.ch3.seismic_action.spectra.Sd">
+<code class="descclassname">streng.codes.eurocodes.ec8.raw.ch3.seismic_action.spectra.</code><code class="descname">Sd</code><span class="sig-paren">(</span><em>T</em>, <em>αg</em>, <em>S</em>, <em>TB</em>, <em>TC</em>, <em>TD</em>, <em>q</em>, <em>β=0.2</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/streng/codes/eurocodes/ec8/raw/ch3/seismic_action/spectra.html#Sd"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#streng.codes.eurocodes.ec8.raw.ch3.seismic_action.spectra.Sd" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>T</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – The vibration period of a linear single-degree-of-freedom system</li>
+<li><strong>αg</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – The design ground acceleration on type A ground (ag = γI*agR)</li>
+<li><strong>S</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – The soil factor</li>
+<li><strong>TB</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – The lower limit of the period of the constant spectral acceleration branch</li>
+<li><strong>TC</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – The upper limit of the period of the constant spectral acceleration branch</li>
+<li><strong>TD</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – The value defining the beginning of the constant displacement response range of the spectrum</li>
+<li><strong>q</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – The behaviour factor</li>
+<li><strong>β</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – The lower bound factor for the horizontal design spectrum. Recommended value for β is 0.2</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><p>Design spectrum for elastic analysis. Given using the expressions:</p>
+<div class="math notranslate nohighlight">
+\begin{eqnarray}
+    0 \le T \le T_B \rightarrow &amp; S_d(T) &amp; = α_g\cdot S \cdot (\dfrac{2}{3}+\dfrac{T}{T_B}\cdot(\dfrac{2.5}{q} - \dfrac{2}{3})) \\
+    T_B \le T \le T_C \rightarrow &amp; S_d(T) &amp; = α_g\cdot S \cdot \dfrac{2.5}{q} \\
+    T_C \le T \le T_D \rightarrow &amp; S_d(T) &amp; = α_g\cdot S \cdot \dfrac{2.5}{q} \cdot \dfrac{T_C}{T} \ge β \cdot α_g \\
+    T_D \le T \le 4s \rightarrow &amp; S_d(T) &amp; = α_g\cdot S \cdot \dfrac{2.5}{q} \cdot \dfrac{T_C\cdot T_D}{T^2} \ge β \cdot α_g
+\end{eqnarray}</div></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)">float</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="streng.codes.eurocodes.ec8.raw.ch3.seismic_action.spectra.Se">
+<code class="descclassname">streng.codes.eurocodes.ec8.raw.ch3.seismic_action.spectra.</code><code class="descname">Se</code><span class="sig-paren">(</span><em>T</em>, <em>αg</em>, <em>S</em>, <em>TB</em>, <em>TC</em>, <em>TD</em>, <em>η=1.0</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/streng/codes/eurocodes/ec8/raw/ch3/seismic_action/spectra.html#Se"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#streng.codes.eurocodes.ec8.raw.ch3.seismic_action.spectra.Se" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>T</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – The vibration period of a linear single-degree-of-freedom system</li>
+<li><strong>αg</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – The design ground acceleration on type A ground (ag = γI*agR)</li>
+<li><strong>S</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – The soil factor</li>
+<li><strong>TB</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – The lower limit of the period of the constant spectral acceleration branch</li>
+<li><strong>TC</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – The upper limit of the period of the constant spectral acceleration branch</li>
+<li><strong>TD</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – The value defining the beginning of the constant displacement response range of the spectrum</li>
+<li><strong>η</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – The damping correction factor with a reference value of η = 1 for 5% viscous damping</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><p>The elastic acceleration response spectrum. Given using the expressions:</p>
+<div class="math notranslate nohighlight">
+\begin{eqnarray}
+    0 \le T \le T_B \rightarrow &amp; S_e(T) &amp; = α_g\cdot S \cdot (1+\dfrac{T}{T_B}\cdot(η\cdot 2.5 -1)) \\
+    T_B \le T \le T_C \rightarrow &amp; S_e(T) &amp; = α_g\cdot S \cdot η\cdot 2.5 \\
+    T_C \le T \le T_D \rightarrow &amp; S_e(T) &amp; = α_g\cdot S \cdot η\cdot 2.5\cdot \dfrac{T_C}{T} \\
+    T_D \le T \le 4s \rightarrow &amp; S_e(T) &amp; = α_g\cdot S \cdot η\cdot 2.5\cdot \dfrac{T_C\cdot T_D}{T^2}
+\end{eqnarray}</div></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)">float</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="streng.codes.eurocodes.ec8.raw.ch3.seismic_action.spectra.TB">
+<code class="descclassname">streng.codes.eurocodes.ec8.raw.ch3.seismic_action.spectra.</code><code class="descname">TB</code><span class="sig-paren">(</span><em>ground_type</em>, <em>spectrum_type</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/streng/codes/eurocodes/ec8/raw/ch3/seismic_action/spectra.html#TB"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#streng.codes.eurocodes.ec8.raw.ch3.seismic_action.spectra.TB" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>ground_type</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.7)"><em>str</em></a>) – Ground type (A, B, C, D or E)</li>
+<li><strong>spectrum_type</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.7)"><em>int</em></a>) – Spectrum type 1 or 2</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">The lower limit of the period of the constant spectral acceleration branch</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)">float</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="streng.codes.eurocodes.ec8.raw.ch3.seismic_action.spectra.TC">
+<code class="descclassname">streng.codes.eurocodes.ec8.raw.ch3.seismic_action.spectra.</code><code class="descname">TC</code><span class="sig-paren">(</span><em>ground_type</em>, <em>spectrum_type</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/streng/codes/eurocodes/ec8/raw/ch3/seismic_action/spectra.html#TC"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#streng.codes.eurocodes.ec8.raw.ch3.seismic_action.spectra.TC" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>ground_type</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.7)"><em>str</em></a>) – Ground type (A, B, C, D or E)</li>
+<li><strong>spectrum_type</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.7)"><em>int</em></a>) – Spectrum type 1 or 2</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">The upper limit of the period of the constant spectral acceleration branch</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)">float</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="streng.codes.eurocodes.ec8.raw.ch3.seismic_action.spectra.TD">
+<code class="descclassname">streng.codes.eurocodes.ec8.raw.ch3.seismic_action.spectra.</code><code class="descname">TD</code><span class="sig-paren">(</span><em>ground_type</em>, <em>spectrum_type</em>, <em>national_annex='default'</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/streng/codes/eurocodes/ec8/raw/ch3/seismic_action/spectra.html#TD"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#streng.codes.eurocodes.ec8.raw.ch3.seismic_action.spectra.TD" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>ground_type</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.7)"><em>str</em></a>) – Ground type (A, B, C, D or E)</li>
+<li><strong>spectrum_type</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.7)"><em>int</em></a>) – Spectrum type 1 or 2</li>
+<li><strong>national_annex</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.7)"><em>str</em></a>) – Country national annex. Options are: ‘default’, ‘greek’</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">The value defining the beginning of the constant displacement response range of the spectrum</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)">float</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="streng.codes.eurocodes.ec8.raw.ch3.seismic_action.spectra.dg">
+<code class="descclassname">streng.codes.eurocodes.ec8.raw.ch3.seismic_action.spectra.</code><code class="descname">dg</code><span class="sig-paren">(</span><em>αg</em>, <em>S</em>, <em>TC</em>, <em>TD</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/streng/codes/eurocodes/ec8/raw/ch3/seismic_action/spectra.html#dg"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#streng.codes.eurocodes.ec8.raw.ch3.seismic_action.spectra.dg" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>αg</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – The design ground acceleration on type A ground (ag = γI*agR)</li>
+<li><strong>S</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – The soil factor</li>
+<li><strong>TC</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – The upper limit of the period of the constant spectral acceleration branch</li>
+<li><strong>TD</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – The value defining the beginning of the constant displacement response range of the spectrum</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><p>Design ground displacement. Given using the expression:</p>
+<blockquote>
+<div><div class="math notranslate nohighlight">
+\[d_{g}=0.025\cdot α_g \cdot S \cdot T_C  \cdot T_D\]</div>
+</div></blockquote>
+</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)">float</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="streng.codes.eurocodes.ec8.raw.ch3.seismic_action.spectra.αg">
+<code class="descclassname">streng.codes.eurocodes.ec8.raw.ch3.seismic_action.spectra.</code><code class="descname">αg</code><span class="sig-paren">(</span><em>αgR</em>, <em>γI</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/streng/codes/eurocodes/ec8/raw/ch3/seismic_action/spectra.html#αg"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#streng.codes.eurocodes.ec8.raw.ch3.seismic_action.spectra.αg" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>αgR</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – reference peak ground acceleration on type A ground</li>
+<li><strong>γI</strong> – (float): importance factor</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">design ground acceleration on type A ground</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)">float</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="streng.codes.eurocodes.ec8.raw.ch3.seismic_action.spectra.η">
+<code class="descclassname">streng.codes.eurocodes.ec8.raw.ch3.seismic_action.spectra.</code><code class="descname">η</code><span class="sig-paren">(</span><em>ξ</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/streng/codes/eurocodes/ec8/raw/ch3/seismic_action/spectra.html#η"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#streng.codes.eurocodes.ec8.raw.ch3.seismic_action.spectra.η" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>ξ</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – the viscous damping ratio of the structure[%]</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">The value of the damping correction factor. Given using the expressions:<div class="math notranslate nohighlight">
+\[η = \sqrt{\dfrac{10}{5+ξ}} \ge 0.55\]</div>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)">float</a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+</div>
+<div class="section" id="chapter-5">
+<h2>Chapter 5<a class="headerlink" href="#chapter-5" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="module-streng.codes.eurocodes.ec8.raw.ch5.detailing.beams">
+<span id="detailing"></span><h3>detailing<a class="headerlink" href="#module-streng.codes.eurocodes.ec8.raw.ch5.detailing.beams" title="Permalink to this headline">¶</a></h3>
+<dl class="function">
+<dt id="streng.codes.eurocodes.ec8.raw.ch5.detailing.beams.ρmax">
+<code class="descclassname">streng.codes.eurocodes.ec8.raw.ch5.detailing.beams.</code><code class="descname">ρmax</code><span class="sig-paren">(</span><em>ρ2</em>, <em>μφ</em>, <em>εsyd</em>, <em>fcd</em>, <em>fyd</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/streng/codes/eurocodes/ec8/raw/ch5/detailing/beams.html#ρmax"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#streng.codes.eurocodes.ec8.raw.ch5.detailing.beams.ρmax" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="streng.codes.eurocodes.ec8.raw.ch5.detailing.beams.ρmax05">
+<code class="descclassname">streng.codes.eurocodes.ec8.raw.ch5.detailing.beams.</code><code class="descname">ρmax05</code><span class="sig-paren">(</span><em>μφ</em>, <em>εsyd</em>, <em>fcd</em>, <em>fyd</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/streng/codes/eurocodes/ec8/raw/ch5/detailing/beams.html#ρmax05"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#streng.codes.eurocodes.ec8.raw.ch5.detailing.beams.ρmax05" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="streng.codes.eurocodes.ec8.raw.ch5.detailing.beams.ρmin">
+<code class="descclassname">streng.codes.eurocodes.ec8.raw.ch5.detailing.beams.</code><code class="descname">ρmin</code><span class="sig-paren">(</span><em>fck</em>, <em>fyk</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/streng/codes/eurocodes/ec8/raw/ch5/detailing/beams.html#ρmin"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#streng.codes.eurocodes.ec8.raw.ch5.detailing.beams.ρmin" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="eurocodes_ec8_cls.html" class="btn btn-neutral float-right" title="Eurocode 8 - Classes" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../jupyters/codes/eurocodes/ec2/raw_ch5_geometric_data.html" class="btn btn-neutral" title="Eurocode 2 - Chapter 5 - Geometric data" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, panagop
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script type="text/javascript" src="https://unpkg.com/mermaid@7.1.0/dist/mermaid.min.js"></script>
+    
+
+  
+
+  <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

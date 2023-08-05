@@ -1,0 +1,370 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Loads &mdash; StrEng 0.0.1 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+
+  
+  
+    <link rel="shortcut icon" href="../_static/book_icon.png"/>
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Sections" href="ppp_sections.html" />
+    <link rel="prev" title="ppp" href="ppp.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> StrEng
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Files structure</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../pyfileslist.html">.py files structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../rstfileslist.html">.rst files structure</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Codes</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../codes/eurocodes.html">Eurocodes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../codes/greek.html">Greek Codes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../codes/usa.html">USA codes and guidelines</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Common</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../common/io.html">Input-Output</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../common/math.html">Math</a></li>
+</ul>
+<p class="caption"><span class="caption-text">phd</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../phd/building_models.html">Building Models</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../phd/analyses.html">Input Motions</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Pre-Post-Processing</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="ppp.html">ppp</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Loads</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ppp_sections.html">Sections</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Tools</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../tools/tools.html">Bilin</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/tools.html#module-streng.tools.seismic_motion">Seismic Motions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/tools.html#jupyters">Jupyters</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Excel udfs library</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../xwflib/xwflib.html">Main</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">StrEng</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="ppp.html">ppp</a> &raquo;</li>
+        
+      <li>Loads</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/ppp/ppp_loads.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  
+<style>
+/* CSS overrides for sphinx_rtd_theme */
+
+/* 24px margin */
+.nbinput.nblast.container,
+.nboutput.nblast.container {
+    margin-bottom: 19px;  /* padding has already 5px */
+}
+
+/* ... except between code cells! */
+.nblast.container + .nbinput.container {
+    margin-top: -19px;
+}
+
+.admonition > p:before {
+    margin-right: 4px;  /* make room for the exclamation icon */
+}
+
+/* Fix math alignment, see https://github.com/rtfd/sphinx_rtd_theme/pull/686 */
+.math {
+    text-align: unset;
+}
+</style>
+<div class="section" id="module-streng.ppp.loads.slabs_to_beams">
+<span id="loads"></span><h1>Loads<a class="headerlink" href="#module-streng.ppp.loads.slabs_to_beams" title="Permalink to this headline">¶</a></h1>
+<dl class="py class">
+<dt id="streng.ppp.loads.slabs_to_beams.SlabLoadsToBeams">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">streng.ppp.loads.slabs_to_beams.</span></code><code class="sig-name descname"><span class="pre">SlabLoadsToBeams</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="pre">l_max:</span> <span class="pre">float</span></em>, <em class="sig-param"><span class="pre">l_min:</span> <span class="pre">float</span></em>, <em class="sig-param"><span class="pre">slab_type:</span> <span class="pre">str</span></em>, <em class="sig-param"><span class="pre">slab_load:</span> <span class="pre">float</span></em>, <em class="sig-param"><span class="pre">slab_areas:</span> <span class="pre">Dict</span> <span class="pre">=</span> <span class="pre">&lt;factory&gt;</span></em>, <em class="sig-param"><span class="pre">beams_loads:</span> <span class="pre">Dict</span> <span class="pre">=</span> <span class="pre">&lt;factory&gt;</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/streng/ppp/loads/slabs_to_beams.html#SlabLoadsToBeams"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#streng.ppp.loads.slabs_to_beams.SlabLoadsToBeams" title="Permalink to this definition">¶</a></dt>
+<dd><div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">sl</span> <span class="o">=</span> <span class="n">SlabLoadsToBeams</span><span class="p">(</span><span class="n">l_max</span> <span class="o">=</span> <span class="mf">6.0</span><span class="p">,</span>
+                      <span class="n">l_min</span> <span class="o">=</span> <span class="mf">4.0</span><span class="p">,</span>
+                      <span class="n">slab_type</span> <span class="o">=</span> <span class="s1">&#39;4&#39;</span><span class="p">,</span>
+                      <span class="n">slab_load</span> <span class="o">=</span> <span class="mf">6.3</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">sl</span><span class="o">.</span><span class="n">beams_loads</span><span class="p">)</span>
+</pre></div>
+</td></tr></table></div>
+<dl class="py method">
+<dt id="streng.ppp.loads.slabs_to_beams.SlabLoadsToBeams.calc">
+<code class="sig-name descname"><span class="pre">calc</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/streng/ppp/loads/slabs_to_beams.html#SlabLoadsToBeams.calc"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#streng.ppp.loads.slabs_to_beams.SlabLoadsToBeams.calc" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="streng.ppp.loads.slabs_to_beams.SlabLoadsToBeams.get_areas_1">
+<em class="property"><span class="pre">static</span> </em><code class="sig-name descname"><span class="pre">get_areas_1</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">l1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">l2</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/streng/ppp/loads/slabs_to_beams.html#SlabLoadsToBeams.get_areas_1"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#streng.ppp.loads.slabs_to_beams.SlabLoadsToBeams.get_areas_1" title="Permalink to this definition">¶</a></dt>
+<dd><p>Υπολογισμός εμβαδών για πλάκες τύπου 1</p>
+<a class="reference internal image-reference" href="../_images/01.png"><img alt="../_images/01.png" src="../_images/01.png" style="width: 45%;" /></a>
+</dd></dl>
+
+<dl class="py method">
+<dt id="streng.ppp.loads.slabs_to_beams.SlabLoadsToBeams.get_areas_2a">
+<em class="property"><span class="pre">static</span> </em><code class="sig-name descname"><span class="pre">get_areas_2a</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">l1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">l2</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/streng/ppp/loads/slabs_to_beams.html#SlabLoadsToBeams.get_areas_2a"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#streng.ppp.loads.slabs_to_beams.SlabLoadsToBeams.get_areas_2a" title="Permalink to this definition">¶</a></dt>
+<dd><p>Υπολογισμός εμβαδών για πλάκες τύπου 2a</p>
+<a class="reference internal image-reference" href="../_images/02a.png"><img alt="../_images/02a.png" src="../_images/02a.png" style="width: 45%;" /></a>
+</dd></dl>
+
+<dl class="py method">
+<dt id="streng.ppp.loads.slabs_to_beams.SlabLoadsToBeams.get_areas_2b">
+<em class="property"><span class="pre">static</span> </em><code class="sig-name descname"><span class="pre">get_areas_2b</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">l1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">l2</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/streng/ppp/loads/slabs_to_beams.html#SlabLoadsToBeams.get_areas_2b"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#streng.ppp.loads.slabs_to_beams.SlabLoadsToBeams.get_areas_2b" title="Permalink to this definition">¶</a></dt>
+<dd><p>Υπολογισμός εμβαδών για πλάκες τύπου 2b</p>
+<a class="reference internal image-reference" href="../_images/02b1.png"><img alt="../_images/02b1.png" src="../_images/02b1.png" style="width: 45%;" /></a>
+<a class="reference internal image-reference" href="../_images/02b2.png"><img alt="../_images/02b2.png" src="../_images/02b2.png" style="width: 40%;" /></a>
+</dd></dl>
+
+<dl class="py method">
+<dt id="streng.ppp.loads.slabs_to_beams.SlabLoadsToBeams.get_areas_3a">
+<em class="property"><span class="pre">static</span> </em><code class="sig-name descname"><span class="pre">get_areas_3a</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">l1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">l2</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/streng/ppp/loads/slabs_to_beams.html#SlabLoadsToBeams.get_areas_3a"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#streng.ppp.loads.slabs_to_beams.SlabLoadsToBeams.get_areas_3a" title="Permalink to this definition">¶</a></dt>
+<dd><p>Υπολογισμός εμβαδών για πλάκες τύπου 3a</p>
+<a class="reference internal image-reference" href="../_images/03a.png"><img alt="../_images/03a.png" src="../_images/03a.png" style="width: 45%;" /></a>
+</dd></dl>
+
+<dl class="py method">
+<dt id="streng.ppp.loads.slabs_to_beams.SlabLoadsToBeams.get_areas_3b">
+<em class="property"><span class="pre">static</span> </em><code class="sig-name descname"><span class="pre">get_areas_3b</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">l1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">l2</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/streng/ppp/loads/slabs_to_beams.html#SlabLoadsToBeams.get_areas_3b"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#streng.ppp.loads.slabs_to_beams.SlabLoadsToBeams.get_areas_3b" title="Permalink to this definition">¶</a></dt>
+<dd><p>Υπολογισμός εμβαδών για πλάκες τύπου 3b</p>
+<a class="reference internal image-reference" href="../_images/03b1.png"><img alt="../_images/03b1.png" src="../_images/03b1.png" style="width: 45%;" /></a>
+<a class="reference internal image-reference" href="../_images/03b2.png"><img alt="../_images/03b2.png" src="../_images/03b2.png" style="width: 40%;" /></a>
+</dd></dl>
+
+<dl class="py method">
+<dt id="streng.ppp.loads.slabs_to_beams.SlabLoadsToBeams.get_areas_4">
+<em class="property"><span class="pre">static</span> </em><code class="sig-name descname"><span class="pre">get_areas_4</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">l1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">l2</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/streng/ppp/loads/slabs_to_beams.html#SlabLoadsToBeams.get_areas_4"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#streng.ppp.loads.slabs_to_beams.SlabLoadsToBeams.get_areas_4" title="Permalink to this definition">¶</a></dt>
+<dd><p>Υπολογισμός εμβαδών για πλάκες τύπου 4</p>
+<a class="reference internal image-reference" href="../_images/04.png"><img alt="../_images/04.png" src="../_images/04.png" style="width: 45%;" /></a>
+</dd></dl>
+
+<dl class="py method">
+<dt id="streng.ppp.loads.slabs_to_beams.SlabLoadsToBeams.get_areas_5a">
+<em class="property"><span class="pre">static</span> </em><code class="sig-name descname"><span class="pre">get_areas_5a</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">l1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">l2</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/streng/ppp/loads/slabs_to_beams.html#SlabLoadsToBeams.get_areas_5a"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#streng.ppp.loads.slabs_to_beams.SlabLoadsToBeams.get_areas_5a" title="Permalink to this definition">¶</a></dt>
+<dd><p>Υπολογισμός εμβαδών για πλάκες τύπου 5a</p>
+<a class="reference internal image-reference" href="../_images/05a.png"><img alt="../_images/05a.png" src="../_images/05a.png" style="width: 45%;" /></a>
+</dd></dl>
+
+<dl class="py method">
+<dt id="streng.ppp.loads.slabs_to_beams.SlabLoadsToBeams.get_areas_5b">
+<em class="property"><span class="pre">static</span> </em><code class="sig-name descname"><span class="pre">get_areas_5b</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">l1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">l2</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/streng/ppp/loads/slabs_to_beams.html#SlabLoadsToBeams.get_areas_5b"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#streng.ppp.loads.slabs_to_beams.SlabLoadsToBeams.get_areas_5b" title="Permalink to this definition">¶</a></dt>
+<dd><p>Υπολογισμός εμβαδών για πλάκες τύπου 5b</p>
+<a class="reference internal image-reference" href="../_images/05b1.png"><img alt="../_images/05b1.png" src="../_images/05b1.png" style="width: 45%;" /></a>
+<a class="reference internal image-reference" href="../_images/05b2.png"><img alt="../_images/05b2.png" src="../_images/05b2.png" style="width: 40%;" /></a>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="streng.ppp.loads.slabs_to_beams.SlabLoadsToBeams.beams_loads">
+<code class="sig-name descname"><span class="pre">beams_loads</span></code><em class="property"><span class="pre">:</span> <span class="pre">Dict</span></em><a class="headerlink" href="#streng.ppp.loads.slabs_to_beams.SlabLoadsToBeams.beams_loads" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="streng.ppp.loads.slabs_to_beams.SlabLoadsToBeams.slab_areas">
+<code class="sig-name descname"><span class="pre">slab_areas</span></code><em class="property"><span class="pre">:</span> <span class="pre">Dict</span></em><a class="headerlink" href="#streng.ppp.loads.slabs_to_beams.SlabLoadsToBeams.slab_areas" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="streng.ppp.loads.slabs_to_beams.SlabLoadsToBeams.slab_load">
+<code class="sig-name descname"><span class="pre">slab_load</span></code><em class="property"><span class="pre">:</span> <a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.9)"><span class="pre">float</span></a></em><a class="headerlink" href="#streng.ppp.loads.slabs_to_beams.SlabLoadsToBeams.slab_load" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="ppp_sections.html" class="btn btn-neutral float-right" title="Sections" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="ppp.html" class="btn btn-neutral float-left" title="ppp" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2020, panagop.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

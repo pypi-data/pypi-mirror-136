@@ -1,0 +1,37 @@
+*************************
+Input-Output
+*************************
+
+
+Show results
+=========================
+
+.. autosummary::
+
+    streng.common.io.output.OutputString
+    streng.common.io.output.OutputTable
+    streng.common.io.output.OutputExtended
+
+Classes
+------------
+
+.. autoclass:: streng.common.io.output.OutputString
+   :members:
+   :undoc-members:
+
+.. autoclass:: streng.common.io.output.OutputTable
+   :members:
+   :undoc-members:
+
+.. autoclass:: streng.common.io.output.OutputExtended
+   :members:
+   :undoc-members:
+
+
+Jupyter Notebooks
+--------------------
+
+.. toctree::
+    :maxdepth: 1
+    
+    ../jupyters/common/io/output.ipynb

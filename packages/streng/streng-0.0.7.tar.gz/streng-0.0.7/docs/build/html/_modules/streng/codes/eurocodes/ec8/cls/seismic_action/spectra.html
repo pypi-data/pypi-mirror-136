@@ -1,0 +1,353 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>streng.codes.eurocodes.ec8.cls.seismic_action.spectra &mdash; StrEng 0.0.1 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../../../../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../../../../_static/pygments.css" type="text/css" />
+
+  
+  
+    <link rel="shortcut icon" href="../../../../../../../_static/book_icon.png"/>
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../../../../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../../../../../" src="../../../../../../../_static/documentation_options.js"></script>
+        <script src="../../../../../../../_static/jquery.js"></script>
+        <script src="../../../../../../../_static/underscore.js"></script>
+        <script src="../../../../../../../_static/doctools.js"></script>
+        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    
+    <script type="text/javascript" src="../../../../../../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../../../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../../../../../../index.html" class="icon icon-home"> StrEng
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Files structure</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../../pyfileslist.html">.py files structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../../rstfileslist.html">.rst files structure</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Codes</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../../codes/eurocodes.html">Eurocodes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../../codes/greek.html">Greek Codes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../../codes/usa.html">USA codes and guidelines</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Common</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../../common/io.html">Input-Output</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../../common/math.html">Math</a></li>
+</ul>
+<p class="caption"><span class="caption-text">phd</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../../phd/building_models.html">Building Models</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../../phd/analyses.html">Input Motions</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Pre-Post-Processing</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../../ppp/ppp.html">ppp</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Tools</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../../tools/tools.html">Bilin</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../../tools/tools.html#module-streng.tools.seismic_motion">Seismic Motions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../../tools/tools.html#jupyters">Jupyters</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Excel udfs library</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../../xwflib/xwflib.html">Main</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../../../../index.html">StrEng</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../../../../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../../../../../../index.html">Module code</a> &raquo;</li>
+        
+      <li>streng.codes.eurocodes.ec8.cls.seismic_action.spectra</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <h1>Source code for streng.codes.eurocodes.ec8.cls.seismic_action.spectra</h1><div class="highlight"><pre>
+<span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">from</span> <span class="nn">dataclasses</span> <span class="kn">import</span> <span class="n">dataclass</span>
+
+<span class="kn">from</span> <span class="nn">...raw.ch3.seismic_action</span> <span class="kn">import</span> <span class="n">spectra</span> <span class="k">as</span> <span class="n">spec_raw</span>
+
+
+<div class="viewcode-block" id="SpectraEc8"><a class="viewcode-back" href="../../../../../../../codes/eurocodes.ec8.cls.html#streng.codes.eurocodes.ec8.cls.seismic_action.spectra.SpectraEc8">[docs]</a><span class="nd">@dataclass</span>
+<span class="k">class</span> <span class="nc">SpectraEc8</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;Eurocode 8 response spectra</span>
+
+<span class="sd">    .. note::</span>
+<span class="sd">        If αgR values are given in g, displacements and velocities should be multiplied with 9.81</span>
+
+<span class="sd">    .. uml::</span>
+
+<span class="sd">        class SpectraEc8 {</span>
+<span class="sd">        .. attributes ..</span>
+<span class="sd">        + αgR (float)</span>
+<span class="sd">        + γI (float)</span>
+<span class="sd">        + ground_type (str)</span>
+<span class="sd">        + spectrum_type (int)</span>
+<span class="sd">        + η (float)</span>
+<span class="sd">        + q (float)</span>
+<span class="sd">        + β (float)</span>
+<span class="sd">        .. properties ..</span>
+<span class="sd">        + dg()</span>
+<span class="sd">        + getAllSpectra0to4()</span>
+<span class="sd">        .. methods ..</span>
+<span class="sd">        + Se(T) (float)</span>
+<span class="sd">        + SDe(T) (float)</span>
+<span class="sd">        + Sd(T) (float)</span>
+<span class="sd">        }</span>
+
+<span class="sd">    Attributes:</span>
+<span class="sd">        αgR (float): reference peak ground acceleration on type A ground</span>
+<span class="sd">        γI (float): importance factor</span>
+<span class="sd">        ground_type (str): Ground type (A, B, C, D or E)</span>
+<span class="sd">        spectrum_type (int): Spectrum type 1 or 2</span>
+<span class="sd">        η (float): value of the damping correction factor</span>
+<span class="sd">        q (float): behaviour factor</span>
+<span class="sd">        β (float): lower bound factor for the horizontal design spectrum. Recommended value for β is 0.2</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">αgR</span><span class="p">:</span> <span class="nb">float</span>
+    <span class="n">γI</span><span class="p">:</span> <span class="nb">float</span>
+    <span class="n">ground_type</span><span class="p">:</span> <span class="nb">str</span>
+    <span class="n">spectrum_type</span><span class="p">:</span> <span class="nb">int</span>
+    <span class="n">η</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="mf">1.0</span>
+    <span class="n">q</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="mf">1.0</span>
+    <span class="n">β</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="mf">0.2</span>
+
+    <span class="k">def</span> <span class="nf">__post_init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">αg</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">γI</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">αgR</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">S</span> <span class="o">=</span> <span class="n">spec_raw</span><span class="o">.</span><span class="n">S</span><span class="p">(</span><span class="n">ground_type</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">ground_type</span><span class="p">,</span> <span class="n">spectrum_type</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">spectrum_type</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">TB</span> <span class="o">=</span> <span class="n">spec_raw</span><span class="o">.</span><span class="n">TB</span><span class="p">(</span><span class="n">ground_type</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">ground_type</span><span class="p">,</span> <span class="n">spectrum_type</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">spectrum_type</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">TC</span> <span class="o">=</span> <span class="n">spec_raw</span><span class="o">.</span><span class="n">TC</span><span class="p">(</span><span class="n">ground_type</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">ground_type</span><span class="p">,</span> <span class="n">spectrum_type</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">spectrum_type</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">TD</span> <span class="o">=</span> <span class="n">spec_raw</span><span class="o">.</span><span class="n">TD</span><span class="p">(</span><span class="n">ground_type</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">ground_type</span><span class="p">,</span> <span class="n">spectrum_type</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">spectrum_type</span><span class="p">)</span>
+
+<div class="viewcode-block" id="SpectraEc8.Se"><a class="viewcode-back" href="../../../../../../../codes/eurocodes.ec8.cls.html#streng.codes.eurocodes.ec8.cls.seismic_action.spectra.SpectraEc8.Se">[docs]</a>    <span class="k">def</span> <span class="nf">Se</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">T</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Args:</span>
+<span class="sd">            T(float): Period</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            float: The elastic acceleration response spectrum</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">spec_raw</span><span class="o">.</span><span class="n">Se</span><span class="p">(</span><span class="n">T</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">αg</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">S</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">TB</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">TC</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">TD</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">η</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="SpectraEc8.SDe"><a class="viewcode-back" href="../../../../../../../codes/eurocodes.ec8.cls.html#streng.codes.eurocodes.ec8.cls.seismic_action.spectra.SpectraEc8.SDe">[docs]</a>    <span class="k">def</span> <span class="nf">SDe</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">T</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Args:</span>
+<span class="sd">            T(float): Period</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            float: The elastic displacement response spectrum</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">spec_raw</span><span class="o">.</span><span class="n">SDe</span><span class="p">(</span><span class="n">T</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">Se</span><span class="p">(</span><span class="n">T</span><span class="p">))</span></div>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">dg</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;float: Design ground displacement&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">spec_raw</span><span class="o">.</span><span class="n">dg</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">αg</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">S</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">TC</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">TD</span><span class="p">)</span>
+
+<div class="viewcode-block" id="SpectraEc8.Sd"><a class="viewcode-back" href="../../../../../../../codes/eurocodes.ec8.cls.html#streng.codes.eurocodes.ec8.cls.seismic_action.spectra.SpectraEc8.Sd">[docs]</a>    <span class="k">def</span> <span class="nf">Sd</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">T</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Args:</span>
+<span class="sd">            T(float): Period</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            float: Design spectrum for elastic analyses</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">spec_raw</span><span class="o">.</span><span class="n">Sd</span><span class="p">(</span><span class="n">T</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">αg</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">S</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">TB</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">TC</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">TD</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">q</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">β</span><span class="p">)</span></div>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">getAllSpectra0to4</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot; dict: A dictionary of numpy arrays with spectral values in the range 0-4sec&quot;&quot;&quot;</span>
+        <span class="n">_T_range</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mf">0.01</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">400</span><span class="p">)</span>
+
+        <span class="n">_Se</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">Se</span><span class="p">(</span><span class="n">_T_range</span><span class="p">)</span>
+        <span class="n">_SDe</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">SDe</span><span class="p">(</span><span class="n">_T_range</span><span class="p">)</span>
+        <span class="n">_Sv</span> <span class="o">=</span> <span class="n">_Se</span> <span class="o">/</span> <span class="p">(</span><span class="mi">2</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span> <span class="o">/</span> <span class="n">_T_range</span><span class="p">)</span>
+        <span class="n">_Sd</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">Sd</span><span class="p">(</span><span class="n">_T_range</span><span class="p">)</span>
+
+        <span class="n">_T_range</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mf">0.</span><span class="p">,</span> <span class="n">_T_range</span><span class="p">)</span>
+        <span class="n">_Se</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">αg</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">S</span><span class="p">,</span> <span class="n">_Se</span><span class="p">)</span>
+        <span class="n">_SDe</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mf">0.</span><span class="p">,</span> <span class="n">_SDe</span><span class="p">)</span>
+        <span class="n">_Sv</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mf">0.</span><span class="p">,</span> <span class="n">_Sv</span><span class="p">)</span>
+        <span class="n">_Sd</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">αg</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">S</span> <span class="o">*</span> <span class="mf">2.0</span> <span class="o">/</span> <span class="mf">3.0</span><span class="p">,</span> <span class="n">_Sd</span><span class="p">)</span>
+
+        <span class="n">_data</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;T&#39;</span><span class="p">:</span> <span class="n">_T_range</span><span class="p">,</span>
+                 <span class="s1">&#39;Se&#39;</span><span class="p">:</span> <span class="n">_Se</span><span class="p">,</span>
+                 <span class="s1">&#39;Sv&#39;</span><span class="p">:</span> <span class="n">_Sv</span><span class="p">,</span>
+                 <span class="s1">&#39;SDe&#39;</span><span class="p">:</span> <span class="n">_SDe</span><span class="p">,</span>
+                 <span class="s1">&#39;Sd&#39;</span><span class="p">:</span> <span class="n">_Sd</span><span class="p">}</span>
+
+        <span class="k">return</span> <span class="n">_data</span></div>
+
+</pre></div>
+
+           </div>
+           
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2020, panagop.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

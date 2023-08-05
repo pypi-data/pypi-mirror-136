@@ -1,0 +1,24 @@
+*****************************
+Eurocode 8 - Classes
+*****************************
+
+seismic_action
+=========================
+
+spectra
+------------------------
+
+.. code-block:: python
+   :linenos:
+
+   specEC8 = SpectraEc8(αgR=0.24,
+                        γI=1.2,
+                        ground_type = 'D',
+                        spectrum_type = 1,
+                        η=1.0,
+                        q=3.9,
+                        β=0.2)
+
+.. autoclass:: streng.codes.eurocodes.ec8.cls.seismic_action.spectra.SpectraEc8
+   :members:
+   :undoc-members:

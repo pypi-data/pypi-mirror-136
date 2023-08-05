@@ -1,0 +1,746 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>streng.tools.seismic_motion &mdash; StrEng 0.0.1 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+
+  
+  
+    <link rel="shortcut icon" href="../../../_static/book_icon.png"/>
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> StrEng
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Files structure</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../pyfileslist.html">.py files structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../rstfileslist.html">.rst files structure</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Codes</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../codes/eurocodes.html">Eurocodes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../codes/greek.html">Greek Codes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../codes/usa.html">USA codes and guidelines</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Common</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../common/io.html">Input-Output</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../common/math.html">Math</a></li>
+</ul>
+<p class="caption"><span class="caption-text">phd</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../phd/building_models.html">Building Models</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../phd/analyses.html">Input Motions</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Pre-Post-Processing</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../ppp/ppp.html">ppp</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Tools</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../tools/tools.html">Bilin</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../tools/tools.html#module-streng.tools.seismic_motion">Seismic Motions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../tools/tools.html#jupyters">Jupyters</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Excel udfs library</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../xwflib/xwflib.html">Main</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">StrEng</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../../index.html">Module code</a> &raquo;</li>
+        
+      <li>streng.tools.seismic_motion</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <h1>Source code for streng.tools.seismic_motion</h1><div class="highlight"><pre>
+<span></span><span class="kn">import</span> <span class="nn">math</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">from</span> <span class="nn">scipy</span> <span class="kn">import</span> <span class="n">integrate</span>  <span class="c1"># optimize, stats</span>
+<span class="kn">from</span> <span class="nn">dataclasses</span> <span class="kn">import</span> <span class="n">dataclass</span><span class="p">,</span> <span class="n">field</span>
+<span class="kn">from</span> <span class="nn">..common.math.numerical</span> <span class="kn">import</span> <span class="n">xy_with_endpoints</span>
+<span class="kn">from</span> <span class="nn">..common.io.output</span> <span class="kn">import</span> <span class="n">OutputTable</span><span class="p">,</span> <span class="n">OutputExtended</span>
+<span class="kn">from</span> <span class="nn">..common.io.lists_and_dicts_and_pandas_etc</span> <span class="kn">import</span> <span class="n">convert_dict_to_quantity_value</span>
+<span class="kn">from</span> <span class="nn">cached_property</span> <span class="kn">import</span> <span class="n">cached_property</span> <span class="c1"># https://pypi.org/project/cached-property/</span>
+
+
+<div class="viewcode-block" id="NigamJennings"><a class="viewcode-back" href="../../../tools/tools.html#streng.tools.seismic_motion.NigamJennings">[docs]</a><span class="k">def</span> <span class="nf">NigamJennings</span><span class="p">(</span><span class="n">acc</span><span class="p">,</span> <span class="n">periods</span><span class="p">,</span> <span class="n">damping</span><span class="p">,</span> <span class="n">dt</span><span class="p">):</span>
+    <span class="n">add_PGA</span> <span class="o">=</span> <span class="kc">False</span>
+    <span class="k">if</span> <span class="n">periods</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">periods</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">delete</span><span class="p">(</span><span class="n">periods</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+        <span class="n">add_PGA</span> <span class="o">=</span> <span class="kc">True</span>
+
+    <span class="n">num_steps</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">acc</span><span class="p">)</span>
+    <span class="n">num_per</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">periods</span><span class="p">)</span>
+    <span class="n">omega</span> <span class="o">=</span> <span class="p">(</span><span class="mf">2.</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">)</span> <span class="o">/</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">periods</span><span class="p">)</span>
+    <span class="n">omega2</span> <span class="o">=</span> <span class="n">omega</span> <span class="o">**</span> <span class="mf">2.</span>
+    <span class="n">omega3</span> <span class="o">=</span> <span class="n">omega</span> <span class="o">**</span> <span class="mf">3.</span>
+    <span class="n">omega_d</span> <span class="o">=</span> <span class="n">omega</span> <span class="o">*</span> <span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mf">1.0</span> <span class="o">-</span> <span class="p">(</span><span class="n">damping</span> <span class="o">**</span> <span class="mf">2.</span><span class="p">))</span>
+    <span class="n">const</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;f1&#39;</span><span class="p">:</span> <span class="p">(</span><span class="mf">2.0</span> <span class="o">*</span> <span class="n">damping</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="n">omega3</span> <span class="o">*</span> <span class="n">dt</span><span class="p">),</span>
+             <span class="s1">&#39;f2&#39;</span><span class="p">:</span> <span class="mf">1.0</span> <span class="o">/</span> <span class="n">omega2</span><span class="p">,</span>
+             <span class="s1">&#39;f3&#39;</span><span class="p">:</span> <span class="n">damping</span> <span class="o">*</span> <span class="n">omega</span><span class="p">,</span>
+             <span class="s1">&#39;f4&#39;</span><span class="p">:</span> <span class="mf">1.0</span> <span class="o">/</span> <span class="n">omega_d</span><span class="p">}</span>
+    <span class="n">const</span><span class="p">[</span><span class="s1">&#39;f5&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">const</span><span class="p">[</span><span class="s1">&#39;f3&#39;</span><span class="p">]</span> <span class="o">*</span> <span class="n">const</span><span class="p">[</span><span class="s1">&#39;f4&#39;</span><span class="p">]</span>
+    <span class="n">const</span><span class="p">[</span><span class="s1">&#39;f6&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mf">2.0</span> <span class="o">*</span> <span class="n">const</span><span class="p">[</span><span class="s1">&#39;f3&#39;</span><span class="p">]</span>
+    <span class="n">const</span><span class="p">[</span><span class="s1">&#39;e&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="n">const</span><span class="p">[</span><span class="s1">&#39;f3&#39;</span><span class="p">]</span> <span class="o">*</span> <span class="n">dt</span><span class="p">)</span>
+    <span class="n">const</span><span class="p">[</span><span class="s1">&#39;s&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">omega_d</span> <span class="o">*</span> <span class="n">dt</span><span class="p">)</span>
+    <span class="n">const</span><span class="p">[</span><span class="s1">&#39;c&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">omega_d</span> <span class="o">*</span> <span class="n">dt</span><span class="p">)</span>
+    <span class="n">const</span><span class="p">[</span><span class="s1">&#39;g1&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">const</span><span class="p">[</span><span class="s1">&#39;e&#39;</span><span class="p">]</span> <span class="o">*</span> <span class="n">const</span><span class="p">[</span><span class="s1">&#39;s&#39;</span><span class="p">]</span>
+    <span class="n">const</span><span class="p">[</span><span class="s1">&#39;g2&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">const</span><span class="p">[</span><span class="s1">&#39;e&#39;</span><span class="p">]</span> <span class="o">*</span> <span class="n">const</span><span class="p">[</span><span class="s1">&#39;c&#39;</span><span class="p">]</span>
+    <span class="n">const</span><span class="p">[</span><span class="s1">&#39;h1&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">omega_d</span> <span class="o">*</span> <span class="n">const</span><span class="p">[</span><span class="s1">&#39;g2&#39;</span><span class="p">])</span> <span class="o">-</span> <span class="p">(</span><span class="n">const</span><span class="p">[</span><span class="s1">&#39;f3&#39;</span><span class="p">]</span> <span class="o">*</span> <span class="n">const</span><span class="p">[</span><span class="s1">&#39;g1&#39;</span><span class="p">])</span>
+    <span class="n">const</span><span class="p">[</span><span class="s1">&#39;h2&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">omega_d</span> <span class="o">*</span> <span class="n">const</span><span class="p">[</span><span class="s1">&#39;g1&#39;</span><span class="p">])</span> <span class="o">+</span> <span class="p">(</span><span class="n">const</span><span class="p">[</span><span class="s1">&#39;f3&#39;</span><span class="p">]</span> <span class="o">*</span> <span class="n">const</span><span class="p">[</span><span class="s1">&#39;g2&#39;</span><span class="p">])</span>
+    <span class="n">x_a</span><span class="p">,</span> <span class="n">x_v</span><span class="p">,</span> <span class="n">x_d</span> <span class="o">=</span> <span class="n">calculate_time_series</span><span class="p">(</span><span class="n">num_steps</span><span class="p">,</span> <span class="n">num_per</span><span class="p">,</span> <span class="n">acc</span><span class="p">,</span> <span class="n">const</span><span class="p">,</span> <span class="n">omega2</span><span class="p">,</span> <span class="n">dt</span><span class="p">)</span>
+
+    <span class="n">spectrum</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;Sa&#39;</span><span class="p">:</span> <span class="kc">None</span><span class="p">,</span>
+                <span class="s1">&#39;Sv&#39;</span><span class="p">:</span> <span class="kc">None</span><span class="p">,</span>
+                <span class="s1">&#39;Sd&#39;</span><span class="p">:</span> <span class="kc">None</span><span class="p">,</span>
+                <span class="s1">&#39;T&#39;</span><span class="p">:</span> <span class="kc">None</span><span class="p">,</span>
+                <span class="s1">&#39;PSv&#39;</span><span class="p">:</span> <span class="kc">None</span><span class="p">,</span>
+                <span class="s1">&#39;PSa&#39;</span><span class="p">:</span> <span class="kc">None</span><span class="p">,</span>
+                <span class="s1">&#39;ASI&#39;</span><span class="p">:</span> <span class="kc">None</span><span class="p">,</span>
+                <span class="s1">&#39;VSI&#39;</span><span class="p">:</span> <span class="kc">None</span><span class="p">,</span>
+                <span class="s1">&#39;HI&#39;</span><span class="p">:</span> <span class="kc">None</span><span class="p">,</span>
+                <span class="s1">&#39;Tp&#39;</span><span class="p">:</span> <span class="kc">None</span><span class="p">}</span>
+
+    <span class="n">spectrum</span><span class="p">[</span><span class="s1">&#39;Sa&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">fabs</span><span class="p">(</span><span class="n">x_a</span><span class="p">),</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+    <span class="n">spectrum</span><span class="p">[</span><span class="s1">&#39;Sv&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">fabs</span><span class="p">(</span><span class="n">x_v</span><span class="p">),</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+    <span class="n">spectrum</span><span class="p">[</span><span class="s1">&#39;Sd&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">fabs</span><span class="p">(</span><span class="n">x_d</span><span class="p">),</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+    <span class="n">spectrum</span><span class="p">[</span><span class="s1">&#39;PSv&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">spectrum</span><span class="p">[</span><span class="s1">&#39;Sd&#39;</span><span class="p">]</span> <span class="o">*</span> <span class="n">omega</span>
+    <span class="n">spectrum</span><span class="p">[</span><span class="s1">&#39;PSa&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">spectrum</span><span class="p">[</span><span class="s1">&#39;Sd&#39;</span><span class="p">]</span> <span class="o">*</span> <span class="n">omega2</span>
+    <span class="n">spectrum</span><span class="p">[</span><span class="s1">&#39;T&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">periods</span>
+
+    <span class="k">if</span> <span class="n">add_PGA</span><span class="p">:</span>
+        <span class="n">pga</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">fabs</span><span class="p">(</span><span class="n">acc</span><span class="p">))</span>
+        <span class="n">periods</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">periods</span><span class="p">)</span>
+        <span class="n">spectrum</span><span class="p">[</span><span class="s1">&#39;Sa&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">pga</span><span class="p">,</span> <span class="n">spectrum</span><span class="p">[</span><span class="s1">&#39;Sa&#39;</span><span class="p">])</span>
+        <span class="n">spectrum</span><span class="p">[</span><span class="s1">&#39;Sv&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">spectrum</span><span class="p">[</span><span class="s1">&#39;Sv&#39;</span><span class="p">])</span>
+        <span class="n">spectrum</span><span class="p">[</span><span class="s1">&#39;Sd&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">spectrum</span><span class="p">[</span><span class="s1">&#39;Sd&#39;</span><span class="p">])</span>
+        <span class="n">spectrum</span><span class="p">[</span><span class="s1">&#39;PSv&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">spectrum</span><span class="p">[</span><span class="s1">&#39;PSv&#39;</span><span class="p">])</span>
+        <span class="n">spectrum</span><span class="p">[</span><span class="s1">&#39;PSa&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">pga</span><span class="p">,</span> <span class="n">spectrum</span><span class="p">[</span><span class="s1">&#39;PSa&#39;</span><span class="p">])</span>
+        <span class="n">spectrum</span><span class="p">[</span><span class="s1">&#39;T&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">periods</span>
+
+    <span class="n">xy_ASI</span> <span class="o">=</span> <span class="n">xy_with_endpoints</span><span class="p">(</span><span class="n">spectrum</span><span class="p">[</span><span class="s1">&#39;T&#39;</span><span class="p">],</span> <span class="n">spectrum</span><span class="p">[</span><span class="s1">&#39;Sa&#39;</span><span class="p">],</span> <span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">)</span>
+    <span class="n">spectrum</span><span class="p">[</span><span class="s1">&#39;ASI&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">integrate</span><span class="o">.</span><span class="n">trapz</span><span class="p">(</span><span class="n">xy_ASI</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">xy_ASI</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+
+    <span class="n">xy_VSI</span> <span class="o">=</span> <span class="n">xy_with_endpoints</span><span class="p">(</span><span class="n">spectrum</span><span class="p">[</span><span class="s1">&#39;T&#39;</span><span class="p">],</span> <span class="n">spectrum</span><span class="p">[</span><span class="s1">&#39;Sv&#39;</span><span class="p">],</span> <span class="mf">0.1</span><span class="p">,</span> <span class="mf">2.5</span><span class="p">)</span>
+    <span class="n">spectrum</span><span class="p">[</span><span class="s1">&#39;VSI&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">integrate</span><span class="o">.</span><span class="n">trapz</span><span class="p">(</span><span class="n">xy_VSI</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">xy_VSI</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+
+    <span class="n">xy_HI</span> <span class="o">=</span> <span class="n">xy_with_endpoints</span><span class="p">(</span><span class="n">spectrum</span><span class="p">[</span><span class="s1">&#39;T&#39;</span><span class="p">],</span> <span class="n">spectrum</span><span class="p">[</span><span class="s1">&#39;PSv&#39;</span><span class="p">],</span> <span class="mf">0.1</span><span class="p">,</span> <span class="mf">2.5</span><span class="p">)</span>
+    <span class="n">spectrum</span><span class="p">[</span><span class="s1">&#39;HI&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">integrate</span><span class="o">.</span><span class="n">trapz</span><span class="p">(</span><span class="n">xy_HI</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">xy_HI</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+
+    <span class="n">spectrum</span><span class="p">[</span><span class="s1">&#39;Tp&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="nb">float</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">spectrum</span><span class="p">[</span><span class="s1">&#39;Sa&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="nb">max</span><span class="p">(</span><span class="n">spectrum</span><span class="p">[</span><span class="s1">&#39;Sa&#39;</span><span class="p">]))[</span><span class="mi">0</span><span class="p">])</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="n">periods</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="n">periods</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+
+    <span class="k">return</span> <span class="n">spectrum</span></div>
+
+
+<div class="viewcode-block" id="calculate_time_series"><a class="viewcode-back" href="../../../tools/tools.html#streng.tools.seismic_motion.calculate_time_series">[docs]</a><span class="k">def</span> <span class="nf">calculate_time_series</span><span class="p">(</span><span class="n">num_steps</span><span class="p">,</span> <span class="n">num_per</span><span class="p">,</span> <span class="n">acc</span><span class="p">,</span> <span class="n">const</span><span class="p">,</span> <span class="n">omega2</span><span class="p">,</span> <span class="n">dt</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Calculates the acceleration, velocities and displacement time series for the SDOF oscillator</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        num_steps (int): number of input motion steps</span>
+<span class="sd">        num_per (int): number of periods where values are calculated</span>
+<span class="sd">        acc (np.array): acceleration values</span>
+<span class="sd">        const (dict): constants of the algorithm</span>
+<span class="sd">        omega2 (np.array): squared circular frequency</span>
+<span class="sd">        dt (float): time increment</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        tuple: a tuple containing x_a, x_v, x_d</span>
+<span class="sd">            - x_a = Acceleration time series</span>
+<span class="sd">            - x_v = Velocity time series</span>
+<span class="sd">            - x_d = Displacement time series</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="n">x_d</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">([</span><span class="n">num_steps</span> <span class="o">-</span> <span class="mi">1</span><span class="p">,</span> <span class="n">num_per</span><span class="p">],</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">float</span><span class="p">)</span>
+    <span class="n">x_v</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros_like</span><span class="p">(</span><span class="n">x_d</span><span class="p">)</span>
+    <span class="n">x_a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros_like</span><span class="p">(</span><span class="n">x_d</span><span class="p">)</span>
+
+    <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">num_steps</span> <span class="o">-</span> <span class="mi">1</span><span class="p">):</span>
+        <span class="n">dug</span> <span class="o">=</span> <span class="n">acc</span><span class="p">[</span><span class="n">k</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="n">acc</span><span class="p">[</span><span class="n">k</span><span class="p">]</span>
+        <span class="n">z_1</span> <span class="o">=</span> <span class="n">const</span><span class="p">[</span><span class="s1">&#39;f2&#39;</span><span class="p">]</span> <span class="o">*</span> <span class="n">dug</span>
+        <span class="n">z_2</span> <span class="o">=</span> <span class="n">const</span><span class="p">[</span><span class="s1">&#39;f2&#39;</span><span class="p">]</span> <span class="o">*</span> <span class="n">acc</span><span class="p">[</span><span class="n">k</span><span class="p">]</span>
+        <span class="n">z_3</span> <span class="o">=</span> <span class="n">const</span><span class="p">[</span><span class="s1">&#39;f1&#39;</span><span class="p">]</span> <span class="o">*</span> <span class="n">dug</span>
+        <span class="n">z_4</span> <span class="o">=</span> <span class="n">z_1</span> <span class="o">/</span> <span class="n">dt</span>
+        <span class="k">if</span> <span class="n">k</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="n">b_val</span> <span class="o">=</span> <span class="n">z_2</span> <span class="o">-</span> <span class="n">z_3</span>
+            <span class="n">a_val</span> <span class="o">=</span> <span class="p">(</span><span class="n">const</span><span class="p">[</span><span class="s1">&#39;f5&#39;</span><span class="p">]</span> <span class="o">*</span> <span class="n">b_val</span><span class="p">)</span> <span class="o">+</span> <span class="p">(</span><span class="n">const</span><span class="p">[</span><span class="s1">&#39;f4&#39;</span><span class="p">]</span> <span class="o">*</span> <span class="n">z_4</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">b_val</span> <span class="o">=</span> <span class="n">x_d</span><span class="p">[</span><span class="n">k</span> <span class="o">-</span> <span class="mi">1</span><span class="p">,</span> <span class="p">:]</span> <span class="o">+</span> <span class="n">z_2</span> <span class="o">-</span> <span class="n">z_3</span>
+            <span class="n">a_val</span> <span class="o">=</span> <span class="p">(</span><span class="n">const</span><span class="p">[</span><span class="s1">&#39;f4&#39;</span><span class="p">]</span> <span class="o">*</span> <span class="n">x_v</span><span class="p">[</span><span class="n">k</span> <span class="o">-</span> <span class="mi">1</span><span class="p">,</span> <span class="p">:])</span> <span class="o">+</span> \
+                    <span class="p">(</span><span class="n">const</span><span class="p">[</span><span class="s1">&#39;f5&#39;</span><span class="p">]</span> <span class="o">*</span> <span class="n">b_val</span><span class="p">)</span> <span class="o">+</span> <span class="p">(</span><span class="n">const</span><span class="p">[</span><span class="s1">&#39;f4&#39;</span><span class="p">]</span> <span class="o">*</span> <span class="n">z_4</span><span class="p">)</span>
+
+        <span class="n">x_d</span><span class="p">[</span><span class="n">k</span><span class="p">,</span> <span class="p">:]</span> <span class="o">=</span> <span class="p">(</span><span class="n">a_val</span> <span class="o">*</span> <span class="n">const</span><span class="p">[</span><span class="s1">&#39;g1&#39;</span><span class="p">])</span> <span class="o">+</span> <span class="p">(</span><span class="n">b_val</span> <span class="o">*</span> <span class="n">const</span><span class="p">[</span><span class="s1">&#39;g2&#39;</span><span class="p">])</span> <span class="o">+</span> \
+                    <span class="n">z_3</span> <span class="o">-</span> <span class="n">z_2</span> <span class="o">-</span> <span class="n">z_1</span>
+        <span class="n">x_v</span><span class="p">[</span><span class="n">k</span><span class="p">,</span> <span class="p">:]</span> <span class="o">=</span> <span class="p">(</span><span class="n">a_val</span> <span class="o">*</span> <span class="n">const</span><span class="p">[</span><span class="s1">&#39;h1&#39;</span><span class="p">])</span> <span class="o">-</span> <span class="p">(</span><span class="n">b_val</span> <span class="o">*</span> <span class="n">const</span><span class="p">[</span><span class="s1">&#39;h2&#39;</span><span class="p">])</span> <span class="o">-</span> <span class="n">z_4</span>
+        <span class="n">x_a</span><span class="p">[</span><span class="n">k</span><span class="p">,</span> <span class="p">:]</span> <span class="o">=</span> <span class="p">(</span><span class="o">-</span><span class="n">const</span><span class="p">[</span><span class="s1">&#39;f6&#39;</span><span class="p">]</span> <span class="o">*</span> <span class="n">x_v</span><span class="p">[</span><span class="n">k</span><span class="p">,</span> <span class="p">:])</span> <span class="o">-</span> <span class="p">(</span><span class="n">omega2</span> <span class="o">*</span> <span class="n">x_d</span><span class="p">[</span><span class="n">k</span><span class="p">,</span> <span class="p">:])</span>
+
+    <span class="k">return</span> <span class="n">x_a</span><span class="p">,</span> <span class="n">x_v</span><span class="p">,</span> <span class="n">x_d</span></div>
+
+<div class="viewcode-block" id="Accelerogram"><a class="viewcode-back" href="../../../tools/tools.html#streng.tools.seismic_motion.Accelerogram">[docs]</a><span class="nd">@dataclass</span>
+<span class="k">class</span> <span class="nc">Accelerogram</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot; Acceleration record.</span>
+
+<span class="sd">    Gets acceleration values and dt and calculates several motion parameters.</span>
+
+<span class="sd">    Most properties are cached, there was no actual need for that since calculations do not really</span>
+<span class="sd">    take such a long time. Used the `cached-property package &lt;https://pypi.org/project/cached-property/&gt;`_.</span>
+
+<span class="sd">    .. uml::</span>
+
+<span class="sd">        class Record {</span>
+<span class="sd">        .. initialize attributes ..</span>
+<span class="sd">        + accelerations: np.array</span>
+<span class="sd">        + dt: float</span>
+<span class="sd">        .. cached properties ..</span>
+<span class="sd">        + steps</span>
+<span class="sd">        + time_total</span>
+<span class="sd">        + time</span>
+<span class="sd">        + velocities</span>
+<span class="sd">        + displacements</span>
+<span class="sd">        + props</span>
+<span class="sd">        + husid</span>
+<span class="sd">        + husid_norm</span>
+<span class="sd">        .. properties ..</span>
+<span class="sd">        + output</span>
+<span class="sd">        + plot_time_series</span>
+<span class="sd">        .. classmethods - cunstructors ..</span>
+<span class="sd">        + from_one_column_txt(filename, dt)</span>
+<span class="sd">        + from_multi_column_txt(filename, dt, skip_header=0, skip_footer=0)</span>
+<span class="sd">        + from_karakostas_acc(filename, direction)</span>
+<span class="sd">        .. methods ..</span>
+<span class="sd">        + significant_duration(start_percentage, end_percentage)</span>
+
+<span class="sd">        }</span>
+
+<span class="sd">    Attributes:</span>
+<span class="sd">        accelerations (np.array): an array with the acceleration values. Units should be m/sec2</span>
+<span class="sd">        dt (float): time increment</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">accelerations</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span>
+    <span class="n">dt</span><span class="p">:</span> <span class="nb">float</span>
+
+<div class="viewcode-block" id="Accelerogram.from_one_column_txt"><a class="viewcode-back" href="../../../tools/tools.html#streng.tools.seismic_motion.Accelerogram.from_one_column_txt">[docs]</a>    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">from_one_column_txt</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">filename</span><span class="p">,</span> <span class="n">dt</span><span class="p">,</span> <span class="n">scale</span><span class="o">=</span><span class="mf">1.0</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;constructor that loads values from a single column text file&quot;&quot;&quot;</span>
+        <span class="n">accel</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">loadtxt</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span>
+        <span class="k">return</span> <span class="bp">cls</span><span class="p">(</span><span class="n">dt</span><span class="o">=</span><span class="n">dt</span><span class="p">,</span> <span class="n">accelerations</span><span class="o">=</span><span class="n">accel</span><span class="o">*</span><span class="n">scale</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="Accelerogram.from_multi_column_txt"><a class="viewcode-back" href="../../../tools/tools.html#streng.tools.seismic_motion.Accelerogram.from_multi_column_txt">[docs]</a>    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">from_multi_column_txt</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">filename</span><span class="p">,</span> <span class="n">dt</span><span class="p">,</span> <span class="n">scale</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">skip_header</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">skip_footer</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;constructor that loads values from a multicolumn text file</span>
+
+<span class="sd">            Args:</span>
+<span class="sd">                filename: file to load</span>
+<span class="sd">                dt: time increment</span>
+<span class="sd">                skip_header (int): number of lines to skip at the beginning of the file</span>
+<span class="sd">                skip_footer (int): number of lines to skip at the end of the file</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">accel</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">genfromtxt</span><span class="p">(</span><span class="n">fname</span><span class="o">=</span><span class="n">filename</span><span class="p">,</span> <span class="n">skip_header</span><span class="o">=</span><span class="n">skip_header</span><span class="p">,</span> <span class="n">skip_footer</span><span class="o">=</span><span class="n">skip_footer</span><span class="p">)</span>
+        <span class="k">return</span> <span class="bp">cls</span><span class="p">(</span><span class="n">dt</span><span class="o">=</span><span class="n">dt</span><span class="p">,</span> <span class="n">accelerations</span><span class="o">=</span><span class="n">accel</span><span class="o">.</span><span class="n">flatten</span><span class="p">()</span><span class="o">*</span><span class="n">scale</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="Accelerogram.from_athanassiadou_acc"><a class="viewcode-back" href="../../../tools/tools.html#streng.tools.seismic_motion.Accelerogram.from_athanassiadou_acc">[docs]</a>    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">from_athanassiadou_acc</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">filename</span><span class="p">,</span> <span class="n">direction</span><span class="p">,</span> <span class="n">scale</span><span class="o">=</span><span class="mf">0.01</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;direction = &#39;L&#39; or &#39;T&#39; or &#39;V&#39;&quot;&quot;&quot;</span>
+        <span class="n">f_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="sa">r</span><span class="s2">&quot;\s+&quot;</span><span class="p">)</span>
+        <span class="n">dt</span> <span class="o">=</span> <span class="n">f_df</span><span class="p">[</span><span class="s1">&#39;Time(s)&#39;</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="n">f_df</span><span class="p">[</span><span class="s1">&#39;Time(s)&#39;</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
+        <span class="n">col_name</span> <span class="o">=</span> <span class="s1">&#39;Acc&#39;</span> <span class="o">+</span> <span class="n">direction</span> <span class="o">+</span> <span class="s1">&#39;(cm/s2)&#39;</span>
+        <span class="n">accel</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">f_df</span><span class="p">[</span><span class="n">col_name</span><span class="p">]</span><span class="o">.</span><span class="n">tolist</span><span class="p">())</span>
+        <span class="k">return</span> <span class="bp">cls</span><span class="p">(</span><span class="n">dt</span><span class="o">=</span><span class="n">dt</span><span class="p">,</span> <span class="n">accelerations</span><span class="o">=</span><span class="n">accel</span><span class="o">*</span><span class="n">scale</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="Accelerogram.significant_duration"><a class="viewcode-back" href="../../../tools/tools.html#streng.tools.seismic_motion.Accelerogram.significant_duration">[docs]</a>    <span class="k">def</span> <span class="nf">significant_duration</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">start_percentage</span><span class="p">,</span> <span class="n">end_percentage</span><span class="p">):</span>
+        <span class="c1"># self.props[&#39;T_Arias5_95&#39;] = self.significant_duration(0.05, 0.95)</span>
+        <span class="n">t_start</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">interp</span><span class="p">(</span><span class="n">start_percentage</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">husid_norm</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">time</span><span class="p">))</span>
+        <span class="n">t_end</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">interp</span><span class="p">(</span><span class="n">end_percentage</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">husid_norm</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">time</span><span class="p">))</span>
+        <span class="k">return</span> <span class="n">t_end</span> <span class="o">-</span> <span class="n">t_start</span></div>
+
+    <span class="k">def</span> <span class="nf">get_spectra</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">damping</span><span class="p">,</span> <span class="n">startT</span><span class="o">=</span><span class="mf">0.</span><span class="p">,</span> <span class="n">endT</span><span class="o">=</span><span class="mf">4.</span><span class="p">,</span> <span class="n">noTs</span><span class="o">=</span><span class="mi">401</span><span class="p">):</span>
+        <span class="n">_spec</span> <span class="o">=</span> <span class="n">Spectra</span><span class="p">(</span><span class="n">accel</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">accelerations</span><span class="p">,</span>
+                        <span class="n">dt</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">dt</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">_spec</span><span class="o">.</span><span class="n">get_spectra</span><span class="p">(</span><span class="n">damping</span><span class="p">,</span> <span class="n">startT</span><span class="p">,</span> <span class="n">endT</span><span class="p">,</span> <span class="n">noTs</span><span class="p">)</span>
+
+<div class="viewcode-block" id="Accelerogram.show_parameters"><a class="viewcode-back" href="../../../tools/tools.html#streng.tools.seismic_motion.Accelerogram.show_parameters">[docs]</a>    <span class="k">def</span> <span class="nf">show_parameters</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">paramlog</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="n">paramlog</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;PGA = </span><span class="si">{:.4f}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">props</span><span class="p">[</span><span class="s1">&#39;PGA&#39;</span><span class="p">]))</span>
+        <span class="n">paramlog</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;time for PGA = </span><span class="si">{:.4f}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">props</span><span class="p">[</span><span class="s1">&#39;timePGA&#39;</span><span class="p">]))</span>
+        <span class="n">paramlog</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;PGV = </span><span class="si">{:.4f}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">props</span><span class="p">[</span><span class="s1">&#39;PGV&#39;</span><span class="p">]))</span>
+        <span class="n">paramlog</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;time for PGV = </span><span class="si">{:.4f}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">props</span><span class="p">[</span><span class="s1">&#39;timePGV&#39;</span><span class="p">]))</span>
+        <span class="n">paramlog</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;PGD = </span><span class="si">{:.4f}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">props</span><span class="p">[</span><span class="s1">&#39;PGD&#39;</span><span class="p">]))</span>
+        <span class="n">paramlog</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;time for PGD = </span><span class="si">{:.4f}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">props</span><span class="p">[</span><span class="s1">&#39;timePGD&#39;</span><span class="p">]))</span>
+        <span class="n">paramlog</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;PGV/PGA = </span><span class="si">{:.4f}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">props</span><span class="p">[</span><span class="s1">&#39;PGVdivPGA&#39;</span><span class="p">]))</span>
+        <span class="n">paramlog</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;aRMS = </span><span class="si">{:.4f}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">props</span><span class="p">[</span><span class="s1">&#39;aRMS&#39;</span><span class="p">]))</span>
+        <span class="n">paramlog</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;vRMS = </span><span class="si">{:.4f}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">props</span><span class="p">[</span><span class="s1">&#39;vRMS&#39;</span><span class="p">]))</span>
+        <span class="n">paramlog</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;dRMS = </span><span class="si">{:.4f}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">props</span><span class="p">[</span><span class="s1">&#39;dRMS&#39;</span><span class="p">]))</span>
+        <span class="n">paramlog</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;Arias Intensity Ia = </span><span class="si">{:.4f}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">props</span><span class="p">[</span><span class="s1">&#39;Ia&#39;</span><span class="p">]))</span>
+        <span class="n">paramlog</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;Characteristic Intensity Ic = </span><span class="si">{:.4f}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">props</span><span class="p">[</span><span class="s1">&#39;Ic&#39;</span><span class="p">]))</span>
+        <span class="n">paramlog</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;Specific Energy Density SED = </span><span class="si">{:.4f}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">props</span><span class="p">[</span><span class="s1">&#39;SED&#39;</span><span class="p">]))</span>
+        <span class="n">paramlog</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;Cumulative Absolute Velocity CAV = </span><span class="si">{:.4f}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">props</span><span class="p">[</span><span class="s1">&#39;CAV&#39;</span><span class="p">]))</span>
+        <span class="c1"># paramlog.append(&#39;Significant duration (5-95% in Husid plot) = {:.4f}&#39;.format(self.props[&#39;T_Arias5_95&#39;]))</span>
+
+        <span class="k">return</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">paramlog</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="Accelerogram.clear_cached_properties"><a class="viewcode-back" href="../../../tools/tools.html#streng.tools.seismic_motion.Accelerogram.clear_cached_properties">[docs]</a>    <span class="k">def</span> <span class="nf">clear_cached_properties</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">del</span> <span class="bp">self</span><span class="o">.</span><span class="vm">__dict__</span><span class="p">[</span><span class="s1">&#39;steps&#39;</span><span class="p">]</span>
+        <span class="k">del</span> <span class="bp">self</span><span class="o">.</span><span class="vm">__dict__</span><span class="p">[</span><span class="s1">&#39;time_total&#39;</span><span class="p">]</span>
+        <span class="k">del</span> <span class="bp">self</span><span class="o">.</span><span class="vm">__dict__</span><span class="p">[</span><span class="s1">&#39;time&#39;</span><span class="p">]</span>
+        <span class="k">del</span> <span class="bp">self</span><span class="o">.</span><span class="vm">__dict__</span><span class="p">[</span><span class="s1">&#39;velocities&#39;</span><span class="p">]</span>
+        <span class="k">del</span> <span class="bp">self</span><span class="o">.</span><span class="vm">__dict__</span><span class="p">[</span><span class="s1">&#39;displacements&#39;</span><span class="p">]</span>
+        <span class="k">del</span> <span class="bp">self</span><span class="o">.</span><span class="vm">__dict__</span><span class="p">[</span><span class="s1">&#39;props&#39;</span><span class="p">]</span>
+        <span class="k">del</span> <span class="bp">self</span><span class="o">.</span><span class="vm">__dict__</span><span class="p">[</span><span class="s1">&#39;husid&#39;</span><span class="p">]</span>
+        <span class="k">del</span> <span class="bp">self</span><span class="o">.</span><span class="vm">__dict__</span><span class="p">[</span><span class="s1">&#39;husid_norm&#39;</span><span class="p">]</span></div>
+
+    <span class="nd">@cached_property</span>
+    <span class="k">def</span> <span class="nf">steps</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;int: number of steps&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">accelerations</span><span class="p">)</span>
+
+    <span class="nd">@cached_property</span>
+    <span class="k">def</span> <span class="nf">time_total</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;float: total time of the motion&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">steps</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">dt</span>
+
+    <span class="nd">@cached_property</span>
+    <span class="k">def</span> <span class="nf">time</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;np.array: time values&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mf">0.</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">time_total</span> <span class="o">+</span> <span class="mf">1e-6</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">dt</span><span class="p">)</span>
+
+    <span class="nd">@cached_property</span>
+    <span class="k">def</span> <span class="nf">velocities</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;np.array: velocity values&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">dt</span> <span class="o">*</span> <span class="n">integrate</span><span class="o">.</span><span class="n">cumtrapz</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">accelerations</span><span class="p">,</span> <span class="n">initial</span><span class="o">=</span><span class="mf">0.</span><span class="p">)</span>
+
+    <span class="nd">@cached_property</span>
+    <span class="k">def</span> <span class="nf">displacements</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;np.array: displacement values&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">dt</span> <span class="o">*</span> <span class="n">integrate</span><span class="o">.</span><span class="n">cumtrapz</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">velocities</span><span class="p">,</span> <span class="n">initial</span><span class="o">=</span><span class="mf">0.</span><span class="p">)</span>
+
+    <span class="nd">@cached_property</span>
+    <span class="k">def</span> <span class="nf">props</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;dict: a dictionary with several input motion parameters&quot;&quot;&quot;</span>
+        <span class="n">_ppp</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">()</span>
+
+        <span class="n">_ppp</span><span class="p">[</span><span class="s1">&#39;PGA&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">absolute</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">accelerations</span><span class="p">))</span>
+        <span class="n">_ppp</span><span class="p">[</span><span class="s1">&#39;PGV&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">absolute</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">velocities</span><span class="p">))</span>
+        <span class="n">_ppp</span><span class="p">[</span><span class="s1">&#39;PGD&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">absolute</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">displacements</span><span class="p">))</span>
+        <span class="n">_ppp</span><span class="p">[</span><span class="s1">&#39;timePGA&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">absolute</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">accelerations</span><span class="p">)</span> <span class="o">==</span> <span class="n">_ppp</span><span class="p">[</span><span class="s1">&#39;PGA&#39;</span><span class="p">])[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">])</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">dt</span>
+        <span class="n">_ppp</span><span class="p">[</span><span class="s1">&#39;timePGV&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">absolute</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">velocities</span><span class="p">)</span> <span class="o">==</span> <span class="n">_ppp</span><span class="p">[</span><span class="s1">&#39;PGV&#39;</span><span class="p">])[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">])</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">dt</span>
+        <span class="n">_ppp</span><span class="p">[</span><span class="s1">&#39;timePGD&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">absolute</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">displacements</span><span class="p">)</span> <span class="o">==</span> <span class="n">_ppp</span><span class="p">[</span><span class="s1">&#39;PGD&#39;</span><span class="p">])[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">])</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">dt</span>
+        <span class="n">_ppp</span><span class="p">[</span><span class="s1">&#39;PGVdivPGA&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">_ppp</span><span class="p">[</span><span class="s1">&#39;PGV&#39;</span><span class="p">]</span> <span class="o">/</span> <span class="n">_ppp</span><span class="p">[</span><span class="s1">&#39;PGA&#39;</span><span class="p">]</span>
+        <span class="n">_ppp</span><span class="p">[</span><span class="s1">&#39;aRMS&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">((</span><span class="mf">1.</span> <span class="o">/</span> <span class="bp">self</span><span class="o">.</span><span class="n">time_total</span><span class="p">)</span> <span class="o">*</span> <span class="n">integrate</span><span class="o">.</span><span class="n">trapz</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">accelerations</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">accelerations</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">time</span><span class="p">))</span>
+        <span class="n">_ppp</span><span class="p">[</span><span class="s1">&#39;vRMS&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span>
+            <span class="p">(</span><span class="mf">1.</span> <span class="o">/</span> <span class="bp">self</span><span class="o">.</span><span class="n">time_total</span><span class="p">)</span> <span class="o">*</span> <span class="n">integrate</span><span class="o">.</span><span class="n">trapz</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">velocities</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">velocities</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">time</span><span class="p">))</span>
+        <span class="n">_ppp</span><span class="p">[</span><span class="s1">&#39;dRMS&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span>
+            <span class="p">(</span><span class="mf">1.</span> <span class="o">/</span> <span class="bp">self</span><span class="o">.</span><span class="n">time_total</span><span class="p">)</span> <span class="o">*</span> <span class="n">integrate</span><span class="o">.</span><span class="n">trapz</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">displacements</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">displacements</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">time</span><span class="p">))</span>
+        <span class="n">_ppp</span><span class="p">[</span><span class="s1">&#39;Ia&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">pi</span> <span class="o">/</span> <span class="p">(</span><span class="mi">2</span> <span class="o">*</span> <span class="mf">9.81</span><span class="p">))</span> <span class="o">*</span> <span class="n">integrate</span><span class="o">.</span><span class="n">trapz</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">accelerations</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">accelerations</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">time</span><span class="p">)</span>
+        <span class="n">_ppp</span><span class="p">[</span><span class="s1">&#39;Ic&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">_ppp</span><span class="p">[</span><span class="s1">&#39;aRMS&#39;</span><span class="p">]</span> <span class="o">**</span> <span class="mf">1.5</span> <span class="o">*</span> <span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">time_total</span><span class="p">)</span>
+        <span class="n">_ppp</span><span class="p">[</span><span class="s1">&#39;SED&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">integrate</span><span class="o">.</span><span class="n">trapz</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">velocities</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">velocities</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">time</span><span class="p">)</span>
+        <span class="n">_ppp</span><span class="p">[</span><span class="s1">&#39;CAV&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">integrate</span><span class="o">.</span><span class="n">trapz</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">absolute</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">accelerations</span><span class="p">),</span> <span class="bp">self</span><span class="o">.</span><span class="n">time</span><span class="p">)</span>
+
+        <span class="k">return</span> <span class="n">_ppp</span>
+
+    <span class="nd">@cached_property</span>
+    <span class="k">def</span> <span class="nf">husid</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;np.array: values of the Husid plot&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">math</span><span class="o">.</span><span class="n">pi</span> <span class="o">/</span> <span class="p">(</span><span class="mi">2</span> <span class="o">*</span> <span class="mf">9.81</span><span class="p">)</span> <span class="o">*</span> <span class="n">integrate</span><span class="o">.</span><span class="n">cumtrapz</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">accelerations</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">accelerations</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">time</span><span class="p">,</span> <span class="n">initial</span><span class="o">=</span><span class="mf">0.</span><span class="p">)</span>
+
+    <span class="nd">@cached_property</span>
+    <span class="k">def</span> <span class="nf">husid_norm</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;np.array: values of the normalized Husid plot&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">husid</span> <span class="o">/</span> <span class="bp">self</span><span class="o">.</span><span class="n">props</span><span class="p">[</span><span class="s1">&#39;Ia&#39;</span><span class="p">]</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">output</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;OutputExtended: A collection of output tables and strings</span>
+
+<span class="sd">        Tables:</span>
+<span class="sd">            - RecordMotionProperties</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">_output</span> <span class="o">=</span> <span class="n">OutputExtended</span><span class="p">()</span>
+        <span class="n">_output</span><span class="o">.</span><span class="n">outputTables</span><span class="p">[</span><span class="s1">&#39;RecordMotionProperties&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">OutputTable</span><span class="p">()</span>
+        <span class="n">_output</span><span class="o">.</span><span class="n">outputTables</span><span class="p">[</span><span class="s1">&#39;RecordMotionProperties&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">data</span> <span class="o">=</span> <span class="n">convert_dict_to_quantity_value</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">props</span><span class="p">)</span>
+
+        <span class="k">return</span> <span class="n">_output</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">plot_time_series</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Plots acc, vel, dipl vs time&quot;&quot;&quot;</span>
+        <span class="n">f</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">14</span><span class="p">,</span> <span class="mi">12</span><span class="p">))</span>
+        <span class="n">ax</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">time</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">accelerations</span> <span class="o">/</span> <span class="mf">9.81</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;accelerations&quot;</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;blue&#39;</span><span class="p">)</span>
+        <span class="n">ax</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;acceleration (g)&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">)</span>
+        <span class="c1"># ax[0].set_xlabel(&#39;time (sec)&#39;, fontsize=12)</span>
+        <span class="n">ax</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">)</span>
+        <span class="n">ax</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">time</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">velocities</span> <span class="o">*</span> <span class="mi">100</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;velocities&quot;</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;green&#39;</span><span class="p">)</span>
+        <span class="n">ax</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;velocity (cm/sec)&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">)</span>
+        <span class="c1"># ax[1].set_xlabel(&#39;time (sec)&#39;, fontsize=12)</span>
+        <span class="n">ax</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">)</span>
+        <span class="n">ax</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">time</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">displacements</span> <span class="o">*</span> <span class="mi">100</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;displacements&quot;</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;red&#39;</span><span class="p">)</span>
+        <span class="n">ax</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;displacement (cm)&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">)</span>
+        <span class="n">ax</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;time (sec)&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">)</span>
+        <span class="n">ax</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">)</span>
+        <span class="n">fig</span> <span class="o">=</span> <span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">ax</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">fig</span>
+
+<div class="viewcode-block" id="Accelerogram.get_spectra"><a class="viewcode-back" href="../../../tools/tools.html#streng.tools.seismic_motion.Accelerogram.get_spectra">[docs]</a>    <span class="k">def</span> <span class="nf">get_spectra</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">damping</span><span class="p">,</span> <span class="n">startT</span><span class="o">=</span><span class="mf">0.</span><span class="p">,</span> <span class="n">endT</span><span class="o">=</span><span class="mf">4.</span><span class="p">,</span> <span class="n">noTs</span><span class="o">=</span><span class="mi">401</span><span class="p">):</span>
+        <span class="n">T</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="n">startT</span><span class="p">,</span> <span class="n">endT</span><span class="p">,</span> <span class="n">noTs</span><span class="p">)</span>
+        <span class="c1"># self.spectrum = NigamJennings(self.accelerations, T, damping, self.dt)</span>
+        <span class="k">return</span> <span class="n">NigamJennings</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">accelerations</span><span class="p">,</span> <span class="n">T</span><span class="p">,</span> <span class="n">damping</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">dt</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="Accelerogram.show_spectra_parameters"><a class="viewcode-back" href="../../../tools/tools.html#streng.tools.seismic_motion.Accelerogram.show_spectra_parameters">[docs]</a>    <span class="nd">@staticmethod</span>
+    <span class="k">def</span> <span class="nf">show_spectra_parameters</span><span class="p">(</span><span class="n">spectrum</span><span class="p">):</span>
+        <span class="n">paramlog</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="n">paramlog</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;Acceleration Spectrum Intensity: ASI = </span><span class="si">{:.4f}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">spectrum</span><span class="p">[</span><span class="s1">&#39;ASI&#39;</span><span class="p">]))</span>
+        <span class="n">paramlog</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;Velocity Spectrum Intensity: VSI = </span><span class="si">{:.4f}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">spectrum</span><span class="p">[</span><span class="s1">&#39;VSI&#39;</span><span class="p">]))</span>
+        <span class="n">paramlog</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;Housner Intensity: HI = </span><span class="si">{:.4f}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">spectrum</span><span class="p">[</span><span class="s1">&#39;HI&#39;</span><span class="p">]))</span>
+        <span class="n">paramlog</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;Predominant Period: Tp = </span><span class="si">{:.4f}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">spectrum</span><span class="p">[</span><span class="s1">&#39;Tp&#39;</span><span class="p">]))</span>
+
+        <span class="k">return</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">paramlog</span><span class="p">)</span></div></div>
+
+
+
+
+
+<div class="viewcode-block" id="Spectra"><a class="viewcode-back" href="../../../tools/tools.html#streng.tools.seismic_motion.Spectra">[docs]</a><span class="nd">@dataclass</span>
+<span class="k">class</span> <span class="nc">Spectra</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot; A class for calculating the response spectra using the Nigam Jennings approach.</span>
+<span class="sd">    Adopted code found at the</span>
+<span class="sd">    `The GEMScienceTools - Risk Modellers Toolkit (RMTK) &lt;https://github.com/GEMScienceTools/rmtk&gt;`_.</span>
+
+<span class="sd">    .. uml::</span>
+
+<span class="sd">        class Record {</span>
+<span class="sd">        .. initialize attributes ..</span>
+<span class="sd">        + accelerations: np.array</span>
+<span class="sd">        + dt: float</span>
+
+<span class="sd">        .. classmethods ..</span>
+<span class="sd">        + calculate_time_series()</span>
+<span class="sd">        + NigamJennings()</span>
+
+<span class="sd">        .. staticmethods ..</span>
+<span class="sd">        + show_spectra_parameters</span>
+
+<span class="sd">        .. methods ..</span>
+<span class="sd">        + get_spectra</span>
+
+<span class="sd">        }</span>
+
+<span class="sd">    Attributes:</span>
+<span class="sd">        accelerations (np.array): an array with the acceleration values. Units should be m/sec2</span>
+<span class="sd">        dt (float): time increment</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">accel</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span>  <span class="c1"># = np.array([])</span>
+    <span class="n">dt</span><span class="p">:</span> <span class="nb">float</span>  <span class="c1"># = None</span>
+
+<div class="viewcode-block" id="Spectra.calculate_time_series"><a class="viewcode-back" href="../../../tools/tools.html#streng.tools.seismic_motion.Spectra.calculate_time_series">[docs]</a>    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">calculate_time_series</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">num_steps</span><span class="p">,</span> <span class="n">num_per</span><span class="p">,</span> <span class="n">acc</span><span class="p">,</span> <span class="n">const</span><span class="p">,</span> <span class="n">omega2</span><span class="p">,</span> <span class="n">dt</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Calculates the acceleration, velocities and displacement time series for the SDOF oscillator</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            num_steps (int): number of input motion steps</span>
+<span class="sd">            num_per (int): number of periods where values are calculated</span>
+<span class="sd">            acc (np.array): acceleration values</span>
+<span class="sd">            const (dict): constants of the algorithm</span>
+<span class="sd">            omega2 (np.array): squared circular frequency</span>
+<span class="sd">            dt (float): time increment</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            tuple: a tuple containing x_a, x_v, x_d</span>
+<span class="sd">                - x_a = Acceleration time series</span>
+<span class="sd">                - x_v = Velocity time series</span>
+<span class="sd">                - x_d = Displacement time series</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="n">x_d</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">([</span><span class="n">num_steps</span> <span class="o">-</span> <span class="mi">1</span><span class="p">,</span> <span class="n">num_per</span><span class="p">],</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">float</span><span class="p">)</span>
+        <span class="n">x_v</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros_like</span><span class="p">(</span><span class="n">x_d</span><span class="p">)</span>
+        <span class="n">x_a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros_like</span><span class="p">(</span><span class="n">x_d</span><span class="p">)</span>
+
+        <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">num_steps</span> <span class="o">-</span> <span class="mi">1</span><span class="p">):</span>
+            <span class="n">dug</span> <span class="o">=</span> <span class="n">acc</span><span class="p">[</span><span class="n">k</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="n">acc</span><span class="p">[</span><span class="n">k</span><span class="p">]</span>
+            <span class="n">z_1</span> <span class="o">=</span> <span class="n">const</span><span class="p">[</span><span class="s1">&#39;f2&#39;</span><span class="p">]</span> <span class="o">*</span> <span class="n">dug</span>
+            <span class="n">z_2</span> <span class="o">=</span> <span class="n">const</span><span class="p">[</span><span class="s1">&#39;f2&#39;</span><span class="p">]</span> <span class="o">*</span> <span class="n">acc</span><span class="p">[</span><span class="n">k</span><span class="p">]</span>
+            <span class="n">z_3</span> <span class="o">=</span> <span class="n">const</span><span class="p">[</span><span class="s1">&#39;f1&#39;</span><span class="p">]</span> <span class="o">*</span> <span class="n">dug</span>
+            <span class="n">z_4</span> <span class="o">=</span> <span class="n">z_1</span> <span class="o">/</span> <span class="n">dt</span>
+            <span class="k">if</span> <span class="n">k</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+                <span class="n">b_val</span> <span class="o">=</span> <span class="n">z_2</span> <span class="o">-</span> <span class="n">z_3</span>
+                <span class="n">a_val</span> <span class="o">=</span> <span class="p">(</span><span class="n">const</span><span class="p">[</span><span class="s1">&#39;f5&#39;</span><span class="p">]</span> <span class="o">*</span> <span class="n">b_val</span><span class="p">)</span> <span class="o">+</span> <span class="p">(</span><span class="n">const</span><span class="p">[</span><span class="s1">&#39;f4&#39;</span><span class="p">]</span> <span class="o">*</span> <span class="n">z_4</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">b_val</span> <span class="o">=</span> <span class="n">x_d</span><span class="p">[</span><span class="n">k</span> <span class="o">-</span> <span class="mi">1</span><span class="p">,</span> <span class="p">:]</span> <span class="o">+</span> <span class="n">z_2</span> <span class="o">-</span> <span class="n">z_3</span>
+                <span class="n">a_val</span> <span class="o">=</span> <span class="p">(</span><span class="n">const</span><span class="p">[</span><span class="s1">&#39;f4&#39;</span><span class="p">]</span> <span class="o">*</span> <span class="n">x_v</span><span class="p">[</span><span class="n">k</span> <span class="o">-</span> <span class="mi">1</span><span class="p">,</span> <span class="p">:])</span> <span class="o">+</span> \
+                        <span class="p">(</span><span class="n">const</span><span class="p">[</span><span class="s1">&#39;f5&#39;</span><span class="p">]</span> <span class="o">*</span> <span class="n">b_val</span><span class="p">)</span> <span class="o">+</span> <span class="p">(</span><span class="n">const</span><span class="p">[</span><span class="s1">&#39;f4&#39;</span><span class="p">]</span> <span class="o">*</span> <span class="n">z_4</span><span class="p">)</span>
+
+            <span class="n">x_d</span><span class="p">[</span><span class="n">k</span><span class="p">,</span> <span class="p">:]</span> <span class="o">=</span> <span class="p">(</span><span class="n">a_val</span> <span class="o">*</span> <span class="n">const</span><span class="p">[</span><span class="s1">&#39;g1&#39;</span><span class="p">])</span> <span class="o">+</span> <span class="p">(</span><span class="n">b_val</span> <span class="o">*</span> <span class="n">const</span><span class="p">[</span><span class="s1">&#39;g2&#39;</span><span class="p">])</span> <span class="o">+</span> \
+                        <span class="n">z_3</span> <span class="o">-</span> <span class="n">z_2</span> <span class="o">-</span> <span class="n">z_1</span>
+            <span class="n">x_v</span><span class="p">[</span><span class="n">k</span><span class="p">,</span> <span class="p">:]</span> <span class="o">=</span> <span class="p">(</span><span class="n">a_val</span> <span class="o">*</span> <span class="n">const</span><span class="p">[</span><span class="s1">&#39;h1&#39;</span><span class="p">])</span> <span class="o">-</span> <span class="p">(</span><span class="n">b_val</span> <span class="o">*</span> <span class="n">const</span><span class="p">[</span><span class="s1">&#39;h2&#39;</span><span class="p">])</span> <span class="o">-</span> <span class="n">z_4</span>
+            <span class="n">x_a</span><span class="p">[</span><span class="n">k</span><span class="p">,</span> <span class="p">:]</span> <span class="o">=</span> <span class="p">(</span><span class="o">-</span><span class="n">const</span><span class="p">[</span><span class="s1">&#39;f6&#39;</span><span class="p">]</span> <span class="o">*</span> <span class="n">x_v</span><span class="p">[</span><span class="n">k</span><span class="p">,</span> <span class="p">:])</span> <span class="o">-</span> <span class="p">(</span><span class="n">omega2</span> <span class="o">*</span> <span class="n">x_d</span><span class="p">[</span><span class="n">k</span><span class="p">,</span> <span class="p">:])</span>
+
+        <span class="k">return</span> <span class="n">x_a</span><span class="p">,</span> <span class="n">x_v</span><span class="p">,</span> <span class="n">x_d</span></div>
+
+<div class="viewcode-block" id="Spectra.NigamJennings"><a class="viewcode-back" href="../../../tools/tools.html#streng.tools.seismic_motion.Spectra.NigamJennings">[docs]</a>    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">NigamJennings</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">acc</span><span class="p">,</span> <span class="n">periods</span><span class="p">,</span> <span class="n">damping</span><span class="p">,</span> <span class="n">dt</span><span class="p">):</span>
+        <span class="n">add_PGA</span> <span class="o">=</span> <span class="kc">False</span>
+        <span class="k">if</span> <span class="n">periods</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="n">periods</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">delete</span><span class="p">(</span><span class="n">periods</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+            <span class="n">add_PGA</span> <span class="o">=</span> <span class="kc">True</span>
+
+        <span class="n">num_steps</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">acc</span><span class="p">)</span>
+        <span class="n">num_per</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">periods</span><span class="p">)</span>
+        <span class="n">omega</span> <span class="o">=</span> <span class="p">(</span><span class="mf">2.</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">)</span> <span class="o">/</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">periods</span><span class="p">)</span>
+        <span class="n">omega2</span> <span class="o">=</span> <span class="n">omega</span> <span class="o">**</span> <span class="mf">2.</span>
+        <span class="n">omega3</span> <span class="o">=</span> <span class="n">omega</span> <span class="o">**</span> <span class="mf">3.</span>
+        <span class="n">omega_d</span> <span class="o">=</span> <span class="n">omega</span> <span class="o">*</span> <span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mf">1.0</span> <span class="o">-</span> <span class="p">(</span><span class="n">damping</span> <span class="o">**</span> <span class="mf">2.</span><span class="p">))</span>
+        <span class="n">const</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;f1&#39;</span><span class="p">:</span> <span class="p">(</span><span class="mf">2.0</span> <span class="o">*</span> <span class="n">damping</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="n">omega3</span> <span class="o">*</span> <span class="n">dt</span><span class="p">),</span>
+                 <span class="s1">&#39;f2&#39;</span><span class="p">:</span> <span class="mf">1.0</span> <span class="o">/</span> <span class="n">omega2</span><span class="p">,</span>
+                 <span class="s1">&#39;f3&#39;</span><span class="p">:</span> <span class="n">damping</span> <span class="o">*</span> <span class="n">omega</span><span class="p">,</span>
+                 <span class="s1">&#39;f4&#39;</span><span class="p">:</span> <span class="mf">1.0</span> <span class="o">/</span> <span class="n">omega_d</span><span class="p">}</span>
+        <span class="n">const</span><span class="p">[</span><span class="s1">&#39;f5&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">const</span><span class="p">[</span><span class="s1">&#39;f3&#39;</span><span class="p">]</span> <span class="o">*</span> <span class="n">const</span><span class="p">[</span><span class="s1">&#39;f4&#39;</span><span class="p">]</span>
+        <span class="n">const</span><span class="p">[</span><span class="s1">&#39;f6&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mf">2.0</span> <span class="o">*</span> <span class="n">const</span><span class="p">[</span><span class="s1">&#39;f3&#39;</span><span class="p">]</span>
+        <span class="n">const</span><span class="p">[</span><span class="s1">&#39;e&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="n">const</span><span class="p">[</span><span class="s1">&#39;f3&#39;</span><span class="p">]</span> <span class="o">*</span> <span class="n">dt</span><span class="p">)</span>
+        <span class="n">const</span><span class="p">[</span><span class="s1">&#39;s&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">omega_d</span> <span class="o">*</span> <span class="n">dt</span><span class="p">)</span>
+        <span class="n">const</span><span class="p">[</span><span class="s1">&#39;c&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">omega_d</span> <span class="o">*</span> <span class="n">dt</span><span class="p">)</span>
+        <span class="n">const</span><span class="p">[</span><span class="s1">&#39;g1&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">const</span><span class="p">[</span><span class="s1">&#39;e&#39;</span><span class="p">]</span> <span class="o">*</span> <span class="n">const</span><span class="p">[</span><span class="s1">&#39;s&#39;</span><span class="p">]</span>
+        <span class="n">const</span><span class="p">[</span><span class="s1">&#39;g2&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">const</span><span class="p">[</span><span class="s1">&#39;e&#39;</span><span class="p">]</span> <span class="o">*</span> <span class="n">const</span><span class="p">[</span><span class="s1">&#39;c&#39;</span><span class="p">]</span>
+        <span class="n">const</span><span class="p">[</span><span class="s1">&#39;h1&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">omega_d</span> <span class="o">*</span> <span class="n">const</span><span class="p">[</span><span class="s1">&#39;g2&#39;</span><span class="p">])</span> <span class="o">-</span> <span class="p">(</span><span class="n">const</span><span class="p">[</span><span class="s1">&#39;f3&#39;</span><span class="p">]</span> <span class="o">*</span> <span class="n">const</span><span class="p">[</span><span class="s1">&#39;g1&#39;</span><span class="p">])</span>
+        <span class="n">const</span><span class="p">[</span><span class="s1">&#39;h2&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">omega_d</span> <span class="o">*</span> <span class="n">const</span><span class="p">[</span><span class="s1">&#39;g1&#39;</span><span class="p">])</span> <span class="o">+</span> <span class="p">(</span><span class="n">const</span><span class="p">[</span><span class="s1">&#39;f3&#39;</span><span class="p">]</span> <span class="o">*</span> <span class="n">const</span><span class="p">[</span><span class="s1">&#39;g2&#39;</span><span class="p">])</span>
+        <span class="n">x_a</span><span class="p">,</span> <span class="n">x_v</span><span class="p">,</span> <span class="n">x_d</span> <span class="o">=</span> <span class="bp">cls</span><span class="o">.</span><span class="n">calculate_time_series</span><span class="p">(</span><span class="n">num_steps</span><span class="p">,</span> <span class="n">num_per</span><span class="p">,</span> <span class="n">acc</span><span class="p">,</span> <span class="n">const</span><span class="p">,</span> <span class="n">omega2</span><span class="p">,</span> <span class="n">dt</span><span class="p">)</span>
+
+        <span class="n">spectrum</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;Sa&#39;</span><span class="p">:</span> <span class="kc">None</span><span class="p">,</span>
+                    <span class="s1">&#39;Sv&#39;</span><span class="p">:</span> <span class="kc">None</span><span class="p">,</span>
+                    <span class="s1">&#39;Sd&#39;</span><span class="p">:</span> <span class="kc">None</span><span class="p">,</span>
+                    <span class="s1">&#39;T&#39;</span><span class="p">:</span> <span class="kc">None</span><span class="p">,</span>
+                    <span class="s1">&#39;PSv&#39;</span><span class="p">:</span> <span class="kc">None</span><span class="p">,</span>
+                    <span class="s1">&#39;PSa&#39;</span><span class="p">:</span> <span class="kc">None</span><span class="p">,</span>
+                    <span class="s1">&#39;ASI&#39;</span><span class="p">:</span> <span class="kc">None</span><span class="p">,</span>
+                    <span class="s1">&#39;VSI&#39;</span><span class="p">:</span> <span class="kc">None</span><span class="p">,</span>
+                    <span class="s1">&#39;HI&#39;</span><span class="p">:</span> <span class="kc">None</span><span class="p">,</span>
+                    <span class="s1">&#39;Tp&#39;</span><span class="p">:</span> <span class="kc">None</span><span class="p">}</span>
+
+        <span class="n">spectrum</span><span class="p">[</span><span class="s1">&#39;Sa&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">fabs</span><span class="p">(</span><span class="n">x_a</span><span class="p">),</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+        <span class="n">spectrum</span><span class="p">[</span><span class="s1">&#39;Sv&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">fabs</span><span class="p">(</span><span class="n">x_v</span><span class="p">),</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+        <span class="n">spectrum</span><span class="p">[</span><span class="s1">&#39;Sd&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">fabs</span><span class="p">(</span><span class="n">x_d</span><span class="p">),</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+        <span class="n">spectrum</span><span class="p">[</span><span class="s1">&#39;PSv&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">spectrum</span><span class="p">[</span><span class="s1">&#39;Sd&#39;</span><span class="p">]</span> <span class="o">*</span> <span class="n">omega</span>
+        <span class="n">spectrum</span><span class="p">[</span><span class="s1">&#39;PSa&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">spectrum</span><span class="p">[</span><span class="s1">&#39;Sd&#39;</span><span class="p">]</span> <span class="o">*</span> <span class="n">omega2</span>
+        <span class="n">spectrum</span><span class="p">[</span><span class="s1">&#39;T&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">periods</span>
+
+        <span class="k">if</span> <span class="n">add_PGA</span><span class="p">:</span>
+            <span class="n">pga</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">fabs</span><span class="p">(</span><span class="n">acc</span><span class="p">))</span>
+            <span class="n">periods</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">periods</span><span class="p">)</span>
+            <span class="n">spectrum</span><span class="p">[</span><span class="s1">&#39;Sa&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">pga</span><span class="p">,</span> <span class="n">spectrum</span><span class="p">[</span><span class="s1">&#39;Sa&#39;</span><span class="p">])</span>
+            <span class="n">spectrum</span><span class="p">[</span><span class="s1">&#39;Sv&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">spectrum</span><span class="p">[</span><span class="s1">&#39;Sv&#39;</span><span class="p">])</span>
+            <span class="n">spectrum</span><span class="p">[</span><span class="s1">&#39;Sd&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">spectrum</span><span class="p">[</span><span class="s1">&#39;Sd&#39;</span><span class="p">])</span>
+            <span class="n">spectrum</span><span class="p">[</span><span class="s1">&#39;PSv&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">spectrum</span><span class="p">[</span><span class="s1">&#39;PSv&#39;</span><span class="p">])</span>
+            <span class="n">spectrum</span><span class="p">[</span><span class="s1">&#39;PSa&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">pga</span><span class="p">,</span> <span class="n">spectrum</span><span class="p">[</span><span class="s1">&#39;PSa&#39;</span><span class="p">])</span>
+            <span class="n">spectrum</span><span class="p">[</span><span class="s1">&#39;T&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">periods</span>
+
+        <span class="n">xy_ASI</span> <span class="o">=</span> <span class="n">xy_with_endpoints</span><span class="p">(</span><span class="n">spectrum</span><span class="p">[</span><span class="s1">&#39;T&#39;</span><span class="p">],</span> <span class="n">spectrum</span><span class="p">[</span><span class="s1">&#39;Sa&#39;</span><span class="p">],</span> <span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">)</span>
+        <span class="n">spectrum</span><span class="p">[</span><span class="s1">&#39;ASI&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">integrate</span><span class="o">.</span><span class="n">trapz</span><span class="p">(</span><span class="n">xy_ASI</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">xy_ASI</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+
+        <span class="n">xy_VSI</span> <span class="o">=</span> <span class="n">xy_with_endpoints</span><span class="p">(</span><span class="n">spectrum</span><span class="p">[</span><span class="s1">&#39;T&#39;</span><span class="p">],</span> <span class="n">spectrum</span><span class="p">[</span><span class="s1">&#39;Sv&#39;</span><span class="p">],</span> <span class="mf">0.1</span><span class="p">,</span> <span class="mf">2.5</span><span class="p">)</span>
+        <span class="n">spectrum</span><span class="p">[</span><span class="s1">&#39;VSI&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">integrate</span><span class="o">.</span><span class="n">trapz</span><span class="p">(</span><span class="n">xy_VSI</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">xy_VSI</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+
+        <span class="n">xy_HI</span> <span class="o">=</span> <span class="n">xy_with_endpoints</span><span class="p">(</span><span class="n">spectrum</span><span class="p">[</span><span class="s1">&#39;T&#39;</span><span class="p">],</span> <span class="n">spectrum</span><span class="p">[</span><span class="s1">&#39;PSv&#39;</span><span class="p">],</span> <span class="mf">0.1</span><span class="p">,</span> <span class="mf">2.5</span><span class="p">)</span>
+        <span class="n">spectrum</span><span class="p">[</span><span class="s1">&#39;HI&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">integrate</span><span class="o">.</span><span class="n">trapz</span><span class="p">(</span><span class="n">xy_HI</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">xy_HI</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+
+        <span class="n">spectrum</span><span class="p">[</span><span class="s1">&#39;Tp&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="nb">float</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">spectrum</span><span class="p">[</span><span class="s1">&#39;Sa&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="nb">max</span><span class="p">(</span><span class="n">spectrum</span><span class="p">[</span><span class="s1">&#39;Sa&#39;</span><span class="p">]))[</span><span class="mi">0</span><span class="p">])</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="n">periods</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="n">periods</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+
+        <span class="k">return</span> <span class="n">spectrum</span></div>
+
+<div class="viewcode-block" id="Spectra.show_spectra_parameters"><a class="viewcode-back" href="../../../tools/tools.html#streng.tools.seismic_motion.Spectra.show_spectra_parameters">[docs]</a>    <span class="nd">@staticmethod</span>
+    <span class="k">def</span> <span class="nf">show_spectra_parameters</span><span class="p">(</span><span class="n">spectrum</span><span class="p">):</span>
+        <span class="n">paramlog</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="n">paramlog</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;Acceleration Spectrum Intensity: ASI = </span><span class="si">{:.4f}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">spectrum</span><span class="p">[</span><span class="s1">&#39;ASI&#39;</span><span class="p">]))</span>
+        <span class="n">paramlog</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;Velocity Spectrum Intensity: VSI = </span><span class="si">{:.4f}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">spectrum</span><span class="p">[</span><span class="s1">&#39;VSI&#39;</span><span class="p">]))</span>
+        <span class="n">paramlog</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;Housner Intensity: HI = </span><span class="si">{:.4f}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">spectrum</span><span class="p">[</span><span class="s1">&#39;HI&#39;</span><span class="p">]))</span>
+        <span class="n">paramlog</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;Predominant Period: Tp = </span><span class="si">{:.4f}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">spectrum</span><span class="p">[</span><span class="s1">&#39;Tp&#39;</span><span class="p">]))</span>
+
+        <span class="k">return</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">paramlog</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="Spectra.get_spectra"><a class="viewcode-back" href="../../../tools/tools.html#streng.tools.seismic_motion.Spectra.get_spectra">[docs]</a>    <span class="k">def</span> <span class="nf">get_spectra</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">damping</span><span class="p">,</span> <span class="n">startT</span><span class="o">=</span><span class="mf">0.</span><span class="p">,</span> <span class="n">endT</span><span class="o">=</span><span class="mf">4.</span><span class="p">,</span> <span class="n">noTs</span><span class="o">=</span><span class="mi">401</span><span class="p">):</span>
+        <span class="n">T</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="n">startT</span><span class="p">,</span> <span class="n">endT</span><span class="p">,</span> <span class="n">noTs</span><span class="p">)</span>
+        <span class="c1"># self.spectrum = NigamJennings(self.accelerations, T, damping, self.dt)</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">NigamJennings</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">accel</span><span class="p">,</span> <span class="n">T</span><span class="p">,</span> <span class="n">damping</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">dt</span><span class="p">)</span></div></div>
+
+
+
+</pre></div>
+
+           </div>
+           
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2020, panagop.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

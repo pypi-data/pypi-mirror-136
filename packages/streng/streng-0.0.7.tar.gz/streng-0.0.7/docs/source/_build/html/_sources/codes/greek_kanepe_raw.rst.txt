@@ -1,0 +1,35 @@
+*****************************
+KANEPE - Raw functions
+*****************************
+
+Chapter 7
+===========================
+
+rotation
+-----------------
+
+.. automodule:: streng.codes.greek.kanepe.raw.ch7.rotation
+    :members:
+    :undoc-members:
+
+
+Chapter 7a
+===========================
+
+Yield Point
+-----------------
+
+.. automodule:: streng.codes.greek.kanepe.raw.ch7a.yield_point
+    :members:
+    :undoc-members:
+
+
+Chapter 7c
+===========================
+
+Shear
+-----------------
+
+.. automodule:: streng.codes.greek.kanepe.raw.ch7c.shear
+    :members:
+    :undoc-members:

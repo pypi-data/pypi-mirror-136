@@ -1,0 +1,324 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Math &mdash; StrEng 0.0.1 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+
+  
+  
+    <link rel="shortcut icon" href="../_static/book_icon.png"/>
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="area_under_curve" href="../jupyters/common/math/numerical.html" />
+    <link rel="prev" title="Output classes" href="../jupyters/common/io/output.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> StrEng
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Files structure</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../pyfileslist.html">.py files structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../rstfileslist.html">.rst files structure</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Codes</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../codes/eurocodes.html">Eurocodes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../codes/greek.html">Greek Codes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../codes/usa.html">USA codes and guidelines</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Common</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="io.html">Input-Output</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Math</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#module-streng.common.math.numerical">numerical</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#jupyter-notebooks">Jupyter Notebooks</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../jupyters/common/math/numerical.html">area_under_curve</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../jupyters/common/math/numerical.html#intersection">intersection</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../jupyters/common/math/numerical.html#xy_with_endpoints">xy_with_endpoints</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">phd</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../phd/building_models.html">Building Models</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../phd/analyses.html">Input Motions</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Pre-Post-Processing</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../ppp/ppp.html">ppp</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Tools</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../tools/tools.html">Bilin</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/tools.html#module-streng.tools.seismic_motion">Seismic Motions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/tools.html#jupyters">Jupyters</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Excel udfs library</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../xwflib/xwflib.html">Main</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">StrEng</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Math</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/common/math.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  
+<style>
+/* CSS overrides for sphinx_rtd_theme */
+
+/* 24px margin */
+.nbinput.nblast.container,
+.nboutput.nblast.container {
+    margin-bottom: 19px;  /* padding has already 5px */
+}
+
+/* ... except between code cells! */
+.nblast.container + .nbinput.container {
+    margin-top: -19px;
+}
+
+.admonition > p:before {
+    margin-right: 4px;  /* make room for the exclamation icon */
+}
+
+/* Fix math alignment, see https://github.com/rtfd/sphinx_rtd_theme/pull/686 */
+.math {
+    text-align: unset;
+}
+</style>
+<div class="section" id="math">
+<h1>Math<a class="headerlink" href="#math" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="module-streng.common.math.numerical">
+<span id="numerical"></span><h2>numerical<a class="headerlink" href="#module-streng.common.math.numerical" title="Permalink to this headline">¶</a></h2>
+<p class="plantuml">
+<img src="../_images/plantuml-9301035635d926c5108a13929cfb25c4f3114ef0.svg" alt="class lists_and_dicts_and_pandas_etc &lt;&lt;(M,#FF7700)&gt;&gt; {
+.. functions ..
++ area_under_curve(x, y, x_start, x_end)
++ xy_with_endpoints(x, y, x_start, x_end)
++ intersection(x1, y1, x2, y2)
+- _rect_inter_inner(x1, x2)
+- _rectangle_intersection_(x1,y1,x2,y2)
+}"/></p>
+<dl class="py function">
+<dt id="streng.common.math.numerical.area_under_curve">
+<code class="sig-prename descclassname"><span class="pre">streng.common.math.numerical.</span></code><code class="sig-name descname"><span class="pre">area_under_curve</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">x_start</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">x_end</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/streng/common/math/numerical.html#area_under_curve"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#streng.common.math.numerical.area_under_curve" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="streng.common.math.numerical.distribute_integers">
+<code class="sig-prename descclassname"><span class="pre">streng.common.math.numerical.</span></code><code class="sig-name descname"><span class="pre">distribute_integers</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">oranges</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">plates</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/streng/common/math/numerical.html#distribute_integers"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#streng.common.math.numerical.distribute_integers" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="streng.common.math.numerical.intersection">
+<code class="sig-prename descclassname"><span class="pre">streng.common.math.numerical.</span></code><code class="sig-name descname"><span class="pre">intersection</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">x2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y2</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/streng/common/math/numerical.html#intersection"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#streng.common.math.numerical.intersection" title="Permalink to this definition">¶</a></dt>
+<dd><p>Copied from <a class="reference external" href="https://github.com/sukhbinder/intersection">https://github.com/sukhbinder/intersection</a></p>
+<p>INTERSECTIONS Intersections of curves.
+Computes the (x,y) locations where two curves intersect.  The curves
+can be broken with NaNs or have vertical segments.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="streng.common.math.numerical.xy_with_endpoints">
+<code class="sig-prename descclassname"><span class="pre">streng.common.math.numerical.</span></code><code class="sig-name descname"><span class="pre">xy_with_endpoints</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">x_start</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">x_end</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/streng/common/math/numerical.html#xy_with_endpoints"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#streng.common.math.numerical.xy_with_endpoints" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<div class="section" id="jupyter-notebooks">
+<h3>Jupyter Notebooks<a class="headerlink" href="#jupyter-notebooks" title="Permalink to this headline">¶</a></h3>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../jupyters/common/math/numerical.html">area_under_curve</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../jupyters/common/math/numerical.html#intersection">intersection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../jupyters/common/math/numerical.html#xy_with_endpoints">xy_with_endpoints</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="../jupyters/common/math/numerical.html" class="btn btn-neutral float-right" title="area_under_curve" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="../jupyters/common/io/output.html" class="btn btn-neutral float-left" title="Output classes" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2020, panagop.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

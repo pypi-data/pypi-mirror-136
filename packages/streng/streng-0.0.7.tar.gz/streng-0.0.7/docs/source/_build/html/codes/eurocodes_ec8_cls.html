@@ -1,0 +1,429 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Eurocode 8 - Classes &mdash; StrEng 0.0.1 documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../_static/book_icon.png"/>
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Eurocode 8 - Jupyter notebooks" href="eurocodes_ec8_jupyter.html" />
+    <link rel="prev" title="Eurocode 8 - Raw functions" href="eurocodes_ec8_raw.html" /> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> StrEng
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Codes</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="eurocodes.html">Eurocodes</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="eurocodes.html#eurocode-2">Eurocode 2</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="eurocodes.html#eurocode-8">Eurocode 8</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="eurocodes_ec8_raw.html">Raw functions</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Classes</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#seismic-action">seismic_action</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="eurocodes_ec8_jupyter.html">Jupyter notebooks</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="eurocodes.html#sample-h3">Sample H3</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="greek.html">Greek Codes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usa.html">USA codes and guidelines</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Common</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../common/io.html">io</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../common/math.html">math</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Tools</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../tools/tools.html">Various tools</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">StrEng</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="eurocodes.html">Eurocodes</a> &raquo;</li>
+        
+      <li>Eurocode 8 - Classes</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/codes/eurocodes_ec8_cls.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  
+<style>
+/* CSS overrides for sphinx_rtd_theme */
+
+/* 24px margin */
+.nbinput.nblast,
+.nboutput.nblast {
+    margin-bottom: 19px;  /* padding has already 5px */
+}
+
+/* ... except between code cells! */
+.nblast + .nbinput {
+    margin-top: -19px;
+}
+
+.admonition > p:before {
+    margin-right: 4px;  /* make room for the exclamation icon */
+}
+</style>
+<div class="section" id="eurocode-8-classes">
+<h1>Eurocode 8 - Classes<a class="headerlink" href="#eurocode-8-classes" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="seismic-action">
+<h2>seismic_action<a class="headerlink" href="#seismic-action" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="spectra">
+<h3>spectra<a class="headerlink" href="#spectra" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7</pre></div></td><td class="code"><div class="highlight"><pre><span></span>specEC8 = SpectraEc8(αgR=0.24,
+                     γI=1.2,
+                     ground_type = &#39;D&#39;,
+                     spectrum_type = 1,
+                     η=1.0,
+                     q=3.9,
+                     β=0.2)
+</pre></div>
+</td></tr></table></div>
+<dl class="class">
+<dt id="streng.codes.eurocodes.ec8.cls.seismic_action.spectra.SpectraEc8">
+<em class="property">class </em><code class="descclassname">streng.codes.eurocodes.ec8.cls.seismic_action.spectra.</code><code class="descname">SpectraEc8</code><span class="sig-paren">(</span><em>αgR: float</em>, <em>γI: float</em>, <em>ground_type: str</em>, <em>spectrum_type: int</em>, <em>η: float = 1.0</em>, <em>q: float = 1.0</em>, <em>β: float = 0.2</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/streng/codes/eurocodes/ec8/cls/seismic_action/spectra.html#SpectraEc8"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#streng.codes.eurocodes.ec8.cls.seismic_action.spectra.SpectraEc8" title="Permalink to this definition">¶</a></dt>
+<dd><p>Eurocode 8 response spectra</p>
+<p>If αgR values are given in g, displacements and velocities should be multiplied with 9.81</p>
+<dl class="attribute">
+<dt id="streng.codes.eurocodes.ec8.cls.seismic_action.spectra.SpectraEc8.αgR">
+<code class="descname">αgR</code><a class="headerlink" href="#streng.codes.eurocodes.ec8.cls.seismic_action.spectra.SpectraEc8.αgR" title="Permalink to this definition">¶</a></dt>
+<dd><p>reference peak ground acceleration on type A ground</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)">float</a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="streng.codes.eurocodes.ec8.cls.seismic_action.spectra.SpectraEc8.γI">
+<code class="descname">γI</code><a class="headerlink" href="#streng.codes.eurocodes.ec8.cls.seismic_action.spectra.SpectraEc8.γI" title="Permalink to this definition">¶</a></dt>
+<dd><p>importance factor</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)">float</a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="streng.codes.eurocodes.ec8.cls.seismic_action.spectra.SpectraEc8.ground_type">
+<code class="descname">ground_type</code><a class="headerlink" href="#streng.codes.eurocodes.ec8.cls.seismic_action.spectra.SpectraEc8.ground_type" title="Permalink to this definition">¶</a></dt>
+<dd><p>Ground type (A, B, C, D or E)</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.7)">str</a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="streng.codes.eurocodes.ec8.cls.seismic_action.spectra.SpectraEc8.spectrum_type">
+<code class="descname">spectrum_type</code><a class="headerlink" href="#streng.codes.eurocodes.ec8.cls.seismic_action.spectra.SpectraEc8.spectrum_type" title="Permalink to this definition">¶</a></dt>
+<dd><p>Spectrum type 1 or 2</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.7)">int</a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="streng.codes.eurocodes.ec8.cls.seismic_action.spectra.SpectraEc8.η">
+<code class="descname">η</code><a class="headerlink" href="#streng.codes.eurocodes.ec8.cls.seismic_action.spectra.SpectraEc8.η" title="Permalink to this definition">¶</a></dt>
+<dd><p>value of the damping correction factor</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)">float</a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="streng.codes.eurocodes.ec8.cls.seismic_action.spectra.SpectraEc8.q">
+<code class="descname">q</code><a class="headerlink" href="#streng.codes.eurocodes.ec8.cls.seismic_action.spectra.SpectraEc8.q" title="Permalink to this definition">¶</a></dt>
+<dd><p>behaviour factor</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)">float</a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="streng.codes.eurocodes.ec8.cls.seismic_action.spectra.SpectraEc8.β">
+<code class="descname">β</code><a class="headerlink" href="#streng.codes.eurocodes.ec8.cls.seismic_action.spectra.SpectraEc8.β" title="Permalink to this definition">¶</a></dt>
+<dd><p>lower bound factor for the horizontal design spectrum. Recommended value for β is 0.2</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)">float</a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="streng.codes.eurocodes.ec8.cls.seismic_action.spectra.SpectraEc8.SDe">
+<code class="descname">SDe</code><span class="sig-paren">(</span><em>T</em><span class="sig-paren">)</span> &#x2192; float<a class="reference internal" href="../_modules/streng/codes/eurocodes/ec8/cls/seismic_action/spectra.html#SpectraEc8.SDe"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#streng.codes.eurocodes.ec8.cls.seismic_action.spectra.SpectraEc8.SDe" title="Permalink to this definition">¶</a></dt>
+<dd><p>float: The elastic displacement response spectrum</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="streng.codes.eurocodes.ec8.cls.seismic_action.spectra.SpectraEc8.Sd">
+<code class="descname">Sd</code><span class="sig-paren">(</span><em>T</em><span class="sig-paren">)</span> &#x2192; float<a class="reference internal" href="../_modules/streng/codes/eurocodes/ec8/cls/seismic_action/spectra.html#SpectraEc8.Sd"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#streng.codes.eurocodes.ec8.cls.seismic_action.spectra.SpectraEc8.Sd" title="Permalink to this definition">¶</a></dt>
+<dd><p>float: Design spectrum for elastic analysis</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="streng.codes.eurocodes.ec8.cls.seismic_action.spectra.SpectraEc8.Se">
+<code class="descname">Se</code><span class="sig-paren">(</span><em>T</em><span class="sig-paren">)</span> &#x2192; float<a class="reference internal" href="../_modules/streng/codes/eurocodes/ec8/cls/seismic_action/spectra.html#SpectraEc8.Se"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#streng.codes.eurocodes.ec8.cls.seismic_action.spectra.SpectraEc8.Se" title="Permalink to this definition">¶</a></dt>
+<dd><p>float: The elastic acceleration response spectrum</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="streng.codes.eurocodes.ec8.cls.seismic_action.spectra.SpectraEc8.dg">
+<code class="descname">dg</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; float<a class="reference internal" href="../_modules/streng/codes/eurocodes/ec8/cls/seismic_action/spectra.html#SpectraEc8.dg"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#streng.codes.eurocodes.ec8.cls.seismic_action.spectra.SpectraEc8.dg" title="Permalink to this definition">¶</a></dt>
+<dd><p>float: Design ground displacement</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="streng.codes.eurocodes.ec8.cls.seismic_action.spectra.SpectraEc8.getAllSpectra0to4">
+<code class="descname">getAllSpectra0to4</code><a class="headerlink" href="#streng.codes.eurocodes.ec8.cls.seismic_action.spectra.SpectraEc8.getAllSpectra0to4" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt>
+<code class="descname">q</code><em class="property"> = 1.0</em></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt>
+<code class="descname">β</code><em class="property"> = 0.2</em></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt>
+<code class="descname">η</code><em class="property"> = 1.0</em></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="eurocodes_ec8_jupyter.html" class="btn btn-neutral float-right" title="Eurocode 8 - Jupyter notebooks" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="eurocodes_ec8_raw.html" class="btn btn-neutral" title="Eurocode 8 - Raw functions" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, panagop
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script type="text/javascript" src="https://unpkg.com/mermaid@7.1.0/dist/mermaid.min.js"></script>
+    
+
+  
+
+  <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

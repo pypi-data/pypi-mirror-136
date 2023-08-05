@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="159px" preserveAspectRatio="none" style="width:109px;height:159px;" version="1.1" viewBox="0 0 109 159" width="109px" zoomAndPan="magnify"><defs><filter height="300%" id="f1st3pp0ko0zp1" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--class areas--><rect fill="#FEFECE" filter="url(#f1st3pp0ko0zp1)" height="140.8516" id="areas" style="stroke: #A80036; stroke-width: 1.5;" width="92" x="6" y="8"/><ellipse cx="33.6" cy="24" fill="#FF7700" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M31.5375,22.2188 L31.5375,27.2969 L32.1625,27.2969 Q32.7719,27.2969 33.0297,27.5313 Q33.2875,27.7656 33.2875,28.1563 Q33.2875,28.5313 33.0297,28.7656 Q32.7719,29 32.1625,29 L29.9281,29 Q29.3031,29 29.0453,28.7656 Q28.7875,28.5313 28.7875,28.1406 Q28.7875,27.7656 29.0453,27.5313 Q29.3031,27.2969 29.8344,27.2969 L29.8344,20.6406 Q29.3969,20.5938 29.1625,20.3672 Q28.9281,20.1406 28.9281,19.7813 Q28.9281,19.4063 29.1938,19.1719 Q29.4594,18.9375 30.0688,18.9375 L31.9438,18.9375 L34.2563,24.0625 L36.5219,18.9375 L38.4125,18.9375 Q39.0219,18.9375 39.2875,19.1719 Q39.5531,19.4063 39.5531,19.7813 Q39.5531,20.1406 39.3188,20.3672 Q39.0844,20.5938 38.6469,20.6406 L38.6469,27.2969 Q39.1781,27.2969 39.4359,27.5391 Q39.6938,27.7813 39.6938,28.1563 Q39.6938,28.5313 39.4359,28.7656 Q39.1781,29 38.5688,29 L36.3188,29 Q35.7094,29 35.4516,28.7656 Q35.1938,28.5313 35.1938,28.1406 Q35.1938,27.7656 35.4516,27.5313 Q35.7094,27.2969 36.3188,27.2969 L36.9438,27.2969 L36.9438,22.2188 L34.9906,26.6094 L33.5219,26.6094 L31.5375,22.2188 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="32" x="50.4" y="28.9102">areas</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="7" x2="97" y1="40" y2="40"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="22" x="12" y="73.2549">As()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="78" x="12" y="87.0908">As_distributed()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="56" x="12" y="100.9268">As_for_ω()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="52" x="12" y="114.7627">As_layer()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="80" x="12" y="128.5986">As1_for_ω1ρ1()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="80" x="12" y="142.4346">As2_for_ω2ρ2()</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="7" x2="29.5" y1="54.918" y2="54.918"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="45" x="29.5" y="58.9189">functions</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="74.5" x2="97" y1="54.918" y2="54.918"/><!--
+@startuml
+class areas <<(M,#FF7700)>> {
+.. functions ..
+As()
+As_distributed()
+As_for_ω()
+As_layer()
+As1_for_ω1ρ1()
+As2_for_ω2ρ2()
+}
+
+@enduml
+
+PlantUML version 1.2019.06(Fri May 24 20:10:25 EEST 2019)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Java Version: 1.8.0_281-b09
+Operating System: Windows 10
+OS Version: 10.0
+Default Encoding: Cp1253
+Language: en
+Country: US
+--></g></svg>

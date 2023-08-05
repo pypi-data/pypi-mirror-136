@@ -1,0 +1,25 @@
+*****************************
+Eurocode 8 - Raw functions
+*****************************
+
+
+Chapter 3
+===========================
+
+seismic_action
+-----------------
+
+.. automodule:: streng.codes.eurocodes.ec8.raw.ch3.seismic_action.spectra
+    :members:
+    :undoc-members:
+
+
+Chapter 5
+===========================
+
+detailing
+-----------------
+
+.. automodule:: streng.codes.eurocodes.ec8.raw.ch5.detailing.beams
+    :members:
+    :undoc-members:

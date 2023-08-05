@@ -1,0 +1,38 @@
+.. StrEng documentation master file, created by
+   sphinx-quickstart on Mon Oct  8 14:29:18 2018.
+   You can adapt this file completely to your liking, but it should at least
+   contain the root `toctree` directive.
+
+StrEng documentation!
+==================================
+
+
+.. toctree::
+    :maxdepth: 1
+    :caption: Codes
+
+    codes/eurocodes
+    codes/greek
+    codes/usa
+
+
+.. toctree::
+    :caption: Common
+    :maxdepth: 1
+
+    io <common/io>
+    math <common/math>
+
+
+.. toctree::
+    :maxdepth: 1
+    :caption: Tools
+
+    tools/tools
+
+Indices and tables
+==================
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`

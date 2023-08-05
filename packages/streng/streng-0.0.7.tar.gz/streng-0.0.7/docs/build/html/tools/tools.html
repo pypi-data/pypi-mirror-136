@@ -1,0 +1,838 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Bilin &mdash; StrEng 0.0.1 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+
+  
+  
+    <link rel="shortcut icon" href="../_static/book_icon.png"/>
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true, "ignoreClass": "document", "processClass": "math|output_area"}})</script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Jupyter notebooks" href="tools_jupyter.html" />
+    <link rel="prev" title="Sections" href="../ppp/ppp_sections.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> StrEng
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Files structure</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../pyfileslist.html">.py files structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../rstfileslist.html">.rst files structure</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Codes</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../codes/eurocodes.html">Eurocodes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../codes/greek.html">Greek Codes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../codes/usa.html">USA codes and guidelines</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Common</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../common/io.html">Input-Output</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../common/math.html">Math</a></li>
+</ul>
+<p class="caption"><span class="caption-text">phd</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../phd/building_models.html">Building Models</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../phd/analyses.html">Input Motions</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Pre-Post-Processing</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../ppp/ppp.html">ppp</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Tools</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Bilin</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#module-streng.tools.seismic_motion">Seismic Motions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#jupyters">Jupyters</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="tools_jupyter.html">Jupyter notebooks</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Excel udfs library</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../xwflib/xwflib.html">Main</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">StrEng</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Bilin</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/tools/tools.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  
+<style>
+/* CSS overrides for sphinx_rtd_theme */
+
+/* 24px margin */
+.nbinput.nblast.container,
+.nboutput.nblast.container {
+    margin-bottom: 19px;  /* padding has already 5px */
+}
+
+/* ... except between code cells! */
+.nblast.container + .nbinput.container {
+    margin-top: -19px;
+}
+
+.admonition > p:before {
+    margin-right: 4px;  /* make room for the exclamation icon */
+}
+
+/* Fix math alignment, see https://github.com/rtfd/sphinx_rtd_theme/pull/686 */
+.math {
+    text-align: unset;
+}
+</style>
+<div class="section" id="bilin">
+<h1>Bilin<a class="headerlink" href="#bilin" title="Permalink to this headline">¶</a></h1>
+<dl class="py class">
+<dt id="streng.tools.bilin.Bilin">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">streng.tools.bilin.</span></code><code class="sig-name descname"><span class="pre">Bilin</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">curve_ini</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">streng.common.math.charts.linexy.LineXY</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">LineXY(x=None,</span> <span class="pre">y=None,</span> <span class="pre">name=None,</span> <span class="pre">tags=[])</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">xtarget</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.9)"><span class="pre">float</span></a></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">0.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dropstrength</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.9)"><span class="pre">float</span></a></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">0.75</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">elastoplastic</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><span class="pre">bool</span></a></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">allowa010</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><span class="pre">bool</span></a></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">EPSILON</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.9)"><span class="pre">float</span></a></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">1e-06</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/streng/tools/bilin.html#Bilin"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#streng.tools.bilin.Bilin" title="Permalink to this definition">¶</a></dt>
+<dd><p class="plantuml">
+<img src="../_images/plantuml-1cdf8648d3b81de68953be3636540bca95e4fa3c.svg" alt="class Bilin {
+.. members ..
++ curve_ini: LineXY = LineXY()
++ xtarget: float = 0.0
++ dropstrength: float = 0.75
++ elastoplastic: bool = False
++ allowa010: bool = True
++ EPSILON: float = 0.000001
+.. properties ..
++ x_max()
++ x_min()
++ y_max()
++ y_min()
++ y_max_index()
+.. methods ..
++ calc()
+- __iteration()
+- __curve_to_xcheck()
+- __get_area()
+}"/></p>
+<dl class="py method">
+<dt id="streng.tools.bilin.Bilin.calc">
+<code class="sig-name descname"><span class="pre">calc</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/streng/tools/bilin.html#Bilin.calc"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#streng.tools.bilin.Bilin.calc" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="streng.tools.bilin.Bilin.EPSILON">
+<code class="sig-name descname"><span class="pre">EPSILON</span></code><em class="property"><span class="pre">:</span> <a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.9)"><span class="pre">float</span></a></em><em class="property"> <span class="pre">=</span> <span class="pre">1e-06</span></em><a class="headerlink" href="#streng.tools.bilin.Bilin.EPSILON" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="streng.tools.bilin.Bilin.allowa010">
+<code class="sig-name descname"><span class="pre">allowa010</span></code><em class="property"><span class="pre">:</span> <a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><span class="pre">bool</span></a></em><em class="property"> <span class="pre">=</span> <span class="pre">True</span></em><a class="headerlink" href="#streng.tools.bilin.Bilin.allowa010" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="streng.tools.bilin.Bilin.curve_ini">
+<code class="sig-name descname"><span class="pre">curve_ini</span></code><em class="property"><span class="pre">:</span> <span class="pre">streng.common.math.charts.linexy.LineXY</span></em><em class="property"> <span class="pre">=</span> <span class="pre">LineXY(x=None,</span> <span class="pre">y=None,</span> <span class="pre">name=None,</span> <span class="pre">tags=[])</span></em><a class="headerlink" href="#streng.tools.bilin.Bilin.curve_ini" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="streng.tools.bilin.Bilin.dropstrength">
+<code class="sig-name descname"><span class="pre">dropstrength</span></code><em class="property"><span class="pre">:</span> <a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.9)"><span class="pre">float</span></a></em><em class="property"> <span class="pre">=</span> <span class="pre">0.75</span></em><a class="headerlink" href="#streng.tools.bilin.Bilin.dropstrength" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="streng.tools.bilin.Bilin.elastoplastic">
+<code class="sig-name descname"><span class="pre">elastoplastic</span></code><em class="property"><span class="pre">:</span> <a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.9)"><span class="pre">bool</span></a></em><em class="property"> <span class="pre">=</span> <span class="pre">False</span></em><a class="headerlink" href="#streng.tools.bilin.Bilin.elastoplastic" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="streng.tools.bilin.Bilin.xtarget">
+<code class="sig-name descname"><span class="pre">xtarget</span></code><em class="property"><span class="pre">:</span> <a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.9)"><span class="pre">float</span></a></em><em class="property"> <span class="pre">=</span> <span class="pre">0.0</span></em><a class="headerlink" href="#streng.tools.bilin.Bilin.xtarget" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="streng.tools.bilin.BilinearCurve">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">streng.tools.bilin.</span></code><code class="sig-name descname"><span class="pre">BilinearCurve</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ay</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.9)"><span class="pre">float</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">au</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.9)"><span class="pre">float</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">dy</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.9)"><span class="pre">float</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">du</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.9)"><span class="pre">float</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">a0</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.9)"><span class="pre">float</span></a></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">0.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">d0</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.9)"><span class="pre">float</span></a></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">0.0</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/streng/tools/bilin.html#BilinearCurve"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#streng.tools.bilin.BilinearCurve" title="Permalink to this definition">¶</a></dt>
+<dd><p class="plantuml">
+<img src="../_images/plantuml-93a53c5a832844de983e18ab81cba30b95680e8f.svg" alt="class BilinearCurve {
+.. members ..
++ ay: float
++ au: float
++ dy: float
++ du: float
++ a0: float = 0.
++ d0: float = 0.
+.. properties ..
++ μ()
++ kel()
++ kinel()
++ α()
++ β0()
++ d_array()
++ a_array()
++ T0
++ all_quantities
+.. methods ..
++ Teq(Τ0)
+
+}"/></p>
+<dl class="py method">
+<dt id="streng.tools.bilin.BilinearCurve.Teq">
+<code class="sig-name descname"><span class="pre">Teq</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">T0</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/streng/tools/bilin.html#BilinearCurve.Teq"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#streng.tools.bilin.BilinearCurve.Teq" title="Permalink to this definition">¶</a></dt>
+<dd><p>Effective period Teq  after Fema440 Equation 3-5</p>
+<div class="math notranslate nohighlight">
+\[T_{eq} = T_0 \sqrt{\dfrac{μ}{1 + α \cdot μ - α}}\]</div>
+</dd></dl>
+
+<dl class="py method">
+<dt id="streng.tools.bilin.BilinearCurve.T0">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">T0</span></code><a class="headerlink" href="#streng.tools.bilin.BilinearCurve.T0" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initial period T0</p>
+<div class="math notranslate nohighlight">
+\[T_0 = 2 π \sqrt{\dfrac{d_y - d_0}{a_y - a_0}}\]</div>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="streng.tools.bilin.BilinearCurve.a0">
+<code class="sig-name descname"><span class="pre">a0</span></code><em class="property"><span class="pre">:</span> <a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.9)"><span class="pre">float</span></a></em><em class="property"> <span class="pre">=</span> <span class="pre">0.0</span></em><a class="headerlink" href="#streng.tools.bilin.BilinearCurve.a0" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="streng.tools.bilin.BilinearCurve.a_array">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">a_array</span></code><a class="headerlink" href="#streng.tools.bilin.BilinearCurve.a_array" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="streng.tools.bilin.BilinearCurve.all_quantities">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">all_quantities</span></code><a class="headerlink" href="#streng.tools.bilin.BilinearCurve.all_quantities" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="streng.tools.bilin.BilinearCurve.au">
+<code class="sig-name descname"><span class="pre">au</span></code><em class="property"><span class="pre">:</span> <a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.9)"><span class="pre">float</span></a></em><a class="headerlink" href="#streng.tools.bilin.BilinearCurve.au" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="streng.tools.bilin.BilinearCurve.ay">
+<code class="sig-name descname"><span class="pre">ay</span></code><em class="property"><span class="pre">:</span> <a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.9)"><span class="pre">float</span></a></em><a class="headerlink" href="#streng.tools.bilin.BilinearCurve.ay" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="streng.tools.bilin.BilinearCurve.d0">
+<code class="sig-name descname"><span class="pre">d0</span></code><em class="property"><span class="pre">:</span> <a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.9)"><span class="pre">float</span></a></em><em class="property"> <span class="pre">=</span> <span class="pre">0.0</span></em><a class="headerlink" href="#streng.tools.bilin.BilinearCurve.d0" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="streng.tools.bilin.BilinearCurve.d_array">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">d_array</span></code><a class="headerlink" href="#streng.tools.bilin.BilinearCurve.d_array" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="streng.tools.bilin.BilinearCurve.du">
+<code class="sig-name descname"><span class="pre">du</span></code><em class="property"><span class="pre">:</span> <a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.9)"><span class="pre">float</span></a></em><a class="headerlink" href="#streng.tools.bilin.BilinearCurve.du" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="streng.tools.bilin.BilinearCurve.dy">
+<code class="sig-name descname"><span class="pre">dy</span></code><em class="property"><span class="pre">:</span> <a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.9)"><span class="pre">float</span></a></em><a class="headerlink" href="#streng.tools.bilin.BilinearCurve.dy" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="streng.tools.bilin.BilinearCurve.kel">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">kel</span></code><a class="headerlink" href="#streng.tools.bilin.BilinearCurve.kel" title="Permalink to this definition">¶</a></dt>
+<dd><p>Slope of the elastic branch, <span class="math notranslate nohighlight">\(k_{el} = \dfrac{a_y - a_0}{d_y - d_0}\)</span></p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="streng.tools.bilin.BilinearCurve.kinel">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">kinel</span></code><a class="headerlink" href="#streng.tools.bilin.BilinearCurve.kinel" title="Permalink to this definition">¶</a></dt>
+<dd><p>Slope of the inelastic branch, <span class="math notranslate nohighlight">\(k_{inel} = \dfrac{a_u - a_y}{d_u - d_y}\)</span></p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="streng.tools.bilin.BilinearCurve.">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">α</span></code><a class="headerlink" href="#streng.tools.bilin.BilinearCurve." title="Permalink to this definition">¶</a></dt>
+<dd><p>Hardening, <span class="math notranslate nohighlight">\(α = k_{inel}/k_{el}\)</span></p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="streng.tools.bilin.BilinearCurve.0">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">β0</span></code><a class="headerlink" href="#streng.tools.bilin.BilinearCurve.0" title="Permalink to this definition">¶</a></dt>
+<dd><p>Damping after Fema440 Equation 3-6</p>
+<div class="math notranslate nohighlight">
+\[β_0 = \dfrac{2}{π}\dfrac{(μ - 1) \cdot (1 - α)}{μ \cdot (1 + α \cdot μ - α)}\]</div>
+</dd></dl>
+
+<dl class="py method">
+<dt id="id0">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">μ</span></code><a class="headerlink" href="#id0" title="Permalink to this definition">¶</a></dt>
+<dd><div class="math notranslate nohighlight">
+\[μ = \dfrac{d_u - d_0}{d_y - d_0}\]</div>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-streng.tools.seismic_motion">
+<span id="seismic-motions"></span><h1>Seismic Motions<a class="headerlink" href="#module-streng.tools.seismic_motion" title="Permalink to this headline">¶</a></h1>
+<dl class="py class">
+<dt id="streng.tools.seismic_motion.Accelerogram">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">streng.tools.seismic_motion.</span></code><code class="sig-name descname"><span class="pre">Accelerogram</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">accelerations</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">numpy.array</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dt</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.9)"><span class="pre">float</span></a></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/streng/tools/seismic_motion.html#Accelerogram"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#streng.tools.seismic_motion.Accelerogram" title="Permalink to this definition">¶</a></dt>
+<dd><p>Acceleration record.</p>
+<p>Gets acceleration values and dt and calculates several motion parameters.</p>
+<p>Most properties are cached, there was no actual need for that since calculations do not really
+take such a long time. Used the <a class="reference external" href="https://pypi.org/project/cached-property/">cached-property package</a>.</p>
+<p class="plantuml">
+<img src="../_images/plantuml-fd6c0397862ed5753e12bfce9a51e9cd48f77951.svg" alt="class Record {
+.. initialize attributes ..
++ accelerations: np.array
++ dt: float
+.. cached properties ..
++ steps
++ time_total
++ time
++ velocities
++ displacements
++ props
++ husid
++ husid_norm
+.. properties ..
++ output
++ plot_time_series
+.. classmethods - cunstructors ..
++ from_one_column_txt(filename, dt)
++ from_multi_column_txt(filename, dt, skip_header=0, skip_footer=0)
++ from_karakostas_acc(filename, direction)
+.. methods ..
++ significant_duration(start_percentage, end_percentage)
+
+}"/></p>
+<dl class="py attribute">
+<dt id="streng.tools.seismic_motion.Accelerogram.accelerations">
+<code class="sig-name descname"><span class="pre">accelerations</span></code><a class="headerlink" href="#streng.tools.seismic_motion.Accelerogram.accelerations" title="Permalink to this definition">¶</a></dt>
+<dd><p>an array with the acceleration values. Units should be m/sec2</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>np.array</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="streng.tools.seismic_motion.Accelerogram.dt">
+<code class="sig-name descname"><span class="pre">dt</span></code><a class="headerlink" href="#streng.tools.seismic_motion.Accelerogram.dt" title="Permalink to this definition">¶</a></dt>
+<dd><p>time increment</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.9)">float</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="streng.tools.seismic_motion.Accelerogram.clear_cached_properties">
+<code class="sig-name descname"><span class="pre">clear_cached_properties</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/streng/tools/seismic_motion.html#Accelerogram.clear_cached_properties"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#streng.tools.seismic_motion.Accelerogram.clear_cached_properties" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="streng.tools.seismic_motion.Accelerogram.from_athanassiadou_acc">
+<em class="property"><span class="pre">classmethod</span> </em><code class="sig-name descname"><span class="pre">from_athanassiadou_acc</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">direction</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scale</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.01</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/streng/tools/seismic_motion.html#Accelerogram.from_athanassiadou_acc"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#streng.tools.seismic_motion.Accelerogram.from_athanassiadou_acc" title="Permalink to this definition">¶</a></dt>
+<dd><p>direction = ‘L’ or ‘T’ or ‘V’</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="streng.tools.seismic_motion.Accelerogram.from_multi_column_txt">
+<em class="property"><span class="pre">classmethod</span> </em><code class="sig-name descname"><span class="pre">from_multi_column_txt</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dt</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scale</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">skip_header</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">skip_footer</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/streng/tools/seismic_motion.html#Accelerogram.from_multi_column_txt"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#streng.tools.seismic_motion.Accelerogram.from_multi_column_txt" title="Permalink to this definition">¶</a></dt>
+<dd><p>constructor that loads values from a multicolumn text file</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>filename</strong> – file to load</p></li>
+<li><p><strong>dt</strong> – time increment</p></li>
+<li><p><strong>skip_header</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><em>int</em></a>) – number of lines to skip at the beginning of the file</p></li>
+<li><p><strong>skip_footer</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><em>int</em></a>) – number of lines to skip at the end of the file</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="streng.tools.seismic_motion.Accelerogram.from_one_column_txt">
+<em class="property"><span class="pre">classmethod</span> </em><code class="sig-name descname"><span class="pre">from_one_column_txt</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dt</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scale</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1.0</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/streng/tools/seismic_motion.html#Accelerogram.from_one_column_txt"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#streng.tools.seismic_motion.Accelerogram.from_one_column_txt" title="Permalink to this definition">¶</a></dt>
+<dd><p>constructor that loads values from a single column text file</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="streng.tools.seismic_motion.Accelerogram.get_spectra">
+<code class="sig-name descname"><span class="pre">get_spectra</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">damping</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">startT</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">endT</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">4.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">noTs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">401</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/streng/tools/seismic_motion.html#Accelerogram.get_spectra"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#streng.tools.seismic_motion.Accelerogram.get_spectra" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="streng.tools.seismic_motion.Accelerogram.show_parameters">
+<code class="sig-name descname"><span class="pre">show_parameters</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/streng/tools/seismic_motion.html#Accelerogram.show_parameters"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#streng.tools.seismic_motion.Accelerogram.show_parameters" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="streng.tools.seismic_motion.Accelerogram.show_spectra_parameters">
+<em class="property"><span class="pre">static</span> </em><code class="sig-name descname"><span class="pre">show_spectra_parameters</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">spectrum</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/streng/tools/seismic_motion.html#Accelerogram.show_spectra_parameters"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#streng.tools.seismic_motion.Accelerogram.show_spectra_parameters" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="streng.tools.seismic_motion.Accelerogram.significant_duration">
+<code class="sig-name descname"><span class="pre">significant_duration</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">start_percentage</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">end_percentage</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/streng/tools/seismic_motion.html#Accelerogram.significant_duration"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#streng.tools.seismic_motion.Accelerogram.significant_duration" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="id1">
+<code class="sig-name descname"><span class="pre">accelerations</span></code><em class="property"><span class="pre">:</span> <span class="pre">numpy.array</span></em><a class="headerlink" href="#id1" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="streng.tools.seismic_motion.Accelerogram.displacements">
+<code class="sig-name descname"><span class="pre">displacements</span></code><a class="headerlink" href="#streng.tools.seismic_motion.Accelerogram.displacements" title="Permalink to this definition">¶</a></dt>
+<dd><p>displacement values</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>np.array</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="id2">
+<code class="sig-name descname"><span class="pre">dt</span></code><em class="property"><span class="pre">:</span> <a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.9)"><span class="pre">float</span></a></em><a class="headerlink" href="#id2" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="streng.tools.seismic_motion.Accelerogram.husid">
+<code class="sig-name descname"><span class="pre">husid</span></code><a class="headerlink" href="#streng.tools.seismic_motion.Accelerogram.husid" title="Permalink to this definition">¶</a></dt>
+<dd><p>values of the Husid plot</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>np.array</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="streng.tools.seismic_motion.Accelerogram.husid_norm">
+<code class="sig-name descname"><span class="pre">husid_norm</span></code><a class="headerlink" href="#streng.tools.seismic_motion.Accelerogram.husid_norm" title="Permalink to this definition">¶</a></dt>
+<dd><p>values of the normalized Husid plot</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>np.array</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="streng.tools.seismic_motion.Accelerogram.output">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">output</span></code><a class="headerlink" href="#streng.tools.seismic_motion.Accelerogram.output" title="Permalink to this definition">¶</a></dt>
+<dd><p>A collection of output tables and strings</p>
+<dl class="simple">
+<dt>Tables:</dt><dd><ul class="simple">
+<li><p>RecordMotionProperties</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="../common/io.html#streng.common.io.output.OutputExtended" title="streng.common.io.output.OutputExtended">OutputExtended</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="streng.tools.seismic_motion.Accelerogram.plot_time_series">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">plot_time_series</span></code><a class="headerlink" href="#streng.tools.seismic_motion.Accelerogram.plot_time_series" title="Permalink to this definition">¶</a></dt>
+<dd><p>Plots acc, vel, dipl vs time</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="streng.tools.seismic_motion.Accelerogram.props">
+<code class="sig-name descname"><span class="pre">props</span></code><a class="headerlink" href="#streng.tools.seismic_motion.Accelerogram.props" title="Permalink to this definition">¶</a></dt>
+<dd><p>a dictionary with several input motion parameters</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.9)">dict</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="streng.tools.seismic_motion.Accelerogram.steps">
+<code class="sig-name descname"><span class="pre">steps</span></code><a class="headerlink" href="#streng.tools.seismic_motion.Accelerogram.steps" title="Permalink to this definition">¶</a></dt>
+<dd><p>number of steps</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)">int</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="streng.tools.seismic_motion.Accelerogram.time">
+<code class="sig-name descname"><span class="pre">time</span></code><a class="headerlink" href="#streng.tools.seismic_motion.Accelerogram.time" title="Permalink to this definition">¶</a></dt>
+<dd><p>time values</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>np.array</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="streng.tools.seismic_motion.Accelerogram.time_total">
+<code class="sig-name descname"><span class="pre">time_total</span></code><a class="headerlink" href="#streng.tools.seismic_motion.Accelerogram.time_total" title="Permalink to this definition">¶</a></dt>
+<dd><p>total time of the motion</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.9)">float</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="streng.tools.seismic_motion.Accelerogram.velocities">
+<code class="sig-name descname"><span class="pre">velocities</span></code><a class="headerlink" href="#streng.tools.seismic_motion.Accelerogram.velocities" title="Permalink to this definition">¶</a></dt>
+<dd><p>velocity values</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>np.array</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="streng.tools.seismic_motion.Spectra">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">streng.tools.seismic_motion.</span></code><code class="sig-name descname"><span class="pre">Spectra</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">accel</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">numpy.array</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dt</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.9)"><span class="pre">float</span></a></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/streng/tools/seismic_motion.html#Spectra"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#streng.tools.seismic_motion.Spectra" title="Permalink to this definition">¶</a></dt>
+<dd><p>A class for calculating the response spectra using the Nigam Jennings approach.
+Adopted code found at the
+<a class="reference external" href="https://github.com/GEMScienceTools/rmtk">The GEMScienceTools - Risk Modellers Toolkit (RMTK)</a>.</p>
+<p class="plantuml">
+<img src="../_images/plantuml-445201956c3145f3db8f0a6991655c6faf2db1bf.svg" alt="class Record {
+.. initialize attributes ..
++ accelerations: np.array
++ dt: float
+
+.. classmethods ..
++ calculate_time_series()
++ NigamJennings()
+
+.. staticmethods ..
++ show_spectra_parameters
+
+.. methods ..
++ get_spectra
+
+}"/></p>
+<dl class="py attribute">
+<dt id="streng.tools.seismic_motion.Spectra.accelerations">
+<code class="sig-name descname"><span class="pre">accelerations</span></code><a class="headerlink" href="#streng.tools.seismic_motion.Spectra.accelerations" title="Permalink to this definition">¶</a></dt>
+<dd><p>an array with the acceleration values. Units should be m/sec2</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>np.array</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="streng.tools.seismic_motion.Spectra.dt">
+<code class="sig-name descname"><span class="pre">dt</span></code><a class="headerlink" href="#streng.tools.seismic_motion.Spectra.dt" title="Permalink to this definition">¶</a></dt>
+<dd><p>time increment</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.9)">float</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="streng.tools.seismic_motion.Spectra.NigamJennings">
+<em class="property"><span class="pre">classmethod</span> </em><code class="sig-name descname"><span class="pre">NigamJennings</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">acc</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">periods</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">damping</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dt</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/streng/tools/seismic_motion.html#Spectra.NigamJennings"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#streng.tools.seismic_motion.Spectra.NigamJennings" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="streng.tools.seismic_motion.Spectra.calculate_time_series">
+<em class="property"><span class="pre">classmethod</span> </em><code class="sig-name descname"><span class="pre">calculate_time_series</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">num_steps</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_per</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">acc</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">const</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">omega2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dt</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/streng/tools/seismic_motion.html#Spectra.calculate_time_series"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#streng.tools.seismic_motion.Spectra.calculate_time_series" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculates the acceleration, velocities and displacement time series for the SDOF oscillator</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>num_steps</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><em>int</em></a>) – number of input motion steps</p></li>
+<li><p><strong>num_per</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><em>int</em></a>) – number of periods where values are calculated</p></li>
+<li><p><strong>acc</strong> (<em>np.array</em>) – acceleration values</p></li>
+<li><p><strong>const</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.9)"><em>dict</em></a>) – constants of the algorithm</p></li>
+<li><p><strong>omega2</strong> (<em>np.array</em>) – squared circular frequency</p></li>
+<li><p><strong>dt</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.9)"><em>float</em></a>) – time increment</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><dl class="simple">
+<dt>a tuple containing x_a, x_v, x_d</dt><dd><ul class="simple">
+<li><p>x_a = Acceleration time series</p></li>
+<li><p>x_v = Velocity time series</p></li>
+<li><p>x_d = Displacement time series</p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.9)">tuple</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="streng.tools.seismic_motion.Spectra.get_spectra">
+<code class="sig-name descname"><span class="pre">get_spectra</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">damping</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">startT</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">endT</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">4.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">noTs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">401</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/streng/tools/seismic_motion.html#Spectra.get_spectra"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#streng.tools.seismic_motion.Spectra.get_spectra" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="streng.tools.seismic_motion.Spectra.show_spectra_parameters">
+<em class="property"><span class="pre">static</span> </em><code class="sig-name descname"><span class="pre">show_spectra_parameters</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">spectrum</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/streng/tools/seismic_motion.html#Spectra.show_spectra_parameters"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#streng.tools.seismic_motion.Spectra.show_spectra_parameters" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="streng.tools.seismic_motion.Spectra.accel">
+<code class="sig-name descname"><span class="pre">accel</span></code><em class="property"><span class="pre">:</span> <span class="pre">numpy.array</span></em><a class="headerlink" href="#streng.tools.seismic_motion.Spectra.accel" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="id3">
+<code class="sig-name descname"><span class="pre">dt</span></code><em class="property"><span class="pre">:</span> <a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.9)"><span class="pre">float</span></a></em><a class="headerlink" href="#id3" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt id="streng.tools.seismic_motion.NigamJennings">
+<code class="sig-prename descclassname"><span class="pre">streng.tools.seismic_motion.</span></code><code class="sig-name descname"><span class="pre">NigamJennings</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">acc</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">periods</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">damping</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dt</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/streng/tools/seismic_motion.html#NigamJennings"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#streng.tools.seismic_motion.NigamJennings" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="streng.tools.seismic_motion.calculate_time_series">
+<code class="sig-prename descclassname"><span class="pre">streng.tools.seismic_motion.</span></code><code class="sig-name descname"><span class="pre">calculate_time_series</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">num_steps</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_per</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">acc</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">const</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">omega2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dt</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/streng/tools/seismic_motion.html#calculate_time_series"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#streng.tools.seismic_motion.calculate_time_series" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculates the acceleration, velocities and displacement time series for the SDOF oscillator</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>num_steps</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><em>int</em></a>) – number of input motion steps</p></li>
+<li><p><strong>num_per</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><em>int</em></a>) – number of periods where values are calculated</p></li>
+<li><p><strong>acc</strong> (<em>np.array</em>) – acceleration values</p></li>
+<li><p><strong>const</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.9)"><em>dict</em></a>) – constants of the algorithm</p></li>
+<li><p><strong>omega2</strong> (<em>np.array</em>) – squared circular frequency</p></li>
+<li><p><strong>dt</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.9)"><em>float</em></a>) – time increment</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><dl class="simple">
+<dt>a tuple containing x_a, x_v, x_d</dt><dd><ul class="simple">
+<li><p>x_a = Acceleration time series</p></li>
+<li><p>x_v = Velocity time series</p></li>
+<li><p>x_d = Displacement time series</p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.9)">tuple</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="jupyters">
+<h1>Jupyters<a class="headerlink" href="#jupyters" title="Permalink to this headline">¶</a></h1>
+<p class="rubric">Jupyter notebooks</p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="tools_jupyter.html">Jupyter notebooks</a></li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="tools_jupyter.html" class="btn btn-neutral float-right" title="Jupyter notebooks" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="../ppp/ppp_sections.html" class="btn btn-neutral float-left" title="Sections" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2020, panagop.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

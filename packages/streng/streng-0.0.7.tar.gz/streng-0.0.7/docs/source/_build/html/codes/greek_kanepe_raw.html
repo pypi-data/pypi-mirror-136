@@ -1,0 +1,731 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>KANEPE - Raw functions &mdash; StrEng 0.0.1 documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../_static/book_icon.png"/>
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="KANEPE - Classes" href="greek_kanepe_cls.html" />
+    <link rel="prev" title="Greek Codes" href="greek.html" /> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> StrEng
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Codes</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="eurocodes.html">Eurocodes</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="greek.html">Greek Codes</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="greek.html#ekos2000">EKOS2000</a></li>
+<li class="toctree-l2"><a class="reference internal" href="greek.html#eak2000">EAK2000</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="greek.html#kanepe">KANEPE</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Raw functions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#chapter-7">Chapter 7</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#chapter-7a">Chapter 7a</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#chapter-7c">Chapter 7c</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="greek_kanepe_cls.html">Classes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="greek_kanepe_jupyter.html">Jupyter notebooks</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="usa.html">USA codes and guidelines</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Common</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../common/io.html">io</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../common/math.html">math</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Tools</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../tools/tools.html">Various tools</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">StrEng</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="greek.html">Greek Codes</a> &raquo;</li>
+        
+      <li>KANEPE - Raw functions</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/codes/greek_kanepe_raw.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  
+<style>
+/* CSS overrides for sphinx_rtd_theme */
+
+/* 24px margin */
+.nbinput.nblast,
+.nboutput.nblast {
+    margin-bottom: 19px;  /* padding has already 5px */
+}
+
+/* ... except between code cells! */
+.nblast + .nbinput {
+    margin-top: -19px;
+}
+
+.admonition > p:before {
+    margin-right: 4px;  /* make room for the exclamation icon */
+}
+</style>
+<div class="section" id="kanepe-raw-functions">
+<h1>KANEPE - Raw functions<a class="headerlink" href="#kanepe-raw-functions" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="chapter-7">
+<h2>Chapter 7<a class="headerlink" href="#chapter-7" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="module-streng.codes.greek.kanepe.raw.ch7.rotation">
+<span id="rotation"></span><h3>rotation<a class="headerlink" href="#module-streng.codes.greek.kanepe.raw.ch7.rotation" title="Permalink to this headline">¶</a></h3>
+<dl class="function">
+<dt id="streng.codes.greek.kanepe.raw.ch7.rotation.αcalc">
+<code class="descclassname">streng.codes.greek.kanepe.raw.ch7.rotation.</code><code class="descname">αcalc</code><span class="sig-paren">(</span><em>sh</em>, <em>bc</em>, <em>hc</em>, <em>Σbi2</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/streng/codes/greek/kanepe/raw/ch7/rotation.html#αcalc"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#streng.codes.greek.kanepe.raw.ch7.rotation.αcalc" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="streng.codes.greek.kanepe.raw.ch7.rotation.θum">
+<code class="descclassname">streng.codes.greek.kanepe.raw.ch7.rotation.</code><code class="descname">θum</code><span class="sig-paren">(</span><em>ν</em>, <em>ωtot</em>, <em>ω2</em>, <em>αs</em>, <em>α</em>, <em>ρs</em>, <em>ρd</em>, <em>fc</em>, <em>fyw</em>, <em>units='MPa'</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/streng/codes/greek/kanepe/raw/ch7/rotation.html#θum"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#streng.codes.greek.kanepe.raw.ch7.rotation.θum" title="Permalink to this definition">¶</a></dt>
+<dd><p>Στροφή αστοχίας θum</p>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10</pre></div></td><td class="code"><div class="highlight"><pre><span></span>theta_u = rotation.θum(ν=0.093,
+                       ωtot=0.351,
+                       ω2=0.132,
+                       αs=3.78,
+                       α=0.4737,
+                       ρs=0.00279,
+                       ρd=0.,
+                       fc=16.,
+                       fyw=500.,
+                       units=&#39;MPa&#39;)
+</pre></div>
+</td></tr></table></div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>ν</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – ανηγμένο αξονικό</li>
+<li><strong>ωtot</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – Συνολικό μηχανικό ποσοστό οπλισμού</li>
+<li><strong>ω2</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – Μηχανικό ποσοστό θλιβόμενου οπλισμού</li>
+<li><strong>αs</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – Λόγος διάτμησης</li>
+<li><strong>ρs</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – Γεωμετρικό ποσοστό εγκάρσιου οπλισμού</li>
+<li><strong>ρd</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – Γεωμετρικό ποσοστό δισδιαγώνιου οπλισμού</li>
+<li><strong>fc</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – η θλιπτική αντοχή του σκυροδέματος [MPa]</li>
+<li><strong>fyw</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – το όριο διαρροής του χάλυβα ου εγκάρσιου οπλισμού [MPa]</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><p>Given using the expression:</p>
+<div class="math notranslate nohighlight">
+\[θ_{um}=0.016\cdot(0.3^ν)\cdot\Bigg[\dfrac{max(0.01,ω')}{max(0.01, (ω_{tot}-ω'))} \cdot f_c\Bigg]^{0.225}\cdot (α_s)^{0.35} \cdot 25^{(α\cdot ρ_s \cdot \dfrac{f_{yw}}{f_c})}\cdot (1.25^{100ρ_d})\]</div>
+</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)">float</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="streng.codes.greek.kanepe.raw.ch7.rotation.θy">
+<code class="descclassname">streng.codes.greek.kanepe.raw.ch7.rotation.</code><code class="descname">θy</code><span class="sig-paren">(</span><em>φy</em>, <em>Ls</em>, <em>av</em>, <em>z</em>, <em>h</em>, <em>db</em>, <em>fy</em>, <em>fc</em>, <em>units='m-MPa'</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/streng/codes/greek/kanepe/raw/ch7/rotation.html#θy"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#streng.codes.greek.kanepe.raw.ch7.rotation.θy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Στροφή διαρροής</p>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9</pre></div></td><td class="code"><div class="highlight"><pre><span></span> theta = rotation.θy(φy=0.00638,
+                     Ls=2.525,
+                     av=1,
+                     z=0.506,
+                     h=0.506,
+                     db=0.018,
+                     fy=500.,
+                     fc=16,
+                     units=&#39;m-MPa&#39;)
+</pre></div>
+</td></tr></table></div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>φy</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – Καμπυλότητα διαρροής [m-1]</li>
+<li><strong>Ls</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – Μήκος διάτμησης [m]</li>
+<li><strong>av</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.7)"><em>int</em></a>) – συντελεστής που ισούται με 1 εάν η τέμνουσα VRc που προκαλεί λοξή ρηγμάτωση του στοιχείου,
+υπολείπεται της τιμής της τέμνουσας κατά την καμπτική διαρροή VMu=My/Ls, και με 0 αν είναι μεγαλύτερη</li>
+<li><strong>z</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – Ο μοχλοβραχίονας των εσωτερικών δυνάμεων</li>
+<li><strong>h</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – το ύψος της διατομής [m]</li>
+<li><strong>db</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – η διάμετρος των διαμήκων ράβδων [m]</li>
+<li><strong>fy</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – το όριο διαρροής του χάλυβα [MPa]</li>
+<li><strong>fc</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – η θλιπτική αντοχή του σκυροδέματος [MPa]</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><p>Given using the expression:</p>
+<div class="math notranslate nohighlight">
+\[θ_y=φ_y\dfrac{L_s+a_vz}{3}+0.0014 \Big(1+1.5\dfrac{h}{L_s} \Big)+\dfrac{φ_yd_bf_y}{8\sqrt{f_c}}\]</div>
+</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)">float</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+</div>
+<div class="section" id="chapter-7a">
+<h2>Chapter 7a<a class="headerlink" href="#chapter-7a" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="module-streng.codes.greek.kanepe.raw.ch7a.yield_point">
+<span id="yield-point"></span><h3>Yield Point<a class="headerlink" href="#module-streng.codes.greek.kanepe.raw.ch7a.yield_point" title="Permalink to this headline">¶</a></h3>
+<dl class="function">
+<dt id="streng.codes.greek.kanepe.raw.ch7a.yield_point.A_conc">
+<code class="descclassname">streng.codes.greek.kanepe.raw.ch7a.yield_point.</code><code class="descname">A_conc</code><span class="sig-paren">(</span><em>ρ1</em>, <em>ρ2</em>, <em>ρv</em>, <em>N</em>, <em>b</em>, <em>d</em>, <em>α</em>, <em>fc</em>, <em>makelatex=False</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/streng/codes/greek/kanepe/raw/ch7a/yield_point.html#A_conc"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#streng.codes.greek.kanepe.raw.ch7a.yield_point.A_conc" title="Permalink to this definition">¶</a></dt>
+<dd><blockquote>
+<div><p>Συντελεστής A για µή-γραµµικότητα των παραµορφώσεων του θλιβόµενου σκυροδέµατος
+Δίνεται από τη σχέση (χρησιμοποιείται η προσέγγιση):</p>
+<div class="math notranslate nohighlight">
+\[A=ρ+ρ'+ρ_v-\dfrac{N}{ε_c E_s bd}≈ρ+ρ'+ρ_v-\dfrac{N}{1.8αbdf_c}\]</div>
+</div></blockquote>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>ρ1</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – (ρ) το ποσοστό του εφελκυόµενου οπλισμού</li>
+<li><strong>ρ2</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – (ρ’) το ποσοστό του θλιβόμενου οπλισμού</li>
+<li><strong>ρv</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – το ποσοστό του μεταξύ τους κατανεμημένου οπλισμού</li>
+<li><strong>N</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – το αξονικό φορτίο (θετικό σε θλίψη) [kN]</li>
+<li><strong>b</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – το πλάτος της θλιβόµενης ζώνης [m]</li>
+<li><strong>d</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – το στατικό ύψος  [m]</li>
+<li><strong>α</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – Ο λόγος των μέτρων ελαστικότητας <span class="math notranslate nohighlight">\(α = E_s/E_c\)</span></li>
+<li><strong>fc</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – η θλιπτική αντοχή του σκυροδέματος  [kPa]</li>
+<li><strong>makelatex</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.7)"><em>bool</em></a>) – True για να δημιουργηθεί το latex string</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">A tuple, with [value, latexstring]</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.7)">tuple</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="streng.codes.greek.kanepe.raw.ch7a.yield_point.A_steel">
+<code class="descclassname">streng.codes.greek.kanepe.raw.ch7a.yield_point.</code><code class="descname">A_steel</code><span class="sig-paren">(</span><em>ρ1</em>, <em>ρ2</em>, <em>ρv</em>, <em>N</em>, <em>b</em>, <em>d</em>, <em>fy</em>, <em>makelatex=False</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/streng/codes/greek/kanepe/raw/ch7a/yield_point.html#A_steel"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#streng.codes.greek.kanepe.raw.ch7a.yield_point.A_steel" title="Permalink to this definition">¶</a></dt>
+<dd><blockquote>
+<div><p>Συντελεστής A για διαρροή του οπλισμού.
+Δίνεται από τη σχέση:</p>
+<div class="math notranslate nohighlight">
+\[A=ρ+ρ'+ρ_v+\dfrac{N}{bdf_y}\]</div>
+</div></blockquote>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>ρ1</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – (ρ) το ποσοστό του εφελκυόµενου οπλισμού</li>
+<li><strong>ρ2</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – (ρ’) το ποσοστό του θλιβόμενου οπλισμού</li>
+<li><strong>ρv</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – το ποσοστό του μεταξύ τους κατανεμημένου οπλισμού</li>
+<li><strong>N</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – το αξονικό φορτίο (θετικό σε θλίψη) [kN]</li>
+<li><strong>b</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – το πλάτος της θλιβόµενης ζώνης [m]</li>
+<li><strong>d</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – το στατικό ύψος  [m]</li>
+<li><strong>fy</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – το όριο διαρροής του χάλυβα  [kPa]</li>
+<li><strong>makelatex</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.7)"><em>bool</em></a>) – True για να δημιουργηθεί το latex string</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">A tuple, with [value, latexstring]</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.7)">tuple</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="streng.codes.greek.kanepe.raw.ch7a.yield_point.B_conc">
+<code class="descclassname">streng.codes.greek.kanepe.raw.ch7a.yield_point.</code><code class="descname">B_conc</code><span class="sig-paren">(</span><em>ρ1</em>, <em>ρ2</em>, <em>ρv</em>, <em>b</em>, <em>d</em>, <em>δtonos</em>, <em>makelatex=False</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/streng/codes/greek/kanepe/raw/ch7a/yield_point.html#B_conc"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#streng.codes.greek.kanepe.raw.ch7a.yield_point.B_conc" title="Permalink to this definition">¶</a></dt>
+<dd><blockquote>
+<div><dl class="docutils">
+<dt>Συντελεστής B για µή-γραµµικότητα των παραµορφώσεων του θλιβόµενου σκυροδέµατος</dt>
+<dd>Δίνεται από τη σχέση:</dd>
+</dl>
+<div class="math notranslate nohighlight">
+\[B=ρ+ρ'δ'+0.5ρ_v(1+δ')\]</div>
+</div></blockquote>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>ρ1</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – (ρ) το ποσοστό του εφελκυόµενου οπλισμού</li>
+<li><strong>ρ2</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – (ρ’) το ποσοστό του θλιβόμενου οπλισμού</li>
+<li><strong>ρv</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – το ποσοστό του μεταξύ τους κατανεμημένου οπλισμού</li>
+<li><strong>b</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – το πλάτος της θλιβόµενης ζώνης [m]</li>
+<li><strong>d</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – το στατικό ύψος  [m]</li>
+<li><strong>δtonos</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – <span class="math notranslate nohighlight">\(δ' = d'/d\)</span> όπου d’ η απόσταση από το κέντρο του θλιβόµενου οπλισµού µέχρι την ακραία θλιβόµενη ίνα σκυροδέµατος</li>
+<li><strong>makelatex</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.7)"><em>bool</em></a>) – True για να δημιουργηθεί το latex string</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">A tuple, with [value, latexstring]</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.7)">tuple</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="streng.codes.greek.kanepe.raw.ch7a.yield_point.B_steel">
+<code class="descclassname">streng.codes.greek.kanepe.raw.ch7a.yield_point.</code><code class="descname">B_steel</code><span class="sig-paren">(</span><em>ρ1</em>, <em>ρ2</em>, <em>ρv</em>, <em>N</em>, <em>b</em>, <em>d</em>, <em>δtonos</em>, <em>fy</em>, <em>makelatex=False</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/streng/codes/greek/kanepe/raw/ch7a/yield_point.html#B_steel"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#streng.codes.greek.kanepe.raw.ch7a.yield_point.B_steel" title="Permalink to this definition">¶</a></dt>
+<dd><blockquote>
+<div><p>Συντελεστής B για διαρροή του οπλισμού.
+Δίνεται από τη σχέση:</p>
+<div class="math notranslate nohighlight">
+\[B=ρ+ρ'δ'+0.5ρ_v(1+δ')+\dfrac{N}{bdf_y}\]</div>
+</div></blockquote>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>ρ1</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – (ρ) το ποσοστό του εφελκυόµενου οπλισμού</li>
+<li><strong>ρ2</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – (ρ’) το ποσοστό του θλιβόμενου οπλισμού</li>
+<li><strong>ρv</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – το ποσοστό του μεταξύ τους κατανεμημένου οπλισμού</li>
+<li><strong>N</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – το αξονικό φορτίο (θετικό σε θλίψη) [kN]</li>
+<li><strong>b</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – το πλάτος της θλιβόµενης ζώνης [m]</li>
+<li><strong>d</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – το στατικό ύψος [m]</li>
+<li><strong>δtonos</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – <span class="math notranslate nohighlight">\(δ' = d'/d\)</span> όπου d’ η απόσταση από το κέντρο του θλιβόµενου οπλισµού µέχρι την ακραία θλιβόµενη ίνα σκυροδέµατος</li>
+<li><strong>fy</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – το όριο διαρροής του χάλυβα  [kPa]</li>
+<li><strong>makelatex</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.7)"><em>bool</em></a>) – True για να δημιουργηθεί το latex string</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">A tuple, with [value, latexstring]</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.7)">tuple</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="streng.codes.greek.kanepe.raw.ch7a.yield_point.My">
+<code class="descclassname">streng.codes.greek.kanepe.raw.ch7a.yield_point.</code><code class="descname">My</code><span class="sig-paren">(</span><em>b</em>, <em>d</em>, <em>φy</em>, <em>Ec</em>, <em>ξy</em>, <em>δtonos</em>, <em>ρ1</em>, <em>ρ2</em>, <em>ρv</em>, <em>Es</em>, <em>makelatex=False</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/streng/codes/greek/kanepe/raw/ch7a/yield_point.html#My"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#streng.codes.greek.kanepe.raw.ch7a.yield_point.My" title="Permalink to this definition">¶</a></dt>
+<dd><blockquote>
+<div><p>Με δεδοµένη την καµπυλότητα στη διαρροή, η αντίστοιχη ροπή Μy προκύπτει ως:</p>
+<div class="math notranslate nohighlight">
+\[\dfrac{M_y}{bd^3}=φ_y\Bigg\{E_c\dfrac{ξ_y^2}{2}\Big(0.5(1+δ')-\dfrac{ξ_y}{3}\Big) + \Big[ (1-ξ_y)ρ+(ξ_y-δ')ρ'+\dfrac{ρ_v}{6}(1-δ') \Big]\cdot(1-δ')\dfrac{E_s}{2} \Bigg\}\]</div>
+</div></blockquote>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>b</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – το πλάτος της θλιβόµενης ζώνης [m]</li>
+<li><strong>d</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – το στατικό ύψος [m]</li>
+<li><strong>φy</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – Καμπυλότητα διαρροής [m-1]</li>
+<li><strong>Ec</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – το μέτρο ελαστικότητας του σκυροδέματος  [kPa]</li>
+<li><strong>ξy</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – Το ύψος της θλιβόµενης ζώνης στη διαρροή ανηγµένο στο στατικό ύψος d</li>
+<li><strong>δtonos</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – <span class="math notranslate nohighlight">\(δ' = d'/d\)</span> όπου d’ η απόσταση από το κέντρο του θλιβόµενου οπλισµού µέχρι την ακραία θλιβόµενη ίνα σκυροδέµατος</li>
+<li><strong>ρ1</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – (ρ) το ποσοστό του εφελκυόµενου οπλισμού</li>
+<li><strong>ρ2</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – (ρ’) το ποσοστό του θλιβόμενου οπλισμού</li>
+<li><strong>ρv</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – το ποσοστό του μεταξύ τους κατανεμημένου οπλισμού</li>
+<li><strong>Es</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – το μέτρο ελαστικότητας του χάλυβα  [kPa]</li>
+<li><strong>makelatex</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.7)"><em>bool</em></a>) – True για να δημιουργηθεί το latex string</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">A tuple, with [value, latexstring]</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.7)">tuple</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="streng.codes.greek.kanepe.raw.ch7a.yield_point.yield_props">
+<code class="descclassname">streng.codes.greek.kanepe.raw.ch7a.yield_point.</code><code class="descname">yield_props</code><span class="sig-paren">(</span><em>ρ1</em>, <em>ρ2</em>, <em>ρv</em>, <em>N</em>, <em>b</em>, <em>d</em>, <em>δtonos</em>, <em>fc</em>, <em>Ec</em>, <em>fy</em>, <em>Es</em>, <em>makelog=False</em>, <em>makelatex=False</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/streng/codes/greek/kanepe/raw/ch7a/yield_point.html#yield_props"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#streng.codes.greek.kanepe.raw.ch7a.yield_point.yield_props" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="streng.codes.greek.kanepe.raw.ch7a.yield_point.ξycalc">
+<code class="descclassname">streng.codes.greek.kanepe.raw.ch7a.yield_point.</code><code class="descname">ξycalc</code><span class="sig-paren">(</span><em>α</em>, <em>A</em>, <em>B</em>, <em>makelatex=False</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/streng/codes/greek/kanepe/raw/ch7a/yield_point.html#ξycalc"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#streng.codes.greek.kanepe.raw.ch7a.yield_point.ξycalc" title="Permalink to this definition">¶</a></dt>
+<dd><blockquote>
+<div><p>Το ύψος της θλιβόµενης ζώνης στη διαρροή, ξy, ανηγµένο στο στατικό ύψος d, είναι:</p>
+<div class="math notranslate nohighlight">
+\[ξ_y=(α^2A^2+2αB)^{0.5}-αA\]</div>
+</div></blockquote>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>α</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – Ο λόγος των μέτρων ελαστικότητας <span class="math notranslate nohighlight">\(α = E_s/E_c\)</span></li>
+<li><strong>A</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – Ο συντελεστής A που υπολογίζονται για διαρροή λόγω χάλυβα ή μη-γραμμικότητα σκυροδέματος</li>
+<li><strong>B</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – Ο συντελεστής B που υπολογίζονται για διαρροή λόγω χάλυβα ή μη-γραμμικότητα σκυροδέματος</li>
+<li><strong>makelatex</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.7)"><em>bool</em></a>) – True για να δημιουργηθεί το latex string</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">A tuple, with [value, latexstring]</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.7)">tuple</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="streng.codes.greek.kanepe.raw.ch7a.yield_point.φy_conc">
+<code class="descclassname">streng.codes.greek.kanepe.raw.ch7a.yield_point.</code><code class="descname">φy_conc</code><span class="sig-paren">(</span><em>fc</em>, <em>Ec</em>, <em>ξy</em>, <em>d</em>, <em>makelatex=False</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/streng/codes/greek/kanepe/raw/ch7a/yield_point.html#φy_conc"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#streng.codes.greek.kanepe.raw.ch7a.yield_point.φy_conc" title="Permalink to this definition">¶</a></dt>
+<dd><blockquote>
+<div><p>Καμπυλότητα διαρροής για για µή-γραµµικότητα των παραµορφώσεων του θλιβόµενου σκυροδέµατος
+Δίνεται από τη σχέση (χρησιμοποιείται η προσέγγιση):</p>
+<div class="math notranslate nohighlight">
+\[φ_y=\dfrac{ε_c}{ξ_y d}≈\dfrac{1.8 f_y}{E_s ξ_y d}\]</div>
+</div></blockquote>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>fc</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – η θλιπτική αντοχή του σκυροδέματος  [kPa]</li>
+<li><strong>Ec</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – το μέτρο ελαστικότητας του σκυροδέματος  [kPa]</li>
+<li><strong>ξy</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – Το ύψος της θλιβόµενης ζώνης στη διαρροή, ανηγµένο στο στατικό ύψος d [m]</li>
+<li><strong>d</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – το στατικό ύψος [m]</li>
+<li><strong>makelatex</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.7)"><em>bool</em></a>) – True για να δημιουργηθεί το latex string</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">A tuple, with [value, latexstring]</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.7)">tuple</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="streng.codes.greek.kanepe.raw.ch7a.yield_point.φy_steel">
+<code class="descclassname">streng.codes.greek.kanepe.raw.ch7a.yield_point.</code><code class="descname">φy_steel</code><span class="sig-paren">(</span><em>fy</em>, <em>Es</em>, <em>ξy</em>, <em>d</em>, <em>makelatex=False</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/streng/codes/greek/kanepe/raw/ch7a/yield_point.html#φy_steel"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#streng.codes.greek.kanepe.raw.ch7a.yield_point.φy_steel" title="Permalink to this definition">¶</a></dt>
+<dd><blockquote>
+<div><p>Καμπυλότητα διαρροής για διαρροή του οπλισμού.
+Δίνεται από τη σχέση:</p>
+<div class="math notranslate nohighlight">
+\[φ_y=\dfrac{f_y}{E_s(1-ξ_y)d}\]</div>
+</div></blockquote>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>fy</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – το όριο διαρροής του χάλυβα  [kPa]</li>
+<li><strong>Es</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – το μέτρο ελαστικότητας του χάλυβα  [kPa]</li>
+<li><strong>ξy</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – Το ύψος της θλιβόµενης ζώνης στη διαρροή, ανηγµένο στο στατικό ύψος d [m]</li>
+<li><strong>d</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – το στατικό ύψος [m]</li>
+<li><strong>makelatex</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.7)"><em>bool</em></a>) – True για να δημιουργηθεί το latex string</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">A tuple, with [value, latexstring]</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.7)">tuple</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+</div>
+<div class="section" id="chapter-7c">
+<h2>Chapter 7c<a class="headerlink" href="#chapter-7c" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="module-streng.codes.greek.kanepe.raw.ch7c.shear">
+<span id="shear"></span><h3>Shear<a class="headerlink" href="#module-streng.codes.greek.kanepe.raw.ch7c.shear" title="Permalink to this headline">¶</a></h3>
+<dl class="function">
+<dt id="streng.codes.greek.kanepe.raw.ch7c.shear.VRcalc">
+<code class="descclassname">streng.codes.greek.kanepe.raw.ch7c.shear.</code><code class="descname">VRcalc</code><span class="sig-paren">(</span><em>h</em>, <em>x</em>, <em>Ls</em>, <em>N</em>, <em>Ac</em>, <em>fc</em>, <em>μθpl</em>, <em>ρtot</em>, <em>αs</em>, <em>Vw</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/streng/codes/greek/kanepe/raw/ch7c/shear.html#VRcalc"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#streng.codes.greek.kanepe.raw.ch7c.shear.VRcalc" title="Permalink to this definition">¶</a></dt>
+<dd><p>Διατµητική αντοχή δοµικού στοιχείου, όπως αυτή καθορίζεται από τη διαρροή των συνδετήρων.
+Μειώνεται συναρτήσει του μθ,pl
+Η σχέση θέλει MN και m. Αποτέλεσμα σε MN</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>h</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – ύψος διατοµής [m]</li>
+<li><strong>x</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – ύψος της θλιβόµενης ζώνης [m]</li>
+<li><strong>Ls</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – [m]</li>
+<li><strong>N</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – Αξονικό φορτίο (θετικό για θλίψη, µηδενικό για εφελκυσµό) [ΜΝ]</li>
+<li><strong>Ac</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – </li>
+<li><strong>fc</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – </li>
+<li><strong>μθpl</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – </li>
+<li><strong>ρtot</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – </li>
+<li><strong>αs</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – </li>
+<li><strong>Vw</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – </li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">a</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)">float</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="streng.codes.greek.kanepe.raw.ch7c.shear.Vw">
+<code class="descclassname">streng.codes.greek.kanepe.raw.ch7c.shear.</code><code class="descname">Vw</code><span class="sig-paren">(</span><em>ρw</em>, <em>bw</em>, <em>z</em>, <em>fyw</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/streng/codes/greek/kanepe/raw/ch7c/shear.html#Vw"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#streng.codes.greek.kanepe.raw.ch7c.shear.Vw" title="Permalink to this definition">¶</a></dt>
+<dd><p>Συµβολή εγκάρσιου οπλισµού στη διατµητική αντοχή</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>ρw</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – το ποσοστό του εγκάρσιου οπλισµού.</li>
+<li><strong>bw</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – το πλάτος της διατομής [m]</li>
+<li><strong>z</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – ο µοχλοβραχίονας εσωτερικών δυνάµεων (ίσος µε d-d’ σε υποστυλώµατα, δοκούς
+και τοιχώµατα διατοµής Τ ή Η, ή µε 0.8h σε τοιχώµατα ορθογωνικής διατοµής) [m]</li>
+<li><strong>fyw</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – η τάση διαρροής του εγκάρσιου οπλισµού [MPa]</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">a</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)">float</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="greek_kanepe_cls.html" class="btn btn-neutral float-right" title="KANEPE - Classes" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="greek.html" class="btn btn-neutral" title="Greek Codes" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, panagop
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script type="text/javascript" src="https://unpkg.com/mermaid@7.1.0/dist/mermaid.min.js"></script>
+    
+
+  
+
+  <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,9 @@
+********************************
+Eurocode 8 - Jupyter notebooks
+********************************
+
+.. toctree::
+    :maxdepth: 1
+    
+    ../jupyters/codes/eurocodes/ec8/raw_ch3_seismic_action.ipynb
+    ../jupyters/codes/eurocodes/ec8/cls_seismic_action.ipynb

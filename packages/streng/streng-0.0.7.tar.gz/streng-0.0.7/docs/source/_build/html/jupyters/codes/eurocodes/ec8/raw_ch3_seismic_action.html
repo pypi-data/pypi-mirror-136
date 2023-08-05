@@ -1,0 +1,996 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Eurocode 8 - Chapter 3 - seismic_action &mdash; StrEng 0.0.1 documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../../../../_static/book_icon.png"/>
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" />
+    <link rel="next" title="Eurocode 8 - Seismic Action - Spectra" href="cls_seismic_action.html" />
+    <link rel="prev" title="Eurocode 8 - Jupyter notebooks" href="../../../../codes/eurocodes_ec8_jupyter.html" /> 
+
+  
+  <script src="../../../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../../../index.html" class="icon icon-home"> StrEng
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Codes</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../../../codes/eurocodes.html">Eurocodes</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../../../codes/eurocodes.html#eurocode-2">Eurocode 2</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../../../codes/eurocodes.html#eurocode-8">Eurocode 8</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../../../../codes/eurocodes_ec8_raw.html">Raw functions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../codes/eurocodes_ec8_cls.html">Classes</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="../../../../codes/eurocodes_ec8_jupyter.html">Jupyter notebooks</a><ul class="current">
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Eurocode 8 - Chapter 3 - seismic_action</a></li>
+<li class="toctree-l4"><a class="reference internal" href="cls_seismic_action.html">Eurocode 8 - Seismic Action - Spectra</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../codes/eurocodes.html#sample-h3">Sample H3</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../codes/greek.html">Greek Codes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../codes/usa.html">USA codes and guidelines</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Common</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../common/io.html">io</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../common/math.html">math</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Tools</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../tools/tools.html">Various tools</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../index.html">StrEng</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../../../../codes/eurocodes.html">Eurocodes</a> &raquo;</li>
+        
+          <li><a href="../../../../codes/eurocodes_ec8_jupyter.html">Eurocode 8 - Jupyter notebooks</a> &raquo;</li>
+        
+      <li>Eurocode 8 - Chapter 3 - seismic_action</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../../../_sources/jupyters/codes/eurocodes/ec8/raw_ch3_seismic_action.ipynb.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  
+<style>
+/* CSS for nbsphinx extension */
+
+/* remove conflicting styling from Sphinx themes */
+div.nbinput,
+div.nbinput div.prompt,
+div.nbinput div.input_area,
+div.nbinput div[class*=highlight],
+div.nbinput div[class*=highlight] pre,
+div.nboutput,
+div.nbinput div.prompt,
+div.nbinput div.output_area,
+div.nboutput div[class*=highlight],
+div.nboutput div[class*=highlight] pre {
+    background: none;
+    border: none;
+    padding: 0 0;
+    margin: 0;
+    box-shadow: none;
+}
+
+/* avoid gaps between output lines */
+div.nboutput div[class*=highlight] pre {
+    line-height: normal;
+}
+
+/* input/output containers */
+div.nbinput,
+div.nboutput {
+    display: -webkit-flex;
+    display: flex;
+    align-items: flex-start;
+    margin: 0;
+    width: 100%;
+}
+@media (max-width: 540px) {
+    div.nbinput,
+    div.nboutput {
+        flex-direction: column;
+    }
+}
+
+/* input container */
+div.nbinput {
+    padding-top: 5px;
+}
+
+/* last container */
+div.nblast {
+    padding-bottom: 5px;
+}
+
+/* input prompt */
+div.nbinput div.prompt pre {
+    color: #303F9F;
+}
+
+/* output prompt */
+div.nboutput div.prompt pre {
+    color: #D84315;
+}
+
+/* all prompts */
+div.nbinput div.prompt,
+div.nboutput div.prompt {
+    min-width: 8ex;
+    padding-top: 0.4em;
+    padding-right: 0.4em;
+    text-align: right;
+    flex: 0;
+}
+@media (max-width: 540px) {
+    div.nbinput div.prompt,
+    div.nboutput div.prompt {
+        text-align: left;
+        padding: 0.4em;
+    }
+    div.nboutput div.prompt.empty {
+        padding: 0;
+    }
+}
+
+/* disable scrollbars on prompts */
+div.nbinput div.prompt pre,
+div.nboutput div.prompt pre {
+    overflow: hidden;
+}
+
+/* input/output area */
+div.nbinput div.input_area,
+div.nboutput div.output_area {
+    padding: 0.4em;
+    -webkit-flex: 1;
+    flex: 1;
+    overflow: auto;
+}
+@media (max-width: 540px) {
+    div.nbinput div.input_area,
+    div.nboutput div.output_area {
+        width: 100%;
+    }
+}
+
+/* input area */
+div.nbinput div.input_area {
+    border: 1px solid #cfcfcf;
+    border-radius: 2px;
+    background: #f7f7f7;
+}
+
+/* override MathJax center alignment in output cells */
+div.nboutput div[class*=MathJax] {
+    text-align: left !important;
+}
+
+/* override sphinx.ext.pngmath center alignment in output cells */
+div.nboutput div.math p {
+    text-align: left;
+}
+
+/* standard error */
+div.nboutput div.output_area.stderr {
+    background: #fdd;
+}
+
+/* ANSI colors */
+.ansi-black-fg { color: #3E424D; }
+.ansi-black-bg { background-color: #3E424D; }
+.ansi-black-intense-fg { color: #282C36; }
+.ansi-black-intense-bg { background-color: #282C36; }
+.ansi-red-fg { color: #E75C58; }
+.ansi-red-bg { background-color: #E75C58; }
+.ansi-red-intense-fg { color: #B22B31; }
+.ansi-red-intense-bg { background-color: #B22B31; }
+.ansi-green-fg { color: #00A250; }
+.ansi-green-bg { background-color: #00A250; }
+.ansi-green-intense-fg { color: #007427; }
+.ansi-green-intense-bg { background-color: #007427; }
+.ansi-yellow-fg { color: #DDB62B; }
+.ansi-yellow-bg { background-color: #DDB62B; }
+.ansi-yellow-intense-fg { color: #B27D12; }
+.ansi-yellow-intense-bg { background-color: #B27D12; }
+.ansi-blue-fg { color: #208FFB; }
+.ansi-blue-bg { background-color: #208FFB; }
+.ansi-blue-intense-fg { color: #0065CA; }
+.ansi-blue-intense-bg { background-color: #0065CA; }
+.ansi-magenta-fg { color: #D160C4; }
+.ansi-magenta-bg { background-color: #D160C4; }
+.ansi-magenta-intense-fg { color: #A03196; }
+.ansi-magenta-intense-bg { background-color: #A03196; }
+.ansi-cyan-fg { color: #60C6C8; }
+.ansi-cyan-bg { background-color: #60C6C8; }
+.ansi-cyan-intense-fg { color: #258F8F; }
+.ansi-cyan-intense-bg { background-color: #258F8F; }
+.ansi-white-fg { color: #C5C1B4; }
+.ansi-white-bg { background-color: #C5C1B4; }
+.ansi-white-intense-fg { color: #A1A6B2; }
+.ansi-white-intense-bg { background-color: #A1A6B2; }
+
+.ansi-default-inverse-fg { color: #FFFFFF; }
+.ansi-default-inverse-bg { background-color: #000000; }
+
+.ansi-bold { font-weight: bold; }
+.ansi-underline { text-decoration: underline; }
+
+/* CSS overrides for sphinx_rtd_theme */
+
+/* 24px margin */
+.nbinput.nblast,
+.nboutput.nblast {
+    margin-bottom: 19px;  /* padding has already 5px */
+}
+
+/* ... except between code cells! */
+.nblast + .nbinput {
+    margin-top: -19px;
+}
+
+.admonition > p:before {
+    margin-right: 4px;  /* make room for the exclamation icon */
+}
+</style>
+<div class="section" id="Eurocode-8---Chapter-3---seismic_action">
+<h1>Eurocode 8 - Chapter 3 - seismic_action<a class="headerlink" href="#Eurocode-8---Chapter-3---seismic_action" title="Permalink to this headline">¶</a></h1>
+<p>raw functions</p>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre>
+<span></span>In [1]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="kn">from</span> <span class="nn">streng.codes.eurocodes.ec8.raw.ch3.seismic_action</span> <span class="k">import</span> <span class="n">spectra</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="spectra">
+<h2>spectra<a class="headerlink" href="#spectra" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="αg">
+<h3>αg<a class="headerlink" href="#αg" title="Permalink to this headline">¶</a></h3>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre>
+<span></span>In [2]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="nb">print</span><span class="p">(</span><span class="n">spectra</span><span class="o">.</span><span class="n">αg</span><span class="o">.</span><span class="vm">__doc__</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+
+
+    Args:
+        αgR (float): reference peak ground acceleration on type A ground
+        γI: (float): importance factor
+
+    Returns:
+        float: design ground acceleration on type A ground
+
+
+</pre></div></div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre>
+<span></span>In [3]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">αg</span> <span class="o">=</span> <span class="n">spectra</span><span class="o">.</span><span class="n">αg</span><span class="p">(</span><span class="n">αgR</span><span class="o">=</span><span class="mf">0.24</span><span class="p">,</span>
+                <span class="n">γI</span><span class="o">=</span><span class="mf">1.20</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;αg = </span><span class="si">{αg}</span><span class="s1">g&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+αg = 0.288g
+</pre></div></div>
+</div>
+</div>
+<div class="section" id="S">
+<h3>S<a class="headerlink" href="#S" title="Permalink to this headline">¶</a></h3>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre>
+<span></span>In [4]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="nb">print</span><span class="p">(</span><span class="n">spectra</span><span class="o">.</span><span class="n">S</span><span class="o">.</span><span class="vm">__doc__</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+
+
+    Args:
+        ground_type (str): Ground type (A, B, C, D or E)
+        spectrum_type (int): Spectrum type 1 or 2
+
+    Returns:
+        float: soil factor
+
+
+</pre></div></div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre>
+<span></span>In [5]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">S</span> <span class="o">=</span> <span class="n">spectra</span><span class="o">.</span><span class="n">S</span><span class="p">(</span><span class="n">ground_type</span><span class="o">=</span><span class="s1">&#39;B&#39;</span><span class="p">,</span>
+             <span class="n">spectrum_type</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;S = </span><span class="si">{S}</span><span class="s1">&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+S = 1.2
+</pre></div></div>
+</div>
+</div>
+<div class="section" id="TB">
+<h3>TB<a class="headerlink" href="#TB" title="Permalink to this headline">¶</a></h3>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre>
+<span></span>In [6]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="nb">print</span><span class="p">(</span><span class="n">spectra</span><span class="o">.</span><span class="n">TB</span><span class="o">.</span><span class="vm">__doc__</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+
+
+    Args:
+        ground_type (str): Ground type (A, B, C, D or E)
+        spectrum_type (int): Spectrum type 1 or 2
+
+    Returns:
+        float: The lower limit of the period of the constant spectral acceleration branch
+
+
+</pre></div></div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre>
+<span></span>In [7]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">TB</span> <span class="o">=</span> <span class="n">spectra</span><span class="o">.</span><span class="n">TB</span><span class="p">(</span><span class="n">ground_type</span><span class="o">=</span><span class="s1">&#39;B&#39;</span><span class="p">,</span>
+             <span class="n">spectrum_type</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;TB = </span><span class="si">{TB}</span><span class="s1">&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+TB = 0.15
+</pre></div></div>
+</div>
+</div>
+<div class="section" id="TC">
+<h3>TC<a class="headerlink" href="#TC" title="Permalink to this headline">¶</a></h3>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre>
+<span></span>In [8]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="nb">print</span><span class="p">(</span><span class="n">spectra</span><span class="o">.</span><span class="n">TC</span><span class="o">.</span><span class="vm">__doc__</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+
+
+    Args:
+        ground_type (str): Ground type (A, B, C, D or E)
+        spectrum_type (int): Spectrum type 1 or 2
+
+    Returns:
+        float: The upper limit of the period of the constant spectral acceleration branch
+
+
+</pre></div></div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre>
+<span></span>In [9]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">TC</span> <span class="o">=</span> <span class="n">spectra</span><span class="o">.</span><span class="n">TC</span><span class="p">(</span><span class="n">ground_type</span><span class="o">=</span><span class="s1">&#39;B&#39;</span><span class="p">,</span>
+             <span class="n">spectrum_type</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;TC = </span><span class="si">{TC}</span><span class="s1">&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+TC = 0.5
+</pre></div></div>
+</div>
+</div>
+<div class="section" id="TD">
+<h3>TD<a class="headerlink" href="#TD" title="Permalink to this headline">¶</a></h3>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre>
+<span></span>In [10]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="nb">print</span><span class="p">(</span><span class="n">spectra</span><span class="o">.</span><span class="n">TD</span><span class="o">.</span><span class="vm">__doc__</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+
+
+    Args:
+        ground_type (str): Ground type (A, B, C, D or E)
+        spectrum_type (int): Spectrum type 1 or 2
+
+    Returns:
+        float: The value defining the beginning of the constant displacement response range of the spectrum
+
+
+</pre></div></div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre>
+<span></span>In [11]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">TD</span> <span class="o">=</span> <span class="n">spectra</span><span class="o">.</span><span class="n">TD</span><span class="p">(</span><span class="n">ground_type</span><span class="o">=</span><span class="s1">&#39;B&#39;</span><span class="p">,</span>
+             <span class="n">spectrum_type</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;TD = </span><span class="si">{TD}</span><span class="s1">&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+TD = 2.0
+</pre></div></div>
+</div>
+</div>
+<div class="section" id="Se">
+<h3>Se<a class="headerlink" href="#Se" title="Permalink to this headline">¶</a></h3>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre>
+<span></span>In [12]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="nb">print</span><span class="p">(</span><span class="n">spectra</span><span class="o">.</span><span class="n">Se</span><span class="o">.</span><span class="vm">__doc__</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+
+
+    Args:
+        T (float): The vibration period of a linear single-degree-of-freedom system
+        αg (float): The design ground acceleration on type A ground (ag = γI*agR)
+        S (float): The soil factor
+        TB (float): The lower limit of the period of the constant spectral acceleration branch
+        TC (float): The upper limit of the period of the constant spectral acceleration branch
+        TD (float): The value defining the beginning of the constant displacement response range of the spectrum
+        η (float): The damping correction factor with a reference value of η = 1 for 5% viscous damping
+
+    Returns:
+        float: The elastic acceleration response spectrum. Given using the expressions:
+
+        .. math::
+            :nowrap:
+
+            \begin{eqnarray}
+                0 \le T \le T_B \rightarrow &amp; S_e(T) &amp; = α_g\cdot S \cdot (1+\dfrac{T}{T_B}\cdot(η\cdot 2.5 -1)) \\
+                T_B \le T \le T_C \rightarrow &amp; S_e(T) &amp; = α_g\cdot S \cdot η\cdot 2.5 \\
+                T_C \le T \le T_D \rightarrow &amp; S_e(T) &amp; = α_g\cdot S \cdot η\cdot 2.5\cdot \dfrac{T_C}{T} \\
+                T_D \le T \le 4s \rightarrow &amp; S_e(T) &amp; = α_g\cdot S \cdot η\cdot 2.5\cdot \dfrac{T_C\cdot T_D}{T^2}
+            \end{eqnarray}
+
+
+</pre></div></div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre>
+<span></span>In [13]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">Se</span> <span class="o">=</span> <span class="n">spectra</span><span class="o">.</span><span class="n">Se</span><span class="p">(</span><span class="n">T</span><span class="o">=</span><span class="mf">0.50</span><span class="p">,</span>
+               <span class="n">αg</span> <span class="o">=</span> <span class="mf">0.24</span><span class="p">,</span>
+               <span class="n">S</span><span class="o">=</span><span class="mf">1.20</span><span class="p">,</span>
+               <span class="n">TB</span><span class="o">=</span><span class="mf">0.15</span><span class="p">,</span>
+               <span class="n">TC</span><span class="o">=</span><span class="mf">0.50</span><span class="p">,</span>
+               <span class="n">TD</span><span class="o">=</span><span class="mf">2.0</span><span class="p">,</span>
+               <span class="n">η</span><span class="o">=</span><span class="mf">1.0</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;Se = </span><span class="si">{Se}</span><span class="s1">g&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+Se = 0.72g
+</pre></div></div>
+</div>
+</div>
+<div class="section" id="SDe">
+<h3>SDe<a class="headerlink" href="#SDe" title="Permalink to this headline">¶</a></h3>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre>
+<span></span>In [14]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="nb">print</span><span class="p">(</span><span class="n">spectra</span><span class="o">.</span><span class="n">SDe</span><span class="o">.</span><span class="vm">__doc__</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+
+
+    Args:
+        T (float): The vibration period of a linear single-degree-of-freedom system
+        Se (float):The elastic acceleration response spectrum
+
+    Returns:
+        float: The elastic displacement response spectrum. Given using the expression:
+
+        .. math::
+            S_{De}=S_e(T)\cdot(\dfrac{T}{2π})^2
+
+
+</pre></div></div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre>
+<span></span>In [15]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">Sde</span> <span class="o">=</span> <span class="n">spectra</span><span class="o">.</span><span class="n">SDe</span><span class="p">(</span><span class="n">T</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span>
+                 <span class="n">Se</span><span class="o">=</span><span class="mf">0.72</span><span class="o">*</span><span class="mf">9.81</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;Sde = </span><span class="si">{Sde:.3f}</span><span class="s1">m&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+Sde = 0.045m
+</pre></div></div>
+</div>
+</div>
+<div class="section" id="dg">
+<h3>dg<a class="headerlink" href="#dg" title="Permalink to this headline">¶</a></h3>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre>
+<span></span>In [16]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="nb">print</span><span class="p">(</span><span class="n">spectra</span><span class="o">.</span><span class="n">dg</span><span class="o">.</span><span class="vm">__doc__</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+
+
+    Args:
+        αg (float): The design ground acceleration on type A ground (ag = γI*agR)
+        S (float): The soil factor
+        TC (float): The upper limit of the period of the constant spectral acceleration branch
+        TD (float): The value defining the beginning of the constant displacement response range of the spectrum
+
+    Returns:
+        float: Design ground displacement. Given using the expression:
+
+         .. math::
+            d_{g}=0.025\cdot α_g \cdot S \cdot T_C  \cdot T_D
+
+
+</pre></div></div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre>
+<span></span>In [17]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">dg</span> <span class="o">=</span> <span class="n">spectra</span><span class="o">.</span><span class="n">dg</span><span class="p">(</span><span class="n">αg</span><span class="o">=</span><span class="mf">0.24</span><span class="p">,</span>
+               <span class="n">S</span><span class="o">=</span><span class="mf">1.20</span><span class="p">,</span>
+               <span class="n">TC</span><span class="o">=</span><span class="mf">0.50</span><span class="p">,</span>
+               <span class="n">TD</span><span class="o">=</span><span class="mf">2.0</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;dg = </span><span class="si">{dg:.4f}</span><span class="s1">g&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+dg = 0.0072g
+</pre></div></div>
+</div>
+</div>
+<div class="section" id="Sd">
+<h3>Sd<a class="headerlink" href="#Sd" title="Permalink to this headline">¶</a></h3>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre>
+<span></span>In [18]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="nb">print</span><span class="p">(</span><span class="n">spectra</span><span class="o">.</span><span class="n">Sd</span><span class="o">.</span><span class="vm">__doc__</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+
+
+    Args:
+        T (float): The vibration period of a linear single-degree-of-freedom system
+        αg (float): The design ground acceleration on type A ground (ag = γI*agR)
+        S (float): The soil factor
+        TB (float): The lower limit of the period of the constant spectral acceleration branch
+        TC (float): The upper limit of the period of the constant spectral acceleration branch
+        TD (float): The value defining the beginning of the constant displacement response range of the spectrum
+        q (float): The behaviour factor
+        β (float): The lower bound factor for the horizontal design spectrum. Recommended value for β is 0.2
+
+    Returns:
+        float: Design spectrum for elastic analysis. Given using the expressions:
+
+        .. math::
+            :nowrap:
+
+            \begin{eqnarray}
+                0 \le T \le T_B \rightarrow &amp; S_d(T) &amp; = α_g\cdot S \cdot (\dfrac{2}{3}+\dfrac{T}{T_B}\cdot(\dfrac{2.5}{q} - \dfrac{2}{3})) \\
+                T_B \le T \le T_C \rightarrow &amp; S_d(T) &amp; = α_g\cdot S \cdot \dfrac{2.5}{q} \\
+                T_C \le T \le T_D \rightarrow &amp; S_d(T) &amp; = α_g\cdot S \cdot \dfrac{2.5}{q} \cdot \dfrac{T_C}{T} \ge β \cdot α_g \\
+                T_D \le T \le 4s \rightarrow &amp; S_d(T) &amp; = α_g\cdot S \cdot \dfrac{2.5}{q} \cdot \dfrac{T_C\cdot T_D}{T^2} \ge β \cdot α_g
+            \end{eqnarray}
+
+
+</pre></div></div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre>
+<span></span>In [19]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">Sd</span> <span class="o">=</span> <span class="n">spectra</span><span class="o">.</span><span class="n">Sd</span><span class="p">(</span><span class="n">T</span><span class="o">=</span><span class="mf">0.50</span><span class="p">,</span>
+               <span class="n">αg</span> <span class="o">=</span> <span class="mf">0.24</span><span class="p">,</span>
+               <span class="n">S</span><span class="o">=</span><span class="mf">1.20</span><span class="p">,</span>
+               <span class="n">TB</span><span class="o">=</span><span class="mf">0.15</span><span class="p">,</span>
+               <span class="n">TC</span><span class="o">=</span><span class="mf">0.50</span><span class="p">,</span>
+               <span class="n">TD</span><span class="o">=</span><span class="mf">2.0</span><span class="p">,</span>
+               <span class="n">q</span><span class="o">=</span><span class="mf">3.9</span><span class="p">,</span>
+               <span class="n">β</span><span class="o">=</span><span class="mf">0.20</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;Sd = </span><span class="si">{Sd:.3f}</span><span class="s1">g&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+Sd = 0.185g
+</pre></div></div>
+</div>
+</div>
+<div class="section" id="η">
+<h3>η<a class="headerlink" href="#η" title="Permalink to this headline">¶</a></h3>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre>
+<span></span>In [20]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="nb">print</span><span class="p">(</span><span class="n">spectra</span><span class="o">.</span><span class="n">η</span><span class="o">.</span><span class="vm">__doc__</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+
+
+    Args:
+        ξ (float): the viscous damping ratio of the structure[%]
+
+    Returns:
+        float: The value of the damping correction factor. Given using the expressions:
+
+        .. math::
+            η = \sqrt{\dfrac{10}{5+ξ}} \ge 0.55
+
+</pre></div></div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre>
+<span></span>In [26]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">η_5</span> <span class="o">=</span> <span class="n">spectra</span><span class="o">.</span><span class="n">η</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;η(5%) = </span><span class="si">{η_5:.2f}</span><span class="s1">&#39;</span><span class="p">)</span>
+
+<span class="n">η_7</span> <span class="o">=</span> <span class="n">spectra</span><span class="o">.</span><span class="n">η</span><span class="p">(</span><span class="mi">7</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;η(7%) = </span><span class="si">{η_7:.2f}</span><span class="s1">&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+η(5%) = 1.00
+η(7%) = 0.91
+</pre></div></div>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="cls_seismic_action.html" class="btn btn-neutral float-right" title="Eurocode 8 - Seismic Action - Spectra" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../../../../codes/eurocodes_ec8_jupyter.html" class="btn btn-neutral" title="Eurocode 8 - Jupyter notebooks" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, panagop
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../../" src="../../../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../../../_static/doctools.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script type="text/javascript" src="https://unpkg.com/mermaid@7.1.0/dist/mermaid.min.js"></script>
+    
+
+  
+
+  <script type="text/javascript" src="../../../../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

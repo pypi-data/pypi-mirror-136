@@ -1,0 +1,895 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Output &mdash; StrEng 0.0.1 documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../../../_static/book_icon.png"/>
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="Math" href="../../../common/math.html" />
+    <link rel="prev" title="Input-Output" href="../../../common/io.html" /> 
+
+  
+  <script src="../../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> StrEng
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Codes</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../codes/eurocodes.html">Eurocodes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../codes/greek.html">Greek Codes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../codes/usa.html">USA codes and guidelines</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Common</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../../common/io.html">io</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../../../common/io.html#show-results">Show results</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../../../common/io.html#classes">Classes</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="../../../common/io.html#jupyter-notebooks">Jupyter Notebooks</a><ul class="current">
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Output</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../common/math.html">math</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Tools</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../tools/tools.html">Various tools</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">StrEng</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../../../common/io.html">Input-Output</a> &raquo;</li>
+        
+      <li>Output</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../../_sources/jupyters/common/io/output.ipynb.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  
+<style>
+/* CSS for nbsphinx extension */
+
+/* remove conflicting styling from Sphinx themes */
+div.nbinput,
+div.nbinput div.prompt,
+div.nbinput div.input_area,
+div.nbinput div[class*=highlight],
+div.nbinput div[class*=highlight] pre,
+div.nboutput,
+div.nbinput div.prompt,
+div.nbinput div.output_area,
+div.nboutput div[class*=highlight],
+div.nboutput div[class*=highlight] pre {
+    background: none;
+    border: none;
+    padding: 0 0;
+    margin: 0;
+    box-shadow: none;
+}
+
+/* avoid gaps between output lines */
+div.nboutput div[class*=highlight] pre {
+    line-height: normal;
+}
+
+/* input/output containers */
+div.nbinput,
+div.nboutput {
+    display: -webkit-flex;
+    display: flex;
+    align-items: flex-start;
+    margin: 0;
+    width: 100%;
+}
+@media (max-width: 540px) {
+    div.nbinput,
+    div.nboutput {
+        flex-direction: column;
+    }
+}
+
+/* input container */
+div.nbinput {
+    padding-top: 5px;
+}
+
+/* last container */
+div.nblast {
+    padding-bottom: 5px;
+}
+
+/* input prompt */
+div.nbinput div.prompt pre {
+    color: #303F9F;
+}
+
+/* output prompt */
+div.nboutput div.prompt pre {
+    color: #D84315;
+}
+
+/* all prompts */
+div.nbinput div.prompt,
+div.nboutput div.prompt {
+    min-width: 8ex;
+    padding-top: 0.4em;
+    padding-right: 0.4em;
+    text-align: right;
+    flex: 0;
+}
+@media (max-width: 540px) {
+    div.nbinput div.prompt,
+    div.nboutput div.prompt {
+        text-align: left;
+        padding: 0.4em;
+    }
+    div.nboutput div.prompt.empty {
+        padding: 0;
+    }
+}
+
+/* disable scrollbars on prompts */
+div.nbinput div.prompt pre,
+div.nboutput div.prompt pre {
+    overflow: hidden;
+}
+
+/* input/output area */
+div.nbinput div.input_area,
+div.nboutput div.output_area {
+    padding: 0.4em;
+    -webkit-flex: 1;
+    flex: 1;
+    overflow: auto;
+}
+@media (max-width: 540px) {
+    div.nbinput div.input_area,
+    div.nboutput div.output_area {
+        width: 100%;
+    }
+}
+
+/* input area */
+div.nbinput div.input_area {
+    border: 1px solid #cfcfcf;
+    border-radius: 2px;
+    background: #f7f7f7;
+}
+
+/* override MathJax center alignment in output cells */
+div.nboutput div[class*=MathJax] {
+    text-align: left !important;
+}
+
+/* override sphinx.ext.pngmath center alignment in output cells */
+div.nboutput div.math p {
+    text-align: left;
+}
+
+/* standard error */
+div.nboutput div.output_area.stderr {
+    background: #fdd;
+}
+
+/* ANSI colors */
+.ansi-black-fg { color: #3E424D; }
+.ansi-black-bg { background-color: #3E424D; }
+.ansi-black-intense-fg { color: #282C36; }
+.ansi-black-intense-bg { background-color: #282C36; }
+.ansi-red-fg { color: #E75C58; }
+.ansi-red-bg { background-color: #E75C58; }
+.ansi-red-intense-fg { color: #B22B31; }
+.ansi-red-intense-bg { background-color: #B22B31; }
+.ansi-green-fg { color: #00A250; }
+.ansi-green-bg { background-color: #00A250; }
+.ansi-green-intense-fg { color: #007427; }
+.ansi-green-intense-bg { background-color: #007427; }
+.ansi-yellow-fg { color: #DDB62B; }
+.ansi-yellow-bg { background-color: #DDB62B; }
+.ansi-yellow-intense-fg { color: #B27D12; }
+.ansi-yellow-intense-bg { background-color: #B27D12; }
+.ansi-blue-fg { color: #208FFB; }
+.ansi-blue-bg { background-color: #208FFB; }
+.ansi-blue-intense-fg { color: #0065CA; }
+.ansi-blue-intense-bg { background-color: #0065CA; }
+.ansi-magenta-fg { color: #D160C4; }
+.ansi-magenta-bg { background-color: #D160C4; }
+.ansi-magenta-intense-fg { color: #A03196; }
+.ansi-magenta-intense-bg { background-color: #A03196; }
+.ansi-cyan-fg { color: #60C6C8; }
+.ansi-cyan-bg { background-color: #60C6C8; }
+.ansi-cyan-intense-fg { color: #258F8F; }
+.ansi-cyan-intense-bg { background-color: #258F8F; }
+.ansi-white-fg { color: #C5C1B4; }
+.ansi-white-bg { background-color: #C5C1B4; }
+.ansi-white-intense-fg { color: #A1A6B2; }
+.ansi-white-intense-bg { background-color: #A1A6B2; }
+
+.ansi-default-inverse-fg { color: #FFFFFF; }
+.ansi-default-inverse-bg { background-color: #000000; }
+
+.ansi-bold { font-weight: bold; }
+.ansi-underline { text-decoration: underline; }
+
+/* CSS overrides for sphinx_rtd_theme */
+
+/* 24px margin */
+.nbinput.nblast,
+.nboutput.nblast {
+    margin-bottom: 19px;  /* padding has already 5px */
+}
+
+/* ... except between code cells! */
+.nblast + .nbinput {
+    margin-top: -19px;
+}
+
+.admonition > p:before {
+    margin-right: 4px;  /* make room for the exclamation icon */
+}
+</style>
+<div class="section" id="Output">
+<h1>Output<a class="headerlink" href="#Output" title="Permalink to this headline">¶</a></h1>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre>
+<span></span>In [1]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">from</span> <span class="nn">tabulate</span> <span class="k">import</span> <span class="n">tabulate</span>
+
+<span class="kn">from</span> <span class="nn">streng.common.io.output</span> <span class="k">import</span> <span class="n">OutputTable</span><span class="p">,</span> <span class="n">OutputString</span><span class="p">,</span> <span class="n">OutputExtended</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="OutputTable">
+<h2>OutputTable<a class="headerlink" href="#OutputTable" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="some-example-data">
+<h3>some example data<a class="headerlink" href="#some-example-data" title="Permalink to this headline">¶</a></h3>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre>
+<span></span>In [2]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">data</span> <span class="o">=</span> <span class="p">[{</span><span class="s1">&#39;__iteration&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+  <span class="s1">&#39;x_y&#39;</span><span class="p">:</span> <span class="mf">0.04213429287708525</span><span class="p">,</span>
+  <span class="s1">&#39;y_y&#39;</span><span class="p">:</span> <span class="mf">1310.8730715333027</span><span class="p">,</span>
+  <span class="s1">&#39;x_u&#39;</span><span class="p">:</span> <span class="mf">0.44886</span><span class="p">,</span>
+  <span class="s1">&#39;y_u&#39;</span><span class="p">:</span> <span class="mf">1311.3866666666665</span><span class="p">,</span>
+  <span class="s1">&#39;kinel&#39;</span><span class="p">:</span> <span class="mf">1.2627555238564436</span><span class="p">,</span>
+  <span class="s1">&#39;kel&#39;</span><span class="p">:</span> <span class="mf">31111.785247171465</span><span class="p">,</span>
+  <span class="s1">&#39;k_06&#39;</span><span class="p">:</span> <span class="mf">24639.615704484408</span><span class="p">,</span>
+  <span class="s1">&#39;error&#39;</span><span class="p">:</span> <span class="mf">0.26267331521364284</span><span class="p">},</span>
+ <span class="p">{</span><span class="s1">&#39;__iteration&#39;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+  <span class="s1">&#39;x_y&#39;</span><span class="p">:</span> <span class="mf">0.05395737709629134</span><span class="p">,</span>
+  <span class="s1">&#39;y_y&#39;</span><span class="p">:</span> <span class="mf">1329.4890360745674</span><span class="p">,</span>
+  <span class="s1">&#39;x_u&#39;</span><span class="p">:</span> <span class="mf">0.44886</span><span class="p">,</span>
+  <span class="s1">&#39;y_u&#39;</span><span class="p">:</span> <span class="mf">1329.4890360745674</span><span class="p">,</span>
+  <span class="s1">&#39;kinel&#39;</span><span class="p">:</span> <span class="o">-</span><span class="mf">91.76544991341024</span><span class="p">,</span>
+  <span class="s1">&#39;kel&#39;</span><span class="p">:</span> <span class="mf">24639.615704484408</span><span class="p">,</span>
+  <span class="s1">&#39;k_06&#39;</span><span class="p">:</span> <span class="mf">24476.018099972942</span><span class="p">,</span>
+  <span class="s1">&#39;error&#39;</span><span class="p">:</span> <span class="mf">0.006683995895216576</span><span class="p">},</span>
+ <span class="p">{</span><span class="s1">&#39;__iteration&#39;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span>
+  <span class="s1">&#39;x_y&#39;</span><span class="p">:</span> <span class="mf">0.05434285482397955</span><span class="p">,</span>
+  <span class="s1">&#39;y_y&#39;</span><span class="p">:</span> <span class="mf">1330.0966982759253</span><span class="p">,</span>
+  <span class="s1">&#39;x_u&#39;</span><span class="p">:</span> <span class="mf">0.44886</span><span class="p">,</span>
+  <span class="s1">&#39;y_u&#39;</span><span class="p">:</span> <span class="mf">1330.0966982759253</span><span class="p">,</span>
+  <span class="s1">&#39;kinel&#39;</span><span class="p">:</span> <span class="o">-</span><span class="mf">94.94217563576123</span><span class="p">,</span>
+  <span class="s1">&#39;kel&#39;</span><span class="p">:</span> <span class="mf">24476.018099972942</span><span class="p">,</span>
+  <span class="s1">&#39;k_06&#39;</span><span class="p">:</span> <span class="mf">24469.75466696404</span><span class="p">,</span>
+  <span class="s1">&#39;error&#39;</span><span class="p">:</span> <span class="mf">0.0002559663181812895</span><span class="p">},</span>
+ <span class="p">{</span><span class="s1">&#39;__iteration&#39;</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span>
+  <span class="s1">&#39;x_y&#39;</span><span class="p">:</span> <span class="mf">0.05435772305859232</span><span class="p">,</span>
+  <span class="s1">&#39;y_y&#39;</span><span class="p">:</span> <span class="mf">1330.1201474985282</span><span class="p">,</span>
+  <span class="s1">&#39;x_u&#39;</span><span class="p">:</span> <span class="mf">0.44886</span><span class="p">,</span>
+  <span class="s1">&#39;y_u&#39;</span><span class="p">:</span> <span class="mf">1330.1201474985282</span><span class="p">,</span>
+  <span class="s1">&#39;kinel&#39;</span><span class="p">:</span> <span class="o">-</span><span class="mf">95.064891451666</span><span class="p">,</span>
+  <span class="s1">&#39;kel&#39;</span><span class="p">:</span> <span class="mf">24469.75466696404</span><span class="p">,</span>
+  <span class="s1">&#39;k_06&#39;</span><span class="p">:</span> <span class="mf">24469.51314473135</span><span class="p">,</span>
+  <span class="s1">&#39;error&#39;</span><span class="p">:</span> <span class="mf">9.870332575089462e-06</span><span class="p">},</span>
+ <span class="p">{</span><span class="s1">&#39;__iteration&#39;</span><span class="p">:</span> <span class="mi">5</span><span class="p">,</span>
+  <span class="s1">&#39;x_y&#39;</span><span class="p">:</span> <span class="mf">0.05435829655145874</span><span class="p">,</span>
+  <span class="s1">&#39;y_y&#39;</span><span class="p">:</span> <span class="mf">1330.1210519911244</span><span class="p">,</span>
+  <span class="s1">&#39;x_u&#39;</span><span class="p">:</span> <span class="mf">0.44886</span><span class="p">,</span>
+  <span class="s1">&#39;y_u&#39;</span><span class="p">:</span> <span class="mf">1330.1210519911244</span><span class="p">,</span>
+  <span class="s1">&#39;kinel&#39;</span><span class="p">:</span> <span class="o">-</span><span class="mf">95.0696250854122</span><span class="p">,</span>
+  <span class="s1">&#39;kel&#39;</span><span class="p">:</span> <span class="mf">24469.51314473135</span><span class="p">,</span>
+  <span class="s1">&#39;k_06&#39;</span><span class="p">:</span> <span class="mf">24469.503828907287</span><span class="p">,</span>
+  <span class="s1">&#39;error&#39;</span><span class="p">:</span> <span class="mf">3.807116044736897e-07</span><span class="p">}]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="using-tabulate-to-show-data-as-markdown-table">
+<h3>using tabulate to show data as markdown table<a class="headerlink" href="#using-tabulate-to-show-data-as-markdown-table" title="Permalink to this headline">¶</a></h3>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre>
+<span></span>In [3]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="nb">print</span><span class="p">(</span><span class="n">tabulate</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="s1">&#39;keys&#39;</span><span class="p">,</span> <span class="n">tablefmt</span><span class="o">=</span><span class="s2">&quot;pipe&quot;</span><span class="p">,</span> <span class="n">floatfmt</span><span class="o">=</span><span class="s2">&quot;.3E&quot;</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+|   __iteration |       x_y |       y_y |       x_u |       y_u |      kinel |       kel |      k_06 |     error |
+|------------:|----------:|----------:|----------:|----------:|-----------:|----------:|----------:|----------:|
+|           1 | 4.213E-02 | 1.311E+03 | 4.489E-01 | 1.311E+03 |  1.263E+00 | 3.111E+04 | 2.464E+04 | 2.627E-01 |
+|           2 | 5.396E-02 | 1.329E+03 | 4.489E-01 | 1.329E+03 | -9.177E+01 | 2.464E+04 | 2.448E+04 | 6.684E-03 |
+|           3 | 5.434E-02 | 1.330E+03 | 4.489E-01 | 1.330E+03 | -9.494E+01 | 2.448E+04 | 2.447E+04 | 2.560E-04 |
+|           4 | 5.436E-02 | 1.330E+03 | 4.489E-01 | 1.330E+03 | -9.506E+01 | 2.447E+04 | 2.447E+04 | 9.870E-06 |
+|           5 | 5.436E-02 | 1.330E+03 | 4.489E-01 | 1.330E+03 | -9.507E+01 | 2.447E+04 | 2.447E+04 | 3.807E-07 |
+</pre></div></div>
+</div>
+</div>
+<div class="section" id="show-data-as-pandas-dataframe">
+<h3>show data as pandas dataframe<a class="headerlink" href="#show-data-as-pandas-dataframe" title="Permalink to this headline">¶</a></h3>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre>
+<span></span>In [4]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">data</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="nb">list</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">keys</span><span class="p">()))</span>
+<span class="n">df</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre>
+<span></span>Out[4]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>__iteration</th>
+      <th>x_y</th>
+      <th>y_y</th>
+      <th>x_u</th>
+      <th>y_u</th>
+      <th>kinel</th>
+      <th>kel</th>
+      <th>k_06</th>
+      <th>error</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1</td>
+      <td>0.042134</td>
+      <td>1310.873072</td>
+      <td>0.44886</td>
+      <td>1311.386667</td>
+      <td>1.262756</td>
+      <td>31111.785247</td>
+      <td>24639.615704</td>
+      <td>2.626733e-01</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2</td>
+      <td>0.053957</td>
+      <td>1329.489036</td>
+      <td>0.44886</td>
+      <td>1329.489036</td>
+      <td>-91.765450</td>
+      <td>24639.615704</td>
+      <td>24476.018100</td>
+      <td>6.683996e-03</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>3</td>
+      <td>0.054343</td>
+      <td>1330.096698</td>
+      <td>0.44886</td>
+      <td>1330.096698</td>
+      <td>-94.942176</td>
+      <td>24476.018100</td>
+      <td>24469.754667</td>
+      <td>2.559663e-04</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>4</td>
+      <td>0.054358</td>
+      <td>1330.120147</td>
+      <td>0.44886</td>
+      <td>1330.120147</td>
+      <td>-95.064891</td>
+      <td>24469.754667</td>
+      <td>24469.513145</td>
+      <td>9.870333e-06</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>5</td>
+      <td>0.054358</td>
+      <td>1330.121052</td>
+      <td>0.44886</td>
+      <td>1330.121052</td>
+      <td>-95.069625</td>
+      <td>24469.513145</td>
+      <td>24469.503829</td>
+      <td>3.807116e-07</td>
+    </tr>
+  </tbody>
+</table>
+</div></div>
+</div>
+</div>
+</div>
+<div class="section" id="Class-usage">
+<h2>Class usage<a class="headerlink" href="#Class-usage" title="Permalink to this headline">¶</a></h2>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre>
+<span></span>In [17]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="nb">print</span><span class="p">(</span><span class="n">OutputTable</span><span class="o">.</span><span class="vm">__doc__</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+ An output table given as a list of dictionaries that can be presented (and used) as
+    a pandas dataframe or a markdown table
+
+    Attributes:
+        data (List[dict]): A list of dictionaries
+
+
+</pre></div></div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre>
+<span></span>In [18]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">ot</span> <span class="o">=</span> <span class="n">OutputTable</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">data</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="not-very-useful-but-can-work-sometimes">
+<h3>not very useful but can work sometimes<a class="headerlink" href="#not-very-useful-but-can-work-sometimes" title="Permalink to this headline">¶</a></h3>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre>
+<span></span>In [19]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">ot</span><span class="o">.</span><span class="n">data</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="s1">&#39;x_y&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre>
+<span></span>Out[19]:
+</pre></div>
+</div>
+<div class="output_area highlight-none notranslate"><div class="highlight"><pre>
+<span></span>0.05434285482397955
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="show-data-as-markdown-table">
+<h3>show data as markdown table<a class="headerlink" href="#show-data-as-markdown-table" title="Permalink to this headline">¶</a></h3>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre>
+<span></span>In [8]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="nb">print</span><span class="p">(</span><span class="n">ot</span><span class="o">.</span><span class="n">to_markdown</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+|   __iteration |       x_y |       y_y |       x_u |       y_u |      kinel |       kel |      k_06 |     error |
+|------------:|----------:|----------:|----------:|----------:|-----------:|----------:|----------:|----------:|
+|           1 | 4.213E-02 | 1.311E+03 | 4.489E-01 | 1.311E+03 |  1.263E+00 | 3.111E+04 | 2.464E+04 | 2.627E-01 |
+|           2 | 5.396E-02 | 1.329E+03 | 4.489E-01 | 1.329E+03 | -9.177E+01 | 2.464E+04 | 2.448E+04 | 6.684E-03 |
+|           3 | 5.434E-02 | 1.330E+03 | 4.489E-01 | 1.330E+03 | -9.494E+01 | 2.448E+04 | 2.447E+04 | 2.560E-04 |
+|           4 | 5.436E-02 | 1.330E+03 | 4.489E-01 | 1.330E+03 | -9.506E+01 | 2.447E+04 | 2.447E+04 | 9.870E-06 |
+|           5 | 5.436E-02 | 1.330E+03 | 4.489E-01 | 1.330E+03 | -9.507E+01 | 2.447E+04 | 2.447E+04 | 3.807E-07 |
+</pre></div></div>
+</div>
+</div>
+<div class="section" id="show-data-as-pandas-dataframe">
+<h3>show data as pandas dataframe<a class="headerlink" href="#show-data-as-pandas-dataframe" title="Permalink to this headline">¶</a></h3>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre>
+<span></span>In [9]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">ot</span><span class="o">.</span><span class="n">to_panda_dataframe</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre>
+<span></span>Out[9]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>__iteration</th>
+      <th>x_y</th>
+      <th>y_y</th>
+      <th>x_u</th>
+      <th>y_u</th>
+      <th>kinel</th>
+      <th>kel</th>
+      <th>k_06</th>
+      <th>error</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1</td>
+      <td>0.042134</td>
+      <td>1310.873072</td>
+      <td>0.44886</td>
+      <td>1311.386667</td>
+      <td>1.262756</td>
+      <td>31111.785247</td>
+      <td>24639.615704</td>
+      <td>2.626733e-01</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2</td>
+      <td>0.053957</td>
+      <td>1329.489036</td>
+      <td>0.44886</td>
+      <td>1329.489036</td>
+      <td>-91.765450</td>
+      <td>24639.615704</td>
+      <td>24476.018100</td>
+      <td>6.683996e-03</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>3</td>
+      <td>0.054343</td>
+      <td>1330.096698</td>
+      <td>0.44886</td>
+      <td>1330.096698</td>
+      <td>-94.942176</td>
+      <td>24476.018100</td>
+      <td>24469.754667</td>
+      <td>2.559663e-04</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>4</td>
+      <td>0.054358</td>
+      <td>1330.120147</td>
+      <td>0.44886</td>
+      <td>1330.120147</td>
+      <td>-95.064891</td>
+      <td>24469.754667</td>
+      <td>24469.513145</td>
+      <td>9.870333e-06</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>5</td>
+      <td>0.054358</td>
+      <td>1330.121052</td>
+      <td>0.44886</td>
+      <td>1330.121052</td>
+      <td>-95.069625</td>
+      <td>24469.513145</td>
+      <td>24469.503829</td>
+      <td>3.807116e-07</td>
+    </tr>
+  </tbody>
+</table>
+</div></div>
+</div>
+</div>
+<div class="section" id="retrieve-value-from-output-table">
+<h3>retrieve value from output table<a class="headerlink" href="#retrieve-value-from-output-table" title="Permalink to this headline">¶</a></h3>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre>
+<span></span>In [10]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">ot</span><span class="o">.</span><span class="n">retrieve</span><span class="p">(</span><span class="n">search_field</span><span class="o">=</span><span class="s1">&#39;__iteration&#39;</span><span class="p">,</span>
+            <span class="n">search_value</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span>
+            <span class="n">find_field</span><span class="o">=</span><span class="s1">&#39;kinel&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre>
+<span></span>Out[10]:
+</pre></div>
+</div>
+<div class="output_area highlight-none notranslate"><div class="highlight"><pre>
+<span></span>-91.76544991341024
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="retrieve-column-to-list">
+<h3>retrieve column to list<a class="headerlink" href="#retrieve-column-to-list" title="Permalink to this headline">¶</a></h3>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre>
+<span></span>In [11]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">ot</span><span class="o">.</span><span class="n">retrieve_column_to_list</span><span class="p">(</span><span class="s1">&#39;x_y&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre>
+<span></span>Out[11]:
+</pre></div>
+</div>
+<div class="output_area highlight-none notranslate"><div class="highlight"><pre>
+<span></span>[0.04213429287708525,
+ 0.05395737709629134,
+ 0.05434285482397955,
+ 0.05435772305859232,
+ 0.05435829655145874]
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="OutputString">
+<h2>OutputString<a class="headerlink" href="#OutputString" title="Permalink to this headline">¶</a></h2>
+<p>coming soon…see bilin notebook</p>
+</div>
+<div class="section" id="OutputExtended">
+<h2>OutputExtended<a class="headerlink" href="#OutputExtended" title="Permalink to this headline">¶</a></h2>
+<p>coming soon…see bilin notebook</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../../../common/math.html" class="btn btn-neutral float-right" title="Math" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../../../common/io.html" class="btn btn-neutral" title="Input-Output" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, panagop
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../../_static/doctools.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script type="text/javascript" src="https://unpkg.com/mermaid@7.1.0/dist/mermaid.min.js"></script>
+    
+
+  
+
+  <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

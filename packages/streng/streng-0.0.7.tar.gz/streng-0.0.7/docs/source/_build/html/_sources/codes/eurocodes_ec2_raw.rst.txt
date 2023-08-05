@@ -1,0 +1,84 @@
+*****************************
+Eurocode 2 - Raw functions
+*****************************
+
+.. autosummary::
+
+    streng.codes.eurocodes.ec2.raw.ch3.concrete.elastic_deformation
+    streng.codes.eurocodes.ec2.raw.ch3.concrete.strength
+    streng.codes.eurocodes.ec2.raw.ch3.concrete.stress_strain
+    streng.codes.eurocodes.ec2.raw.ch4.concrete_cover
+    streng.codes.eurocodes.ec2.raw.ch5.geometric_data.effective_width
+    streng.codes.eurocodes.ec2.raw.ch6.shear
+
+
+.. mermaid::
+
+    graph LR
+        A-->B
+        click A callback "Tooltip"
+        click B "#streng.codes.eurocodes.ec2.raw.ch3.concrete.elastic_deformation.Ecm" "This is a link"
+
+
+Chapter 3 - Materials
+===========================
+
+concrete
+-----------------
+
+elastic_deformation
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. automodule:: streng.codes.eurocodes.ec2.raw.ch3.concrete.elastic_deformation
+    :members:
+    :undoc-members:
+
+strength
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. automodule:: streng.codes.eurocodes.ec2.raw.ch3.concrete.strength
+    :members:
+    :undoc-members:
+
+stress_strain
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. automodule:: streng.codes.eurocodes.ec2.raw.ch3.concrete.stress_strain
+    :members:
+    :undoc-members:
+
+
+Chapter 4 - Durability and cover to reinforcement
+===================================================
+
+concrete cover
+-----------------
+
+.. automodule:: streng.codes.eurocodes.ec2.raw.ch4.concrete_cover
+    :members:
+    :undoc-members:
+
+
+Chapter 5 - Structural analysis
+================================
+
+geometric_data
+-----------------
+
+effective_width
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. automodule:: streng.codes.eurocodes.ec2.raw.ch5.geometric_data.effective_width
+    :members:
+    :undoc-members:
+
+
+Chapter 6 - Ultimate limit states (ULS)
+============================================
+
+shear
+-----------------
+
+.. automodule:: streng.codes.eurocodes.ec2.raw.ch6.shear
+    :members:
+    :undoc-members:

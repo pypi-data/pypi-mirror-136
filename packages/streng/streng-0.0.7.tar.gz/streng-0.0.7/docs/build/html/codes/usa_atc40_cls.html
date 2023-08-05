@@ -1,0 +1,381 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>ATC-40 - Classes &mdash; StrEng 0.0.1 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+
+  
+  
+    <link rel="shortcut icon" href="../_static/book_icon.png"/>
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="FEMA40 - Raw functions" href="usa_fema440_raw.html" />
+    <link rel="prev" title="ATC-40 - Raw functions" href="usa_atc40_raw.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> StrEng
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Files structure</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../pyfileslist.html">.py files structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../rstfileslist.html">.rst files structure</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Codes</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="eurocodes.html">Eurocodes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="greek.html">Greek Codes</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="usa.html">USA codes and guidelines</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="usa.html#atc-40">ATC-40</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="usa_atc40_raw.html">Raw functions</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Classes</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#nonlinear-static-analysis">NonLinear Static Analysis</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="usa.html#fema40">FEMA40</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Common</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../common/io.html">Input-Output</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../common/math.html">Math</a></li>
+</ul>
+<p class="caption"><span class="caption-text">phd</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../phd/building_models.html">Building Models</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../phd/analyses.html">Input Motions</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Pre-Post-Processing</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../ppp/ppp.html">ppp</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Tools</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../tools/tools.html">Bilin</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/tools.html#module-streng.tools.seismic_motion">Seismic Motions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/tools.html#jupyters">Jupyters</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Excel udfs library</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../xwflib/xwflib.html">Main</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">StrEng</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="usa.html">USA codes and guidelines</a> &raquo;</li>
+        
+      <li>ATC-40 - Classes</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/codes/usa_atc40_cls.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  
+<style>
+/* CSS overrides for sphinx_rtd_theme */
+
+/* 24px margin */
+.nbinput.nblast.container,
+.nboutput.nblast.container {
+    margin-bottom: 19px;  /* padding has already 5px */
+}
+
+/* ... except between code cells! */
+.nblast.container + .nbinput.container {
+    margin-top: -19px;
+}
+
+.admonition > p:before {
+    margin-right: 4px;  /* make room for the exclamation icon */
+}
+
+/* Fix math alignment, see https://github.com/rtfd/sphinx_rtd_theme/pull/686 */
+.math {
+    text-align: unset;
+}
+</style>
+<div class="section" id="atc-40-classes">
+<h1>ATC-40 - Classes<a class="headerlink" href="#atc-40-classes" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="nonlinear-static-analysis">
+<h2>NonLinear Static Analysis<a class="headerlink" href="#nonlinear-static-analysis" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="capacity-spectrum-method">
+<h3>Capacity Spectrum Method<a class="headerlink" href="#capacity-spectrum-method" title="Permalink to this headline">¶</a></h3>
+<dl class="py class">
+<dt id="streng.codes.usa.atc40.cls.nl_static_analysis.csm.StructureProperties">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">streng.codes.usa.atc40.cls.nl_static_analysis.csm.</span></code><code class="sig-name descname"><span class="pre">StructureProperties</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">φ</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">numpy.ndarray</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">numpy.ndarray</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">T0</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.9)"><span class="pre">float</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">pushover_curve_F</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">numpy.ndarray</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pushover_curve_δ</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">numpy.ndarray</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">behavior</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/streng/codes/usa/atc40/cls/nl_static_analysis/csm.html#StructureProperties"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#streng.codes.usa.atc40.cls.nl_static_analysis.csm.StructureProperties" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="py attribute">
+<dt id="streng.codes.usa.atc40.cls.nl_static_analysis.csm.StructureProperties.T0">
+<code class="sig-name descname"><span class="pre">T0</span></code><em class="property"><span class="pre">:</span> <a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.9)"><span class="pre">float</span></a></em><a class="headerlink" href="#streng.codes.usa.atc40.cls.nl_static_analysis.csm.StructureProperties.T0" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="streng.codes.usa.atc40.cls.nl_static_analysis.csm.StructureProperties.behavior">
+<code class="sig-name descname"><span class="pre">behavior</span></code><em class="property"><span class="pre">:</span> <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><span class="pre">str</span></a></em><a class="headerlink" href="#streng.codes.usa.atc40.cls.nl_static_analysis.csm.StructureProperties.behavior" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="streng.codes.usa.atc40.cls.nl_static_analysis.csm.StructureProperties.m">
+<code class="sig-name descname"><span class="pre">m</span></code><em class="property"><span class="pre">:</span> <span class="pre">numpy.ndarray</span></em><a class="headerlink" href="#streng.codes.usa.atc40.cls.nl_static_analysis.csm.StructureProperties.m" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="streng.codes.usa.atc40.cls.nl_static_analysis.csm.StructureProperties.pushover_curve_F">
+<code class="sig-name descname"><span class="pre">pushover_curve_F</span></code><em class="property"><span class="pre">:</span> <span class="pre">numpy.ndarray</span></em><a class="headerlink" href="#streng.codes.usa.atc40.cls.nl_static_analysis.csm.StructureProperties.pushover_curve_F" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="streng.codes.usa.atc40.cls.nl_static_analysis.csm.StructureProperties.pushover_curve_">
+<code class="sig-name descname"><span class="pre">pushover_curve_δ</span></code><em class="property"><span class="pre">:</span> <span class="pre">numpy.ndarray</span></em><a class="headerlink" href="#streng.codes.usa.atc40.cls.nl_static_analysis.csm.StructureProperties.pushover_curve_" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="streng.codes.usa.atc40.cls.nl_static_analysis.csm.StructureProperties.">
+<code class="sig-name descname"><span class="pre">φ</span></code><em class="property"><span class="pre">:</span> <span class="pre">numpy.ndarray</span></em><a class="headerlink" href="#streng.codes.usa.atc40.cls.nl_static_analysis.csm.StructureProperties." title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="streng.codes.usa.atc40.cls.nl_static_analysis.csm.Demand">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">streng.codes.usa.atc40.cls.nl_static_analysis.csm.</span></code><code class="sig-name descname"><span class="pre">Demand</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">T_range</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">numpy.ndarray</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Sa</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">numpy.ndarray</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Sd</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">numpy.ndarray</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">TC</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.9)"><span class="pre">float</span></a></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/streng/codes/usa/atc40/cls/nl_static_analysis/csm.html#Demand"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#streng.codes.usa.atc40.cls.nl_static_analysis.csm.Demand" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="py method">
+<dt id="streng.codes.usa.atc40.cls.nl_static_analysis.csm.Demand.ec8_elastic">
+<code class="sig-name descname"><span class="pre">ec8_elastic</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">αgR</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.9)"><span class="pre">float</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">γI</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.9)"><span class="pre">float</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">ground_type</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">spectrum_type</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)"><span class="pre">int</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">η</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">q</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">β</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.2</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/streng/codes/usa/atc40/cls/nl_static_analysis/csm.html#Demand.ec8_elastic"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#streng.codes.usa.atc40.cls.nl_static_analysis.csm.Demand.ec8_elastic" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="streng.codes.usa.atc40.cls.nl_static_analysis.csm.Demand.Sa">
+<code class="sig-name descname"><span class="pre">Sa</span></code><em class="property"><span class="pre">:</span> <span class="pre">numpy.ndarray</span></em><a class="headerlink" href="#streng.codes.usa.atc40.cls.nl_static_analysis.csm.Demand.Sa" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="streng.codes.usa.atc40.cls.nl_static_analysis.csm.Demand.Sd">
+<code class="sig-name descname"><span class="pre">Sd</span></code><em class="property"><span class="pre">:</span> <span class="pre">numpy.ndarray</span></em><a class="headerlink" href="#streng.codes.usa.atc40.cls.nl_static_analysis.csm.Demand.Sd" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="streng.codes.usa.atc40.cls.nl_static_analysis.csm.Demand.TC">
+<code class="sig-name descname"><span class="pre">TC</span></code><em class="property"><span class="pre">:</span> <a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.9)"><span class="pre">float</span></a></em><a class="headerlink" href="#streng.codes.usa.atc40.cls.nl_static_analysis.csm.Demand.TC" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="streng.codes.usa.atc40.cls.nl_static_analysis.csm.Demand.T_range">
+<code class="sig-name descname"><span class="pre">T_range</span></code><em class="property"><span class="pre">:</span> <span class="pre">numpy.ndarray</span></em><a class="headerlink" href="#streng.codes.usa.atc40.cls.nl_static_analysis.csm.Demand.T_range" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="streng.codes.usa.atc40.cls.nl_static_analysis.csm.CapacitySpectrumMethod">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">streng.codes.usa.atc40.cls.nl_static_analysis.csm.</span></code><code class="sig-name descname"><span class="pre">CapacitySpectrumMethod</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">structure</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference internal" href="#streng.codes.usa.atc40.cls.nl_static_analysis.csm.StructureProperties" title="streng.codes.usa.atc40.cls.nl_static_analysis.csm.StructureProperties"><span class="pre">streng.codes.usa.atc40.cls.nl_static_analysis.csm.StructureProperties</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">demand</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference internal" href="#streng.codes.usa.atc40.cls.nl_static_analysis.csm.Demand" title="streng.codes.usa.atc40.cls.nl_static_analysis.csm.Demand"><span class="pre">streng.codes.usa.atc40.cls.nl_static_analysis.csm.Demand</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">first_try_case</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><span class="pre">str</span></a></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">'intersection'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/streng/codes/usa/atc40/cls/nl_static_analysis/csm.html#CapacitySpectrumMethod"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#streng.codes.usa.atc40.cls.nl_static_analysis.csm.CapacitySpectrumMethod" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="py method">
+<dt id="streng.codes.usa.atc40.cls.nl_static_analysis.csm.CapacitySpectrumMethod.calc_performance_point">
+<code class="sig-name descname"><span class="pre">calc_performance_point</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/streng/codes/usa/atc40/cls/nl_static_analysis/csm.html#CapacitySpectrumMethod.calc_performance_point"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#streng.codes.usa.atc40.cls.nl_static_analysis.csm.CapacitySpectrumMethod.calc_performance_point" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="streng.codes.usa.atc40.cls.nl_static_analysis.csm.CapacitySpectrumMethod.Sd_first_try">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">Sd_first_try</span></code><a class="headerlink" href="#streng.codes.usa.atc40.cls.nl_static_analysis.csm.CapacitySpectrumMethod.Sd_first_try" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="streng.codes.usa.atc40.cls.nl_static_analysis.csm.CapacitySpectrumMethod.demand">
+<code class="sig-name descname"><span class="pre">demand</span></code><em class="property"><span class="pre">:</span> <a class="reference internal" href="#streng.codes.usa.atc40.cls.nl_static_analysis.csm.Demand" title="streng.codes.usa.atc40.cls.nl_static_analysis.csm.Demand"><span class="pre">streng.codes.usa.atc40.cls.nl_static_analysis.csm.Demand</span></a></em><a class="headerlink" href="#streng.codes.usa.atc40.cls.nl_static_analysis.csm.CapacitySpectrumMethod.demand" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="streng.codes.usa.atc40.cls.nl_static_analysis.csm.CapacitySpectrumMethod.first_try_case">
+<code class="sig-name descname"><span class="pre">first_try_case</span></code><em class="property"><span class="pre">:</span> <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><span class="pre">str</span></a></em><em class="property"> <span class="pre">=</span> <span class="pre">'intersection'</span></em><a class="headerlink" href="#streng.codes.usa.atc40.cls.nl_static_analysis.csm.CapacitySpectrumMethod.first_try_case" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="streng.codes.usa.atc40.cls.nl_static_analysis.csm.CapacitySpectrumMethod.structure">
+<code class="sig-name descname"><span class="pre">structure</span></code><em class="property"><span class="pre">:</span> <a class="reference internal" href="#streng.codes.usa.atc40.cls.nl_static_analysis.csm.StructureProperties" title="streng.codes.usa.atc40.cls.nl_static_analysis.csm.StructureProperties"><span class="pre">streng.codes.usa.atc40.cls.nl_static_analysis.csm.StructureProperties</span></a></em><a class="headerlink" href="#streng.codes.usa.atc40.cls.nl_static_analysis.csm.CapacitySpectrumMethod.structure" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="usa_fema440_raw.html" class="btn btn-neutral float-right" title="FEMA40 - Raw functions" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="usa_atc40_raw.html" class="btn btn-neutral float-left" title="ATC-40 - Raw functions" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2020, panagop.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

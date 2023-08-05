@@ -1,0 +1,1015 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>ATC40 - Capacity Spectrum Method &mdash; StrEng 0.0.1 documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../../_static/book_icon.png"/>
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="prev" title="Διαγράμματα ελέγχου FEMA440 + ATC40" href="capacity_spectrum_method_charts.html" /> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> StrEng
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Codes</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../codes/eurocodes.html">Eurocodes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../codes/greek.html">Greek Codes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../codes/usa.html">USA codes and guidelines</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Common</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../common/io.html">io</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../common/math.html">math</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Tools</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../tools/tools.html">Various tools</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../tools/tools.html#bilin">Bilin</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../tools/tools.html#seismic-motion">Seismic Motion</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../tools/tools.html#capacity-spectrum-method">Capacity Spectrum Method</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="capacity_spectrum_method_charts.html">Διαγράμματα ελέγχου FEMA440 + ATC40</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">ATC40 - Capacity Spectrum Method</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">StrEng</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../../tools/tools.html">Various tools</a> &raquo;</li>
+        
+      <li>ATC40 - Capacity Spectrum Method</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/jupyters/tools/capacity_spectrum_method_class-Copy1.ipynb.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  
+<style>
+/* CSS for nbsphinx extension */
+
+/* remove conflicting styling from Sphinx themes */
+div.nbinput,
+div.nbinput div.prompt,
+div.nbinput div.input_area,
+div.nbinput div[class*=highlight],
+div.nbinput div[class*=highlight] pre,
+div.nboutput,
+div.nbinput div.prompt,
+div.nbinput div.output_area,
+div.nboutput div[class*=highlight],
+div.nboutput div[class*=highlight] pre {
+    background: none;
+    border: none;
+    padding: 0 0;
+    margin: 0;
+    box-shadow: none;
+}
+
+/* avoid gaps between output lines */
+div.nboutput div[class*=highlight] pre {
+    line-height: normal;
+}
+
+/* input/output containers */
+div.nbinput,
+div.nboutput {
+    display: -webkit-flex;
+    display: flex;
+    align-items: flex-start;
+    margin: 0;
+    width: 100%;
+}
+@media (max-width: 540px) {
+    div.nbinput,
+    div.nboutput {
+        flex-direction: column;
+    }
+}
+
+/* input container */
+div.nbinput {
+    padding-top: 5px;
+}
+
+/* last container */
+div.nblast {
+    padding-bottom: 5px;
+}
+
+/* input prompt */
+div.nbinput div.prompt pre {
+    color: #303F9F;
+}
+
+/* output prompt */
+div.nboutput div.prompt pre {
+    color: #D84315;
+}
+
+/* all prompts */
+div.nbinput div.prompt,
+div.nboutput div.prompt {
+    min-width: 8ex;
+    padding-top: 0.4em;
+    padding-right: 0.4em;
+    text-align: right;
+    flex: 0;
+}
+@media (max-width: 540px) {
+    div.nbinput div.prompt,
+    div.nboutput div.prompt {
+        text-align: left;
+        padding: 0.4em;
+    }
+    div.nboutput div.prompt.empty {
+        padding: 0;
+    }
+}
+
+/* disable scrollbars on prompts */
+div.nbinput div.prompt pre,
+div.nboutput div.prompt pre {
+    overflow: hidden;
+}
+
+/* input/output area */
+div.nbinput div.input_area,
+div.nboutput div.output_area {
+    padding: 0.4em;
+    -webkit-flex: 1;
+    flex: 1;
+    overflow: auto;
+}
+@media (max-width: 540px) {
+    div.nbinput div.input_area,
+    div.nboutput div.output_area {
+        width: 100%;
+    }
+}
+
+/* input area */
+div.nbinput div.input_area {
+    border: 1px solid #cfcfcf;
+    border-radius: 2px;
+    background: #f7f7f7;
+}
+
+/* override MathJax center alignment in output cells */
+div.nboutput div[class*=MathJax] {
+    text-align: left !important;
+}
+
+/* override sphinx.ext.pngmath center alignment in output cells */
+div.nboutput div.math p {
+    text-align: left;
+}
+
+/* standard error */
+div.nboutput div.output_area.stderr {
+    background: #fdd;
+}
+
+/* ANSI colors */
+.ansi-black-fg { color: #3E424D; }
+.ansi-black-bg { background-color: #3E424D; }
+.ansi-black-intense-fg { color: #282C36; }
+.ansi-black-intense-bg { background-color: #282C36; }
+.ansi-red-fg { color: #E75C58; }
+.ansi-red-bg { background-color: #E75C58; }
+.ansi-red-intense-fg { color: #B22B31; }
+.ansi-red-intense-bg { background-color: #B22B31; }
+.ansi-green-fg { color: #00A250; }
+.ansi-green-bg { background-color: #00A250; }
+.ansi-green-intense-fg { color: #007427; }
+.ansi-green-intense-bg { background-color: #007427; }
+.ansi-yellow-fg { color: #DDB62B; }
+.ansi-yellow-bg { background-color: #DDB62B; }
+.ansi-yellow-intense-fg { color: #B27D12; }
+.ansi-yellow-intense-bg { background-color: #B27D12; }
+.ansi-blue-fg { color: #208FFB; }
+.ansi-blue-bg { background-color: #208FFB; }
+.ansi-blue-intense-fg { color: #0065CA; }
+.ansi-blue-intense-bg { background-color: #0065CA; }
+.ansi-magenta-fg { color: #D160C4; }
+.ansi-magenta-bg { background-color: #D160C4; }
+.ansi-magenta-intense-fg { color: #A03196; }
+.ansi-magenta-intense-bg { background-color: #A03196; }
+.ansi-cyan-fg { color: #60C6C8; }
+.ansi-cyan-bg { background-color: #60C6C8; }
+.ansi-cyan-intense-fg { color: #258F8F; }
+.ansi-cyan-intense-bg { background-color: #258F8F; }
+.ansi-white-fg { color: #C5C1B4; }
+.ansi-white-bg { background-color: #C5C1B4; }
+.ansi-white-intense-fg { color: #A1A6B2; }
+.ansi-white-intense-bg { background-color: #A1A6B2; }
+
+.ansi-default-inverse-fg { color: #FFFFFF; }
+.ansi-default-inverse-bg { background-color: #000000; }
+
+.ansi-bold { font-weight: bold; }
+.ansi-underline { text-decoration: underline; }
+
+/* CSS overrides for sphinx_rtd_theme */
+
+/* 24px margin */
+.nbinput.nblast,
+.nboutput.nblast {
+    margin-bottom: 19px;  /* padding has already 5px */
+}
+
+/* ... except between code cells! */
+.nblast + .nbinput {
+    margin-top: -19px;
+}
+
+.admonition > p:before {
+    margin-right: 4px;  /* make room for the exclamation icon */
+}
+</style>
+<div class="section" id="ATC40---Capacity-Spectrum-Method">
+<h1>ATC40 - Capacity Spectrum Method<a class="headerlink" href="#ATC40---Capacity-Spectrum-Method" title="Permalink to this headline">¶</a></h1>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre>
+<span></span>In [2]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="kn">import</span> <span class="nn">math</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">set_style</span><span class="p">(</span><span class="s2">&quot;whitegrid&quot;</span><span class="p">)</span>
+
+<span class="kn">from</span> <span class="nn">streng.tools.bilin</span> <span class="k">import</span> <span class="n">Bilin</span>
+<span class="kn">import</span> <span class="nn">streng.codes.eurocodes.ec8.cls.seismic_action.spectra</span> <span class="k">as</span> <span class="nn">spec_ec8</span>
+<span class="kn">from</span> <span class="nn">streng.codes.usa.atc40.nl_static_analysis.csm</span> <span class="k">import</span> <span class="n">CapacitySpectrumMethod</span>
+<span class="kn">from</span> <span class="nn">streng.codes.usa.atc40.nl_static_analysis.csm</span> <span class="k">import</span> <span class="n">StructureProperties</span>
+<span class="kn">from</span> <span class="nn">streng.codes.usa.atc40.nl_static_analysis.csm</span> <span class="k">import</span> <span class="n">Demand</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre>
+<span></span>In [4]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">bl</span> <span class="o">=</span> <span class="n">Bilin</span><span class="p">()</span>
+<span class="c1"># bl.load_space_delimited(r&#39;D:/MyBooks/TEI/RepairsExample/sapfiles/fema/PushoverCurve_modal.pushcurve&#39;, &#39; &#39;)</span>
+<span class="n">bl</span><span class="o">.</span><span class="n">load_space_delimited</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;http://seivas.net/mkd/PushoverCurve_modal.pushcurve&#39;</span><span class="p">,</span> <span class="s1">&#39; &#39;</span><span class="p">)</span>
+
+<span class="n">mystructure</span> <span class="o">=</span> <span class="n">StructureProperties</span><span class="p">(</span><span class="n">m</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">39.08</span><span class="p">,</span> <span class="mf">39.08</span><span class="p">,</span> <span class="mf">39.08</span><span class="p">]),</span>
+                                  <span class="n">φ</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">0.0483</span><span class="p">,</span> <span class="mf">0.0920</span><span class="p">,</span> <span class="mf">0.1217</span><span class="p">]),</span>
+                                  <span class="n">T0</span> <span class="o">=</span> <span class="mf">0.753</span><span class="p">,</span>
+                                  <span class="n">pushover_curve_F</span> <span class="o">=</span> <span class="n">bl</span><span class="o">.</span><span class="n">y_ini</span><span class="p">,</span>
+                                  <span class="n">pushover_curve_δ</span> <span class="o">=</span> <span class="n">bl</span><span class="o">.</span><span class="n">x_ini</span><span class="p">,</span>
+                                  <span class="n">behavior</span> <span class="o">=</span><span class="s1">&#39;A&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre>
+<span></span>In [5]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">T_range</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mf">1e-10</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">401</span><span class="p">)</span>
+
+<span class="n">mydemand</span> <span class="o">=</span> <span class="n">Demand</span><span class="p">(</span><span class="n">T_range</span><span class="o">=</span><span class="n">T_range</span><span class="p">,</span>
+                  <span class="n">Sa</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+                  <span class="n">Sd</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+                  <span class="n">TC</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
+
+<span class="n">mydemand</span><span class="o">.</span><span class="n">ec8_elastic</span><span class="p">(</span><span class="n">αgR</span><span class="o">=</span><span class="mf">0.24</span><span class="o">*</span><span class="mf">9.81</span><span class="p">,</span>
+                          <span class="n">γI</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span>
+                          <span class="n">ground_type</span> <span class="o">=</span> <span class="s1">&#39;C&#39;</span><span class="p">,</span>
+                          <span class="n">spectrum_type</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span>
+                          <span class="n">η</span> <span class="o">=</span><span class="mf">1.0</span><span class="p">,</span>
+                          <span class="n">q</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span>
+                          <span class="n">β</span><span class="o">=</span><span class="mf">0.2</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre>
+<span></span>In [6]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">mycsm</span> <span class="o">=</span> <span class="n">CapacitySpectrumMethod</span><span class="p">(</span><span class="n">structure</span> <span class="o">=</span> <span class="n">mystructure</span><span class="p">,</span>
+                               <span class="n">demand</span> <span class="o">=</span> <span class="n">mydemand</span><span class="p">,</span>
+                               <span class="n">first_try_case</span> <span class="o">=</span> <span class="s1">&#39;intersection&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre>
+<span></span>In [7]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;PF1 = </span><span class="si">{mycsm.structure.PF1:.4f}</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;α1 = </span><span class="si">{mycsm.structure.α1:.4f}</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;φroof1 = </span><span class="si">{mycsm.structure.φroof1:.4f}</span><span class="s1">&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+PF1 = 10.2313
+α1 = 0.8935
+φroof1 = 0.1217
+</pre></div></div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre>
+<span></span>In [8]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">mycsm</span><span class="o">.</span><span class="n">structure</span><span class="o">.</span><span class="n">Sd</span><span class="p">,</span> <span class="n">mycsm</span><span class="o">.</span><span class="n">structure</span><span class="o">.</span><span class="n">Sa</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;$F$ (kN)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;$δ$ (m)&#39;</span><span class="p">)</span> <span class="c1">#&#39;μθpl&#39;</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Καμπύλη αντίστασης&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../../_images/jupyters_tools_capacity_spectrum_method_class-Copy1_6_0.png" src="../../_images/jupyters_tools_capacity_spectrum_method_class-Copy1_6_0.png" />
+</div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre>
+<span></span>In [9]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">mycsm</span><span class="o">.</span><span class="n">demand</span><span class="o">.</span><span class="n">Sd</span><span class="p">,</span> <span class="n">mycsm</span><span class="o">.</span><span class="n">demand</span><span class="o">.</span><span class="n">Sa</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Sa-Sd&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;$S_</span><span class="si">{a}</span><span class="s1">$ (g)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;$S_</span><span class="si">{d}</span><span class="s1">$ (m)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;EC8 elastic spectrum: Sa-Sd&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../../_images/jupyters_tools_capacity_spectrum_method_class-Copy1_7_0.png" src="../../_images/jupyters_tools_capacity_spectrum_method_class-Copy1_7_0.png" />
+</div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre>
+<span></span>In [10]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="nb">print</span><span class="p">(</span><span class="n">mycsm</span><span class="o">.</span><span class="n">Sd_first_try</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+0.13938832648876784
+</pre></div></div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre>
+<span></span>In [11]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">mycsm</span><span class="o">.</span><span class="n">calc_performance_point</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+<span class="ansi-red-intense-fg ansi-bold">---------------------------------------------------------------------------</span>
+<span class="ansi-red-intense-fg ansi-bold">AttributeError</span>                            Traceback (most recent call last)
+<span class="ansi-green-intense-fg ansi-bold">&lt;ipython-input-11-2c4e9769a92e&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span><span class="ansi-blue-intense-fg ansi-bold">()</span>
+<span class="ansi-green-intense-fg ansi-bold">----&gt; 1</span><span class="ansi-yellow-intense-fg ansi-bold"> </span>mycsm<span class="ansi-yellow-intense-fg ansi-bold">.</span>calc_performance_point<span class="ansi-yellow-intense-fg ansi-bold">(</span><span class="ansi-yellow-intense-fg ansi-bold">)</span>
+
+<span class="ansi-green-intense-fg ansi-bold">d:\mypythons\streng\streng\codes\usa\atc40\nl_static_analysis\csm.py</span> in <span class="ansi-cyan-fg">calc_performance_point</span><span class="ansi-blue-intense-fg ansi-bold">(self)</span>
+<span class="ansi-green-fg">     98</span>         self<span class="ansi-yellow-intense-fg ansi-bold">.</span>output<span class="ansi-yellow-intense-fg ansi-bold">.</span>log_table<span class="ansi-yellow-intense-fg ansi-bold">.</span>dict_list<span class="ansi-yellow-intense-fg ansi-bold">.</span>append<span class="ansi-yellow-intense-fg ansi-bold">(</span><span class="ansi-yellow-intense-fg ansi-bold">{</span><span class="ansi-blue-intense-fg ansi-bold">&#39;__iteration&#39;</span><span class="ansi-yellow-intense-fg ansi-bold">:</span> iter_num<span class="ansi-yellow-intense-fg ansi-bold">,</span> <span class="ansi-blue-intense-fg ansi-bold">&#39;Sd&#39;</span><span class="ansi-yellow-intense-fg ansi-bold">:</span> x_i<span class="ansi-yellow-intense-fg ansi-bold">,</span> <span class="ansi-blue-intense-fg ansi-bold">&#39;error&#39;</span><span class="ansi-yellow-intense-fg ansi-bold">:</span> <span class="ansi-green-intense-fg ansi-bold">None</span><span class="ansi-yellow-intense-fg ansi-bold">}</span><span class="ansi-yellow-intense-fg ansi-bold">)</span>
+<span class="ansi-green-fg">     99</span>         <span class="ansi-green-intense-fg ansi-bold">while</span> error <span class="ansi-yellow-intense-fg ansi-bold">&gt;</span> <span class="ansi-cyan-intense-fg ansi-bold">0.0001</span><span class="ansi-yellow-intense-fg ansi-bold">:</span>
+<span class="ansi-green-intense-fg ansi-bold">--&gt; 100</span><span class="ansi-yellow-intense-fg ansi-bold">             </span>x_new <span class="ansi-yellow-intense-fg ansi-bold">=</span> self<span class="ansi-yellow-intense-fg ansi-bold">.</span>__iterate_SR<span class="ansi-yellow-intense-fg ansi-bold">(</span>x_i<span class="ansi-yellow-intense-fg ansi-bold">)</span>
+<span class="ansi-green-fg">    101</span>             error <span class="ansi-yellow-intense-fg ansi-bold">=</span> abs<span class="ansi-yellow-intense-fg ansi-bold">(</span><span class="ansi-yellow-intense-fg ansi-bold">(</span>x_new <span class="ansi-yellow-intense-fg ansi-bold">-</span> x_i<span class="ansi-yellow-intense-fg ansi-bold">)</span> <span class="ansi-yellow-intense-fg ansi-bold">/</span> x_i<span class="ansi-yellow-intense-fg ansi-bold">)</span>
+<span class="ansi-green-fg">    102</span>             x_i <span class="ansi-yellow-intense-fg ansi-bold">=</span> x_new
+
+<span class="ansi-green-intense-fg ansi-bold">d:\mypythons\streng\streng\codes\usa\atc40\nl_static_analysis\csm.py</span> in <span class="ansi-cyan-fg">__iterate_SR</span><span class="ansi-blue-intense-fg ansi-bold">(self, x0)</span>
+<span class="ansi-green-fg">     75</span>         βeff <span class="ansi-yellow-intense-fg ansi-bold">=</span> csm_atc40<span class="ansi-yellow-intense-fg ansi-bold">.</span>βeff<span class="ansi-yellow-intense-fg ansi-bold">(</span><span class="ansi-cyan-intense-fg ansi-bold">0.05</span><span class="ansi-yellow-intense-fg ansi-bold">,</span> β0<span class="ansi-yellow-intense-fg ansi-bold">,</span> self<span class="ansi-yellow-intense-fg ansi-bold">.</span>structure<span class="ansi-yellow-intense-fg ansi-bold">.</span>behavior<span class="ansi-yellow-intense-fg ansi-bold">)</span>
+<span class="ansi-green-fg">     76</span>
+<span class="ansi-green-intense-fg ansi-bold">---&gt; 77</span><span class="ansi-yellow-intense-fg ansi-bold">         </span>Teff <span class="ansi-yellow-intense-fg ansi-bold">=</span> bl<span class="ansi-yellow-intense-fg ansi-bold">.</span>bilinear_curve<span class="ansi-yellow-intense-fg ansi-bold">.</span>Teq
+<span class="ansi-green-fg">     78</span>
+<span class="ansi-green-fg">     79</span>         SRA <span class="ansi-yellow-intense-fg ansi-bold">=</span> csm_atc40<span class="ansi-yellow-intense-fg ansi-bold">.</span>SRA<span class="ansi-yellow-intense-fg ansi-bold">(</span>βeff<span class="ansi-yellow-intense-fg ansi-bold">,</span> self<span class="ansi-yellow-intense-fg ansi-bold">.</span>structure<span class="ansi-yellow-intense-fg ansi-bold">.</span>behavior<span class="ansi-yellow-intense-fg ansi-bold">)</span>
+
+<span class="ansi-red-intense-fg ansi-bold">AttributeError</span>: &#39;BilinearCurve&#39; object has no attribute &#39;Teq&#39;
+</pre></div></div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre>
+<span></span>In [10]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">mycsm</span><span class="o">.</span><span class="n">output</span><span class="o">.</span><span class="n">log_table</span><span class="o">.</span><span class="n">to_panda_dataframe</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre>
+<span></span>Out[10]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>__iteration</th>
+      <th>Sd</th>
+      <th>error</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0</td>
+      <td>0.139388</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1</td>
+      <td>0.043617</td>
+      <td>0.687084</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>2</td>
+      <td>0.085547</td>
+      <td>0.961326</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>3</td>
+      <td>0.049350</td>
+      <td>0.423121</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>4</td>
+      <td>0.072952</td>
+      <td>0.478248</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>5</td>
+      <td>0.053535</td>
+      <td>0.266160</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>6</td>
+      <td>0.066271</td>
+      <td>0.237905</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>7</td>
+      <td>0.056746</td>
+      <td>0.143728</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>8</td>
+      <td>0.062699</td>
+      <td>0.104911</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>9</td>
+      <td>0.058640</td>
+      <td>0.064749</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>10</td>
+      <td>0.061207</td>
+      <td>0.043774</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>11</td>
+      <td>0.059498</td>
+      <td>0.027915</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>12</td>
+      <td>0.060598</td>
+      <td>0.018491</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>13</td>
+      <td>0.059874</td>
+      <td>0.011954</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>14</td>
+      <td>0.060343</td>
+      <td>0.007845</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>15</td>
+      <td>0.060036</td>
+      <td>0.005097</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>16</td>
+      <td>0.060236</td>
+      <td>0.003327</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>17</td>
+      <td>0.060105</td>
+      <td>0.002163</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>18</td>
+      <td>0.060190</td>
+      <td>0.001409</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>19</td>
+      <td>0.060135</td>
+      <td>0.000916</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>20</td>
+      <td>0.060171</td>
+      <td>0.000596</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>21</td>
+      <td>0.060147</td>
+      <td>0.000388</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>22</td>
+      <td>0.060163</td>
+      <td>0.000252</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>23</td>
+      <td>0.060153</td>
+      <td>0.000164</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>24</td>
+      <td>0.060159</td>
+      <td>0.000107</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>25</td>
+      <td>0.060155</td>
+      <td>0.000070</td>
+    </tr>
+  </tbody>
+</table>
+</div></div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre>
+<span></span>In [11]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">mycsm</span><span class="o">.</span><span class="n">first_try_case</span> <span class="o">=</span> <span class="s1">&#39;equal displacements&#39;</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre>
+<span></span>In [12]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">mycsm</span><span class="o">.</span><span class="n">calc_performance_point</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+solution: Sd = 0.0602m
+</pre></div></div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre>
+<span></span>In [13]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">mycsm</span><span class="o">.</span><span class="n">output</span><span class="o">.</span><span class="n">log_table</span><span class="o">.</span><span class="n">to_panda_dataframe</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre>
+<span></span>Out[13]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>__iteration</th>
+      <th>Sd</th>
+      <th>error</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0</td>
+      <td>0.077466</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1</td>
+      <td>0.051766</td>
+      <td>0.331765</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>2</td>
+      <td>0.068702</td>
+      <td>0.327165</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>3</td>
+      <td>0.055599</td>
+      <td>0.190713</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>4</td>
+      <td>0.063828</td>
+      <td>0.148007</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>5</td>
+      <td>0.058016</td>
+      <td>0.091057</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>6</td>
+      <td>0.061673</td>
+      <td>0.063023</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>7</td>
+      <td>0.059221</td>
+      <td>0.039762</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>8</td>
+      <td>0.060791</td>
+      <td>0.026514</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>9</td>
+      <td>0.059753</td>
+      <td>0.017068</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>10</td>
+      <td>0.060424</td>
+      <td>0.011236</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>11</td>
+      <td>0.059984</td>
+      <td>0.007290</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>12</td>
+      <td>0.060270</td>
+      <td>0.004768</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>13</td>
+      <td>0.060083</td>
+      <td>0.003100</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>14</td>
+      <td>0.060205</td>
+      <td>0.002021</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>15</td>
+      <td>0.060125</td>
+      <td>0.001313</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>16</td>
+      <td>0.060177</td>
+      <td>0.000855</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>17</td>
+      <td>0.060143</td>
+      <td>0.000556</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>18</td>
+      <td>0.060165</td>
+      <td>0.000362</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>19</td>
+      <td>0.060151</td>
+      <td>0.000236</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>20</td>
+      <td>0.060160</td>
+      <td>0.000153</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>21</td>
+      <td>0.060154</td>
+      <td>0.000100</td>
+    </tr>
+  </tbody>
+</table>
+</div></div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="capacity_spectrum_method_charts.html" class="btn btn-neutral" title="Διαγράμματα ελέγχου FEMA440 + ATC40" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, panagop
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script type="text/javascript" src="https://unpkg.com/mermaid@7.1.0/dist/mermaid.min.js"></script>
+    
+
+  
+
+  <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

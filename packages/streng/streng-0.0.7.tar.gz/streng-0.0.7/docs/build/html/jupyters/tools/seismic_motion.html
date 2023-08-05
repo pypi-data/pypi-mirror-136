@@ -1,0 +1,2671 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Seismic Motion &mdash; StrEng 0.0.1 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+
+  
+  
+    <link rel="shortcut icon" href="../../_static/book_icon.png"/>
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Διαγράμματα ελέγχου FEMA440 + ATC40" href="capacity_spectrum_method_charts.html" />
+    <link rel="prev" title="Bilin" href="bilin.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> StrEng
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Files structure</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../pyfileslist.html">.py files structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../rstfileslist.html">.rst files structure</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Codes</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../codes/eurocodes.html">Eurocodes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../codes/greek.html">Greek Codes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../codes/usa.html">USA codes and guidelines</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Common</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../common/io.html">Input-Output</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../common/math.html">Math</a></li>
+</ul>
+<p class="caption"><span class="caption-text">phd</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../phd/building_models.html">Building Models</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../phd/analyses.html">Input Motions</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Pre-Post-Processing</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../ppp/ppp.html">ppp</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Tools</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../tools/tools.html">Bilin</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tools/tools.html#module-streng.tools.seismic_motion">Seismic Motions</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../tools/tools.html#jupyters">Jupyters</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../../tools/tools_jupyter.html">Jupyter notebooks</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="bilin.html">Bilin</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Seismic Motion</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#Διέγερση">Διέγερση</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#Φάσματα">Φάσματα</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="capacity_spectrum_method_charts.html">Διαγράμματα ελέγχου FEMA440 + ATC40</a></li>
+<li class="toctree-l3"><a class="reference internal" href="capacity_spectrum_method_class.html">ATC40 - Capacity Spectrum Method</a></li>
+<li class="toctree-l3"><a class="reference internal" href="capacity_spectrum_method_class-procB.html">ATC40 - Capacity Spectrum Method (Proc. B)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="N2method.html">N2 Method</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Excel udfs library</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../xwflib/xwflib.html">Main</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">StrEng</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../../tools/tools.html">Bilin</a> &raquo;</li>
+        
+          <li><a href="../../tools/tools_jupyter.html">Jupyter notebooks</a> &raquo;</li>
+        
+      <li>Seismic Motion</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../../_sources/jupyters/tools/seismic_motion.ipynb.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  
+<style>
+/* CSS for nbsphinx extension */
+
+/* remove conflicting styling from Sphinx themes */
+div.nbinput.container div.prompt *,
+div.nboutput.container div.prompt *,
+div.nbinput.container div.input_area pre,
+div.nboutput.container div.output_area pre,
+div.nbinput.container div.input_area .highlight,
+div.nboutput.container div.output_area .highlight {
+    border: none;
+    padding: 0;
+    margin: 0;
+    box-shadow: none;
+}
+
+div.nbinput.container > div[class*=highlight],
+div.nboutput.container > div[class*=highlight] {
+    margin: 0;
+}
+
+div.nbinput.container div.prompt *,
+div.nboutput.container div.prompt * {
+    background: none;
+}
+
+div.nboutput.container div.output_area .highlight,
+div.nboutput.container div.output_area pre {
+    background: unset;
+}
+
+div.nboutput.container div.output_area div.highlight {
+    color: unset;  /* override Pygments text color */
+}
+
+/* avoid gaps between output lines */
+div.nboutput.container div[class*=highlight] pre {
+    line-height: normal;
+}
+
+/* input/output containers */
+div.nbinput.container,
+div.nboutput.container {
+    display: -webkit-flex;
+    display: flex;
+    align-items: flex-start;
+    margin: 0;
+    width: 100%;
+}
+@media (max-width: 540px) {
+    div.nbinput.container,
+    div.nboutput.container {
+        flex-direction: column;
+    }
+}
+
+/* input container */
+div.nbinput.container {
+    padding-top: 5px;
+}
+
+/* last container */
+div.nblast.container {
+    padding-bottom: 5px;
+}
+
+/* input prompt */
+div.nbinput.container div.prompt pre {
+    color: #307FC1;
+}
+
+/* output prompt */
+div.nboutput.container div.prompt pre {
+    color: #BF5B3D;
+}
+
+/* all prompts */
+div.nbinput.container div.prompt,
+div.nboutput.container div.prompt {
+    width: 4.5ex;
+    padding-top: 5px;
+    position: relative;
+    user-select: none;
+}
+
+div.nbinput.container div.prompt > div,
+div.nboutput.container div.prompt > div {
+    position: absolute;
+    right: 0;
+    margin-right: 0.3ex;
+}
+
+@media (max-width: 540px) {
+    div.nbinput.container div.prompt,
+    div.nboutput.container div.prompt {
+        width: unset;
+        text-align: left;
+        padding: 0.4em;
+    }
+    div.nboutput.container div.prompt.empty {
+        padding: 0;
+    }
+
+    div.nbinput.container div.prompt > div,
+    div.nboutput.container div.prompt > div {
+        position: unset;
+    }
+}
+
+/* disable scrollbars on prompts */
+div.nbinput.container div.prompt pre,
+div.nboutput.container div.prompt pre {
+    overflow: hidden;
+}
+
+/* input/output area */
+div.nbinput.container div.input_area,
+div.nboutput.container div.output_area {
+    -webkit-flex: 1;
+    flex: 1;
+    overflow: auto;
+}
+@media (max-width: 540px) {
+    div.nbinput.container div.input_area,
+    div.nboutput.container div.output_area {
+        width: 100%;
+    }
+}
+
+/* input area */
+div.nbinput.container div.input_area {
+    border: 1px solid #e0e0e0;
+    border-radius: 2px;
+    /*background: #f5f5f5;*/
+}
+
+/* override MathJax center alignment in output cells */
+div.nboutput.container div[class*=MathJax] {
+    text-align: left !important;
+}
+
+/* override sphinx.ext.imgmath center alignment in output cells */
+div.nboutput.container div.math p {
+    text-align: left;
+}
+
+/* standard error */
+div.nboutput.container div.output_area.stderr {
+    background: #fdd;
+}
+
+/* ANSI colors */
+.ansi-black-fg { color: #3E424D; }
+.ansi-black-bg { background-color: #3E424D; }
+.ansi-black-intense-fg { color: #282C36; }
+.ansi-black-intense-bg { background-color: #282C36; }
+.ansi-red-fg { color: #E75C58; }
+.ansi-red-bg { background-color: #E75C58; }
+.ansi-red-intense-fg { color: #B22B31; }
+.ansi-red-intense-bg { background-color: #B22B31; }
+.ansi-green-fg { color: #00A250; }
+.ansi-green-bg { background-color: #00A250; }
+.ansi-green-intense-fg { color: #007427; }
+.ansi-green-intense-bg { background-color: #007427; }
+.ansi-yellow-fg { color: #DDB62B; }
+.ansi-yellow-bg { background-color: #DDB62B; }
+.ansi-yellow-intense-fg { color: #B27D12; }
+.ansi-yellow-intense-bg { background-color: #B27D12; }
+.ansi-blue-fg { color: #208FFB; }
+.ansi-blue-bg { background-color: #208FFB; }
+.ansi-blue-intense-fg { color: #0065CA; }
+.ansi-blue-intense-bg { background-color: #0065CA; }
+.ansi-magenta-fg { color: #D160C4; }
+.ansi-magenta-bg { background-color: #D160C4; }
+.ansi-magenta-intense-fg { color: #A03196; }
+.ansi-magenta-intense-bg { background-color: #A03196; }
+.ansi-cyan-fg { color: #60C6C8; }
+.ansi-cyan-bg { background-color: #60C6C8; }
+.ansi-cyan-intense-fg { color: #258F8F; }
+.ansi-cyan-intense-bg { background-color: #258F8F; }
+.ansi-white-fg { color: #C5C1B4; }
+.ansi-white-bg { background-color: #C5C1B4; }
+.ansi-white-intense-fg { color: #A1A6B2; }
+.ansi-white-intense-bg { background-color: #A1A6B2; }
+
+.ansi-default-inverse-fg { color: #FFFFFF; }
+.ansi-default-inverse-bg { background-color: #000000; }
+
+.ansi-bold { font-weight: bold; }
+.ansi-underline { text-decoration: underline; }
+
+
+div.nbinput.container div.input_area div[class*=highlight] > pre,
+div.nboutput.container div.output_area div[class*=highlight] > pre,
+div.nboutput.container div.output_area div[class*=highlight].math,
+div.nboutput.container div.output_area.rendered_html,
+div.nboutput.container div.output_area > div.output_javascript,
+div.nboutput.container div.output_area:not(.rendered_html) > img{
+    padding: 5px;
+    margin: 0;
+}
+
+/* fix copybtn overflow problem in chromium (needed for 'sphinx_copybutton') */
+div.nbinput.container div.input_area > div[class^='highlight'],
+div.nboutput.container div.output_area > div[class^='highlight']{
+    overflow-y: hidden;
+}
+
+/* hide copybtn icon on prompts (needed for 'sphinx_copybutton') */
+.prompt a.copybtn {
+    display: none;
+}
+
+/* Some additional styling taken form the Jupyter notebook CSS */
+div.rendered_html table {
+  border: none;
+  border-collapse: collapse;
+  border-spacing: 0;
+  color: black;
+  font-size: 12px;
+  table-layout: fixed;
+}
+div.rendered_html thead {
+  border-bottom: 1px solid black;
+  vertical-align: bottom;
+}
+div.rendered_html tr,
+div.rendered_html th,
+div.rendered_html td {
+  text-align: right;
+  vertical-align: middle;
+  padding: 0.5em 0.5em;
+  line-height: normal;
+  white-space: normal;
+  max-width: none;
+  border: none;
+}
+div.rendered_html th {
+  font-weight: bold;
+}
+div.rendered_html tbody tr:nth-child(odd) {
+  background: #f5f5f5;
+}
+div.rendered_html tbody tr:hover {
+  background: rgba(66, 165, 245, 0.2);
+}
+
+/* CSS overrides for sphinx_rtd_theme */
+
+/* 24px margin */
+.nbinput.nblast.container,
+.nboutput.nblast.container {
+    margin-bottom: 19px;  /* padding has already 5px */
+}
+
+/* ... except between code cells! */
+.nblast.container + .nbinput.container {
+    margin-top: -19px;
+}
+
+.admonition > p:before {
+    margin-right: 4px;  /* make room for the exclamation icon */
+}
+
+/* Fix math alignment, see https://github.com/rtfd/sphinx_rtd_theme/pull/686 */
+.math {
+    text-align: unset;
+}
+</style>
+<div class="section" id="Seismic-Motion">
+<h1>Seismic Motion<a class="headerlink" href="#Seismic-Motion" title="Permalink to this headline">¶</a></h1>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[1]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">csv</span>
+<span class="kn">import</span> <span class="nn">math</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">from</span> <span class="nn">scipy</span> <span class="kn">import</span> <span class="n">integrate</span>
+
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">set_style</span><span class="p">(</span><span class="s2">&quot;whitegrid&quot;</span><span class="p">)</span>
+
+<span class="kn">from</span> <span class="nn">streng.tools.seismic_motion</span> <span class="kn">import</span> <span class="n">Record</span><span class="p">,</span> <span class="n">Spectra</span>
+
+<span class="kn">from</span> <span class="nn">streng.common.io.output</span> <span class="kn">import</span> <span class="n">OutputTable</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="Διέγερση">
+<h2>Διέγερση<a class="headerlink" href="#Διέγερση" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="Φόρτωμα-επιταχυνσιογραφήματος">
+<h3>Φόρτωμα επιταχυνσιογραφήματος<a class="headerlink" href="#Φόρτωμα-επιταχυνσιογραφήματος" title="Permalink to this headline">¶</a></h3>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[2]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="c1"># rec = Record.load_one_column_txt(filename=&#39;LEF10301L_ms2.txt&#39;, dt=0.01)</span>
+<span class="n">rec</span> <span class="o">=</span> <span class="n">Record</span><span class="o">.</span><span class="n">load_multi_column_txt</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="s1">&#39;A299_T&#39;</span><span class="p">,</span> <span class="n">dt</span><span class="o">=</span><span class="mf">0.005</span><span class="p">,</span> <span class="n">skip_header</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">rec</span><span class="o">.</span><span class="n">calc</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="Γραφήματα-διέγερσης-vs-time">
+<h3>Γραφήματα διέγερσης vs time<a class="headerlink" href="#Γραφήματα-διέγερσης-vs-time" title="Permalink to this headline">¶</a></h3>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[3]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Διέγερση&#39;</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">rec</span><span class="o">.</span><span class="n">time</span><span class="p">,</span> <span class="n">rec</span><span class="o">.</span><span class="n">accel</span><span class="p">,</span> <span class="s1">&#39;-&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Acceleration (m/s2)&#39;</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">rec</span><span class="o">.</span><span class="n">time</span><span class="p">,</span> <span class="n">rec</span><span class="o">.</span><span class="n">velocity</span><span class="p">,</span> <span class="s1">&#39;-&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Velocity (m/s)&#39;</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">rec</span><span class="o">.</span><span class="n">time</span><span class="p">,</span> <span class="n">rec</span><span class="o">.</span><span class="n">displacement</span><span class="p">,</span> <span class="s1">&#39;-&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;displacement (m)&#39;</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;time (s)&#39;</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../../_images/jupyters_tools_seismic_motion_6_0.png" src="../../_images/jupyters_tools_seismic_motion_6_0.png" />
+</div>
+</div>
+</div>
+<div class="section" id="Ιδιότητες-διέγερσης">
+<h3>Ιδιότητες διέγερσης<a class="headerlink" href="#Ιδιότητες-διέγερσης" title="Permalink to this headline">¶</a></h3>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[4]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">rec</span><span class="o">.</span><span class="n">props</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[4]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+{&#39;PGA&#39;: 0.158568,
+ &#39;PGV&#39;: 0.0070372525000000005,
+ &#39;PGD&#39;: 0.0011128142624999995,
+ &#39;timePGA&#39;: 3.5,
+ &#39;timePGV&#39;: 4.255,
+ &#39;timePGD&#39;: 4.89,
+ &#39;PGVdivPGA&#39;: 0.04438002938802281,
+ &#39;aRMS&#39;: 0.018296115007151906,
+ &#39;vRMS&#39;: 0.001095260127434301,
+ &#39;dRMS&#39;: 0.000245216878063694,
+ &#39;Ia&#39;: 0.001530561543683963,
+ &#39;Ic&#39;: 0.01322450437266615,
+ &#39;SED&#39;: 3.4254427993372033e-05,
+ &#39;CAV&#39;: 0.238583945,
+ &#39;T_Arias5_95&#39;: 7.107100421136425}
+</pre></div></div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[5]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">rec</span><span class="o">.</span><span class="n">props</span><span class="p">[</span><span class="s1">&#39;PGA&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[5]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+0.158568
+</pre></div></div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[6]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="c1"># rec.output.outputTables[&#39;RecordMotionProperties&#39;].to_panda_dataframe</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">rec</span><span class="o">.</span><span class="n">output</span><span class="o">.</span><span class="n">outputTables</span><span class="p">[</span><span class="s1">&#39;RecordMotionProperties&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">to_markdown</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+| quantity    |     value |
+|:------------|----------:|
+| PGA         | 1.586E-01 |
+| PGV         | 7.037E-03 |
+| PGD         | 1.113E-03 |
+| timePGA     | 3.500E+00 |
+| timePGV     | 4.255E+00 |
+| timePGD     | 4.890E+00 |
+| PGVdivPGA   | 4.438E-02 |
+| aRMS        | 1.830E-02 |
+| vRMS        | 1.095E-03 |
+| dRMS        | 2.452E-04 |
+| Ia          | 1.531E-03 |
+| Ic          | 1.322E-02 |
+| SED         | 3.425E-05 |
+| CAV         | 2.386E-01 |
+| T_Arias5_95 | 7.107E+00 |
+</pre></div></div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[7]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="c1"># print(rec.Husid)</span>
+<span class="c1"># print(rec.Husid_norm)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">rec</span><span class="o">.</span><span class="n">time</span><span class="p">,</span> <span class="n">rec</span><span class="o">.</span><span class="n">Husid_norm</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../../_images/jupyters_tools_seismic_motion_11_0.png" src="../../_images/jupyters_tools_seismic_motion_11_0.png" />
+</div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[8]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Significant duration between 20% and 80% = </span><span class="si">{</span><span class="n">rec</span><span class="o">.</span><span class="n">get_significant_duration</span><span class="p">(</span><span class="mf">0.2</span><span class="p">,</span> <span class="mf">0.8</span><span class="p">)</span><span class="si">:</span><span class="s1">.2f</span><span class="si">}</span><span class="s1">sec&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+Significant duration between 20% and 80% = 1.14sec
+</pre></div></div>
+</div>
+</div>
+</div>
+<div class="section" id="Φάσματα">
+<h2>Φάσματα<a class="headerlink" href="#Φάσματα" title="Permalink to this headline">¶</a></h2>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[9]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">spec</span> <span class="o">=</span> <span class="n">Spectra</span><span class="p">(</span><span class="n">accel</span><span class="o">=</span><span class="n">rec</span><span class="o">.</span><span class="n">accel</span><span class="p">,</span>
+              <span class="n">dt</span><span class="o">=</span><span class="n">rec</span><span class="o">.</span><span class="n">dt</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[10]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">spec</span><span class="o">.</span><span class="n">get_spectra</span><span class="p">(</span><span class="mf">0.05</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[10]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+{&#39;Sa&#39;: array([0.158568  , 0.15856914, 0.16109152, 0.16533725, 0.17628474,
+        0.23288778, 0.27065375, 0.33599843, 0.39613212, 0.43069411,
+        0.51799871, 0.55023189, 0.51544988, 0.48935586, 0.59517231,
+        0.54212085, 0.47767697, 0.48424621, 0.51598086, 0.61100123,
+        0.6152074 , 0.53800677, 0.60506636, 0.56013589, 0.4723923 ,
+        0.39228571, 0.33899649, 0.31293007, 0.27073267, 0.21374742,
+        0.1791839 , 0.19131348, 0.18718375, 0.1657421 , 0.1639578 ,
+        0.16048069, 0.14903259, 0.14149632, 0.13000465, 0.11699881,
+        0.10725041, 0.10318707, 0.10538445, 0.11273131, 0.1218547 ,
+        0.12879009, 0.13181015, 0.1300138 , 0.12368605, 0.11336381,
+        0.09984149, 0.08891327, 0.08890656, 0.09119748, 0.09215963,
+        0.09206837, 0.09119397, 0.08976582, 0.08796115, 0.08592478,
+        0.08351124, 0.08080541, 0.07836091, 0.07645634, 0.07388851,
+        0.07074927, 0.06714434, 0.06318136, 0.05903948, 0.05477747,
+        0.0504517 , 0.05248663, 0.05461471, 0.05556254, 0.05586452,
+        0.05585384, 0.05538939, 0.05422606, 0.05227857, 0.05066497,
+        0.04917617, 0.0473997 , 0.0454077 , 0.04332112, 0.04115025,
+        0.03894326, 0.03675285, 0.03616894, 0.03665524, 0.0368919 ,
+        0.03746386, 0.03776963, 0.03782525, 0.0376555 , 0.03751323,
+        0.03792128, 0.03811372, 0.03812563, 0.03799569, 0.03776497,
+        0.03747585, 0.03717349, 0.03688649, 0.03683093, 0.0370891 ,
+        0.03734514, 0.03763556, 0.03798465, 0.03840398, 0.03890507,
+        0.0394926 , 0.04016501, 0.04091534, 0.04173225, 0.04260304,
+        0.04352168, 0.04446013, 0.04540042, 0.0463298 , 0.04724749,
+        0.04820145, 0.04943478, 0.05061681, 0.05173873, 0.05279515,
+        0.05378737, 0.05473322, 0.05565059, 0.05653507, 0.05738161,
+        0.05821762, 0.0591517 , 0.06005763, 0.06088765, 0.06163253,
+        0.06228657, 0.06284864, 0.06332213, 0.06371384, 0.06403872,
+        0.06431454, 0.06455688, 0.06475408, 0.06489915, 0.06498375,
+        0.06502197, 0.06507138, 0.06521178, 0.06535968, 0.0654818 ,
+        0.06557481, 0.06563175, 0.06564031, 0.06559255, 0.06548609,
+        0.06531607, 0.06507479, 0.06476218, 0.06438585, 0.06394678,
+        0.06344542, 0.06288046, 0.0623199 , 0.06203304, 0.06175766,
+        0.06148139, 0.06116733, 0.06080266, 0.06038634, 0.05991512,
+        0.05940392, 0.05886742, 0.05836026, 0.05792004, 0.05745535,
+        0.05694056, 0.05636616, 0.05573145, 0.05503811, 0.05429164,
+        0.0534953 , 0.0526525 , 0.05177346, 0.05086524, 0.04994103,
+        0.04901389, 0.04808509, 0.047146  , 0.04619211, 0.04523408,
+        0.04429823, 0.04339813, 0.04249171, 0.04169598, 0.0410987 ,
+        0.04048615, 0.03986235, 0.03922692, 0.03858162, 0.03792843,
+        0.03726857, 0.03660219, 0.03592843, 0.03524966, 0.03456607,
+        0.03387452, 0.0331837 , 0.03248715, 0.03179096, 0.0310952 ,
+        0.03040157, 0.02972153, 0.02908181, 0.02845271, 0.02783461,
+        0.02724938, 0.02668858, 0.02613242, 0.02557847, 0.02502659,
+        0.02447859, 0.02397498, 0.02364141, 0.02330694, 0.02296896,
+        0.0226316 , 0.02229309, 0.02195256, 0.02161082, 0.02127198,
+        0.0209324 , 0.02059257, 0.0202529 , 0.01991517, 0.01958033,
+        0.01924665, 0.01891448, 0.01858415, 0.01825597, 0.01793142,
+        0.01761074, 0.01729285, 0.016978  , 0.01666642, 0.01635829,
+        0.01605381, 0.01575314, 0.01545719, 0.015166  , 0.01487893,
+        0.0145961 , 0.01431761, 0.01404355, 0.01377401, 0.01350905,
+        0.01324874, 0.0129931 , 0.0127422 , 0.01249604, 0.01225467,
+        0.01201808, 0.01178708, 0.01157398, 0.01136482, 0.01115919,
+        0.01095713, 0.01075868, 0.01056386, 0.0103727 , 0.0101852 ,
+        0.01000139, 0.00982125, 0.00964479, 0.009472  , 0.00930286,
+        0.00913737, 0.00901352, 0.00889165, 0.00877108, 0.00865183,
+        0.00853393, 0.00841739, 0.00830222, 0.00818845, 0.00807607,
+        0.00796511, 0.00785557, 0.00774745, 0.00764077, 0.00754867,
+        0.00746176, 0.00737549, 0.0072899 , 0.00720501, 0.00712084,
+        0.00703742, 0.00695476, 0.00687288, 0.0067918 , 0.00671171,
+        0.00663264, 0.0065544 , 0.00647699, 0.00640043, 0.00632472,
+        0.00624987, 0.00617589, 0.00610278, 0.00603056, 0.00595922,
+        0.00588877, 0.00581921, 0.00575054, 0.00568277, 0.0056159 ,
+        0.00554991, 0.00548482, 0.00542063, 0.00535732, 0.00529489,
+        0.00523335, 0.00517269, 0.00511292, 0.00505409, 0.00499611,
+        0.00493899, 0.00488271, 0.00482727, 0.00477266, 0.00471888,
+        0.00466592, 0.00461377, 0.00456243, 0.00451189, 0.00446213,
+        0.00441316, 0.00436496, 0.00431753, 0.00427086, 0.00422493,
+        0.00418265, 0.00414995, 0.00413421, 0.0041183 , 0.00410221,
+        0.00408595, 0.00406951, 0.00405289, 0.00403609, 0.00401911,
+        0.00400195, 0.00398461, 0.0039671 , 0.00394942, 0.00393156,
+        0.00391354, 0.00389535, 0.00387701, 0.0038585 , 0.00383984,
+        0.00382103, 0.00380208, 0.00378299, 0.00376376, 0.0037444 ,
+        0.00372492, 0.00370532, 0.0036856 , 0.00366577, 0.00364584,
+        0.00362582, 0.00360569, 0.00358549, 0.0035652 , 0.00354596,
+        0.00353252, 0.00351922, 0.00350604, 0.00349297, 0.00348001,
+        0.00346716, 0.0034544 , 0.00344173, 0.00342915, 0.00341666,
+        0.00340424, 0.00339189, 0.00337962, 0.00336741, 0.00335527,
+        0.00334318, 0.00333115, 0.00331918, 0.00330725, 0.00329537,
+        0.00328353, 0.00327174, 0.00325998, 0.00324827, 0.00323658,
+        0.00322493]),
+ &#39;Sv&#39;: array([0.00000000e+00, 2.14913003e-05, 8.77440006e-05, 2.13624278e-04,
+        4.57001261e-04, 8.64377606e-04, 1.50505748e-03, 2.44991841e-03,
+        4.07397624e-03, 5.03025300e-03, 7.46203294e-03, 8.61755409e-03,
+        9.01540024e-03, 9.91274690e-03, 1.23081832e-02, 1.21889547e-02,
+        1.14185851e-02, 1.23903050e-02, 1.44026224e-02, 1.87398305e-02,
+        1.96545743e-02, 1.88494382e-02, 2.06462797e-02, 1.99464348e-02,
+        1.85378948e-02, 1.60981035e-02, 1.45197561e-02, 1.43930286e-02,
+        1.37852062e-02, 1.16356357e-02, 9.43764149e-03, 9.65309319e-03,
+        1.04308048e-02, 1.06287673e-02, 1.06342306e-02, 1.12015188e-02,
+        1.10753710e-02, 1.04585217e-02, 9.60526018e-03, 8.90158238e-03,
+        8.56623500e-03, 8.62448979e-03, 8.98311340e-03, 9.42784439e-03,
+        9.72105759e-03, 9.64291524e-03, 9.43988234e-03, 1.04429468e-02,
+        1.12275508e-02, 1.17314156e-02, 1.19056598e-02, 1.17623449e-02,
+        1.13828007e-02, 1.12637439e-02, 1.09948552e-02, 1.06189741e-02,
+        1.01975963e-02, 9.74156305e-03, 9.25143679e-03, 8.74496483e-03,
+        8.29007475e-03, 7.76045379e-03, 8.03144575e-03, 8.26945757e-03,
+        8.45175061e-03, 8.57833670e-03, 8.65864133e-03, 8.70767025e-03,
+        8.71429574e-03, 8.68466257e-03, 8.62416145e-03, 8.54155386e-03,
+        8.44709500e-03, 8.32979818e-03, 8.19102282e-03, 8.03181213e-03,
+        7.85321783e-03, 7.65653094e-03, 7.53068996e-03, 7.52796239e-03,
+        7.51228592e-03, 7.48373980e-03, 7.44268379e-03, 7.38971146e-03,
+        7.32558906e-03, 7.31312818e-03, 7.31344352e-03, 7.31003185e-03,
+        7.30304115e-03, 7.29336558e-03, 7.28295326e-03, 7.26919202e-03,
+        7.25213848e-03, 7.23182275e-03, 7.20825628e-03, 7.18144226e-03,
+        7.15138711e-03, 7.11811204e-03, 7.08166369e-03, 7.04212319e-03,
+        6.99961317e-03, 6.95430247e-03, 6.90640850e-03, 6.85619735e-03,
+        6.80398182e-03, 6.75011762e-03, 6.74968984e-03, 6.67661190e-03,
+        6.58271488e-03, 6.52646440e-03, 6.47076918e-03, 6.53584698e-03,
+        6.71720866e-03, 6.90724694e-03, 7.09802532e-03, 7.32354316e-03,
+        7.55714422e-03, 7.79036699e-03, 8.01939333e-03, 8.27563776e-03,
+        8.67824364e-03, 9.07858543e-03, 9.47336051e-03, 9.85526498e-03,
+        1.02201490e-02, 1.05653965e-02, 1.08858679e-02, 1.11809122e-02,
+        1.14461617e-02, 1.16834088e-02, 1.18864073e-02, 1.20636730e-02,
+        1.22086301e-02, 1.23241997e-02, 1.24123506e-02, 1.24738302e-02,
+        1.26966873e-02, 1.29376226e-02, 1.31745335e-02, 1.34087203e-02,
+        1.36320963e-02, 1.38429762e-02, 1.40393362e-02, 1.42186811e-02,
+        1.43804594e-02, 1.45253005e-02, 1.46467595e-02, 1.47535451e-02,
+        1.48339786e-02, 1.50466894e-02, 1.53698290e-02, 1.56751633e-02,
+        1.59573627e-02, 1.62112452e-02, 1.64470220e-02, 1.66513377e-02,
+        1.68274339e-02, 1.69778874e-02, 1.70934561e-02, 1.71829370e-02,
+        1.72393877e-02, 1.72627148e-02, 1.72580849e-02, 1.72177423e-02,
+        1.72979350e-02, 1.74536591e-02, 1.75700949e-02, 1.76558556e-02,
+        1.77064882e-02, 1.77178888e-02, 1.76905518e-02, 1.76255475e-02,
+        1.75352973e-02, 1.74087495e-02, 1.72471702e-02, 1.70519933e-02,
+        1.68248025e-02, 1.66783485e-02, 1.65436746e-02, 1.63901152e-02,
+        1.62185093e-02, 1.60297490e-02, 1.58286455e-02, 1.58175246e-02,
+        1.58087099e-02, 1.57788752e-02, 1.57320634e-02, 1.56701054e-02,
+        1.55892470e-02, 1.54903515e-02, 1.53813195e-02, 1.52558749e-02,
+        1.51149197e-02, 1.49649228e-02, 1.48113463e-02, 1.47106430e-02,
+        1.45993074e-02, 1.44758003e-02, 1.43389654e-02, 1.41897462e-02,
+        1.40290848e-02, 1.38628462e-02, 1.38383608e-02, 1.38326476e-02,
+        1.38224525e-02, 1.38079242e-02, 1.37892137e-02, 1.37664744e-02,
+        1.37398609e-02, 1.37095293e-02, 1.36756356e-02, 1.36383365e-02,
+        1.35977879e-02, 1.35541453e-02, 1.35075630e-02, 1.34581938e-02,
+        1.34061889e-02, 1.33516976e-02, 1.32948667e-02, 1.32358407e-02,
+        1.31747615e-02, 1.31117680e-02, 1.30469962e-02, 1.29805789e-02,
+        1.29126456e-02, 1.28433224e-02, 1.27727321e-02, 1.27009937e-02,
+        1.26282228e-02, 1.25545314e-02, 1.24800277e-02, 1.24048163e-02,
+        1.23289980e-02, 1.22526701e-02, 1.21759259e-02, 1.20988555e-02,
+        1.20215450e-02, 1.19440770e-02, 1.18665307e-02, 1.17889817e-02,
+        1.17115020e-02, 1.16341605e-02, 1.15570226e-02, 1.14801504e-02,
+        1.14036030e-02, 1.13274361e-02, 1.12517028e-02, 1.11764527e-02,
+        1.11017330e-02, 1.10275876e-02, 1.09540582e-02, 1.08811835e-02,
+        1.08089996e-02, 1.07375404e-02, 1.06668372e-02, 1.05969190e-02,
+        1.05278126e-02, 1.04595426e-02, 1.03921316e-02, 1.03256000e-02,
+        1.02599664e-02, 1.01952477e-02, 1.01314588e-02, 1.00686130e-02,
+        1.00067220e-02, 9.94579572e-03, 9.88584292e-03, 9.82687074e-03,
+        9.76888499e-03, 9.71189022e-03, 9.65588972e-03, 9.60088563e-03,
+        9.54687897e-03, 9.49386972e-03, 9.44185685e-03, 9.39083839e-03,
+        9.34081149e-03, 9.29177245e-03, 9.24371679e-03, 9.19663926e-03,
+        9.15053394e-03, 9.10539425e-03, 9.06121298e-03, 9.01798237e-03,
+        8.97569412e-03, 8.93433942e-03, 8.89390902e-03, 8.85439325e-03,
+        8.81578203e-03, 8.77806493e-03, 8.74123120e-03, 8.70526978e-03,
+        8.67016934e-03, 8.63591830e-03, 8.60250488e-03, 8.56991708e-03,
+        8.53814276e-03, 8.50716959e-03, 8.47698515e-03, 8.44757688e-03,
+        8.41986991e-03, 8.40284905e-03, 8.38578275e-03, 8.36868015e-03,
+        8.35155008e-03, 8.33440102e-03, 8.31724115e-03, 8.30007831e-03,
+        8.28292007e-03, 8.26577367e-03, 8.24864608e-03, 8.23154398e-03,
+        8.21447379e-03, 8.19744165e-03, 8.18045345e-03, 8.16351481e-03,
+        8.14663114e-03, 8.12980757e-03, 8.11304902e-03, 8.09636020e-03,
+        8.07974558e-03, 8.06320943e-03, 8.04675580e-03, 8.03038856e-03,
+        8.01411138e-03, 7.99792774e-03, 7.98184093e-03, 7.96585409e-03,
+        7.94997017e-03, 7.93419196e-03, 7.91852209e-03, 7.90296303e-03,
+        7.88751712e-03, 7.87218654e-03, 7.85697333e-03, 7.84187939e-03,
+        7.82690652e-03, 7.81205635e-03, 7.79733043e-03, 7.78273016e-03,
+        7.76825685e-03, 7.75391169e-03, 7.74200893e-03, 7.73488553e-03,
+        7.72803920e-03, 7.72146208e-03, 7.71514645e-03, 7.70908475e-03,
+        7.70326958e-03, 7.69769367e-03, 7.69234994e-03, 7.68723141e-03,
+        7.68233130e-03, 7.67764293e-03, 7.67315980e-03, 7.66887553e-03,
+        7.66478389e-03, 7.66087880e-03, 7.65715428e-03, 7.65360454e-03,
+        7.65022388e-03, 7.64700674e-03, 7.64394772e-03, 7.64104150e-03,
+        7.63828292e-03, 7.63566694e-03, 7.63318863e-03, 7.63084319e-03,
+        7.62862594e-03, 7.62653229e-03, 7.62455780e-03, 7.62269812e-03,
+        7.62094903e-03, 7.61930638e-03, 7.61776617e-03, 7.61632448e-03,
+        7.61497749e-03, 7.61372150e-03, 7.61255288e-03, 7.61146811e-03,
+        7.61046378e-03, 7.60953655e-03, 7.60868318e-03, 7.60790051e-03,
+        7.60718549e-03, 7.60653513e-03, 7.60594654e-03, 7.60541690e-03,
+        7.60494348e-03, 7.60452362e-03, 7.60415474e-03, 7.60383433e-03,
+        7.60355997e-03, 7.60332930e-03, 7.60314002e-03, 7.60298991e-03,
+        7.60287682e-03, 7.60279866e-03, 7.60275341e-03, 7.60273910e-03,
+        7.60275383e-03]),
+ &#39;Sd&#39;: array([0.00000000e+00, 4.01907081e-07, 1.63420428e-06, 3.76820293e-06,
+        7.16828270e-06, 1.46550459e-05, 2.45853194e-05, 4.13489029e-05,
+        6.38953689e-05, 8.84825769e-05, 1.31646826e-04, 1.68412946e-04,
+        1.86934006e-04, 2.09453587e-04, 2.94376367e-04, 3.06757989e-04,
+        3.08877575e-04, 3.53770549e-04, 4.22701407e-04, 5.54321947e-04,
+        6.18997805e-04, 5.96365062e-04, 7.37398239e-04, 7.45586057e-04,
+        6.86788616e-04, 6.17041583e-04, 5.77229732e-04, 5.74267956e-04,
+        5.34695094e-04, 4.51747434e-04, 4.05605113e-04, 4.62390899e-04,
+        4.81981097e-04, 4.54004237e-04, 4.77456488e-04, 4.94916058e-04,
+        4.86282479e-04, 4.85678735e-04, 4.70645570e-04, 4.45467997e-04,
+        4.29355458e-04, 4.34972344e-04, 4.66044525e-04, 5.22868709e-04,
+        5.91235387e-04, 6.54250261e-04, 6.98922334e-04, 7.19615269e-04,
+        7.14285474e-04, 6.82604261e-04, 6.25695455e-04, 5.85258501e-04,
+        6.06305559e-04, 6.44280740e-04, 6.75588421e-04, 6.99625544e-04,
+        7.17860445e-04, 7.31553425e-04, 7.42631472e-04, 7.50025969e-04,
+        7.53257824e-04, 7.53422794e-04, 7.56861308e-04, 7.61775034e-04,
+        7.59047546e-04, 7.49043588e-04, 7.32391275e-04, 7.09872655e-04,
+        6.82559792e-04, 6.51943552e-04, 6.17806658e-04, 6.67553998e-04,
+        7.13772236e-04, 7.45958260e-04, 7.70603743e-04, 7.91112948e-04,
+        8.06033936e-04, 8.10624662e-04, 8.02563645e-04, 7.85802736e-04,
+        7.80886543e-04, 7.71550763e-04, 7.57487517e-04, 7.39310366e-04,
+        7.18390202e-04, 6.95678966e-04, 6.71474245e-04, 6.90304439e-04,
+        7.15687509e-04, 7.39296078e-04, 7.66295818e-04, 7.88636574e-04,
+        8.06441227e-04, 8.19982393e-04, 8.34453591e-04, 8.61335790e-04,
+        8.83830125e-04, 9.02524104e-04, 9.18148442e-04, 9.31540845e-04,
+        9.43600607e-04, 9.55238871e-04, 9.67344531e-04, 9.85511034e-04,
+        1.01109710e-03, 1.03743993e-03, 1.06524273e-03, 1.09510417e-03,
+        1.12763929e-03, 1.16328658e-03, 1.20253436e-03, 1.24526051e-03,
+        1.29136382e-03, 1.34060657e-03, 1.39261948e-03, 1.44742469e-03,
+        1.50413090e-03, 1.56213351e-03, 1.62161098e-03, 1.68126267e-03,
+        1.74977130e-03, 1.82379233e-03, 1.89777071e-03, 1.97169851e-03,
+        2.04509965e-03, 2.11830924e-03, 2.19123679e-03, 2.26393145e-03,
+        2.33652660e-03, 2.40984456e-03, 2.48578136e-03, 2.56299075e-03,
+        2.63911491e-03, 2.71368845e-03, 2.78604485e-03, 2.85596077e-03,
+        2.92341192e-03, 2.98866485e-03, 3.05214906e-03, 3.11352899e-03,
+        3.17345359e-03, 3.23114000e-03, 3.28706165e-03, 3.34095597e-03,
+        3.39361063e-03, 3.44642463e-03, 3.50072642e-03, 3.55619381e-03,
+        3.61146470e-03, 3.66649021e-03, 3.72023904e-03, 3.77210801e-03,
+        3.82163096e-03, 3.86834975e-03, 3.91176189e-03, 3.95146208e-03,
+        3.98725647e-03, 4.01906578e-03, 4.04679523e-03, 4.07018009e-03,
+        4.08937978e-03, 4.10534510e-03, 4.12039015e-03, 4.15564439e-03,
+        4.18886113e-03, 4.21944602e-03, 4.24694591e-03, 4.27083824e-03,
+        4.29187852e-03, 4.31005393e-03, 4.32641943e-03, 4.34264857e-03,
+        4.35901224e-03, 4.37349936e-03, 4.38428527e-03, 4.39093472e-03,
+        4.39279803e-03, 4.38984475e-03, 4.38250227e-03, 4.37069980e-03,
+        4.35448184e-03, 4.33468238e-03, 4.31119755e-03, 4.28496818e-03,
+        4.25563620e-03, 4.22328660e-03, 4.18849668e-03, 4.15142171e-03,
+        4.11303197e-03, 4.07389910e-03, 4.03338454e-03, 3.99082151e-03,
+        3.94608395e-03, 3.90392423e-03, 3.88743413e-03, 3.86875177e-03,
+        3.84789558e-03, 3.82491125e-03, 3.79995756e-03, 3.77291513e-03,
+        3.74381445e-03, 3.71273745e-03, 3.67982863e-03, 3.64528812e-03,
+        3.60936104e-03, 3.57224434e-03, 3.53418183e-03, 3.49532515e-03,
+        3.45607732e-03, 3.41633870e-03, 3.37642428e-03, 3.33631227e-03,
+        3.29645142e-03, 3.25740083e-03, 3.21905695e-03, 3.18066846e-03,
+        3.14186218e-03, 3.10256978e-03, 3.06273753e-03, 3.02232811e-03,
+        2.98131421e-03, 2.94013339e-03, 2.92392937e-03, 2.90700050e-03,
+        2.88899601e-03, 2.87061361e-03, 2.85126699e-03, 2.83117707e-03,
+        2.81065085e-03, 2.78930729e-03, 2.76737490e-03, 2.74510050e-03,
+        2.72215654e-03, 2.69864222e-03, 2.67499887e-03, 2.65082362e-03,
+        2.62616651e-03, 2.60136241e-03, 2.57629557e-03, 2.55086973e-03,
+        2.52518948e-03, 2.49954029e-03, 2.47364376e-03, 2.44754035e-03,
+        2.42150132e-03, 2.39540142e-03, 2.36919103e-03, 2.34307910e-03,
+        2.31701301e-03, 2.29095013e-03, 2.26643947e-03, 2.24342497e-03,
+        2.22039802e-03, 2.19729651e-03, 2.17415063e-03, 2.15119217e-03,
+        2.12827493e-03, 2.10538327e-03, 2.08254257e-03, 2.05977700e-03,
+        2.03710949e-03, 2.01459078e-03, 1.99235001e-03, 1.97025851e-03,
+        1.94833497e-03, 1.92659704e-03, 1.90506128e-03, 1.88374324e-03,
+        1.86265747e-03, 1.84181754e-03, 1.82123608e-03, 1.80092483e-03,
+        1.78089463e-03, 1.76115547e-03, 1.74171651e-03, 1.72258613e-03,
+        1.70377194e-03, 1.68531059e-03, 1.66718868e-03, 1.65225854e-03,
+        1.64036298e-03, 1.62855865e-03, 1.61675314e-03, 1.60495337e-03,
+        1.59441364e-03, 1.58714199e-03, 1.57974591e-03, 1.57229098e-03,
+        1.56483318e-03, 1.55727237e-03, 1.54961681e-03, 1.54187447e-03,
+        1.53405310e-03, 1.52616021e-03, 1.51820306e-03, 1.51018871e-03,
+        1.50217244e-03, 1.49418861e-03, 1.48616352e-03, 1.47810339e-03,
+        1.47001424e-03, 1.46190188e-03, 1.45377192e-03, 1.44562974e-03,
+        1.43748057e-03, 1.42932941e-03, 1.42118108e-03, 1.41304024e-03,
+        1.40491132e-03, 1.39679862e-03, 1.38870625e-03, 1.38066098e-03,
+        1.37269785e-03, 1.36476366e-03, 1.35686191e-03, 1.34899600e-03,
+        1.34116914e-03, 1.33338441e-03, 1.32564475e-03, 1.31795297e-03,
+        1.31031173e-03, 1.30272356e-03, 1.29519087e-03, 1.28771595e-03,
+        1.28030096e-03, 1.27294796e-03, 1.26565886e-03, 1.25843551e-03,
+        1.25127962e-03, 1.24419281e-03, 1.23717659e-03, 1.23023237e-03,
+        1.22336150e-03, 1.21656519e-03, 1.20984459e-03, 1.20320077e-03,
+        1.19663470e-03, 1.19014728e-03, 1.18521511e-03, 1.18775894e-03,
+        1.19021874e-03, 1.19259209e-03, 1.19487684e-03, 1.19707099e-03,
+        1.19917275e-03, 1.20118054e-03, 1.20309292e-03, 1.20490864e-03,
+        1.20662664e-03, 1.20827489e-03, 1.20982542e-03, 1.21127643e-03,
+        1.21262739e-03, 1.21387791e-03, 1.21502774e-03, 1.21607674e-03,
+        1.21702490e-03, 1.21787232e-03, 1.21861923e-03, 1.21926592e-03,
+        1.21981281e-03, 1.22026042e-03, 1.22060933e-03, 1.22086022e-03,
+        1.22101386e-03, 1.22107107e-03, 1.22103278e-03, 1.22089994e-03,
+        1.22067359e-03, 1.22035484e-03, 1.21994483e-03, 1.21944476e-03,
+        1.21885589e-03, 1.21817952e-03, 1.21741697e-03, 1.21656964e-03,
+        1.21563892e-03, 1.21462627e-03, 1.21353317e-03, 1.21237874e-03,
+        1.21116107e-03, 1.20986718e-03, 1.20849863e-03, 1.20705700e-03,
+        1.20554387e-03, 1.20396085e-03, 1.20423772e-03, 1.20593051e-03,
+        1.20761580e-03, 1.20929238e-03, 1.21095912e-03, 1.21261491e-03,
+        1.21425868e-03, 1.21588941e-03, 1.21750614e-03, 1.21910792e-03,
+        1.22069386e-03, 1.22226309e-03, 1.22381481e-03, 1.22534821e-03,
+        1.22686257e-03]),
+ &#39;T&#39;: array([0.  , 0.01, 0.02, 0.03, 0.04, 0.05, 0.06, 0.07, 0.08, 0.09, 0.1 ,
+        0.11, 0.12, 0.13, 0.14, 0.15, 0.16, 0.17, 0.18, 0.19, 0.2 , 0.21,
+        0.22, 0.23, 0.24, 0.25, 0.26, 0.27, 0.28, 0.29, 0.3 , 0.31, 0.32,
+        0.33, 0.34, 0.35, 0.36, 0.37, 0.38, 0.39, 0.4 , 0.41, 0.42, 0.43,
+        0.44, 0.45, 0.46, 0.47, 0.48, 0.49, 0.5 , 0.51, 0.52, 0.53, 0.54,
+        0.55, 0.56, 0.57, 0.58, 0.59, 0.6 , 0.61, 0.62, 0.63, 0.64, 0.65,
+        0.66, 0.67, 0.68, 0.69, 0.7 , 0.71, 0.72, 0.73, 0.74, 0.75, 0.76,
+        0.77, 0.78, 0.79, 0.8 , 0.81, 0.82, 0.83, 0.84, 0.85, 0.86, 0.87,
+        0.88, 0.89, 0.9 , 0.91, 0.92, 0.93, 0.94, 0.95, 0.96, 0.97, 0.98,
+        0.99, 1.  , 1.01, 1.02, 1.03, 1.04, 1.05, 1.06, 1.07, 1.08, 1.09,
+        1.1 , 1.11, 1.12, 1.13, 1.14, 1.15, 1.16, 1.17, 1.18, 1.19, 1.2 ,
+        1.21, 1.22, 1.23, 1.24, 1.25, 1.26, 1.27, 1.28, 1.29, 1.3 , 1.31,
+        1.32, 1.33, 1.34, 1.35, 1.36, 1.37, 1.38, 1.39, 1.4 , 1.41, 1.42,
+        1.43, 1.44, 1.45, 1.46, 1.47, 1.48, 1.49, 1.5 , 1.51, 1.52, 1.53,
+        1.54, 1.55, 1.56, 1.57, 1.58, 1.59, 1.6 , 1.61, 1.62, 1.63, 1.64,
+        1.65, 1.66, 1.67, 1.68, 1.69, 1.7 , 1.71, 1.72, 1.73, 1.74, 1.75,
+        1.76, 1.77, 1.78, 1.79, 1.8 , 1.81, 1.82, 1.83, 1.84, 1.85, 1.86,
+        1.87, 1.88, 1.89, 1.9 , 1.91, 1.92, 1.93, 1.94, 1.95, 1.96, 1.97,
+        1.98, 1.99, 2.  , 2.01, 2.02, 2.03, 2.04, 2.05, 2.06, 2.07, 2.08,
+        2.09, 2.1 , 2.11, 2.12, 2.13, 2.14, 2.15, 2.16, 2.17, 2.18, 2.19,
+        2.2 , 2.21, 2.22, 2.23, 2.24, 2.25, 2.26, 2.27, 2.28, 2.29, 2.3 ,
+        2.31, 2.32, 2.33, 2.34, 2.35, 2.36, 2.37, 2.38, 2.39, 2.4 , 2.41,
+        2.42, 2.43, 2.44, 2.45, 2.46, 2.47, 2.48, 2.49, 2.5 , 2.51, 2.52,
+        2.53, 2.54, 2.55, 2.56, 2.57, 2.58, 2.59, 2.6 , 2.61, 2.62, 2.63,
+        2.64, 2.65, 2.66, 2.67, 2.68, 2.69, 2.7 , 2.71, 2.72, 2.73, 2.74,
+        2.75, 2.76, 2.77, 2.78, 2.79, 2.8 , 2.81, 2.82, 2.83, 2.84, 2.85,
+        2.86, 2.87, 2.88, 2.89, 2.9 , 2.91, 2.92, 2.93, 2.94, 2.95, 2.96,
+        2.97, 2.98, 2.99, 3.  , 3.01, 3.02, 3.03, 3.04, 3.05, 3.06, 3.07,
+        3.08, 3.09, 3.1 , 3.11, 3.12, 3.13, 3.14, 3.15, 3.16, 3.17, 3.18,
+        3.19, 3.2 , 3.21, 3.22, 3.23, 3.24, 3.25, 3.26, 3.27, 3.28, 3.29,
+        3.3 , 3.31, 3.32, 3.33, 3.34, 3.35, 3.36, 3.37, 3.38, 3.39, 3.4 ,
+        3.41, 3.42, 3.43, 3.44, 3.45, 3.46, 3.47, 3.48, 3.49, 3.5 , 3.51,
+        3.52, 3.53, 3.54, 3.55, 3.56, 3.57, 3.58, 3.59, 3.6 , 3.61, 3.62,
+        3.63, 3.64, 3.65, 3.66, 3.67, 3.68, 3.69, 3.7 , 3.71, 3.72, 3.73,
+        3.74, 3.75, 3.76, 3.77, 3.78, 3.79, 3.8 , 3.81, 3.82, 3.83, 3.84,
+        3.85, 3.86, 3.87, 3.88, 3.89, 3.9 , 3.91, 3.92, 3.93, 3.94, 3.95,
+        3.96, 3.97, 3.98, 3.99, 4.  ]),
+ &#39;PSv&#39;: array([0.        , 0.00025253, 0.0005134 , 0.00078921, 0.00112599,
+        0.00184161, 0.00257457, 0.00371147, 0.00501833, 0.00617725,
+        0.00827161, 0.00961973, 0.00978784, 0.01012335, 0.01321158,
+        0.01284945, 0.01212959, 0.01307533, 0.01475506, 0.01833109,
+        0.01944639, 0.0178432 , 0.02106004, 0.02036807, 0.01798008,
+        0.01550795, 0.01394939, 0.01336382, 0.01199853, 0.00978763,
+        0.00849497, 0.0093719 , 0.00946368, 0.00864422, 0.00882338,
+        0.00888471, 0.00848723, 0.00824759, 0.00778198, 0.00717682,
+        0.0067443 , 0.00666588, 0.00697201, 0.00764019, 0.00844282,
+        0.00913506, 0.00954665, 0.00962016, 0.00934997, 0.00875292,
+        0.00786272, 0.00721037, 0.00732602, 0.00763799, 0.00786083,
+        0.0079925 , 0.00805438, 0.00806401, 0.00804498, 0.00798738,
+        0.0078881 , 0.00776048, 0.00767016, 0.00759742, 0.00745193,
+        0.00724058, 0.00697235, 0.00665711, 0.00630684, 0.00593664,
+        0.00554542, 0.00590756, 0.00622884, 0.00642054, 0.00654304,
+        0.00662761, 0.00666376, 0.00661468, 0.00646494, 0.0062498 ,
+        0.00613307, 0.00598493, 0.00580419, 0.00559666, 0.00537355,
+        0.00514245, 0.00490581, 0.00498541, 0.00511   , 0.00521925,
+        0.00534975, 0.00544522, 0.00550763, 0.00553989, 0.00557769,
+        0.00569677, 0.00578465, 0.00584611, 0.00588663, 0.00591217,
+        0.00592882, 0.00594252, 0.00595883, 0.00601179, 0.00610857,
+        0.00620803, 0.00631426, 0.0064306 , 0.00656034, 0.00670564,
+        0.00686886, 0.00704883, 0.00724453, 0.00745423, 0.00767551,
+        0.00790821, 0.00814718, 0.00838904, 0.00863465, 0.00887705,
+        0.00916178, 0.00947043, 0.00977381, 0.01007199, 0.01036269,
+        0.01064778, 0.01092694, 0.01120055, 0.0114694 , 0.0117376 ,
+        0.01201433, 0.01229294, 0.01256216, 0.01282001, 0.01306361,
+        0.01329225, 0.01350613, 0.01370681, 0.01389653, 0.01407401,
+        0.01424243, 0.01439848, 0.01454452, 0.01467961, 0.01480742,
+        0.01493415, 0.01506556, 0.01520015, 0.0153321 , 0.01546123,
+        0.0155833 , 0.01569593, 0.01579738, 0.01588599, 0.01595995,
+        0.01601792, 0.0160594 , 0.01608442, 0.01609289, 0.01608409,
+        0.01605896, 0.01602152, 0.01598097, 0.01601882, 0.01604841,
+        0.01606761, 0.01607491, 0.01606854, 0.01605159, 0.01602418,
+        0.01599041, 0.01595653, 0.01592354, 0.01588411, 0.01583177,
+        0.01576518, 0.01568225, 0.01558317, 0.0154697 , 0.01534185,
+        0.01520001, 0.0150473 , 0.01488355, 0.01471216, 0.01453204,
+        0.01434362, 0.01414898, 0.01394874, 0.01374625, 0.01354342,
+        0.01333816, 0.01312831, 0.01291353, 0.01270937, 0.01259045,
+        0.01246568, 0.01233522, 0.0121993 , 0.0120585 , 0.01191253,
+        0.01176154, 0.01160588, 0.01144606, 0.01128277, 0.01111681,
+        0.01094882, 0.01077957, 0.01060955, 0.01043999, 0.01027057,
+        0.01010224, 0.00993491, 0.00976991, 0.00960885, 0.00945137,
+        0.00929522, 0.00913931, 0.00898342, 0.00882741, 0.00867116,
+        0.00851461, 0.00835901, 0.00827549, 0.00819068, 0.00810361,
+        0.00801627, 0.00792701, 0.00783648, 0.00774554, 0.00765316,
+        0.00755997, 0.00746666, 0.00737233, 0.00727728, 0.0071827 ,
+        0.0070875 , 0.00699182, 0.00689656, 0.0068014 , 0.0067061 ,
+        0.00661093, 0.00651663, 0.00642246, 0.00632854, 0.00623555,
+        0.00614316, 0.00605125, 0.00596032, 0.00587025, 0.00578091,
+        0.00569618, 0.00561588, 0.00553618, 0.00545693, 0.00537819,
+        0.00530053, 0.00522357, 0.00514728, 0.00507171, 0.0049969 ,
+        0.0049229 , 0.00484983, 0.00477798, 0.00470703, 0.00463703,
+        0.00456799, 0.00449994, 0.00443292, 0.00436695, 0.00430204,
+        0.00423821, 0.00417548, 0.00411386, 0.00405336, 0.00399399,
+        0.00393576, 0.00387866, 0.00382279, 0.00376808, 0.00372095,
+        0.00368097, 0.00364147, 0.00360226, 0.00356333, 0.00352746,
+        0.00349906, 0.00347057, 0.00344216, 0.00341394, 0.00338569,
+        0.00335742, 0.00332917, 0.00330094, 0.00327275, 0.00324461,
+        0.00321654, 0.00318866, 0.00316103, 0.0031335 , 0.00310609,
+        0.00307879, 0.00305163, 0.00302461, 0.00299774, 0.00297104,
+        0.00294451, 0.00291815, 0.00289198, 0.00286601, 0.00284024,
+        0.00281468, 0.00278937, 0.0027644 , 0.00273964, 0.0027151 ,
+        0.00269079, 0.00266671, 0.00264287, 0.00261927, 0.00259591,
+        0.00257279, 0.00254992, 0.00252731, 0.00250494, 0.00248283,
+        0.00246097, 0.00243938, 0.00241804, 0.00239696, 0.00237614,
+        0.00235558, 0.00233528, 0.00231524, 0.00229547, 0.00227595,
+        0.0022567 , 0.0022377 , 0.00221897, 0.00220323, 0.00220145,
+        0.00219952, 0.00219744, 0.00219521, 0.00219283, 0.0021903 ,
+        0.00218761, 0.00218476, 0.00218175, 0.00217858, 0.00217531,
+        0.00217187, 0.00216828, 0.00216453, 0.00216063, 0.00215657,
+        0.00215235, 0.00214798, 0.00214345, 0.00213877, 0.00213395,
+        0.00212897, 0.00212386, 0.0021186 , 0.00211319, 0.00210765,
+        0.00210198, 0.00209617, 0.00209023, 0.00208416, 0.00207797,
+        0.00207166, 0.00206523, 0.00205868, 0.00205202, 0.00204526,
+        0.00203838, 0.00203141, 0.00202433, 0.00201716, 0.00200992,
+        0.00200262, 0.00199523, 0.00198775, 0.0019802 , 0.00197257,
+        0.00196486, 0.00196022, 0.0019579 , 0.00195559, 0.00195327,
+        0.00195094, 0.00194861, 0.00194628, 0.00194393, 0.00194158,
+        0.00193921, 0.00193683, 0.00193443, 0.00193202, 0.0019296 ,
+        0.00192715]),
+ &#39;PSa&#39;: array([0.158568  , 0.15866656, 0.1612895 , 0.16529188, 0.17687029,
+        0.23142321, 0.2696082 , 0.33314066, 0.39413876, 0.43125335,
+        0.51972084, 0.54947741, 0.51249019, 0.4892838 , 0.59293434,
+        0.53823644, 0.47632804, 0.48326303, 0.51504885, 0.60619815,
+        0.61092635, 0.53386732, 0.60147346, 0.55641886, 0.4707175 ,
+        0.3897572 , 0.33710231, 0.31099026, 0.26924638, 0.21206033,
+        0.17791831, 0.18995277, 0.18581886, 0.16458557, 0.16305559,
+        0.15949798, 0.14813011, 0.14005718, 0.12867273, 0.11562375,
+        0.10593921, 0.1021536 , 0.10430102, 0.11163888, 0.12056321,
+        0.12754946, 0.13039862, 0.12860694, 0.12239089, 0.11223713,
+        0.09880587, 0.08883152, 0.08852065, 0.09054889, 0.09146489,
+        0.09130615, 0.09036988, 0.08889065, 0.08715195, 0.0850613 ,
+        0.08260396, 0.07993534, 0.07773071, 0.07577141, 0.07315917,
+        0.06999066, 0.0663766 , 0.0624296 , 0.05827504, 0.05405944,
+        0.04977557, 0.05227926, 0.05435686, 0.05526225, 0.05555554,
+        0.05552336, 0.05509166, 0.05397568, 0.05207749, 0.04970718,
+        0.04816901, 0.04642524, 0.04447414, 0.04236726, 0.04019403,
+        0.03801288, 0.035842  , 0.03600492, 0.03648529, 0.03684666,
+        0.03734833, 0.03759706, 0.03761463, 0.03742815, 0.0372826 ,
+        0.03767776, 0.03786048, 0.03786824, 0.03774162, 0.03752246,
+        0.03725186, 0.03696826, 0.0367063 , 0.03667303, 0.03690506,
+        0.03714874, 0.037428  , 0.03776136, 0.03816651, 0.03865391,
+        0.03923484, 0.0399001 , 0.04064174, 0.04144806, 0.0423041 ,
+        0.04320759, 0.04412954, 0.04505118, 0.04597719, 0.04687069,
+        0.04797097, 0.04917727, 0.05033659, 0.05145055, 0.05250865,
+        0.0535216 , 0.05448889, 0.0554135 , 0.05630028, 0.05717015,
+        0.05806788, 0.05896091, 0.05979573, 0.06056426, 0.06125453,
+        0.06186492, 0.06239818, 0.0628631 , 0.06327138, 0.06361845,
+        0.06391986, 0.06416191, 0.06435627, 0.06449981, 0.06460956,
+        0.06471315, 0.0648354 , 0.06496964, 0.06509081, 0.06519852,
+        0.06527518, 0.06531155, 0.06530122, 0.0652383 , 0.06511645,
+        0.06493131, 0.06468219, 0.0643703 , 0.06399658, 0.0635593 ,
+        0.06306338, 0.06252557, 0.06198235, 0.061748  , 0.06148483,
+        0.06118533, 0.06084435, 0.06045607, 0.0600328 , 0.05957568,
+        0.05910041, 0.05863031, 0.05816891, 0.05768948, 0.05716893,
+        0.05660315, 0.05598551, 0.05531748, 0.05460619, 0.05385235,
+        0.05305804, 0.05223479, 0.05138246, 0.05051323, 0.04962364,
+        0.04871546, 0.04779605, 0.04686767, 0.0459416 , 0.04502424,
+        0.04410849, 0.04318723, 0.04225943, 0.04137581, 0.04077738,
+        0.04016626, 0.03954311, 0.03890887, 0.03826556, 0.03761236,
+        0.03694997, 0.03627955, 0.03560284, 0.03492203, 0.03423968,
+        0.03355778, 0.03287867, 0.03220376, 0.03153672, 0.0308765 ,
+        0.03022582, 0.02958432, 0.02895574, 0.02834469, 0.02774986,
+        0.02716447, 0.02658517, 0.02601129, 0.02544231, 0.02487787,
+        0.02431768, 0.02376524, 0.02342182, 0.02307784, 0.02273059,
+        0.02238564, 0.02203843, 0.02169077, 0.02134504, 0.02099835,
+        0.02065247, 0.02030926, 0.01996627, 0.01962426, 0.01928642,
+        0.01894981, 0.01861478, 0.01828369, 0.01795567, 0.01763   ,
+        0.01730738, 0.0169897 , 0.01667501, 0.01636353, 0.01605701,
+        0.01575455, 0.01545573, 0.01516187, 0.01487253, 0.01458736,
+        0.01431607, 0.01405801, 0.01380351, 0.01355212, 0.01330399,
+        0.01306046, 0.01282058, 0.01258417, 0.01235134, 0.01212217,
+        0.01189672, 0.01167523, 0.01145837, 0.01124531, 0.0110361 ,
+        0.01083076, 0.01062932, 0.01043179, 0.01023819, 0.01004851,
+        0.00986276, 0.00968092, 0.00950299, 0.00932894, 0.00915875,
+        0.00899239, 0.00882984, 0.00867122, 0.00851638, 0.00837972,
+        0.00826007, 0.00814236, 0.00802611, 0.00791133, 0.00780412,
+        0.00771411, 0.00762456, 0.00753579, 0.00744805, 0.00736086,
+        0.00727425, 0.00718824, 0.00710288, 0.00701818, 0.00693418,
+        0.00685089, 0.00676856, 0.00668732, 0.00660684, 0.00652713,
+        0.0064482 , 0.00637008, 0.00629277, 0.00621629, 0.00614065,
+        0.00606586, 0.00599192, 0.00591885, 0.00584665, 0.00577533,
+        0.00570488, 0.00563542, 0.00556705, 0.00549957, 0.00543295,
+        0.00536722, 0.00530236, 0.00523838, 0.00517527, 0.00511303,
+        0.00505166, 0.00499117, 0.00493153, 0.00487276, 0.00481484,
+        0.00475777, 0.00470155, 0.00464617, 0.00459163, 0.00453791,
+        0.00448501, 0.00443293, 0.00438166, 0.00433118, 0.0042815 ,
+        0.00423261, 0.00418449, 0.00413714, 0.00409566, 0.00408027,
+        0.0040647 , 0.00404895, 0.00403302, 0.0040169 , 0.0040006 ,
+        0.0039841 , 0.00396741, 0.00395053, 0.00393345, 0.00391629,
+        0.00389894, 0.0038814 , 0.00386369, 0.00384579, 0.00382771,
+        0.00380947, 0.00379105, 0.00377246, 0.00375372, 0.00373482,
+        0.00371576, 0.00369656, 0.00367722, 0.00365774, 0.00363812,
+        0.00361839, 0.00359853, 0.00357855, 0.00355847, 0.00353829,
+        0.00351801, 0.00349763, 0.00347717, 0.00345663, 0.00343602,
+        0.00341534, 0.0033946 , 0.0033738 , 0.00335296, 0.00333211,
+        0.00331127, 0.00329039, 0.00326948, 0.00324855, 0.0032276 ,
+        0.00320664, 0.00319078, 0.00317878, 0.00316683, 0.00315495,
+        0.00314311, 0.00313133, 0.0031196 , 0.00310791, 0.00309627,
+        0.00308466, 0.0030731 , 0.00306156, 0.00305007, 0.0030386 ,
+        0.00302716]),
+ &#39;ASI&#39;: 0.12173123166157422,
+ &#39;VSI&#39;: 0.028676840022264546,
+ &#39;HI&#39;: 0.02463936095283472,
+ &#39;Tp&#39;: 0.21}
+</pre></div></div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[11]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">dt</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">spec</span><span class="o">.</span><span class="n">get_spectra</span><span class="p">(</span><span class="mf">0.05</span><span class="p">),</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;T&#39;</span><span class="p">,</span> <span class="s1">&#39;Sa&#39;</span><span class="p">,</span> <span class="s1">&#39;Sv&#39;</span><span class="p">,</span> <span class="s1">&#39;Sd&#39;</span><span class="p">,</span> <span class="s1">&#39;PSa&#39;</span><span class="p">,</span> <span class="s1">&#39;PSv&#39;</span><span class="p">])</span>
+<span class="n">dt</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[11]:
+</pre></div>
+</div>
+<div class="output_area rendered_html docutils container">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>T</th>
+      <th>Sa</th>
+      <th>Sv</th>
+      <th>Sd</th>
+      <th>PSa</th>
+      <th>PSv</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0.00</td>
+      <td>0.158568</td>
+      <td>0.000000</td>
+      <td>0.000000e+00</td>
+      <td>0.158568</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>0.01</td>
+      <td>0.158569</td>
+      <td>0.000021</td>
+      <td>4.019071e-07</td>
+      <td>0.158667</td>
+      <td>0.000253</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>0.02</td>
+      <td>0.161092</td>
+      <td>0.000088</td>
+      <td>1.634204e-06</td>
+      <td>0.161289</td>
+      <td>0.000513</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>0.03</td>
+      <td>0.165337</td>
+      <td>0.000214</td>
+      <td>3.768203e-06</td>
+      <td>0.165292</td>
+      <td>0.000789</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>0.04</td>
+      <td>0.176285</td>
+      <td>0.000457</td>
+      <td>7.168283e-06</td>
+      <td>0.176870</td>
+      <td>0.001126</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>0.05</td>
+      <td>0.232888</td>
+      <td>0.000864</td>
+      <td>1.465505e-05</td>
+      <td>0.231423</td>
+      <td>0.001842</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>0.06</td>
+      <td>0.270654</td>
+      <td>0.001505</td>
+      <td>2.458532e-05</td>
+      <td>0.269608</td>
+      <td>0.002575</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>0.07</td>
+      <td>0.335998</td>
+      <td>0.002450</td>
+      <td>4.134890e-05</td>
+      <td>0.333141</td>
+      <td>0.003711</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>0.08</td>
+      <td>0.396132</td>
+      <td>0.004074</td>
+      <td>6.389537e-05</td>
+      <td>0.394139</td>
+      <td>0.005018</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>0.09</td>
+      <td>0.430694</td>
+      <td>0.005030</td>
+      <td>8.848258e-05</td>
+      <td>0.431253</td>
+      <td>0.006177</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>0.10</td>
+      <td>0.517999</td>
+      <td>0.007462</td>
+      <td>1.316468e-04</td>
+      <td>0.519721</td>
+      <td>0.008272</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>0.11</td>
+      <td>0.550232</td>
+      <td>0.008618</td>
+      <td>1.684129e-04</td>
+      <td>0.549477</td>
+      <td>0.009620</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>0.12</td>
+      <td>0.515450</td>
+      <td>0.009015</td>
+      <td>1.869340e-04</td>
+      <td>0.512490</td>
+      <td>0.009788</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>0.13</td>
+      <td>0.489356</td>
+      <td>0.009913</td>
+      <td>2.094536e-04</td>
+      <td>0.489284</td>
+      <td>0.010123</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>0.14</td>
+      <td>0.595172</td>
+      <td>0.012308</td>
+      <td>2.943764e-04</td>
+      <td>0.592934</td>
+      <td>0.013212</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>0.15</td>
+      <td>0.542121</td>
+      <td>0.012189</td>
+      <td>3.067580e-04</td>
+      <td>0.538236</td>
+      <td>0.012849</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>0.16</td>
+      <td>0.477677</td>
+      <td>0.011419</td>
+      <td>3.088776e-04</td>
+      <td>0.476328</td>
+      <td>0.012130</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>0.17</td>
+      <td>0.484246</td>
+      <td>0.012390</td>
+      <td>3.537705e-04</td>
+      <td>0.483263</td>
+      <td>0.013075</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>0.18</td>
+      <td>0.515981</td>
+      <td>0.014403</td>
+      <td>4.227014e-04</td>
+      <td>0.515049</td>
+      <td>0.014755</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>0.19</td>
+      <td>0.611001</td>
+      <td>0.018740</td>
+      <td>5.543219e-04</td>
+      <td>0.606198</td>
+      <td>0.018331</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>0.20</td>
+      <td>0.615207</td>
+      <td>0.019655</td>
+      <td>6.189978e-04</td>
+      <td>0.610926</td>
+      <td>0.019446</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>0.21</td>
+      <td>0.538007</td>
+      <td>0.018849</td>
+      <td>5.963651e-04</td>
+      <td>0.533867</td>
+      <td>0.017843</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>0.22</td>
+      <td>0.605066</td>
+      <td>0.020646</td>
+      <td>7.373982e-04</td>
+      <td>0.601473</td>
+      <td>0.021060</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>0.23</td>
+      <td>0.560136</td>
+      <td>0.019946</td>
+      <td>7.455861e-04</td>
+      <td>0.556419</td>
+      <td>0.020368</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>0.24</td>
+      <td>0.472392</td>
+      <td>0.018538</td>
+      <td>6.867886e-04</td>
+      <td>0.470717</td>
+      <td>0.017980</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>0.25</td>
+      <td>0.392286</td>
+      <td>0.016098</td>
+      <td>6.170416e-04</td>
+      <td>0.389757</td>
+      <td>0.015508</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>0.26</td>
+      <td>0.338996</td>
+      <td>0.014520</td>
+      <td>5.772297e-04</td>
+      <td>0.337102</td>
+      <td>0.013949</td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td>0.27</td>
+      <td>0.312930</td>
+      <td>0.014393</td>
+      <td>5.742680e-04</td>
+      <td>0.310990</td>
+      <td>0.013364</td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td>0.28</td>
+      <td>0.270733</td>
+      <td>0.013785</td>
+      <td>5.346951e-04</td>
+      <td>0.269246</td>
+      <td>0.011999</td>
+    </tr>
+    <tr>
+      <th>29</th>
+      <td>0.29</td>
+      <td>0.213747</td>
+      <td>0.011636</td>
+      <td>4.517474e-04</td>
+      <td>0.212060</td>
+      <td>0.009788</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>371</th>
+      <td>3.71</td>
+      <td>0.003606</td>
+      <td>0.007623</td>
+      <td>1.219445e-03</td>
+      <td>0.003498</td>
+      <td>0.002065</td>
+    </tr>
+    <tr>
+      <th>372</th>
+      <td>3.72</td>
+      <td>0.003585</td>
+      <td>0.007621</td>
+      <td>1.218856e-03</td>
+      <td>0.003477</td>
+      <td>0.002059</td>
+    </tr>
+    <tr>
+      <th>373</th>
+      <td>3.73</td>
+      <td>0.003565</td>
+      <td>0.007619</td>
+      <td>1.218180e-03</td>
+      <td>0.003457</td>
+      <td>0.002052</td>
+    </tr>
+    <tr>
+      <th>374</th>
+      <td>3.74</td>
+      <td>0.003546</td>
+      <td>0.007618</td>
+      <td>1.217417e-03</td>
+      <td>0.003436</td>
+      <td>0.002045</td>
+    </tr>
+    <tr>
+      <th>375</th>
+      <td>3.75</td>
+      <td>0.003533</td>
+      <td>0.007616</td>
+      <td>1.216570e-03</td>
+      <td>0.003415</td>
+      <td>0.002038</td>
+    </tr>
+    <tr>
+      <th>376</th>
+      <td>3.76</td>
+      <td>0.003519</td>
+      <td>0.007615</td>
+      <td>1.215639e-03</td>
+      <td>0.003395</td>
+      <td>0.002031</td>
+    </tr>
+    <tr>
+      <th>377</th>
+      <td>3.77</td>
+      <td>0.003506</td>
+      <td>0.007614</td>
+      <td>1.214626e-03</td>
+      <td>0.003374</td>
+      <td>0.002024</td>
+    </tr>
+    <tr>
+      <th>378</th>
+      <td>3.78</td>
+      <td>0.003493</td>
+      <td>0.007613</td>
+      <td>1.213533e-03</td>
+      <td>0.003353</td>
+      <td>0.002017</td>
+    </tr>
+    <tr>
+      <th>379</th>
+      <td>3.79</td>
+      <td>0.003480</td>
+      <td>0.007611</td>
+      <td>1.212379e-03</td>
+      <td>0.003332</td>
+      <td>0.002010</td>
+    </tr>
+    <tr>
+      <th>380</th>
+      <td>3.80</td>
+      <td>0.003467</td>
+      <td>0.007610</td>
+      <td>1.211161e-03</td>
+      <td>0.003311</td>
+      <td>0.002003</td>
+    </tr>
+    <tr>
+      <th>381</th>
+      <td>3.81</td>
+      <td>0.003454</td>
+      <td>0.007610</td>
+      <td>1.209867e-03</td>
+      <td>0.003290</td>
+      <td>0.001995</td>
+    </tr>
+    <tr>
+      <th>382</th>
+      <td>3.82</td>
+      <td>0.003442</td>
+      <td>0.007609</td>
+      <td>1.208499e-03</td>
+      <td>0.003269</td>
+      <td>0.001988</td>
+    </tr>
+    <tr>
+      <th>383</th>
+      <td>3.83</td>
+      <td>0.003429</td>
+      <td>0.007608</td>
+      <td>1.207057e-03</td>
+      <td>0.003249</td>
+      <td>0.001980</td>
+    </tr>
+    <tr>
+      <th>384</th>
+      <td>3.84</td>
+      <td>0.003417</td>
+      <td>0.007607</td>
+      <td>1.205544e-03</td>
+      <td>0.003228</td>
+      <td>0.001973</td>
+    </tr>
+    <tr>
+      <th>385</th>
+      <td>3.85</td>
+      <td>0.003404</td>
+      <td>0.007607</td>
+      <td>1.203961e-03</td>
+      <td>0.003207</td>
+      <td>0.001965</td>
+    </tr>
+    <tr>
+      <th>386</th>
+      <td>3.86</td>
+      <td>0.003392</td>
+      <td>0.007606</td>
+      <td>1.204238e-03</td>
+      <td>0.003191</td>
+      <td>0.001960</td>
+    </tr>
+    <tr>
+      <th>387</th>
+      <td>3.87</td>
+      <td>0.003380</td>
+      <td>0.007605</td>
+      <td>1.205931e-03</td>
+      <td>0.003179</td>
+      <td>0.001958</td>
+    </tr>
+    <tr>
+      <th>388</th>
+      <td>3.88</td>
+      <td>0.003367</td>
+      <td>0.007605</td>
+      <td>1.207616e-03</td>
+      <td>0.003167</td>
+      <td>0.001956</td>
+    </tr>
+    <tr>
+      <th>389</th>
+      <td>3.89</td>
+      <td>0.003355</td>
+      <td>0.007605</td>
+      <td>1.209292e-03</td>
+      <td>0.003155</td>
+      <td>0.001953</td>
+    </tr>
+    <tr>
+      <th>390</th>
+      <td>3.90</td>
+      <td>0.003343</td>
+      <td>0.007604</td>
+      <td>1.210959e-03</td>
+      <td>0.003143</td>
+      <td>0.001951</td>
+    </tr>
+    <tr>
+      <th>391</th>
+      <td>3.91</td>
+      <td>0.003331</td>
+      <td>0.007604</td>
+      <td>1.212615e-03</td>
+      <td>0.003131</td>
+      <td>0.001949</td>
+    </tr>
+    <tr>
+      <th>392</th>
+      <td>3.92</td>
+      <td>0.003319</td>
+      <td>0.007604</td>
+      <td>1.214259e-03</td>
+      <td>0.003120</td>
+      <td>0.001946</td>
+    </tr>
+    <tr>
+      <th>393</th>
+      <td>3.93</td>
+      <td>0.003307</td>
+      <td>0.007603</td>
+      <td>1.215889e-03</td>
+      <td>0.003108</td>
+      <td>0.001944</td>
+    </tr>
+    <tr>
+      <th>394</th>
+      <td>3.94</td>
+      <td>0.003295</td>
+      <td>0.007603</td>
+      <td>1.217506e-03</td>
+      <td>0.003096</td>
+      <td>0.001942</td>
+    </tr>
+    <tr>
+      <th>395</th>
+      <td>3.95</td>
+      <td>0.003284</td>
+      <td>0.007603</td>
+      <td>1.219108e-03</td>
+      <td>0.003085</td>
+      <td>0.001939</td>
+    </tr>
+    <tr>
+      <th>396</th>
+      <td>3.96</td>
+      <td>0.003272</td>
+      <td>0.007603</td>
+      <td>1.220694e-03</td>
+      <td>0.003073</td>
+      <td>0.001937</td>
+    </tr>
+    <tr>
+      <th>397</th>
+      <td>3.97</td>
+      <td>0.003260</td>
+      <td>0.007603</td>
+      <td>1.222263e-03</td>
+      <td>0.003062</td>
+      <td>0.001934</td>
+    </tr>
+    <tr>
+      <th>398</th>
+      <td>3.98</td>
+      <td>0.003248</td>
+      <td>0.007603</td>
+      <td>1.223815e-03</td>
+      <td>0.003050</td>
+      <td>0.001932</td>
+    </tr>
+    <tr>
+      <th>399</th>
+      <td>3.99</td>
+      <td>0.003237</td>
+      <td>0.007603</td>
+      <td>1.225348e-03</td>
+      <td>0.003039</td>
+      <td>0.001930</td>
+    </tr>
+    <tr>
+      <th>400</th>
+      <td>4.00</td>
+      <td>0.003225</td>
+      <td>0.007603</td>
+      <td>1.226863e-03</td>
+      <td>0.003027</td>
+      <td>0.001927</td>
+    </tr>
+  </tbody>
+</table>
+<p>401 rows × 6 columns</p>
+</div></div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[12]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">spectra005</span> <span class="o">=</span> <span class="n">spec</span><span class="o">.</span><span class="n">get_spectra</span><span class="p">(</span><span class="n">damping</span><span class="o">=</span><span class="mf">0.05</span><span class="p">,</span>
+                 <span class="n">startT</span><span class="o">=</span><span class="mf">0.</span><span class="p">,</span>
+                 <span class="n">endT</span><span class="o">=</span><span class="mf">4.</span><span class="p">,</span>
+                 <span class="n">noTs</span><span class="o">=</span><span class="mi">401</span><span class="p">)</span>
+
+<span class="n">spectra020</span> <span class="o">=</span> <span class="n">spec</span><span class="o">.</span><span class="n">get_spectra</span><span class="p">(</span><span class="n">damping</span><span class="o">=</span><span class="mf">0.20</span><span class="p">,</span>
+                 <span class="n">startT</span><span class="o">=</span><span class="mf">0.</span><span class="p">,</span>
+                 <span class="n">endT</span><span class="o">=</span><span class="mf">4.</span><span class="p">,</span>
+                 <span class="n">noTs</span><span class="o">=</span><span class="mi">401</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[13]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">spectra005</span><span class="p">[</span><span class="s1">&#39;T&#39;</span><span class="p">],</span> <span class="n">spectra005</span><span class="p">[</span><span class="s1">&#39;Sa&#39;</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;damping 5%&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">spectra005</span><span class="p">[</span><span class="s1">&#39;T&#39;</span><span class="p">],</span> <span class="n">spectra020</span><span class="p">[</span><span class="s1">&#39;Sa&#39;</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;damping 20%&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Spectral acceleration (m/s2)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Period (s)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../../_images/jupyters_tools_seismic_motion_18_0.png" src="../../_images/jupyters_tools_seismic_motion_18_0.png" />
+</div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[14]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">spectra005</span><span class="p">[</span><span class="s1">&#39;T&#39;</span><span class="p">],</span> <span class="n">spectra005</span><span class="p">[</span><span class="s1">&#39;Sv&#39;</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Sv&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">spectra005</span><span class="p">[</span><span class="s1">&#39;T&#39;</span><span class="p">],</span> <span class="n">spectra005</span><span class="p">[</span><span class="s1">&#39;PSv&#39;</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;PSv&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Spectral velocity (m/s)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Period (s)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../../_images/jupyters_tools_seismic_motion_19_0.png" src="../../_images/jupyters_tools_seismic_motion_19_0.png" />
+</div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[15]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">spectra005</span><span class="p">[</span><span class="s1">&#39;T&#39;</span><span class="p">],</span> <span class="n">spectra005</span><span class="p">[</span><span class="s1">&#39;Sd&#39;</span><span class="p">])</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Spectral displacement (m/s)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Period (s)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../../_images/jupyters_tools_seismic_motion_20_0.png" src="../../_images/jupyters_tools_seismic_motion_20_0.png" />
+</div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[16]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">spectra005</span><span class="p">[</span><span class="s1">&#39;Sd&#39;</span><span class="p">],</span> <span class="n">spectra005</span><span class="p">[</span><span class="s1">&#39;Sa&#39;</span><span class="p">])</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Spectral acceleration (m/s2)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Spectral displacement (m/s)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../../_images/jupyters_tools_seismic_motion_21_0.png" src="../../_images/jupyters_tools_seismic_motion_21_0.png" />
+</div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[17]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="nb">print</span><span class="p">(</span><span class="n">spec</span><span class="o">.</span><span class="n">show_spectra_parameters</span><span class="p">(</span><span class="n">spectra005</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+Acceleration Spectrum Intensity: ASI = 0.1217
+Velocity Spectrum Intensity: VSI = 0.0287
+Housner Intensity: HI = 0.0246
+Predominant Period: Tp = 0.2100
+</pre></div></div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[18]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span> <span class="o">=</span> <span class="n">spectra005</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;T&#39;</span><span class="p">,</span> <span class="s1">&#39;Sa&#39;</span><span class="p">,</span> <span class="s1">&#39;Sv&#39;</span><span class="p">,</span> <span class="s1">&#39;Sd&#39;</span><span class="p">,</span> <span class="s1">&#39;PSa&#39;</span><span class="p">,</span> <span class="s1">&#39;PSv&#39;</span><span class="p">])</span>
+<span class="n">df</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[18]:
+</pre></div>
+</div>
+<div class="output_area rendered_html docutils container">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>T</th>
+      <th>Sa</th>
+      <th>Sv</th>
+      <th>Sd</th>
+      <th>PSa</th>
+      <th>PSv</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0.00</td>
+      <td>0.158568</td>
+      <td>0.000000</td>
+      <td>0.000000e+00</td>
+      <td>0.158568</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>0.01</td>
+      <td>0.158569</td>
+      <td>0.000021</td>
+      <td>4.019071e-07</td>
+      <td>0.158667</td>
+      <td>0.000253</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>0.02</td>
+      <td>0.161092</td>
+      <td>0.000088</td>
+      <td>1.634204e-06</td>
+      <td>0.161289</td>
+      <td>0.000513</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>0.03</td>
+      <td>0.165337</td>
+      <td>0.000214</td>
+      <td>3.768203e-06</td>
+      <td>0.165292</td>
+      <td>0.000789</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>0.04</td>
+      <td>0.176285</td>
+      <td>0.000457</td>
+      <td>7.168283e-06</td>
+      <td>0.176870</td>
+      <td>0.001126</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>0.05</td>
+      <td>0.232888</td>
+      <td>0.000864</td>
+      <td>1.465505e-05</td>
+      <td>0.231423</td>
+      <td>0.001842</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>0.06</td>
+      <td>0.270654</td>
+      <td>0.001505</td>
+      <td>2.458532e-05</td>
+      <td>0.269608</td>
+      <td>0.002575</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>0.07</td>
+      <td>0.335998</td>
+      <td>0.002450</td>
+      <td>4.134890e-05</td>
+      <td>0.333141</td>
+      <td>0.003711</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>0.08</td>
+      <td>0.396132</td>
+      <td>0.004074</td>
+      <td>6.389537e-05</td>
+      <td>0.394139</td>
+      <td>0.005018</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>0.09</td>
+      <td>0.430694</td>
+      <td>0.005030</td>
+      <td>8.848258e-05</td>
+      <td>0.431253</td>
+      <td>0.006177</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>0.10</td>
+      <td>0.517999</td>
+      <td>0.007462</td>
+      <td>1.316468e-04</td>
+      <td>0.519721</td>
+      <td>0.008272</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>0.11</td>
+      <td>0.550232</td>
+      <td>0.008618</td>
+      <td>1.684129e-04</td>
+      <td>0.549477</td>
+      <td>0.009620</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>0.12</td>
+      <td>0.515450</td>
+      <td>0.009015</td>
+      <td>1.869340e-04</td>
+      <td>0.512490</td>
+      <td>0.009788</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>0.13</td>
+      <td>0.489356</td>
+      <td>0.009913</td>
+      <td>2.094536e-04</td>
+      <td>0.489284</td>
+      <td>0.010123</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>0.14</td>
+      <td>0.595172</td>
+      <td>0.012308</td>
+      <td>2.943764e-04</td>
+      <td>0.592934</td>
+      <td>0.013212</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>0.15</td>
+      <td>0.542121</td>
+      <td>0.012189</td>
+      <td>3.067580e-04</td>
+      <td>0.538236</td>
+      <td>0.012849</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>0.16</td>
+      <td>0.477677</td>
+      <td>0.011419</td>
+      <td>3.088776e-04</td>
+      <td>0.476328</td>
+      <td>0.012130</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>0.17</td>
+      <td>0.484246</td>
+      <td>0.012390</td>
+      <td>3.537705e-04</td>
+      <td>0.483263</td>
+      <td>0.013075</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>0.18</td>
+      <td>0.515981</td>
+      <td>0.014403</td>
+      <td>4.227014e-04</td>
+      <td>0.515049</td>
+      <td>0.014755</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>0.19</td>
+      <td>0.611001</td>
+      <td>0.018740</td>
+      <td>5.543219e-04</td>
+      <td>0.606198</td>
+      <td>0.018331</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>0.20</td>
+      <td>0.615207</td>
+      <td>0.019655</td>
+      <td>6.189978e-04</td>
+      <td>0.610926</td>
+      <td>0.019446</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>0.21</td>
+      <td>0.538007</td>
+      <td>0.018849</td>
+      <td>5.963651e-04</td>
+      <td>0.533867</td>
+      <td>0.017843</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>0.22</td>
+      <td>0.605066</td>
+      <td>0.020646</td>
+      <td>7.373982e-04</td>
+      <td>0.601473</td>
+      <td>0.021060</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>0.23</td>
+      <td>0.560136</td>
+      <td>0.019946</td>
+      <td>7.455861e-04</td>
+      <td>0.556419</td>
+      <td>0.020368</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>0.24</td>
+      <td>0.472392</td>
+      <td>0.018538</td>
+      <td>6.867886e-04</td>
+      <td>0.470717</td>
+      <td>0.017980</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>0.25</td>
+      <td>0.392286</td>
+      <td>0.016098</td>
+      <td>6.170416e-04</td>
+      <td>0.389757</td>
+      <td>0.015508</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>0.26</td>
+      <td>0.338996</td>
+      <td>0.014520</td>
+      <td>5.772297e-04</td>
+      <td>0.337102</td>
+      <td>0.013949</td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td>0.27</td>
+      <td>0.312930</td>
+      <td>0.014393</td>
+      <td>5.742680e-04</td>
+      <td>0.310990</td>
+      <td>0.013364</td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td>0.28</td>
+      <td>0.270733</td>
+      <td>0.013785</td>
+      <td>5.346951e-04</td>
+      <td>0.269246</td>
+      <td>0.011999</td>
+    </tr>
+    <tr>
+      <th>29</th>
+      <td>0.29</td>
+      <td>0.213747</td>
+      <td>0.011636</td>
+      <td>4.517474e-04</td>
+      <td>0.212060</td>
+      <td>0.009788</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>371</th>
+      <td>3.71</td>
+      <td>0.003606</td>
+      <td>0.007623</td>
+      <td>1.219445e-03</td>
+      <td>0.003498</td>
+      <td>0.002065</td>
+    </tr>
+    <tr>
+      <th>372</th>
+      <td>3.72</td>
+      <td>0.003585</td>
+      <td>0.007621</td>
+      <td>1.218856e-03</td>
+      <td>0.003477</td>
+      <td>0.002059</td>
+    </tr>
+    <tr>
+      <th>373</th>
+      <td>3.73</td>
+      <td>0.003565</td>
+      <td>0.007619</td>
+      <td>1.218180e-03</td>
+      <td>0.003457</td>
+      <td>0.002052</td>
+    </tr>
+    <tr>
+      <th>374</th>
+      <td>3.74</td>
+      <td>0.003546</td>
+      <td>0.007618</td>
+      <td>1.217417e-03</td>
+      <td>0.003436</td>
+      <td>0.002045</td>
+    </tr>
+    <tr>
+      <th>375</th>
+      <td>3.75</td>
+      <td>0.003533</td>
+      <td>0.007616</td>
+      <td>1.216570e-03</td>
+      <td>0.003415</td>
+      <td>0.002038</td>
+    </tr>
+    <tr>
+      <th>376</th>
+      <td>3.76</td>
+      <td>0.003519</td>
+      <td>0.007615</td>
+      <td>1.215639e-03</td>
+      <td>0.003395</td>
+      <td>0.002031</td>
+    </tr>
+    <tr>
+      <th>377</th>
+      <td>3.77</td>
+      <td>0.003506</td>
+      <td>0.007614</td>
+      <td>1.214626e-03</td>
+      <td>0.003374</td>
+      <td>0.002024</td>
+    </tr>
+    <tr>
+      <th>378</th>
+      <td>3.78</td>
+      <td>0.003493</td>
+      <td>0.007613</td>
+      <td>1.213533e-03</td>
+      <td>0.003353</td>
+      <td>0.002017</td>
+    </tr>
+    <tr>
+      <th>379</th>
+      <td>3.79</td>
+      <td>0.003480</td>
+      <td>0.007611</td>
+      <td>1.212379e-03</td>
+      <td>0.003332</td>
+      <td>0.002010</td>
+    </tr>
+    <tr>
+      <th>380</th>
+      <td>3.80</td>
+      <td>0.003467</td>
+      <td>0.007610</td>
+      <td>1.211161e-03</td>
+      <td>0.003311</td>
+      <td>0.002003</td>
+    </tr>
+    <tr>
+      <th>381</th>
+      <td>3.81</td>
+      <td>0.003454</td>
+      <td>0.007610</td>
+      <td>1.209867e-03</td>
+      <td>0.003290</td>
+      <td>0.001995</td>
+    </tr>
+    <tr>
+      <th>382</th>
+      <td>3.82</td>
+      <td>0.003442</td>
+      <td>0.007609</td>
+      <td>1.208499e-03</td>
+      <td>0.003269</td>
+      <td>0.001988</td>
+    </tr>
+    <tr>
+      <th>383</th>
+      <td>3.83</td>
+      <td>0.003429</td>
+      <td>0.007608</td>
+      <td>1.207057e-03</td>
+      <td>0.003249</td>
+      <td>0.001980</td>
+    </tr>
+    <tr>
+      <th>384</th>
+      <td>3.84</td>
+      <td>0.003417</td>
+      <td>0.007607</td>
+      <td>1.205544e-03</td>
+      <td>0.003228</td>
+      <td>0.001973</td>
+    </tr>
+    <tr>
+      <th>385</th>
+      <td>3.85</td>
+      <td>0.003404</td>
+      <td>0.007607</td>
+      <td>1.203961e-03</td>
+      <td>0.003207</td>
+      <td>0.001965</td>
+    </tr>
+    <tr>
+      <th>386</th>
+      <td>3.86</td>
+      <td>0.003392</td>
+      <td>0.007606</td>
+      <td>1.204238e-03</td>
+      <td>0.003191</td>
+      <td>0.001960</td>
+    </tr>
+    <tr>
+      <th>387</th>
+      <td>3.87</td>
+      <td>0.003380</td>
+      <td>0.007605</td>
+      <td>1.205931e-03</td>
+      <td>0.003179</td>
+      <td>0.001958</td>
+    </tr>
+    <tr>
+      <th>388</th>
+      <td>3.88</td>
+      <td>0.003367</td>
+      <td>0.007605</td>
+      <td>1.207616e-03</td>
+      <td>0.003167</td>
+      <td>0.001956</td>
+    </tr>
+    <tr>
+      <th>389</th>
+      <td>3.89</td>
+      <td>0.003355</td>
+      <td>0.007605</td>
+      <td>1.209292e-03</td>
+      <td>0.003155</td>
+      <td>0.001953</td>
+    </tr>
+    <tr>
+      <th>390</th>
+      <td>3.90</td>
+      <td>0.003343</td>
+      <td>0.007604</td>
+      <td>1.210959e-03</td>
+      <td>0.003143</td>
+      <td>0.001951</td>
+    </tr>
+    <tr>
+      <th>391</th>
+      <td>3.91</td>
+      <td>0.003331</td>
+      <td>0.007604</td>
+      <td>1.212615e-03</td>
+      <td>0.003131</td>
+      <td>0.001949</td>
+    </tr>
+    <tr>
+      <th>392</th>
+      <td>3.92</td>
+      <td>0.003319</td>
+      <td>0.007604</td>
+      <td>1.214259e-03</td>
+      <td>0.003120</td>
+      <td>0.001946</td>
+    </tr>
+    <tr>
+      <th>393</th>
+      <td>3.93</td>
+      <td>0.003307</td>
+      <td>0.007603</td>
+      <td>1.215889e-03</td>
+      <td>0.003108</td>
+      <td>0.001944</td>
+    </tr>
+    <tr>
+      <th>394</th>
+      <td>3.94</td>
+      <td>0.003295</td>
+      <td>0.007603</td>
+      <td>1.217506e-03</td>
+      <td>0.003096</td>
+      <td>0.001942</td>
+    </tr>
+    <tr>
+      <th>395</th>
+      <td>3.95</td>
+      <td>0.003284</td>
+      <td>0.007603</td>
+      <td>1.219108e-03</td>
+      <td>0.003085</td>
+      <td>0.001939</td>
+    </tr>
+    <tr>
+      <th>396</th>
+      <td>3.96</td>
+      <td>0.003272</td>
+      <td>0.007603</td>
+      <td>1.220694e-03</td>
+      <td>0.003073</td>
+      <td>0.001937</td>
+    </tr>
+    <tr>
+      <th>397</th>
+      <td>3.97</td>
+      <td>0.003260</td>
+      <td>0.007603</td>
+      <td>1.222263e-03</td>
+      <td>0.003062</td>
+      <td>0.001934</td>
+    </tr>
+    <tr>
+      <th>398</th>
+      <td>3.98</td>
+      <td>0.003248</td>
+      <td>0.007603</td>
+      <td>1.223815e-03</td>
+      <td>0.003050</td>
+      <td>0.001932</td>
+    </tr>
+    <tr>
+      <th>399</th>
+      <td>3.99</td>
+      <td>0.003237</td>
+      <td>0.007603</td>
+      <td>1.225348e-03</td>
+      <td>0.003039</td>
+      <td>0.001930</td>
+    </tr>
+    <tr>
+      <th>400</th>
+      <td>4.00</td>
+      <td>0.003225</td>
+      <td>0.007603</td>
+      <td>1.226863e-03</td>
+      <td>0.003027</td>
+      <td>0.001927</td>
+    </tr>
+  </tbody>
+</table>
+<p>401 rows × 6 columns</p>
+</div></div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[19]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="nb">print</span><span class="p">(</span><span class="n">spectra005</span><span class="p">[</span><span class="s1">&#39;ASI&#39;</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">rec</span><span class="o">.</span><span class="n">get_spectra</span><span class="p">(</span><span class="mf">0.05</span><span class="p">)[</span><span class="s1">&#39;ASI&#39;</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+0.12173123166157422
+0.12173123166157422
+</pre></div></div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[20]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">rec</span><span class="o">.</span><span class="n">get_spectra</span><span class="p">(</span><span class="mf">0.05</span><span class="p">)[</span><span class="s1">&#39;Sa&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[20]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+array([0.158568  , 0.15856914, 0.16109152, 0.16533725, 0.17628474,
+       0.23288778, 0.27065375, 0.33599843, 0.39613212, 0.43069411,
+       0.51799871, 0.55023189, 0.51544988, 0.48935586, 0.59517231,
+       0.54212085, 0.47767697, 0.48424621, 0.51598086, 0.61100123,
+       0.6152074 , 0.53800677, 0.60506636, 0.56013589, 0.4723923 ,
+       0.39228571, 0.33899649, 0.31293007, 0.27073267, 0.21374742,
+       0.1791839 , 0.19131348, 0.18718375, 0.1657421 , 0.1639578 ,
+       0.16048069, 0.14903259, 0.14149632, 0.13000465, 0.11699881,
+       0.10725041, 0.10318707, 0.10538445, 0.11273131, 0.1218547 ,
+       0.12879009, 0.13181015, 0.1300138 , 0.12368605, 0.11336381,
+       0.09984149, 0.08891327, 0.08890656, 0.09119748, 0.09215963,
+       0.09206837, 0.09119397, 0.08976582, 0.08796115, 0.08592478,
+       0.08351124, 0.08080541, 0.07836091, 0.07645634, 0.07388851,
+       0.07074927, 0.06714434, 0.06318136, 0.05903948, 0.05477747,
+       0.0504517 , 0.05248663, 0.05461471, 0.05556254, 0.05586452,
+       0.05585384, 0.05538939, 0.05422606, 0.05227857, 0.05066497,
+       0.04917617, 0.0473997 , 0.0454077 , 0.04332112, 0.04115025,
+       0.03894326, 0.03675285, 0.03616894, 0.03665524, 0.0368919 ,
+       0.03746386, 0.03776963, 0.03782525, 0.0376555 , 0.03751323,
+       0.03792128, 0.03811372, 0.03812563, 0.03799569, 0.03776497,
+       0.03747585, 0.03717349, 0.03688649, 0.03683093, 0.0370891 ,
+       0.03734514, 0.03763556, 0.03798465, 0.03840398, 0.03890507,
+       0.0394926 , 0.04016501, 0.04091534, 0.04173225, 0.04260304,
+       0.04352168, 0.04446013, 0.04540042, 0.0463298 , 0.04724749,
+       0.04820145, 0.04943478, 0.05061681, 0.05173873, 0.05279515,
+       0.05378737, 0.05473322, 0.05565059, 0.05653507, 0.05738161,
+       0.05821762, 0.0591517 , 0.06005763, 0.06088765, 0.06163253,
+       0.06228657, 0.06284864, 0.06332213, 0.06371384, 0.06403872,
+       0.06431454, 0.06455688, 0.06475408, 0.06489915, 0.06498375,
+       0.06502197, 0.06507138, 0.06521178, 0.06535968, 0.0654818 ,
+       0.06557481, 0.06563175, 0.06564031, 0.06559255, 0.06548609,
+       0.06531607, 0.06507479, 0.06476218, 0.06438585, 0.06394678,
+       0.06344542, 0.06288046, 0.0623199 , 0.06203304, 0.06175766,
+       0.06148139, 0.06116733, 0.06080266, 0.06038634, 0.05991512,
+       0.05940392, 0.05886742, 0.05836026, 0.05792004, 0.05745535,
+       0.05694056, 0.05636616, 0.05573145, 0.05503811, 0.05429164,
+       0.0534953 , 0.0526525 , 0.05177346, 0.05086524, 0.04994103,
+       0.04901389, 0.04808509, 0.047146  , 0.04619211, 0.04523408,
+       0.04429823, 0.04339813, 0.04249171, 0.04169598, 0.0410987 ,
+       0.04048615, 0.03986235, 0.03922692, 0.03858162, 0.03792843,
+       0.03726857, 0.03660219, 0.03592843, 0.03524966, 0.03456607,
+       0.03387452, 0.0331837 , 0.03248715, 0.03179096, 0.0310952 ,
+       0.03040157, 0.02972153, 0.02908181, 0.02845271, 0.02783461,
+       0.02724938, 0.02668858, 0.02613242, 0.02557847, 0.02502659,
+       0.02447859, 0.02397498, 0.02364141, 0.02330694, 0.02296896,
+       0.0226316 , 0.02229309, 0.02195256, 0.02161082, 0.02127198,
+       0.0209324 , 0.02059257, 0.0202529 , 0.01991517, 0.01958033,
+       0.01924665, 0.01891448, 0.01858415, 0.01825597, 0.01793142,
+       0.01761074, 0.01729285, 0.016978  , 0.01666642, 0.01635829,
+       0.01605381, 0.01575314, 0.01545719, 0.015166  , 0.01487893,
+       0.0145961 , 0.01431761, 0.01404355, 0.01377401, 0.01350905,
+       0.01324874, 0.0129931 , 0.0127422 , 0.01249604, 0.01225467,
+       0.01201808, 0.01178708, 0.01157398, 0.01136482, 0.01115919,
+       0.01095713, 0.01075868, 0.01056386, 0.0103727 , 0.0101852 ,
+       0.01000139, 0.00982125, 0.00964479, 0.009472  , 0.00930286,
+       0.00913737, 0.00901352, 0.00889165, 0.00877108, 0.00865183,
+       0.00853393, 0.00841739, 0.00830222, 0.00818845, 0.00807607,
+       0.00796511, 0.00785557, 0.00774745, 0.00764077, 0.00754867,
+       0.00746176, 0.00737549, 0.0072899 , 0.00720501, 0.00712084,
+       0.00703742, 0.00695476, 0.00687288, 0.0067918 , 0.00671171,
+       0.00663264, 0.0065544 , 0.00647699, 0.00640043, 0.00632472,
+       0.00624987, 0.00617589, 0.00610278, 0.00603056, 0.00595922,
+       0.00588877, 0.00581921, 0.00575054, 0.00568277, 0.0056159 ,
+       0.00554991, 0.00548482, 0.00542063, 0.00535732, 0.00529489,
+       0.00523335, 0.00517269, 0.00511292, 0.00505409, 0.00499611,
+       0.00493899, 0.00488271, 0.00482727, 0.00477266, 0.00471888,
+       0.00466592, 0.00461377, 0.00456243, 0.00451189, 0.00446213,
+       0.00441316, 0.00436496, 0.00431753, 0.00427086, 0.00422493,
+       0.00418265, 0.00414995, 0.00413421, 0.0041183 , 0.00410221,
+       0.00408595, 0.00406951, 0.00405289, 0.00403609, 0.00401911,
+       0.00400195, 0.00398461, 0.0039671 , 0.00394942, 0.00393156,
+       0.00391354, 0.00389535, 0.00387701, 0.0038585 , 0.00383984,
+       0.00382103, 0.00380208, 0.00378299, 0.00376376, 0.0037444 ,
+       0.00372492, 0.00370532, 0.0036856 , 0.00366577, 0.00364584,
+       0.00362582, 0.00360569, 0.00358549, 0.0035652 , 0.00354596,
+       0.00353252, 0.00351922, 0.00350604, 0.00349297, 0.00348001,
+       0.00346716, 0.0034544 , 0.00344173, 0.00342915, 0.00341666,
+       0.00340424, 0.00339189, 0.00337962, 0.00336741, 0.00335527,
+       0.00334318, 0.00333115, 0.00331918, 0.00330725, 0.00329537,
+       0.00328353, 0.00327174, 0.00325998, 0.00324827, 0.00323658,
+       0.00322493])
+</pre></div></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="capacity_spectrum_method_charts.html" class="btn btn-neutral float-right" title="Διαγράμματα ελέγχου FEMA440 + ATC40" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="bilin.html" class="btn btn-neutral float-left" title="Bilin" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2020, panagop.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

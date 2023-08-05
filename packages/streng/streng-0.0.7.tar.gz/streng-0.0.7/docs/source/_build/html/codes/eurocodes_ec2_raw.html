@@ -1,0 +1,1094 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Eurocode 2 - Raw functions &mdash; StrEng 0.0.1 documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../_static/book_icon.png"/>
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Eurocode 2 - Classes" href="eurocodes_ec2_cls.html" />
+    <link rel="prev" title="Eurocodes" href="eurocodes.html" /> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> StrEng
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Codes</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="eurocodes.html">Eurocodes</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="eurocodes.html#eurocode-2">Eurocode 2</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Raw functions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#chapter-3-materials">Chapter 3 - Materials</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#chapter-4-durability-and-cover-to-reinforcement">Chapter 4 - Durability and cover to reinforcement</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#chapter-5-structural-analysis">Chapter 5 - Structural analysis</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#chapter-6-ultimate-limit-states-uls">Chapter 6 - Ultimate limit states (ULS)</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="eurocodes_ec2_cls.html">Classes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="eurocodes_ec2_jupyter.html">Jupyter notebooks</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="eurocodes.html#eurocode-8">Eurocode 8</a></li>
+<li class="toctree-l2"><a class="reference internal" href="eurocodes.html#sample-h3">Sample H3</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="greek.html">Greek Codes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usa.html">USA codes and guidelines</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Common</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../common/io.html">io</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../common/math.html">math</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Tools</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../tools/tools.html">Various tools</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">StrEng</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="eurocodes.html">Eurocodes</a> &raquo;</li>
+        
+      <li>Eurocode 2 - Raw functions</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/codes/eurocodes_ec2_raw.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  
+<style>
+/* CSS overrides for sphinx_rtd_theme */
+
+/* 24px margin */
+.nbinput.nblast,
+.nboutput.nblast {
+    margin-bottom: 19px;  /* padding has already 5px */
+}
+
+/* ... except between code cells! */
+.nblast + .nbinput {
+    margin-top: -19px;
+}
+
+.admonition > p:before {
+    margin-right: 4px;  /* make room for the exclamation icon */
+}
+</style>
+<div class="section" id="eurocode-2-raw-functions">
+<h1>Eurocode 2 - Raw functions<a class="headerlink" href="#eurocode-2-raw-functions" title="Permalink to this headline">¶</a></h1>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="#module-streng.codes.eurocodes.ec2.raw.ch3.concrete.elastic_deformation" title="streng.codes.eurocodes.ec2.raw.ch3.concrete.elastic_deformation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">streng.codes.eurocodes.ec2.raw.ch3.concrete.elastic_deformation</span></code></a></td>
+<td>Concrete elastic deformation</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#module-streng.codes.eurocodes.ec2.raw.ch3.concrete.strength" title="streng.codes.eurocodes.ec2.raw.ch3.concrete.strength"><code class="xref py py-obj docutils literal notranslate"><span class="pre">streng.codes.eurocodes.ec2.raw.ch3.concrete.strength</span></code></a></td>
+<td>Concrete strength</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#module-streng.codes.eurocodes.ec2.raw.ch3.concrete.stress_strain" title="streng.codes.eurocodes.ec2.raw.ch3.concrete.stress_strain"><code class="xref py py-obj docutils literal notranslate"><span class="pre">streng.codes.eurocodes.ec2.raw.ch3.concrete.stress_strain</span></code></a></td>
+<td>Concrete stress-strain relation</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#module-streng.codes.eurocodes.ec2.raw.ch4.concrete_cover" title="streng.codes.eurocodes.ec2.raw.ch4.concrete_cover"><code class="xref py py-obj docutils literal notranslate"><span class="pre">streng.codes.eurocodes.ec2.raw.ch4.concrete_cover</span></code></a></td>
+<td>Concrete cover</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#module-streng.codes.eurocodes.ec2.raw.ch5.geometric_data.effective_width" title="streng.codes.eurocodes.ec2.raw.ch5.geometric_data.effective_width"><code class="xref py py-obj docutils literal notranslate"><span class="pre">streng.codes.eurocodes.ec2.raw.ch5.geometric_data.effective_width</span></code></a></td>
+<td>Beams effective width</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#module-streng.codes.eurocodes.ec2.raw.ch6.shear" title="streng.codes.eurocodes.ec2.raw.ch6.shear"><code class="xref py py-obj docutils literal notranslate"><span class="pre">streng.codes.eurocodes.ec2.raw.ch6.shear</span></code></a></td>
+<td>Shear</td>
+</tr>
+</tbody>
+</table>
+
+            <style>
+            /* mermaid issue 527 workaround */
+            .section {
+                opacity: 1.0 !important;
+            }
+            </style>
+            <script>mermaid.initialize({startOnLoad:true});</script><div class="mermaid">
+            graph LR
+    A--&gt;B
+    click A callback &quot;Tooltip&quot;
+    click B &quot;#streng.codes.eurocodes.ec2.raw.ch3.concrete.elastic_deformation.Ecm&quot; &quot;This is a link&quot;
+        </div><div class="section" id="chapter-3-materials">
+<h2>Chapter 3 - Materials<a class="headerlink" href="#chapter-3-materials" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="concrete">
+<h3>concrete<a class="headerlink" href="#concrete" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="module-streng.codes.eurocodes.ec2.raw.ch3.concrete.elastic_deformation">
+<span id="elastic-deformation"></span><h4>elastic_deformation<a class="headerlink" href="#module-streng.codes.eurocodes.ec2.raw.ch3.concrete.elastic_deformation" title="Permalink to this headline">¶</a></h4>
+<p>Concrete elastic deformation</p>
+<dl class="function">
+<dt id="streng.codes.eurocodes.ec2.raw.ch3.concrete.elastic_deformation.Ecm">
+<code class="descclassname">streng.codes.eurocodes.ec2.raw.ch3.concrete.elastic_deformation.</code><code class="descname">Ecm</code><span class="sig-paren">(</span><em>fck</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/streng/codes/eurocodes/ec2/raw/ch3/concrete/elastic_deformation.html#Ecm"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#streng.codes.eurocodes.ec2.raw.ch3.concrete.elastic_deformation.Ecm" title="Permalink to this definition">¶</a></dt>
+<dd><p>Modulus of elasticity</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>fck</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – Characteristic (5%) compressive strength of concrete [MPa]</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Given using the expression:<div class="math notranslate nohighlight">
+\[E_{cm}=22 (\dfrac{f_{cm}}{10})^{0.3}\]</div>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)">float</a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="streng.codes.eurocodes.ec2.raw.ch3.concrete.elastic_deformation.ν">
+<code class="descclassname">streng.codes.eurocodes.ec2.raw.ch3.concrete.elastic_deformation.</code><code class="descname">ν</code><span class="sig-paren">(</span><em>cracked</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/streng/codes/eurocodes/ec2/raw/ch3/concrete/elastic_deformation.html#ν"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#streng.codes.eurocodes.ec2.raw.ch3.concrete.elastic_deformation.ν" title="Permalink to this definition">¶</a></dt>
+<dd><p>Poisson’s ratio</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>cracked</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.7)"><em>bool</em></a>) – True for cracked, False for uncracked</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">0.0 for cracked, 0.2 for uncracked</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)">float</a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-streng.codes.eurocodes.ec2.raw.ch3.concrete.strength">
+<span id="strength"></span><h4>strength<a class="headerlink" href="#module-streng.codes.eurocodes.ec2.raw.ch3.concrete.strength" title="Permalink to this headline">¶</a></h4>
+<p>Concrete strength</p>
+<dl class="function">
+<dt id="streng.codes.eurocodes.ec2.raw.ch3.concrete.strength.fcd">
+<code class="descclassname">streng.codes.eurocodes.ec2.raw.ch3.concrete.strength.</code><code class="descname">fcd</code><span class="sig-paren">(</span><em>acc</em>, <em>fck</em>, <em>γc</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/streng/codes/eurocodes/ec2/raw/ch3/concrete/strength.html#fcd"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#streng.codes.eurocodes.ec2.raw.ch3.concrete.strength.fcd" title="Permalink to this definition">¶</a></dt>
+<dd><p>Design value for the compressive strength of concrete</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>acc</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – Coefficient taking account of long term effects on the compressive strength
+and of unfavourable effects resulting from the way the load is applied</li>
+<li><strong>fck</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – Characteristic (5%) compressive strength of concrete</li>
+<li><strong>γc</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – Safety factor</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><p>Given using the expression:</p>
+<div class="math notranslate nohighlight">
+\[f_{cd}=a_{cc}\dfrac{f_{ck}}{γ_c}\]</div>
+</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)">float</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="streng.codes.eurocodes.ec2.raw.ch3.concrete.strength.fcm">
+<code class="descclassname">streng.codes.eurocodes.ec2.raw.ch3.concrete.strength.</code><code class="descname">fcm</code><span class="sig-paren">(</span><em>fck</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/streng/codes/eurocodes/ec2/raw/ch3/concrete/strength.html#fcm"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#streng.codes.eurocodes.ec2.raw.ch3.concrete.strength.fcm" title="Permalink to this definition">¶</a></dt>
+<dd><p>Mean compressive strength at 28 days</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>fck</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – Characteristic (5%) compressive strength of concrete [MPa]</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Given using the expression:<div class="math notranslate nohighlight">
+\[f_{cm}=f_{ck} + 8\]</div>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)">float</a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="streng.codes.eurocodes.ec2.raw.ch3.concrete.strength.fctk005">
+<code class="descclassname">streng.codes.eurocodes.ec2.raw.ch3.concrete.strength.</code><code class="descname">fctk005</code><span class="sig-paren">(</span><em>fck</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/streng/codes/eurocodes/ec2/raw/ch3/concrete/strength.html#fctk005"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#streng.codes.eurocodes.ec2.raw.ch3.concrete.strength.fctk005" title="Permalink to this definition">¶</a></dt>
+<dd><p>Characteristic (5% fractile) tensile strength of concrete [MPa]</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>fck</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – Characteristic (5%) compressive strength of concrete [MPa]</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Given using the expression:<div class="math notranslate nohighlight">
+\[f_{ctk,0.05}=0.7\cdot f_{ctm}\]</div>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)">float</a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="streng.codes.eurocodes.ec2.raw.ch3.concrete.strength.fctk095">
+<code class="descclassname">streng.codes.eurocodes.ec2.raw.ch3.concrete.strength.</code><code class="descname">fctk095</code><span class="sig-paren">(</span><em>fck</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/streng/codes/eurocodes/ec2/raw/ch3/concrete/strength.html#fctk095"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#streng.codes.eurocodes.ec2.raw.ch3.concrete.strength.fctk095" title="Permalink to this definition">¶</a></dt>
+<dd><p>Characteristic (95% fractile) tensile strength of concrete [MPa]</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>fck</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – Characteristic (5%) compressive strength of concrete [MPa]</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Given using the expression:<div class="math notranslate nohighlight">
+\[f_{ctk,0.95}=1.3\cdot f_{ctm}\]</div>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)">float</a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="streng.codes.eurocodes.ec2.raw.ch3.concrete.strength.fctm">
+<code class="descclassname">streng.codes.eurocodes.ec2.raw.ch3.concrete.strength.</code><code class="descname">fctm</code><span class="sig-paren">(</span><em>fck</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/streng/codes/eurocodes/ec2/raw/ch3/concrete/strength.html#fctm"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#streng.codes.eurocodes.ec2.raw.ch3.concrete.strength.fctm" title="Permalink to this definition">¶</a></dt>
+<dd><p>Mean tensile strength at 28 days</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>fck</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – Characteristic (5%) compressive strength of concrete [MPa]</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Given using the expression:<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}f_{ctm} = 0.30\cdot f_{ck}^{2/3} for f_{ck}\le 50MPa\\f_{ctm} = 2.12\cdot ln(1+f_{cm}/10) for f_{ck}&gt; 50MPa\end{aligned}\end{align} \]</div>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)">float</a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-streng.codes.eurocodes.ec2.raw.ch3.concrete.stress_strain">
+<span id="stress-strain"></span><h4>stress_strain<a class="headerlink" href="#module-streng.codes.eurocodes.ec2.raw.ch3.concrete.stress_strain" title="Permalink to this headline">¶</a></h4>
+<p>Concrete stress-strain relation</p>
+<dl class="function">
+<dt id="streng.codes.eurocodes.ec2.raw.ch3.concrete.stress_strain.n">
+<code class="descclassname">streng.codes.eurocodes.ec2.raw.ch3.concrete.stress_strain.</code><code class="descname">n</code><span class="sig-paren">(</span><em>fck</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/streng/codes/eurocodes/ec2/raw/ch3/concrete/stress_strain.html#n"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#streng.codes.eurocodes.ec2.raw.ch3.concrete.stress_strain.n" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>fck</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – Characteristic compressive cylinder strength of concrete at 28 days</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Given using the expressions:<div class="math notranslate nohighlight">
+\[\begin{split}\begin{eqnarray}
+    n &amp; = &amp; 2.0 &amp; for &amp; f_{ck} \le 50MPa \\
+    n &amp; = &amp; 1.4 + 23.4 \cdot ((90 - f_{ck})/100)^4 &amp; for &amp; f_{ck} \ge 50MPa
+\end{eqnarray}\end{split}\]</div>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)">float</a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="streng.codes.eurocodes.ec2.raw.ch3.concrete.stress_strain.εc1">
+<code class="descclassname">streng.codes.eurocodes.ec2.raw.ch3.concrete.stress_strain.</code><code class="descname">εc1</code><span class="sig-paren">(</span><em>fck</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/streng/codes/eurocodes/ec2/raw/ch3/concrete/stress_strain.html#εc1"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#streng.codes.eurocodes.ec2.raw.ch3.concrete.stress_strain.εc1" title="Permalink to this definition">¶</a></dt>
+<dd><p>Compressive strain in the concrete at the peak stress (‰)</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>fck</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – Characteristic compressive cylinder strength of concrete at 28 days</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Given using the expression:<div class="math notranslate nohighlight">
+\[ε_{c1} = min(0.7\cdot f_{cm}^{0.31}, 2.8)\]</div>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)">float</a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="streng.codes.eurocodes.ec2.raw.ch3.concrete.stress_strain.εc2">
+<code class="descclassname">streng.codes.eurocodes.ec2.raw.ch3.concrete.stress_strain.</code><code class="descname">εc2</code><span class="sig-paren">(</span><em>fck</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/streng/codes/eurocodes/ec2/raw/ch3/concrete/stress_strain.html#εc2"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#streng.codes.eurocodes.ec2.raw.ch3.concrete.stress_strain.εc2" title="Permalink to this definition">¶</a></dt>
+<dd><p>The strain at reaching the maximum strength (‰)</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>fck</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – Characteristic compressive cylinder strength of concrete at 28 days</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Given using the expressions:<div class="math notranslate nohighlight">
+\[\begin{split}\begin{eqnarray}
+    ε_{c2} &amp; = &amp; 2.0 &amp; for &amp; f_{ck} \le 50MPa \\
+    ε_{c2} &amp; = &amp; 2.0 + 0.085(f_{ck}-50)^{0.53} &amp; for &amp; f_{ck} \ge 50MPa
+\end{eqnarray}\end{split}\]</div>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)">float</a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="streng.codes.eurocodes.ec2.raw.ch3.concrete.stress_strain.εc3">
+<code class="descclassname">streng.codes.eurocodes.ec2.raw.ch3.concrete.stress_strain.</code><code class="descname">εc3</code><span class="sig-paren">(</span><em>fck</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/streng/codes/eurocodes/ec2/raw/ch3/concrete/stress_strain.html#εc3"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#streng.codes.eurocodes.ec2.raw.ch3.concrete.stress_strain.εc3" title="Permalink to this definition">¶</a></dt>
+<dd><p>(‰)</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>fck</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – Characteristic compressive cylinder strength of concrete at 28 days</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Given using the expressions:<div class="math notranslate nohighlight">
+\[\begin{split}\begin{eqnarray}
+    ε_{c3} &amp; = &amp; 1.75 &amp; for &amp; f_{ck} \le 50MPa \\
+    ε_{c3} &amp; = &amp; 1.75 + 0.55(f_{ck}-50)/40 &amp; for &amp; f_{ck} \ge 50MPa
+\end{eqnarray}\end{split}\]</div>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)">float</a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="streng.codes.eurocodes.ec2.raw.ch3.concrete.stress_strain.εcu1">
+<code class="descclassname">streng.codes.eurocodes.ec2.raw.ch3.concrete.stress_strain.</code><code class="descname">εcu1</code><span class="sig-paren">(</span><em>fck</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/streng/codes/eurocodes/ec2/raw/ch3/concrete/stress_strain.html#εcu1"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#streng.codes.eurocodes.ec2.raw.ch3.concrete.stress_strain.εcu1" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>fck</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – Characteristic compressive cylinder strength of concrete at 28 days</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Given using the expressions:<div class="math notranslate nohighlight">
+\[\begin{split}\begin{eqnarray}
+    ε_{cu1} &amp; = &amp; 3.5 &amp; for &amp; f_{ck} \le 50MPa \\
+    ε_{cu1} &amp; = &amp; 2.8 + 27 \cdot ((98 - f_{cm})/100)^4 &amp; for &amp; f_{ck} \ge 50MPa
+\end{eqnarray}\end{split}\]</div>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)">float</a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="streng.codes.eurocodes.ec2.raw.ch3.concrete.stress_strain.εcu2">
+<code class="descclassname">streng.codes.eurocodes.ec2.raw.ch3.concrete.stress_strain.</code><code class="descname">εcu2</code><span class="sig-paren">(</span><em>fck</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/streng/codes/eurocodes/ec2/raw/ch3/concrete/stress_strain.html#εcu2"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#streng.codes.eurocodes.ec2.raw.ch3.concrete.stress_strain.εcu2" title="Permalink to this definition">¶</a></dt>
+<dd><p>The ultimate strain</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>fck</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – Characteristic compressive cylinder strength of concrete at 28 days</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Given using the expressions:<div class="math notranslate nohighlight">
+\[\begin{split}\begin{eqnarray}
+    ε_{cu2} &amp; = &amp; 3.5 &amp; for &amp; f_{ck} \le 50MPa \\
+    ε_{cu2} &amp; = &amp; 2.6 + 35 \cdot ((90 - f_{ck})/100)^4 &amp; for &amp; f_{ck} \ge 50MPa
+\end{eqnarray}\end{split}\]</div>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)">float</a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="streng.codes.eurocodes.ec2.raw.ch3.concrete.stress_strain.εcu3">
+<code class="descclassname">streng.codes.eurocodes.ec2.raw.ch3.concrete.stress_strain.</code><code class="descname">εcu3</code><span class="sig-paren">(</span><em>fck</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/streng/codes/eurocodes/ec2/raw/ch3/concrete/stress_strain.html#εcu3"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#streng.codes.eurocodes.ec2.raw.ch3.concrete.stress_strain.εcu3" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>fck</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – Characteristic compressive cylinder strength of concrete at 28 days</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Given using the expressions:<div class="math notranslate nohighlight">
+\[\begin{split}\begin{eqnarray}
+    ε_{cu2} &amp; = &amp; 3.5 &amp; for &amp; f_{ck} \le 50MPa \\
+    ε_{cu2} &amp; = &amp; 2.6 + 35 \cdot ((90 - f_{ck})/100)^4 &amp; for &amp; f_{ck} \ge 50MPa
+\end{eqnarray}\end{split}\]</div>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)">float</a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="streng.codes.eurocodes.ec2.raw.ch3.concrete.stress_strain.σc_bilin">
+<code class="descclassname">streng.codes.eurocodes.ec2.raw.ch3.concrete.stress_strain.</code><code class="descname">σc_bilin</code><span class="sig-paren">(</span><em>fck</em>, <em>αcc</em>, <em>γc</em>, <em>εc</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/streng/codes/eurocodes/ec2/raw/ch3/concrete/stress_strain.html#σc_bilin"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#streng.codes.eurocodes.ec2.raw.ch3.concrete.stress_strain.σc_bilin" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>fck</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – Characteristic compressive cylinder strength of concrete at 28 days</li>
+<li><strong>αcc</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – Coefficient taking account of long term effects on the compressive strength
+and of unfavourable effects resulting from the way the load is applied</li>
+<li><strong>γc</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – Safety factor</li>
+<li><strong>εc</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – concrete strain (‰)</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)">float</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="streng.codes.eurocodes.ec2.raw.ch3.concrete.stress_strain.σc_design">
+<code class="descclassname">streng.codes.eurocodes.ec2.raw.ch3.concrete.stress_strain.</code><code class="descname">σc_design</code><span class="sig-paren">(</span><em>fck</em>, <em>αcc</em>, <em>γc</em>, <em>εc</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/streng/codes/eurocodes/ec2/raw/ch3/concrete/stress_strain.html#σc_design"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#streng.codes.eurocodes.ec2.raw.ch3.concrete.stress_strain.σc_design" title="Permalink to this definition">¶</a></dt>
+<dd><p>Stress-strain relations for the design of cross-sections</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>fck</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – Characteristic compressive cylinder strength of concrete at 28 days</li>
+<li><strong>αcc</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – Coefficient taking account of long term effects on the compressive strength
+and of unfavourable effects resulting from the way the load is applied</li>
+<li><strong>γc</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – Safety factor</li>
+<li><strong>εc</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – concrete strain (‰)</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><p>Given using the expression:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{eqnarray}
+    σ_{c} &amp; = &amp; f_{cd}\cdot(1-(1-\dfrac{ε_c}{ε_{c2}})^n) &amp; for &amp; 0\le ε_c \le ε_{c2} \\
+    σ_{c} &amp; = &amp; f_{cd} &amp; for &amp; ε_{c2}\le ε_c \le ε_{cu2}
+\end{eqnarray}\end{split}\]</div>
+</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)">float</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="streng.codes.eurocodes.ec2.raw.ch3.concrete.stress_strain.σc_nl">
+<code class="descclassname">streng.codes.eurocodes.ec2.raw.ch3.concrete.stress_strain.</code><code class="descname">σc_nl</code><span class="sig-paren">(</span><em>fck</em>, <em>εc</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/streng/codes/eurocodes/ec2/raw/ch3/concrete/stress_strain.html#σc_nl"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#streng.codes.eurocodes.ec2.raw.ch3.concrete.stress_strain.σc_nl" title="Permalink to this definition">¶</a></dt>
+<dd><p>Stress-strain relation for non-linear structural analysis</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>fck</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – Characteristic compressive cylinder strength of concrete at 28 days</li>
+<li><strong>εc</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – concrete strain (‰)</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><p>Given using the expression:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{eqnarray}
+    σ_{c} &amp; = &amp; f_{ctm}\dfrac{kη-η^2}{1+(k-2)η} \\
+    where: &amp; \\
+    η &amp; = &amp; \dfrac{ε_c}{ε_{c1}} \\
+    k &amp; = &amp; 1.05\cdot E_{cm} \cdot ε_{c1} / f_{cm}
+\end{eqnarray}\end{split}\]</div>
+</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)">float</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+</div>
+</div>
+<div class="section" id="chapter-4-durability-and-cover-to-reinforcement">
+<h2>Chapter 4 - Durability and cover to reinforcement<a class="headerlink" href="#chapter-4-durability-and-cover-to-reinforcement" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="module-streng.codes.eurocodes.ec2.raw.ch4.concrete_cover">
+<span id="concrete-cover"></span><h3>concrete cover<a class="headerlink" href="#module-streng.codes.eurocodes.ec2.raw.ch4.concrete_cover" title="Permalink to this headline">¶</a></h3>
+<p>Concrete cover</p>
+<dl class="function">
+<dt id="streng.codes.eurocodes.ec2.raw.ch4.concrete_cover.cmindur">
+<code class="descclassname">streng.codes.eurocodes.ec2.raw.ch4.concrete_cover.</code><code class="descname">cmindur</code><span class="sig-paren">(</span><em>cat</em>, <em>env</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/streng/codes/eurocodes/ec2/raw/ch4/concrete_cover.html#cmindur"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#streng.codes.eurocodes.ec2.raw.ch4.concrete_cover.cmindur" title="Permalink to this definition">¶</a></dt>
+<dd><p>Minimum cover cmin,dur with regard to durability for reinforcement steel</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="24%" />
+<col width="6%" />
+<col width="8%" />
+<col width="14%" />
+<col width="8%" />
+<col width="14%" />
+<col width="14%" />
+<col width="14%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Struct. Class</th>
+<th class="head">X0</th>
+<th class="head">XC1</th>
+<th class="head">XC2/XC3</th>
+<th class="head">XC4</th>
+<th class="head">XD1/XS1</th>
+<th class="head">XD2/XS2</th>
+<th class="head">XD3/XS3</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>S1</td>
+<td>10</td>
+<td>10</td>
+<td>10</td>
+<td>15</td>
+<td>20</td>
+<td>25</td>
+<td>30</td>
+</tr>
+<tr class="row-odd"><td>S2</td>
+<td>10</td>
+<td>10</td>
+<td>15</td>
+<td>20</td>
+<td>25</td>
+<td>30</td>
+<td>35</td>
+</tr>
+<tr class="row-even"><td>S3</td>
+<td>10</td>
+<td>10</td>
+<td>20</td>
+<td>25</td>
+<td>30</td>
+<td>35</td>
+<td>40</td>
+</tr>
+<tr class="row-odd"><td>S4</td>
+<td>10</td>
+<td>15</td>
+<td>25</td>
+<td>30</td>
+<td>35</td>
+<td>40</td>
+<td>45</td>
+</tr>
+<tr class="row-even"><td>S5</td>
+<td>15</td>
+<td>20</td>
+<td>30</td>
+<td>35</td>
+<td>40</td>
+<td>45</td>
+<td>50</td>
+</tr>
+<tr class="row-odd"><td>S6</td>
+<td>20</td>
+<td>25</td>
+<td>35</td>
+<td>40</td>
+<td>45</td>
+<td>50</td>
+<td>55</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>cat</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.7)"><em>str</em></a>) – Structural Class</li>
+<li><strong>env</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.7)"><em>str</em></a>) – Exposure Class</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Taken from the table above</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.7)">int</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+</div>
+<div class="section" id="chapter-5-structural-analysis">
+<h2>Chapter 5 - Structural analysis<a class="headerlink" href="#chapter-5-structural-analysis" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="geometric-data">
+<h3>geometric_data<a class="headerlink" href="#geometric-data" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="module-streng.codes.eurocodes.ec2.raw.ch5.geometric_data.effective_width">
+<span id="effective-width"></span><h4>effective_width<a class="headerlink" href="#module-streng.codes.eurocodes.ec2.raw.ch5.geometric_data.effective_width" title="Permalink to this headline">¶</a></h4>
+<p>Beams effective width</p>
+<dl class="function">
+<dt id="streng.codes.eurocodes.ec2.raw.ch5.geometric_data.effective_width.beff">
+<code class="descclassname">streng.codes.eurocodes.ec2.raw.ch5.geometric_data.effective_width.</code><code class="descname">beff</code><span class="sig-paren">(</span><em>bw</em>, <em>beff1</em>, <em>beff2</em>, <em>b</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/streng/codes/eurocodes/ec2/raw/ch5/geometric_data/effective_width.html#beff"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#streng.codes.eurocodes.ec2.raw.ch5.geometric_data.effective_width.beff" title="Permalink to this definition">¶</a></dt>
+<dd><p>Effective flange width</p>
+<blockquote>
+<div><img alt="http://repfiles.kallipos.gr/html_books/1284/images/Fig_09_14.png" src="http://repfiles.kallipos.gr/html_books/1284/images/Fig_09_14.png" />
+</div></blockquote>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>bw</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – Width of the web</li>
+<li><strong>beff1</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – Side 1 effective flange width</li>
+<li><strong>beff2</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – Side 2 effective flange width</li>
+<li><strong>b</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – bw + b1 + b2</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><p>Given using the expression:</p>
+<div class="math notranslate nohighlight">
+\[b_{eff}=\sum{b_{eff,i}} + b_w \le b\]</div>
+</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)">float</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="streng.codes.eurocodes.ec2.raw.ch5.geometric_data.effective_width.beffi">
+<code class="descclassname">streng.codes.eurocodes.ec2.raw.ch5.geometric_data.effective_width.</code><code class="descname">beffi</code><span class="sig-paren">(</span><em>bi</em>, <em>l0</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/streng/codes/eurocodes/ec2/raw/ch5/geometric_data/effective_width.html#beffi"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#streng.codes.eurocodes.ec2.raw.ch5.geometric_data.effective_width.beffi" title="Permalink to this definition">¶</a></dt>
+<dd><p>Side i effective flange width</p>
+<blockquote>
+<div><img alt="http://repfiles.kallipos.gr/html_books/1284/images/Fig_09_14.png" src="http://repfiles.kallipos.gr/html_books/1284/images/Fig_09_14.png" />
+</div></blockquote>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>bi</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – half net length between adjacent beams</li>
+<li><strong>l0</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – Distance between points of zero moment</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><p>Given using the expression:</p>
+<div class="math notranslate nohighlight">
+\[b_{eff,i}=0.2\cdot b_i +0.1\cdot l_0 \le 0.2\cdot l_0\]</div>
+</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)">float</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="streng.codes.eurocodes.ec2.raw.ch5.geometric_data.effective_width.l0">
+<code class="descclassname">streng.codes.eurocodes.ec2.raw.ch5.geometric_data.effective_width.</code><code class="descname">l0</code><span class="sig-paren">(</span><em>l1=0</em>, <em>l2=0</em>, <em>l3=0</em>, <em>zero_moments_case=0</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/streng/codes/eurocodes/ec2/raw/ch5/geometric_data/effective_width.html#l0"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#streng.codes.eurocodes.ec2.raw.ch5.geometric_data.effective_width.l0" title="Permalink to this definition">¶</a></dt>
+<dd><p>Distance between points of zero moment</p>
+<blockquote>
+<div><img alt="http://repfiles.kallipos.gr/html_books/1284/images/inter_09_01_2.png" src="http://repfiles.kallipos.gr/html_books/1284/images/inter_09_01_2.png" />
+</div></blockquote>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>l1</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – μήκος αμφιέρειστης ή ακραίου ανοίγματος</li>
+<li><strong>l2</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – μήκος μεσαίουν ανοίγματος</li>
+<li><strong>l3</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – μήκος προβόλου</li>
+<li><strong>zero_moments_case</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.7)"><em>int</em></a>) – συνθήκες στήριξης. 0: αμφιέρειστη, 1: ακραίο άνοιγμα, 2: μεσαίο άνοιγμα, 3: μεσαία στήριξη, 4: στήριξη προβόλου</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Υποπεριπτώσεις σύμφωνα με το σχήμα</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)">float</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+</div>
+</div>
+<div class="section" id="chapter-6-ultimate-limit-states-uls">
+<h2>Chapter 6 - Ultimate limit states (ULS)<a class="headerlink" href="#chapter-6-ultimate-limit-states-uls" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="module-streng.codes.eurocodes.ec2.raw.ch6.shear">
+<span id="shear"></span><h3>shear<a class="headerlink" href="#module-streng.codes.eurocodes.ec2.raw.ch6.shear" title="Permalink to this headline">¶</a></h3>
+<p>Shear</p>
+<dl class="function">
+<dt id="streng.codes.eurocodes.ec2.raw.ch6.shear.VRdc">
+<code class="descclassname">streng.codes.eurocodes.ec2.raw.ch6.shear.</code><code class="descname">VRdc</code><span class="sig-paren">(</span><em>CRdc</em>, <em>Asl</em>, <em>fck</em>, <em>σcp</em>, <em>bw</em>, <em>d</em>, <em>units='N-mm'</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/streng/codes/eurocodes/ec2/raw/ch6/shear.html#VRdc"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#streng.codes.eurocodes.ec2.raw.ch6.shear.VRdc" title="Permalink to this definition">¶</a></dt>
+<dd><p>The design value for the shear resistance <span class="math notranslate nohighlight">\(V_{Rd,c}\)</span> [N]</p>
+<p>Units are ‘N-mm’, unless specified otherwise. Alternative options are: ‘kN-m’</p>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7</pre></div></td><td class="code"><div class="highlight"><pre><span></span> vrdc = shear.VRdc(CRdc=0.12,
+                        Asl=308,
+                        fck=20.,
+                        σcp=0.66667,
+                        bw=250.,
+                        d=539.,
+                        units=&#39;N-mm&#39;)
+</pre></div>
+</td></tr></table></div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>CRdc</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – 0.18/γc</li>
+<li><strong>Asl</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – [mm2] is the area of the tensile reinforcement</li>
+<li><strong>fck</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – [N/mm2]</li>
+<li><strong>σcp</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – <span class="math notranslate nohighlight">\(σ_{cp}=N_{Ed}/A_c \lt 0.2f_{cd}\)</span> [N/mm2]</li>
+<li><strong>bw</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – The smallest width of the cross-section in the tensile area. [mm]</li>
+<li><strong>d</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – Effective depth of the cross-section. [mm]</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><p>Result value in [N], unless specified otherwise. Intermediate results are always ‘N-mm’</p>
+<p>Given using the expressions</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}V_{Rd,c} = max \left\{\begin{matrix}
+[C_{Rd,c} \cdot k \cdot(100\cdot ρ_l\cdot f_{ck})^{1/3} + k_1 \cdot σ_{cp}] \cdot b_w \cdot d \\
+(v_{min} + k_1 \cdot σ_{cp}) \cdot b_w \cdot d
+\end{matrix}\right.\end{split}\]</div>
+<p>where:</p>
+<ul class="simple">
+<li><span class="math notranslate nohighlight">\(k=1 + \sqrt{\dfrac{200}{d}} &lt;= 2.0\)</span></li>
+<li><span class="math notranslate nohighlight">\(ρ_l=\dfrac{A_{sl}}{b_w \cdot d}&lt;=0.02\)</span></li>
+<li><span class="math notranslate nohighlight">\(k_1 = 0.15\)</span></li>
+</ul>
+</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">VRdc (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.7)">dict</a>)</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="streng.codes.eurocodes.ec2.raw.ch6.shear.VRdmax">
+<code class="descclassname">streng.codes.eurocodes.ec2.raw.ch6.shear.</code><code class="descname">VRdmax</code><span class="sig-paren">(</span><em>bw</em>, <em>d</em>, <em>fck</em>, <em>fyk</em>, <em>fywk</em>, <em>θ</em>, <em>αcw=1.0</em>, <em>γc=1.5</em>, <em>units='N-mm-rad'</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/streng/codes/eurocodes/ec2/raw/ch6/shear.html#VRdmax"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#streng.codes.eurocodes.ec2.raw.ch6.shear.VRdmax" title="Permalink to this definition">¶</a></dt>
+<dd><p>Maximum value for the shear resistance <span class="math notranslate nohighlight">\(V_{Rd,max}\)</span> [N]</p>
+<p>Units are ‘N-mm’, unless specified otherwise. Alternative options are: ‘kN-m-rad’</p>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9</pre></div></td><td class="code"><div class="highlight"><pre><span></span> vrdmax = shear.VRdmax(bw=250.,
+                       d=539.,
+                       fck=20.,
+                       fyk=500.,
+                       fywk=500.,
+                       θ=np.pi/4,
+                       αcw = 1.0,
+                       γc = 1.5,
+                       units=&#39;N-mm-rad&#39;)
+</pre></div>
+</td></tr></table></div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>bw</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – The smallest width of the cross-section in the tensile area. [mm]</li>
+<li><strong>d</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – Effective depth of the cross-section. [mm]</li>
+<li><strong>fck</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – [N/mm2]</li>
+<li><strong>fyk</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – [N/mm2]</li>
+<li><strong>fywk</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – [N/mm2]</li>
+<li><strong>θ</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – Τhe angle between the concrete compression strut and the beam axis is the angle
+between the concrete compression strut and the beam axis [rad]</li>
+<li><strong>αcw</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – Coefficient taking account of the state of the stress in the compression chord</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><p>Result value in [N], unless specified otherwise. Intermediate results are always ‘N-mm’</p>
+<p>Given using the expression</p>
+<div class="math notranslate nohighlight">
+\[V_{Rd,max} = \dfrac{α_{cw}\cdot b_w \cdot z \cdot ν_1 \cdot f_{cd}}{\cot θ + \tan θ}\]</div>
+</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">VRdmax (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.7)">dict</a>)</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="streng.codes.eurocodes.ec2.raw.ch6.shear.VRds">
+<code class="descclassname">streng.codes.eurocodes.ec2.raw.ch6.shear.</code><code class="descname">VRds</code><span class="sig-paren">(</span><em>nw</em>, <em>diaw</em>, <em>d</em>, <em>fyk</em>, <em>fywk</em>, <em>θ</em>, <em>s</em>, <em>γs=1.15</em>, <em>units='N-mm-rad'</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/streng/codes/eurocodes/ec2/raw/ch6/shear.html#VRds"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#streng.codes.eurocodes.ec2.raw.ch6.shear.VRds" title="Permalink to this definition">¶</a></dt>
+<dd><p>Shear resistance for members with vertical shear reinforcement <span class="math notranslate nohighlight">\(V_{Rd,s}\)</span> [N]</p>
+<p>Units are ‘N-mm-rad’, unless specified otherwise. Alternative options are: ‘kN-m-rad’</p>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9</pre></div></td><td class="code"><div class="highlight"><pre><span></span> vrds = shear.VRds(nw=2.,
+                   diaw = 8,
+                   d=539,
+                   fyk=500.,
+                   fywk=500.,
+                   θ=np.pi/4,
+                   s = 169,
+                   γs = 1.15,
+                   units=&#39;N-mm-rad&#39;)
+</pre></div>
+</td></tr></table></div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>nw</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – number of hoop legs.</li>
+<li><strong>diaw</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – hoop bars diameter. [mm]</li>
+<li><strong>d</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – Effective depth of the cross-section. [mm]</li>
+<li><strong>fyk</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – [N/mm2]</li>
+<li><strong>fywk</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – [N/mm2]</li>
+<li><strong>θ</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – Τhe angle between the concrete compression strut and the beam axis is the angle
+between the concrete compression strut and the beam axis [rad]</li>
+<li><strong>s</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – the spacing of the stirrups [mm]</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><p>Result value in [N], unless specified otherwise. Intermediate results are always ‘N-mm’</p>
+<p>Given using the expression</p>
+<div class="math notranslate nohighlight">
+\[V_{Rd,max} = \dfrac{A_{sw}}{s} \cdot z \cdot f_{ywd} \cdot \cot θ\]</div>
+</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">VRds (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.7)">dict</a>)</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="eurocodes_ec2_cls.html" class="btn btn-neutral float-right" title="Eurocode 2 - Classes" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="eurocodes.html" class="btn btn-neutral" title="Eurocodes" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, panagop
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script type="text/javascript" src="https://unpkg.com/mermaid@7.1.0/dist/mermaid.min.js"></script>
+    
+
+  
+
+  <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

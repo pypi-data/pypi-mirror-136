@@ -1,0 +1,366 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>streng.common.io.output &mdash; StrEng 0.0.1 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+
+  
+  
+    <link rel="shortcut icon" href="../../../../_static/book_icon.png"/>
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../../" src="../../../../_static/documentation_options.js"></script>
+        <script src="../../../../_static/jquery.js"></script>
+        <script src="../../../../_static/underscore.js"></script>
+        <script src="../../../../_static/doctools.js"></script>
+        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    
+    <script type="text/javascript" src="../../../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../../../index.html" class="icon icon-home"> StrEng
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Files structure</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../pyfileslist.html">.py files structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../rstfileslist.html">.rst files structure</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Codes</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../codes/eurocodes.html">Eurocodes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../codes/greek.html">Greek Codes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../codes/usa.html">USA codes and guidelines</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Common</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../common/io.html">Input-Output</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../common/math.html">Math</a></li>
+</ul>
+<p class="caption"><span class="caption-text">phd</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../phd/building_models.html">Building Models</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../phd/analyses.html">Input Motions</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Pre-Post-Processing</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../ppp/ppp.html">ppp</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Tools</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../tools/tools.html">Bilin</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../tools/tools.html#module-streng.tools.seismic_motion">Seismic Motions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../tools/tools.html#jupyters">Jupyters</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Excel udfs library</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../xwflib/xwflib.html">Main</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../index.html">StrEng</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../../../index.html">Module code</a> &raquo;</li>
+        
+      <li>streng.common.io.output</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <h1>Source code for streng.common.io.output</h1><div class="highlight"><pre>
+<span></span><span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">Classes for managing output results</span>
+<span class="sd">&#39;&#39;&#39;</span>
+
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">from</span> <span class="nn">dataclasses</span> <span class="kn">import</span> <span class="n">dataclass</span><span class="p">,</span> <span class="n">field</span>
+<span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">List</span><span class="p">,</span> <span class="n">Dict</span>
+<span class="kn">from</span> <span class="nn">tabulate</span> <span class="kn">import</span> <span class="n">tabulate</span>
+<span class="kn">from</span> <span class="nn">.lists_and_dicts_and_pandas_etc</span> <span class="kn">import</span> <span class="o">*</span>
+
+
+<div class="viewcode-block" id="OutputString"><a class="viewcode-back" href="../../../../common/io.html#streng.common.io.output.OutputString">[docs]</a><span class="nd">@dataclass</span>
+<span class="k">class</span> <span class="nc">OutputString</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot; An output given as a list of strings</span>
+
+<span class="sd">        .. uml::</span>
+
+<span class="sd">            class OutputString {</span>
+<span class="sd">            .. members ..</span>
+<span class="sd">            + data: List[str] = field(default_factory=list)</span>
+<span class="sd">            }</span>
+
+
+<span class="sd">    Attributes:</span>
+<span class="sd">        data (List[str]): A list of strings</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">data</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="n">field</span><span class="p">(</span><span class="n">default_factory</span><span class="o">=</span><span class="nb">list</span><span class="p">)</span>
+    <span class="c1"># name: str = None</span>
+
+    <span class="k">def</span> <span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="OutputTable"><a class="viewcode-back" href="../../../../common/io.html#streng.common.io.output.OutputTable">[docs]</a><span class="nd">@dataclass</span>
+<span class="k">class</span> <span class="nc">OutputTable</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot; An output table given as a list of dictionaries.</span>
+
+<span class="sd">        .. uml::</span>
+
+<span class="sd">            class OutputTable {</span>
+<span class="sd">            .. members ..</span>
+<span class="sd">            + data: List[dict] = field(default_factory=list)</span>
+<span class="sd">            .. properties ..</span>
+<span class="sd">            + to_markdown()</span>
+<span class="sd">            + to_panda_dataframe()</span>
+<span class="sd">            .. methods ..</span>
+<span class="sd">            + retrieve()</span>
+<span class="sd">            + retrieve_column_to_list()</span>
+<span class="sd">            + to_quantity_value()</span>
+<span class="sd">            }</span>
+
+<span class="sd">    It can be converted for presentation (or usage) as a pandas dataframe or a markdown table</span>
+
+<span class="sd">    Attributes:</span>
+<span class="sd">        data (List[dict]): A list of dictionaries</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">data</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">dict</span><span class="p">]</span> <span class="o">=</span> <span class="n">field</span><span class="p">(</span><span class="n">default_factory</span><span class="o">=</span><span class="nb">list</span><span class="p">)</span>
+
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">to_markdown</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot; Converts data (list of dicts) to a markdown table using tabulate.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            str: a markdown table</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">convert_lod_to_md_table</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="p">)</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">to_panda_dataframe</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot; Converts data to a pandas dataframe</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            pd.DataFrame: a pandas dataframe</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">convert_lod_to_pddf</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="p">)</span>
+
+<div class="viewcode-block" id="OutputTable.retrieve"><a class="viewcode-back" href="../../../../common/io.html#streng.common.io.output.OutputTable.retrieve">[docs]</a>    <span class="k">def</span> <span class="nf">retrieve</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">search_field</span><span class="p">,</span> <span class="n">search_value</span><span class="p">,</span> <span class="n">find_field</span><span class="p">):</span>
+        <span class="n">res</span> <span class="o">=</span> <span class="p">[</span><span class="n">d</span><span class="p">[</span><span class="n">find_field</span><span class="p">]</span> <span class="k">for</span> <span class="n">d</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">data</span> <span class="k">if</span> <span class="n">d</span><span class="p">[</span><span class="n">search_field</span><span class="p">]</span> <span class="o">==</span> <span class="n">search_value</span><span class="p">]</span>
+        <span class="k">return</span> <span class="n">res</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span></div>
+
+<div class="viewcode-block" id="OutputTable.retrieve_column_to_list"><a class="viewcode-back" href="../../../../common/io.html#streng.common.io.output.OutputTable.retrieve_column_to_list">[docs]</a>    <span class="k">def</span> <span class="nf">retrieve_column_to_list</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">column_name</span><span class="p">):</span>
+        <span class="k">return</span> <span class="p">[</span><span class="n">k</span><span class="p">[</span><span class="n">column_name</span><span class="p">]</span> <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="p">]</span></div>
+
+<div class="viewcode-block" id="OutputTable.to_quantity_value"><a class="viewcode-back" href="../../../../common/io.html#streng.common.io.output.OutputTable.to_quantity_value">[docs]</a>    <span class="k">def</span> <span class="nf">to_quantity_value</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">selected_row</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
+        <span class="n">out</span> <span class="o">=</span> <span class="n">OutputTable</span><span class="p">()</span>
+        <span class="n">out</span><span class="o">.</span><span class="n">data</span> <span class="o">=</span> <span class="n">convert_dict_to_quantity_value</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="p">[</span><span class="n">selected_row</span><span class="p">])</span>
+        <span class="k">return</span> <span class="n">out</span></div>
+
+    <span class="k">def</span> <span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">to_markdown</span></div>
+
+
+<div class="viewcode-block" id="OutputExtended"><a class="viewcode-back" href="../../../../common/io.html#streng.common.io.output.OutputExtended">[docs]</a><span class="nd">@dataclass</span>
+<span class="k">class</span> <span class="nc">OutputExtended</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot; A class for multiple outputs</span>
+
+<span class="sd">        .. uml::</span>
+
+<span class="sd">            class OutputExtended {</span>
+<span class="sd">            .. members ..</span>
+<span class="sd">            + outputTables: Dict[str, OutputTable] = field(default_factory=dict)</span>
+<span class="sd">            + outputStrings: Dict[str, OutputString] = field(default_factory=dict)</span>
+<span class="sd">            .. properties ..</span>
+<span class="sd">            + print_all_outputStrings()</span>
+<span class="sd">            .. methods ..</span>
+<span class="sd">            + save_tofile_all_outputStrings()</span>
+<span class="sd">            }</span>
+
+<span class="sd">    Attributes:</span>
+<span class="sd">        outputTables (dict[str, OutputTable]): A dictionary of OutputTables with a string key</span>
+<span class="sd">        outputStrings (dict[str, OutputString]): A dictionary of OutputStrings with a string key</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">outputTables</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">OutputTable</span><span class="p">]</span> <span class="o">=</span> <span class="n">field</span><span class="p">(</span><span class="n">default_factory</span><span class="o">=</span><span class="nb">dict</span><span class="p">)</span>
+    <span class="n">outputStrings</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">OutputString</span><span class="p">]</span> <span class="o">=</span> <span class="n">field</span><span class="p">(</span><span class="n">default_factory</span><span class="o">=</span><span class="nb">dict</span><span class="p">)</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">print_all_outputStrings</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="nb">all</span> <span class="o">=</span> <span class="p">[]</span>
+
+        <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">outputStrings</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+            <span class="nb">all</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="n">value</span><span class="o">.</span><span class="n">data</span><span class="p">)</span>
+
+        <span class="k">return</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="nb">all</span><span class="p">)</span>
+
+<div class="viewcode-block" id="OutputExtended.save_tofile_all_outputStrings"><a class="viewcode-back" href="../../../../common/io.html#streng.common.io.output.OutputExtended.save_tofile_all_outputStrings">[docs]</a>    <span class="k">def</span> <span class="nf">save_tofile_all_outputStrings</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">pathfilename</span><span class="p">):</span>
+        <span class="n">file</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">pathfilename</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;utf8&#39;</span><span class="p">)</span>
+        <span class="n">file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">print_all_outputStrings</span><span class="p">)</span>
+        <span class="n">file</span><span class="o">.</span><span class="n">close</span><span class="p">()</span></div></div>
+
+</pre></div>
+
+           </div>
+           
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2020, panagop.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

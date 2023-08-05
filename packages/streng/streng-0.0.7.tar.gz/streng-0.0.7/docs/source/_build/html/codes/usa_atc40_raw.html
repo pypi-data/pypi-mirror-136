@@ -1,0 +1,397 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>ATC-40 - Raw functions &mdash; StrEng 0.0.1 documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../_static/book_icon.png"/>
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="ATC-40 - Classes" href="usa_atc40_cls.html" />
+    <link rel="prev" title="USA codes and guidelines" href="usa.html" /> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> StrEng
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Codes</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="eurocodes.html">Eurocodes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="greek.html">Greek Codes</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="usa.html">USA codes and guidelines</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="usa.html#atc-40">ATC-40</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Raw functions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#chapter-8">Chapter 8</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="usa_atc40_cls.html">Classes</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="usa.html#fema40">FEMA40</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Common</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../common/io.html">io</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../common/math.html">math</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Tools</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../tools/tools.html">Various tools</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">StrEng</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="usa.html">USA codes and guidelines</a> &raquo;</li>
+        
+      <li>ATC-40 - Raw functions</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/codes/usa_atc40_raw.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  
+<style>
+/* CSS overrides for sphinx_rtd_theme */
+
+/* 24px margin */
+.nbinput.nblast,
+.nboutput.nblast {
+    margin-bottom: 19px;  /* padding has already 5px */
+}
+
+/* ... except between code cells! */
+.nblast + .nbinput {
+    margin-top: -19px;
+}
+
+.admonition > p:before {
+    margin-right: 4px;  /* make room for the exclamation icon */
+}
+</style>
+<div class="section" id="atc-40-raw-functions">
+<h1>ATC-40 - Raw functions<a class="headerlink" href="#atc-40-raw-functions" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="chapter-8">
+<h2>Chapter 8<a class="headerlink" href="#chapter-8" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="module-streng.codes.usa.atc40.raw.ch8.csm">
+<span id="capacity-spectrum-method"></span><h3>Capacity Spectrum Method<a class="headerlink" href="#module-streng.codes.usa.atc40.raw.ch8.csm" title="Permalink to this headline">¶</a></h3>
+<dl class="function">
+<dt id="streng.codes.usa.atc40.raw.ch8.csm.PF1">
+<code class="descclassname">streng.codes.usa.atc40.raw.ch8.csm.</code><code class="descname">PF1</code><span class="sig-paren">(</span><em>m</em>, <em>φ</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/streng/codes/usa/atc40/raw/ch8/csm.html#PF1"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#streng.codes.usa.atc40.raw.ch8.csm.PF1" title="Permalink to this definition">¶</a></dt>
+<dd><p>Modal participation factor for the first natural mode</p>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2</pre></div></td><td class="code"><div class="highlight"><pre><span></span> PF1 = csm_atc40.PF1(m=np.array([39.08, 39.08, 39.08]),
+                     φ=np.array([0.0483, 0.0920, 0.1217]))
+</pre></div>
+</td></tr></table></div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>m</strong> (<em>np.array</em>) – mass assigned to level i</li>
+<li><strong>φ</strong> (<em>np.array</em>) – amplitude of mode 1 al level i</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><p>Given using the expression:</p>
+<div class="math notranslate nohighlight">
+\[PF_1 = \dfrac{\sum(m_i \cdot φ_i)}{\sum(m_i \cdot φ_i^2)}\]</div>
+</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)">float</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="streng.codes.usa.atc40.raw.ch8.csm.SRA">
+<code class="descclassname">streng.codes.usa.atc40.raw.ch8.csm.</code><code class="descname">SRA</code><span class="sig-paren">(</span><em>βeff</em>, <em>behavior</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/streng/codes/usa/atc40/raw/ch8/csm.html#SRA"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#streng.codes.usa.atc40.raw.ch8.csm.SRA" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="streng.codes.usa.atc40.raw.ch8.csm.SRV">
+<code class="descclassname">streng.codes.usa.atc40.raw.ch8.csm.</code><code class="descname">SRV</code><span class="sig-paren">(</span><em>βeff</em>, <em>behavior</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/streng/codes/usa/atc40/raw/ch8/csm.html#SRV"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#streng.codes.usa.atc40.raw.ch8.csm.SRV" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="streng.codes.usa.atc40.raw.ch8.csm.Sa">
+<code class="descclassname">streng.codes.usa.atc40.raw.ch8.csm.</code><code class="descname">Sa</code><span class="sig-paren">(</span><em>V</em>, <em>W</em>, <em>α1</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/streng/codes/usa/atc40/raw/ch8/csm.html#Sa"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#streng.codes.usa.atc40.raw.ch8.csm.Sa" title="Permalink to this definition">¶</a></dt>
+<dd><p>The spectral acceleration</p>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3</pre></div></td><td class="code"><div class="highlight"><pre><span></span> Sa = csm_atc40.Sa(V=bl.y_ini,
+                   W=sum(m),
+                   α1=α1) # Βάζω όπου W τη μάζα ώστε να βγει το Sa σε m/sec2 και όχι σε g
+</pre></div>
+</td></tr></table></div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>V</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – base shear</li>
+<li><strong>W</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – building weight (dead plus likely live loads…eg g+0.3q)</li>
+<li><strong>α1</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – modal mass coefficient for the first natural mode</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><p>Given using the expression:</p>
+<div class="math notranslate nohighlight">
+\[S_a = \dfrac{V/W}{α_1}\]</div>
+</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)">float</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="streng.codes.usa.atc40.raw.ch8.csm.Sd">
+<code class="descclassname">streng.codes.usa.atc40.raw.ch8.csm.</code><code class="descname">Sd</code><span class="sig-paren">(</span><em>Δroof</em>, <em>PF1</em>, <em>φroof1</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/streng/codes/usa/atc40/raw/ch8/csm.html#Sd"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#streng.codes.usa.atc40.raw.ch8.csm.Sd" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="streng.codes.usa.atc40.raw.ch8.csm.T">
+<code class="descclassname">streng.codes.usa.atc40.raw.ch8.csm.</code><code class="descname">T</code><span class="sig-paren">(</span><em>Sa</em>, <em>Sd</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/streng/codes/usa/atc40/raw/ch8/csm.html#T"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#streng.codes.usa.atc40.raw.ch8.csm.T" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="streng.codes.usa.atc40.raw.ch8.csm.α1">
+<code class="descclassname">streng.codes.usa.atc40.raw.ch8.csm.</code><code class="descname">α1</code><span class="sig-paren">(</span><em>m</em>, <em>φ</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/streng/codes/usa/atc40/raw/ch8/csm.html#α1"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#streng.codes.usa.atc40.raw.ch8.csm.α1" title="Permalink to this definition">¶</a></dt>
+<dd><p>Modal mass coefficient for the first natural mode</p>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2</pre></div></td><td class="code"><div class="highlight"><pre><span></span> α1 = csm_atc40.α1(m=np.array([39.08, 39.08, 39.08]),
+                   φ=np.array([0.0483, 0.0920, 0.1217]))
+</pre></div>
+</td></tr></table></div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>m</strong> (<em>np.array</em>) – mass assigned to level i</li>
+<li><strong>φ</strong> (<em>np.array</em>) – amplitude of mode 1 al level i</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><p>Given using the expression:</p>
+<div class="math notranslate nohighlight">
+\[α_1 = \dfrac{\sum(m_i \cdot φ_i)^2}{\sum(m_i) \cdot \sum(m_i \cdot φ_i^2)}\]</div>
+</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)">float</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="streng.codes.usa.atc40.raw.ch8.csm.β0">
+<code class="descclassname">streng.codes.usa.atc40.raw.ch8.csm.</code><code class="descname">β0</code><span class="sig-paren">(</span><em>dy</em>, <em>ay</em>, <em>dpi</em>, <em>api</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/streng/codes/usa/atc40/raw/ch8/csm.html#β0"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#streng.codes.usa.atc40.raw.ch8.csm.β0" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="streng.codes.usa.atc40.raw.ch8.csm.βeff">
+<code class="descclassname">streng.codes.usa.atc40.raw.ch8.csm.</code><code class="descname">βeff</code><span class="sig-paren">(</span><em>β</em>, <em>β0</em>, <em>behavior</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/streng/codes/usa/atc40/raw/ch8/csm.html#βeff"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#streng.codes.usa.atc40.raw.ch8.csm.βeff" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="streng.codes.usa.atc40.raw.ch8.csm.κ">
+<code class="descclassname">streng.codes.usa.atc40.raw.ch8.csm.</code><code class="descname">κ</code><span class="sig-paren">(</span><em>β0</em>, <em>behavior</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/streng/codes/usa/atc40/raw/ch8/csm.html#κ"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#streng.codes.usa.atc40.raw.ch8.csm.κ" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="usa_atc40_cls.html" class="btn btn-neutral float-right" title="ATC-40 - Classes" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="usa.html" class="btn btn-neutral" title="USA codes and guidelines" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, panagop
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script type="text/javascript" src="https://unpkg.com/mermaid@7.1.0/dist/mermaid.min.js"></script>
+    
+
+  
+
+  <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

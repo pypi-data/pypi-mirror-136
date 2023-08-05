@@ -1,0 +1,610 @@
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# Output"
+      ],
+      "metadata": {}
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import numpy as np\n",
+        "import pandas as pd\n",
+        "from tabulate import tabulate\n",
+        "\nfrom streng.common.io.output import OutputTable, OutputString, OutputExtended"
+      ],
+      "outputs": [],
+      "execution_count": 1,
+      "metadata": {}
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## OutputTable"
+      ],
+      "metadata": {}
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "### some example data"
+      ],
+      "metadata": {}
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "data = [{'__iteration': 1,\n",
+        "  'x_y': 0.04213429287708525,\n",
+        "  'y_y': 1310.8730715333027,\n",
+        "  'x_u': 0.44886,\n",
+        "  'y_u': 1311.3866666666665,\n",
+        "  'kinel': 1.2627555238564436,\n",
+        "  'kel': 31111.785247171465,\n",
+        "  'k_06': 24639.615704484408,\n",
+        "  'error': 0.26267331521364284},\n",
+        " {'__iteration': 2,\n",
+        "  'x_y': 0.05395737709629134,\n",
+        "  'y_y': 1329.4890360745674,\n",
+        "  'x_u': 0.44886,\n",
+        "  'y_u': 1329.4890360745674,\n",
+        "  'kinel': -91.76544991341024,\n",
+        "  'kel': 24639.615704484408,\n",
+        "  'k_06': 24476.018099972942,\n",
+        "  'error': 0.006683995895216576},\n",
+        " {'__iteration': 3,\n",
+        "  'x_y': 0.05434285482397955,\n",
+        "  'y_y': 1330.0966982759253,\n",
+        "  'x_u': 0.44886,\n",
+        "  'y_u': 1330.0966982759253,\n",
+        "  'kinel': -94.94217563576123,\n",
+        "  'kel': 24476.018099972942,\n",
+        "  'k_06': 24469.75466696404,\n",
+        "  'error': 0.0002559663181812895},\n",
+        " {'__iteration': 4,\n",
+        "  'x_y': 0.05435772305859232,\n",
+        "  'y_y': 1330.1201474985282,\n",
+        "  'x_u': 0.44886,\n",
+        "  'y_u': 1330.1201474985282,\n",
+        "  'kinel': -95.064891451666,\n",
+        "  'kel': 24469.75466696404,\n",
+        "  'k_06': 24469.51314473135,\n",
+        "  'error': 9.870332575089462e-06},\n",
+        " {'__iteration': 5,\n",
+        "  'x_y': 0.05435829655145874,\n",
+        "  'y_y': 1330.1210519911244,\n",
+        "  'x_u': 0.44886,\n",
+        "  'y_u': 1330.1210519911244,\n",
+        "  'kinel': -95.0696250854122,\n",
+        "  'kel': 24469.51314473135,\n",
+        "  'k_06': 24469.503828907287,\n",
+        "  'error': 3.807116044736897e-07}]"
+      ],
+      "outputs": [],
+      "execution_count": 2,
+      "metadata": {}
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "### using tabulate to show data as markdown table"
+      ],
+      "metadata": {}
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(tabulate(data, headers='keys', tablefmt=\"pipe\", floatfmt=\".3E\"))"
+      ],
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "|   __iteration |       x_y |       y_y |       x_u |       y_u |      kinel |       kel |      k_06 |     error |\n",
+            "|------------:|----------:|----------:|----------:|----------:|-----------:|----------:|----------:|----------:|\n",
+            "|           1 | 4.213E-02 | 1.311E+03 | 4.489E-01 | 1.311E+03 |  1.263E+00 | 3.111E+04 | 2.464E+04 | 2.627E-01 |\n",
+            "|           2 | 5.396E-02 | 1.329E+03 | 4.489E-01 | 1.329E+03 | -9.177E+01 | 2.464E+04 | 2.448E+04 | 6.684E-03 |\n",
+            "|           3 | 5.434E-02 | 1.330E+03 | 4.489E-01 | 1.330E+03 | -9.494E+01 | 2.448E+04 | 2.447E+04 | 2.560E-04 |\n",
+            "|           4 | 5.436E-02 | 1.330E+03 | 4.489E-01 | 1.330E+03 | -9.506E+01 | 2.447E+04 | 2.447E+04 | 9.870E-06 |\n",
+            "|           5 | 5.436E-02 | 1.330E+03 | 4.489E-01 | 1.330E+03 | -9.507E+01 | 2.447E+04 | 2.447E+04 | 3.807E-07 |\n"
+          ]
+        }
+      ],
+      "execution_count": 3,
+      "metadata": {}
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "### show data as pandas dataframe"
+      ],
+      "metadata": {}
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "df = pd.DataFrame(data=data, columns=list(data[0].keys()))\n",
+        "df"
+      ],
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "execution_count": 4,
+          "data": {
+            "text/html": [
+              "<div>\n",
+              "<style scoped>\n",
+              "    .dataframe tbody tr th:only-of-type {\n",
+              "        vertical-align: middle;\n",
+              "    }\n",
+              "\n",
+              "    .dataframe tbody tr th {\n",
+              "        vertical-align: top;\n",
+              "    }\n",
+              "\n",
+              "    .dataframe thead th {\n",
+              "        text-align: right;\n",
+              "    }\n",
+              "</style>\n",
+              "<table border=\"1\" class=\"dataframe\">\n",
+              "  <thead>\n",
+              "    <tr style=\"text-align: right;\">\n",
+              "      <th></th>\n",
+              "      <th>__iteration</th>\n",
+              "      <th>x_y</th>\n",
+              "      <th>y_y</th>\n",
+              "      <th>x_u</th>\n",
+              "      <th>y_u</th>\n",
+              "      <th>kinel</th>\n",
+              "      <th>kel</th>\n",
+              "      <th>k_06</th>\n",
+              "      <th>error</th>\n",
+              "    </tr>\n",
+              "  </thead>\n",
+              "  <tbody>\n",
+              "    <tr>\n",
+              "      <th>0</th>\n",
+              "      <td>1</td>\n",
+              "      <td>0.042134</td>\n",
+              "      <td>1310.873072</td>\n",
+              "      <td>0.44886</td>\n",
+              "      <td>1311.386667</td>\n",
+              "      <td>1.262756</td>\n",
+              "      <td>31111.785247</td>\n",
+              "      <td>24639.615704</td>\n",
+              "      <td>2.626733e-01</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>1</th>\n",
+              "      <td>2</td>\n",
+              "      <td>0.053957</td>\n",
+              "      <td>1329.489036</td>\n",
+              "      <td>0.44886</td>\n",
+              "      <td>1329.489036</td>\n",
+              "      <td>-91.765450</td>\n",
+              "      <td>24639.615704</td>\n",
+              "      <td>24476.018100</td>\n",
+              "      <td>6.683996e-03</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>2</th>\n",
+              "      <td>3</td>\n",
+              "      <td>0.054343</td>\n",
+              "      <td>1330.096698</td>\n",
+              "      <td>0.44886</td>\n",
+              "      <td>1330.096698</td>\n",
+              "      <td>-94.942176</td>\n",
+              "      <td>24476.018100</td>\n",
+              "      <td>24469.754667</td>\n",
+              "      <td>2.559663e-04</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>3</th>\n",
+              "      <td>4</td>\n",
+              "      <td>0.054358</td>\n",
+              "      <td>1330.120147</td>\n",
+              "      <td>0.44886</td>\n",
+              "      <td>1330.120147</td>\n",
+              "      <td>-95.064891</td>\n",
+              "      <td>24469.754667</td>\n",
+              "      <td>24469.513145</td>\n",
+              "      <td>9.870333e-06</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>4</th>\n",
+              "      <td>5</td>\n",
+              "      <td>0.054358</td>\n",
+              "      <td>1330.121052</td>\n",
+              "      <td>0.44886</td>\n",
+              "      <td>1330.121052</td>\n",
+              "      <td>-95.069625</td>\n",
+              "      <td>24469.513145</td>\n",
+              "      <td>24469.503829</td>\n",
+              "      <td>3.807116e-07</td>\n",
+              "    </tr>\n",
+              "  </tbody>\n",
+              "</table>\n",
+              "</div>"
+            ],
+            "text/plain": [
+              "   __iteration       x_y          y_y      x_u          y_u      kinel  \\\n",
+              "0          1  0.042134  1310.873072  0.44886  1311.386667   1.262756   \n",
+              "1          2  0.053957  1329.489036  0.44886  1329.489036 -91.765450   \n",
+              "2          3  0.054343  1330.096698  0.44886  1330.096698 -94.942176   \n",
+              "3          4  0.054358  1330.120147  0.44886  1330.120147 -95.064891   \n",
+              "4          5  0.054358  1330.121052  0.44886  1330.121052 -95.069625   \n",
+              "\n",
+              "            kel          k_06         error  \n",
+              "0  31111.785247  24639.615704  2.626733e-01  \n",
+              "1  24639.615704  24476.018100  6.683996e-03  \n",
+              "2  24476.018100  24469.754667  2.559663e-04  \n",
+              "3  24469.754667  24469.513145  9.870333e-06  \n",
+              "4  24469.513145  24469.503829  3.807116e-07  "
+            ]
+          },
+          "metadata": {}
+        }
+      ],
+      "execution_count": 4,
+      "metadata": {}
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## Class usage"
+      ],
+      "metadata": {}
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(OutputTable.__doc__)"
+      ],
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            " An output table given as a list of dictionaries that can be presented (and used) as\n",
+            "    a pandas dataframe or a markdown table\n",
+            "\n",
+            "    Attributes:\n",
+            "        data (List[dict]): A list of dictionaries\n",
+            "\n",
+            "    \n"
+          ]
+        }
+      ],
+      "execution_count": 17,
+      "metadata": {}
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "ot = OutputTable(data=data)"
+      ],
+      "outputs": [],
+      "execution_count": 18,
+      "metadata": {}
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "### not very useful but can work sometimes"
+      ],
+      "metadata": {}
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "ot.data[2]['x_y']"
+      ],
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "execution_count": 19,
+          "data": {
+            "text/plain": [
+              "0.05434285482397955"
+            ]
+          },
+          "metadata": {}
+        }
+      ],
+      "execution_count": 19,
+      "metadata": {}
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "### show data as markdown table"
+      ],
+      "metadata": {}
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(ot.to_markdown)"
+      ],
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "|   __iteration |       x_y |       y_y |       x_u |       y_u |      kinel |       kel |      k_06 |     error |\n",
+            "|------------:|----------:|----------:|----------:|----------:|-----------:|----------:|----------:|----------:|\n",
+            "|           1 | 4.213E-02 | 1.311E+03 | 4.489E-01 | 1.311E+03 |  1.263E+00 | 3.111E+04 | 2.464E+04 | 2.627E-01 |\n",
+            "|           2 | 5.396E-02 | 1.329E+03 | 4.489E-01 | 1.329E+03 | -9.177E+01 | 2.464E+04 | 2.448E+04 | 6.684E-03 |\n",
+            "|           3 | 5.434E-02 | 1.330E+03 | 4.489E-01 | 1.330E+03 | -9.494E+01 | 2.448E+04 | 2.447E+04 | 2.560E-04 |\n",
+            "|           4 | 5.436E-02 | 1.330E+03 | 4.489E-01 | 1.330E+03 | -9.506E+01 | 2.447E+04 | 2.447E+04 | 9.870E-06 |\n",
+            "|           5 | 5.436E-02 | 1.330E+03 | 4.489E-01 | 1.330E+03 | -9.507E+01 | 2.447E+04 | 2.447E+04 | 3.807E-07 |\n"
+          ]
+        }
+      ],
+      "execution_count": 8,
+      "metadata": {}
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "### show data as pandas dataframe"
+      ],
+      "metadata": {}
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "ot.to_panda_dataframe"
+      ],
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "execution_count": 9,
+          "data": {
+            "text/html": [
+              "<div>\n",
+              "<style scoped>\n",
+              "    .dataframe tbody tr th:only-of-type {\n",
+              "        vertical-align: middle;\n",
+              "    }\n",
+              "\n",
+              "    .dataframe tbody tr th {\n",
+              "        vertical-align: top;\n",
+              "    }\n",
+              "\n",
+              "    .dataframe thead th {\n",
+              "        text-align: right;\n",
+              "    }\n",
+              "</style>\n",
+              "<table border=\"1\" class=\"dataframe\">\n",
+              "  <thead>\n",
+              "    <tr style=\"text-align: right;\">\n",
+              "      <th></th>\n",
+              "      <th>__iteration</th>\n",
+              "      <th>x_y</th>\n",
+              "      <th>y_y</th>\n",
+              "      <th>x_u</th>\n",
+              "      <th>y_u</th>\n",
+              "      <th>kinel</th>\n",
+              "      <th>kel</th>\n",
+              "      <th>k_06</th>\n",
+              "      <th>error</th>\n",
+              "    </tr>\n",
+              "  </thead>\n",
+              "  <tbody>\n",
+              "    <tr>\n",
+              "      <th>0</th>\n",
+              "      <td>1</td>\n",
+              "      <td>0.042134</td>\n",
+              "      <td>1310.873072</td>\n",
+              "      <td>0.44886</td>\n",
+              "      <td>1311.386667</td>\n",
+              "      <td>1.262756</td>\n",
+              "      <td>31111.785247</td>\n",
+              "      <td>24639.615704</td>\n",
+              "      <td>2.626733e-01</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>1</th>\n",
+              "      <td>2</td>\n",
+              "      <td>0.053957</td>\n",
+              "      <td>1329.489036</td>\n",
+              "      <td>0.44886</td>\n",
+              "      <td>1329.489036</td>\n",
+              "      <td>-91.765450</td>\n",
+              "      <td>24639.615704</td>\n",
+              "      <td>24476.018100</td>\n",
+              "      <td>6.683996e-03</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>2</th>\n",
+              "      <td>3</td>\n",
+              "      <td>0.054343</td>\n",
+              "      <td>1330.096698</td>\n",
+              "      <td>0.44886</td>\n",
+              "      <td>1330.096698</td>\n",
+              "      <td>-94.942176</td>\n",
+              "      <td>24476.018100</td>\n",
+              "      <td>24469.754667</td>\n",
+              "      <td>2.559663e-04</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>3</th>\n",
+              "      <td>4</td>\n",
+              "      <td>0.054358</td>\n",
+              "      <td>1330.120147</td>\n",
+              "      <td>0.44886</td>\n",
+              "      <td>1330.120147</td>\n",
+              "      <td>-95.064891</td>\n",
+              "      <td>24469.754667</td>\n",
+              "      <td>24469.513145</td>\n",
+              "      <td>9.870333e-06</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>4</th>\n",
+              "      <td>5</td>\n",
+              "      <td>0.054358</td>\n",
+              "      <td>1330.121052</td>\n",
+              "      <td>0.44886</td>\n",
+              "      <td>1330.121052</td>\n",
+              "      <td>-95.069625</td>\n",
+              "      <td>24469.513145</td>\n",
+              "      <td>24469.503829</td>\n",
+              "      <td>3.807116e-07</td>\n",
+              "    </tr>\n",
+              "  </tbody>\n",
+              "</table>\n",
+              "</div>"
+            ],
+            "text/plain": [
+              "   __iteration       x_y          y_y      x_u          y_u      kinel  \\\n",
+              "0          1  0.042134  1310.873072  0.44886  1311.386667   1.262756   \n",
+              "1          2  0.053957  1329.489036  0.44886  1329.489036 -91.765450   \n",
+              "2          3  0.054343  1330.096698  0.44886  1330.096698 -94.942176   \n",
+              "3          4  0.054358  1330.120147  0.44886  1330.120147 -95.064891   \n",
+              "4          5  0.054358  1330.121052  0.44886  1330.121052 -95.069625   \n",
+              "\n",
+              "            kel          k_06         error  \n",
+              "0  31111.785247  24639.615704  2.626733e-01  \n",
+              "1  24639.615704  24476.018100  6.683996e-03  \n",
+              "2  24476.018100  24469.754667  2.559663e-04  \n",
+              "3  24469.754667  24469.513145  9.870333e-06  \n",
+              "4  24469.513145  24469.503829  3.807116e-07  "
+            ]
+          },
+          "metadata": {}
+        }
+      ],
+      "execution_count": 9,
+      "metadata": {}
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "### retrieve value from output table"
+      ],
+      "metadata": {}
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "ot.retrieve(search_field='__iteration',\n",
+        "            search_value=2,\n",
+        "            find_field='kinel')"
+      ],
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "execution_count": 10,
+          "data": {
+            "text/plain": [
+              "-91.76544991341024"
+            ]
+          },
+          "metadata": {}
+        }
+      ],
+      "execution_count": 10,
+      "metadata": {}
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "### retrieve column to list"
+      ],
+      "metadata": {}
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "ot.retrieve_column_to_list('x_y')"
+      ],
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "execution_count": 11,
+          "data": {
+            "text/plain": [
+              "[0.04213429287708525,\n",
+              " 0.05395737709629134,\n",
+              " 0.05434285482397955,\n",
+              " 0.05435772305859232,\n",
+              " 0.05435829655145874]"
+            ]
+          },
+          "metadata": {}
+        }
+      ],
+      "execution_count": 11,
+      "metadata": {}
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## OutputString"
+      ],
+      "metadata": {}
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "coming soon...see bilin notebook"
+      ],
+      "metadata": {}
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## OutputExtended"
+      ],
+      "metadata": {}
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "coming soon...see bilin notebook"
+      ],
+      "metadata": {}
+    }
+  ],
+  "metadata": {
+    "kernelspec": {
+      "name": "python3",
+      "language": "python",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python",
+      "version": "3.6.6",
+      "mimetype": "text/x-python",
+      "codemirror_mode": {
+        "name": "ipython",
+        "version": 3
+      },
+      "pygments_lexer": "ipython3",
+      "nbconvert_exporter": "python",
+      "file_extension": ".py"
+    },
+    "toc": {
+      "nav_menu": {},
+      "number_sections": false,
+      "sideBar": true,
+      "skip_h1_title": false,
+      "toc_cell": false,
+      "toc_position": {},
+      "toc_section_display": "block",
+      "toc_window_display": true
+    },
+    "kernel_info": {
+      "name": "python3"
+    },
+    "nteract": {
+      "version": "0.11.9"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 2
+}

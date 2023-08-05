@@ -1,0 +1,462 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>streng.codes.eurocodes.ec2.raw.ch6.shear &mdash; StrEng 0.0.1 documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../../../../../../../_static/book_icon.png"/>
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../../../../../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../../../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../../../../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../../../../search.html" /> 
+
+  
+  <script src="../../../../../../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../../../../../../index.html" class="icon icon-home"> StrEng
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Codes</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../../codes/eurocodes.html">Eurocodes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../../codes/greek.html">Greek Codes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../../codes/usa.html">USA codes and guidelines</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Common</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../../common/io.html">io</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../../common/math.html">math</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Tools</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../../tools/tools.html">Various tools</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../../../../index.html">StrEng</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../../../../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../../../../../../index.html">Module code</a> &raquo;</li>
+        
+      <li>streng.codes.eurocodes.ec2.raw.ch6.shear</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <h1>Source code for streng.codes.eurocodes.ec2.raw.ch6.shear</h1><div class="highlight"><pre>
+<span></span><span class="sd">&quot;&quot;&quot; Shear</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="kn">import</span> <span class="nn">math</span>
+
+<div class="viewcode-block" id="VRdc"><a class="viewcode-back" href="../../../../../../../codes/eurocodes_ec2_raw.html#streng.codes.eurocodes.ec2.raw.ch6.shear.VRdc">[docs]</a><span class="k">def</span> <span class="nf">VRdc</span><span class="p">(</span><span class="n">CRdc</span><span class="p">,</span> <span class="n">Asl</span><span class="p">,</span> <span class="n">fck</span><span class="p">,</span> <span class="n">σcp</span><span class="p">,</span> <span class="n">bw</span><span class="p">,</span> <span class="n">d</span><span class="p">,</span> <span class="n">units</span><span class="o">=</span><span class="s1">&#39;N-mm&#39;</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot; The design value for the shear resistance :math:`V_{Rd,c}` [N]</span>
+
+<span class="sd">    Units are &#39;N-mm&#39;, unless specified otherwise. Alternative options are: &#39;kN-m&#39;</span>
+
+<span class="sd">    .. highlight:: python</span>
+<span class="sd">    .. code-block:: python</span>
+<span class="sd">       :linenos:</span>
+
+<span class="sd">        vrdc = shear.VRdc(CRdc=0.12,</span>
+<span class="sd">                               Asl=308,</span>
+<span class="sd">                               fck=20.,</span>
+<span class="sd">                               σcp=0.66667,</span>
+<span class="sd">                               bw=250.,</span>
+<span class="sd">                               d=539.,</span>
+<span class="sd">                               units=&#39;N-mm&#39;)</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        CRdc (float): 0.18/γc</span>
+<span class="sd">        Asl (float): [mm2] is the area of the tensile reinforcement</span>
+<span class="sd">        fck (float): [N/mm2]</span>
+<span class="sd">        σcp (float):  :math:`σ_{cp}=N_{Ed}/A_c \lt 0.2f_{cd}` [N/mm2]</span>
+<span class="sd">        bw (float): The smallest width of the cross-section in the tensile area. [mm]</span>
+<span class="sd">        d (float): Effective depth of the cross-section. [mm]</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        VRdc (dict):</span>
+
+<span class="sd">        Result value in [N], unless specified otherwise. Intermediate results are always &#39;N-mm&#39;</span>
+
+<span class="sd">        Given using the expressions</span>
+
+<span class="sd">        .. math::</span>
+<span class="sd">            V_{Rd,c} = max \\left\{\\begin{matrix}</span>
+<span class="sd">            [C_{Rd,c} \cdot k \cdot(100\cdot ρ_l\cdot f_{ck})^{1/3} + k_1 \cdot σ_{cp}] \cdot b_w \cdot d \\\\</span>
+<span class="sd">            (v_{min} + k_1 \cdot σ_{cp}) \cdot b_w \cdot d</span>
+<span class="sd">            \\end{matrix}\\right.</span>
+
+<span class="sd">        where:</span>
+
+<span class="sd">        - :math:`k=1 + \sqrt{\dfrac{200}{d}} &lt;= 2.0`</span>
+
+<span class="sd">        - :math:`ρ_l=\dfrac{A_{sl}}{b_w \cdot d}&lt;=0.02`</span>
+
+<span class="sd">        - :math:`k_1 = 0.15`</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">_VRdc</span> <span class="o">=</span> <span class="p">{}</span>
+
+    <span class="k">if</span> <span class="n">units</span> <span class="o">==</span> <span class="s1">&#39;N-mm&#39;</span><span class="p">:</span>
+        <span class="k">pass</span>
+    <span class="k">elif</span> <span class="n">units</span> <span class="o">==</span> <span class="s1">&#39;kN-m&#39;</span><span class="p">:</span>
+        <span class="n">Asl</span> <span class="o">=</span> <span class="n">Asl</span> <span class="o">*</span> <span class="mi">10</span><span class="o">**</span><span class="mi">6</span>
+        <span class="n">fck</span> <span class="o">*=</span> <span class="mf">0.001</span>
+        <span class="n">σcp</span> <span class="o">*=</span> <span class="mf">0.001</span>
+        <span class="n">bw</span> <span class="o">*=</span> <span class="mi">1000</span>
+        <span class="n">d</span> <span class="o">*=</span> <span class="mi">1000</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">pass</span>
+
+
+    <span class="n">ρl</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">Asl</span> <span class="o">/</span> <span class="p">(</span><span class="n">bw</span> <span class="o">*</span> <span class="n">d</span><span class="p">),</span> <span class="mf">0.02</span><span class="p">)</span>
+    <span class="n">k</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="mi">1</span> <span class="o">+</span> <span class="p">(</span><span class="mf">200.0</span> <span class="o">/</span> <span class="n">d</span><span class="p">)</span><span class="o">**</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">2.0</span><span class="p">)</span>
+    <span class="n">vmin</span> <span class="o">=</span> <span class="mf">0.035</span> <span class="o">*</span> <span class="n">k</span><span class="o">**</span><span class="mf">1.5</span> <span class="o">*</span> <span class="n">fck</span><span class="o">**</span><span class="mf">0.5</span>
+    <span class="n">k1</span> <span class="o">=</span> <span class="mf">0.15</span>
+
+    <span class="n">VRdc1</span> <span class="o">=</span> <span class="p">(</span><span class="n">CRdc</span> <span class="o">*</span> <span class="n">k</span> <span class="o">*</span> <span class="n">math</span><span class="o">.</span><span class="n">pow</span><span class="p">((</span><span class="mi">100</span> <span class="o">*</span> <span class="n">ρl</span> <span class="o">*</span> <span class="n">fck</span><span class="p">),</span> <span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="mi">3</span><span class="p">))</span> <span class="o">+</span> <span class="n">k1</span> <span class="o">*</span> <span class="n">σcp</span><span class="p">)</span> <span class="o">*</span> <span class="n">bw</span> <span class="o">*</span> <span class="n">d</span>
+    <span class="n">VRdc2</span> <span class="o">=</span> <span class="p">(</span><span class="n">vmin</span> <span class="o">+</span> <span class="n">k1</span> <span class="o">*</span> <span class="n">σcp</span><span class="p">)</span> <span class="o">*</span> <span class="n">bw</span> <span class="o">*</span> <span class="n">d</span>
+
+    <span class="n">_VRdc</span><span class="p">[</span><span class="s1">&#39;ρl&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">ρl</span>
+    <span class="n">_VRdc</span><span class="p">[</span><span class="s1">&#39;k&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">k</span>
+    <span class="n">_VRdc</span><span class="p">[</span><span class="s1">&#39;vmin&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">vmin</span>
+    <span class="n">_VRdc</span><span class="p">[</span><span class="s1">&#39;k1&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">k1</span>
+    <span class="n">_VRdc</span><span class="p">[</span><span class="s1">&#39;VRdc1&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">VRdc1</span>
+    <span class="n">_VRdc</span><span class="p">[</span><span class="s1">&#39;VRdc2&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">VRdc2</span>
+    <span class="n">_VRdc</span><span class="p">[</span><span class="s1">&#39;value&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">VRdc1</span><span class="p">,</span> <span class="n">VRdc2</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">units</span> <span class="o">==</span> <span class="s1">&#39;N-mm&#39;</span><span class="p">:</span>
+        <span class="k">pass</span>
+    <span class="k">elif</span> <span class="n">units</span> <span class="o">==</span> <span class="s1">&#39;kN-m&#39;</span><span class="p">:</span>
+        <span class="n">_VRdc</span><span class="p">[</span><span class="s1">&#39;value&#39;</span><span class="p">]</span> <span class="o">*=</span> <span class="mf">0.001</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">pass</span>
+
+    <span class="k">return</span> <span class="n">_VRdc</span></div>
+
+
+<div class="viewcode-block" id="VRdmax"><a class="viewcode-back" href="../../../../../../../codes/eurocodes_ec2_raw.html#streng.codes.eurocodes.ec2.raw.ch6.shear.VRdmax">[docs]</a><span class="k">def</span> <span class="nf">VRdmax</span><span class="p">(</span><span class="n">bw</span><span class="p">,</span> <span class="n">d</span><span class="p">,</span> <span class="n">fck</span><span class="p">,</span> <span class="n">fyk</span><span class="p">,</span> <span class="n">fywk</span><span class="p">,</span> <span class="n">θ</span><span class="p">,</span> <span class="n">αcw</span> <span class="o">=</span> <span class="mf">1.0</span><span class="p">,</span> <span class="n">γc</span> <span class="o">=</span> <span class="mf">1.5</span><span class="p">,</span> <span class="n">units</span><span class="o">=</span><span class="s1">&#39;N-mm-rad&#39;</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot; Maximum value for the shear resistance :math:`V_{Rd,max}` [N]</span>
+
+<span class="sd">    Units are &#39;N-mm&#39;, unless specified otherwise. Alternative options are: &#39;kN-m-rad&#39;</span>
+
+<span class="sd">    .. highlight:: python</span>
+<span class="sd">    .. code-block:: python</span>
+<span class="sd">       :linenos:</span>
+
+<span class="sd">        vrdmax = shear.VRdmax(bw=250.,</span>
+<span class="sd">                              d=539.,</span>
+<span class="sd">                              fck=20.,</span>
+<span class="sd">                              fyk=500.,</span>
+<span class="sd">                              fywk=500.,</span>
+<span class="sd">                              θ=np.pi/4,</span>
+<span class="sd">                              αcw = 1.0,</span>
+<span class="sd">                              γc = 1.5,</span>
+<span class="sd">                              units=&#39;N-mm-rad&#39;)</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        bw (float): The smallest width of the cross-section in the tensile area. [mm]</span>
+<span class="sd">        d (float): Effective depth of the cross-section. [mm]</span>
+<span class="sd">        fck (float): [N/mm2]</span>
+<span class="sd">        fyk (float): [N/mm2]</span>
+<span class="sd">        fywk (float): [N/mm2]</span>
+<span class="sd">        θ (float): Τhe angle between the concrete compression strut and the beam axis is the angle</span>
+<span class="sd">            between the concrete compression strut and the beam axis [rad]</span>
+<span class="sd">        αcw (float): Coefficient taking account of the state of the stress in the compression chord</span>
+
+
+<span class="sd">    Returns:</span>
+<span class="sd">        VRdmax (dict):</span>
+
+<span class="sd">        Result value in [N], unless specified otherwise. Intermediate results are always &#39;N-mm&#39;</span>
+
+<span class="sd">        Given using the expression</span>
+
+<span class="sd">        .. math::</span>
+<span class="sd">            V_{Rd,max} = \dfrac{α_{cw}\cdot b_w \cdot z \cdot ν_1 \cdot f_{cd}}{\cot θ + \\tan θ}</span>
+
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="n">units</span> <span class="o">==</span> <span class="s1">&#39;N-mm-rad&#39;</span><span class="p">:</span>
+        <span class="k">pass</span>
+    <span class="k">elif</span> <span class="n">units</span> <span class="o">==</span> <span class="s1">&#39;kN-m-rad&#39;</span><span class="p">:</span>
+        <span class="n">bw</span> <span class="o">*=</span> <span class="mi">1000</span>
+        <span class="n">d</span> <span class="o">*=</span> <span class="mi">1000</span>
+        <span class="n">fck</span> <span class="o">*=</span> <span class="mf">0.001</span>
+        <span class="n">fyk</span> <span class="o">*=</span> <span class="mf">0.001</span>
+        <span class="n">fywk</span> <span class="o">*=</span> <span class="mf">0.001</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">pass</span>
+
+    <span class="n">_VRdmax</span> <span class="o">=</span> <span class="p">{}</span>
+
+    <span class="n">z</span> <span class="o">=</span> <span class="mf">0.9</span> <span class="o">*</span> <span class="n">d</span>
+    <span class="n">fcd</span> <span class="o">=</span> <span class="n">fck</span> <span class="o">/</span> <span class="n">γc</span>
+
+    <span class="k">if</span> <span class="n">fywk</span><span class="o">&lt;</span><span class="mf">0.8</span><span class="o">*</span><span class="n">fyk</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">fck</span> <span class="o">&lt;=</span> <span class="mi">60</span><span class="p">:</span>
+            <span class="n">v1</span> <span class="o">=</span> <span class="mf">0.6</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">v1</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.9</span><span class="o">-</span><span class="n">fck</span><span class="o">/</span><span class="mi">200</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">v1</span> <span class="o">=</span> <span class="mf">0.6</span> <span class="o">*</span> <span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">fck</span><span class="o">/</span><span class="mi">250</span><span class="p">)</span>
+
+    <span class="n">_VRdmax</span><span class="p">[</span><span class="s1">&#39;z&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">z</span>
+    <span class="n">_VRdmax</span><span class="p">[</span><span class="s1">&#39;fcd&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">fcd</span>
+    <span class="n">_VRdmax</span><span class="p">[</span><span class="s1">&#39;v1&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">v1</span>
+
+    <span class="n">_VRdmax</span><span class="p">[</span><span class="s1">&#39;value&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">αcw</span> <span class="o">*</span> <span class="n">bw</span> <span class="o">*</span> <span class="n">z</span> <span class="o">*</span> <span class="n">v1</span> <span class="o">*</span> <span class="n">fcd</span>  <span class="o">/</span> <span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">tan</span><span class="p">(</span><span class="n">θ</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="o">/</span><span class="n">math</span><span class="o">.</span><span class="n">tan</span><span class="p">(</span><span class="n">θ</span><span class="p">))</span>
+
+    <span class="k">if</span> <span class="n">units</span> <span class="o">==</span> <span class="s1">&#39;N-mm-rad&#39;</span><span class="p">:</span>
+        <span class="k">pass</span>
+    <span class="k">elif</span> <span class="n">units</span> <span class="o">==</span> <span class="s1">&#39;kN-m-rad&#39;</span><span class="p">:</span>
+        <span class="n">_VRdmax</span><span class="p">[</span><span class="s1">&#39;value&#39;</span><span class="p">]</span> <span class="o">*=</span> <span class="mf">0.001</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">pass</span>
+
+    <span class="k">return</span> <span class="n">_VRdmax</span></div>
+
+
+<div class="viewcode-block" id="VRds"><a class="viewcode-back" href="../../../../../../../codes/eurocodes_ec2_raw.html#streng.codes.eurocodes.ec2.raw.ch6.shear.VRds">[docs]</a><span class="k">def</span> <span class="nf">VRds</span><span class="p">(</span><span class="n">nw</span><span class="p">,</span> <span class="n">diaw</span><span class="p">,</span> <span class="n">d</span><span class="p">,</span> <span class="n">fyk</span><span class="p">,</span> <span class="n">fywk</span><span class="p">,</span> <span class="n">θ</span><span class="p">,</span> <span class="n">s</span><span class="p">,</span> <span class="n">γs</span> <span class="o">=</span> <span class="mf">1.15</span><span class="p">,</span> <span class="n">units</span><span class="o">=</span><span class="s1">&#39;N-mm-rad&#39;</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot; Shear resistance for members with vertical shear reinforcement :math:`V_{Rd,s}` [N]</span>
+
+<span class="sd">    Units are &#39;N-mm-rad&#39;, unless specified otherwise. Alternative options are: &#39;kN-m-rad&#39;</span>
+
+<span class="sd">    .. highlight:: python</span>
+<span class="sd">    .. code-block:: python</span>
+<span class="sd">       :linenos:</span>
+
+<span class="sd">        vrds = shear.VRds(nw=2.,</span>
+<span class="sd">                          diaw = 8,</span>
+<span class="sd">                          d=539,</span>
+<span class="sd">                          fyk=500.,</span>
+<span class="sd">                          fywk=500.,</span>
+<span class="sd">                          θ=np.pi/4,</span>
+<span class="sd">                          s = 169,</span>
+<span class="sd">                          γs = 1.15,</span>
+<span class="sd">                          units=&#39;N-mm-rad&#39;)</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        nw (float): number of hoop legs.</span>
+<span class="sd">        diaw (float): hoop bars diameter. [mm]</span>
+<span class="sd">        d (float): Effective depth of the cross-section. [mm]</span>
+<span class="sd">        fyk (float): [N/mm2]</span>
+<span class="sd">        fywk (float): [N/mm2]</span>
+<span class="sd">        θ (float): Τhe angle between the concrete compression strut and the beam axis is the angle</span>
+<span class="sd">            between the concrete compression strut and the beam axis [rad]</span>
+<span class="sd">        s (float): the spacing of the stirrups [mm]</span>
+
+
+<span class="sd">    Returns:</span>
+<span class="sd">        VRds (dict):</span>
+
+<span class="sd">        Result value in [N], unless specified otherwise. Intermediate results are always &#39;N-mm&#39;</span>
+
+<span class="sd">        Given using the expression</span>
+
+<span class="sd">        .. math::</span>
+<span class="sd">            V_{Rd,max} = \dfrac{A_{sw}}{s} \cdot z \cdot f_{ywd} \cdot \cot θ</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="n">units</span> <span class="o">==</span> <span class="s1">&#39;N-mm-rad&#39;</span><span class="p">:</span>
+        <span class="k">pass</span>
+    <span class="k">elif</span> <span class="n">units</span> <span class="o">==</span> <span class="s1">&#39;kN-m-rad&#39;</span><span class="p">:</span>
+        <span class="n">diaw</span> <span class="o">=</span> <span class="mf">1000.</span> <span class="o">*</span> <span class="n">diaw</span>
+        <span class="n">d</span> <span class="o">=</span> <span class="mf">1000.</span> <span class="o">*</span> <span class="n">d</span>
+        <span class="n">fyk</span> <span class="o">=</span> <span class="mf">0.001</span> <span class="o">*</span> <span class="n">fyk</span>
+        <span class="n">fywk</span> <span class="o">=</span> <span class="mf">0.001</span> <span class="o">*</span> <span class="n">fywk</span>
+        <span class="n">s</span> <span class="o">=</span> <span class="mf">1000.</span> <span class="o">*</span> <span class="n">s</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">pass</span>
+
+    <span class="n">_VRds</span> <span class="o">=</span> <span class="p">{}</span>
+
+    <span class="n">z</span> <span class="o">=</span> <span class="mf">0.9</span> <span class="o">*</span> <span class="n">d</span>
+    <span class="n">Asw</span> <span class="o">=</span> <span class="n">nw</span> <span class="o">*</span> <span class="n">math</span><span class="o">.</span><span class="n">pi</span> <span class="o">*</span> <span class="n">diaw</span><span class="o">**</span><span class="mi">2</span> <span class="o">/</span><span class="mi">4</span>
+
+    <span class="k">if</span> <span class="n">fywk</span><span class="o">&lt;</span><span class="mf">0.8</span><span class="o">*</span><span class="n">fyk</span><span class="p">:</span>
+        <span class="n">fywd</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="mf">0.8</span><span class="o">*</span><span class="n">fywk</span><span class="p">,</span> <span class="n">fywk</span><span class="o">/</span><span class="n">γs</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">fywd</span> <span class="o">=</span> <span class="n">fywk</span><span class="o">/</span><span class="n">γs</span>
+
+    <span class="n">_VRds</span><span class="p">[</span><span class="s1">&#39;Asw&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">Asw</span>
+    <span class="n">_VRds</span><span class="p">[</span><span class="s1">&#39;fywd&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">fywd</span>
+
+    <span class="n">_VRds</span><span class="p">[</span><span class="s1">&#39;value&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">Asw</span> <span class="o">/</span> <span class="n">s</span><span class="p">)</span> <span class="o">*</span> <span class="n">z</span> <span class="o">*</span> <span class="n">fywd</span> <span class="o">*</span> <span class="p">(</span><span class="mf">1.</span><span class="o">/</span><span class="n">math</span><span class="o">.</span><span class="n">tan</span><span class="p">(</span><span class="n">θ</span><span class="p">))</span>
+
+
+
+    <span class="k">if</span> <span class="n">units</span> <span class="o">==</span> <span class="s1">&#39;N-mm-rad&#39;</span><span class="p">:</span>
+        <span class="k">pass</span>
+    <span class="k">elif</span> <span class="n">units</span> <span class="o">==</span> <span class="s1">&#39;kN-m-rad&#39;</span><span class="p">:</span>
+        <span class="n">_VRds</span><span class="p">[</span><span class="s1">&#39;value&#39;</span><span class="p">]</span> <span class="o">*=</span> <span class="mf">0.001</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">pass</span>
+
+    <span class="k">return</span> <span class="n">_VRds</span></div>
+
+</pre></div>
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, panagop
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../../../../../" src="../../../../../../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../../../../../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../../../../../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../../../../../../_static/doctools.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script type="text/javascript" src="https://unpkg.com/mermaid@7.1.0/dist/mermaid.min.js"></script>
+    
+
+  
+
+  <script type="text/javascript" src="../../../../../../../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

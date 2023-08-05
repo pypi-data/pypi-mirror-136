@@ -1,0 +1,286 @@
+ R E I N F O R C E D   C O N C R E T E   C O L U M N   A N A L Y S I S  
+ PROGRAM RCCOLA-90    PROPERTIES OF REINFORCED CONCRETE CROSS-SECTIONS
+
+
+ ***********************************************************************
+ Title 
+ ***********************************************************************
+
+
+ GENERAL STEEL PLACEMENT
+
+   DEPTH  NO OF BARS  ' BAR AREA     IBUC
+    (m)                 (cm**2)
+   0.255       3        1.54000
+  -0.255       3        1.54000
+ MATERIAL PROPERTIES -- STEEL
+     YIELD STRESS        =     440.0 MPa
+     YOUNGS MODULUS      =  200000.0 MPa
+     STRAIN AT ONSET OF
+        STRAIN HARDENING =  0.010000 m/m
+     STRAIN HARDENING
+        MODULUS          =   3666.67 MPa
+     MAXIMUM STRAIN      =  0.100000 m/m
+     MAXIMUM STRESS      =     550.0 MPa
+
+
+ TRANSVERSE REINFORCEMENT
+     YIELD STRESS   =    440.00 MPa
+     AREA/SPACING   =    1.0000 cm**2
+     NO OF LEGS     =      2.00
+     SPACING        =    0.2000 m
+     COLUMN LENGTH  =    4.0000 m
+
+
+ MATERIAL PROPERTIES -- CONCRETE
+
+    Kappos (1990) model
+
+     Cylinder strength =    24.0000 MPa
+     Tie spacing       =     0.2000   m 
+     Tie/core ratio    =     0.0037 vol/vol
+     No of interm. bars=     0.0000
+     Stength factor    =     1.0731
+     Slope Z           =   102.5344
+
+     Ultimate strain   =    0.00433
+
+
+         STRAIN    STRESS
+        ( m/m )     (MPa)
+        0.00000     0.000
+        0.00023     4.893
+        0.00046     9.272
+        0.00069    13.135
+        0.00092    16.483
+        0.00115    19.316
+        0.00138    21.634
+        0.00161    23.437
+        0.00184    24.724
+        0.00207    25.497
+        0.00230    25.755
+        0.00962     6.439
+        0.05962     6.439
+
+*** ATTENTION : ***
+ Slenderness of longitudinal bars too high -> Early buckling expected ! 
+
+      A =  57.13 > Amax =  44.00
+
+  No of intermediate bars per side :0
+  Strain at first hoop fracture    :    0.012850
+  Strain at buckling of long. bars :    0.004000
+
+  Ultimate conc. strain considered :    0.012850
+
+
+ YOUNGS MODULUS FOR CONCRETE=   28784.8 MPa
+ EQUILIBRIUM CALCULATED FOR THE FOLLOWING
+ CONCRETE COMPRESSIVE STRAINS
+
+         M         STRAIN
+
+0       0.000000
+1       0.001000
+2       0.002000
+3       0.003000
+4       0.003500
+5       0.004000  CONFINED SECTION ONLY
+6       0.005000  CONFINED SECTION ONLY
+7       0.006000  CONFINED SECTION ONLY
+8       0.007000  CONFINED SECTION ONLY
+9       0.008000  CONFINED SECTION ONLY
+10       0.009000  CONFINED SECTION ONLY
+11       0.010000  CONFINED SECTION ONLY
+12       0.011000  CONFINED SECTION ONLY
+13       0.012000  CONFINED SECTION ONLY
+14       0.013000  CONFINED SECTION ONLY
+15       0.014000  CONFINED SECTION ONLY
+16       0.015000  CONFINED SECTION ONLY
+17       0.016000  CONFINED SECTION ONLY
+18       0.018000  CONFINED SECTION ONLY
+19       0.020000  CONFINED SECTION ONLY
+20       0.022000  CONFINED SECTION ONLY
+21       0.024000  CONFINED SECTION ONLY
+22       0.026000  CONFINED SECTION ONLY
+23       0.028000  CONFINED SECTION ONLY
+24       0.030000  CONFINED SECTION ONLY
+
+
+ GENERAL CONCRETE SECTION GEOMETRY
+
+      -------INITIAL SECTION-------- -------CONFINED SECTION-------
+ LAYER          DEPTH           AREA          DEPTH           AREA
+
+     1        0.29500        0.01700        0.26157        0.00161
+     2        0.28500        0.01700        0.25270        0.00161
+     3        0.27500        0.01700        0.24383        0.00161
+     4        0.26500        0.01700        0.23497        0.00161
+     5        0.25500        0.01700        0.22610        0.00161
+     6        0.24500        0.01700        0.21723        0.00161
+     7        0.23500        0.01700        0.20837        0.00161
+     8        0.22500        0.01700        0.19950        0.00161
+     9        0.21500        0.01700        0.19063        0.00161
+    10        0.20500        0.01700        0.18177        0.00161
+    11        0.19500        0.01700        0.17290        0.00161
+    12        0.18500        0.01700        0.16403        0.00161
+    13        0.17500        0.01700        0.15517        0.00161
+    14        0.16500        0.01700        0.14630        0.00161
+    15        0.15500        0.01700        0.13743        0.00161
+    16        0.14500        0.00250        0.12857        0.00161
+    17        0.13500        0.00250        0.11970        0.00161
+    18        0.12500        0.00250        0.11083        0.00161
+    19        0.11500        0.00250        0.10197        0.00161
+    20        0.10500        0.00250        0.09310        0.00161
+    21        0.09500        0.00250        0.08423        0.00161
+    22        0.08500        0.00250        0.07537        0.00161
+    23        0.07500        0.00250        0.06650        0.00161
+    24        0.06500        0.00250        0.05763        0.00161
+    25        0.05500        0.00250        0.04877        0.00161
+    26        0.04500        0.00250        0.03990        0.00161
+    27        0.03500        0.00250        0.03103        0.00161
+    28        0.02500        0.00250        0.02217        0.00161
+    29        0.01500        0.00250        0.01330        0.00161
+    30        0.00500        0.00250        0.00443        0.00161
+    31       -0.00500        0.00250       -0.00443        0.00161
+    32       -0.01500        0.00250       -0.01330        0.00161
+    33       -0.02500        0.00250       -0.02217        0.00161
+    34       -0.03500        0.00250       -0.03103        0.00161
+    35       -0.04500        0.00250       -0.03990        0.00161
+    36       -0.05500        0.00250       -0.04877        0.00161
+    37       -0.06500        0.00250       -0.05763        0.00161
+    38       -0.07500        0.00250       -0.06650        0.00161
+    39       -0.08500        0.00250       -0.07537        0.00161
+    40       -0.09500        0.00250       -0.08423        0.00161
+    41       -0.10500        0.00250       -0.09310        0.00161
+    42       -0.11500        0.00250       -0.10197        0.00161
+    43       -0.12500        0.00250       -0.11083        0.00161
+    44       -0.13500        0.00250       -0.11970        0.00161
+    45       -0.14500        0.00250       -0.12857        0.00161
+    46       -0.15500        0.00250       -0.13743        0.00161
+    47       -0.16500        0.00250       -0.14630        0.00161
+    48       -0.17500        0.00250       -0.15517        0.00161
+    49       -0.18500        0.00250       -0.16403        0.00161
+    50       -0.19500        0.00250       -0.17290        0.00161
+    51       -0.20500        0.00250       -0.18177        0.00161
+    52       -0.21500        0.00250       -0.19063        0.00161
+    53       -0.22500        0.00250       -0.19950        0.00161
+    54       -0.23500        0.00250       -0.20837        0.00161
+    55       -0.24500        0.00250       -0.21723        0.00161
+    56       -0.25500        0.00250       -0.22610        0.00161
+    57       -0.26500        0.00250       -0.23497        0.00161
+    58       -0.27500        0.00250       -0.24383        0.00161
+    59       -0.28500        0.00250       -0.25270        0.00161
+    60       -0.29500        0.00250       -0.26157        0.00161
+
+
+ GROSS SECTION
+ TRANSFORMED AREA      =       0.372996  m**2
+ MOMENT OF INERTIA     =       0.022694  m**4
+ RADIUS OF GYRATION    =         0.2467  m
+
+
+ CONFINED SECTION
+ TRANSFORMED AREA      =       0.102320  m**2
+ MOMENT OF INERTIA     =       0.002640  m**4
+ RADIUS OF GYRATION    =         0.1606  m
+
+
+
+ PARAMETERS FOR SHEAR STRENGTH EVALUATION
+    BASED ON REINFORCEMENT ON TENSILE
+    SIDE OF SECTION MID-DEPTH
+
+  INITIAL CROSS-SECTION
+    EFFECTIVE DEPTH =    0.5550  m
+    TENSILE STEEL   =  0.000462  m**2
+
+
+  CONFINED CROSS-SECTION
+    EFFECTIVE DEPTH =    0.5210  m
+    TENSILE STEEL   =  0.000462  m**2
+
+
+
+
+*** COLUMN  INTERACTION  VALUES ***
+
+ Uniaxial compression
+
+  M      CONCRETE          LOAD
+          STRAIN
+          ( m/m )         ( MN )
+
+  1        0.00100          6.582   INITIAL CROSS-SECTION
++                                                  PL.CENTROID =    0.1298m
+  1        0.00100          1.858   CONFINED CROSS-SECTION
+  2        0.00200          9.627   INITIAL CROSS-SECTION
++                                                  PL.CENTROID =    0.1284m
+  2        0.00200          2.791   CONFINED CROSS-SECTION
+  3        0.00300          9.173   INITIAL CROSS-SECTION
++                                                  PL.CENTROID =    0.1276m
+  3        0.00300          2.700   CONFINED CROSS-SECTION
+  4        0.00350          8.689   INITIAL CROSS-SECTION
++                                                  PL.CENTROID =    0.1273m
+  4        0.00350          2.573   CONFINED CROSS-SECTION
+  5        0.00400          2.447   CONFINED CROSS-SECTION
+  6        0.00500          2.193   CONFINED CROSS-SECTION
+  7        0.00600          1.940   CONFINED CROSS-SECTION
+  8        0.00700          1.687   CONFINED CROSS-SECTION
+  9        0.00800          1.434   CONFINED CROSS-SECTION
+ 10        0.00900          1.180   CONFINED CROSS-SECTION
+ 11        0.01000          1.024   CONFINED CROSS-SECTION
+ 12        0.01100          1.027   CONFINED CROSS-SECTION
+ 13        0.01200          1.031   CONFINED CROSS-SECTION
+ 14        0.01300          1.034   CONFINED CROSS-SECTION
+ 15        0.01400          1.037   CONFINED CROSS-SECTION
+ 16        0.01500          1.040   CONFINED CROSS-SECTION
+ 17        0.01600          1.043   CONFINED CROSS-SECTION
+ 18        0.01800          1.049   CONFINED CROSS-SECTION
+ 19        0.02000          1.054   CONFINED CROSS-SECTION
+ 20        0.02200          1.060   CONFINED CROSS-SECTION
+ 21        0.02400          1.064   CONFINED CROSS-SECTION
+ 22        0.02600          1.069   CONFINED CROSS-SECTION
+ 23        0.02800          1.074   CONFINED CROSS-SECTION
+ 24        0.03000          1.078   CONFINED CROSS-SECTION
+
+
+ 25      -0.00220        -0.407   INITIAL CROSS-SECTION
+ 25      -0.00220        -0.407   CONFINED CROSS-SECTION
+ 26      -0.10000        -0.508   INITIAL CROSS-SECTION
+ 26      -0.10000        -0.508   CONFINED CROSS-SECTION
+
+
+
+ Uniaxial Bending
+
+        åc        N        M   M/My    1/r    Yield    ås       x     V     M(V)
+      (m/m)     (MN)    (MN.m)       (rad/m)  Ductl.  (m/m)    (m)   (MN)  (MN.m)
+
+
+ 1 A 0.00022   0.0000   0.1091 0.00  0.004360  0.00 -0.00220  0.050  0.235  0.470
+   B 0.00000   0.0000   0.0000 0.00  0.000000  0.00  0.00000  0.000  0.000  0.000
+   C 0.00286   0.0000   0.1471 1.35  0.185332 42.51 -0.10000  0.015  0.235  0.470
+   1 0.00100   0.0000   0.1275 1.17  0.048762 11.18 -0.02606  0.021  0.235  0.470
+   2 0.00200   0.0000   0.1455 1.33  0.117765 27.01 -0.06336  0.017  0.235  0.470
+   3 0.00300   0.0000   0.1478 1.35  0.194921 44.71 -0.10518  0.015  0.235  0.470
+   4 0.00350   0.0000   0.1478 1.35  0.229198 52.57 -0.12370  0.015  0.235  0.470
+
+
+ 1 A 0.00067   0.0000   0.0984 0.90  0.005512  1.26  0.00000  0.122  0.191  0.383
+   B 0.00649   0.0000   0.1302 1.19  0.389758 89.40  0.00000  0.017  0.191  0.383
+   C 0.00427   0.0000   0.1297 1.19  0.200128 45.90  0.00000  0.021  0.191  0.383
+   1 0.00100   0.0000   0.1012 0.93  0.013333  3.06  0.00000  0.075  0.191  0.383
+   2 0.00200   0.0000   0.1155 1.06  0.053333 12.23  0.00000  0.037  0.191  0.383
+   3 0.00300   0.0000   0.1262 1.16  0.111304 25.53  0.00000  0.027  0.191  0.383
+   4 0.00350   0.0000   0.1291 1.18  0.143288 32.87  0.00000  0.024  0.191  0.383
+   5 0.00400   0.0000   0.1286 1.18  0.180699 41.45  0.00000  0.022  0.191  0.383
+   6 0.00500   0.0000   0.1299 1.19  0.262834 60.29  0.00000  0.019  0.191  0.383
+   7 0.00600   0.0000   0.1302 1.19  0.348029 79.83  0.00000  0.017  0.191  0.383
+   8 0.00700   0.0000   0.1308 1.20  0.406034 93.13  0.00000  0.017  0.191  0.383
+   9 0.00800   0.0000   0.1306 1.20  0.464039106.44  0.00000  0.017  0.191  0.383
+  10 0.00900   0.0000   0.1303 1.19  0.522043119.74  0.00000  0.017  0.191  0.383
+  11 0.01000   0.0000   0.1297 1.19  0.580048133.04  0.00000  0.017  0.191  0.383
+  12 0.01100   0.0000   0.1287 1.18  0.638053146.35  0.00000  0.017  0.191  0.383
+  13 0.01200   0.0000   0.1288 1.18  0.519970119.26  0.00000  0.023  0.191  0.383
+  14 0.01300   0.0000   0.1288 1.18  0.563300129.20  0.00000  0.023  0.191  0.383
