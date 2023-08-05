@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: grafico-fit
+Version: 1.5.0
+Summary: Package per generare grafici di fit partendo da dati in fogli Excel
+Home-page: https://gitlab.com/cremo_sns/json_fit.git
+Author: Luca Cremonesi
+Author-email: luca.cremonesi@sns.it
+License: UNKNOWN
+Project-URL: Bug Tracker, https://gitlab.com/cremo_sns/json_fit/-/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# Generazione grafici da dati in un foglio Excel
+Il package contiene due funzioni:
+- `fit()`
+- `tabella()`
+Entrambe permettono di leggere dati da un file excel in cui i titoli di colonna riportano l'unità di misura tra parentesi quadre
+### fit
+La funzione fit crea:
+- un file pdf contenente il grafico di fit e il grafico dei residui
+- un file LaTeX contenete la tabella dei parametri ottimali della funzione usata per il fit
+I dati sono presi da colonne di un foglio Excel.
+
+
+### tabella
+La funzione crea un file .tex contenente una tabella i cui valori vengono estratti da un foglio Excel
+
+##### Requirement
+per compilare il file LaTeX contenete una tabella generata da `tabella()` è necessario importare i package:
+- `\usepackage{booktabs}`
+- `\usepackage{longtable}`
+
