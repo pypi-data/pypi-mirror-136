@@ -1,0 +1,13 @@
+dbaas_base_provider-0.0.24.dist-info/pydist.json,sha256=kccq-mRKEAmVWg9L8ltMOchat8o_wH-t9on_udXHr20,628
+dbaas_base_provider-0.0.24.dist-info/RECORD,,
+dbaas_base_provider-0.0.24.dist-info/WHEEL,sha256=jx4md2OeWpJJtJ50Nv8GdVvDuIwobDJ90zAogFZrGJc,93
+dbaas_base_provider-0.0.24.dist-info/DESCRIPTION.rst,sha256=m9k3S1GGsLp86xZmzu71lG7G1U-wsfInBBdQjTlIkPc,326
+dbaas_base_provider-0.0.24.dist-info/top_level.txt,sha256=LdsylAZr9uQhtrQZ1MgUeigrZ2sC5LahghQnslOPzQw,20
+dbaas_base_provider-0.0.24.dist-info/METADATA,sha256=HH36ZHOcXERF0VC6lf82qCwd5p7hVPoSXXDtfV0Zf7M,779
+dbaas_base_provider/version.py,sha256=P3HEkYrQY_hgsiUjRF3VD8nV-e_18eXM3t8rxd0ShxY,266
+dbaas_base_provider/log.py,sha256=_3Jrudcb_qwCSnjgOLc8fYFAnxbbb-Sb_piGCoQlddc,1643
+dbaas_base_provider/baseCredential.py,sha256=E5hE-GqiHxqoi1lIXwZz-rYMpNUvNhkgM1jyQrpYKgM,2267
+dbaas_base_provider/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dbaas_base_provider/team.py,sha256=hxJdU6jvkfQ087Qai_fYU0ZX-rfmPu_NwRC2Y-gXcAQ,1466
+dbaas_base_provider/baseProvider.py,sha256=dE9R14xo7NNacLeXyzhU9s3n8ReGYUkCffRRNa7FDbg,5414
+dbaas_base_provider/base.py,sha256=EQ5nK1mEh3OoiYjxtlA7RePHWQYlE9Psl1gU_cf4CvM,421
