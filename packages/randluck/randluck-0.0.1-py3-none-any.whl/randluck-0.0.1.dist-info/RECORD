@@ -1,0 +1,11 @@
+randluck/__init__.py,sha256=axbSFiOr5zIOPTTaq2Wj6WVWQhPEUlXxBPyFC-XUbBA,42
+randluck/random_seed.py,sha256=M9BIGDeB74ysT87WJ8QquDaNrRzVn-OO3FHOryn1yes,589
+randluck/utils.py,sha256=GiEjF9XS0qevyF468wivRsb7pEoQtsUutteEV9uufpA,222
+randluck/strategies/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+randluck/strategies/bazi.py,sha256=fzc9QkMF42aTIDpa8Wr0ZHcptrtq4g7Xv4xBElVCJdg,2456
+randluck/strategies/lucky_num.py,sha256=SyuxH_SJKeCdAnEkv9GMTMj1U-3Ak-mV4zg7Xc52zPw,913
+randluck-0.0.1.dist-info/LICENSE,sha256=vrfmnbg_LVZ1-O7aO_CTmICgiKPBIqHSU_BcdrNDiZw,1098
+randluck-0.0.1.dist-info/METADATA,sha256=NkieHE7PXOO0nVzOfwQ60Ugf04b_P8irQVbJZy2XjWw,2739
+randluck-0.0.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+randluck-0.0.1.dist-info/top_level.txt,sha256=JqYH0QwdRq5Av_z6U0GNSxEg1JvHCX_IeEmVFQZj6Lc,9
+randluck-0.0.1.dist-info/RECORD,,
