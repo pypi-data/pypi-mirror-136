@@ -1,0 +1,12 @@
+mindset/__init__.py,sha256=0JXZc0JKYtZbktYSn6MOkRni2uRfMxOg9qXVUSRXg1Y,52
+mindset/__version__.py,sha256=qaxJTgR-rP1lAi0cjLKNqYZ-dAg8G1tZd7jBqWy449c,427
+mindset/api_requests.py,sha256=os3rzxmHWc4KkhSYEW3Oz-h0NV9N9XG5Ty3U2OIcQ8Y,5324
+mindset/utils/__init__.py,sha256=jtQ70iPNox437lC3oAZU_osauQ8oXxTUN1ogeDM1kCA,97
+mindset/utils/date_utils.py,sha256=gfua9DRYN68EwEqo9u-yc0UrNjvXsBT-UjAbJwzypzs,112
+mindset/utils/request_base.py,sha256=o5lnKb_y04TMq-TBdWcYjciJs2CmcPozEcvxp5jwlo4,2658
+mindset/utils/tools.py,sha256=zZ7ppYF_md3KFz6csRM1FZAVN3U3mfMQyUsth06yQ0c,1253
+lins_mindsetrequests-2.2.2.dist-info/LICENSE,sha256=U31PGGsC9Mt7tSnbMa6_SYuNEJlli1V9SfY9pu99_4A,1075
+lins_mindsetrequests-2.2.2.dist-info/METADATA,sha256=e-bWZZ5aywsCxmh_ElnL3T5dbGNpgy0NFhZ2RLG313A,9329
+lins_mindsetrequests-2.2.2.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+lins_mindsetrequests-2.2.2.dist-info/top_level.txt,sha256=t4vhp4SCF0AwSoDPbw3mE031TUgDOH2ERfytG4Mjc9U,8
+lins_mindsetrequests-2.2.2.dist-info/RECORD,,
