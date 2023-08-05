@@ -1,0 +1,12 @@
+TEDEouS/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+TEDEouS/cache.py,sha256=19jsB1B9HIBlfd8d3zy-AXqebUnEC_nSlynX-628IE8,4348
+TEDEouS/finite_diffs.py,sha256=W_fTh2HbbTbdVwOdiausGp60xgDhnglUaEs0SRvSjNo,9353
+TEDEouS/input_preprocessing.py,sha256=TRsyPuw3dCJIO_Cw457uVXaovzz5jEl5whNUAApm-6U,13538
+TEDEouS/metrics.py,sha256=k6cinwbIaYGqXJQb05vX4GOwCyooqIKtodvcDwfEONI,8588
+TEDEouS/points_type.py,sha256=IGqpfyzGCqw4DJj3ONVaGGy86Mm3V7-6Etn7mZkXx4o,3869
+TEDEouS/solver.py,sha256=9eto98SbzaN0_LVWyjoOft7MyRtwUxtK-3cfm74ppbg,5184
+TEDEouS/torch_rbf.py,sha256=VGr_db_5o6vHe8WPLXZZVY07L4WNOamFk4bpjZhPTdc,3504
+TEDEouS-0.0.4.dist-info/METADATA,sha256=BGFmDsxC4SY574Yy7BQfr8yUjFMCPcrpVHMMByDe2AA,554
+TEDEouS-0.0.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+TEDEouS-0.0.4.dist-info/top_level.txt,sha256=MdPttrQWdfLx1ChmHmS1xn7Nrdur2-z0xBmQg7KBMHg,8
+TEDEouS-0.0.4.dist-info/RECORD,,
