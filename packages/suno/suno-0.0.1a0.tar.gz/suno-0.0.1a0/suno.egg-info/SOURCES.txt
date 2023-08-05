@@ -1,0 +1,9 @@
+.gitignore
+README.md
+setup.py
+suno/__init__.py
+suno/notebook_helpers.py
+suno.egg-info/PKG-INFO
+suno.egg-info/SOURCES.txt
+suno.egg-info/dependency_links.txt
+suno.egg-info/top_level.txt
