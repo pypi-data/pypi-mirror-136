@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/helm_package/__init__.py
+src/helm_package.egg-info/PKG-INFO
+src/helm_package.egg-info/SOURCES.txt
+src/helm_package.egg-info/dependency_links.txt
+src/helm_package.egg-info/top_level.txt
+src/helm_package/bin/macos/helm2
+src/helm_package/bin/macos/helm3
+src/helm_package/bin/windows/helm2.exe
+src/helm_package/bin/windows/helm3.exe
