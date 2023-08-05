@@ -1,0 +1,11 @@
+pandas
+requests
+ratelimiter
+shapely
+sickle
+numpy
+
+[dev]
+pdoc3
+build
+twine
