@@ -1,0 +1,13 @@
+LICENSE.md
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+versioneer.py
+snppy/__init__.py
+snppy/_version.py
+snppy.egg-info/PKG-INFO
+snppy.egg-info/SOURCES.txt
+snppy.egg-info/dependency_links.txt
+snppy.egg-info/requires.txt
+snppy.egg-info/top_level.txt

@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: snppy
+Version: 0.1.2
+Summary: Codebase for running common variant association analyses.
+Home-page: https://github.com/alpha-team-genetics/snppy
+Author: Tarjinder Singh
+Author-email: tsingh@broadinstitute.org
+License: MIT license
+Platform: UNKNOWN
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+
+# snppy
+
+## Overview
+
+## Main Features
+
+## Installation
+
+## Usage
+
+## Cite
+
+## Maintainer
+
+[Tarjinder Singh @ tsingh@broadinstitute.org](tsingh@broadinstitute.org)
+
+## Acknowledgements
+
+## Release Notes
+
