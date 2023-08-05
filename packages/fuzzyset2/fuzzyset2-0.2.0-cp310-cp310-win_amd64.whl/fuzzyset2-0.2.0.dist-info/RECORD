@@ -1,0 +1,6 @@
+cfuzzyset.cp310-win_amd64.pyd,sha256=pwwgLPYRW4x8CKWyaJ7jepfpKD17xiCwM5lME5hmDTY,70144
+fuzzyset/__init__.py,sha256=Q5pwf-KjeuNFaF1owql4WUTByhp8qCakDeLkH2xq7mU,4022
+fuzzyset2-0.2.0.dist-info/METADATA,sha256=SHponG2-hi4QvcDU9kTHGdCkMg2-G4SfBYHjmwhOOqc,5001
+fuzzyset2-0.2.0.dist-info/WHEEL,sha256=W26pYN7HLsBT1jrDSL9udgf_mdNKJmYmL23sIP-FcgM,102
+fuzzyset2-0.2.0.dist-info/top_level.txt,sha256=zIRTXD6K1FYlKgy_dSf8ofoSrkqugxSWmnyt2ziAeyQ,19
+fuzzyset2-0.2.0.dist-info/RECORD,,
