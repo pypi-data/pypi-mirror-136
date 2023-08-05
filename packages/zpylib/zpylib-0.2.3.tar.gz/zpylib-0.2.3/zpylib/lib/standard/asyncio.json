@@ -1,0 +1,19 @@
+{
+    "name":"asyncio",
+    "zpy":"asyncio",
+    "functions":[],
+    "args":[
+        {
+            "name":"sleep",
+            "zpy":"睡眠"
+        },
+        {
+            "name":"main",
+            "zpy":"主要部分"
+        },
+        {
+            "name":"asyncio",
+            "zpy":"同步输入输出"
+        }
+    ]
+}

@@ -1,0 +1,19 @@
+{
+    "name":"types",
+    "zpy":"打字（type的第三人称单数形式）",
+    "functions":[
+        {
+            "name":"deepcopy",
+            "zpy":"深拷贝"
+        },
+        {
+            "name":"Error",
+            "zpy":"错误"
+        },
+        {
+            "name":"copy",
+            "zpy":"副本"
+        }
+    ],
+    "args":[]
+}

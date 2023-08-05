@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: zpylib
+Version: 0.2.3
+Summary: Zpy Lib - Chinese programming lib
+Home-page: https://github.com/louisyoungx/zpy-lib
+Author: louisyoungx
+Author-email: 1462648167@qq.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/louisyoungx/zpy-lib/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Zpy Lib
+
+Zpy Lib - Chinese programming lib
+
+
+
+## 快速开始
+
+1. 通过pip安装
+
+```shell
+pip install zpylib
+```
+
+2. 创建后缀为`.zpy`的文件（例：`test.zpy`）
+
+```shell
+touch test.zpy
+```
+
+3. 编写代码
+
+```zpy
+星星数 = 12
+如果 星星数 % 2 != 1:
+    星星数 += 1
+对于 层数 在 范围(舍入((星星数-1)/2)+1):
+    星星 = '*'*(层数*2+1)
+    打印(星星.center(星星数, " "))
+```
+
+4. 通过命令行运行文件
+
+```shell
+zpy run test.zpy
+```
+
+5. 编译成python文件
+
+```shell
+zpy build test.zpy
+```
+
+
+
