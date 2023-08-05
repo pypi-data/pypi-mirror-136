@@ -1,0 +1,17 @@
+setup.py
+igi_diskos_reader/__init__.py
+igi_diskos_reader/app.py
+igi_diskos_reader/reader.py
+igi_diskos_reader/spec.py
+igi_diskos_reader/utils.py
+igi_diskos_reader/validation.py
+igi_diskos_reader/writer.py
+igi_diskos_reader.egg-info/PKG-INFO
+igi_diskos_reader.egg-info/SOURCES.txt
+igi_diskos_reader.egg-info/dependency_links.txt
+igi_diskos_reader.egg-info/requires.txt
+igi_diskos_reader.egg-info/top_level.txt
+igi_diskos_reader/sender_specific/__init__.py
+igi_diskos_reader/sender_specific/id_decomposition.py
+igi_diskos_reader/sender_specific/merge.py
+igi_diskos_reader/sender_specific/transformations.py

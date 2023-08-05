@@ -1,0 +1,3 @@
+openpyxl
+pandas
+igi-file-transformation-contract

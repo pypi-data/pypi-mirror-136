@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: igi-diskos-reader
+Version: 0.0.5
+Summary: Diskos -> Excel Conversion
+Home-page: https://github.com/IGILtd/data_transformation_scripts/tree/master/import_file_formats/diskos
+Author: IGI
+Author-email: chris.prosser@igiltd.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Database
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Interface Engine/Protocol Translator
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Pre-processors
+Classifier: Topic :: Text Processing
+Classifier: Typing :: Typed
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+Parse Diskos file and generate Excel sheets.
+
