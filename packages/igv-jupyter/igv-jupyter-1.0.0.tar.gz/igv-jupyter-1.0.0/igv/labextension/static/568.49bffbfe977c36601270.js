@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_igvteam_igv_jupyter=self.webpackChunk_igvteam_igv_jupyter||[]).push([[568],{568:(_,e,i)=>{i.r(e),i.d(e,{init_comm_nb:()=>t.init_comm_nb}),i(745),i(2);var t=i(480)}}]);
