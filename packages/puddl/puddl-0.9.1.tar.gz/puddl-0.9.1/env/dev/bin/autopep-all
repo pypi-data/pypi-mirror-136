@@ -1,0 +1,4 @@
+#!/bin/bash
+set -euo pipefail
+
+autopep8 --in-place $(find . -type f -name '*.py')

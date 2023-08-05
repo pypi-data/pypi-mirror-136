@@ -1,0 +1,85 @@
+#!/bin/bash
+set -euo pipefail
+
+tmpdir=/tmp/puddl-git-api-documentation-generator
+rm -rf $tmpdir
+git init $tmpdir
+cd $tmpdir
+
+git commit --allow-empty -F - <<EOF
+REST API
+
+GET /data.js
+
+  Returns "window.exif_data = [<json objects>]".
+
+  html:
+
+    <script src="./data.js"></script>
+
+  js:
+
+    for (var x of window.exif_data) {
+      console.log(x);
+    }
+EOF
+
+git commit --allow-empty -F - <<EOF
+REST API
+
+GET /something_else.js
+
+  Returns "window.something_else = [<json objects>]".
+
+  html:
+
+    <script src="./something_else.js"></script>
+
+  js:
+
+    for (var x of window.something_else) {
+      console.log(x);
+    }
+EOF
+
+# expected
+tmp=$(mktemp "${TMPDIR:-/tmp}/$(basename $0).XXXXXXXXXX")
+finally() {
+  exit_code=$?
+  rm $tmp
+  exit $exit_code
+}
+trap finally SIGINT EXIT
+cat <<EOF > $tmp
+GET /data.js
+
+  Returns "window.exif_data = [<json objects>]".
+
+  html:
+
+    <script src="./data.js"></script>
+
+  js:
+
+    for (var x of window.exif_data) {
+      console.log(x);
+    }
+
+GET /something_else.js
+
+  Returns "window.something_else = [<json objects>]".
+
+  html:
+
+    <script src="./something_else.js"></script>
+
+  js:
+
+    for (var x of window.something_else) {
+      console.log(x);
+    }
+EOF
+
+# actual vs expected
+set -x
+diff <(puddl-git-api-documentation-generator) $tmp

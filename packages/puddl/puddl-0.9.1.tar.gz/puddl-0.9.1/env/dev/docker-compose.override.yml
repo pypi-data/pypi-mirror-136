@@ -1,0 +1,43 @@
+version: '3.7'
+
+services:
+  # rest:
+  #   image: postgrest/postgrest
+  #   environment:
+  #     PGRST_DB_URI: postgres://${PGUSER}:${PGPASSWORD}@db/${PGDATABASE}?application_name=postgrest
+  #     PGRST_DB_ANON_ROLE: ${PGUSER}
+  #   ports:
+  #     - 127.0.0.1:8021:3000
+  #   restart: unless-stopped
+  # swagger:
+  #   image: swaggerapi/swagger-ui
+  #   ports:
+  #     - 127.0.0.1:8022:8080
+  # pgadmin:
+  #   image: dpage/pgadmin4
+  #   ports:
+  #     - 127.0.0.1:8023:80
+  #   environment:
+  #     PGADMIN_DEFAULT_EMAIL: admin@example.com
+  #     PGADMIN_DEFAULT_PASSWORD: ${PGPASSWORD}
+  # franchise:
+  #   image: binakot/franchise
+  #   ports:
+  #     - 127.0.0.1:8024:80
+  #     - 127.0.0.1:14645:14645
+  rsync:
+    build: containers/ingress/rsync/
+    environment:
+      - RSYNC_USER=${HOST_UID}:${HOST_GID}
+    volumes:
+      - ${PUDDL_HOME}/rsync_authorized_keys:/tmp/authorized_keys:ro
+      - rsync_home:/home/rsync
+    ports:
+      - 0.0.0.0:11101:22
+    restart: unless-stopped
+
+volumes:
+  rsync_home:
+    labels:
+      - puddl=0
+      - puddl.dev=true

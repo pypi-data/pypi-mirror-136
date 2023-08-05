@@ -1,0 +1,5 @@
+#!/bin/bash
+set -euo pipefail
+
+repo=$(puddl-sanitize $PWD)
+git diff --no-color HEAD^..HEAD | puddl-ingress git/$repo

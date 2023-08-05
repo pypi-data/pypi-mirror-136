@@ -1,0 +1,11 @@
+#!/usr/bin/env python
+# encoding: utf-8
+import sys
+from pathlib import Path
+
+from tinytag import TinyTag
+
+paths = [Path(x) for x in sys.argv[1:]]
+for path in paths:
+  tag = TinyTag.get(path)
+  print(tag.duration)

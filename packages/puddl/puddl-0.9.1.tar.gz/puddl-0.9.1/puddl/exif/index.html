@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="vendor/leaflet.css" />
+    <link rel="stylesheet" href="vendor/MarkerCluster.min.css" />
+    <link rel="stylesheet" href="vendor/MarkerCluster.Default.min.css" />
+    <link rel="stylesheet" href="screen.css" />
+    <meta charset="utf-8">
+    <title>pix</title>
+  </head>
+  <body>
+    <div id="left">
+      <div id="mapid"></div>
+      <div id="timeline">
+        <div id="plotly"></div>
+      </div>
+    </div>
+    <div id="images"></div>
+    <div id="footer">
+      <pre>loading...</pre>
+    </div>
+    <script src="https://cdn.plot.ly/plotly-2.4.2.min.js"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="vendor/luxon.min.js"></script>
+    <script src="vendor/leaflet.js"></script>
+    <script src="vendor/leaflet.markercluster.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>

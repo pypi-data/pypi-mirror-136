@@ -1,0 +1,10 @@
+HostKey /home/rsync/ssh_host_ed25519_key
+
+PermitRootLogin no
+PasswordAuthentication no
+
+AcceptEnv LANG LC_*
+
+PrintMotd no
+
+Subsystem sftp /usr/lib/ssh/sftp-server

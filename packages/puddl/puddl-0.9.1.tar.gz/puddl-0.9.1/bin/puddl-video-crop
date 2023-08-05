@@ -1,0 +1,17 @@
+#!/bin/bash
+set -euo pipefail
+
+if [[ $# < 2 ]]; then
+  echo "Usage: puddl-video-crop FILE X Y WIDTH HEIGHT OUTFILE"
+  exit 1
+fi
+
+file=$1
+x=$2
+y=$3
+width=$4
+height=$5
+outfile=$6
+
+set -x
+ffmpeg -i $file -vf crop=$width:$height:$x:$y $6

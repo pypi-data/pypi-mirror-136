@@ -1,0 +1,14 @@
+#!/bin/bash
+set -euo pipefail
+
+THUMB_SIZE=200x200
+infile=$1
+outfile=$2
+
+# https://superuser.com/a/275485/182585
+convert $infile \
+  -thumbnail ${THUMB_SIZE}^ \
+  -gravity center \
+  -extent ${THUMB_SIZE} \
+  -auto-orient \
+  $outfile

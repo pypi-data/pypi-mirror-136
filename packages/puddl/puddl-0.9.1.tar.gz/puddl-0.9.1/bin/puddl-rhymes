@@ -1,0 +1,4 @@
+#!/bin/bash
+set -euo pipefail
+
+puddl-curl "https://www.was-reimt-sich-auf.de/$1.html" | puddl-html-css-select '.rhymes > li > a' | head -n ${2:-30}

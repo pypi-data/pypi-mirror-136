@@ -1,0 +1,161 @@
+Metadata-Version: 2.1
+Name: puddl
+Version: 0.9.1
+Summary: UNKNOWN
+Home-page: https://puddl.org
+Author: Felix Hummel
+Author-email: puddl-dev@felixhummel.de
+License: UNKNOWN
+Description: # Prerequisites
+        - Python 3.9 (a virtual environment is recommended)
+        - PostgreSQL
+        
+        
+        # Usage
+        Easily create PostgreSQL databases! The following example creates a database
+        called `foo` and a role (also called `foo`). We then use `psql` to run a simple
+        select statement.
+        ```
+        url=$(puddl-db url foo)
+        psql $url -c 'SELECT 42 as answer'
+        ```
+        
+        List databases and delete a database:
+        ```
+        puddl-db ls
+        puddl-db rm foo
+        ```
+        
+        
+        # Installation
+        ```
+        pip install --upgrade puddl
+        ```
+        
+        If you want to use extended packages like `puddl.exif`, you may install extra
+        dependencies like `pandas`:
+        ```
+        pip install --upgrade puddl[full]
+        ```
+        
+        
+        # Shell Completion
+        The following installs completion for Bash. For other shells please refer to
+        [the click documentation][click-completion]:
+        ```
+        mkdir -p ~/.bash/
+        _PUDDL_DB_COMPLETE=bash_source puddl-db > ~/.bash/puddl-db
+        
+        cat <<'EOF' >> ~/.bashrc
+        [[ -f ~/.bash/puddl-db ]] && source ~/.bash/puddl-db
+        EOF
+        
+        exec $SHELL
+        ```
+        [click-completion]: https://click.palletsprojects.com/en/7.x/bashcomplete/#activation-script
+        
+        
+        # Configuration
+        Prepare your environment and let puddl write a config file to `~/.puddlrc`.
+        You will need a PostgreSQL connection that provides super user privileges for
+        puddl to work in.
+        ```
+        set -o allexport  # makes bash export all variables that get declared
+        PGHOST=127.0.0.1
+        PGPORT=5432
+        PGDATABASE=puddl
+        PGUSER=puddl
+        PGPASSWORD=puddl-pw
+        set +o allexport  # back to default behaviour
+        
+        puddl-config init
+        
+        # check database connection
+        puddl-db health
+        
+        # initialized the `puddl` database with sql functions like `puddl_upsert_role`
+        puddl-db init
+        ```
+        
+        
+        # Development Setup
+        ```
+        install -d ~/hacks
+        cd ~/hacks
+        
+        git clone https://gitlab.com/puddl/puddl.git
+        cd puddl/
+        pip install -e .[full,dev]
+        ```
+        
+        Run code style checks before committing
+        ```
+        ln -s $(readlink -m env/dev/git-hooks/pre-commit) .git/hooks/pre-commit
+        ```
+        
+        Lower the log level to INFO to see what's happening.
+        ```
+        export LOGLEVEL=info
+        ```
+        
+        Initialize the database. The command `puddl-config init` will consume the `.env`
+        file if present in the current working directory.
+        ```
+        cd ~/hacks/puddl/
+        
+        # generate environment variables suitable for development
+        ./env/dev/generate_env_file.sh > .env
+        
+        # write initdb script and start postgres
+        ./env/dev/create_database.sh
+        
+        # based on the environment, write ~/.puddlrc
+        puddl-config init
+        
+        # make sure initialization was successful
+        puddl-db health
+        
+        # apply library sql functions as "puddl" user in "public" schema
+        puddl-db init
+        ```
+        
+        Basic development workflow:
+        ```
+        # hack, hack
+        make
+        ```
+        
+        Got `psql` installed?
+        ```
+        source <(puddl-db env)
+        psql -c '\df'
+        ```
+        
+        Try it:
+        ```
+        cd puddl/felix/exif/
+        cat README.md
+        
+        puddl-db shell exif
+        ```
+        
+        
+        # Using Puddl Databases in Python
+        ```
+        from puddl.pg import DB
+        db = DB('foo')
+        db.engine
+        ```
+        
+        
+        # Rsync Service
+        ```
+        cat ~/.ssh/id_*.pub > $PUDDL_HOME/rsync_authorized_keys
+        ln -s env/dev/docker-compose.override.yml
+        docker-compose build && docker-compose up -d
+        ```
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Provides-Extra: full
+Provides-Extra: dev

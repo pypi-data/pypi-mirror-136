@@ -1,0 +1,13 @@
+.python-version
+*.egg-info
+.coverage
+.env
+.idea
+.vscode
+__pycache__
+build/
+dist/
+
+/docker-compose.override.yml
+
+tests/file/example_file_list.txt

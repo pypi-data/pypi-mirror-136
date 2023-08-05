@@ -1,0 +1,5 @@
+#!/bin/bash
+set -euo pipefail
+
+# https://gist.github.com/davidnunez/1404789#gistcomment-1220924
+adb shell 'pm list packages -f' | sed -e 's/.*=//' | sort
