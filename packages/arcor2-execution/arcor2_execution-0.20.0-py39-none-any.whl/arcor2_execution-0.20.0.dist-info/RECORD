@@ -1,0 +1,11 @@
+arcor2_execution/VERSION,sha256=nuEYxbSbbHscG34r_DIqdhn4vITl6lDRcYPhePZ2gpM,6
+arcor2_execution/__init__.py,sha256=5qUWRZPLDdHrZybntJ-Hseipd7VGf9Ut6nlyFDSfTvs,96
+arcor2_execution/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+arcor2_execution/scripts/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+arcor2_execution/scripts/execution.py,sha256=2eC9eTC_cXpSLZkhtzCOVMVdi1ZyKUeTYcrT95d2sj4,17150
+arcor2_execution-0.20.0.dist-info/METADATA,sha256=OaSJ2_aFLINhxI-qiOVL0HQzucqjsmfe56z8z0G6XT8,5309
+arcor2_execution-0.20.0.dist-info/WHEEL,sha256=ZvcC9yJ-3jt0s3Z9GqWdFU0zAv0WwFaltzmW3pHC9do,93
+arcor2_execution-0.20.0.dist-info/entry_points.txt,sha256=j3CUZ8gsliKcmGnCV6zWiTuk2eQ-AMIiqRhllmiPgbk,78
+arcor2_execution-0.20.0.dist-info/namespace_packages.txt,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+arcor2_execution-0.20.0.dist-info/top_level.txt,sha256=y7w9JIhCBCIez3oJVpHRkk_daqYyy0w4k-UyA9yu7mg,17
+arcor2_execution-0.20.0.dist-info/RECORD,,
