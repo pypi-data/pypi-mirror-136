@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/susee/susee.egg-info/PKG-INFO
+src/susee/susee.egg-info/SOURCES.txt
+src/susee/susee.egg-info/dependency_links.txt
+src/susee/susee.egg-info/requires.txt
+src/susee/susee.egg-info/top_level.txt
