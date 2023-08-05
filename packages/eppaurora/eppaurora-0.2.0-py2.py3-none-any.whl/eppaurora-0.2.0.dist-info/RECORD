@@ -1,0 +1,13 @@
+eppaurora/__init__.py,sha256=trSkiX3j59ZlE9SMDNkm_vdB1PK9KzZ_UkYLioI28wY,784
+eppaurora/brems.py,sha256=8yB7bUzqQrhWi8EiMeiJzJzehaPCra8xaA7wm-WWMns,5225
+eppaurora/conductivity.py,sha256=uoBLQyA1I-FS5i1TAGvUD439E69eSel7YMr-6A_eNYo,5667
+eppaurora/electrons.py,sha256=fE-IjmDWH8W5eY33Z-1mpHtlnnSIlwMpKifWCNL7u-c,9797
+eppaurora/protons.py,sha256=y4KguAJ7Zfj0lKJMRD0GKq7XnuQ7ZRDLXBT_AvfO2IU,3133
+eppaurora/recombination.py,sha256=VWR8nN4wDGLv4bHINvCGBfs_ptogpR1j62OSv6dPig8,3652
+eppaurora/spectra.py,sha256=yjKNKBfb7zcrZCkvmrYg0OGA04mNy2QNXXuvD8YmMZ4,13315
+eppaurora/ssusi.py,sha256=Hyy1sJ1cKbf9pbgcpeV-R8s-Uhp2sUl__2hfnIvwi8M,2583
+eppaurora-0.2.0.dist-info/LICENSE,sha256=gXf5dRMhNSbfLPYYTY_5hsZ1r7UU1OaKQEAQUhuIBkM,18092
+eppaurora-0.2.0.dist-info/METADATA,sha256=90SHiSnDnjZyXjeRQbSJImvcFdN-dF-3DEWvTh2QXRc,6905
+eppaurora-0.2.0.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+eppaurora-0.2.0.dist-info/top_level.txt,sha256=P_NPlCmN-u_WyFlSUj5MsLw_CXl9Jr8gylGtkAL0Chg,10
+eppaurora-0.2.0.dist-info/RECORD,,
