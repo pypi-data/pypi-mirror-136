@@ -1,0 +1,4 @@
+[console_scripts]
+sdm-test=pythonsdm:test
+sdm-train=pythonsdm:train
+
