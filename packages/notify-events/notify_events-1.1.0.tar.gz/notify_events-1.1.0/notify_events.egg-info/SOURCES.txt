@@ -1,0 +1,9 @@
+README.md
+setup.py
+notify_events/__init__.py
+notify_events/message.py
+notify_events.egg-info/PKG-INFO
+notify_events.egg-info/SOURCES.txt
+notify_events.egg-info/dependency_links.txt
+notify_events.egg-info/requires.txt
+notify_events.egg-info/top_level.txt
