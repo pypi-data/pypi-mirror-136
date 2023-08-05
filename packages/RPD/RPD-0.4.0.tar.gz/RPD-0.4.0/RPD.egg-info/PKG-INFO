@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: RPD
+Version: 0.4.0
+Summary: Asynchronous Discord API Wrapper For Python
+Home-page: https://github.com/RPD-py/RPD
+Author: VincentRPS
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Framework :: AsyncIO
+Classifier: Framework :: aiohttp
+Classifier: Topic :: Communications :: Chat
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Provides-Extra: speed
+License-File: LICENSE
+
+<h1 align="center">RPD</h1>
+
+A asynchronous Discord API Wrapper for Python
+
+## Features
+
+- Sane Handling of 429s
+- Customizable
+
+## Installing
+
+To Install RPD Just run the following command:
+
+```py
+pip install RPD
+```
+
+To install our speed requirements just run the following command:
+
+```py
+pip install RPD[speed]
+```
+
+## Useful Links
+The RPD [Discord](https://discord.gg/rf3xKaUpbP)
+
