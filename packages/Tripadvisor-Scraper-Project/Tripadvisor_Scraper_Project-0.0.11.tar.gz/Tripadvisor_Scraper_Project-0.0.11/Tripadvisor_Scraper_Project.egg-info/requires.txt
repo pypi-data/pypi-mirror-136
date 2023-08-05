@@ -1,0 +1,8 @@
+selenium
+sqlalchemy
+tqdm
+pandas
+webdriver_manager
+boto3
+warnings
+requests
