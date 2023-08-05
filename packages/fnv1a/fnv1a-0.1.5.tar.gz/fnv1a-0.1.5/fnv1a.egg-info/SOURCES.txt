@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+fnv1a/__init__.py
+fnv1a.egg-info/PKG-INFO
+fnv1a.egg-info/SOURCES.txt
+fnv1a.egg-info/dependency_links.txt
+fnv1a.egg-info/not-zip-safe
+fnv1a.egg-info/top_level.txt
