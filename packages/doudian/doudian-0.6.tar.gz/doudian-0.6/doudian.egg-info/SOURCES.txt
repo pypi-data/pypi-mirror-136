@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+doudian/__init__.py
+doudian/core.py
+doudian/exception.py
+doudian/type.py
+doudian.egg-info/PKG-INFO
+doudian.egg-info/SOURCES.txt
+doudian.egg-info/dependency_links.txt
+doudian.egg-info/requires.txt
+doudian.egg-info/top_level.txt
