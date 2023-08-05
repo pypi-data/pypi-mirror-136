@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: awsservicespkg
+Version: 0.0.0
+Summary: awsservicespkg for AWS services
+Home-page: UNKNOWN
+Author: yashleo1018
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Requires-Dist: boto3 (==1.18.36)
+Requires-Dist: botocore (~=1.21.42)
+
+UNKNOWN
+
