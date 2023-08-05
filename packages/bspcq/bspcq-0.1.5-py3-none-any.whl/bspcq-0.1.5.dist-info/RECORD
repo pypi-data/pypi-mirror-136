@@ -1,0 +1,9 @@
+bspcq/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bspcq/bspcq.py,sha256=0ZoQyYzfr75htyoCuv2Y-RWXszSFfXawoW9rKO8AU7M,10070
+bspcq/tests.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bspcq-0.1.5.dist-info/LICENSE,sha256=nLgIt33_1OfETkgT1TiKq6nZoBRv2gtes6yXxPnluqY,1070
+bspcq-0.1.5.dist-info/METADATA,sha256=oKiPOYTJKJcfeAE1vLB5ImXr6DuMpkjJBKHEGr9JMrM,2460
+bspcq-0.1.5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+bspcq-0.1.5.dist-info/entry_points.txt,sha256=DSgpyvIst6FMn-OWYt_BpPigtZhwKmw0qFh6pVO4Jys,45
+bspcq-0.1.5.dist-info/top_level.txt,sha256=Gp9XVfA7J2TVqz_lUKVAUw6P06zyVDQ0CCrdsWwzH8k,6
+bspcq-0.1.5.dist-info/RECORD,,
