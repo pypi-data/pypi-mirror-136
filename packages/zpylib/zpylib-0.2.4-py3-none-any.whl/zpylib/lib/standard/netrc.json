@@ -1,0 +1,36 @@
+{
+    "name":"netrc",
+    "zpy":"netrc",
+    "functions":[
+        {
+            "name":"authenticators",
+            "zpy":"鉴别符"
+        },
+        {
+            "name":"NetrcParseError",
+            "zpy":"Netrc解析错误"
+        },
+        {
+            "name":"macros",
+            "zpy":"宏命令"
+        },
+        {
+            "name":"__repr__",
+            "zpy":"__repr__"
+        },
+        {
+            "name":"hosts",
+            "zpy":"hosts"
+        },
+        {
+            "name":"netrc",
+            "zpy":"净rc"
+        }
+    ],
+    "args":[
+        {
+            "name":"host",
+            "zpy":"主人"
+        }
+    ]
+}

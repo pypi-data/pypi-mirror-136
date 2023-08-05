@@ -1,0 +1,24 @@
+{
+    "name":"posix",
+    "zpy":"可移植性操作系统接口",
+    "functions":[
+        {
+            "name":"getpwuid",
+            "zpy":"得到pwuid"
+        },
+        {
+            "name":"getpwall",
+            "zpy":"得到p墙"
+        },
+        {
+            "name":"getpwnam",
+            "zpy":"得到pwn点"
+        }
+    ],
+    "args":[
+        {
+            "name":"name",
+            "zpy":"名字"
+        }
+    ]
+}

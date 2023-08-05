@@ -1,0 +1,11 @@
+{
+    "name":"typing",
+    "zpy":"打字",
+    "functions":[],
+    "args":[
+        {
+            "name":"pydoc",
+            "zpy":"py医生"
+        }
+    ]
+}

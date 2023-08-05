@@ -1,0 +1,24 @@
+{
+    "name":"spwd",
+    "zpy":"spwd",
+    "functions":[
+        {
+            "name":"getgrnam",
+            "zpy":"gr不结盟运动"
+        },
+        {
+            "name":"getgrall",
+            "zpy":"gr所有"
+        },
+        {
+            "name":"getgrgid",
+            "zpy":"getgrgid"
+        }
+    ],
+    "args":[
+        {
+            "name":"name",
+            "zpy":"名字"
+        }
+    ]
+}

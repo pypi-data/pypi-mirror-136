@@ -1,0 +1,24 @@
+{
+    "name":"tkinter.messagebox",
+    "zpy":"tkinter.messagebox",
+    "functions":[
+        {
+            "name":"ScrolledText",
+            "zpy":"滚动文本"
+        },
+        {
+            "name":"frame",
+            "zpy":"框"
+        },
+        {
+            "name":"vbar",
+            "zpy":"v酒吧"
+        }
+    ],
+    "args":[
+        {
+            "name":"master",
+            "zpy":"主人"
+        }
+    ]
+}

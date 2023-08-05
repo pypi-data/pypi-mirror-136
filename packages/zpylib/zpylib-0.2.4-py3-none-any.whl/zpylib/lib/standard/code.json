@@ -1,0 +1,32 @@
+{
+    "name":"code",
+    "zpy":"代码",
+    "functions":[
+        {
+            "name":"compile_command",
+            "zpy":"编译命令"
+        },
+        {
+            "name":"CommandCompiler",
+            "zpy":"命令编译器"
+        },
+        {
+            "name":"Compile",
+            "zpy":"编译"
+        }
+    ],
+    "args":[
+        {
+            "name":"filename",
+            "zpy":"文件名"
+        },
+        {
+            "name":"symbol",
+            "zpy":"符号"
+        },
+        {
+            "name":"source",
+            "zpy":"源"
+        }
+    ]
+}

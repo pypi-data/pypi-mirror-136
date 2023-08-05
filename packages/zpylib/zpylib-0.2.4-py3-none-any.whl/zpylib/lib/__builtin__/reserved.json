@@ -1,0 +1,151 @@
+{
+    "name": "reserved",
+    "zpy": "保留字",
+    "functions": [
+        {
+            "name": "False",
+            "zpy": "错"
+        },
+        {
+            "name": "None",
+            "zpy": "空"
+        },
+        {
+            "name": "True",
+            "zpy": "对"
+        },
+        {
+            "name": "and",
+            "zpy": "与"
+        },
+        {
+            "name": "as",
+            "zpy": "作为"
+        },
+        {
+            "name": "assert",
+            "zpy": "断言"
+        },
+        {
+            "name": "async",
+            "zpy": "异步"
+        },
+        {
+            "name": "await",
+            "zpy": "等待"
+        },
+        {
+            "name": "break",
+            "zpy": "终止"
+        },
+        {
+            "name": "class",
+            "zpy": "类"
+        },
+        {
+            "name": "continue",
+            "zpy": "继续"
+        },
+        {
+            "name": "def",
+            "zpy": "函数"
+        },
+        {
+            "name": "del",
+            "zpy": "删除"
+        },
+        {
+            "name": "elif",
+            "zpy": "或如"
+        },
+        {
+            "name": "else",
+            "zpy": "否则"
+        },
+        {
+            "name": "except",
+            "zpy": "捕获"
+        },
+        {
+            "name": "finally",
+            "zpy": "最后"
+        },
+        {
+            "name": "for",
+            "zpy": "对于"
+        },
+        {
+            "name": "from",
+            "zpy": "从"
+        },
+        {
+            "name": "global",
+            "zpy": "全局"
+        },
+        {
+            "name": "if",
+            "zpy": "如果"
+        },
+        {
+            "name": "import",
+            "zpy": "导入"
+        },
+        {
+            "name": "in",
+            "zpy": "在"
+        },
+        {
+            "name": "is",
+            "zpy": "是"
+        },
+        {
+            "name": "lambda",
+            "zpy": "匿名"
+        },
+        {
+            "name": "nonlocal",
+            "zpy": "非局部"
+        },
+        {
+            "name": "not",
+            "zpy": "不"
+        },
+        {
+            "name": "or",
+            "zpy": "或"
+        },
+        {
+            "name": "pass",
+            "zpy": "跳过"
+        },
+        {
+            "name": "raise",
+            "zpy": "抛出"
+        },
+        {
+            "name": "return",
+            "zpy": "返回"
+        },
+        {
+            "name": "self",
+            "zpy": "自己"
+        },
+        {
+            "name": "try",
+            "zpy": "尝试"
+        },
+        {
+            "name": "while",
+            "zpy": "当"
+        },
+        {
+            "name": "with",
+            "zpy": "随着"
+        },
+        {
+            "name": "yield",
+            "zpy": "生成"
+        }
+    ],
+    "args": []
+}

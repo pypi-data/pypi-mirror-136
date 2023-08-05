@@ -1,0 +1,36 @@
+{
+    "name":"shelve",
+    "zpy":"放置架子上",
+    "functions":[
+        {
+            "name":"load",
+            "zpy":"负荷"
+        },
+        {
+            "name":"version",
+            "zpy":"一种描述"
+        },
+        {
+            "name":"dumps",
+            "zpy":"忧郁"
+        },
+        {
+            "name":"dump",
+            "zpy":"垃圾场"
+        },
+        {
+            "name":"loads",
+            "zpy":"货载量"
+        }
+    ],
+    "args":[
+        {
+            "name":"file",
+            "zpy":"文件"
+        },
+        {
+            "name":"bytes",
+            "zpy":"字节串"
+        }
+    ]
+}

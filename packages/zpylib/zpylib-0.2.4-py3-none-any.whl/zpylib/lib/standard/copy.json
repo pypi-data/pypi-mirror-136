@@ -1,0 +1,15 @@
+{
+    "name":"copy",
+    "zpy":"拷贝",
+    "functions":[
+        {
+            "name":"copy",
+            "zpy":"拷贝"
+        },
+        {
+            "name":"deepcopy",
+            "zpy":"深拷贝"
+        }
+    ],
+    "args":[]
+}
