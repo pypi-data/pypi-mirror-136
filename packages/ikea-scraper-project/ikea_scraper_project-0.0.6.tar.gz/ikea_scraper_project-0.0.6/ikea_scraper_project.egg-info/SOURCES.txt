@@ -1,0 +1,10 @@
+README.md
+setup.py
+ikea_scraper_project.egg-info/PKG-INFO
+ikea_scraper_project.egg-info/SOURCES.txt
+ikea_scraper_project.egg-info/dependency_links.txt
+ikea_scraper_project.egg-info/requires.txt
+ikea_scraper_project.egg-info/top_level.txt
+project/__init__.py
+project/__main__.py
+project/ikea_scaper.py
