@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+mp.cobblestone.egg-info/PKG-INFO
+mp.cobblestone.egg-info/SOURCES.txt
+mp.cobblestone.egg-info/dependency_links.txt
+mp.cobblestone.egg-info/entry_points.txt
+mp.cobblestone.egg-info/requires.txt
+mp.cobblestone.egg-info/top_level.txt
