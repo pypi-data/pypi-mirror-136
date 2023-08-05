@@ -1,0 +1,16 @@
+README.md
+setup.py
+basenet/__init__.py
+basenet/basenet.py
+basenet/data.py
+basenet/helpers.py
+basenet/hp_schedule.py
+basenet.egg-info/PKG-INFO
+basenet.egg-info/SOURCES.txt
+basenet.egg-info/dependency_links.txt
+basenet.egg-info/top_level.txt
+basenet/text/__init__.py
+basenet/text/data.py
+basenet/vision/__init__.py
+basenet/vision/layers.py
+basenet/vision/transforms.py

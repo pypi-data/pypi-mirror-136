@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: basenet
+Version: 0.1.0
+Summary: pytorch training tools
+Home-page: UNKNOWN
+Author: Ben Johnson
+Author-email: bkj.322@gmail.com
+License: Apache-2.0
+Description: #### basenet
+        
+        Classes wrapping basic `pytorch` functionality.
+          
+          - Train for an epoch
+          - Eval for an epoch
+          - Predict
+          - Learning rate schedules
+        
+        ##### Installation
+        
+        ```
+        conda create -n basenet4_env python=3.6 pip -y
+        source activate basenet4_env
+        
+        pip install -r requirements.txt
+        conda install -y pytorch torchvision cuda90 -c pytorch
+        pip install -e .
+        ```
+        
+        #### Examples
+        
+        ```
+        cd examples/cifar
+        ./run.sh
+        ```
+Keywords: basenet,pytorch,training
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
