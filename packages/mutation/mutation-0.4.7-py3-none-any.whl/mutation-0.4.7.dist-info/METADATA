@@ -1,0 +1,98 @@
+Metadata-Version: 2.1
+Name: mutation
+Version: 0.4.7
+Summary: test mutations for pytest.
+Home-page: https://git.sr.ht/~amirouche/mutation
+License: MIT
+Author: Amirouche
+Author-email: amirouche@hyper.dev
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: Cython (>=0.29.26,<0.30.0)
+Requires-Dist: Pygments
+Requires-Dist: aiostream
+Requires-Dist: astunparse
+Requires-Dist: docopt
+Requires-Dist: humanize
+Requires-Dist: lexode (<1.0.0)
+Requires-Dist: loguru
+Requires-Dist: lsm-db
+Requires-Dist: parso
+Requires-Dist: pathlib3x
+Requires-Dist: pytest
+Requires-Dist: pytest-cov
+Requires-Dist: pytest-randomly
+Requires-Dist: pytest-xdist
+Requires-Dist: python-ulid
+Requires-Dist: termcolor
+Requires-Dist: tqdm
+Requires-Dist: zstandard[cffi] (>=0.15.1,<0.16.0)
+Project-URL: Repository, https://git.sr.ht/~amirouche/mutation
+Description-Content-Type: text/markdown
+
+# mutation
+
+**early draft** requires more testing, please report any findings in
+[my public inbox](https://lists.sr.ht/~amirouche/public-inbox).
+
+The goal of `mutation` is to give an idea on how robust, and help
+improve test suites.
+
+## Getting started
+
+```sh
+pip install mutation
+mutation play tests.py --include="foobar/ex.py,foobar/__init__.py" --exclude="tests.py"
+```
+
+Then call:
+
+```sh
+mutation replay
+```
+
+## Usage
+
+```
+mutation play [--verbose] [--exclude=<globs>] [--only-deadcode-detection] [--include=<globs>] [--sampling=<s>] [--randomly-seed=<n>] [--max-workers=<n>] [<file-or-directory> ...] [-- TEST-COMMAND ...]
+mutation replay [--verbose] [--max-workers=<n>]
+mutation list
+mutation show MUTATION
+mutation apply MUTATION
+mutation (-h | --help)
+mutation --version
+```
+
+Both `--include` and `--exclude` support glob patterns. They are
+optional but highly recommended to avoid the production of useless
+mutations. 
+
+`mutation` will only mutate code that has test coverage, hence it
+works better with a high coverage.
+
+`mutation` will detect whether the tests can be run in parallel. It is
+recommended to make the test suite work in parallel to speed up the
+work of `mutation`.
+
+Also, it is better to work with a random seed, otherwise add the
+option `--randomly-seed=n` that works.
+
+## TODO
+
+- [ ] Avoid mutations that are syntax errors to improve efficiency,
+      use python 3.9+ `ast.unparse`, possibly with `black`;
+- [ ] `mutation play` can error even if the code and the test suite is
+      valid e.g. removing a docstring will trigger an error: reduce,
+      and hopefully eliminate that problem, requires python 3.9+ (see
+      above);
+- [ ] Add PyPy support;
+
+## Links
+
+- [forge](https://git.sr.ht/~amirouche/mutation)
+
