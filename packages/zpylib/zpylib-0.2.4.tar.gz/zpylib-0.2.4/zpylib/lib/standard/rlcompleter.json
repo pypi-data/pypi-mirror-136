@@ -1,0 +1,32 @@
+{
+    "name":"rlcompleter",
+    "zpy":"rlcompleter",
+    "functions":[
+        {
+            "name":"complete",
+            "zpy":"完全的"
+        }
+    ],
+    "args":[
+        {
+            "name":"PRESSED",
+            "zpy":"紧迫的"
+        },
+        {
+            "name":"text",
+            "zpy":"文本"
+        },
+        {
+            "name":"parse_and_bind",
+            "zpy":"解析和绑定"
+        },
+        {
+            "name":"readline",
+            "zpy":"读"
+        },
+        {
+            "name":"state",
+            "zpy":"州"
+        }
+    ]
+}

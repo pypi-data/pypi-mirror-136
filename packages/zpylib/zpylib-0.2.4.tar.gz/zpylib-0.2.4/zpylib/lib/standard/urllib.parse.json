@@ -1,0 +1,36 @@
+{
+    "name":"urllib.parse",
+    "zpy":"urllib.parse",
+    "functions":[
+        {
+            "name":"code",
+            "zpy":"代码"
+        },
+        {
+            "name":"headers",
+            "zpy":"标题"
+        },
+        {
+            "name":"ContentTooShortError",
+            "zpy":"内容太短错误"
+        },
+        {
+            "name":"HTTPError",
+            "zpy":"HTTP错误"
+        },
+        {
+            "name":"URLError",
+            "zpy":"地址错误"
+        },
+        {
+            "name":"reason",
+            "zpy":"理由"
+        }
+    ],
+    "args":[
+        {
+            "name":"content",
+            "zpy":"内容"
+        }
+    ]
+}

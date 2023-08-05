@@ -1,0 +1,28 @@
+{
+    "name":"tkinter",
+    "zpy":"tkinter",
+    "functions":[
+        {
+            "name":"Chooser",
+            "zpy":"选择者"
+        },
+        {
+            "name":"askcolor",
+            "zpy":"要求的颜色"
+        }
+    ],
+    "args":[
+        {
+            "name":"options",
+            "zpy":"选择期权"
+        },
+        {
+            "name":"color",
+            "zpy":"颜色"
+        },
+        {
+            "name":"master",
+            "zpy":"主人"
+        }
+    ]
+}

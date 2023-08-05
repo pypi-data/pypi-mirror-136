@@ -1,0 +1,36 @@
+{
+    "name":"tokenize",
+    "zpy":"tokenize",
+    "functions":[
+        {
+            "name":"NannyNag",
+            "zpy":"保姆唠叨"
+        },
+        {
+            "name":"check",
+            "zpy":"检查"
+        },
+        {
+            "name":"filename_only",
+            "zpy":"文件名"
+        },
+        {
+            "name":"process_tokens",
+            "zpy":"处理标记"
+        },
+        {
+            "name":"verbose",
+            "zpy":"用字多的"
+        }
+    ],
+    "args":[
+        {
+            "name":"file_or_dir",
+            "zpy":"文件或目录"
+        },
+        {
+            "name":"tokens",
+            "zpy":"代币"
+        }
+    ]
+}
