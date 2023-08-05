@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "pythonsdm"
+version = "0.3.1"
+description = "Supervised Descent Method and its Applications to Face Alignment"
+authors = ["Gilad Kutiel <gilad.kutiel@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+scikit-image = "^0.19.1"
+scikit-learn = "^1.0.2"
+numpy = "^1.22.1"
+tqdm = "^4.62.3"
+fire = "^0.4.0"
+
+[tool.poetry.dev-dependencies]
+matplotlib = "^3.5.1"
+jupyterlab = "^3.2.8"
+pytest = "^6.2.5"
+pytest-watch = "^4.2.0"
+mypy = "^0.931"
+autopep8 = "^1.6.0"
+rope = "^0.22.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+sdm-train = "pythonsdm:train"
+sdm-test = "pythonsdm:test"
