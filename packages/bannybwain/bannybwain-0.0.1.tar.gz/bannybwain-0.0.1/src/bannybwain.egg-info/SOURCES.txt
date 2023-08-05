@@ -1,0 +1,7 @@
+setup.cfg
+setup.py
+src/bannybwain/__init__.py
+src/bannybwain.egg-info/PKG-INFO
+src/bannybwain.egg-info/SOURCES.txt
+src/bannybwain.egg-info/dependency_links.txt
+src/bannybwain.egg-info/top_level.txt
