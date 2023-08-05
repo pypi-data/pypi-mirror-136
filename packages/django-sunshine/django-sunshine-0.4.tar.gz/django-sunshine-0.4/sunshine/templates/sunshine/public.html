@@ -1,0 +1,35 @@
+{% extends 'sunshine/base_blank.html' %}
+{% load static %}
+{% comment %}
+# This code is a part of sunshine package: https://github.com/letuananh/sunshine
+# :copyright: (c) 2013-2021 Le Tuan Anh <tuananh.ke@gmail.com>
+# :license: MIT, see LICENSE for more details.
+{% endcomment %}
+
+{% block body %}
+<div id="content" class="container text-center">
+  <div class="sidebar-brand-icon rotate-n-15 mb-5">
+    {% if SUNSHINE_DEFAULT_TITLE %}
+    <h1>{{ SUNSHINE_DEFAULT_TITLE }}</h1>
+    {% else %}
+    <h1><i class="fas fa-sun"></i> Sunshine Portal <sup>2</sup> Engine</h1>
+    {% endif %}
+  </div>
+  {% if SUNSHINE_PUBLIC_WELCOME %}
+  {{ SUNSHINE_PUBLIC_WELCOME| safe }}
+  {% else %}
+  ☀️ Sunshine server, version {{ version }}, is up and running 🚀
+  {% endif %}
+</div>
+<footer class="sticky-footer bg-white mt-5">
+  <div class="container my-auto">
+    <div class="copyright text-center my-auto">
+      {% if SUNSHINE_COPYRIGHT %}
+      {{ SUNSHINE_COPYRIGHT| safe }}
+      {% else %}
+      Get latest version at: <a href="https://github.com/letuananh/sunshine">Le Tuan Anh @ Github</a>
+      {% endif %}
+    </div>
+  </div>
+</footer>
+{% endblock %}

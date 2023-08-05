@@ -1,0 +1,427 @@
+{% load static %}
+{% comment %}
+# This code is a part of sunshine package: https://github.com/letuananh/sunshine
+# :copyright: (c) 2013-2021 Le Tuan Anh <tuananh.ke@gmail.com>
+# :license: MIT, see LICENSE for more details.
+{% endcomment %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    {% if csrf_token %}
+    <meta name="csrf-token" content="{{ csrf_token }}">
+    {% endif %}
+
+    <title>{{title| default:SUNSHINE_DEFAULT_TITLE}}</title>
+
+    <!-- Custom fonts for this template-->
+    <link href="{% static 'vendor/faf/css/all.min.css' %}" rel="stylesheet" type="text/css">
+    <!-- Custom styles for this template-->
+    {% if SUNSHINE_ENV == 'DEV' %}
+    <link href="{% static 'sunshine/css/sb-admin-2-dev.min.css' %}" rel="stylesheet">
+    <style>
+     .bg-gradient-primary {
+       background-image: linear-gradient(180deg,#600600 10%,#ee0000 100%);
+     }
+    </style>
+    {% elif SUNSHINE_ENV == 'UAT' %}
+    <link href="{% static 'sunshine/css/sb-admin-2-uat.min.css' %}" rel="stylesheet">
+    <style>
+     .bg-gradient-primary {
+       background-image: linear-gradient(180deg,#006600 10%,#00ee00 100%);
+     }
+    </style>
+    {% else %}
+    <link href="{% static 'sunshine/css/sb-admin-2.min.css' %}" rel="stylesheet">
+    {% endif %}
+    {% block style %}
+    {% endblock %}
+  </head>
+
+  <body id="page-top" {% if sidebar_toggle %}class="sidebar-toggled"{% endif %}>
+
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+
+      <!-- Sidebar -->
+      <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion {% if sidebar_toggle %}toggled{% endif %}" id="accordionSidebar">
+
+        <!-- Sidebar - Brand -->
+        <a class="sidebar-brand d-flex align-items-center justify-content-center" href="{% url 'sunshine_index' %}">
+          <div class="sidebar-brand-icon rotate-n-15">
+            <i class="fas fa-sun"></i>
+          </div>
+          <div class="sidebar-brand-text mx-3">{{SUNSHINE_BRAND |safe}}</div>
+        </a>
+
+        <!-- Divider -->
+        <hr class="sidebar-divider my-0">
+
+        <!-- Sunshine dynamic menu -->
+          {% if sunshine_main_menu %}
+          {% for item in sunshine_main_menu.items %}
+          <li class="nav-item {% if request.resolver_match.url_name == item.name %}active{% endif %}">
+            <a class="nav-link" href="{% url item.name %}">
+              <i class="fas fa-fw {{ item.icon }}"></i>
+              <span>{{ item.title }}</span></a>
+          </li>
+          {% endfor %}
+          {% for group, child in sunshine_main_menu.children.items %}
+          <!-- Divider -->
+          <hr class="sidebar-divider">
+          <!-- Heading -->
+          <div class="sidebar-heading">
+            {{ child.name}}
+          </div>
+
+          <!-- level 2 child item -->
+            {% if child.items %}
+              {% for item in child.items %}
+              <li class="nav-item {% if request.resolver_match.url_name == item.name %}active{% endif %}">
+                <a class="nav-link" href="{% url item.name %}">
+                  <i class="fas fa-fw {{ item.icon }}"></i>
+                  <span>{{ item.title }}</span></a>
+              </li>
+              {% endfor %}
+            {% endif %}
+          <!-- level 2 child item end -->
+              {% if child.children %}
+              <!-- sunshine menu level 2 groups -->
+            {% for subgroup, grandchild in child.children.items %}
+              <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse"
+                   data-target="#sunshine_grand_menu_{{grandchild.div_id}}" aria-expanded="true" aria-controls="collapsePages">
+                  <i class="fas fa-fw fa-folder"></i>
+                  <span>{{ subgroup }}</span>
+                </a>
+                <!-- start menu group -->
+              <div id="sunshine_grand_menu_{{grandchild.div_id}}" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+                <div class="bg-white py-2 collapse-inner rounded">
+                  {% if grandchild.items %}
+                  {% for gc_item in grandchild.items %}
+                  {% if gc_item.menu_type == "url" %}
+                  <a class="collapse-item" target="_blank" href="{{ gc_item.name }}">
+                    <i class="fas fa-fw {{ gc_item.icon }}"></i> {{ gc_item.title }}
+                  </a>
+                  {% else %}
+                  <a class="collapse-item" href="{% url gc_item.name %}">
+                    <i class="fas fa-fw {{ gc_item.icon }}"></i> {{ gc_item.title }}
+                  </a>
+                  {% endif %}
+                  {% endfor %}
+                  {% endif %}
+                  <!-- grouped level 2 items -->
+                  {% if grandchild.children %}
+                  {{ granchild.children.AJAX }}
+                  <div class="collapse-divider"></div>
+                  <h6 class="collapse-header">{{ grandchild.children.name }}</h6>
+                  {% for gc2_items in granchild.children.items %}
+                  {% if gc2_item.menu_type == "url" %}
+                  <a class="collapse-item" target="_blank" href="{{ gc2_item.name }}">
+                    <i class="fas fa-fw {{ gc2_item.icon }}"></i> {{ gc2_item.title }}
+                  </a>
+                  {% else %}
+                  <a class="collapse-item" href="{% url gc2_item.name %}">
+                    <i class="fas fa-fw {{ gc2_item.icon }}"></i> {{ gc2_item.title }}
+                  </a>
+                  {% endif %}
+                  {% endfor %}
+                  {% endif %}
+                  <!-- grouped level 2 items end -->
+                </div>
+                <!-- end of menu group -->
+              </div>
+              <!-- menu group end -->
+              </li>
+            {% endfor %}
+          <!-- sunshine menu level 2 groups end -->
+          {% endif %}
+          {% endfor %}
+          {% else %}
+          <div>
+            There is no menu available
+          </div>
+          {% endif %}
+        <!-- Sunshine dynamic menu ended -->
+        
+        
+        <!-- Divider -->
+        <hr class="sidebar-divider d-none d-md-block">
+
+        <!-- Sidebar Toggler (Sidebar) -->
+        <div class="text-center d-none d-md-inline">
+          <button class="rounded-circle border-0" id="sidebarToggle"></button>
+        </div>
+
+      </ul>
+      <!-- End of Sidebar -->
+
+      <!-- Content Wrapper -->
+      <div id="content-wrapper" class="d-flex flex-column">
+
+        <!-- Main Content -->
+        <div id="content">
+
+          <!-- Topbar -->
+          <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+
+            <!-- Sidebar Toggle (Topbar) -->
+            <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+              <i class="fa fa-bars"></i>
+            </button>
+
+            <!-- Topbar Search -->
+            <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+              <div class="input-group">
+                <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                  <button class="btn btn-primary" type="button">
+                    <i class="fas fa-search fa-sm"></i>
+                  </button>
+                </div>
+              </div>
+            </form>
+
+            <!-- Topbar Navbar -->
+            <ul id="vuess_base" class="navbar-nav ml-auto">
+
+              <!-- Nav Item - Search Dropdown (Visible Only XS) -->
+              <li class="nav-item dropdown no-arrow d-sm-none">
+                <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="fas fa-search fa-fw"></i>
+                </a>
+                <!-- Dropdown - Messages -->
+                <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in" aria-labelledby="searchDropdown">
+                  <form class="form-inline mr-auto w-100 navbar-search">
+                    <div class="input-group">
+                      <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
+                      <div class="input-group-append">
+                        <button class="btn btn-primary" type="button">
+                          <i class="fas fa-search fa-sm"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </li>
+
+              <!-- Nav Item - Alerts -->
+              <li class="nav-item dropdown no-arrow mx-1">
+                <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="fas fa-bell fa-fw"></i>
+                  <!-- Counter - Alerts -->
+                  <span class="badge badge-danger badge-counter" v-if="alert_count">[[ alert_count ]]</span>
+                </a>
+                <!-- Dropdown - Alerts -->
+                <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="alertsDropdown">
+                  <h6 class="dropdown-header">
+                    Alerts Center
+                  </h6>
+                  <a v-for="alert in alerts" class="dropdown-item d-flex align-items-center" :href="alert.url">
+                    <div class="mr-3">
+                      <div class="icon-circle" v-bind:class="alert.class">
+                        <i class="fas text-white" v-bind:class="alert.icon"></i>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="small text-gray-500">[[ alert.date ]]</div>
+                    <span v-bind:class="{'font-weight-bold': alert.unread}">[[ alert.text ]]</span>
+                    </div>
+                  </a>
+                  <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
+                </div>
+              </li>
+
+              <!-- Nav Item - Messages -->
+              <li id="vueInbox" class="nav-item dropdown no-arrow mx-1">
+                <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="fas fa-envelope fa-fw"></i>
+                  <!-- Counter - Messages -->
+                  <span class="badge badge-danger badge-counter" v-if="unread_msg > 0">[[ unread_msg ]]</span>
+                </a>
+                <!-- Dropdown - Messages -->
+                <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="messagesDropdown">
+                  <h6 class="dropdown-header">
+                    Message Center
+                  </h6>
+                  <!-- msg start -->
+                  <a class="dropdown-item d-flex align-items-center" href="#" v-for="msg in inbox">
+                    <div class="dropdown-list-image mr-3">
+                      <img class="rounded-circle" :src="msg.avatar" alt="">
+                      <div class="status-indicator"></div>
+                    </div>
+                    <div>
+                      <div :class="{ 'font-weight-bold': msg.unread }">
+                        <div class="text-truncate">[[ msg.text ]]</div>
+                      </div>
+                      <div class="small text-gray-500">[[ msg.sender ]] · [[msg.time]]</div>
+                    </div>
+                  </a>
+                  <!-- msg end -->
+                  <a class="dropdown-item text-center small text-gray-500" href="#">Read More Messages</a>
+                </div>
+              </li>
+              <div class="topbar-divider d-none d-sm-block"></div>
+
+              <!-- Nav Item - User Information -->
+              <li class="nav-item dropdown no-arrow">
+                <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <span class="mr-2 d-none d-lg-inline text-gray-600 small">{{ username }}</span>
+                  <img class="img-profile rounded-circle" src="{% url 'cdn_avatar' username=user.username %}">
+                </a>
+                <!-- Dropdown - User Information -->
+                <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
+                  <a class="dropdown-item" href="{% url 'sunshine_profile' %}">
+                    <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                    Profile
+                  </a>
+                  <a class="dropdown-item" href="{% url 'admin:password_change' %}">
+                    <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
+                    Change password
+                  </a>
+                  <a class="dropdown-item" href="{% url 'admin:index' %}">
+                    <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
+                    Backend
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+            <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+            Logout
+                  </a>
+                </div>
+              </li>
+
+            </ul>
+
+          </nav>
+          <!-- End of Topbar -->
+
+          <!-- Begin Page Content -->
+          <div class="container-fluid">
+            {% if SUNSHINE_ENV == 'DEV' %}
+            <div class="alert alert-danger" role="alert">
+              <h1>LOCAL DEVELOPMENT SERVER</h1>
+              <div>Feel free to play around here. Don't do that on <span class="text-danger">PRODUCTION server</span> though.</div>
+            </div>
+            {% elif SUNSHINE_ENV == 'UAT' %}
+            <div class="alert alert-info" role="alert">
+              <h1>SUNSHINE UAT SERVER - SPECIMEN ONLY</h1>
+              <div>Feel free to play around here. Don't do that on <span class="text-danger">PRODUCTION server</span> though.</div>
+            </div>
+            {% endif %}
+            {% block content %}
+            {% endblock %}
+          </div>
+          <!-- /.container-fluid -->
+
+        </div>
+        <!-- End of Main Content -->
+
+        <!-- Footer -->
+        <footer class="sticky-footer bg-white">
+          <div class="container my-auto">
+            <div class="copyright text-center my-auto">
+              <span>{{ SUNSHINE_COPYRIGHT |safe }}</span>
+            </div>
+          </div>
+        </footer>
+        <!-- End of Footer -->
+
+      </div>
+      <!-- End of Content Wrapper -->
+
+    </div>
+    <!-- End of Page Wrapper -->
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+      <i class="fas fa-angle-up"></i>
+    </a>
+
+    <!-- Logout Modal-->
+    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+          <div class="modal-footer">
+            <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+            <a class="btn btn-primary" href="{% url 'sunshine_logout' %}">Logout</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="{% static 'vendor/jquery/jquery-3.5.1.min.js' %}"></script>
+    <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+    <!-- Core plugin JavaScript-->
+    <script src="{% static 'vendor/jquery-easing/jquery.easing.min.js' %}"></script>
+    <script src="{% static 'vendor/vue/vue.min.js' %}"></script>
+    <!-- Custom scripts for all pages-->
+    <script src="{% static 'sunshine/js/sb-admin-2.min.js' %}"></script>
+    <script src="{% static 'sunshine/js/common.js' %}"></script>
+    <!-- Page level plugins -->
+    <script src="{% static 'vendor/chart.js/Chart.min.js' %}"></script>
+    <!-- Page level custom scripts -->
+    <script>
+     var vuess_base = new Vue({
+       delimiters: ['[[', ']]'],
+       el: '#vuess_base',
+       data: {
+         alerts: [],
+         inbox: []
+       },
+       computed: {
+         alert_count: function() {
+           var _unread = 0;
+           this.alerts.forEach(function(item, index){
+             if (item.unread) {
+               _unread += 1;
+             }
+           });
+           return _unread;
+         },
+         unread_msg: function() {
+           var _unread = 0;
+           this.inbox.forEach(function(item, index){
+             if (item.unread) {
+               _unread += 1;
+             }
+           });
+           return _unread;
+         }
+       }
+     });
+
+     $(document).ready(function(){
+       $("#sidebarToggle, #sidebarToggleTop").on('click', function(e) {
+         var status = ($(".sidebar").hasClass("toggled")) ? 1 : 0;
+         ssajax("{% url 'ssapi_sidebar_toggle'%}/" + status);
+       });
+       ssajax("{% url 'ssapi_notification_fetch' %}").done(
+         function(notifications){
+           notifications.alerts.forEach(function(alert, index){
+             vuess_base.alerts.push(alert);
+           });
+           notifications.inbox.forEach(function(msg, index){
+             vuess_base.inbox.push(msg);
+           });
+         });
+     });
+    </script>
+    {% block script %}
+    {% endblock %}
+  </body>
+  
+</html>

@@ -1,0 +1,17 @@
+{% comment %}
+# This code is a part of sunshine package: https://github.com/letuananh/sunshine
+# :copyright: (c) 2013-2021 Le Tuan Anh <tuananh.ke@gmail.com>
+# :license: MIT, see LICENSE for more details.
+{% endcomment %}
+
+<html>
+  <h1>Sunshine Portal CDN service - 403 Forbidden</h1>
+  <p>You don't have permission to look up resources on this server.</p>
+  {% if DEBUG %}
+  <ul>
+    <li>User: {{ username }}</li>
+    <li>Module: {{ module }}</li>
+    <li>Resource ID: {{ res_id }}</li>
+  </ul>
+  {% endif %}
+</html>

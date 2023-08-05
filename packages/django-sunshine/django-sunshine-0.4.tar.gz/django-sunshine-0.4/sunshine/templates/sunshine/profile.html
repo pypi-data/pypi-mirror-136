@@ -1,0 +1,21 @@
+{% extends 'sunshine/base.html' %}
+{% load static %}
+{% comment %}
+# This code is a part of sunshine package: https://github.com/letuananh/sunshine
+# :copyright: (c) 2013-2021 Le Tuan Anh <tuananh.ke@gmail.com>
+# :license: MIT, see LICENSE for more details.
+{% endcomment %}
+
+{% block content %}
+<div class="">
+  <h1>
+    <i class="fas fa-sun"></i>
+      Welcome back <span style="font-weight: bold;">{{ username }}</span>!
+  </h1>
+  <div>
+    <img class="img-profile rounded-circle img-thumbnail"
+         style="max-width: 150px;"
+         src="{% url 'cdn_avatar' username=user.username %}">
+  </div>
+</div>
+{% endblock %}

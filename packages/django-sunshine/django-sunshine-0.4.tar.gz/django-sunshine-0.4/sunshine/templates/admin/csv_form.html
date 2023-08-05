@@ -1,0 +1,30 @@
+{% extends 'admin/base.html' %}
+{% comment %}
+# This code is a part of sunshine package: https://github.com/letuananh/sunshine
+# :copyright: (c) 2013-2021 Le Tuan Anh <tuananh.ke@gmail.com>
+# :license: MIT, see LICENSE for more details.
+{% endcomment %}
+
+{% block content %}
+<div>
+  <form action="." method="POST" enctype="multipart/form-data">
+    {{ form.as_p }}
+    {% csrf_token %}
+
+    <button type="submit">Upload CSV</button>
+  </form>
+</div>
+<br />
+
+{% if table %}
+<table>
+  {% for row in table %}
+  <tr>
+    {% for cell in row %}
+    <td>{{ cell }}</td>
+    {% endfor %}
+  </tr>
+  {% endfor %}
+</table>
+{% endif %}
+{% endblock %}
