@@ -1,0 +1,13 @@
+liquer_gui/__init__.py,sha256=-vv9_Ez_3K2PaLYo94LWYgUfhJl_jwUZO8g5mwSpiGs,55
+liquer_gui/commands.py,sha256=TdQyR2Qt7IYDpR4Kw-A6wOegyuX4YNeXIPBICHEimlc,286
+liquer_gui/assets/index.html,sha256=E6yFdIHTUYzefdPvZX7qpdqsOGqoo8VZ890oWgSoHPs,1229
+liquer_gui/assets/css/app.fb85a8e8.css,sha256=lTbPpDGnnNXJ6b3T9_a5KXDmZMF4Xq2iwxe6ghLn_p8,202
+liquer_gui/assets/css/chunk-vendors.d50b498d.css,sha256=eSpJ6-pSS7fFJ1G-45trOkI2mTY2nLJZo_rSp9CGyqw,417779
+liquer_gui/assets/js/app.e2c18d48.js,sha256=vezHOhwo-jRfMSET71pOGbdLYistFec6oHFgQbKyUGA,49203
+liquer_gui/assets/js/app.e2c18d48.js.map,sha256=9iTSX9v9T50JE2t6SOJGZibSFGMk3_L7zI7TRWc0tlA,158741
+liquer_gui/assets/js/chunk-vendors.e1ec7ba5.js,sha256=qmvFTAhX7YzXltvD2ifmYe997iimFkjq115Zy8C-yEE,438072
+liquer_gui/assets/js/chunk-vendors.e1ec7ba5.js.map,sha256=KLwm1g8bq5gUEhPK_Re0uqEMKIQPCjJzNr2Wnqqq07M,1594102
+liquer_gui-0.1.5.dist-info/METADATA,sha256=KLLKFcBQIKZ9kT8CekOXejrRlzhuCPEbfvYHj_6nORY,1775
+liquer_gui-0.1.5.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+liquer_gui-0.1.5.dist-info/top_level.txt,sha256=04oMt9ZFaZOy98zXqv02ARSWAoq8SNAgtZ4RpcrmeyM,11
+liquer_gui-0.1.5.dist-info/RECORD,,
