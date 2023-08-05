@@ -1,0 +1,3 @@
+[console_scripts]
+G1Race = G1Race:main
+
