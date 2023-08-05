@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: cran-diff
+Version: 0.1.13
+Summary: 
+Author: Myles Mitchell
+Author-email: myles@jumpingrivers.com
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: bs4
+Requires-Dist: deb_pkg_tools
+Requires-Dist: pandas
+Requires-Dist: psycopg2-binary
+Requires-Dist: python-dateutil
+Requires-Dist: requests
+Requires-Dist: requests-file (>=1.5.1,<2.0.0)
+Requires-Dist: rpy2
+Requires-Dist: scipy
+Requires-Dist: sqlalchemy
+Requires-Dist: tqdm
+Requires-Dist: typing
