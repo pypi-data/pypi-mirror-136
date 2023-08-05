@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: types-pep8-naming
+Version: 0.12.0
+Summary: Typing stubs for pep8-naming
+Home-page: https://github.com/python/typeshed
+License: Apache-2.0 license
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Typing :: Stubs Only
+Description-Content-Type: text/markdown
+
+## Typing stubs for pep8-naming
+
+This is a PEP 561 type stub package for the `pep8-naming` package.
+It can be used by type-checking tools like mypy, PyCharm, pytype etc. to check code
+that uses `pep8-naming`. The source for this package can be found at
+https://github.com/python/typeshed/tree/master/stubs/pep8-naming. All fixes for
+types and metadata should be contributed there.
+
+See https://github.com/python/typeshed/blob/master/README.md for more details.
+This package was generated from typeshed commit `7bc9c1625eb0df0500e70de96f3e1a698bb8c05a`.
+
+
