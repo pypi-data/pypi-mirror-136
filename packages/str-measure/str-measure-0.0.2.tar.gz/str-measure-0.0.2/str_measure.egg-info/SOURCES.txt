@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+measure/__init__.py
+measure/main.py
+str_measure.egg-info/PKG-INFO
+str_measure.egg-info/SOURCES.txt
+str_measure.egg-info/dependency_links.txt
+str_measure.egg-info/top_level.txt
