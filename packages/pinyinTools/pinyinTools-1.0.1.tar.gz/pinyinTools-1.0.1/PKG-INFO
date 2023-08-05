@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: pinyinTools
+Version: 1.0.1
+Summary: Python拼音小工具/Python Pinyin gadget
+Home-page: https://yangguang-gongzuoshi.top/wry/
+Author: Ruoyu Wang
+Author-email: wry2022@outlook.com
+License: MIT License
+Platform: UNKNOWN
+Requires: pypinyin
+
+Python拼音小工具，可以解析键盘输入（适合做输入法）和拼音首字母等/Python Pinyin gadget, which can analyze keyboard input (suitable for input method) and Pinyin initials
+

@@ -1,0 +1,9 @@
+setup.py
+pinyinTools/__init__.py
+pinyinTools/first_letter.py
+pinyinTools/key_type.py
+pinyinTools/usful_pinyin_packages.py
+pinyinTools.egg-info/PKG-INFO
+pinyinTools.egg-info/SOURCES.txt
+pinyinTools.egg-info/dependency_links.txt
+pinyinTools.egg-info/top_level.txt
