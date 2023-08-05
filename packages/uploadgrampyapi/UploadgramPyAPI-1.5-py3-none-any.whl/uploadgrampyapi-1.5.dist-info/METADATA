@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: uploadgrampyapi
+Version: 1.5
+Summary: This API can be upload, download, remove and rename any files from the service uploadgram.me. More on my GitHub: https://github.com/tankalxat34/UploadgramPyAPI
+Author: tankalxat34
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
