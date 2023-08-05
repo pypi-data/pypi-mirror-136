@@ -1,0 +1,3 @@
+[console_scripts]
+opensearchsql = opensearch_sql_cli.main:cli
+
