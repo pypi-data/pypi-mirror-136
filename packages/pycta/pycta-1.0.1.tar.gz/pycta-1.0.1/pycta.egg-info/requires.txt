@@ -1,0 +1,8 @@
+requests
+pandas
+beautifulsoup4
+polars
+haversine
+lxml
+html5lib
+tabulate
