@@ -1,0 +1,11 @@
+layers/GeM.py,sha256=S0R3clpki1q9GxWHtIXWxubo64_TrbL07WTm7brKb8M,1472
+layers/LocalBranch.py,sha256=D52xD4myrqtmvyKPaaPrEf_o7-RxMK-yL3CuIQ68w8Q,3447
+layers/OrtholFusion.py,sha256=hG8Q0gAD79-oplGBiY3qCddOuxhGTLzhDhLBw0vDmT8,1553
+layers/__init__.py,sha256=M9j1NuexsmXRO0O_LLRNrLF7fEfPAHWIxm90hC6gV3I,27
+models/DOLG.py,sha256=bnBzkra05C2K7SeX5cUXsC0VT94SaF21XPB-symkPmk,2845
+models/__init__.py,sha256=M9j1NuexsmXRO0O_LLRNrLF7fEfPAHWIxm90hC6gV3I,27
+dolg_tensorflow-0.0.1.dist-info/LICENSE,sha256=hs2V1oEzbCIYMkRaLqPnREY5XXqtRNtZdpU6V_6yx24,1083
+dolg_tensorflow-0.0.1.dist-info/METADATA,sha256=vZd4Ki_Qzw1b6bRsINBb7IA8IouW5nARvYlTA272z_w,753
+dolg_tensorflow-0.0.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+dolg_tensorflow-0.0.1.dist-info/top_level.txt,sha256=uP2e76AczVV85sDPRPHrAX_Wqkr9SRf104L2dsd6uCU,14
+dolg_tensorflow-0.0.1.dist-info/RECORD,,
