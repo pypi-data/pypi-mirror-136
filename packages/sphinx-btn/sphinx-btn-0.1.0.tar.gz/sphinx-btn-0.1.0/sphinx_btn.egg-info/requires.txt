@@ -1,0 +1,17 @@
+Deprecated
+docutils
+pyyaml
+Sphinx
+
+[dev]
+pre-commit
+commitizen
+
+[doc]
+sphinxcontrib-spelling
+sphinx-copybutton
+furo
+
+[test]
+coverage
+pytest
