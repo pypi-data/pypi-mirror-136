@@ -1,0 +1,25 @@
+Social and economic impact of COVID-19
+
+Introduction
+
+The impact of the pandemic on world GDP growth is massive. The COVID-19 global recession is the deepest since the end of World War II (Figure 1). The global economy contracted by 3.5 percent in 2020 according to the April 2021 World Economic Outlook Report published by the IMF, a 7 percent loss relative to the 3.4 percent growth forecast back in October 2019. While virtually every country covered by the IMF posted negative growth in 2020 (IMF 2020b), the downturn was more pronounced in the poorest parts of the world (Noy et al. 2020) (Figure 2).
+
+Figure 1. Global GDP growth in a historical perspective
+
+The impact of the shock is likely to be long-lasting. While the global economy is expected to recover this year, the level of GDP at the end of 2021 in both advanced and emerging market and developing economies (EMDE) is projected to remain below the pre-virus baseline (Figure 3). As with the immediate impact, the magnitude of the medium-term cost also varies significantly across countries, with EMDE suffering the greatest loss. The IMF (2021) projects that in 2024 the World GDP will be 3 percent (6 percent for low-income countries (LICs)) below the no-COVID scenario. Along the same lines, Djiofack et al. (2020) estimate that African GDP would be permanently 1 percent to 4 percent lower than in the pre-COVID outlook, depending on the duration of the crisis.  
+
+Figure 2. Global GDP growth 2020
+
+Figure 3. Quarterly World GDP (GDP forecast in Jan-2020 vs. Jan-2021, 2019 Q1 = 100)
+
+The pandemic triggered a health and fiscal response unprecedented in terms of speed and magnitude. At a global scale, the fiscal support reached nearly $16 trillion (around 15 percent of global GDP) in 2020. However, the capacity of countries to implement such measures varied significantly. In this note, we identify three important preexisting conditions that amplified the impact of the shock:
+
+Fiscal space: The capacity to support household and firms largely depends on access to international financial markets,
+
+State capacity: Fast and efficient implementation of policies to support household and firms requires a substantial state capacity and well-developed tax and transfer infrastructure; and
+
+Labor market structure: A large share of informal workers facing significant frictions to adopt remote working, and high levels of poverty and inequality, deepen the deleterious impact of the crisis.
+
+Additionally, the speed and the strength of the recovery will be crucially dependent on the capacity of the governments to acquire and roll out the COVID-19 vaccines.
+
+This paper presents a succinct summary of the existing economic literature on the economic and fiscal impact of the pandemic, and a preliminary estimate of the associated economic cost. It documents the incidence of initial conditions (with a particular focus on the role of the labor market channel) on the transmission of the shock and the speed and extent of the expected recovery, summarizes how countries attempted to attenuate the economic consequences and the international financial institutions assisted countries, reports preliminary accounts of medium-term COVID-related losses, and concludes with some forward-looking considerations based on the lessons learned in 2020.
