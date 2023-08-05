@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: ravspeak
+Version: 0.0.1
+Summary: ravspeak
+Home-page: UNKNOWN
+Author: Ravneet
+Author-email: weak47wale@gmail.com
+License: UNKNOWN
+Keywords: speak,voice,jarvis,audio
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pyttsx3
+
+A package to Speak 
+
