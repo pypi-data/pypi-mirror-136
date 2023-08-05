@@ -1,0 +1,165 @@
+# 配置文件说明
+# 是否启用某种增强方法，可通过注释和取消注释的方式
+# 如 启用 水平翻转 Fliplr: 0.5
+# 不启用水平翻转 # Fliplr: 0.5
+# 有参数但无值时，将使用该方法的默认参数
+# 增强方式只能二选一
+# 方式一无标识符，直接配置 key: value 即可
+# 方式二有标识符 Sequential ，在标识符下层配置 key: value 对
+# 对一些方法，需嵌套式的输入 key: value 对，如 CropAndPad 方法
+
+# 通用配置
+basic:
+  aug_times: 1
+  random: false
+  thread_num: false
+
+# 配置方式一
+#bg_changed:
+#  bg_path: "./data/bg_imgs"
+
+Fliplr: 0.5  #水平翻转
+
+#Flipud: 0.5  #垂直翻转
+
+#Resize: [604, 604] #{'height': 32, 'width': 64}
+
+#CropAndPad: #裁剪/填充增强器
+#  # px: (0, 16) #与percent不得共存
+#  percent: (0, 0.2)
+#  pad_mode: ["constant", "edge"]
+#  pad_cval: (0, 128)
+
+#Rotate: [-90, 90]  #旋转
+#
+#Multiply:  [0.5, 1.5]  #颜色亮暗调整
+#
+#Affine:  #仿射变换增强器
+# rotate: [-45, 45] #旋转
+# scale: [0.5, 1.5] #缩放
+#
+#Sharpen: #锐化增强器
+# alpha: [0.0, 1.0]
+# lightness: [0.75, 2.0]
+#
+#Add: [-100, 100] #加法增强器，像素值增加列表中所列范围的随机值
+#
+#WithColorspace: #颜色空间转换增强
+# to_colorspace: "HSV"
+# from_colorspace: "RGB"
+# children:
+#   WithChannels:
+#     channels: 0
+#     children:
+#       Add: [10, 50]
+#
+#Invert:  #反转增强器, 设置0-1的比例，默认为1，将原始像素值V变成255-V
+#
+#ContrastNormalization: [0.5, 1.5]  #对比度增强器
+#
+#AdditiveGaussianNoise: #高斯噪声, 0.2为比例
+# scale: 0.1 * 255
+
+#Dropout: #随机丢弃像素点，将其置为0，p为概率值，下同
+# p: [0, 0.2]
+#
+#CoarseDropout: #矩形丢弃增强器，将图片中矩形方块像素值置为0
+# p: 0.02
+# size_percent: 0.5
+#
+#Grayscale: #灰度增强器
+# alpha: [0.0, 1.0]
+#
+#GaussianBlur: #高斯模糊
+# sigma: [0.0, 3.0]
+#
+#AverageBlur: #均值模糊
+# k: [2, 11]  #((5, 11), (1, 3))
+#
+#MedianBlur: #中值模糊
+# k: [3, 11]
+#
+#Emboss: #浮雕增强器
+# alpha: [0.0, 1.0]
+# strength: [0.5, 1.5]
+#
+#EdgeDetect: #边缘增强器
+# alpha: [0.0, 1.0]
+
+# 配置方式二
+#Sequential: #顺序增强器
+# bg_changed:
+#   bg_path: "./data/bg_imgs"
+#
+# Fliplr: 0.5  #水平翻转，设置0-1的比例，空值默认为1
+#
+# Flipud:   #垂直翻转，设置0-1的比例，空值默认为1
+#
+# Resize: [608, 608] #{'height': 32, 'width': 64}
+#
+# CropAndPad: #裁剪/填充增强器
+#   # px: (0, 16) #与percent不得共存
+#   percent: (0, 0.2)
+#   pad_mode: ["constant", "edge"]
+#   pad_cval: (0, 128)
+#
+# Rotate: [-90, 90]  #旋转
+#
+# WithColorspace: #颜色空间转换增强
+#   to_colorspace: "HSV"
+#   from_colorspace: "RGB"
+#   children:
+#     WithChannels:
+#       channels: 0
+#       children:
+#         Add: [10, 50]
+#
+# Multiply:  #颜色亮暗调整
+#   mul: [0.5, 1.5]
+#   per_channel: 0.5
+#
+# Affine:  #仿射变换增强器
+#   rotate: [-45, 45] #旋转
+#   scale: [0.5, 1.5] #缩放
+#
+# PiecewiseAffine: #扭曲增强器
+#   scale: [0.01, 0.05]
+#
+# Sharpen: #锐化增强器
+#   alpha: [0.0, 1.0]
+#   lightness: [0.75, 2.0]
+#
+# Add: [-100, 100] #加法增强器，像素值增加列表中所列范围的随机值
+#
+# Invert:  #反转增强器, 可设置0-1的比例，将原始像素值V变成255-V
+#
+# ContrastNormalization: [0.5, 1.5]  #对比度增强器
+#
+# AdditiveGaussianNoise: #高斯噪声, 0.2为比例
+#   scale: 0.2 * 255
+#
+# Dropout: #随机丢弃像素值，将其置为0
+#   p: [0, 0.2]
+#
+# CoarseDropout: #矩形丢弃增强器
+#   p: 0.02
+#   size_percent: 0.5
+#
+# Grayscale: #灰度增强器
+#   alpha: [0.0, 1.0]
+#
+# GaussianBlur: #高斯模糊
+#   sigma: [0.0, 3.0]
+#
+# AverageBlur: #均值模糊
+#   k: [2, 11]  #((5, 11), (1, 3))
+#
+# MedianBlur: #中值模糊
+#   k: [3, 11]
+#
+# Emboss: #浮雕增强器
+#   alpha: [0.0, 1.0]
+#   strength: [0.5, 1.5]
+#
+# EdgeDetect: #边缘增强器
+#   alpha: [0.0, 1.0]

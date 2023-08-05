@@ -1,0 +1,10 @@
+requests
+cPython
+Cython
+loguru
+lxml
+numpy
+Pillow
+pycocotools
+tqdm
+opencv-python
