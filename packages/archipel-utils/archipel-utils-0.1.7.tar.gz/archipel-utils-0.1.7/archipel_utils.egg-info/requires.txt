@@ -1,0 +1,5 @@
+msgpack>=1.0
+numpy>=1.21
+pytest>=6.2
+pytest-cov>=2.11
+pytest-mock>=3.5
