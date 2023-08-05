@@ -1,0 +1,8 @@
+filters:
+  ".*":
+    reviewers:
+      - fzliu
+      - XuanYang-CN
+      - wangting0128
+    approvers:
+      - XuanYang-CN
