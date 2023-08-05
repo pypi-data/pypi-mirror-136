@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: discord-voice
+Version: 0.0.0
+Summary: Sans-I/O implementation of Discord voice communication
+Keywords: discord,discord-api,discord-bot,discord-api-wrapper,discord-gateway,python-3
+Author-email: Bluenix <bluenixdev@gmail.com>
+Requires-Python: >=3.6.2
+Description-Content-Type: text/markdown
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Internet
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Typing :: Typed
+Project-URL: Homepage, https://github.com/Bluenix2/discord-voice/
+Project-URL: Rpository, https://github.com/Bluenix2/discord-voice/
+
+# discord-voice
+
+Sans-I/O implementation of Discord voice communication.
+
+Follow development [at the GitHub repository](https://github.com/Bluenix2/discord-voice/)
