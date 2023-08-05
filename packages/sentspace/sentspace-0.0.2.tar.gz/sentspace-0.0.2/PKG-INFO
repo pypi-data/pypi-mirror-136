@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: sentspace
+Version: 0.0.2
+Summary: 
+Author: Your Name
+Author-email: you@example.com
+Requires-Python: >=3.8,<3.10
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: Morfessor (>=2.0.6,<3.0.0)
+Requires-Dist: PyICU (>=2.8,<3.0)
+Requires-Dist: PyYAML (>=6.0,<7.0)
+Requires-Dist: boto3 (>=1.20.25,<2.0.0)
+Requires-Dist: nltk (==3.6.2)
+Requires-Dist: numpy (>=1.22.1,<2.0.0)
+Requires-Dist: pandas (>=1.3.5,<2.0.0)
+Requires-Dist: pdoc3 (>=0.10.0,<0.11.0)
+Requires-Dist: polyglot (>=16.7.4,<17.0.0)
+Requires-Dist: pycld2 (>=0.41,<0.42)
+Requires-Dist: scipy (>=1.7.3,<2.0.0)
+Requires-Dist: seaborn (==0.11.2)
+Requires-Dist: torch (==1.9.0)
+Requires-Dist: transformers (==4.11.3)
