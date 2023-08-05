@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+naylepdf/__init__.py
+naylepdf/pdf2img.py
+naylepdf/pdf2text.py
+naylepdf.egg-info/PKG-INFO
+naylepdf.egg-info/SOURCES.txt
+naylepdf.egg-info/dependency_links.txt
+naylepdf.egg-info/top_level.txt
