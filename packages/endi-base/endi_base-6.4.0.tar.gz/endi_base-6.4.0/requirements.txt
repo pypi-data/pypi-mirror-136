@@ -1,0 +1,7 @@
+colander
+pyramid
+unidecode
+SQLAlchemy==1.4.13
+zope.sqlalchemy==1.4
+simplejson
+pyramid_mailer
