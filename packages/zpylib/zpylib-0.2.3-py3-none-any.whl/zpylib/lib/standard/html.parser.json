@@ -1,0 +1,23 @@
+{
+    "name":"html.parser",
+    "zpy":"html.parser",
+    "functions":[
+        {
+            "name":"entitydefs",
+            "zpy":"实体def年代"
+        },
+        {
+            "name":"name2codepoint",
+            "zpy":"名称2代码点"
+        },
+        {
+            "name":"codepoint2name",
+            "zpy":"代码点2的名称"
+        },
+        {
+            "name":"html5",
+            "zpy":"html5"
+        }
+    ],
+    "args":[]
+}

@@ -1,0 +1,28 @@
+{
+    "name":"http",
+    "zpy":"超文本传输协议",
+    "functions":[
+        {
+            "name":"HTTPStatus",
+            "zpy":"HTTP状态"
+        }
+    ],
+    "args":[
+        {
+            "name":"description",
+            "zpy":"描述"
+        },
+        {
+            "name":"phrase",
+            "zpy":"惯用语"
+        },
+        {
+            "name":"HTTPStatus",
+            "zpy":"HTTP状态"
+        },
+        {
+            "name":"value",
+            "zpy":"值"
+        }
+    ]
+}

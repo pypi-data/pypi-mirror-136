@@ -1,0 +1,20 @@
+{
+    "name":"pwd",
+    "zpy":"显示目录命令",
+    "functions":[
+        {
+            "name":"getspall",
+            "zpy":"幕"
+        },
+        {
+            "name":"getspnam",
+            "zpy":"p不结盟运动"
+        }
+    ],
+    "args":[
+        {
+            "name":"name",
+            "zpy":"名字"
+        }
+    ]
+}

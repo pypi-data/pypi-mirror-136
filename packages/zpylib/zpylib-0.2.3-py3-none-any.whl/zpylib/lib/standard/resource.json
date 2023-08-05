@@ -1,0 +1,32 @@
+{
+    "name":"resource",
+    "zpy":"资源",
+    "functions":[
+        {
+            "name":"error",
+            "zpy":"错误"
+        },
+        {
+            "name":"get_default_domain",
+            "zpy":"默认的域"
+        },
+        {
+            "name":"match",
+            "zpy":"比赛"
+        },
+        {
+            "name":"maps",
+            "zpy":"管理分析与规划系统"
+        }
+    ],
+    "args":[
+        {
+            "name":"domain",
+            "zpy":"领域"
+        },
+        {
+            "name":"mapname",
+            "zpy":"地图的名字"
+        }
+    ]
+}
