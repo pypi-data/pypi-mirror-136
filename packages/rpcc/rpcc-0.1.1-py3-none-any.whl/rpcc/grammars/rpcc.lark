@@ -1,0 +1,36 @@
+start           : [package] rpc_list
+package         : "package" DOTTED_NAME EOS
+rpc_list        : ( rpc )+
+rpc             : "rpc" rpc_name "{" [rpc_id] [include_if] (rpc_args [rpc_retvals] | [rpc_args] rpc_retvals) "}" EOS
+rpc_id          : "id:" INT EOS
+?include_if      : "include_if:" (defined | not_defined) EOS
+defined         : "compiler_defines" "(" NAME ")" -> ifdef
+not_defined     : "compiler_not_defines" "(" NAME ")" -> ifndef
+rpc_name        : NAME
+rpc_args        : "arguments" "{" ( var | )+ "}" EOS
+rpc_retvals     : "return_values" "{" ( var | )+ "}" EOS
+var             : type NAME EOS
+type            : "bool"           -> bool
+                | "double"         -> double
+                | "float"          -> float
+                | "int8"           -> int8
+                | "int16"          -> int16
+                | "int32"          -> int32
+                | "int64"          -> int64
+                | "uint8"          -> uint8
+                | "uint16"         -> uint16
+                | "uint32"         -> uint32
+                | "uint64"         -> uint64
+                | "csize"          -> csize
+                | "string"         -> string
+                | "exposed_buffer" -> exposed_buffer
+DOTTED_NAME     : NAME ( "." NAME)*
+COMMENT         : /#+[^\n]*/
+EOS             : ";"
+
+%import common.CNAME -> NAME
+%import common.WS
+%import common.INT
+%ignore WS
+%ignore COMMENT
+%ignore ";"
