@@ -1,0 +1,29 @@
+Global warming explained in under a minute
+
+Pop quiz, hot shot: how does global warming work? OK, but do you really know why? That’s the idea behind this video by the folks at howglobalwarmingworks.org.
+
+OK, but do you really know why? That's the idea behind this video by the folks at howglobalwarmingworks.org. Tania Lombrozo has the backstory at NPR's 13.7:
+
+The researchers wanted to know how well the average American understands the basic processes responsible for global warming, and whether there's a relationship between this basic understanding and the belief that global warming is actually occurring.
+
+The results were sobering. While a majority of volunteers believed that global warming is a reality (80 percent) and that human activities are a significant contributing factor (77 percent), only a slim minority was able to explain even rudimentary aspects of the mechanism. Twelve percent referenced gases in the atmosphere that trap heat (such as pollution or carbon dioxide), and of these, none addressed a puzzle that this partial answer seems to raise: why gases that trap heat in the earth's atmosphere don't similarly block heat from entering the atmosphere in the first place.
+
+So why don't greenhouse gases like water vapor, carbon dioxide, trap the heat as it comes from the Sun? That's because greenhouse gases let visible light pass on through (like what we see from the Sun) so that it can do things like help plants grow and warm the surface of the planet. When that energy leaves our planet, it does so slowly as infrared energy, which greenhouse gases are more than happy to slow down. The more greenhouse gases there are, the warmer things get. And so on.
+
+So there you have it. Or you could just watching this video:
+
+There are also longer videos that include more detail, if you're interested: howglobalwarmingworks.org.
+
+UPDATE: Dr. Michael Ranney, one of the leads behind the research into how people understand global warming, was kind enough to reach out to me and share some additional info. First, there is a short paper (less than six pages) on their study and the results. I encourage you to read it (PDF here). Second is a longer (400-word) explanation of the global warming mechanism/greenhouse effect. As many of you pointed out, distilling something as large and complex as global warming down to a minute-long video or several sentences is bound to leave out some important info. Although, I think the distilled version gets at the core mechanism. So here is a longer explanation that Dr. Ranney passed along (from UC Berkeley):
+
+Scientists tell us that human activities are changing Earth’s atmosphere and increasing Earth’s average temperature. What causes these climate changes?
+
+First, let’s understand Earth’s “normal” temperature: When Earth absorbs sunlight, which is mostly visible light, it heats up. Like the sun, Earth emits energy – but because it is cooler than the sun, Earth emits lower-energy infrared wavelengths. Greenhouse gases in the atmosphere (methane, carbon dioxide, etc.) let visible light pass through, but absorb infrared light – causing the atmosphere to heat up. The warmer atmosphere emits more infrared light, which tends to be re-absorbed – perhaps many times – before the energy eventually returns to space. The extra time this energy hangs around has helped keep Earth warm enough to support life as we know it. (In contrast, the moon has no atmosphere, and it is colder than Earth, on average.)
+
+Since the industrial age began around the year 1750, atmospheric carbon dioxide has increased by 40% and methane has increased by 150%. Such increases cause extra infrared light absorption, further heating Earth above its typical temperature range (even as energy from the sun stays basically the same). In other words, energy that gets to Earth has an even harder time leaving it, causing Earth’s average temperature to increase – producing global climate change.
+
+[In molecular detail, greenhouse gases absorb infrared light because their molecules can vibrate to produce asymmetric distributions of electric charge, which match the energy levels of various infrared wavelengths. In contrast, non-greenhouse gases (such as oxygen and nitrogen – that is, O2 and N2) don't absorb infrared light, because they have symmetric charge distributions even when vibrating.]
+
+Summary: (a) Earth absorbs most of the sunlight it receives; (b) Earth then emits the absorbed light’s energy as infrared light; (c) greenhouse gases absorb a lot of the infrared light before it can leave our atmosphere; (d) being absorbed slows the rate at which energy escapes to space; and (e) the slower passage of energy heats up the atmosphere, water, and ground. By increasing the amount of greenhouse gases in the atmosphere, humans are increasing the atmosphere’s absorption of infrared light, thereby warming Earth and disrupting global climate patterns.
+
+Shorter summary: Earth transforms sunlight’s visible light energy into infrared light energy, which leaves Earth slowly because it is absorbed by greenhouse gases. When people produce greenhouse gases, energy leaves Earth even more slowly – raising Earth’s temperature.
