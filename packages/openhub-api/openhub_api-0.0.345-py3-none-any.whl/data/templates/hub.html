@@ -1,0 +1,92 @@
+{% extends './base_site.html' %}
+
+{% block title %}{{ title }}{% endblock title %}
+{% block content %}
+    <h1>Hub: </h1>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm">
+                <form id="hub-form">
+                    {% csrf_token %}
+                    {% for field in hub_form.visible_fields %}
+                        <div class="form-group col">
+                            <label class="col-12">{{ field.label }}</label>
+                            {{ field }}
+                        </div>
+                        {% for field in hub_form.hidden_fields %}
+                            {{ field }}
+                        {% endfor %}
+                    {% endfor %}
+                    <input type="submit" class="btn btn-primary" value="Update Hub"/>
+                    <input id="delete" type="button" class="btn btn-primary btn-danger" value="Delete Hub"
+                           onclick="delete_hub()"/>
+
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock content %}
+<br>
+
+{% block javascript %}
+        {{ block.super }}
+
+    <script>
+
+        delete_hub = function () {
+
+            var serializedData = $("#hub-form").serialize();
+            $.ajax({
+                headers: {
+                    'X-CSRFTOKEN': '{{ csrf_token }}'
+                },
+                type: 'DELETE',
+                url: "{% url 'delete_hub' %}",
+                data: serializedData,
+                success: function (response) {
+                    window.location.replace("/hubs/");
+                },
+                error: function (response) {
+                    // alert the error if any error occured
+                    alert(response["responseJSON"]["error"]);
+                }
+            })
+        }
+
+
+        /*
+            On submiting the form, send the POST ajax
+            request to server and after successfull submission
+            display the object.
+        */
+        $("#hub-form").submit(function (e) {
+            // preventing from page reload and default actions
+            e.preventDefault();
+            // serialize the data for sending the form data.
+            var serializedData = $(this).serialize();
+            // make POST ajax call
+            $.ajax({
+                headers: {
+                    'X-CSRFTOKEN': '{{ csrf_token }}'
+                },
+                type: 'PATCH',
+                url: "{% url 'update_hub' %}",
+                data: serializedData,
+                success: function (response) {
+                    // on successfull creating object
+                    // 2. focus to nickname input
+                    $("#id_id").focus();
+
+                    // display the newly accessory to table.
+                    var instance = JSON.parse(response["instance"]);
+
+                },
+                error: function (response) {
+                    // alert the error if any error occured
+                    alert(response["responseJSON"]["error"]);
+                }
+            })
+        })
+    </script>
+{% endblock javascript %}
