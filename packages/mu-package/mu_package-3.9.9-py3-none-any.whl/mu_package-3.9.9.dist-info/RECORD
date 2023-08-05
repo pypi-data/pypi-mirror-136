@@ -1,0 +1,7 @@
+my-package/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+my-package/module1.py,sha256=pKWIkh7UhSI2i15MwXPqcHIo3QfeTJ3YOSVePQ48uko,562
+my-package/module2.py,sha256=P0FzwVfHB3W4lfKa17T3p8QQdGI_lZNMKKXoiqEmypg,351
+mu_package-3.9.9.dist-info/METADATA,sha256=qParMmsuZ3SuojmjZZybuyk4lZjr9qVjzrhedY5bzhs,700
+mu_package-3.9.9.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+mu_package-3.9.9.dist-info/top_level.txt,sha256=hJ1g3499P-6y7u-Dc_nx3Qk4YwEiCtT-Wt75sj4A8ak,11
+mu_package-3.9.9.dist-info/RECORD,,
