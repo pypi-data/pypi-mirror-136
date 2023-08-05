@@ -1,0 +1,13 @@
+---
+komora:
+  SECRET_STRING: "secret_string"
+  PRIVATE_KEY: "private_key"
+  SIGN_APP: "application_codename"
+  KOMORA_API_URL: "api_url"
+  KOMORA_URL: "komora_url"
+netbox:
+  NETBOX_API_TOKEN: "nb_token"
+  NETBOX_INSTANCE_URL: "nb_instance"
+  NETBOX_GRAPHQL_URL: "nb_instance/graphql/"
+common:
+  DEVICES_DATA_PATH: "/posted_data/devices/"

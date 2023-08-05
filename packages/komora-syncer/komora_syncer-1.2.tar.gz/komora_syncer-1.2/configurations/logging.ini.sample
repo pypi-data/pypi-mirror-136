@@ -1,0 +1,34 @@
+[loggers]
+keys=root
+
+[logger_root]
+level=NOTSET
+handlers=console,file
+
+[handlers]
+keys=console,file
+
+[handler_console]
+class=StreamHandler
+level=DEBUG
+formatter=debug_formatter
+#args=(sys.stderr,)
+
+[handler_file]
+class=handlers.RotatingFileHandler
+level=INFO
+formatter=info_formatter
+# filename, mode, maxbytes, backupcount
+args = (logs/log.out,
+        'a',
+        1024,
+        10)
+
+[formatters]
+keys=info_formatter,debug_formatter
+
+[formatter_info_formatter]
+format=%(asctime)s - %(name)s - %(levelname)s - %(message)s
+
+[formatter_debug_formatter]
+format=%(asctime)s - %(levelname)s - %(name)s - %(filename)s:%(lineno)d - %(message)s
