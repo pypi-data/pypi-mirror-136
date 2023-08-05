@@ -1,0 +1,14 @@
+omigo_core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+omigo_core/file_io_wrapper.py,sha256=I7_L9VH55BV9jfExOmNI98h_HGe67swk0-YzShKB4cg,4237
+omigo_core/file_paths_data_reader.py,sha256=h9HIOw76EmaM5yVRP10fnPcDqvA8sINbYXHcdzcTovQ,4200
+omigo_core/file_paths_reader.py,sha256=ioBbPOuPj-jczQhRREAqoqbOltrOXHUxKGjJB84vPQo,1168
+omigo_core/file_paths_util.py,sha256=6ykTP6IcJymlbTKVYZ_MxfnPE9YQIasrKnXFiaEw1QI,13870
+omigo_core/funclib.py,sha256=kSH8lQEuRs8tPs8IdoRu0hF9rqb94bnWrA8a-dQHjOI,3915
+omigo_core/s3_wrapper.py,sha256=46JCMkJ3cBOwK7oMdCDejR-MTxeYQfTIyWurXPpN-Sg,8646
+omigo_core/tsv.py,sha256=U_9HR4TrGT0oZ0Bp4n9OZb5ICHby9GyPg4mvF7rfldU,136039
+omigo_core/tsvutils.py,sha256=AWO5L4T2WwYRAiUBC8zurjw4IB6Ei3uRz0_cgkl_k3c,29589
+omigo_core/utils.py,sha256=cQeRUNd0zbJy5G4hpOOgdzq1Rt4A-zBNi3TnVWyhuQ0,6596
+omigo_core-0.3.6.dist-info/METADATA,sha256=sGCdz8fVsoaw2eCErIFeAoy2D6qwDT1AyzXms5ibdGw,741
+omigo_core-0.3.6.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+omigo_core-0.3.6.dist-info/top_level.txt,sha256=DzUH_tXlEzxNlXwnvT0axhwJ93Tbipu4q6sGWg79FJQ,11
+omigo_core-0.3.6.dist-info/RECORD,,
