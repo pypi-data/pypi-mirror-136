@@ -1,0 +1,9 @@
+hillfit/__init__.py,sha256=k1GGCJUTeSI7A_ia3t_M4Jiem9pXhklYjjsxhAWz1qw,52
+hillfit/fitting.py,sha256=C0tg9mDXxCsBl_GDccKWUZ142zlDYKJ0S3s5Xpkyyec,5764
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/test_fitting.py,sha256=oKHfGhX4ZC23o1GX5EZOeBhii3nM01F3mZV6bv3Pwos,3224
+hillfit-0.1.3.dist-info/LICENSE,sha256=LZiqagykm3_L2MbhAzJolU1vAx3iMDP7NybXpOsgGuE,1089
+hillfit-0.1.3.dist-info/METADATA,sha256=idEcCEvdpHKrBECCDFUejETFCuwGggMlHyg3WvJ1WgE,6849
+hillfit-0.1.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+hillfit-0.1.3.dist-info/top_level.txt,sha256=eTSb7P0p3v5yNLA9WVCmeGAMwHwUR3dPAahG_qLCcZg,13
+hillfit-0.1.3.dist-info/RECORD,,
