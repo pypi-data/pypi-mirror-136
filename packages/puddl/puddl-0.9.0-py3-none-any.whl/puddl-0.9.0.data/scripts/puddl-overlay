@@ -1,0 +1,6 @@
+#!/bin/bash
+set -euo pipefail
+# this should probably be called "puddl-felix-obs-overlay",
+# but keep things flat for now
+
+xfce4-terminal --zoom=6 --working-directory=$PUDDL_DATA --execute vim overlay

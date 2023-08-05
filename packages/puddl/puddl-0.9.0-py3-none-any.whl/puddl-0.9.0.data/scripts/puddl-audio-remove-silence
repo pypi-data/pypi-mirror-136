@@ -1,0 +1,58 @@
+#!python
+# encoding: utf-8
+import sys
+import subprocess
+
+from pathlib import Path
+
+import logging
+import os
+
+logging.basicConfig(level=os.environ.get('LOGLEVEL', 'INFO').upper())
+log = logging.getLogger()
+
+def run(cmd: list):
+  try:
+    return subprocess.run(cmd, check=True, capture_output=True, encoding='utf-8')
+  except subprocess.CalledProcessError as e:
+    print(e.stderr)
+    raise SystemExit(1)
+
+
+def duration(p: Path):
+  return run(['soxi', '-d', path]).stdout.rstrip()
+
+
+level_that_is_silence = "-30dB"
+try:
+  level_that_is_silence = sys.argv[1]
+except IndexError:
+  pass
+
+KEEP_SILENCE_SECS = 0.3
+FILTER_ARGS = f"stop_periods=-1:stop_duration={KEEP_SILENCE_SECS}:stop_threshold={level_that_is_silence}"
+log.debug(f'FILTER_ARGS={FILTER_ARGS}')
+
+OUTDIR = Path('shortened')
+OUTDIR.mkdir(exist_ok=True)
+
+paths = [Path(x) for x in sys.stdin.read().strip().split('\n')]
+
+for path in paths:
+  before = duration(path)
+  outfile = OUTDIR / path.name
+  # if outfile.exists():
+  #   raise Exception(f'already exists: {outfile}')
+  run([
+    'ffmpeg',
+    '-loglevel',
+    'error',
+    '-y',  # overwrite
+    '-i',
+    str(path),
+    '-af',
+    f'silenceremove={FILTER_ARGS}',
+    str(outfile)
+  ])
+  after = duration(path)
+  log.info(f'{path} ({before} --> {after})')

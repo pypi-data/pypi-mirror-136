@@ -1,0 +1,5 @@
+#!/bin/bash
+set -euo pipefail
+# https://stackoverflow.com/a/47676321
+
+exec find $(readlink -m $1) -name .git -exec dirname {} \; -prune

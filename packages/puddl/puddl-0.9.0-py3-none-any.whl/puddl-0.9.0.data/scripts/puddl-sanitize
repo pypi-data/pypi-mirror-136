@@ -1,0 +1,9 @@
+#!/bin/bash
+set -euo pipefail
+
+name=$1
+# :>
+# this is about as sane as ...
+name=${name#/}  # remove leading slashes
+name=${name%/}  # remove trailing slashes
+echo $name

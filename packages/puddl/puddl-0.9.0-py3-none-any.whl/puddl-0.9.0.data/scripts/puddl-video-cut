@@ -1,0 +1,23 @@
+#!/bin/bash
+set -euo pipefail
+# Workflow:
+# - vlc somevideo.mkv
+# - find time at which to cut (e.g. 02:05:40)
+# - run `puddl-video-cut somevideo.mkv 02:05:40`
+
+if [[ $# != 2 ]]; then
+  echo "Usage: $0 INPUT_FILE TO_TIME" >&2
+  exit 1
+fi
+
+# "man ffmpeg-utils" /Time duration
+# 02:05:40
+input_file=$1
+to_time=$2
+
+extension=${input_file#*.}
+output_file=${input_file%.*}-cut.${extension}
+
+# note that "-t $to_time" when put *before* the input (-i) means:
+#   read input up to $to_time
+ffmpeg -t $to_time -i $input_file -codec copy ${output_file}

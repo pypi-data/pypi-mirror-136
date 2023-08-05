@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: puddl
+Version: 0.9.0
+Summary: UNKNOWN
+Home-page: https://puddl.org
+Author: Felix Hummel
+Author-email: puddl-dev@felixhummel.de
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: Click
+Requires-Dist: psycopg2-binary
+Requires-Dist: python-dotenv
+Requires-Dist: sqlalchemy
+Provides-Extra: dev
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: bumpversion ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: pip-tools ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: twine ; extra == 'dev'
+Provides-Extra: full
+Requires-Dist: filetype ; extra == 'full'
+Requires-Dist: flask ; extra == 'full'
+Requires-Dist: pandas ; extra == 'full'
+Requires-Dist: requests ; extra == 'full'
+Requires-Dist: tinytag ; extra == 'full'
+
+UNKNOWN
+
+

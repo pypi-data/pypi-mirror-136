@@ -1,0 +1,18 @@
+#!/bin/bash
+set -euo pipefail
+
+t=$1
+txt="${2:-zeit rum}"
+
+
+# warn at 90% done
+warn="notify-send 'puddl timebox' 'zeit fast um für $txt'"
+warn_t=$(echo "$t - $t/10" | bc)
+
+end="notify-send -u critical -i /usr/share/icons/elementary-xfce/apps/64/rclock.png 'puddl timebox' '$txt'"
+
+# $warn_t can be equal to $t for small $t; no need to warn then
+if [[ $warn_t != $t ]]; then
+  echo "$warn" | at now + $warn_t minutes
+fi
+echo "$end" | at now + $t minutes

@@ -1,0 +1,25 @@
+#!/bin/bash
+set -euo pipefail
+
+if [[ $# < 2 ]]; then
+  cat <<EOF
+Usage: puddl-video-crop-preview VIDEO TIMESTAMP X Y WIDTH HEIGHT
+Create a cropped preview picture of video at timestamp.
+
+Example:
+$0 x.mkv 00:00:05 268 0 1385 1080
+
+You can then open x.mkv.preview.png in Gimp and effectively paste the values.
+EOF
+
+  exit 1
+fi
+
+file=$1
+timestamp=$2
+x=$3
+y=$4
+width=$5
+height=$6
+
+ffmpeg -i $file -y -ss $timestamp -vframes 1 -vf crop=$width:$height:$x:$y $file.preview.png

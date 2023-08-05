@@ -1,0 +1,4 @@
+#!/bin/bash
+set -euo pipefail
+
+exec curl --silent -H "User-Agent: puddl $(puddl-version)" $@

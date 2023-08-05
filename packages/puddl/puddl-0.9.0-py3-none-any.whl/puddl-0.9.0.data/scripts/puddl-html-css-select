@@ -1,0 +1,13 @@
+#!/bin/bash
+set -euo pipefail
+
+hash hxnormalize && hash hxselect || sudo apt-get install html-xml-utils
+
+if [[ $# != 1 ]]; then
+  cat <<EOF
+Usage: cat foo.html | $0 '.div[fooarg="barval"]'
+EOF
+  exit 1
+fi
+
+exec hxnormalize -xe 2>/dev/null | hxselect -s '\n' -c "$1"
