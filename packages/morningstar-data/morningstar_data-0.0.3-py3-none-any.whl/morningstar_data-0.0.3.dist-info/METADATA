@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: morningstar-data
+Version: 0.0.3
+Summary: Morningstar Data
+Author: Morningstar, Inc.
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: black (>=21.12b0,<22.0)
+Requires-Dist: coverage (>=6.2,<7.0)
+Requires-Dist: mypy (>=0.931,<0.932)
+Requires-Dist: pre-commit (>=2.16.0,<3.0.0)
+Requires-Dist: pytest (>=6.2.5,<7.0.0)
