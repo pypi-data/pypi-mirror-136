@@ -1,0 +1,11 @@
+pythermica/__init__.py,sha256=I6DusWwLnohJm3gp2tFWlOBcFHx8dt5fLUtW1zJ2eME,344
+pythermica/analyse_nwk.py,sha256=O8eyoZUtfqmEdVrjaYe8KeoEW4bj_6qMMb4odDpIN1Q,12353
+pythermica/hdf5_process.py,sha256=tzKQ596-ilxdNbWgSbOLSrYOYyL4j_O81PvEZh5FnYw,1169
+pythermica/plot_variables.py,sha256=fQvRSCynFB03DoO3OHb58zpUA0XsVZyBhfr9xiao4S4,8639
+pythermica/pythermica.py,sha256=x44ebSYSpFVNEmMkd1oct0Nc9xV7L7MCaVMei7C1m1c,7742
+pythermica-0.2.1.dist-info/AUTHORS.rst,sha256=-yfdz-giHz8Zn4pkm58-imN1j0eVBaznYPNQZzPLca0,175
+pythermica-0.2.1.dist-info/LICENSE,sha256=2o9E3U2K7suHOBuf8SoSdr5-XA3E5n9NyWqmsgn6PqU,1564
+pythermica-0.2.1.dist-info/METADATA,sha256=xk0EGveK9LVX75njlCCU8-6y8XYbUZdohNPdRx8gRTQ,2415
+pythermica-0.2.1.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+pythermica-0.2.1.dist-info/top_level.txt,sha256=rfBK76elfiDISa0VHkRO8r8Xt1x4pMLLXsH941dJ3KU,11
+pythermica-0.2.1.dist-info/RECORD,,
