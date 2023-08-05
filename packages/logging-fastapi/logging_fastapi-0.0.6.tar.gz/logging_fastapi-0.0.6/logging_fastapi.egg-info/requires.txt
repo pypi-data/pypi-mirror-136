@@ -1,0 +1,16 @@
+fastapi
+cuid
+loguru
+psutil
+pydash
+schedule
+httpx<0.19.0,>=0.18.0
+opentelemetry-api
+opentelemetry-sdk
+opentelemetry-propagator-b3
+opentelemetry-propagator-jaeger
+opentelemetry-instrumentation-httpx
+opentelemetry-instrumentation-requests
+opentelemetry-instrumentation-fastapi
+opentelemetry-instrumentation-celery
+opentelemetry-exporter-jaeger-thrift
