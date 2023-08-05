@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.py
+src/mypydb/__init__.py
+src/mypydb/columns.py
+src/mypydb.egg-info/PKG-INFO
+src/mypydb.egg-info/SOURCES.txt
+src/mypydb.egg-info/dependency_links.txt
+src/mypydb.egg-info/top_level.txt
