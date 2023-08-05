@@ -1,0 +1,7 @@
+PyYAML>=5.4.1
+requests>=2.25.1
+pulsar-client<2.8,>=2.7.0
+minio<8.0,>=7.0.1
+elasticsearch<7.14,>=7.13.1
+oss2>=2.14.0
+fastavro>=0.24.0
