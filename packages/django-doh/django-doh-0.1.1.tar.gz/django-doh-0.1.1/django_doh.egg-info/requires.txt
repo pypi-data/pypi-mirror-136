@@ -1,0 +1,2 @@
+django
+dnspython>=2.2
