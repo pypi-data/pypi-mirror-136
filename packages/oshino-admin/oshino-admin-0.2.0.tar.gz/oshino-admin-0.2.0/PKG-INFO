@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: oshino-admin
+Version: 0.2.0
+Summary: 
+Home-page: https://github.com/CodersOfTheNight/oshino-admin
+License: MIT
+Author: Šarūnas Navickas
+Author-email: zaibacu@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: PyYAML (>=6.0,<7.0)
+Requires-Dist: click (>=8.0.3,<9.0.0)
+Requires-Dist: daemonize (>=2.5.0,<3.0.0)
+Requires-Dist: requests (>=2.27.1,<3.0.0)
+Project-URL: Repository, https://github.com/CodersOfTheNight/oshino-admin
+Description-Content-Type: text/markdown
+
+oshino-admin
+=============
+Administration module for Oshino.
+Should come bundled together with Oshino itself.
+
+Managing Plugins
+=================
+`oshino-admin plugin list` - lists all available plugins
+
+`oshino-admin plugin install <plugin_name>` - installs requested plugin
+
+`oshino-admin plugin uninstall <plugin_name>` - uninstalls requested plugin
+
+Managing Oshino
+===============
+
+`oshino-admin start --config=config.yaml --pid=oshino.pid` 
+
+`oshino-admin status --pid=oshino.pid` 
+
+`oshino-admin stop --pid=oshino.pid` 
+
+Be aware, that default PID path `/var/run/oshino.pid` might be unaccessible by oshino-admin (Lacking of root permissions).
+Custom pid path can be defined (as show in example above). Main problem is that you need to direct into correct PID for each service command.
+
+Generating Config
+==================
+`oshino-admin config init <config_name>.yml`
+
+Querying metrics
+=================
+`oshino-admin query 'tagged "hw"' --config=config.yaml`
+
+You can run any query against Riemann using it's query DSL language. Short examples:
+`tagged "<tag>"` - retrieves metrics by tag
+`service = "<something>"` - gives metrics by service name. Same can be done for `host` or other keys
+`service =~ "%<something>%"` - `=~` marks that we're going to search by wildcard, `%` marks that there can be anything (similar to SQLs `LIKE %something%`)
+
