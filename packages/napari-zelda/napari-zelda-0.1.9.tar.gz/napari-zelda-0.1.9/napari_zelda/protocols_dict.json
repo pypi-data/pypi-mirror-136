@@ -1,0 +1,39 @@
+{
+    "Protocols": [
+        {
+            "name": "Segment a single population",
+            "steps": {
+                "step_number": 1,
+                "step_name": "prot_1"
+            }
+        },
+        {
+            "name": "Segment two populations and relate",
+            "steps": {
+                "step_number": 1,
+                "step_name": "prot_2"
+            }
+        },
+        {
+            "name": "Data Plotter",
+            "steps": {
+                "step_number": 1,
+                "step_name": "prot_3"
+            }
+        },
+        {
+            "name": "Design a New Protocol",
+            "steps": {
+                "step_number": 1,
+                "step_name": "prot_4"
+            }
+        },
+        {
+            "name": "Import and Export Protocols",
+            "steps": {
+                "step_number": 1,
+                "step_name": "prot_5"
+            }
+        }
+    ]
+}

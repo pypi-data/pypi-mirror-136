@@ -1,0 +1,14 @@
+# .napari/config.yml
+# ...
+authors:
+  - name: Rocco D'Antuono
+    orcid: 0000-0003-0180-6500
+  - name: Giuseppina Pisignano
+    orcid: 0000-0001-7476-3447
+# ...
+
+# Add labels the plugin from the EDAM Bioimaging ontology
+labels:
+  ontology: EDAM-BIOIMAGING:alpha06
+  terms:
+  - Object-based colocalisation

@@ -1,0 +1,9 @@
+site_name: napari-zelda
+site_description: ZELDA: a 3D Image Segmentation and Parent-Child relation plugin for microscopy image analysis in napari
+site_author: Rocco D'Antuono, Giuseppina Pisignano
+
+theme: readthedocs
+
+
+pages:
+- Home: index.md
