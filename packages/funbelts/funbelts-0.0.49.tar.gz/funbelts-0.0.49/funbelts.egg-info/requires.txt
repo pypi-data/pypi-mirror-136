@@ -1,0 +1,6 @@
+pandas
+sqlalchemy
+xlsxwriter
+psutil
+httplib2
+python-telegram-botPyGithub
