@@ -1,0 +1,3 @@
+[console_scripts]
+amsthm=amsthm:main
+

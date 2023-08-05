@@ -1,0 +1,10 @@
+LICENSE,sha256=bZ_Jj-Dzy8M2-zGt5d7f3RXD-yulfwcZXja5Sq33Xvw,1525
+README.rst,sha256=Ms8AnuupYQUKeBLRIy55t1qmV_V0ZPdOp7WXcXcSr-c,5814
+amsthm/__init__.py,sha256=YGy8Hxd2oiRwatYuUSHMTsaa2m82lyQ73B7HfGYWr1U,17814
+amsthm/helper.py,sha256=Mc_pNVkjzxJfDiqbj6RgY0Ns4dvfzZ-t0Dxf3tlvG1s,4644
+amsthm/util.py,sha256=ICImm7bcgmAm7t5Qn9Y8Gx1hANdXRK8fKr2fJheQfig,1187
+amsthm-2.0.0.dist-info/entry_points.txt,sha256=bmv-XPOkw2l03MBn7tMDdPdysPexmnya5S4c1ExIulo,38
+amsthm-2.0.0.dist-info/LICENSE,sha256=bZ_Jj-Dzy8M2-zGt5d7f3RXD-yulfwcZXja5Sq33Xvw,1525
+amsthm-2.0.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+amsthm-2.0.0.dist-info/METADATA,sha256=rQgRVnVcWBRmRpvEThzfVKWe11HQOv4EiTf1AYNSJ0c,7503
+amsthm-2.0.0.dist-info/RECORD,,
