@@ -1,0 +1,8 @@
+README.md
+setup.py
+nivir/__init__.py
+nivir/main.py
+nivir.egg-info/PKG-INFO
+nivir.egg-info/SOURCES.txt
+nivir.egg-info/dependency_links.txt
+nivir.egg-info/top_level.txt
