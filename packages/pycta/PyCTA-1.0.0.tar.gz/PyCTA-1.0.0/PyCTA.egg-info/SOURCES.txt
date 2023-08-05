@@ -1,0 +1,7 @@
+README.md
+setup.py
+PyCTA.egg-info/PKG-INFO
+PyCTA.egg-info/SOURCES.txt
+PyCTA.egg-info/dependency_links.txt
+PyCTA.egg-info/requires.txt
+PyCTA.egg-info/top_level.txt

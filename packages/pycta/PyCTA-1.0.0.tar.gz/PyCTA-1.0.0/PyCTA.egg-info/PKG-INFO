@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: PyCTA
+Version: 1.0.0
+Summary: Unofficial Python Wrapper for CTA Transit Feed
+Home-page: https://github.com/joerex1418/cta
+Author: Joe Rechenmacher
+Author-email: joe.rechenmacher@gmail.com
+License: GPU
+Project-URL: Issues, https://github.com/joerex1418/cta/issues
+Project-URL: Projects, https://github.com/joerex1418/cta/projects
+Platform: UNKNOWN
+
+UNKNOWN
+
