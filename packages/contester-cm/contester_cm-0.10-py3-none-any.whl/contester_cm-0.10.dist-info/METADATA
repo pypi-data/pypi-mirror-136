@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: contester-cm
+Version: 0.10
+Summary: UNKNOWN
+Home-page: https://github.com/FullDungeon/python_pip
+Author: FullDungeon
+Author-email: ddd.dungeon@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.5
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+
+## Создание задачи
+В произвольном каталоге выполнить команду:
+```
+contester-cm create name
+```
+где _name_ - название новой задачи. Если в текущей директории уже есть каталог с именем _name_, то задача создана не будет.
+
+В файле _statement.md_ указывается описание задачи с тестовыми примерами. В файле _info.ini_ указывается мета-информация информация о задаче, название, тема, раздел и т.п.
+
+## Тесты
+По умолчанию добавлена одна пара тестовых файлов (_input_1.txt_ и _output_1.txt_) в качестве примера.
+
+Однако могут быть ситуации, когда нет необходимости добавлять файлы _output_, поскольку чекер может сам проверять правильность решения. Поэтому эти файлы можно удалить.
+
+#### Добавление (удаление) тестов
+Перед добавлением/удалением тестов необходимо перейти в каталог с задачей _proplem_name_:
+```
+cd proplem_name
+```
+
+Добавить _n_ тестов:
+```
+contester-cm addtests n
+```
+
+Удалить все тесты:
+```
+contester-cm deltests
+```
+
+## Сборка
+Для системы Contester 2.4 требуются zip-файлы задач. Чтобы собрать zip-файл для задачи _problem_name_ необходимо выполнить команду в директории с каталогом задачи:
+```
+contester-cm build problem_name
+```
+
+Чтобы собрать все задачи в данной директории, нужно выполнить:
+```
+contester-cm build *
+```
+
+
