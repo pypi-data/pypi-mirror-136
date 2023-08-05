@@ -1,0 +1,10 @@
+README.md
+setup.py
+supercellmap/__init__.py
+supercellmap/supercell.py
+supercellmap/tests.py
+supercellmap.egg-info/PKG-INFO
+supercellmap.egg-info/SOURCES.txt
+supercellmap.egg-info/dependency_links.txt
+supercellmap.egg-info/requires.txt
+supercellmap.egg-info/top_level.txt
