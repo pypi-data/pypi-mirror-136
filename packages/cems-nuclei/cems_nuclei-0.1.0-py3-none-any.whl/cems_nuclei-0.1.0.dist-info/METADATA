@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: cems-nuclei
+Version: 0.1.0
+Summary: Python wrapper around NUCLEI's functionality.
+Home-page: https://github.com/cemsbv/nuclei
+Author: Ritchie Vink
+Author-email: info@cemsbv.nl
+License: mit
+Platform: UNKNOWN
+Requires-Python: >=3.7
+Requires-Dist: requests (>=2.21.0)
+Requires-Dist: numpy (>=1.16.1)
+Requires-Dist: pandas (>=0.24.1)
+Requires-Dist: ipython (>=7.3.0)
+Requires-Dist: pyarrow (>=0.16.0)
+Requires-Dist: polars (>=0.7.0)
+Provides-Extra: geo
+Requires-Dist: geopandas (>=0.8.0) ; extra == 'geo'
+
+UNKNOWN
+
+
