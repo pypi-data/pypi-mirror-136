@@ -1,0 +1,144 @@
+{% extends "./base.html" %}
+
+{% block title %}{% if subtitle %}{{ subtitle }} | {% endif %}{{ title }} |
+    {{ site_title|default:_('Django site admin') }}{% endblock %}
+
+{% block branding %}
+    <h1 id="site-name"><a href="{% url 'login' %}">{{ site_header|default:_('OpenHub') }}</a></h1>
+{% endblock %}
+
+{% block nav-global %}
+    {#<nav class="navbar navbar-expand-lg navbar-light bg-light">#}
+    {#  <div class="container-fluid">#}
+    {#    <ul class="navbar-nav">#}
+    {#      <!-- Dropdown -->#}
+    {#      <li class="nav-item dropdown">#}
+    {#        <a#}
+    {#          class="nav-link dropdown-toggle"#}
+    {#          href="#"#}
+    {#          id="navbarDropdownMenuLink"#}
+    {#          role="button"#}
+    {#          data-mdb-toggle="dropdown"#}
+    {#          data-bs-toggle="dropdown"#}
+    {#          aria-expanded="false"#}
+    {#        >#}
+    {#          Dropdown link#}
+    {#        </a>#}
+    {#        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">#}
+    {#          <li>#}
+    {#            <a class="dropdown-item" href="#">Action</a>#}
+    {#          </li>#}
+    {#          <li>#}
+    {#            <a class="dropdown-item" href="#">Another action</a>#}
+    {#          </li>#}
+    {#          <li>#}
+    {#            <a class="dropdown-item" href="#">#}
+    {#              Submenu &raquo;#}
+    {#            </a>#}
+    {#            <ul class="dropdown-menu dropdown-submenu">#}
+    {#              <li>#}
+    {#                <a class="dropdown-item" href="#">Submenu item 1</a>#}
+    {#              </li>#}
+    {#              <li>#}
+    {#                <a class="dropdown-item" href="#">Submenu item 2</a>#}
+    {#              </li>#}
+    {#              <li>#}
+    {#                <a class="dropdown-item" href="#">Submenu item 3 &raquo; </a>#}
+    {#                <ul class="dropdown-menu dropdown-submenu">#}
+    {#                  <li>#}
+    {#                    <a class="dropdown-item" href="#">Multi level 1</a>#}
+    {#                  </li>#}
+    {#                  <li>#}
+    {#                    <a class="dropdown-item" href="#">Multi level 2</a>#}
+    {#                  </li>#}
+    {#                </ul>#}
+    {#              </li>#}
+    {#              <li>#}
+    {#                <a class="dropdown-item" href="#">Submenu item 4</a>#}
+    {#              </li>#}
+    {#              <li>#}
+    {#                <a class="dropdown-item" href="#">Submenu item 5</a>#}
+    {#              </li>#}
+    {#            </ul>#}
+    {#          </li>#}
+    {#        </ul>#}
+    {#      </li>#}
+    {#    </ul>#}
+    {#  </div>#}
+    {#</nav>#}
+    {#        <ul id="top_menu">#}
+    {#    <nav class="navbar navbar-expand-lg">#}
+    {#        <div class="container-fluid" id="top_menu">#}
+    <ul class="nav  justify-content-end">
+        <li class="nav-item">
+            <a class="nav-link" href="/hubs/">Hubs</a>
+        </li>
+        <li class="nav-item dropdown">
+            <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdownMenuLink"
+                    role="button"
+                    data-mdb-toggle="dropdown"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+            >Hubs</a>
+            {#                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">#}
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <ul class="nav-item dropdown" id="hub-list">
+                    {% for hub in hubs %}
+                        <li>
+                            <a class="nav-link dropdown-item" href="#{{ hub.id }}">
+                                {{ hub.display_name }}
+                            </a>
+
+                        </li>
+
+
+                    {% endfor %}
+                </ul>
+
+            </ul>
+        </li>
+        <li class="nav-item">
+
+            <a class="nav-link" id="hub-link" href="/hubs">Hub</a>
+        </li>
+        <li class="nav-item">
+
+            <a class="nav-link" id="hardware-link" href="/hardwares">Hardware</a>
+        </li>
+        <li class="nav-item">
+
+            <a class="nav-link" id="accessory-link" href="/accessories">Accessories</a>
+        </li>
+        <li class="nav-item">
+
+            {% if user.is_authenticated %}
+                <a class="nav-link" href="{% url 'logout' %}">Log Out</a>
+            {% else %}
+                <a class="nav-link" href="{% url 'login' %}">Log In</a>
+            {% endif %}
+        </li>
+
+    </ul>
+    {#        </div>#}
+    {#    </nav>#}
+{% endblock %}
+
+
+{% block javascript %}
+
+    <script>
+
+        $("#hub-list").click(function () {
+            $("#hub-link").get(0).href = "/hubs/" + $("#hub-list :selected").prevObject[0].activeElement.href.replace(/^.+#/, '');
+            $("#hardware-link").get(0).href = "/hubs/" + $("#hub-list :selected").prevObject[0].activeElement.href.replace(/^.+#/, '') + "/hardwares";
+            $("#accessory-link").get(0).href = "/hubs/" + $("#hub-list :selected").prevObject[0].activeElement.href.replace(/^.+#/, '') + "/accessories";
+            $("#navbarDropdownMenuLink").text('Hub: ' + $("#hub-list :selected").prevObject[0].activeElement.innerText);
+        });
+
+    </script>
+
+
+{% endblock javascript %}
