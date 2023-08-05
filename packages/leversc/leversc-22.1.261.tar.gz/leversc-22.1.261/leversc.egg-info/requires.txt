@@ -1,0 +1,6 @@
+matplotlib
+h5py
+imageio
+requests
+scikit-image
+pooch
