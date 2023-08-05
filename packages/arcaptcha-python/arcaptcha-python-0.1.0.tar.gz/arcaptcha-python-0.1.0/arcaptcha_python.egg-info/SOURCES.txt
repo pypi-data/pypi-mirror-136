@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+arcaptcha_python/Arcaptcha.py
+arcaptcha_python/__init__.py
+arcaptcha_python.egg-info/PKG-INFO
+arcaptcha_python.egg-info/SOURCES.txt
+arcaptcha_python.egg-info/dependency_links.txt
+arcaptcha_python.egg-info/requires.txt
+arcaptcha_python.egg-info/top_level.txt
