@@ -1,0 +1,24 @@
+Metadata-Version: 1.1
+Name: BUCTOJ
+Version: 0.0.4
+Summary: 用Python玩转北化OJ平台
+Home-page: https://letmefly.xyz/
+Author: LetMeFly
+Author-email: Tisfy@qq.com
+License: Apache License
+Description: BUCTOJ 用Python玩转北化OJ平台
+        
+Platform: all
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Natural Language :: Chinese (Simplified)
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Libraries
