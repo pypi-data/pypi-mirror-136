@@ -1,0 +1,9 @@
+LICENSE
+setup.py
+in/__init__.py
+in/python.py
+ravspeak.egg-info/PKG-INFO
+ravspeak.egg-info/SOURCES.txt
+ravspeak.egg-info/dependency_links.txt
+ravspeak.egg-info/requires.txt
+ravspeak.egg-info/top_level.txt
