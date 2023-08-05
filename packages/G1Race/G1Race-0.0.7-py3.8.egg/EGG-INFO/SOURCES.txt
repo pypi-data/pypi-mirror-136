@@ -1,0 +1,8 @@
+README.md
+setup.py
+src/G1Race.py
+src/G1Race.egg-info/PKG-INFO
+src/G1Race.egg-info/SOURCES.txt
+src/G1Race.egg-info/dependency_links.txt
+src/G1Race.egg-info/entry_points.txt
+src/G1Race.egg-info/top_level.txt
