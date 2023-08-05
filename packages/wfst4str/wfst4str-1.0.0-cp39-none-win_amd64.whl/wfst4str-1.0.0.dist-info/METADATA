@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: wfst4str
+Version: 1.0.0
+Classifier: Programming Language :: Rust
+Classifier: Operating System :: POSIX :: Linux
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+
+# wfst4str
+A Python library wrapping a subset of the rustfst library and adding functionality for working with strings
+
