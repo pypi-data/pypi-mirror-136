@@ -1,0 +1,10 @@
+helm_package/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+helm_package/bin/macos/helm2,sha256=_hz7x0XN4vBexDMxjCEeOWBMbVwhMpxsGh6pAK9wg7Q,47149640
+helm_package/bin/macos/helm3,sha256=BuGSUw7ZkJcDVBW_s7J7Pk504NJepeRbmumkVEQT-H8,44876080
+helm_package/bin/windows/helm2.exe,sha256=NMPdUGT4IBA4ix_N4jIJEnJvw-eEN-c0tz_XAfj_TME,42085376
+helm_package/bin/windows/helm3.exe,sha256=RffUuMo_NtKg4OuodREJNHgwL9WfKv73kz5TlZn7EH8,47055872
+helm_package-0.0.7.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+helm_package-0.0.7.dist-info/METADATA,sha256=a697b18coT7tpA1RWbdRJW-9rjs2ZSDCn9hSF3K4cVs,724
+helm_package-0.0.7.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+helm_package-0.0.7.dist-info/top_level.txt,sha256=t9FtPPiVge8eSryBLCrURqO9XZPPcxi-BJbwl08S4T0,13
+helm_package-0.0.7.dist-info/RECORD,,

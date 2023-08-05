@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: helm-package
+Version: 0.0.7
+Summary: helm bin package for wins and macos including helm2 and helm3
+Home-page: https://github.com/pypa/helm_bin
+Author: tinson
+Author-email: tinson.liu@6317.io
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/pypa/helm_bin/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Example Package
+
+This is a simple example package. You can use
+[Github-flavored Markdown](https://guides.github.com/features/mastering-markdown/)
+to write your content.
+
