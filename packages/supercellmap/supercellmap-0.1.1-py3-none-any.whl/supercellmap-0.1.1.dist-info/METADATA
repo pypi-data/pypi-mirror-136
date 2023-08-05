@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: supercellmap
+Version: 0.1.1
+Summary: Supercellmap is a tool to map primitive cell quantities in primitive cell into supercells.
+Home-page: UNKNOWN
+Author: Xu He
+Author-email: mailhexu@gmail.com
+License: BSD-2-clause
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Chemistry
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: License :: OSI Approved :: BSD License
+Requires-Python: >=3.6
+Requires-Dist: ase
+Requires-Dist: numpy
+
+Supercellmap is a tool to map primitive cell quantities in primitive cell into supercells.
+
+
