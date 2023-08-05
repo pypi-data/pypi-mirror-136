@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: simple-mess-server
+Version: 0.1.0
+Summary: Messenger Client
+Home-page: UNKNOWN
+Author: Kirillova V.
+Author-email: victmanio@yandex.ru
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: PyQt5
+Requires-Dist: sqlalchemy
+Requires-Dist: pycryptodome
+Requires-Dist: pycryptodomex
+
+UNKNOWN
+
