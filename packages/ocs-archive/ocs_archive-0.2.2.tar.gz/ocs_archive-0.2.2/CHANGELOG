@@ -1,0 +1,9 @@
+0.2.1
+2021-12-09
+
+Adds some configuration to configure a connection to the Observation Portal and the ability to configure a set of proposal tags that dictate data privacy rules
+
+0.1.1
+2021-11-01
+
+Initial library release
