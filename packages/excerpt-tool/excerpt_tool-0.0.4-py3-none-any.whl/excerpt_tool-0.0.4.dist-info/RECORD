@@ -1,0 +1,9 @@
+excerpt_tool/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+excerpt_tool/core.py,sha256=1JTc7ctc7Hswi_msw2-FRebEckkYvUkSq3771U25eZ0,4033
+excerpt_tool/main.py,sha256=QmBKc7MIlebQQ2OPb3Ds_cvCkXSx5lSIgy1JwNBXmQQ,5031
+excerpt_tool-0.0.4.dist-info/LICENSE,sha256=FSS_PJOrwuWhzNup_0k9m47GmqNtfMHOkskbwNAxfG0,1066
+excerpt_tool-0.0.4.dist-info/METADATA,sha256=SgTdYI0_DmVmdznXyK6rnojM9FX23nnBixxN4P0orZo,222
+excerpt_tool-0.0.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+excerpt_tool-0.0.4.dist-info/entry_points.txt,sha256=vCsxN_oEZKX980D0D_gm5F1raYn73OpN07-XJXAH6NI,48
+excerpt_tool-0.0.4.dist-info/top_level.txt,sha256=hk7AnMnDuO8JLKkcQMMsSc3oX2KNtZU1HQVSqAcVIhg,13
+excerpt_tool-0.0.4.dist-info/RECORD,,
