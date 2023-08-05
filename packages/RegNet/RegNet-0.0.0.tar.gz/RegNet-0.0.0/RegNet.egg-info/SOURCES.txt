@@ -1,0 +1,5 @@
+setup.py
+RegNet.egg-info/PKG-INFO
+RegNet.egg-info/SOURCES.txt
+RegNet.egg-info/dependency_links.txt
+RegNet.egg-info/top_level.txt
