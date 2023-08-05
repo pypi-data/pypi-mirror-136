@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+tkinter_tooltip.egg-info/PKG-INFO
+tkinter_tooltip.egg-info/SOURCES.txt
+tkinter_tooltip.egg-info/dependency_links.txt
+tkinter_tooltip.egg-info/top_level.txt
+tktooltip/__init__.py
+tktooltip/__main__.py
+tktooltip/_version.py
+tktooltip/tooltip.py
