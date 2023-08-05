@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/cheathit/__init__.py
+src/cheathit/analyzer.py
+src/cheathit/cheathit.py
+src/cheathit/file_finder.py
+src/cheathit/ngram.py
+src/cheathit/ngram_collector.py
+src/cheathit/parser.py
+src/cheathit/shared.py
+src/cheathit.egg-info/PKG-INFO
+src/cheathit.egg-info/SOURCES.txt
+src/cheathit.egg-info/dependency_links.txt
+src/cheathit.egg-info/entry_points.txt
+src/cheathit.egg-info/top_level.txt
