@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: opml2json
+Version: 0.1.0
+Summary: convert opml to json
+Home-page: https://github.com/vishnu012/opml2json
+Author: Vishnu
+Author-email: vishnu012@pm.me
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+
+opml2json is a simple python module that convert opml to json 
+
+## installation
+---
+
+#### Using pip
+        pip install opml2json
+
+#### from sources
+        * git clone https://github.com/vishnu012/opml2json && cd opml2json
+
+        * python3 setup.py install
+---
+## usage
+
+#### for help
+    python3 -m opml2json -h
+
+#### import on another python file
+    from opml2json.dump import write_json
+
+    write_json("input.opml","output.json")
+
+#### directly use on terminal / cmd
+    python3 -m opml2json -f filename.opml
+
+    python3 -m opml2json -f ./dir/filename.opml -o ./dir/output_filename.json
+
+
+
