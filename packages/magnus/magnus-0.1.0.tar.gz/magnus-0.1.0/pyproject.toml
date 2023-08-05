@@ -1,0 +1,37 @@
+[tool.poetry]
+name = "magnus"
+version = "0.1.0"
+description = "A Compute agnostic pipelining software"
+authors = ["Vijay Vammi <vijay.vammi@astrazeneca.com>", "Vijay Vammi <mesanthu@gmail.com>"]
+license = "Apache-2.0"
+
+[tool.poetry.dependencies]
+python = "^3.6.1"
+"ruamel.yaml" = "*"
+"ruamel.yaml.clib" = "*"
+yachalk = "*"
+docker ={ version = "*", optional = true }
+pydantic = "^1.9.0"
+
+[tool.poetry.extras]
+docker = ['docker']
+
+[tool.poetry.dev-dependencies]
+autopep8 = "*"
+pylint = "*"
+pytest = "*"
+pytest-cov = "*"
+pytest-mock = "*"
+mkdocs = "*"
+mkdocs-material = "*"
+mypy = "^0.931"
+tox = "^3.24.5"
+pre-commit = "*"
+
+[tool.poetry.scripts]
+magnus= 'magnus.cli:main'
+
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
