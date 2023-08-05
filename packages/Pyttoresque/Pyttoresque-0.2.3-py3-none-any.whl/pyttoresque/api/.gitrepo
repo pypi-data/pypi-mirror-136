@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = https://github.com/NyanCAD/SimServer
+	branch = main
+	commit = 4624544ea6a712750874e5b70ced1b197eaf0813
+	parent = 87a4e7d2658c3cc17450baf0097425dc4591ae7d
+	method = merge
+	cmdver = 0.4.3
