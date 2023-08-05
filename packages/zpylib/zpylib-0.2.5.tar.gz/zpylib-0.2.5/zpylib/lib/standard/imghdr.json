@@ -1,0 +1,20 @@
+{
+    "name":"imghdr",
+    "zpy":"imghdr",
+    "functions":[
+        {
+            "name":"whathdr",
+            "zpy":"h博士"
+        },
+        {
+            "name":"what",
+            "zpy":"什么"
+        }
+    ],
+    "args":[
+        {
+            "name":"filename",
+            "zpy":"文件名"
+        }
+    ]
+}
