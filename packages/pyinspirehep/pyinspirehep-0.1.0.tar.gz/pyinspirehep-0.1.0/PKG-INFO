@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: pyinspirehep
+Version: 0.1.0
+Summary: A simple python wrapper for inspirehep API
+Home-page: UNKNOWN
+Author: Javad Ebadi, Vahid Hoseinzade
+Author-email: javad.ebadi.1990@gmail.com, vahid.hoseinzade64@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3
