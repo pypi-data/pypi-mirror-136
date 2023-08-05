@@ -1,0 +1,6 @@
+fastapi_returns_router/__init__.py,sha256=xOEgA9KJPsToSQ8vG64j9CkPG00T-hgIzfslV7lSBi0,134
+fastapi_returns_router/_wrappers.py,sha256=EBRyUpTgxWIK2ac55jVrZJ9trVZ9kxdgtyi8Zr-Dz_Y,3681
+fastapi_returns_router/returns_router.py,sha256=CwF0i2b9XKIetDJ--89Aauq7syqKdIJ941QyRzrk70M,3050
+fastapi_returns_router-1.0.1.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+fastapi_returns_router-1.0.1.dist-info/METADATA,sha256=HRBb8WgjLRXqJktjEqmL3mVxnSBm4HgKL1oNya8a8LA,985
+fastapi_returns_router-1.0.1.dist-info/RECORD,,
