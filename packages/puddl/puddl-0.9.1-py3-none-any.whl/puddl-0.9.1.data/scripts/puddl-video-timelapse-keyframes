@@ -1,0 +1,8 @@
+#!/bin/bash
+set -euo pipefail
+
+tmp=$(mktemp --suffix .mp4)
+echo $tmp >&2
+ffmpeg -discard nokey -i $1 -c copy $tmp
+ffmpeg -r 10 -i $tmp -c copy $2
+rm $tmp
