@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+zecwallet/__init__.py
+zecwallet/wallet.py
+zecwallet.egg-info/PKG-INFO
+zecwallet.egg-info/SOURCES.txt
+zecwallet.egg-info/dependency_links.txt
+zecwallet.egg-info/top_level.txt
