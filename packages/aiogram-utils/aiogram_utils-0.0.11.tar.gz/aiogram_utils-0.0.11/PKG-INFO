@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: aiogram_utils
+Version: 0.0.11
+Summary: Misc utils for aiogram
+Home-page: https://github.com/LDmitriy7/aiogram_utils
+Author: LDmitriy7
+Author-email: ldm.work2019@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3.7
+License-File: LICENSE.txt
+
+# TODO
+
