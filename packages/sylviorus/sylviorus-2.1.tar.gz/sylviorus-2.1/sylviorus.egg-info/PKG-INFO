@@ -1,0 +1,73 @@
+Metadata-Version: 2.1
+Name: sylviorus
+Version: 2.1
+Summary: Sylviorus Wrapper
+Home-page: https://github.com/NksamaX/Syl-Py.git
+Author: NkSamaX
+Author-email: noobanon@pm.me
+License: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Typing :: Typed
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Installation Requirements
+```
+pip install sylviorus
+```
+
+# How to use
+
+
+```
+from sylviorus import SYL
+
+x = SYL()
+
+syl = x.get_info(user.id)
+print(x)
+print(x.reason)
+
+```
+
+
+# How to add Auto ban Code?
+
+Add This Code on Your Gban Module check_and_ban
+
+```
+    x = SYL()
+    syl = x.get_info(int(user.id))
+    
+    if not syl['blacklisted']:
+            return        
+    else:
+                chat.kick_member(user_id)
+                reason , enf , user = syl['reason'] , syl['enforcer'] , syl['user']
+                print(reason)
+ ```
+ 
+ #Show User is Banned or not in user information
+ 
+ ```
+ try:
+        x = SYL()
+        syl = x.get_info(int(user.id))
+        if not syl['blacklisted']:
+                pass
+        else:
+                 
+                if syl:
+                    print(syl.reason)
+        
+    except:
+        pass  # don't crash if api is down :)          
+
+```
+
+

@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+sylviorus/__init__.py
+sylviorus.egg-info/PKG-INFO
+sylviorus.egg-info/SOURCES.txt
+sylviorus.egg-info/dependency_links.txt
+sylviorus.egg-info/requires.txt
+sylviorus.egg-info/top_level.txt
