@@ -1,0 +1,97 @@
+Metadata-Version: 2.1
+Name: prelims-cli
+Version: 0.0.3
+Summary: prelims CLI - Front matter post-processor CLI
+Home-page: https://github.com/chezou/prelims-cli
+License: MIT
+Author: Aki Ariga
+Author-email: chezou@gmail.com
+Maintainer: Aki Ariga
+Maintainer-email: chezou@gmail.com
+Requires-Python: >=3.10,<3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Provides-Extra: ja
+Requires-Dist: SudachiDict-full (>=20211220,<20211221); extra == "ja"
+Requires-Dist: SudachiPy (>=0.6.2,<0.7.0); extra == "ja"
+Requires-Dist: hydra-core (>=1.1.1,<2.0.0)
+Requires-Dist: numpy (>=1.22.1,<2.0.0)
+Requires-Dist: prelims (>=0.0.6,<0.0.7)
+Requires-Dist: scipy (>=1.7.3,<2.0.0)
+Requires-Dist: taskipy (>=1.9.0,<2.0.0)
+Project-URL: Repository, https://github.com/chezou/prelims-cli
+Description-Content-Type: text/markdown
+
+# prelims-cli
+
+CLI for [prelims](https://github.com/takuti/prelims).
+
+## Install
+
+Run:
+
+```sh
+pip install prelims-cli
+```
+
+If you need Japanese tokenization, run:
+
+```sh
+pip install prelims-cli[ja]
+```
+
+## Usage
+
+Assuming the following folder directory:
+
+```sh
+- content
+|  ├── post
+|  └── blog
+└─ scripts
+   └ config
+     └ myconfig.yaml
+```
+
+where, post and blog are pages, and scripts is the place to put scripts.
+
+Here is the example of configuration:
+
+```myconfig.yaml
+handlers:
+  - target_path: "content/blog"
+    ignore_files:
+      - _index.md
+    processors:
+      - type: recommender
+        permalink_base: "/blog"
+        tfidf_options:
+          stop_words: english
+          max_df: 0.95
+          min_df: 2
+        tokenizer: null
+  - target_path: "content/post"
+    ignore_files:
+      - _index.md
+    processors:
+      - type: recommender
+        permalink_base: "/post"
+        tfidf_options:
+          max_df: 0.95
+          min_df: 2
+        tokenizer:
+          lang: ja
+          type: sudachi
+          mode: C
+          dict: full
+```
+
+```sh
+$ prelims-cli --config-dir ./scripts/config --config-name myconfig hydra.run.dir=. hydra.output_subdir=null hydra/job_logging=disabled hydra/hydra_logging=disabled
+target: /user/chezo/src/chezo.uno/content/blog
+target: /users/chezo/src/chezo.uno/content/post
+```
+
+Then your articles' front matter were updated.
+

@@ -1,0 +1,11 @@
+prelims_cli/__init__.py,sha256=QTYqXqSTHFRkM9TEgpDFcHvwLbvqHDqvqfQ9EiXkcAM,23
+prelims_cli/cli.py,sha256=KfSvZqCGNZzHRw8hOKAipEdc7gQHwcMczGKifEYX8zg,2512
+prelims_cli/config/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+prelims_cli/config/config.yaml,sha256=01OeE6LHNhVOQhNKYXPjRu9Qgg3u8f6eal0QynTTw_s,678
+prelims_cli/ja/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+prelims_cli/ja/tokenizer.py,sha256=6LidQBHmBjSHSQxJfTxjKvrzIov4xV7pZn5v3saH9vg,1091
+prelims_cli-0.0.3.dist-info/entry_points.txt,sha256=Osa77zo_xpHAfnLrON1IE995QwfW-BSJTjzjlPAaMJw,52
+prelims_cli-0.0.3.dist-info/LICENSE,sha256=vg8o2ZrvJomyXXlHdPkFPXrZegpIHqQN_8Fc1T7l6P4,1066
+prelims_cli-0.0.3.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+prelims_cli-0.0.3.dist-info/METADATA,sha256=LMAnonHv8VB893mtHoEQetB2IctmA14Zfwr7K7ArZJ0,2306
+prelims_cli-0.0.3.dist-info/RECORD,,
