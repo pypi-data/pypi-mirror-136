@@ -1,0 +1,4 @@
+#install
+python setup.py sdist bdist_wheel
+twine upload dist/*
+py -m twine upload -u v.heidary13 -p Vahid@5190 dist/*
