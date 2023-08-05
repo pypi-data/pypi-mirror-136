@@ -1,0 +1,8 @@
+LICENSE,sha256=DfRUI-rS2PXDIe445WiIPpHbwG1xmWGsqkzIAj0GKlg,1068
+djognito/__init__.py,sha256=IMjkMO3twhQzluVTo8Z6rE7Eg-9U79_LGKMcsWLKBkY,22
+djognito/authentication.py,sha256=M_7x6pk328DdwCUOgN4-u8dpClRPEl-BPzqMR2jnw9Q,1343
+djognito/jwt_utils.py,sha256=a5OqV3V8WYvMmm4x0KpUXVMiNEFoNnV6GsmtqHDMVjs,2844
+djognito-0.1.1.dist-info/LICENSE,sha256=DfRUI-rS2PXDIe445WiIPpHbwG1xmWGsqkzIAj0GKlg,1068
+djognito-0.1.1.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+djognito-0.1.1.dist-info/METADATA,sha256=ZwxIbsIPxIQg3Gnhs8uM91DJIJLCOMWDRY5iCrD2aho,7391
+djognito-0.1.1.dist-info/RECORD,,
