@@ -1,0 +1,12 @@
+[build-system]
+requires = [
+    "setuptools>=42",
+    "wheel"
+]
+build-backend = "setuptools.build_meta"
+
+[tool.poetry]
+name = "pylib-general"
+version = "0.1.0"
+description = "python features that don't come with it"
+authors = ["A human"]
