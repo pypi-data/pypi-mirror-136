@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/pyclassifier/__init__.py
+src/pyclassifier/classifier.py
+src/pyclassifier.egg-info/PKG-INFO
+src/pyclassifier.egg-info/SOURCES.txt
+src/pyclassifier.egg-info/dependency_links.txt
+src/pyclassifier.egg-info/top_level.txt
