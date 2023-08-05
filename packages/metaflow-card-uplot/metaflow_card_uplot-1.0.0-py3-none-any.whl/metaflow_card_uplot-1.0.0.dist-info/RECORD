@@ -1,0 +1,9 @@
+metaflow_extensions/card_uplot/plugins/cards/uplot/__init__.py,sha256=NKoxYQqAmLWsofYvpLslN8UiZMkckPsjqTff__OwUWc,1498
+metaflow_extensions/card_uplot/plugins/cards/uplot/uplot/LICENSE.txt,sha256=S5xOtU8_XnXdobniniuf8-xf2TRiOSY3b1uGcpL8udY,11352
+metaflow_extensions/card_uplot/plugins/cards/uplot/uplot/card.html,sha256=DadL0DHfpAlfeP03IBG575gMOpjtJB16FVyIWyisI10,493
+metaflow_extensions/card_uplot/plugins/cards/uplot/uplot/uPlot.iife.min.js,sha256=rdwDDS8SaNvuQu8x9xc7YkuHRDJ3FjsEZRSQcF3Oc5c,43838
+metaflow_extensions/card_uplot/plugins/cards/uplot/uplot/uPlot.min.css,sha256=N9lS8A3wBs6rAzJn4F8FDO3Y1pBkZ8yGUl3ueV3Ppqk,1883
+metaflow_card_uplot-1.0.0.dist-info/METADATA,sha256=fW8M3Sjed35T8V0CKj-E6yWlU9sVLHvSo1m_uLdyD1Y,936
+metaflow_card_uplot-1.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+metaflow_card_uplot-1.0.0.dist-info/top_level.txt,sha256=NwG0ukwjygtanDETyp_BUdtYtqIA_lOjzFFh1TsnxvI,20
+metaflow_card_uplot-1.0.0.dist-info/RECORD,,
