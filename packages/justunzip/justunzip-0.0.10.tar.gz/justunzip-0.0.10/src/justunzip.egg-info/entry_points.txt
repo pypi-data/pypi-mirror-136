@@ -1,0 +1,3 @@
+[console_scripts]
+justunzip = justunzip.justunzip:main
+
