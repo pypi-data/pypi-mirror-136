@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: task1
+Version: 1.6
+Summary: A package to automate various process
+Home-page: https://github.com/georgerahul24/task
+Author: George Rahul
+Author-email: georgerahul24@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: program,automate,task
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.9
