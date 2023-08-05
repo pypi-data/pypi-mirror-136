@@ -1,0 +1,41 @@
+{% extends "templates/remote.sh.template" %}
+
+{% block remote_install %}
+{{ super() }}
+        # NxSDK has a number of specific versions it "requires". However, these
+        # requirements do not seem necessary, and they don't play nice with pytest,
+        # so we install NxSDK first and then overwrite these requirements as necessary.
+        cp /nfs/ncl/releases/$NXSDK_VERSION/nxsdk-$NXSDK_VERSION.tar.gz .
+        pip install nxsdk-$NXSDK_VERSION.tar.gz
+
+        pip install git+https://github.com/networkx/networkx-metis.git
+        pip install "$NENGO_VERSION" "$NENGO_DL_VERSION" jupyter
+        pip install -e .[tests]
+{% endblock %}
+
+{% block remote_script %}
+{{ super() }}
+        SLURM=1 pytest nengo_loihi --target loihi --no-hang -v --durations 50 --color=yes -n 2 --cov=nengo_loihi --cov-report=xml --cov-report=term-missing || REMOTE_STATUS=1
+{% endblock %}
+
+{% block after_script %}
+    exe scp "{{ host }}:./tmp/{{ pkg }}-$TRAVIS_JOB_NUMBER/{{ pkg }}/coverage.xml" coverage.xml
+    curl https://keybase.io/codecovsecurity/pgp_keys.asc \
+      | gpg --no-default-keyring --keyring trustedkeys.gpg --import
+
+    codecov="https://uploader.codecov.io/latest/linux/codecov"
+    curl -O "$codecov" -O "$codecov.SHA256SUM" -O "$codecov.SHA256SUM.sig"
+    gpgv codecov.SHA256SUM.sig codecov.SHA256SUM \
+      && shasum -a 256 -c codecov.SHA256SUM \
+      && chmod +x codecov \
+      && ./codecov -f coverage.xml
+{{ super() }}
+{% endblock %}
+
+{% block remote_cleanup %}
+    mkdir -p emptydir
+    ls -tp | grep '{{ pkg }}-' | tail -n +3 \
+      | xargs -I {} sh -c \
+      'rsync -av --delete emptydir/ {} | tqdm --unit files --unit_scale | wc -l && rmdir {}'
+    rmdir emptydir || true
+{% endblock %}
