@@ -1,0 +1,12 @@
+LICENSE
+setup.py
+bitbucketserver/__init__.py
+bitbucketserver/bitbucketserver.py
+bitbucketserver/connection.py
+bitbucketserver/resources.py
+bitbucketserver/utils.py
+bitbucketserver.egg-info/PKG-INFO
+bitbucketserver.egg-info/SOURCES.txt
+bitbucketserver.egg-info/dependency_links.txt
+bitbucketserver.egg-info/requires.txt
+bitbucketserver.egg-info/top_level.txt
