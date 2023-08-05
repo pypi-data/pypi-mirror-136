@@ -1,0 +1,21 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+dash = "*"
+dash-bootstrap-components = "*"
+pandas = "*"
+plotly = "*"
+
+[dev-packages]
+ipykernel = "*"
+black = "*"
+pylint = "*"
+setuptools_scm = "*"
+build = "*"
+twine = "*"
+
+[requires]
+python_version = "3.9"

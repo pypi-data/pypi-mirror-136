@@ -1,0 +1,5 @@
+dash
+flask
+
+[:python_version == "3.7"]
+importlib_metadata
