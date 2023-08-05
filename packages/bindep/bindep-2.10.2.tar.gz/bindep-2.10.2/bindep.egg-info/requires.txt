@@ -1,0 +1,9 @@
+Parsley
+distro
+pbr>=2.0.0
+
+[:(python_version < '3.6')]
+packaging<21.0
+
+[:(python_version >= '3.6')]
+packaging
