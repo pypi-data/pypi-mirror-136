@@ -1,0 +1,11 @@
+mannaggia/__init__.py,sha256=FKXPc9HKlOsoCsGMQ3yUOT6TbSN2c-1_uNTQavNJt9Q,503
+mannaggia/__main__.py,sha256=L9KPuMk4UYsn65jg6_pdPEDFtrSne0J8HD-LOGbaXHc,4582
+mannaggia/santi/__init__.py,sha256=CqHRHIQ33tHVjsUxuDCLT6BTePqnrGpRX4DCmI1A2rs,484
+mannaggia/santi/factory.py,sha256=0fbymeKbyNbPPtGgDVRyWOrcd4qPnN9CJHA44WVSwC0,60583
+mannaggia/santi/santo.py,sha256=dg55lqkngsp0HKUgXA9djaxGQ6Je2q-gVmrY_XpyNhc,726
+mannaggia-0.1.0.dist-info/LICENSE,sha256=iGRZ9u5CEBDZtyWmECK5gfJMGUdK42wYVnQxGboqkwg,476
+mannaggia-0.1.0.dist-info/METADATA,sha256=LmClqwL3N9F4LCNmOqq8S8qqoydZ2K_SAbJsWoN8F-w,5081
+mannaggia-0.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+mannaggia-0.1.0.dist-info/entry_points.txt,sha256=kcdSU4-6B52VU_2X4NJaX0zZ6RQPTmoFC0ELGlLsclw,55
+mannaggia-0.1.0.dist-info/top_level.txt,sha256=1HrzlmP5RIqgVApbQrLTaHqomXlN9RHOVtwbnbGGafs,10
+mannaggia-0.1.0.dist-info/RECORD,,
