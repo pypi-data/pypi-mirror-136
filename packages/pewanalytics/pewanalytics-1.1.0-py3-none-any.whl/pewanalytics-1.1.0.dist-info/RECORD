@@ -1,0 +1,16 @@
+pewanalytics/__init__.py,sha256=eScAmwhABWwBsSL9sR25lu26M45pjbzkdD_SByJh_fA,39
+pewanalytics/stats/__init__.py,sha256=b-xszRpJIACeatHLPs1PeujRtdXTM5Un8rxEctHqZX0,146
+pewanalytics/stats/clustering.py,sha256=d4u3ceItROWhnm2qd9A_X0TC0i98ARbZZLBxmdf0aQM,3463
+pewanalytics/stats/dimensionality_reduction.py,sha256=qWSB3K5xksem5Fp4qMMUJ5p8h4ST57L0QiAMlr519gk,8234
+pewanalytics/stats/irr.py,sha256=BkwAOHcNmLE9rtsKSAtH1hxpAwPo2jI7f732-MZRalw,26336
+pewanalytics/stats/mutual_info.py,sha256=HJquu0mrqmT-ZKSRoy5QhPPwQgXYEyjQd_DMnFCEZC8,15129
+pewanalytics/stats/sampling.py,sha256=vA2pRVhw4vhcQPXRJd7hzQe-rTrpSBWVAqQZtBYYL2Y,18899
+pewanalytics/text/__init__.py,sha256=F3CTxkI1mtDtXYct8nsiG9N3ycHveimPoAOv1mx4CGs,60586
+pewanalytics/text/dates.py,sha256=22i5lreWhuKcYvmyXmXS9OE1A2cw8d29D8OrvyuVR1k,5829
+pewanalytics/text/ner.py,sha256=-3TtBfi8Wt8l4d23TYkFPQjFpEKjCjVuUTKipnP5O18,4493
+pewanalytics/text/topics.py,sha256=1DyJ1OHkxSJwsEeGuchvF_DBYZM8OEj8Xy_zcBZGhC8,26063
+pewanalytics-1.1.0.dist-info/LICENSE,sha256=-cN1ob5KQfe3AwHdg8kcuJ5BVnR4hZt37vN1pS14JQU,18091
+pewanalytics-1.1.0.dist-info/METADATA,sha256=z_e64r0CGNIbqadP4IpgFfPqTqZP1s3AJHGy2EIC3DQ,6162
+pewanalytics-1.1.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+pewanalytics-1.1.0.dist-info/top_level.txt,sha256=HhtD8smfSCA9QZTRYi7btBuV3IMXi_HIirmNg1XOBqg,13
+pewanalytics-1.1.0.dist-info/RECORD,,
