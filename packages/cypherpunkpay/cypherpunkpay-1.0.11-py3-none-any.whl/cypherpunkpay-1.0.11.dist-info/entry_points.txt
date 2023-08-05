@@ -1,0 +1,7 @@
+[console_scripts]
+cypherpunkpay=cypherpunkpay.cypherpunkpay:main
+interpolate-cypherpunkpay-conf-on-first-install=cypherpunkpay.interpolate_cypherpunkpay_conf_on_first_install:main
+
+[paste.app_factory]
+main=cypherpunkpay:main
+
