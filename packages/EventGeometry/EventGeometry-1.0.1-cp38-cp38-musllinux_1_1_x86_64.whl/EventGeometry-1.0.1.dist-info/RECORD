@@ -1,0 +1,11 @@
+eventgeometry/eventgeometry.py,sha256=dx2SOxLTM7kgCglJ68TT6FVGV2nDE6G_gtmuTl5Vl2Q,104282
+eventgeometry/__init__.py,sha256=OvzSa53N0967y54KLkwyAdSlgDSzYUzJ_1Eez9Bwf7A,2194
+eventgeometry/_eventgeometry.cpython-38-x86_64-linux-gnu.so,sha256=qlxQc95SDVCzSrTbOh4bz_bzzPILMm3WPINCmWnnYyw,4690840
+EventGeometry.libs/libgomp-cd951527.so.1.0.0,sha256=SyHus47r40U9TZTR-KCkyo-DaRiUOp_2KQDAERzw6JY,187008
+EventGeometry.libs/libgcc_s-a04fdf82.so.1,sha256=E2_sw1FhiQZsCQiywTDdBDMlSUsazp7QUYpklMz_w_s,81256
+EventGeometry.libs/libstdc++-a9383cce.so.6.0.28,sha256=AQF8xpA7y538aY2feICyHGJkLWgDpwHYribC_iWn8Bw,2447392
+EventGeometry-1.0.1.dist-info/WHEEL,sha256=CmoYo5s3yrNIxtHl5gPB81uIw7sGmWUZIX9rFW7I7e4,111
+EventGeometry-1.0.1.dist-info/COPYING,sha256=Dhl-8BuiXl1SrrHaaNZVJHWiZ3YpWYjjWdvPxO81GMs,18200
+EventGeometry-1.0.1.dist-info/RECORD,,
+EventGeometry-1.0.1.dist-info/METADATA,sha256=ffo9OWOxsPuRWO377Nug_M-AcnoNmcICWIA2mCJCCKY,5445
+EventGeometry-1.0.1.dist-info/top_level.txt,sha256=Xme1Hz7QT-5kJKhUuAjTMdqMAel1uJ-gUReNzEq0CUI,14
