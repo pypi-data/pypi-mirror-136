@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: lexode
+Version: 0.3.0
+Summary: Lexicographic packing and unpacking
+License: Apache
+Author: Amirouche
+Author-email: amirouche@hyper.dev
+Requires-Python: >=3.7,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+
+# python-lexode
+
+**beta**
+
+lexicographic packing and unpacking functions for ordered key-value stores
+
+![Funny bunny in front of brick of wall](https://images.unsplash.com/photo-1584759985030-352927f481a3?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjEyMDd9)
+
