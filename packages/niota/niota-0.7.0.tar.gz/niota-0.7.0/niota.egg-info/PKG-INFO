@@ -1,0 +1,105 @@
+Metadata-Version: 2.1
+Name: niota
+Version: 0.7.0
+Summary: Numbers PyOTA Wrapper
+Home-page: https://github.com/numbersprotocol/niota
+Author: Numbers Co., Inc
+Author-email: hi@numbersprotocol.io
+License: GPLv3
+Description: # NIOTA
+        
+        Make IOTA to be an integrity chain.
+        
+        Niota registers Asset history records to the integrity chain.
+        
+        # Installation
+        
+        The Python binding of [iota.rs](https://github.com/iotaledger/iota.rs/releases). You can download the latest version from the official [nightly.link service](https://nightly.link/iotaledger/iota.rs/workflows/python_binding_publish/dev).
+        
+        Two ways to install niota:
+        
+        1. Insatll by using PyPI (stable versoin)
+        
+            ```
+            $ python3 -m pip install niota
+            ```
+        
+        2. Install manually (latest version)
+        
+            ```
+            $ python3 setup.py bdist_wheel
+            $ python3 -m pip install dist/niota-<version>-py3-none-any.whl
+            ```
+        
+        # Unit Testing
+        
+        ```
+        $ pytest -m unit
+        ```
+        
+        # Integration Testing
+        
+        ```
+        $ pytest -m integration
+        ```
+        
+        Known issue: the legacy Chrysalis client which uses the official IOTA Client sometimes raises the error:
+        
+        ```
+        niota/chrysalis.py:18: PanicException
+        ---------------------------------------------------------------- Captured stderr call -----------------------------------------------------------------
+        thread '<unnamed>' panicked at 'called `Result::unwrap()` on an `Err` value: ReqwestError(reqwest::Error { kind: Request, url: Url { scheme: "https", username: "", password: None, host: Some(Domain("chrysalis-nodes.iota.org")), port: None, path: "/api/v1/info", query: None, fragment: None }, source: TimedOut })', src/client/mod.rs:146:80
+        note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+        ```
+        
+        Rerun the test again and it should work.
+        
+        
+        ## Usage
+        
+        ### Iota Client
+        
+        The `IotaClient` class is a client to interact with [IOTA REST API](https://editor.swagger.io/?url=https://raw.githubusercontent.com/rufsam/protocol-rfcs/master/text/0026-rest-api/0026-rest-api.yaml).
+        
+        Below is a minimal example for connecting to an IOTA hornet node with JWT authentication enabled, and create a message.
+        
+        ```python
+        from niota import IotaClient
+        
+        iota = IotaClient(base_url='https://example.iota.hornet.node', jwt_token='enter JWT token here')
+        create_message_resp = iota.create_message('example-index', 'example-data')
+        message_id = create_message_resp.data.messageId
+        ```
+        
+        
+        ### Niota client
+        
+        The `Niota` class can be used as a client to interact with IOTA Tangle messages with Numbers Protocol integrity record format.
+        
+        ```python
+        
+        example_integrity_info = {
+            'raw_cid': 'bafkreihdwdcefgh4dqkjv67uzcmw7ojee6xedzdetojuzjevtenxquvyku',
+            'ida_cid': 'bafkreihdwdcefgh4dqkjv67uzcmw7ojee6xedzdetojuzjevtenxquvyku',
+            'ida_mid': 'c7dfa6e5-346d-4b4d-a663-a421e7f9171f',
+            'ida_sha256sum': 'e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855',
+            'metadata_cid': 'bafkreidgkmzpzvot7a5r2iy44tmcojuvoyjgbwi5udldfisbvn4lnfrmoq',
+            'service_message': 'Create test data',
+        }
+        
+        niota = Niota(
+            base_url='https://example.iota.hornet.node',
+            jwt_token='enter JWT token here'
+            private_key=private_key,
+            public_key=public_key,
+        )
+        message_id, index = niota.create_message(**message_data_fixture)
+        
+        ```
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
