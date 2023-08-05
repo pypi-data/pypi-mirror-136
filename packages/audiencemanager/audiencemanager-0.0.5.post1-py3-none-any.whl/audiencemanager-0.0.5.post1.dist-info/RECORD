@@ -1,0 +1,10 @@
+audiencemanager/__init__.py,sha256=9v8mupEROHY70EIQZ6-sNNizxX4fVAcJ3tx1TJpMzIs,3098
+audiencemanager/__version__.py,sha256=AlKzAg55JP5O-Tl025OyXGx9u-NLS0ODGPq6tBZQtuY,23
+audiencemanager/audiencemanager.py,sha256=563MleOwOmwt3PkRmVZ9Nh6jrSRT32NNLuctYeanDUU,58285
+audiencemanager/config.py,sha256=krEFdUTD6w8m63zvQQZ0M5-6jGHyABkhSVPtvnDvsPA,572
+audiencemanager/connector.py,sha256=qmDMHrfQnVQ9JXM3tGR97rPui8tqqbKUlwFNlUgenFw,10500
+audiencemanager-0.0.5.post1.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+audiencemanager-0.0.5.post1.dist-info/METADATA,sha256=7GYWDpLQQhdIDMD9GcbpPqCfmVe1CvbIrziyh3dUfqw,2548
+audiencemanager-0.0.5.post1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+audiencemanager-0.0.5.post1.dist-info/top_level.txt,sha256=uDPQPpVwEKt3h_HUK8tEv8OATw1NzivP-ZY6xKevBQs,16
+audiencemanager-0.0.5.post1.dist-info/RECORD,,
