@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: aws-lambda-requests-wrapper
+Version: 0.1.2
+Summary: Request/Response wrapper for AWS Lambda with API Gateway
+Home-page: https://github.com/DeveloperRSquared/aws-lambda-requests-wrapper
+License: MIT
+Keywords: python,python3,aws,lambda,http,api-gateway,serverless,development
+Author: rikhilrai
+Requires-Python: >=3.7,<4.0
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Typing :: Typed
+Project-URL: Repository, https://github.com/DeveloperRSquared/aws-lambda-requests-wrapper
+Description-Content-Type: text/markdown
+
+# AWS Lambda Requests Wrapper
+
+Request/Response wrapper for AWS Lambda with API Gateway
+
