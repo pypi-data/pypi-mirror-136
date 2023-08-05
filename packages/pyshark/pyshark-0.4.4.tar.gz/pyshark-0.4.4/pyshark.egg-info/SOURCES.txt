@@ -1,0 +1,6 @@
+README.md
+pyshark.egg-info/PKG-INFO
+pyshark.egg-info/SOURCES.txt
+pyshark.egg-info/dependency_links.txt
+pyshark.egg-info/requires.txt
+pyshark.egg-info/top_level.txt
