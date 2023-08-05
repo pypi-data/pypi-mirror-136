@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: samstatic-flask
+Version: 1.0.2
+Summary: A Flask extension, which can enable the same static url search multi folders
+Home-page: https://github.com/city10th/samstatic_flask
+Author: City10th
+Author-email: city10th@foxmail.com
+License: MIT Licence
+Keywords: samstatic_flask,flask
+Platform: any
+License-File: LICENSE
+Requires-Dist: Flask (>=2.0.0)
+
+A Flask extension, which can enable the same static url (e.g. /static) search multi folders (e.g. /static /upload)
+

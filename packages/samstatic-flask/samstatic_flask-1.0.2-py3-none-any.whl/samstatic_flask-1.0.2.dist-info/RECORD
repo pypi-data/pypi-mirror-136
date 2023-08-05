@@ -1,0 +1,12 @@
+samstatic_flask/__init__.py,sha256=m-22MSpKAjbsrM3m5UU-VTF_Y9Rhc--0adB4ISzlsoA,756
+samstatic_flask/app.py,sha256=Q7jO5Q9mPF6ry3ywt83Ip6kEi-m4TCoyQmq23HWdJ8c,2469
+samstatic_flask/config.py,sha256=2Nq5Sb0ByNMdnCU2ErAFfp10rmd7Y8Q4Ewa1vTGVoPM,143
+samstatic_flask/ctx.py,sha256=mcA331LcoHEg9DNnWJa-N08aUmPNTkNrRr0pX0NXa7Q,2501
+samstatic_flask/helper.py,sha256=Q1BHvB5RzpeN0Vy3OFO135zoBg87oI3cdF3B_VG2h5M,258
+samstatic_flask/doc/LICENSE,sha256=9PR48DZhezo6hnbp4EPlPIOTztxFRhDp_bKXGbK4VRI,1065
+samstatic_flask/doc/README.md,sha256=iTP5PjK6eJ7v47zp82kYfKLz4Db9TkFcnQXjeVi9jIM,2349
+samstatic_flask-1.0.2.dist-info/LICENSE,sha256=9PR48DZhezo6hnbp4EPlPIOTztxFRhDp_bKXGbK4VRI,1065
+samstatic_flask-1.0.2.dist-info/METADATA,sha256=rs00_t35YWsw5Ybz1gRSyNWQT0HCUvFjj_Gc-z4x4Js,489
+samstatic_flask-1.0.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+samstatic_flask-1.0.2.dist-info/top_level.txt,sha256=1DmTpRtMywUCwqr4tlrluSb3PM4zqSfmIVaJzNx5o9E,16
+samstatic_flask-1.0.2.dist-info/RECORD,,
