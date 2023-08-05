@@ -1,0 +1,13 @@
+kinto-http
+pytest
+mock
+pytest-watch
+pytest-cache
+pytest-cov
+statsd
+webtest
+kinto[postgresql]
+kinto-attachment
+black
+flake8
+therapist

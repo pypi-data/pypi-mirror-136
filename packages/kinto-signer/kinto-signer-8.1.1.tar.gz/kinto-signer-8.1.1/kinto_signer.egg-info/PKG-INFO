@@ -1,0 +1,24 @@
+Metadata-Version: 1.1
+Name: kinto-signer
+Version: 8.1.1
+Summary: Kinto signer
+Home-page: UNKNOWN
+Author: Mozilla Services
+Author-email: services-dev@mozilla.com
+License: Apache License (2.0)
+Description: Kinto Signer
+        ============
+        
+        This project **is deprecated** and has become ``kinto-remote-settings``. See https://github.com/mozilla/remote-settings/
+        
+Keywords: web services
+Platform: UNKNOWN
+Classifier: Development Status :: 7 - Inactive
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: WSGI :: Application
+Classifier: License :: OSI Approved :: Apache Software License

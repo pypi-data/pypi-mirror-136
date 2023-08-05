@@ -1,0 +1,8 @@
+.cache
+.coverage
+records.json
+*.pyc
+__pycache__/
+*.egg-info/
+*.egg
+.venv
