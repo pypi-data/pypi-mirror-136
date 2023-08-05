@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: hw-wwj
+Version: 1.1.0
+Summary: 测试fortran编写的程序在python中调用
+Home-page: https://github.com/pypa/sampleproject
+Author: banshiliuli
+Author-email: 446601097@qq.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# hw测试
+
+这是一个测试文档，
+
+里面有hw1(r1, r2)，hw2(r1, r2)，s=hw3(r1, r2)三个函数，功能就是求sin
+
+测试fortran和python混合编程
+
+
+

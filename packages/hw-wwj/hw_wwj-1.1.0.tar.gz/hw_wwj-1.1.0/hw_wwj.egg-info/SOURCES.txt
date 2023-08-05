@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.py
+hw_wwj/__init__.py
+hw_wwj/hwfortran.f90
+hw_wwj.egg-info/PKG-INFO
+hw_wwj.egg-info/SOURCES.txt
+hw_wwj.egg-info/dependency_links.txt
+hw_wwj.egg-info/requires.txt
+hw_wwj.egg-info/top_level.txt
