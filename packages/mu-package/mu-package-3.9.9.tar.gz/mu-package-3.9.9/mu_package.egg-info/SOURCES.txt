@@ -1,0 +1,10 @@
+README.txt
+setup.py
+mu_package.egg-info/PKG-INFO
+mu_package.egg-info/SOURCES.txt
+mu_package.egg-info/dependency_links.txt
+mu_package.egg-info/requires.txt
+mu_package.egg-info/top_level.txt
+my-package/__init__.py
+my-package/module1.py
+my-package/module2.py
