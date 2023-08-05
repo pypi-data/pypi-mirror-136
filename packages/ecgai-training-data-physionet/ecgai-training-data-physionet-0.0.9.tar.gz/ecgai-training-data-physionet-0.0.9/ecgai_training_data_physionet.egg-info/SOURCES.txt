@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+ecgai_training_data_physionet.egg-info/PKG-INFO
+ecgai_training_data_physionet.egg-info/SOURCES.txt
+ecgai_training_data_physionet.egg-info/dependency_links.txt
+ecgai_training_data_physionet.egg-info/top_level.txt
