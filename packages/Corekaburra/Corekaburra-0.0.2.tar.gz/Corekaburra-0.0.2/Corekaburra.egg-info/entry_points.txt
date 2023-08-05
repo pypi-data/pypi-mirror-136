@@ -1,0 +1,3 @@
+[console_scripts]
+Corekaburra = Corekaburra.__main__:main
+
