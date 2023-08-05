@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: pySoftEtherClient
+Version: 0.0.0.1
+Summary: SoftEther Client API
+Home-page: https://github.com/fazalfarhan01/SoftEtherClient-API
+Author: fazalfarhan01 (Mohamed Farhan Fazal)
+Author-email: fazal@ffehost.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/fazalfarhan01/SoftEtherClient-API/issues
+Keywords: python,softether,vpn,vpngate,requests,python softetherclient,SoftEtherClient API,pySoftEtherClient
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+
+
+# SoftEther Client API
+This python project is an API for interacting with SoftEther VPN Client using the CLI tool `vpncmd`
+Make sure that SoftEther's VPN client management tool (`vpncmd`) is installed before using this API.
+

@@ -1,0 +1,9 @@
+SoftEtherClient/__init__.py,sha256=zDr350exO14Ii8Pj3TXwPuRxIDrEjrg43CpjYABDqh4,19
+SoftEtherClient/errors.py,sha256=bFFoLAGFBZe3W8YAg-RF1bdwXJEL2fho2V6XoM3Xghw,1003
+SoftEtherClient/main.py,sha256=XPzzR5BeeoKsMzIODATw3AyA6lr3mlz1MSIxwi7vzYU,13792
+SoftEtherClient/models.py,sha256=yTH6sttmlghg3GlciQW-WOFPF9rBR3eQS4R6Z6RvMdA,526
+SoftEtherClient/parser.py,sha256=rZTd1tZEkK5g2AEEJMWPKz8igg8xoRSc6a8PsMHXitY,488
+pySoftEtherClient-0.0.0.1.dist-info/METADATA,sha256=9nc1326sdNfO_RdrwgOpxqap0ag36MiNeYU_qFLiVTU,950
+pySoftEtherClient-0.0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pySoftEtherClient-0.0.0.1.dist-info/top_level.txt,sha256=R7MNwBFnU4__4a6_h0B83HWI88oGlPOHQWsxQh_GSAk,16
+pySoftEtherClient-0.0.0.1.dist-info/RECORD,,
