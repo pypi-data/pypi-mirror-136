@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: Singularity-client
+Version: 0.0.2
+Summary: Singularity Client
+Home-page: UNKNOWN
+Author: PanovaM
+Author-email: ri5@mail.ru
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: PyQt5
+Requires-Dist: sqlalchemy
+Requires-Dist: pycryptodome
+Requires-Dist: pycryptodomex
+
+UNKNOWN
+
+
