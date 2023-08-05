@@ -1,0 +1,17 @@
+mlflow_rest_client/VERSION,sha256=8iq9Z3OrIyhpMhrUseR6wMkI_r9POivRDIBmFA90EmE,5
+mlflow_rest_client/__init__.py,sha256=BKFUQyA0bfI1uf_7ESH6Wo3G65BS8EL9uzXAU8jZe7A,752
+mlflow_rest_client/artifact.py,sha256=qkdutUM8rnbQh6rKjzNwbefM6Zhdkaej1gGDJZwwfS4,1470
+mlflow_rest_client/experiment.py,sha256=R3eVSyNNy4R-_omZlMDzdJ3WJhtBIswsVZStfuSW8L8,2656
+mlflow_rest_client/internal.py,sha256=FBbNe6njyasXL-AmQMielbT0X4HwWpvbklQrpHSr57M,1635
+mlflow_rest_client/mlflow_rest_client.py,sha256=bjrDamXzl9ea1GxOaJG_HAmERC7uGGp2rT6oHF_ho1E,67605
+mlflow_rest_client/model.py,sha256=joUheTC0YUT4op1cmAatHHf3nHTvnLmrFHSBEVNMhA8,8721
+mlflow_rest_client/page.py,sha256=WDR3zdQ9AccpK6Kg8YINgBqUNdUzN5QPeKLseSMz5dg,4291
+mlflow_rest_client/run.py,sha256=ccIxXAE-RMdrA3UEHCk5KZYMs69i8mDxUXGvzX4spZE,8189
+mlflow_rest_client/tag.py,sha256=yc0ia_d6yJ8CqgVS_bz2WCOt0f_GfCehZxYkYL2sXr0,1736
+mlflow_rest_client/timestamp.py,sha256=yIui9PwLpSfmX9ZgknoFozK-tWfGIEQgFzRSwsuCPuQ,1882
+mlflow_rest_client/version.py,sha256=US42xIIVlQGRXfhb58oy8lYS8fuBFde11KfEhQght1o,806
+mlflow_rest_client-2.0.0.dist-info/LICENSE.txt,sha256=_h8HRsae6LOTbfJRQK1t9Rva42LWfUgyM5Ak06VTMNY,11421
+mlflow_rest_client-2.0.0.dist-info/METADATA,sha256=esVViwEHcJPqb_vacAZKaQmozi0W3aZ3pbWXcxH-Ic4,5750
+mlflow_rest_client-2.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+mlflow_rest_client-2.0.0.dist-info/top_level.txt,sha256=rVBLoglb6Cic-tkFvqOs8bi0zoRrtoXTaNt_L5-UtfA,19
+mlflow_rest_client-2.0.0.dist-info/RECORD,,
