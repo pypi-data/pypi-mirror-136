@@ -1,0 +1,17 @@
+LICENCE.md
+README.md
+setup.py
+ddpw/__init__.py
+ddpw/__logger.py
+ddpw/__parallelit.py
+ddpw/__platform.py
+ddpw/__trainer.py
+ddpw/__wrapper.py
+ddpw.egg-info/PKG-INFO
+ddpw.egg-info/SOURCES.txt
+ddpw.egg-info/dependency_links.txt
+ddpw.egg-info/requires.txt
+ddpw.egg-info/top_level.txt
+ddpw/utils/__init__.py
+ddpw/utils/chalk.py
+ddpw/utils/torchtils.py
