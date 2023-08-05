@@ -1,0 +1,10 @@
+ssl_metrics_github_issue_density/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ssl_metrics_github_issue_density/create_graph.py,sha256=kr_adsjN8Wk2lrD451c0rsWuCXX2RrkY9F4wsjYkGac,5509
+ssl_metrics_github_issue_density/main.py,sha256=agIwaEGJTWUtLMjy4aVU8QJ9DHpcl1mo-ZKw-nD1_G4,3824
+ssl_metrics_github_issue_density/version.py,sha256=A5-v5TmeN8qeluq429aM63gXtuADNrXfW06QJ0GUmjg,60
+ssl_metrics_github_issue_density-0.1.dist-info/LICENSE,sha256=HfZeEdCZOlB4t1x4L1Li1jIBF7H2ks5zdfsNVw_ieoM,1539
+ssl_metrics_github_issue_density-0.1.dist-info/METADATA,sha256=8k_64jquhg7h8VQPPcsDIJ5WOJkOQu8tm9EcOXAcVis,1679
+ssl_metrics_github_issue_density-0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+ssl_metrics_github_issue_density-0.1.dist-info/entry_points.txt,sha256=h7O6YrlAMQZBsoPstQKfjh6YQ3Hsa_TF1yfyu-2HEMs,197
+ssl_metrics_github_issue_density-0.1.dist-info/top_level.txt,sha256=l3_KJwfRfeSuQ8tyjL5c1F2qNZFuVho-v8j_1n-6Hpg,33
+ssl_metrics_github_issue_density-0.1.dist-info/RECORD,,
