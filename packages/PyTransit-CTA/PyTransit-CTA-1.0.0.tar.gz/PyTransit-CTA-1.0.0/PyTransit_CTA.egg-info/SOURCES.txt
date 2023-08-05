@@ -1,0 +1,7 @@
+README.md
+setup.py
+PyTransit_CTA.egg-info/PKG-INFO
+PyTransit_CTA.egg-info/SOURCES.txt
+PyTransit_CTA.egg-info/dependency_links.txt
+PyTransit_CTA.egg-info/requires.txt
+PyTransit_CTA.egg-info/top_level.txt
