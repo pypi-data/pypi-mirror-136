@@ -1,0 +1,1047 @@
+
+<!DOCTYPE html>
+
+<html lang="zh_CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Python 初体验 &#8212; d2py 0.1 文档</title>
+    
+  <link href="../../_static/css/theme.css" rel="stylesheet">
+  <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/default.css" />
+    
+  <link rel="preload" as="script" href="../../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
+    <script kind="utterances">
+
+    var commentsRunWhenDOMLoaded = cb => {
+    if (document.readyState != 'loading') {
+        cb()
+    } else if (document.addEventListener) {
+        document.addEventListener('DOMContentLoaded', cb)
+    } else {
+        document.attachEvent('onreadystatechange', function() {
+        if (document.readyState == 'complete') cb()
+        })
+    }
+}
+
+var addUtterances = () => {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "https://utteranc.es/client.js";
+    script.async = "async";
+
+    script.setAttribute("repo", "xinetzone/d2py");
+    script.setAttribute("issue-term", "pathname");
+    script.setAttribute("theme", "github-light");
+    script.setAttribute("label", "💬 comment");
+    script.setAttribute("crossorigin", "anonymous");
+
+    sections = document.querySelectorAll("div.section");
+    if (sections !== null) {
+        section = sections[sections.length-1];
+        section.appendChild(script);
+    }
+}
+commentsRunWhenDOMLoaded(addUtterances);
+</script>
+    <script src="../../_static/translations.js"></script>
+    <script src="../../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".cell"
+        const thebe_selector_input = ".cell_input div.highlight"
+        const thebe_selector_output = ".cell_output"
+    </script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({startOnLoad:true});</script>
+    <link rel="canonical" href="https://xinetzone.github.io/d2py/posts/basic/python-intro.html" />
+    <link rel="shortcut icon" href="../../_static/page-logo.jfif"/>
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="搜索" href="../../search.html" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="zh_CN">
+    
+
+    <!-- Google Analytics -->
+     
+<link
+  rel="alternate"
+  type="application/atom+xml"
+  href="../../posts/atom.xml"
+  title="Blog"
+/>
+ 
+<style type="text/css">
+  ul.ablog-archive {
+    list-style: none;
+    overflow: auto;
+    margin-left: 0px;
+  }
+  ul.ablog-archive li {
+    float: left;
+    margin-right: 5px;
+    font-size: 80%;
+  }
+  ul.postlist a {
+    font-style: italic;
+  }
+  ul.postlist-style-disc {
+    list-style-type: disc;
+  }
+  ul.postlist-style-none {
+    list-style-type: none;
+  }
+  ul.postlist-style-circle {
+    list-style-type: circle;
+  }
+</style>
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+          
+<h2>
+   <i class="fa fa-calendar"></i>
+  2021/11/1 18:00:00 
+</h2>
+
+<ul>
+   
+<li id="author">
+  <span
+    ><i class="fa-fw fa fa-user"></i></span
+  >
+   
+  <a href="../author/%E5%88%98%E6%96%B0%E4%BC%9F.html">刘新伟</a>  
+</li>
+  
+<li id="language">
+  <span
+    ><i class="fa-fw fa fa-language"></i></span
+  >
+   
+  <a href="../language/chinese.html">Chinese</a>  
+</li>
+ 
+<li id="category">
+  <span
+    ><i class="fa-fw fa fa-folder-open"></i></span
+  >
+   
+  <a href="../category/python.html">Python</a>  
+</li>
+ 
+<li id="tags">
+  <span
+    ><i
+      class="fa-fw fa fa-tag"
+    ></i
+    ></span
+  >
+   
+  <a href="../tag/basic.html">basic</a>  
+</li>
+ 
+</ul>
+
+<h3>
+  <a href="../../posts.html">最近帖子</a>
+</h3>
+<ul>
+   
+  <li>
+    <a href="../hs/udata-python.html"
+      >11月 24, 2021 - Python udata 取数</a
+    >
+  </li>
+  
+  <li>
+    <a href="../hs/udata.html"
+      >11月 10, 2021 - 恒有数 Python 接口</a
+    >
+  </li>
+  
+  <li>
+    <a href="python-use.html"
+      >11月 03, 2021 - 如何使用 Python？</a
+    >
+  </li>
+  
+</ul>
+
+<h3><a href="../tag.html">标签</a></h3>
+<style type="text/css">
+  ul.ablog-cloud {
+    list-style: none;
+    overflow: auto;
+  }
+  ul.ablog-cloud li {
+    float: left;
+    height: 20pt;
+    line-height: 18pt;
+    margin-right: 5px;
+  }
+  ul.ablog-cloud a {
+    text-decoration: none;
+    vertical-align: middle;
+  }
+  li.ablog-cloud-1 {
+    font-size: 80%;
+  }
+  li.ablog-cloud-2 {
+    font-size: 95%;
+  }
+  li.ablog-cloud-3 {
+    font-size: 110%;
+  }
+  li.ablog-cloud-4 {
+    font-size: 125%;
+  }
+  li.ablog-cloud-5 {
+    font-size: 140%;
+  }
+</style>
+<ul class="ablog-cloud">
+   
+  <li class="ablog-cloud ablog-cloud-5">
+    <a href="../tag/basic.html">basic</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../tag/udata.html">udata</a>
+  </li>
+   
+</ul>
+
+<h3>
+  <a href="../category.html">分类</a>
+</h3>
+<ul>
+   
+  <li>
+    <a href="../category/python.html">Python (4)</a>
+  </li>
+   
+</ul>
+
+<h3>
+  <a href="../archive.html">归档</a>
+</h3>
+<ul>
+   
+  <li>
+    <a href="../2021.html">2021 (4)</a>
+  </li>
+   
+</ul>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../_sources/posts/basic/python-intro.md.txt"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/xinetzone/d2py"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/xinetzone/d2py/issues/new?title=Issue%20on%20page%20%2Fposts/basic/python-intro.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        <a class="edit-button" href="https://github.com/xinetzone/d2py/edit/main/docs/posts/basic/python-intro.md"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> 导航
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id2">
+   Python 是什么？
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id3">
+   为什么学习 Python？
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id4">
+   学习 Python 可以做什么？
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id5">
+     做一般的软件开发
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#web">
+       Web 开发
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#cli">
+       CLI 开发
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#gui">
+       GUI 开发
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id6">
+       游戏开发
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id7">
+     潜心研究数据科学和数学
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id8">
+       机器学习
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id9">
+       科学计算
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id10">
+       数据分析和可视化
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id11">
+       网络爬虫
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id12">
+     加快工作流程并使之自动化
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#devops">
+       DevOps
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id13">
+       开发环境
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id14">
+       软件打包与部署
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id15">
+       数据库系统
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id16">
+       软件测试
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id17">
+     构建嵌入式系统和机器人
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                 <div class="tex2jax_ignore mathjax_ignore section" id="python">
+<h1><a class="toc-backref" href="#id18">Python 初体验</a><a class="headerlink" href="#python" title="永久链接至标题">¶</a></h1>
+<p>叩开 Python 的大门！</p>
+<div class="contents topic" id="id1">
+<p class="topic-title">目录</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#python" id="id18">Python 初体验</a></p>
+<ul>
+<li><p><a class="reference internal" href="#id2" id="id19">Python 是什么？</a></p></li>
+<li><p><a class="reference internal" href="#id3" id="id20">为什么学习 Python？</a></p></li>
+<li><p><a class="reference internal" href="#id4" id="id21">学习 Python 可以做什么？</a></p>
+<ul>
+<li><p><a class="reference internal" href="#id5" id="id22">做一般的软件开发</a></p>
+<ul>
+<li><p><a class="reference internal" href="#web" id="id23">Web 开发</a></p></li>
+<li><p><a class="reference internal" href="#cli" id="id24">CLI 开发</a></p></li>
+<li><p><a class="reference internal" href="#gui" id="id25">GUI 开发</a></p></li>
+<li><p><a class="reference internal" href="#id6" id="id26">游戏开发</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#id7" id="id27">潜心研究数据科学和数学</a></p>
+<ul>
+<li><p><a class="reference internal" href="#id8" id="id28">机器学习</a></p></li>
+<li><p><a class="reference internal" href="#id9" id="id29">科学计算</a></p></li>
+<li><p><a class="reference internal" href="#id10" id="id30">数据分析和可视化</a></p></li>
+<li><p><a class="reference internal" href="#id11" id="id31">网络爬虫</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#id12" id="id32">加快工作流程并使之自动化</a></p>
+<ul>
+<li><p><a class="reference internal" href="#devops" id="id33">DevOps</a></p></li>
+<li><p><a class="reference internal" href="#id13" id="id34">开发环境</a></p></li>
+<li><p><a class="reference internal" href="#id14" id="id35">软件打包与部署</a></p></li>
+<li><p><a class="reference internal" href="#id15" id="id36">数据库系统</a></p></li>
+<li><p><a class="reference internal" href="#id16" id="id37">软件测试</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#id17" id="id38">构建嵌入式系统和机器人</a></p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="id2">
+<h2><a class="toc-backref" href="#id19">Python 是什么？</a><a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h2>
+<p>翻译自：<a class="reference external" href="https://wiki.python.org/moin/BeginnersGuide/Overview">BeginnersGuide/Overview</a>。</p>
+<p>Python 是一种清晰而强大的面向对象的编程语言，可与 Perl、Ruby、Scheme 或 Java 媲美。</p>
+<p>Python 一些值得注意的特点：</p>
+<ul class="simple">
+<li><p>使用优雅的语法，使你写的程序更容易阅读。</p></li>
+<li><p>它是一种易于使用的语言，使你的程序能够简单地运行。这使得 Python 成为原型开发和其他临时性编程任务的理想选择，同时不影响可维护性。</p></li>
+<li><p>配有大型标准库，支持许多常见的编程任务，如连接到网络服务器，用正则表达式搜索文本，读取和修改文件。</p></li>
+<li><p>Python 的交互式模式使得测试简短的代码片段变得很容易。还有一个捆绑的开发环境叫 IDLE。</p></li>
+<li><p>通过添加用 C 或 C++ 等编译语言实现的新模块，可以轻松地进行扩展。</p></li>
+<li><p>也可以嵌入到一个应用程序中，提供一个可编程的接口。</p></li>
+<li><p>可在任何地方运行，包括 <a class="reference external" href="https://www.python.org/downloads/mac-osx/">Mac OS X</a>、 <a class="reference external" href="https://www.python.org/downloads/windows/">Windows</a>、 <a class="reference external" href="https://docs.python.org/3/using/unix.html">Linux</a> 和 <a class="reference external" href="https://docs.python.org/3/using/unix.html">Unix</a>，非官方的构建也可用于 <a class="reference external" href="https://wiki.python.org/moin/Android">Android</a> 和 iOS。</p></li>
+<li><p>从两种意义上说，Python 是自由软件。下载或使用 Python，或在你的应用程序中包含它，都不需要任何费用。Python 还可以自由地修改和重新发布，因为虽然语言有版权，但它在 <a class="reference external" href="http://www.python.org/psf/license/">开源许可</a> 下可以使用。</p></li>
+</ul>
+<p>Python 的一些编程语言特点是：</p>
+<ul class="simple">
+<li><p>有多种基本数据类型可用：数字（浮点、复数和无限长度的长整数）、字符串（ASCII 和 Unicode）、列表和字典。</p></li>
+<li><p>Python 支持面向对象的编程，具有类和多继承性。</p></li>
+<li><p>代码可以被分组为模块和包。</p></li>
+<li><p>该语言支持触发和捕捉异常，从而使异常处理更加简洁。</p></li>
+<li><p>数据类型是强类型和动态类型。混合不兼容的类型（例如，试图添加一个字符串和一个数字）会导致引发一个异常，因此异常会被更快地捕获。</p></li>
+<li><p>Python 包含高级编程功能，如生成器和列表理解。</p></li>
+<li><p>Python 的自动内存管理使你不必在代码中手动分配和释放内存。</p></li>
+</ul>
+<p>请阅读 <a class="reference external" href="https://wiki.python.org/moin/SimplePrograms">SimplePrograms</a> 的简短程序集，其长度逐渐增加，展示了 Python 的语法和可读性。</p>
+<p>编写 Pythonic 代码并不难 —— 但你必须习惯于（PEP）的代码风格规则。你可以在 <a class="reference external" href="http://pythonchecker.com/">Pythonchecker.com</a> 这样的在线资源中测试、检查和改进你的代码风格。</p>
+<p>Python的设计哲学是“优雅”、“明确”、“简单”。它的重要准则被称为“Python之禅”。在 Python 解释器内运行 <code class="docutils literal notranslate"><span class="pre">import</span> <span class="pre">this</span></code> 可以获得完整的列表（翻译为中文）：</p>
+<blockquote class="epigraph">
+<div><p>优美优于丑陋。明了优于隐晦。</p>
+<p>简单优于复杂。复杂优于凌乱。</p>
+<p>扁平优于嵌套。稀疏优于稠密。</p>
+<p>可读性很重要。</p>
+</div></blockquote>
+<p>Python 开发者的哲学是“用一种方法，最好是只有一种方法来做一件事”。</p>
+<p>在设计 Python 语言时，如果面临多种选择，Python 开发者一般会拒绝花俏的语法，而选择明确没有或者很少有歧义的语法。</p>
+</div>
+<div class="section" id="id3">
+<h2><a class="toc-backref" href="#id20">为什么学习 Python？</a><a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h2>
+<ol class="simple">
+<li><p>易学</p></li>
+<li><p>可读和可维护的代码</p></li>
+<li><p>与主要平台和系统兼容</p></li>
+<li><p>强大的标准库</p></li>
+<li><p>许多开源框架和工具</p></li>
+<li><p>简化复杂的软件开发</p></li>
+</ol>
+</div>
+<div class="section" id="id4">
+<h2><a class="toc-backref" href="#id21">学习 Python 可以做什么？</a><a class="headerlink" href="#id4" title="永久链接至标题">¶</a></h2>
+<p>翻译自：<a class="reference external" href="https://realpython.com/what-can-i-do-with-python/">what-can-i-do-with-python</a>。</p>
+<p>列出一些常用 Python 库。</p>
+<div class="section" id="id5">
+<h3><a class="toc-backref" href="#id22">做一般的软件开发</a><a class="headerlink" href="#id5" title="永久链接至标题">¶</a></h3>
+<div class="section" id="web">
+<h4><a class="toc-backref" href="#id23">Web 开发</a><a class="headerlink" href="#web" title="永久链接至标题">¶</a></h4>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p>库</p></th>
+<th class="text-align:left head"><p>描述</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p><a class="reference external" href="https://www.djangoproject.com/">Django</a></p></td>
+<td class="text-align:left"><p>Django 是一个高水平的框架，它鼓励以简洁和务实的设计来快速开发 Web 应用。它允许你专注于编写你的应用程序，而不需要重新发明轮子。</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p><a class="reference external" href="https://fastapi.tiangolo.com/">FastAPI</a></p></td>
+<td class="text-align:left"><p>FastAPI 是一个用于构建网络 API 的快速和高性能的网络框架。它建立在现代 Python 类型提示功能之上，并实现了<a class="reference external" href="https://realpython.com/async-io-python/">异步</a>编程。</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p><a class="reference external" href="https://palletsprojects.com/p/flask/">Flask</a></p></td>
+<td class="text-align:left"><p>Flask 是一个轻量级的框架，用于创建 <a class="reference external" href="https://wsgi.readthedocs.io/">WSGI</a> Web 应用程序。它允许你快速上手，并在需要时扩展到复杂的应用程序。</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p><a class="reference external" href="https://www.tornadoweb.org/en/stable/">Tornado</a></p></td>
+<td class="text-align:left"><p>Tornado 是一个网络框架和异步网络库。它使用非阻塞网络 <a class="reference external" href="https://en.wikipedia.org/wiki/Input/output">I/O</a>，所以你可以编写可以扩展到数以万计的开放连接的应用程序。</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="cli">
+<h4><a class="toc-backref" href="#id24">CLI 开发</a><a class="headerlink" href="#cli" title="永久链接至标题">¶</a></h4>
+<p>CLI：命令行界面</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p>库</p></th>
+<th class="text-align:left head"><p>描述</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p><a class="reference external" href="https://docs.python.org/3/library/argparse.html#module-argparse">argparse</a></p></td>
+<td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">argprse</span></code> 是一个<a class="reference external" href="https://docs.python.org/3/library/index.html">标准库</a>模块，允许你编写用户友好的命令行接口。你可以定义你想在命令行中接受的参数，并很好地解析它们。它自动生成帮助和使用信息，并在你的用户提供无效的输入时发出错误。</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p><a class="reference external" href="https://palletsprojects.com/p/click/">Click</a></p></td>
+<td class="text-align:left"><p>Click 是一个 Python 软件包，用于用尽可能少的代码创建漂亮的命令行界面。它具有高度的可配置性，开箱即有合理的默认值。它的目标包括使编写命令行工具的过程变得快速而有趣。</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p><a class="reference external" href="https://typer.tiangolo.com/">Typer</a></p></td>
+<td class="text-align:left"><p>Typer 是一个用于构建 CLI 应用程序的库，用户会喜欢使用它，开发人员会喜欢创建它。它为所有<a class="reference external" href="https://en.wikipedia.org/wiki/Shell_(computing)">外壳</a>提供自动帮助信息和自动完成。它最大限度地减少了代码的重复，方便了调试。</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="gui">
+<h4><a class="toc-backref" href="#id25">GUI 开发</a><a class="headerlink" href="#gui" title="永久链接至标题">¶</a></h4>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>库</p></th>
+<th class="head"><p>描述</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference external" href="https://kivy.org/#home">Kivy</a></p></td>
+<td><p>Kivy is a library for rapid development of applications with innovative user interfaces, such as <a class="reference external" href="https://en.wikipedia.org/wiki/Multi-touch">multi-touch</a> applications. It runs on Linux, Windows, macOS, Android, iOS, and <a class="reference external" href="https://realpython.com/python-raspberry-pi/">Raspberry Pi</a>.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://www.riverbankcomputing.com/static/Docs/PyQt6/">PyQt</a></p></td>
+<td><p>PyQt is a set of Python bindings for the <a class="reference external" href="https://wiki.qt.io/About_Qt">Qt</a> application framework. It includes classes for building GUI applications. It also provides classes for networking, <a class="reference external" href="https://realpython.com/python-pyqt-qthread/">threads</a>, <a class="reference external" href="https://realpython.com/python-pyqt-database/">SQL databases</a>, and more. It supports the Windows, Linux, and macOS platforms.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://pysimplegui.readthedocs.io/en/latest/">PySimpleGUI</a></p></td>
+<td><p>PySimpleGUI is a library that aims to transform the tkinter, Qt, wxPython, and <a class="reference external" href="https://github.com/dddomodossola/remi">Remi</a> GUI frameworks into a simpler interface. It uses Python core data types to define windows and simplify event handling.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://www.qt.io/qt-for-python">Qt for Python (<code class="docutils literal notranslate"><span class="pre">PySide6</span></code>)</a></p></td>
+<td><p>Qt for Python is a project that provides the official set of Python bindings (<code class="docutils literal notranslate"><span class="pre">PySide6</span></code>) for the Qt framework.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://docs.python.org/3/library/tkinter.html#module-tkinter">tkinter</a></p></td>
+<td><p>tkinter is a standard Python interface to the <a class="reference external" href="https://en.wikipedia.org/wiki/Tk_(software)">Tk GUI toolkit</a>. It allows you to build GUI applications without the need for third-party dependencies. It’s available on most Unix platforms as well as on Windows systems.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://www.wxwidgets.org/">wxPython</a></p></td>
+<td><p>wxPython is a Python binding for the <a class="reference external" href="https://www.wxwidgets.org/">wxWidgets</a> <a class="reference external" href="https://en.wikipedia.org/wiki/C%2B%2B">C++</a> library. It allows you to create applications for Windows, macOS, and Linux with a single code base. It gives applications a native look and feel because it uses the platform’s native <a class="reference external" href="https://en.wikipedia.org/wiki/API">API</a>.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="id6">
+<h4><a class="toc-backref" href="#id26">游戏开发</a><a class="headerlink" href="#id6" title="永久链接至标题">¶</a></h4>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Library</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference external" href="https://arcade.academy/index.html">Arcade</a></p></td>
+<td><p>Arcade is a Python library for creating 2D video games. It’s ideal for people learning to program because they don’t need to learn a complex game framework to start creating their own games.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://www.pygame.org/wiki/about">PyGame</a></p></td>
+<td><p>PyGame is a set of Python modules designed for writing video games. It adds functionality on top of the <a class="reference external" href="http://www.libsdl.org/">SDL</a> library. It allows you to create full-featured games and multimedia programs. The library is highly portable and runs on several platforms and operating systems.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="http://pyglet.org/">pyglet</a></p></td>
+<td><p>pyglet is a powerful Python library for creating games and other visually rich applications on Windows, macOS, and Linux. It supports windowing, user interface event handling, <a class="reference external" href="https://en.wikipedia.org/wiki/OpenGL">OpenGL</a> graphics, loading images, and playing videos and music.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="id7">
+<h3><a class="toc-backref" href="#id27">潜心研究数据科学和数学</a><a class="headerlink" href="#id7" title="永久链接至标题">¶</a></h3>
+<div class="section" id="id8">
+<h4><a class="toc-backref" href="#id28">机器学习</a><a class="headerlink" href="#id8" title="永久链接至标题">¶</a></h4>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Library</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference external" href="https://keras.io/">Keras</a></p></td>
+<td><p>Keras is an industrial-strength deep learning framework with an API designed for human beings. It allows you to run new experiments and try more ideas quickly. It follows best practices for reducing cognitive load.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://www.nltk.org/">NLTK</a></p></td>
+<td><p>NLTK is a platform for building Python programs to <a class="reference external" href="https://realpython.com/nltk-nlp-python/">work with human language data</a>. It provides libraries for classification, tokenization, stemming, tagging, parsing, and semantic reasoning.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://pytorch.org/">PyTorch</a></p></td>
+<td><p>PyTorch is an open source machine learning framework that accelerates the path from research prototyping to production deployment.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="http://scikit-learn.org/">scikit-learn</a></p></td>
+<td><p>scikit-learn is an open source machine learning library that supports <a class="reference external" href="https://en.wikipedia.org/wiki/Supervised_learning">supervised</a> and <a class="reference external" href="https://en.wikipedia.org/wiki/Unsupervised_learning">unsupervised learning</a>. It’s an efficient tool for predictive data analysis that’s accessible to everybody and reusable in various contexts.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://www.tensorflow.org/">TensorFlow</a></p></td>
+<td><p>TensorFlow is an end-to-end open source platform for machine learning. It has a comprehensive, flexible ecosystem of tools, libraries, and community resources that will help you build and deploy ML-powered applications.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="id9">
+<h4><a class="toc-backref" href="#id29">科学计算</a><a class="headerlink" href="#id9" title="永久链接至标题">¶</a></h4>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Library</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference external" href="https://numpy.org/">NumPy</a></p></td>
+<td><p>NumPy is a fundamental package for scientific computing with Python. It offers comprehensive mathematical functions, random number generators, linear algebra routines, Fourier transforms, and more. It provides a high-level syntax that makes it accessible and productive.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://www.scipy.org/">SciPy</a></p></td>
+<td><p>SciPy is a Python-based collection of open source software for mathematics, science, and engineering.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://simpy.readthedocs.io/en/latest/">SimPy</a></p></td>
+<td><p>SimPy is a process-based discrete-event simulation framework based on Python. It can help you simulate real-world systems, such as airports, customer services, highways, and more.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="id10">
+<h4><a class="toc-backref" href="#id30">数据分析和可视化</a><a class="headerlink" href="#id10" title="永久链接至标题">¶</a></h4>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Library</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference external" href="https://bokeh.org/">Bokeh</a></p></td>
+<td><p>Bokeh is an interactive data visualization library for web browsers. It provides tools for constructing elegant and versatile graphics. It can help you quickly make interactive plots, dashboards, and data applications.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://plotly.com/dash/">Dash</a></p></td>
+<td><p>Dash is a Python framework for building web analytic applications quickly. It’s ideal for building data visualization applications with custom user interfaces that render in the browser.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://matplotlib.org/">Matplotlib</a></p></td>
+<td><p>Matplotlib is a library for creating static, animated, and interactive data visualizations in Python.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://pandas.pydata.org/">pandas</a></p></td>
+<td><p>pandas is a powerful and flexible open source tool for analyzing and manipulating data. It provides fast, flexible, and expressive data structures to work with relational or labeled data.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://seaborn.pydata.org/">Seaborn</a></p></td>
+<td><p>Seaborn is a Python data visualization library based on Matplotlib. It provides a high-level interface for drawing attractive and informative statistical graphics that allow you to explore and understand your data. It integrates closely with pandas data structures.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="id11">
+<h4><a class="toc-backref" href="#id31">网络爬虫</a><a class="headerlink" href="#id11" title="永久链接至标题">¶</a></h4>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Library</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference external" href="https://www.crummy.com/software/BeautifulSoup/bs4/doc/">Beautiful Soup</a></p></td>
+<td><p>Beautiful Soup is a Python library for pulling data out of HTML and XML files into parse trees. The library provides methods and Pythonic idioms to navigate, search, modify, and extract information from parse trees.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://docs.python-requests.org/en/master/"><code class="docutils literal notranslate"><span class="pre">requests</span></code></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">requests</span></code> is an elegant and powerful <a class="reference external" href="https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol">HTTP</a> library for Python. It provides an intuitive and concise API designed for human beings.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://docs.scrapy.org/en/latest/">Scrapy</a></p></td>
+<td><p>Scrapy is a fast, high-level web crawling and web scraping framework. It allows you to crawl websites and extract structured data from their pages.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://docs.python.org/3/library/urllib.request.html#module-urllib.request"><code class="docutils literal notranslate"><span class="pre">urllib.request</span></code></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">urllib.request</span></code> is a standard library module that defines functions and classes to help you open URLs. It also allows you to work with basic and <a class="reference external" href="https://en.wikipedia.org/wiki/Digest_access_authentication">digest authentication</a>, redirections, cookies, and more.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="id12">
+<h3><a class="toc-backref" href="#id32">加快工作流程并使之自动化</a><a class="headerlink" href="#id12" title="永久链接至标题">¶</a></h3>
+<div class="section" id="devops">
+<h4><a class="toc-backref" href="#id33">DevOps</a><a class="headerlink" href="#devops" title="永久链接至标题">¶</a></h4>
+<p>DevOps 包括软件开发和一般 <a class="reference external" href="https://en.wikipedia.org/wiki/IT_operations">IT运营</a>。DevOps 允许你处理你的应用程序和软件产品的整个生命周期。它包括开发、测试、打包和部署，以及其他相关操作。</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Library</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference external" href="https://www.ansible.com/">Ansible</a></p></td>
+<td><p>Ansible is a tool for software <a class="reference external" href="https://en.wikipedia.org/wiki/Provisioning">provisioning</a>, configuration management, and <a class="reference external" href="https://en.wikipedia.org/wiki/Application_deployment">application deployment</a>. It enables <a class="reference external" href="https://en.wikipedia.org/wiki/Infrastructure_as_code">infrastructure as code</a>.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://docs.docker.com/compose/">Docker Compose</a></p></td>
+<td><p>Docker Compose is a tool for defining and running multicontainer <a class="reference external" href="https://docs.docker.com/">Docker</a> applications. You can configure your application’s services with a <a class="reference external" href="https://yaml.org/">YAML</a> file. Then, with a single command, you can create and start all the services from your configuration file. It works on production, staging, development, testing, and more.</p></td>
+</tr>
+</tbody>
+</table>
+<p>To get started with DevOps, check out:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://realpython.com/tutorials/devops/">Python DevOps Tutorials</a></p></li>
+<li><p><a class="reference external" href="https://realpython.com/learning-paths/python-devops/">DevOps With Python Learning Path</a></p></li>
+</ul>
+</div>
+<div class="section" id="id13">
+<h4><a class="toc-backref" href="#id34">开发环境</a><a class="headerlink" href="#id13" title="永久链接至标题">¶</a></h4>
+<p>为你和你的队友构建一个高效的环境是软件开发的一个基本部分。为此，Python 有一套很好的工具，允许你在每个项目的虚拟环境中隔离你的包、库和 Python 版本。</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>工具</p></th>
+<th class="head"><p>描述</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference external" href="https://docs.conda.io/en/latest/"><code class="docutils literal notranslate"><span class="pre">conda</span></code></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">conda</span></code> 是一个开源的软件包和环境管理系统。它允许你快速安装、运行和更新软件包及其依赖关系。它帮助你寻找和安装软件包。</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://pip.pypa.io/en/stable/"><code class="docutils literal notranslate"><span class="pre">pip</span></code></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">pip</span></code>是一个<a class="reference external" href="https://packaging.python.org/guides/tool-recommendations/">Python 的软件包管理工具</a>。它允许你从 <a class="reference external" href="https://pypi.org/">PyPI</a> 和其他索引中安装软件包。</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://pipenv.pypa.io/en/latest/">Pipenv</a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">Pipenv</span></code> 是一个旨在为 Python 世界带来所有打包世界中最好的工具。它允许你为你的项目创建和管理虚拟环境。它提供了一种通过统一接口一起使用 <code class="docutils literal notranslate"><span class="pre">pip</span></code> 和 <a class="reference external" href="https://virtualenv.pypa.io/en/latest/"><code class="docutils literal notranslate"><span class="pre">virtualenv</span></code></a> 的方法。</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://pipxproject.github.io/pipx/">pipx</a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">pipx</span></code> 是一个帮助你在隔离环境中安装和运行用 Python 编写的终端用户应用程序的工具。它为每个应用程序及其相关的软件包创建一个隔离的环境。它使应用程序在你的命令行或 shell 中可用。</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/pyenv/pyenv">pyenv</a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">pyenv</span></code> 是一个用于安装和管理多个 Python 版本的工具。它可以让你在它们之间快速切换。它还允许你定义每个项目的 Python 版本。</p></td>
+</tr>
+</tbody>
+</table>
+<p>要建立一个有效的开发环境，请查看。</p>
+</div>
+<div class="section" id="id14">
+<h4><a class="toc-backref" href="#id35">软件打包与部署</a><a class="headerlink" href="#id14" title="永久链接至标题">¶</a></h4>
+<p>软件开发周期的另一个关键部分是打包、分发和部署你的产品给你的终端用户或客户。在 Python 中，部署应用程序和库的一个快速而流行的方法是将它们发布到 PyPI。</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Tool</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference external" href="https://flit.readthedocs.io/en/latest/index.html">Flit</a></p></td>
+<td><p>Flit is a tool that provides a quick way to put your Python packages and modules on PyPI. It helps you set up the information about your package, so you can publish it to PyPI with minimal effort.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://python-poetry.org/">Poetry</a></p></td>
+<td><p>Poetry is a tool for creating, building, installing, and packaging Python projects. It also allows you to publish your projects to PyPI. It tracks and resolves your project’s dependencies. It uses your current virtual environments or creates new ones to isolate your packages from your system-wide Python installation.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://www.pyinstaller.org/">PyInstaller</a></p></td>
+<td><p>PyInstaller is a tool that freezes Python applications into stand-alone executables that work under Windows, GNU/Linux, macOS, and others.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://packaging.python.org/key_projects/#setuptools">setuptools</a></p></td>
+<td><p>setuptools is a collection of enhancements to the Python <a class="reference external" href="https://packaging.python.org/key_projects/#distutils">distutils</a> that allows you to build and distribute Python <a class="reference external" href="https://packaging.python.org/glossary/#term-Distribution-Package">distributions</a>, especially those that depend on other packages.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://twine.readthedocs.io/en/latest/">Twine</a></p></td>
+<td><p>Twine is a utility for publishing Python packages on PyPI. It allows you to upload source and binary distributions of your projects.</p></td>
+</tr>
+</tbody>
+</table>
+<p>To get started, check out:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://realpython.com/pypi-publish-python-package/">How to Publish an Open Source Python Package to PyPI</a></p></li>
+<li><p><a class="reference external" href="https://realpython.com/pyinstaller-python/">Using PyInstaller to Easily Distribute Python Applications</a></p></li>
+</ul>
+<p>With these resources, you can get started with packaging and deploying your Python applications, libraries, and packages to your end users, clients, and colleges. Also, the <a class="reference external" href="https://packaging.python.org/">Python Packaging Authority</a> provides a lot of useful information and tutorials to help you distribute Python packages with modern tools.</p>
+</div>
+<div class="section" id="id15">
+<h4><a class="toc-backref" href="#id36">数据库系统</a><a class="headerlink" href="#id15" title="永久链接至标题">¶</a></h4>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Library</p></th>
+<th class="head"><p>Database</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference external" href="http://docs.mongoengine.org/">MongoEngine</a></p></td>
+<td><p><a class="reference external" href="https://realpython.com/introduction-to-mongodb-and-python/">MongoDB</a></p></td>
+<td><p>MongoEngine is a document-object mapper for working with MongoDB using object-oriented programming in Python.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://dev.mysql.com/doc/connector-python/en/">MySQL Connector/Python</a></p></td>
+<td><p><a class="reference external" href="https://dev.mysql.com/">MySQL</a></p></td>
+<td><p>MySQL Connector is a self-contained Python driver for communicating with MySQL servers.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://www.psycopg.org/">Psycopg</a></p></td>
+<td><p><a class="reference external" href="https://www.postgresql.org/about/">PostgreSQL</a></p></td>
+<td><p>Psycopg is a PostgreSQL database adapter for the Python programming language.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://pymongo.readthedocs.io/en/stable/index.html">PyMongo</a></p></td>
+<td><p><a class="reference external" href="https://docs.mongodb.com/">MongoDB</a></p></td>
+<td><p>PyMongo is a Python distribution containing tools for working with MongoDB databases. It provides a native Python driver for this type of database system.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://www.sqlalchemy.org/">SQLAlchemy</a></p></td>
+<td><p><a class="reference external" href="https://realpython.com/python-sql-libraries/">SQL</a></p></td>
+<td><p>SQLAlchemy is a Python SQL toolkit and object-relational mapper for SQL databases.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://docs.python.org/3/library/sqlite3.html#module-sqlite3"><code class="docutils literal notranslate"><span class="pre">sqlite3</span></code></a></p></td>
+<td><p><a class="reference external" href="https://www.sqlite.org/about.html">SQLite</a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">sqlite3</span></code> is a lightweight disk-based database that doesn’t require a separate server process. It allows you to access databases using a nonstandard variant of SQL. It’s freely available and comes in the Python standard library.</p></td>
+</tr>
+</tbody>
+</table>
+<p>To get started with databases, check out:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://realpython.com/tutorials/databases/">Python Database Tutorials</a></p></li>
+<li><p><a class="reference external" href="https://realpython.com/learning-paths/data-collection-storage/">Data Collection &amp; Storage Learning Path</a></p></li>
+</ul>
+<p>Creating and working with databases is a powerful way to manage data in your Python applications. Databases add significant functionality and versatility to your programs and allow you to provide exciting features to your users and client. Managing databases is a fundamental skill in your developer education.</p>
+</div>
+<div class="section" id="id16">
+<h4><a class="toc-backref" href="#id37">软件测试</a><a class="headerlink" href="#id16" title="永久链接至标题">¶</a></h4>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Tool</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference external" href="https://docs.python.org/3/library/doctest.html#module-doctest">doctest</a></p></td>
+<td><p>doctest is a standard module that searches your <a class="reference external" href="https://realpython.com/documenting-python-code/">docstrings</a> for pieces of text that look like <a class="reference external" href="https://realpython.com/interacting-with-python/">interactive Python sessions</a> and executes them to verify that they work correctly.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://docs.pytest.org/en/6.2.x/contents.html">pytest</a></p></td>
+<td><p>pytest is a robust and mature testing framework that allows you to write and automate tests. It can scale from small unit tests to complex functional tests for your applications and libraries.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://tox.readthedocs.io/en/latest/">tox</a></p></td>
+<td><p>tox is a generic <a class="reference external" href="https://pypi.org/project/virtualenv">virtualenv</a> management and test command-line tool. It allows you to check if your packages install correctly within different Python versions and interpreters. It can run your tests in each of the configured environments.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://docs.python.org/3/library/unittest.html#module-unittest"><code class="docutils literal notranslate"><span class="pre">unittest</span></code></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">unittest</span></code> is a unit testing framework available in the Python standard library. It supports test automation, setup and teardown of tests, aggregation of tests into collections, and more.</p></td>
+</tr>
+</tbody>
+</table>
+<p>To get started with testing, check out:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://realpython.com/tutorials/testing/">Python Testing Tutorials</a></p></li>
+<li><p><a class="reference external" href="https://realpython.com/learning-paths/test-your-python-apps/">Test Your Python Apps Learning Path</a></p></li>
+</ul>
+<p>As a developer, you need to produce reliable code that works correctly. This means that you need to test your code every time you change it or add new features. Automated tests are the way to go in these situations.</p>
+</div>
+</div>
+<div class="section" id="id17">
+<h3><a class="toc-backref" href="#id38">构建嵌入式系统和机器人</a><a class="headerlink" href="#id17" title="永久链接至标题">¶</a></h3>
+<p>随着科学技术的发展，物联网、家庭自动化、自动驾驶汽车和机器人等领域已经变得越来越流行。</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Library</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference external" href="https://microbit.org/">BBC micro:bit</a></p></td>
+<td><p>BBC micro:bit is a pocket-sized computer that introduces you to how software and hardware work together. It is programmable with Python.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://circuitpython.org/">CircuitPython</a></p></td>
+<td><p>CircuitPython is a programming language designed to simplify experimenting and learning to code on low-cost microcontroller boards.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://micropython.org/">MicroPython</a></p></td>
+<td><p>MicroPython is a lean and efficient implementation of Python. It includes a small subset of the Python standard library. It’s optimized to run on microcontrollers and in constrained environments.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://atsushisakai.github.io/PythonRobotics/">PythonRobotics</a></p></td>
+<td><p>PythonRobotics is a compilation of various robotics algorithms with visualizations. It’s focused on autonomous navigation. Its goal is to allow you to understand the basic ideas behind each robotic algorithm it provides.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://www.raspberrypi.org/about/">Raspberry Pi</a></p></td>
+<td><p>Raspberry Pi is a general-purpose, Linux-based computer. It has a complete operating system with a GUI interface that is capable of running many different programs at the same time. Python comes built in on the Raspberry Pi.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="http://wiki.ros.org/rospy">rospy</a></p></td>
+<td><p>rospy is a client library for <a class="reference external" href="https://www.ros.org/">ROS (Robot Operating System)</a>. Its API enables Python programmers to quickly interface with ROS to create complex and reliable robot behaviors.</p></td>
+</tr>
+</tbody>
+</table>
+<p>To get started with embedded Python, check out:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://realpython.com/micropython/">MicroPython: An Intro to Programming Hardware in Python</a></p></li>
+<li><p><a class="reference external" href="https://realpython.com/podcasts/rpp/5/">Episode 5: Exploring CircuitPython</a></p></li>
+<li><p><a class="reference external" href="https://realpython.com/embedded-python/">Embedded Python: Build a Game on the BBC micro:bit</a></p></li>
+</ul>
+<p>If you want to start creating a hardware-related project with Python, then look at how to build <a class="reference external" href="https://realpython.com/python-raspberry-pi/">physical projects with Python on the Raspberry Pi</a>. In this project, you’ll learn how to set up a Raspberry Pi, run Python code on it, read input from its sensors, send signals to its electronic components, and more.</p>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "xinetzone/d2py",
+            ref: "main",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./posts\basic"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+<div class="section">
+     
+<div class="section">
+  <span style="float: left">
+    
+  </span>
+  <span>&nbsp;</span>
+  <span style="float: right">
+     
+    <a href="python-use.html">
+      如何使用 Python？ <i
+        class="fa fa-arrow-circle-right"
+      ></i
+      >
+    </a>
+    
+  </span>
+</div>
+  
+</div>
+
+              </div>
+              
+        
+            <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer">
+    <div class="container">
+      <p>
+        
+          By xinetzone<br/>
+        
+            &copy; Copyright 2021, xinetzone.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

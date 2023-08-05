@@ -1,0 +1,1059 @@
+
+<!DOCTYPE html>
+
+<html lang="zh_CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>网络 &#8212; d2py 0.1 文档</title>
+    
+  <link href="../../_static/css/theme.css" rel="stylesheet">
+  <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/default.css" />
+    
+  <link rel="preload" as="script" href="../../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
+    <script kind="utterances">
+
+    var commentsRunWhenDOMLoaded = cb => {
+    if (document.readyState != 'loading') {
+        cb()
+    } else if (document.addEventListener) {
+        document.addEventListener('DOMContentLoaded', cb)
+    } else {
+        document.attachEvent('onreadystatechange', function() {
+        if (document.readyState == 'complete') cb()
+        })
+    }
+}
+
+var addUtterances = () => {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "https://utteranc.es/client.js";
+    script.async = "async";
+
+    script.setAttribute("repo", "xinetzone/d2py");
+    script.setAttribute("issue-term", "pathname");
+    script.setAttribute("theme", "github-light");
+    script.setAttribute("label", "💬 comment");
+    script.setAttribute("crossorigin", "anonymous");
+
+    sections = document.querySelectorAll("div.section");
+    if (sections !== null) {
+        section = sections[sections.length-1];
+        section.appendChild(script);
+    }
+}
+commentsRunWhenDOMLoaded(addUtterances);
+</script>
+    <script src="../../_static/translations.js"></script>
+    <script src="../../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".cell"
+        const thebe_selector_input = ".cell_input div.highlight"
+        const thebe_selector_output = ".cell_output"
+    </script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({startOnLoad:true});</script>
+    <link rel="canonical" href="https://xinetzone.github.io/d2py/python-study/drafts/socket.html" />
+    <link rel="shortcut icon" href="../../_static/page-logo.jfif"/>
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="搜索" href="../../search.html" />
+    <link rel="next" title="字符编码方法" href="str.html" />
+    <link rel="prev" title="re" href="re.html" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="zh_CN">
+    
+
+    <!-- Google Analytics -->
+     
+<link
+  rel="alternate"
+  type="application/atom+xml"
+  href="../../posts/atom.xml"
+  title="Blog"
+/>
+ 
+<style type="text/css">
+  ul.ablog-archive {
+    list-style: none;
+    overflow: auto;
+    margin-left: 0px;
+  }
+  ul.ablog-archive li {
+    float: left;
+    margin-right: 5px;
+    font-size: 80%;
+  }
+  ul.postlist a {
+    font-style: italic;
+  }
+  ul.postlist-style-disc {
+    list-style-type: disc;
+  }
+  ul.postlist-style-none {
+    list-style-type: none;
+  }
+  ul.postlist-style-circle {
+    list-style-type: circle;
+  }
+</style>
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../../_static/logo.jpg" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">d2py 0.1 文档</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="../index.html">
+   Python 学习手册
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../basic/index.html">
+     Python 基础教程
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+    <label for="toctree-checkbox-2">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="../basic/intro/index.html">
+       Python 简介
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+      <label for="toctree-checkbox-3">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../basic/intro/understand-python.html">
+         解读 Python 世界的修炼体系
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../basic/intro/basic-type.html">
+         Python 基本数据类型
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../basic/function.html">
+       函数
+      </a>
+     </li>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="../basic/container/index.html">
+       容器
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+      <label for="toctree-checkbox-4">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../basic/container/set.html">
+         集合
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../basic/container/dict.html">
+         字典
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../basic/container/sequence.html">
+         序列
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../basic/controlflow.html">
+       流程控制
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../basic/modules.html">
+       模块
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../basic/class.html">
+       类
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../basic/template.html">
+       模板
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../basic/threading.html">
+       多线程
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../basic/logging.html">
+       日志记录
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../basic/weakref.html">
+       弱引用
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../basic/argparse.html">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         argparse
+        </span>
+       </code>
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../basic/input-output.html">
+       输入与输出
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../basic/match-statement.html">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         match
+        </span>
+       </code>
+       语句
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../topics/index.html">
+     Python 主题手册
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+    <label for="toctree-checkbox-5">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../topics/Nuitka.html">
+       Python 编译器 Nuitka
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../topics/abc.html">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         abc
+        </span>
+       </code>
+       抽象基类
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../topics/annotations.html">
+       注解
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../topics/argparse.html">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         argparse
+        </span>
+       </code>
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../topics/custom-numbers.html">
+       自定义数字
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../topics/f-string.html">
+       格式字符串字面值
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../topics/metaclass.html">
+       元类
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../topics/refs.html">
+       临时区
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../topics/sys.html">
+       系统相关
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../faqs/index.html">
+     常见问题
+    </a>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../refs/index.html">
+     Python 参考手册
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+    <label for="toctree-checkbox-6">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../refs/constants.html">
+       内置常量
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../refs/terms.html">
+       术语中英对照表
+      </a>
+     </li>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="../refs/glossary/index.html">
+       术语表
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
+      <label for="toctree-checkbox-7">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../refs/glossary/basic.html">
+         基本术语
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../refs/glossary/exec.html">
+         异常
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../refs/glossary/identifier.html">
+         标识符
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../refs/glossary/value.html">
+         字面值
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../refs/sources.html">
+       Python 学习资源
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../demo.html">
+     Jupyter Notebook
+    </a>
+   </li>
+   <li class="toctree-l2 current active has-children">
+    <a class="reference internal" href="index.html">
+     草稿
+    </a>
+    <input checked="" class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
+    <label for="toctree-checkbox-8">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul class="current">
+     <li class="toctree-l3">
+      <a class="reference internal" href="101.html">
+       一、5 个值得在 2018 年关注的库
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="22.html">
+       存储数据
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="33.html">
+       类也是对象
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="44.html">
+       描述器是什么？
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="55.html">
+       字符编码方法
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="66.html">
+       类型和运算 (Types and Operations)
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="88.html">
+       函数基础
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="class.html">
+       class
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="draft.html">
+       回收站
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="exc.html">
+       异常（draft）
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="file.html">
+       I/O操作（draft）
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="iter.html">
+       迭代&amp;生成（draft）
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="math.html">
+       Python 中的数学（draft）
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="oop.html">
+       OOP: The Big Picture
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="op.html">
+       运算符（draft）
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="re.html">
+       re
+      </a>
+     </li>
+     <li class="toctree-l3 current active">
+      <a class="current reference internal" href="#">
+       网络
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="str.html">
+       字符编码方法
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="type.html">
+       Python 数据类型转换（draft）
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="%E7%88%AC%E8%99%AB.html">
+       爬虫
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../FunctionalAnalysis/index.html">
+   泛函分析
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/>
+  <label for="toctree-checkbox-9">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../FunctionalAnalysis/draft/index.html">
+     回收站
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/>
+    <label for="toctree-checkbox-10">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../FunctionalAnalysis/draft/abc.html">
+       抽象基类
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../FunctionalAnalysis/draft/annotations.html">
+       对象注解
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../FunctionalAnalysis/draft/descriptor.html">
+       描述器
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../FunctionalAnalysis/draft/typing.html">
+       类型提示
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../posts/index.html">
+   博客
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../about/index.html">
+   关于
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/>
+  <label for="toctree-checkbox-11">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../about/feature.html">
+     特性
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../about/use.html">
+     项目使用
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../CODE_OF_CONDUCT.html">
+     行为准则
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../CONTRIBUTING.html">
+     贡献
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../SECURITY.html">
+     安全策略
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../news/index.html">
+   Python 新闻
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  <div>
+版权所有 © 2021 <a href="https://xinetzone.github.io/">xinetzone</a></div>
+<div>由 <a href="https://ebp.jupyterbook.org/">EBP</a> 提供技术支持</div>
+
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../_sources/python-study/drafts/socket.md.txt"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/xinetzone/d2py"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/xinetzone/d2py/issues/new?title=Issue%20on%20page%20%2Fpython-study/drafts/socket.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        <a class="edit-button" href="https://github.com/xinetzone/d2py/edit/main/docs/python-study/drafts/socket.md"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> 导航
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id2">
+   套接字
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id3">
+     服务器端套接字
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id4">
+     客户端套接字
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id5">
+     公共用途的套接字函数
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id6">
+     客户端
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id7">
+     服务器：
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#python-internet">
+   Python Internet 模块
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                 <div class="tex2jax_ignore mathjax_ignore section" id="id1">
+<h1>网络<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h1>
+<div class="section" id="id2">
+<h2>套接字<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h2>
+<p>Python 提供了两个级别访问的网络服务。：</p>
+<ul class="simple">
+<li><p>低级别的网络服务支持基本的 Socket，它提供了标准的 BSD Sockets API，可以访问底层操作系统Socket接口的全部方法。</p></li>
+<li><p>高级别的网络服务模块 SocketServer， 它提供了服务器中心类，可以简化网络服务器的开发。</p></li>
+</ul>
+<p>Socket又称”套接字”，应用程序通常通过”套接字”向网络发出请求或者应答网络请求，使主机间或者一台计算机上的进程间可以通讯。<br />
+Python 中，我们用 <code class="docutils literal notranslate"><span class="pre">socket()</span></code>函数来创建套接字，语法格式如下：<br />
+<code class="docutils literal notranslate"><span class="pre">socket.socket([family[,</span> <span class="pre">type[,</span> <span class="pre">proto]]])</span></code><br />
+参数:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">family</span></code>: 套接字家族可以使<code class="docutils literal notranslate"><span class="pre">AF_UNIX</span></code>或者<code class="docutils literal notranslate"><span class="pre">AF_INET</span></code>；<code class="docutils literal notranslate"><span class="pre">AF_INET</span></code>指定使用IPv4协议，如果要用更先进的IPv6，就指定为<code class="docutils literal notranslate"><span class="pre">AF_INET6</span></code>。</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">type</span></code>: 套接字类型可以根据是面向连接的还是非连接分为<code class="docutils literal notranslate"><span class="pre">SOCK_STREAM</span></code>或<code class="docutils literal notranslate"><span class="pre">SOCK_DGRAM</span></code>；<code class="docutils literal notranslate"><span class="pre">SOCK_STREAM</span></code>指定使用面向流的<code class="docutils literal notranslate"><span class="pre">TCP协议</span></code>。</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">protocol</span></code>: 一般不填默认为<code class="docutils literal notranslate"><span class="pre">0</span></code>.</p></li>
+</ul>
+<p>Socket 对象(内建)方法</p>
+<div class="section" id="id3">
+<h3>服务器端套接字<a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h3>
+<p>|函数|描述|
+|:-|:-|:-|
+|<code class="docutils literal notranslate"><span class="pre">s.bind()</span></code>|绑定地址<code class="docutils literal notranslate"><span class="pre">（host,port）</span></code>到套接字， 在<code class="docutils literal notranslate"><span class="pre">AF_INET</span></code>下,以元组<code class="docutils literal notranslate"><span class="pre">（host,port）</span></code>的形式表示地址。|
+|<code class="docutils literal notranslate"><span class="pre">s.listen()</span></code>|开始TCP监听。backlog指定在拒绝连接之前，操作系统可以挂起的最大连接数量。该值至少为1，大部分应用程序设为5就可以了。|
+|<code class="docutils literal notranslate"><span class="pre">s.accept()</span></code>|被动接受TCP客户端连接,(阻塞式)等待连接的到来|</p>
+</div>
+<div class="section" id="id4">
+<h3>客户端套接字<a class="headerlink" href="#id4" title="永久链接至标题">¶</a></h3>
+<p>|函数|描述|
+|:-|:-|:-|
+|<code class="docutils literal notranslate"><span class="pre">s.connect()</span></code>|主动初始化TCP服务器连接，。一般<code class="docutils literal notranslate"><span class="pre">address</span></code>的格式为元组<code class="docutils literal notranslate"><span class="pre">(hostname,port)</span></code>，(port指端口号)如果连接出错，返回<code class="docutils literal notranslate"><span class="pre">socket.error</span></code>错误。|
+|<code class="docutils literal notranslate"><span class="pre">s.connect_ex()</span></code>|<code class="docutils literal notranslate"><span class="pre">connect()</span></code>函数的扩展版本,出错时返回出错码,而不是抛出异常|</p>
+</div>
+<div class="section" id="id5">
+<h3>公共用途的套接字函数<a class="headerlink" href="#id5" title="永久链接至标题">¶</a></h3>
+<p>|函数|描述|
+|:-|:-|:-|
+|<code class="docutils literal notranslate"><span class="pre">s.recv()</span></code>|接收TCP数据，数据以字符串形式返回，<code class="docutils literal notranslate"><span class="pre">bufsiz</span></code>e指定要接收的最大数据量。<code class="docutils literal notranslate"><span class="pre">flag</span></code>提供有关消息的其他信息，通常可以忽略。|
+|<code class="docutils literal notranslate"><span class="pre">s.send()</span></code>|发送TCP数据，将string中的数据发送到连接的套接字。返回值是要发送的字节数量，该数量可能小于string的字节大小。|
+|<code class="docutils literal notranslate"><span class="pre">s.sendall()</span></code>|完整发送TCP数据，完整发送TCP数据。将string中的数据发送到连接的套接字，但在返回之前会尝试发送所有数据。成功返回None，失败则抛出异常。|
+|<code class="docutils literal notranslate"><span class="pre">s.recvform()</span></code>|接收UDP数据，与<code class="docutils literal notranslate"><span class="pre">recv()</span></code>类似，但返回值是<code class="docutils literal notranslate"><span class="pre">（data,address）</span></code>。其中<code class="docutils literal notranslate"><span class="pre">data</span></code>是包含接收数据的字符串，<code class="docutils literal notranslate"><span class="pre">address</span></code>是发送数据的套接字地址。|
+|<code class="docutils literal notranslate"><span class="pre">s.sendto()</span></code>|发送UDP数据，将数据发送到套接字，<code class="docutils literal notranslate"><span class="pre">address</span></code>是形式为<code class="docutils literal notranslate"><span class="pre">（ipaddr，port）</span></code>的元组，指定远程地址。返回值是发送的字节数。|
+|<code class="docutils literal notranslate"><span class="pre">s.close()</span></code>|关闭套接字|
+|<code class="docutils literal notranslate"><span class="pre">s.getpeername()</span></code>|返回连接套接字的远程地址。返回值通常是元组<code class="docutils literal notranslate"><span class="pre">（ipaddr,port）</span></code>|
+|<code class="docutils literal notranslate"><span class="pre">s.getsockname()</span></code>|返回套接字自己的地址。通常是一个元组<code class="docutils literal notranslate"><span class="pre">(ipaddr,port)</span></code>|
+|<code class="docutils literal notranslate"><span class="pre">s.setsockopt(level,optname,value)</span></code>|设置给定套接字选项的值。|
+|<code class="docutils literal notranslate"><span class="pre">s.getsockopt(level,optname[.buflen])</span></code>|返回套接字选项的值。|
+|<code class="docutils literal notranslate"><span class="pre">s.settimeout(timeout)</span></code>|设置套接字操作的超时期，<code class="docutils literal notranslate"><span class="pre">timeout</span></code>是一个浮点数，单位是秒。值为<code class="docutils literal notranslate"><span class="pre">None</span></code>表示没有超时期。一般，超时期应该在刚创建套接字时设置，因为它们可能用于连接的操作（如<code class="docutils literal notranslate"><span class="pre">connect()</span></code>）|
+|<code class="docutils literal notranslate"><span class="pre">s.gettimeout()</span></code>|返回当前超时期的值，单位是秒，如果没有设置超时期，则返回<code class="docutils literal notranslate"><span class="pre">None</span></code>。|
+|<code class="docutils literal notranslate"><span class="pre">s.fileno()</span></code>|返回套接字的文件描述符。|
+|<code class="docutils literal notranslate"><span class="pre">s.setblocking(flag)</span></code>|如果flag为0，则将套接字设为非阻塞模式，否则将套接字设为阻塞模式（默认值）。非阻塞模式下，如果调用<code class="docutils literal notranslate"><span class="pre">recv()</span></code>没有发现任何数据，或<code class="docutils literal notranslate"><span class="pre">send()</span></code>调用无法立即发送数据，那么将引起<code class="docutils literal notranslate"><span class="pre">socket.error</span></code>异常。|
+|<code class="docutils literal notranslate"><span class="pre">s.makefile()</span></code>|创建一个与该套接字相关连的文件|</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># 导入socket库:</span>
+<span class="kn">import</span> <span class="nn">socket</span>
+
+<span class="c1"># 创建一个socket:</span>
+<span class="n">s</span> <span class="o">=</span> <span class="n">socket</span><span class="o">.</span><span class="n">socket</span><span class="p">(</span><span class="n">socket</span><span class="o">.</span><span class="n">AF_INET</span><span class="p">,</span> <span class="n">socket</span><span class="o">.</span><span class="n">SOCK_STREAM</span><span class="p">)</span>
+<span class="c1"># 建立连接:</span>
+<span class="n">s</span><span class="o">.</span><span class="n">connect</span><span class="p">((</span><span class="s1">&#39;www.sina.com.cn&#39;</span><span class="p">,</span> <span class="mi">80</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id6">
+<h3>客户端<a class="headerlink" href="#id6" title="永久链接至标题">¶</a></h3>
+<p>客户端要主动发起TCP连接，必须知道服务器的<code class="docutils literal notranslate"><span class="pre">IP地址</span></code>和<code class="docutils literal notranslate"><span class="pre">端口号</span></code>。新浪网站的IP地址可以用<code class="docutils literal notranslate"><span class="pre">域名www.sina.com.cn</span></code>自动转换到IP地址</p>
+<p>80端口是Web服务的标准端口。其他服务都有对应的标准端口号，例如SMTP服务是25端口，FTP服务是21端口，等等。端口号小于1024的是Internet标准服务的端口，端口号大于1024的，可以任意使用。</p>
+<p>因此，我们连接新浪服务器的代码如下：<br />
+<code class="docutils literal notranslate"><span class="pre">s.connect(('www.sina.com.cn',</span> <span class="pre">80))</span></code><br />
+建立TCP连接后，我们就可以向新浪服务器发送请求，要求返回首页的内容：</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># 发送数据:</span>
+<span class="n">s</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="sa">b</span><span class="s1">&#39;GET / HTTP/1.1</span><span class="se">\r\n</span><span class="s1">Host: www.sina.com.cn</span><span class="se">\r\n</span><span class="s1">Connection: close</span><span class="se">\r\n\r\n</span><span class="s1">&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>60
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># 接收数据:</span>
+<span class="n">buffer</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+    <span class="c1"># 每次最多接收1k字节:</span>
+    <span class="n">d</span> <span class="o">=</span> <span class="n">s</span><span class="o">.</span><span class="n">recv</span><span class="p">(</span><span class="mi">1024</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">d</span><span class="p">:</span>
+        <span class="n">buffer</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">d</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">break</span>
+<span class="n">data</span> <span class="o">=</span> <span class="sa">b</span><span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">buffer</span><span class="p">)</span>
+<span class="c1"># 关闭连接:</span>
+<span class="n">s</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>接收数据时，调用<code class="docutils literal notranslate"><span class="pre">recv(max)</span></code>方法，一次最多接收指定的字节数，因此，在一个while循环中反复接收，直到<code class="docutils literal notranslate"><span class="pre">recv()</span></code>返回空数据，表示接收完毕，退出循环。
+当我们接收完数据后，调用close()方法关闭Socket，这样，一次完整的网络通信就结束了。<br />
+接收到的数据包括HTTP头和网页本身，我们只需要把HTTP头和网页分离一下，把HTTP头打印出来，网页内容保存到文件：</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="n">header</span><span class="p">,</span> <span class="n">html</span><span class="p">)</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="sa">b</span><span class="s1">&#39;</span><span class="se">\r\n\r\n</span><span class="s1">&#39;</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">header</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s1">&#39;utf-8&#39;</span><span class="p">))</span>
+<span class="c1"># 把接收的数据写入文件:</span>
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;sina.html&#39;</span><span class="p">,</span> <span class="s1">&#39;wb&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+    <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">html</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>HTTP/1.1 200 OK
+Server: nginx
+Date: Tue, 22 Aug 2017 08:03:04 GMT
+Content-Type: text/html
+Content-Length: 601703
+Connection: close
+Last-Modified: Tue, 22 Aug 2017 07:58:35 GMT
+Vary: Accept-Encoding
+Expires: Tue, 22 Aug 2017 08:04:03 GMT
+Cache-Control: max-age=60
+X-Powered-By: shci_v1.03
+Age: 0
+Via: http/1.1 cnc.beixian.ha2ts4.205 (ApacheTrafficServer/4.2.1.1 [cMsSf ]), http/1.1 ctc.ningbo.ha2ts4.106 (ApacheTrafficServer/4.2.1.1 [cRs f ])
+X-Cache: MISS.205
+X-Via-CDN: f=edge,s=ctc.ningbo.ha2ts4.101.nb.sinaedge.com,c=218.75.27.189;f=Edge,s=ctc.ningbo.ha2ts4.106,c=115.238.190.101;f=edge,s=cnc.beixian.ha2ts4.213.nb.sinaedge.com,c=115.238.190.106;f=Edge,s=cnc.beixian.ha2ts4.205,c=115.238.190.101
+X-Cache: MISS.MERGE.106
+</pre></div>
+</div>
+<p>现在，只需要在浏览器中打开这个sina.html文件，就可以看到新浪的首页了。</p>
+</div>
+<div class="section" id="id7">
+<h3>服务器：<a class="headerlink" href="#id7" title="永久链接至标题">¶</a></h3>
+<ul class="simple">
+<li><p>我们使用 <code class="docutils literal notranslate"><span class="pre">socket</span></code> 模块的 <code class="docutils literal notranslate"><span class="pre">socket()</span></code> 函数来创建一个 <code class="docutils literal notranslate"><span class="pre">socket</span></code>对象。<code class="docutils literal notranslate"><span class="pre">socket</span></code> 对象可以通过调用其他函数来设置一个 <code class="docutils literal notranslate"><span class="pre">socket</span></code> 服务。</p>
+<ul>
+<li><p>通过调用 <code class="docutils literal notranslate"><span class="pre">bind(hostname,</span> <span class="pre">port)</span></code> 函数来指定服务的 <code class="docutils literal notranslate"><span class="pre">port</span></code>(端口)。</p></li>
+<li><p>我们调用 <code class="docutils literal notranslate"><span class="pre">socket</span></code> 对象的 <code class="docutils literal notranslate"><span class="pre">accept</span></code> 方法。该方法等待客户端的连接，并返回 <code class="docutils literal notranslate"><span class="pre">connection</span></code> 对象，表示已连接到客户端。</p></li>
+</ul>
+</li>
+</ul>
+<p>完整代码如下</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># 文件名：server.py</span>
+<span class="kn">import</span> <span class="nn">threading</span>
+<span class="c1"># 导入 socket模块</span>
+<span class="kn">import</span> <span class="nn">socket</span>
+
+<span class="c1"># 创建 socket 对象</span>
+<span class="n">s</span> <span class="o">=</span> <span class="n">socket</span><span class="o">.</span><span class="n">socket</span><span class="p">(</span><span class="n">socket</span><span class="o">.</span><span class="n">AF_INET</span><span class="p">,</span> <span class="n">socket</span><span class="o">.</span><span class="n">SOCK_STREAM</span><span class="p">)</span> 
+
+
+<span class="c1"># 绑定端口</span>
+<span class="n">s</span><span class="o">.</span><span class="n">bind</span><span class="p">((</span><span class="s1">&#39;127.0.0.1&#39;</span><span class="p">,</span> <span class="mi">1024</span><span class="p">))</span>
+
+<span class="c1"># 设置最大连接数，超过后排队</span>
+<span class="n">s</span><span class="o">.</span><span class="n">listen</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;请稍后,正在连接中...&#39;</span><span class="p">)</span>
+
+<span class="c1"># 每个连接都必须创建新线程（或进程）来处理，否则，单线程在处理连接的过程中，无法接受其他客户端的连接：</span>
+<span class="k">def</span> <span class="nf">tcplink</span><span class="p">(</span><span class="n">sock</span><span class="p">,</span> <span class="n">addr</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Accept new connection from </span><span class="si">%s</span><span class="s1">:</span><span class="si">%s</span><span class="s1">...&#39;</span> <span class="o">%</span> <span class="n">addr</span><span class="p">)</span>
+    <span class="n">sock</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="sa">b</span><span class="s1">&#39;Welcome!&#39;</span><span class="p">)</span>
+    <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+        <span class="n">data</span> <span class="o">=</span> <span class="n">sock</span><span class="o">.</span><span class="n">recv</span><span class="p">(</span><span class="mi">1024</span><span class="p">)</span>
+        <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">data</span> <span class="ow">or</span> <span class="n">data</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s1">&#39;utf-8&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;exit&#39;</span><span class="p">:</span>
+            <span class="k">break</span>
+        <span class="n">sock</span><span class="o">.</span><span class="n">send</span><span class="p">((</span><span class="s1">&#39;Hello, </span><span class="si">%s</span><span class="s1">!&#39;</span> <span class="o">%</span> <span class="n">data</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s1">&#39;utf-8&#39;</span><span class="p">))</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s1">&#39;utf-8&#39;</span><span class="p">))</span>
+    <span class="n">sock</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Connection from </span><span class="si">%s</span><span class="s1">:</span><span class="si">%s</span><span class="s1"> closed.&#39;</span> <span class="o">%</span> <span class="n">addr</span><span class="p">)</span>
+    
+<span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+    <span class="c1"># 建立客户端连接</span>
+    <span class="n">sock</span><span class="p">,</span><span class="n">addr</span> <span class="o">=</span> <span class="n">serversocket</span><span class="o">.</span><span class="n">accept</span><span class="p">()</span>
+    <span class="c1"># 创建新线程来处理TCP连接:</span>
+    <span class="n">t</span> <span class="o">=</span> <span class="n">threading</span><span class="o">.</span><span class="n">Thread</span><span class="p">(</span><span class="n">target</span><span class="o">=</span><span class="n">tcplink</span><span class="p">,</span> <span class="n">args</span><span class="o">=</span><span class="p">(</span><span class="n">sock</span><span class="p">,</span> <span class="n">addr</span><span class="p">))</span>
+    <span class="n">t</span><span class="o">.</span><span class="n">start</span><span class="p">()</span>
+</pre></div>
+</div>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>请稍后,正在连接中...
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>客户端
+接下来我们写一个简单的客户端实例连接到以上创建的服务。端口号为 9999。
+<code class="docutils literal notranslate"><span class="pre">socket.connect(hosname,</span> <span class="pre">port</span> <span class="pre">)</span></code> 方法打开一个 TCP 连接到主机为 hostname 端口为 port 的服务商。连接后我们就可以从服务端后期数据，记住，操作完成后需要关闭连接。</p></li>
+</ul>
+<p>完整代码如下：</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># 文件名：client.py</span>
+
+<span class="c1"># 导入 socket模块</span>
+<span class="kn">import</span> <span class="nn">socket</span>
+
+<span class="n">s</span> <span class="o">=</span> <span class="n">socket</span><span class="o">.</span><span class="n">socket</span><span class="p">(</span><span class="n">socket</span><span class="o">.</span><span class="n">AF_INET</span><span class="p">,</span> <span class="n">socket</span><span class="o">.</span><span class="n">SOCK_STREAM</span><span class="p">)</span>
+<span class="c1"># 建立连接:</span>
+<span class="n">s</span><span class="o">.</span><span class="n">connect</span><span class="p">((</span><span class="s1">&#39;127.0.0.1&#39;</span><span class="p">,</span> <span class="mi">9999</span><span class="p">))</span>
+<span class="c1"># 接收欢迎消息:</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">s</span><span class="o">.</span><span class="n">recv</span><span class="p">(</span><span class="mi">1024</span><span class="p">)</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s1">&#39;utf-8&#39;</span><span class="p">))</span>
+<span class="k">for</span> <span class="n">data</span> <span class="ow">in</span> <span class="p">[</span><span class="sa">b</span><span class="s1">&#39;Michael&#39;</span><span class="p">,</span> <span class="sa">b</span><span class="s1">&#39;Tracy&#39;</span><span class="p">,</span> <span class="sa">b</span><span class="s1">&#39;Sarah&#39;</span><span class="p">]:</span>
+    <span class="c1"># 发送数据:</span>
+    <span class="n">s</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">s</span><span class="o">.</span><span class="n">recv</span><span class="p">(</span><span class="mi">1024</span><span class="p">)</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s1">&#39;utf-8&#39;</span><span class="p">))</span>
+<span class="n">s</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="sa">b</span><span class="s1">&#39;exit&#39;</span><span class="p">)</span>
+<span class="n">s</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>现在我们打开两个终端，第一个终端执行 server.py 文件<br />
+第二个终端执行 client.py 文件</p>
+</div>
+</div>
+<div class="section" id="python-internet">
+<h2>Python Internet 模块<a class="headerlink" href="#python-internet" title="永久链接至标题">¶</a></h2>
+<p>以下列出了 Python 网络编程的一些重要模块：</p>
+<p>|协议|功能用处|端口号|Python 模块|
+|:-|:-|:-|:-|:-|:-|
+|<code class="docutils literal notranslate"><span class="pre">HTTP</span></code>|网页访问|<code class="docutils literal notranslate"><span class="pre">80</span></code>|<code class="docutils literal notranslate"><span class="pre">httplib,</span> <span class="pre">urllib,</span> <span class="pre">xmlrpclib</span></code>|
+|<code class="docutils literal notranslate"><span class="pre">NNTP</span></code>|阅读和张贴新闻文章，俗称为”帖子”|<code class="docutils literal notranslate"><span class="pre">119</span></code>|<code class="docutils literal notranslate"><span class="pre">nntplib</span></code>|
+|<code class="docutils literal notranslate"><span class="pre">FTP</span></code>|文件传输|<code class="docutils literal notranslate"><span class="pre">20</span></code>|<code class="docutils literal notranslate"><span class="pre">ftplib,</span> <span class="pre">urllib</span></code>|
+|<code class="docutils literal notranslate"><span class="pre">SMTP</span></code>|发送邮件|<code class="docutils literal notranslate"><span class="pre">25</span></code>|<code class="docutils literal notranslate"><span class="pre">smtplib</span></code>|
+|<code class="docutils literal notranslate"><span class="pre">POP3</span></code>|接收邮件|<code class="docutils literal notranslate"><span class="pre">110</span></code>|<code class="docutils literal notranslate"><span class="pre">poplib</span></code>|
+|<code class="docutils literal notranslate"><span class="pre">IMAP4</span></code>|获取邮件|<code class="docutils literal notranslate"><span class="pre">143</span></code>|<code class="docutils literal notranslate"><span class="pre">imaplib</span></code>|
+|<code class="docutils literal notranslate"><span class="pre">Telnet</span></code>|命令行|<code class="docutils literal notranslate"><span class="pre">23</span></code>|<code class="docutils literal notranslate"><span class="pre">telnetlib</span></code>|
+|<code class="docutils literal notranslate"><span class="pre">Gopher</span></code>|信息查找|<code class="docutils literal notranslate"><span class="pre">70</span></code>|<code class="docutils literal notranslate"><span class="pre">gopherlib,</span> <span class="pre">urllib</span></code>|</p>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "xinetzone/d2py",
+            ref: "main",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./python-study\drafts"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+<div class="section">
+   
+</div>
+
+              </div>
+              
+        
+            <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="re.html" title="上一页 页">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">上一页</p>
+            <p class="prev-next-title">re</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="str.html" title="下一页 页">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">下一页</p>
+        <p class="prev-next-title">字符编码方法</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer">
+    <div class="container">
+      <p>
+        
+          By xinetzone<br/>
+        
+            &copy; Copyright 2021, xinetzone.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

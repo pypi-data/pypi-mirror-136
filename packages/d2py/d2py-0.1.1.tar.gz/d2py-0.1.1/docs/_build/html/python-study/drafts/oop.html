@@ -1,0 +1,1064 @@
+
+<!DOCTYPE html>
+
+<html lang="zh_CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OOP: The Big Picture &#8212; d2py 0.1 文档</title>
+    
+  <link href="../../_static/css/theme.css" rel="stylesheet">
+  <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/default.css" />
+    
+  <link rel="preload" as="script" href="../../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
+    <script kind="utterances">
+
+    var commentsRunWhenDOMLoaded = cb => {
+    if (document.readyState != 'loading') {
+        cb()
+    } else if (document.addEventListener) {
+        document.addEventListener('DOMContentLoaded', cb)
+    } else {
+        document.attachEvent('onreadystatechange', function() {
+        if (document.readyState == 'complete') cb()
+        })
+    }
+}
+
+var addUtterances = () => {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "https://utteranc.es/client.js";
+    script.async = "async";
+
+    script.setAttribute("repo", "xinetzone/d2py");
+    script.setAttribute("issue-term", "pathname");
+    script.setAttribute("theme", "github-light");
+    script.setAttribute("label", "💬 comment");
+    script.setAttribute("crossorigin", "anonymous");
+
+    sections = document.querySelectorAll("div.section");
+    if (sections !== null) {
+        section = sections[sections.length-1];
+        section.appendChild(script);
+    }
+}
+commentsRunWhenDOMLoaded(addUtterances);
+</script>
+    <script src="../../_static/translations.js"></script>
+    <script src="../../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".cell"
+        const thebe_selector_input = ".cell_input div.highlight"
+        const thebe_selector_output = ".cell_output"
+    </script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({startOnLoad:true});</script>
+    <link rel="canonical" href="https://xinetzone.github.io/d2py/python-study/drafts/oop.html" />
+    <link rel="shortcut icon" href="../../_static/page-logo.jfif"/>
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="搜索" href="../../search.html" />
+    <link rel="next" title="运算符（draft）" href="op.html" />
+    <link rel="prev" title="Python 中的数学（draft）" href="math.html" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="zh_CN">
+    
+
+    <!-- Google Analytics -->
+     
+<link
+  rel="alternate"
+  type="application/atom+xml"
+  href="../../posts/atom.xml"
+  title="Blog"
+/>
+ 
+<style type="text/css">
+  ul.ablog-archive {
+    list-style: none;
+    overflow: auto;
+    margin-left: 0px;
+  }
+  ul.ablog-archive li {
+    float: left;
+    margin-right: 5px;
+    font-size: 80%;
+  }
+  ul.postlist a {
+    font-style: italic;
+  }
+  ul.postlist-style-disc {
+    list-style-type: disc;
+  }
+  ul.postlist-style-none {
+    list-style-type: none;
+  }
+  ul.postlist-style-circle {
+    list-style-type: circle;
+  }
+</style>
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../../_static/logo.jpg" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">d2py 0.1 文档</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="../index.html">
+   Python 学习手册
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../basic/index.html">
+     Python 基础教程
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+    <label for="toctree-checkbox-2">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="../basic/intro/index.html">
+       Python 简介
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+      <label for="toctree-checkbox-3">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../basic/intro/understand-python.html">
+         解读 Python 世界的修炼体系
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../basic/intro/basic-type.html">
+         Python 基本数据类型
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../basic/function.html">
+       函数
+      </a>
+     </li>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="../basic/container/index.html">
+       容器
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+      <label for="toctree-checkbox-4">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../basic/container/set.html">
+         集合
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../basic/container/dict.html">
+         字典
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../basic/container/sequence.html">
+         序列
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../basic/controlflow.html">
+       流程控制
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../basic/modules.html">
+       模块
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../basic/class.html">
+       类
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../basic/template.html">
+       模板
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../basic/threading.html">
+       多线程
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../basic/logging.html">
+       日志记录
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../basic/weakref.html">
+       弱引用
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../basic/argparse.html">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         argparse
+        </span>
+       </code>
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../basic/input-output.html">
+       输入与输出
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../basic/match-statement.html">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         match
+        </span>
+       </code>
+       语句
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../topics/index.html">
+     Python 主题手册
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+    <label for="toctree-checkbox-5">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../topics/Nuitka.html">
+       Python 编译器 Nuitka
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../topics/abc.html">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         abc
+        </span>
+       </code>
+       抽象基类
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../topics/annotations.html">
+       注解
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../topics/argparse.html">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         argparse
+        </span>
+       </code>
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../topics/custom-numbers.html">
+       自定义数字
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../topics/f-string.html">
+       格式字符串字面值
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../topics/metaclass.html">
+       元类
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../topics/refs.html">
+       临时区
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../topics/sys.html">
+       系统相关
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../faqs/index.html">
+     常见问题
+    </a>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../refs/index.html">
+     Python 参考手册
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+    <label for="toctree-checkbox-6">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../refs/constants.html">
+       内置常量
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../refs/terms.html">
+       术语中英对照表
+      </a>
+     </li>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="../refs/glossary/index.html">
+       术语表
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
+      <label for="toctree-checkbox-7">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../refs/glossary/basic.html">
+         基本术语
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../refs/glossary/exec.html">
+         异常
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../refs/glossary/identifier.html">
+         标识符
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../refs/glossary/value.html">
+         字面值
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../refs/sources.html">
+       Python 学习资源
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../demo.html">
+     Jupyter Notebook
+    </a>
+   </li>
+   <li class="toctree-l2 current active has-children">
+    <a class="reference internal" href="index.html">
+     草稿
+    </a>
+    <input checked="" class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
+    <label for="toctree-checkbox-8">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul class="current">
+     <li class="toctree-l3">
+      <a class="reference internal" href="101.html">
+       一、5 个值得在 2018 年关注的库
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="22.html">
+       存储数据
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="33.html">
+       类也是对象
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="44.html">
+       描述器是什么？
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="55.html">
+       字符编码方法
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="66.html">
+       类型和运算 (Types and Operations)
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="88.html">
+       函数基础
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="class.html">
+       class
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="draft.html">
+       回收站
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="exc.html">
+       异常（draft）
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="file.html">
+       I/O操作（draft）
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="iter.html">
+       迭代&amp;生成（draft）
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="math.html">
+       Python 中的数学（draft）
+      </a>
+     </li>
+     <li class="toctree-l3 current active">
+      <a class="current reference internal" href="#">
+       OOP: The Big Picture
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="op.html">
+       运算符（draft）
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="re.html">
+       re
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="socket.html">
+       网络
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="str.html">
+       字符编码方法
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="type.html">
+       Python 数据类型转换（draft）
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="%E7%88%AC%E8%99%AB.html">
+       爬虫
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../FunctionalAnalysis/index.html">
+   泛函分析
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/>
+  <label for="toctree-checkbox-9">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../FunctionalAnalysis/draft/index.html">
+     回收站
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/>
+    <label for="toctree-checkbox-10">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../FunctionalAnalysis/draft/abc.html">
+       抽象基类
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../FunctionalAnalysis/draft/annotations.html">
+       对象注解
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../FunctionalAnalysis/draft/descriptor.html">
+       描述器
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../FunctionalAnalysis/draft/typing.html">
+       类型提示
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../posts/index.html">
+   博客
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../about/index.html">
+   关于
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/>
+  <label for="toctree-checkbox-11">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../about/feature.html">
+     特性
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../about/use.html">
+     项目使用
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../CODE_OF_CONDUCT.html">
+     行为准则
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../CONTRIBUTING.html">
+     贡献
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../SECURITY.html">
+     安全策略
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../news/index.html">
+   Python 新闻
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  <div>
+版权所有 © 2021 <a href="https://xinetzone.github.io/">xinetzone</a></div>
+<div>由 <a href="https://ebp.jupyterbook.org/">EBP</a> 提供技术支持</div>
+
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../_sources/python-study/drafts/oop.md.txt"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/xinetzone/d2py"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/xinetzone/d2py/issues/new?title=Issue%20on%20page%20%2Fpython-study/drafts/oop.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        <a class="edit-button" href="https://github.com/xinetzone/d2py/edit/main/docs/python-study/drafts/oop.md"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> 导航
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#why-use-classes">
+   Why Use Classes?
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#multiple-instances">
+     Multiple instances （多重实例）
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#customization-via-inheritance">
+     Customization via inheritance （通过继承进行定制）
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#operator-overloading">
+     Operator overloading（运算符重载）
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#attribute-inheritance-search">
+   Attribute Inheritance Search （属性继承搜索）
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id1">
+   类对象提供默认的行为
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#instance-objects-are-concrete-items">
+   Instance Objects Are Concrete Items
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id2">
+   模块与类的区别
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id3">
+   运算符重载
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id4">
+   类与字典
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                 <div class="tex2jax_ignore mathjax_ignore section" id="oop-the-big-picture">
+<h1>OOP: The Big Picture<a class="headerlink" href="#oop-the-big-picture" title="永久链接至标题">¶</a></h1>
+<div class="section" id="why-use-classes">
+<h2>Why Use Classes?<a class="headerlink" href="#why-use-classes" title="永久链接至标题">¶</a></h2>
+<p>程序就是“用一些东西来做事情”，而类就是一种定义新种类的东西的方式，它反映了在程序领域中的真实对象。</p>
+<p>类的三个独特性质：</p>
+<div class="section" id="multiple-instances">
+<h3>Multiple instances （多重实例）<a class="headerlink" href="#multiple-instances" title="永久链接至标题">¶</a></h3>
+<p>类本质上是生成一个或多个对象的工厂。每次调用类时, 都会生成一个具有独特命名空间的新对象。从类生成的每个对象都可以访问类的属性, 并为每个对象的不同数据获取其自己的命名空间。</p>
+</div>
+<div class="section" id="customization-via-inheritance">
+<h3>Customization via inheritance （通过继承进行定制）<a class="headerlink" href="#customization-via-inheritance" title="永久链接至标题">¶</a></h3>
+<p>类还支持 OOP 继承概念;我们可以通过在编码为子类的新软件组件中重新定义类本身的属性来扩展类。通常, 类可以建立命名空间层次结构, 定义由层次结构中的类创建的对象所使用的名称。这比其他工具更直接支持多个可自定义的行为。</p>
+</div>
+<div class="section" id="operator-overloading">
+<h3>Operator overloading（运算符重载）<a class="headerlink" href="#operator-overloading" title="永久链接至标题">¶</a></h3>
+<p>通过提供特殊的协议方法, 类可以定义响应我们在内置类型的工作中看到的操作类型的对象。例如, 可以对使用类进行的对象进行切片、串联、索引等。Python 提供了类可用于拦截和实现任何内置类型操作的挂钩。</p>
+<p>在它的基础上, OOP 在 Python 中的机制主要只是 two bits of magic: 函数中的特殊第一个参数 (接收调用的对象) 和继承属性搜索 (支持通过自定义编程)。除了这一点之外, 模型基本上只是最终处理内置类型的函数。虽然不完全是新的, 但 OOP 添加了额外的结构层, 支持比平面程序模型更好的编程。</p>
+<p>*** OOP is as much an experience as a technology.***</p>
+</div>
+</div>
+<div class="section" id="attribute-inheritance-search">
+<h2>Attribute Inheritance Search （属性继承搜索）<a class="headerlink" href="#attribute-inheritance-search" title="永久链接至标题">¶</a></h2>
+<p>大多数 OOP 均可使用下面的式子来表达：</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">object</span><span class="o">.</span><span class="n">attribute</span> 
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">class</span></code> 产生类时, 表达式在 Python 中启动搜索-它搜索连接对象的树, 查找它可以找到的首次出现的属性。当涉及类时, 前面的 Python 表达式有效地转换为自然语言中的以下内容:</p>
+<ul class="simple">
+<li><p>通过查找对象, 然后在它上面的所有类中, 从下到上, 从左到右查找属性的第一个匹配项。</p></li>
+</ul>
+<p>换言之, 属性提取只是树搜索。由于树中较低的对象继承附加到该树中较高对象的属性, 因此应用了术语<strong>继承</strong>。当搜索从底部向上进行时, 从某种意义上说, 链接到树中的对象是所有树父级中定义的所有属性的联合, 所有这些特性都达到树的顶端。</p>
+<p>我们用代码构建链接对象的树, 而 Python 在每次使用对象时都会在运行时通过 <code class="docutils literal notranslate"><span class="pre">object.attribute</span> </code> 表达式“爬树”去搜索属性。</p>
+<p><img alt="" src="https://img2018.cnblogs.com/blog/685754/201810/685754-20181028221130546-230027578.png" /></p>
+<ul class="simple">
+<li><p>Classes</p>
+<ul>
+<li><p>Serve as instance factories. Their attributes provide behavior—data and functions —that is inherited by all the instances generated from them (e.g., a function to compute an employee’s salary from pay and hours).</p></li>
+</ul>
+</li>
+<li><p>Instances</p>
+<ul>
+<li><p>Represent the concrete items in a program’s domain. Their attributes record data that varies per specific object (e.g., an employee’s Social Security number).</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="id1">
+<h2>类对象提供默认的行为<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h2>
+<p><strong>类语句创建类对象并为其分配名称</strong>。与函数 <code class="docutils literal notranslate"><span class="pre">def</span></code> 语句一样, Python <code class="docutils literal notranslate"><span class="pre">class</span></code> 语句是可执行语句。运行时, 它将生成一个新的类对象, 并将其分配给类标头中的名称。此外, 与 <code class="docutils literal notranslate"><span class="pre">def</span></code> 一样, 类语句通常在第一次导入它们所编码的文件时运行。</p>
+<p><strong><code class="docutils literal notranslate"><span class="pre">class</span></code> 语句内的赋值创建类属性</strong>。就像在模块文件中一样, 类语句中的顶层赋值 (不嵌套在 <code class="docutils literal notranslate"><span class="pre">def</span></code> 中) 在类对象中生成属性。从技术上讲, 类语句定义了一个局部作用域, 它会变成类对象的属性命名空间, 就像模块的全局作用域一样。运行类语句后, 将按名称限定: <code class="docutils literal notranslate"><span class="pre">object.name</span></code> 来访问类属性。</p>
+<p><strong>类属性提供对象状态和行为</strong>。类对象的属性记录状态信息和要由类创建的所有实例共享的行为;嵌套在类中的函数 <code class="docutils literal notranslate"><span class="pre">def</span></code> 语句生成处理实例的<strong>方法</strong>。</p>
+</div>
+<div class="section" id="instance-objects-are-concrete-items">
+<h2>Instance Objects Are Concrete Items<a class="headerlink" href="#instance-objects-are-concrete-items" title="永久链接至标题">¶</a></h2>
+<p><strong>实例对象是具体的元素</strong>：</p>
+<ul class="simple">
+<li><p><strong>调用类对象 (如函数) 会产生一个新的实例对象</strong>。每次调用类时, 它都会创建并返回一个新的实例对象。实例表示程序域中的具体项。</p></li>
+<li><p><strong>每个实例对象都继承类属性并获取其自己的命名空间</strong>。从类创建的实例对象是新的命名空间;它们开始为空, 但继承在从中生成它们的类对象中的属性。</p></li>
+<li><p><strong>在方法中对<code class="docutils literal notranslate"><span class="pre">self</span></code> 属性的赋值使每实例属性</strong>。在类的方法函数中, 第一个参数 (一般约定为 <code class="docutils literal notranslate"><span class="pre">self</span></code>) 引用正在处理的实例对象;对自身属性的赋值在实例中创建或更改数据, 而不是类。</p></li>
+</ul>
+<p>最终的结果是类定义公共的、共享的数据和行为, 并生成实例。实例反映具体的应用程序实体, 并记录每个对象可能有所不同的每实例数据。</p>
+<p>详细内容见：<a class="reference external" href="https://www.cnblogs.com/q735613050/p/7351486.html">类与对象 </a></p>
+</div>
+<div class="section" id="id2">
+<h2>模块与类的区别<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h2>
+<ul class="simple">
+<li><p>模块反映了整个<strong>文件</strong></p></li>
+<li><p>类只是文件内的<strong>语句</strong></p></li>
+</ul>
+</div>
+<div class="section" id="id3">
+<h2>运算符重载<a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">FirstClass</span><span class="p">:</span>
+    <span class="k">def</span> <span class="nf">setdata</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">data</span> <span class="o">=</span> <span class="n">value</span>
+
+    <span class="k">def</span> <span class="nf">display</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;当前的值：&#39;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="p">)</span>
+
+
+<span class="k">class</span> <span class="nc">SecondClass</span><span class="p">(</span><span class="n">FirstClass</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">        构造函数</span>
+<span class="sd">        &#39;&#39;&#39;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">data</span> <span class="o">=</span> <span class="n">value</span>
+
+    <span class="k">def</span> <span class="fm">__add__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
+        <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">        重载：+</span>
+<span class="sd">        &#39;&#39;&#39;</span>
+        <span class="k">return</span> <span class="n">SecondClass</span><span class="p">(</span><span class="n">other</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">        重载：print</span>
+<span class="sd">        &#39;&#39;&#39;</span>
+        <span class="k">return</span> <span class="s1">&#39;[SecondClass: </span><span class="si">%s</span><span class="s1">]&#39;</span> <span class="o">%</span> <span class="bp">self</span><span class="o">.</span><span class="n">data</span>
+
+    <span class="k">def</span> <span class="nf">mul</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">data</span> <span class="o">*=</span> <span class="n">other</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="n">SecondClass</span><span class="p">(</span><span class="s1">&#39;abc&#39;</span><span class="p">)</span>
+<span class="n">a</span><span class="o">.</span><span class="n">display</span><span class="p">()</span>
+</pre></div>
+</div>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>当前的值： abc
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>[SecondClass: abc]
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">b</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="s1">&#39;xyz&#39;</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>[SecondClass: xyzabc]
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">a</span><span class="o">.</span><span class="n">mul</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>[SecondClass: abcabcabc]
+</pre></div>
+</div>
+</div>
+<div class="section" id="id4">
+<h2>类与字典<a class="headerlink" href="#id4" title="永久链接至标题">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">rec</span><span class="p">:</span>
+    <span class="k">pass</span>
+</pre></div>
+</div>
+<p>为 <code class="docutils literal notranslate"><span class="pre">rec</span></code> 类添加属性：</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">rec</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="s1">&#39;Bob&#39;</span>
+<span class="n">rec</span><span class="o">.</span><span class="n">age</span> <span class="o">=</span> <span class="mi">40</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">rec</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Bob
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="n">rec</span><span class="p">()</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">rec</span><span class="p">()</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">x</span><span class="o">.</span><span class="n">name</span><span class="p">,</span> <span class="n">y</span><span class="o">.</span><span class="n">name</span>
+</pre></div>
+</div>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>(&#39;Bob&#39;, &#39;Bob&#39;)
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">x</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="s1">&#39;Sue&#39;</span>
+<span class="n">rec</span><span class="o">.</span><span class="n">name</span><span class="p">,</span> <span class="n">x</span><span class="o">.</span><span class="n">name</span><span class="p">,</span> <span class="n">y</span><span class="o">.</span><span class="n">name</span>
+</pre></div>
+</div>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>(&#39;Bob&#39;, &#39;Sue&#39;, &#39;Bob&#39;)
+</pre></div>
+</div>
+<p>命名空间对象的属性通常都是以字典的形式实现的，而类继承树（一般而言）只是连接至其他字典的字典而已。例如， <code class="docutils literal notranslate"><span class="pre">__dict__</span></code> 属性是针对大多数基于类的对象的命名空间字典 （一些类也可能在 <code class="docutils literal notranslate"><span class="pre">__slots__</span></code> 中定义属性）。</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">rec</span><span class="o">.</span><span class="vm">__dict__</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span>
+</pre></div>
+</div>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>dict_keys([&#39;__module__&#39;, &#39;__dict__&#39;, &#39;__weakref__&#39;, &#39;__doc__&#39;, &#39;name&#39;, &#39;age&#39;])
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">list</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="vm">__dict__</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span>
+</pre></div>
+</div>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>[&#39;name&#39;]
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">list</span><span class="p">(</span><span class="n">y</span><span class="o">.</span><span class="vm">__dict__</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span>
+</pre></div>
+</div>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>[]
+</pre></div>
+</div>
+<p>使用 <code class="docutils literal notranslate"><span class="pre">__class__</span></code> 获取实例的继承：</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">x</span><span class="o">.</span><span class="vm">__class__</span>
+</pre></div>
+</div>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>__main__.rec
+</pre></div>
+</div>
+<p>使用 <code class="docutils literal notranslate"><span class="pre">__bases__</span></code> 获取类的超类：</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">rec</span><span class="o">.</span><span class="vm">__bases__</span>
+</pre></div>
+</div>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>(object,)
+</pre></div>
+</div>
+<p>Python 的类模型是相当动态：类和实例只是命名空间对象，属性是通过赋值语句动态建立的。</p>
+<p>类中的函数 （<code class="docutils literal notranslate"><span class="pre">def</span></code> 语句）一般称作<strong>方法</strong>，代表类的逻辑。</p>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "xinetzone/d2py",
+            ref: "main",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./python-study\drafts"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+<div class="section">
+   
+</div>
+
+              </div>
+              
+        
+            <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="math.html" title="上一页 页">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">上一页</p>
+            <p class="prev-next-title">Python 中的数学（draft）</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="op.html" title="下一页 页">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">下一页</p>
+        <p class="prev-next-title">运算符（draft）</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer">
+    <div class="container">
+      <p>
+        
+          By xinetzone<br/>
+        
+            &copy; Copyright 2021, xinetzone.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

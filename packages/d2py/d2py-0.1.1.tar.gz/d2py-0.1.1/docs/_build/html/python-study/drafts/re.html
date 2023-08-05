@@ -1,0 +1,1423 @@
+
+<!DOCTYPE html>
+
+<html lang="zh_CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>re &#8212; d2py 0.1 文档</title>
+    
+  <link href="../../_static/css/theme.css" rel="stylesheet">
+  <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/default.css" />
+    
+  <link rel="preload" as="script" href="../../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
+    <script kind="utterances">
+
+    var commentsRunWhenDOMLoaded = cb => {
+    if (document.readyState != 'loading') {
+        cb()
+    } else if (document.addEventListener) {
+        document.addEventListener('DOMContentLoaded', cb)
+    } else {
+        document.attachEvent('onreadystatechange', function() {
+        if (document.readyState == 'complete') cb()
+        })
+    }
+}
+
+var addUtterances = () => {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "https://utteranc.es/client.js";
+    script.async = "async";
+
+    script.setAttribute("repo", "xinetzone/d2py");
+    script.setAttribute("issue-term", "pathname");
+    script.setAttribute("theme", "github-light");
+    script.setAttribute("label", "💬 comment");
+    script.setAttribute("crossorigin", "anonymous");
+
+    sections = document.querySelectorAll("div.section");
+    if (sections !== null) {
+        section = sections[sections.length-1];
+        section.appendChild(script);
+    }
+}
+commentsRunWhenDOMLoaded(addUtterances);
+</script>
+    <script src="../../_static/translations.js"></script>
+    <script src="../../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".cell"
+        const thebe_selector_input = ".cell_input div.highlight"
+        const thebe_selector_output = ".cell_output"
+    </script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({startOnLoad:true});</script>
+    <link rel="canonical" href="https://xinetzone.github.io/d2py/python-study/drafts/re.html" />
+    <link rel="shortcut icon" href="../../_static/page-logo.jfif"/>
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="搜索" href="../../search.html" />
+    <link rel="next" title="网络" href="socket.html" />
+    <link rel="prev" title="运算符（draft）" href="op.html" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="zh_CN">
+    
+
+    <!-- Google Analytics -->
+     
+<link
+  rel="alternate"
+  type="application/atom+xml"
+  href="../../posts/atom.xml"
+  title="Blog"
+/>
+ 
+<style type="text/css">
+  ul.ablog-archive {
+    list-style: none;
+    overflow: auto;
+    margin-left: 0px;
+  }
+  ul.ablog-archive li {
+    float: left;
+    margin-right: 5px;
+    font-size: 80%;
+  }
+  ul.postlist a {
+    font-style: italic;
+  }
+  ul.postlist-style-disc {
+    list-style-type: disc;
+  }
+  ul.postlist-style-none {
+    list-style-type: none;
+  }
+  ul.postlist-style-circle {
+    list-style-type: circle;
+  }
+</style>
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../../_static/logo.jpg" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">d2py 0.1 文档</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="../index.html">
+   Python 学习手册
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../basic/index.html">
+     Python 基础教程
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+    <label for="toctree-checkbox-2">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="../basic/intro/index.html">
+       Python 简介
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+      <label for="toctree-checkbox-3">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../basic/intro/understand-python.html">
+         解读 Python 世界的修炼体系
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../basic/intro/basic-type.html">
+         Python 基本数据类型
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../basic/function.html">
+       函数
+      </a>
+     </li>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="../basic/container/index.html">
+       容器
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+      <label for="toctree-checkbox-4">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../basic/container/set.html">
+         集合
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../basic/container/dict.html">
+         字典
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../basic/container/sequence.html">
+         序列
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../basic/controlflow.html">
+       流程控制
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../basic/modules.html">
+       模块
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../basic/class.html">
+       类
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../basic/template.html">
+       模板
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../basic/threading.html">
+       多线程
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../basic/logging.html">
+       日志记录
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../basic/weakref.html">
+       弱引用
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../basic/argparse.html">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         argparse
+        </span>
+       </code>
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../basic/input-output.html">
+       输入与输出
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../basic/match-statement.html">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         match
+        </span>
+       </code>
+       语句
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../topics/index.html">
+     Python 主题手册
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+    <label for="toctree-checkbox-5">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../topics/Nuitka.html">
+       Python 编译器 Nuitka
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../topics/abc.html">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         abc
+        </span>
+       </code>
+       抽象基类
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../topics/annotations.html">
+       注解
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../topics/argparse.html">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         argparse
+        </span>
+       </code>
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../topics/custom-numbers.html">
+       自定义数字
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../topics/f-string.html">
+       格式字符串字面值
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../topics/metaclass.html">
+       元类
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../topics/refs.html">
+       临时区
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../topics/sys.html">
+       系统相关
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../faqs/index.html">
+     常见问题
+    </a>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../refs/index.html">
+     Python 参考手册
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+    <label for="toctree-checkbox-6">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../refs/constants.html">
+       内置常量
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../refs/terms.html">
+       术语中英对照表
+      </a>
+     </li>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="../refs/glossary/index.html">
+       术语表
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
+      <label for="toctree-checkbox-7">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../refs/glossary/basic.html">
+         基本术语
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../refs/glossary/exec.html">
+         异常
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../refs/glossary/identifier.html">
+         标识符
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../refs/glossary/value.html">
+         字面值
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../refs/sources.html">
+       Python 学习资源
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../demo.html">
+     Jupyter Notebook
+    </a>
+   </li>
+   <li class="toctree-l2 current active has-children">
+    <a class="reference internal" href="index.html">
+     草稿
+    </a>
+    <input checked="" class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
+    <label for="toctree-checkbox-8">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul class="current">
+     <li class="toctree-l3">
+      <a class="reference internal" href="101.html">
+       一、5 个值得在 2018 年关注的库
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="22.html">
+       存储数据
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="33.html">
+       类也是对象
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="44.html">
+       描述器是什么？
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="55.html">
+       字符编码方法
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="66.html">
+       类型和运算 (Types and Operations)
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="88.html">
+       函数基础
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="class.html">
+       class
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="draft.html">
+       回收站
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="exc.html">
+       异常（draft）
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="file.html">
+       I/O操作（draft）
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="iter.html">
+       迭代&amp;生成（draft）
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="math.html">
+       Python 中的数学（draft）
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="oop.html">
+       OOP: The Big Picture
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="op.html">
+       运算符（draft）
+      </a>
+     </li>
+     <li class="toctree-l3 current active">
+      <a class="current reference internal" href="#">
+       re
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="socket.html">
+       网络
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="str.html">
+       字符编码方法
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="type.html">
+       Python 数据类型转换（draft）
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="%E7%88%AC%E8%99%AB.html">
+       爬虫
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../FunctionalAnalysis/index.html">
+   泛函分析
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/>
+  <label for="toctree-checkbox-9">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../FunctionalAnalysis/draft/index.html">
+     回收站
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/>
+    <label for="toctree-checkbox-10">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../FunctionalAnalysis/draft/abc.html">
+       抽象基类
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../FunctionalAnalysis/draft/annotations.html">
+       对象注解
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../FunctionalAnalysis/draft/descriptor.html">
+       描述器
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../FunctionalAnalysis/draft/typing.html">
+       类型提示
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../posts/index.html">
+   博客
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../about/index.html">
+   关于
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/>
+  <label for="toctree-checkbox-11">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../about/feature.html">
+     特性
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../about/use.html">
+     项目使用
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../CODE_OF_CONDUCT.html">
+     行为准则
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../CONTRIBUTING.html">
+     贡献
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../SECURITY.html">
+     安全策略
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../news/index.html">
+   Python 新闻
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  <div>
+版权所有 © 2021 <a href="https://xinetzone.github.io/">xinetzone</a></div>
+<div>由 <a href="https://ebp.jupyterbook.org/">EBP</a> 提供技术支持</div>
+
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../_sources/python-study/drafts/re.md.txt"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/xinetzone/d2py"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/xinetzone/d2py/issues/new?title=Issue%20on%20page%20%2Fpython-study/drafts/re.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        <a class="edit-button" href="https://github.com/xinetzone/d2py/edit/main/docs/python-study/drafts/re.md"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> 导航
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   re
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id1">
+     预览
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#python-re">
+       python re正则表表达式语法
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id2">
+       re模块重要函数变量
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#re-match">
+   re.match函数
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#re-search">
+   re.search方法
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#re-matchre-search">
+   re.match与re.search的区别
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id3">
+   检索和替换
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#repl">
+     repl 参数是一个函数
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id4">
+   正则表达式修饰符 - 可选标志
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id5">
+   正则表达式模式
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id6">
+   几个例子
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id7">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       .
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id8">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       |
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id9">
+     [ ]
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                 <div class="tex2jax_ignore mathjax_ignore section" id="re">
+<h1>re<a class="headerlink" href="#re" title="永久链接至标题">¶</a></h1>
+<div class="section" id="id1">
+<h2>预览<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h2>
+<div class="section" id="python-re">
+<h3>python re正则表表达式语法<a class="headerlink" href="#python-re" title="永久链接至标题">¶</a></h3>
+<ol class="simple">
+<li><p>匹配字符
+<code class="docutils literal notranslate"><span class="pre">.</span></code>  匹配任意除换行符，也就是“\n”以外的任何字符。
+<code class="docutils literal notranslate"><span class="pre">\ </span></code> 转义符，改变原来符号含义。
+<code class="docutils literal notranslate"><span class="pre">[</span> <span class="pre">]</span></code>  中括号用来创建一个字符集，第一个出现字符如果是^，表示反向匹配。</p></li>
+<li><p>预定义字符集
+<code class="docutils literal notranslate"><span class="pre">\d</span></code>    匹配数字，如：[0-9]
+<code class="docutils literal notranslate"><span class="pre">\D</span></code>   与上面正好相反，匹配所有非数字字符。
+<code class="docutils literal notranslate"><span class="pre">\s</span></code>     空白字符，如：空格，<code class="docutils literal notranslate"><span class="pre">\t\r\n\f\v</span></code>等。
+<code class="docutils literal notranslate"><span class="pre">\S</span></code>    非空白字符。
+<code class="docutils literal notranslate"><span class="pre">\w</span></code>    单词字符，如：大写<code class="docutils literal notranslate"><span class="pre">A~Z</span></code>，小写<code class="docutils literal notranslate"><span class="pre">a~z</span></code>，数字<code class="docutils literal notranslate"><span class="pre">0~9</span></code>。
+<code class="docutils literal notranslate"><span class="pre">\W</span></code>   非上面这些字符。</p></li>
+<li><p>可选项与重复子模式
+<code class="docutils literal notranslate"><span class="pre">*</span></code>   匹配前一个字符0次或无限次数。
+<code class="docutils literal notranslate"><span class="pre">+</span></code>  匹配前一个字符1次或无限次数。
+<code class="docutils literal notranslate"><span class="pre">?</span></code>   匹配前一个字符0次或1次。
+<code class="docutils literal notranslate"><span class="pre">{m}</span></code> 匹配前一个字符m次。
+<code class="docutils literal notranslate"><span class="pre">{m,n}</span></code> 匹配前一个字符m至n次。</p></li>
+</ol>
+</div>
+<div class="section" id="id2">
+<h3>re模块重要函数变量<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h3>
+<ol class="simple">
+<li><p>compile() 根据正则表达式字符串，创建模式的对象。</p></li>
+<li><p>search() 在字符串中寻找模式,寻找第一个匹配的正则表达式子串。(函数找到子字符串的话会返回MatchObject，值为 True，找不到会返回None，值为False。)</p></li>
+<li><p>match() 在字符串开始处匹配模式。</p></li>
+<li><p>split() 根据模式的匹配项来分割字符串。</p></li>
+<li><p>findall() 会以列表的形式返回给定模式的所有匹配项。</p></li>
+<li><p>sub(old,new) 方法的功能是，用将所有old的匹配项用new替换掉。</p></li>
+<li><p>escape() 将字符串中所有特殊正则表达式字符转义。</p></li>
+</ol>
+</div>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="re-match">
+<h1>re.match函数<a class="headerlink" href="#re-match" title="永久链接至标题">¶</a></h1>
+<p>re.match 尝试从字符串的起始位置匹配一个模式，如果不是起始位置匹配成功的话，match()就返回none。<br />
+函数语法：<br />
+$<span class="math notranslate nohighlight">\(re.match(pattern, string, flags=0)\)</span>$</p>
+<p>函数参数说明：</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p>参数</p></th>
+<th class="text-align:center head"><p>描述</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p>pattern</p></td>
+<td class="text-align:center"><p>匹配的正则表达式</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>string</p></td>
+<td class="text-align:center"><p>要匹配的字符串。</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:center"><p>flags</p></td>
+<td class="text-align:center"><p>标志位，用于控制正则表达式的匹配方式，如：是否区分大小写，多行匹配等等。</p></td>
+</tr>
+</tbody>
+</table>
+<p>匹配成功re.match方法返回一个匹配的对象，否则返回None。<br />
+我们可以使用group(num) 或 groups() 匹配对象函数来获取匹配表达式。</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p>匹配对象方法</p></th>
+<th class="text-align:center head"><p>描述</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p>group(num=0)</p></td>
+<td class="text-align:center"><p>匹配的整个表达式的字符串，group() 可以一次输入多个组号，在这种情况下它将返回一个包含那些组所对应值的元组。</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>groups()</p></td>
+<td class="text-align:center"><p>返回一个包含所有小组字符串的元组，从 1 到 所含的小组号。</p></td>
+</tr>
+</tbody>
+</table>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">re</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">re</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="s1">&#39;www&#39;</span><span class="p">,</span> <span class="s1">&#39;www.runoob.com&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">span</span><span class="p">())</span>  <span class="c1"># 在起始位置匹配</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">re</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="s1">&#39;com&#39;</span><span class="p">,</span> <span class="s1">&#39;www.runoob.com&#39;</span><span class="p">))</span>         <span class="c1"># 不在起始位置匹配</span>
+</pre></div>
+</div>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>(0, 3)
+None
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">re</span>
+
+<span class="n">line</span> <span class="o">=</span> <span class="s2">&quot;Cats are smarter than dogs&quot;</span>
+
+<span class="n">matchObj</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">match</span><span class="p">(</span> <span class="sa">r</span><span class="s1">&#39;(.*) are (.*?) .*&#39;</span><span class="p">,</span> <span class="n">line</span><span class="p">,</span> <span class="n">re</span><span class="o">.</span><span class="n">M</span><span class="o">|</span><span class="n">re</span><span class="o">.</span><span class="n">I</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="n">matchObj</span><span class="p">:</span>
+    <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;matchObj.group() : &quot;</span><span class="p">,</span> <span class="n">matchObj</span><span class="o">.</span><span class="n">group</span><span class="p">())</span>
+    <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;matchObj.group(1) : &quot;</span><span class="p">,</span> <span class="n">matchObj</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">1</span><span class="p">))</span>
+    <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;matchObj.group(2) : &quot;</span><span class="p">,</span> <span class="n">matchObj</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">2</span><span class="p">))</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;No match!!&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>matchObj.group() :  Cats are smarter than dogs
+matchObj.group(1) :  Cats
+matchObj.group(2) :  smarter
+</pre></div>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="re-search">
+<h1>re.search方法<a class="headerlink" href="#re-search" title="永久链接至标题">¶</a></h1>
+<p>re.search 扫描整个字符串并返回第一个成功的匹配。</p>
+<p>函数语法：
+$<span class="math notranslate nohighlight">\(re.search(pattern, string, flags=0)\)</span>$
+函数参数说明：</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p>参数</p></th>
+<th class="text-align:left head"><p>描述</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p>pattern</p></td>
+<td class="text-align:left"><p>匹配的正则表达式</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>string</p></td>
+<td class="text-align:left"><p>要匹配的字符串。</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p>flags</p></td>
+<td class="text-align:left"><p>标志位，用于控制正则表达式的匹配方式，如：是否区分大小写，多行匹配等等。</p></td>
+</tr>
+</tbody>
+</table>
+<p>匹配成功re.search方法返回一个匹配的对象，否则返回None。<br />
+我们可以使用group(num) 或 groups() 匹配对象函数来获取配表达式。</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p>匹配对象方法</p></th>
+<th class="text-align:left head"><p>描述</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p>group(num=0)</p></td>
+<td class="text-align:left"><p>匹配的整个表达式的字符串，group() 可以一次输入多个组号，在这种情况下它将返回一个包含那些组所对应值的元组。</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>groups()</p></td>
+<td class="text-align:left"><p>返回一个包含所有小组字符串的元组，从 1 到 所含的小组号。</p></td>
+</tr>
+</tbody>
+</table>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">re</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="s1">&#39;www&#39;</span><span class="p">,</span> <span class="s1">&#39;www.runoob.com&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">span</span><span class="p">())</span>  <span class="c1"># 在起始位置匹配</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="s1">&#39;com&#39;</span><span class="p">,</span> <span class="s1">&#39;www.runoob.com&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">span</span><span class="p">())</span>         <span class="c1"># 不在起始位置匹配</span>
+</pre></div>
+</div>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>(0, 3)
+(11, 14)
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">re</span>
+
+<span class="n">line</span> <span class="o">=</span> <span class="s2">&quot;Cats are smarter than dogs&quot;</span><span class="p">;</span>
+
+<span class="n">searchObj</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span> <span class="sa">r</span><span class="s1">&#39;(.*) are (.*?) .*&#39;</span><span class="p">,</span> <span class="n">line</span><span class="p">,</span> <span class="n">re</span><span class="o">.</span><span class="n">M</span><span class="o">|</span><span class="n">re</span><span class="o">.</span><span class="n">I</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="n">searchObj</span><span class="p">:</span>
+    <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;searchObj.group() : &quot;</span><span class="p">,</span> <span class="n">searchObj</span><span class="o">.</span><span class="n">group</span><span class="p">())</span>
+    <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;searchObj.group(1) : &quot;</span><span class="p">,</span> <span class="n">searchObj</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">1</span><span class="p">))</span>
+    <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;searchObj.group(2) : &quot;</span><span class="p">,</span> <span class="n">searchObj</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">2</span><span class="p">))</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;Nothing found!!&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>searchObj.group() :  Cats are smarter than dogs
+searchObj.group(1) :  Cats
+searchObj.group(2) :  smarter
+</pre></div>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="re-matchre-search">
+<h1>re.match与re.search的区别<a class="headerlink" href="#re-matchre-search" title="永久链接至标题">¶</a></h1>
+<p>re.match只匹配字符串的开始，如果字符串开始不符合正则表达式，则匹配失败，函数返回None；而re.search匹配整个字符串，直到找到一个匹配。</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">re</span>
+
+<span class="n">line</span> <span class="o">=</span> <span class="s2">&quot;Cats are smarter than dogs&quot;</span><span class="p">;</span>
+
+<span class="n">matchObj</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">match</span><span class="p">(</span> <span class="sa">r</span><span class="s1">&#39;dogs&#39;</span><span class="p">,</span> <span class="n">line</span><span class="p">,</span> <span class="n">re</span><span class="o">.</span><span class="n">M</span><span class="o">|</span><span class="n">re</span><span class="o">.</span><span class="n">I</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">matchObj</span><span class="p">:</span>
+    <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;match --&gt; matchObj.group() : &quot;</span><span class="p">,</span> <span class="n">matchObj</span><span class="o">.</span><span class="n">group</span><span class="p">())</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;No match!!&quot;</span><span class="p">)</span>
+
+<span class="n">matchObj</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span> <span class="sa">r</span><span class="s1">&#39;dogs&#39;</span><span class="p">,</span> <span class="n">line</span><span class="p">,</span> <span class="n">re</span><span class="o">.</span><span class="n">M</span><span class="o">|</span><span class="n">re</span><span class="o">.</span><span class="n">I</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">matchObj</span><span class="p">:</span>
+    <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;search --&gt; matchObj.group() : &quot;</span><span class="p">,</span> <span class="n">matchObj</span><span class="o">.</span><span class="n">group</span><span class="p">())</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;No match!!&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>No match!!
+search --&gt; matchObj.group() :  dogs
+</pre></div>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="id3">
+<h1>检索和替换<a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h1>
+<p>Python 的re模块提供了re.sub用于替换字符串中的匹配项。</p>
+<p>语法：
+$<span class="math notranslate nohighlight">\(re.sub(pattern, repl, string, count=0)\)</span>$</p>
+<p>参数：</p>
+<ul class="simple">
+<li><p>pattern : 正则中的模式字符串。</p></li>
+<li><p>repl : 替换的字符串，也可为一个函数。</p></li>
+<li><p>string : 要被查找替换的原始字符串。</p></li>
+<li><p>count : 模式匹配后替换的最大次数，默认 0 表示替换所有的匹配。</p></li>
+</ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">re</span>
+
+<span class="n">phone</span> <span class="o">=</span> <span class="s2">&quot;2004-959-559 # 这是一个电话号码&quot;</span>
+
+<span class="c1"># 删除注释</span>
+<span class="n">num</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;#.*$&#39;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">phone</span><span class="p">)</span>
+<span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;电话号码 : &quot;</span><span class="p">,</span> <span class="n">num</span><span class="p">)</span>
+
+<span class="c1"># 移除非数字的内容</span>
+<span class="n">num</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;\D&#39;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">phone</span><span class="p">)</span>
+<span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;电话号码 : &quot;</span><span class="p">,</span> <span class="n">num</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>电话号码 :  2004-959-559 
+电话号码 :  2004959559
+</pre></div>
+</div>
+<div class="section" id="repl">
+<h2>repl 参数是一个函数<a class="headerlink" href="#repl" title="永久链接至标题">¶</a></h2>
+<p>以下实例中将字符串中的匹配的数字乘于 2：</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">re</span>
+
+<span class="c1"># 将匹配的数字乘于 2</span>
+<span class="k">def</span> <span class="nf">double</span><span class="p">(</span><span class="n">matched</span><span class="p">):</span>
+    <span class="n">value</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">matched</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="s1">&#39;value&#39;</span><span class="p">))</span>
+    <span class="k">return</span> <span class="nb">str</span><span class="p">(</span><span class="n">value</span> <span class="o">*</span> <span class="mi">2</span><span class="p">)</span>
+
+<span class="n">s</span> <span class="o">=</span> <span class="s1">&#39;A23G4HFD567&#39;</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="s1">&#39;(?P&lt;value&gt;\d+)&#39;</span><span class="p">,</span> <span class="n">double</span><span class="p">,</span> <span class="n">s</span><span class="p">))</span>
+</pre></div>
+</div>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>A46G8HFD1134
+</pre></div>
+</div>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="id4">
+<h1>正则表达式修饰符 - 可选标志<a class="headerlink" href="#id4" title="永久链接至标题">¶</a></h1>
+<p>正则表达式可以包含一些可选标志修饰符来控制匹配的模式。修饰符被指定为一个可选的标志。多个标志可以通过按位 <code class="docutils literal notranslate"><span class="pre">OR(|)</span> </code>它们来指定。如<code class="docutils literal notranslate"><span class="pre">re.I</span> <span class="pre">|</span> <span class="pre">re.M</span></code>被设置成 <span class="math notranslate nohighlight">\(I\)</span> 和<span class="math notranslate nohighlight">\(M\)</span>标志：</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p>修饰符</p></th>
+<th class="text-align:left head"><p>描述</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p>re.I</p></td>
+<td class="text-align:left"><p>使匹配对大小写不敏感</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>re.L</p></td>
+<td class="text-align:left"><p>做本地化识别（locale-aware）匹配</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p>re.M</p></td>
+<td class="text-align:left"><p>多行匹配，影响<code class="docutils literal notranslate"><span class="pre">^</span></code>和<code class="docutils literal notranslate"><span class="pre">$</span></code></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>re.S</p></td>
+<td class="text-align:left"><p>使<code class="docutils literal notranslate"><span class="pre">.</span></code>匹配包括换行在内的所有字符</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p>re.U</p></td>
+<td class="text-align:left"><p>根据Unicode字符集解析字符。这个标志影响 <code class="docutils literal notranslate"><span class="pre">\w,</span> <span class="pre">\W,</span> <span class="pre">\b,</span> <span class="pre">\B</span></code>.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>re.X</p></td>
+<td class="text-align:left"><p>该标志通过给予你更灵活的格式以便你将正则表达式写得更易于理解。</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="id5">
+<h1>正则表达式模式<a class="headerlink" href="#id5" title="永久链接至标题">¶</a></h1>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>模式字符串使用特殊的语法来表示一个正则表达式：
+字母和数字表示他们自身。一个正则表达式模式中的字母和数字匹配同样的字符串。
+多数字母和数字前加一个反斜杠时会拥有不同的含义。
+标点符号只有被转义时才匹配自身，否则它们表示特殊的含义。
+反斜杠本身需要使用反斜杠转义。
+由于正则表达式通常都包含反斜杠，所以你最好使用原始字符串来表示它们。模式元素(如 r&#39;/t&#39;，等价于&#39;//t&#39;)匹配相应的特殊字符。
+下表列出了正则表达式模式语法中的特殊元素。如果你使用模式的同时提供了可选的标志参数，某些模式元素的含义会改变。
+</pre></div>
+</div>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p>模式</p></th>
+<th class="text-align:left head"><p>描述</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">^</span></code></p></td>
+<td class="text-align:left"><p>匹配字符串的开头</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">$</span></code></p></td>
+<td class="text-align:left"><p>匹配字符串的末尾。</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">.</span></code></p></td>
+<td class="text-align:left"><p>匹配任意字符，除了换行符，当re.DOTALL标记被指定时，则可以匹配包括换行符的任意字符。</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">[...]</span></code></p></td>
+<td class="text-align:left"><p>用来表示一组字符,单独列出：<code class="docutils literal notranslate"><span class="pre">[amk]</span> </code>匹配 <code class="docutils literal notranslate"><span class="pre">'a'，'m'或'k'</span></code></p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">[^...]</span></code></p></td>
+<td class="text-align:left"><p>不在<code class="docutils literal notranslate"><span class="pre">[]</span></code>中的字符：<code class="docutils literal notranslate"><span class="pre">[^abc]</span></code> 匹配除了a,b,c之外的字符。</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">re*</span></code></p></td>
+<td class="text-align:left"><p>匹配0个或多个的表达式。</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">re+</span></code></p></td>
+<td class="text-align:left"><p>匹配1个或多个的表达式。</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">re?</span></code></p></td>
+<td class="text-align:left"><p>匹配0个或1个由前面的正则表达式定义的片段，非贪婪方式</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">re{</span> <span class="pre">n}</span></code></p></td>
+<td class="text-align:left"><p></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">re{</span> <span class="pre">n,}</span></code></p></td>
+<td class="text-align:left"><p>精确匹配n个前面表达式。</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">re{</span> <span class="pre">n,</span> <span class="pre">m}</span></code></p></td>
+<td class="text-align:left"><p>匹配 n 到 m 次由前面的正则表达式定义的片段，贪婪方式</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">a</span></code><span class="math notranslate nohighlight">\(\mid\)</span><code class="docutils literal notranslate"><span class="pre">b</span></code></p></td>
+<td class="text-align:left"><p>匹配a或b</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">(re)</span></code><span class="math notranslate nohighlight">\(\mid\)</span><code class="docutils literal notranslate"><span class="pre">G</span></code></p></td>
+<td class="text-align:left"><p>匹配括号内的表达式，也表示一个组</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">(?imx)</span></code></p></td>
+<td class="text-align:left"><p>正则表达式包含三种可选标志：i, m, 或 x 。只影响括号中的区域。</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">(?-imx)</span></code></p></td>
+<td class="text-align:left"><p>正则表达式关闭 i, m, 或 x 可选标志。只影响括号中的区域。</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">(?:</span> <span class="pre">re)</span></code></p></td>
+<td class="text-align:left"><p>类似 <code class="docutils literal notranslate"><span class="pre">(...)</span></code>, 但是不表示一个组</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">(?imx:</span> <span class="pre">re)</span></code></p></td>
+<td class="text-align:left"><p>在括号中使用i, m, 或 x 可选标志</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">(?-imx:</span> <span class="pre">re)</span></code></p></td>
+<td class="text-align:left"><p>在括号中不使用i, m, 或 x 可选标志</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">(?#...)</span></code></p></td>
+<td class="text-align:left"><p>注释.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">(?=</span> <span class="pre">re)</span></code></p></td>
+<td class="text-align:left"><p>前向肯定界定符。如果所含正则表达式，以 … 表示，在当前位置成功匹配时成功，否则失败。但一旦所含表达式已经尝试，匹配引擎根本没有提高；模式的剩余部分还要尝试界定符的右边。</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">(?!</span> <span class="pre">re)</span></code></p></td>
+<td class="text-align:left"><p>前向否定界定符。与肯定界定符相反；当所含表达式不能在字符串当前位置匹配时成功</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">(?&gt;</span> <span class="pre">re)</span></code></p></td>
+<td class="text-align:left"><p>匹配的独立模式，省去回溯。</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">\w</span></code></p></td>
+<td class="text-align:left"><p>匹配字母数字</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">\W</span></code></p></td>
+<td class="text-align:left"><p>匹配非字母数字</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">\s</span></code></p></td>
+<td class="text-align:left"><p>匹配任意空白字符，等价于 <code class="docutils literal notranslate"><span class="pre">[\t\n\r\f]</span></code>.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">\S</span></code></p></td>
+<td class="text-align:left"><p>匹配任意非空字符</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">\d</span></code></p></td>
+<td class="text-align:left"><p>匹配任意数字，等价于 <code class="docutils literal notranslate"><span class="pre">[0-9]</span></code>.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">\D</span></code></p></td>
+<td class="text-align:left"><p>匹配任意非数字</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">\A</span></code></p></td>
+<td class="text-align:left"><p>匹配字符串开始</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">\Z</span></code></p></td>
+<td class="text-align:left"><p>匹配字符串结束，如果是存在换行，只匹配到换行前的结束字符串。c</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">\z</span></code></p></td>
+<td class="text-align:left"><p>匹配字符串结束</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">\G</span></code></p></td>
+<td class="text-align:left"><p>匹配最后匹配完成的位置。</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">\b</span></code></p></td>
+<td class="text-align:left"><p>匹配一个单词边界，也就是指单词和空格间的位置。例如， <code class="docutils literal notranslate"><span class="pre">'er\b'</span></code> 可以匹配”never” 中的 ‘er’，但不能匹配 “verb” 中的 ‘er’。</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">\B</span></code></p></td>
+<td class="text-align:left"><p>匹配非单词边界。<code class="docutils literal notranslate"><span class="pre">'er\B'</span></code> 能匹配 “verb” 中的 ‘er’，但不能匹配 “never” 中的 ‘er’。</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">\n</span></code>,<code class="docutils literal notranslate"><span class="pre">\t</span></code>, 等.</p></td>
+<td class="text-align:left"><p>匹配一个换行符。匹配一个制表符。等</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">\1...\9</span></code></p></td>
+<td class="text-align:left"><p>匹配第n个分组的内容。</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">\10</span></code></p></td>
+<td class="text-align:left"><p>匹配第n个分组的内容，如果它经匹配。否则指的是八进制字符码的表达式。</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="id6">
+<h1>几个例子<a class="headerlink" href="#id6" title="永久链接至标题">¶</a></h1>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">re</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># 判断字符串是否由‘hello’开始</span>
+<span class="n">pattern</span><span class="o">=</span><span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="s1">&#39;hello&#39;</span><span class="p">)</span> <span class="c1">#得到匹配字符串‘hello’的正则表示对象</span>
+<span class="n">res</span><span class="o">=</span><span class="n">pattern</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="s1">&#39;hello world&#39;</span><span class="p">)</span> <span class="c1">#使用match方法进行匹配</span>
+<span class="k">if</span> <span class="n">res</span> <span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">res</span><span class="o">.</span><span class="n">group</span><span class="p">())</span> <span class="c1"># 使用group方法得到匹配内容</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;not match&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>hello
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># 查找字符串是否包含&#39;hello&#39;</span>
+<span class="n">pattern</span><span class="o">=</span><span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="s1">&#39;hello&#39;</span><span class="p">)</span> <span class="c1">#得到匹配字符串‘hello’的正则表示对象</span>
+<span class="n">res</span><span class="o">=</span><span class="n">pattern</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="s1">&#39;world hello&#39;</span><span class="p">)</span> <span class="c1">#使用search方法进行匹配</span>
+<span class="k">if</span> <span class="n">res</span> <span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">res</span><span class="o">.</span><span class="n">group</span><span class="p">())</span> <span class="c1"># 使用group方法得到匹配内容</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;not match&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>hello
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># 查找字符串中包含&#39;hello&#39;的所有部分</span>
+<span class="n">pattern</span><span class="o">=</span><span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="s1">&#39;hello&#39;</span><span class="p">)</span> <span class="c1">#得到匹配字符串‘hello’的正则表示对象</span>
+<span class="n">res</span><span class="o">=</span><span class="n">pattern</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="s1">&#39;world hello world hello&#39;</span><span class="p">)</span> <span class="c1">#使用findall方法得到所有匹配内容</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">res</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>[&#39;hello&#39;, &#39;hello&#39;]
+</pre></div>
+</div>
+<div class="section" id="id7">
+<h2><code class="docutils literal notranslate"><span class="pre">.</span></code><a class="headerlink" href="#id7" title="永久链接至标题">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">re</span>
+<span class="n">pattern</span><span class="o">=</span><span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;ab.xy&#39;</span><span class="p">)</span>
+<span class="n">res</span><span class="o">=</span><span class="n">pattern</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;ab0xy&#39;</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">res</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">res</span><span class="o">.</span><span class="n">group</span><span class="p">())</span>
+</pre></div>
+</div>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>ab0xy
+</pre></div>
+</div>
+</div>
+<div class="section" id="id8">
+<h2><code class="docutils literal notranslate"><span class="pre">|</span></code><a class="headerlink" href="#id8" title="永久链接至标题">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">re</span>
+<span class="n">pattern</span><span class="o">=</span><span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;abc|xyz&#39;</span><span class="p">)</span>
+<span class="n">res</span><span class="o">=</span><span class="n">pattern</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;abc&#39;</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">res</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">res</span><span class="o">.</span><span class="n">group</span><span class="p">())</span>
+</pre></div>
+</div>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>abc
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">res</span><span class="o">=</span><span class="n">pattern</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;xyz&#39;</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">res</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">res</span><span class="o">.</span><span class="n">group</span><span class="p">())</span>
+</pre></div>
+</div>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>xyz
+</pre></div>
+</div>
+</div>
+<div class="section" id="id9">
+<h2>[ ]<a class="headerlink" href="#id9" title="永久链接至标题">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">re</span> 
+<span class="n">pattern</span><span class="o">=</span><span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;[ab][xy][01]&#39;</span><span class="p">)</span>
+<span class="n">res</span><span class="o">=</span><span class="n">pattern</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;ax0&#39;</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">res</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">res</span><span class="o">.</span><span class="n">group</span><span class="p">())</span>
+</pre></div>
+</div>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>ax0
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">re</span>
+<span class="n">html</span> <span class="o">=</span> <span class="s1">&#39;Hello &lt;a href=&quot;https://www.biaodainfu.com&quot;&gt;biaodianfu&lt;/a&gt;&#39;</span>
+<span class="n">m</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="s1">&#39;&lt;a.*&gt;.*&lt;\/a&gt;&#39;</span><span class="p">,</span> <span class="n">html</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">m</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>[&#39;&lt;a href=&quot;https://www.biaodainfu.com&quot;&gt;biaodianfu&lt;/a&gt;&#39;]
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">re</span>
+<span class="n">html</span> <span class="o">=</span> <span class="s1">&#39;Hello &lt;a href=&quot;https://www.biaodainfu.com&quot;&gt;biaodianfu&lt;/a&gt; | Hello &lt;a href=&quot;https://www.google.com&quot;&gt;Google&lt;/a&gt;&#39;</span>
+<span class="n">m</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="s1">&#39;&lt;a.*&gt;.*&lt;\/a&gt;&#39;</span><span class="p">,</span> <span class="n">html</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">m</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>[&#39;&lt;a href=&quot;https://www.biaodainfu.com&quot;&gt;biaodianfu&lt;/a&gt; | Hello &lt;a href=&quot;https://www.google.com&quot;&gt;Google&lt;/a&gt;&#39;]
+</pre></div>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "xinetzone/d2py",
+            ref: "main",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./python-study\drafts"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+<div class="section">
+   
+</div>
+
+              </div>
+              
+        
+            <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="op.html" title="上一页 页">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">上一页</p>
+            <p class="prev-next-title">运算符（draft）</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="socket.html" title="下一页 页">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">下一页</p>
+        <p class="prev-next-title">网络</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer">
+    <div class="container">
+      <p>
+        
+          By xinetzone<br/>
+        
+            &copy; Copyright 2021, xinetzone.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>
