@@ -1,0 +1,39 @@
+[tool.poetry]
+name = "carling"
+version = "0.3.3"
+description = "Useful transforms for supporting apache beam pipelines."
+authors = [
+    "Adam Moore <adam@mcdigital.jp>",
+    "Tsuyoki Kumazaki <tsuyoki@mcdigital.jp>",
+    "Masaaki Hirotsu <masaaki@mcdigital.jp>"
+]
+license = "Apache-2.0"
+homepage = "https://github.com/mc-digital/carling"
+repository = "https://github.com/mc-digital/carling"
+readme = "README.md"
+include = ["carling/py.typed"]
+
+[tool.poetry.dependencies]
+python = ">=3.7,<3.10"
+apache-beam = "^2.35.0"
+deepdiff = "^5.7.0"
+
+[tool.poetry.dev-dependencies]
+black = "^21.12b0"
+flake8 = "^4.0.1"
+isort = "^5.10.1"
+pytest = "^6.2.5"
+pytest-watch = "^4.2.0"
+tox = "^3.24.5"
+
+[tool.black]
+line-length = 99
+target-version = ["py37", "py38", "py39"]
+
+[tool.isort]
+profile = "black"
+line_length = 99
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
