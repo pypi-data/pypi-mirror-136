@@ -1,0 +1,18 @@
+pandas
+requests
+requests-cache>=0.8
+
+[:python_version < "3.8"]
+importlib-metadata
+
+[develop]
+tox
+flake8
+pytest
+pytest-cov
+sphinx
+sphinx_rtd_theme
+pre-commit>=2.9.2
+black
+nbstripout
+setuptools-scm

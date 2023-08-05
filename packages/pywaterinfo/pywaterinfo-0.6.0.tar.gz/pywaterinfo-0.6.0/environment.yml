@@ -1,0 +1,8 @@
+name: pywaterinfo
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - pandas
+  - requests
+  - requests-cache
