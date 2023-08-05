@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: easy-user-input
+Version: 1.3.0rc2
+Summary: Misc python3 methods for collecting input from users
+License: MIT
+Author: generic-user1
+Author-email: 89677116+generic-user1@users.noreply.github.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+
+# easy-user-input
+### Miscellaneous python3 methods for collecting input from users
+
+#### Includes the following methods:
+- `inputYesNo` for a boolean response
+- `inputChoice` for selecting one option from a list of several
+- `inputStrictString` for a string response containing only allowed characters
+- `inputPath` for a file or directory path, with several options on how to treat existing files
+
+
+#### Links
+PyPI: [https://pypi.org/project/easy-user-input/](https://pypi.org/project/easy-user-input/)
+
+GitHub: [https://github.com/generic-user1/easy-user-input](https://github.com/generic-user1/easy-user-input)
+

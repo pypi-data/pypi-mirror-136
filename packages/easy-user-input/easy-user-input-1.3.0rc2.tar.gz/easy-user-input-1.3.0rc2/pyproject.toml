@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "easy-user-input"
+version = "1.3.0-pre2"
+description = "Misc python3 methods for collecting input from users"
+authors = ["generic-user1 <89677116+generic-user1@users.noreply.github.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.5"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
