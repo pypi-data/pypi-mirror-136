@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: minio-keygen
+Version: 1.0.0
+Summary: Small python package to create Minio key values
+Home-page: https://github.com/iandday/minio-keygen
+Author: Ian Day
+Author-email: ian@ianday.me
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/iandday/minio-keygen/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+License-File: LICENSE
+
+# minio-keygen
+
+Generate MinIO keys using Python.  This project was created to learn GitLab CI/CD, Python packaging, and entrypoints.
+
+
+
+Example
+
+```code=bash
+ian@Ians-MBP minio-keygen % minio-keygen                                   
+Key: S9EITflKfJs4pAcOO1o
+Secret: vFMzAqChF1PZea_6CMH0vmmcZglziMqDR2zXmtxI
+```
+
+

@@ -1,0 +1,11 @@
+
+[dev]
+mypy
+flake8
+pylint
+isort
+safety
+pytest
+pytest-cov
+build
+twine

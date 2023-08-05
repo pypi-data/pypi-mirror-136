@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/minio_keygen/__init__.py
+src/minio_keygen/functions.py
+src/minio_keygen/main.py
+src/minio_keygen/version.py
+src/minio_keygen.egg-info/PKG-INFO
+src/minio_keygen.egg-info/SOURCES.txt
+src/minio_keygen.egg-info/dependency_links.txt
+src/minio_keygen.egg-info/entry_points.txt
+src/minio_keygen.egg-info/requires.txt
+src/minio_keygen.egg-info/top_level.txt
+src/minio_keygen/tests/__init__.py
+src/minio_keygen/tests/test_minio_keygen.py
