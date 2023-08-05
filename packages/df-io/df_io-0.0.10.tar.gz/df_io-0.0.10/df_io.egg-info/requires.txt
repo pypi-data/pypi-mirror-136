@@ -1,0 +1,11 @@
+numpy
+s3fs
+zstandard
+pandas
+parallel_write
+
+[test]
+moto
+pytest
+pyarrow
+lxml
