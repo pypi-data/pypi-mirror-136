@@ -1,0 +1,3 @@
+[console_scripts]
+bget = bgetcli.bget:main
+

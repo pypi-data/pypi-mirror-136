@@ -1,0 +1,12 @@
+bgetcli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bgetcli/bget.py,sha256=LO8yT05iJBywAbSNt5V8aMJS7qVqk_Rwo__fJbF2MgM,7469
+bgetcli/downloader.py,sha256=GedyoibiG5iutpcRFqmKg6D0ze6RNyZtuAptdpkr9go,3153
+bgetcli/runtime.py,sha256=DHr1sXbSpO1pPcdbVWCrhZEjr4Q1RA7xUIs4bfe89JY,6171
+bgetcli/utils.py,sha256=XYVwcIAmdzZEQ10fBmtHAfuGMg_Ewl7h8IZgL-_U9no,2181
+bget-3.2.0.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bget-3.2.0.dist-info/METADATA,sha256=6Q3M81ZZwQKXEq884gwVrQP8sAPA8CdWIkIcQBC7pH8,1244
+bget-3.2.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+bget-3.2.0.dist-info/entry_points.txt,sha256=8HqQFmhYC80EUh3J10PGJ8PVXtLWVbCaNGyiVv7NyDE,44
+bget-3.2.0.dist-info/top_level.txt,sha256=QjxwylyDPXxdE-VtTnpQbkWAP4oSGqvrqi6_R381Nz8,8
+bget-3.2.0.dist-info/zip-safe,sha256=frcCV1k9oG9oKj3dpUqdJg1PxRT2RSN_XKdLCPjaYaY,2
+bget-3.2.0.dist-info/RECORD,,
