@@ -1,0 +1,14 @@
+cheathit/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cheathit/analyzer.py,sha256=sTmpY0uuG19JMdxavMZlM_7RVNLtVONwBfQ83Hb4I1s,6333
+cheathit/cheathit.py,sha256=Y-gzjV_UXACTNT8g80_yQPKk8vRXVHg8mi7PWTKiFb8,5369
+cheathit/file_finder.py,sha256=a3pon6H1UTXsc_8wIkf5TLIxB9pYEPHDi38u-fT4Ji8,672
+cheathit/ngram.py,sha256=X37s-YpbclnpJAFsyhiEorIcJ3d7jjm3C3D-6HaPXeo,606
+cheathit/ngram_collector.py,sha256=WZHoQZi85TZ1HF_OcDG-5hjzEi_raKIh0BI11FHLWaI,1831
+cheathit/parser.py,sha256=TuGfMQQudhkLPqm41IZ3-GGURy2hrfC4YqYoykv9Xrw,307
+cheathit/shared.py,sha256=PNpmmSIBdEZz-fjnrR18JCFPV2Lw21dJR9gz7XDNAn4,202
+cheathit-1.0.0.dist-info/LICENSE,sha256=JVv3vq_LdZQzZlMBRObnxPugNlmimgsWj5NtWWx2F94,1069
+cheathit-1.0.0.dist-info/METADATA,sha256=nvaPwgGG6F7LTu3blgqowT4VU7kzNqON7fvSY7GsP6c,4327
+cheathit-1.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+cheathit-1.0.0.dist-info/entry_points.txt,sha256=brlJJO3wj8oOpJ4AO2-Vvp_ejcj0poiFlaH5q-vT6R8,52
+cheathit-1.0.0.dist-info/top_level.txt,sha256=vWoy-1-TfKRxBnf3kDyBWttqcPKpQWOBR32jsr2rX6s,9
+cheathit-1.0.0.dist-info/RECORD,,

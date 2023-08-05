@@ -1,0 +1,3 @@
+[console_scripts]
+cheathit = cheathit.cheathit:run
+
