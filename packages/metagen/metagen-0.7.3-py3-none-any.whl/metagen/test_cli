@@ -1,0 +1,51 @@
+#!/bin/bash
+metagen() {
+    PYTHONPATH=. python3 -m metagen "$@"
+}
+
+handle_error() {
+    ret=$?
+    echo FAILED. >&2
+    exit ${ret}
+}
+trap handle_error ERR
+
+unset ECHANGELOG_USER
+PS4='# '
+set -x
+########################################
+# BEGIN tests
+########################################
+
+
+#Should fail as -t ... is missing
+! metagen -m -Q
+! metagen -e mail@example.org -Q
+
+#Should fail if ECHANGELOG_USER not set:
+ECHANGELOG_USER='First Last <mail@example.org>' metagen -m -Q -t person
+! metagen -m -Q -t person
+
+metagen -e "someguy@gentoo.org" -d "Maint desc" -Q -t person
+
+metagen -e "someguy@gentoo.org" -n "Jon Doe" -d "Maint desc" -Q -t person
+
+#Should fail if ECHANGELOG_USER not set:
+ECHANGELOG_USER='First Last <mail@example.org>' metagen -m -e "foo@bar.com" -d "Foo bar.","Chow fun" -Q -t person
+! metagen -m -e "foo@bar.com" -d "Foo bar.","Chow fun" -Q -t person
+
+#Should fail:
+! metagen -Q -t person
+
+#Should fail:
+! metagen -l "Long desc" -Q -t person
+
+#Should fail:
+! metagen -d "Maintainer desc" -Q -t person
+
+
+########################################
+# END tests
+########################################
+echo
+echo PASSED.

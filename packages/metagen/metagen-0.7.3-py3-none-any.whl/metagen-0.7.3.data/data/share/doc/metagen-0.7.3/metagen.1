@@ -1,0 +1,127 @@
+.\" Contact neurogeek@gentoo.org to correct errors or omissions. 
+.TH man 1 "22 August 2004" "1.0" "metagen man page"
+.SH NAME
+.B metagen
+\- generate metadata.xml for ebuilds
+.SH SYNOPSIS
+.B metagen
+[options]
+.SH DESCRIPTION
+.B metagen 
+will create a valid metadata.xml file in the current directory.
+
+If you need multiple elements, such as two email addresses, use a comma to
+separate them. See EXAMPLES.
+
+.SH OPTIONS
+.\" metagen [OPTIONS]
+.B --email
+|
+.B
+-e
+email-address
+    Package maintainer's email address
+
+.B --name
+|
+.B
+-n
+maintainer-name
+    Package maintainer's name (used with -e option)
+
+.B --echangelog
+|
+.B
+-m
+    Uses ECHANGELOG_USER variable. Can be used instead of -e and -n
+
+.B --type
+|
+.B
+-t
+type
+    Maintainer type as of GLEP 67; valid types are: "person", "project", "unknown"
+    (required with --email|-e and --echangelog|-m options)
+
+.B --desc
+|
+.B
+-d
+description
+    Description of maintainership (used with -e option)
+
+.B --long
+|
+.B
+-l
+long-description
+    Long description of package.
+
+.B --output
+|
+.B
+-o
+output-file
+    Write to <output-file> instead of ./metadata.xml
+
+.B --force
+|
+.B
+-f
+    Force overwrite of existing metadata
+
+.B --verbose
+|
+.B
+-v
+    Write to stdout as well as disk (default)
+
+.B --quiet
+|
+.B
+-q
+    Don't write to stdout
+
+.B -Q
+    Don't write file to disk
+
+.B --help
+|
+.B -h
+    show usage help and exit
+
+.B --version
+    show version and exit
+
+.SH EXAMPLES
+.B metagen -e pythonhead@gentoo.org \
+           -n 'Joe Blow' \
+           -d 'The voices in my head told me to maintain this package' \
+           -Q
+
+maintainer email, maintainer name, description of maintainership, to stdout only
+
+
+.B metagen -e jo@gentoo.org,flo@gentoo.org \
+           -n 'Jo Blo','Flo Blo' \
+           -d 'I am maintaining this because foo','I am maintaining this because bar' \
+           -l 'This package is yadda yadda yadda, spam and eggs' \
+           -Q
+
+2 maintainers with names and maintainer descriptions for each maintainer,
+only write to stdout
+
+
+.SH FILES
+.P 
+.I /usr/bin/metagen
+.I /usr/share/man/man1/metagen.1.gz
+.SH BUGS
+No known bugs at this time. 
+.SH AUTHOR
+.nf
+Rob 'pythonhead' Cakebread (pythonhead@gentoo.org)
+Jesus Rivero (neurogeek@gentoo.org)
+.fi
+.SH HISTORY
+2004 \- Initial revision

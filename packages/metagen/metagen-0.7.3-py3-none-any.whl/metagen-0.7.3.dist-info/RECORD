@@ -1,0 +1,14 @@
+metagen/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+metagen/__main__.py,sha256=mhDlPUBbE9DTZqmGgYpXWXWSDHoXiv7SwWpSqF9YiYU,7085
+metagen/meta_unittest.py,sha256=2JzgGHMM48jXY2NOs40WMDG-Idslokp9k6XUecSeWLc,765
+metagen/metagenerator.py,sha256=nMrLiSUoSU5z07vIdsN-BsQzExCWd0EXIZq3LWRhecE,3812
+metagen/test_cli,sha256=v-ZRuyaT6QJPXK2pxqgFq9MUPNZZE6QbVW6j_ekc0gA,1142
+metagen/version.py,sha256=C2cwRf2_AiuYQ4V8u6zt5chwyFhfiX3QzQQO3s49foA,20
+metagen-0.7.3.data/data/share/doc/metagen-0.7.3/ChangeLog,sha256=r2vdpR2uMsKcSGlNjaHZVMoGqVKA-46vfZtYF3iNoQM,405
+metagen-0.7.3.data/data/share/doc/metagen-0.7.3/README,sha256=-Gg5JfGG6orI3iF0AiPn4sVa9Vi3ZOSqH3p4jgHJZ1Y,3132
+metagen-0.7.3.data/data/share/doc/metagen-0.7.3/metagen.1,sha256=5rBwLsxPFLWgdAsImNFJ0b52v-Bylh1Oz-Tp9MhLUA4,2248
+metagen-0.7.3.dist-info/METADATA,sha256=99VB34vyHtm9SHutzZaPL9wD8CiTuSuCewZM2eHDzm8,3272
+metagen-0.7.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+metagen-0.7.3.dist-info/entry_points.txt,sha256=3cjN4zNNUO7mFvyyVzm9v9ZfqCQ7WKA_J65_QTN02mg,51
+metagen-0.7.3.dist-info/top_level.txt,sha256=GgaFbNho65Gs7kKFBXKzmHqotvmixr4y4hXE-3tSDKM,8
+metagen-0.7.3.dist-info/RECORD,,
