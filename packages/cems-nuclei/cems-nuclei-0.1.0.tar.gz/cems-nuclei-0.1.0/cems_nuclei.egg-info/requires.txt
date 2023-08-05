@@ -1,0 +1,9 @@
+requests>=2.21.0
+numpy>=1.16.1
+pandas>=0.24.1
+ipython>=7.3.0
+pyarrow>=0.16.0
+polars>=0.7.0
+
+[geo]
+geopandas>=0.8.0
