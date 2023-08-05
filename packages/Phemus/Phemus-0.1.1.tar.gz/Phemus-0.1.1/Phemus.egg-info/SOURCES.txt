@@ -1,0 +1,6 @@
+README.md
+setup.py
+Phemus.egg-info/PKG-INFO
+Phemus.egg-info/SOURCES.txt
+Phemus.egg-info/dependency_links.txt
+Phemus.egg-info/top_level.txt
