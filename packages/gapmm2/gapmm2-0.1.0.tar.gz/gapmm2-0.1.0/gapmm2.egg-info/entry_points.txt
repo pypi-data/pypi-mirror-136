@@ -1,0 +1,3 @@
+[console_scripts]
+gapmm2 = gapmm2.__main__:main
+
