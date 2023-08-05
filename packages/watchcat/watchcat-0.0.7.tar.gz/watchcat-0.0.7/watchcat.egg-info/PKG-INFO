@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: watchcat
+Version: 0.0.7
+Summary: watchcat
+Home-page: https://github.com/uec-world-dominators/watchcat
+Author: shosatojp,tomy-0000
+License: UNKNOWN
+Description: # watchcat
+        
+        [![Python application](https://github.com/uec-world-dominators/watchcat/actions/workflows/python-app.yml/badge.svg)](https://github.com/uec-world-dominators/watchcat/actions/workflows/python-app.yml)
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
