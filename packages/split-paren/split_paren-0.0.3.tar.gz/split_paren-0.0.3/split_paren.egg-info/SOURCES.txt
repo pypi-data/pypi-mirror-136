@@ -1,0 +1,8 @@
+README.rst
+setup.py
+split_paren/__init__.py
+split_paren/split_paren.py
+split_paren.egg-info/PKG-INFO
+split_paren.egg-info/SOURCES.txt
+split_paren.egg-info/dependency_links.txt
+split_paren.egg-info/top_level.txt

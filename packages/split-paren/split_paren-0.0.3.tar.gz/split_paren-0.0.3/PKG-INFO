@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: split_paren
+Version: 0.0.3
+Summary: TBA
+Home-page: https://github.com/sfinktah/split_paren
+Author: Christopher Anderson
+Author-email: sfinktah@github.spamtrak.org
+License: MIT
+Description: split_paren
+        
+        ... code-block:: python
+            def paren_multisplit(subject, separator=",", lparen="([{'\"", rparen=[")", "]", "}", "'", '"'], strip=None, escape=escape_backslash):
+        
+        
+        Using split_paren
+        =========================
+        
+        .. code-block:: python
+        
+            import split_paren
+            
+            # example usage
+            
+            >>> paren_multisplit('ordinals="1,2,3",4,5', ',', '\'"', '\'"')
+            ['ordinals="1,2,3"', '4', '5']
+        
+        Changelog
+        =========
+        
+        0.0.1: initial release (2021-09-19)
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 2
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=2.7
+Description-Content-Type: text/x-rst
