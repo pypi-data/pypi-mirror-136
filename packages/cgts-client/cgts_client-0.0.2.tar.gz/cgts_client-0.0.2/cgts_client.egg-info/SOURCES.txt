@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+cgts_client/__init__.py
+cgts_client.egg-info/PKG-INFO
+cgts_client.egg-info/SOURCES.txt
+cgts_client.egg-info/dependency_links.txt
+cgts_client.egg-info/entry_points.txt
+cgts_client.egg-info/top_level.txt
