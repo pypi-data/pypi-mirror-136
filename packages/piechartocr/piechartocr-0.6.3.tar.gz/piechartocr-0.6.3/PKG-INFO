@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: piechartocr
+Version: 0.6.3
+Summary: Pie Chart Optical Character Recognition
+Home-page: https://git.ehtec.co/research/pie-chart-ocr
+Author: Elias Hohl
+Author-email: elias.hohl@ehtec.co
+License: MIT
+Download-URL: https://git.ehtec.co/research/pie-chart-ocr/-/archive/v0.6.3-beta/pie-chart-ocr-v0.6.3-beta.zip
+Keywords: pie chart parsing ocr
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Scientific/Engineering :: Image Recognition
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+License-File: LICENSE.txt
+
+UNKNOWN
+
