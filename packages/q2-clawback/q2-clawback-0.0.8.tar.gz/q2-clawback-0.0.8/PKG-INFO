@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: q2-clawback
+Version: 0.0.8
+Summary: Create and work with class weights in QIIME 2.
+Home-page: https://qiime2.org
+Author: Ben Kaehler
+Author-email: kaehler@gmail.com
+License: BSD-3-Clause
+Platform: UNKNOWN
+License-File: LICENSE
+
+UNKNOWN
+
