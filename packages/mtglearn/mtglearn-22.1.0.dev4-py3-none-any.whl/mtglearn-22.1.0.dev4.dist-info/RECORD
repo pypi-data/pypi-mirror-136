@@ -1,0 +1,12 @@
+mtglearn/__init__.py,sha256=jH5iHoPyr104iVY_xS5jSedZZCz6RpZsEecm-UF3M7k,127
+mtglearn/config.py,sha256=WrYUugx8EP6OO5Uew7szEzJPq_W6s_NaZ2SP4QD9Izg,229
+mtglearn/version.py,sha256=q4b0DqZ33mKGbFEpeerEQ0yERxGjqhcCKpN_wpIRpeU,27
+mtglearn/datasets/__init__.py,sha256=pXPJJD9JJaMnXYFS4BF6EwUzzV5ofwRovvkk5LLymfI,60
+mtglearn/datasets/cards.py,sha256=E79rktUdI_53WaGybd5NybPYq5PsSE-DdBXIXs8d1Wc,9355
+mtglearn/datasets/rules.py,sha256=7yDuwqs8r_eaZyAov329VLEL7in-oQpnNHv9jJqxJ-I,1881
+mtglearn/datasets/utils.py,sha256=ZhQyCT8tKj767onI5xnBR0rN8p15qoKc_KalN4Zx4mY,2103
+mtglearn-22.1.0.dev4.dist-info/LICENSE,sha256=QwcOLU5TJoTeUhuIXzhdCEEDDvorGiC6-3YTOl4TecE,11356
+mtglearn-22.1.0.dev4.dist-info/METADATA,sha256=kKfAD_qZmNcyGKF6Tyz44CB-qdvB7mlRhZ7UTOribhU,1007
+mtglearn-22.1.0.dev4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+mtglearn-22.1.0.dev4.dist-info/top_level.txt,sha256=8eRMDDMN5z-eQexOSdl2HBidyJyJCpHvJPbrLIlVPFU,9
+mtglearn-22.1.0.dev4.dist-info/RECORD,,
