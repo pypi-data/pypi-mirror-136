@@ -1,0 +1,8 @@
+click>=7.1.2
+numpy
+scipy
+pandas
+matplotlib
+numpydoc
+autodocsumm
+furo
