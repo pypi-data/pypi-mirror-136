@@ -1,0 +1,8 @@
+[console_scripts]
+augtools = datatools.aug.__main__:main
+datatools = datatools.__main__:main
+edatools = datatools.eda.__main__:main
+evatools = datatools.eva.__main__:main
+submitools = datatools.submit.__main__:main
+valtools = datatools.val.__main__:main
+
