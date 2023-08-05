@@ -1,0 +1,3 @@
+[console_scripts]
+mq-init=pymedquery.mqInit:run_setup
+
