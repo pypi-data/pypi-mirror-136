@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/dyn/__init__.py
+src/dyn/gencls.py
+src/gridworkbench.egg-info/PKG-INFO
+src/gridworkbench.egg-info/SOURCES.txt
+src/gridworkbench.egg-info/dependency_links.txt
+src/gridworkbench.egg-info/requires.txt
+src/gridworkbench.egg-info/top_level.txt
