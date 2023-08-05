@@ -1,0 +1,60 @@
+@@grammar :: Kdl
+@@whitespace :: //
+
+start = {ws} @:nodes {ws} $;
+
+nodes = {linespace} {@+:node {linespace}};
+node = [commented:'/-' {ws}] [type:type] name:identifier {node_space {node_space} args_and_props+:node_args_and_props} [{node_space} children:node_children {ws}] {node_space} node_terminator;
+node_args_and_props = [commented:'/-' {node_space}] (prop:prop | value:value);
+node_children = [commented:'/-' {node_space}] '{' children:nodes '}';
+node_space = ({ws} escline {ws}) | {ws}+;
+node_terminator = commented:single_line_comment | newline | ';' | $;
+
+identifier = string:string | bare:bare_identifier;
+# Ideally we'd be able to exclude 'keyword' from being a valid 'bare_identiifer' value.
+# Unfortunately I can't work out how to make that work without it failing on any bare
+# identifier that simply starts with one of the relevant sequences.
+# The validation is therefore handled after parsing, in the decoder.
+bare_identifier = !(node_terminator ) @+:first_identifier_char {@+:rest_identifier_char};
+digit = /[0-9]/;
+first_identifier_char = !sign !digit !linespace !/[\/\\(){}<>;\[\]=,"]/ /./;
+rest_identifier_char = !linespace !/[\/\\(){}<>;\[\]=,"]/ /./;
+keyword = boolean | null;
+prop = name:identifier '=' value:value;
+value = [type:type] value:(number | string | keyword);
+type = '(' @:identifier ')';
+
+string = raw_string | escaped_string;
+escaped_string = '"' escstring:{character}* '"';
+character = '\\' escape:escape | char:/[^"]/;
+escape = named:/[\\\/bfnrt"]/ | 'u{' unichar:/[0-9a-fA-F]{1,6}/ '}';
+hex_digit = /[0-9a-fA-F]/;
+
+raw_string = 'r' rawstring:raw_string_hash;
+raw_string_hash = '#' @:raw_string_hash '#' | @:raw_string_quotes;
+raw_string_quotes = '"' @:/[^"]*/ '"';
+
+number = hex | octal | binary | decimal;
+
+decimal = decimal:(integer ['.' /[0-9]/ {/[0-9_]/}] [exponent]);
+exponent = ('e' | 'E') integer;
+integer = [sign] /[0-9][0-9_]*/;
+sign = '+' | '-';
+
+hex = hex:([sign] '0x' hex_digit {hex_digit | '_'});
+octal = octal:([sign] '0o' /[0-7]/ {/[0-7_]/});
+binary = binary:([sign] '0b' ('0' | '1') {'0' | '1' | '_'});
+
+boolean = boolean:('true' | 'false');
+null = null:('null');
+
+escline = '\' {ws} (single_line_comment | newline);
+
+linespace = newline | ws | single_line_comment;
+
+single_line_comment = '//' ->(newline | $);
+multi_line_comment = '/*' commented_block;
+commented_block = '*/' | ((multi_line_comment | '*' | '/' | {/[^*\/]/}+) commented_block);
+
+newline = /(\r\n|[\r\n\u0085\u000C\u2028\u2029])/;
+ws = /([\t \u00A0\u1680\u2000\u2001\u2002\u2003\u2004\u2005\u2006\u2007\u2008\u2009\u200A\u202F\u205F\u3000]|\uFFEF)+/ | multi_line_comment;

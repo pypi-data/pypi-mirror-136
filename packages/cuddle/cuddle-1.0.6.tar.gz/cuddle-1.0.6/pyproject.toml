@@ -1,0 +1,111 @@
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+target-version = ["py39", "py310"]
+line-length = 100
+
+[tool.coverage.run]
+branch = true
+include = [
+    "cuddle/*",
+]
+omit = [
+    "cuddle/grammar.py",
+    "tests/*",
+    "tasks.py",
+]
+
+[tool.coverage.report]
+fail_under = 95
+exclude_lines = [
+    "pragma: no cover",
+    "noqa",
+    "raise NotImplementedError",
+    "if TYPE_CHECKING:",
+]
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
+line_length = 100
+known_tests = "tests"
+sections = "FUTURE,STDLIB,THIRDPARTY,FIRSTPARTY,TESTS,LOCALFOLDER"
+lines_after_imports = 2
+lines_between_sections = 1
+
+[tool.poetry]
+name = "cuddle"
+version = "1.0.6"
+description = "A Python library for the KDL Document Language."
+packages = [
+    { include = "cuddle" },
+]
+readme = "README.md"
+homepage = "https://github.com/djmattyg007/python-cuddle"
+repository = "https://github.com/djmattyg007/python-cuddle"
+authors = ["Matthew Gamble <git@matthewgamble.net>"]
+license = "MIT"
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+]
+include = [
+    { path = "CHANGELOG.md", format = "sdist" },
+    { path = "tasks.py", format = "sdist" },
+    { path = "pytest.ini", format = "sdist" },
+    { path = "tests", format = "sdist" },
+    { path = "cuddle/grammar.tatsu" },
+    { path = "cuddle/py.typed" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+regex = "^2021.8.28"
+tatsu = "^5.6.1"
+
+[tool.poetry.dev-dependencies]
+black = "^21.12b0"
+flake8 = "^3.9.2"
+flake8-annotations-complexity = "^0.0.6"
+flake8-black = "^0.2.3"
+flake8-breakpoint = "^1.1.0"
+flake8-bugbear = "^21.9.1"
+flake8-builtins = "^1.5.3"
+flake8-comprehensions = "^3.6.1"
+flake8-eradicate = "^1.1.0"
+flake8-expression-complexity = "^0.0.9"
+flake8-isort = "^4.0.0"
+flake8-pytest-style = "^1.5.0"
+flake8-requirements = "^1.5.1"
+invoke = "^1.6.0"
+isort = "^5.9.3"
+mypy = "^0.910"
+pep8-naming = "^0.12.1"
+pytest = "^6.2.5"
+pytest-cov = "^2.12.1"
+
+[tool.poetry.urls]
+"Source" = "https://github.com/djmattyg007/python-cuddle"
+"Issues" = "https://github.com/djmattyg007/python-cuddle/issues"
+
+[tool.mypy]
+check_untyped_defs = true
+strict_equality = true
+warn_redundant_casts = true
+warn_unused_configs = true
+warn_unused_ignores = true
+
+
+[[tool.mypy.overrides]]
+module = [
+    "regex",
+    "tatsu",
+    "tatsu.*",
+]
+ignore_missing_imports = true
