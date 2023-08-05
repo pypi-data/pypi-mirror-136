@@ -1,0 +1,9 @@
+oshino_admin/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+oshino_admin/daemon.py,sha256=Js5Ol9bQPb2D11CxgNAW1mYeGBHS9FycMA8dehwjHxU,1211
+oshino_admin/run.py,sha256=eUXPqkcv8opG01xG2vYAyt1mnehLeZ1orLQ5mADEXho,3327
+oshino_admin/util.py,sha256=G3aEXwHDf_52ZkUkJrbrw7ZOuuzRvWkrrgLkR9rrZAQ,375
+oshino_admin/version.py,sha256=M1IwGtvzEDB30SPnOIT2W-NZMeCy9m4A20ZFkfnMgPs,236
+oshino_admin-0.2.0.dist-info/LICENSE,sha256=f70EzBnI2aoB7cPDw5JDTihZWpaNEVEN9PCslWlqcQI,1075
+oshino_admin-0.2.0.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+oshino_admin-0.2.0.dist-info/METADATA,sha256=1flpOKPoFJI1xjGp_BTz4RdvKn8vPl9GR8DpvJcxYDM,2103
+oshino_admin-0.2.0.dist-info/RECORD,,
