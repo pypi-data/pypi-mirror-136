@@ -1,0 +1,9 @@
+LICENSE
+MANIFEST.in
+README.rst
+macaddress.py
+setup.py
+macaddress.egg-info/PKG-INFO
+macaddress.egg-info/SOURCES.txt
+macaddress.egg-info/dependency_links.txt
+macaddress.egg-info/top_level.txt
