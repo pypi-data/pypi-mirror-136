@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+importAirfoil.egg-info/PKG-INFO
+importAirfoil.egg-info/SOURCES.txt
+importAirfoil.egg-info/dependency_links.txt
+importAirfoil.egg-info/top_level.txt
+src/__init__.py
+src/importAirfoil.py
