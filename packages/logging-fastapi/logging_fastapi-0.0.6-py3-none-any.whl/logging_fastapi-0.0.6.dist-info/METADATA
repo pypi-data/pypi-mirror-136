@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: logging-fastapi
+Version: 0.0.6
+Summary: logging_fastapi
+Home-page: UNKNOWN
+Author: Horváth Dániel
+Author-email: nitedani@gmail.com
+License: UNKNOWN
+Keywords: logger,fastapi,loki
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Description-Content-Type: text/markdown
+Requires-Dist: fastapi
+Requires-Dist: cuid
+Requires-Dist: loguru
+Requires-Dist: psutil
+Requires-Dist: pydash
+Requires-Dist: schedule
+Requires-Dist: httpx (<0.19.0,>=0.18.0)
+Requires-Dist: opentelemetry-api
+Requires-Dist: opentelemetry-sdk
+Requires-Dist: opentelemetry-propagator-b3
+Requires-Dist: opentelemetry-propagator-jaeger
+Requires-Dist: opentelemetry-instrumentation-httpx
+Requires-Dist: opentelemetry-instrumentation-requests
+Requires-Dist: opentelemetry-instrumentation-fastapi
+Requires-Dist: opentelemetry-instrumentation-celery
+Requires-Dist: opentelemetry-exporter-jaeger-thrift
+
+Empty
+
+
