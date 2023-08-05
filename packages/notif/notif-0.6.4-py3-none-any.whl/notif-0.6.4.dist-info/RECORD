@@ -1,0 +1,12 @@
+notif/__init__.py,sha256=69DZXKlKwtwzzTGahr7hbIBxIbtkhYUmCzXjKMy1Z3M,124
+notif/fail_decorator.py,sha256=sKNSWaZu62yXGkNE3ngUZtmMGX6cEeKwNs_ZzX5Zg1o,1743
+notif/notificator.py,sha256=Fe8ssvVU8mtZWmChVg7eq-2VmImh0s0-Ld0BF3PGZXk,16650
+notif/version.py,sha256=wQ91lWe4855dW9hTkoyiKS9f6w469-g4FDQwa_SF_XM,23
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_fail_decorator.py,sha256=8I08ScJkq1tUOSpbWaW9ldYQJ7e9Y3WX9s_WXAUaRoc,5226
+tests/test_notificator.py,sha256=sPqkS4CaQxZGPwZ5G7e9z_wwXKsz0NsATHuK5gTKJZ0,16550
+notif-0.6.4.dist-info/LICENSE,sha256=46mU2C5kSwOnkqkw9XQAJlhBL2JAf1_uCD8lVcXyMRg,7652
+notif-0.6.4.dist-info/METADATA,sha256=qfr4O-cM3bZodi994FjfjgNIricbimd0Rm5f2t-zqYg,3381
+notif-0.6.4.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+notif-0.6.4.dist-info/top_level.txt,sha256=TMBPwTVSe7AeFkmsHjSGiYUCn24YcMIWv23bQS4kS3w,12
+notif-0.6.4.dist-info/RECORD,,
