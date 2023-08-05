@@ -1,0 +1,17 @@
+Metadata-Version: 2.0
+Name: sotooncli
+Version: 0.0.6
+Summary: Command Line for Sotoon.
+Home-page: UNKNOWN
+Author: Sotoon AI and Cloud Infrastructure
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.7
+Requires-Dist: click (~=8.0.1)
+Requires-Dist: pyyaml (~=5.4.1)
+Requires-Dist: requests (~=2.25.1)
+Requires-Dist: tabulate (~=0.8.9)
+
+UNKNOWN
+
+

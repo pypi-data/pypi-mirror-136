@@ -1,0 +1,5 @@
+
+        [console_scripts]
+        sotooncli = sotooncli.main:main
+        sotoon = sotooncli.main:main
+    
