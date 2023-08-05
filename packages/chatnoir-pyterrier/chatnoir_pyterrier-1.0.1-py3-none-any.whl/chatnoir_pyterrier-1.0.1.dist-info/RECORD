@@ -1,0 +1,12 @@
+chatnoir_pyterrier/__init__.py,sha256=xmBjQL-DHrPatLtOZqKozPlkMCiReJ06Drwij_2D2Mo,249
+chatnoir_pyterrier/feature.py,sha256=Dea_xUcG6u833-HF2-LX4hBgC3FsL5RJTNgZoBbR1Dc,689
+chatnoir_pyterrier/retrieve.py,sha256=q3QpvoQNlA2TJeXuMzh_9n_ZV3WGhFgO3yVijpeT-kU,6529
+examples/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/conftest.py,sha256=SB7NhqOwW61isO-cFUfnlPbQ4Ma60dEH2GESPWiLFlI,843
+tests/test_retrieve.py,sha256=MWE1ljI0EmdFEDNuyitBvXUJzf7AXak9CxmjbCA7LgA,2134
+chatnoir_pyterrier-1.0.1.dist-info/LICENSE,sha256=5t27AF18dMT96bn4EjeiG2ywa-Fj0u-oWL_201OeZrI,1076
+chatnoir_pyterrier-1.0.1.dist-info/METADATA,sha256=FBDAP-k1AawJCE1BaiB9_mFwXpEk2NgZKs5kUUqgSek,5150
+chatnoir_pyterrier-1.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+chatnoir_pyterrier-1.0.1.dist-info/top_level.txt,sha256=Eu9ag0yCh4hjItWPvjG60ZsG-NbdFy0oAgvRo537AZI,34
+chatnoir_pyterrier-1.0.1.dist-info/RECORD,,
