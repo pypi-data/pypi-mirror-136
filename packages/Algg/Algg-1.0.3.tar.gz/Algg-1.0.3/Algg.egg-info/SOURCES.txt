@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+Algg/__init__.py
+Algg/find.py
+Algg/recursion.py
+Algg/sort.py
+Algg.egg-info/PKG-INFO
+Algg.egg-info/SOURCES.txt
+Algg.egg-info/dependency_links.txt
+Algg.egg-info/top_level.txt
