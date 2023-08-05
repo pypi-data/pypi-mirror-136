@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "hexlet-immutable-fs-trees"
+version = "0.1.8"
+description = "File System Tree"
+authors = ["Hexlet Team <info@hexlet.io>"]
+license = "ISC"
+readme = "README.md"
+homepage = "https://github.com/hexlet-components/python-immutable-fs-trees"
+repository = "https://github.com/hexlet-components/python-immutable-fs-trees"
+classifiers = [
+    "Intended Audience :: Education",
+    "License :: OSI Approved :: ISC License (ISCL)",
+    "Programming Language :: Python :: 3.6",
+    "Topic :: Education",
+    "Topic :: Software Development :: Libraries",
+    "Typing :: Typed",
+]
+
+packages = [
+    { include = "hexlet/fs/*.py", from = "src" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+
+[tool.poetry.dev-dependencies]
+flake8 = "^3.8.4"
+pytest = "^6.2.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
