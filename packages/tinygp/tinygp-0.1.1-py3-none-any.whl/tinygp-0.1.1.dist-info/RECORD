@@ -1,0 +1,13 @@
+tinygp/__init__.py,sha256=R_f_-SpXgj5DzDo0808komVLe9qp39KSJPBHWd6FbEY,573
+tinygp/gp.py,sha256=KIHh-XVd0riPEqowg8rdcFWY-_Q9BscEiEPNGrpWxhE,9485
+tinygp/kernels.py,sha256=YNi1DxEmDwvjqba8uMvsQ-7b6jcl-fmZVSC5zMhY-B8,10153
+tinygp/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tinygp/tinygp_version.py,sha256=Ok7XR8wZrOp38SaOYinpYmIxf_sT0PLyMemjrG3VZsI,142
+tinygp/transforms.py,sha256=RDktQtO22hvx6V0OXXQVfVdmZ_bybri4xESgDG_FoM0,5720
+tinygp/types.py,sha256=lU81O3H081E52mRjN6jhvlSG_G2h9o_qq-YyipJhfSg,197
+tinygp-0.1.1.dist-info/LICENSE,sha256=7R1e_-_LJG_Q3_jmPph2dew0_QI2tM8WdMBgWQ9he0Q,1082
+tinygp-0.1.1.dist-info/METADATA,sha256=56czkkQ7T2AvUfSkicvfibRS4aMNg-33qzpIgIbIruc,2521
+tinygp-0.1.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+tinygp-0.1.1.dist-info/top_level.txt,sha256=wBq7P6iRv1iOdugQl5Iu8os0XsKRC3C-guoPCZ-Nqbg,7
+tinygp-0.1.1.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+tinygp-0.1.1.dist-info/RECORD,,
