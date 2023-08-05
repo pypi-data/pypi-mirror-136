@@ -1,0 +1,5 @@
+Authlib
+requests
+requests-cache
+requests-oauthlib
+Django<4.0,>=3.1

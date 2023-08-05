@@ -1,0 +1,9 @@
+-c requirements.txt
+GitPython
+pytest
+pytest-annotate
+pytest-cov
+pytest-django
+pytest-env
+pytest-xdist
+requests-mock
