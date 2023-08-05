@@ -1,0 +1,12 @@
+bunch
+numpy
+opencv-python
+pydot
+scipy
+static-variables
+python-decouple
+static-variables
+tensorflow==2.7
+tensorflow-hub
+tensorflow-io
+tqdm

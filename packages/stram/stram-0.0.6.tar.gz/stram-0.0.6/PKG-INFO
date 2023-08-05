@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: stram
+Version: 0.0.6
+Summary: Style TRAnsfer Machine - a package for performing image style transfer using machine learning methods
+Home-page: https://gitlab.com/forgeai/style2pic.git
+Author: emilutz
+Author-email: emil.barbutza@gmail.com
+License: UNKNOWN
+Description: # style2pic
+        
+        Fast image stylization
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
