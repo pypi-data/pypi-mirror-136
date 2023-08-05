@@ -1,0 +1,11 @@
+arcor2_execution_rest_proxy/VERSION,sha256=qgN0VLXoMgUhoysnij9K_wX8eQCatVA_XUobmjOzjEc,7
+arcor2_execution_rest_proxy/__init__.py,sha256=5qUWRZPLDdHrZybntJ-Hseipd7VGf9Ut6nlyFDSfTvs,96
+arcor2_execution_rest_proxy/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+arcor2_execution_rest_proxy/scripts/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+arcor2_execution_rest_proxy/scripts/execution_rest_proxy.py,sha256=L8a0vr7D-B_lZLhWL20VsFO1F58unkPAzfFP4yKrwbc,26894
+arcor2_execution_rest_proxy-0.16.0.dist-info/METADATA,sha256=x-db9h8OtwvsPJ9fovxFXIaJLuUX7QQ5VfKNJKn5v_I,3654
+arcor2_execution_rest_proxy-0.16.0.dist-info/WHEEL,sha256=ZvcC9yJ-3jt0s3Z9GqWdFU0zAv0WwFaltzmW3pHC9do,93
+arcor2_execution_rest_proxy-0.16.0.dist-info/entry_points.txt,sha256=jwNwb9h1HOG2UDpGKom2hDQT-izGfq9ZsZDQDjWJVYE,111
+arcor2_execution_rest_proxy-0.16.0.dist-info/namespace_packages.txt,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+arcor2_execution_rest_proxy-0.16.0.dist-info/top_level.txt,sha256=pVcD_z3MU-v_v_lcnQzmCFiTNiztjS12BoYWsrM_Oug,28
+arcor2_execution_rest_proxy-0.16.0.dist-info/RECORD,,
