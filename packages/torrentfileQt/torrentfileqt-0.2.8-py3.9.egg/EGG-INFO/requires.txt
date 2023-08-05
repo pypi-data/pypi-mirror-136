@@ -1,0 +1,3 @@
+torrentfile
+PySide6
+pyben
