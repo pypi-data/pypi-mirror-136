@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.rst
+RELEASE-VERSION
+setup.py
+version.py
+src/datecalendar.py
+src/datecalendar.egg-info/PKG-INFO
+src/datecalendar.egg-info/SOURCES.txt
+src/datecalendar.egg-info/dependency_links.txt
+src/datecalendar.egg-info/requires.txt
+src/datecalendar.egg-info/top_level.txt
