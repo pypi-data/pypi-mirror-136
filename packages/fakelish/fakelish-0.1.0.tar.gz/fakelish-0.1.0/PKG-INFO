@@ -1,0 +1,95 @@
+Metadata-Version: 2.1
+Name: fakelish
+Version: 0.1.0
+Summary: English-like word generator
+Home-page: https://github.com/scrool/fakelish
+Author: Pavol Babinčák
+Author-email: scroolik@gmail.com
+Maintainer: Pavol Babinčák
+Maintainer-email: scroolik@gmail.com
+License: MIT
+Project-URL: Bug Tracker, https://github.com/scrool/fakelish/issues
+Platform: Any
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: release
+Provides-Extra: test
+License-File: LICENSE
+
+# fakelish
+
+English-like word generator.
+
+## Installation
+
+```bash
+$ pip install --upgrade fakelish
+```
+
+## Usage
+
+Package provides command line interface (CLI) tool which by default prints ten
+words of length 6 to 9 letters:
+
+```bash
+$ fakelish
+Predrons
+Isishere
+Uncette
+Tripulogy
+Oderve
+Mageholy
+Refess
+Butarisse
+Eloplae
+Roidia
+```
+
+For more options see help:
+```bash
+$ fakelish --help
+```
+
+## Contributing
+
+Please read CONTRIBUTING.md for details of the process for submitting pull
+requests.
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for
+details.
+
+## Origin
+
+CLI and python library is ported from go implementation of fakelish project.
+
+Word data included in this project have been converted from
+Javascript/Typescript implementation to pure json like this:
+
+```bash
+$ curl -s https://raw.githubusercontent.com/nwtgck/fakelish-npm/develop/lib/word-probability.ts | sed 's/.*} = {"\^/{"^/;s/;$//' > word-probability.json
+```
+
+## Acknowledgments
+
+[Ryo Ota (@nwtgck)](https://github.com/nwtgck) for original Go and JavaScript/TypeScript versions and word data.
+
+## Related projects
+
+* Go language and CLI: <https://github.com/nwtgck/go-fakelish>
+* JavaScript/TypeScript: <https://github.com/nwtgck/go-fakelish>
+
+

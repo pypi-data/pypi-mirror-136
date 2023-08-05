@@ -1,0 +1,3 @@
+[console_scripts]
+fakelish = fakelish.console:main
+

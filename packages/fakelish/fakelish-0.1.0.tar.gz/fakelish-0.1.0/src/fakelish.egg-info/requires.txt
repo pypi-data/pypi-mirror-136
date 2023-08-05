@@ -1,0 +1,8 @@
+
+[release]
+build
+twine
+
+[test]
+pytest>=6
+tox
