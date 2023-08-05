@@ -1,0 +1,9 @@
+eventgeometry/eventgeometry.py,sha256=dx2SOxLTM7kgCglJ68TT6FVGV2nDE6G_gtmuTl5Vl2Q,104282
+eventgeometry/_eventgeometry.cpython-36m-i386-linux-gnu.so,sha256=7-p_xnsVRYXy2jgXzWavU61lA88eBLlhMKyn6CwvO-A,4165652
+eventgeometry/__init__.py,sha256=OvzSa53N0967y54KLkwyAdSlgDSzYUzJ_1Eez9Bwf7A,2194
+EventGeometry.libs/libgomp-65f46eca.so.1.0.0,sha256=iK0dvTk33yUQ1XL1ssNqcA-rKlrn4fiJOgfiPa95PNk,172292
+EventGeometry-1.0.1.dist-info/WHEEL,sha256=GOWCXPHp7oKFAOXkkcrWHxUyI5svWYOeMw1o9JT9isU,146
+EventGeometry-1.0.1.dist-info/COPYING,sha256=Dhl-8BuiXl1SrrHaaNZVJHWiZ3YpWYjjWdvPxO81GMs,18200
+EventGeometry-1.0.1.dist-info/RECORD,,
+EventGeometry-1.0.1.dist-info/METADATA,sha256=ffo9OWOxsPuRWO377Nug_M-AcnoNmcICWIA2mCJCCKY,5445
+EventGeometry-1.0.1.dist-info/top_level.txt,sha256=Xme1Hz7QT-5kJKhUuAjTMdqMAel1uJ-gUReNzEq0CUI,14
