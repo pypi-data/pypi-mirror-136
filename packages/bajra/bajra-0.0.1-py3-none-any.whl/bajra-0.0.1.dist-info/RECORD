@@ -1,0 +1,12 @@
+bajra/__init__.py,sha256=zdS8aSeunN0T1EqRVazDac5o7sD0sk315BpC6ypHlkQ,26
+bajra/bajra.py,sha256=jaWIC-Tdr0XuUHnysfTgX778BoamYnL_FCUarRCyGZQ,4147
+bajra/base.py,sha256=_wY5_77Gu3xX0pJTh3qZKRJleOIvGS0qelIEO7PY9T4,2674
+bajra/engines/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bajra/engines/base.py,sha256=ixzNjcU7D1K8YZDNG5bUdjV9GFOElu1Cxtj0jT_JP3s,802
+bajra/engines/mysql.py,sha256=9U3n5A_eYil2JJc_KfCsidFV5VsGP-la79Ve7DDJfwM,1698
+bajra/engines/postgres.py,sha256=Xp8PNnJEY6mj8a5rm5TZbXNCH3D4KzO4wgTgA_Qxt1g,1804
+bajra-0.0.1.dist-info/LICENSE,sha256=Tzie1frkcJrAcPgTkZVo8NIrwbDO6BahjW9gZ1_Fe_Y,11546
+bajra-0.0.1.dist-info/METADATA,sha256=-SGAJVsjf-NNUov31Posu_6Xiiu2_uZ1xs3oNAVqC5A,4742
+bajra-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+bajra-0.0.1.dist-info/top_level.txt,sha256=_5Ko_c0U7mExUyMsj5ZQwmT-60cqtUzxVIi1gAcSzcE,6
+bajra-0.0.1.dist-info/RECORD,,
