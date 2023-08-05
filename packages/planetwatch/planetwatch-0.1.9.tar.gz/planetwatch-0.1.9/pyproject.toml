@@ -1,0 +1,39 @@
+[tool.poetry]
+name = "planetwatch"
+version = "0.1.9"
+description = "Code to make it easy to calculate earnings, etc for planetwatch"
+authors = ["errantp"]
+license = "GNU General Public License v3.0"
+readme = "README.md"
+
+
+
+[tool.poetry.dependencies]
+python = "^3.7"
+click = "*"
+pycoingecko = "^2.2.0"
+streamlit = ">=0.88.0"
+attr = "*"
+pandas = "*"
+millify = "^0.1.1"
+py-algorand-sdk = "1.9.0b2"
+
+[tool.poetry.dev-dependencies]
+black = "*"
+pytest = "*"
+pre-commit = "*"
+isort = "*"
+watchdog = "^2.1.5"
+
+
+
+[tool.isort]
+profile = "black"
+
+[tool.poetry.scripts]
+planets = "planetwatch.core:cli"
+
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
