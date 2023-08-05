@@ -1,0 +1,7 @@
+ibmcloudant
+pycapnp
+bokeh
+numpy
+jupyterlab
+jupyter_bokeh
+jupyter-server-proxy
