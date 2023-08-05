@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+setup.py
+metaflow_card_uplot.egg-info/PKG-INFO
+metaflow_card_uplot.egg-info/SOURCES.txt
+metaflow_card_uplot.egg-info/dependency_links.txt
+metaflow_card_uplot.egg-info/not-zip-safe
+metaflow_card_uplot.egg-info/top_level.txt
+metaflow_extensions/card_uplot/plugins/cards/uplot/__init__.py
+metaflow_extensions/card_uplot/plugins/cards/uplot/uplot/LICENSE.txt
+metaflow_extensions/card_uplot/plugins/cards/uplot/uplot/card.html
+metaflow_extensions/card_uplot/plugins/cards/uplot/uplot/uPlot.iife.min.js
+metaflow_extensions/card_uplot/plugins/cards/uplot/uplot/uPlot.min.css

@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: metaflow-card-uplot
+Version: 1.0.0
+Summary: A Metaflow card to visualize timeseries dataframes using Uplot
+Home-page: UNKNOWN
+Author: Valay Dave
+Author-email: valay@outerbounds.co
+License: Apache Software License 2.0
+Description: # Metaflow Card To Plot Timeseries
+        
+        ## Usage 
+        
+        - Install this card using `pip install metaflow-card-uplot`
+        
+        - Usage in `@step` code:
+        ```python
+        
+        @card(type='uplot',options={"artifact":"timeseries"})
+        @step
+        def start(self):
+            import pandas
+            index = pandas.date_range("2022-01-01", periods=60, freq="Min")
+            series = {
+                'first': self._fake_series(len(index), 0.1),
+                'second': self._fake_series(len(index), 1)
+            }
+            self.timeseries = pandas.DataFrame(series, index=index)
+            self.next(self.end)
+        
+        def _fake_series(self, n, g):
+            return [(random.random() - 0.5) * 0.1 + math.sin(x * g) for x in range(n)]
+        
+        ```
+Platform: UNKNOWN
+Description-Content-Type: text/markdown

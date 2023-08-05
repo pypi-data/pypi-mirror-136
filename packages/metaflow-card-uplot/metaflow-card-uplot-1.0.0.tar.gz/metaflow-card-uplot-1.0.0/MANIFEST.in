@@ -1,0 +1,4 @@
+include metaflow_extensions/card_uplot/plugins/cards/uplot/uplot/*.html
+include metaflow_extensions/card_uplot/plugins/cards/uplot/uplot/*.js
+include metaflow_extensions/card_uplot/plugins/cards/uplot/uplot/*.css 
+include metaflow_extensions/card_uplot/plugins/cards/uplot/uplot/*.txt
