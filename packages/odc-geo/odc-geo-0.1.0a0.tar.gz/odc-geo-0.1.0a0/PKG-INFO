@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: odc-geo
+Version: 0.1.0a0
+Summary: Tooling for converting STAC metadata to ODC data model
+Home-page: https://github.com/opendatacube/odc-geo/
+Author: Open Data Cube
+Author-email: 
+Maintainer: Open Data Cube
+Maintainer-email: 
+License: Apache License 2.0
+Project-URL: Documentation, https://odc-geo.readthedocs.io/en/latest/
+Project-URL: Bug Reporting, https://github.com/opendatacube/odc-geo/issues
+Platform: any
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Scientific/Engineering :: GIS
+Requires-Python: >=3.6
+Description-Content-Type: text/x-rst
+Provides-Extra: xr
+Provides-Extra: warp
+Provides-Extra: all
+Provides-Extra: test
+License-File: LICENSE
+
+odc.geo
+#######
+
+**This is still work in progress.**
+
+This repository contains geometry related code extracted from `Open Datacube`_.
+
+For details and motivation see `ODC-EP-06`_ enhancement proposal.
+
+
+.. _`Open Datacube`: https://github.com/opendatacube/datacube-core
+
+.. _`ODC-EP-06`: https://github.com/opendatacube/datacube-core/wiki/ODC-EP-06---Extract-Geometry-Utilities-into-a-Separate-Package
+
+
