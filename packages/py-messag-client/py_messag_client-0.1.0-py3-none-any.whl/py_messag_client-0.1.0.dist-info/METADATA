@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: py-messag-client
+Version: 0.1.0
+Summary: Mess Client
+Home-page: UNKNOWN
+Author: Anna K
+Author-email: ankaaaaa@list.ru
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: PyQt5
+Requires-Dist: sqlalchemy
+Requires-Dist: pycryptodome
+Requires-Dist: pycryptodomex
+
+UNKNOWN
+
+
