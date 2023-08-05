@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: microcosm-daemon
+Version: 1.2.0
+Summary: Asynchronous workers
+Home-page: https://github.com/globality-corp/microcosm-daemon
+Author: Globality Engineering
+Author-email: engineering@globality.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Provides-Extra: test
+License-File: LICENSE
+
+UNKNOWN
+
