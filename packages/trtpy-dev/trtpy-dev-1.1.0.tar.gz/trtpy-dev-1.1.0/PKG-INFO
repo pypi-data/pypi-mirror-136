@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: trtpy-dev
+Version: 1.1.0
+Summary: TensorRTPro python interface
+Home-page: https://github.com/shouxieai/tensorRT_cpp
+Author: djw.hope
+Author-email: 512690069@qq.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: linux
+Requires-Python: >=3.7
