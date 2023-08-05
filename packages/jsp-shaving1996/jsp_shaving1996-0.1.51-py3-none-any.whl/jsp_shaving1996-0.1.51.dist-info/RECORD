@@ -1,0 +1,11 @@
+jsp_shaving1996/__init__.py,sha256=seBlISkC0vZ9gYBgpLd1qJXcqgVg8GoBnh2Oq2pOwQw,114
+jsp_shaving1996/main.py,sha256=RYBs_29yHf1JfVwxo7Q2y3foTh6us1oVGCH8DrIootA,4539
+jsp_shaving1996/test.ipynb,sha256=YRuQJQvfUG7T1eqtfrI5rW70CHpwJshLJ3yw92l2WFM,12892
+jsp_shaving1996/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jsp_shaving1996/utils/backward.py,sha256=9ezBdX_GcXdi0zZPoTzSXtfTNLhUWhKwDLfGrs65-QE,577
+jsp_shaving1996/utils/feasibility.py,sha256=8b-gQEtqZD2wDVB53Bic9W-SqN2j9x2GPXESnlsO3g4,423
+jsp_shaving1996/utils/forward.py,sha256=7TaPBKf3YRO2GS1wNVf0czUvP2I1DrD0p70n44X38co,194
+jsp_shaving1996/utils/jsp.py,sha256=IQDuagzU_--NXj8pMqG5buRp14GKWRp_UWIWFYrgRSs,336
+jsp_shaving1996-0.1.51.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+jsp_shaving1996-0.1.51.dist-info/METADATA,sha256=1yx-UvEhAN_Im5wIMKUi9IObiGUfaPaq6CznVhab9a0,638
+jsp_shaving1996-0.1.51.dist-info/RECORD,,
