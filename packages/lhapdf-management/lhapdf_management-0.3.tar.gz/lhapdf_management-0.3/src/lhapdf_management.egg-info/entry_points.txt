@@ -1,0 +1,3 @@
+[console_scripts]
+lhapdf-management = lhapdf_management.scripts.lhapdf_script:main
+

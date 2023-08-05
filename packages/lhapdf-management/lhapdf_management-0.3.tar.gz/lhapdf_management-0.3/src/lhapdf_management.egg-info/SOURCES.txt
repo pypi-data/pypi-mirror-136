@@ -1,0 +1,15 @@
+setup.py
+src/lhapdf_management/__init__.py
+src/lhapdf_management/configuration.py
+src/lhapdf_management/management.py
+src/lhapdf_management/net_utilities.py
+src/lhapdf_management/pdfsets.py
+src/lhapdf_management.egg-info/PKG-INFO
+src/lhapdf_management.egg-info/SOURCES.txt
+src/lhapdf_management.egg-info/dependency_links.txt
+src/lhapdf_management.egg-info/entry_points.txt
+src/lhapdf_management.egg-info/not-zip-safe
+src/lhapdf_management.egg-info/requires.txt
+src/lhapdf_management.egg-info/top_level.txt
+src/lhapdf_management/scripts/__init__.py
+src/lhapdf_management/scripts/lhapdf_script.py
