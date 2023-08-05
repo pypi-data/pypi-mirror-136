@@ -1,0 +1,12 @@
+rabbitair/__init__.py,sha256=LQbD_Kf1RP-Zj-u_IJXyr9VJFlvcPVJjElys2Aq3n9s,317
+rabbitair/client.py,sha256=VUboyZXB-QismPCOqsHjL7J5kaBeiUzQ9UJwe4BrxYk,8354
+rabbitair/exceptions.py,sha256=OV9XB9F5GsF1Z0nCYht3aO-MFZHBkQ1xrZcYCh-o6W8,83
+rabbitair/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rabbitair/response.py,sha256=Cd-XEvbPIViwEdlA0LYjRJY2grV5oj-ui0zFYLh4ZjY,7184
+rabbitair/tcp.py,sha256=tnjpqv9ja9PVRwbRrEQNru174z_vVsftuw1rDxdc4AE,1354
+rabbitair/udp.py,sha256=KyokXEzwc3PkFS3-1vz52SZl6fHAL6zd3ToOCQQ8zk8,1003
+python_rabbitair-0.0.3.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+python_rabbitair-0.0.3.dist-info/METADATA,sha256=SrcAkLpCw7H8sEubV0nGlnQ8R6clkX_7FoMjR1udELc,1757
+python_rabbitair-0.0.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+python_rabbitair-0.0.3.dist-info/top_level.txt,sha256=fnZWwZ5HjXFRpkb1j7rOmHLTjrTqOtPYCz4UgvuQbys,10
+python_rabbitair-0.0.3.dist-info/RECORD,,
