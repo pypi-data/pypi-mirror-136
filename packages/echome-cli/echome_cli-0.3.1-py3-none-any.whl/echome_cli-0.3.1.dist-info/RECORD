@@ -1,0 +1,15 @@
+cli/__init__.py,sha256=YAPUEnSr7ahuRFq5bfnHQFrJKYHy9X3rCZ8mJSVTrDw,72
+cli/base_service.py,sha256=zQkO-m37ro11s-b6xrq5xl3SdxtGzJKM65IK1GeDruI,5096
+cli/defaults.py,sha256=iS0OqRNo2M-EbXmhzEQf-Tm5339XeP9fwtL4d9qfP5Q,43
+cli/identity.py,sha256=w7dt0YZWT4diKEP_fUwl_OJleTCpQvP0lD_S45Ugd88,4074
+cli/keys.py,sha256=6LogKJz5HQrKgW6sXnDwnlm0vtC7boQMUkU47yWE88U,3698
+cli/kube.py,sha256=hgYhUaf7jyyGDnJXtAtaiyORXmPCsXaayfxUngUQA58,4880
+cli/main.py,sha256=J0jYcmFp7FPp-AjGYP9PkGNZ6Zyb6Z6yNovO-brqaFQ,1677
+cli/network.py,sha256=D9rP2yEt1LlhqX11Qj4_F0keQEvGlhbGs-cg9j8D7aA,3083
+cli/vm.py,sha256=BoFvr1rEQDH3YEpytbdSayzUzd3LOhkHp4s1pgsdPqg,11339
+echome_cli-0.3.1.dist-info/LICENSE,sha256=rVQA3vbkLvJglBrMDYxOxt2f1YT2ZBWr1aLUXZPTPaY,1072
+echome_cli-0.3.1.dist-info/METADATA,sha256=gx4NlXZbJ7ez6SW9sfAAJvVHBIrIBWPa-ZbHhKfvjsg,3984
+echome_cli-0.3.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+echome_cli-0.3.1.dist-info/entry_points.txt,sha256=-IDD9WSeKyCLmg9McbVs25-ug9hgBdB3UoyqTHjgI28,42
+echome_cli-0.3.1.dist-info/top_level.txt,sha256=2ImG917oaVHlm0nP9oJE-Qrgs-fq_fGWgba2H1f8fpE,4
+echome_cli-0.3.1.dist-info/RECORD,,
