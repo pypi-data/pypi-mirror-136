@@ -1,0 +1,12 @@
+
+[color]
+colorama==0.4.4
+
+[progress]
+alive-progress==1.6.2
+
+[standard]
+colorama==0.4.4
+
+[table]
+tabulate==0.8.9
