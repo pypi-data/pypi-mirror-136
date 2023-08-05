@@ -1,0 +1,7 @@
+search-engine-parser==0.6.6
+argparse==1.4.0
+pyfiglet==0.8.post1
+psutil==5.8.0
+pyperclip==1.7.0
+colorama==0.4.4
+requests==2.27.1
