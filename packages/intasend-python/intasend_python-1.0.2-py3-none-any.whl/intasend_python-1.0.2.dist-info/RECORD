@@ -1,0 +1,16 @@
+intasend/__init__.py,sha256=qhz9lg4MPR7mAkqiHzV1cdSsN91O9orWWPsf7afxSrc,680
+intasend/chargebacks.py,sha256=Y54aLR53tZhtltzEtv7uupN_0PPVQv1u6X34WfahTpc,657
+intasend/client.py,sha256=ztADKMnBsvq2h5zEF5ganqEitPj_pKlZncnW6KKeGKY,1528
+intasend/collections.py,sha256=4R7A8HlDVSWS0t0v4hC5tXhjedPrKZ0UUWubFzuIS7c,3246
+intasend/customers.py,sha256=shAK9_Lx_IyhqpXwmDXpUAQaD2-Fr6Cx6HHMJkQzWfg,629
+intasend/devices.py,sha256=X55kAYigwXJh9VLasQB3bO5IMPQGUB8JhS-yTh9yS3Y,344
+intasend/exceptions.py,sha256=oxpyWxEG9Kj0iCNEkjQfjX0FTRLJXw36DCVHqg6NaK8,193
+intasend/payment_links.py,sha256=XFWmgzXquG9yu_-IIddbktg0ypUowLgxl-xXbGzxawg,973
+intasend/transfers.py,sha256=oTpqkmUjMqh_K8OAvW_KOWF93rYgrYUTXP2tLsK0zWg,1855
+intasend/utils.py,sha256=XeGAbtKPdHZrmC3Ki6zOV5BFFl218iH7qmBI8qJOskg,807
+intasend/wallets.py,sha256=YzzBoIi3fvg9XyoXHhhnbJnECp0bvi5sGr2v4b5cqrw,1522
+intasend_python-1.0.2.dist-info/LICENSE,sha256=svbRj-2vaevk3Biw0RKM6OgDKwgVehdD_B5_56-APqE,1075
+intasend_python-1.0.2.dist-info/METADATA,sha256=RQbpaDp6niF37FUPd6dUcYSv0Mi70HEdv_RDfYQIY4I,726
+intasend_python-1.0.2.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+intasend_python-1.0.2.dist-info/top_level.txt,sha256=90p78HPoeNyNgXPr7V7S9dSGhDSWdfRC-H7TUbKvieQ,9
+intasend_python-1.0.2.dist-info/RECORD,,
