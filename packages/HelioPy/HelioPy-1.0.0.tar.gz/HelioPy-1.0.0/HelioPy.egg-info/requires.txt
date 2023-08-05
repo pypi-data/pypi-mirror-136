@@ -1,0 +1,4 @@
+
+[docs]
+sphinx>=2
+sphinx-bootstrap-theme>=0.7
