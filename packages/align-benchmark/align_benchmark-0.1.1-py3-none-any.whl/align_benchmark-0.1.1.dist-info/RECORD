@@ -1,0 +1,11 @@
+align_benchmark/__init__.py,sha256=Vipd3jE9_U_QP0P4avtbTgMxWbo2wrWIWs4-nDohT8o,116
+align_benchmark/__main__.py,sha256=BRRlnANfkFhylltECix_Qrmq42EWxXHgNTD_MX0IALc,2092
+align_benchmark/align_benchmark.py,sha256=38TCfdMQRrC32SKf9YaNsJcFYGlA97_kiukppVyxbdA,135
+align_benchmark/benchmark.py,sha256=hbmtOW7tQU-gSzAKP2nEbJElvC0I7qlZOoewf-NO-TE,2408
+align_benchmark/twotuple_metric.py,sha256=WZUTJha2PkkYSdXDlel9s0RYpDFfSKQ9d5XgDBnwpZI,1264
+LICENSE,sha256=2Z4g7Eq1bQRfTQoryBnNsyhlWBpAGylKyp1KFJMlTWU,1085
+align_benchmark-0.1.1.dist-info/entry_points.txt,sha256=_F9YUHsCXq_uIMQzKYP6pwuGXZCByqbI96bszwjYtnc,65
+align_benchmark-0.1.1.dist-info/LICENSE,sha256=2Z4g7Eq1bQRfTQoryBnNsyhlWBpAGylKyp1KFJMlTWU,1085
+align_benchmark-0.1.1.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+align_benchmark-0.1.1.dist-info/METADATA,sha256=D14QFbrVG7o_4_OS6mJR6m6ZpNN7crrnN-N-zDhMR9w,2006
+align_benchmark-0.1.1.dist-info/RECORD,,
