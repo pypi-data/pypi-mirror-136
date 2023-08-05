@@ -1,0 +1,18 @@
+# Organization for docker images. i.e. <Organization>/<image_name>
+organization: str()
+# Max number of parallel build workers (multiprocessing pool size). Default: 1
+max_num_workers: int(min=1, required=False)
+# Allow cross platform (x86 vs aarch64) building. Default: False
+cross_platform: bool(required=False)
+# Push images to registry. Default: False
+push: bool(required=False)
+# Workflow build stages
+stages: list(include('stage'), min=1)
+---
+stage:
+    # Name of this stage
+    name: str()
+    # Path to docker build context, Default: "."
+    context: str(required=False)
+    # Paths to dockerfiles and/or parent directories with dockerfiles
+    paths: list(str(), min=1)
