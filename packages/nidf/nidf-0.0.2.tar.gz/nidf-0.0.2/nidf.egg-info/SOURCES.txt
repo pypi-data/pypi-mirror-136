@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+nidf/__init__.py
+nidf/__main__.py
+nidf/nidf.py
+nidf.egg-info/PKG-INFO
+nidf.egg-info/SOURCES.txt
+nidf.egg-info/dependency_links.txt
+nidf.egg-info/top_level.txt
