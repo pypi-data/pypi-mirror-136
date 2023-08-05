@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: blockmatrix
+Version: 0.1.0
+Summary: 
+Author: Jan Sosulski
+Author-email: mail@jan-sosulski.de
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: matplotlib (>=3.5.1,<4.0.0)
+Requires-Dist: mne (>=0.24.1,<0.25.0)
+Requires-Dist: seaborn (>=0.11.2,<0.12.0)
+Requires-Dist: toeplitz (>=0.3.2,<0.4.0)
+Requires-Dist: vg (>=2.0.0,<3.0.0)
