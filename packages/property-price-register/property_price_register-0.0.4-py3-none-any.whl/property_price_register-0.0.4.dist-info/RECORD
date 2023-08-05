@@ -1,0 +1,13 @@
+property_price_register/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+property_price_register/utils.py,sha256=5-AzEDgEC_EeuQNrfzI6WTEZtv4OI4Pzkl_9hTFW8lc,38
+property_price_register/bin/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+property_price_register/bin/load.py,sha256=Qy2exykwEBK2nV3Vns1_dYYPoYRrmpGZ71QwMqVI9YM,291
+property_price_register/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+property_price_register/models/sale.py,sha256=7DEQMEeJovADQSeGq_cTyYgWBD--CcM0bXH4AtKDuDI,7748
+property_price_register/resources/PPR.csv.tar.gz,sha256=RGU7nqGfAiXR3TU9Mykn8ZSo032J9LFr1NFw4rIFd8Y,64248924
+property_price_register-0.0.4.dist-info/LICENSE,sha256=awOCsWJ58m_2kBQwBUGWejVqZm6wuRtCL2hi9rfa0X4,1211
+property_price_register-0.0.4.dist-info/METADATA,sha256=JNXCGSzuV2kC1pQCVYiUqJpGwX04SXAx7OZW6mhcaGY,338
+property_price_register-0.0.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+property_price_register-0.0.4.dist-info/entry_points.txt,sha256=m3_5mtg7m8bBmq63_ieb7846xd5O51adbhCDrjSlxr8,88
+property_price_register-0.0.4.dist-info/top_level.txt,sha256=5PgTIL8FldXH8JulHOF9Y44wutVv8UFOZ8m_IO8nV0w,24
+property_price_register-0.0.4.dist-info/RECORD,,
