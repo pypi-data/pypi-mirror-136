@@ -1,0 +1,15 @@
+vsgan/__init__.py,sha256=jmyFQflfIF0YLSCWxtKCPZceI-6PQPrqc5S8zYwWudg,121
+vsgan/archs/EGVSR.py,sha256=VivVds9FaTVSzzB34gCBYnzwzfZnssAAvsqdZiYyySs,12062
+vsgan/archs/ESRGAN.py,sha256=wAiUfKub-tsGSsEcVaz473wElJRRZW55zM82ItnBJkY,15184
+vsgan/archs/__init__.py,sha256=We99T0q6IDQ6UKw_Abbne8gF4QBwmokVMqetKc_kZd8,210
+vsgan/archs/blocks.py,sha256=aUaNIBWtpANDVP_vBDRD4WP78zYnQ7cxLCn8cX3iJBc,5990
+vsgan/constants.py,sha256=8-sMNxJEQ4AyMOoweDAr0wI9ImTEoJjQDoMwqNPfEAE,1379
+vsgan/networks/__init__.py,sha256=4UEvpAstUPLE3y-iPbPTzRdDWrWQ28jeLDf9bQOUr08,107
+vsgan/networks/basenetwork.py,sha256=dYwPlA_L105QfCkojB8iiN5exfaRiLH9gBSrAhJb0X8,2514
+vsgan/networks/egvsr.py,sha256=KWIRGLzK4VUR9_4mLHIhpxsgu-mj_M2mUaJEEItl59Q,3704
+vsgan/networks/esrgan.py,sha256=lNdeaHJfCNZ6yH2IllPc-qazgSG740W6ygvWtgmaCTw,3007
+vsgan/utilities.py,sha256=_Sau65s0Wc2RA4IdTVoQmLMXOTYWHPJAavBkyGqakiQ,6749
+vsgan-1.6.4.dist-info/LICENSE,sha256=RHlk3F8fBvH0IN4E5aEBbbe-xEeealc0Gew15SKQUsM,1069
+vsgan-1.6.4.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+vsgan-1.6.4.dist-info/METADATA,sha256=jkzZF8-NK7iWF23hCd24q8IT9zffCt_Jzogc1r3DlUA,2583
+vsgan-1.6.4.dist-info/RECORD,,
