@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: chinesestockapi_py3
+Version: 2.0.0
+Summary: Python API to get Chinese stock price for Python3
+Home-page: UNKNOWN
+Author: James
+Author-email: roystd@qq.com
+License: Apache Software License
+Platform: any
+
+Library to get Chinese stock price
+
+Supported Engines:
+ - Sina Finance API
+
+Usage:
+
+ from cstock.request import Requests
+
+ from cstock.hexun_engine import HexunEngine
+
+ engine = HexunEngine()
+
+ requester = Requester(engine)
+
+ stock = requester.request('000626')
+
+ print stock.as_dict()
+
+Github Site: https://github.com/seizetheday/chinese-stock-api.
+
+
