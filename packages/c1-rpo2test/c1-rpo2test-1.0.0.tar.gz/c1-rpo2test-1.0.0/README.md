@@ -1,0 +1,9 @@
+# Information
+
+This is only a testing package.
+Please do not use
+
+Some facts
+
+- RP-1: (alternatively, Rocket Propellant-1 or Refined Petroleum-1) is a highly refined form of kerosene outwardly similar to jet fuel, used as rocket fuel  ([Source: Wikipedia](https://en.wikipedia.org/wiki/RP-1))
+- O2: Dioxygen provides the energy released in combustion and aerobic cellular respiration, and many major classes of organic molecules in living organisms contain oxygen atoms, such as proteins, nucleic acids, carbohydrates, and fats, as do the major constituent inorganic compounds of animal shells, teeth, and bone. ([Source: Wikipedia](https://en.wikipedia.org/wiki/Oxygen))

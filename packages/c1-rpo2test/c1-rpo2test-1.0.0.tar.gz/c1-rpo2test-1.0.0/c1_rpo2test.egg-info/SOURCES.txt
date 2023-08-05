@@ -1,0 +1,10 @@
+README.md
+setup.py
+c1-rpo2test/__init__.py
+c1-rpo2test/__main__.py
+c1-rpo2test/greeting.py
+c1_rpo2test.egg-info/PKG-INFO
+c1_rpo2test.egg-info/SOURCES.txt
+c1_rpo2test.egg-info/dependency_links.txt
+c1_rpo2test.egg-info/requires.txt
+c1_rpo2test.egg-info/top_level.txt
