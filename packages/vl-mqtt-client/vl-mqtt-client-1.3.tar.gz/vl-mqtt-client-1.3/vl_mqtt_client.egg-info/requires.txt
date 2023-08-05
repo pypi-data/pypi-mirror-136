@@ -1,0 +1,4 @@
+paho-mqtt
+jsonschema
+requests
+mmh3
