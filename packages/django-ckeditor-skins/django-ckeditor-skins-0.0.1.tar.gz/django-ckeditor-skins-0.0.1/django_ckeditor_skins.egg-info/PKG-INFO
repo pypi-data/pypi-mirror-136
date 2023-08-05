@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: django-ckeditor-skins
+Version: 0.0.1
+Summary: Additinal Skins for the Django CKeditor
+Home-page: https://github.com/ppfeufer/django-ckeditor-skins
+Author: Peter Pfeufer
+Author-email: development@ppfeufer.de
+License: GPLv3
+Project-URL: Issue / Bug Reports, https://github.com/ppfeufer/django-ckeditor-skins/issues
+Project-URL: Changelog, https://github.com/ppfeufer/django-ckeditor-skins/blob/master/CHANGELOG.md
+Project-URL: Release Notes, https://github.com/ppfeufer/django-ckeditor-skins/releases/tag/v0.0.1
+Project-URL: Git Repository, https://github.com/ppfeufer/django-ckeditor-skins
+Description: # Django CKeditor Skins
+        
+        Providing skins to use with [django-ckeditor](https://github.com/django-ckeditor/django-ckeditor)
+        
+        ### Install
+        
+        ```shell
+        pip install django-ckeditor-skins
+        ```
+        
+        - Add `ckeditor_skins` to your `INSTALLED_APPS`
+        - Run static collection
+        
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 3.2
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Requires-Python: ~=3.7
+Description-Content-Type: text/markdown
