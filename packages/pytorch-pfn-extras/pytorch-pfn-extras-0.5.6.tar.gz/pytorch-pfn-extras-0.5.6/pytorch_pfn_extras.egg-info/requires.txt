@@ -1,0 +1,9 @@
+numpy
+torch
+typing-extensions>=3.10
+
+[onnx]
+onnx
+
+[test]
+pytest
