@@ -1,0 +1,10 @@
+jsp_shaving1996/__init__.py,sha256=6kOs8ZXsFyk-n0Ijxf6QLN_4G4OiMm2uwftKKNzI5ho,113
+jsp_shaving1996/main.py,sha256=5tWHJZEvW-lo8cRF0LsHAr6eEu7lvA0ITCA7dd9jkB8,3739
+jsp_shaving1996/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jsp_shaving1996/utils/backward.py,sha256=zHYyymaJ__-dehhez-MZir4rLAxFrnavosVAwZsrsZ4,491
+jsp_shaving1996/utils/feasibility.py,sha256=vn9824tHO5oFLmcw6fFpAXe8C2IOgfTjLjLI63I_Xcg,276
+jsp_shaving1996/utils/forward.py,sha256=x34bPqvrFUbUrYkT2fALpGw8v-hQrf2emGjCdM1BiYM,151
+jsp_shaving1996/utils/jsp.py,sha256=e6ZYHX5ZdFKYxjtQF9kKLYrmSyTwzvDst-_fHhfROjg,293
+jsp_shaving1996-0.1.4.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+jsp_shaving1996-0.1.4.dist-info/METADATA,sha256=zTFNT38JUkNi1gDFrt36bLULdkuXaDO80EOaakSlFZM,637
+jsp_shaving1996-0.1.4.dist-info/RECORD,,
