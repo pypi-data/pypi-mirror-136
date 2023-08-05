@@ -1,0 +1,1 @@
+versionFromGradle='3.36.0',projectVersion='3.36.0.2',branch='rel-zorn',lastCommitHash='34c312b97246d1e8cdc772cdb392ed22b2c92f2a',gitDescribe='jenkins-3.36.0.1-70-g34c312b',compiledOn='2022-01-25 20:14:30',compiledBy='jenkins'
