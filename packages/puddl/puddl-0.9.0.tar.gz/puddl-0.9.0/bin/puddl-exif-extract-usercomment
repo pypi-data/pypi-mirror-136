@@ -1,0 +1,8 @@
+#!/bin/bash
+set -euo pipefail
+
+f=$1
+
+c=$(exif --tag UserComment --machine-readable $f)
+[[ "$c" == "" ]] && exit
+echo "$c"

@@ -1,0 +1,8 @@
+#!/bin/bash
+set -euo pipefail
+
+input_file=$1
+factor=$2
+
+echo "this should create a ${factor}x timelapse from ${input_file}" >&2
+exit 1

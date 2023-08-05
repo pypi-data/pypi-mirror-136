@@ -1,0 +1,16 @@
+#!/bin/bash
+set -euo pipefail
+
+LOCAL_AUTHORIZED_KEYS=/tmp/rsync_authorized_keys
+LOCAL_VOL=/tmp/stuff
+
+exec docker run -it \
+  --init \
+  --name rsync \
+  --rm \
+  -e RSYNC_USER="$(id -u):$(id -g)" \
+  -p 11101:22 \
+  -v $LOCAL_VOL:/home/rsync \
+  -v $LOCAL_AUTHORIZED_KEYS:/tmp/authorized_keys:ro \
+  puddl-ingress-rsync:dev \
+  $@

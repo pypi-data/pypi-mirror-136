@@ -1,0 +1,8 @@
+#!/bin/bash
+set -euo pipefail
+
+# adb shell content query --uri content://contacts/phones/  --projection display_name:number:notes  # google contacts?
+#adb shell content query --uri content://com.android.contacts/data --projection display_name:data1:data4:contact_id
+
+# /data/data/com.android.providers.contacts/databases/contacts2.db
+adb -d shell "run-as com.android.providers.contacts cat /data/data/com.android.providers.contacts/databases/contacts2.db" > /tmp/x.sqlite

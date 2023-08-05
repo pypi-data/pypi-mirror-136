@@ -1,0 +1,10 @@
+#!/bin/bash
+set -euo pipefail
+
+changed_files=$(git diff --cached --diff-filter d --name-only -- "*.py")
+
+test -z "$changed_files" && exit 0
+
+black -q $changed_files
+flake8 $changed_files
+git add $changed_files

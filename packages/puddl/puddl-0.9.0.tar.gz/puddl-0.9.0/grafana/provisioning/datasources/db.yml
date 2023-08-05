@@ -1,0 +1,13 @@
+apiVersion: 1
+
+# http://docs.grafana.org/features/datasources/postgres/#configure-the-datasource-with-provisioning
+datasources:
+  - name: log
+    type: postgres
+    url: db:5432
+    database: puddl
+    user: log
+    secureJsonData:
+      password: "log-Eexoozohgh4ni5deimoh"
+    jsonData:
+      sslmode: "disable"

@@ -1,0 +1,63 @@
+version: '3.7'
+
+networks:
+  ingress:
+    external: true
+
+services:
+  db:
+    image: postgres:12
+    command: postgres -c 'config_file=/etc/postgresql/postgresql.conf'
+    environment:
+      # https://hub.docker.com/_/postgres/
+      - POSTGRES_PASSWORD
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./env/dev/docker-entrypoint-initdb.d:/docker-entrypoint-initdb.d
+      - ./env/dev/etc_postgresql/:/etc/postgresql/
+    ports:
+      - 127.0.0.1:${PGPORT}:5432
+    restart: unless-stopped
+  grafana:
+    build: grafana/
+    networks:
+      default:
+      ingress:
+        aliases:
+          - grafana.puddl.x
+    environment:
+      - GF_SECURITY_ADMIN_PASSWORD=admin
+      # http://docs.grafana.org/auth/overview/#anonymous-authentication
+      - GF_AUTH_ANONYMOUS_ENABLED=true
+      - GF_AUTH_BASIC_ENABLED=false
+      - GF_ALLOWED_ORIGINS=grafana.puddl.x
+    volumes:
+      - grafana_data:/var/lib/grafana
+      - ./grafana/provisioning/:/etc/grafana/provisioning/
+      - ./grafana/dashboards:/var/lib/grafana/dashboards
+    restart: unless-stopped
+  pgadmin:
+    image: dpage/pgadmin4:6.3
+    networks:
+      default:
+      ingress:
+        aliases:
+          - pgadmin.puddl.x
+    labels:
+      ingress.port: 80
+    environment:
+      # https://www.pgadmin.org/docs/pgadmin4/latest/container_deployment.html
+      - PGADMIN_LISTEN_ADDRESS=0.0.0.0
+      # pgadmin complains "'admin@puddl.x' does not appear to be a valid email address" *sigh
+      - PGADMIN_DEFAULT_EMAIL=admin@example.com
+      - PGADMIN_DEFAULT_PASSWORD=admin
+      - PGADMIN_DISABLE_POSTFIX=true
+    volumes: []
+    restart: unless-stopped
+
+volumes:
+  postgres_data:
+    labels:
+      - puddl=0.9.0
+      - puddl.dev=true
+  grafana_data:

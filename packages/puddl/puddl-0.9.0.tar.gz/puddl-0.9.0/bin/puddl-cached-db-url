@@ -1,0 +1,14 @@
+#!/bin/bash
+set -euo pipefail
+
+app=$1
+
+d=~/.config/puddl/$app
+f=$d/db-url
+
+if [[ -f $f ]]; then
+  cat $f
+else
+  mkdir -p $d
+  puddl-db url $app | tee $f
+fi

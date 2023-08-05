@@ -1,0 +1,4 @@
+#!/bin/bash
+set -euo pipefail
+
+ls ${1:-.} | fzf --tiebreak index --tac --multi

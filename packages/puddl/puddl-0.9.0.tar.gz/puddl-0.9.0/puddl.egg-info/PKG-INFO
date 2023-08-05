@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: puddl
+Version: 0.9.0
+Summary: UNKNOWN
+Home-page: https://puddl.org
+Author: Felix Hummel
+Author-email: puddl-dev@felixhummel.de
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Provides-Extra: full
+Provides-Extra: dev

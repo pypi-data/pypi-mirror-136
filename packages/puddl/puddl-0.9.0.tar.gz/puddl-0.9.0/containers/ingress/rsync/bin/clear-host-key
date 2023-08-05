@@ -1,0 +1,4 @@
+#!/bin/bash
+set -euo pipefail
+
+docker volume rm ingress-rsync-save
