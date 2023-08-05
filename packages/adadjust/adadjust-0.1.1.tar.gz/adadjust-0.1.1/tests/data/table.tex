@@ -1,0 +1,22 @@
+\documentclass{article}
+\usepackage[margin=0.5cm,paperwidth=12.656cm,paperheight=4.4cm]{geometry}
+\usepackage{caption}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{booktabs}
+\usepackage[utf8]{inputenc}
+\begin{document}
+\nonstopmode
+\setcounter{table}{0}
+\begin{table}
+\centering
+\caption{Linear and Square fit}
+\begin{tabular}{|l|ccc|}
+\toprule
+{} & param 0 & param 1 &  $r^2$ \\
+\midrule
+$n \times (p[0] \times x + p[1]$) &    0.15 &   -5.02 &  0.927 \\
+$p[0] \times x^2 + p[1]$          &    0.15 &    -5.0 &  0.988 \\
+\bottomrule
+\end{tabular}
+\end{table}
+\end{document}
