@@ -1,0 +1,15 @@
+torrentfileQt/__init__.py,sha256=lFYkCdBvimqlPOmSfIaemdGL_QbA3xIVW2mXH2YCfag,1061
+torrentfileQt/checkTab.py,sha256=E-Ju-DVgeHgWuDfEaA389MvB8IZfLQw6vSxx2RlmLKo,18004
+torrentfileQt/createTab.py,sha256=XUaUwcs0zKhK9cTDKmdSLVFzeUrHn-Vi-Tk5H9LdWaY,16439
+torrentfileQt/editorTab.py,sha256=4dzSQ_N47DvdyZ1__FxtGeEWU-KfnoBlpSEU21TOPWU,6610
+torrentfileQt/infoTab.py,sha256=A1uSg5XLX0JGqfWjybXwRsZU0U-UirN12Mncr0Tg_Mg,16369
+torrentfileQt/menu.py,sha256=iJ97elK1JEP2WVOOInLL1qp3r6cJi4ESin2c640UPBI,7801
+torrentfileQt/qss.py,sha256=6MAVykp_nBg2N7paJ2iWhRFrPxqZ-9j1uiNRneF41GI,14631
+torrentfileQt/version.py,sha256=JLy_m6jH33E1ZE0ACC99CL1JlnFcflkKtl12qWjN1SA,805
+torrentfileQt/window.py,sha256=0C9EMeBSfFJR97M_F98_19nCYQByCuFs_K2uHZN_gIk,4568
+torrentfileqt-0.2.8.dist-info/LICENSE,sha256=a9VSNWTR-aLmXRNlmauL7WVpB993CbrDbwcN-T-iCEM,11539
+torrentfileqt-0.2.8.dist-info/METADATA,sha256=OkR4lAmM-zGTX7zWLU38ygjXFiS3Ea3LpU4_alWpbi8,2447
+torrentfileqt-0.2.8.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+torrentfileqt-0.2.8.dist-info/entry_points.txt,sha256=GmLh9v4pciBnD3MhY9V0moN8T7q2Pyc9u7Wx-2VSPGE,62
+torrentfileqt-0.2.8.dist-info/top_level.txt,sha256=nSUjbWj0nx6DghB8Zr9FbzCcc4utS-DWpgJcwNmT2pk,14
+torrentfileqt-0.2.8.dist-info/RECORD,,
