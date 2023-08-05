@@ -1,0 +1,3 @@
+[console_scripts]
+crowdsec-fastly-bouncer = fastly_bouncer.main:main
+
