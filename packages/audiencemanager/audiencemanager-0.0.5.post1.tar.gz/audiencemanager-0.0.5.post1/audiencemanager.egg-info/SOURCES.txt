@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+audiencemanager/__init__.py
+audiencemanager/__version__.py
+audiencemanager/audiencemanager.py
+audiencemanager/config.py
+audiencemanager/connector.py
+audiencemanager.egg-info/PKG-INFO
+audiencemanager.egg-info/SOURCES.txt
+audiencemanager.egg-info/dependency_links.txt
+audiencemanager.egg-info/requires.txt
+audiencemanager.egg-info/top_level.txt
