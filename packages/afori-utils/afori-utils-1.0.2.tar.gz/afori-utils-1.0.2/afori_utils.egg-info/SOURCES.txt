@@ -1,0 +1,14 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+afori_utils/__init__.py
+afori_utils/debug_utils.py
+afori_utils/pyplot_utils.py
+afori_utils/sync_utils.py
+afori_utils.egg-info/PKG-INFO
+afori_utils.egg-info/SOURCES.txt
+afori_utils.egg-info/dependency_links.txt
+afori_utils.egg-info/requires.txt
+afori_utils.egg-info/top_level.txt
