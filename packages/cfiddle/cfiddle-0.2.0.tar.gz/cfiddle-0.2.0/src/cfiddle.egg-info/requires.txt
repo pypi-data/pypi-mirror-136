@@ -1,0 +1,16 @@
+pytest-cpp
+pytest-xdist
+click
+pytest
+r2pipe
+pydot
+networkx
+pandas
+IPython
+nbmake
+matplotlib
+tqdm
+ipywidgets
+wheel
+sphinx
+twine
