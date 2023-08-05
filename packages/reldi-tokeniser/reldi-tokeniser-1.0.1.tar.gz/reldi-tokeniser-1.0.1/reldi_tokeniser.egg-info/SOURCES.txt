@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+reldi_tokeniser/__init__.py
+reldi_tokeniser/bg.abbrev
+reldi_tokeniser/hr.abbrev
+reldi_tokeniser/mk.abbrev
+reldi_tokeniser/punct
+reldi_tokeniser/sl.abbrev
+reldi_tokeniser/sr.abbrev
+reldi_tokeniser/tokeniser.py
+reldi_tokeniser.egg-info/PKG-INFO
+reldi_tokeniser.egg-info/SOURCES.txt
+reldi_tokeniser.egg-info/dependency_links.txt
+reldi_tokeniser.egg-info/top_level.txt
