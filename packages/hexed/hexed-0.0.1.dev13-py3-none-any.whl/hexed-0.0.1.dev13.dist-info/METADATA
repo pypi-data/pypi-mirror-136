@@ -1,0 +1,95 @@
+Metadata-Version: 2.1
+Name: hexed
+Version: 0.0.1.dev13
+Summary: A playground package for exploring hex mapping as described at: https://www.redblobgames.com/grids/hexagons/
+Home-page: https://github.com/thumdugger/python-hexed
+Author: Scott Barnett
+Author-email: thumdugger@gmail.com
+License: BSD-2-Clause
+Project-URL: Documentation, https://python-hexed.readthedocs.io/
+Project-URL: Changelog, https://python-hexed.readthedocs.io/en/latest/changelog.html
+Project-URL: Issue Tracker, https://github.com/thumdugger/python-hexed/issues
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: Unix
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Utilities
+Requires-Python: >=3.8
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+License-File: AUTHORS.rst
+Requires-Dist: click
+
+========
+Overview
+========
+
+
+
+A playground package for exploring hex mapping as described at: https://www.redblobgames.com/grids/hexagons/
+
+* Free software: BSD 2-Clause License
+
+Installation
+============
+
+::
+
+    pip install hexed
+
+You can also install the in-development version with::
+
+    pip install https://github.com/thumdugger/python-hexed/archive/main.zip
+
+
+Documentation
+=============
+
+
+https://python-hexed.readthedocs.io/
+
+
+Development
+===========
+
+To run all the tests run::
+
+    tox
+
+Note, to combine the coverage data from all the tox environments run:
+
+.. list-table::
+    :widths: 10 90
+    :stub-columns: 1
+
+    - - Windows
+      - ::
+
+            set PYTEST_ADDOPTS=--cov-append
+            tox
+
+    - - Other
+      - ::
+
+            PYTEST_ADDOPTS=--cov-append tox
+
+
+Changelog
+=========
+
+0.0.0 (2022-01-22)
+------------------
+
+* First release on PyPI.
+
+
