@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: linkml-datalog
+Version: 0.1.5
+Summary: Datalog inference over LinkML schemas and data
+Home-page: https://github.com/linkml/linkml-datalog
+Keywords: linkml,reasoing,datalog
+Author: cmungall
+Author-email: cjm@berkeleybop.org
+Requires-Python: >=3.9,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Healthcare Industry
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: CC0 1.0 Universal (CC0 1.0) Public Domain Dedication
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: linkml (>=1.1.13,<2.0.0)
+Project-URL: Documentation, https://github.com/linkml/linkml-datalog
+Project-URL: Repository, https://github.com/linkml/linkml-datalog
+Description-Content-Type: text/markdown
+
+# linkml-datalog
+
+Validation and inference over LinkML instance data using souffle
+
+Documentation:
+
+ * [linkml.io/linkml-datalog/](https://linkml.io/linkml-datalog/)
+
