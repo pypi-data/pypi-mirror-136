@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/filester/__init__.py
+src/filester.egg-info/PKG-INFO
+src/filester.egg-info/SOURCES.txt
+src/filester.egg-info/dependency_links.txt
+src/filester.egg-info/top_level.txt
