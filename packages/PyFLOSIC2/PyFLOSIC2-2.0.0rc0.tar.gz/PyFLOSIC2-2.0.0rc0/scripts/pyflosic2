@@ -1,0 +1,54 @@
+#!/usr/bin/env python3
+
+# Command line tool usage: 
+# e.g.,
+#       pyflosic2 --gui H2O.xyz
+#       pyflosic2 --wf unrestricted --xyz H2O.xyz
+#       pyflosic2 --gui FB_GUESS_COM.xyz
+
+if __name__ == '__main__':
+    from pyflosic2 import parameters
+    from pyflosic2.io.flosic_io import atoms_from_xyz
+    from pyflosic2 import Atoms,WORKFLOW,RUN
+    from pyflosic2.gui.view import GUI
+    import argparse
+
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--gui", help="GUI")
+    parser.add_argument("--wf",  help="Workflow, e.g., unrestricted")
+    parser.add_argument("--run",  help="Run, e.g., unrestricted")
+    parser.add_argument("--xyz", type=str,help="xyz file")
+    parser.add_argument("--tier", type=str,help="Tier name",default='tier1') 
+    parser.add_argument("--spin", type=int,help="spin",default=0)
+    parser.add_argument("--charge",type=int, help="charge",default=0)
+    parser.add_argument("--flevel", type=int,help="flevel",default=0)
+
+    args = parser.parse_args()
+    # Running: GUI 
+    if args.gui:
+        p = parameters(log_name='CMD.log')
+        p.log.write(args.gui)
+        GUI(args.gui,p=p)
+    # Running: workflow 
+    if args.wf: 
+        atoms = atoms_from_xyz(args.xyz,spin=args.spin,charge=args.charge)
+        wf = WORKFLOW(atoms,mode=args.wf,tier_name=args.tier,log_name='CMD.log')
+        p = wf.p 
+        # FLO-SIC approximations 
+        p.log.write('Workflow (wf): {}'.format(args.wf))
+        p.log.write('Tier (tier_name): {}'.format(args.tier))
+        wf.kernel(flevel=args.flevel)
+        p.log.write('Etot(flevel={}) = {} [Ha]'.format(args.flevel,wf.etot))
+        GUI(wf.p.atoms,p=p)
+    # Running: run
+    if args.run:
+        atoms = atoms_from_xyz(args.xyz,spin=args.spin,charge=args.charge)
+        wf = RUN(atoms,mode=args.run,tier_name=args.tier,log_name='CMD.log')
+        p = wf.p
+        # FLO-SIC approximations
+        p.log.write('Workflow (wf): {}'.format(args.wf))
+        p.log.write('Tier (tier_name): {}'.format(args.tier))
+        wf.kernel(flevel=args.flevel)
+        p.log.write('Etot(flevel={}) = {} [Ha]'.format(args.flevel,wf.etot))
+        GUI(wf.p.atoms,p=p)
+

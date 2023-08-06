@@ -1,0 +1,119 @@
+Metadata-Version: 2.1
+Name: PyFLOSIC2
+Version: 2.0.0rc0
+Summary: Python-based Fermi-Löwdin orbital self-interaction correction (FLO-SIC)
+Home-page: https://gitlab.com/opensic/pyflosic2
+Author: Sebastian Schwalbe
+Author-email: theonov13@gmail.com
+License: APACHE2.0
+Description: ![GitLab Logo](/doc/images/PyFLOSIC_two.png)
+        
+        # PyFLOSIC2 
+        **Python-based Fermi-Löwdin orbital self-interaction correction (FLO-SIC)**
+        
+        [![license](https://img.shields.io/badge/license-APACHE2-green)](https://www.apache.org/licenses/LICENSE-2.0)
+        [![language](https://img.shields.io/badge/language-Python3-blue)](https://www.python.org/)
+        [![version](https://img.shields.io/badge/version-2.0.0-lightgrey)]()
+        [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5910833.svg)](https://doi.org/10.5281/zenodo.5910833)
+        
+        
+        
+        [![researchgate](https://img.shields.io/static/v1?label=researchgate&message=OpenSIC&style=social&logo=researchgate)](https://www.researchgate.net/project/Fermi-Loewdin-orbital-self-interaction-correction-developed-in-Freiberg-FLO-SICFG)
+        [![youtube](https://img.shields.io/static/v1?label=YouTube&message=OpenSIC&logo=youtube&style=social)](https://www.youtube.com/watch?v=-1bxmCwn7Sw)
+        [![twitter](https://img.shields.io/static/v1?label=twitter&message=OpenSIC&style=social&logo=twitter)](https://twitter.com/OpenSIC_project)
+        
+        # Installation
+        
+        ```bash 
+        git clone https://gitlab.com/opensic/pyflosic2.git
+        cd pyflosic2
+        pip3 install -e .
+        ```
+        
+        Test the installation. 
+        ```python 
+        from pyflosic2.sic import flo
+        ```
+        
+        # Example 
+        
+        Build a python file, e.g., run.py, 
+        with the following content 
+        
+        ```python
+        from pyflosic2 import Atoms,WORKFLOW,GUI
+        # Nuclei
+        sym = ['C']+4*['H']
+        p0 = [+0.00000000,+0.00000000,+0.00000000]
+        p1 = [+0.62912000,+0.62912000,+0.62912000]
+        p2 = [-0.62912000,-0.62912000,+0.62912000]
+        p3 = [+0.62912000,-0.62912000,-0.62912000]
+        p4 = [-0.62912000,+0.62912000,-0.62912000]
+        pos = [p0,p1,p2,p3,p4]
+        atoms = Atoms(sym,pos,spin=0,charge=0)
+        # Workflow
+        wf = WORKFLOW(atoms,mode='unrestricted',log_name='UWF.log')
+        wf.kernel(flevel=0)
+        print(wf.p.atoms,wf.etot)
+        ```
+        and run in your environment 
+        
+        ```bash 
+        python3 run.py 
+        ```
+        
+        # Scripts 
+        ```bash 
+        pyflosic2 --gui [name].xyz
+        pyflosic2 --wf unrestricted --xyz [nuclei_only].xyz
+        pyflosic2 --run unrestricted --xyz [nuclei_and_fods].xyz 
+        ```
+        
+        ## Note!
+        If you discover any problem while working with the code,
+        please do not hesitate to contact one of the developers.
+        
+        ## Citation
+        
+        PyFLOSIC2 builds ontop of the PyFLOSIC code.     
+        Thus if you currently use the PyFLOSIC2 code   
+        for a scientific article or contribution,   
+        please cite the following article.   
+        
+        * **PyFLOSIC: Python-based Fermi–Löwdin orbital self-interaction correction**     
+          S. Sebastian, L. Fiedler, J. Kraus, J. Kortus, K. Trepte, and S. Lehtola     
+          arXiv e-prints, Subject: Computational Physics (physics.comp-ph), 2020, [arXiv:1905.02631](https://arxiv.org/abs/1905.02631)     
+          [J. Chem. Phys. 153, 084104, 2020](https://doi.org/10.1063/5.0012519)
+        
+        * **Why the energy is sometimes not enough - A dive into self-interaction corrected density functional theory**     
+           S. Liebing, K. Trepte, and S. Schwalbe 
+           
+        # Documentation
+        Please see the PyFLOSIC2 [documentation](https://opensic.gitlab.io/pyflosic2/) for a detailed introduction.
+        
+        # Functionality 
+        
+        | Feature  | Status |
+        | :-----:  | :----: |  
+        | RFLO    | Production (code, examples) | 
+        | UFLO    | Production (code, examples) |
+        | RFLOSIC | Production (code, examples) | 
+        | UFLOSIC | Production (code, examples) | 
+        | RWORKFLOW | Production (code, examples) | 
+        | UWORKFLOW | Production (code, examples) |
+        | RRUN | Production (code, examples) |
+        | URUN | Production (code, examples) |
+        | UENSEMBLE | Development: Do not use! |
+        | guess/pycom |  Production (code, examples) |
+        | guess/pyfodmc |  Production (code, examples)  |
+        | guess/perception | Development: Do not use! |
+        | ff/uff | Development: Do not use! | 
+        
+        
+        
+        
+        
+        
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
