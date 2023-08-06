@@ -1,0 +1,15 @@
+omni_cv_rules/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+omni_cv_rules/coconut/__coconut__.py,sha256=XDrMDEhOUMqLYV1iDqulRufHANCqbdlqToUBGoYxtlA,46245
+omni_cv_rules/coconut/__init__.py,sha256=eBu2Xxm9fv8o4G_V8IJUfwzKx7Om55BZDRgXGc5Qu6M,2638
+omni_cv_rules/coconut/convert.py,sha256=CpGJKtRdKJdOnRfWCIiIumKxcFO91MYdmZa_kCpqZn4,195025
+omni_cv_rules/coconut/omni_converter.py,sha256=_TlGEOt6i4Y63Haoj-wUNY6xd6mJ7RkcfDduDTk8qFI,142094
+omni_cv_rules/coconut/recursive.py,sha256=DIeF2pHwXz5gI_HojTMeb3GDYLOoxvksPpeUGi3AEjA,4576
+omni_cv_rules/coconut/to_bytes.py,sha256=UwnW_d-GgR_tfQ1D95Oy6uX4-wj3mTAQccGq8zDVrNY,4935
+omni_cv_rules/coconut/visualization.py,sha256=kHLj7KlMP120Iow0vnAw5pnsnhKF5qnHTgF_FY0sObY,21561
+omni_cv_rules/coconut/widgets.py,sha256=DaZalp3YQGpICmKfsheh8wDbuTFWlf-FJmxRpgtOSOc,4139
+omni_cv_rules/custom_rules.py,sha256=_qA38lJxuFGjcrtg6xtrB_ti5OsT_piUWC0bWneVOqk,1173
+omni_cv_rules/nrm_quiver.py,sha256=38zmBpIQdgnbEeDjooQp22DPrddCEBVcrqziZjlKAxw,2947
+omni_cv_rules/rulebook.py,sha256=eXwzNjW25b94Tzno6-mGBeQc0RxKFehxyMC5gyhPP6Q,3522
+omni_cv_rules-0.1.3.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+omni_cv_rules-0.1.3.dist-info/METADATA,sha256=-N6g3XwpweY075xbXqne6TGn20vM979xTXYXMyr-q0Y,643
+omni_cv_rules-0.1.3.dist-info/RECORD,,
