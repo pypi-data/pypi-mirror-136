@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: track-changes
+Version: 0.8
+Summary: Project Short Description
+Home-page: http://zhipengx.com/
+Author: xzpjerry
+Author-email: xzpjerry@gmail.com
+License: UNKNOWN
+Description: # Generate History/Changelog
+        
+        It should work on MacOS, Linux and Windows with git >= 2.0 installed.
+        
+        ## Usage
+        ```
+        pip install track_changes
+        cd <project_root>
+        track_changes > HISTORY.md
+        ```
+        
+        # 🎁 Release notes (0.7)
+        
+        ## Changes
+        ```
+        fix: fixed tempalted not being included
+        ref: fixed pypi readme markdown
+        ref: updated history md
+        fix: format
+        fix: github somehow ignored the newline
+        ref: updated changes log
+        fix: fixed errors on macos
+        ref: renamed
+        ref: updated doc; changelog
+        feat: usable
+        fix: fixed entrypoint; fixed version style
+        ref: rm redundant code
+        ```
+        
+        ## Metadata
+        ```
+        This version -------- 0.7
+        Previous version ---- 0.1
+        Total commits ------- 12
+        ```
+        
+Keywords: track_changes
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Environment :: Console
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown

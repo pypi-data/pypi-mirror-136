@@ -1,0 +1,3 @@
+[console_scripts]
+track_changes = track_changes:entrypoint
+
