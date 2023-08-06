@@ -1,0 +1,69 @@
+Metadata-Version: 2.1
+Name: wgeasywall
+Version: 0.1.1
+Summary: A CLI tool for managing WireGuard networks and IPTables by using GraphML
+Author: Armin Aminian
+Author-email: rmin.aminian@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: PyYAML (>=5.4.1,<6.0.0)
+Requires-Dist: coolname (>=1.1.0,<2.0.0)
+Requires-Dist: deepdiff (>=5.5.0,<6.0.0)
+Requires-Dist: donna25519 (>=0.1.1,<0.2.0)
+Requires-Dist: ipaddr (>=2.2.0,<3.0.0)
+Requires-Dist: netaddr (>=0.8.0,<0.9.0)
+Requires-Dist: networkx (>=2.6.3,<3.0.0)
+Requires-Dist: prettyprint (>=0.1.5,<0.2.0)
+Requires-Dist: pydantic (>=1.8.2,<2.0.0)
+Requires-Dist: pymongo (>=3.12.0,<4.0.0)
+Requires-Dist: python-hosts (>=1.0.1,<2.0.0)
+Requires-Dist: pyyed (>=1.4.3,<2.0.0)
+Requires-Dist: tabulate (>=0.8.9,<0.9.0)
+Requires-Dist: typer (>=0.3.2,<0.4.0)
+Description-Content-Type: text/markdown
+
+
+## What is WGEasywall
+[WGEasywall](https://github.com/araminian/wgeasywall) is a CLI to manage Wireguard networks and IPTables rules using GraphML
+
+
+## How to Install and Configure WGEasywall
+
+WGEasywall needs python version 3.8 or above. It can be installed using following command:
+
+```bash
+pip install wgeasywall
+```
+
+WGEasywall needs MongoDB database to start working. We should tell it how to access the database using following command:
+
+```bash
+wgeasywall config generate database --mongodb-address [MongoDB Address] --mongodb-user [USER] --mongodb-password [PASSWORD]
+```
+
+> **_NOTE:_**  WGEasywall access database using default port 27017 and it can not be changed
+
+
+WGEasywall IPTables rule generator needs `Rule as a Code` `Actions and Function` manifest file. These manifest files should be imported to the WGEasywall. These manifest files are located in `RaaCManifest` folder.
+We can import these files using following commands:
+
+```bash
+# import general function
+wgeasywall RaaC import-function --function-file General.yaml
+
+# import DROP action
+wgeasywall RaaC import-action --action-file DROP.yaml
+
+# import ACCEPT action
+wgeasywall RaaC import-action --action-file ACCEPT.yaml
+
+# import LOG action
+wgeasywall RaaC import-action --action-file LOG.yaml
+```
+
+> **_NOTE:_**  These manifest can be changed but they should be compatible with WGEasywall 
+
+Now wgeasywall is ready for managing WireGuard networks and IPTables rules.
+

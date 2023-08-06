@@ -1,0 +1,40 @@
+WGNet:
+  Name: WGNet1
+  Clients:
+    - Name: Client1 
+      Hostname: Client1.wg1.cloudarmin.me
+      Group: "Bonn::Dep1" # a Dep1 Object which its parent is Bonn
+    # - Name: Client2
+    #   Hostname: Client2.wg1.cloudarmin.me
+    #   UnderControl: 'False'
+    #   Group: "Bonn::Dep1"   # Group and Sub-Group Name must be unique !!! we can't have group Bonn::Dep1 and Berlin::Dep1
+    - Name: Client3
+      Hostname: Client3.wg1.cloudarmin.me
+      Group: "Bonn::Dep2"
+    - Name: Client4
+      Hostname: Client4.wg1.cloudarmin.me
+      Group: "Bonn"
+    - Name: Client5
+      Hostname: Client5.wg1.cloudarmin.me
+      Group: "Berlin::Dep3"
+    - Name: Client6
+      Hostname: Client6.wg1.cloudarmin.me
+      Group: "Berlin::Dep4"
+    - Name: Client7
+      Hostname: Client7.wg1.cloudarmin.me
+      Group: "Berlin::Dep5"
+    - Name: Client8
+      Hostname: Client8.wg1.cloudarmin.me
+      Group: "Berlin::Dep3::Team1"
+    - Name: Client9
+      Hostname: Client9.wg1.cloudarmin.me
+    - Name: Client10
+      Hostname: Client10.wg1.cloudarmin.me
+      IPAddress: 10.10.10.10
+NetworkResources:
+  - Name: Resource1
+    IPAddress: 178.1.2.0/24
+  - Name: Resource2
+    Hostname: google.com
+  - Name: Resource3
+    IPAddress: 1.1.1.1
