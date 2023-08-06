@@ -1,0 +1,7 @@
+numpy
+dpdata[amber]>=0.2.2
+deepmd-kit
+tqdm
+parmed
+ase
+scipy
