@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: axew
+Version: 1.0.7
+Summary: Python bindings for Arcane
+Home-page: https://github.com/MenuDocs/Axew
+Author: Menudocs
+Author-email: contact@menudocs.org
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 5 - Production/Stable
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: aiohttp
+
+## Axew
+
+A set of python bindings for [Arcane](https://arcane.koldfusion.xyz/) 
+featuring sane error handling and caching to reduce requests. 
+
+```python
+from axew import AxewClient, Entry
+
+
+def main():
+    client: AxewClient = AxewClient()
+    entry: Entry = client.create_paste(
+        code="Testing", 
+        error="My error", 
+        name="My code", 
+        description="It does this and that."
+    )
+    print(entry.resolve_url())
+
+    # Returns the cached entry and saves making a request
+    cached_entry = client.get_paste(entry.slug)
+    print(cached_entry)
+
+
+async def async_main():
+    client: AxewClient = AxewClient()
+    entry: Entry = await client.async_create_paste(code="Async testing", error="My error")
+    print(entry.resolve_url())
+
+    # Returns the cached entry and saves making a request
+    cached_entry = await client.async_get_paste(entry.slug)
+    print(cached_entry)
+```
+
