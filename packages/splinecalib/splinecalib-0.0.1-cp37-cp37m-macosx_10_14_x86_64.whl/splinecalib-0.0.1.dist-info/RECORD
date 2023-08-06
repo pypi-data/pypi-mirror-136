@@ -1,0 +1,9 @@
+graphs.cpython-37m-darwin.so,sha256=IrlkrRoNH52Ny_Y7m4GncDgy0i7sq9nna0TRgQd_r30,67048
+splinecalib/__init__.py,sha256=gTrCr6rrEjbJhuyvfHXrZrD8mDSGofc4N3WZzBKFrcw,354
+splinecalib/calibration_utils.py,sha256=sFhD4Tux4KU1PIbJzkAsqpTLkelCRYGz03MMD1yFhqE,21847
+splinecalib/splinecalib.py,sha256=NqKs_0ZYXq5yX2hYaGo0uLMRYNfFQ-zieIVszfgSxzU,22626
+splinecalib-0.0.1.dist-info/LICENSE,sha256=_aSna8VbNYGulZDj_oBLMCwSwFou-kyG0HE7-b8ObbA,1069
+splinecalib-0.0.1.dist-info/METADATA,sha256=OImchnYZ1J_XSLgiV3ig_AV0KA1yxuYwF2KfHlPgGoc,957
+splinecalib-0.0.1.dist-info/WHEEL,sha256=09ilctnU90ztFuksfSRiG_Vbal2GkMIuPJ3QrdP4HAo,111
+splinecalib-0.0.1.dist-info/top_level.txt,sha256=b4vvE2HCeUoZznVOrC3tpk4wHJwW9vMd-ayQzkOm3d8,19
+splinecalib-0.0.1.dist-info/RECORD,,
