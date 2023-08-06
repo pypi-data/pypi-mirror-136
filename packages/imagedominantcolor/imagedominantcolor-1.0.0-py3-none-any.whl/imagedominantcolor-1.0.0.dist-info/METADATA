@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: imagedominantcolor
+Version: 1.0.0
+Summary: Get the Dominant color from image.
+Home-page: https://akamhy.github.io/imagedominantcolor/
+Author: Akash Mahanty
+Author-email: akamhy@yahoo.com
+License: MIT
+Download-URL: https://github.com/akamhy/imagedominantcolor/archive/1.0.0.tar.gz
+Project-URL: Source, https://github.com/akamhy/imagedominantcolor
+Project-URL: Tracker, https://github.com/akamhy/imagedominantcolor/issues
+Keywords: Get dominant colors of image,imagedominantcolor,Extract dominant colors of an image using Python,Dominant colors,most prevalent color,most dominant colors
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: Pillow
+
+<div align="center">
+
+<h1> ImageDominantColor </h1>
+
+<h3>Get the dominant color of any image.</h3>
+
+</div>
+
+### License
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/akamhy/imagedominantcolor/blob/main/LICENSE)
+
+Copyright (c) 2022 Akash Mahanty.
+
+Released under the MIT License. See
+[license](https://github.com/akamhy/imagedominantcolor/blob/master/LICENSE) for details.
+
+
