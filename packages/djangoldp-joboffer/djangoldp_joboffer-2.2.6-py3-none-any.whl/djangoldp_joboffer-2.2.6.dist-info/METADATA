@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: djangoldp-joboffer
+Version: 2.2.6
+Summary: djangoldp package for job offer data models
+Home-page: https://git.startinblox.com/djangoldp-packages/djangoldp-joboffer
+Author: Startin'blox
+Author-email: jbaptiste@startinblox.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: djangoldp-skill (>=2.0)
+Requires-Dist: djangoldp (>=2.1.27)
+Requires-Dist: djangoldp-notification (>=2.2.12)
+Provides-Extra: dev
+Requires-Dist: factory-boy (>=2.11.0) ; extra == 'dev'
+Requires-Dist: djangoldp-account (>=2.1) ; extra == 'dev'
+Requires-Dist: djangoldp-conversation ; extra == 'dev'
+Requires-Dist: djangoldp-i18n ; extra == 'dev'
+
+UNKNOWN
+
