@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+src/scrollthescroll/__init__.py
+src/scrollthescroll/__main__.py
+src/scrollthescroll/haarcascade_eye.xml
+src/scrollthescroll/haarcascade_frontalface_default.xml
+src/scrollthescroll/reading_rates.txt
+src/scrollthescroll.egg-info/PKG-INFO
+src/scrollthescroll.egg-info/SOURCES.txt
+src/scrollthescroll.egg-info/dependency_links.txt
+src/scrollthescroll.egg-info/requires.txt
+src/scrollthescroll.egg-info/top_level.txt
