@@ -1,0 +1,5 @@
+[console_scripts]
+sbomgrep = sbomtools.sbomgrep:cli
+sbomrm = sbomtools.sbomrm:cli
+sbomupdate = sbomtools.sbomupdate:cli
+
