@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>OCDS Additions</title>
+    </head>
+    <body>
+
+        <h2>Record:</h2>
+
+        <ul>
+            <li><a href="/contracting_process/{{ ocid }}/record.json">Record with compiled release</a></li>
+        </ul>
+
+        <h2>Releases</h2>
+
+        <ul>
+            {% for release in releases %}
+                <li><a href="/contracting_process/{{ ocid }}/release/{{ release.directory_name }}/release_package.json">{{ release.directory_name }}</a></li>
+            {% endfor %}
+        </ul>
+
+        <h2>API:</h2>
+
+        <ul>
+            <li><a href="/contracting_process/{{ ocid }}/api.json">JSON of this page</a></li>
+        </ul>
+    </body>
+</html>

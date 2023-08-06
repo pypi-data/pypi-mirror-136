@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>OCDS Additions</title>
+    </head>
+    <body>
+
+        <h2>Contracting Processes:</h2>
+
+        <ul>
+            {% for ocid in ocids %}
+                <li><a href="/contracting_process/{{ ocid }}/">{{ ocid }}</a></li>
+            {% endfor %}
+        </ul>
+
+        <h2>API:</h2>
+
+        <ul>
+            <li><a href="/api.json">JSON of this page</a></li>
+        </ul>
+    </body>
+</html>

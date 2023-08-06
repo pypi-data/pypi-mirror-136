@@ -1,0 +1,12 @@
+ocdskit<=1.1,>1.0
+click<9,>8
+requests
+python-dateutil
+Jinja2
+
+[dev]
+pytest
+black
+isort
+flake8
+mypy
