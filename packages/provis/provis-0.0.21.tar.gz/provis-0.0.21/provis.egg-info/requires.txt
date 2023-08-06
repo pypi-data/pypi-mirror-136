@@ -1,0 +1,10 @@
+biopython
+trimesh
+pyvista
+biopandas
+torch
+pyvtk
+open3d
+rtree
+panel
+imageio-ffmpeg
