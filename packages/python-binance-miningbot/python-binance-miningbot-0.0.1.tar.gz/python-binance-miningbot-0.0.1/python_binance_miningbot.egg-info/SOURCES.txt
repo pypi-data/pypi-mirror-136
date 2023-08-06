@@ -1,0 +1,7 @@
+README.md
+python-binance-miningbot.py
+setup.py
+python_binance_miningbot.egg-info/PKG-INFO
+python_binance_miningbot.egg-info/SOURCES.txt
+python_binance_miningbot.egg-info/dependency_links.txt
+python_binance_miningbot.egg-info/top_level.txt
