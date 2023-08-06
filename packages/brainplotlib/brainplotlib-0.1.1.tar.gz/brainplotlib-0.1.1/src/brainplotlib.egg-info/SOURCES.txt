@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.cfg
+src/brainplotlib/__init__.py
+src/brainplotlib.egg-info/PKG-INFO
+src/brainplotlib.egg-info/SOURCES.txt
+src/brainplotlib.egg-info/dependency_links.txt
+src/brainplotlib.egg-info/requires.txt
+src/brainplotlib.egg-info/top_level.txt
+src/brainplotlib/data/icoorder3_mapping.npy
