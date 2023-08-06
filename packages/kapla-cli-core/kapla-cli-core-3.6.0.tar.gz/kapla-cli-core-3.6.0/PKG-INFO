@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: kapla-cli-core
+Version: 3.6.0
+Summary: 
+Author: Guillaume Charbonnier
+Author-email: guillaume.charbonnier@araymond.com
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: colorama (<1.0.0)
+Requires-Dist: loguru (<1.0.0)
+Requires-Dist: pydantic (>=1.0.0,<2.0.0)
+Requires-Dist: python-on-whales (<1.0.0)
+Requires-Dist: rich (>=11.0.0,<12.0.0)
+Requires-Dist: stdlib-list (<1.0.0)
+Requires-Dist: tomlkit (<1.0.0)
+Requires-Dist: typer (<1.0.0)
