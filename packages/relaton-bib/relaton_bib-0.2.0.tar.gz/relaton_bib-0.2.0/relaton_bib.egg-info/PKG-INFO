@@ -1,0 +1,71 @@
+Metadata-Version: 2.1
+Name: relaton-bib
+Version: 0.2.0
+Summary: Python implementation of bibliography specification
+Home-page: https://github.com/relaton/relaton-bib-py
+Author: Aliaksandr Babrykovich
+Author-email: abobrikovich@gmail.com
+License: BSD license
+Keywords: relaton_bib
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.8
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+License-File: AUTHORS.rst
+
+===========
+relaton-bib
+===========
+
+
+.. image:: https://img.shields.io/pypi/v/relaton_bib.svg
+        :target: https://pypi.python.org/pypi/relaton_bib
+
+.. image:: https://github.com/relaton/relaton-bib-py/actions/workflows/test.yml/badge.svg
+        :target: https://github.com/relaton/relaton-bib-py/actions/workflows/test.yml
+
+.. image:: https://readthedocs.org/projects/relaton-bib/badge/?version=latest
+        :target: https://relaton-bib.readthedocs.io/en/latest/?version=latest
+        :alt: Documentation Status
+
+
+.. image:: https://pyup.io/repos/github/relaton/relaton_bib/shield.svg
+     :target: https://pyup.io/repos/github/relaton/relaton_bib/
+     :alt: Updates
+
+
+
+Python implementation of https://github.com/relaton/relaton-models#bibliography-uml-models
+
+
+* Free software: BSD license
+
+
+Credits
+-------
+
+This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+
+.. _Cookiecutter: https://github.com/audreyr/cookiecutter
+.. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+
+
+
+=======
+History
+=======
+
+0.1.0 (2021-07-29)
+------------------
+
+* First release on PyPI.
+
+
