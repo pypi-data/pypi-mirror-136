@@ -1,0 +1,10 @@
+dislevel/__init__.py,sha256=m_hfLowpTJIudnxNyH4J9lBZClJRZFpLKx2JsYgTscg,90
+dislevel/card.py,sha256=CmC2nYOpMMPfEscqRYZ-NAPlsSxAbN7c7IIKsOl-eLk,2385
+dislevel/cog.py,sha256=86j3sTFEHVAY_gWnjFBL_e3xvTmnGmVM2GufcAuKrvQ,4625
+dislevel/db.py,sha256=VTbqG_kXUrPcnzkpE238wddHOIiedi9rjtnDMCUqqjs,7072
+dislevel/assets/bg.png,sha256=u1bm2czLKX29FwBvDtDpmkUT3_0bPKWd92G_gUYQPiQ,129204
+dislevel-1.0.1.dist-info/LICENSE,sha256=n0wK9nH7GPDswNk5hwXoMuDEpPAc1qNxchGY8ZpT3TM,1062
+dislevel-1.0.1.dist-info/METADATA,sha256=mkZgkuKo7BbFjzNyEB9kFaM4ZKJA2WIvp-2kJ1TpPlU,2778
+dislevel-1.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+dislevel-1.0.1.dist-info/top_level.txt,sha256=sWqgyrOC98PBdMMNgC6k-EtWqhTw262nu43YdUy4U2s,9
+dislevel-1.0.1.dist-info/RECORD,,
