@@ -1,0 +1,7 @@
+numpy
+momentum
+kmeans1d
+runthis
+scikit-learn
+osqp
+pandas_datareader
