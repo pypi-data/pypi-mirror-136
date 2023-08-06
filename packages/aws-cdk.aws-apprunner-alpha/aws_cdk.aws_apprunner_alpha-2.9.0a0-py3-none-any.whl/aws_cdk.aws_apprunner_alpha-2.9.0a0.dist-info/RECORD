@@ -1,0 +1,10 @@
+aws_cdk/aws_apprunner_alpha/__init__.py,sha256=xD_WsgmsAuROgt4toc-467yq5Logn4PQgjsy2cDNSj0,93730
+aws_cdk/aws_apprunner_alpha/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+aws_cdk/aws_apprunner_alpha/_jsii/__init__.py,sha256=_42s7YCILN3xAFKDGQBEi2W5TROv6b8wOR62mMdZan4,409
+aws_cdk/aws_apprunner_alpha/_jsii/aws-apprunner-alpha@2.9.0-alpha.0.jsii.tgz,sha256=vzeg9g--ZCKcRKKRjcR7ysCX5ENYTQFqQukvULIQSKE,47965
+aws_cdk.aws_apprunner_alpha-2.9.0a0.dist-info/LICENSE,sha256=wX3LqRrxZ97zcDpw0dQ58Zb9AQalEDmXs6nP39muv7o,11391
+aws_cdk.aws_apprunner_alpha-2.9.0a0.dist-info/METADATA,sha256=ekQhrFZdxuLvUAle0-dDWhOmXXZvdZ4Jr5vj9UxgeEA,6165
+aws_cdk.aws_apprunner_alpha-2.9.0a0.dist-info/NOTICE,sha256=piksgoXop22-zO1J9i3rVrv57wUN9siPK1pqGzZ7-AE,113
+aws_cdk.aws_apprunner_alpha-2.9.0a0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+aws_cdk.aws_apprunner_alpha-2.9.0a0.dist-info/top_level.txt,sha256=1TALAKbuUGsMSrfKWEf268lySCmcqSEO6cDYe_XlLHM,8
+aws_cdk.aws_apprunner_alpha-2.9.0a0.dist-info/RECORD,,
