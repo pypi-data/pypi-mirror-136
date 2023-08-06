@@ -1,0 +1,10 @@
+audit_dummy/README.md,sha256=cKe7Bs4cYUaH-OWQOPEBKA2XnvvRouME0Csx-Mc-Vs8,134
+audit_dummy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+audit_dummy/append.py,sha256=PtSBBftQvWlOJjwjnAyQLJGoENLHH9fUeR63yJBugoY,247
+audit_dummy/file.json,sha256=avotfIKoBlvESRwrV004fNg_ekxhMTxWghNfszgygaY,50
+audit_dummy/query.py,sha256=5tLQ5i2BqrYAqzKi6h9tEdGDalDJ5s-15wqC8i9qy1s,452
+audit_dummy/schema.py,sha256=CJJU5XuPquGcKps8vmRTWMpyT3fHmKXuSXmgraNhy-k,454
+audit_dummy/utils.py,sha256=Vp97OAsBEgrUCfw7Av1_UQNANQ6ydAcDSoTRRW2kNyc,846
+audit_dummy-0.1.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+audit_dummy-0.1.0.dist-info/METADATA,sha256=r0ydmPH5_aQfWrXsOQDUyX-TpZz1Z36jhWcUL-fsgi4,328
+audit_dummy-0.1.0.dist-info/RECORD,,
