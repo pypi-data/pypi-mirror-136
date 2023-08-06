@@ -1,0 +1,11 @@
+senertec/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+senertec/board.py,sha256=zn5TBoRXMhIsHlTPMLGvvkV8Fb6LugO0CpGhHbSjHB4,531
+senertec/canipError.py,sha256=VrRVOyU_94p34B-ItcrHRTPqDuwc61OlzT48P1LNUhE,196
+senertec/canipValue.py,sha256=qsA66Ds4kKos-oXIib2jZ7NgZxjZFj_QHJtahLzNA9g,228
+senertec/client.py,sha256=xtNMQi6TEVzIgOgtRlTFfvd1MCUUrZrms8kHkbjlAuI,12780
+senertec/datapoint.py,sha256=s0jnCQaPkCiSiy8UOB_x6EErxP8pOAP9y2syzD5M4Fg,163
+py_senertec-0.0.4.dist-info/LICENSE,sha256=1Hb10ESpeT3ycRQNisQXPQomBQPhB6eaXyTmb9TDBtw,1086
+py_senertec-0.0.4.dist-info/METADATA,sha256=tRmftLMneGYlR3bhtASYLtl2uDFhHYZP0C2DtKmSDok,3227
+py_senertec-0.0.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+py_senertec-0.0.4.dist-info/top_level.txt,sha256=Z4tRqriR8O4NOaDAkE_kHLR-VwACk3G-VcALnERdbUE,9
+py_senertec-0.0.4.dist-info/RECORD,,
