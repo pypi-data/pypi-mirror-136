@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/picocog/__init__.py
+src/picocog/picocog.py
+src/picocog.egg-info/PKG-INFO
+src/picocog.egg-info/SOURCES.txt
+src/picocog.egg-info/dependency_links.txt
+src/picocog.egg-info/top_level.txt
