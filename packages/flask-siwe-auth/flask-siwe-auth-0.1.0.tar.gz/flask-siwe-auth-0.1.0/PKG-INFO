@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: flask-siwe-auth
+Version: 0.1.0
+Summary: Custom Flask authentication using Sign-In with Ethereum (EIP-4361), a custom wallet user model, and authorization via on-chain attributes.
+Home-page: https://github.com/payton/flask-siwe-auth
+License: MIT
+Keywords: SIWE,EIP-4361,Sign-In with Ethereum,Flask,Web3,Authentication,Authorization
+Author: Payton Garland
+Author-email: payton.r.g@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: pytz (>=2021.3,<2022.0)
+Requires-Dist: siwe (>=0.1.2,<0.2.0)
+Requires-Dist: web3 (>=5.26.0,<6.0.0)
+Project-URL: Repository, https://github.com/payton/flask-siwe-auth
+Description-Content-Type: text/markdown
+
+# django-siwe-auth
+Coming soon.
+
