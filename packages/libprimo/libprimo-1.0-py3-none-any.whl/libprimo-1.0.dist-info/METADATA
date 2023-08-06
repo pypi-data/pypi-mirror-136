@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: libprimo
+Version: 1.0
+Summary: A tool to perform mathematical operations.
+Home-page: UNKNOWN
+Author: Jefferson Lazón
+Author-email: jefferson235711@hotmail.com
+License: GNU GPLv3
+Keywords: Prime Numbers
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+License-File: LICENSE
+
+PRIMO
+
+Este paquete calcula los nÃºmeros primos menores a un valor positivo entero asignado.
+La licencia para para fines educativos
+
+
