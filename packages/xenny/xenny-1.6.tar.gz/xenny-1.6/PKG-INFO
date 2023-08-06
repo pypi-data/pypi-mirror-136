@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: xenny
+Version: 1.6
+Summary: Xenny's tool
+Home-page: https://github.com/X3NNY/xenny
+Author: X3NNY
+Author-email: xennyxd1@gmail.com
+License: MIT
+Description: # Xenny
+        
+        * Xenny's tool
+        
+        ## Usage
+        
+        * Install
+        
+            ```bash
+            pip3 install xenny
+            ```
+        
+        * and
+        
+            ```shell
+            Python 3.9.9 (main, Nov 21 2021, 03:22:47) 
+            [Clang 12.0.0 (clang-1200.0.32.29)] on darwin
+            Type "help", "copyright", "credits" or "license" for more information.
+            >>> import xenny.xenny
+        
+            Hi I'm Xenny.
+            欢迎使用本包。
+            也请不要仅依赖本包。
+            Do not go gentle into that good night。
+        
+            >>> 
+            ```
+Keywords: ctf,xenny,web,misc,crypto,reverse,pwn
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.8.0
+Description-Content-Type: text/markdown
