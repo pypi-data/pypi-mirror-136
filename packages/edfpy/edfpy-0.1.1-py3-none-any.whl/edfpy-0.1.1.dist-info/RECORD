@@ -1,0 +1,15 @@
+edfpy/__init__.py,sha256=_x6OFDaUmFx3Cc62J64UKP6mxE1uqYk5fqSrNgZ-o-E,131
+edfpy/blob.py,sha256=Tf-rKO_bb-dzXDMNjDmYtz53PSeV0NM1gThfsmKpv28,2594
+edfpy/channel_difference.py,sha256=_TF6UGk6w81Tv5MYVey5W2RLfGTgNFtgAWwBKS_iGU0,1249
+edfpy/channel_header.py,sha256=ByuUZwfxTWDrZ7cTPImh7KhIxa60mfLw6Gca2hlmuIE,6791
+edfpy/field.py,sha256=X-canO8gutuXr8udauzj2xG2AqVNisSOK6TdgaXmQDQ,85
+edfpy/header.py,sha256=EXPj26Q6jpfwsKkQgEbLLczdYc8yY4NX0BCpZZNh8tk,10066
+edfpy/notation.py,sha256=eL--F11YNWqaOEF_MNf2wzGT7XnLdJIDVSdyktoTDQU,6354
+edfpy/plotting.py,sha256=pRf51t2QD9cMXpIZS2FDdo-18CJ6QiADlAG69xrxNbw,703
+edfpy/reader.py,sha256=QaSVEDHpGEe8Iz6u-tHy56q8XQywRENhQt5ehNCzNvw,2821
+edfpy/version.py,sha256=rnObPjuBcEStqSO0S6gsdS_ot8ITOQjVj_-P1LUUYpg,22
+edfpy-0.1.1.dist-info/LICENSE,sha256=zJDaBbDv_eaYHrkLd1k6H5YOnMXfZwz4g51yKhlB69c,1074
+edfpy-0.1.1.dist-info/METADATA,sha256=dg2O4oWc_T2xBLmU4wY96Gbsa1cNI_nyUBQXsFexRIQ,1788
+edfpy-0.1.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+edfpy-0.1.1.dist-info/top_level.txt,sha256=-n3Ir4eaJOgyqQ4WQ8EbyUlwfz6u4HmtjdnpOL5hTyA,6
+edfpy-0.1.1.dist-info/RECORD,,
