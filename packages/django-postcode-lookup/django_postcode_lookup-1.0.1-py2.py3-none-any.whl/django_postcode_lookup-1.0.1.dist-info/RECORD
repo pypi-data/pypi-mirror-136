@@ -1,0 +1,17 @@
+django_postcode_lookup/__init__.py,sha256=cKvrKsAa7Q5uQt55v3UXRROm2mgEwL0VhfL5f7w4rS0,216
+django_postcode_lookup/loading.py,sha256=BXwCZuD12idVXtEYGUaUu3IDTcF9TVu53OarEmj4asY,351
+django_postcode_lookup/serializers.py,sha256=j_7RnxNXPpcW7HbcW24IgnTokkqahGADHTR8mmXEr3g,343
+django_postcode_lookup/urls.py,sha256=nMAH_hlbbMokxe_hbi04y9emhipj6GnVpPXD3eR-iUE,164
+django_postcode_lookup/views.py,sha256=V2fw2AcExp9zXi6SekmX0yyv00-ou96TFC_TdRQaSbQ,2001
+django_postcode_lookup/backends/__init__.py,sha256=pE2yKt5Z3IBGrElaBFSNYpwuvYSPqcv81w9Z9v8p5kM,123
+django_postcode_lookup/backends/apiwise.py,sha256=c_p0-q5qXnswwto3tfo6rlMp3e6PY2sfzRLX8e-LKPI,1422
+django_postcode_lookup/backends/base.py,sha256=iip8ZGJqz6lM4jYXNPyt_SmY6Diilzg5hIPQwl2kr9U,872
+django_postcode_lookup/backends/postcodeapinu.py,sha256=JzOVVWLafQMidd-ve-0OEIVbxtJykARhfBUWLXqR7xY,1234
+django_postcode_lookup/backends/webservices.py,sha256=OJK-dNOeakS-W3db4QHZOIetFWBjCOWaJbkJHQJRbWI,3402
+django_postcode_lookup/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_postcode_lookup/utils/version.py,sha256=ONLlUE9Bqkmmau-sSy8ZmT60SVpn78zlI2dthhGWFBc,529
+django_postcode_lookup-1.0.1.dist-info/LICENSE,sha256=2sazio0RsYHHRKT6ko76P9D_fKMX_HaY47zbxnYGIWQ,1079
+django_postcode_lookup-1.0.1.dist-info/METADATA,sha256=jenNfR78nnTVIPjgQ1wY-0mv8vV5qcxqKhNxm5E5rMI,3521
+django_postcode_lookup-1.0.1.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+django_postcode_lookup-1.0.1.dist-info/top_level.txt,sha256=erGhKCilFNiGoTXIqVzepjaTfSE8Wk_q8xqDf8LY1PQ,23
+django_postcode_lookup-1.0.1.dist-info/RECORD,,
