@@ -1,0 +1,8 @@
+README.md
+setup.py
+BeastX.egg-info/PKG-INFO
+BeastX.egg-info/SOURCES.txt
+BeastX.egg-info/dependency_links.txt
+BeastX.egg-info/top_level.txt
+beastx/__init__.py
+beastx/__main__.py
