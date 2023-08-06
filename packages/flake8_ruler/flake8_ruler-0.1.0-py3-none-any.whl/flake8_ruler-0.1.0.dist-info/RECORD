@@ -1,0 +1,10 @@
+flake8_ruler/__init__.py,sha256=t6pPcK_Wuq0mrRKOfxpLOJMAuOrWIGnwTDHSodp3Ozs,122
+flake8_ruler/__main__.py,sha256=9PY29yYEzbHuNNjq6QiARY40U_CoBMSu9m6xO_35LsI,50
+flake8_ruler/_cli.py,sha256=IWZS_fRiZ6ov3nHrIQJEFMb58B3Rw5M2A8NrFFgubrw,2943
+flake8_ruler/_config.py,sha256=uqacNC7v_Zm6K1D71MqY_O49MNlpaPzm58yZkFuSu2c,4962
+flake8_ruler/_ini.py,sha256=nuZCaFWolHO2BNH6e64NgESakAH2g-tdydUrL7mc_Qg,1272
+flake8_ruler/_rules.py,sha256=ydD-8TszSoUZHM6ZnwYEwyvXnMEh93rndV5flTAyoaw,1036
+flake8_ruler-0.1.0.dist-info/LICENSE,sha256=GJHo228GugNTvFKAwjBFEtrtqFsAhLaHT8tugArPikE,1048
+flake8_ruler-0.1.0.dist-info/WHEEL,sha256=VUbF57hf4yRZWWrOOjp25Fr4BQX9EtnVSbnP2vNxHDM,81
+flake8_ruler-0.1.0.dist-info/METADATA,sha256=a5nE3Yo4YP0NHPho0nD9eCzn6UqdoOyh58YronbCcwo,4785
+flake8_ruler-0.1.0.dist-info/RECORD,,
