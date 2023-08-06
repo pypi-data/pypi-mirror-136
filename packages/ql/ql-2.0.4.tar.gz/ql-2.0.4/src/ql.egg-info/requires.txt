@@ -1,0 +1,12 @@
+pandas
+parse
+pyyaml
+gitpython
+bs4
+html5lib
+aenum
+staticjinja
+markdown
+pygments
+python-frontmatter
+dateparser
