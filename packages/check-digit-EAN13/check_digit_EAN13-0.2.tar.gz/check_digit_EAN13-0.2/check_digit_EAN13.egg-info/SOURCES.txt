@@ -1,0 +1,10 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+setup.py
+check_digit_EAN13/__init__.py
+check_digit_EAN13/check_digit.py
+check_digit_EAN13.egg-info/PKG-INFO
+check_digit_EAN13.egg-info/SOURCES.txt
+check_digit_EAN13.egg-info/dependency_links.txt
+check_digit_EAN13.egg-info/top_level.txt
