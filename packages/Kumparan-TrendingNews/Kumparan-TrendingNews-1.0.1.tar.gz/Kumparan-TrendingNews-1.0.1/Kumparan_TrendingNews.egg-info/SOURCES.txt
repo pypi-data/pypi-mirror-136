@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+Kumparan-TrendingNews/__init__.py
+Kumparan_TrendingNews.egg-info/PKG-INFO
+Kumparan_TrendingNews.egg-info/SOURCES.txt
+Kumparan_TrendingNews.egg-info/dependency_links.txt
+Kumparan_TrendingNews.egg-info/requires.txt
+Kumparan_TrendingNews.egg-info/top_level.txt
