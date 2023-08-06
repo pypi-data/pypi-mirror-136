@@ -1,0 +1,3 @@
+[pytest11]
+pytest_modified_env=pytest_modified_env.plugin
+
