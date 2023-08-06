@@ -1,0 +1,16 @@
+-r main.txt
+docker-compose
+pytest
+pytest-cov
+pytest-docker
+mock
+coverage
+hiro>0.1.6
+ordereddict
+flask-restful
+flask-restx
+redis
+pymemcache
+pymongo
+Flask[async]>=2.0.0
+asgiref>=3.2
