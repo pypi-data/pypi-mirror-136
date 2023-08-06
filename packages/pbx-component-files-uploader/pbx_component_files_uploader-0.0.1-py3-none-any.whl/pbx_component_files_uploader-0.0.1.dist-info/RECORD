@@ -1,0 +1,11 @@
+pbx_component_files_uploader/__init__.py,sha256=-LGgpVzBvQsNFEbahLrAD1u9e1Ur3koil2eg54r1t7Y,23
+pbx_component_files_uploader/exceptions/errors.py,sha256=ga1mAdSjI5X8asqNs7qO8uzm8zCwvXITEG4mZUtZTgA,518
+pbx_component_files_uploader/ext/selectel/auth.py,sha256=lRFW6G9Y-tv1F29oYtrkVixEXZUSeZ5sv1fW1v_o704,2200
+pbx_component_files_uploader/ext/selectel/selectel.py,sha256=MiFO5YnOWQH5bC8bF462SwPHegXKuFoIjojxNU1Otz4,1988
+pbx_component_files_uploader/ext/selectel/token.py,sha256=aoJfZUA7j8-VyW24bYh9QpV51p6u2RKxkDvqYZBOmSw,1658
+pbx_component_files_uploader/interfaces/base_uploader.py,sha256=Or_YGJYlyMX64WDtFWB7wE8-JBBTq4nzEl66NYrmE6U,416
+pbx_component_files_uploader/uploader.py,sha256=tL_a_Y_a0LwVwPcDQeraBTJreNUE4p7tHPV3HtZAvTA,801
+pbx_component_files_uploader-0.0.1.dist-info/LICENSE,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+pbx_component_files_uploader-0.0.1.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+pbx_component_files_uploader-0.0.1.dist-info/METADATA,sha256=7EKA6CxOvirzgUv8GH6V715-t6tpnpTsHEWKjXy4ryM,1206
+pbx_component_files_uploader-0.0.1.dist-info/RECORD,,

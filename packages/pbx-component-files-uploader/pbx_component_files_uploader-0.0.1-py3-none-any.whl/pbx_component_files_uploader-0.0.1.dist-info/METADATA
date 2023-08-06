@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: pbx-component-files-uploader
+Version: 0.0.1
+Summary: Files uploader to custom storages
+Home-page: https://github.com/leadvertex/pbx-component-files-uploader
+License: MIT
+Keywords: leadvertex,selectel,storage,remote storage,uploader
+Author: Ivan Kalashnikov
+Author-email: ivan@leadvertex.ru
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: requests (==2.27.1)
+Project-URL: Repository, https://github.com/leadvertex/pbx-component-files-uploader
+Description-Content-Type: text/markdown
+
+# pbx-lv2-records-uploader
+
+Simple selectel upload
+
+```python
+    api = Uploader(Uploader.SERVICE_SELECTEL, {
+        'username': 'user',
+        'password': 'pass',
+        'container': 'container_name'
+    }, {
+        'token_cache_dir': '/path/to/cache/dir'
+    })
+
+    uploadedFileUrl = api.upload(
+        '/path/to/src/file', 'dst_folder/dst_filename')
+        
+    print(uploadedFileUrl)
+```
+
