@@ -1,0 +1,105 @@
+Metadata-Version: 2.1
+Name: manen
+Version: 0.1.0
+Summary: A package around `selenium` offering, among other features, an implementation of Page Object Model, an enhanced WebDriver and a `find` function to quickly retrieve elements.
+Home-page: https://github.com/kodaho/manen/
+Author: kodaho
+License: GPLv3
+Project-URL: Bug Tracker, https://github.com/kodaho/manen/issues/
+Project-URL: Documentation, https://github.com/kodaho/manen/tree/master/docs
+Project-URL: Source Code, https://github.com/kodaho/manen/
+Keywords: automation,DOM,page-object-model,scraping,selenium,test
+Platform: any
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: dateparser (~=1.0.0)
+Requires-Dist: polling2 (~=0.4.6)
+Requires-Dist: pyyaml (~=5.3.1)
+Requires-Dist: questionary (~=1.10.0)
+Requires-Dist: requests (~=2.27.0)
+Requires-Dist: selenium (>=3.141.0)
+Provides-Extra: deploy
+Requires-Dist: twine (~=3.7.1) ; extra == 'deploy'
+Requires-Dist: wheel (~=0.37.1) ; extra == 'deploy'
+Provides-Extra: doc
+Requires-Dist: furo (>=2022.1.2) ; extra == 'doc'
+Requires-Dist: sphinx-autobuild (>=2021.3.14) ; extra == 'doc'
+Requires-Dist: sphinx-copybutton (~=0.4.0) ; extra == 'doc'
+Requires-Dist: sphinx-inline-tabs (~=2022.1.2b11) ; extra == 'doc'
+Requires-Dist: Sphinx (~=4.4.0) ; extra == 'doc'
+Requires-Dist: nbsphinx (~=0.8.8) ; extra == 'doc'
+Provides-Extra: lint
+Requires-Dist: black (~=21.12b0) ; extra == 'lint'
+Requires-Dist: isort (~=5.10.1) ; extra == 'lint'
+Requires-Dist: mypy (~=0.931) ; extra == 'lint'
+Requires-Dist: pylint (~=2.12.2) ; extra == 'lint'
+Requires-Dist: rstcheck (~=3.3.1) ; extra == 'lint'
+Provides-Extra: test
+Requires-Dist: Jinja2 (~=3.0.3) ; extra == 'test'
+Requires-Dist: pytest (~=6.2.5) ; extra == 'test'
+
+<p align="center">
+  <h1 align="center"> 🌔  manen</h1>
+</p>
+
+----
+
+<p align="center">
+  <img src="https://img.shields.io/badge/python-%3E=3.6-informational?style=for-the-badge&logo=python">
+  <img src="https://img.shields.io/badge/version-0.1.0-informational?style=for-the-badge">
+  <img src="https://img.shields.io/badge/status-in%20development-yellow?style=for-the-badge">
+</p>
+
+<p align="center">
+  <i><b>A package around <a href="https://pypi.org/project/selenium/"><code>selenium</code></a> to easily construct Python objects which reflect the DOM of any webpages.</b></i>
+</p>
+
+----
+
+<p align="center">🚧 </p>
+
+## 📥  Installation
+
+```bash
+pip install manen
+```
+
+## 🚀 Getting started
+
+```python
+import manen.page_object_model as pom
+
+class HomePage(pom.Page):
+    query = pom.InputElement("input[id='search']")
+
+class SearchResultPage(pom.Page):
+    class ResultRegions(pom.Regions):
+        name = pom.TextElement("h3 span.package-snippet__name")
+        version = pom.TextElement("h3 span.package-snippet__version")
+        link = pom.LinkElement("a.package-snippet")
+        description = pom.TextElement("p.package-snippet__description")
+
+    n_results = pom.IntegerElement("//*[@id='content']//form/div[1]/div[1]/p/strong")
+    results = ResultRegions("ul[aria-label='Search results'] li")
+```
+
+## ✨ Features
+
+- `manen.finder.find` allows to easily get element(s) in a HTML page.
+  This function support several very different use cases, mainly parametrized
+  with the function arguments.
+- `manen.resource` is a module to easily interact with all the assets
+  needed by `selenium`. It allows for example to download all the drivers required
+  to work with Selenium.
+- `manen.browser` defined browsers objects, an enhanced Selenium's webdriver
+- `manen.page_object_model` is the implementation of page object modelling,
+  described in Selenium documentation. Thanks to that, you can describe the
+  DOM structure only with Python objects.
+- a CLI is shipped with the initial release in order to perform operations such
+  as downloading webdriver
+
+
