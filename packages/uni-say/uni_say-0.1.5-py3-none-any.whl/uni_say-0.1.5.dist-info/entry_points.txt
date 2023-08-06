@@ -1,0 +1,3 @@
+[console_scripts]
+uni-say=uni_say.cli:cli
+
