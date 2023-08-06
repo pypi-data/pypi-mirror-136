@@ -1,0 +1,3 @@
+[console_scripts]
+meshtastic_flasher = meshtastic_flasher.installer:main
+
