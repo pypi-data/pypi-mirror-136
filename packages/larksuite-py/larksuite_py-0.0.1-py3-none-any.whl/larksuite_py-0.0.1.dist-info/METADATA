@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: larksuite-py
+Version: 0.0.1
+Summary: Larksuite Python API
+Home-page: https://github.com/
+Author: slipper
+Author-email: r2fscg@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: codefast (==0.6.3)
+Requires-Dist: authc
+Requires-Dist: requests
+
+TODO
+
+
