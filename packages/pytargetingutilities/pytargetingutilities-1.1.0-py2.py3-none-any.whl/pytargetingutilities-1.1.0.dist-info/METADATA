@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: pytargetingutilities
+Version: 1.1.0
+Summary: Base lib for aws operations and more
+Home-page: https://github.com/emetriq/pytargetingutilities
+Author: Slash Gordon
+Author-email: slash.gordon.dev@gmail.com
+License: MIT
+Project-URL: Documentation, https://github.com/emetriq/pytargetingutilities/wiki
+Project-URL: Source, https://github.com/emetriq/pytargetingutilities
+Project-URL: Changelog, https://github.com/emetriq/pytargetingutilities/blob/main/CHANGELOG.md
+Project-URL: Tracker, https://github.com/emetriq/pytargetingutilities/issues
+Project-URL: Download, https://github.com/emetriq/pytargetingutilities/releases
+Project-URL: Twitter, https://twitter.com/emetriq
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+License-File: LICENSE
+Requires-Dist: boto3
+Requires-Dist: botocore
+Requires-Dist: jmespath (==0.10.0)
+Requires-Dist: python-dateutil (==2.8.2)
+Requires-Dist: s3transfer
+Requires-Dist: cryptography
+Requires-Dist: graypy
+Provides-Extra: testing
+Requires-Dist: setuptools ; extra == 'testing'
+Requires-Dist: pytest ; extra == 'testing'
+Requires-Dist: pytest-cov ; extra == 'testing'
+
+[![Release Build](https://github.com/emetriq/pytargetingutilities/actions/workflows/release.yaml/badge.svg)](https://github.com/emetriq/pytargetingutilities/actions/workflows/release.yaml)
+[![Coverage Status](https://coveralls.io/repos/github/emetriq/pytargetingutilities/badge.svg?branch=main)](https://coveralls.io/github/emetriq/pytargetingutilities?branch=main)
+# pytargetingutilities
+
+AWS boilerplate code for python applications.
+
+## install
+
+Install latest package
+`pip install pytargetingutilities`
+
+Copy latest package to workspace:
+`pip download --no-deps pytargetingutilities`
+
+
+
