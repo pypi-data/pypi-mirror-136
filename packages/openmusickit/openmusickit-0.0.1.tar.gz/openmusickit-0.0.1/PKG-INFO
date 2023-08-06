@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: openmusickit
+Version: 0.0.1
+Summary: Tools for computational music analysis
+Home-page: https://github.com/openmusickit/openmusickit/tree/master/
+Author: Adam Michael Wood
+Author-email: adamwood@google.com
+License: Apache Software License 2.0
+Keywords: music
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: Apache Software License
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+License-File: LICENSE
+
+# Open Music Kit
+> Tools for computational music analysis.
+
+
+Do you *really* think that G$\flat$ and F$\sharp$ are the same note?
+
+## Install
+
+`pip install openmusickit`
+
+## How to use
+
+`import openmusickit as omk`
+
+
