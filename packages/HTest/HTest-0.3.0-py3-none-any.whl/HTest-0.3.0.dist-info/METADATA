@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: HTest
+Version: 0.3.0
+Summary: Automated testing framework based on unittest.
+Home-page: https://github.com/Tao99/ui-autotest
+Author: Tao lei
+Author-email: 1285642171@qq.com
+License: BSD
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Software Development :: Testing
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: Faker (==9.8.2)
+Requires-Dist: Pillow (==5.4.1)
+Requires-Dist: PyAutoGUI (==0.9.53)
+Requires-Dist: PyYAML (==5.4.1)
+Requires-Dist: ddt (==1.4.2)
+Requires-Dist: numpy (==1.21.3)
+Requires-Dist: opencv-python (==4.5.4.58)
+Requires-Dist: openpyxl (==3.0.9)
+Requires-Dist: pytesseract (==0.3.8)
+Requires-Dist: setuptools (==40.8.0)
+
+# HTest框架
+
+
+下载安装：pip3 install HTest
+
+
+> 使用方法：
+
+（1）查看版本：HTest（htest或者hs）-v
+
+（2）新建项目：hs -s 项目名
+
+（3）帮助：hs -h
+
+（4）运行：hs -r  测试用例
+
+
+> 运行yaml测试用例的流程
+
+（1）首先创建一个项目 project-name
+
+（2）参考config目录下的文件 config.yaml 编写配置文件
+
+（3）参考testcase目录下的三个用例文件模板编写对应的测试用例
+
+（4）运行 
+
+

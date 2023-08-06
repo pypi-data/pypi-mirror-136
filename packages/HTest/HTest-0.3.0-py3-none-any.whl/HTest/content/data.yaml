@@ -1,0 +1,25 @@
+BASE_DIR: /home/hangshu/taolei/test
+case-list:
+- - $args
+  - $input
+  - $check
+- - hs-input
+  - id
+  - kw
+  - $input
+- - hs-click
+  - id
+  - su
+- - hs-check
+  - $check
+main-list:
+- - case1
+  - 航数智能
+  - 搜索航数智能
+- - case2
+  - 航数
+  - 搜索航数
+- - case3
+  - 法院
+  - 搜索法院
+url: https://www.baidu.com/
