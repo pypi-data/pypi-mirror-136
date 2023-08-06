@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+logged_groups/__init__.py
+logged_groups/init_check.py
+logged_groups/logging.py
+logged_groups.egg-info/PKG-INFO
+logged_groups.egg-info/SOURCES.txt
+logged_groups.egg-info/dependency_links.txt
+logged_groups.egg-info/requires.txt
+logged_groups.egg-info/top_level.txt
