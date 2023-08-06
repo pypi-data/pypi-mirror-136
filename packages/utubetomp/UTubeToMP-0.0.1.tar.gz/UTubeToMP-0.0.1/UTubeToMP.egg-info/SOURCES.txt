@@ -1,0 +1,6 @@
+pyproject.toml
+setup.py
+UTubeToMP.egg-info/PKG-INFO
+UTubeToMP.egg-info/SOURCES.txt
+UTubeToMP.egg-info/dependency_links.txt
+UTubeToMP.egg-info/top_level.txt
