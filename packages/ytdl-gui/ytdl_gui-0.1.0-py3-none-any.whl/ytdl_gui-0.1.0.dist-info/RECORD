@@ -1,0 +1,9 @@
+ytdl_gui/__init__.py,sha256=5Ax-whJMC4oEip_XNNoU_eglG650pcoy44J-kT2Fp44,64
+ytdl_gui/const.py,sha256=kdOy9wTQlabMtnNDjqOSMInRFIrYxr8IZMYRTHCo-zs,93
+ytdl_gui/dialog.py,sha256=9dcH6SyVRmWjjkAHegrBhUWYYyTbky0WRP04fnphpCE,1669
+ytdl_gui/main.py,sha256=Rh2ucjrTlDCfr0ywKi8eYVfX15LEjyXLI0seTZFWjWM,4886
+ytdl_gui/youtube.py,sha256=JCbOIhqwYNFD0MqVUi2WEU43y_p-HLMkAYzy6w9v2Dc,1242
+ytdl_gui-0.1.0.dist-info/entry_points.txt,sha256=VuBi1azZCGKwW15jruhvxqHXa2KYVl_hKwgtYGvDjkk,42
+ytdl_gui-0.1.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+ytdl_gui-0.1.0.dist-info/METADATA,sha256=-pewH8mMijxa5ziZfMeoZznSoyNjDIu5h-iUySgy5-0,449
+ytdl_gui-0.1.0.dist-info/RECORD,,
