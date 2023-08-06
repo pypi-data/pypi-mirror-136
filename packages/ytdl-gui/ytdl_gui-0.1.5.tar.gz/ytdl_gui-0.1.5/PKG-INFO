@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: ytdl-gui
+Version: 0.1.5
+Summary: 
+Author: sleepntsheep
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: PyGObject (>=3.42.0,<4.0.0)
+Requires-Dist: certifi (>=2021.10.8,<2022.0.0)
+Requires-Dist: yt-dlp (>=2022.1.21,<2023.0.0)
