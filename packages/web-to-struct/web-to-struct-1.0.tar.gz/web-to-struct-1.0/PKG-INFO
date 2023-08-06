@@ -1,0 +1,13 @@
+Metadata-Version: 1.2
+Name: web-to-struct
+Version: 1.0
+Summary: A tool for data structuring, mainly for web data.
+Home-page: https://github.com/BD777/web-to-struct
+Author: BD777
+Author-email: mis_tletoe@foxmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6, <4
