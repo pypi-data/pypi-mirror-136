@@ -1,0 +1,8 @@
+pdtypes/__init__.py,sha256=b5zWNT7GZNs51bKeyZqYx8nUBA7eF3dosSXiqLXtY8Y,233
+pdtypes/formatters.py,sha256=m2AuYZmi74gERNHiZvd3w2ILbjEA2kqPt-qiepnpalY,15070
+pdtypes/groupby.py,sha256=pdDRnnO-fa1r-McTMJfO3FadZKniyBMCC7vHwJj7dmw,888
+pdtypes/patching.py,sha256=KFXUEcVsQHM02J7DptG_NkvyDOqbqUXh8FeYkGNY6RI,1576
+pdtypes-0.0.1.dist-info/LICENSE,sha256=VxQ8MSST_rbp5qkRYF8bM45Dj35dQvcbxE9F6LmLMDw,1684
+pdtypes-0.0.1.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+pdtypes-0.0.1.dist-info/METADATA,sha256=iY2ECtd5-FVj3ApjP0vJpmKzIAQMWwZsA_XgnFwHpDk,1631
+pdtypes-0.0.1.dist-info/RECORD,,
