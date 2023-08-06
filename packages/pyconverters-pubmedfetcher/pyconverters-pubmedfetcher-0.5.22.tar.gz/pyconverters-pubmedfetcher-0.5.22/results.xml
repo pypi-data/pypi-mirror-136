@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="1" failures="0" skipped="0" tests="1" time="0.175" timestamp="2021-12-09T18:11:57.818901" hostname="OLI-OMEN"><testcase classname="" name="tests.test_pubmedfetcher" time="0.000"><error message="collection failure">ImportError while importing test module '/home/olivier/dev/kairntech/pyconverters_pubmedfetcher/tests/test_pubmedfetcher.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+../../../.pyenv/versions/3.8.2/lib/python3.8/importlib/__init__.py:127: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+tests/test_pubmedfetcher.py:4: in &lt;module&gt;
+    from pyconverters_pubmedfetcher.pubmedfetcher import PubmedFetcherConverter, PubmedFetcherParameters
+.tox/py38/lib/python3.8/site-packages/pyconverters_pubmedfetcher/pubmedfetcher.py:8: in &lt;module&gt;
+    from blingfire import text_to_sentences_and_offsets
+.tox/py38/lib/python3.8/site-packages/blingfire/__init__.py:5: in &lt;module&gt;
+    import numpy as np
+E   ModuleNotFoundError: No module named 'numpy'</error></testcase></testsuite></testsuites>
