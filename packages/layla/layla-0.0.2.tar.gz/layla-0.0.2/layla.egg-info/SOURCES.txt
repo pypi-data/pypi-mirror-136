@@ -1,0 +1,17 @@
+LICENSE.TXT
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+layla/__init__.py
+layla/layla.py
+layla.egg-info/PKG-INFO
+layla.egg-info/SOURCES.txt
+layla.egg-info/dependency_links.txt
+layla.egg-info/requires.txt
+layla.egg-info/top_level.txt
+layla/model/__init__.py
+layla/model/model.py
+layla/model/window_gru.py
+layla/stream/__init__.py
+layla/stream/input.py
