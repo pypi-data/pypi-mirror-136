@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: mutagenesis-visualization
+Version: 1.0.0
+Summary: 
+Author: Frank
+Author-email: fhidalgoruiz@berkeley.edu
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: XlsxWriter (>=1.4.4,<2.0.0)
+Requires-Dist: adjustText (>=0.7.3,<0.8.0)
+Requires-Dist: biopython (>=1.79,<2.0)
+Requires-Dist: dataclasses-json (>=0.5.2,<0.6.0)
+Requires-Dist: freesasa (>=2.1.0,<3.0.0)
+Requires-Dist: ipympl (>=0.7.0,<0.8.0)
+Requires-Dist: ipython (>=7.31.1,<8.0.0)
+Requires-Dist: matplotlib (>=3.4.3,<4.0.0)
+Requires-Dist: numpy (>=1.19.5,<2.0.0)
+Requires-Dist: openpyxl (>=3.0.7,<4.0.0)
+Requires-Dist: pandas (>=1.2.0,<2.0.0)
+Requires-Dist: pillow (>=9.0.0,<10.0.0)
+Requires-Dist: plotly (>=5.1.0,<6.0.0)
+Requires-Dist: scikit-learn (>=0.24.2,<0.25.0)
+Requires-Dist: scipy (>=1.5,<2.0)
+Requires-Dist: seaborn (==0.10.0)
+Requires-Dist: statsmodels (>=0.12.2,<0.13.0)
+Requires-Dist: xlrd (>=2.0.1,<3.0.0)
