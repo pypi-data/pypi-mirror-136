@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: jupiterweb
+Version: 1.0.1
+Summary: Um scraper de disciplinas do jupiterweb
+Home-page: https://github.com/ghurone/jupiterweb-scraper
+Author: Érick Ghuron
+Author-email: ghuron@usp.br
+License: MIT
+Project-URL: Código fonte, https://github.com/ghurone/jupiterweb-scraper
+Keywords: jupiterweb ghuron disciplinas
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: Portuguese (Brazilian)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+README.md
+
