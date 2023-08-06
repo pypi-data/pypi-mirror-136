@@ -1,0 +1,10 @@
+aws_cdk/aws_budgets/__init__.py,sha256=UaEJfZhqa5dq2vZgQq6Fld3jA2lmoaRzBkZiOwXuWEg,112484
+aws_cdk/aws_budgets/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+aws_cdk/aws_budgets/_jsii/__init__.py,sha256=AkRbAvCpRFwIhVd-caWLhJOjzMXLbtApjOmL01a3dYg,373
+aws_cdk/aws_budgets/_jsii/aws-budgets@1.141.0.jsii.tgz,sha256=wxkRimDoj3gUMTb-T8dXf5D8iGLRa78RheDgvqcU5HY,57581
+aws_cdk.aws_budgets-1.141.0.dist-info/LICENSE,sha256=wX3LqRrxZ97zcDpw0dQ58Zb9AQalEDmXs6nP39muv7o,11391
+aws_cdk.aws_budgets-1.141.0.dist-info/METADATA,sha256=MLCLTnBCQCPELmJI02orC-RQFX7zT0TbSlQ5uYYOoq0,2480
+aws_cdk.aws_budgets-1.141.0.dist-info/NOTICE,sha256=piksgoXop22-zO1J9i3rVrv57wUN9siPK1pqGzZ7-AE,113
+aws_cdk.aws_budgets-1.141.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+aws_cdk.aws_budgets-1.141.0.dist-info/top_level.txt,sha256=1TALAKbuUGsMSrfKWEf268lySCmcqSEO6cDYe_XlLHM,8
+aws_cdk.aws_budgets-1.141.0.dist-info/RECORD,,
