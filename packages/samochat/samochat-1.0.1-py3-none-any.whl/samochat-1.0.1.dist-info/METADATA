@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: samochat
+Version: 1.0.1
+Summary: a simple python library for the SamoChat API
+Home-page: UNKNOWN
+Author: Samsoft
+License: apache 2.0
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+
+README.md
+
+
