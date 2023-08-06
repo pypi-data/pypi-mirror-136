@@ -1,0 +1,247 @@
+from math import log
+import numpy as np
+from scipy import optimize
+from typing import Union, List, Optional
+
+
+def calculate_prices(rates: Union[np.ndarray, List[float]], t: Union[np.ndarray, List[float]]) -> np.ndarray:
+    """Calculate prices from zero-coupon rates
+
+    Args:
+        rates: zero-coupon rates vector of length n
+        t: time to maturity vector (in years) of length n
+
+    Returns:
+        Prices as vector of length n
+    """
+
+    # Convert list into numpy array
+    rates = np.array(rates)
+    t = np.array(t)
+
+    return np.power(1 + rates, -t)
+
+
+def ufr_discount_factor(ufr: float, t: Union[np.ndarray, List[float]]) -> np.ndarray:
+    """Calculate Ultimate Forward Rate (UFR) discount factors.
+
+    Takes the UFR with a vector of maturities and returns for each of the
+    maturities the discount factor
+        d_UFR = e^(-UFR * t)
+
+    Note that UFR is expected to be annualy compounded and that
+    this function performs the calculation of the log return prior
+    to applying the formula above.
+
+    Args:
+        ufr: Ultimate Forward Rate (annualized/annual compounding)
+        t: time to maturity vector (in years) of length n
+
+    Returns:
+        UFR discount factors as vector of length n
+    """
+
+    # Convert annualized ultimate forward rate to log-return
+    ufr = log(1 + ufr)
+
+    # Convert list into numpy array
+    t = np.array(t)
+
+    return np.exp(-ufr * t)
+
+
+def wilson_function(t1: Union[np.ndarray, List[float]],
+                    t2: Union[np.ndarray, List[float]],
+                    alpha: float, ufr: float) -> np.ndarray:
+    """Calculate matrix of Wilson functions
+
+    The Smith-Wilson method requires the calculation of a series of Wilson
+    functions. The Wilson function is calculated for each maturity combination
+    t1 and t2. If t1 and t2 are scalars, the result is a scalar. If t1 and t2
+    are vectors of shape (m, 1) and (n, 1), then the result is a matrix of
+    Wilson functions with shape (m, n) as defined on p. 16:
+        W = e^(-UFR * (t1 + t2)) * (α * min(t1, t2) - 0.5 * e^(-α * max(t1, t2))
+            * (e^(α * min(t1, t2)) - e^(-α * min(t1, t2))))
+
+    Source: EIOPA QIS 5 Technical Paper; Risk-free interest rates – Extrapolation method; p.11ff
+    https://eiopa.europa.eu/Publications/QIS/ceiops-paper-extrapolation-risk-free-rates_en-20100802.pdf
+
+    Args:
+        t1: time to maturity vector of length m
+        t2: time to maturity vector of length n
+        alpha: Convergence speed parameter
+        ufr: Ultimate Forward Rate (annualized/annual compounding)
+
+    Returns:
+        Wilson-matrix of shape (m, n) as numpy matrix
+    """
+
+    # Take time vectors of shape (nx1) and (mx1) and turn them into matrices of shape (mxn).
+    # This is achieved by repeating the vectors along the axis 1. The operation is required
+    # because the Wilson function needs all possible combinations of maturities to construct
+    # the Wilson matrix
+    m = len(t1)
+    n = len(t2)
+    t1_Mat = np.repeat(t1, n, axis=1)
+    t2_Mat = np.repeat(t2, m, axis=1).T
+
+    # Calculate the minimum and maximum of the two matrices
+    min_t = np.minimum(t1_Mat, t2_Mat)
+    max_t = np.maximum(t1_Mat, t2_Mat)
+
+    # Calculate the UFR discount factor - p.16
+    ufr_disc = ufr_discount_factor(ufr=ufr, t=(t1_Mat + t2_Mat))
+    W = ufr_disc * (alpha * min_t - 0.5 * np.exp(-alpha * max_t) * \
+        (np.exp(alpha * min_t) - np.exp(-alpha * min_t)))
+
+    return W
+
+
+def fit_parameters(rates: Union[np.ndarray, List[float]],
+                   t: Union[np.ndarray, List[float]],
+                   alpha: float, ufr: float) -> np.ndarray:
+    """Calculate Smith-Wilson parameter vector ζ
+
+    Given the Wilson-matrix, vector of discount factors and prices,
+    the parameter vector can be calculated as follows (p.17):
+        ζ = W^-1 * (μ - P)
+
+    Source: EIOPA QIS 5 Technical Paper; Risk-free interest rates – Extrapolation method; p.11ff
+    https://eiopa.europa.eu/Publications/QIS/ceiops-paper-extrapolation-risk-free-rates_en-20100802.pdf
+
+    Args:
+        rates: Observed zero-coupon rates vector of length n
+        t1: Observed time to maturity vector (in years) of length n
+        alpha: Convergence speed parameter
+        ufr: Ultimate Forward Rate (annualized/annual compounding)
+
+    Returns:
+        Wilson-matrix of shape (m, n) as numpy matrix
+    """
+
+    # Calcualte square matrix of Wilson functions, UFR discount vector and price vector
+    # The price vector is calculated with zero-coupon rates and assumed face value of 1
+    # For the estimation of zeta, t1 and t2 correspond both to the observed maturities
+    W = wilson_function(t1=t, t2=t, alpha=alpha, ufr=ufr)
+    mu = ufr_discount_factor(ufr=ufr, t=t)
+    P = calculate_prices(rates=rates, t=t)
+
+    # Calculate vector of parameters (p. 17)
+    # To invert the Wilson-matrix, conversion to type matrix is required
+    zeta = np.matrix(W).I * (mu - P)
+    zeta = np.array(zeta)     # Convert back to more general array type
+
+    return zeta
+
+
+def fit_smithwilson_rates(rates_obs: Union[np.ndarray, List[float]],
+                          t_obs: Union[np.ndarray, List[float]],
+                          t_target: Union[np.ndarray, List[float]],
+                          ufr: float, alpha: Optional[float] = None) -> np.ndarray:
+    """Calculate zero-coupon yields with Smith-Wilson method based on observed rates.
+
+    This function expects the rates and initial maturity vector to be
+    before the Last Liquid Point (LLP). The targeted maturity vector can
+    contain both, more granular maturity structure (interpolation) or terms after
+    the LLP (extrapolation).
+
+    The Smith-Wilson method calculated first the Wilson-matrix (p. 16):
+        W = e^(-UFR * (t1 + t2)) * (α * min(t1, t2) - 0.5 * e^(-α * max(t1, t2))
+            * (e^(α * min(t1, t2)) - e^(-α * min(t1, t2))))
+
+    Given the Wilson-matrix, vector of discount factors and prices,
+    the parameter vector can be calculated as follows (p.17):
+        ζ = W^-1 * (μ - P)
+
+    With the Smith-Wilson parameter and Wilson-matrix, the zero-coupon bond
+    prices can be represented as (p. 18) in matrix notation:
+        P = e^(-t * UFR) - W * zeta
+
+    In the last case, t can be any maturity vector
+
+    Source: EIOPA QIS 5 Technical Paper; Risk-free interest rates – Extrapolation method; p.11ff
+    https://eiopa.europa.eu/Publications/QIS/ceiops-paper-extrapolation-risk-free-rates_en-20100802.pdf
+
+    Args:
+        rates_obs: Initially observed zero-coupon rates vector before LLP of length n
+        t_obs: Initially observed time to maturity vector (in years) of length n
+        t_target: New targeted maturity vector (in years) with interpolated/extrapolated terms
+        ufr: Ultimate Forward Rate (annualized/annual compounding)
+        alpha: (optional) Convergence speed parameter. If not provided estimated using
+            the `fit_convergence_parameter()` function
+
+    Returns:
+        Vector of zero-coupon rates with Smith-Wilson interpolated or extrapolated rates
+    """
+
+    # Convert list to numpy array and use reshape to convert from 1-d to 2-d array
+    # E.g. reshape((-1, 1)) converts an input of shape (10,) with second dimension
+    # being empty (1-d vector) to shape (10, 1) where second dimension is 1 (2-d vector)
+    rates_obs = np.array(rates_obs).reshape((-1, 1))
+    t_obs = np.array(t_obs).reshape((-1, 1))
+    t_target = np.array(t_target).reshape((-1, 1))
+
+    if alpha is None:
+        alpha = fit_convergence_parameter(rates_obs=rates_obs, t_obs=t_obs, ufr=ufr)
+
+    zeta = fit_parameters(rates=rates_obs, t=t_obs, alpha=alpha, ufr=ufr)
+    ufr_disc = ufr_discount_factor(ufr=ufr, t=t_target)
+    W = wilson_function(t1=t_target, t2=t_obs, alpha=alpha, ufr=ufr)
+
+    # Price vector - equivalent to discounting with zero-coupon yields 1/(1 + r)^t
+    # for prices where t_obs = t_target. All other matuirites are interpolated or extrapolated
+    P = ufr_disc - W @ zeta     # '@' in numpy is the dot product of two matrices
+
+    # Transform price vector to zero-coupon rate vector (1/P)^(1/t) - 1
+    return np.power(1 / P, 1 / t_target) - 1
+
+
+def fit_convergence_parameter(rates_obs: Union[np.ndarray, List[float]],
+                              t_obs: Union[np.ndarray, List[float]],
+                              ufr: float) -> float:
+    """Fit Smith-Wilson convergence factor (alpha).
+
+    Args:
+        rates_obs: Initially observed zero-coupon rates vector before LLP of length n
+        t_obs: Initially observed time to maturity vector (in years) of length n
+        ufr: Ultimate Forward Rate (annualized/annual compounding)
+
+    Returns:
+        Convergence parameter alpha
+    """
+
+    # Last liquid point (LLP)
+    llp = np.max(t_obs)
+
+    # Maturity at which forward curve is supposed to converge to ultimate forward rate (UFR)
+    # See: https://www.eiopa.europa.eu/sites/default/files/risk_free_interest_rate/12092019-technical_documentation.pdf (chapter 7.D., p. 39)
+    convergence_t = max(llp + 40, 60)
+
+    # Optimization function calculating the difference between UFR and forward rate at convergence point
+    def forward_difference(alpha: float):
+        # Fit yield curve
+        rates = fit_smithwilson_rates(rates_obs=rates_obs,     # Input rates to be fitted
+                                      t_obs=t_obs,             # Maturities of these rates
+                                      t_target=[convergence_t, convergence_t + 1],     # Maturity at which curve is supposed to converge to UFR
+                                      alpha=alpha,             # Optimization parameter
+                                      ufr=ufr)                 # Ultimate forward rate
+
+        # Calculate the forward rate at convergence maturity - this is an approximation since
+        # according to the documentation the minimization should be based on the forward intensity, not forward rate
+        forward_rate = (1 + rates[1])**(convergence_t + 1) / (1 + rates[0])**(convergence_t) - 1
+
+        # Absolute difference needs to be smaller than 1 bps
+        return -abs(forward_rate - ufr) + 1 / 10_000
+
+    # Minimize alpha w.r.t. forward difference criterion
+    root = optimize.minimize(lambda alpha: alpha, x0=0.15, method='SLSQP', bounds=[[0.05, 1.0]],
+                             constraints=[{
+                                 'type': 'ineq',
+                                 'fun': forward_difference
+                             }],
+                             options={
+                                 'ftol': 1e-6,
+                                 'disp': True
+                             })
+
+    return float(root.x)

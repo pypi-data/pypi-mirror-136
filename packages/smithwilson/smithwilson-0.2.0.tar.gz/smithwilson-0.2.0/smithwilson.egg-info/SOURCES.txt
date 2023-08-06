@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+smithwilson/__init__.py
+smithwilson/core.py
+smithwilson.egg-info/PKG-INFO
+smithwilson.egg-info/SOURCES.txt
+smithwilson.egg-info/dependency_links.txt
+smithwilson.egg-info/requires.txt
+smithwilson.egg-info/top_level.txt
+smithwilson/tests/__init__.py
+smithwilson/tests/test_core.py
