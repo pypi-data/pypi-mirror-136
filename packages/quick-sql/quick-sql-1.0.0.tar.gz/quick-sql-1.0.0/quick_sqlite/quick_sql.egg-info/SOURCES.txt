@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+quick_sqlite/additional_files/__init__.py
+quick_sqlite/additional_files/loops.py
+quick_sqlite/quick_sql.egg-info/PKG-INFO
+quick_sqlite/quick_sql.egg-info/SOURCES.txt
+quick_sqlite/quick_sql.egg-info/dependency_links.txt
+quick_sqlite/quick_sql.egg-info/top_level.txt
