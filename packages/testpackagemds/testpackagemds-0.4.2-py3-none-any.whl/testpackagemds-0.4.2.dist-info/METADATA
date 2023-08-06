@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: testpackagemds
+Version: 0.4.2
+Summary: Calculate words  in a text file!
+License: MIT
+Author: Florencia
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: matplotlib (>=3.5.0,<4.0.0)
+Description-Content-Type: text/markdown
+
+# testpackagemds 
+
+
+[![codecov](https://codecov.io/gh/flor14/testpackagemds/branch/main/graph/badge.svg)](https://codecov.io/gh/flor14/testpackagemds)
+
+
+
+A package created to try a GitHub Actions workflow! :)
+
+
+[![ci-cd](https://github.com/flor14/testpackagemds/actions/workflows/ci-cd.yml/badge.svg)](https://github.com/flor14/testpackagemds/actions/workflows/ci-cd.yml)
+
+A package created to try a GitHub Actions workflow!
+
+
+## Installation
+
+```bash
+$ pip install testpackagemds
+```
+
+## Usage
+
+
+
+## Contributing
+
+Interested in contributing? Check out the contributing guidelines. Please note that this project is released with a Code of Conduct. By contributing to this project, you agree to abide by its terms.
+
+
+
+
+
