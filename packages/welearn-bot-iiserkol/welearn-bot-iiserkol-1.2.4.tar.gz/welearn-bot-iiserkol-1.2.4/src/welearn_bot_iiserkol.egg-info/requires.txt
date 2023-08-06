@@ -1,0 +1,5 @@
+beautifulsoup4>=4.10.0
+google_api_python_client>=2.36.0
+google_auth_oauthlib>=0.4.4
+protobuf>=3.19.4
+requests>=2.26.0
