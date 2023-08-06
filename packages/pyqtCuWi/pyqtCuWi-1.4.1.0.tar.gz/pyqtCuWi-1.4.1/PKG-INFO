@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: pyqtCuWi
+Version: 1.4.1
+Summary: Custom Widgets For PyQt5
+Home-page: https://github.com/myygunduz/pyqtCuWi
+Author: Mücahit Yusuf Yasin Gündüz
+Author-email: myygunduz@gmail.com
+License: GPL v3.0
+Download-URL: https://github.com/myygunduz/pyqtCuWi/archive/refs/tags/1.4.1.tar.gz
+Description: UNKNOWN
+Keywords: PyQt5,python,GUI
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
