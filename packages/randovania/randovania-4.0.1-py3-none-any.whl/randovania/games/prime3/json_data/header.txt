@@ -1,0 +1,80 @@
+====================
+Templates
+
+* Use Screw Attack (Space Jump):
+      Space Jump Boots and Morph Ball and Screw Attack
+
+* Use Screw Attack (No Space Jump):
+      Morph Ball and Screw Attack
+
+* Shoot Phazite (X-Ray and Nova):
+      Nova Beam and X-Ray Visor
+
+* Melt Objects (Plasma or Nova):
+      Nova Beam or Plasma Beam
+
+* Use Grapple Voltage (Lasso and Voltage):
+      Grapple Lasso and Grapple Voltage
+
+* Bomb Jump/Spring Space Jump (Beginner):
+      All of the following:
+          Morph Ball
+          Any of the following:
+              Bomb/Spring Space Jump (Beginner)
+              Morph Ball Bomb and Bomb Jump (Beginner)
+
+* Use Ship Missile (Command Visor and Ship Missile):
+      Command Visor and Ship Missile
+
+* Use Ship Grapple (Command Visor and Ship Grapple):
+      Command Visor and Ship Grapple
+
+* Enter Hypermode:
+      Energy Tank and HyperModeTank
+
+* Hazard Shield:
+      Suit Type ≥ 4
+
+====================
+Dock Weaknesses
+
+> Door
+  * Normal Door; Lock type: FRONT_ALWAYS_BACK_FREE
+      Trivial
+
+  * Plasma Door; Lock type: FRONT_ALWAYS_BACK_FREE
+      Plasma Beam
+
+  * Nova Door; Lock type: FRONT_ALWAYS_BACK_FREE
+      Nova Beam
+
+  * Missile Blast Shield; Lock type: FRONT_BLAST_BACK_FREE_UNLOCK
+      Missile
+
+  * Ice Missile Blast Shield; Lock type: FRONT_BLAST_BACK_FREE_UNLOCK
+      Ice Missile and Missile
+
+  * Seeker Missiles Blast Shield; Lock type: FRONT_BLAST_BACK_FREE_UNLOCK
+      Missile ≥ 5 and Seeker Missile
+
+  * Grapple Lasso Blast Shield; Lock type: FRONT_BLAST_BACK_FREE_UNLOCK
+      Grapple Lasso
+
+  * Permanently Locked; Lock type: FRONT_ALWAYS_BACK_FREE
+      Impossible
+
+  * Ice Missile Blast Shield (Vulnerable to Missiles); Lock type: FRONT_BLAST_BACK_FREE_UNLOCK
+      All of the following:
+          Missile
+          Ice Missile or Knowledge (Beginner)
+
+> Morph Ball Door
+  * Morph Ball Door; Lock type: FRONT_ALWAYS_BACK_FREE
+      Morph Ball
+
+> Dock
+  * Open Passage; Lock type: FRONT_ALWAYS_BACK_FREE
+      Trivial
+
+  * Not Determined; Lock type: FRONT_ALWAYS_BACK_FREE
+      Impossible
