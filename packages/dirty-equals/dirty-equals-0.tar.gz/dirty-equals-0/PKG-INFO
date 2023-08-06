@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: dirty-equals
+Version: 0
+Summary: Using __eq__ for dirty, but extremely useful things.
+Home-page: https://github.com/samuelcolvin/dirty-equals
+License: MIT
+Author: Samuel Colvin
+Author-email: s@muelcolvin.com
+Requires-Python: >=3.7.0,<4.0.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Framework :: Pytest
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Internet
+Classifier: Typing :: Typed
+Project-URL: Documentation, https://github.com/samuelcolvin/dirty-equals
+Project-URL: Repository, https://github.com/samuelcolvin/dirty-equals
+Description-Content-Type: text/markdown
+
+# dirty-equals
+
+[![CI](https://github.com/samuelcolvin/dirty-equals/workflows/CI/badge.svg?event=push)](https://github.com/samuelcolvin/dirty-equals/actions?query=event%3Apush+branch%3Amaster+workflow%3ACI)
+[![Coverage](https://codecov.io/gh/samuelcolvin/dirty-equals/branch/master/graph/badge.svg)](https://codecov.io/gh/samuelcolvin/dirty-equals)
+[![pypi](https://img.shields.io/pypi/v/dirty-equals.svg)](https://pypi.python.org/pypi/dirty-equals)
+[![versions](https://img.shields.io/pypi/pyversions/dirty-equals.svg)](https://github.com/samuelcolvin/dirty-equals)
+[![license](https://img.shields.io/github/license/samuelcolvin/dirty-equals.svg)](https://github.com/samuelcolvin/dirty-equals/blob/master/LICENSE)
+
+Using `__eq__` for dirty, but extremely useful things.
+
+## Install
+
+```bash
+pip install dirty-equals
+```
+
+## Usage
+
+TODO.
+
