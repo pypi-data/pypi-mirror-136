@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: aiohwenergy
+Version: 0.8.0
+Summary: Python module to talk to HomeWizard Energy Devices.
+Home-page: https://github.com/DCSBL/aiohwenergy
+Author: DCSBL
+Author-email: github@ducosebel.nl
+License: Apache License 2.0
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: aiohttp
+
+# AIOHWENERGY
+
+Asyncio package to communicate with HomeWizard Energy devices
+This package is aimed at basic control of the device. Initial setup and configuration is assumed to done with the official HomeWizard Energy app.
+
+## Disclaimer
+
+This package is not developed, nor supported by HomeWizard.
+
+## Installation
+```bash
+python3 -m pip install aiohwenergy
+```
+
+# Usage
+Instantiate the HWEnergy class and access the API.
+
+For more details on the API see the official API documentation on
+https://homewizard-energy-api.readthedocs.io
+
+# Example
+The example below is available as a runnable script in the repository.
+
+```python
+from aiohwenergy import HomeWizardEnergy
+# Make contact with a energy device
+device = HomeWizardEnergy(args.host)
+
+# Update device value
+await device.update()
+
+# Use the data
+print(device.device.product_name)
+print(device.device.serial)
+print(device.data.wifi_ssid)
+
+# Close connection
+await device.close()
+```
+
