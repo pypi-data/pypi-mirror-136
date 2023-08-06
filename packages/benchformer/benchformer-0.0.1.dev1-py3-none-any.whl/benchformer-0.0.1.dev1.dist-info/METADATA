@@ -1,0 +1,130 @@
+Metadata-Version: 2.1
+Name: benchformer
+Version: 0.0.1.dev1
+Summary: Transformers Language Models benchmarking tool
+Home-page: https://github.com/serafima-ai/BenchFormer
+Author: Nikita Syromiatnikov
+Author-email: nik@serafima.ai
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/serafima-ai/BenchFormer/issues
+Project-URL: Source Code, https://github.com/serafima-ai/BenchFormer
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: dotmap (>=1.3.13)
+Requires-Dist: scipy (>=1.4.1)
+Requires-Dist: pandas (>=0.25.3)
+Requires-Dist: torch (>=1.10.1)
+Requires-Dist: pytorch-lightning (==0.7.1)
+Requires-Dist: transformers (==4.12.3)
+
+<p align="center">
+    <br>
+    <img src="https://serafima.ai/assets/img/reps/benchformer-logo.png" height="200" width="200"/>
+    <br>
+</p>
+
+<p align="center">
+    <a href="#">
+        <img alt="Codacy grade" src="https://img.shields.io/codacy/grade/15d9f2685c154c6f9fb022678f2e7a45">
+    </a>
+    <a href="#">
+        <img alt="GitHub License" src="https://img.shields.io/github/license/serafima-ai/benchformer">
+    </a>
+    <a href="#">
+       <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/serafima-ai/benchformer">
+    </a>
+    <a href="#">
+        <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/serafima-ai/benchformer?style=social">
+    </a>
+    <a href="#">
+       <img alt="GitHub watchers" src="https://img.shields.io/github/watchers/serafima-ai/benchformer?style=social">
+    </a>
+</p>
+
+<h3 align="center">
+    <p>Benchmarking tool for Transformer architecture models in various natural language understanding tasks.</p>
+</h3>
+
+<h3>Installation</h3>
+<hr>
+<p>Install the package using pip package manager:</p>
+<pre>pip install benchformer</pre>
+
+<h3>Progress</h3>
+<hr>
+<table>
+  <tr>
+    <td style="text-align: center;">Model</td>
+    <td colspan="8" style="text-align: center;">Task</td>
+  </tr>
+  <tr>
+  <td colspan="9" style="text-align: center;"><a href="https://russiansuperglue.com/">RUSSIAN SUPERGLUE</a></td>
+  </tr>
+  <tr>
+  <td></td>
+  <td>PARus</td>
+  <td>LiDiRus</td>
+  <td>RCB</td>
+  <td>MuSeRC</td>
+  <td>TERRa</td>
+  <td>RWSD</td>
+  <td>DaNetQA</td>
+  <td>RuCoS</td>
+  </tr>
+  <tr>
+  <td><a href="https://arxiv.org/pdf/2105.03824.pdf">FNet</a></td>
+  <td style="text-align: center;"><a href="https://github.com/serafima-ai/BenchFormer/blob/master/examples/GluePARus.ipynb">+</a></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  </tr>
+  <tr>
+  <td>BERT</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  </tr>
+  <tr>
+  <td>DistilBERT</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  </tr>
+  <tr>
+  <td>T5</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  </tr>
+</table>
+
