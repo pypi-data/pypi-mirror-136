@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: oc_mirror
+Version: 0.1.2
+Summary: A utility that can be used to mirror OpenShift releases between docker registries.
+Home-page: https://pypi.org/project/oc-mirror/
+Author: Richard Davis
+Author-email: crashvb@gmail.com
+License: GNU General Public LIcense v3.0
+Description: # oc-mirror
+        
+        ## Overview
+        
+        A utility that can be used to mirror OpenShift releases between docker registries.
+        
+        ## Compatibility
+        
+        * Tested with python 3.8
+        
+        ## Installation
+        ### From [pypi.org](https://pypi.org/project/oc-mirror/)
+        
+        ```
+        $ pip install oc_mirror
+        ```
+        
+        ### From source code
+        
+        ```bash
+        $ git clone https://github.com/crashvb/oc-mirror
+        $ cd oc-mirror
+        $ virtualenv env
+        $ source env/bin/activate
+        $ python -m pip install --editable .[dev]
+        ```
+        
+        ## Usage
+        
+        TODO
+        
+        ### Environment Variables
+        
+        None.
+        
+        ## Development
+        
+        [Source Control](https://github.com/crashvb/oc-mirror)
+        
+Keywords: integrity mirror oc oc-mirror openshift sign signatures verify
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Provides-Extra: dev
