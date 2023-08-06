@@ -1,0 +1,4 @@
+include LICENSE
+include readme.md
+include output_SCout.png
+include output_SCout_Logger.png

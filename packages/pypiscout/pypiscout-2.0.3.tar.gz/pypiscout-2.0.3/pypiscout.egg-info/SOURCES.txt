@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+output_SCout.png
+output_SCout_Logger.png
+readme.md
+setup.py
+pypiscout/SCout.py
+pypiscout/SCout_Logger.py
+pypiscout/SCout_helpers.py
+pypiscout/__init__.py
+pypiscout.egg-info/PKG-INFO
+pypiscout.egg-info/SOURCES.txt
+pypiscout.egg-info/dependency_links.txt
+pypiscout.egg-info/top_level.txt
