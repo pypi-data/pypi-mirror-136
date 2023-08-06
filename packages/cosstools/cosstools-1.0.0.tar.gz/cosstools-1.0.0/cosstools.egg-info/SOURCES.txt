@@ -1,0 +1,8 @@
+setup.py
+code/__init__.py
+code/pytoplot.py
+code/pyxrdspec.py
+cosstools.egg-info/PKG-INFO
+cosstools.egg-info/SOURCES.txt
+cosstools.egg-info/dependency_links.txt
+cosstools.egg-info/top_level.txt
