@@ -1,0 +1,421 @@
+feed2exec (0.18.0) unstable; urgency=medium
+
+  ship accumulated bugfixes and catchup with wayback machine changes.
+
+  special thanks to Paul Wise for the immesurable patience on
+  the wayback plugin and test suite, and to Jelmer Vernooĳ for the
+  Debian Janitor.
+
+  New features:
+
+  * Add support for saving page resources to the Wayback Machine too,
+    thanks Paul Wise!
+
+  API changes:
+
+  * we now generate a standard message-id, which has brackets around it
+
+  Bugfixes:
+
+  * fix rare crash in feed2exec parse with an empty `mailbox` setting
+  * fix feedparser dependencies for newer python
+  * catchup with html2text again (2020.1.16)
+  * add failing test and fix for cachecontrol 0.12.10 new API (Closes: GL#22)
+  * do not cache requests in plugins (Closes: #1001412, GL#26)
+  * Require feedparser 5 as minimum version for Python 3, thanks Paul Wise
+
+  Documentation:
+
+  * mention (lack of) Gemini and other protocol support
+  * leave Freenode for oftc.net
+
+  Cleanup, CI, linting:
+
+  * avoid dateparser bug workaround in newer versions
+  * drop support for python 3.5, add 3.9
+  * enforce black in tox, but not in CI
+  * first pass at type checking with mypy, with failures allowed
+  * switch to setup.cfg as much as possible
+  * fix rst syntax since we are not hacking it anymore
+  * mention build module, which may be necessary for newer setuptools_scm
+  * move fixtures to conftest.py
+  * use pytest.mark.network instead of xfail
+
+  [ Debian Janitor ]
+  * Trim trailing whitespace.
+  * Use secure copyright file specification URI.
+  * Use canonical URL in Vcs-Git.
+  * Update standards version to 4.5.1, no changes needed.
+
+ -- Antoine Beaupré <anarcat@debian.org>  Mon, 31 Jan 2022 20:51:55 -0500
+
+feed2exec (0.17.1) unstable; urgency=medium
+
+  * fix unit tests in a clean environment
+
+ -- Antoine Beaupré <anarcat@debian.org>  Thu, 04 Feb 2021 17:14:59 -0500
+
+feed2exec (0.17.0) unstable; urgency=medium
+
+  [ Roland Hieber ]
+  * move default database path to ~/.local/share (Closes: GL#16)
+
+  [ Antoine Beaupré ]
+  * default to data directory and add a deprecation warning (Closes: GL#17)
+
+ -- Antoine Beaupré <anarcat@debian.org>  Thu, 04 Feb 2021 15:59:22 -0500
+
+feed2exec (0.16.0) unstable; urgency=medium
+
+  major refactoring, new features, bug fixes
+
+  API changes:
+
+  * refactoring into a somewhat MVC model: split large feeds.py into
+    model.py and controller.py
+  * rename FeedCacheStorage to FeedItemCacheStorage
+  * factor out getter/setters in the base sqlite class
+  * remove conn member in sqlite to force use of context manager
+  * move session and fetching to the feed manager
+  * rename feeds to feed_manager in main
+  * allow absolute path in folder setting (Closes: #14)
+
+  New features:
+
+  * caching: latest feed contents get cached to avoid re-downloading
+    unchanged feeds. this includes parsing HTTP headers and so on, and
+    relies on the good behavior of the `cachecontrol` Python module
+  * Python 3.6-3.8 support
+
+  Bugfixes:
+  * recover from feedparser exceptions (Closes: #964597)
+
+  [ Roland Hieber ]
+  * README: don't let the example config create a folder named '~/Mailbox/'
+
+  [ Ian Zimmerman ]
+  * add --quiet option to silence warnings since --loglevel was broken
+
+ -- Antoine Beaupré <anarcat@debian.org>  Tue, 06 Oct 2020 14:29:08 -0400
+
+feed2exec (0.15.0) unstable; urgency=medium
+
+  bugfix release to catchup with changes in feedparser from buster.
+
+  * play catchup with newer html2text version again
+  * workaround timezone parsing bug in dateparser
+  * switch to dateparser for PyPI and tests as well
+  * register properly the special mark we are using
+  * reduce noise level of 'missing time' problems
+
+ -- Antoine Beaupré <anarcat@debian.org>  Thu, 03 Oct 2019 12:36:22 -0400
+
+feed2exec (0.14.0) unstable; urgency=medium
+
+  bugfix release, with a small new feature
+
+  * warn instead of crashing on invalid dates
+  * expand and cleanup date validation routines
+  * use dateparser module if available
+  * recommend the dateparser module for better dates handling
+  * handle broken pipe correctly from plugins
+  * add JSON output plugin
+  * bump standards, switch to dh-compat, no change
+
+ -- Antoine Beaupré <anarcat@debian.org>  Tue, 26 Feb 2019 17:00:07 -0500
+
+feed2exec (0.13.0) unstable; urgency=medium
+
+  [ Antoine Beaupré ]
+  * python 3.7 support, default on python:latest now
+  * wayback machine API change: HEAD not supported anymore
+  * fix strange crash in wayback plugin
+  * comply with new feedparser deprecation warning
+  * switch to logging.warning to comply with deprecation warning
+  * disable cov which crashes on sqlite3.IntegrityError
+  * explain how tests are hooked up together.
+  * fix typo, thanks gagz
+  * include post timestamp in ikiwiki GUIDs
+
+  [ Kang ]
+  * According to RFC5064, change header 'Archive-At' to 'Archived-At'
+
+ -- Antoine Beaupré <anarcat@debian.org>  Sat, 16 Feb 2019 10:38:09 -0500
+
+feed2exec (0.12.0) unstable; urgency=medium
+
+  [ Christophe Moille ]
+  * feed2exec.ini no more in ~/.config/feed2exec
+
+  [ Antoine Beaupré ]
+  * synchronize commandline usage with usage docs
+  * fix remaining instances of old config file path
+  * add more badges incl. say thanks
+  * add --catchup flag to parse as well
+  * fix documentation for catchup flag
+  * make the echo plugin more manifest when debugging
+  * fix planet test failure on older html2text
+  * add failing test for issue #5
+  * fix parsing of empty links
+
+ -- Antoine Beaupré <anarcat@debian.org>  Thu, 14 Jun 2018 12:31:38 -0400
+
+feed2exec (0.11.0) unstable; urgency=medium
+
+  major release: two months of bugfixes, major refactoring and
+  documentation overhaul.
+
+  * bugfixes:
+    * create missing directory in archive plugin
+    * deal with feeds without a title
+    * fix crash in mbox logging
+    * fix crash when running without a config file
+    * handle missing content-location header from the wayback machine
+    * fix crash when using a relative path with --config
+  * features:
+    * allow shorter plugin names on the commandline: the full plugin load
+      path is quite a mouthful. This makes it easier for our users and allow
+      them to use only the shorter module name, relative to the
+      `feed2exec.plugins` path, on the commandline only.  We keep the
+      configuration file and internal use with the full plugin path. This is
+      to avoid double-resolving the path and ensures the configuration file
+      has a reliable plugin name.
+  * major API refactoring, more details in d0b770a:
+    * force API consumers to specify an explicit path instead of doing
+      load-time guessing.
+    * use composition instead of inheritance in the feed manager, to
+      reduce ambiguity
+    * locking is now in the FeedManager dispatch command
+    * plugins are now ran serially even when running in parallel, although
+      plugins are, as a whole, executed in parallel with the parsing, which
+      is the main performance improvement we are looking for in parallelism
+      anyways, because parsing is the slow part. performance tests don't
+      show any significant degradation in performance
+  * minor API changes:
+    * allow find_test_file to return the test directory, to permit listing
+      test artifacts
+    * shorten and explicit variable names
+    * rename test_db fixture to db_path to harmonize with conf_path fixture
+    * also harmonize class names between conf and cache storage
+  * extensive documentation refactoring:
+    * document test writing
+    * split code of conduct and contribution guide
+    * fix formatting error in plugins docs and broken links in design docs
+    * add security disclosure guidelines and contact
+    * add support section inspired by Monkeysign
+    * add issue template, integrated with GitLab
+    * expand design documentation to provide a quick tour of the code
+    * mention --catchup in cache purge and plugin deletion limitation
+    * count lines of code without tests: it is unfair to compare out line
+      count with the others because we have a much larger test suite, which
+      has exploded in recent releases
+    * suggest positive feedback as a contribution
+    * fix syntax error and mention caveat of toot/mastodon integration
+      after tests
+  * test suite improvements;
+    * add test suite for archive plugin
+    * use pytest parametrization for opml test files
+    * enable debug-level log capture in the catchlog module
+    * accept OPML test files without resulting .ini file
+    * refactor temp db use to simplify test suite
+    * move OPML main test along with other OPML tests
+
+ -- Antoine Beaupré <anarcat@debian.org>  Mon, 29 Jan 2018 11:12:36 -0500
+
+feed2exec (0.10.0) unstable; urgency=medium
+
+  * bugfies:
+    * security: avoid possible config setting override, see 2a49300 for
+      details
+    * follow redirections in wayback machine
+    * remove useless db query when forcing
+  * features
+    * add transmission plugin, to write torrents to specific folders
+      safely
+    * add ikiwiki recentchanges filter: fixes recent changes summaries to
+      fetch links properly
+    * add linkchecker examples: allows users to check their publications
+      for broken links
+    * add shortcut parse command: allows running a single feed with a
+      temporary configuration
+    * make echo plugin a little more useful by *only* showing the passed
+      arguments
+  * documentation:
+    * document catchup properly
+    * add missing documentation about some add parameters in manpage
+  * massive API refactoring:
+    * plugins are now responsible for handling the "catchup" setting
+    * FeedStorage is gone, replaced with a FeedManager
+    * add a Feed object which has the parse/fetch functions and holds the
+      session singleton
+
+ -- Antoine Beaupré <anarcat@debian.org>  Sun, 05 Nov 2017 15:38:26 -0500
+
+feed2exec (0.9.0) unstable; urgency=medium
+
+  * API changes:
+    * config file moved from ~/.config/feed2exec/feed2exec.ini to
+      ~/.config/feed2exec.ini. move it by hand to keep feed2exec working
+    * database cache moved from ~/.config/feed2exec/feed2exec.db to
+      ~/.cache/feed2exec.db. move by hand to keep feed2exec working or
+      regenerate with `feed2exec fetch --catchup`
+    * use sessions everywhere and betamax for all queries
+    * refactor feeds storage to remove global
+    * completely rework class hierarchy
+    * use requests-file instead of custom file:// handler
+    * new dependencies: pyxdg and requests-file
+  * bugfixes:
+    * package should be arch: all, like other python packages, not any
+  * features:
+    * use a custom user agent
+
+ -- Antoine Beaupré <anarcat@debian.org>  Thu, 19 Oct 2017 15:48:19 -0400
+
+feed2exec (0.8.0) unstable; urgency=medium
+
+  * API changes: feed2exec.feeds.fetch now returns bytes, as documented
+  * bugfixes:
+    * fix crash importing Liferea feed with folders, noticed by pabs
+    * properly encode From headers
+    * fix double-encoding issues in all output plugins
+  * features:
+    * bash completion
+    * add basic opml unit tests
+    * opml folder support: save the parent "folder" element in config if
+      relevant
+    * allow duplicate feed imports by abusing the folder name
+    * expanded test coverage from 89 to 93%
+  * documentation:
+    * expand tests documentation and add plugin design docs
+    * expand on the use of vcr
+    * expand the design document
+    * cross-reference the two manpages
+
+ -- Antoine Beaupré <anarcat@debian.org>  Wed, 18 Oct 2017 14:41:44 -0400
+
+feed2exec (0.7.0) unstable; urgency=medium
+
+  * API changes: cache skipped only if plugin returns False, not None
+  * bugfixes:
+    * correctly skip feeds generating fetch errors
+    * add unit tests for droptitle and make it actually work
+    * do not crash on empty config files
+  * new plugins:
+    * 'wayback' to save feed items to wayback machine
+    * 'archive' to save to the local filesystem
+  * documentation:
+    * make build reproducible by using local doc objects
+    * move design and known issues to manpage
+    * add feed2exec-plugins manpage, including plugin writing
+      documentation and extended plugins docs
+    * fix pause and catchup descriptions
+    * move documentation to RTD
+    * silence docs build errors
+
+ -- Antoine Beaupré <anarcat@debian.org>  Thu, 12 Oct 2017 16:10:02 -0400
+
+feed2exec (0.6.0) unstable; urgency=medium
+
+  * API-breaking changes:
+    * use 'item' vocabulary consistently in API
+    * allow filters to skip entry by setting the "skip" field
+    * separate filter arguments (`filter_args`) from output arguments
+      (`args`)
+    * officially drop support for Python 2
+  * features
+    * add sample plugin to drop feed items matching a certain title
+      (`droptitle`)
+    * fix sample tweet to avoid extraneous padding
+    * add transmission exec to sample config
+    * do *not* wrap links even in references
+    * add some limited parallelism tests
+    * handle http errors more gracefully
+  * bugfixes
+    * html2text got a new release which broke tests, update tests and skip
+      older releases
+  * documentation fixes
+    * clarify error message from plugin exceptions
+    * expand API documentation
+    * note that feed2exec doesn't take care of IMAP folder subscriptions:
+      you'll need to subscribe to new feeds by hand if you use that feature
+      for now.
+    * use tox in the release process, slower but more reliable
+    * mark this as beta
+
+ -- Antoine Beaupré <anarcat@debian.org>  Thu, 05 Oct 2017 14:04:16 -0400
+
+feed2exec (0.5.1) unstable; urgency=medium
+
+  * regenerate planet test output based on new feed
+  * fix release process to workaround recent issues
+  * update test suite results with feedparser 5.2.1
+  * add minimal test suite documentation
+  * fix typo in gbp.conf
+
+ -- Antoine Beaupré <anarcat@debian.org>  Thu, 21 Sep 2017 18:50:54 -0400
+
+feed2exec (0.5) unstable; urgency=medium
+
+  * add mbox output format
+  * switch to 8-bit email encodings, drop QP
+  * remove useless platforms tag
+  * fix tests on gitlab, no chmod allowed there
+  * add fancy badges for pipeline and coverage status
+  * add more generic feed test procedures
+  * refactor email generation to move to its own module
+  * correction: rss2email has filters
+  * make sure github filter actually works
+  * add example for the emptysummary filter
+
+ -- Antoine Beaupré <anarcat@debian.org>  Thu, 21 Sep 2017 11:17:28 -0400
+
+feed2exec (0.4) unstable; urgency=medium
+
+  * switch to Python 3 style format strings: you need to switch from
+    %(link) to {item.link}. feed parameter are also available, for example
+    {feed.name} or {feed.url}. see this document for details on the syntax:
+    https://docs.python.org/3/library/string.html#format-string-syntax
+  * this allows more fancy formatting which gives us, for example,
+    podcasting capabilities.
+  * a sample config file documenting all parameters
+  * add syslog support through advanced logging module from ecdysis
+  * show message when done, useful for syslog
+  * add sample config file
+  * fix feedparser URL sanitization
+  * fix issues with empty github feeds
+  * note issue with SQLite locking
+  * refactor test suite to regroup normalization tests
+  * fix displayed path for maildir messages
+  * simplify test by not running plugins twice
+  * push test coverage from 87 to 90%
+
+ -- Antoine Beaupré <anarcat@debian.org>  Thu, 14 Sep 2017 17:20:57 -0400
+
+feed2exec (0.3) unstable; urgency=medium
+
+  * pause and catchup support
+  * PyPI release
+  * add examples to implement Twitter and Mastodon output
+
+ -- Antoine Beaupré <anarcat@debian.org>  Tue, 12 Sep 2017 13:35:38 -0400
+
+feed2exec (0.2) unstable; urgency=medium
+
+  * multipart HTML support
+  * improved plain text rendering
+  * custom folder support
+  * documentation fixes
+  * expanded email headers
+  * the ``output_args`` argument is renamed to ``args``
+  * the ``maildir`` plugin has now a sane default, and uses the
+    ``mailbox`` parameter instead of the first argument of ``output_args``
+  * add ``--force`` parameter
+  * make the html2text filter enabled by default in maildir
+
+ -- Antoine Beaupré <anarcat@debian.org>  Mon, 11 Sep 2017 21:06:10 -0400
+
+feed2exec (0.1) unstable; urgency=medium
+
+  * first alpha release: maildir, exec support, parallelism
+
+ -- Antoine Beaupré <anarcat@debian.org>  Mon, 11 Sep 2017 21:05:13 -0400

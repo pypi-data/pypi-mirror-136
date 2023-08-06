@@ -1,0 +1,27 @@
+cachecontrol
+click
+dateparser
+html2text
+html5lib
+lxml
+pyxdg
+requests
+requests-file
+setuptools_scm
+unidecode
+
+[:python_version < "3.6"]
+feedparser<6.0
+
+[:python_version >= "3"]
+feedparser>=5.0
+
+[:python_version >= "3.6"]
+feedparser>=6.0.0b3
+
+[test]
+betamax>=0.8.0
+pyflakes
+pytest
+pytest-cov
+tox
