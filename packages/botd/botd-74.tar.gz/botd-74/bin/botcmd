@@ -1,0 +1,36 @@
+#!/usr/bin/env python3
+# This file is placed in the Public Domain.
+
+
+"24/7 channel daemon"
+
+
+import sys
+
+
+from bot.clt import Client
+from bot.krn import Cfg, kcmd
+
+
+from bot.irc import Cfg as ICfg
+
+
+import bot.all
+
+
+ICfg.channel = "#botd"
+ICfg.nick = "botd"
+ICfg.username = "botd"
+ICfg.realname = "24/7 channel daemon"
+
+
+Cfg.wd = "/var/lib/botd/"
+
+
+def main():
+    clt = Client()
+    for line in kcmd(clt, " ".join(sys.argv[1:])):
+        print(line)
+
+
+main()
