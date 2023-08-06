@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: former
+Version: 0.2.7
+Summary: Create AWS CloudFormation yml for any resource
+Home-page: https://github.com/flomotlik/former
+Author: Florian Motlik
+Author-email: flo@flomotlik.me
+License: MIT
+Keywords: cloudformation,aws,cloud
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Utilities
+Classifier: License :: Public Domain
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+License-File: LICENSE
+
+UNKNOWN
+
