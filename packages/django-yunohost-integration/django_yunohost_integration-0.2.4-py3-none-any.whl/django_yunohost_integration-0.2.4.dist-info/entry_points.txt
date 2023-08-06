@@ -1,0 +1,3 @@
+[console_scripts]
+devshell=django_yunohost_integration.dev_shell:devshell_cmdloop
+
