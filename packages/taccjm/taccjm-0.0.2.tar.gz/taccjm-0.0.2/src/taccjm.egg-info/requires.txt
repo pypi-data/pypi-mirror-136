@@ -1,0 +1,15 @@
+begins<=0.9
+hug<=2.6.1
+paramiko<=2.7.2
+jinja2<=3.0.1
+psutil<=5.8.0
+numpy<=1.21.2
+
+[:python_version < "3.8"]
+importlib-metadata
+
+[testing]
+setuptools
+pytest
+pytest-cov
+dotenv

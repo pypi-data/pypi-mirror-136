@@ -1,0 +1,73 @@
+Metadata-Version: 2.1
+Name: taccjm
+Version: 0.0.2
+Summary: TACC Job Manager
+Home-page: https://github.com/cdelcastillo21/taccjm/
+Author: Carlos del-Castillo-Negrete
+Author-email: cdelcastillo21@gmail.com
+License: MIT
+Project-URL: Source, https://github.com/cdelcastillo21/taccjm/
+Project-URL: Tracker, https://github.com/cdelcastillo21/taccjm/issues
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Requires-Python: >3
+Description-Content-Type: text/x-rst; charset=UTF-8
+Provides-Extra: testing
+License-File: LICENSE.txt
+License-File: AUTHORS.rst
+
+======
+taccjm
+======
+
+TACC Job Manager is a lightweight python library for managing
+HPC resources provided by the Texas Advanced Computing Center (TACC).
+
+Description
+===========
+
+TACCJM manages ssh connections to TACC systems for deploying applications,
+running jobs, and downloading/uploading data. These connections to specific
+TACC resources are maintained by a locally deployed server that exposes an
+API to access TACC resources via http endpoints. This gives the user several
+methods to establish and maintain connections to TACC resources
+programmatically and without repeated 2-factor authentication.
+Furthermore the application and job hierarchy makes it easier to create
+reproducible and shareable HPC workflows for research.
+
+.. _pyscaffold-notes:
+
+Requirements
+============
+
+Using taccjm requires a TACC account enable with 2-fa. In order to run jobs
+on TACC systems as well, you will need a valid allocation associated with your
+user ID. Finally, your TACC user account needs to have 2-factor authentication
+enabled. See the [TACC user portal](https://portal.tacc.utexas.edu/)
+
+Installation
+============
+
+To install use pip:
+
+```
+pip install taccjm
+```
+
+A docker image for taccjm is in development and will hopefully be available in
+a future release.
+
+Getting Started
+===============
+
+The easiest way to use taccjm is through
+
+
+Note
+====
+
+This project has been set up using PyScaffold 4.0.2. For details and usage
+information on PyScaffold see https://pyscaffold.org/.
+
+
