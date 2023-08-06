@@ -1,0 +1,7 @@
+LICENSE
+setup.py
+json4tree/__init__.py
+json4tree.egg-info/PKG-INFO
+json4tree.egg-info/SOURCES.txt
+json4tree.egg-info/dependency_links.txt
+json4tree.egg-info/top_level.txt

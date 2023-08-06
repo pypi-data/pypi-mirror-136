@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: json4tree
+Version: 0.1.5
+Summary: Makes any JSON compatible with D3's hierarchy or tree chart formats (see https://d3js.org)
+Home-page: https://github.com/robertjamison/json4tree
+Author: Robert G. Jamison
+Author-email: info@robertjamison.us
+License: MIT License
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+License-File: LICENSE
+
+UNKNOWN
+
