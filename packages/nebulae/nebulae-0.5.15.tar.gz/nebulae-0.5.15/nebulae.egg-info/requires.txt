@@ -1,0 +1,14 @@
+graphviz
+h5py
+pillow
+numpy
+pandas
+piexif
+scipy
+matplotlib
+onnx
+tf2onnx
+tensorflow-probability
+tensorflow-addons
+protobuf>=3.13
+torch>=1.0
