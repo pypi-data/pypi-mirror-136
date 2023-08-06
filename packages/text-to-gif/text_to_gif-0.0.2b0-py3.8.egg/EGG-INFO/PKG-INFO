@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: text-to-gif
+Version: 0.0.2b0
+Summary: A small tool to generate text as gif, animation
+Home-page: UNKNOWN
+Author: levin
+Author-email: levinmhliu@gmail.com
+License: Apache License 2.0
+Keywords: t2g,text-to-gif,text2gif,levin,leixuewei
+Platform: all
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Natural Language :: Chinese (Simplified)
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Libraries
+
+Powered by py4ever team!
+

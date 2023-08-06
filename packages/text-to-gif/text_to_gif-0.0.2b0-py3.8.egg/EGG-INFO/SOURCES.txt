@@ -1,0 +1,14 @@
+README.rst
+setup.py
+tests/__init__.py
+tests/test_main.py
+text_to_gif/__init__.py
+text_to_gif/gif_creator.py
+text_to_gif/image_file_filter.py
+text_to_gif/main.py
+text_to_gif/text2gif.py
+text_to_gif.egg-info/PKG-INFO
+text_to_gif.egg-info/SOURCES.txt
+text_to_gif.egg-info/dependency_links.txt
+text_to_gif.egg-info/entry_points.txt
+text_to_gif.egg-info/top_level.txt
