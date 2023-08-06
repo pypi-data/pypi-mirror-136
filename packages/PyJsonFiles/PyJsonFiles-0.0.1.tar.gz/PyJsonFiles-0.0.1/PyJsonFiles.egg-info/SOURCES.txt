@@ -1,0 +1,8 @@
+setup.py
+PyJsonFiles/__init__.py
+PyJsonFiles/errors.py
+PyJsonFiles/parser.py
+PyJsonFiles.egg-info/PKG-INFO
+PyJsonFiles.egg-info/SOURCES.txt
+PyJsonFiles.egg-info/dependency_links.txt
+PyJsonFiles.egg-info/top_level.txt
