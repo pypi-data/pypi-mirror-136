@@ -1,0 +1,14 @@
+chinesebert/__init__.py,sha256=pOzLmoBTIGrTWCueIATRJZhoIx5GSGq-7gd2TyArrk8,423
+chinesebert/classifier.py,sha256=mjganEf01NAmhoSuv-hswaUd0p5QxmqsYNjSPqUgfZw,727
+chinesebert/configuration_chinesebert.py,sha256=pIAjqpTBOGOVg7nkUc9JlegpX7EEbvNQtmvwzyWu4T8,5848
+chinesebert/fusion_embedding.py,sha256=tsn1CIGv7GP3Au44M8o1UZ72FYu5ooaaThAULCKOrJY,3729
+chinesebert/glyph_embedding.py,sha256=-w-KLOMEtKf_sektfA0vdByqMkw7qw6jiXl4GuU0aek,916
+chinesebert/modeling_chinesebert.py,sha256=l85zncUqefya7eXh4jantrJ8v5rbuZYOAl7HoPDkjzE,23978
+chinesebert/pinyin_embedding.py,sha256=suCicK0YXmYLyFOW4jVf2lp3wvcGToD2sQKFsxun0XQ,2041
+chinesebert/tokenization_chinesebert_fast.py,sha256=6cBPN4oquiJkg7jL1zgxA3UVyUraj8GOEUkQGXB-eRA,5434
+chinesebert/transformers_patch_utils.py,sha256=IOKd1dQWl9qbzekoZlgfe2bkdw826YZdVKdrOSBzTok,12507
+chinesebert-0.2.0.dist-info/LICENSE,sha256=fy_0hZf32YM8Kq6cPU5tm3vfH7t8MSKZss-QWs__Foo,1087
+chinesebert-0.2.0.dist-info/METADATA,sha256=gc6btffREgDKK3bieFrb9CcOklyubRcEb_P0ly4z_qw,332
+chinesebert-0.2.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+chinesebert-0.2.0.dist-info/top_level.txt,sha256=Qf0ZtXA-ecccEPkAPPctxjaGd92PzzbXWo2iTwwY7rM,12
+chinesebert-0.2.0.dist-info/RECORD,,
