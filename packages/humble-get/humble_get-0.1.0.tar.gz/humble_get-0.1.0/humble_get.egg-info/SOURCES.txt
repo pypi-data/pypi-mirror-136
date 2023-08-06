@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+humble_get/__init__.py
+humble_get/cli.py
+humble_get/humble_get.py
+humble_get.egg-info/PKG-INFO
+humble_get.egg-info/SOURCES.txt
+humble_get.egg-info/dependency_links.txt
+humble_get.egg-info/entry_points.txt
+humble_get.egg-info/not-zip-safe
+humble_get.egg-info/requires.txt
+humble_get.egg-info/top_level.txt
+tests/pretty_results.json
+tests/test_humble_get.py

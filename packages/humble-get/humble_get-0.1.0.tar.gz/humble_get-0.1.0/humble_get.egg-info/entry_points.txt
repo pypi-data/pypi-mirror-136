@@ -1,0 +1,3 @@
+[console_scripts]
+humble_get = humble_get.cli:main
+
