@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: django-microservice-request
+Version: 0.5.1
+Summary: Django app for send sync requests to microservices or external APIs.
+Home-page: https://github.com/bandirom/django-microservice-request
+Author: Nazarii Romanchenko
+Author-email: bandirom@ukr.net
+License: BSD-3-Clause
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+License-File: LICENSE
+
+UNKNOWN
+
