@@ -1,0 +1,15 @@
+[tool.black]
+line-length = 100
+
+[build-system]
+requires = [
+    "setuptools>=42",
+    "wheel",
+    # scikit-build 0.12 doesn't support Cython docstrings, get the latest code
+    # until a new release is pushed
+    # https://github.com/scikit-build/scikit-build/issues/518
+    "scikit-build@git+https://github.com/scikit-build/scikit-build.git",
+    "Cython>=0.24",
+    "scipy>=0.16"
+]
+build-backend = "setuptools.build_meta"
