@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: fiplib
+Version: 0.0.2
+Summary: My Python utility library for machine learning.
+Home-page: https://github.com/Fiip3k
+Author: Filip Piekarski
+Author-email: filippiekarski95@gmail.com
+License: MIT
+Keywords: fiplib
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: Programming Language :: Python :: 3.10
+License-File: LICENSE.txt
+
+My Python utility library for machine learning.
+
+Change Log
+==========
+
+0.0.1 (27.01.2022)
+Test release
+
+
+0.0.2 (27.01.2022)
+Added data_cleaning module
+Requires pandas
+
