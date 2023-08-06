@@ -1,0 +1,9 @@
+LICENSE.txt
+README.rst
+setup.py
+PyMerge/__init__.py
+PyMerge/merge.py
+PyMerge.egg-info/PKG-INFO
+PyMerge.egg-info/SOURCES.txt
+PyMerge.egg-info/dependency_links.txt
+PyMerge.egg-info/top_level.txt
