@@ -1,0 +1,9 @@
+README.md
+setup.py
+src/keboola.csvwriter.egg-info/PKG-INFO
+src/keboola.csvwriter.egg-info/SOURCES.txt
+src/keboola.csvwriter.egg-info/dependency_links.txt
+src/keboola.csvwriter.egg-info/not-zip-safe
+src/keboola.csvwriter.egg-info/top_level.txt
+src/keboola/csvwriter/__init__.py
+src/keboola/csvwriter/core.py
