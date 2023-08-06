@@ -1,0 +1,9 @@
+README.md
+setup.py
+jokepie/__init__.py
+jokepie/__main__.py
+jokepie.egg-info/PKG-INFO
+jokepie.egg-info/SOURCES.txt
+jokepie.egg-info/dependency_links.txt
+jokepie.egg-info/requires.txt
+jokepie.egg-info/top_level.txt
