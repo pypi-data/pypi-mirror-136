@@ -1,0 +1,78 @@
+plib3.extensions
+================
+
+The PLIB3.EXTENSIONS package contains functions (and possibly,
+in the future, other objects) exported from an extension
+module written using the Python/C API. The general
+philosophy of PLIB3 is to do everything possible in pure
+Python, so the only functions that appear in this package
+are those which by their very nature cannot be done in pure
+Python. The latest official release is available on PyPI at
+https://pypi.org/project/plib3.extensions/
+and the latest source code is available on Gitlab at
+https://gitlab.com/pdonis/plib3-extensions.
+
+PLIB3.EXTENSIONS is built using the ``build`` PEP 517 build tool
+with ``setuptools`` in "legacy" mode, using ``setup.py`` instead
+of ``setup.cfg``, since building extension modules is currently
+not supported in ``setup.cfg``. It uses the ``setuputils`` helper
+module to populate the setup variables in ``setup.py``, and to
+build the ``MANIFEST.in`` file that is used in the distribution.
+This module is available at https://gitlab.com/pdonis/setuputils3.
+
+The PLIB3.EXTENSIONS Package
+----------------------------
+
+The following functions are available in the ``plib.extensions``
+namespace:
+
+- The ``capsule_compare`` function checks whether two Capsules
+  wrap the same C-level pointer.
+
+Installation
+------------
+
+The simplest way to install PLIB3.EXTENSIONS is by using ``pip``:
+
+    $ python3 -m pip install plib3.extensions
+
+This will download the latest release from PyPI and install it
+on your system. If you already have a downloaded source tarball,
+you can have ``pip`` install it directly by giving its
+filename in place of "plib3.extensions" in the above command line.
+
+The Zen of PLIB3
+----------------
+
+There is no single unifying purpose or theme to PLIB3, but
+like Python itself, it does have a 'Zen' of sorts:
+
+- Express everything possible in terms of built-in Python
+  data structures.
+
+- Once you've expressed it that way, what the code is
+  going to do with it should be obvious.
+
+- Avoid boilerplate code, *and* boilerplate data. Every
+  piece of data your program needs should have one and
+  only one source.
+
+Copyright and License
+---------------------
+
+PLIB3.EXTENSIONS is Copyright (C) 2008-2022 by Peter A. Donis.
+
+This program is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation; either version 2 of the License, or
+(at your option) any later version. (See the LICENSE file for a
+copy of version 2 of the License.)
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.

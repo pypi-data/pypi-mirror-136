@@ -1,0 +1,2 @@
+include setuputils.py
+recursive-exclude . *.pyc
