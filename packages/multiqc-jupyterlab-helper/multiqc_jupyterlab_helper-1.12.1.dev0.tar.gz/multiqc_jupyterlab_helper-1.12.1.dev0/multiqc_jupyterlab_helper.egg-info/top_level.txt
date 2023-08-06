@@ -1,0 +1,1 @@
+multiqc_jupyterlab_helper
