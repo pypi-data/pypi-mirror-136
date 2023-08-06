@@ -1,0 +1,14 @@
+SSH in to Endgame with endgame / Simspace1!
+
+type license request
+username: admin
+password: Simspace1!
+type: SMP
+send generated code to Mr. Poundstone
+license will be sent back
+ssh into endgame
+type license install
+paste license
+
+
+DONE
