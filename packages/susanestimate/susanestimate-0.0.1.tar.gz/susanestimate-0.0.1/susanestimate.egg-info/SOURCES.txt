@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+susanestimate.egg-info/PKG-INFO
+susanestimate.egg-info/SOURCES.txt
+susanestimate.egg-info/dependency_links.txt
+susanestimate.egg-info/requires.txt
+susanestimate.egg-info/top_level.txt
