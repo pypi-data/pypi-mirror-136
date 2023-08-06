@@ -1,0 +1,3 @@
+[console_scripts]
+tillfurger = kustopy.__main__:main
+
