@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+mango_library/__init__.py
+mango_library.egg-info/PKG-INFO
+mango_library.egg-info/SOURCES.txt
+mango_library.egg-info/dependency_links.txt
+mango_library.egg-info/namespace_packages.txt
+mango_library.egg-info/requires.txt
+mango_library.egg-info/top_level.txt
+mango_library/coalition/__init__.py
+mango_library/coalition/core.py
+mango_library/negotiation/__init__.py
+mango_library/negotiation/cohda.py
+mango_library/negotiation/core.py
+mango_library/negotiation/termination.py
