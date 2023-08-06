@@ -1,0 +1,307 @@
+{
+    "schema_version": 9,
+    "info": {
+        "randovania_version": "3.3.0.dev858",
+        "randovania_version_git": "fb20e088",
+        "permalink": "DfaJZ6xsGfsg4IgIpXOxJorEaTAAANVi",
+        "seed": 1894377927,
+        "hash": "RFT2Y3AZ",
+        "word_hash": "Shriekbat Lightbringer Ridley",
+        "presets": [
+            {
+                "schema_version": 20,
+                "name": "Starter Preset",
+                "uuid": "d3ece985-f0aa-46aa-ae30-a0c794b6560c",
+                "description": "Basic preset.",
+                "base_preset_uuid": null,
+                "game": "super_metroid",
+                "configuration": {
+                    "trick_level": {
+                        "minimal_logic": false,
+                        "specific_levels": {}
+                    },
+                    "starting_location": [
+                        {
+                            "world_name": "Crateria",
+                            "area_name": "Landing Site"
+                        }
+                    ],
+                    "available_locations": {
+                        "randomization_mode": "full",
+                        "excluded_indices": []
+                    },
+                    "major_items_configuration": {
+                        "items_state": {
+                            "Charge Beam": {
+                                "num_shuffled_pickups": 1
+                            },
+                            "Ice Beam": {
+                                "num_shuffled_pickups": 1
+                            },
+                            "Wave Beam": {
+                                "num_shuffled_pickups": 1
+                            },
+                            "Spazer Beam": {
+                                "num_shuffled_pickups": 1
+                            },
+                            "Plasma Beam": {
+                                "num_shuffled_pickups": 1
+                            },
+                            "Missile Launcher": {
+                                "num_shuffled_pickups": 1,
+                                "included_ammo": [
+                                    5
+                                ]
+                            },
+                            "Super Missile Launcher": {
+                                "num_shuffled_pickups": 1,
+                                "included_ammo": [
+                                    5
+                                ]
+                            },
+                            "Power Bomb": {
+                                "num_shuffled_pickups": 1,
+                                "included_ammo": [
+                                    5
+                                ]
+                            },
+                            "Grapple Beam": {
+                                "num_shuffled_pickups": 1
+                            },
+                            "X-Ray Scope": {
+                                "num_shuffled_pickups": 1
+                            },
+                            "Varia Suit": {
+                                "num_shuffled_pickups": 1
+                            },
+                            "Gravity Suit": {
+                                "num_shuffled_pickups": 1
+                            },
+                            "Morph Ball": {
+                                "num_shuffled_pickups": 1
+                            },
+                            "Morph Ball Bomb": {
+                                "num_shuffled_pickups": 1
+                            },
+                            "Spring Ball": {
+                                "num_shuffled_pickups": 1
+                            },
+                            "Screw Attack": {
+                                "num_shuffled_pickups": 1
+                            },
+                            "Hi-Jump Boots": {
+                                "num_shuffled_pickups": 1
+                            },
+                            "Space Jump": {
+                                "num_shuffled_pickups": 1
+                            },
+                            "Speed Booster": {
+                                "num_shuffled_pickups": 1
+                            },
+                            "Energy Tank": {
+                                "num_shuffled_pickups": 14
+                            },
+                            "Reserve Tank": {
+                                "num_shuffled_pickups": 4
+                            }
+                        },
+                        "default_items": {},
+                        "minimum_random_starting_items": 0,
+                        "maximum_random_starting_items": 0
+                    },
+                    "ammo_configuration": {
+                        "items_state": {
+                            "Missile Expansion": {
+                                "ammo_count": [
+                                    5
+                                ],
+                                "pickup_count": 45,
+                                "requires_major_item": true
+                            },
+                            "Super Missile Expansion": {
+                                "ammo_count": [
+                                    5
+                                ],
+                                "pickup_count": 9,
+                                "requires_major_item": true
+                            },
+                            "Power Bomb Expansion": {
+                                "ammo_count": [
+                                    5
+                                ],
+                                "pickup_count": 9,
+                                "requires_major_item": true
+                            }
+                        }
+                    },
+                    "damage_strictness": 1.5,
+                    "pickup_model_style": "all-visible",
+                    "pickup_model_data_source": "etm",
+                    "multi_pickup_placement": false,
+                    "logical_resource_action": "randomly",
+                    "patches": {
+                        "instant_g4": true,
+                        "fast_doors_and_elevators": true,
+                        "backup_saves": true,
+                        "better_decompression": true,
+                        "skip_intro": true,
+                        "mother_brain_cutscene_edits": true,
+                        "dachora_pit": true,
+                        "early_supers_bridge": true,
+                        "pre_hi_jump": true,
+                        "moat": true,
+                        "pre_spazer": true,
+                        "red_tower": true,
+                        "nova_boost_platform": true,
+                        "respin": false,
+                        "refill_before_save": false,
+                        "cant_use_supers_on_red_doors": false,
+                        "cheap_charge": false,
+                        "speedkeep": false,
+                        "infinite_space_jump": false,
+                        "nerfed_rainbow_beam": false,
+                        "fix_spacetime": true,
+                        "fix_heat_echoes": true,
+                        "fix_screw_attack_menu": true,
+                        "no_gt_code": true
+                    }
+                }
+            }
+        ]
+    },
+    "game_modifications": [
+        {
+            "game": "super_metroid",
+            "starting_location": "Crateria/Landing Site",
+            "starting_items": {},
+            "teleporters": {},
+            "configurable_nodes": {},
+            "locations": {
+                "Brinstar": {
+                    "Big Pink/Pickup (Charge Beam)": "Super Missile Launcher",
+                    "Big Pink/Pickup (Grapple Beam Missile Expansion)": "Wave Beam",
+                    "Big Pink/Pickup (Room Bottom Missile Expansion)": "Missile Expansion",
+                    "Blue Brinstar Double Missile Room/Pickup (Hidden Missile Expansion)": "Missile Expansion",
+                    "Blue Brinstar Double Missile Room/Pickup (Missile Expansion)": "Power Bomb Expansion",
+                    "Blue Brinstar Energy Tank Room/Pickup (Energy Tank)": "Energy Tank",
+                    "Blue Brinstar Energy Tank Room/Pickup (Missile Expansion)": "Space Jump",
+                    "Early Supers Room/Pickup (Missile Expansion)": "Missile Expansion",
+                    "Early Supers Room/Pickup (Super Missile Expansion)": "Spazer Beam",
+                    "Etecoon Energy Tank Room/Pickup (Energy Tank)": "X-Ray Scope",
+                    "Etecoon Room/Pickup (Power Bomb Expansion)": "Missile Expansion",
+                    "Etecoon Super Missile Room/Pickup (Super Missile Expansion)": "Missile Expansion",
+                    "First Missiles/Pickup (Missile Expansion)": "Screw Attack",
+                    "Green Brinstar Reserve Tank Room/Pickup (First Missile Expansion)": "Missile Expansion",
+                    "Green Brinstar Reserve Tank Room/Pickup (Reserve Tank)": "Energy Tank",
+                    "Green Brinstar Reserve Tank Room/Pickup (Second Missile Expansion)": "Super Missile Expansion",
+                    "Green Hill Zone/Pickup (Missile Expansion)": "Energy Tank",
+                    "Pink Brinstar Energy Tank Room/Pickup (Energy Tank)": "Missile Expansion",
+                    "Pink Brinstar Power Bomb Room/Pickup (Power Bomb Expansion)": "Missile Expansion",
+                    "Red Brinstar Alpha PBs Room/Pickup (Missile Expansion)": "Missile Expansion",
+                    "Red Brinstar Alpha PBs Room/Pickup (Power Bomb Expansion)": "Power Bomb Expansion",
+                    "Red Brinstar Beta PBs Room/Pickup (Power Bomb Expansion)": "Missile Expansion",
+                    "Retro Brinstar/Pickup (Morph Ball)": "Morph Ball",
+                    "Retro Brinstar/Pickup (Power Bomb Expansion)": "Reserve Tank",
+                    "Spazer Room/Pickup (Spazer Beam)": "Missile Expansion",
+                    "Spore Spawn Super Room/Pickup (Super Missile Expansion)": "Energy Tank",
+                    "Varia Suit Room/Pickup (Varia Suit)": "Energy Tank",
+                    "Warehouse Beetom Room/Pickup (Energy Tank)": "Energy Tank",
+                    "Warehouse Kihunter Room/Pickup (Missile Expansion)": "Missile Expansion",
+                    "Waterway/Pickup (Energy Tank)": "Missile Expansion",
+                    "X-Ray Scope Room/Pickup (X-Ray Scope)": "Power Bomb Expansion"
+                },
+                "Crateria": {
+                    "Bomb Torizo Room/Pickup (Morph Ball Bombs)": "Morph Ball Bomb",
+                    "Crateria Power Bomb Room/Pickup (Power Bomb Expansion)": "Missile Expansion",
+                    "Crateria Super Missile Room/Pickup (Super Missile Expansion)": "Missile Expansion",
+                    "Final Missile Room/Pickup (Missile Expansion)": "Missile Launcher",
+                    "Gauntlet/Pickup (Energy Tank)": "Missile Expansion",
+                    "Green Pirates Shaft/Pickup (Left Missile Expansion)": "Reserve Tank",
+                    "Green Pirates Shaft/Pickup (Right Missile Expansion)": "Missile Expansion",
+                    "Moat/Pickup (Missile Expansion)": "Missile Expansion",
+                    "Old Mother Brain/Pickup (Missile Expansion)": "Missile Expansion",
+                    "Terminator Room/Pickup (Energy Tank)": "Power Bomb",
+                    "West Ocean/Pickup (Morph Ball Maze Missile Expansion)": "Power Bomb Expansion",
+                    "West Ocean/Pickup (Seafloor Missile Expansion)": "Missile Expansion",
+                    "West Ocean/Pickup (Topmost Missile Expansion)": "Missile Expansion"
+                },
+                "Maridia": {
+                    "Aqueduct/Pickup (Missile Expansion)": "Spring Ball",
+                    "Aqueduct/Pickup (Super Missile Expansion)": "Missile Expansion",
+                    "Botwoon Energy Tank Room/Pickup (Energy Tank)": "Missile Expansion",
+                    "East Sandtrap/Pickup (Missile Expansion)": "Missile Expansion",
+                    "East Sandtrap/Pickup (Power Bomb Expansion)": "Speed Booster",
+                    "Main Street/Pickup (Missile Expansion)": "Grapple Beam",
+                    "Main Street/Pickup (Super Missile Expansion)": "Super Missile Expansion",
+                    "Mama Turtle Room/Pickup (Energy Tank)": "Power Bomb Expansion",
+                    "Mama Turtle Room/Pickup (Missile Expansion)": "Missile Expansion",
+                    "Plasma Room/Pickup (Plasma Beam)": "Missile Expansion",
+                    "Precious Room/Pickup (Missile Expansion)": "Missile Expansion",
+                    "Pseudo Plasma Spark Room/Pickup (Missile Expansion)": "Missile Expansion",
+                    "Space Jump Room/Pickup (Space Jump)": "Missile Expansion",
+                    "Springball Room/Pickup (Spring Ball)": "Super Missile Expansion",
+                    "Watering Hole/Pickup (Missile Expansion)": "Reserve Tank",
+                    "Watering Hole/Pickup (Super Missile Expansion)": "Super Missile Expansion",
+                    "West Sandtrap/Pickup (Missile Expansion)": "Missile Expansion",
+                    "West Sandtrap/Pickup (Reserve Tank)": "Energy Tank"
+                },
+                "Norfair": {
+                    "Bubble Mountain Reserve Access/Pickup (Missile Expansion)": "Reserve Tank",
+                    "Bubble Mountain Reserve/Pickup (Missile Expansion)": "Missile Expansion",
+                    "Bubble Mountain Reserve/Pickup (Reserve Tank)": "Energy Tank",
+                    "Bubble Mountain/Pickup (Missile Expansion)": "Power Bomb Expansion",
+                    "Cathedral/Pickup (Missile Expansion)": "Gravity Suit",
+                    "Cosine Missile Room/Pickup (Missile Expansion)": "Missile Expansion",
+                    "Crocomire Escape/Pickup (Missile Expansion)": "Missile Expansion",
+                    "Crocomire's Room/Pickup (Energy Tank)": "Energy Tank",
+                    "Crumble Shaft/Pickup (Missile Expansion)": "Energy Tank",
+                    "Double Chamber/Pickup (Missile Expansion)": "Missile Expansion",
+                    "Famous Trademarked Mouse Room/Pickup (Missile Expansion)": "Missile Expansion",
+                    "Golden Torizo's Room/Pickup (Missile Expansion)": "Missile Expansion",
+                    "Golden Torizo's Room/Pickup (Super Missile Expansion)": "Power Bomb Expansion",
+                    "Grapple Beam Room/Pickup (Grapple Beam)": "Ice Beam",
+                    "Hi-Jump Energy Tank Room/Pickup (Energy Tank)": "Missile Expansion",
+                    "Hi-Jump Energy Tank Room/Pickup (Missile Expansion)": "Missile Expansion",
+                    "Hi-Jump Room/Pickup (Hi-Jump Boots)": "Varia Suit",
+                    "Ice Beam Room/Pickup (Ice Beam)": "Super Missile Expansion",
+                    "Lower Norfair Escape Power Bomb Room/Pickup (Power Bomb Expansion)": "Plasma Beam",
+                    "Lower Norfair Fireflea Room/Pickup (Energy Tank)": "Energy Tank",
+                    "Lower Norfair Springball Maze Room/Pickup (Missile Expansion)": "Power Bomb Expansion",
+                    "Post Crocomire Jump Room/Pickup (Missile Expansion)": "Super Missile Expansion",
+                    "Post Crocomire Power Bomb Room/Pickup (Power Bomb Expansion)": "Super Missile Expansion",
+                    "Ridley Energy Tank Room/Pickup (Energy Tank)": "Energy Tank",
+                    "Screw Attack Room/Pickup (Screw Attack)": "Hi-Jump Boots",
+                    "Speed Booster Hall/Pickup (Missile Expansion)": "Power Bomb Expansion",
+                    "Speed Booster Room/Pickup (Speed Booster)": "Missile Expansion",
+                    "Three Musketeers' Room/Pickup (Missile Expansion)": "Charge Beam",
+                    "Wasteland/Pickup (Power Bomb Expansion)": "Energy Tank",
+                    "Wave Beam Room/Pickup (Wave Beam)": "Super Missile Expansion"
+                },
+                "Wrecked Ship": {
+                    "Assembly Line/Pickup (Missile Expansion)": "Missile Expansion",
+                    "Bowling Alley/Pickup (Missile Expansion)": "Energy Tank",
+                    "Bowling Alley/Pickup (Reserve Tank)": "Missile Expansion",
+                    "Gravity Suit Room/Pickup (Gravity Suit)": "Missile Expansion",
+                    "Wrecked Ship East Super Room/Pickup (Super Missile Expansion)": "Super Missile Expansion",
+                    "Wrecked Ship Energy Tank Room/Pickup (Energy Tank)": "Missile Expansion",
+                    "Wrecked Ship Main Shaft/Pickup (Missile Expansion)": "Missile Expansion",
+                    "Wrecked Ship West Super Room/Pickup (Super Missile Expansion)": "Missile Expansion"
+                }
+            },
+            "hints": {}
+        }
+    ],
+    "item_order": [
+        "Morph Ball at Brinstar/Retro Brinstar/Pickup (Morph Ball)",
+        "Screw Attack at Brinstar/First Missiles/Pickup (Missile Expansion)",
+        "Power Bomb at Crateria/Terminator Room/Pickup (Energy Tank)",
+        "Missile Launcher at Crateria/Final Missile Room/Pickup (Missile Expansion)",
+        "Space Jump at Brinstar/Blue Brinstar Energy Tank Room/Pickup (Missile Expansion)",
+        "Super Missile Launcher at Brinstar/Big Pink/Pickup (Charge Beam)",
+        "Varia Suit at Norfair/Hi-Jump Room/Pickup (Hi-Jump Boots)",
+        "Gravity Suit at Norfair/Cathedral/Pickup (Missile Expansion)",
+        "Speed Booster at Maridia/East Sandtrap/Pickup (Power Bomb Expansion)",
+        "Grapple Beam at Maridia/Main Street/Pickup (Missile Expansion)",
+        "Charge Beam at Norfair/Three Musketeers' Room/Pickup (Missile Expansion)"
+    ]
+}
