@@ -1,0 +1,5 @@
+setuptools>=50.0numpy>=1.20.0
+pytest==6.2.2
+
+[testing]
+pytest>=6.0

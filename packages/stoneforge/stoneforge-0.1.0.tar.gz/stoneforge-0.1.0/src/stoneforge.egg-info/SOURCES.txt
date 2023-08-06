@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/stoneforge/__init__.py
+src/stoneforge/py.typed
+src/stoneforge.egg-info/PKG-INFO
+src/stoneforge.egg-info/SOURCES.txt
+src/stoneforge.egg-info/dependency_links.txt
+src/stoneforge.egg-info/not-zip-safe
+src/stoneforge.egg-info/requires.txt
+src/stoneforge.egg-info/top_level.txt
