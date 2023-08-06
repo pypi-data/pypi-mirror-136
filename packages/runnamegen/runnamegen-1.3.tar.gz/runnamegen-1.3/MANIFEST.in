@@ -1,0 +1,3 @@
+include runnamegen/excludes.txt
+graft runnamegen/nouns
+graft runnamegen/adjectives
