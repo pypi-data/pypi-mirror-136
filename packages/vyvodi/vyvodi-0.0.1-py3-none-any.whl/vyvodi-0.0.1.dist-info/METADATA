@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: vyvodi
+Version: 0.0.1
+Summary: custom tensorflow tools
+Home-page: https://github.com/vyvodi/vyvodi
+License: Apache-2.0
+Keywords: tensorflow,mixed-effect,hierarchical-models,bayesian,machine-learning,statistics,data-science
+Author: nickolasgryga
+Author-email: nick@gryga.dev
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: keras (>=2.6.0,<2.7.0)
+Requires-Dist: tensorflow (>=2.6.0,<2.7.0)
+Requires-Dist: tensorflow-probability (>=0.13.0rc0,<0.14.0)
+Project-URL: Repository, https://github.com/vyvodi/vyvodi
+Description-Content-Type: text/markdown
+
+# vyvodi
+
