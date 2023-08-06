@@ -1,0 +1,13 @@
+scrollthescroll/__init__.py,sha256=rHwHxN0UZmn2IhXFLiI7x2AAnIUHgdPlJt2VnrXsURs,23452
+scrollthescroll/__main__.py,sha256=3rD-xsmUJi_HCCPhOAhAUvKWmE_ixrRTATF_F__J3kI,167
+scrollthescroll/haarcascade_eye.xml,sha256=euR-ynzhx_72c0pNfz3VxkalhaVB3g5D7RVLZ22SqY8,506314
+scrollthescroll/haarcascade_frontalface_default.xml,sha256=7raTSwy_HnsrXr6o_txzrGU_DbX_qkLlzmFTWDARVGY,1254733
+scrollthescroll/reading_rates.txt,sha256=mGdGgKLM9CSAcHiGvLe3Hb3x9XCim6Rr1ZFTMSQ89-4,985
+scrollthescroll-0.0.9.1.data/data/data/haarcascade_eye.xml,sha256=euR-ynzhx_72c0pNfz3VxkalhaVB3g5D7RVLZ22SqY8,506314
+scrollthescroll-0.0.9.1.data/data/data/haarcascade_frontalface_default.xml,sha256=7raTSwy_HnsrXr6o_txzrGU_DbX_qkLlzmFTWDARVGY,1254733
+scrollthescroll-0.0.9.1.data/data/data/reading_rates.txt,sha256=mGdGgKLM9CSAcHiGvLe3Hb3x9XCim6Rr1ZFTMSQ89-4,985
+scrollthescroll-0.0.9.1.dist-info/LICENSE,sha256=cjBa66fC_Ku61ICUkSU5FPpxk7uiU32DiwgiCK5BWwo,1084
+scrollthescroll-0.0.9.1.dist-info/METADATA,sha256=yMRSETQgdV_222aKsa5crDbUEvUo-HQEef0BVs9PQCo,2121
+scrollthescroll-0.0.9.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+scrollthescroll-0.0.9.1.dist-info/top_level.txt,sha256=JvRiHxOkcrp8_Tg58UMRh90-BY_3MSmHPU9v8R8UMH8,16
+scrollthescroll-0.0.9.1.dist-info/RECORD,,
