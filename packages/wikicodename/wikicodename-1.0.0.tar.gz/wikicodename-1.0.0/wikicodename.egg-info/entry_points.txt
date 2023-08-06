@@ -1,0 +1,3 @@
+[console_scripts]
+wikicodename = wikicodename.__main__:main
+

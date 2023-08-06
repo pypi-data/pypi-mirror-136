@@ -1,0 +1,15 @@
+README.md
+pyproject.toml
+setup.py
+wikicodename/__init__.py
+wikicodename/__main__.py
+wikicodename/cache.py
+wikicodename/config.py
+wikicodename/generator.py
+wikicodename/wiki_data.py
+wikicodename.egg-info/PKG-INFO
+wikicodename.egg-info/SOURCES.txt
+wikicodename.egg-info/dependency_links.txt
+wikicodename.egg-info/entry_points.txt
+wikicodename.egg-info/requires.txt
+wikicodename.egg-info/top_level.txt
