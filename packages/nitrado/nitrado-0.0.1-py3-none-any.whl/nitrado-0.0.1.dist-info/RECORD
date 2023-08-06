@@ -1,0 +1,11 @@
+nitrado/__init__.py,sha256=Zlaic2oYUs1ZPQBlPFfYoDNF0HmzpMcz_rJQIaqjOSw,283
+nitrado/client.py,sha256=BNrkN7tBtq14BXC9TSFhe4y3Phi9N5qYFUcrlGX74l8,2388
+nitrado/game_server.py,sha256=PE57Xh_mXC_hf_vmIIiffmrDfaa7sSPdsPkBSM_b2G8,20380
+nitrado/nitrado_api.py,sha256=uxnPPTtrl2mOe_sQUISqTsChH9VYIRUmjSRZJY_91aU,1850
+nitrado/ocr.py,sha256=S5eFXmracqDzj9pqFj2ve6-h3KUpBRD9ywqbf-JQju8,876
+nitrado/service.py,sha256=oHO_i1Gg3aIe27AN8zxRCXtmfGgLVnlDLdgUY3TviIM,5709
+nitrado-0.0.1.dist-info/LICENSE,sha256=S0_hsbrWUzPTpGS6bcC3qM7CYudEQoJO1dq0keo0Y_4,1093
+nitrado-0.0.1.dist-info/METADATA,sha256=HYxpgo1FhM_NWau-T2mh7rOHVVDW821hhgP1Jesr_3U,4066
+nitrado-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+nitrado-0.0.1.dist-info/top_level.txt,sha256=7-_f2DNaX2e8RMinbuwXM9g9L_2pN6voyGQxu3wMuQU,8
+nitrado-0.0.1.dist-info/RECORD,,
