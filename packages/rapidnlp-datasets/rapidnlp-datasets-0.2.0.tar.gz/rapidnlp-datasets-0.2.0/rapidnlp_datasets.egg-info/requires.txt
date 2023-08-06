@@ -1,0 +1,9 @@
+tokenizers
+
+[pt]
+torch
+torchaudio
+torchvision
+
+[tf]
+tensorflow
