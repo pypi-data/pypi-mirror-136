@@ -1,0 +1,6 @@
+mydummylib/package1/main.cp38-win_amd64.pyd,sha256=GF84nuTHvM1xDsRyYZifRTva_xi3xY9_hhjsyX6kHxg,21504
+mydummylib/package2/main.cp38-win_amd64.pyd,sha256=tZBgeV1UsqDtJPv-bPjOHJdqbSxzROYWD18wZ-0CYpU,20992
+my_personal_dummy_lib-0.0.5.dist-info/METADATA,sha256=L8Ru3pdePwHPRnjiZyYg_B2YU4QO5SnDvO9eDvKjsjY,821
+my_personal_dummy_lib-0.0.5.dist-info/WHEEL,sha256=M2GQ3lde8oJhlQPj2wbRvnqE3cuovPJasri5X5aCmck,100
+my_personal_dummy_lib-0.0.5.dist-info/top_level.txt,sha256=yNCSAaN6izCymvSO0ZNkgp-jA6QC1xx0iyDuSWrn4F4,11
+my_personal_dummy_lib-0.0.5.dist-info/RECORD,,
