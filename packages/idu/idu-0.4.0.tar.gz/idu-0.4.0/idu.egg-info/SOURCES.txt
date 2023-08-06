@@ -1,0 +1,9 @@
+README.md
+setup.py
+idu/__init__.py
+idu/__main__.py
+idu.egg-info/PKG-INFO
+idu.egg-info/SOURCES.txt
+idu.egg-info/dependency_links.txt
+idu.egg-info/entry_points.txt
+idu.egg-info/top_level.txt
