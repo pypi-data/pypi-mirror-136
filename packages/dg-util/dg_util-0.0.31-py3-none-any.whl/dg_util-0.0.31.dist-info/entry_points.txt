@@ -1,0 +1,4 @@
+[console_scripts]
+parsing=face_parsing.cmd.cli:main
+rembg=rembg.cmd.cli:main
+
