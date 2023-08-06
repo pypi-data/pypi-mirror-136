@@ -1,0 +1,8 @@
+README.md
+setup.py
+validatos/__init__.py
+validatos/validatos.py
+validatos.egg-info/PKG-INFO
+validatos.egg-info/SOURCES.txt
+validatos.egg-info/dependency_links.txt
+validatos.egg-info/top_level.txt

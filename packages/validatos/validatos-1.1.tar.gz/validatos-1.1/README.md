@@ -1,0 +1,1 @@
+Paquete creado para el desarrollo de validaciones de datos, dentro del proyecto de SpotyUN
