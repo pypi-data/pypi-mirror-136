@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: moxfield
+Version: 0.1.0
+Summary: Moxfield
+Author: Michael Celani
+Author-email: michael.j.celani@gmail.com
+License: UNKNOWN
+Keywords: python
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+License-File: LICENSE
+
+Python tools to interact with Moxfield
+
