@@ -1,0 +1,13 @@
+ulist-0.7.1.dist-info/METADATA,sha256=qA_wsu5B1X1tVXRv0PzeVQnZeRAqPazR7nywOwoEn2U,66
+ulist-0.7.1.dist-info/WHEEL,sha256=g6JbH6vFc4qamOYVIWUVybUvZnfNqd0SAvhMFQCZvfw,107
+ulist/ulist.pyi,sha256=oOdlIDxvOuHkzKkkR4BExpAGWkx3cjqYlz_udU1G9c4,7110
+ulist/control_flow.py,sha256=LVqUlaa9qLmgnqdMK6IoQ7DYXFV3-w-PVZMS-5e_1sc,4099
+ulist/constructor.py,sha256=Pbtx_Zp9NK7fUMh4sUd6Ujb0h5dVkOjfBHJ43bjmxnU,5396
+ulist/core.py,sha256=w9OyAyIMziQe0-HGPrAe0dR4k_vr9zjDNq9gMDmDD-M,16862
+ulist/utils.py,sha256=JenN_Uff6OqfmhbhGo71rExbTjEeWPAo15pWDVAiS74,1403
+ulist/__init__.py,sha256=Q3dC3I9DIv3vF5i9Z1MUE7J53kevwv27Q9EAEG5lHG0,161
+ulist/mypy.ini,sha256=JqG9A9AcNrKVUCmPbaxzf-RHVK808ymVdGvatY3Y45I,140
+ulist/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ulist/typedef.py,sha256=uCPTGOyQu4WOt1ZEURLrxZhd5qhxxx8e2CiEga11Noc,485
+ulist/ulist.cpython-38-x86_64-linux-gnu.so,sha256=-CK2RFMrGaeznNviEUy7rRdCABpeaczMjDf3fWVbAgU,858848
+ulist-0.7.1.dist-info/RECORD,,
