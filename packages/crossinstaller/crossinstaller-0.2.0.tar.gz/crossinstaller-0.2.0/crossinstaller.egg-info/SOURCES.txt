@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+crossinstaller/__init__.py
+crossinstaller/__main__.py
+crossinstaller/config.py
+crossinstaller/exceptions.py
+crossinstaller/generator.py
+crossinstaller/platform.py
+crossinstaller.egg-info/PKG-INFO
+crossinstaller.egg-info/SOURCES.txt
+crossinstaller.egg-info/dependency_links.txt
+crossinstaller.egg-info/entry_points.txt
+crossinstaller.egg-info/not-zip-safe
+crossinstaller.egg-info/requires.txt
+crossinstaller.egg-info/top_level.txt
