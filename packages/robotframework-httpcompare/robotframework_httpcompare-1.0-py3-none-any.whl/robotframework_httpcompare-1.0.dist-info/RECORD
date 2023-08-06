@@ -1,0 +1,15 @@
+HTTPCompare/__init__.py,sha256=tpiG9H23FokJHgGiiiLgkFelzD0weawSmw-32Xg3NaE,218
+HTTPCompare/compare_diff.py,sha256=wfqdGSrub4uhdoiG5X6vALnkJy4QRYUdfyeMCILRi_c,14781
+HTTPCompare/compare_keywords.py,sha256=mY0LOJMhxG7axTbLWOlO69sqp4lJvDMW8IUI89PRnrA,3281
+HTTPCompare/compare_requests.py,sha256=bo_R6ksGekQPdgTaD5olL-Tk-K3M6bYIYVfw_FF86Uk,10789
+HTTPCompare/data_manager.py,sha256=6Cck8wiug2RyO0cdSAg72x3c5U2wlOPeG7lWY6S80SU,11261
+HTTPCompare/json_merge.py,sha256=N-giatPf8xNMxQEz5kQUS0QBVuwV7XrySHjP5mQBkgM,7286
+HTTPCompare/jsoncompare.py,sha256=_gDfmje119CUDWqs7btkAg12bqcD8Fvt6LkmkTI4I6U,11762
+HTTPCompare/jsonpath.py,sha256=6R26deSMZNDyilBbjbht6FMkq2hPGE-Y1JW7qadA7WY,11901
+HTTPCompare/libcommons.py,sha256=h96db-FZ1czCG4sjqY5OkOxwUt3LLuYMpIYqy23EgG8,652
+HTTPCompare/version.py,sha256=M3_Bh8eU6d5iEIUil5jF005oR_K6EuLNHpkgXXYKXxs,13
+robotframework_httpcompare-1.0.dist-info/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+robotframework_httpcompare-1.0.dist-info/METADATA,sha256=uKT6T3Om9yQT7NYcoQfNJKb4LX89Eax7YXbialFQoRE,3983
+robotframework_httpcompare-1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+robotframework_httpcompare-1.0.dist-info/top_level.txt,sha256=975OSCrTTqoGrdQkqPPBFsNjjpKcAScS_sxYcV2pfME,12
+robotframework_httpcompare-1.0.dist-info/RECORD,,
