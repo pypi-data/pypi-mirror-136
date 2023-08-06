@@ -1,0 +1,3 @@
+[console_scripts]
+ftl-events = ftl_events.cli:entry_point
+
