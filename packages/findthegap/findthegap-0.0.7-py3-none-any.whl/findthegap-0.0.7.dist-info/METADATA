@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: findthegap
+Version: 0.0.7
+Summary: Tools for finding gaps and valleys in data distribution with a twice-differentiable density estimator with finite support.
+Home-page: https://github.com/contardog/findthegap
+Author: Gabriella Contardo
+Author-email: gcontardo@flatironinstitute.org
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/contardog/findthegap
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy (>=1.19.5)
+Requires-Dist: torch (>=1.10.1)
+Requires-Dist: scipy (>=1.5.4)
+
+UNKNOWN
+
