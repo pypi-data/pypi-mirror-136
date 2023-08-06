@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: xslots
+Version: 0.0.1
+Summary: Generate Slot Counter
+Home-page: UNKNOWN
+Author: phoenixR
+License: MIT
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+xslots
+======
+
+Example usage: Crack an n-digit code
+------------------------------------
+
+```python
+from datetime import timedelta
+import time
+
+from xslots import Slots
+
+slots = Slots(4, 0, 9, 0)
+password = "939614"
+
+start = time.time()
+while True:
+    print(slots)
+    s = "".join(str(slots)))
+    
+    if s == password:
+        end = time.time()
+        print(f"Hacked code {s} in {timedelta(seconds = end - start)}")
+        break
+    
+    slots.increase()
+```
+
