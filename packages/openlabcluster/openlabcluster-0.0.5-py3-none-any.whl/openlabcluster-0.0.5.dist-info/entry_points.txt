@@ -1,0 +1,4 @@
+
+            [gui_scripts]
+            openlabcluster=openlabcluster:launch_dlc
+        
