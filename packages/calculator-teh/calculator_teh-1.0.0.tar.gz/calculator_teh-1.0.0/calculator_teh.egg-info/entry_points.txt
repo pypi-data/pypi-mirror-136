@@ -1,0 +1,3 @@
+[console_scripts]
+packaging = calculator_functions.calculate:main
+

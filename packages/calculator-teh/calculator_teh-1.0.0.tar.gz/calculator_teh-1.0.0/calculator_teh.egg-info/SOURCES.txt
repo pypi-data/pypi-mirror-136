@@ -1,0 +1,13 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+calculator_functions/__init__.py
+calculator_functions/calculate.py
+calculator_functions/tests/__init__.py
+calculator_functions/tests/test_calculate.py
+calculator_teh.egg-info/PKG-INFO
+calculator_teh.egg-info/SOURCES.txt
+calculator_teh.egg-info/dependency_links.txt
+calculator_teh.egg-info/entry_points.txt
+calculator_teh.egg-info/top_level.txt
