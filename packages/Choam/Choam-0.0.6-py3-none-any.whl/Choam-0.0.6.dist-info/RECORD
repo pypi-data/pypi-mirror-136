@@ -1,0 +1,9 @@
+choam/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+choam/__main__.py,sha256=oxo9QzaCWE_Dz4h5eMR4ZmfHHf05-hAwsVTMNlrxtLE,4853
+choam/create_setup_file.py,sha256=bUqKzR1DXzAaRVxPBCRT5Gf5MFhM0dSpono9gmGiw44,783
+choam/folder_structure.py,sha256=h2j8k1e1fKVllBqP5UHlCXsy3azClVgVw6sS3FgVRl4,1561
+choam/gitignore.py,sha256=zfE3cl9yUEWgBZCKZqU8CF5GBY5nc3hXH9v3RLZiiIM,2935
+Choam-0.0.6.dist-info/METADATA,sha256=dbJ2KnRnNDCHpMi-wLKzIcv7Nwd6AXclEJ8LSys7_No,300
+Choam-0.0.6.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+Choam-0.0.6.dist-info/top_level.txt,sha256=L0D6GA2ErvGqgVurYwB-moxPetPn5SSIr8WAShtCZnk,6
+Choam-0.0.6.dist-info/RECORD,,
