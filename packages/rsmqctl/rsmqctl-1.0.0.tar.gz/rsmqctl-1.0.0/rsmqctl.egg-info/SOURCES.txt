@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+setup.py
+rsmqctl/__init__.py
+rsmqctl/rsmqctl.py
+rsmqctl.egg-info/PKG-INFO
+rsmqctl.egg-info/SOURCES.txt
+rsmqctl.egg-info/dependency_links.txt
+rsmqctl.egg-info/entry_points.txt
+rsmqctl.egg-info/not-zip-safe
+rsmqctl.egg-info/requires.txt
+rsmqctl.egg-info/top_level.txt

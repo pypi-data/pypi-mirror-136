@@ -1,0 +1,3 @@
+[console_scripts]
+rsmqctl = rsmqctl.rsmqctl:cli
+
