@@ -1,0 +1,4 @@
+[console_scripts]
+gitlog2wiki = osprojects.osproject:gitlog2wiki
+issue2ticket = osprojects.osproject:main
+
