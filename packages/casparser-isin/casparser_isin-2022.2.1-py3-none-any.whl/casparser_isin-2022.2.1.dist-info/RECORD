@@ -1,0 +1,13 @@
+CHANGELOG.md,sha256=Cz9PricAVMG-MVmWfk15eJgVT9Kk0mUS206_Psd-qEw,899
+casparser_isin/VERSION.txt,sha256=N8f078N2lNcpKk8JZEjkpQizOW9zM6E4U3eCmF9rX04,8
+casparser_isin/__init__.py,sha256=1PtSkhQTXgK2kNKOtfMl8HiJiJUdXz737_GtGWkZAsU,117
+casparser_isin/__version__.py,sha256=eYVLBBkc-mhyCpnPvzLv578GtI7I6dMgFvAhE-v9nl4,287
+casparser_isin/cli.py,sha256=4PHSVBAQ0QonC23LwtGe4567eMRlUSB9JytE5CcnAC4,4238
+casparser_isin/isin.db,sha256=XXMHrWeCz8UOtg0aOJcK4l1Ugq6qsc8SD09sEMOhavc,6791168
+casparser_isin/mf_isin.py,sha256=J9DTng9Jf_5HEbr86XGElIrX7PPzLUqU4e20F1sku1U,5833
+casparser_isin/utils.py,sha256=80JCVk6t6dNgbRPa18aM5WPZsur8yVNqwFKaaR-rZmQ,399
+casparser_isin-2022.2.1.dist-info/entry_points.txt,sha256=66n1QrUgcZtv-5SkahvCMvazd01WPGvZVHI7MfCqtZ0,58
+casparser_isin-2022.2.1.dist-info/LICENSE,sha256=Arlm7Mkx60cjJyVDaeX0bnvJfqy6X6RaCG04g7nL8Vk,1077
+casparser_isin-2022.2.1.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+casparser_isin-2022.2.1.dist-info/METADATA,sha256=VEReK1YYGcqGUnC9jV7ZndEzx7ZNdSegv5ztDNp5NHA,2552
+casparser_isin-2022.2.1.dist-info/RECORD,,
