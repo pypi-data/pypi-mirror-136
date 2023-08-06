@@ -1,0 +1,13 @@
+README.md
+setup.cfg
+setup.py
+gotext/__init__.py
+gotext/gotext.py
+gotext/stopwords.py
+gotext/todo.py
+gotext.egg-info/PKG-INFO
+gotext.egg-info/SOURCES.txt
+gotext.egg-info/dependency_links.txt
+gotext.egg-info/not-zip-safe
+gotext.egg-info/requires.txt
+gotext.egg-info/top_level.txt
