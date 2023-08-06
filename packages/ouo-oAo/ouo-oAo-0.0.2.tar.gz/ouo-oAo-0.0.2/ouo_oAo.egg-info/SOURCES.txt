@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+ouo_oAo/__init__.py
+ouo_oAo.egg-info/PKG-INFO
+ouo_oAo.egg-info/SOURCES.txt
+ouo_oAo.egg-info/dependency_links.txt
+ouo_oAo.egg-info/top_level.txt
