@@ -1,0 +1,1 @@
+# This file is suppose to be a clone of README.md, but .rst format is support for installation and settings.

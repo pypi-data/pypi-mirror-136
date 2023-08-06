@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+investani/__init__.py
+investani/get_share_holder.py
+investani/jup_reader.py
+investani.egg-info/PKG-INFO
+investani.egg-info/SOURCES.txt
+investani.egg-info/dependency_links.txt
+investani.egg-info/requires.txt
+investani.egg-info/top_level.txt

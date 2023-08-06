@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: investani
+Version: 0.0.1
+Summary: A package that expected to help people analyze the company for investment.
+Home-page: https://github.com/noppGithub/investani
+Author: Nopporn Phantawee
+Author-email: n.phantawee@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.6, <4
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Provides-Extra: test
+License-File: LICENSE
+
+# investani
+
+**Description**:  
+A package that expected to help people analyze the company for investment.
+
+**Author**: Nopporn Phantawee
+
+**Version Note**
+- 0.0.1: First upload
+

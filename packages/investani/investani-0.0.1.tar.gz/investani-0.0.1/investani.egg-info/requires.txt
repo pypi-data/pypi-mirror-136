@@ -1,0 +1,11 @@
+bs4==0.0.1
+pandas>=1.1.0
+PyYAML>=6.0
+requests>=2.20.1
+scikit-learn>=1.0.0
+
+[dev]
+check-manifest
+
+[test]
+coverage
