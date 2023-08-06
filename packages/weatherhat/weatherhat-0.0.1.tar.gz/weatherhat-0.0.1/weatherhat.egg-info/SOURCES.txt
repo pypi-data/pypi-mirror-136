@@ -1,0 +1,13 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+weatherhat/__init__.py
+weatherhat/history.py
+weatherhat.egg-info/PKG-INFO
+weatherhat.egg-info/SOURCES.txt
+weatherhat.egg-info/dependency_links.txt
+weatherhat.egg-info/requires.txt
+weatherhat.egg-info/top_level.txt
