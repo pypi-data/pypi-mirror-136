@@ -1,0 +1,9 @@
+pipelinewise-singer-python==2.*
+dpath==2.0.5
+confluent-kafka[protobuf]==1.8.2
+grpcio-tools==1.43.0
+
+[test]
+pytest==6.2.5
+pylint==2.12.2
+pytest-cov==3.0.0
