@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: QuickICS
+Version: 0.0.2
+Summary: quick way to convert a csv file of events for same type event to .ics file
+Home-page: https://github.com/mhr320/QuickICS
+Author: M. Holbert Roberts
+Author-email: mhr320@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Requires-Python: >=3.8, <4
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# Wmt2Ics
+## Description
+## Information
+
+
