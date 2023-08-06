@@ -1,0 +1,8 @@
+README.rst
+pyproject.toml
+setup.cfg
+aionic/aionic.egg-info/PKG-INFO
+aionic/aionic.egg-info/SOURCES.txt
+aionic/aionic.egg-info/dependency_links.txt
+aionic/aionic.egg-info/requires.txt
+aionic/aionic.egg-info/top_level.txt
