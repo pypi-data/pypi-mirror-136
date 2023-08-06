@@ -1,0 +1,60 @@
+[build-system]
+requires = ["flit_core >=2,<3"]
+build-backend = "flit_core.buildapi"
+
+[tool.flit.metadata]
+module = "fastapi_users"
+dist-name = "fastapi-users"
+author = "François Voron"
+author-email = "fvoron@gmail.com"
+home-page = "https://github.com/fastapi-users/fastapi-users"
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Development Status :: 5 - Production/Stable",
+    "Framework :: FastAPI",
+    "Framework :: AsyncIO",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Internet :: WWW/HTTP :: Session",
+]
+description-file = "README.md"
+requires-python = ">=3.7"
+requires = [
+    "fastapi >=0.65.2,<0.74.0",
+    "passlib[bcrypt] ==1.7.4",
+    "email-validator >=1.1.0,<1.2",
+    "pyjwt ==2.3.0",
+    "python-multipart ==0.0.5",
+    "makefun >=1.11.2,<1.14",
+]
+
+[tool.flit.metadata.requires-extra]
+sqlalchemy = [
+    "fastapi-users-db-sqlalchemy >=1.1.0,<2.0.0",
+]
+sqlalchemy2 = [
+    "fastapi-users-db-sqlalchemy >=2.0.0",
+]
+mongodb = [
+    "fastapi-users-db-mongodb >=1.1.0",
+]
+tortoise-orm = [
+    "fastapi-users-db-tortoise >=1.1.0",
+]
+ormar = [
+    "fastapi-users-db-ormar >=1.0.0",
+]
+oauth = [
+    "httpx-oauth >=0.4,<0.5"
+]
+redis = [
+    "aioredis >=2.0.1,<2.1.0",
+    "hiredis >=2.0.0,<2.1.0",
+]
+
+[tool.flit.metadata.urls]
+Documentation = "https://fastapi-users.github.io/fastapi-users/"
