@@ -1,0 +1,59 @@
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "pynfogen"
+version = "1.1.2"
+description = "Scriptable MediaInfo-fed NFO Generator for Movies and TV"
+license = "MIT"
+authors = ["PHOENiX <rlaphoenix@pm.me>"]
+readme = "README.md"
+homepage = "https://github.com/rlaphoenix/pynfogen"
+repository = "https://github.com/rlaphoenix/pynfogen"
+documentation = "https://github.com/rlaphoenix/pynfogen"
+keywords = ["python", "nfo", "generator", "scriptable"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: End Users/Desktop",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Topic :: Documentation",
+    "Topic :: Multimedia",
+    "Topic :: Multimedia :: Video",
+]
+
+[tool.poetry.dependencies]
+python = ">=3.7,<4.0"
+pymediainfo = "^5.1.0"
+pyd2v = "^1.3.0"
+requests = "^2.25.1"
+appdirs = "^1.4.4"
+click = "^8.0.0"
+dunamai = "^1.5.5"
+Unidecode = "^1.2.0"
+langcodes = { extras = ["data"], version = "^3.3.0" }
+jsonpickle = "^2.1.0"
+tldextract = "^3.1.2"
+click-default-group = "^1.2.2"
+
+[tool.poetry.dev-dependencies]
+mypy = "^0.910"
+types-requests = "^2.25.6"
+flake8 = "^3.9.2"
+isort = "^5.9.3"
+pre-commit = "^2.17.0"
+
+[tool.poetry.scripts]
+nfo = "pynfogen.cli:cli"
+
+[tool.isort]
+line_length = 118  # 120-2 as I don't like imports right at the edge
+
+[tool.mypy]
+check_untyped_defs = true
+disallow_incomplete_defs = true
+disallow_untyped_defs = true
+ignore_missing_imports = true
+no_implicit_optional = true
