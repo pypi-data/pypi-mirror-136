@@ -1,0 +1,47 @@
+[tool.poetry]
+name = "libsv"
+version = "0.2.1"
+description = "An open source, parameterized SystemVerilog hardware IP library"
+authors = ["Ben Sampson <bensampson5@gmail.com>"]
+maintainers = ["Ben Sampson <bensampson5@gmail.com>"]
+license = "MIT"
+repository = "https://github.com/bensampson5/libsv"
+homepage = "https://libsv.readthedocs.io/en/latest/"
+documentation = "https://libsv.readthedocs.io/en/latest/"
+keywords = ["SystemVerilog", "Verilog", "Hardware", "IP", "Cocotb"]
+readme = "README.rst"
+classifiers = [
+    "Topic :: System :: Hardware",
+    "Topic :: Scientific/Engineering",
+    "Topic :: Scientific/Engineering :: Electronic Design Automation (EDA)"
+]
+
+[tool.poetry.urls]
+"Bug Tracker" = "https://github.com/bensampson5/libsv/issues"
+
+[tool.poetry.dependencies]
+python = "^3.6.2"
+
+[tool.poetry.dev-dependencies]
+cocotb = "^1.6.0"
+pytest = "^6.2.5"
+Sphinx = "^4.2.0"
+sphinx-rtd-theme = "^1.0.0"
+flake8 = "^4.0.1"
+black = "^21.9b0"
+click = "^8.0.3"
+colorama = "^0.4.4"
+cocotb-test = "^0.2.1"
+PyYAML = "^6.0"
+cloud_sptheme = "^1.10.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+log_cli = true
+
+[tool.black]
+line-length = 88
