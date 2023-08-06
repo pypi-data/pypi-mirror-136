@@ -1,0 +1,12 @@
+.gitignore
+LICENSE
+README.md
+setup.py
+DAVIDpy.egg-info/PKG-INFO
+DAVIDpy.egg-info/SOURCES.txt
+DAVIDpy.egg-info/dependency_links.txt
+DAVIDpy.egg-info/entry_points.txt
+DAVIDpy.egg-info/requires.txt
+DAVIDpy.egg-info/top_level.txt
+davidpy/__init__.py
+davidpy/davidpy.py
