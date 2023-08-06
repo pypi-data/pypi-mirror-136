@@ -1,0 +1,18 @@
+# This file is part of CoVeriTeam, a tool for on-demand composition of cooperative verification systems:
+# https://gitlab.com/sosy-lab/software/coveriteam
+#
+# SPDX-FileCopyrightText: 2020 Dirk Beyer <https://www.sosy-lab.org>
+#
+# SPDX-License-Identifier: Apache-2.0
+
+imports: 
+  - !include ../../../actors/cpachecker.yml
+  - !include resource-limit-any-component.yml
+actor_name: cpachecker-predicate-craig-interpolation
+options: ['-craigInterpolation-violationWitness', '-heap', '10000m', '-noout', '-witness', '${witness}', '-setprop', 'witness.checkProgramHash=false', '-setprop', 'cpa.arg.proofWitness=witness.graphml', '-setprop', 'counterexample.export.compressWitness=false', '-setprop', 'cpa.arg.compressWitness=false']
+archives:
+  - version: default
+    # This DOI is a permanent reference to the ZIP archive that will be downloaded
+    doi: 10.5281/zenodo.5898968
+    spdx_license_identifier: "Apache-2.0"
+format_version: '1.2'

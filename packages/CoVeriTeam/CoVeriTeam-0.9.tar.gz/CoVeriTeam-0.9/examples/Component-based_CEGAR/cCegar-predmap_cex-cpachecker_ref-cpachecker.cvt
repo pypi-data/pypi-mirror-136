@@ -1,0 +1,96 @@
+// This file is part of CoVeriTeam, a tool for on-demand composition of cooperative verification systems:
+// https://gitlab.com/sosy-lab/software/coveriteam
+//
+// SPDX-FileCopyrightText: 2020-2022 Dirk Beyer <https://www.sosy-lab.org>
+//
+// SPDX-License-Identifier: Apache-2.0
+
+fun drop_witness(actor) {
+  dropped = SEQUENCE(actor, Rename({('verdict', Verdict): 'verdict', ('witness', Witness): 'garbage'}));
+  pipethrough = PARALLEL(dropped, Rename({('witness', Witness): 'witness', ('predicates', Predicates): 'predicates'}));
+  return pipethrough;
+}
+
+fun set_verdict_unknown() {
+  always_unknown = ArtifactFactory.create(Verdict, "unknown (cycle abort)");
+  set_unknown = Setter('verdict', always_unknown);
+  passthrough = Rename({('predicates', Predicates): 'predicates'});
+  run = PARALLEL(set_unknown, passthrough);
+  return run;
+}
+
+fun store_verifier_verdict(actor) {
+  store = Rename({('verdict', Verdict): 'verifier_verdict'});
+  keep_original_and_store = PARALLEL(Rename({('verdict', Verdict): 'verdict', ('witness', Witness): 'witness', ('predicates', Predicates): 'predicates'}), store);
+  run = SEQUENCE(actor, keep_original_and_store);
+  return run;
+}
+
+fun store_validator_verdict(actor) {
+  store = Rename({('verdict', Verdict): 'validator_verdict'});
+  keep_original_and_store = PARALLEL(Rename({('verdict', Verdict): 'verdict', ('predicates', Predicates): 'predicates', ('verifier_verdict', Verdict): 'verifier_verdict'}), store);
+  run = SEQUENCE(actor, keep_original_and_store);
+  return run;
+}
+
+fun passthrough_verifier_and_validator_verdict(actor) {
+  passthrough = Rename({('verifier_verdict', Verdict): 'verifier_verdict', ('validator_verdict', Verdict): 'validator_verdict'});
+  run = PARALLEL(actor, passthrough);
+  return run;
+}
+
+// Create the cCegar procedure from the given components
+fun create_componentbased_cegar(verifier, validator, refiner) {
+  unknown_verdict = ArtifactFactory.create(Verdict, "unknown");
+  required_types = Rename({('verdict', Verdict): 'verdict', ('verifier_verdict', Verdict): 'verifier_verdict', ('validator_verdict', Verdict): 'validator_verdict', ('predicates', Predicates): 'predicates'});
+  reset_values = PARALLEL(Setter('verifier_verdict', unknown_verdict), Setter('validator_verdict', unknown_verdict));
+  verification_run = store_verifier_verdict(verifier);
+  initial = SEQUENCE(required_types, reset_values);
+  setup_and_verify = SEQUENCE(initial, verification_run);
+
+  validator_witness_drop = drop_witness(validator);
+  validation_run = store_validator_verdict(validator_witness_drop);
+
+  empty_predicates = ArtifactFactory.create(Predicates, "");
+  passthrough_without_witness = PARALLEL(Rename({('verdict', Verdict): 'verdict', ('verifier_verdict', Verdict): 'verifier_verdict', ('validator_verdict', Verdict): 'validator_verdict', ('witness', Witness): 'witness'}), Setter('predicates', empty_predicates));
+  passthrough_verdict_and_witness = Rename({('verdict', Verdict): 'verdict', ('witness', Witness): 'witness', ('predicates', Predicates): 'predicates'});
+  refiner_if_unreachable = ITE(ELEMENTOF(validator_verdict, {TRUE}), refiner, passthrough_verdict_and_witness);
+  refiner_with_verdict_passthrough = passthrough_verifier_and_validator_verdict(refiner_if_unreachable);
+
+  validate_and_refine = SEQUENCE(validation_run, refiner_with_verdict_passthrough);
+
+  if_false_validate_and_refine = ITE(ELEMENTOF(verifier_verdict, {FALSE}), validate_and_refine, passthrough_without_witness);
+
+  cegar_chain = SEQUENCE(setup_and_verify, if_false_validate_and_refine);
+  cegar_chain_old_witness_passthrough = PARALLEL(cegar_chain, Rename({('predicates', Predicates): 'predicates_old'}));
+
+  joiner = Joiner(Predicates, {'predicates', 'predicates_old'}, 'predicates');
+  predicates_join = PARALLEL(joiner, Rename({('verdict', Verdict): 'verdict', ('verifier_verdict', Verdict): 'verifier_verdict', ('validator_verdict', Verdict): 'validator_verdict', ('predicates_old', Predicates): 'predicates_old'}));
+  verdict_setter = set_verdict_unknown();
+  type_hack = PARALLEL(verdict_setter, Rename({('verifier_verdict', Verdict): 'verifier_verdict', ('validator_verdict', Verdict): 'validator_verdict', ('predicates_old', Predicates): 'predicates_old'}));
+  cond_no_progress = 'predicates' == 'predicates_old' AND ELEMENTOF(verifier_verdict, {FALSE}) AND ELEMENTOF(validator_verdict, {TRUE});
+  passthrough = Rename({('verdict', Verdict): 'verdict', ('verifier_verdict', Verdict): 'verifier_verdict', ('validator_verdict', Verdict): 'validator_verdict', ('predicates', Predicates): 'predicates', ('predicates_old', Predicates): 'predicates_old'});
+  set_verdict_unknown_if_no_progress = ITE(cond_no_progress, type_hack, passthrough);
+  predicates_join_and_progress_check = SEQUENCE(predicates_join, set_verdict_unknown_if_no_progress);
+  single_iteration = SEQUENCE(cegar_chain_old_witness_passthrough, predicates_join_and_progress_check);
+  termination_condition = ELEMENTOF(verifier_verdict, {TRUE}) OR ELEMENTOF(validator_verdict, {FALSE}) OR ELEMENTOF(verdict, {UNKNOWN});
+  cycle = REPEAT(termination_condition, single_iteration);
+  return cycle;
+}
+
+prog = ArtifactFactory.create(CProgram, program_path);
+spec = ArtifactFactory.create(BehaviorSpecification, specification_path);
+initial_predicates = ArtifactFactory.create(Predicates, "");
+false_verdict = ArtifactFactory.create(Verdict, "FALSE");
+true_verdict = ArtifactFactory.create(Verdict, "TRUE");
+inputs = {'program':prog, 'spec':spec, 'predicates': initial_predicates, 'verdict': false_verdict, 'verifier_verdict': false_verdict, 'validator_verdict': true_verdict};
+
+verifier = ActorFactory.create(PredicateBasedProgramVerifier, "actors/cpa-predicate-NoCegar-predmap.yml");
+witness_validator = ActorFactory.create(ProgramValidator, "actors/cpa-validate-violation-witnesses.yml");
+refiner = ActorFactory.create(PredicateBasedProgramValidator, "actors/cpa-predicate-craig-interpolation-predmap.yml");
+
+full_procedure = create_componentbased_cegar(verifier, witness_validator, refiner);
+
+result = execute(full_procedure, inputs);
+
+print(result);

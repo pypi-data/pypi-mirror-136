@@ -1,0 +1,43 @@
+// This file is part of CoVeriTeam, a tool for on-demand composition of cooperative verification systems:
+// https://gitlab.com/sosy-lab/software/coveriteam
+//
+// SPDX-FileCopyrightText: 2020 Dirk Beyer <https://www.sosy-lab.org>
+//
+// SPDX-License-Identifier: Apache-2.0
+
+OBSERVER AUTOMATON AssumptionAutomaton
+
+INITIAL STATE ARG0;
+
+STATE __TRUE :
+    TRUE -> GOTO __TRUE;
+
+STATE __FALSE :
+    TRUE -> ASSUME {0} GOTO __FALSE;
+
+STATE USEFIRST ARG0 :
+    MATCH "unsigned int sum = 0;" -> GOTO ARG1;
+    TRUE -> GOTO ARG0;
+
+STATE USEFIRST ARG1 :
+    MATCH "unsigned long long prod = 1;" -> GOTO ARG2;
+    TRUE -> GOTO ARG1;
+
+STATE USEFIRST ARG2 :
+    MATCH "unsigned char n = __VERIFIER_nondet_uchar();" -> GOTO ARG3;
+    TRUE -> GOTO ARG2;
+
+STATE USEFIRST ARG3 :
+    MATCH "unsigned char n = __VERIFIER_nondet_uchar();" -> GOTO ARG4;
+    TRUE -> GOTO ARG3;
+
+STATE USEFIRST ARG4 :
+    MATCH "int i = 1;" -> GOTO ARG6;
+    TRUE -> GOTO ARG4;
+
+STATE USEFIRST ARG6 :
+    MATCH "[sum >= 0]" -> GOTO __FALSE;
+    MATCH "[!(sum >= 0)]" -> GOTO __TRUE;
+    TRUE -> GOTO ARG6;
+
+END AUTOMATON

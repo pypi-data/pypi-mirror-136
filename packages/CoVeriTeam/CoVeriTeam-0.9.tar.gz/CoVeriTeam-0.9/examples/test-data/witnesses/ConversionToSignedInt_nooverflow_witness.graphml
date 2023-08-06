@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--
+This file is redistributed as part of CoVeriTeam, a tool for on-demand composition of cooperative verification systems:
+https://gitlab.com/sosy-lab/software/coveriteam
+
+This file has been taken from the sv-benchmarks repository: https://github.com/sosy-lab/sv-benchmarks
+
+SPDX-FileCopyrightText: 2013-2020 University of Freiburg
+
+SPDX-License-Identifier: BSD-2-Clause
+-->
+
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+ <key attr.name="isEntryNode" attr.type="boolean" for="node" id="entry">
+  <default>false</default>
+ </key>
+ <key attr.name="sourcecodeLanguage" attr.type="string" for="graph" id="sourcecodelang"/>
+ <key attr.name="programFile" attr.type="string" for="graph" id="programfile"/>
+ <key attr.name="programHash" attr.type="string" for="graph" id="programhash"/>
+ <key attr.name="specification" attr.type="string" for="graph" id="specification"/>
+ <key attr.name="architecture" attr.type="string" for="graph" id="architecture"/>
+ <key attr.name="producer" attr.type="string" for="graph" id="producer"/>
+ <key attr.name="creationTime" attr.type="string" for="graph" id="creationtime"/>
+ <key attr.name="startline" attr.type="int" for="edge" id="startline"/>
+ <key attr.name="endline" attr.type="int" for="edge" id="endline"/>
+ <key attr.name="startoffset" attr.type="int" for="edge" id="startoffset"/>
+ <key attr.name="endoffset" attr.type="int" for="edge" id="endoffset"/>
+ <key attr.name="originFileName" attr.type="string" for="edge" id="originfile">
+  <default>test_data/c/ConversionToSignedInt.i</default>
+ </key>
+ <key attr.name="enterFunction" attr.type="string" for="edge" id="enterFunction"/>
+ <key attr.name="returnFromFunction" attr.type="string" for="edge" id="returnFrom"/>
+ <key attr.name="witness-type" attr.type="string" for="graph" id="witness-type"/>
+ <key attr.name="inputWitnessHash" attr.type="string" for="graph" id="inputwitnesshash"/>
+ <graph edgedefault="directed">
+  <data key="witness-type">correctness_witness</data>
+  <data key="sourcecodelang">C</data>
+  <data key="producer">CPAchecker 1.9.1-svn-</data>
+  <data key="specification">CHECK( init(main()), LTL(G ! overflow) )</data>
+  <data key="programfile">test_data/c/ConversionToSignedInt.i</data>
+  <data key="programhash">77098736f5169a5c2e75e37a12864a0b01bafe22ee148a27a29123419dc4c214</data>
+  <data key="architecture">32bit</data>
+  <data key="creationtime">2020-05-06T06:45:32+02:00</data>
+  <node id="N1">
+   <data key="entry">true</data>
+  </node>
+  <node id="N2"/>
+  <edge source="N1" target="N2">
+   <data key="startline">331</data>
+   <data key="endline">331</data>
+   <data key="startoffset">12952</data>
+   <data key="endoffset">12962</data>
+   <data key="enterFunction">main</data>
+  </edge>
+  <node id="N0"/>
+  <edge source="N2" target="N0">
+   <data key="startline">334</data>
+   <data key="endline">334</data>
+   <data key="startoffset">13008</data>
+   <data key="endoffset">13015</data>
+   <data key="returnFrom">main</data>
+  </edge>
+ </graph>
+</graphml>

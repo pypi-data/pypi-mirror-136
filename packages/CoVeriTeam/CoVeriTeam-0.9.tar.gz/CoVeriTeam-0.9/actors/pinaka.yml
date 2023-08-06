@@ -1,0 +1,16 @@
+# This file is part of CoVeriTeam, a tool for on-demand composition of cooperative verification systems:
+# https://gitlab.com/sosy-lab/software/coveriteam
+#
+# SPDX-FileCopyrightText: 2020 Dirk Beyer <https://www.sosy-lab.org>
+#
+# SPDX-License-Identifier: Apache-2.0
+
+imports: 
+  - !include verifier_resource.yml
+actor_name: pinaka
+toolinfo_module: "https://gitlab.com/sosy-lab/software/benchexec/-/raw/main/benchexec/tools/pinaka.py"
+options: ['--graphml-witness', 'witness.graphml']
+archives:
+  - version: default
+    location: "https://gitlab.com/sosy-lab/sv-comp/archives-2022/-/raw/main/2022/pinaka.zip"
+format_version: '1.2'

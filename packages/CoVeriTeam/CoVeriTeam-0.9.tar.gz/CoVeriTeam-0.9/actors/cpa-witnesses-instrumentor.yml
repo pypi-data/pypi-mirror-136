@@ -1,0 +1,13 @@
+# This file is part of CoVeriTeam, a tool for on-demand composition of cooperative verification systems:
+# https://gitlab.com/sosy-lab/software/coveriteam
+#
+# SPDX-FileCopyrightText: 2020 Dirk Beyer <https://www.sosy-lab.org>
+#
+# SPDX-License-Identifier: Apache-2.0
+
+imports: 
+  - !include cpachecker.yml
+  - !include verifier_resource.yml
+actor_name: witnesses-instrumentor
+options: ['-witness2reach', '-noout', '-setprop', 'cpa.arg.CTranslation.file=ARG.c', '-setprop', 'witness.useInvariantsAsAssumptions=true', '-setprop', 'witness.checkInvariantViolations=true', '-setprop', 'cpa.arg.export.code.header=false', '-setprop', 'witness.strictChecking=false', '-setprop', 'witness.checkProgramHash=false']
+format_version: '1.2'

@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: CoVeriTeam
+Version: 0.9
+Summary: CoVeriTeam: On-Demand Composition of Cooperative Verification Systems
+Home-page: https://gitlab.com/sosy-lab/software/coveriteam
+Author: Sudeep Kanav
+Author-email: UNKNOWN
+License: Apache-2.0
+Description: UNKNOWN
+Keywords: cooperative verification validation
+Platform: Linux
+Classifier: Development Status :: 1 - Planning
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Software Development :: Testing

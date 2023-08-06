@@ -1,0 +1,19 @@
+# This file is part of CoVeriTeam, a tool for on-demand composition of cooperative verification systems:
+# https://gitlab.com/sosy-lab/software/coveriteam
+#
+# SPDX-FileCopyrightText: 2020 Dirk Beyer <https://www.sosy-lab.org>
+#
+# SPDX-License-Identifier: Apache-2.0
+
+actor_name: algo-selector-metaval
+toolinfo_module: "coveriteam.toolconfigs.algo-selector-metaval.py"
+archives:
+  - version: default
+    location: "https://gitlab.com/sosy-lab/software/metaval/-/archive/master/metaval-master.zip"
+    spdx_license_identifier: "Apache-2.0"
+options: []
+resourcelimits:
+  memlimit: "15 GB"
+  timelimit: "15 min"
+  cpuCores: "8"
+format_version: '1.2'

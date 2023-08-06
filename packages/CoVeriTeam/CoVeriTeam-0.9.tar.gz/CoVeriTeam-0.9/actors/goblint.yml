@@ -1,0 +1,20 @@
+# This file is part of CoVeriTeam, a tool for on-demand composition of cooperative verification systems:
+# https://gitlab.com/sosy-lab/software/coveriteam
+#
+# SPDX-FileCopyrightText: 2020 Dirk Beyer <https://www.sosy-lab.org>
+#
+# SPDX-License-Identifier: Apache-2.0
+
+imports:
+  - !include verifier_resource.yml
+actor_name: goblint
+toolinfo_module: "https://gitlab.com/sosy-lab/software/benchexec/-/raw/main/benchexec/tools/goblint.py"
+options: []
+archives:
+  - version: svcomp22
+    location: "https://gitlab.com/sosy-lab/sv-comp/archives-2022/-/raw/main/2022/goblint.zip"
+    options: ["--conf", "conf/svcomp22.json"]
+  - version: svcomp21
+    location: "https://gitlab.com/sosy-lab/sv-comp/archives-2021/-/raw/master/2021/goblint.zip"
+    options: ["--conf", "conf/svcomp21.json"]
+format_version: '1.2'

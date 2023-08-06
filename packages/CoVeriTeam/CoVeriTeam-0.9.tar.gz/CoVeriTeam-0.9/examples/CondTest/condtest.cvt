@@ -1,0 +1,50 @@
+// This file is part of CoVeriTeam, a tool for on-demand composition of cooperative verification systems:
+// https://gitlab.com/sosy-lab/software/coveriteam
+//
+// SPDX-FileCopyrightText: 2020 Dirk Beyer <https://www.sosy-lab.org>
+//
+// SPDX-License-Identifier: Apache-2.0
+
+// Conditional Testing
+
+fun conditional_tester(reducer, tester){
+    // A sequence of reducer and the test generator.
+    test_gen = SEQUENCE(reducer, tester);
+
+    // Joiner takes the artifact type and input artifact names, and the name of the mergred artifact.
+    joiner = Joiner(TestGoal, {'covered_goals', 'extracted_goals'}, 'covered_goals');
+    extractor = ActorFactory.create(TestGoalExtractor, "../../actors/test-goal-extractor.yml", "latest");
+    // Sequence of the extractor and joiner producing the set of goals covered by merging the input goals and extracted goals.
+    ext_and_joiner = SEQUENCE(extractor, joiner);
+
+    // Also forward the input test suite to output and accumulate.
+    extractor_plus = PARALLEL(ext_and_joiner, Identity({'test_suite'}));
+
+    // Conditional tester is a sequence of reducer, tester and extractor.
+    ct = SEQUENCE(test_gen, extractor_plus);
+    return ct;
+}
+
+// Instantiate the test generator and reducer (pruner in this case).
+tester = ActorFactory.create(ProgramTester, tester_yml);
+pruner = ActorFactory.create(TestGoalPruner, "../../actors/test-goal-pruner.yml", "latest");
+ct = conditional_tester(pruner, tester);
+
+// Instrumentor instruments the code with test goals for condtest.
+instrumentor = ActorFactory.create(TestCriterionInstrumentor, "../../actors/test-criterion-instrumentor.yml", "latest");
+condtest = SEQUENCE(instrumentor, ct);
+
+// Print type information about the composition (for illustration)
+print("\nFollowing is the type of the actor condtest:");
+print(condtest);
+
+// Prepare test inputs.
+prog = ArtifactFactory.create(CProgram, prog_path);
+spec = ArtifactFactory.create(TestSpecification, spec_path); 
+tg = ArtifactFactory.create(TestGoal, "");
+ip = {'program':prog, 'test_spec':spec, 'covered_goals': tg};
+
+// Execute the actor on the inputs.
+res = execute(condtest, ip);
+print("The following artifacts were produced by the execution:");
+print(res);

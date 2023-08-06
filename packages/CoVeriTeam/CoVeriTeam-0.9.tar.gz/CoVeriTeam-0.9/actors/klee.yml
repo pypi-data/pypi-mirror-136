@@ -1,0 +1,15 @@
+# This file is part of CoVeriTeam, a tool for on-demand composition of cooperative verification systems:
+# https://gitlab.com/sosy-lab/software/coveriteam
+#
+# SPDX-FileCopyrightText: 2020 Dirk Beyer <https://www.sosy-lab.org>
+#
+# SPDX-License-Identifier: Apache-2.0
+
+imports: !include verifier_resource.yml
+actor_name: klee
+toolinfo_module: "https://gitlab.com/sosy-lab/software/benchexec/-/raw/main/benchexec/tools/klee.py"
+archives:
+  - version: default
+    location: "https://gitlab.com/sosy-lab/test-comp/archives-2021/-/raw/master/2021/klee.zip"
+options: []
+format_version: '1.2'

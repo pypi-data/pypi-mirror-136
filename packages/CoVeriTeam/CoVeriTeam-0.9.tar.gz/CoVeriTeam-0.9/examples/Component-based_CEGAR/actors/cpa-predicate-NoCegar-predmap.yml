@@ -1,0 +1,18 @@
+# This file is part of CoVeriTeam, a tool for on-demand composition of cooperative verification systems:
+# https://gitlab.com/sosy-lab/software/coveriteam
+#
+# SPDX-FileCopyrightText: 2020-2021 Dirk Beyer <https://www.sosy-lab.org>
+#
+# SPDX-License-Identifier: Apache-2.0
+
+imports: 
+  - !include ../../../actors/cpachecker.yml
+  - !include resource-limit-any-component.yml
+actor_name: cpachecker-predicate-no-cegar
+options: ['-predicateAnalysis-NoCEGAR', '-noout', '-setprop', 'counterexample.export.graphml=witness.graphml', '-setprop', 'cpa.predicate.predmap.file=predmap.txt', '-heap', '10000m', '-setprop', 'cpa.predicate.abstraction.initialPredicates=../../../examples/Component-based_CEGAR/actors/predmap-false.txt,${predicates}', '-setprop', 'cpa.predicate.precision.sharing=GLOBAL', '-setprop', 'counterexample.export.compressWitness=false', '-setprop', 'cfa.simplifyCfa=false', '-setprop', 'cpa.composite.aggregateBasicBlocks=false', '-setprop', 'cpa.predicate.memoryAllocationsAlwaysSucceed=true', '-setprop', 'cpa.callstack.unsupportedFunctions=pthread_create,pthread_key_create,sin,cos,__builtin_uaddl_overflow', '-setprop', 'cpa.arg.compressWitness=false']
+archives:
+  - version: default
+    # This DOI is a permanent reference to the ZIP archive that will be downloaded
+    doi: 10.5281/zenodo.5898968
+    spdx_license_identifier: "Apache-2.0"
+format_version: '1.2'

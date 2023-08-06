@@ -1,0 +1,33 @@
+// This file is part of CoVeriTeam, a tool for on-demand composition of cooperative verification systems:
+// https://gitlab.com/sosy-lab/software/coveriteam
+//
+// SPDX-FileCopyrightText: 2020 Dirk Beyer <https://www.sosy-lab.org>
+//
+// SPDX-License-Identifier: Apache-2.0
+
+// Validating Verifier
+
+// Create verifier and validator from yml files
+verifier = ActorFactory.create(ProgramVerifier, verifier_path, verifier_version);
+validator = ActorFactory.create(ProgramValidator, validator_path, validator_version);
+
+// Use validator if verdict is true or false
+condition = ELEMENTOF(verdict, {TRUE, FALSE});
+second_component = ITE(condition, validator);
+
+// Verifier and second component to be executed in sequence
+validating_verifier = SEQUENCE(verifier, second_component);
+
+// Print type information about the composition (for illustration)
+print("\nFollowing is the type of the actor validating_verifier:");
+print(validating_verifier);
+
+// Prepare example inputs
+program = ArtifactFactory.create(CProgram, program_path);
+specification = ArtifactFactory.create(BehaviorSpecification, specification_path);
+inputs = {'program':program, 'spec':specification};
+
+// Execute the new component on the inputs
+res = execute(validating_verifier, inputs);
+print("The following artifacts were produced by the execution:");
+print(res);

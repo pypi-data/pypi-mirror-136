@@ -1,0 +1,11 @@
+# This file is part of CoVeriTeam, a tool for on-demand composition of cooperative verification systems:
+# https://gitlab.com/sosy-lab/software/coveriteam
+#
+# SPDX-FileCopyrightText: 2020 Dirk Beyer <https://www.sosy-lab.org>
+#
+# SPDX-License-Identifier: Apache-2.0
+
+imports: 
+  - !include cst-transform.yml
+toolinfo_module: "coveriteam.toolconfigs.algo-selector-cst-transform.py"
+options: ["./selectors/tool_slogistics/"]

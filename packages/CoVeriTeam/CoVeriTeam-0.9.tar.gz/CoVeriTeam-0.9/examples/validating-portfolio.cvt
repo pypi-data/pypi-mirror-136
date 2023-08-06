@@ -1,0 +1,35 @@
+// This file is part of CoVeriTeam, a tool for on-demand composition of cooperative verification systems:
+// https://gitlab.com/sosy-lab/software/coveriteam
+//
+// SPDX-FileCopyrightText: 2020 Dirk Beyer <https://www.sosy-lab.org>
+//
+// SPDX-License-Identifier: Apache-2.0
+
+cpa_seq = ActorFactory.create(ProgramVerifier, "../actors/cpa-seq.yml", "default");
+esbmc_kind = ActorFactory.create(ProgramVerifier, "../actors/esbmc-kind.yml", "default");
+
+validator = ActorFactory.create(ProgramValidator, "../actors/cpa-validate-violation-witnesses.yml", "default");
+
+verifier_rename = Rename({'verdict':'verifier_verdict','witness':'verifier_witness'});
+
+// Only execute the validator, if the verifier produced True/False
+validator_start_condition = ELEMENTOF(verdict, {TRUE, FALSE});
+second_component = ITE(validator_start_condition, validator);
+
+//Parallel used to "copy" the artifacts produced by the verifiers
+verifier_validator_one = SEQUENCE(cpa_seq, PARALLEL(verifier_rename, validator));
+verifier_validator_two = SEQUENCE(esbmc_kind, PARALLEL(verifier_rename, validator));
+
+// String or just variable names are not working for some reasons
+success_condition = 'verifier_verdict' == 'verdict';
+portfolio = ParallelPortfolio(verifier_validator_one, verifier_validator_two, success_condition);
+
+// Prepare inputs
+prog = ArtifactFactory.create(CProgram, program_path);
+spec = ArtifactFactory.create(BehaviorSpecification, specification_path);
+inputs = {'program':prog, 'spec':spec};
+
+print(portfolio);
+
+result = execute(portfolio, inputs);
+print(result);

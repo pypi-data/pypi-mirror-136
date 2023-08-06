@@ -1,0 +1,19 @@
+# This file is part of CoVeriTeam, a tool for on-demand composition of cooperative verification systems:
+# https://gitlab.com/sosy-lab/software/coveriteam
+#
+# SPDX-FileCopyrightText: 2020 Dirk Beyer <https://www.sosy-lab.org>
+#
+# SPDX-License-Identifier: Apache-2.0
+
+actor_name: verifier-false
+toolinfo_module: "false.py"
+options: []
+archives:
+  - version: default
+    location: "https://gitlab.com/sosy-lab/software/coveriteam/-/raw/main/examples/test-data/tool-archives/dummy-verifier-false.zip"
+resourcelimits:
+  memlimit: "15  GB"
+  timelimit: "15 min"
+  hardtimelimit: "16 min"
+  cpuCores: "8"
+format_version: '1.2'

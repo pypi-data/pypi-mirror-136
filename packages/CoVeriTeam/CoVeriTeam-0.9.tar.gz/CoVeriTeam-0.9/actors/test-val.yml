@@ -1,0 +1,15 @@
+# This file is part of CoVeriTeam, a tool for on-demand composition of cooperative verification systems:
+# https://gitlab.com/sosy-lab/software/coveriteam
+#
+# SPDX-FileCopyrightText: 2020 Dirk Beyer <https://www.sosy-lab.org>
+#
+# SPDX-License-Identifier: Apache-2.0
+
+imports: !include verifier_resource.yml
+actor_name: test-validator
+toolinfo_module: "https://gitlab.com/sosy-lab/software/benchexec/-/raw/main/benchexec/tools/testcov.py"
+archives:
+  - version: default
+    location: "https://gitlab.com/sosy-lab/test-comp/archives-2021/-/raw/master/2021/val_testcov.zip"
+options: ["--no-isolation", "--no-runexec", "--verbose", "--no-plots", "--reduction", "NONE"]
+format_version: '1.2'

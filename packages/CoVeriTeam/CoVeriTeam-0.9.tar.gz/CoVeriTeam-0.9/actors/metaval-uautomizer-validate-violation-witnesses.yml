@@ -1,0 +1,16 @@
+# This file is part of CoVeriTeam, a tool for on-demand composition of cooperative verification systems:
+# https://gitlab.com/sosy-lab/software/coveriteam
+#
+# SPDX-FileCopyrightText: 2020 Dirk Beyer <https://www.sosy-lab.org>
+#
+# SPDX-License-Identifier: Apache-2.0
+
+imports: !include verifier_resource.yml
+actor_name: metaval
+toolinfo_module: "metaval.py"
+# Parameter --witness is NOT the given witness, but the expected output file of the generated correctness witness (if one is generated)
+options: ["--metavalWitness", "${witness}", '--metavalVerifierBackend', 'ultimateautomizer', '--full-output']
+archives:
+  - version: default
+    location: "https://gitlab.com/sosy-lab/sv-comp/archives-2021/-/raw/master/2021/val_metaval.zip"
+format_version: '1.2'

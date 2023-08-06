@@ -1,0 +1,42 @@
+// This file is part of CoVeriTeam, a tool for on-demand composition of cooperative verification systems:
+// https://gitlab.com/sosy-lab/software/coveriteam
+//
+// SPDX-FileCopyrightText: 2020 Dirk Beyer <https://www.sosy-lab.org>
+//
+// SPDX-License-Identifier: Apache-2.0
+
+// ----------------------------------------------------------------------------------------------------------------
+// Required Inputs: tester1_yml, prog_path, spec_path, tester2_yml, pruner_yml
+//
+// This is an example of using CondTest in a sequence (i.e. [Instrumentor]->[Tester 1]->[Extractor]->[Pruner]->[Tester 2]).
+//
+// Call with 
+//	../bin/coveriteam version-picking.cvt --data-model ILP32 --input prog_path=c/Problem01_label15.c 
+//	--input spec_path=properties/coverage-branches.prp --input pruner_yml=actors/test-goal-pruner.yml 
+
+tester1 = ActorFactory.create(ProgramTester, "../actors/prtest.yml", "testcomp21"); //Tester to generate initial suite
+tester2 = ActorFactory.create(ProgramTester, "../actors/hybridtiger.yml", "testcomp20"); //Tester after reduction
+
+pruner = ActorFactory.create(TestGoalPruner, pruner_yml, "latest"); //The pruner to use
+instrumentor = ActorFactory.create(TestCriterionInstrumentor, "../actors/test-criterion-instrumentor.yml", "latest");
+
+extractor1 = ActorFactory.create(TestGoalExtractor, "../actors/test-goal-extractor.yml", "latest");
+joiner1 = Joiner(TestGoal, {'covered_goals', 'extracted_goals'}, 'covered_goals');
+ext_and_joiner1 = SEQUENCE(extractor1, joiner1);
+
+extractor2 = ActorFactory.create(TestGoalExtractor, "../actors/test-goal-extractor.yml", "latest");
+joiner2 = Joiner(TestGoal, {'covered_goals', 'extracted_goals'}, 'covered_goals');
+ext_and_joiner2 = SEQUENCE(extractor2, joiner2);
+
+test2_ext = SEQUENCE(tester2, ext_and_joiner2);
+test2_gen = SEQUENCE(pruner, test2_ext);
+test2_red = SEQUENCE(ext_and_joiner1, test2_gen);
+test1_ext = SEQUENCE(tester1, test2_red);
+test1_gen = SEQUENCE(instrumentor, test1_ext);
+
+prog  = ArtifactFactory.create(CProgram, prog_path); //The program to test
+spec  = ArtifactFactory.create(TestSpecification, spec_path); //Our coverage crtierion
+goals = ArtifactFactory.create(TestGoal, ""); //Our list of covered goals
+
+input = {'program':prog, 'test_spec':spec, 'covered_goals': goals};
+execute(test1_gen, input);

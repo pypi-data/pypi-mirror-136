@@ -1,0 +1,46 @@
+// This file is part of CoVeriTeam, a tool for on-demand composition of cooperative verification systems:
+// https://gitlab.com/sosy-lab/software/coveriteam
+//
+// SPDX-FileCopyrightText: 2020 Dirk Beyer <https://www.sosy-lab.org>
+//
+// SPDX-License-Identifier: Apache-2.0
+
+// ----------------------------------------------------------------------------------------------------------------
+// Required Inputs: tester1_yml, prog_path, spec_path, tester2_yml, pruner_yml, extractor_yml
+//
+// This is an example of using CoVeriTeam together with CPAChecker by coverting test goals to condition automata.
+//
+// Call with 
+//	../bin/coveriteam conditional-testing.cvt --data-model ILP32 --input tester1_yml=../actors/prtest.yml --input prog_path=c/Problem01_label15.c 
+//	--input spec_path=properties/coverage-branches.prp --input tester2_yml=../actors/prtest.yml --input pruner_yml=../actors/test-goal-pruner.yml 
+//	--input extractor_yml=../actors/cpachecker-conditional-testing-naive.yml
+
+tester1 = ActorFactory.create(ProgramTester, tester1_yml); //Tester to generate initial suite
+tester2 = ActorFactory.create(ProgramTester, tester2_yml); //Tester after reduction
+
+condition_extractor = ActorFactory.create(ConditionExtractor, extractor_yml);
+pruner = ActorFactory.create(CMCReducer, "../../actors/cmc-reducer.yml");
+
+instrumentor = ActorFactory.create(TestCriterionInstrumentor, "../../actors/test-criterion-instrumentor.yml");
+
+extractor1 = ActorFactory.create(TestGoalExtractor, "../../actors/test-goal-extractor.yml");
+joiner1 = Joiner(TestGoal, {'covered_goals', 'extracted_goals'}, 'covered_goals');
+ext_and_joiner1 = SEQUENCE(extractor1, joiner1);
+
+extractor2 = ActorFactory.create(TestGoalExtractor, "../../actors/test-goal-extractor.yml");
+joiner2 = Joiner(TestGoal, {'covered_goals', 'extracted_goals'}, 'covered_goals');
+ext_and_joiner2 = SEQUENCE(extractor2, joiner2);
+
+test2_ext = SEQUENCE(tester2, ext_and_joiner2);
+test2_red = SEQUENCE(pruner, test2_ext);
+test2_cdn = SEQUENCE(condition_extractor, test2_red);
+test2_red = SEQUENCE(ext_and_joiner1, test2_cdn);
+test1_ext = SEQUENCE(tester1, test2_red);
+test1_gen = SEQUENCE(instrumentor, test1_ext);
+
+prog  = ArtifactFactory.create(CProgram, prog_path); //The program to test
+spec  = ArtifactFactory.create(TestSpecification, spec_path); //Our coverage crtierion
+goals = ArtifactFactory.create(TestGoal, ""); //Our list of covered goals
+
+input = {'program':prog, 'test_spec':spec, 'covered_goals': goals};
+execute(test1_gen, input);

@@ -1,0 +1,63 @@
+// This file is part of CoVeriTeam, a tool for on-demand composition of cooperative verification systems:
+// https://gitlab.com/sosy-lab/software/coveriteam
+//
+// SPDX-FileCopyrightText: 2020 Dirk Beyer <https://www.sosy-lab.org>
+//
+// SPDX-License-Identifier: Apache-2.0
+
+// Cyclic Conditional Testing
+
+fun conditional_tester(reducer, tester){
+    // A sequence of reducer and the test generator.
+    test_gen = SEQUENCE(reducer, tester);
+
+    // Sequence of the extractor and joiner. This sequence will produced the the set of goals covered by merging the 
+    // input goals and extracted goals.
+    // Joiner takes the artifact type and input artifact names, and the name of the merged artifact.
+    joiner = Joiner(TestGoal, {'covered_goals', 'extracted_goals'}, 'covered_goals');
+    extractor = ActorFactory.create(TestGoalExtractor, "../../actors/test-goal-extractor.yml", "latest");
+    ext_and_joiner = SEQUENCE(extractor, joiner);
+
+    // Also forward the input test suite to output and accumulate.
+    extractor_plus = PARALLEL(ext_and_joiner, Identity({'test_suite'}));
+
+    // Conditional tester is a sequence of reducer, tester and extractor.
+    ct = SEQUENCE(test_gen, extractor_plus);
+    return ct;
+}
+
+// At first create a tester based on a verifier.
+w2test = ActorFactory.create(WitnessToTest, "../../actors/cpachecker-witness-to-test.yml", "default");
+ver = ActorFactory.create(ProgramVerifier, "../../actors/cpa-seq.yml", "default");
+tester = SEQUENCE(ver, w2test);
+
+// We use the annotator reducer in this case, and also we need to convert the test spec to a safety spec.
+annotator = ActorFactory.create(TestGoalAnnotator, "../../actors/test-goal-annotator.yml", "latest");
+test_spec_to_spec = TestSpecToSpec();
+reducer = PARALLEL(annotator, test_spec_to_spec);
+
+// Create a conditional tester based on the tester and reducer.
+condtest = conditional_tester(reducer, tester);
+rename_goals = Rename({'covered_goals': 'input_covered_goals'});
+
+ // Repeat condtest till the there are not more covered goals, and accumulate the test suite.
+tc = 'input_covered_goals' == 'covered_goals';
+iter = REPEAT(tc, PARALLEL(rename_goals, condtest));
+
+// Print type information about the composition (for illustration)
+print("\nFollowing is the type of the actor iter:");
+print(iter);
+
+instrumentor = ActorFactory.create(TestCriterionInstrumentor, "../../actors/test-criterion-instrumentor.yml", "latest");
+new_tester = SEQUENCE(instrumentor, iter);
+
+// Prepare test inputs.
+prog = ArtifactFactory.create(CProgram, prog_path);
+spec = ArtifactFactory.create(TestSpecification, spec_path);
+tg = ArtifactFactory.create(TestGoal, "");
+ip = {'program':prog, 'test_spec':spec, 'covered_goals': tg};
+
+// Execute the actor on the inputs.
+res = execute(new_tester, ip);
+print("The following artifacts were produced by the execution:");
+print(res);

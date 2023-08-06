@@ -1,0 +1,19 @@
+# This file is part of CoVeriTeam, a tool for on-demand composition of cooperative verification systems:
+# https://gitlab.com/sosy-lab/software/coveriteam
+#
+# SPDX-FileCopyrightText: 2020 Dirk Beyer <https://www.sosy-lab.org>
+#
+# SPDX-License-Identifier: Apache-2.0
+
+imports: !include verifier_resource.yml
+actor_name: prtest
+toolinfo_module: "prtest.py"
+archives:
+  - version: default
+    location: "https://gitlab.com/sosy-lab/software/prtest/-/archive/171b0663624170a0d106ed6a8b1f2f4b2a1610a9/prtest-171b0663624170a0d106ed6a8b1f2f4b2a1610a9.zip"
+  - version: testcomp21
+    location: "https://gitlab.com/sosy-lab/test-comp/archives-2021/-/raw/testcomp21/2021/prtest.zip"
+  - version: testcomp20
+    location: "https://gitlab.com/sosy-lab/test-comp/archives-2020/-/raw/testcomp20/2020/prtest.zip"
+format_version: '1.2'
+options: []

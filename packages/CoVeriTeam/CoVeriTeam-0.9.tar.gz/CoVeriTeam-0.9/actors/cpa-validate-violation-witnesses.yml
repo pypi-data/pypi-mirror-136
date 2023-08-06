@@ -1,0 +1,20 @@
+# This file is part of CoVeriTeam, a tool for on-demand composition of cooperative verification systems:
+# https://gitlab.com/sosy-lab/software/coveriteam
+#
+# SPDX-FileCopyrightText: 2020 Dirk Beyer <https://www.sosy-lab.org>
+#
+# SPDX-License-Identifier: Apache-2.0
+
+imports: 
+  - !include verifier_resource.yml
+actor_name: cpa-seq-validate-violation-witnesses
+toolinfo_module: "https://gitlab.com/sosy-lab/software/benchexec/-/raw/main/benchexec/tools/cpachecker.py"
+options: ['-witnessValidation', '-setprop', 'witness.checkProgramHash=false', '-heap', '5000m', '-benchmark', '-setprop', 'cpa.predicate.memoryAllocationsAlwaysSucceed=true', '-setprop', 'cpa.smg.memoryAllocationFunctions=malloc,__kmalloc,kmalloc,kzalloc,kzalloc_node,ldv_zalloc,ldv_malloc', '-setprop', 'cpa.smg.arrayAllocationFunctions=calloc,kmalloc_array,kcalloc', '-setprop', 'cpa.smg.zeroingMemoryAllocation=calloc,kzalloc,kcalloc,kzalloc_node,ldv_zalloc', '-setprop', 'cpa.smg.deallocationFunctions=free,kfree,kfree_const', "-witness", "${witness}"]
+archives:
+  - version: default
+    location: "https://gitlab.com/sosy-lab/sv-comp/archives-2022/-/raw/main/2022/cpachecker.zip"
+    spdx_license_identifier: "Apache-2.0"
+resourcelimits:
+  memlimit: "7 GB"
+  timelimit: "900 s"
+format_version: '1.2'

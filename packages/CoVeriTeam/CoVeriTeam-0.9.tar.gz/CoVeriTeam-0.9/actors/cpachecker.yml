@@ -1,0 +1,17 @@
+# This file is part of CoVeriTeam, a tool for on-demand composition of cooperative verification systems:
+# https://gitlab.com/sosy-lab/software/coveriteam
+#
+# SPDX-FileCopyrightText: 2020 Dirk Beyer <https://www.sosy-lab.org>
+#
+# SPDX-License-Identifier: Apache-2.0
+
+# toolinfo_module: "https://raw.githubusercontent.com/sosy-lab/benchexec/main/benchexec/tools/cpachecker.py"
+toolinfo_module: "cpachecker.py"
+archives:
+  - version: default
+    location: "https://gitlab.com/sosy-lab/sv-comp/archives-2022/-/raw/main/2022/cpachecker.zip"
+    spdx_license_identifier: "Apache-2.0"
+  - version: 2.1
+    doi: "10.5281/zenodo.5720557"
+    options: ['-svcomp22', '-heap', '10000M', '-benchmark', '-timelimit', '900 s']
+    spdx_license_identifier: "Apache-2.0"

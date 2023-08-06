@@ -1,0 +1,32 @@
+// This file is part of CoVeriTeam, a tool for on-demand composition of cooperative verification systems:
+// https://gitlab.com/sosy-lab/software/coveriteam
+//
+// SPDX-FileCopyrightText: 2020 Dirk Beyer <https://www.sosy-lab.org>
+//
+// SPDX-License-Identifier: Apache-2.0
+
+// Portfolio
+
+cpachecker = ActorFactory.create(ProgramVerifier, "../actors/cpa-seq.yml", "default");
+symbiotic = ActorFactory.create(ProgramVerifier, "../actors/symbiotic.yml", "default");
+uautomizer = ActorFactory.create(ProgramVerifier, "../actors/uautomizer.yml", "default");
+esbmc_kind = ActorFactory.create(ProgramVerifier, "../actors/esbmc-kind.yml", "default");
+
+
+
+// Prepare example inputs
+prog = ArtifactFactory.create(CProgram, program_path);
+spec = ArtifactFactory.create(BehaviorSpecification, specification_path);
+inputs = {'program':prog, 'spec':spec};
+
+success_condition = ELEMENTOF(verdict, {TRUE,FALSE});
+
+result = execute(
+    ParallelPortfolio(
+        cpachecker,
+        symbiotic,
+        ParallelPortfolio(uautomizer,esbmc_kind,success_condition),
+        success_condition
+    ),
+    inputs);
+print(result);

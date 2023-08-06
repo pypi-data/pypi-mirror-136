@@ -1,0 +1,27 @@
+// This file is part of CoVeriTeam, a tool for on-demand composition of cooperative verification systems:
+// https://gitlab.com/sosy-lab/software/coveriteam
+//
+// SPDX-FileCopyrightText: 2020 Dirk Beyer <https://www.sosy-lab.org>
+//
+// SPDX-License-Identifier: Apache-2.0
+
+// Execution-Based Validation Using a Witness Instrumentor
+
+ins = ActorFactory.create(WitnessInstrumentor, "../actors/cpa-witnesses-instrumentor.yml");
+tester = ActorFactory.create(ProgramTester, "../actors/klee.yml");
+spec_to_testspec = SpecToTestSpec();
+testval = ActorFactory.create(TestValidator, "../actors/test-val.yml");
+
+tester_val = SEQUENCE(tester, testval);
+
+execution_based_validator = SEQUENCE(PARALLEL(ins, spec_to_testspec), tester_val);
+
+
+// Prepare test inputs.
+witness = ArtifactFactory.create(ReachabilityWitness, witness_path);
+prog = ArtifactFactory.create(CProgram, prog_path);
+spec = ArtifactFactory.create(BehaviorSpecification, spec_path);
+ip = {'program':prog, 'spec':spec, 'witness':witness};
+
+// Execute the actor on the inputs.
+execute(execution_based_validator, ip);

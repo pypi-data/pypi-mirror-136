@@ -1,0 +1,15 @@
+# This file is part of CoVeriTeam, a tool for on-demand composition of cooperative verification systems:
+# https://gitlab.com/sosy-lab/software/coveriteam
+#
+# SPDX-FileCopyrightText: 2020 Dirk Beyer <https://www.sosy-lab.org>
+#
+# SPDX-License-Identifier: Apache-2.0
+
+imports: !include verifier_resource.yml
+actor_name: legion
+toolinfo_module: "https://gitlab.com/sosy-lab/software/benchexec/-/raw/main/benchexec/tools/legion.py"
+archives:
+  - version: default
+    location: "https://gitlab.com/sosy-lab/test-comp/archives-2021/-/raw/master/2021/legion.zip"
+options: ["--score", "uct", "--core", "8", "--tree-depth-limit", "100000", "--conex-timeout", "0", "--symex-timeout", "0", "--min-samples", "1", "--save-tests", "REDUCED", "--persistent", "--time-penalty", "0", "--random-seed", "0", "-o", "./binary.instr", "--compile", "svcomp"]
+format_version: '1.2'

@@ -1,0 +1,19 @@
+# This file is part of CoVeriTeam, a tool for on-demand composition of cooperative verification systems:
+# https://gitlab.com/sosy-lab/software/coveriteam
+#
+# SPDX-FileCopyrightText: 2020 Dirk Beyer <https://www.sosy-lab.org>
+#
+# SPDX-License-Identifier: Apache-2.0
+
+imports: !include verifier_resource.yml
+actor_name: ugemcutter
+toolinfo_module: "ultimategemcutter.py"
+archives:
+  - version: default
+    location: "https://gitlab.com/sosy-lab/sv-comp/archives-2022/-/raw/main/2022/ugemcutter.zip"
+    spdx_license_identifier: "LGPL-3.0-or-later"
+  - version: staging
+    location: "https://gitlab.com/sosy-lab/benchmarking/coveriteam-archives/ultimate/-/raw/main/ugemcutter.zip"
+    spdx_license_identifier: "LGPL-3.0-or-later"
+options: ['--full-output']
+format_version: '1.2'

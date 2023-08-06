@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--
+This file is redistributed as part of CoVeriTeam, a tool for on-demand composition of cooperative verification systems:
+https://gitlab.com/sosy-lab/software/coveriteam
+
+SPDX-FileCopyrightText: 2020 Dirk Beyer <https://www.sosy-lab.org>
+
+SPDX-License-Identifier: Apache-2.0
+-->
+
+<!DOCTYPE benchmark PUBLIC "+//IDN sosy-lab.org//DTD BenchExec benchmark 1.9//EN" "https://www.sosy-lab.org/benchexec/benchmark-1.9.dtd">
+<!--
+This is an example file to run a validator (metaval in this example) in CoVeriTeam.
+Please note that the paths in tasks node are relative to this file, 
+but the path to the witness given in witness_path is relative to the directory from which benchexec is going to be executed.
+-->
+<benchmark tool="coveriteam-verifier-validator" timelimit="15 min" hardtimelimit="16 min" memlimit="15 GB" cpuCores="8">
+
+<require cpuModel="Intel Xeon E3-1230 v5 @ 3.40 GHz" cpuCores="8"/>
+
+  <resultfiles>**</resultfiles>
+
+  <option name="examples/MetaVal/metaval.cvt"></option>
+  <option name="--input">witness_path=examples/test-data/witnesses/ConversionToSignedInt_nooverflow_witness.graphml</option>
+  <option name="--cache-dir">.</option>
+
+<rundefinition name="sv-comp20_prop-reachsafety">
+  <tasks name="ReachSafety-ECA">
+    <include>../../../../sv-benchmarks/c/signedintegeroverflow-regression/ConversionToSignedInt.yml</include>
+    <propertyfile>../../../../sv-benchmarks/c/properties/no-overflow.prp</propertyfile>
+  </tasks>
+</rundefinition>
+
+</benchmark>
