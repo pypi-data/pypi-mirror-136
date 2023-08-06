@@ -1,0 +1,9 @@
+djangoldp_skill>=2.0
+djangoldp>=2.1.27
+djangoldp_notification>=2.2.12
+
+[dev]
+factory_boy>=2.11.0
+djangoldp_account>=2.1
+djangoldp_conversation
+djangoldp_i18n
