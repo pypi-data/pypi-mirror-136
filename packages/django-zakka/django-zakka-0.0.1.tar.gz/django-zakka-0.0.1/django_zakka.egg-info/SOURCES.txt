@@ -1,0 +1,14 @@
+setup.cfg
+setup.py
+django_zakka.egg-info/PKG-INFO
+django_zakka.egg-info/SOURCES.txt
+django_zakka.egg-info/dependency_links.txt
+django_zakka.egg-info/requires.txt
+django_zakka.egg-info/top_level.txt
+zakka/__init__.py
+zakka/permissions.py
+zakka/celery/__init__.py
+zakka/celery/views.py
+zakka/celery/management/__init__.py
+zakka/celery/management/commands/__init__.py
+zakka/celery/management/commands/tasks.py
