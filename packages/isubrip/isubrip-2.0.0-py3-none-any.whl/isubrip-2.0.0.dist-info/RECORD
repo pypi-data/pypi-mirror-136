@@ -1,0 +1,15 @@
+isubrip/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+isubrip/__main__.py,sha256=x57-jfpzthVV0lwrejGlal57N4NcflkBTN63BxR_yd0,8836
+isubrip/constants.py,sha256=jeLM9pJ0255yYQeJcQ2r9phsv728_50-bNyvEPxmeFI,646
+isubrip/enums.py,sha256=_6TfLxkun5lPGROZbAj9jpT_SfyMQu6nqffF7qH0hSU,370
+isubrip/exceptions.py,sha256=o4fZc8CpbUOkYtvYTd68VpO8DVvl_bfBupqEjA8LmmQ,987
+isubrip/namedtuples.py,sha256=B3q7Uocm141OxT4yiSINHV_cvIq9x1dD6ljuDx4Ey9A,511
+isubrip/playlist_downloader.py,sha256=Gtc-EL3cRDx4Qsm8XZ1Qgn54qS1Lcn8lEJD2DsjIs8w,2137
+isubrip/scraper.py,sha256=t4zxhJ7XwURRtKHAblXdyldzEq4kk0Tcbs9oFK-CnZU,7302
+isubrip/resources/default_config.toml,sha256=07nSWJKP68jq25D7LmKCqxBq9mnDC8D5Nzv5InxBFSs,476
+isubrip-2.0.0.dist-info/LICENSE,sha256=4v7__f1Mi1gqdURf2Pt93O-twFfm2dN6GJGsBnAW7Zo,1093
+isubrip-2.0.0.dist-info/METADATA,sha256=2jAAMqVwPa3iU5pPDi7cnE7-TaC-Zj2R-9JqYRCpVfw,3412
+isubrip-2.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+isubrip-2.0.0.dist-info/entry_points.txt,sha256=uu35Nb2KW29lAIwfDlQwa3njsgrAT9ogTAcoYQ8qTYE,51
+isubrip-2.0.0.dist-info/top_level.txt,sha256=bzwn4mOuCL0F7JlkcNXKIm7nGBzpixDxXB7pCVXGcW0,8
+isubrip-2.0.0.dist-info/RECORD,,
