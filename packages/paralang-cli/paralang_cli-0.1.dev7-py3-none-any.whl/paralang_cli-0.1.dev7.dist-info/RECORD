@@ -1,0 +1,13 @@
+paralang_cli/__init__.py,sha256=NUzsj0PdqfiP4pbZY0QEiQqQkeDBXUavGejunFQo18Y,1717
+paralang_cli/__main__.py,sha256=nnVsIOKUOe0msaCwIaLT9mGD7eW1JeMcjJUbf8SezVQ,325
+paralang_cli/logging.py,sha256=qQgYD0BP_JoKG1nasI8e6SYaP01oQ1826GzbBKzS164,15260
+paralang_cli/utils.py,sha256=MV74ewtDs24WxysB7wZKicvUcX2p_3CXJIeKpX4vLFQ,12021
+paralang_cli/scripts/__init__.py,sha256=EgwPhol3lSjrkVQby24fhUUrafxgUyprAdQU3kEnN_k,230
+paralang_cli/scripts/para.py,sha256=M3vfpDWAuFd9c393BfhoPZP724fM91b74kZloRR3-_s,10983
+paralang_cli/scripts/paraproj.py,sha256=DQD1VWkHMsH9eux93JcE-nsVUFf9PEdlx-GSBSR13tA,2511
+paralang_cli-0.1.dev7.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+paralang_cli-0.1.dev7.dist-info/METADATA,sha256=fbQiuDUXGsW7SikdqDMU1GDZ_u63UfoNvwCrVic-ca0,4524
+paralang_cli-0.1.dev7.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+paralang_cli-0.1.dev7.dist-info/entry_points.txt,sha256=XFNRzFEe0FXRtMvuPUp0CSYh2jXtWBqnqV20SIe-m1U,109
+paralang_cli-0.1.dev7.dist-info/top_level.txt,sha256=L_O4RRfBdF_1aGRBcIK1j9RwAhn7X3G4GDlRbMRyM08,13
+paralang_cli-0.1.dev7.dist-info/RECORD,,
