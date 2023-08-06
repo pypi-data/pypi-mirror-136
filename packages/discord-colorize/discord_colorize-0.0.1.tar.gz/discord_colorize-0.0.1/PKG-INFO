@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: discord_colorize
+Version: 0.0.1
+Summary: A Python module for colorizing text in Discord using ANSI color codes.
+Home-page: UNKNOWN
+Author: TheOnlyWayUp
+Author-email: thedarkdraconian@gmail.com
+License: UNKNOWN
+Description: Colored Codeblocks - Discord
+        ---------------------------
+        Colored Codeblocks for Discord Bots and Codeblocks.
+        
+        You can do `help(colorize.Colors)` to see all the available colors along with a detailed docstring on how to use the package.
+          
+        Usage -
+        ```python
+            import discord_colorize
+            colors = colorize.Colors()
+            data = f"""
+            ```ansi
+            {colors.colorize('Hello World!', fg='green', 'bg'='indigo', 'bold'=True, underline=True)}
+            ```
+            """
+        ```
+        
+        [Extra Information](https://gist.github.com/kkrypt0nn/a02506f3712ff2d1c8ca7c9e0aed7c06)
+        
+        Created by TheOnlyWayUp#1231 - https://github.com/TheOnlyWayUp/
+Keywords: discord,discord.py,codeblocks,selfbot,ANSI,colored text
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
