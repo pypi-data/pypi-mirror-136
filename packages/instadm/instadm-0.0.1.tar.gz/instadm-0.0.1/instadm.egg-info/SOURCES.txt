@@ -1,0 +1,8 @@
+LICENSE
+setup.py
+instadm.egg-info/PKG-INFO
+instadm.egg-info/SOURCES.txt
+instadm.egg-info/dependency_links.txt
+instadm.egg-info/not-zip-safe
+instadm.egg-info/requires.txt
+instadm.egg-info/top_level.txt
