@@ -1,0 +1,3 @@
+[console_scripts]
+pycdsl = pycdsl.cli:main
+
