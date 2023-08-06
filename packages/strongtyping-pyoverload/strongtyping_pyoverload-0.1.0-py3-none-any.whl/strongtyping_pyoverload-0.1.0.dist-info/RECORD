@@ -1,0 +1,10 @@
+pyoverload/__init__.py,sha256=Ste2FfsLl4Ia8Cbuhwbww3QP4g_9KB510_Zak39iBkY,123
+pyoverload/class_tools.py,sha256=xMiDW2tFvH_ZK6aMoP1OZ-8yXMsfOKA8RDoW7koM5xQ,4837
+pyoverload/tmp.py,sha256=iYWXNhKAUksviIhEDJcNdwsTj9OQbUTiV44BYkQf1v8,975
+pyoverload/tmp2.py,sha256=AkdFR4zebNot2WRngbXi7uz1dTRJCRe4XNNzn6MUObM,595
+tests/__init__.py,sha256=-kS5rY-6DPPAKIC01eR1IYKaou0HRnQLpwWRioKXClw,89
+tests/test_override.py,sha256=yq9WkCNVy1VkE9g1Tw_GcgRuVenYawyaYBos3DIk7Vw,1503
+strongtyping_pyoverload-0.1.0.dist-info/METADATA,sha256=XTPrkeViLLPQMu8jE1rOwmyDfm9ItRXa3ZY4Q7wG1r0,4887
+strongtyping_pyoverload-0.1.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+strongtyping_pyoverload-0.1.0.dist-info/top_level.txt,sha256=SuYNgYUKyjWQoheBvxIU5dUlBpk6vP3pX92xrMTEeV8,17
+strongtyping_pyoverload-0.1.0.dist-info/RECORD,,
