@@ -1,0 +1,7 @@
+README.md
+binance-reporting.py
+setup.py
+binance_reporting.egg-info/PKG-INFO
+binance_reporting.egg-info/SOURCES.txt
+binance_reporting.egg-info/dependency_links.txt
+binance_reporting.egg-info/top_level.txt
