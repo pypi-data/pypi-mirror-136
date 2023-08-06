@@ -1,0 +1,16 @@
+checklist/__init__.py,sha256=dZfg2g4CteAna0sNMmU49GhP9OBCIWVVhwsr02DvvLc,58
+checklist/macros.py,sha256=dCjHp7JFd-apG4hv_sEO-byT-A7jCi8sy9_z2YV6pxM,13255
+checklist/plugin.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+checklist/htdocs/checklist.css,sha256=y1IjnuGG5dXO0ZuxiW0tumSpaj3TA1eBU3_VGJmpb2k,1674
+checklist/htdocs/checklist.js,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+checklist/htdocs/checklist.png,sha256=F-0kEi8muZ5P-ooamsv8ABV4VT2JKptKkL11jQ-rKDw,1369
+checklist/htdocs/menu.css,sha256=EERrNHItXZAc7CgE4u_R3lWaNuqu5PH5DgQP12N2BI0,163
+checklist/htdocs/menu.js,sha256=V949_CCw2nOuNxTxq_1DOuM8q68I9mG8IAw3KeGUcr0,945
+checklist/upgrades/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+checklist/upgrades/db2.py,sha256=yPBTo-tDz49wjbZcWtWu5tDlpP57yZMEpopdQ-qnfXY,76
+TracChecklist-0.1.2.dist-info/LICENSE,sha256=cFNfHgY_jJBygchJzM4BGp1wFbs5byKUwUtUZt9vRhs,1069
+TracChecklist-0.1.2.dist-info/METADATA,sha256=2G9E7giqUT4Q36nPSFgWhcZ2sZkcLf39P8MrHuDQ_fI,3362
+TracChecklist-0.1.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+TracChecklist-0.1.2.dist-info/entry_points.txt,sha256=JtTlcYkD4JgD8rHmJo76zPuVXfRPzRIHYXMRBsbGHng,88
+TracChecklist-0.1.2.dist-info/top_level.txt,sha256=ttL_jG5IT4NsolPsOuNvVx_4MGgAgMvsOYZZUOpko0g,10
+TracChecklist-0.1.2.dist-info/RECORD,,
