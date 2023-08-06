@@ -1,0 +1,3 @@
+[console_scripts]
+tophack = top_hack.cli:main
+
