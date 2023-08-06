@@ -1,0 +1,8 @@
+gcp_cloud_logger/__init__.py,sha256=sw-VP8aGoTpd4MNyr2oEMX5VSVvledUxMxr6_fcx8DA,142
+gcp_cloud_logger/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gcp_cloud_logger/core/cloud_logger.py,sha256=57DKtKty7JWZ9QDGy8gZNBTxJyBB2cO9fc0-6qWZvMU,2739
+gcp_cloud_logger-0.2.4.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+gcp_cloud_logger-0.2.4.dist-info/METADATA,sha256=1INHZlsDSFJS7m7wsVBBfrZy-HmjMJj1E3QbtuA6kIs,1245
+gcp_cloud_logger-0.2.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+gcp_cloud_logger-0.2.4.dist-info/top_level.txt,sha256=CjnkahzCPkRPlhr6Q4iaWDhW6B6sGPmj-lQsXQ9A01k,17
+gcp_cloud_logger-0.2.4.dist-info/RECORD,,
