@@ -1,0 +1,10 @@
+beautifulsoup4
+defcon
+font-v
+fontTools[lxml,ufo,unicode]>=3.34
+lxml
+opentype-sanitizer>=7.1.9
+protobuf>=3.7.0
+requests
+ttfautohint-py
+ufolint
