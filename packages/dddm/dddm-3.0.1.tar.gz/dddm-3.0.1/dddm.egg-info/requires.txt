@@ -1,0 +1,17 @@
+corner
+coveralls
+emcee
+hypothesis
+immutabledict
+matplotlib
+multihist
+nestle
+numba
+numericalunits
+numpy
+pandas
+pytest
+pytest-runner
+scipy
+seaborn~=0.11.2
+tqdm
