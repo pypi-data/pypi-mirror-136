@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/jb-misc-lib/__init__.py
+src/jb-misc-lib/core.py
+src/jb-misc-lib/object.py
+src/jb-misc-lib/text_ui.py
+src/jb-misc-lib/typesafe.py
+src/jb_misc_lib.egg-info/PKG-INFO
+src/jb_misc_lib.egg-info/SOURCES.txt
+src/jb_misc_lib.egg-info/dependency_links.txt
+src/jb_misc_lib.egg-info/top_level.txt
