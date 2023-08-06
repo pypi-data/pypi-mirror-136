@@ -1,0 +1,15 @@
+LICENSE
+README.rst
+pyproject.toml
+setup.py
+src/mwsql/__init__.py
+src/mwsql/about.py
+src/mwsql/dump.py
+src/mwsql/parser.py
+src/mwsql/utils.py
+src/mwsql.egg-info/PKG-INFO
+src/mwsql.egg-info/SOURCES.txt
+src/mwsql.egg-info/dependency_links.txt
+src/mwsql.egg-info/not-zip-safe
+src/mwsql.egg-info/requires.txt
+src/mwsql.egg-info/top_level.txt
