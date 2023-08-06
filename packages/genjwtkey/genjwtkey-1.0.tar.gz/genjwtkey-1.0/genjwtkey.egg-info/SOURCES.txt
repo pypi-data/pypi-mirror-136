@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+genjwtkey/__init__.py
+genjwtkey/__main__.py
+genjwtkey/generate.py
+genjwtkey.egg-info/PKG-INFO
+genjwtkey.egg-info/SOURCES.txt
+genjwtkey.egg-info/dependency_links.txt
+genjwtkey.egg-info/entry_points.txt
+genjwtkey.egg-info/requires.txt
+genjwtkey.egg-info/top_level.txt
