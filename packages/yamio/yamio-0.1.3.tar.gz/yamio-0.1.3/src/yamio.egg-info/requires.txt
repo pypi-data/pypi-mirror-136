@@ -1,0 +1,8 @@
+numpy
+h5py
+meshio>=5.2
+pyhip
+
+[vis]
+pyvista>=0.33
+matplotlib
