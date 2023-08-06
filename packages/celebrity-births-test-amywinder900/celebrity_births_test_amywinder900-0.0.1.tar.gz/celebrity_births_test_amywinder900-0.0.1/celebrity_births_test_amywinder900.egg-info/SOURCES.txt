@@ -1,0 +1,12 @@
+README.md
+setup.py
+celebrity_births_test_amywinder900.egg-info/PKG-INFO
+celebrity_births_test_amywinder900.egg-info/SOURCES.txt
+celebrity_births_test_amywinder900.egg-info/dependency_links.txt
+celebrity_births_test_amywinder900.egg-info/requires.txt
+celebrity_births_test_amywinder900.egg-info/top_level.txt
+project/__init__.py
+project/celebrities_births.py
+project/example.py
+test/test_celebrities_births.py
+test/test_project.py
