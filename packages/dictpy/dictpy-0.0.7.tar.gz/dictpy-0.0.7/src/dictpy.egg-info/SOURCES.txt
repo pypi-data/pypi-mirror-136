@@ -1,0 +1,15 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/dictpy/__init__.py
+src/dictpy/dict_search.py
+src/dictpy/py.typed
+src/dictpy/serializer.py
+src/dictpy.egg-info/PKG-INFO
+src/dictpy.egg-info/SOURCES.txt
+src/dictpy.egg-info/dependency_links.txt
+src/dictpy.egg-info/not-zip-safe
+src/dictpy.egg-info/requires.txt
+src/dictpy.egg-info/top_level.txt
