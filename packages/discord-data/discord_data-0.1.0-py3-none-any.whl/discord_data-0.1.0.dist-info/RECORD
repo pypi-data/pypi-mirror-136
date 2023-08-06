@@ -1,0 +1,11 @@
+discord_data/__init__.py,sha256=yplluADHeYLqBNbDNanGYadswW9NjDK1zNwcyDhfeUE,177
+discord_data/common.py,sha256=kcepZv535CBOLem1ANU7NdQcnVfGxhbvHnAk3XWdWj8,216
+discord_data/merge.py,sha256=Y7QT2EQ1buxf2VKohfl_F4-lOljNurgDCu0q2dfSDa8,2668
+discord_data/model.py,sha256=wvOmxVvGtEj7BDxgPk9TGODGMuhxJA0VwRjCVhf10Mw,2086
+discord_data/parse.py,sha256=Oi9l8DLn4LPZmRjtukCHis7zQ6-022qKNGJ47ME2VIY,4465
+discord_data/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+discord_data-0.1.0.dist-info/LICENSE,sha256=yVuuHRzgI17MzTVgt3LsHvuX80innw--CmNPDCzO_iw,11358
+discord_data-0.1.0.dist-info/METADATA,sha256=4joHFXGco1UPYnMRnlQCn3XMIIwMdiuE8yO9vudMTRc,3925
+discord_data-0.1.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+discord_data-0.1.0.dist-info/top_level.txt,sha256=_2u-qQnLxbNJXJJ9vQsvEnpTGSpWEKOxMyD2sr9oR6s,13
+discord_data-0.1.0.dist-info/RECORD,,
