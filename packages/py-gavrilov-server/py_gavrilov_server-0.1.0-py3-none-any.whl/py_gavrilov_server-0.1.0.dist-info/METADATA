@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: py-gavrilov-server
+Version: 0.1.0
+Summary: Messeger Server
+Home-page: UNKNOWN
+Author: Gavrilov Artemiy
+Author-email: voodoo06.89@mail.ru
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: PyQt5
+Requires-Dist: sqlalchemy
+Requires-Dist: pycryptodome
+Requires-Dist: pycryptodomex
+
+UNKNOWN
+
