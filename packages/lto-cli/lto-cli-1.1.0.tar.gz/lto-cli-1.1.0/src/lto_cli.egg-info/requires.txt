@@ -1,0 +1,5 @@
+lto==1.1.*
+argparse
+configparser
+pathlib
+importlib-metadata~=4.8
