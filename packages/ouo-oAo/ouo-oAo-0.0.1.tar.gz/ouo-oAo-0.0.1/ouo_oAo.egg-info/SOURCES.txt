@@ -1,0 +1,7 @@
+README.md
+setup.py
+ouo_oAo.egg-info/PKG-INFO
+ouo_oAo.egg-info/SOURCES.txt
+ouo_oAo.egg-info/dependency_links.txt
+ouo_oAo.egg-info/top_level.txt
+src/__init__.py
