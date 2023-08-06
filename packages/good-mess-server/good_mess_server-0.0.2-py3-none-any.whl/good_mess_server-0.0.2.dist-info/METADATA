@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: good-mess-server
+Version: 0.0.2
+Summary: good_mess_server
+Home-page: UNKNOWN
+Author: Daniil A.
+Author-email: abyazov2000@mail.ru
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: PyQt5
+Requires-Dist: sqlalchemy
+Requires-Dist: pycryptodome
+Requires-Dist: pycryptodomex
+
+UNKNOWN
+
