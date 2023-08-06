@@ -1,0 +1,12 @@
+purplship/mappers/sf_express/__init__.py,sha256=qdj9T1i9FVWaoAZMNWZTRX_nrrU_dJDMllay3FOqbmY,584
+purplship/mappers/sf_express/mapper.py,sha256=PnHXVtpZrOyP46PC-hbu6l4KT0MNQhDbHHu-FnjCZcM,4273
+purplship/mappers/sf_express/proxy.py,sha256=krW14RxOMFaGcm8Z672wdri9alee7voeesx3DfxNEe0,626
+purplship/mappers/sf_express/settings.py,sha256=f0gHCXdFWS8BcEBY0D03BWQVQOkR44BC2fgAFjxYc2k,437
+purplship/providers/sf_express/__init__.py,sha256=3piQ4MoY3S1dEELUsjvf93MGlT-Dm7ueRWNKyy9QP28,805
+purplship/providers/sf_express/error.py,sha256=Jm01mafYvk4EMV3aYaXAb6OSxi0-4suVbGuVqwR1pCY,552
+purplship/providers/sf_express/tracking.py,sha256=bXVXm9EMKQs2ePLFxY22gWNI-nB2yjg9jO1DVipER9k,1796
+purplship/providers/sf_express/units.py,sha256=ynjkg-pT__IufOri8YehD9mziV8DIHsSLRfMHglPAbM,1339
+purplship/providers/sf_express/utils.py,sha256=aeYOVaEJgNnviRUru4iwU3swh8tRZT4rVOcDApEGDXE,1325
+purplship.sf_express-2021.10.1.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+purplship.sf_express-2021.10.1.dist-info/METADATA,sha256=4m-2wrl5cduZMstsXqHb3otHPTvz4UfwGj22xp9trLk,1402
+purplship.sf_express-2021.10.1.dist-info/RECORD,,
