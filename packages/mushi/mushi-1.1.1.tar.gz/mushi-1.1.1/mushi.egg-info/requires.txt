@@ -1,0 +1,8 @@
+jax
+jaxlib
+prox-tv-SDIST
+seaborn
+pandas
+matplotlib
+numpy
+scipy
