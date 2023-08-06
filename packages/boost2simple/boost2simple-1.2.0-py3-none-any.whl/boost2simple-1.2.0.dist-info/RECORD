@@ -1,0 +1,13 @@
+boost2simple/__init__.py,sha256=gfttY58gl8ZxWLoRrLNWXhCixnspig0Qh5XPgrAFACw,755
+boost2simple/cli.py,sha256=Gd2QJsvxDFLatqzBcGEWK8rTmbAjAxCJlvVGFsG8L7g,4172
+boost2simple/converter.py,sha256=z7_KCtslTYrLzZe1xDTSlBp_PbmeDvCbHVCp2sgqnLM,2027
+boost2simple/gui.py,sha256=RX026_0utA75zeb7Ffw3oV4nmtcIoL2Px-I6CZ6jr4k,8904
+boost2simple/util.py,sha256=4t9lFI5dj-f8GdN26SZreKqLDg6y-Ht8XN6Rd51YsAY,968
+boost2simple/notes/__init__.py,sha256=gfttY58gl8ZxWLoRrLNWXhCixnspig0Qh5XPgrAFACw,755
+boost2simple/notes/boostnote.py,sha256=92P8c_jEduxu3S8FHl8W7tbbz0ghm_SlWcHO-U7zl4g,4198
+boost2simple/notes/simplenote.py,sha256=QeSKLnx3MqszZCelS7dgGN0kg4ibV1Mr-vBMA6p6bXQ,7025
+boost2simple-1.2.0.dist-info/LICENSE,sha256=MjdpnZ5ngchYdzZavZSTyhMqD9MfQ-GjJ4uOdfNlSvQ,33094
+boost2simple-1.2.0.dist-info/METADATA,sha256=nlvFlrsloymOP5ZKei8aCH4F5jZCPZa5tkxeuSV1y-Q,13221
+boost2simple-1.2.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+boost2simple-1.2.0.dist-info/top_level.txt,sha256=TPPo-5ew-gnmh2SETR-RPCKg8_jfZgjmb8ZyODH-fFY,13
+boost2simple-1.2.0.dist-info/RECORD,,
