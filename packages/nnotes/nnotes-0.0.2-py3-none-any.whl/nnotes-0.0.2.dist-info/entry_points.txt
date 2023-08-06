@@ -1,0 +1,4 @@
+[console_scripts]
+n = nnotes:main
+nnotes = nnotes:main
+
