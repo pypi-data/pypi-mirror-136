@@ -1,0 +1,10 @@
+jb-misc-lib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jb-misc-lib/core.py,sha256=cBbSfsiPUYLPhw1ezgeidgvH5WbZfcEG8bQVPtorLWs,14179
+jb-misc-lib/object.py,sha256=jvqh7mNBhfZVd0NejFOYMyloOjekpqbMDODUaTxxdks,2467
+jb-misc-lib/text_ui.py,sha256=6Dsqgs7E4obVN9b0r-IPlUjDZAu4cQswjQG4q81G9oE,6248
+jb-misc-lib/typesafe.py,sha256=mmbJ2AvwAB52Sdu0qrNmX-JkRUEbEbRExnNowP2-pnw,10695
+jb_misc_lib-0.1.0.dist-info/LICENSE,sha256=QYsu3tMnGZGTbncdBePIV9A6aXDZForNWKSm1gZTtYE,26452
+jb_misc_lib-0.1.0.dist-info/METADATA,sha256=lUOGECba1q-IIcll6MTrqS6XdWvvKvs2XhX8ucJY4eU,697
+jb_misc_lib-0.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+jb_misc_lib-0.1.0.dist-info/top_level.txt,sha256=17sIW9Dhm4Wc4V5cz8v2b_2hHHCenY84ae5oQPPwb7A,12
+jb_misc_lib-0.1.0.dist-info/RECORD,,
