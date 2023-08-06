@@ -1,0 +1,11 @@
+.gitignore
+MANIFEST.in
+README.md
+setup.py
+package_gen.egg-info/PKG-INFO
+package_gen.egg-info/SOURCES.txt
+package_gen.egg-info/dependency_links.txt
+package_gen.egg-info/entry_points.txt
+package_gen.egg-info/top_level.txt
+packagegenerator/__init__.py
+packagegenerator/__main__.py
