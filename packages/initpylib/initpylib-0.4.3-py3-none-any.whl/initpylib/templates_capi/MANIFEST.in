@@ -1,0 +1,8 @@
+include README.md
+include LICENSE
+include VERSION
+include setup.cfg
+include CMakeLists.txt
+recursive-include tools *.py
+recursive-include _PLEASE_PYPROJECT_NAME_ *.py *.cxx *.cpp *.hpp *.h *.c
+include tests/test_*
