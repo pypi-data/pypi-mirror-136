@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+waifuai/waifuai.egg-info/PKG-INFO
+waifuai/waifuai.egg-info/SOURCES.txt
+waifuai/waifuai.egg-info/dependency_links.txt
+waifuai/waifuai.egg-info/top_level.txt
