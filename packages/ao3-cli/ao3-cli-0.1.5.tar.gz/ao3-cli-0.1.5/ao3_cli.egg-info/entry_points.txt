@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        ao3_cli=ao3_cli.cli:run_cli
+    
