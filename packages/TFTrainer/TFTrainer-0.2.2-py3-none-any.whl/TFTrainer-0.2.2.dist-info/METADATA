@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: TFTrainer
+Version: 0.2.2
+Summary: tensorflow utility trainer.
+Home-page: https://github.com/Nam-SW/TFTrainer.git
+Author: Nam-SW
+Author-email: nsw0311@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/Nam-SW/TFTrainer/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Requires-Dist: tensorflow (>=2.4.1)
+Requires-Dist: tensorboard
+Requires-Dist: tqdm
+Requires-Dist: pytz
+
+UNKNOWN
+
