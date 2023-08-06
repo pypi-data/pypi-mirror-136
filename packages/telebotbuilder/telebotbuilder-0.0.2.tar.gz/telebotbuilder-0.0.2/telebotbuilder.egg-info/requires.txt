@@ -1,0 +1,6 @@
+pyTelegramBotAPI
+firebase
+python_jwt
+gcloud
+sseclient
+requests-toolbelt
