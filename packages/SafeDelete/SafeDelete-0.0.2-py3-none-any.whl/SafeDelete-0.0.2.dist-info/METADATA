@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: SafeDelete
+Version: 0.0.2
+Summary: A small package for delecting files safely
+Home-page: https://github.com/cherylLbt/SafeDelete.git
+Author: cheryl
+Author-email: cheryllee626@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+License-File: LICENSE
+Requires-Dist: datetime
+Requires-Dist: pytest-shutil
+
+UNKNOWN
+
