@@ -1,0 +1,51 @@
+[package]
+authors = ["Gaute Hope <eg@gaute.vetsj.com>"]
+description = "A fast and limited-memory structure with a landmask based on GSHHG for determing whether a point on Earth is on land or in the ocean"
+name = "roaring-landmask"
+version = "0.4.1"
+edition = "2018"
+license = "MIT"
+homepage = "https://github.com/gauteh/roaring-landmask"
+repository = "https://github.com/gauteh/roaring-landmask"
+exclude = [ "gshhs/*" ]
+
+[lib]
+name = "roaring_landmask"
+crate-type = ["rlib", "cdylib"]
+
+[[bin]]
+name = "make_bitmap"
+path = "src/devel/make_bitmap.rs"
+
+[dependencies]
+geos = { version = "8" }
+lazy_static = "1.4.0"
+numpy = { version = "0.14", features = [ "rayon" ] }
+pyo3 = { version = "0.14" }
+roaring = "0.7.0"
+rust-embed = "5.9.0"
+xz2 = "0.1.6"
+openssl = { version = "0.10" }
+ndarray = { version = "0.15.3", features = [ "rayon" ] }
+
+[dev-dependencies]
+rayon = "1"
+
+[patch.crates-io]
+geos-sys = { version = "2", git = "https://github.com/gauteh/geos-sys", branch = "static-build" }
+geos = { version = "8", git = "https://github.com/gauteh/geos", branch = "static" }
+#geos-sys = { path = "../../dev/geos-sys" }
+
+[build-dependencies]
+reqwest = { version = "0.11", features = [ "blocking" ] }
+ring = "0.16"
+path-slash = "0.1"
+
+[features]
+extension-module = ["pyo3/extension-module"]
+#static = [ "geos/static" ]
+default = [ ]
+
+[profile.release]
+debug = true
+
