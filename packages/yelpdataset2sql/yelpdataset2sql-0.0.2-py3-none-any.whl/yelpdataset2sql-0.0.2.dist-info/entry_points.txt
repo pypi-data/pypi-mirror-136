@@ -1,0 +1,3 @@
+[console_scripts]
+yd2s = yelpdataset2sql.datasetparser:run
+
