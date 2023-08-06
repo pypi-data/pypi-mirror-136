@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: subtitle-parser
+Version: 0.1.0
+Summary: Parser for SRT and WebVTT subtitle files
+Home-page: https://github.com/remram44/subtitle-parser
+License: MIT
+Keywords: subtitle,srt,webvtt,video,text track,subrip
+Author: Remi Rampin
+Author-email: remi@rampin.org
+Requires-Python: >=3.7,<4
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Project-URL: Bug Tracker, https://github.com/remram44/subtitle-parser/issues
+Project-URL: Repository, https://github.com/remram44/subtitle-parser
+Description-Content-Type: text/markdown
+
+subtitle-parser
+===============
+
+This is a simple Python library for parsing subtitle files in SRT or WebVTT format.
+
