@@ -1,0 +1,6 @@
+setup.py
+src/AquaTools.egg-info/PKG-INFO
+src/AquaTools.egg-info/SOURCES.txt
+src/AquaTools.egg-info/dependency_links.txt
+src/AquaTools.egg-info/requires.txt
+src/AquaTools.egg-info/top_level.txt
