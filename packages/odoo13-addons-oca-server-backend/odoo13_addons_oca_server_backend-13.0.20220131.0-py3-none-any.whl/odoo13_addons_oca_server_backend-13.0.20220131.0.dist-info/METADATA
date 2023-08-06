@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: odoo13-addons-oca-server-backend
+Version: 13.0.20220131.0
+Summary: Meta package for oca-server-backend Odoo addons
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Framework :: Odoo
+Classifier: Framework :: Odoo :: 13.0
+Requires-Dist: odoo13-addon-base-external-dbsource
+Requires-Dist: odoo13-addon-base-external-dbsource-mssql
+Requires-Dist: odoo13-addon-base-external-dbsource-mysql
+Requires-Dist: odoo13-addon-base-external-dbsource-sqlite
+Requires-Dist: odoo13-addon-base-external-system
+Requires-Dist: odoo13-addon-base-global-discount
+Requires-Dist: odoo13-addon-base-import-match
+Requires-Dist: odoo13-addon-base-user-role
+Requires-Dist: odoo13-addon-base-user-role-history
+Requires-Dist: odoo13-addon-server-action-navigate
+
+UNKNOWN
+
