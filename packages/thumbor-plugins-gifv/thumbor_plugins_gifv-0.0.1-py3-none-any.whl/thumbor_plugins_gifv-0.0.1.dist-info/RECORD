@@ -1,0 +1,6 @@
+thumbor_plugins/optimizers/gifv/__init__.py,sha256=rnGpbU1Vdkw8eDMy_QrUUSGRv87HVzTgDiEkV_ahIPc,3370
+thumbor_plugins/optimizers/gifv/config.py,sha256=8fSBGq0tJo7T-QzMfASyvnqhxEcgzbKl25gU57FZnX0,181
+thumbor_plugins_gifv-0.0.1.dist-info/METADATA,sha256=xjWeUFwi4wCDTv-yIlL0kqOv94RDE0Z-Bql6j41cEoY,786
+thumbor_plugins_gifv-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+thumbor_plugins_gifv-0.0.1.dist-info/top_level.txt,sha256=ZEGICU2TxMFcSh4m3K_iSH08aBXskrNO20Mqk2ngbeU,16
+thumbor_plugins_gifv-0.0.1.dist-info/RECORD,,
