@@ -1,0 +1,13 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.txt
+setup.py
+samp/__init__.py
+simfast.egg-info/PKG-INFO
+simfast.egg-info/SOURCES.txt
+simfast.egg-info/dependency_links.txt
+simfast.egg-info/top_level.txt
+simpfast.egg-info/SOURCES.txt
+simpfast.egg-info/dependency_links.txt
+simpfast.egg-info/top_level.txt
