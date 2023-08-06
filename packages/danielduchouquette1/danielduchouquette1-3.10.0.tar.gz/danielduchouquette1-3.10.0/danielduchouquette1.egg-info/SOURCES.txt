@@ -1,0 +1,9 @@
+pyproject.toml
+setup.py
+danielduchouquette1/__init__.py
+danielduchouquette1/add.py
+danielduchouquette1/subtract.py
+danielduchouquette1.egg-info/PKG-INFO
+danielduchouquette1.egg-info/SOURCES.txt
+danielduchouquette1.egg-info/dependency_links.txt
+danielduchouquette1.egg-info/top_level.txt
