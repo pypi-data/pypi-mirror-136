@@ -1,0 +1,15 @@
+LICENSE.rst
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+deprecat/__init__.py
+deprecat/classic.py
+deprecat/example.py
+deprecat/sphinx.py
+deprecat.egg-info/PKG-INFO
+deprecat.egg-info/SOURCES.txt
+deprecat.egg-info/dependency_links.txt
+deprecat.egg-info/not-zip-safe
+deprecat.egg-info/requires.txt
+deprecat.egg-info/top_level.txt
