@@ -1,0 +1,12 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/editable_list_view/__init__.py
+src/editable_list_view/editable_list_view.py
+src/editable_list_view.egg-info/PKG-INFO
+src/editable_list_view.egg-info/SOURCES.txt
+src/editable_list_view.egg-info/dependency_links.txt
+src/editable_list_view.egg-info/top_level.txt
