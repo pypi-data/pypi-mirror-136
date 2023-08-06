@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: anime-or-not
+Version: 0.0.4
+Summary: Classifies if an image is "anime" or not
+Home-page: UNKNOWN
+Author: LaihoE
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: onnxruntime
+Requires-Dist: Pillow
+Requires-Dist: torchvision
+Requires-Dist: torch
+
+UNKNOWN
+
+
