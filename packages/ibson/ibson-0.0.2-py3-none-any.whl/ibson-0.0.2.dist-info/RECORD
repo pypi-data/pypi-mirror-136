@@ -1,0 +1,16 @@
+ibson/__init__.py,sha256=WOeuTqgBLRQBsBge_D7Dbf_hCIov5L6D8xvRHMG-sAY,1686
+ibson/codec_util.py,sha256=Qbe1yumoUj22VYxxzAAHBvgOZFat6flxqdD9-MTbxCE,1720
+ibson/decoder.py,sha256=pVb2N2cUVBHW8P3LJOBWkaWuNSAbTAS2uvvCJyvhtnE,16056
+ibson/encoder.py,sha256=_oIhoKUIRSWcXNv3Te75M3gkLLC9i89wra09_b2VUQ8,18477
+ibson/errors.py,sha256=scfCIhoN6vj7RWREZnWebjrSh09c1sYOB2QnNidChas,2341
+ibson/types.py,sha256=UT9b1LIYJCWBGyUHf1bJys5IKxygioIN_fif3Zi4_28,2477
+ibson/tests/__init__.py,sha256=U63NANJ7a8xzJJ8Cd_3HCpfMneRhXX86H3qJGiEU9xk,613
+ibson/tests/primary_tests.py,sha256=ISr-ur2kVHpe8nYstHPEow_NJZl76JjEpqVOvy9x2_A,6742
+ibson/tests/stress_tests.py,sha256=Xvp3AbGlqywp1Id0vVIhpzlZHEjrLcB-B4fNwxkw1AI,2161
+ibson/tool/__init__.py,sha256=U63NANJ7a8xzJJ8Cd_3HCpfMneRhXX86H3qJGiEU9xk,613
+ibson/tool/bsonq.py,sha256=1s7jtcDK-yMKBgWJEo2FW6PWfqUrJW7HqPE5xagXUS4,1000
+ibson-0.0.2.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+ibson-0.0.2.dist-info/METADATA,sha256=f-_i_AN6RTlHIso975EdMQXWPHY0kyqpkUY0iCgx_8c,3326
+ibson-0.0.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+ibson-0.0.2.dist-info/top_level.txt,sha256=ZKQ6JLclYFGUvp5dEwtshZvu3tdHGlt7fBj894j6EH0,6
+ibson-0.0.2.dist-info/RECORD,,
