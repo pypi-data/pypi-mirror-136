@@ -1,0 +1,3 @@
+[console_scripts]
+sgrnable = optimal_guide_finder.guide_finder:main
+

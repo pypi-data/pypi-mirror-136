@@ -1,0 +1,2 @@
+include optimal_guide_finder/data/*
+include optimal_guide_finder/Azimuth_Model/saved_models/*
