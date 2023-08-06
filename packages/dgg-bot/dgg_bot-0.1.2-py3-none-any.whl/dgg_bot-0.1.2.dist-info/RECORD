@@ -1,0 +1,15 @@
+data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+data/common/__init__.py,sha256=OQ5msu2ClFZrqWBzw6qrAfAzqPgiYZ2ty2qjtsXCUCE,36
+data/common/threaded.py,sha256=Qhd6bwzjGG2Nr4YUP0ZO99XgHF_FLKkjfVKv9QZXe0w,209
+dggbot/__init__.py,sha256=xwqUygKCPBTKUfew29oALlPvAucR-1uPPBbntUfpUyY,98
+dggbot/bot.py,sha256=cZ9SPtWd44aG7cu2mgk0Rzvr5NDdXBor875ONi-pSQM,1708
+dggbot/chat.py,sha256=5JusVeXontS7rYW-y8K9PGC7drIZqhdKA6i2dDAZPTE,4033
+dggbot/chatter.py,sha256=Ymevkyp1m2IkagxuDB9lenaox-gEeBfK05VXIFB412g,141
+dggbot/errors.py,sha256=A8MYaJ0BXi-wmHdtRoVV4TgyM5Lnhnyt7QptGlyieqI,39
+dggbot/event.py,sha256=E69kI5ONXx9flfEgcbEO9ji_bSR570c8PlQHG73Isf0,253
+dggbot/message.py,sha256=t45FURKzZ2Cz6faQz0IxQgY19qkxL0wWTRnBVwehip0,348
+dgg_bot-0.1.2.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dgg_bot-0.1.2.dist-info/METADATA,sha256=Bt8UjG76KBcINsQZ1iEK3L9ZES5sngIz3nx13l_lVtU,514
+dgg_bot-0.1.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+dgg_bot-0.1.2.dist-info/top_level.txt,sha256=KLtDAIt27-iKkYkxmhYtbuBgLlhDygFIzohBKDhvLvs,12
+dgg_bot-0.1.2.dist-info/RECORD,,
