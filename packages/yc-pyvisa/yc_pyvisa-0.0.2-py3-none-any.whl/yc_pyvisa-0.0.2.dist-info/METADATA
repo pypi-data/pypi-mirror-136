@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: yc-pyvisa
+Version: 0.0.2
+Summary: =用于YICHIP内部仪器设备的控制
+Home-page: https://gitee.com/susunl/yc_pyvisa
+Author: Susunl
+Author-email: 1253013130@qq.com
+License: MIT
+Platform: any
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+Requires-Dist: pyvisa (>=1.11.3)
+Requires-Dist: numpy (>=1.19.2)
+Requires-Dist: regex (>=2020.10.15)
+
+# YICHIP 仪器控制
+
