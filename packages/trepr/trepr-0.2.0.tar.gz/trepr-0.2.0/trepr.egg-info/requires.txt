@@ -1,0 +1,14 @@
+aspecd>=0.7.0
+colour
+jinja2
+matplotlib
+numpy
+scipy
+xmltodict
+
+[dev]
+prospector
+
+[docs]
+sphinx
+sphinx_rtd_theme

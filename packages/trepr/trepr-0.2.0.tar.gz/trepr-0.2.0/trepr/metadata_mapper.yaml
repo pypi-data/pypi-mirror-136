@@ -1,0 +1,73 @@
+---
+
+format:
+  type: metadata mapper
+  version: 0.0.1
+
+map 1:
+  metadata file versions:
+    - 0.1.6
+    - 0.1.5
+  combine items:
+    - old keys: ['Date start', 'Time start']
+      new key: start
+      pattern: ' '
+      in dict: GENERAL
+    - old keys: ['Date end', 'Time end']
+      new key: end
+      pattern: ' '
+      in dict: GENERAL
+  rename key:
+    - old key: GENERAL
+      new key: measurement
+      in dict:
+    - old key: TEMPERATURE
+      new key: temperature_control
+      in dict:
+
+map 2:
+  metadata file versions:
+    - 0.1.4
+  copy key:
+    - old key: Date
+      new key: Date end
+      in dict: GENERAL
+  combine items:
+    - old keys: ['Date', 'Time start']
+      new key: start
+      pattern: ' '
+      in dict: GENERAL
+    - old keys: ['Date end', 'Time end']
+      new key: end
+      pattern: ' '
+      in dict: GENERAL
+  rename key:
+    - old key: Buffer
+      new key: solvent
+      in dict: SAMPLE
+    - old key: Spectrometer
+      new key: model
+      in dict: GENERAL
+    - old key: GENERAL
+      new key: measurement
+      in dict:
+    - old key: TEMPERATURE
+      new key: temperature_control
+      in dict:
+  move item:
+    - key: model
+      source dict: measurement
+      target dict: spectrometer
+      create target: True
+    - key: Software
+      source dict: measurement
+      target dict: spectrometer
+      create target: True
+    - key: Runs
+      source dict: measurement
+      target dict: experiment
+      create target: True
+    - key: Shot Repetition Rate
+      source dict: measurement
+      target dict: experiment
+      create target: True
