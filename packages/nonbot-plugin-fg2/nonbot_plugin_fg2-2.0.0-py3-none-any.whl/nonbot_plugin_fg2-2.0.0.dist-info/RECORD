@@ -1,0 +1,13 @@
+nonbot-plugin-fg/Segmentation.py,sha256=rvPU_vlB8WJf3MaIYxshgGV9MT_CxfUBKTv-6QcCVF0,5886
+nonbot-plugin-fg/TextRank4Keyword.py,sha256=57H0WZtDZLhehdL9xMIEVF6jwbiN3E5TwCSHq6dAZdw,5709
+nonbot-plugin-fg/__init__.py,sha256=PCUu2EimjZ483UOC_Iky49TKQU46swJbwq_7F1VNu5o,1254
+nonbot-plugin-fg/config.py,sha256=t55MCNqmSLTDz3dUIOvSGvWEcp_MdqJ9lq5eRAy2GYo,2125
+nonbot-plugin-fg/core.py,sha256=BXXqNdDdAcMHmUKucYSDv38le_Sab9eT1DmYP3XErIA,6057
+nonbot-plugin-fg/group_rule.py,sha256=nRwbRg-MjCBayLp1zzo4xklLOR9Hi-Umo5u0k79_EEk,1326
+nonbot-plugin-fg/record.py,sha256=7Gm3s9JFHKZUgKi48kIkHtUIOKbWp5YHsBm9vxexPtw,2146
+nonbot-plugin-fg/util.py,sha256=xcil6ge7tU_1QqNtJFiOk_1BkfSv4KvCwrtfVvQkWX4,6387
+nonbot_plugin_fg2-2.0.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+nonbot_plugin_fg2-2.0.0.dist-info/METADATA,sha256=pt8EWToL1Tb2gpt3cTnY7y1IUkrvOOuwUrrnAnlYb8U,4937
+nonbot_plugin_fg2-2.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+nonbot_plugin_fg2-2.0.0.dist-info/top_level.txt,sha256=glDegegJhMwz9KWq61e7RrCdukf86LSw_QSxWWaZo6E,17
+nonbot_plugin_fg2-2.0.0.dist-info/RECORD,,
