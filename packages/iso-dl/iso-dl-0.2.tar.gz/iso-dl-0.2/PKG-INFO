@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: iso-dl
+Version: 0.2
+Summary: Download Linux ISOs quickly from the command line.
+Home-page: https://github.com/txhx38/iso-dl
+Author: txhx38
+Author-email: txhx38@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/txhx38/iso-dl/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires: progressbar
+Requires: click
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# ISO-dl
+
+
