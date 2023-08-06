@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: ubii-processing-module-ocr
+Version: 0.1.dev12
+Summary: UNKNOWN
+Home-page: https://github.com/saggitar/ubii-interact-ocr-module.git
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.7
+Provides-Extra: test
+
+UNKNOWN
+
