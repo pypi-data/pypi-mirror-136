@@ -1,0 +1,11 @@
+src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/__main__.py,sha256=wuBn0Qryr-95DHQmStIR8_Wa9fmM4j8MPLyQzSCJ5R8,85
+src/spotipylist.py,sha256=6dc4skNth5hDxQaUalCq_dDT6iy0f1oz9SRGfReGPw8,1292
+src/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/utils/playlist_generator.py,sha256=CWx2u9tCF1LY9RJbFK41ewFs4RwO5a852Jv866MIH8g,5219
+spotipylist-0.1.4.dist-info/LICENSE,sha256=8Y8NBOmWEsvwfQ-Ytwl37rWghEtSrxn5T3mUDWoy8qk,1071
+spotipylist-0.1.4.dist-info/METADATA,sha256=7s2BgtuVc-i7Jtee5Saez8W3-A2ZBe7pjwVcJKRKlPc,3691
+spotipylist-0.1.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+spotipylist-0.1.4.dist-info/entry_points.txt,sha256=saeoNZXKn1JZz9_MLhJBMlUNy5MkMzCW8ssTjlGl9aU,58
+spotipylist-0.1.4.dist-info/top_level.txt,sha256=74rtVfumQlgAPzR5_2CgYN24MB0XARCg0t-gzk6gTrM,4
+spotipylist-0.1.4.dist-info/RECORD,,
