@@ -1,0 +1,16 @@
+numpy>=1.14.6
+scipy>=1.6.3
+scikit_learn>=1.0
+mmh3>=3.0.0
+
+[docs]
+sphinx_rtd_theme
+sphinx-gallery
+
+[tests]
+black>=21.6b0
+pre-commit
+pytest-remotedata==0.3.2
+mypy>=0.770
+flake8>=3.8.2
+pytest>=5.0.1
