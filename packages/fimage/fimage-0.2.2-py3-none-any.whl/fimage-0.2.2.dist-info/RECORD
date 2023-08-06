@@ -1,0 +1,12 @@
+fimage/__init__.py,sha256=K46HPOXBMUbtArEx86o1RlyuFe8j4JpMq3gOmrhu7Jw,561
+fimage/class_register.py,sha256=JIRN5KcuLFxrkHxyBx-pHoDJrO0jLdaaW5nHlZzKLNs,951
+fimage/converters.py,sha256=_WEjJ0Kn_4WRgVJcCZxreJxlj_zYBOaZjtpU03VWEKw,1721
+fimage/exceptions.py,sha256=BsyfGA8vf7nm7ApF8s3lxcHcHyMDtT1O_5p-wugR7M8,104
+fimage/filters.py,sha256=8sOnCC-SXjHjC3j_cHIVsDYwgb9InLZPL-a3Dwu7mD8,12166
+fimage/fimage.py,sha256=qoy8UqSGswy81Ia0-j7Lbz5X6OjO7VIlsz_VFi2yHw8,1043
+fimage/image_array.py,sha256=k1TZ8v7fHoZ_9GSu60gCu5OrLZZIs6yD4iVL0L6f61A,1362
+fimage/presets.py,sha256=nXW-PbHCXF92aW3ZSzyJ87z_ysMqEfW0vu-_KZtFrw0,1128
+fimage-0.2.2.dist-info/LICENSE,sha256=5Y6qDTHNOh6YY79ktjw8NNIiyjLDOZ68o9IB3qPyyLo,1122
+fimage-0.2.2.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+fimage-0.2.2.dist-info/METADATA,sha256=liFd7TEk3zm7NJMpSzymiRDohjjSaXkXmoBp2vfSbiU,5368
+fimage-0.2.2.dist-info/RECORD,,
