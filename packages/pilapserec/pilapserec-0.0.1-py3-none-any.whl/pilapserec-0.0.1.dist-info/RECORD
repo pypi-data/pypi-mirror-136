@@ -1,0 +1,15 @@
+pilapse/__init__.py,sha256=gHz7mtaK9RFbkqah7dBGk5ucHq9C1P2Mbf_FFIQY_zA,480
+pilapse/__main__.py,sha256=xDV5AcjlfHiDevgTw8bmgChiKOZarOJ3KclXBuAbkgg,2229
+pilapse/arguments.py,sha256=GBTA09aaz1ptjIXp5C1mNoSnXkUDfibCFKCjVtPtRnM,2158
+pilapse/capture.py,sha256=9VZlpu5zNEwgYmAWemT2sWL32i0dufH-U6_0Kqze-vo,3317
+pilapse/cleanup.py,sha256=wf-BEffjiWSRUqN1hVvY0bM5X21HNhI7OreeJIaRWsE,936
+pilapse/compileVideo.py,sha256=g-EXQgV8lHRds36NjXWWlSP0oL2hYJEwZOXLahNskMg,1548
+pilapse/config.py,sha256=VuTo34x8UrQGeu5Z0EhsYye9XK-D8SbwH1qo9m6UXWo,993
+pilapse/interface.py,sha256=j67X4e1s_LA01WxaCQ9rl92eViki7gG7LUQjM83MDTw,2016
+pilapse/logger.py,sha256=mOwjsupCIeC0EyrKWkSMf_ScLqhtiV7sXnAjF39Cz8E,136
+pilapserec-0.0.1.dist-info/LICENSE,sha256=K7KP91Q_jUw6LbBVgYBxoIWWXEBO1FLIr0Rq4M7eOV4,1067
+pilapserec-0.0.1.dist-info/METADATA,sha256=Qu1QzE-coePFhUWFfI299-HqRKwm4rWvmtVs06uWt-I,4112
+pilapserec-0.0.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+pilapserec-0.0.1.dist-info/entry_points.txt,sha256=TY6ToPctjhXIJXOPfZ5D5-1y6vafLqcE2o96vZaQJi4,51
+pilapserec-0.0.1.dist-info/top_level.txt,sha256=FaGdGMpVUU_pIrxSO0cMNWkhj0AiuNl-8xgXn_WBfYA,8
+pilapserec-0.0.1.dist-info/RECORD,,
