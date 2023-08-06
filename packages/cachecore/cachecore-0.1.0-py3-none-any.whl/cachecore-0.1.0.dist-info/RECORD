@@ -1,0 +1,11 @@
+caches/__init__.py,sha256=Tim_Cu5v6sXGA7BA3CrRolL3HPrqncPwBNxVfkJNe6o,230
+caches/base.py,sha256=lQ2YNOc1eLi994PKuvQhzNtwxXM76hGSYnfXsA0PcCU,1894
+caches/dummy.py,sha256=aOHJUu-240Hp7PrakTbk9xaTqBegPEWLY_bzxc2kXaU,785
+caches/file.py,sha256=33P44EMun1UPWrsMgk-nvKDXJTwOriyveLBNm13MPUM,2736
+caches/local.py,sha256=fulV_ZD44cNCqasOTLH9miGrDAjr3142lT8XMvZZEa0,2197
+caches/redis.py,sha256=Na7vv5QhgbHl5JM0nd450N6GGM7FASkGzn9Ibz2lXCc,2231
+cachecore-0.1.0.dist-info/LICENSE,sha256=q5dfyxCt5N6j4uFS63bNDpPQDpbyNh1zaqeryJkvh94,1067
+cachecore-0.1.0.dist-info/METADATA,sha256=xgLKs6eBFbiSzx0Nvkfit_dXtPDR7wAj5nJV5aUUiOA,1825
+cachecore-0.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+cachecore-0.1.0.dist-info/top_level.txt,sha256=8T6I0lirNt1pZMCGMJzLEWjwu-DJ4TbplpAATQS2PhM,7
+cachecore-0.1.0.dist-info/RECORD,,
