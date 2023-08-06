@@ -1,0 +1,12 @@
+nep29/__init__.py,sha256=pE4b6rwm0nE2g568lXr3RHDC6rCZPPH2KfjJvbd3g8s,241
+nep29/_static_version.py,sha256=XmGr47zwtmPXMwnTyQHElqdfh1Qj_ggidypxu51mouc,61
+nep29/_version.py,sha256=k6VQx5_Hgce_4jHTnxp3n4d5IKv3o-ZJvU0j5GPcEbQ,5866
+nep29/nep29.py,sha256=VmwIBjU-yWqgWDlqWBpwGUN_PprJf1yBuUSKu9--DVE,6583
+nep29/tests/__init__.py,sha256=ZNrkuolb-IzgNMahQAm27RDGFS5yK-H1bQa4U4I-53o,35
+nep29/tests/test_nep29.py,sha256=hm8RvJro2csFpthLWBUCjLGVlxeRCa2mv2EQV4VNY1o,3615
+nep29-0.0.16.dist-info/LICENSE,sha256=WaCyrLpLX3XzTAvOX2O_a-p241pgQqwpHBJzNbcR-9A,1508
+nep29-0.0.16.dist-info/METADATA,sha256=5dvsL-UXCctfOP3fIx2v4LtMUqi6ci_U6cDEyd2bJJU,4272
+nep29-0.0.16.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+nep29-0.0.16.dist-info/entry_points.txt,sha256=Z58mc_ivPk_FgI3e2JKdzIitbGNyeJehE1HlbD8HqSs,44
+nep29-0.0.16.dist-info/top_level.txt,sha256=e3ohT9mudTS0P6u9hvl6zwgLHU42XVCFSJWLYRwbSCY,6
+nep29-0.0.16.dist-info/RECORD,,
