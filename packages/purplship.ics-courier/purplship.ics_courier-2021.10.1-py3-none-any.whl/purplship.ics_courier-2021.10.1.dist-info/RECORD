@@ -1,0 +1,16 @@
+purplship/mappers/ics_courier/__init__.py,sha256=-sWCsQdGM0mqWHj1FcIbbHR2Ri61ITzbVohd1lg_vys,385
+purplship/mappers/ics_courier/mapper.py,sha256=q_10vsUKGfDLLCo_BvOHjoXktGHh9hqjCpfFL7f9xgs,2188
+purplship/mappers/ics_courier/proxy.py,sha256=gj5ZRIpg5K5W84kbHYOl478alLSh5kj3C-A5MrUXfrE,3466
+purplship/mappers/ics_courier/settings.py,sha256=pDtzs4t2wnfanb2Iibry1jRTDVhWDXtn-B-Bri5ljOQ,384
+purplship/providers/ics_courier/__init__.py,sha256=Q4XtUHIk0kNUTcFTnZngBWkOydmimrBCOlvGh9pvt-4,423
+purplship/providers/ics_courier/error.py,sha256=SwqZbvfvXudtx6-IyhptmKIzu5HhzTkcgWnPyMr4-is,676
+purplship/providers/ics_courier/rate.py,sha256=zOFOc1atAcRgGSNPMpXLb1tHr02j4H174npJwjyL3Go,3398
+purplship/providers/ics_courier/shipment/__init__.py,sha256=gaBkTHluwhazYcQvJs_9-5f8O4-SJzkQ1yPUUGL9ZlU,218
+purplship/providers/ics_courier/shipment/cancel.py,sha256=n-wj_NzuVhgpaOO3TIYCEKZzoIPEV_56B7GRR1RazKQ,1435
+purplship/providers/ics_courier/shipment/create.py,sha256=qYjodS6vC-eRZ-9iqgPYoqXIwM2m6lkrLnRqaDGOTPs,4045
+purplship/providers/ics_courier/tracking.py,sha256=znl5uIT4XzCCPVaZ0515cVVS6a3My5qT5MGYhtRHGtg,2321
+purplship/providers/ics_courier/units.py,sha256=a6sttkMzn9sHy_yUHsbl1IyGliaDWrsiHgHFIfkPaMw,361
+purplship/providers/ics_courier/utils.py,sha256=W4aqr4HEDB4MgyX_bqbhs2d8tRsmBk_cKNoh2ObiAC4,1420
+purplship.ics_courier-2021.10.1.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+purplship.ics_courier-2021.10.1.dist-info/METADATA,sha256=x_taQBu7xntMdPY_8SCUtp-fo_9529jTU-fRf-px7WA,1410
+purplship.ics_courier-2021.10.1.dist-info/RECORD,,
