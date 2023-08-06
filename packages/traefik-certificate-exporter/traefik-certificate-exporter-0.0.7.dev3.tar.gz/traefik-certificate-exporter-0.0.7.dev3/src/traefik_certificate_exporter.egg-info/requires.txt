@@ -1,0 +1,4 @@
+watchdog
+docker
+requests
+docker-pycreds
