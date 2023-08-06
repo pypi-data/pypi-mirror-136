@@ -1,0 +1,10 @@
+batchsend/__init__.py,sha256=gH0dHQkYL6QKBrJTolVNcFUAwPnxrvQIRvFD1wxUsWQ,33
+batchsend/batchsend.cp310-win_amd64.pyd,sha256=yDrMciP0jNqOFwzhx4Px8mVP-8A5liDr244astrwR6A,371200
+batchsend/batchsend.nim,sha256=8MUj1a_dTA3QTVZxTxUpHud31QQecNGImYfyitbNT2Y,8134
+batchsend/test.py,sha256=dGCypeJQcrToNcluN0zuHvZ3oXsesIbo1_BWztiDkio,626
+batchsend-0.3.3.data/scripts/__init__.py,sha256=gH0dHQkYL6QKBrJTolVNcFUAwPnxrvQIRvFD1wxUsWQ,33
+batchsend-0.3.3.dist-info/LICENSE,sha256=qBN5iC_EyDeRmi0gNx16Mv4f1ngCiLM2JziL3upSacA,1094
+batchsend-0.3.3.dist-info/METADATA,sha256=EWGdGd8cMb9POx7H9diqiPJQrXlCcj5XMjE1ff-rqr8,1140
+batchsend-0.3.3.dist-info/WHEEL,sha256=W26pYN7HLsBT1jrDSL9udgf_mdNKJmYmL23sIP-FcgM,102
+batchsend-0.3.3.dist-info/top_level.txt,sha256=Lda9GH_fnY3XuyLl332xVMo4bqWrSXrbgbtOHUG4Rrc,10
+batchsend-0.3.3.dist-info/RECORD,,
