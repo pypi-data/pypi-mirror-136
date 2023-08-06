@@ -1,0 +1,4 @@
+[console_scripts]
+azis=azure_interactive_shortcuts:_main
+azure-interactive-shortcuts=azure_interactive_shortcuts:_main
+
