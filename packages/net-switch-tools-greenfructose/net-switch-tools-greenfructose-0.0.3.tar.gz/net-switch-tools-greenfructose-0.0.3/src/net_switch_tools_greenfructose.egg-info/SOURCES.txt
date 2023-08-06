@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+pyproject.toml
+readme.md
+setup.py
+src/manage_switches/All.py
+src/manage_switches/DoConcurrent.py
+src/manage_switches/DocFunctions.py
+src/manage_switches/NetworkFunctions.py
+src/manage_switches/SwitchFunctions.py
+src/manage_switches/__init__.py
+src/net_switch_tools_greenfructose.egg-info/PKG-INFO
+src/net_switch_tools_greenfructose.egg-info/SOURCES.txt
+src/net_switch_tools_greenfructose.egg-info/dependency_links.txt
+src/net_switch_tools_greenfructose.egg-info/top_level.txt
