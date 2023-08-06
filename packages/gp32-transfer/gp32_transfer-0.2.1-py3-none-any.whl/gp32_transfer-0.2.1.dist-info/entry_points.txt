@@ -1,0 +1,3 @@
+[console_scripts]
+gp32_transfer=gp32_transfer.main:app
+
