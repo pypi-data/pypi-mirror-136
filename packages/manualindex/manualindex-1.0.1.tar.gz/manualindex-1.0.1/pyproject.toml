@@ -1,0 +1,89 @@
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "manualindex"
+version = "1.0.1"
+description = "Generate autoindex-style HTML for your directory listings."
+keywords = ["autoindex", "html", "directory", "listing"]
+packages = [
+    { include = "manualindex" },
+]
+readme = "README.md"
+homepage = "https://github.com/djmattyg007/manualindex"
+repository = "https://github.com/djmattyg007/manualindex"
+authors = ["Matthew Gamble <git@matthewgamble.net>"]
+license = "GPLv3"
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+]
+include = [
+    { path = "CHANGELOG.md", format = "sdist" },
+    { path = "tasks.py", format = "sdist" },
+    { path = "manualindex/templates/*" },
+    { path = "manualindex/py.typed" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+Jinja2 = "^3.0.3"
+fs = "^2.4.14"
+
+[tool.poetry.dev-dependencies]
+black = "^21.12b0"
+check-manifest = "^0.47"
+flake8 = "^4.0.1"
+flake8-annotations-complexity = "^0.0.6"
+flake8-black = "^0.2.3"
+flake8-breakpoint = "^1.1.0"
+flake8-bugbear = "^22.1.11"
+flake8-builtins = "^1.5.3"
+flake8-comprehensions = "^3.8.0"
+flake8-eradicate = "^1.2.0"
+flake8-expression-complexity = "^0.0.9"
+flake8-isort = "^4.1.1"
+flake8-requirements = "^1.5.2"
+isort = "^5.10.1"
+pep8-naming = "^0.12.1"
+mypy = "^0.931"
+invoke = "^1.6.0"
+
+[tool.poetry.urls]
+"Source" = "https://github.com/djmattyg007/manualindex"
+"Issues" = "https://github.com/djmattyg007/manualindex/issues"
+
+[tool.poetry.scripts]
+manualindex = "manualindex.console:main"
+
+[tool.black]
+target-version = ["py39", "py310"]
+line-length = 100
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
+line_length = 100
+known_tests = "tests"
+sections = "FUTURE,STDLIB,THIRDPARTY,FIRSTPARTY,TESTS,LOCALFOLDER"
+lines_after_imports = 2
+lines_between_sections = 1
+
+[tool.mypy]
+check_untyped_defs = true
+strict_equality = true
+warn_redundant_casts = true
+warn_unused_configs = true
+warn_unused_ignores = true
+
+
+[[tool.mypy.overrides]]
+module = [
+    "humanfriendly",
+]
+ignore_missing_imports = true
