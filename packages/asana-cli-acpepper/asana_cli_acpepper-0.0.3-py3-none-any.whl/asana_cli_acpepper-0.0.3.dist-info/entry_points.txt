@@ -1,0 +1,3 @@
+[console_scripts]
+asana = asana_cli.cli:main
+
