@@ -1,0 +1,13 @@
+decisiontelecom/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+decisiontelecom/sms.py,sha256=3I3hUIDKNtQ7Vt_0PHnPhqc77wbBGa9uIpMhw6Mt-UQ,5572
+decisiontelecom/viber.py,sha256=omoxU04JoDraSlnA7iD88nqPR8ap5V-6XV91GtytriE,5753
+decisiontelecom/viber_plus_sms.py,sha256=815KMi_1cdpFYoIv8gcTMAKzf0RlaQzWwgSeC6o7ptY,3921
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_sms.py,sha256=Cy9yZpBRcRTuuOfWCT-bJAGhEgRkNSGmj5-4P9vLBOk,7665
+tests/test_viber.py,sha256=LRs5b5aAKwueDKm-5kOxdZuc9uZ63bwbSF6oijxDTKc,4481
+tests/test_viber_plus_sms.py,sha256=R74Ra9dKco3rIXyF85s89qLAAFkf6WM9T6jX8Sdr55s,5203
+decisiontelecom-1.0.0.dist-info/LICENSE,sha256=3QGmsxr9672Dd1uuSPtpN76jssorZZt5AwUeU96vofk,1072
+decisiontelecom-1.0.0.dist-info/METADATA,sha256=35OhBhhJCLA5PdGX-3pHjOevP6ryDb4wsMF4EeRGtMg,5069
+decisiontelecom-1.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+decisiontelecom-1.0.0.dist-info/top_level.txt,sha256=UoiQWUjSoBLAYDttDRwalKAdCWSQsb9iqYxNYg0xa3c,22
+decisiontelecom-1.0.0.dist-info/RECORD,,
