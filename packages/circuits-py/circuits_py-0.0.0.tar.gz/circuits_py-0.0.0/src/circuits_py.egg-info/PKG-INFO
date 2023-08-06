@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: circuits-py
+Version: 0.0.0
+Summary: A python package for creating logic circuits.
+Author: 0xA4
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: The Unlicense (Unlicense)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+## circuits_py
+
+A python package for creating logic circuits.
+
+
