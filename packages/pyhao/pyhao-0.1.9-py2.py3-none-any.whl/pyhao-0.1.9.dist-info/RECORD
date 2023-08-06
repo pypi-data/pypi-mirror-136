@@ -1,0 +1,16 @@
+pyhao/__init__.py,sha256=K0kNy26Vm6A-1V5lST3ily6yVsNLUbiqk6AZDFm2nJI,20
+pyhao/__version__.py,sha256=MobQVtrO9Ze27biO6l6QreTAONnDTqbALI54Q1gpCI8,352
+pyhao/core.py,sha256=Ad4VfrMyVEhE2Qn2Lxmjn9gj_qD9zOQm-eMyG_qpqB8,26
+pyhao/data.py,sha256=b1TIGnWH9H4UW3RyCHtWEwO0seL-Lp-ZyDOhkyr8bm0,912968
+pyhao/fanyi.py,sha256=Wz3b_mThVW3XWm9sN_Cik0eGSBfkGZws7Vxy1Pg9CWo,422
+pyhao/picture.py,sha256=eQrVIf1_IAY29MPVQK6uQDlk-kfwFqSog5iDLXk4EO8,375
+pyhao/speak.py,sha256=hm2zQ65sGDAcs24RKPOgk4mcQg5t1af9oDZA6TOSpgg,959
+pyhao/version.py,sha256=3NpkywtT3R3UXT838mJWzwG58mhEDLEK-Tz9CzU5YTU,17
+pyhao/weather.py,sha256=sRj8XGJ7L1ld5TsGZunhkPkWXbI1q6oiAPzNYB-Q_Hs,1692
+pyhao/word.py,sha256=lorkfKSoccAZblIMXZZT-mx48qH7aRrNU1af7YJQ_Tw,1789
+pyhao/xinchun.py,sha256=p8FEK9FX_5KWmNizWrF25W6vGwBF-Vq1lhH2eoJVQkg,84
+pyhao-0.1.9.dist-info/LICENSE,sha256=5mGKT-8JivLkYytFwVxN4KGDFE_yBq8WU3VdjGwRQ7k,1060
+pyhao-0.1.9.dist-info/METADATA,sha256=E0YlJSk8jWfoVhRHg4ddMfL22LdCZI8RVGxKoOPKWk4,667
+pyhao-0.1.9.dist-info/WHEEL,sha256=WzZ8cwjh8l0jtULNjYq1Hpr-WCqCRgPr--TX4P5I1Wo,110
+pyhao-0.1.9.dist-info/top_level.txt,sha256=gzW9CIjSmrlNWaafXrVZfNoNqzom6Euh-K55U8bNDO0,6
+pyhao-0.1.9.dist-info/RECORD,,
