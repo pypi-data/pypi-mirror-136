@@ -1,0 +1,7 @@
+README.txt
+setup.py
+skepeUtilities/__init__.py
+skepeUtilities.egg-info/PKG-INFO
+skepeUtilities.egg-info/SOURCES.txt
+skepeUtilities.egg-info/dependency_links.txt
+skepeUtilities.egg-info/top_level.txt

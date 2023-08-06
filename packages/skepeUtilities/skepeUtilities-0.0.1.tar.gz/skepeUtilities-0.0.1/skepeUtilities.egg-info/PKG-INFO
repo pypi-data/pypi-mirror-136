@@ -1,0 +1,25 @@
+Metadata-Version: 1.1
+Name: skepeUtilities
+Version: 0.0.1
+Summary: A basic library for basic stuff
+Home-page: UNKNOWN
+Author: Benjamin Joensen
+Author-email: businessskepe@gmail.com
+License: MIT
+Description: This is a library created for fun
+        
+        Change Log
+        ==========
+        
+        0.0.1 (26/01/2022)
+        ------------------
+        - First Release
+        - Created function return_random
+        
+Keywords: random
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
