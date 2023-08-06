@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: Dedomena
+Version: 0.3.0
+Summary: A unified Data API for deep learning and data science
+Home-page: http://autonom.io
+Author: Mikko Kotila
+Author-email: mailme@mikkokotila.com
+Maintainer: Mikko Kotila
+Maintainer-email: mailme@mikkokotila.com
+License: MIT
+Download-URL: https://github.com/autonomio/dedomena/
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Scientific/Engineering :: Human Machine Interfaces
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS
+License-File: LICENSE
+Requires-Dist: pandas
+Requires-Dist: pymed
+Requires-Dist: twintel
+Requires-Dist: pmlb
+Requires-Dist: xmltodict
+
+Dedomena unifies many common and useful data APIs into an easy to access
+namespace, together with facilities for creating synthetic datasets for
+deep learning models and other data science purposes.
+
+
