@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+WhatAnime/__init__.py
+WhatAnime/exception.py
+WhatAnime/types.py
+WhatAnime/whatanime.py
+python_whatanime.egg-info/PKG-INFO
+python_whatanime.egg-info/SOURCES.txt
+python_whatanime.egg-info/dependency_links.txt
+python_whatanime.egg-info/requires.txt
+python_whatanime.egg-info/top_level.txt
