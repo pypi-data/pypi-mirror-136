@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: fbro
+Version: 0.1.6
+Summary: A command line file browser for AWS S3
+Home-page: https://github.com/MartinThoma/fbro
+Author: Martin Thoma
+Author-email: info@martin-thoma.de
+Maintainer: Martin Thoma
+Maintainer-email: info@martin-thoma.de
+License: MIT
+Download-URL: https://github.com/MartinThoma/fbro
+Description: # fbro
+        
+        `fbro` is an interactive console file browser for AWS S3.
+        
+        ## Installation
+        
+        ```bash
+        pip install fbro
+        ```
+        
+        Please note that this tool will not work on Windows, because Windows does not support curses.
+        
+        
+        ## Usage
+        
+        You can start it with `fbro`. Then a list of all your AWS S3 buckets will be
+        shown. You can use the arrow keys (<kbd>↑</kbd> / <kbd>↓</kbd>) and select one
+        by going to the <kbd>→</kbd>. You can go back by pressing <kbd>←</kbd>.
+        
+        ```
+        s3://martin-thoma/
+        - enzado/
+        - correlation.jpg
+        - testfile.txt
+        ```
+        
+Keywords: utility
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Environment :: Console :: Curses
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Utilities
+Classifier: Typing :: Typed
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
