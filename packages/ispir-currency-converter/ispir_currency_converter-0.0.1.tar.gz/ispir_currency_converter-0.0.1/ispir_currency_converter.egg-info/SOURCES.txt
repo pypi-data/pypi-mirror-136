@@ -1,0 +1,8 @@
+README.md
+setup.py
+ispir_currency_converter/__init__.py
+ispir_currency_converter/converter.py
+ispir_currency_converter.egg-info/PKG-INFO
+ispir_currency_converter.egg-info/SOURCES.txt
+ispir_currency_converter.egg-info/dependency_links.txt
+ispir_currency_converter.egg-info/top_level.txt

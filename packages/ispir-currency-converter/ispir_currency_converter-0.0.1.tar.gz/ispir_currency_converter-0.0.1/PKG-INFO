@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: ispir_currency_converter
+Version: 0.0.1
+Summary: Currency converter python package
+Home-page: https://gitlab.com/igorfortestnc/currency-converter.git
+Author: Igor Ispir
+Author-email: ispir.igor@gmail.com
+License: UNKNOWN
+Description: Currency converter python package
+Keywords: python,ispir_currency_converter
+Platform: UNKNOWN
