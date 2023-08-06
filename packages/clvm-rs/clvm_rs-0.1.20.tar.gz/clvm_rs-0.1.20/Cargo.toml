@@ -1,0 +1,25 @@
+[dependencies.clvmr]
+path = "local_dependencies/clvmr"
+
+[dependencies.pyo3]
+features = ["abi3-py37", "extension-module"]
+version = "=0.15.1"
+
+[features]
+openssl = ["clvmr/openssl"]
+
+[lib]
+crate-type = ["cdylib"]
+name = "clvm_rs"
+path = "src/lib.rs"
+
+[package]
+authors = ["Richard Kiss <him@richardkiss.com>"]
+description = "Implementation of `clvm` for Chia Network's cryptocurrency"
+edition = "2018"
+homepage = "https://github.com/Chia-Network/clvm_rs/"
+license = "Apache-2.0"
+name = "clvm_rs"
+readme = "README.md"
+repository = "https://github.com/Chia-Network/clvm_rs/"
+version = "0.1.20"
