@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: steam-tradeoffer-manager
+Version: 0.1.2
+Summary: Small package that help managing steam trade offers and steam bots
+Home-page: https://github.com/somespecialone/python-steam-tradeoffer-manager/
+License: MIT
+Keywords: steam,offer,trade,steamio
+Author: somespecialone
+Author-email: tkachenkodmitriy@yahoo.com
+Requires-Python: >=3.10,<4.0
+Classifier: Framework :: AsyncIO
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Typing :: Typed
+Requires-Dist: steamio (>=0.8.6,<0.9.0)
+Project-URL: Documentation, https://somespecialone.github.io/python-steam-tradeoffer-manager/
+Project-URL: Repository, https://github.com/somespecialone/python-steam-tradeoffer-manager/
+Description-Content-Type: text/markdown
+
+# Python-steam-tradeoffer-manager
+
+[![license](https://img.shields.io/github/license/somespecialone/python-steam-tradeoffer-manager)](https://github.com/somespecialone/python-steam-tradeoffer-manager/blob/master/LICENSE)
+[![pypi](https://img.shields.io/pypi/v/steam-tradeoffer-manager)](https://pypi.org/project/steam-tradeoffer-manager)
+[![Docs](https://github.com/somespecialone/python-steam-tradeoffer-manager/actions/workflows/docs.yml/badge.svg)](https://github.com/somespecialone/python-steam-tradeoffer-manager/actions/workflows/docs.yml)
+[![Tests](https://github.com/somespecialone/python-steam-tradeoffer-manager/actions/workflows/tests.yml/badge.svg)](https://github.com/somespecialone/python-steam-tradeoffer-manager/actions/workflows/tests.yml)
+[![codecov](https://codecov.io/gh/somespecialone/python-steam-tradeoffer-manager/branch/master/graph/badge.svg?token=H3JL81SL7P)](https://codecov.io/gh/somespecialone/python-steam-tradeoffer-manager)
+[![CodeFactor](https://www.codefactor.io/repository/github/somespecialone/python-steam-tradeoffer-manager/badge)](https://www.codefactor.io/repository/github/somespecialone/python-steam-tradeoffer-manager)
+[![versions](https://img.shields.io/pypi/pyversions/steam-tradeoffer-manager)](https://pypi.org/project/steam-tradeoffer-manager)
+[![black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+[![steam](https://shields.io/badge/steam-1b2838?logo=steam)](https://store.steampowered.com/)
+
+## Installation
+
+```bash
+# using pip
+$ pip install steam-tradeoffer-manager
+
+# using pipenv
+$ pipenv install steam-tradeoffer-manager
+
+# using poetry
+$ poetry add steam-tradeoffer-manager
+```
+
+If you want to have the latest updates not included in release and published:
+```sh
+$ pip install git+https://github.com/somespecialone/python-steam-tradeoffer-manager.git@master
+
+$ pipenv install git+https://github.com/somespecialone/python-steam-tradeoffer-manager.git@master
+
+$ poetry add git+https://github.com/somespecialone/python-steam-tradeoffer-manager#master
+```
+
+***Coming soon...***
+
