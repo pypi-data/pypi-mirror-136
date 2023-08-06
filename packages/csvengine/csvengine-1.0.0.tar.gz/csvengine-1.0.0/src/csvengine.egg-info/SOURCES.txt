@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/csvengine/__init__.py
+src/csvengine/main.py
+src/csvengine.egg-info/PKG-INFO
+src/csvengine.egg-info/SOURCES.txt
+src/csvengine.egg-info/dependency_links.txt
+src/csvengine.egg-info/top_level.txt
