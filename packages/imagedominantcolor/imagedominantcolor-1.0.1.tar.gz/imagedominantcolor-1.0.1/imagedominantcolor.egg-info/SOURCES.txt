@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+imagedominantcolor/__init__.py
+imagedominantcolor/__version__.py
+imagedominantcolor/dominantcolor.py
+imagedominantcolor.egg-info/PKG-INFO
+imagedominantcolor.egg-info/SOURCES.txt
+imagedominantcolor.egg-info/dependency_links.txt
+imagedominantcolor.egg-info/requires.txt
+imagedominantcolor.egg-info/top_level.txt
