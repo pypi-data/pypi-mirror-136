@@ -1,0 +1,11 @@
+ffcount/__init__.py,sha256=CnlXhPqZ43nguagPqN-OzmC8o-sOsnJ1O4UUNba12Ow,1492
+ffcount/__main__.py,sha256=Ha050ki-IMX-Q_IPh2CrDkFiDiPV7Hc7Ro7FpzNvQdU,2007
+ffcount/__version__.py,sha256=I0gY__kUhK7pHbehWoX8hBt7Fob9r7KwbpRI9aGnbD4,89
+ffcount/count.cpython-38-darwin.so,sha256=WUJ1iLwWzQ8p_3gS_GcjgVLaiigl_EQitd96gD3QpBw,43688
+ffcount/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ffcount-0.2.1.dist-info/LICENSE,sha256=tAkwu8-AdEyGxGoSvJ2gVmQdcicWw3j1ZZueVV74M-E,11357
+ffcount-0.2.1.dist-info/METADATA,sha256=IOo1zHPRwz93Tt_Jq8wsqLIUupHf-j81IyGI4yghMLY,2578
+ffcount-0.2.1.dist-info/WHEEL,sha256=m4Wk6eOy92yJY87gVAkQnn-qnRb0vl_v2zsmx0hgXfo,109
+ffcount-0.2.1.dist-info/entry_points.txt,sha256=u4XaPNskLjbxLI7GRlMWa17w-T-nNDWlV-y1kkxoaio,51
+ffcount-0.2.1.dist-info/top_level.txt,sha256=MuXaiMWmhQn1JRmmIj2FaXUROEAnXYfRYgWvDDecEak,8
+ffcount-0.2.1.dist-info/RECORD,,
