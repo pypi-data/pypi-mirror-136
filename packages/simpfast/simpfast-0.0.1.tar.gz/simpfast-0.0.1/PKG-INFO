@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: simpfast
+Version: 0.0.1
+Summary: A simple liberary to use fastai in easy way
+Home-page: UNKNOWN
+Author: Israr Ahmad
+Author-email: israrbuaa@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE.txt
+
+# It is basic liberary to use FastAi
+
+Change Log
+==========
+
+0.0.1 (26/01/2022)
+-------------------
+- First Release
+
