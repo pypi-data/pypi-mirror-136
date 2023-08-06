@@ -1,0 +1,15 @@
+typebuf/__init__.py,sha256=oxFXEgLI3nOc7VYATnvjhXsObUAWE3c6UNSMZTHKge8,19
+typebuf/fs.py,sha256=ZK7BUsu3vHhN1whEqperSQPcXDBjG2sqcxczWNiu_ZA,141
+typebuf/lib.py,sha256=UbotCUdlK5EN0_Vi50oby8-SrG4aRSMBH27Ewmm1-wc,1932
+typebuf/models/ir.py,sha256=LZtJkhiS59AWpHxRYQwULE2_CUHCOdzF_ArN6c4duPY,817
+typebuf/models/typedefinition.py,sha256=bBKzi6DhCngb1ViQJDYHdBMZXlrj7EjqaN6FPw-OpA0,636
+typebuf/models/typefield.py,sha256=JogRF1SsXJItvBY4Qenl4CJ-M8wRK-vCP-wFsVlm3TM,282
+typebuf/transformers/__init__.py,sha256=XI_DkXi828ALEPUKvtCWbgkH3IKs7WrcDkihgQeQG_o,502
+typebuf/transformers/base.py,sha256=y4aDf1vvtMJrq0z4S5v877FT-sCLH8Thwj-m7zWKgug,1629
+typebuf/transformers/python.py,sha256=ufNpVCTn1kHSYeZUD7nfvvpUfvmeWmztJ-BHigs50RY,3125
+typebuf/transformers/typescript.py,sha256=HTBET093i-TQ9imIiG6qeY2HGRmeXRlkbrfkVUquing,3218
+typebuf-0.1.4.dist-info/entry_points.txt,sha256=gmyLg5YGWkf2Fw_rx883DExxhNV0S3zjhUTe23mO74o,43
+typebuf-0.1.4.dist-info/LICENSE.txt,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+typebuf-0.1.4.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+typebuf-0.1.4.dist-info/METADATA,sha256=0d7Io7yH0reOA9hQ_JCoDgORcofaBOuxOMfy12CjSRg,4594
+typebuf-0.1.4.dist-info/RECORD,,
