@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+polyclean/__init__.py
+polyclean/polyclean.py
+polyclean/scratch.py
+polyclean.egg-info/PKG-INFO
+polyclean.egg-info/SOURCES.txt
+polyclean.egg-info/dependency_links.txt
+polyclean.egg-info/requires.txt
+polyclean.egg-info/top_level.txt
