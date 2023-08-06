@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: rasptube
+Version: 0.0.1
+Summary: a python module that automates the process for making videos compatable with the Raspberry Pi
+Home-page: UNKNOWN
+Author: Walter J Hare
+Author-email: UNKNOWN
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: raspberry pi,compatability,youtube
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 3
+Requires: os
