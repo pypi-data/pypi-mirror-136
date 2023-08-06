@@ -1,0 +1,7 @@
+README.md
+setup.py
+src/mylassi_xyz.egg-info/PKG-INFO
+src/mylassi_xyz.egg-info/SOURCES.txt
+src/mylassi_xyz.egg-info/dependency_links.txt
+src/mylassi_xyz.egg-info/entry_points.txt
+src/mylassi_xyz.egg-info/top_level.txt
