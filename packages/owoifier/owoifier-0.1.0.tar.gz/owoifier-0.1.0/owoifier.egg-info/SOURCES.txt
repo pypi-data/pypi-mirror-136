@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+owoifier/__init__.py
+owoifier/constants.py
+owoifier/owoifier.py
+owoifier.egg-info/PKG-INFO
+owoifier.egg-info/SOURCES.txt
+owoifier.egg-info/dependency_links.txt
+owoifier.egg-info/entry_points.txt
+owoifier.egg-info/not-zip-safe
+owoifier.egg-info/top_level.txt
+owoifier/_cli/__init__.py
+owoifier/_cli/interface.py
