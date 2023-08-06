@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+src/bind2samba/__init__.py
+src/bind2samba/bind2samba.py
+src/bind2samba.egg-info/PKG-INFO
+src/bind2samba.egg-info/SOURCES.txt
+src/bind2samba.egg-info/dependency_links.txt
+src/bind2samba.egg-info/entry_points.txt
+src/bind2samba.egg-info/top_level.txt
