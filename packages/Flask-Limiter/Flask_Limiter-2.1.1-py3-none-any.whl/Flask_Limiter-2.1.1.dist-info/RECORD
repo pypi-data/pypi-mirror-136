@@ -1,0 +1,12 @@
+flask_limiter/__init__.py,sha256=-sXGqRLT7I0AjTHQF9vWTDzDBysSLdUQFfuxxNEYn8U,305
+flask_limiter/_version.py,sha256=ZRDGU6evLONVaZAq9fsvGwGmh5aJpgcKxGIhFX2rNsg,497
+flask_limiter/errors.py,sha256=gK5e-5r1mDM8o7XOlOTMkA4Y965gvsMVNGHdREadk5U,630
+flask_limiter/extension.py,sha256=4YBzh9H8ZHlGYJTU6L7VrN8MU2uvNq2x_fqpJF6Rank,38426
+flask_limiter/util.py,sha256=h2jMo_KFov-g4ymI38d0gjK8wgTRpDETaRvTW3yaAzQ,210
+flask_limiter/version.py,sha256=YwkF3dtq1KGzvmL3iVGctA8NNtGlK_0arrzZkZGVjUs,47
+flask_limiter/wrappers.py,sha256=SKKTPwNWiovVNOMccSjQhqqWT4LpCyGRhEfCkQjURZ0,2766
+Flask_Limiter-2.1.1.dist-info/LICENSE.txt,sha256=0GK9q9Ej_LC-Y8eVINFMmO0UqDYemRnPktUO3HJSGlw,1062
+Flask_Limiter-2.1.1.dist-info/METADATA,sha256=EeDLVjVOVqEpdheoFBAaSIP8EGylLOmyS3XmA6qseUs,3839
+Flask_Limiter-2.1.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+Flask_Limiter-2.1.1.dist-info/top_level.txt,sha256=R6yEWxkN3qksR5mTrqbdyx6fadLmgetYxMw3pekXEwQ,14
+Flask_Limiter-2.1.1.dist-info/RECORD,,
