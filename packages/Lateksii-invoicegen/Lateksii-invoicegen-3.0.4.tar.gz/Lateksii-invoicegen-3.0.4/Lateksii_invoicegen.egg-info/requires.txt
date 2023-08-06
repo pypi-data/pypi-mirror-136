@@ -1,0 +1,3 @@
+PySimpleGUI
+pdflatex
+tk
