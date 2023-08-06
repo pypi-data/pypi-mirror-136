@@ -1,0 +1,186 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-04-30 19:10+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: .\betik_app_staff\enums.py:10
+msgid "Active"
+msgstr "Aktif"
+
+#: .\betik_app_staff\enums.py:11
+msgid "Passive"
+msgstr "Pasif"
+
+#: .\betik_app_staff\enums.py:12
+msgid "Dismiss"
+msgstr "İhraç"
+
+#: .\betik_app_staff\models.py:10 .\betik_app_staff\models.py:13
+#: .\betik_app_staff\models.py:47 .\betik_app_staff\serializers.py:80
+msgid "Department"
+msgstr "Birim"
+
+#: .\betik_app_staff\models.py:14
+msgid "Departments"
+msgstr "Birimler"
+
+#: .\betik_app_staff\models.py:21 .\betik_app_staff\models.py:32
+#: .\betik_app_staff\serializers.py:18 .\betik_app_staff\serializers.py:28
+#: .\betik_app_staff\serializers.py:38
+msgid "Name"
+msgstr "Ad"
+
+#: .\betik_app_staff\models.py:24 .\betik_app_staff\models.py:51
+#: .\betik_app_staff\serializers.py:84
+msgid "Title"
+msgstr "Ünvan"
+
+#: .\betik_app_staff\models.py:25
+msgid "Titles"
+msgstr "Ünvanlar"
+
+#: .\betik_app_staff\models.py:35 .\betik_app_staff\models.py:49
+#: .\betik_app_staff\serializers.py:82
+msgid "Staff Type"
+msgstr "Personel Tipi"
+
+#: .\betik_app_staff\models.py:36
+msgid "Staff Types"
+msgstr "Personel Tipleri"
+
+#: .\betik_app_staff\models.py:44
+msgid "Person"
+msgstr "Kişi"
+
+#: .\betik_app_staff\models.py:45 .\betik_app_staff\serializers.py:86
+msgid "Registration Number"
+msgstr "Sicil No"
+
+#: .\betik_app_staff\models.py:52 .\betik_app_staff\serializers.py:87
+msgid "Start Date"
+msgstr "Başlama Tarihi"
+
+#: .\betik_app_staff\models.py:53 .\betik_app_staff\serializers.py:88
+msgid "Finish Date"
+msgstr "Bitiş Tarihi"
+
+#: .\betik_app_staff\models.py:55 .\betik_app_staff\serializers.py:79
+msgid "Status"
+msgstr "Durum"
+
+#: .\betik_app_staff\models.py:63
+msgid "Staff"
+msgstr "Personel"
+
+#: .\betik_app_staff\models.py:64
+msgid "Staffs"
+msgstr "Personeller"
+
+#: .\betik_app_staff\serializers.py:74
+msgid "Person ID"
+msgstr "Kişi ID"
+
+#: .\betik_app_staff\serializers.py:78
+msgid "Status Code"
+msgstr "Durum Kodu"
+
+#: .\betik_app_staff\serializers.py:81
+msgid "Department ID"
+msgstr "Birim ID"
+
+#: .\betik_app_staff\serializers.py:83
+msgid "Staff Type ID"
+msgstr "Personel Tipi ID"
+
+#: .\betik_app_staff\serializers.py:85
+msgid "Title ID"
+msgstr "Ünvan ID"
+
+#: .\betik_app_staff\urls.py:14
+msgid "Department List"
+msgstr "Birimleri Listele"
+
+#: .\betik_app_staff\urls.py:23
+msgid "Department Create"
+msgstr "Birim Ekle"
+
+#: .\betik_app_staff\urls.py:32
+msgid "Department Update"
+msgstr "Birim Güncelle"
+
+#: .\betik_app_staff\urls.py:41
+msgid "Department Delete"
+msgstr "Birim Sil"
+
+#: .\betik_app_staff\urls.py:50
+msgid "Title List"
+msgstr "Ünvanları Listele"
+
+#: .\betik_app_staff\urls.py:59
+msgid "Title Create"
+msgstr "Ünvan Ekle"
+
+#: .\betik_app_staff\urls.py:68
+msgid "Title Update"
+msgstr "Ünvan Güncelle"
+
+#: .\betik_app_staff\urls.py:77
+msgid "Title Delete"
+msgstr "Ünvan Sil"
+
+#: .\betik_app_staff\urls.py:86
+msgid "Staff Type List"
+msgstr "Personel Tiplerini Listele"
+
+#: .\betik_app_staff\urls.py:95
+msgid "Staff Type Create"
+msgstr "Personel Tipi Ekle"
+
+#: .\betik_app_staff\urls.py:104
+msgid "Staff Type Update"
+msgstr "Personel Tipi Güncelle"
+
+#: .\betik_app_staff\urls.py:113
+msgid "Staff Type Delete"
+msgstr "Personel Tipi Sil"
+
+#: .\betik_app_staff\urls.py:122
+msgid "Staff Paginate"
+msgstr "Personelleri Sayfala"
+
+#: .\betik_app_staff\urls.py:131
+msgid "Staff Create"
+msgstr "Personel Ekle"
+
+#: .\betik_app_staff\urls.py:140
+msgid "Staff Update"
+msgstr "Personel Güncelle"
+
+#: .\core\urls.py:35
+msgid "Staff Application"
+msgstr "Personel Uygulaması"
+
+#: .\core\urls.py:55
+msgid "Auth Application"
+msgstr "Kullanıcı Uygulaması"
+
+#: .\core\urls.py:75
+msgid "Sms Application"
+msgstr "Sms Uygulaması"
+
+#: .\core\urls.py:95
+msgid "File Output Application"
+msgstr "Dosya Uygulaması"
