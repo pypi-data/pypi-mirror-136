@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+reliabiliPy.egg-info/PKG-INFO
+reliabiliPy.egg-info/SOURCES.txt
+reliabiliPy.egg-info/dependency_links.txt
+reliabiliPy.egg-info/requires.txt
+reliabiliPy.egg-info/top_level.txt
+reliabilipy/__init__.py
+reliabilipy/_reliabili.py
+tests/__init__.py
+tests/test_reliabili.py
