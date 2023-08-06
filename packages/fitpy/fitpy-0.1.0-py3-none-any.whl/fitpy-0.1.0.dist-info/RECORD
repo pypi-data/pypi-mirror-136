@@ -1,0 +1,10 @@
+fitpy/__init__.py,sha256=VXENvpPMHJElTSFvjws5P6Mxe1Q4PSNJGhSjJc31E08,104
+fitpy/analysis.py,sha256=rjn99LtfOuJUlCeSi_snSX09WoD29aUOiW9nthhcWNc,36936
+fitpy/dataset.py,sha256=15OtCUUQ3eunepvwlGtBvuQiI3HW6SpTgWLNMmCwe8c,13687
+fitpy/plotting.py,sha256=x40ODaJAqj70g-E4-C2hT2NXOhr83ut2fAhqvWOjZa4,5973
+fitpy/report.py,sha256=ImiAImuOE3Lyc8wLpUy-6LD6b6979gEtWX4EOy_V5r0,5175
+fitpy-0.1.0.dist-info/LICENSE,sha256=i2pIYRSzrDDhTMSEfJsJ7CQtRAqgDI2uON6I3eWKnlA,1267
+fitpy-0.1.0.dist-info/METADATA,sha256=-xf9W8rhw_iVQmYtfcMmpGBHH-I-zCptVSwIFUwNvBM,5217
+fitpy-0.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+fitpy-0.1.0.dist-info/top_level.txt,sha256=cBEbqOJz8ivgyOA_mB9cHPmVJ2M5zkubV5BccwqEN-Q,6
+fitpy-0.1.0.dist-info/RECORD,,
