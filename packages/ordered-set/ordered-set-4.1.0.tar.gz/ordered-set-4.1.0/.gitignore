@@ -1,0 +1,12 @@
+*.pyc
+*~
+.DS_Store
+.*.swp
+*.egg-info
+dist/
+.tox/
+.coverage
+.pytest_cache
+htmlcov
+.eggs
+.venv
