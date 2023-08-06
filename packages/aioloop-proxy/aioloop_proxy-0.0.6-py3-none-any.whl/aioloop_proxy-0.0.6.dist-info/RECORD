@@ -1,0 +1,12 @@
+aioloop_proxy/__init__.py,sha256=3JXSaf_qEURHoMju8L8GXWbcEb7TlSsQ6UnNS8Il-qM,134
+aioloop_proxy/_api.py,sha256=c5oqyQ4YbL9UiF83Z1SRccqqOBsfsWDIFyBlmFrWXT0,1077
+aioloop_proxy/_handle.py,sha256=B9ILMYDYfgo3sEuEatHBV--7blThNo1HbOouJ4dTvUw,1595
+aioloop_proxy/_loop.py,sha256=u7YnN2tP_IGximq4Rj9RY4lqQABEpXKm1Yt8M2__Jnc,29792
+aioloop_proxy/_protocol.py,sha256=Y6vRFKN_-IAsniAQJ-yM52ejJX_D-uDgkA04XXDOO3c,4825
+aioloop_proxy/_server.py,sha256=w0PXsTNfmkyzxfanyqsL4Pgk5w26EezEOnnpUUK3osk,1015
+aioloop_proxy/_task.py,sha256=1kJElyJXchis8LANBsR0buCfcaEtatkp2n6uLu-SOGk,30933
+aioloop_proxy/_transport.py,sha256=DnEKmIw4NnK6Cat_nKA2FIWHmc3kFZtzKnsSB02hkcw,5339
+aioloop_proxy-0.0.6.dist-info/METADATA,sha256=fwCfMtYiJp8E4Ivc267fV-Yk8d-yw6PjzWTQhps38tY,5162
+aioloop_proxy-0.0.6.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+aioloop_proxy-0.0.6.dist-info/top_level.txt,sha256=jT5P9uM-vU5w58bFKsxzgoiMKb-mXZB2b8KpcpmWWFk,14
+aioloop_proxy-0.0.6.dist-info/RECORD,,
