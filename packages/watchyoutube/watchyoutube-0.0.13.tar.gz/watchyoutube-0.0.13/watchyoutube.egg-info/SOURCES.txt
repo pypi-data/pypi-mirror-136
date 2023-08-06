@@ -1,0 +1,7 @@
+setup.py
+watchYoutube/__init__.py
+watchYoutube/youtube.py
+watchyoutube.egg-info/PKG-INFO
+watchyoutube.egg-info/SOURCES.txt
+watchyoutube.egg-info/dependency_links.txt
+watchyoutube.egg-info/top_level.txt

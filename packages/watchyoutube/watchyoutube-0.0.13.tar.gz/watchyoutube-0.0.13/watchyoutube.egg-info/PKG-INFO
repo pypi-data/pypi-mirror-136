@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: watchyoutube
+Version: 0.0.13
+Summary: Streaming video data via networks
+Home-page: UNKNOWN
+Author: Ibrahima SOUMARE
+Author-email: soumareiibrahima@gmail.com
+License: UNKNOWN
+Description: A package that allows to build simple streams of video, audio and camera data.
+Keywords: video
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Description-Content-Type: text/markdown
