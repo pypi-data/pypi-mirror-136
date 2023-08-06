@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: modelify
+Version: 0.0.1
+Summary: New Version of MLOps Platforms.
+Home-page: UNKNOWN
+Author: Muzaffer Senkal
+Author-email: info@modelify.ai
+License: MIT
+Description:  Modelify takes over all devops jobs from data scientists and machine learning practitioners and brings their models to production.
+Keywords: mlops,machine learning,model deployment,deploy model,data science,computer vision
+Platform: UNKNOWN
