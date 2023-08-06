@@ -1,0 +1,3 @@
+[napari.plugin]
+napari-zelda = napari_zelda
+
