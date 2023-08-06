@@ -1,0 +1,5 @@
+ray[default,tune]>=1.8.0
+pickle5
+tensorboardX<2.3
+GPUtil
+awscli
