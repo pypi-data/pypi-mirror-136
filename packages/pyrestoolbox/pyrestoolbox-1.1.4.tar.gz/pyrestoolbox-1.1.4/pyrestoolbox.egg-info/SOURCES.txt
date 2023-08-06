@@ -1,0 +1,12 @@
+LICENSE
+README.rst
+pyproject.toml
+setup.cfg
+setup.py
+pyrestoolbox/__init__.py
+pyrestoolbox/pyrestoolbox.py
+pyrestoolbox.egg-info/PKG-INFO
+pyrestoolbox.egg-info/SOURCES.txt
+pyrestoolbox.egg-info/dependency_links.txt
+pyrestoolbox.egg-info/requires.txt
+pyrestoolbox.egg-info/top_level.txt
