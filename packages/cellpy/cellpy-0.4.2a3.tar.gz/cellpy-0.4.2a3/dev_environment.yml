@@ -1,0 +1,45 @@
+name: cellpy_dev
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python >=3.7
+  - pip
+  - numpy
+  - openpyxl
+  - matplotlib
+  - cryptography
+  - click
+  - scipy
+  - pandas
+  - pytables >=3.5.1
+  - setuptools
+  - ruamel.yaml
+  - pyodbc
+  - coverage
+  - wheel
+  - flake8
+  - Sphinx
+  - PyGithub
+  - watchdog
+  - pytest
+  - twine
+  - invoke
+  - conda-build
+  - ripgrep
+  - conda-verify
+  - anaconda-client
+  - lmfit
+  - cookiecutter
+  - tqdm
+  - pandoc
+  - ipykernel
+  - ipywidgets
+  - python-box
+  - sqlalchemy
+  - pip:
+    - pytest-benchmark
+    - pytest-timeout
+    - requests
+    - nbsphinx
+    - sphinx-rtd-theme
