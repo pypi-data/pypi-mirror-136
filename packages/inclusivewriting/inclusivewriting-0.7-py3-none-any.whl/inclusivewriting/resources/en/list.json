@@ -1,0 +1,198 @@
+{
+	"master": {
+		"lexeme": ["https://www.wikidata.org/wiki/Lexeme:L7466"],
+		"replacement": {
+			"primary": {
+				"lexeme": ["https://www.wikidata.org/wiki/Lexeme:L6085"],
+				"references": [
+					"https://github.com/torvalds/linux/blob/master/Documentation/process/coding-style.rst"
+				]
+			},
+			"main": {
+				"lexeme": ["https://www.wikidata.org/wiki/Lexeme:L4191"],
+				"references": [
+					"https://github.com/torvalds/linux/blob/master/Documentation/process/coding-style.rst"
+				]
+			},
+			"initiator": {
+				"lexeme": ["https://www.wikidata.org/wiki/Lexeme:L322554"],
+				"references": [
+					"https://github.com/torvalds/linux/blob/master/Documentation/process/coding-style.rst"
+				]
+			},
+			"requester": {
+				"lexeme": ["https://www.wikidata.org/wiki/Lexeme:L326679"],
+				"references": [
+					"https://github.com/torvalds/linux/blob/master/Documentation/process/coding-style.rst"
+				]
+			},
+			"controller": {
+				"lexeme": ["https://www.wikidata.org/wiki/Lexeme:L30833"],
+				"references": [
+					"https://github.com/torvalds/linux/blob/master/Documentation/process/coding-style.rst"
+				]
+			},
+			"host": {
+				"lexeme": ["https://www.wikidata.org/wiki/Lexeme:L16938"],
+				"references": [
+					"https://github.com/torvalds/linux/blob/master/Documentation/process/coding-style.rst"
+				]
+			},
+			"leader": {
+				"lexeme": ["https://www.wikidata.org/wiki/Lexeme:L4175"],
+				"references": [
+					"https://github.com/torvalds/linux/blob/master/Documentation/process/coding-style.rst"
+				]
+			},
+			"director": {
+				"lexeme": ["https://www.wikidata.org/wiki/Lexeme:L3991"],
+				"references": [
+					"https://github.com/torvalds/linux/blob/master/Documentation/process/coding-style.rst"
+				]
+			}
+		}
+	},
+	"slave": {
+		"lexeme": "https://www.wikidata.org/wiki/Lexeme:L13257",
+		"replacement": {
+			"secondary": {
+				"lexeme": ["https://www.wikidata.org/wiki/Lexeme:L327366"],
+				"references": [
+					"https://github.com/torvalds/linux/blob/master/Documentation/process/coding-style.rst"
+				]
+			},
+			"subordinate": {
+				"lexeme": ["https://www.wikidata.org/wiki/Lexeme:L233676"],
+				"references": [
+					"https://github.com/torvalds/linux/blob/master/Documentation/process/coding-style.rst"
+				]
+			},
+			"replica": {
+				"lexeme": ["https://www.wikidata.org/wiki/Lexeme:L233676"],
+				"references": [
+					"https://github.com/torvalds/linux/blob/master/Documentation/process/coding-style.rst"
+				]
+			},
+			"target": {
+				"lexeme": ["https://www.wikidata.org/wiki/Lexeme:L5717"],
+				"references": [
+					"https://github.com/torvalds/linux/blob/master/Documentation/process/coding-style.rst"
+				]
+			},
+			"responder": {
+				"lexeme": ["https://www.wikidata.org/wiki/Lexeme:L299282"],
+				"references": [
+					"https://github.com/torvalds/linux/blob/master/Documentation/process/coding-style.rst"
+				]
+			},
+			"device": {
+				"lexeme": ["https://www.wikidata.org/wiki/Lexeme:L7295"],
+				"references": [
+					"https://github.com/torvalds/linux/blob/master/Documentation/process/coding-style.rst"
+				]
+			},
+			"worker": {
+				"lexeme": ["https://www.wikidata.org/wiki/Lexeme:L5544"],
+				"references": [
+					"https://github.com/torvalds/linux/blob/master/Documentation/process/coding-style.rst"
+				]
+			},
+			"proxy": {
+				"lexeme": ["https://www.wikidata.org/wiki/Lexeme:L24980"],
+				"references": [
+					"https://github.com/torvalds/linux/blob/master/Documentation/process/coding-style.rst"
+				]
+			},
+			"follower": {
+				"lexeme": ["https://www.wikidata.org/wiki/Lexeme:L227105"],
+				"references": [
+					"https://github.com/torvalds/linux/blob/master/Documentation/process/coding-style.rst"
+				]
+			},
+			"performer": {
+				"lexeme": ["https://www.wikidata.org/wiki/Lexeme:L299288"],
+				"references": [
+					"https://github.com/torvalds/linux/blob/master/Documentation/process/coding-style.rst"
+				]
+			}
+		}
+	},
+	"blacklist": {
+		"lexeme": "https://www.wikidata.org/wiki/Lexeme:L307840",
+		"replacement": {
+			"blocklist": {
+				"lexeme": [],
+				"references": [
+					"https://github.com/torvalds/linux/blob/master/Documentation/process/coding-style.rst"
+				]
+			},
+			"denylist": {
+				"lexeme": [],
+				"references": [
+					"https://github.com/torvalds/linux/blob/master/Documentation/process/coding-style.rst"
+				]
+			}
+		}
+	},
+	"whitelist": {
+		"lexeme": "https://www.wikidata.org/wiki/Lexeme:L307842",
+		"replacement": {
+			"allowlist": {
+				"lexeme": [],
+				"references": [
+					"https://github.com/torvalds/linux/blob/master/Documentation/process/coding-style.rst"
+				]
+			},
+			"passlist": {
+				"lexeme": [],
+				"references": [
+					"https://github.com/torvalds/linux/blob/master/Documentation/process/coding-style.rst"
+				]
+			}
+		}
+	},
+	"guy": {
+		"lexeme": "https://www.wikidata.org/wiki/Lexeme:L4112",
+		"replacement": {
+			"folk": {
+				"lexeme": ["https://www.wikidata.org/wiki/Lexeme:L7930"],
+				"references": [
+					"https://www.cnet.com/news/twitter-engineers-replace-racially-loaded-tech-terms-like-master-slave/"
+				]
+			}
+		}
+	},
+	"guys": {
+		"lexeme": "https://www.wikidata.org/wiki/Lexeme:L4112",
+		"replacement": {
+			"folks": {
+				"lexeme": ["https://www.wikidata.org/wiki/Lexeme:L7930"],
+				"references": [
+					"https://www.cnet.com/news/twitter-engineers-replace-racially-loaded-tech-terms-like-master-slave/"
+				]
+			}
+		}
+	},
+	"man hour": {
+		"lexeme": "",
+		"replacement": {
+			"person hour": {
+				"lexeme": [],
+				"references": [
+					"https://chromium.googlesource.com/chromium/src/+/master/styleguide/inclusive_code.md"
+				]
+			}
+		},
+		"man hours": {
+			"lexeme": "",
+			"replacement": {
+				"person hours": {
+					"lexeme": [],
+					"references": [
+						"https://chromium.googlesource.com/chromium/src/+/master/styleguide/inclusive_code.md"
+					]
+				}
+			}
+		}
+	}
+}
