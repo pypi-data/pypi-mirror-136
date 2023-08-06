@@ -1,0 +1,109 @@
+Metadata-Version: 2.1
+Name: aioinfluxdb
+Version: 0.2.0
+Summary: InfluxDB v2 Python SDK with asyncio support
+License: MIT
+Keywords: influxdb,influx,asyncio,sdk,v2
+Author: Byeonghoon Yoo
+Author-email: bh322yoo@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Environment :: Web Environment
+Classifier: Framework :: AsyncIO
+Classifier: Framework :: aiohttp
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Database
+Classifier: Topic :: Database :: Front-Ends
+Classifier: Topic :: Internet
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Typing :: Typed
+Provides-Extra: pandas
+Requires-Dist: aiocsv (>=1.2.1,<2.0.0)
+Requires-Dist: aiohttp[speedups] (>=3.8.1,<4.0.0)
+Requires-Dist: ciso8601 (>=2.2.0,<3.0.0)
+Requires-Dist: isal (>=0.11.1,<0.12.0)
+Requires-Dist: orjson (>=3.6.6,<4.0.0)
+Requires-Dist: pandas (>=1.4.0,<2.0.0); (python_version >= "3.8" and python_version < "4.0") and (extra == "pandas")
+Requires-Dist: typing-extensions (>=4.0.1,<5.0.0)
+Description-Content-Type: text/markdown
+
+# aioinfluxdb
+
+[![PyPI](https://img.shields.io/pypi/v/aioinfluxdb?style=flat-square&logo=pypi)](https://pypi.org/project/aioinfluxdb/)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/aioinfluxdb?style=flat-square&logo=pypi)](https://pypi.org/project/aioinfluxdb/)
+[![PyPI - Wheel](https://img.shields.io/pypi/wheel/aioinfluxdb?style=flat-square&logo=pypi)](https://pypi.org/project/aioinfluxdb/)
+[![PyPI - Status](https://img.shields.io/pypi/status/aioinfluxdb?style=flat-square)](https://pypi.org/project/aioinfluxdb/)
+![Codecov](https://img.shields.io/codecov/c/gh/isac322/aioinfluxdb?style=flat-square&logo=codecov)
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/isac322/aioinfluxdb/CI?style=flat-square&logo=github)
+![License](https://img.shields.io/github/license/isac322/aioinfluxdb?style=flat-square&logo=github)
+![GitHub last commit](https://img.shields.io/github/last-commit/isac322/aioinfluxdb?logo=github&style=flat-square)
+![Dependabpt Status](https://flat.badgen.net/github/dependabot/isac322/aioinfluxdb?icon=github)
+
+The Python client for InfluxDB v2 supports asyncio.
+
+**This is early-stage project**
+
+## Why aioinfluxdb?
+
+[The official client](https://pypi.org/project/influxdb-client/) does not supports asyncio that can get significant
+performance. and [aioinflux](https://pypi.org/project/aioinflux/) does not supports InfluxDB v2.
+
+## Feature table
+
+| Feature               | Sub category                                                 | ✅ / ⚠ / 🚧 |
+|:----------------------|:-------------------------------------------------------------|:----------:|
+| Query                 | Query Data                                                   |     ✅      |
+| Query                 | Analyzer Flux Query                                          |     🚧     |
+| Query                 | Generate AST from Query                                      |     🚧     |
+| Query                 | Retrieve query suggestions                                   |     🚧     |
+| Query                 | Retrieve query suggestions <br /> for a branching suggestion |     🚧     |
+| Write                 |                                                              |     ✅      |
+| Buckets               |                                                              |     ⚠      |
+| Dashboards            |                                                              |     🚧     |
+| Tasks                 |                                                              |     🚧     |
+| Resources             |                                                              |     🚧     |
+| Authorizations        |                                                              |     🚧     |
+| Organizations         |                                                              |     ⚠      |
+| Users                 |                                                              |     🚧     |
+| Health                |                                                              |     🚧     |
+| Ping                  |                                                              |     ✅      |
+| Ready                 |                                                              |     🚧     |
+| Routes                |                                                              |     🚧     |
+| Backup                |                                                              |     🚧     |
+| Cells                 |                                                              |     🚧     |
+| Checks                |                                                              |     🚧     |
+| DBRPs                 |                                                              |     🚧     |
+| Delete                |                                                              |     🚧     |
+| Labels                |                                                              |     🚧     |
+| NotificationEndpoints |                                                              |     🚧     |
+| NotificationRules     |                                                              |     🚧     |
+| Restore               |                                                              |     🚧     |
+| Rules                 |                                                              |     🚧     |
+| Scraper Targets       |                                                              |     🚧     |
+| Secrets               |                                                              |     🚧     |
+| Setup                 |                                                              |     🚧     |
+| Signin                |                                                              |     🚧     |
+| Signout               |                                                              |     🚧     |
+| Sources               |                                                              |     🚧     |
+| Telegraf Plugins      |                                                              |     🚧     |
+| Telegrafs             |                                                              |     🚧     |
+| Templates             |                                                              |     🚧     |
+| Variables             |                                                              |     🚧     |
+| Views                 |                                                              |     🚧     |
+
+---
+
+This project borrows some de/serialization code from [influxdb-client](https://github.com/influxdata/influxdb-client-python).

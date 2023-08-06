@@ -1,0 +1,14 @@
+aioinfluxdb/__init__.py,sha256=EFMkU_i8YI7TnrHwH-UU_zU7zMEBE6d7cytjzAUORrk,306
+aioinfluxdb/aiohttp_client.py,sha256=8r28lwVkqo-aD5nHL7GP8IMHBXWJYAIwyMudQYRVMn8,13058
+aioinfluxdb/client.py,sha256=H5DAMeEcrYrZ7tFwY6CMkkScrBWCFjT5jHBoQIpdIeE,5919
+aioinfluxdb/constants.py,sha256=g-oh9uhpK3ch7VkuI9pzWEaSA-LCm3IkK9tokKitQz0,634
+aioinfluxdb/csv_parser.py,sha256=lDZnFtLI0T-bjNy6vnqrL5Uxh6ruN9y-e-YCT-tszFc,11173
+aioinfluxdb/exceptions.py,sha256=AYc9Ry_S6qAhHe_Fy-zp9qlftUiO3TL3T4v6T6ZV0rg,516
+aioinfluxdb/flux_table.py,sha256=7wjHaLN4szrt5r75UkHFRyl0FbSFf9MdlcTap0OMNkY,4411
+aioinfluxdb/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aioinfluxdb/serializer.py,sha256=XpdlNDE3g2cTNWr5ZN13lLkiBbIX3wKPr6OEXO8FJeo,5633
+aioinfluxdb/types.py,sha256=vaWMWuwc_Xt7uKfX99IiMOYbNouhMAtJXsf45BhpWc8,5448
+aioinfluxdb-0.2.0.dist-info/LICENSE,sha256=AIGj0kXBQexctudWyKvAZRXPx57Eryyv8d0N1Ip8g7g,1070
+aioinfluxdb-0.2.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+aioinfluxdb-0.2.0.dist-info/METADATA,sha256=p-ow1Xn1-2xB4krAZTXXjBe_w9owuGvXbVxCy_bkpn4,7498
+aioinfluxdb-0.2.0.dist-info/RECORD,,
