@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: oneNeuronUploader
+Version: 0.1
+Summary: Its an auto video uploading library
+Home-page: https://github.com/Rishav-hub/Vimeo_Automation/tree/bappy
+Author: Bappy Ahmed
+Author-email: entbappy73@gmail.com
+License: MIT
+Keywords: oneNeuronUploader
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# Vimeo_Automation
+

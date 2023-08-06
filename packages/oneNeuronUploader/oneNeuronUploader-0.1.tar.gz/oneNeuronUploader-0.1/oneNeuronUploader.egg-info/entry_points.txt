@@ -1,0 +1,3 @@
+[console_scripts]
+neuron = oneNeuronUploader.main:start_app
+
