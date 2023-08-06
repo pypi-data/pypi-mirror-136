@@ -1,0 +1,4 @@
+networkx==2.6.3
+numpy==1.22.1
+scipy==1.7.3
+jieba==0.42.1
