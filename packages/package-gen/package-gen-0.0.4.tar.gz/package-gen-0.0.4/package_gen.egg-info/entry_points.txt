@@ -1,0 +1,3 @@
+[console_scripts]
+pk-gen = packagegenerator:main
+
