@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+logo.png
+meshtastic_theme.xml
+setup.py
+meshtastic_flasher/__init__.py
+meshtastic_flasher/installer.py
+meshtastic_flasher.egg-info/PKG-INFO
+meshtastic_flasher.egg-info/SOURCES.txt
+meshtastic_flasher.egg-info/dependency_links.txt
+meshtastic_flasher.egg-info/entry_points.txt
+meshtastic_flasher.egg-info/requires.txt
+meshtastic_flasher.egg-info/top_level.txt
