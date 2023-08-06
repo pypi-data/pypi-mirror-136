@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+cbpi4-PressureSensor/__init__.py
+cbpi4-PressureSensor/config.yaml
+cbpi4-PressureSensor/static/cbpi.png
+cbpi4-PressureSensor/static/index.html
+cbpi4-PressureSensor/static/style.css
+cbpi4_PressureSensor.egg-info/PKG-INFO
+cbpi4_PressureSensor.egg-info/SOURCES.txt
+cbpi4_PressureSensor.egg-info/dependency_links.txt
+cbpi4_PressureSensor.egg-info/requires.txt
+cbpi4_PressureSensor.egg-info/top_level.txt
