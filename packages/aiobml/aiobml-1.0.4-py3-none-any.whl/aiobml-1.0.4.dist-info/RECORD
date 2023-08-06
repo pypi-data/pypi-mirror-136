@@ -1,0 +1,10 @@
+aiobml/__init__.py,sha256=_R59Dafpw6Dmxb_69APXqJ4Bn8YH6U-2Un-HGvfOsuQ,53
+aiobml/client.py,sha256=ezT8PS4AseXLp_YPt4GEXgwseePD6ZzcGuM0amQO3n0,11427
+aiobml/core/__init__.py,sha256=srGRkDG5bOPC1Zz5nhCHXYJRPh1UtuPkZQNf6MfD39M,54
+aiobml/core/errors.py,sha256=mm__XGXpTJTSjBL2xQkxS3mkDaXUUZgFsn9P9j-Xw-k,1808
+aiobml/core/http.py,sha256=qZWiqWPcBEM2ZBh53bwBA7u_8IahqQUG2TMF2iCTMn0,13111
+aiobml-1.0.4.dist-info/LICENSE,sha256=N1Uew-FBo2DwJNC0If1aaZpLcYfmUH5wFDPu3UDC3B0,1095
+aiobml-1.0.4.dist-info/METADATA,sha256=EdpIZ82LhLgtPuyHXAJGUGSOJqWt_4SCvDpsgj3v14M,5020
+aiobml-1.0.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+aiobml-1.0.4.dist-info/top_level.txt,sha256=60EoeCyKh1HMNNHP0-V2-X8IiYmtce0I9voHjJ25EPQ,7
+aiobml-1.0.4.dist-info/RECORD,,
