@@ -1,0 +1,16 @@
+LICENSE.md
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+src/colorist/__init__.py
+src/colorist/background_bright_color.py
+src/colorist/background_color.py
+src/colorist/bright_color.py
+src/colorist/color.py
+src/colorist/effect.py
+src/colorist/version.py
+src/colorist.egg-info/PKG-INFO
+src/colorist.egg-info/SOURCES.txt
+src/colorist.egg-info/dependency_links.txt
+src/colorist.egg-info/top_level.txt
