@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: readimc
+Version: 0.6.0
+Summary: Read Imaging Mass Cytometry files
+Home-page: https://github.com/BodenmillerGroup/readimc
+Author: Jonas Windhager
+Author-email: jonas.windhager@uzh.ch
+License: MIT
+Keywords: Imaging Mass Cytometry,IMC
+Platform: UNKNOWN
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: imageio
+Requires-Dist: numpy
+Requires-Dist: pandas
+
+# readimc
+
+<a href="#"><img alt="Python" src="https://img.shields.io/pypi/pyversions/readimc" /></a>
+<a href="https://github.com/BodenmillerGroup/readimc/actions/workflows/build.yml" alt="Build"><img alt="Build" src="https://img.shields.io/github/workflow/status/BodenmillerGroup/readimc/build?label=build" /></a>
+<a href="https://pypi.org/project/readimc" alt="PyPI"><img alt="PyPI" src="https://img.shields.io/pypi/v/readimc" /></a>
+<a href="#"><img alt="Coverage" src="https://img.shields.io/codecov/c/github/BodenmillerGroup/readimc" /></a>
+<a href="https://bodenmillergroup.github.io/readimc" alt="Documentation"><img alt="Documentation" src="https://img.shields.io/github/workflow/status/BodenmillerGroup/readimc/docs?label=docs" /></a>
+<a href="https://github.com/BodenmillerGroup/readimc/issues" alt="Issues"><img alt="Issues" src="https://img.shields.io/github/issues/BodenmillerGroup/readimc" /></a>
+<a href="https://github.com/BodenmillerGroup/readimc/pulls" alt="Pull requests"><img alt="Pull requests" src="https://img.shields.io/github/issues-pr/BodenmillerGroup/readimc" /></a>
+<a href="https://github.com/BodenmillerGroup/readimc/blob/main/LICENSE" alt="License"><img alt="License" src="https://img.shields.io/github/license/BodenmillerGroup/readimc" /></a>
+
+Python package for reading Imaging Mass Cytometry files
+
+Documentation is available at https://bodenmillergroup.github.io/readimc
+
+
