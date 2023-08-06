@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+gcp_cloud_logger/__init__.py
+gcp_cloud_logger.egg-info/PKG-INFO
+gcp_cloud_logger.egg-info/SOURCES.txt
+gcp_cloud_logger.egg-info/dependency_links.txt
+gcp_cloud_logger.egg-info/requires.txt
+gcp_cloud_logger.egg-info/top_level.txt
+gcp_cloud_logger/core/__init__.py
+gcp_cloud_logger/core/cloud_logger.py
