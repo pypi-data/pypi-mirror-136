@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+SekBot/__init__.py
+SekBot.egg-info/PKG-INFO
+SekBot.egg-info/SOURCES.txt
+SekBot.egg-info/dependency_links.txt
+SekBot.egg-info/requires.txt
+SekBot.egg-info/top_level.txt
