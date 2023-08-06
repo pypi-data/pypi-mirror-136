@@ -1,0 +1,10 @@
+numpybd/__init__.py,sha256=aHekioqyEnza04plP9A0vTToV80txBsptavuPhWJmPY,437
+numpybd/loss.py,sha256=1yXS_EvtifIqiIHwW6idLGY-gaoVNWfCHwIEqwDZDLI,11140
+torchbd/__init__.py,sha256=kgTGsZNT2E-64PqDvSXUubMAZtEm0HKDM0PxeyE1tx8,439
+torchbd/loss.py,sha256=qsLKih_leFkamUK-n2Y_2GqofV8TkV_qjX3vtjEmjpA,17313
+torchbd/nn.py,sha256=v3K1-JL6x-38bpYnJKTWFb39CvslBU70pjlDSbjXhtg,15263
+beta_divergence_metrics-0.0.2.dist-info/LICENSE,sha256=gwWSX04GRTYf0F_8KrFECXmM7DRhg2jkBPcfkTWYjQ8,1522
+beta_divergence_metrics-0.0.2.dist-info/METADATA,sha256=YWRIoT-hHzHbCuhwYczvZdTarF-FHu0snUvOXtcJkm8,5415
+beta_divergence_metrics-0.0.2.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+beta_divergence_metrics-0.0.2.dist-info/top_level.txt,sha256=HQehFwnmWaffp6GECOJ4hwm9tCbkuH_sfksxxpbetj4,16
+beta_divergence_metrics-0.0.2.dist-info/RECORD,,
