@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+src/panel_vegafusion/__init__.py
+src/panel_vegafusion/update.py
+src/panel_vegafusion/utils.py
+src/panel_vegafusion/vegafusion_pane.py
+src/panel_vegafusion/vegafusion_pane_bokeh_ext.py
+src/panel_vegafusion.egg-info/PKG-INFO
+src/panel_vegafusion.egg-info/SOURCES.txt
+src/panel_vegafusion.egg-info/dependency_links.txt
+src/panel_vegafusion.egg-info/requires.txt
+src/panel_vegafusion.egg-info/top_level.txt
