@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+src/sapcli.egg-info/PKG-INFO
+src/sapcli.egg-info/SOURCES.txt
+src/sapcli.egg-info/dependency_links.txt
+src/sapcli.egg-info/top_level.txt
