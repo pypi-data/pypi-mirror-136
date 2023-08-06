@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: rna-seq-tools
+Version: 0.3.0
+Summary: simple functions for manipulating sequences and secondary structures in pandas dataframe format
+Home-page: https://github.com/jyesselm/seq_tools
+Author: Joe Yesselman
+Author-email: jyesselm@unl.edu
+License: UNKNOWN
+Keywords: seq_tools
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+License-File: LICENSE
+License-File: AUTHORS.rst
+
+=============================
+seq_tools
+=============================
+
+.. image:: https://badge.fury.io/py/seq_tools.png
+    :target: http://badge.fury.io/py/seq_tools
+
+.. image:: https://travis-ci.com/jyesselm/seq_tools.png?branch=main
+    :target: https://travis-ci.com/github/jyesselm/seq_tools
+
+.. image:: https://img.shields.io/badge/code%20style-black-000000.svg
+
+simple functions for manipulating sequences and secondary structures in pandas dataframe format
+
+
+Features
+--------
+
+* TODO
+
+
+
+
+Documentation
+-------------
+
+The full documentation is at http://seq_tools.rtfd.org.
+
+
+
+History
+-------
+
+0.1.0 (2021_05_21)
+++++++++++++++++++
+
+* First release on PyPI.
+
+

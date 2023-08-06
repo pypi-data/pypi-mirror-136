@@ -1,0 +1,3 @@
+[console_scripts]
+seq_tools = seq_tools.seq_tools:main
+
