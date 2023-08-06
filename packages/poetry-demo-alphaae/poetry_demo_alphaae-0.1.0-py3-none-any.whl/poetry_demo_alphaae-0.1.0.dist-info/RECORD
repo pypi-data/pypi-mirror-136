@@ -1,0 +1,5 @@
+poetry_demo_alphaae/__init__.py,sha256=2FJY5lkPUAPk_hmYo_HyzCQsXcSHMtbfCLrkVu49MNc,47
+poetry_demo_alphaae/main.py,sha256=GfdMZc6_SFyfsORrzWaCHHRNSm3DzooQmfPnJCQpnkk,74
+poetry_demo_alphaae-0.1.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+poetry_demo_alphaae-0.1.0.dist-info/METADATA,sha256=TwVHgIMGwJAYu-tBOamSz_MCe76J5vYJVKC3-1gdKpg,341
+poetry_demo_alphaae-0.1.0.dist-info/RECORD,,
