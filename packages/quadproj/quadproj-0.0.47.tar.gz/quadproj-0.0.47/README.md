@@ -1,0 +1,39 @@
+# quadproj
+
+A simple library to project a point onto a quadratic surface, or *quadric*.
+
+Please cite us if you use this package.
+
+## How to install quadproj?
+
+```python3
+python3 -m pip install quadproj
+```
+
+## How does quadproj works?
+
+Roughly speaking, the projection is obtained by computing exhaustively all KKT point from the optimization problem defining the projection. We show in [[1]](#anchor-1) that for non-cylindrical central quadrics, the solutions belong to the KKT points that consist in the intersection between:
+
+- a unique root of a nonlinear function on a specific interval;
+- a set of closed-form points.
+
+Either set can be empty but for a nonempty quadric, at least one is nonempty and contains (one of the) projections.
+
+The full explanation is provided in [[1]](#anchor-1).
+
+
+## How to use quadproj?
+
+The class ``Quadric`` from the `quadrics` module allows to create a *non-empty*, *non-cylindrical*, and *central* quadric.
+
+We can use the `project` function from the `project` module to find (one of) the projections
+of some point onto the quadric.
+
+
+## Dependencies
+
+See [requirements.txt](./requirements.txt).
+
+## [1]
+(2021) L. Van Hoorebeeck, P.-A. Absil and A. Papavasiliou, “Projection onto quadratic hypersurfaces”, submitted. ([preprint](https://perso.uclouvain.be/loic.vanhoorebeeck/_downloads/dc8ab520a768f81e13569c647c7553d7/OJMO_2022_preprint.pdf), [abstract/BibTex](https://perso.uclouvain.be/loic.vanhoorebeeck/abstracts/OJMO_2022.html))
+
