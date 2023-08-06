@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: ccrf
+Version: 0.0.2
+Summary: Linear-chain CRFs constrained to output from a regular language
+Home-page: https://github.com/person594/ccrf
+Author: Sean Papay
+Author-email: sean.papay@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/person594/ccrf/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Constrained CRFs
+
+This library provides a PyTorch implementation of RegCCRFs from the
+paper *Constraining Linear-chain CRFs to regular languages*.
+Proper documentation coming soon.
+
+## To Install
+```pip install ccrf```
+
+
