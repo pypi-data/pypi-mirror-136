@@ -1,0 +1,14 @@
+FastWARC.libs/liblz4-af1653fb.so.1.8.3,sha256=8PieEuq3o9hwVWfd-vwFBL0Cv1L8iAFUDbaSNJKjH_I,68576
+fastwarc/stream_io.cpython-39-x86_64-linux-gnu.so,sha256=Cu7x81Z1LpG6U1-xZIecjF0T-5FVNXcDlVaj7I6mYzA,1077152
+fastwarc/stream_io.pxd,sha256=2B4K24e5vIDG0ScwJd46DhEXb1L_3j7Sd7BGmP1Gk9Y,4268
+fastwarc/cli.py,sha256=qqvgVvv4gFfpwEPtoHxYIaZay0cK58DlkTakNXKGUik,19061
+fastwarc/warc.cpython-39-x86_64-linux-gnu.so,sha256=9KiJ8yzcIv-VCbYTasbY3FDCHKPj1tK_D8iLB7O0p1I,3337288
+fastwarc/warc.pxd,sha256=58fREAw1F13h5WBlN6UGP6Lokoesxzy2v6lzYcKuTFE,3526
+fastwarc/__init__.py,sha256=nnaFAC-2x0BhCKEJOeHnvwdIbeUW4YXyUb1oVzDdllY,750
+fastwarc/__init__.pxd,sha256=atGmpZoAgIja6HdW4SDRRJkKr143Zucm6Zg0-W1OdcE,580
+fastwarc/tools.cpython-39-x86_64-linux-gnu.so,sha256=S4owDDpz7DT2Srs66nOc5sqLiWsUTre0Hn4nDmDjkN0,1021416
+FastWARC-0.10.3.dist-info/WHEEL,sha256=FNUt4eBsrBVn_Yc5KG3aXtKE40X3uNZrbGLNCbVxyFw,148
+FastWARC-0.10.3.dist-info/RECORD,,
+FastWARC-0.10.3.dist-info/METADATA,sha256=2XQPxbzFC98jERoDLfD9FskT4B_saeII1bp8fWGCuxo,2892
+FastWARC-0.10.3.dist-info/top_level.txt,sha256=kd2NdQA_61TyRclx6gmvrHOEiEqZh8LDqGMxfmsOEDw,9
+FastWARC-0.10.3.dist-info/entry_points.txt,sha256=IW6T7e-kb8Wr7Jd1g3u6zzG5TRVPDbGb0izYCSPZQvY,48
