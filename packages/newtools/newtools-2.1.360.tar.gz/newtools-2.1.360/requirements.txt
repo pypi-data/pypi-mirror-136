@@ -1,0 +1,7 @@
+s3fs
+pandas
+boto3
+awsretry
+pyarrow
+chardet
+sqlparse
