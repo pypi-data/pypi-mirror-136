@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+.github/workflows/python-publish.yml
+fivem/__init__.py
+fivem/fivem.py
+fivem/player.py
+fivem/server.py
+fivem_api.egg-info/PKG-INFO
+fivem_api.egg-info/SOURCES.txt
+fivem_api.egg-info/dependency_links.txt
+fivem_api.egg-info/requires.txt
+fivem_api.egg-info/top_level.txt
