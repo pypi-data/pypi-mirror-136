@@ -1,0 +1,12 @@
+mdocfile/__init__.py,sha256=Ry5j-iPjS10xlMbZd1CWThIYwcbpl4o8Fo6MMvC8efY,27
+mdocfile/_version.py,sha256=cqMRlSvtXNenfrMB-M-Tt6_yTB4wzKdaO5USAZtNm0o,142
+mdocfile/functions.py,sha256=3yzQgrAAi48e_gAiXs4GrTLZ_drqrEzkG14lMX6YG_E,777
+mdocfile/global_data.py,sha256=TXgNglCn6M5JzlciBmqO7o7OmOLRzZfCOu-F6_Q-FAQ,1022
+mdocfile/mdoc.py,sha256=hsb0DdBWENddEBkHWFxOG_QpEzMWQcsMeetgecdqMu0,1058
+mdocfile/section_data.py,sha256=1ah5IsBNPGk9FGdPr8G17hnSqlu3V43uMR9UByRzjLM,3777
+mdocfile/utils.py,sha256=TCfVEFClZhdWpk9YLcGSwCfabMN21ZH2m4Sec-jkE04,740
+mdocfile-0.0.3.dist-info/LICENSE,sha256=tEUp1hBehHov1EqUVPm09_TlyKymwNcSBBwvu2ZPPMs,1513
+mdocfile-0.0.3.dist-info/METADATA,sha256=ZmmCdeATk2g3Mk76nt1eqgffGm9LgtYHAYf_t4-BwjQ,1938
+mdocfile-0.0.3.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+mdocfile-0.0.3.dist-info/top_level.txt,sha256=7aqwITV2qvKE9GF_ltejk4jrqdfhxx3CsjLbU5h45qE,9
+mdocfile-0.0.3.dist-info/RECORD,,
