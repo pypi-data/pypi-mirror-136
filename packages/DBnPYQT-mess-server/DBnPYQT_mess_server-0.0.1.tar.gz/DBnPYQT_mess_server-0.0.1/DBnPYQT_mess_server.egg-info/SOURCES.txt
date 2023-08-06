@@ -1,0 +1,9 @@
+setup.py
+DBnPYQT_mess_server.egg-info/PKG-INFO
+DBnPYQT_mess_server.egg-info/SOURCES.txt
+DBnPYQT_mess_server.egg-info/dependency_links.txt
+DBnPYQT_mess_server.egg-info/requires.txt
+DBnPYQT_mess_server.egg-info/top_level.txt
+server/__init__.py
+server/server_run
+server/server_start.py
