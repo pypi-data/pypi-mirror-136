@@ -1,0 +1,4 @@
+# 打包非py文件
+include *.py *.md
+recursive-include HTest/content *.yaml *.png
+
