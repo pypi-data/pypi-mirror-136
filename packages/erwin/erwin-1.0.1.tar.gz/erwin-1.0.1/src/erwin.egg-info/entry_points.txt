@@ -1,0 +1,3 @@
+[console_scripts]
+erwin = erwin.__main__:main
+
