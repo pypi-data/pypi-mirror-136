@@ -1,0 +1,14 @@
+README.md
+pyproject.toml
+setup.py
+tensorboard_plugin_3d/__init__.py
+tensorboard_plugin_3d/demo.py
+tensorboard_plugin_3d/plugin.py
+tensorboard_plugin_3d.egg-info/PKG-INFO
+tensorboard_plugin_3d.egg-info/SOURCES.txt
+tensorboard_plugin_3d.egg-info/dependency_links.txt
+tensorboard_plugin_3d.egg-info/entry_points.txt
+tensorboard_plugin_3d.egg-info/requires.txt
+tensorboard_plugin_3d.egg-info/top_level.txt
+tensorboard_plugin_3d/static/index.html
+tensorboard_plugin_3d/static/index.js
