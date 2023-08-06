@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: pinakinathc_py
+Version: 0.0.2
+Summary: A utility library.
+Home-page: http://www.pinakinathc.me
+Author: Pinaki Nath Chowdhury
+Author-email: mail@pinakinathc.me
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/pinakinathc/pinakinathc_py/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.5
+License-File: LICENSE
+
+UNKNOWN
+

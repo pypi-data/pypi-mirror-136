@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/pinakinathc_py/__init__.py
+src/pinakinathc_py/send_email.py
+src/pinakinathc_py.egg-info/PKG-INFO
+src/pinakinathc_py.egg-info/SOURCES.txt
+src/pinakinathc_py.egg-info/dependency_links.txt
+src/pinakinathc_py.egg-info/top_level.txt
+src/torchscope/__init__.py
+src/torchscope/helper.py
+src/torchscope/scope.py
