@@ -1,0 +1,9 @@
+QtPy
+cairosvg
+gpstime
+h5py
+numpy
+pyqtgraph
+python-dateutil
+pyyaml
+setproctitle
