@@ -1,0 +1,11 @@
+tiffslide/__init__.py,sha256=4wn7-Y0fdMOdBQxGxuc_-evZyhe_XwRUNVnMeyt6KhQ,1930
+tiffslide/_types.py,sha256=ewu41v-yZVLrQpZQAJ2MAZNCf9fRPz4q__Fb6h4-0CY,1477
+tiffslide/_version.py,sha256=YNd1dEdZGzG2MvXfaTQdmMYCLOQm-rV09_xmC5Hxu5Y,142
+tiffslide/deepzoom.py,sha256=U6o6mz3huv8UcfjzySeztwFCsTfS21kz4TDxHxAqLAA,11625
+tiffslide/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tiffslide/tiffslide.py,sha256=2n1r0H6MHM-KXVSIo7LPaG-RfG-2ZBu4Mb0AR3uUBxc,18526
+tiffslide-0.3.0.dist-info/LICENSE,sha256=JTxDCMDKQ6UKpjYXyC19lJ5Umtbixyv_fm-qwqVFNOA,1549
+tiffslide-0.3.0.dist-info/METADATA,sha256=KBGVyxDpOXqGE8-B3z1bTONVXc0A8e_jloM1aYUBQJk,4894
+tiffslide-0.3.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+tiffslide-0.3.0.dist-info/top_level.txt,sha256=17qWqBGZeNcLz6F6M9R4CHgF9HG9MA8Ij60IjtNoHEc,10
+tiffslide-0.3.0.dist-info/RECORD,,
