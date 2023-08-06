@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+versioneer.py
+Flask_Redmail.egg-info/PKG-INFO
+Flask_Redmail.egg-info/SOURCES.txt
+Flask_Redmail.egg-info/dependency_links.txt
+Flask_Redmail.egg-info/requires.txt
+Flask_Redmail.egg-info/top_level.txt
+flask_redmail/__init__.py
+flask_redmail/_version.py
+flask_redmail/test/__init__.py
+flask_redmail/test/conftest.py
+flask_redmail/test/test_creation.py
+flask_redmail/test/test_send.py
