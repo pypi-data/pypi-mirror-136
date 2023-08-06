@@ -1,0 +1,6 @@
+peasy_logs/__init__.py,sha256=8D5a8oKgqd6WA1RUkiKCn4l_PVemtyuckxQut0vDHXM,20
+peasy_logs/main.py,sha256=FAYC7hgZbpW8H99-ejZi5C-tlWPrMqvrHlRRXqDVB04,1870
+peasy_logs/tests/test_capturing.py,sha256=MFI83aMiwSqq3RECQEkxzW_K9Ts-r3M3O0wtY4eUwiw,245
+peasy_logs-0.1.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+peasy_logs-0.1.0.dist-info/METADATA,sha256=nRDoPfoB320O8aCS2eK3pqMT6xhReBFTtxZstDux3ag,559
+peasy_logs-0.1.0.dist-info/RECORD,,
