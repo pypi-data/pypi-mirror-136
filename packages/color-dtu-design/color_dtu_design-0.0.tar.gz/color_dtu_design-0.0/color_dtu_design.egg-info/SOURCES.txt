@@ -1,0 +1,10 @@
+setup.cfg
+setup.py
+color_dtu_design/__init__.py
+color_dtu_design/color_design.py
+color_dtu_design/test.py
+color_dtu_design.egg-info/PKG-INFO
+color_dtu_design.egg-info/SOURCES.txt
+color_dtu_design.egg-info/dependency_links.txt
+color_dtu_design.egg-info/not-zip-safe
+color_dtu_design.egg-info/top_level.txt
