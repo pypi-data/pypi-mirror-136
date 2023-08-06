@@ -1,0 +1,9 @@
+LICENSE
+setup.cfg
+setup.py
+potaahto/__init__.py
+potaahto/symbols.py
+potaahto.egg-info/PKG-INFO
+potaahto.egg-info/SOURCES.txt
+potaahto.egg-info/dependency_links.txt
+potaahto.egg-info/top_level.txt
