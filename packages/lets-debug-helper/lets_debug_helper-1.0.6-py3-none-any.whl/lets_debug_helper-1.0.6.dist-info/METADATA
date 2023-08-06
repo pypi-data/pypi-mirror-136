@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: lets-debug-helper
+Version: 1.0.6
+Summary: This is a cli tool that interacts with the Let's Debug API
+Home-page: https://github.com/jediknight112/lets-debug-helper
+Author: Jeffrey Crane
+Author-email: jediknight11206@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: argparse (==1.4.0)
+Requires-Dist: certifi (==2021.10.8)
+Requires-Dist: charset-normalizer (==2.0.10)
+Requires-Dist: idna (==3.3)
+Requires-Dist: mock (==4.0.3)
+Requires-Dist: parameterized (==0.8.1)
+Requires-Dist: requests (==2.27.1)
+Requires-Dist: urllib3 (==1.26.8)
+
+[![CI](https://github.com/jediknight112/lets-debug-helper/actions/workflows/main.yml/badge.svg)](https://github.com/jediknight112/lets-debug-helper/actions/workflows/main.yml)
+[![Build Status](https://travis-ci.com/jediknight112/lets-debug-helper.svg?branch=main)](https://travis-ci.com/jediknight112/lets-debug-helper)
+[![Coverage Status](https://coveralls.io/repos/github/jediknight112/lets-debug-helper/badge.svg?branch=main)](https://coveralls.io/github/jediknight112/lets-debug-helper?branch=main)
+# lets-debug-helper
+This is a cli tool that interacts with the Let's Debug API
+
+The API homepage can be found at https://letsdebug.net/
+
+To install this package:
+
+```
+pip install lets-debug-helper
+```
+
+# Usage
+
+```
+lets-debug domain.com
+```
+
+
