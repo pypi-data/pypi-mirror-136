@@ -1,0 +1,12 @@
+toml
+tomlkit
+requests
+python-dateutil
+websockets
+packaging
+
+[:platform_system == "Darwin"]
+pyobjc
+
+[:platform_system == "Windows"]
+pywin32
