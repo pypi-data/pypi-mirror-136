@@ -1,0 +1,6 @@
+setup.cfg
+setup.py
+jw_nx.egg-info/PKG-INFO
+jw_nx.egg-info/SOURCES.txt
+jw_nx.egg-info/dependency_links.txt
+jw_nx.egg-info/top_level.txt
