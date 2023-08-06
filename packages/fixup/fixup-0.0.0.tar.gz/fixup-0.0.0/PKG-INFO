@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: fixup
+Version: 0.0.0
+Summary: Automatically add and remove python import statements
+Author: Jasha Sommer-Simpson
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: libcst
+Requires-Dist: pytest >=2.7.3 ; extra == "test"
+Requires-Dist: pylint ; extra == "test"
+Requires-Dist: pyflakes ; extra == "test"
+Requires-Dist: mypy ; extra == "test"
+Requires-Dist: pyright ; extra == "test"
+Requires-Dist: black ; extra == "test"
+Requires-Dist: isort ; extra == "test"
+Provides-Extra: test
+
+# `fixup`: Automatically add and remove python import statements
+
+The goal is that running `fixup my_file.py` will automatically add or remove
+import statements to or from `my_file.py`. This project is inspired by
+[autoimport](https://github.com/lyz-code/autoimport), with the key difference
+that manipulation of source code will be done using abstract syntax trees
+instead of regular expressions.
+
+Currently this tool pre-alpha.
+
