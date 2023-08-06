@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/tp2ctl/__init__.py
+src/tp2ctl/tp2ctl.py
+src/tp2ctl.egg-info/PKG-INFO
+src/tp2ctl.egg-info/SOURCES.txt
+src/tp2ctl.egg-info/dependency_links.txt
+src/tp2ctl.egg-info/entry_points.txt
+src/tp2ctl.egg-info/top_level.txt
