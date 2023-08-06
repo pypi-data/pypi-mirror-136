@@ -1,0 +1,5 @@
+
+console_scripts =
+knps = knps.main
+
+'console_scripts': ['funniest-joke=funniest.command_line:main']
