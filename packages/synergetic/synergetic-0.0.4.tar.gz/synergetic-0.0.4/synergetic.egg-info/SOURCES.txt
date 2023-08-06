@@ -1,0 +1,15 @@
+.cfg
+LICENSE
+setup.py
+synergetic/__init__.py
+synergetic/decorators.py
+synergetic/guide.py
+synergetic/synergetic_session.py
+synergetic.egg-info/PKG-INFO
+synergetic.egg-info/SOURCES.txt
+synergetic.egg-info/dependency_links.txt
+synergetic.egg-info/top_level.txt
+synergetic/Attendance/Attendance.py
+synergetic/Attendance/__init__.py
+synergetic/School/School.py
+synergetic/School/__init__.py

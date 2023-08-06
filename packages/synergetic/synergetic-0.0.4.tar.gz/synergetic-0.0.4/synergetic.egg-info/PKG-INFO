@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: synergetic
+Version: 0.0.4
+Summary: An interface for working with the Synergetic Database
+Home-page: https://github.com/mitchr1598/synergetic
+Author: Mitchell Reid
+Author-email: mitchr1598@gmail.com
+License: MIT license
+Keywords: synergetic
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.9
+License-File: LICENSE
+
+UNKNOWN
+
