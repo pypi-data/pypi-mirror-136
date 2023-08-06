@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/EasyThreadings.py
+src/EasyThreadings/More.py
+src/EasyThreadings.egg-info/PKG-INFO
+src/EasyThreadings.egg-info/SOURCES.txt
+src/EasyThreadings.egg-info/dependency_links.txt
+src/EasyThreadings.egg-info/top_level.txt
