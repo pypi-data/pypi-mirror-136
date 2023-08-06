@@ -1,0 +1,14 @@
+README.md
+setup.py
+ocrd_page_to_alto/__init__.py
+ocrd_page_to_alto/cli.py
+ocrd_page_to_alto/convert.py
+ocrd_page_to_alto/styles.py
+ocrd_page_to_alto/utils.py
+ocrd_page_to_alto.egg-info/PKG-INFO
+ocrd_page_to_alto.egg-info/SOURCES.txt
+ocrd_page_to_alto.egg-info/dependency_links.txt
+ocrd_page_to_alto.egg-info/entry_points.txt
+ocrd_page_to_alto.egg-info/requires.txt
+ocrd_page_to_alto.egg-info/top_level.txt
+tests/assets/__init__.py
