@@ -1,0 +1,5 @@
+julia
+numpy
+pandas
+sympy
+scikit-learn
