@@ -1,0 +1,5 @@
+python>=3.7,<3.10
+mesmer
+openscm-runner>=0.6
+scmdata
+xarray
