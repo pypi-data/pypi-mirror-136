@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: pygenda
+Version: 0.2.0
+Summary: An agenda application inspired by Agenda programs on Psion PDAs.
+Home-page: https://github.com/semiprime/pygenda
+Author: Matthew Lewis
+Author-email: pygenda@semiprime.com
+License: GPLv3 only
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Environment :: Handhelds/PDA's
+Classifier: Environment :: X11 Applications :: GTK
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Office/Business :: Scheduling
+Requires-Python: >=3.5
+License-File: COPYING
+
+UNKNOWN
+
