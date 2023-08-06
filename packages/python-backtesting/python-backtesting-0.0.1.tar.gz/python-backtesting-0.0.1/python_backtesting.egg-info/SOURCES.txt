@@ -1,0 +1,7 @@
+README.md
+python-backtesting.py
+setup.py
+python_backtesting.egg-info/PKG-INFO
+python_backtesting.egg-info/SOURCES.txt
+python_backtesting.egg-info/dependency_links.txt
+python_backtesting.egg-info/top_level.txt
