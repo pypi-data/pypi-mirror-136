@@ -1,0 +1,7 @@
+mylogging.config module
+=======================
+
+.. automodule:: mylogging.config
+   :members:
+   :undoc-members:
+   :show-inheritance:

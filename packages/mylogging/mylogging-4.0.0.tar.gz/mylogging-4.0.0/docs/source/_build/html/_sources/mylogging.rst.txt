@@ -1,0 +1,19 @@
+mylogging package
+=================
+
+Submodules
+----------
+
+.. toctree::
+   :maxdepth: 4
+
+   mylogging.config
+   mylogging.misc
+
+Module contents
+---------------
+
+.. automodule:: mylogging
+   :members:
+   :undoc-members:
+   :show-inheritance:

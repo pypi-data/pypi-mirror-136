@@ -1,0 +1,5 @@
+My python warn-logging module. It log to console or it can log to file if configured.
+
+1) It's automatically colorized
+2) It's possible to control logs and warnings behaviour (ignore, once, always) as in warnings.
+3) It's possible to filter messages by level (INFO, DEBUG, WARNING, ERROR, CRITICAL)

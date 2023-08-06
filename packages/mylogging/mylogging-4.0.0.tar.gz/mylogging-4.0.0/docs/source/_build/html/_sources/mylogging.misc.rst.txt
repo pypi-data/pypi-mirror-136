@@ -1,0 +1,7 @@
+mylogging.misc module
+=====================
+
+.. automodule:: mylogging.misc
+   :members:
+   :undoc-members:
+   :show-inheritance:

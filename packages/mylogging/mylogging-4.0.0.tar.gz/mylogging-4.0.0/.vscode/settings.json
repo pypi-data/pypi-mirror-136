@@ -1,0 +1,4 @@
+{
+  "python.analysis.extraPaths": ["tests", "mylogging", "../mypythontools", "../mydatapreprocessing"],
+  "restructuredtext.confPath": "${workspaceFolder}\\docs\\source"
+}
