@@ -1,0 +1,15 @@
+PyGithub==1.*
+requests==2.*
+slackclient==2.*
+typing_extensions
+woodchips==0.2.*
+
+[dev]
+black
+coveralls==3.*
+flake8
+isort
+mypy
+pytest==6.*
+pytest-cov==2.*
+types-requests
