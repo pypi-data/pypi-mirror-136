@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: azure-telemetry
+Version: 0.1.0
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: RajamannarAanjaram
+Author-email: rajamannaraanjaram@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.8,<4.0
+License-File: LICENSE
+
+This release can mount an Azure storage account of any type into Databricks using Keyvault and also extends in logging the application metrics.
+
+

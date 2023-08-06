@@ -1,0 +1,12 @@
+LICENSE
+README.txt
+pyproject.toml
+setup.py
+azure_telemetry/__init__.py
+azure_telemetry/logger.py
+azure_telemetry/storage.py
+azure_telemetry.egg-info/PKG-INFO
+azure_telemetry.egg-info/SOURCES.txt
+azure_telemetry.egg-info/dependency_links.txt
+azure_telemetry.egg-info/requires.txt
+azure_telemetry.egg-info/top_level.txt
