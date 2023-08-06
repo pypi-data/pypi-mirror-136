@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "ytdl_gui"
+version = "0.1.0"
+description = ""
+authors = ["sleepntsheep"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+yt-dlp = "^2022.1.21"
+PyGObject = "^3.42.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+ytdl-gui = "ytdl_gui:main"
