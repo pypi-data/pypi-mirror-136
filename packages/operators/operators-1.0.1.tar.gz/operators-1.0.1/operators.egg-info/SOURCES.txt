@@ -1,0 +1,8 @@
+setup.py
+main/__init__.py
+main/divide.py
+main/multiply.py
+operators.egg-info/PKG-INFO
+operators.egg-info/SOURCES.txt
+operators.egg-info/dependency_links.txt
+operators.egg-info/top_level.txt
