@@ -1,0 +1,3 @@
+[console_scripts]
+wecom = wecom.clis.cli:cli
+
