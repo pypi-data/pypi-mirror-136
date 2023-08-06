@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+django_bootstrap_breadcrumbs/__init__.py
+django_bootstrap_breadcrumbs/templates/django_bootstrap_breadcrumbs/bootstrap2.html
+django_bootstrap_breadcrumbs/templates/django_bootstrap_breadcrumbs/bootstrap3.html
+django_bootstrap_breadcrumbs/templates/django_bootstrap_breadcrumbs/bootstrap4.html
+django_bootstrap_breadcrumbs/templates/django_bootstrap_breadcrumbs/bootstrap5.html
+django_bootstrap_breadcrumbs/templatetags/__init__.py
+django_bootstrap_breadcrumbs/templatetags/django_bootstrap_breadcrumbs.py
+django_bootstrap_breadcrumbs2.egg-info/PKG-INFO
+django_bootstrap_breadcrumbs2.egg-info/SOURCES.txt
+django_bootstrap_breadcrumbs2.egg-info/dependency_links.txt
+django_bootstrap_breadcrumbs2.egg-info/not-zip-safe
+django_bootstrap_breadcrumbs2.egg-info/requires.txt
+django_bootstrap_breadcrumbs2.egg-info/top_level.txt
