@@ -1,0 +1,3 @@
+[console_scripts]
+gfw = gfw.gfw:main
+
