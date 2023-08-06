@@ -1,0 +1,164 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+PyEFVLib/Boundary.py
+PyEFVLib/BoundaryConditions.py
+PyEFVLib/CsvSaver.py
+PyEFVLib/Element.py
+PyEFVLib/Facet.py
+PyEFVLib/Grid.py
+PyEFVLib/GridData.py
+PyEFVLib/InnerFace.py
+PyEFVLib/LinearSystem.py
+PyEFVLib/MSHReader.py
+PyEFVLib/MeshioSaver.py
+PyEFVLib/OuterFace.py
+PyEFVLib/Point.py
+PyEFVLib/ProblemData.py
+PyEFVLib/Region.py
+PyEFVLib/Saver.py
+PyEFVLib/Shape.py
+PyEFVLib/Solver.py
+PyEFVLib/Vertex.py
+PyEFVLib/VtmSaver.py
+PyEFVLib/VtuSaver.py
+PyEFVLib/XDMFReader.py
+PyEFVLib/__init__.py
+PyEFVLib.egg-info/PKG-INFO
+PyEFVLib.egg-info/SOURCES.txt
+PyEFVLib.egg-info/dependency_links.txt
+PyEFVLib.egg-info/requires.txt
+PyEFVLib.egg-info/top_level.txt
+apps/fixed_stress.py
+apps/geomechanics.py
+apps/heat_transfer.py
+apps/navierStokes.py
+apps/ns.py
+apps/stress_equilibrium.py
+apps/converters/csv_msh_to_xdmf.py
+apps/converters/csv_to_cgns.py
+apps/converters/msh_to_vtk.py
+apps/csr/app_linear_system.py
+apps/csr/app_reader.py
+apps/csr/app_stencil.py
+apps/csr/heat_transfer_csr.py
+apps/csr/stress_equilibrium_csr.py
+meshes/geo/1d.geo
+meshes/geo/Box.geo
+meshes/geo/MoreFine.geo
+meshes/geo/column.geo
+meshes/geo/dualRegion.geo
+meshes/geo/eight_sphere.geo
+meshes/geo/eight_sphere_fine.msh
+meshes/geo/new.geo
+meshes/geo/new.msh
+meshes/geo/truss.geo
+meshes/geo/truss2.geo
+meshes/geo/vug.geo
+meshes/msh/2D/10x10.msh
+meshes/msh/2D/1d.msh
+meshes/msh/2D/2strip_footing_eq_spacing.msh
+meshes/msh/2D/2strip_footing_uneq_spacing_x.msh
+meshes/msh/2D/2strip_footing_uneq_spacing_xy.msh
+meshes/msh/2D/3x3 tri.msh
+meshes/msh/2D/3x3.msh
+meshes/msh/2D/Fine.msh
+meshes/msh/2D/MoreFine.msh
+meshes/msh/2D/Square.msh
+meshes/msh/2D/column.geo
+meshes/msh/2D/column.msh
+meshes/msh/2D/column6.geo
+meshes/msh/2D/column6.msh
+meshes/msh/2D/column_cartesian.msh
+meshes/msh/2D/column_tri.msh
+meshes/msh/2D/convert-2D-triangle-msh.py
+meshes/msh/2D/dualRegion.msh
+meshes/msh/2D/output.msh
+meshes/msh/2D/polar.msh
+meshes/msh/2D/rectangle 30x30.msh
+meshes/msh/2D/rectangle.msh
+meshes/msh/2D/strip_footing_eq_spacing.msh
+meshes/msh/2D/strip_footing_super_fine.msh
+meshes/msh/2D/strip_footing_uneq_spacing_x.msh
+meshes/msh/2D/strip_footing_uneq_spacing_xy.msh
+meshes/msh/2D/test.msh
+meshes/msh/2D/truss.msh
+meshes/msh/2D/truss2.msh
+meshes/msh/2D/vug 15x15.msh
+meshes/msh/2D/vug 30x30.msh
+meshes/msh/2D/vug 3x3.msh
+meshes/msh/3D/Box.msh
+meshes/msh/3D/Hexas.msh
+meshes/msh/3D/Hexas3x3x3.msh
+meshes/msh/3D/Hexas4x4x4.msh
+meshes/msh/3D/Hexas5x5x5.msh
+meshes/msh/3D/Hexas6x6x6.msh
+meshes/msh/3D/Prisms.msh
+meshes/msh/3D/Pyrams.msh
+meshes/msh/3D/Tetras.msh
+meshes/msh/3D/column_hexas.msh
+meshes/msh/3D/eight_sphere.msh
+meshes/scripts/3x3.msh
+meshes/scripts/cartesian.py
+meshes/scripts/eight_sphere.py
+meshes/scripts/output.msh
+meshes/scripts/strip_footing_mesh.py
+meshes/scripts/uneq_strip_footing_x.py
+meshes/scripts/uneq_strip_footing_xy.py
+meshes/xdmf/3x3 tri.h5
+meshes/xdmf/3x3 tri.xdmf
+meshes/xdmf/3x3 tri_facets.h5
+meshes/xdmf/3x3 tri_facets.xdmf
+meshes/xdmf/3x3 tri_physical_region.h5
+meshes/xdmf/3x3 tri_physical_region.xdmf
+meshes/xdmf/3x3 tri_zone_list.xml
+meshes/xdmf/Square.h5
+meshes/xdmf/Square.xdmf
+meshes/xdmf/Square_facets.h5
+meshes/xdmf/Square_facets.xdmf
+meshes/xdmf/Square_physical_region.h5
+meshes/xdmf/Square_physical_region.xdmf
+meshes/xdmf/Square_zone_list.xml
+meshes/xdmf/Subdomains.h5
+meshes/xdmf/Subdomains.xdmf
+meshes/xdmf/Subdomains_facets.h5
+meshes/xdmf/Subdomains_facets.xdmf
+meshes/xdmf/Subdomains_physical_region.h5
+meshes/xdmf/Subdomains_physical_region.xdmf
+meshes/xdmf/Subdomains_zone_list.xml
+meshes/xdmf/dualRegion.h5
+meshes/xdmf/dualRegion.xdmf
+meshes/xdmf/dualRegion_facets.h5
+meshes/xdmf/dualRegion_facets.xdmf
+meshes/xdmf/dualRegion_physical_region.h5
+meshes/xdmf/dualRegion_physical_region.xdmf
+meshes/xdmf/dualRegion_zone_list.xml
+workspace/colorplot.py
+workspace/geomechanics/cryer/cryer.py
+workspace/geomechanics/grad and div reconstructions/reconstruction.py
+workspace/geomechanics/grad and div reconstructions/reconstruction2.py
+workspace/geomechanics/grad and div reconstructions/reconstruction3.py
+workspace/geomechanics/mandel/1_mandel.py
+workspace/geomechanics/mandel/4_mandel.py
+workspace/geomechanics/mandel/5_mandel.py
+workspace/geomechanics/strip_footing/7_strip_footing.py
+workspace/geomechanics/strip_footing/log.txt
+workspace/geomechanics/strip_footing/plot.py
+workspace/geomechanics/terzaghi/1_terzaghi_sg_dr.py
+workspace/geomechanics/terzaghi/2_terzaghi_sg_dr_3D.py
+workspace/geomechanics/terzaghi/3_terzaghi_cg_dr_2D.py
+workspace/geomechanics/terzaghi/4_terzaghi_cg_dr_2D.py
+workspace/geomechanics/terzaghi/6_terzaghi_cg_dr.py
+workspace/geomechanics/terzaghi/7_terzaghi_cg_dr.py
+workspace/geomechanics/terzaghi/teste.py
+workspace/ns/ns.py
+workspace/ns/ns2.py
+workspace/ns/ns3.py
+workspace/ns/ns_gauss_seidel.py
+workspace/ns/ns_gustavo_choaire.py
+workspace/ns/teste_herminio.py
+workspace/vel/a.py
+workspace/vel/b.py
+workspace/vel/geomechanics.py
+workspace/vel/readMeshes.py
