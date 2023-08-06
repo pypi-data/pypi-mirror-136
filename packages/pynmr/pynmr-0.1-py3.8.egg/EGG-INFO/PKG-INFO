@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: pynmr
+Version: 0.1
+Summary: Parse and Prosess NMR data.
+Home-page: http://github.com/bennomeier/pyNMR
+Author: Benno Meier
+Author-email: meier.benno@gmail.com
+License: MIT
+Description: pyNMR
+        =============
+        
+        pyNMR is a set of python modules to parse, process, analyze and visualize NMR data.
+        
+        
+        
+        Installation
+        ------------
+        
+        pyNMR is available at pip. It may be installed
+        with
+        
+        >>> pip install pynmr
+        
+        or with
+        
+        >>> easy_install pynmr
+        
+        
+        Usage
+        ------------
+        To import a Bruker dataset instantiate an nmr Data object:
+        
+        >>> import pynmr
+        >>> path = "pathToTopSpin/"
+        >>> data = 
+        
+Keywords: pyNMR NMR TopSpin NTNMR Magritek
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Topic :: Scientific/Engineering :: Physics
+Description-Content-Type: text/markdown
