@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: squish
+Version: 0.1.6
+Summary: squish is Python program which perform simulations for the flow of 'soft' or 'compressible' objects under some energy in a periodic domain.
+Home-page: https://github.com/ksjdragon/squish
+Author: Kenneth Jao
+Author-email: ksjdragon@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/ksjdragon/squish/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+Squish: Soft Packing Simulations
+================================
+
+**Squish** is a Python library that handles simulations for the flow of 'soft' or 'compressible' objects,
+under some energy in a *periodic* domain. The gradient flow of the objects are simulated and is able to be saved and rendered into diagrams. **Squish** also provides simple to use scripts for basic usage, as well as a simple API for more advanced functionality.
+
+Fast parallelized Cython code is used to compute the simulations efficienctly. Also, `NumPy <https://numpy.org>`_ arrays are used, enabling easy integratation with the standard scientific Python ecosystem.
+
+Resources
+---------
+
+- `Documentation <https://squish.readthedocs.io>`_: Examples, guides, and **Squish** API.
+- `GitHub repository <https://github.com/ksjdragon/squish>`_: View and download the **Squish** source code.
+- `Issue tracker <https://github.com/ksjdragon/squish/issues>`_: Report issues or request features for **Squish**.
+
+
+Installation
+------------
+The simplest way to install **Squish** is to use ``pip``:
+
+.. code-block:: bash
+
+   (.venv) /path/to/squish: pip install squish
+
+License
+-------
+This project uses `GNU AGPLv3.0 <https://choosealicense.com/licenses/agpl-3.0/>`_.
+
+Support and Contribution
+------------------------
+Feel free to visit our repository on `GitHub <https://github.com/ksjdragon/squish>`_ for source code of this library. Any issues or bugs may be reported at  the `issue tracker <https://github.com/ksjdragon/squish/issues>`_. All contributions to **Squish** are welcome!
+
