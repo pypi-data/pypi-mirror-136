@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: espial
+Version: 0.2.0
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: Uzay-G
+Author-email: halcyon@disroot.org
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+License-File: LICENSE
+Requires-Dist: spacy
+Requires-Dist: numpy
+Requires-Dist: flask
+Requires-Dist: click
+Requires-Dist: networkx
+Requires-Dist: html2text
+Requires-Dist: readability-lxml
+Requires-Dist: requests
+Requires-Dist: flask-cors
+
+UNKNOWN
+
