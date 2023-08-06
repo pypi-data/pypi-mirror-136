@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: syntok
+Version: 1.4.1
+Summary: Text tokenization and sentence segmentation (segtok v2).
+License: MIT
+Author: Florian Leitner
+Author-email: me@fnl.es
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: regex (>2016)
