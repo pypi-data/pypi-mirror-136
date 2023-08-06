@@ -1,0 +1,12 @@
+spacy_wrap/__init__.py,sha256=92victOzlaQpYt2QEFH-gliWa9fKRXbIUmQw5aME3Ps,212
+spacy_wrap/about.py,sha256=LRdTKJXYpVQCGuDlJtA47I08Vp509an6RlvMTJo4tC8,185
+spacy_wrap/architectures.py,sha256=4Y0tmkJSzYYc6vCnCyHRN-BumawKD1JxIDMCtbgrXAc,2515
+spacy_wrap/pipeline_component.py,sha256=ClFmLgGT_xqHvT1XG3bPF-KQrCW9XTExv3q2Z4kZXEo,7744
+spacy_wrap/util.py,sha256=7AJsDfZCiwnsrZIDc1HXYlSTjE_82NlsuH_Pe7VJsWI,2135
+spacy_wrap/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+spacy_wrap/tests/test_clf_transformer.py,sha256=SENendpbQtv5QMo-iCHXMrSZVxuRMwyrhTX8tJuz7X0,616
+spacy_wrap-0.0.3.dist-info/METADATA,sha256=Tl4v5SIf1K0a9RhZ9Gm-84scjILgAIJznvl95vtKmzg,7782
+spacy_wrap-0.0.3.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+spacy_wrap-0.0.3.dist-info/entry_points.txt,sha256=_3PDxAwsMpN-mtEYxrYnmIiB4V6X08_dJEpbe_EVfJY,220
+spacy_wrap-0.0.3.dist-info/top_level.txt,sha256=UQ9KuOMaFBejqZkrCoKhRTf93h-V56Y_wGBcXbQeXGI,11
+spacy_wrap-0.0.3.dist-info/RECORD,,
