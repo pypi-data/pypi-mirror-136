@@ -1,0 +1,9 @@
+wsipc/__init__.py,sha256=nIy8uoIkH8DMMK3YXOLfkWlCaNOcnEjsl9XJSrOZrdI,148
+wsipc/client.py,sha256=CBFQTBV1-pfk4dOd3BskSVqx8AoykaDFOZt8hKwJ6J0,6155
+wsipc/enums.py,sha256=-kUhh6GjUZwuBna1ZCU4VzXRIeYzZMqUc1ZhEHExFPU,108
+wsipc/server.py,sha256=A0QxycW146MqvhzVGWLDD8duJHhDt-NSEpslJxjOSWI,6795
+wsipc/utils.py,sha256=5pM-ffbgHL5adZX0bNKk_6GsGMo2QqH-NbR4QezDvvQ,384
+wsipc-0.0.3.dist-info/LICENSE,sha256=yuCKmDKmBN3HCG8j1AAxNwc2Gl0hIjHwuDWy30sWVuM,1066
+wsipc-0.0.3.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+wsipc-0.0.3.dist-info/METADATA,sha256=0RKzdycg5eQFtN2z5D71fuJhPe5sqBQarNK7hJlMskE,1339
+wsipc-0.0.3.dist-info/RECORD,,
