@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: ptCrypt
+Version: 0.0.6
+Summary: Cryptographic and cryptography related algorithms implemented with pure Python
+Home-page: https://github.com/0awawa0/ptCrypt
+Author: awawa
+Author-email: mail.0awawa0@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/0awawa0/ptCrypt/archive/refs/tags/0.0.6.tar.gz
+Description: UNKNOWN
+Keywords: Cryptography
+Platform: UNKNOWN
