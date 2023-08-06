@@ -1,0 +1,4 @@
+docutils>=0.12
+wxPython
+watchdog>=0.9
+colorama>=0.3.7
