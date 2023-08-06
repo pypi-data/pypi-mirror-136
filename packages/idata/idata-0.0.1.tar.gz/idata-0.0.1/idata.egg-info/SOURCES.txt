@@ -1,0 +1,15 @@
+CONTRIBUTING.md
+LICENSE
+MANIFEST.in
+README.md
+settings.ini
+setup.py
+idata/__init__.py
+idata/_nbdev.py
+idata/core.py
+idata.egg-info/PKG-INFO
+idata.egg-info/SOURCES.txt
+idata.egg-info/dependency_links.txt
+idata.egg-info/entry_points.txt
+idata.egg-info/not-zip-safe
+idata.egg-info/top_level.txt
