@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: argparse-node
+Version: 0.0.3
+Summary: A minimal multi-level argument parser for your Python cli apps.
+Home-page: https://github.com/enhuiz/argparse_node
+Author: enhuiz
+Author-email: niuzhe.nz@outlook.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.7.0
+Description-Content-Type: text/markdown
+
+# Argparse Node
+
+> A minimal multi-level argument parser for your python CLI apps.
+
+## Installation
+
+From PyPI:
+
+```
+pip install argparse-node
+```
+
+From Github:
+
+```
+pip install git+https://github.com/enhuiz/argparse-node.git
+```
+
+## Run an example
+
+```
+python -m example.entry show hello
+python -m example.entry wohs hello
+python -m example.entry sub_example show hello
+python -m example.entry sub_example wohs hello
+python -m example.entry --verbose show hello
+python -m example.entry --help
+```
+
+See `example/` for details.
+
+
