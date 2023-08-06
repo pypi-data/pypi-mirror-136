@@ -1,0 +1,3 @@
+[console_scripts]
+dooti=dooti.cli:cli
+
