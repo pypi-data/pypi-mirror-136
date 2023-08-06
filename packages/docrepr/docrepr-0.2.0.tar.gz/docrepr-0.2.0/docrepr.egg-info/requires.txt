@@ -1,0 +1,16 @@
+docutils
+jinja2
+sphinx>=1.1
+
+[plot]
+matplotlib>=2.2.4
+
+[test]
+ipython
+matplotlib>=2.2.4
+numpy
+pytest>=6.0.0
+pytest-asyncio
+
+[visual_test]
+playwright
