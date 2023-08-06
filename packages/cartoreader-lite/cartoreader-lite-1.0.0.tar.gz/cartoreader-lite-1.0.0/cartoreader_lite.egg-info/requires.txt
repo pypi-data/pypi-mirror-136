@@ -1,0 +1,15 @@
+numpy
+pyvista>=0.33
+vtk
+pandas
+scipy
+trimesh
+rtree
+
+[docs]
+sphinx
+pydata_sphinx_theme
+
+[tests]
+pytest
+pytest-cov
