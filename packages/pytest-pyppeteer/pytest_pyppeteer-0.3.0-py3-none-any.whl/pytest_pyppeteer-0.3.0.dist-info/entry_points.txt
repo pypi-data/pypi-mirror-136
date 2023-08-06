@@ -1,0 +1,3 @@
+[pytest11]
+niotest_framework=pytest_pyppeteer.plugin
+

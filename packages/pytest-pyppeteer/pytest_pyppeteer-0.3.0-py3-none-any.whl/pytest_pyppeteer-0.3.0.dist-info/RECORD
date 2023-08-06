@@ -1,0 +1,8 @@
+pytest_pyppeteer/__init__.py,sha256=Eh-HHK3_IVuJFj0UOb7yPFgbjPBpymn5vEoSvRi0qNk,946
+pytest_pyppeteer/page.py,sha256=fm3shG5yljgmcKyYQEv578jV126ZrSFUGzHVCaQ8Y9w,5523
+pytest_pyppeteer/plugin.py,sha256=DqtKCVYnWdvYYpOjcAyrBwALLWZUtGPnSGh-PLu-kWY,5704
+pytest_pyppeteer-0.3.0.dist-info/entry_points.txt,sha256=Grz-3FhnyXkUrFZhmXqmApShVegtlYbEZoH53V3MW5Q,54
+pytest_pyppeteer-0.3.0.dist-info/LICENSE,sha256=LoC7wGBHUc4hVaVjrVB919Ho9nJCZz5qKryAONzy60k,1101
+pytest_pyppeteer-0.3.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+pytest_pyppeteer-0.3.0.dist-info/METADATA,sha256=owdq_9K48EW1YgX0UcUXUp9lSn-Hd1FiP0yi5F1Xz44,653
+pytest_pyppeteer-0.3.0.dist-info/RECORD,,
