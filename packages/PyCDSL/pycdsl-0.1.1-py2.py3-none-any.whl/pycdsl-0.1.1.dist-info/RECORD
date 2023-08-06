@@ -1,0 +1,11 @@
+pycdsl/__init__.py,sha256=08aP4GfcjGwN3ojLEMTVawWhoo3ZJ2qda-HNHpWo4qQ,464
+pycdsl/cli.py,sha256=Kd6vZw3-bPg47gy2ciOeWJoW8AGRUlKX24tCeQ-k810,4685
+pycdsl/models.py,sha256=X9E9fhLDDImWh0O2qpJMpJOFuLeuLwbUJlZxAEXWigA,5534
+pycdsl/pycdsl.py,sha256=NdllmuNolY2zjPjmEEpm4NhVc6PmT_aunfR-zMYsqLk,9747
+pycdsl-0.1.1.dist-info/AUTHORS.rst,sha256=oPn2na2vtwDDxf9ue6OF-iGY7SgGg0rx89WZ4W9ubBM,172
+pycdsl-0.1.1.dist-info/LICENSE,sha256=DUKo1Q1-YOoelgOaz7hC0MP8_x8ClZsGjfpW26cR3PU,1582
+pycdsl-0.1.1.dist-info/METADATA,sha256=RxpNcuxUylxgRAes2-xbhER_PH14XZe4pVViab1ToeQ,2296
+pycdsl-0.1.1.dist-info/WHEEL,sha256=WzZ8cwjh8l0jtULNjYq1Hpr-WCqCRgPr--TX4P5I1Wo,110
+pycdsl-0.1.1.dist-info/entry_points.txt,sha256=T1O4RKTMUUL8HeN0xoV8QgOkZcfmVo2KDK6mFuPBP-E,42
+pycdsl-0.1.1.dist-info/top_level.txt,sha256=czzH4tvSQEOAMAeioIeP8OmwT8e9cZ_B5zGd93E1BWY,7
+pycdsl-0.1.1.dist-info/RECORD,,
