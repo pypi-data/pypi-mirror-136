@@ -1,0 +1,15 @@
+gateau_api/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gateau_api/api.py,sha256=OxM0n0czGW1LWVyraCyv40K1-G1IEU_ks9n_4-UjlQM,1600
+gateau_api/constants.py,sha256=3PjtaIs7qPpvBFHOQamRBKO_NLJzEAscae5vZ0kxpf8,278
+gateau_api/game_ram/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gateau_api/game_ram/cartridge_info.py,sha256=qA7sn0dpAloKOhEV2ZQkWr2Rmd9kwNT337PS3QoXHqE,1148
+gateau_api/game_ram/carts.py,sha256=XN3XZNm1zJYyl_yeTjJe7Gkauaf8jsJJT3Lsoq2UQqM,463
+gateau_api/game_ram/pokemon/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gateau_api/game_ram/pokemon/constants.py,sha256=FT-gF_leFhPofu151X73aJ5scz2Ce7cGA9o0q8Oi_7s,77479
+gateau_api/game_ram/pokemon/red_blue.py,sha256=q8Prw715ONpnmMXHelGLc7-qhNRnuMz4LNZsR83AnbU,20943
+gateau_api/service.py,sha256=4MKWTZFs4fVWJ4GbomOkzUdfksEbpH6QeS7LmWE9awk,5303
+gateau_api/types.py,sha256=ExJCFvk6Td_1kzoDNwL0iTjU_CufaMN7fUtuEJmbzNc,1529
+gateau_api-0.14.1.dist-info/LICENSE.md,sha256=R52MAg1Bnu43Aozr7STw2R_3YrHBTmuTMDmtEBEqlC4,1101
+gateau_api-0.14.1.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+gateau_api-0.14.1.dist-info/METADATA,sha256=RTUW7NC8-CDR3jdenvXgV1R3ANxmOpvDrIQCpRrX0_w,515
+gateau_api-0.14.1.dist-info/RECORD,,
