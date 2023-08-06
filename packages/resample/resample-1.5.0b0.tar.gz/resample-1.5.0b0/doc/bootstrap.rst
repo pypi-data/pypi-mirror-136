@@ -1,0 +1,2 @@
+.. automodule:: resample.bootstrap
+    :members:
