@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/powerline_k8s/__init__.py
+src/powerline_k8s/segments.py
+src/powerline_k8s.egg-info/PKG-INFO
+src/powerline_k8s.egg-info/SOURCES.txt
+src/powerline_k8s.egg-info/dependency_links.txt
+src/powerline_k8s.egg-info/requires.txt
+src/powerline_k8s.egg-info/top_level.txt
+src/tests/__init__.py
+src/tests/test_powerline_k8s.py
