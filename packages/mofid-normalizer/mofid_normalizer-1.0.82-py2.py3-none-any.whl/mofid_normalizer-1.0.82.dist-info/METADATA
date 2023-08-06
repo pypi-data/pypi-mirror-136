@@ -1,0 +1,351 @@
+Metadata-Version: 2.1
+Name: mofid-normalizer
+Version: 1.0.82
+Summary: first version of Mofid Normalizer
+Author: ali96ebrahimi@gmail.com
+License: MIT
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: nltk
+Requires-Dist: num2fawords
+Requires-Dist: spacy
+Requires-Dist: googledrivedownloader
+
+# Pipeline-Normalizer
+
+### Installation:
+- pip install -U spacy
+- python -m spacy download en_core_web_sm
+- pip install mofid-normalizer==1.0.82
+### Requirement:
+
+- hazm == 0.7.0
+- nltk == 3.3 
+- num2fawords == 1.1
+- spacy >= 3.0.6
+- googledrivedownloader
+### Version:
+```
+import mofid_normalizer
+print(mofid_normalizer.__version__)
+```
+### Pipelines
+- char_normalizer
+- spell_checker
+- date2str
+- time2str
+- num2str
+- abbreviation2word
+- affix2norm
+- word_mapper  
+- punctuation_remover
+- word_level_tokenizer
+
+### Usage
+
+```
+>>> from mofid_normalizer.spacy_loader import nlp``
+>>> with nlp.select_pipes(enable=["char_normalizer"]):
+    print(nlp("اﯙ ایراني ٲست"))
+>>>او ایرانی است
+
+>>> with nlp.select_pipes(enable=["num2str"]):
+        print(nlp("من مقدار 35.75 تومان پول دارم."))
+>>> من مقدار سی و پنج ممیز هفتاد و چهار تومان پول دارم.
+
+>>> with nlp.select_pipes(enable=["time2str"]):
+        print(nlp("ساعت 20:27 است."))
+>>> ساعت بیست و  بیست و هفت دقیقه است.
+
+>>> with nlp.select_pipes(enable=["date2str"]):
+        print(nlp("من در تاریخ 30-2-1375 به دنیا آمدم."))
+        
+(***Select one of the following randomly.***)
+>>> ['من در تاریخ سیم اردیبهشت ماه  یک هزار و سیصد و هفتاد و پنج به دنیا آمدم.',
+     'من در تاریخ سیم اردیبهشت ماه  یک هزار و سیصد و هفتاد و پنج شمسی به دنیا آمدم.',
+     'من در تاریخ سی اردیبهشت یک هزار و سیصد و هفتاد و پنج شمسی به دنیا آمدم.',
+     'من در تاریخ سی دو یک هزار و سیصد و هفتاد و پنج شمسی به دنیا آمدم.',
+     'من در تاریخ سی اردیبهشت یک هزار و سیصد و هفتاد و پنج به دنیا آمدم.',
+     'من در تاریخ سیم اردیبهشت سال یک هزار و سیصد و هفتاد و پنج شمسی به دنیا آمدم.',
+     'من در تاریخ سیم اردیبهشت سال یک هزار و سیصد و هفتاد و پنج به دنیا آمدم.',
+     'من در تاریخ سیم اردیبهشت یک هزار و سیصد و هفتاد و پنج به دنیا آمدم.',
+     'من در تاریخ سی دو یک هزار و سیصد و هفتاد و پنج به دنیا آمدم.',
+     'من در تاریخ سیم اردیبهشت یک هزار و سیصد و هفتاد و پنج شمسی به دنیا آمدم.',
+     'ن در تاریخ سی اردیبهشت سال یک هزار و سیصد و هفتاد و پنج به دنیا آمدم.',
+     'من در تاریخ سیم دو سال یک هزار و سیصد و هفتاد و پنج به دنیا آمدم.',
+     'من در تاریخ سی اردیبهشت سال یک هزار و سیصد و هفتاد و پنج شمسی به دنیا آمدم.',
+     'من در تاریخ سیم دو یک هزار و سیصد و هفتاد و پنج به دنیا آمدم.',
+     'من در تاریخ سیم اردیبهشت ماه  سال یک هزار و سیصد و هفتاد و پنج شمسی به دنیا آمدم.',
+     'من در تاریخ سی اردیبهشت ماه  یک هزار و سیصد و هفتاد و پنج به دنیا آمدم.',
+     'من در تاریخ سی اردیبهشت ماه  یک هزار و سیصد و هفتاد و پنج شمسی به دنیا آمدم.',
+     'من در تاریخ سی اردیبهشت ماه  سال یک هزار و سیصد و هفتاد و پنج به دنیا آمدم.',
+     'من در تاریخ سیم اردیبهشت ماه  سال یک هزار و سیصد و هفتاد و پنج به دنیا آمدم.',
+     'من در تاریخ سی دو سال یک هزار و سیصد و هفتاد و پنج به دنیا آمدم.',
+     'من در تاریخ سیم دو سال یک هزار و سیصد و هفتاد و پنج شمسی به دنیا آمدم.',
+     'من در تاریخ سی اردیبهشت ماه  سال یک هزار و سیصد و هفتاد و پنج شمسی به دنیا آمدم.',
+     'من در تاریخ سیم دو یک هزار و سیصد و هفتاد و پنج شمسی به دنیا آمدم.',
+     'من در تاریخ سی دو سال یک هزار و سیصد و هفتاد و پنج شمسی به دنیا آمدم.']
+
+>>> with nlp.select_pipes(enable=["abbreviation2word"]):
+        print(nlp("امام علی ع در 1 ه.ق به دنیا آمدند."))
+>>> امام علی علیه السلام در 1 هجری قمری به دنیا آمدند.
+
+>>> with nlp.select_pipes(enable=["affix2norm"]):
+        print(nlp("شما رفته بودهباشید))
+>>> شما رفته بوده باشید
+
+>>> with nlp.select_pipes(enable=["punctuation_remover"]):
+        print(nlp("شما! به علایم نگارشی، تماشا+- نمیکنید. شما هیچ علایم نگارشی ( نخواهید دید./")
+
+>>> شما به علایم نگارشی تماشا نمیکنید شما هیچ علایم نگارشی  نخواهید دید
+  
+>>> with nlp.select_pipes(enable=["word_level_tokenizer"]):
+        print(nlp("من در تاریخ 30-2-1375 در راس ساعت 20:30 به منزل رفتم. آنها در این تاریخ بیست سال از ه.ق عقبلتر هستند."))
+>>> ['من', 'در', 'تاریخ', '30-2-1375', 'در', 'راس', 'ساعت', '20:30', 'به', 'منزل', 'رفتم.', 'آنها', 'در', 'این', 'تاریخ', 'بیست', 'سال', 'از', 'ه.ق', 'عقبلتر', 'هستند.']
+
+>>> print(nlp("این یک نمونه کامل از مثالهای نرمالایزر موجود خواهدبود. این نرمالایزر در ساعت 20:47 ساخته شدهاست. شما هیچ گونه علایم نگارشی ﺆ کاراکتر غیر عادی نخواهیدخواند. هدف ما نرمالسازی تمامی کتابها است."))
+
+>>> ['این', 'یک', 'نمونه', 'کامل', 'از', 'مثال', 'های', 'نرمالایزر', 'موجود', 'خواهد', 'بود', 'این', 'نرمالایزر', 'در', 'ساعت', 'بیست', 'و', 'چهل', 'و', 'هفت', 'دقیقه', 'ساخته', 'شده', 'است', 'شما', 'هیچ', 'گونه', 'علا', 'یم', 'نگارشی', 'و', 'کاراکتر', 'غیر', 'عادی', 'نخواهید', 'خواند', 'هدف', 'ما', 'نرمالسازی', 'تمامی', 'کتاب', 'ها', 'است']
+
+>>> with nlp.select_pipes(enable=["word_mapper"]):
+        print(nlp(اینگونه))
+>>> "این\u200cگونه"
+
+```
+
+
+### Multiprocessing
+#### Multiprocessing with 4 processes
+`>>> docs = nlp.pipe(texts, n_process=4)`
+
+#### With as many processes as CPUs (use with caution!)
+`>>> docs = nlp.pipe(texts, n_process=-1)`
+
+#### Default batch size is `nlp.batch_size` (typically 1000)
+`>>> docs = nlp.pipe(texts, n_process=2, batch_size=2000)`
+
+### Disabling
+```
+>>> with nlp.select_pipes(disable=["affix2norm", "date2str"]):
+        print(nlp(texts))
+```
+
+
+### Enabling multiple pipe
+
+```
+>>> with nlp.select_pipes(enable=["char_normalizer","spell_checker"]):
+        print(nlp(texts))
+
+```
+
+### Remove pipe
+
+```
+>>> nlp.remove_pipe("spell_checker")
+```
+
+### Customize pipe
+
+```
+>>> nlp.remove_pipe("word_mapper")
+>>> nlp.add_pipe("word_mapper", after="affix2norm", config={"config_file": os.path.dirname(os.path.realpath(__file__)) + "/" +
+                 'mappings.json',"half_space_char":'\u200c'})
+```
+### Default modules format in library
+
+```
+nlp.add_pipe("char_normalizer", first=True,
+             config={"config_file": conf_path + 'character_mappings.json'})
+nlp.add_pipe("spell_checker", after="char_normalizer", config={})
+nlp.add_pipe("date2str", after="spell_checker", config={})
+nlp.add_pipe("time2str", after="date2str", config={})
+nlp.add_pipe("num2str", after="time2str", config={})
+nlp.add_pipe("abbreviation2word", after="num2str", config={})
+nlp.add_pipe("affix2norm", after="abbreviation2word",
+             config={"config_file": conf_path + 'affix.json', "double_postfix_joint": True})
+nlp.add_pipe("word_mapper", after="affix2norm",
+             config={"config_file": conf_path + 'word_mappings.json', "half_space_char": "  "})
+
+nlp.add_pipe("punctuation_remover", after="abbreviation2word", config={})
+nlp.add_pipe("word_level_tokenizer")
+```
+### Blank pipes
+this class is completely blank, you can customize it.
+```
+from spacy_loader import nlp_blank
+nlp.add_pipe()
+
+```
+### Config files templates
+you can modify some modules, new config files should be in the following format.
+#### affix.json
+    
+    {
+    e.g: می‌کند <--  می کند
+    "space_jointer_to_next": [
+    "بی",
+    "می",
+    "نمی"],
+    e.g: کتاب‌ها <--  کتاب ها
+    "space_jointer_to_previous": [
+    "هایی",
+    "ها",
+    "های",
+    ....
+      ],
+    e.g: رفته‌شده‌است <--  رفته شده است
+    "space_jointer_to_next_previous": [
+        "شده",
+        "نشده"
+      ],
+    e.g: اطلاح‌طلبان <--  اصلاح طلبان
+    "space_jointer_to_previous_plus": [
+        "طلبان",
+        "طلب",
+        ....
+      ],
+    e.g: کتاب‌تان <--  کتابتان
+    "prop_postfix_all": [
+        "یم",
+        "یت",
+        "یش",
+        ....
+      ],
+    e.g: کتاب‌ها <--  کتابها
+    "plural_postfix_all": [
+        "ها",
+        "ات",
+        "های",
+        ....
+      ],
+    Words in this list will not be splitted
+    "postfix_joint": [
+        "یم",
+        "یت",
+        "یش",
+        "ش",
+        ....
+      ],
+    e.g: علاقه‌مند <--  علاقهمند
+    "irregular_postfix_all": [
+        "نده",
+        "گانه",
+        "دان",
+        "ستان",
+        "چی",
+        ....
+      ],
+    irregular Words in this list will not be splitted.
+    "irregular_postfix_joint": [
+        "نده",
+        "دان",
+        "ستان",
+        "چی",
+        ....
+      ],
+    e.g: پاد‌زهر <--  پادزهر
+    "prefix_all": [
+        "نا",
+        "پاد",
+        "باز",
+        ....
+      ],
+    prefix Words in this list will not be splitted.
+    "prefix_joint": [],
+    e.g: فرو‌رفت <--  فرورفت
+    "verb_prefix": [
+        "در",
+        "بر",
+        "پر",
+        ....
+      ],
+    prefix verbs in this list will not be splitted.
+    "verb_prefix_joint": [],
+      "slang_verbs_prefix": [
+        "می",
+        "نمی"
+      ]
+    }
+
+#### character_mapping.json
+Note that only the modules in the Mapper will be applied, and the modules in the  Mapper_ignore  will not be applied.
+
+    {
+      "Mapper": {
+        "NUMBERS_MAP_EN": {
+          "0": "0",
+     
+      "\u0660": "0",
+      "۰": "0",
+      ....
+    },
+    "FA_ALPHABET_MAP": {
+      "\u0627": "\u0627",
+      "ٿ": "ت",
+      ....
+    
+    },
+    "DIACRITICS_MAP": {
+      "\u064b": "",
+      "\u064c": "",
+      "\u064d": "",
+        .....
+    },
+    "EN_ALPHABET_MAP": {
+      "a": "a",
+      "\uff41": "a",
+      "\uff42": "b",
+        ....
+ 
+    },
+    "VALID_SYMBOL_MAP": {
+      ",": ",",
+      "，": ",",
+        ....
+    },
+    "INVALID_SYMBOL_MAP": {
+      "\u00a8": "",
+      "\u06c1": " ",
+      "\u2063": " ",
+      ....
+    },
+    "HALF_SPACE": {
+      "\u200e": "\u200c",
+      "\u200c": "\u200c",
+        ....
+    }
+      },
+      "Mapper_ignore": {
+        "FA_Numbers": {
+          "0": "\u06F0",
+          "1": "\u06F1",
+            ....
+        },
+        "SPACE": {
+          "\u2005": " ",
+          "\u2009": " ",
+            ....
+        },
+        "english_upper": {
+          "A": "a",
+          "B": "b",
+          .....
+        },
+        "NUMBERS_MAP_FA": {
+          "\u0660": "\u06F0",
+          "\u0661": "\u06F1",
+           ....
+        }
+      }
+    }
+
+#### word_mapping.json
+    {
+      "\ufeffبیخبر": "بی\u200cخبر",
+      "بیتوجهی": "بی توجهی",
+      "بیطرفانه": "بی\u200cطرفانه",
+      "آنها": "آن\u200cها",
+        ....
+    }
+
