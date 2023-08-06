@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: cfn-drift-remediation
+Version: 0.3.0
+Summary: 
+Author: Ben Bridts
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: boto3 (>=1.20.43,<2.0.0)
+Requires-Dist: jsonpointer (>=2.2,<3.0)
