@@ -1,0 +1,102 @@
+[tool.poetry]
+name = "aioinfluxdb"
+version = "0.2.0"
+description = "InfluxDB v2 Python SDK with asyncio support"
+authors = ["Byeonghoon Yoo <bh322yoo@gmail.com>"]
+readme = "README.md"
+license = "MIT"
+keywords = ["influxdb", "influx", "asyncio", "sdk", "v2"]
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "Environment :: Web Environment",
+    "Framework :: AsyncIO",
+    "Framework :: aiohttp",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: Implementation",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+    "Topic :: Database",
+    "Topic :: Database :: Front-Ends",
+    "Topic :: Internet",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Typing :: Typed",
+]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+aiohttp = {version = "^3.8.1", extras = ["speedups"]}
+typing-extensions = "^4.0.1"
+isal = "^0.11.1"
+orjson = "^3.6.6"
+ciso8601 = "^2.2.0"
+aiocsv = "^1.2.1"
+pandas = {version = "^1.4.0", optional = true, python = "^3.8"}
+
+[tool.poetry.dev-dependencies]
+mypy = "^0.931"
+black = "^22.1.0"
+pytest = "^6.2.5"
+pytest-asyncio = "^0.17.2"
+pytest-xdist = "^2.5.0"
+pytest-cov = "^3.0.0"
+pytest-aiohttp = "^1.0.3"
+pandas-stubs = {version = "^1.2.0", optional = true}
+
+[tool.poetry.extras]
+pandas = ["pandas", "pandas-stubs"]
+
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 120
+target-version = ['py37', 'py38', 'py39', 'py310']
+skip-string-normalization = true
+
+
+[tool.mypy]
+python_version = '3.7'
+
+allow_any_expr = true
+allow_any_decorated = true
+allow_any_explicit = true
+disallow_any_generics = true
+allow_subclassing_any = true
+
+allow_redefinition = true
+disallow_incomplete_defs = true
+disallow_untyped_calls = true
+disallow_untyped_decorators = true
+disallow_untyped_defs = true
+no_implicit_optional = true
+no_implicit_reexport = true
+no_warn_no_return = true
+strict_equality = true
+warn_redundant_casts = true
+warn_return_any = true
+warn_unreachable = true
+warn_unused_ignores = true
+
+# Output configuration
+show_error_context = true
+show_column_numbers = true
+show_error_codes = true
+pretty = true
+
+
+[[tool.mypy.overrides]]
+module = [
+    'aiocsv.*',
+]
+ignore_missing_imports = true
