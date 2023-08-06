@@ -1,0 +1,16 @@
+.gitignore
+LICENSE
+README.md
+setup.cfg
+setup.py
+.github/workflows/test_and_deploy.yml
+sld/__init__.py
+sld/slidebook.py
+sld/yaml.py
+slidebook_python.egg-info/PKG-INFO
+slidebook_python.egg-info/SOURCES.txt
+slidebook_python.egg-info/dependency_links.txt
+slidebook_python.egg-info/not-zip-safe
+slidebook_python.egg-info/requires.txt
+slidebook_python.egg-info/top_level.txt
+tests/test_unit/test_placeholder.py
