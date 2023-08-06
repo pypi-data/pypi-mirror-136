@@ -1,0 +1,7 @@
+tensorflow_datasets
+
+[cpu]
+tensorflow
+
+[gpu]
+tensorflow-gpu
