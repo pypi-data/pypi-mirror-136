@@ -1,0 +1,12 @@
+# Testing
+pytest
+pytest-cov
+
+# Package requirements
+jinja2
+
+# Optional
+pandas
+matplotlib
+Pillow
+openpyxl
