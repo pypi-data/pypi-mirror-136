@@ -1,0 +1,12 @@
+cweqgen/__init__.py,sha256=FtzeoVSoutvyjlzdA4JjywCy6KPxyAThMnOB4kBdrfs,136
+cweqgen/_version.py,sha256=56WwOPv-d8e44F7v4kBRqHfVcnK0UZTh2j5uL4kUa3g,142
+cweqgen/converters.py,sha256=t8shtgtLegmogfg9h7ol-X9hZySu_TbYK_ZVPyjX6bc,2641
+cweqgen/definitions.py,sha256=qAwZda0y17AhXXH0umJVwB1ur4B3EErFb7qQ8JBVats,31361
+cweqgen/equations.py,sha256=WfYm1CIiuPgX3fInsdU_rzd79tz2mzFGNIpSppzgn1c,38746
+cweqgen/sphinx/__init__.py,sha256=oZQui-fyytBn2u_YRPQy1ZPehbQTK9tY2ONbePJbgHc,186
+cweqgen/sphinx/utils.py,sha256=oukDgGk4Pdyo2LFyf0goGxwapQX0qN9Kx74fWv75jTY,3114
+cweqgen-0.3.1.dist-info/LICENSE,sha256=WhqBuhW2KFs1gapdk7vB1lz9P0vt2VpQqbQLEJSzkdA,1071
+cweqgen-0.3.1.dist-info/METADATA,sha256=R8NRpSNVnU3CIexPf3ejreMiytv7CPcbre5-A0uuJeY,1890
+cweqgen-0.3.1.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+cweqgen-0.3.1.dist-info/top_level.txt,sha256=tIfVnBUiHNANsdapZLPvq01384BTpYxcxBT30glJx-g,8
+cweqgen-0.3.1.dist-info/RECORD,,
