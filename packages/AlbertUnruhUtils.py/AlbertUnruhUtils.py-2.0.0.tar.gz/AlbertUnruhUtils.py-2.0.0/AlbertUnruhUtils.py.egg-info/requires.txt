@@ -1,0 +1,4 @@
+redis~=4.1.0
+
+[async]
+aioredis~=2.0.1
