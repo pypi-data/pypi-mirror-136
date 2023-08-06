@@ -1,0 +1,13 @@
+Metadata-Version: 1.2
+Name: outputformat
+Version: 0.1.3
+Summary: Decorate and beautify output
+Home-page: https://github.com/delestro/outputformat
+Author: Felipe Delestro
+Author-email: delestro@gmail.com
+License: MIT
+Download-URL: https://github.com/delestro/outputformat/archive/refs/tags/v0.1.3.tar.gz
+Description: For usage, check https://delestro.com/2022/01/16/outputformat/
+Keywords: output,print,decorate,format,string,beautify
+Platform: UNKNOWN
+Requires-Python: >=3.6
