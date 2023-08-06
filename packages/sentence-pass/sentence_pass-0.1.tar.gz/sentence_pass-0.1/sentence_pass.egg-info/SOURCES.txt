@@ -1,0 +1,8 @@
+README.md
+setup.py
+sen_pass/__init__.py
+sen_pass/password_generator.py
+sentence_pass.egg-info/PKG-INFO
+sentence_pass.egg-info/SOURCES.txt
+sentence_pass.egg-info/dependency_links.txt
+sentence_pass.egg-info/top_level.txt
