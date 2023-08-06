@@ -1,0 +1,8 @@
+setup.py
+MicroserviceLibSender/__init__.py
+MicroserviceLibSender/smtp.py
+MicroserviceLibSender.egg-info/PKG-INFO
+MicroserviceLibSender.egg-info/SOURCES.txt
+MicroserviceLibSender.egg-info/dependency_links.txt
+MicroserviceLibSender.egg-info/requires.txt
+MicroserviceLibSender.egg-info/top_level.txt
