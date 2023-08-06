@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: hof
+Version: 0.0.2
+Summary: not practical tool to make hof as you want.
+Home-page: https://github.com/prs-watch/hof
+Author: prs-watch
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: pybaseball
+Requires-Dist: click
+Requires-Dist: rich
+Requires-Dist: pandas
+
+UNKNOWN
+
