@@ -1,0 +1,4 @@
+[console_scripts]
+mtpylib = mtpylib.main:hello
+mtpylib2 = mtpylib.main:hello2
+
