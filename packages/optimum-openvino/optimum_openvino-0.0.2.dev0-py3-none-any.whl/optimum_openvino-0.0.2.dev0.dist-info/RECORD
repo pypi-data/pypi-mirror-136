@@ -1,0 +1,15 @@
+optimum/intel/nncf/__init__.py,sha256=gDS8duQogHR4uEreFGu_A033zBV5Dg27XpPzn_Vj28Y,3402
+optimum/intel/nncf/nncf_auto.py,sha256=bS_PvDqrGKCycncvng1hSiODhqEcPeaf14MDynBm4xU,5397
+optimum/intel/nncf/patches/modeling_utils.patch,sha256=_jt2oUgP1nY0WseF9oaBtpXuaxuzk83r_asl-LYWHvI,414
+optimum/intel/nncf/patches/trainer_4.11.0.patch,sha256=DNdBE9f7EoZbM3yYwFdKXj31H6LdJtX629P5u8qvOvg,10651
+optimum/intel/nncf/patches/trainer_4.9.1.patch,sha256=t2tAxacQfxS75IYzUEzpHbTdztcGWd9YC7Tanrij_oQ,10540
+optimum/intel/nncf/patches/trainer_callback.patch,sha256=BIk3wUfxHQvzoxYKtuFjdkMFUPIjgwyhuPlka-HVqsc,631
+optimum/intel/nncf/patches/training_args.patch,sha256=xnhYi0nNHfesswN9evQk651mQgKDWC4AnjEdq6FxiOo,657
+optimum/intel/openvino/__init__.py,sha256=hR0sq5oGnCKOpCjKX3VKotM88MTBSZc4q3CNJOnVHLs,444
+optimum/intel/openvino/modeling_ov_auto.py,sha256=mv1N5PqXvpdYdOdlBlSY0pZlVQJz2BUCDCJVPaX2zyY,2286
+optimum/intel/openvino/modeling_ov_utils.py,sha256=iz1t8LdpNj8uZuoXevPNasYKAK0nekaPrxKnp-GMzlg,12876
+optimum_openvino-0.0.2.dev0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+optimum_openvino-0.0.2.dev0.dist-info/METADATA,sha256=sBTQ1ICeqyPh0BtmlCM8x-LNqikhEt86g-tHsC5RfdU,4770
+optimum_openvino-0.0.2.dev0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+optimum_openvino-0.0.2.dev0.dist-info/top_level.txt,sha256=rc1rV-uPZnV1Ek7hCwh56pvMCKcip65JbHRRWs8Yqu8,8
+optimum_openvino-0.0.2.dev0.dist-info/RECORD,,
