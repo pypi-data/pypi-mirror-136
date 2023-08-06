@@ -1,0 +1,10 @@
+README.md
+setup.py
+javar/__init__.py
+javar/__main__.py
+javar/javar.py
+javar/utils.py
+javar.egg-info/PKG-INFO
+javar.egg-info/SOURCES.txt
+javar.egg-info/dependency_links.txt
+javar.egg-info/top_level.txt

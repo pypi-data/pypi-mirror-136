@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: javar
+Version: 0.0.4
+Summary: Javar allows you to generate java cli with a set of options easily.
+Home-page: https://github.com/kulik0v/javar
+Author: Alexander Kulikov
+License: MIT
+Description: Run java binary from python
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/plain
