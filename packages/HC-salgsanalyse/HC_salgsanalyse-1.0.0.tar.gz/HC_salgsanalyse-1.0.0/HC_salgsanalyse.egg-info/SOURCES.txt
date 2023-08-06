@@ -1,0 +1,14 @@
+MANIFEST.in
+setup.py
+HC_salgsanalyse.egg-info/PKG-INFO
+HC_salgsanalyse.egg-info/SOURCES.txt
+HC_salgsanalyse.egg-info/dependency_links.txt
+HC_salgsanalyse.egg-info/requires.txt
+HC_salgsanalyse.egg-info/top_level.txt
+salgsanalyse/Salg_og_Semester.py
+salgsanalyse/__init__.py
+salgsanalyse/__main__.py
+salgsanalyse/file_handling.py
+salgsanalyse/main.py
+salgsanalyse/readme.md
+salgsanalyse/vareetelling.py
