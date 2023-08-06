@@ -1,0 +1,3 @@
+fabulous
+openpaperwork-core
+paperwork-backend
