@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: pnwcybersec
+Version: 0.0.5
+Summary: A deep learning malware detection module.
+Home-page: https://github.com/bbdcmf/pnwcybersec
+Author: Ryan Frederick, Joseph Shapiro
+Author-email: freder20@pnw.edu
+License: Apache License 2.0
+Download-URL: https://github.com/bbdcmf/pnwcybersec/archive/refs/tags/v0.0.3.tar.gz
+Project-URL: Bug Tracker, https://github.com/bbdcmf/pnwcybersec/issues
+Keywords: Deep Learning,Cyber Security
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE.TXT
+
+A deep learning malware detection module.
+
+
+Change Log
+#########################
+0.0.1(01/30/2022)
+-----------------
+- First Release
+
+0.0.2(01/31/2022)
+-----------------
+- Added dependencies
+
+0.0.3(01/31/2022)
+-----------------
+- Added github repository to URL
+
+0.0.4(01/31/2022)
+-----------------
+- Fixed some dependencies
+
+0.0.5(01/31/2022)
+-----------------
+- Dependencies fix hopefully
+
+
