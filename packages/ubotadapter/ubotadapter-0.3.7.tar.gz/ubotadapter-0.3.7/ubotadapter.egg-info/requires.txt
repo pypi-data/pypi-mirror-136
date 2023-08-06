@@ -1,0 +1,4 @@
+backoff
+vkale==0.4.2
+python-telegram-bot
+deteefapi==0.4.2
