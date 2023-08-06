@@ -1,0 +1,4 @@
+-e .
+lygadgets
+triangle
+gdsfactory[full]>=3.12.9
