@@ -1,0 +1,257 @@
+Metadata-Version: 2.1
+Name: qrules
+Version: 0.9.6
+Summary: Rule-based particle reaction problem solver on a quantum number level
+Home-page: UNKNOWN
+Author: Common Partial Wave Analysis
+Author-email: compwa-admin@ep1.rub.de
+Maintainer-email: compwa-admin@ep1.rub.de
+License: GPLv3 or later
+Project-URL: Tracker, https://github.com/ComPWA/qrules/issues
+Project-URL: Changelog, https://github.com/ComPWA/qrules/releases
+Project-URL: Documentation, https://qrules.rtfd.io
+Project-URL: Source, https://github.com/ComPWA/qrules
+Keywords: HEP,PWA,amplitude analysis,partial wave analysis,particle physics,particles,physics
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Typing :: Typed
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: attrs (>=20.1.0)
+Requires-Dist: jsonschema
+Requires-Dist: particle
+Requires-Dist: python-constraint
+Requires-Dist: PyYAML
+Requires-Dist: tqdm (>=4.24.0)
+Requires-Dist: typing-extensions ; python_version < "3.8.0"
+Provides-Extra: all
+Requires-Dist: graphviz ; extra == 'all'
+Provides-Extra: dev
+Requires-Dist: graphviz ; extra == 'dev'
+Requires-Dist: jupyter ; extra == 'dev'
+Requires-Dist: myst-nb (>=0.11) ; extra == 'dev'
+Requires-Dist: nbclient (>=0.5.5) ; extra == 'dev'
+Requires-Dist: Sphinx (>=3) ; extra == 'dev'
+Requires-Dist: sphinx-book-theme ; extra == 'dev'
+Requires-Dist: sphinx-codeautolink[ipython] ; extra == 'dev'
+Requires-Dist: sphinx-copybutton ; extra == 'dev'
+Requires-Dist: sphinx-panels ; extra == 'dev'
+Requires-Dist: sphinx-thebe ; extra == 'dev'
+Requires-Dist: sphinx-togglebutton ; extra == 'dev'
+Requires-Dist: sphinxcontrib-bibtex (>=2) ; extra == 'dev'
+Requires-Dist: sphinxcontrib-hep-pdgref ; extra == 'dev'
+Requires-Dist: sphobjinv ; extra == 'dev'
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: isort ; extra == 'dev'
+Requires-Dist: flake8 (>=4) ; extra == 'dev'
+Requires-Dist: flake8-blind-except ; extra == 'dev'
+Requires-Dist: flake8-bugbear ; extra == 'dev'
+Requires-Dist: flake8-builtins ; extra == 'dev'
+Requires-Dist: flake8-comprehensions ; extra == 'dev'
+Requires-Dist: flake8-pytest-style ; extra == 'dev'
+Requires-Dist: flake8-rst-docstrings ; extra == 'dev'
+Requires-Dist: flake8-use-fstring ; extra == 'dev'
+Requires-Dist: pep8-naming ; extra == 'dev'
+Requires-Dist: mypy (>=0.730) ; extra == 'dev'
+Requires-Dist: types-docutils ; extra == 'dev'
+Requires-Dist: types-pkg-resources ; extra == 'dev'
+Requires-Dist: types-PyYAML ; extra == 'dev'
+Requires-Dist: types-requests ; extra == 'dev'
+Requires-Dist: types-setuptools ; extra == 'dev'
+Requires-Dist: pydocstyle ; extra == 'dev'
+Requires-Dist: pylint (>=2.5) ; extra == 'dev'
+Requires-Dist: ipython ; extra == 'dev'
+Requires-Dist: nbmake ; extra == 'dev'
+Requires-Dist: pydot ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+Requires-Dist: pytest-profiling ; extra == 'dev'
+Requires-Dist: pytest-xdist ; extra == 'dev'
+Requires-Dist: pre-commit (>=1.4.0) ; extra == 'dev'
+Requires-Dist: aquirdturtle-collapsible-headings ; extra == 'dev'
+Requires-Dist: jupyterlab ; extra == 'dev'
+Requires-Dist: jupyterlab-code-formatter ; extra == 'dev'
+Requires-Dist: pip-tools (>=6.1.0) ; extra == 'dev'
+Requires-Dist: sphinx-autobuild ; extra == 'dev'
+Requires-Dist: tox (>=1.9) ; extra == 'dev'
+Requires-Dist: Sphinx (<4.4) ; (python_version < "3.8.0") and extra == 'dev'
+Requires-Dist: jupyterlab-myst ; (python_version >= "3.7.0") and extra == 'dev'
+Requires-Dist: flake8-type-ignore ; (python_version >= "3.8.0") and extra == 'dev'
+Provides-Extra: doc
+Requires-Dist: graphviz ; extra == 'doc'
+Requires-Dist: jupyter ; extra == 'doc'
+Requires-Dist: myst-nb (>=0.11) ; extra == 'doc'
+Requires-Dist: nbclient (>=0.5.5) ; extra == 'doc'
+Requires-Dist: Sphinx (>=3) ; extra == 'doc'
+Requires-Dist: sphinx-book-theme ; extra == 'doc'
+Requires-Dist: sphinx-codeautolink[ipython] ; extra == 'doc'
+Requires-Dist: sphinx-copybutton ; extra == 'doc'
+Requires-Dist: sphinx-panels ; extra == 'doc'
+Requires-Dist: sphinx-thebe ; extra == 'doc'
+Requires-Dist: sphinx-togglebutton ; extra == 'doc'
+Requires-Dist: sphinxcontrib-bibtex (>=2) ; extra == 'doc'
+Requires-Dist: sphinxcontrib-hep-pdgref ; extra == 'doc'
+Requires-Dist: sphobjinv ; extra == 'doc'
+Requires-Dist: Sphinx (<4.4) ; (python_version < "3.8.0") and extra == 'doc'
+Provides-Extra: flake8
+Requires-Dist: flake8 (>=4) ; extra == 'flake8'
+Requires-Dist: flake8-blind-except ; extra == 'flake8'
+Requires-Dist: flake8-bugbear ; extra == 'flake8'
+Requires-Dist: flake8-builtins ; extra == 'flake8'
+Requires-Dist: flake8-comprehensions ; extra == 'flake8'
+Requires-Dist: flake8-pytest-style ; extra == 'flake8'
+Requires-Dist: flake8-rst-docstrings ; extra == 'flake8'
+Requires-Dist: flake8-use-fstring ; extra == 'flake8'
+Requires-Dist: pep8-naming ; extra == 'flake8'
+Requires-Dist: flake8-type-ignore ; (python_version >= "3.8.0") and extra == 'flake8'
+Provides-Extra: format
+Requires-Dist: black ; extra == 'format'
+Requires-Dist: isort ; extra == 'format'
+Provides-Extra: lint
+Requires-Dist: flake8 (>=4) ; extra == 'lint'
+Requires-Dist: flake8-blind-except ; extra == 'lint'
+Requires-Dist: flake8-bugbear ; extra == 'lint'
+Requires-Dist: flake8-builtins ; extra == 'lint'
+Requires-Dist: flake8-comprehensions ; extra == 'lint'
+Requires-Dist: flake8-pytest-style ; extra == 'lint'
+Requires-Dist: flake8-rst-docstrings ; extra == 'lint'
+Requires-Dist: flake8-use-fstring ; extra == 'lint'
+Requires-Dist: pep8-naming ; extra == 'lint'
+Requires-Dist: mypy (>=0.730) ; extra == 'lint'
+Requires-Dist: types-docutils ; extra == 'lint'
+Requires-Dist: types-pkg-resources ; extra == 'lint'
+Requires-Dist: types-PyYAML ; extra == 'lint'
+Requires-Dist: types-requests ; extra == 'lint'
+Requires-Dist: types-setuptools ; extra == 'lint'
+Requires-Dist: pydocstyle ; extra == 'lint'
+Requires-Dist: pylint (>=2.5) ; extra == 'lint'
+Requires-Dist: flake8-type-ignore ; (python_version >= "3.8.0") and extra == 'lint'
+Provides-Extra: mypy
+Requires-Dist: mypy (>=0.730) ; extra == 'mypy'
+Requires-Dist: types-docutils ; extra == 'mypy'
+Requires-Dist: types-pkg-resources ; extra == 'mypy'
+Requires-Dist: types-PyYAML ; extra == 'mypy'
+Requires-Dist: types-requests ; extra == 'mypy'
+Requires-Dist: types-setuptools ; extra == 'mypy'
+Provides-Extra: sty
+Requires-Dist: black ; extra == 'sty'
+Requires-Dist: isort ; extra == 'sty'
+Requires-Dist: flake8 (>=4) ; extra == 'sty'
+Requires-Dist: flake8-blind-except ; extra == 'sty'
+Requires-Dist: flake8-bugbear ; extra == 'sty'
+Requires-Dist: flake8-builtins ; extra == 'sty'
+Requires-Dist: flake8-comprehensions ; extra == 'sty'
+Requires-Dist: flake8-pytest-style ; extra == 'sty'
+Requires-Dist: flake8-rst-docstrings ; extra == 'sty'
+Requires-Dist: flake8-use-fstring ; extra == 'sty'
+Requires-Dist: pep8-naming ; extra == 'sty'
+Requires-Dist: mypy (>=0.730) ; extra == 'sty'
+Requires-Dist: types-docutils ; extra == 'sty'
+Requires-Dist: types-pkg-resources ; extra == 'sty'
+Requires-Dist: types-PyYAML ; extra == 'sty'
+Requires-Dist: types-requests ; extra == 'sty'
+Requires-Dist: types-setuptools ; extra == 'sty'
+Requires-Dist: pydocstyle ; extra == 'sty'
+Requires-Dist: pylint (>=2.5) ; extra == 'sty'
+Requires-Dist: ipython ; extra == 'sty'
+Requires-Dist: nbmake ; extra == 'sty'
+Requires-Dist: pydot ; extra == 'sty'
+Requires-Dist: pytest ; extra == 'sty'
+Requires-Dist: pytest-cov ; extra == 'sty'
+Requires-Dist: pytest-profiling ; extra == 'sty'
+Requires-Dist: pytest-xdist ; extra == 'sty'
+Requires-Dist: pre-commit (>=1.4.0) ; extra == 'sty'
+Requires-Dist: flake8-type-ignore ; (python_version >= "3.8.0") and extra == 'sty'
+Provides-Extra: test
+Requires-Dist: ipython ; extra == 'test'
+Requires-Dist: nbmake ; extra == 'test'
+Requires-Dist: pydot ; extra == 'test'
+Requires-Dist: pytest ; extra == 'test'
+Requires-Dist: pytest-cov ; extra == 'test'
+Requires-Dist: pytest-profiling ; extra == 'test'
+Requires-Dist: pytest-xdist ; extra == 'test'
+Provides-Extra: viz
+Requires-Dist: graphviz ; extra == 'viz'
+
+# Quantum Number Conservation Rules
+
+[![10.5281/zenodo.5526360](https://zenodo.org/badge/doi/10.5281/zenodo.5526360.svg)](https://doi.org/10.5281/zenodo.5526360)
+[![GPLv3+ license](https://img.shields.io/badge/License-GPLv3+-blue.svg)](https://www.gnu.org/licenses/gpl-3.0-standalone.html)
+
+[![PyPI package](https://badge.fury.io/py/qrules.svg)](https://pypi.org/project/qrules)
+[![Conda package](https://anaconda.org/conda-forge/qrules/badges/version.svg)](https://anaconda.org/conda-forge/qrules)
+[![Supported Python versions](https://img.shields.io/pypi/pyversions/qrules)](https://pypi.org/project/qrules)
+
+[![Binder](https://static.mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ComPWA/qrules/stable?filepath=docs/usage)
+[![Google Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ComPWA/qrules/blob/stable)
+[![Open in Visual Studio Code](https://open.vscode.dev/badges/open-in-vscode.svg)](https://open.vscode.dev/ComPWA/qrules)
+[![GitPod](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/ComPWA/qrules)
+
+[![Documentation](https://readthedocs.org/projects/qrules/badge/?version=latest)](https://qrules.readthedocs.io)
+[![pre-commit.ci status](https://results.pre-commit.ci/badge/github/ComPWA/qrules/main.svg)](https://results.pre-commit.ci/latest/github/ComPWA/qrules/main)
+[![pytest](https://github.com/ComPWA/qrules/workflows/pytest/badge.svg)](https://github.com/ComPWA/qrules/actions?query=branch%3Amain+workflow%3Apytest)
+[![Checked with mypy](http://www.mypy-lang.org/static/mypy_badge.svg)](https://mypy.readthedocs.io)
+[![Test coverage](https://codecov.io/gh/ComPWA/qrules/branch/main/graph/badge.svg)](https://codecov.io/gh/ComPWA/qrules)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/deeee5b9e2bb4b3daa655942c71e17da)](https://www.codacy.com/gh/ComPWA/qrules)
+[![Spelling checked](https://img.shields.io/badge/cspell-checked-brightgreen.svg)](https://github.com/streetsidesoftware/cspell/tree/master/packages/cspell)
+[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+[![Imports: isort](https://img.shields.io/badge/%20imports-isort-%231674b1?style=flat&labelColor=ef8336)](https://pycqa.github.io/isort)
+
+QRules is a Python package for **validating and generating particle reactions**
+using quantum number conservation rules. The user only has to provide a certain
+set of boundary conditions (initial and final state, allowed interaction types,
+expected decay topologies, etc.). QRules will then span the space of allowed
+quantum numbers over all allowed decay topologies and particle instances that
+correspond with the sets of allowed quantum numbers it has found.
+
+The resulting state transition objects are particularly useful for **amplitude
+analysis / Partial Wave Analysis** as they contain all information (such as
+expected masses, widths, and spin projections) that is needed to formulate an
+amplitude model.
+
+Visit [qrules.rtfd.io](https://qrules.readthedocs.io) for more information!
+
+For an overview of **upcoming releases and planned functionality**, see
+[here](https://github.com/ComPWA/qrules/milestones?direction=asc&sort=title&state=open).
+
+## Available features
+
+- **Input**: Particle database
+  - Source of truth: PDG
+  - Predefined particle list file
+  - Option to overwrite and append with custom particle definitions
+- **State transition graph**
+  - Feynman graph like description of the reactions
+  - Visualization of the decay topology
+- **Conservation rules**
+  - Open-closed design
+  - Large set of predefined rules
+    - Spin/Angular momentum conservation
+    - Quark and Lepton flavor conservation (incl. isospin)
+    - Baryon number conservation
+    - EM-charge conservation
+    - Parity, C-Parity, G-Parity conservation
+    - Mass conservation
+  - Predefined sets of conservation rules representing Strong, EM, Weak
+    interactions
+
+## Contribute
+
+See [`CONTRIBUTING.md`](./CONTRIBUTING.md)
+
+
