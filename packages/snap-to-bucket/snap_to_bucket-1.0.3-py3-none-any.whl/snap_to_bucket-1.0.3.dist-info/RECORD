@@ -1,0 +1,12 @@
+snap_to_bucket/__init__.py,sha256=qYLmLrEvrjPRd8igQCFvuBsBR_tevhB-tCoatkqJ9EA,340
+snap_to_bucket/ec_2_handler.py,sha256=HfRoidatqgOg-YJ_J2H9VJAc6C4-vp0zvv2nPPAXFSA,13214
+snap_to_bucket/fs_handler.py,sha256=brvYM0xd-7sWfCdZIemP0EAUgc-qShGiDHmcdB-npm4,12366
+snap_to_bucket/run.py,sha256=SbiczF-I9pbWu4k04yWM_EnCSfU_sa1CHpE4A2MgCZ4,7180
+snap_to_bucket/s3_handler.py,sha256=IcxUOwwM6wfgKd7qpWB7c0Ul18GEB0IbiQJO8XpjlDk,17794
+snap_to_bucket/snap_handler.py,sha256=SA5NWJubCwsNa6PKE5H_1rIhqgwRY8-VheVzlUn97Nw,9942
+snap_to_bucket-1.0.3.dist-info/LICENSE,sha256=7eKT9TFCO4pZh1lgrflVdbMOlBzTlWC_Aey_G1R9pJo,1097
+snap_to_bucket-1.0.3.dist-info/METADATA,sha256=7VtR433SZKJ2OVpWsNTINvbFHyWW6tHSdHZ9JsLtdzQ,10356
+snap_to_bucket-1.0.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+snap_to_bucket-1.0.3.dist-info/entry_points.txt,sha256=VJ_0fOQDKed0sPByYRI2ccFWMeenzD1EYBvGFrWAfOE,57
+snap_to_bucket-1.0.3.dist-info/top_level.txt,sha256=GzduSUmcfSMGEC-Qkv5iaQtgISnSShXYQklVzFN0N7Y,15
+snap_to_bucket-1.0.3.dist-info/RECORD,,
