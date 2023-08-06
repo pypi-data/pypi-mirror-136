@@ -1,0 +1,7 @@
+pandas
+numpy
+gym
+eppy
+opyplus
+autopep8
+twine
