@@ -1,0 +1,11 @@
+minetext/__init__.py,sha256=ydlKKUYaAZ0-8fIhPezvbHP82AxvYPUisGbXTY-d104,195
+minetext/config.py,sha256=NeuImamoNcn15P9BdglieVfWWiY237mEp6jLL7Xvfh0,53
+minetext/identifiers.py,sha256=-TMjp-Qzb9gzHzPTMcs29ztvzj3D6pMYeHn5ct4nXi0,111
+minetext/mine.py,sha256=w_PGilpp1Wt_ej-94NnJ8I64PWLNELPpjz-eBi8lHZE,7250
+minetext/domain/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+minetext/domain/es_request.py,sha256=V4u7BgObbN5rtZvyMSnZxYHGbnZEb6z1uUHwstFpGIo,1432
+minetext-0.2.3.dist-info/LICENSE,sha256=qwDnUeHuBNexxv-wQShMEz31Lv-VYSXAbX-nLIov7Ns,1061
+minetext-0.2.3.dist-info/METADATA,sha256=eE7eiDUKzIszVDF8iWEqx7zLbGXEKQP-1Ji1i2C8ynA,797
+minetext-0.2.3.dist-info/WHEEL,sha256=IhjwRKCBU_-qWYU-9mADzLY2DSoO4crUVcAQt39lCCc,92
+minetext-0.2.3.dist-info/top_level.txt,sha256=AKjELvvH-9fSQ9TkQPvG3xLqosI0M1St5tuNIDaIOA0,9
+minetext-0.2.3.dist-info/RECORD,,
