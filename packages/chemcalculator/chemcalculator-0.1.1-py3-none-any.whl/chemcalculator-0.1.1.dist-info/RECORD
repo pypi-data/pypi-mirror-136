@@ -1,0 +1,9 @@
+chemcalculator/__init__.py,sha256=r0RMYiTKXQlgXaoyyXSwec74DFzHoAgzLTYZQ8wCxPQ,321
+chemcalculator/chemcalculator.py,sha256=Iu9-h9Be6YZmCFHs3KBUF9ZPgFL43hyolQEKVBG113c,7979
+chemcalculator/data/Periodic-Table-of-Elements.csv,sha256=Gy9-n959BBPBrp-pAr6Kp6cGVc595f_6jay39-0ypaA,15088
+chemcalculator/data/__init__.py,sha256=72-1EEGtzOnkUwKkA7T9TNE0ngIoDdc87zG96NScYN0,94
+chemcalculator/datasets.py,sha256=i2bcVjPXzLHqEaKv1y4cGy_Iyf9fA9g0H59n5qUmM18,320
+chemcalculator-0.1.1.dist-info/LICENSE,sha256=y4z5jDR4awfsblktUUS4hxRrIqe_XppCN0iQEpRp70Q,1096
+chemcalculator-0.1.1.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+chemcalculator-0.1.1.dist-info/METADATA,sha256=wYDfzDljyyg4QoyaFh_txmdiqHFaKBxoLku1uO-nGuo,4122
+chemcalculator-0.1.1.dist-info/RECORD,,
