@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: avtocod
+Version: 0.1.0
+Summary: 
+Author: Fom123
+Author-email: gamemode1.459@gmail.com
+Requires-Python: >=3.8,<3.10
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Provides-Extra: fast
+Provides-Extra: proxy
+Requires-Dist: aiohttp (>=3.8.1,<4.0.0)
+Requires-Dist: contextvars (>=2.4,<3.0)
+Requires-Dist: pydantic (>=1.8.2,<1.9.0)
