@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+lib/gobbet/__init__.py
+lib/gobbet/downloader.py
+lib/gobbet/parser.py
+lib/gobbet/wordlist.py
+lib/gobbet.egg-info/PKG-INFO
+lib/gobbet.egg-info/SOURCES.txt
+lib/gobbet.egg-info/dependency_links.txt
+lib/gobbet.egg-info/requires.txt
+lib/gobbet.egg-info/top_level.txt
