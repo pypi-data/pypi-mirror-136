@@ -1,0 +1,5 @@
+{
+  "test_plugin.py::test_main": true,
+  "test_plugin.py::test_show_help": true,
+  "test_words.py::test_allow_unicode_characters[Files \\U0001f4c4 and directories \\U0001f4c1 !-True-expected0]": true
+}
