@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: hyperarrow
+Version: 0.0.1.dev0
+Summary: Python wrapper to hyperarrow
+Home-page: https://github.com/innobi/hyperarrow
+Author: Will Ayd
+Author-email: will_ayd@innobi.io
+License: Apache
+Keywords: tableau tableauhyperapi arrow
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pyarrow
+Provides-Extra: dev
+Requires-Dist: pytest ; extra == 'dev'
+
+# Example Usage
+
+```python
+import hyperarrow as hal
+import pyarrow as pa
+
+tbl = pa.Table.from_pydict({"a": range(100)})
+hal.write_to_hyper(tbl, "example.hyper", "schema", "table")
+print(hal.read_from_hyper("example.hyper", "schema", "table")
+```
+
+# Building Wheels
+
+Unix wheels are available from the top level of the repository using docker. The following commands will generate a wheel file in python/dist.
+
+```sh
+docker-compose build python-wheel-manylinux-2014
+docker-compose up
+```
+
+Given the current state of macOS you unfortunately cannot use docker. See the github action for an example of how to build this wheel.
+
+Windows is not yet implemented. Expected mid-Jan to early-Feb 2022.
+
+
+
