@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: pyspark-event-correlation
+Version: 1.0.1
+Summary: Event Correlation and Forecasting over High Dimensional Streaming Sensor Data algorithms
+Home-page: https://github.com/Intellia-SME/pyspark-event-correlation
+Author: Jim Katris
+Author-email: info@intellia.gr
+License: Apache-2.0 License
+Project-URL: Changelog, https://github.com/Intellia-SME/pyspark-event-correlation/blob/main/HISTORY.md
+Project-URL: Twitter, https://twitter.com/intellia_gr
+Project-URL: Bug Tracker, https://github.com/Intellia-SME/pyspark-event-correlation/issues
+Keywords: pyspark
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Natural Language :: English
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: pyspark (>=3.2.1)
+Requires-Dist: pandas (>=1.4.0)
+
+# pyspark-event-correlation
+
+Event Correlation and Forecasting over High Dimensional Streaming Sensor Data algorithms
+
+## Theory
+Correlating events in complex and dynamic IoT environments is a challenging task not only because of the amount of available data that needs to be processed but also due to the call for time efficient data processing. We propose the adoption of a univariate change detection algorithm for real-time event detection and we implement a stepwise event correlation scheme based on a first-order Markov model.
+
+
+## Requirements
+* Python 3.6 to 3.10 supported.
+* pyspark 3.2.1 supported.
+
+
+## Installation
+1. Install with pip:
+```
+python -m pip install pyspark-event-correlation
+```
+
+
+## Example Project
+See the example project in the example/ directory of the GitHub repository.
+
+
+
