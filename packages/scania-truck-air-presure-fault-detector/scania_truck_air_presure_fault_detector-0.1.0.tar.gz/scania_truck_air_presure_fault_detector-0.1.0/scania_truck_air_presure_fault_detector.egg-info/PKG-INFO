@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: scania-truck-air-presure-fault-detector
+Version: 0.1.0
+Summary: classification model for scania truck air pressure fault detection.
+Home-page: https://github.com/Damisss/defect_detection_in_air_presure_system_of_truck
+Author: Damisss
+Author-email: sam@sam.com
+License: BSD-3
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
+
+
+Defect detection in Air Presure System of Scania Truck
+
+Generate A E S T H E T I C ASCII art.
+
+Instructions
+
+Install:
+pip install scania_truck
+Generate an aesthetic ASCII visual:
+from scania_truck import pipeline
+
+# initialize drive object (to generate visuals)
+drive = synthesize.Drive()
+# generate a ASCII visual (dark_mode optional)
+drive.generate(dark_mode=True)
+# save to png
+
+
