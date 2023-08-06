@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: minetext
+Version: 0.0.3
+Summary: Python client for MINE system
+Home-page: https://gitlab.gwdg.de/mine/mine-python
+Author: Triet Doan
+Author-email: triet.doan@gwdg.de
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Science/Research
+Classifier: Natural Language :: English
+Classifier: Development Status :: 1 - Planning
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: elasticsearch
+
+# MINETEXT
+`minetext` is a Python library used to interact with MINE system.
+
+### Create virtual environment if required
+>`python3 -m venv mine-api`
+> `source mine-api/bin/activate`
+
+### Compile the library
+`pip install -r requirements` 
+
+### Use library
+`import minetext`
+
+
+
