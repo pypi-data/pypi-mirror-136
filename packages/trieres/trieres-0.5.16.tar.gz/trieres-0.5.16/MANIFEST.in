@@ -1,0 +1,5 @@
+include cFp_Zoo/HOST/custom/uppercase/languages/python/*.i
+recursive-include cFp_Zoo/HOST/PracticalSockets/src/ *.h
+recursive-include cFp_Zoo/HOST/PracticalSockets/src/ *.cpp
+recursive-include cFp_Zoo/HOST/custom/uppercase/languages/cplusplus/include *.hpp
+recursive-include cFp_Zoo/HOST/custom/uppercase/languages/cplusplus/src *.cpp
