@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+autolink_references/__init__.py
+autolink_references/main.py
+autolink_references_mkdocs_plugin.egg-info/PKG-INFO
+autolink_references_mkdocs_plugin.egg-info/SOURCES.txt
+autolink_references_mkdocs_plugin.egg-info/dependency_links.txt
+autolink_references_mkdocs_plugin.egg-info/entry_points.txt
+autolink_references_mkdocs_plugin.egg-info/requires.txt
+autolink_references_mkdocs_plugin.egg-info/top_level.txt
