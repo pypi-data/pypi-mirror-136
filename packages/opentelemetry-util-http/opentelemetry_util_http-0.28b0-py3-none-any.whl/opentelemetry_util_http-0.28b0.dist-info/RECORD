@@ -1,0 +1,7 @@
+opentelemetry/util/http/__init__.py,sha256=v4gVDEXoE8WZEeKYD77V2uiqdGQFdqCDt8XCSEJXkhs,3185
+opentelemetry/util/http/httplib.py,sha256=V39tuaUUYHFgXZ4d2ZMs_VqXKFe9tiiGRFKbGUk0s2k,5213
+opentelemetry/util/http/version.py,sha256=1f7ubneMYaoTFYX6Z5NBxzMireXuBO3G3OlLDgvvPmI,608
+opentelemetry_util_http-0.28b0.dist-info/METADATA,sha256=tKuGM0beDd_Y9p5adYaGR7bbwS8-TbCxq6q6qWBHapU,2474
+opentelemetry_util_http-0.28b0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+opentelemetry_util_http-0.28b0.dist-info/top_level.txt,sha256=5p97iTMneNm1LAKDalzEVpYhvPZsaqJZzdLuD_upSaQ,14
+opentelemetry_util_http-0.28b0.dist-info/RECORD,,
