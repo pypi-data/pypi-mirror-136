@@ -1,0 +1,4 @@
+[console_scripts]
+make_uGMRT_ds = uGMRT_beamtool.make_ds:main
+plot_uGMRT_ds = uGMRT_beamtool.plot_uGMRT_ds:main
+
