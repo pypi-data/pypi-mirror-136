@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: susanestimate
+Version: 0.0.1
+Summary: A package to calculate precision and recall about detection model
+Home-page: https://github.com/xuaner11111/susanestimate
+Author: Susan Hou
+Author-email: 1055306071@qq.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: opencv-python
+
+### precision-recall
+
+
