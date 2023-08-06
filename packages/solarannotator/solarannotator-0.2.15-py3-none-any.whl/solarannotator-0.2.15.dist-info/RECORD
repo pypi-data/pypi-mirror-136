@@ -1,0 +1,11 @@
+solarannotator/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+solarannotator/config.py,sha256=t70bvke_KOwStGZUW5mvW3ognK-5L-WszPVveDJz1FM,1233
+solarannotator/gui.py,sha256=h9oxnRiBfAbgZmDLLMYEfnd6efCfERoeKxUg3KVYpxQ,32180
+solarannotator/io.py,sha256=325o_iSZejLSPoRA8LWGEZBb1Za3ELTy2NlmO4SBFcg,5071
+solarannotator/main.py,sha256=4W3ge5fj80pLl_kPdBnwbN5cWpRka-iyJ_4ZLSkLfN8,796
+solarannotator-0.2.15.data/data/solarannotator/default.json,sha256=rjtBLP_50mqNEgeiTBkPo-URMp-wyb6g4citdZsTzIw,596
+solarannotator-0.2.15.dist-info/METADATA,sha256=gqu4Df5dczt6QaPvs37XgUZcBrLD0Rq6IBRiXvGA1So,2379
+solarannotator-0.2.15.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+solarannotator-0.2.15.dist-info/entry_points.txt,sha256=cydDLPcz_311eIs6FUGYt63OcaFo0AWA82YlojGikHM,61
+solarannotator-0.2.15.dist-info/top_level.txt,sha256=nguImQMdiL2Z8D34F51_tHSFPQdVRu_yiLBFe7pFSvI,15
+solarannotator-0.2.15.dist-info/RECORD,,
