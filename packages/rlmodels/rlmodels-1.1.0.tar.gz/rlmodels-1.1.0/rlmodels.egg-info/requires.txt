@@ -1,0 +1,8 @@
+gym
+matplotlib
+numpy
+pandas
+pyglet
+seaborn
+torch>=1.1.0
+tqdm
