@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: cwAPI
+Version: 0.0.2
+Summary: A python wrapper for the Cardano-node API
+Home-page: https://github.com/leo42/python-cardano-wallet-api
+Author: Leandros Holleman
+Author-email: leantrosh@gmail.com
+License: Apache
+Download-URL: https://github.com/leo42/python-cardano-wallet-api/archive/refs/tags/0.0.2.tar.gz
+Description: UNKNOWN
+Keywords: Cardano-wallet,API,Wrapper
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
