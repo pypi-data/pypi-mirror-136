@@ -1,0 +1,14 @@
+cloud_filemanager/__init__.py,sha256=8rymaVNWVzqZjmmP-5xW3E-yNEfnCCue_ajPvkDG1kM,255
+cloud_filemanager/abstract_cloudmanager.py,sha256=hiMj08UczbWWWJHXCsBL3pu1VtZ3nYVbpKSefJOjvSM,1353
+cloud_filemanager/cloud_config.py,sha256=27cqWQkXozriBN-b9CnChebynSqAqfm0YZM8N2sYzTU,903
+cloud_filemanager/cloud_schema.json,sha256=vnsHBimvJYYveSKidIhSDXyo0txihH2MbZeqzx80oVg,956
+cloud_filemanager/dropbox_cloudmanager.py,sha256=EGKSqSSBzZKUsiHOttXhEa0DmMdwz6Pmxa7C2YotD38,3262
+cloud_filemanager-1.0.1.data/data/cloud_schema.json,sha256=vnsHBimvJYYveSKidIhSDXyo0txihH2MbZeqzx80oVg,956
+tests/__init__.py,sha256=gDc6SIViMk8GCqpnDjydFPvB5YfPw9As1ikdCEH5bkM,19
+tests/test_dropbox_cloudmanager.py,sha256=OT-X4E32wIO0kYW5zx1VUZTSbWYTuqNsIkRr5xY0PHg,5036
+cloud_filemanager-1.0.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+cloud_filemanager-1.0.1.dist-info/METADATA,sha256=lN82NsZGrAhQxfRjr80GwM8ZDXYojSjmeqOQ8XvdZvs,6403
+cloud_filemanager-1.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+cloud_filemanager-1.0.1.dist-info/entry_points.txt,sha256=eqGnTHtEVMYwfXVk1Z9MhC8O2N8wuqAbr0lisLmrkxs,20
+cloud_filemanager-1.0.1.dist-info/top_level.txt,sha256=wnDs33JmtxKM4SO1Cx4wJ5Auo2fOBhOwTkiUsmm_efE,24
+cloud_filemanager-1.0.1.dist-info/RECORD,,
