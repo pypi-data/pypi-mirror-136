@@ -1,0 +1,3 @@
+[console_scripts]
+proj_init=proj_init.create:proj_init
+
