@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: pymoof
+Version: 0.0.2
+Summary: Connect to your vanmoof bike
+Home-page: https://github.com/quantsini/pymoof
+Author: Henri Bai
+Author-email: quantsini@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/quantsini/pymoof/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# pymoof
+Exploring bluetooth functionality of the Vanmoof S3 and X3.
+
+## Usage
+```python
+from pymoof.clients.sx3 import SX3Client
+
+client = SX3Client(bleak_client, encryption_key)
+client.authenticate()
+```
+You must have an instantiated bleak client that is connected to the bike. See `pymoof/tools/discover_bike.py` to determine which device is your bike and `pymoof/tools/retrieve_encryption_key.py` to connect to Vanmoof servers to get your encryption key.
+
+See `example.py` for more info on useage.
+
+
