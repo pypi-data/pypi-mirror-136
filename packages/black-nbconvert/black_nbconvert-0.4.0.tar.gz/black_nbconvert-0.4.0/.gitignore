@@ -1,0 +1,8 @@
+_version.py
+dist
+*.egg-info
+build
+.eggs
+.DS_Store
+__pycache__
+.tox
