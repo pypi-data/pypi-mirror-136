@@ -1,0 +1,9 @@
+gps_anomaly/__init__.py,sha256=kR58n1Oypvn9ICL6jx4BQ4uVOQ6fwmls_1lC2fEbYEE,64
+gps_anomaly/config_distance.py,sha256=Cqa5LRtd4HsN4yqsjJSCWs2BbywiUxgxNP8vsyYVuaI,1505
+gps_anomaly/config_heading.py,sha256=CfJak76POp5ZMLF5vI2uSl0vNumq8nMQknKVzNtsNpE,686
+gps_anomaly/config_info_anomalies.py,sha256=ix-feLG0qu2ppmhmmVabScQWaqQOO1R2TRj0zbYz8OA,412
+gps_anomaly/detect_functions.py,sha256=7Y3GeAs75fFN6YLBFcehdQC8vlqR97oUd2E4PtMWAx8,6235
+gps_anomaly/detector.py,sha256=JI9G5ZLBj6WiNgXsmltD0ydHAUS6WheJSod1XT7fK_c,389
+gps_anomaly-0.1.8.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+gps_anomaly-0.1.8.dist-info/METADATA,sha256=6nzd321aGvGbpFjo1AWj0HUvD2Uo5qDS7o73K_faeQ0,2199
+gps_anomaly-0.1.8.dist-info/RECORD,,
