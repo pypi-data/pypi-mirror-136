@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+./build/contracts/DarkForest.json
+./build/contracts/ERC721.json
+autocorns/DarkForest.py
+autocorns/ERC721.py
+autocorns/__init__.py
+autocorns/cli.py
+autocorns/warden.py
+autocorns.egg-info/PKG-INFO
+autocorns.egg-info/SOURCES.txt
+autocorns.egg-info/dependency_links.txt
+autocorns.egg-info/entry_points.txt
+autocorns.egg-info/requires.txt
+autocorns.egg-info/top_level.txt
