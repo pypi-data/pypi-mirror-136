@@ -1,0 +1,12 @@
+cpwxtract/__about__.py,sha256=GMNZ8-WhoXk99YDGDVhA2UOKWeP4E4q3-AOiDa6FBeA,560
+cpwxtract/__init__.py,sha256=5Wbi5_53SJ0tAH7wbCiYjo9nrXqkmh_HCyirOatB7Pg,369
+cpwxtract/constants.py,sha256=AmLICg1LppExGuSVEKbK0KRxCPTahMfDO4kvMhPbrHs,169
+cpwxtract/cpw.py,sha256=dScUSZj9hZbwW24tv6dXpX8_J4FySOPfdMwMZavgsiQ,2414
+cpwxtract/extract.py,sha256=ek95mYLwv_uCj4HoFzWUPdRCwas4xllOfChmgC4l3sw,5186
+cpwxtract/helpers.py,sha256=zNRPP6qbPW88514l7zwzmJe0sQ3ngSezOGCruXzQGnI,971
+cpwxtract/io.py,sha256=5CHWsdxeU-3RKscTud6OrrKaDRC55QWfhAG3GQ8kdp0,1094
+cpwxtract-0.0.1.dist-info/LICENSE.txt,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+cpwxtract-0.0.1.dist-info/METADATA,sha256=AcFkGW2HDN8OwehgW5W5qAvbGqOeFJEU86LYTzkKptE,2501
+cpwxtract-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+cpwxtract-0.0.1.dist-info/top_level.txt,sha256=DR0u9aR0ehLfsxIamqwlEmNCKIUNAOVf1CqWoTGn0Lk,10
+cpwxtract-0.0.1.dist-info/RECORD,,
