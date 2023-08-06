@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: SexyThumbnailGenerator
+Version: 1.0.8
+Summary: Generates a thumbnail from an NSFW video.
+Home-page: https://aryankothari.dev/
+Author: thearyadev
+Author-email: aryan@aryankothari.dev
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: ==3.8.7
+Description-Content-Type: text/markdown
+License-File: LICENCE
+
+# Sexy Thumbnail Generator
+
+Creates a thumbnail when given a compatible video file. Thumbnail wil be selected based on many criteria.
+
+# Usage & Installation
+
+```bash
+pip install SexyThumbnailGenerator
+```
+
+```python
+import SexyThumbnailGenerator
+
+x = SexyThumbnailGenerator.Generator("./video.mp4")
+x.generateSelection()
+x.save("./image.png")  # Pass in a path + a file name
+```
+
+
