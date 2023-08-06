@@ -1,0 +1,9 @@
+coinmarketcap_scrapper/__init__.py,sha256=UvmuBYBsTv-JVaNp2Dy2ocNGcTQBwDKW0qHCAEbxuA8,120
+coinmarketcap_scrapper/cmc_uteis.py,sha256=N2OhGk2QNqso735IOTKRdljkQMBxRWvZ7xO8Vo-iZvE,1930
+coinmarketcap_scrapper/coinmarketcap_scrapper.py,sha256=M19xiUS9GOZvbzV1K5a3Kwpkqij2RCk4sVwDPPUoedk,9382
+coinmarketcap_scrapper/excepcions.py,sha256=DVMOYYa8Wbc24tcwR0ZnMcAZJvyypqoys6hE20ektOA,474
+coinmarketcap_scrapper-2.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+coinmarketcap_scrapper-2.0.dist-info/METADATA,sha256=GK5Zulh7JlVKLpJb2e3NRi7AUTeEjOlpBHESzzrZmAs,2023
+coinmarketcap_scrapper-2.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+coinmarketcap_scrapper-2.0.dist-info/top_level.txt,sha256=UoEtx2w7vKtdv2UvakZCLANa_F8sZi13DlF_clUWo5I,23
+coinmarketcap_scrapper-2.0.dist-info/RECORD,,
