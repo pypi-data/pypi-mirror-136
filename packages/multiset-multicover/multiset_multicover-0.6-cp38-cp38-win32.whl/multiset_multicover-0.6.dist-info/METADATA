@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: multiset-multicover
+Version: 0.6
+Summary: MM is a package for running the greedy cover algorithm to perform multiset multicover.
+Home-page: https://github.com/ferrocactus/multiset_multicover
+Author: Euxhen Hasanaj
+Author-email: ehasanaj@cs.cmu.edu
+License: MIT
+Keywords: set,cover,multiset,multicover,greedy
+Platform: ALL
+Provides: multiset_multicover
+Requires-Python: >=3.7
+License-File: LICENSE
+
+UNKNOWN
+
