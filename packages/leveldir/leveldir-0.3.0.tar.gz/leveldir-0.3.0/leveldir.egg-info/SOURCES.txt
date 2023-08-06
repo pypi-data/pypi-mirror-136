@@ -1,0 +1,11 @@
+LICENSE
+setup.cfg
+setup.py
+leveldir/__init__.py
+leveldir/base.py
+leveldir/hex.py
+leveldir/numeric.py
+leveldir.egg-info/PKG-INFO
+leveldir.egg-info/SOURCES.txt
+leveldir.egg-info/dependency_links.txt
+leveldir.egg-info/top_level.txt
