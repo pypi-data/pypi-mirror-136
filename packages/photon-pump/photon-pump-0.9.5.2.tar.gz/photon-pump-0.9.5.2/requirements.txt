@@ -1,0 +1,13 @@
+aioresponses
+black
+typing-extensions
+codecov
+colorama
+idna-ssl
+pytest
+pytest-asyncio
+pytest-cov
+sphinx
+testfixtures
+tox
+versioneer
