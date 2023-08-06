@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: volttron-openadr-ven
+Version: 1.0.0
+Summary: A Volttron agent that acts as a Virtual End Node (VEN) within the OpenADR 2.0b specification.
+Author: Mark Bonicillo
+Author-email: mark.bonicillo@pnnl.gov
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: black (>=21.5b2,<22.0)
+Requires-Dist: mypy (>=0.812,<0.813)
+Requires-Dist: openleadr (>=0.5.24,<0.6.0)
+Requires-Dist: pre-commit (>=2.13.0,<3.0.0)
+Requires-Dist: volttron-client (>=0.3.8,<0.4.0)
