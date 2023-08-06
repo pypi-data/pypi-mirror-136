@@ -1,0 +1,16 @@
+README.md
+setup.py
+fsos/__init__.py
+fsos/bucket_manager.py
+fsos/bucket_manager_test.py
+fsos/deco.py
+fsos/deco_test.py
+fsos/fs_manager.py
+fsos/fs_manager_test.py
+fsos/os_manager.py
+fsos/utils.py
+fsos/utils_test.py
+fsos.egg-info/PKG-INFO
+fsos.egg-info/SOURCES.txt
+fsos.egg-info/dependency_links.txt
+fsos.egg-info/top_level.txt
