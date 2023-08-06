@@ -1,0 +1,3 @@
+[console_scripts]
+ya2ro = ya2ro.ya2ro:main
+
