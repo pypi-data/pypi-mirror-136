@@ -1,0 +1,14 @@
+LICENSE.md
+README.md
+setup.py
+gapmm2/__init__.py
+gapmm2/__main__.py
+gapmm2/__version__.py
+gapmm2/align.py
+gapmm2/utils.py
+gapmm2.egg-info/PKG-INFO
+gapmm2.egg-info/SOURCES.txt
+gapmm2.egg-info/dependency_links.txt
+gapmm2.egg-info/entry_points.txt
+gapmm2.egg-info/requires.txt
+gapmm2.egg-info/top_level.txt
