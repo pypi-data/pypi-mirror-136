@@ -1,0 +1,97 @@
+Metadata-Version: 2.1
+Name: createmeal
+Version: 0.1.0
+Summary: A library to render HTML
+Home-page: https://github.com/createmeal/createmeal-py
+Author: Julio Cezar da Silva
+Author-email: jcezardasilva@outlook.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/createmeal/createmeal-py/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 4 - Beta
+Classifier: Topic :: Internet
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# createmeal-py
+A HTML library renderer.
+
+
+## Get Started
+
+Instalation
+
+    pip install createmeal-py
+
+
+
+## Basic Usage
+
+The main metod of createmeal is toHtml({}), so:
+
+        print(createmeal.toHtml({div:{}}))
+        
+output:
+        
+        <div></div>
+
+
+
+Take a Hello world example:
+
+        helloWorld = {
+            html:{
+                head: {},
+                body: {
+                    div: [
+                        {
+                            h3: ["Hello World!"]
+                        },
+                        {
+                            p: ["This is a simple way to generate DOM without write HTML."]
+                        }
+                    ]
+                }
+            }
+        }
+            
+        print(createmeal.toHtml(helloWorld));
+
+output:
+
+    <html>
+        <head>
+        </head>
+        <body>
+            <div>
+                <h3>Hello World!</h3>
+                <p>This is a simple way to generate DOM without write HTML.</p>
+            </div>
+        </body>
+    </html>
+
+
+## Build
+Make sure you have the latest version of PyPA’s build installed:
+
+    python3 -m pip install --upgrade build
+
+Now run this command from the same directory where pyproject.toml is located:
+
+    python3 -m build
+
+
+## Documentation
+You can find the createmeal documentation [on the website](https://createmeal.org/).
+
+## License
+
+Createmeal is [MIT licensed](./LICENSE).
+

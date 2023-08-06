@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/createmeal/__init__.py
+src/createmeal.egg-info/PKG-INFO
+src/createmeal.egg-info/SOURCES.txt
+src/createmeal.egg-info/dependency_links.txt
+src/createmeal.egg-info/top_level.txt
+src/createmeal/composite/__init__.py
+src/createmeal/composite/node.py
+src/createmeal/composite/node_factory.py
+src/createmeal/composite/self_closing_tag_node.py
+src/createmeal/composite/string_node.py
