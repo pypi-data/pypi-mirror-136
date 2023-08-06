@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+changelog_manager/__init__.py
+changelog_manager/__main__.py
+changelog_manager/utils.py
+changelog_manager.egg-info/PKG-INFO
+changelog_manager.egg-info/SOURCES.txt
+changelog_manager.egg-info/dependency_links.txt
+changelog_manager.egg-info/entry_points.txt
+changelog_manager.egg-info/not-zip-safe
+changelog_manager.egg-info/requires.txt
+changelog_manager.egg-info/top_level.txt

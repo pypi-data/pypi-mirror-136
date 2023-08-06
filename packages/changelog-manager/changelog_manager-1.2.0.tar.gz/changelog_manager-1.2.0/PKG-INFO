@@ -1,0 +1,63 @@
+Metadata-Version: 2.1
+Name: changelog_manager
+Version: 1.2.0
+Summary: Easily manage your changelog using this CLI
+Home-page: https://github.com/axelfauvel/changelog-manager
+Author: Axel FAUVEL
+Author-email: axel.fauvel@gmail.com
+License: MIT
+Project-URL: Documentation, https://pypi.org/project/changelog-manager/#description
+Project-URL: Say Thanks!, https://saythanks.io/to/axel.fauvel
+Project-URL: Source, https://github.com/axelfauvel/changelog-manager
+Project-URL: Tracker, https://github.com/axelfauvel/changelog-manager/issues
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# changelog-manager
+
+https://pypi.org/project/changelog-manager/
+
+changelog_manager helps you manage your changelog.
+
+This project uses [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
+
+It mainly uses [keepachangelog](https://github.com/Colin-b/keepachangelog) library and adds a CLI above it.
+
+## How to install it?
+
+`pip install changelog_manager`
+
+## How to use it?
+
+```
+❯ changelog-manager --help
+Usage: changelog-manager [OPTIONS] COMMAND [ARGS]...
+
+Options:
+  --help  Show this message and exit.
+
+Commands:
+  add      Add a new changelog entry.
+  current  Get current version from changelog
+  display  display changes according to changelog
+  release  Release unrealeased items in changelog
+  suggest  Suggest future version from changelog
+```
+
+## release
+* release the changelog
+* Update version in setup.py
+* run `python setup.py sdist bdist_wheel`
+* run `twine upload -r testpypi dist/*`
+* 
+
+
