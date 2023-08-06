@@ -1,0 +1,7 @@
+README.md
+setup.py
+troop.egg-info/PKG-INFO
+troop.egg-info/SOURCES.txt
+troop.egg-info/dependency_links.txt
+troop.egg-info/requires.txt
+troop.egg-info/top_level.txt
