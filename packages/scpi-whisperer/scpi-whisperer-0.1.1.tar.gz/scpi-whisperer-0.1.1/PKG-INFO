@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: scpi-whisperer
+Version: 0.1.1
+Summary: Easy access to scpi measurement devices
+Home-page: https://github.com/MitchiLaser/scpi-whisperer
+Author: Michael Hohenstein
+Author-email: michael@hohenste.in
+License: MPL-2.0
+Keywords: SCPI oscilloscope measurement lab laboratory practical courses physics
+Platform: UNKNOWN
+Classifier: Topic :: Education
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: Typing :: Typed
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# scpi-whisperer
+A library to control oscilloscopes and other scpi devices in python
+
+this library is currently work in progress.
+
+
