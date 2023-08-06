@@ -1,0 +1,43 @@
+profiles:
+  # Organizations / Groups
+  org1:
+    # The following profiles must be already present in the .aws/config file
+    profile_default: org1-default
+    profile_mfa: org1-mfa-enabled-profile
+    # List of accounts in the organization 1
+    accounts:
+      # ---------------------------------------------------------
+      # The following are roles deployed in the Account A (org 1)
+      # ---------------------------------------------------------
+      - profile_prefix: org1-account-A
+        account_source: org1-mfa-enabled-profile
+        account_id: 000000000000
+        account_roles:
+          role_1: org1-aws-iam-role-1
+          role_2: org1-aws-iam-role-2
+          role_n: org1-aws-iam-role-n
+      # -------------------------------------------------
+      # The following are roles deployed in the Account B (org 1)
+      # -------------------------------------------------
+      - profile_prefix: org1-account-B
+        account_source: org1-mfa-enabled-profile
+        account_id: 000000000000
+        account_roles:
+          role_1: org1-aws-iam-role-1
+          role_2: org1-aws-iam-role-2
+          role_n: org1-aws-iam-role-n
+
+  org2:
+    # The following profiles must be already present in the .aws/config file
+    profile_default: org2-default
+    profile_mfa: org2-mfa-enabled-profile
+    # List of accounts in the organization 2
+    accounts:
+      # ---------------------------------------------
+      - profile_prefix: org2-account-A
+        account_source: org2-mfa-enabled-profile
+        account_id: 000000000000
+        account_roles:
+          role_1: org2-aws-iam-role-1
+          role_2: org2-aws-iam-role-2
+          role_n: org2-aws-iam-role-n
