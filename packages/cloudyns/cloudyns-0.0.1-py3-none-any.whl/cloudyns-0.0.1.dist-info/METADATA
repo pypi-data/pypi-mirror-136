@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: cloudyns
+Version: 0.0.1
+Summary: cloudyns is a mini tool for managing cloud dns, mainly DigitalOcean, support for other services is expected to be added soon
+Home-page: https://github.com/yoyojlf/cloudyns
+Author: yoyojlf
+Author-email: jordhan@computerapes.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/yoyojlf/cloudyns/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# cloudyns
+
+cloudyns is a mini tool for managing cloud dns, mainly DigitalOcean, support for other services is expected to be added soon
+
