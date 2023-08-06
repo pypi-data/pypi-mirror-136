@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/cloudyns/__init__.py
+src/cloudyns/pre_soft.py
+src/cloudyns.egg-info/PKG-INFO
+src/cloudyns.egg-info/SOURCES.txt
+src/cloudyns.egg-info/dependency_links.txt
+src/cloudyns.egg-info/top_level.txt
