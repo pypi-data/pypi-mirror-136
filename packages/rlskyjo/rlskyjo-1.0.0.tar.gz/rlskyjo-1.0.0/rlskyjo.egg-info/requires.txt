@@ -1,0 +1,8 @@
+gym
+numba
+numpy
+PettingZoo
+ray[tune]
+ray[rllib]
+setuptools
+torch
