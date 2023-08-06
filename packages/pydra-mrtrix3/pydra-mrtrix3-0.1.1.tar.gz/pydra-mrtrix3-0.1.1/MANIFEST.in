@@ -1,0 +1,2 @@
+include versioneer.py
+include pydra/tasks/mrtrix3/_version.py

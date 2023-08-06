@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+versioneer.py
+pydra/tasks/mrtrix3/__init__.py
+pydra/tasks/mrtrix3/_version.py
+pydra/tasks/mrtrix3/base.py
+pydra/tasks/mrtrix3/conftest.py
+pydra/tasks/mrtrix3/utils.py
+pydra/tasks/mrtrix3/tests/__init__.py
+pydra_mrtrix3.egg-info/PKG-INFO
+pydra_mrtrix3.egg-info/SOURCES.txt
+pydra_mrtrix3.egg-info/dependency_links.txt
+pydra_mrtrix3.egg-info/requires.txt
+pydra_mrtrix3.egg-info/top_level.txt
