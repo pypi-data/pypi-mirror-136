@@ -1,0 +1,3 @@
+[console_scripts]
+flask_man = flask_man.__main__:main
+

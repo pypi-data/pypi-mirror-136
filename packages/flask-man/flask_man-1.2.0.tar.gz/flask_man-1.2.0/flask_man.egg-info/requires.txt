@@ -1,0 +1,8 @@
+flask
+pymysql
+cryptography
+sanitizy
+psycopg2
+pyodbc
+cx_Oracle
+Flask-SQLAlchemy
