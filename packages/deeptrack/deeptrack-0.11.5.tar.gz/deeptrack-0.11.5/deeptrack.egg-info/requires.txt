@@ -1,0 +1,6 @@
+tensorflow
+numpy
+scipy
+scikit-image
+pint
+tensorflow_addons
