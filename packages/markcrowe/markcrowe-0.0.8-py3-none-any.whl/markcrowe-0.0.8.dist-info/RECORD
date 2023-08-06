@@ -1,0 +1,15 @@
+data_analytics/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+data_analytics/exploratory_data_analysis.py,sha256=h4FCKpQsYn4MLhcbjShX_eJILXWM5BUW5Kh9MJEknA0,5254
+data_analytics/exploratory_data_analysis_reports.py,sha256=r43eMCSgQOg7yfl6xek7VrnH4dwGhcfHoH6aBKtG9f0,4455
+data_analytics/github.py,sha256=EvaVLs9mFKFHxr3SqAZa_9AeMwXN7ARnlxHQiYZPk3w,4716
+data_analytics/graphs.py,sha256=7bhqGAPY95AtrtfRs_xndGvfyDQYPTR0lxoK9XZ4Na8,6481
+data_analytics/name_conventions.py,sha256=F09BCrz5hKQuLdWP4KoQJRjEXXNCbZa1tkWpcVjo4Bg,546
+data_analytics/zip_file.py,sha256=cSEstEU4kdKooGYN7HYhMlfxjA58dt29p956Gw9JwxM,1233
+population_planning/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+population_planning/dataframe_labels.py,sha256=ex5881aJEeWAuN2cDbJkbZ_iJGhu4hYfW3Mh1xPJoVw,1766
+population_planning/project_manager.py,sha256=xJjKKWVrr6XIeAwBY7KkBk1EUlzfFEK7pbFRkasLIq4,3981
+markcrowe-0.0.8.dist-info/METADATA,sha256=NiFg31_uRJCapbsb_KozS1mZfP9ZB77Xzdl1glzi6gE,552
+markcrowe-0.0.8.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+markcrowe-0.0.8.dist-info/license,sha256=GNrUDSgAqRnHtmgH_3Jk3ZogQCncVnv_UBQ_463xQBE,86
+markcrowe-0.0.8.dist-info/top_level.txt,sha256=jBofC7pHgCZHc3LHytLK98J69L52pXV-EoNNvU7TIgY,35
+markcrowe-0.0.8.dist-info/RECORD,,
