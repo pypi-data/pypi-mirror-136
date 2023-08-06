@@ -1,0 +1,13 @@
+pyqt5
+simpleitk
+pyyaml
+scipy
+appdirs
+pillow
+lxml
+pyqtgraph
+toml
+python-dateutil
+addict
+orderedset
+pandaslama_phenotype_detection

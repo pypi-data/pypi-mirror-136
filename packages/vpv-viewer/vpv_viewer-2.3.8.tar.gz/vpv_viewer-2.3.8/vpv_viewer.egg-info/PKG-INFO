@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: vpv-viewer
+Version: 2.3.8
+Summary: Viewing and annotation of 3D volumetric phenotype data for the IMPC
+Home-page: https://github.com/mpi2/vpv
+Author: Neil Horner
+Author-email: n.horner@har.mrc.ac.uk, bit@har.mrc.ac.uk
+License: Apache2
+Description: UNKNOWN
+Keywords: image processing,bioinformatics,phenotype
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
