@@ -1,0 +1,12 @@
+pandas
+numpy
+openpyxl
+XlsxWriter
+reportlab
+PyPDF2
+pdfminer
+datetime
+tabula
+tabulate
+PyPDF4
+fpdf

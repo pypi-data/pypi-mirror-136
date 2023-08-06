@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+effcorp_filetools.egg-info/PKG-INFO
+effcorp_filetools.egg-info/SOURCES.txt
+effcorp_filetools.egg-info/dependency_links.txt
+effcorp_filetools.egg-info/entry_points.txt
+effcorp_filetools.egg-info/requires.txt
+effcorp_filetools.egg-info/top_level.txt
+filetools/__init__.py
+filetools/__main__.py
+filetools/class_error.py
+filetools/filetools_utilities.py
