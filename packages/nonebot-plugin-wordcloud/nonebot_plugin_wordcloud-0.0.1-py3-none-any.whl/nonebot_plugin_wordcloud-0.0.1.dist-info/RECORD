@@ -1,0 +1,10 @@
+nonebot_plugin_wordcloud/__init__.py,sha256=3n7v8AvkeH1GUOFiSZLLzaK60Y1U3EUudZuessBFlfM,2362
+nonebot_plugin_wordcloud/config.py,sha256=rKC1faE5pa6e1wxq2E-pV3aj_xQSPy5NvDM-ePJ5_NI,496
+nonebot_plugin_wordcloud/data.py,sha256=kslo5Kz5z4OBle4E7HY7fFxXhj3NEK05HASbh1UpFHE,1451
+nonebot_plugin_wordcloud/model.py,sha256=gA1e73BsNopdt9923x0zEtTwrbFoNTghrXBVXF2AR5w,735
+nonebot_plugin_wordcloud/SimHei.ttf,sha256=DNgIRTYneJXBJuZSqePlxdSB7B0D0FWH3BLZGIyJ5uQ,10061604
+nonebot_plugin_wordcloud/stopwords.txt,sha256=dAqcy8OIuHbPJxndV3ZtdkKhhZtz44ht6eKenwoLXYU,9186
+nonebot_plugin_wordcloud-0.0.1.dist-info/LICENSE,sha256=MMbeK3nb7M0veV3gAVRNkl164LjuRY2Y1LPzgTU-be0,1067
+nonebot_plugin_wordcloud-0.0.1.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+nonebot_plugin_wordcloud-0.0.1.dist-info/METADATA,sha256=lhTz9pNWEkza63KMap8UwhSHtj9rMXuA2Wv7zAaRW9M,2575
+nonebot_plugin_wordcloud-0.0.1.dist-info/RECORD,,
