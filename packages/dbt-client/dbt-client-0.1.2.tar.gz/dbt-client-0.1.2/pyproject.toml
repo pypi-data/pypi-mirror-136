@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "dbt-client"
+version = "0.1.2"
+description = "A simple client for DBT RPC instances"
+authors = ["Gabriel Gazola Milan <gabriel.gazola@poli.ufrj.br>"]
+license = "GPL-3.0-only"
+readme = "README.md"
+homepage = "https://github.com/gabriel-milan/dbt-client"
+repository = "https://github.com/gabriel-milan/dbt-client"
+keywords = ["dbt", "rpc", "client", "python"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+requests = "^2.26.0"
+importlib-metadata = {version = "^1.0", python = "<3.8"}
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
