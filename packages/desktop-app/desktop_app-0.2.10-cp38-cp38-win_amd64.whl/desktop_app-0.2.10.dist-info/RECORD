@@ -1,0 +1,16 @@
+desktop_app/__init__.py,sha256=nQj2ecoDBuxaP0y93DSKahOxnxqRTp1r1KuplsFJxDw,229
+desktop_app/__main__.py,sha256=Aw-qXzVBEc6bOoznlku4n2H25-lHaF1nPV6E2ca5tWc,2106
+desktop_app/__version__.py,sha256=eOCGpRzmbbAj2aIoXC-9HI9j2h1IC5269qpMQtY_XUQ,645
+desktop_app/environment.py,sha256=zmWBHPXtEzuPG6bFVG_CZRjJ2PFSndXNKf-P-3j0n2c,10039
+desktop_app/fix_entry_points.py,sha256=h5zukQytd3QH1YQE1NnU8q1mcv3BE15c6TJj594MDrg,1741
+desktop_app/launcher.py,sha256=NWDlR7Wz2OfwQEYAFoy29fdDh4Qute7IMYVkwvqIKoU,3780
+desktop_app/linux.py,sha256=poIEOvozS1uQ4CPRT7xbJQNVO_yYP1t5TOsrSnlByLU,1318
+desktop_app/shell.py,sha256=tDsZXfJevdTzPYmh6mNySTlkEmwM8Re1TgdZ4eFLymI,13043
+desktop_app/windows.py,sha256=NeNc8xhyiOGXIwO6SAOpaFSYGewtcCAkw4pzbzGyzBk,4338
+desktop_app/wineventhook.cp38-win_amd64.pyd,sha256=6hrSVhMHD2u1mOQxDl0rp8Rw2jfhn04z4oW7ZaJ5M-0,13312
+desktop_app-0.2.10.dist-info/LICENSE,sha256=22JXQVs40tSt94Ekfn6UL2P_JH7vNIqC4yZwpE6rL7o,1295
+desktop_app-0.2.10.dist-info/METADATA,sha256=RvGUksJlYgMYSQC6m3QwsfOI-l7KpqXFcBvNdP6wblU,4185
+desktop_app-0.2.10.dist-info/WHEEL,sha256=M2GQ3lde8oJhlQPj2wbRvnqE3cuovPJasri5X5aCmck,100
+desktop_app-0.2.10.dist-info/entry_points.txt,sha256=Y5NpL5c3-qNKCHcgLq5OTFM8xDO3GdWzBEaCCq7-v5c,59
+desktop_app-0.2.10.dist-info/top_level.txt,sha256=T8dEN8IUR-LgWBhzv-hVMZ5puQGIXCbjdLtrKgSDfOI,12
+desktop_app-0.2.10.dist-info/RECORD,,
