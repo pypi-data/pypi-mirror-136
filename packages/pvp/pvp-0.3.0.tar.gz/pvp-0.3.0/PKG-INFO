@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: pvp
+Version: 0.3.0
+Summary: some description of how we made a ventilator
+Home-page: https://ventilator.readthedocs.io
+Author: pvp team
+Author-email: pvp@vents.com
+License: UNKNOWN
+Keywords: vents ventilators etc
+Platform: UNKNOWN
+Requires-Python: >=3.7,<3.8
+License-File: LICENSE
+
+UNKNOWN
+
