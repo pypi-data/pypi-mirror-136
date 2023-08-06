@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: python-planfact
+Version: 0.0.9.0
+Summary: Simple python wrapper for some parts of the planfact API (https://apidoc.planfact.io/)
+Home-page: https://github.com/Raevsky-Team/planfact_api
+Author: Mihail Granovskij
+Author-email: mihail.granovskij@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/Raevsky-Team/planfact_api/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: pydantic
+
+# Simple python wrapper for planfact.io API
+
+### Resource
+
+planfact API documentation: https://apidoc.planfact.io
+
+### Installation
+
+```pip install python-planfact```
+
+### Example usage:
+
+```python
+import os
+import planfact_api as pf
+
+os.environ["PF_API_KEY"] = "YOUR_API_KEY_HERE"
+currencies = pf.get_currencies()
+```
+
+
