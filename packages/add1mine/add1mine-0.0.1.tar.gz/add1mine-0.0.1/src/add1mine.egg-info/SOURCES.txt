@@ -1,0 +1,9 @@
+license
+pyproject.toml
+setup.cfg
+src/add1mine.egg-info/PKG-INFO
+src/add1mine.egg-info/SOURCES.txt
+src/add1mine.egg-info/dependency_links.txt
+src/add1mine.egg-info/top_level.txt
+src/example_package/__init__.py
+src/example_package/example.py
