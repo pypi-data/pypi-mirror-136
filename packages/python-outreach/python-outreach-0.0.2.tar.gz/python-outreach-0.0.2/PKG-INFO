@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: python-outreach
+Version: 0.0.2
+Summary: Python-outreach is a Python wrapper functions for Outreach APIs
+Home-page: https://github.com/ptoraskar/python-outreach.git
+Author: RedHat Marketing Operations Data Engineering
+Author-email: mkt-ops-de@redhat.com,
+License: MIT
+Description: # outreach
+        Python wrapper functions for Outreach APIs, tested with Python 3.8 - 3.9.
+        
+Platform: UNKNOWN
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown; charset=UTF-8
+Provides-Extra: test
+Provides-Extra: all
