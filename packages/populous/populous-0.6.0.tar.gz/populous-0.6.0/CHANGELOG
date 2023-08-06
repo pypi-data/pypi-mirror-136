@@ -1,0 +1,66 @@
+Changelog
+=========
+
+0.6.0 (2022-01-25)
+------------------
+
+- Update code for python>=3.7
+- Add support for Django 2.2-3.2
+- Add support for PyYAML 6.0
+
+
+0.5.0 (2018-08-30)
+------------------
+
+- Store intermediate values with 'store_in'
+
+
+0.4.1 (2018-05-28)
+------------------
+
+- Use environment markers for functools32 dependency
+
+
+0.4.0 (2018-05-25)
+------------------
+
+- Fix error with buffers (#35)
+- Use peloton_bloomfilters_py3 with all Python versions
+
+
+0.3.0 (2017-12-06)
+------------------
+
+- Fix unicode error in exceptions with Python 2
+- Add support for expressions in the Text generator
+
+
+0.2.2 (2017-09-12)
+------------------
+
+- Update click & click-log
+
+
+0.2.1 (2017-07-06)
+------------------
+
+- Fix packaging for Python 3
+
+
+0.2.0 (2017-07-06)
+------------------
+
+- Add python3 support
+- Accept variables for 'nullable' in generators
+
+
+0.1.1 (2017-05-11)
+------------------
+
+- Rename 'postgresql' command 'postgres'
+
+
+0.1.0 (2017-05-11)
+------------------
+
+- Initial release

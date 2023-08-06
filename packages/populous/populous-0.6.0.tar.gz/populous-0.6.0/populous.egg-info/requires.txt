@@ -1,0 +1,16 @@
+click
+click-log>=0.2.0
+cached-property
+dateutils
+Faker
+Jinja2
+PyYAML
+peloton_bloomfilters_py3
+
+[tests]
+tox
+pytest
+pytest-mock
+flake8
+isort
+black
