@@ -1,0 +1,6 @@
+inflect
+joblib
+nose2
+pandas
+requests
+requests-cache
