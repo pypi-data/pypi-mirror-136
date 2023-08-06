@@ -1,0 +1,10 @@
+LICENSE
+README.md
+detect_gh_actions_unused_secrets.py
+setup.cfg
+setup.py
+detect_gh_actions_unused_secrets.egg-info/PKG-INFO
+detect_gh_actions_unused_secrets.egg-info/SOURCES.txt
+detect_gh_actions_unused_secrets.egg-info/dependency_links.txt
+detect_gh_actions_unused_secrets.egg-info/entry_points.txt
+detect_gh_actions_unused_secrets.egg-info/top_level.txt

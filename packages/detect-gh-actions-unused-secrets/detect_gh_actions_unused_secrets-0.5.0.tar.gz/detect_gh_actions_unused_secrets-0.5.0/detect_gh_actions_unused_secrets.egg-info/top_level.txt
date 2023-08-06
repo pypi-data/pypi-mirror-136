@@ -1,0 +1,1 @@
+detect_gh_actions_unused_secrets
