@@ -1,0 +1,9 @@
+ahapi/__init__.py,sha256=Y-Bo4O2e8PBpKrEr2cweM1_JStWSZ1vpoCW80e-L3rM,133
+ahapi/formdata.py,sha256=9s3C8BOAoD0E3LgEWCbvp6TUr1jVWWUuLqzpHjn0Pdc,3598
+ahapi/server.py,sha256=caAwN6hsnmZ6JWisBzwWc9Fm-4k38KwiuGW0lF7w_oQ,9202
+ahapi/session.py,sha256=CWV9qZQZHjbdrXIMHrO2KUzpBxkytAxDbU2bds6Jb-o,4771
+ahapi-0.1.15.dist-info/METADATA,sha256=FfygnVvGZEYcq8UjBAeRYgzNM699LT2s9PhEXQCAaRY,387
+ahapi-0.1.15.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+ahapi-0.1.15.dist-info/top_level.txt,sha256=O1IyX3pHZ9ZcWD6vpuxTImKVhjpKEZ5ppUEJgEIPhbY,6
+ahapi-0.1.15.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+ahapi-0.1.15.dist-info/RECORD,,
