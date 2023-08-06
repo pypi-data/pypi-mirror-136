@@ -1,0 +1,13 @@
+timeflake/__init__.py,sha256=tihjQj4-jNFLbVQThyc6CpHWcby35W1J-LrYJdfOIQE,1255
+timeflake/__main__.py,sha256=Nf3q1G5poPTxSeXkpEuJLor4seq0sbKGjBYggHy-IkQ,955
+timeflake/flake.py,sha256=1QtdRlEsJFOzfTqIhkFtA_oICs1KZ4yTLJsxfhSO5Tc,1462
+timeflake/utils.py,sha256=AdyaF91dLt8mJDwANz2m3a0GSebhggCxgmA2SdN2IA0,1044
+timeflake/extensions/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+timeflake/extensions/django/__init__.py,sha256=l9ClSKpnkVLbdmrpJyJY2Z5Mom3g3x2k2em0mOvpwGs,3047
+timeflake/extensions/peewee/__init__.py,sha256=6deMtM7EPd3iTsTSag3As7gtAoeCwnUBGy0MSqfYK1k,1171
+timeflake-0.4.1.dist-info/LICENSE,sha256=dFaMNE1NsLR5R_lIvCbGTmqTonKCCu_osj4_-bMApXs,1082
+timeflake-0.4.1.dist-info/METADATA,sha256=FjB3zXR0twoI2oAndYrhNDv3g3J7YQo3wEadP0ctgt8,10505
+timeflake-0.4.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+timeflake-0.4.1.dist-info/entry_points.txt,sha256=VKCU6oCHk6R1s7RnZoFBD7dl7DIcvi6STG5wtREgTxs,55
+timeflake-0.4.1.dist-info/top_level.txt,sha256=56C1n44I_3ymi4HKYa42N7cDp39rHmpiAsLpxvTjUHw,10
+timeflake-0.4.1.dist-info/RECORD,,
