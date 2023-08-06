@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+pyrelvis/__init__.py
+pyrelvis/relations.py
+pyrelvis.egg-info/PKG-INFO
+pyrelvis.egg-info/SOURCES.txt
+pyrelvis.egg-info/dependency_links.txt
+pyrelvis.egg-info/requires.txt
+pyrelvis.egg-info/top_level.txt
