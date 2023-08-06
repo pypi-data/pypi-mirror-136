@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "w3ezpz"
+version = "0.0.1-alpha"
+description = "web 3 ezpz"
+authors = ["killingtime <killingtime-sc@pm.me>"]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.11"
+web3 = "^5.27.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.5"
+black = "^22.1.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
