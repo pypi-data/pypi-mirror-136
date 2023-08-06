@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+test/test_2d_arrays.py
+test/test_3d_arrays.py
+test/test_errors.py
+test/test_main.py
+xarrayMannKendall/__init__.py
+xarrayMannKendall/decorators.py
+xarrayMannKendall/xarrayMannKendall.py
+xarrayMannKendall.egg-info/PKG-INFO
+xarrayMannKendall.egg-info/SOURCES.txt
+xarrayMannKendall.egg-info/dependency_links.txt
+xarrayMannKendall.egg-info/not-zip-safe
+xarrayMannKendall.egg-info/top_level.txt
