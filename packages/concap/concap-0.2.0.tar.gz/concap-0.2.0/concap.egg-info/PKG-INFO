@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: concap
+Version: 0.2.0
+Summary: An interactive console implement.
+Home-page: https://github.com/NCBM/concap
+Author: HivertMoZara
+Author-email: worldmozara@163.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.7.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# concap
+concap is an implement for interactive console.  
+## Installation
+- From PyPI  
+```bash
+pip install concap
+```
+- From source  
+Execute commands below:  
+```bash
+# If you downloaded zip file of this repository, you can decompress the file instead of using 'git clone'
+git clone https://github.com/worldmozara/concap.git
+cd concap
+pip install .
+```
+
+
