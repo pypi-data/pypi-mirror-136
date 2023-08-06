@@ -1,0 +1,41 @@
+Source: dqsegdb
+Section: python
+Priority: optional
+Maintainer: Robert Bruntz <robert.bruntz@ligo.org>
+Build-Depends:
+ debhelper (>= 9),
+ dh-python,
+ python3-all,
+ python3-gwdatafind,
+ python3-ligo-segments,
+ python3-lscsoft-glue (>= 1.55) | python3-glue (>= 1.55),
+ python3-pyrxp,
+ python3-pytest,
+ python3-setuptools,
+Standards-Version: 3.9.1
+X-Python-Version: >= 3.6
+
+Package: python3-dqsegdb
+Architecture: any
+Depends:
+ ${misc:Depends},
+ ${python3:Depends},
+ python3-gwdatafind,
+ python3-lal,
+ python3-ligo-segments,
+ python3-lscsoft-glue (>= 1.55) | python3-glue (>= 1.55),
+ python3-pyrxp,
+Description: Python 3 DQSegDB client
+ This package provides the Python3 library to connect to LIGO/VIRGO
+ DQSEGDB instances.
+
+Package: dqsegdb
+Architecture: any
+Depends:
+ ${misc:Depends},
+ ${python3:Depends},
+ python3-dqsegdb (= ${binary:Version}),
+Conflicts: python-dqsegdb (<< 1.6.1-2)
+Description: dqsegdb client
+ This package provides the client tools to connect to LIGO/VIRGO
+ DQSEGDB instances.
