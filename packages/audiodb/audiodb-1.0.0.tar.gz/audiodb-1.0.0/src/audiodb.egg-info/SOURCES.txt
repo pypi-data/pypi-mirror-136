@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+src/audiodb/__init__.py
+src/audiodb/audiodb.py
+src/audiodb.egg-info/PKG-INFO
+src/audiodb.egg-info/SOURCES.txt
+src/audiodb.egg-info/dependency_links.txt
+src/audiodb.egg-info/top_level.txt

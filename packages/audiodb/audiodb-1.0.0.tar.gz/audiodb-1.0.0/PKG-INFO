@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: audiodb
+Version: 1.0.0
+Summary: TheAudioDB API client
+Home-page: https://github.com/thexxiv/audiodb-py
+Author: XXIV
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/thexxiv/audiodb-py/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# TheAudioDB
+
+[![](https://img.shields.io/github/v/tag/thexxiv/audiodb-py?label=version)](https://github.com/thexxiv/audiodb-py/releases/latest) [![](https://img.shields.io/github/license/thexxiv/audiodb-py)](https://github.com/thexxiv/audiodb-py/blob/main/LICENSE)
+
+TheAudioDB API client for **Python**.
+
+### Download
+[PyPI](https://pypi.org/project/audiodb/)
+
+```
+pip install audiodb
+```
+
+### Example
+
+```py
+from audiodb import search_albums_by_artist_id
+
+for album in search_albums_by_artist_id(111674):
+    print(album.strAlbum)
+```
+
+### Documentation
+
+* [pdoc](https://thexxiv.github.io/audiodb-py)
+
+### License
+
+TheAudioDB is released under the [Apache License 2.0](https://github.com/thexxiv/audiodb-py/blob/main/LICENSE).
+
+```
+ Copyright 2022 XXIV
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+```
+
