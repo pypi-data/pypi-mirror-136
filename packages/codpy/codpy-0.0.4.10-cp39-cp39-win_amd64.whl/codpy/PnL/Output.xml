@@ -1,0 +1,13 @@
+<info value = "kernel.set_polynomial_order(2)"/>
+<info value = "set_kernel(tensornorm)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_unitcube</info>
+<info value = "get_kernel_ptr()"/>
+<info value = "kernel.set_polynomial_order(2)"/>
+<info value = "set_kernel(linear_regressor)"/>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_unitcube</info>
+<info value = "get_kernel_ptr()"/>
+<info value = "set_kernel_ptr(smart_ptr<Kernel<>> & kernel_ptr)"/>
+<info value = "kernel.op.pipe_kernel_ptr(smart_ptr<Kernel<>>& k)"/>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.set_regularization(0.000000)"/>

@@ -1,0 +1,227 @@
+---
+title: PnL explanained using kernel-induced differential operators\footnote{This note is a working draft intended for Attribution-NonCommercial-NoDerivatives
+  4.0 International (CC BY-NC-ND 4.0)}
+date: "`r format(Sys.time(), '%d %m %Y')`"
+abstract:
+  pdf_document:
+    keep_tex: yes
+    includes:
+      in_header: article_sty.sty
+    number_sections: yes
+output: pdf_document
+---
+
+
+```{r , include=FALSE}
+library(reticulate)
+library(knitr)
+library(kableExtra)
+knitr::opts_chunk$set(echo = FALSE, fig.path='CodPyTempFigs/')
+```
+
+```{python, echo = FALSE, results = "hide"}
+from preamble import *
+from PnL_Delta_Gamma import *
+from PnLexplanation import *
+import codpypyd as cd
+# %use_python(Sys.getenv("PYTHONHOME"))
+```
+
+\section{Problem formulation}
+Risk production generates first and second order derivatives of the valuation function, called Greeks, which represent the sensitivities that the value of of a portfolio positions in risky derivatives has to change in the underlying variables and the parameters on which the valuation function is dependent. The described underlying variables and parameters are called risk factors. The problem is to justify the PnL from a set of observable market parameters.
+
+In the financial literature there is a specific term for each of risk sensitivities, for example: first and second order derivative with respect to the underlying risk factor is called delta and gamma, first and second order derivative with respect to a volatility is called vega and volga etc.
+
+We consider PnL explain (PnL attribution) using sensitivities method in this note, i.e. PnL can be explained by derivative product's delta and gamma. A portfolio consists of the closing prices of a set of stocks and indices, with a valuation function $V$. The spot prices at time $t$ of underlyings are collected in the matrix $P_t \in \mathbb{R}^{N_x\times D}$, where $N_x$ is the length of the times series and $D$ is the dimension of our portfolio. 
+
+\section{PnL explain}
+\subsection{Sensitivities approach}
+Risk factor sensitivities at time $t$ are used to attribute the PnL expected from the changes from prior market close price of risk factors. As soon as risk factors have been computed, the PnL is found by means of Taylor's expansion of the valuation function $V$, i.e. by multiplying the risk by the change in the underlying market factors. For a linear portfolio a first order theta-delta approximation is sufficient, but for most exotic derivative instruments higher order approximations, like theta-delta-gamma can be necessary. 
+
+We give a brief description of sensitivities. Theta represents the rate of change between the option price and time, or time
+sensitivity - sometimes known as an option’s time decay. Delta represents the rate of change between the option’s price and a 1 unit change
+in the underlying asset’s price. Gamma representing the rate of change between an option’s delta and the underlying asset’s price.
+
+
+\subsection{First order expansion}
+We set $X=P_t \in \mathbb{R}^{N_x\times D}$ and $Z = P_{t+1} \in \mathbb{R}^{N_x\times D}$ as spot price matrices at time $t$ and $t+1$ respectively. 
+
+Using first order Taylor expansion, we get the so-called delta approximation:
+$$
+V(Z) = V(X) + \delta^T\Delta X 
+$$
+where $\Delta X = Z - X$ is a price move between time $t$ and $t+1$ and $\delta = \nabla V(X) \in \mathbb{R}^{N_x\times D}$ is a gradient operator: 
+$$
+[\nabla V(X)]^i = \frac{\partial V(X)}{\partial X^i} \in  \mathbb{R}^{N_x\times 1}, \quad i = 1,...,D
+$$
+
+and generalized inner product $\delta^T\Delta X \in \mathbb{R}^{N_x\times 1}$ is defined as:
+
+$$
+\delta^T\Delta X = \begin{bmatrix} \nabla V(X)_1^T \Delta X_1 \\ \vdots \\ \nabla V(X)_{N_x}^T \Delta X_{N_x}  \end{bmatrix} \in \mathbb{R}^{N_x\times 1}
+$$
+
+Then we introduce unexplained term:
+$$
+V(Z) = V(X) + \nabla V(X)^T\Delta X+unexplained
+$$
+the unexplained term is a critical metric that regulators pay attention to. A large unexplained term may indicate that either the chosen risk factors are incomplete or the models used for sensitivities calculations are inconsistent.
+
+
+\subsection{Cross risk factors and second order expansion}
+Generally portfolios may exhibit a significant dynamic and thus the delta method will have a large Unexplained term.
+In this case we use Taylor's second order expansion.
+$$
+V(Z) = V(X) + \delta^T\Delta X + \frac{1}{2}\Delta X^T\Gamma\Delta X +unexplained
+$$
+where $\Gamma \in \mathbb{R}^{N_x\times D \times D}$ is a hessian matrix with each element
+
+$$
+\Gamma^{i,j} = \frac{\partial^2 V(P_{t})}{\partial X^i \partial X^j} \in  \mathbb{R}^{N_x\times 1}, \quad i,j \in [1,D]
+$$
+and $\Delta X^T\Gamma\Delta X \in \mathbb{R}^{N_x\times 1}$ is a generalized quadratic form:
+
+$$
+\Delta X^T\Gamma\Delta X= \begin{bmatrix} \Delta X_1^T\Gamma_1 \Delta X_1 \\ \vdots \\ \Delta X_{N_x}^T\Gamma_{N_x} \Delta X_{N_x}  \end{bmatrix} \in \mathbb{R}^{N_x\times 1}
+$$
+
+\section{PnL explained using kernel-induced differential operators}
+We do not give a description of kernel methods, hence we refer to the Codpy book.
+
+In this note we assume that kernel functions are positive definite. A kernel matrix $K$ induced from the kernel function $k$ can be square or rectangular. If it is square, then it is equivalent to a Gram matrix.
+
+For any positive-definite kernel $k$, and points $X, Z$, we define $\nabla$ operator as the tensor: 
+$$
+  \delta_k = \nabla_{k}(X,X,X) = \Big(\nabla_z k\Big)(X,X)K(X,X)^{-1} %\in \mathbb{R}^{D \times N_x\times N_x}, 
+$$
+
+where $K(X,X)$ is a Gramm matrix induced by the kernel $k$. 
+
+The numerical gradient operator $\delta_k$ induced by the kernel function $k$ is given by
+
+$$\delta_k = ( \nabla V)(X) \sim (\nabla_{k})(X,X,X) V(X) \in \mathbb{R}^{N_x\times D},$$
+
+The numerical hessian $\Gamma_k$ is defined as:
+$$\Gamma_k = ( \nabla ( \nabla V)(X))(X) \sim (\nabla_{k})(X,X,X) ( \nabla V)(X) \in \mathbb{R}^{N_x\times D \times D},$$
+then first and second order expansions are given by:
+
+$$
+V(Z) = V(X) + \delta_k^T\Delta X + unexplained
+$$
+
+$$
+V(Z) = V(X) + \delta_k^T\Delta X + \frac{1}{2}\Delta X^T\Gamma_k\Delta X +unexplained
+$$
+
+\subsection{Codpy's wrapper}
+
+In order to compute first and second order approximations of the valuation function $V$ using codpy library, we need to define a data generator, given by $Valuation\_time\_series\_generator$, the class that computes the approximations, given by $PnL\_codpy\_delta$ and use a Python wrapper function $get\_scenarios$ as follows:
+
+$$
+    scenarios = get\_scenarios(^{**}get\_param(),my\_generator = [Valuation\_time\_series\_generator], my\_predictor = [PnL\_codpy\_delta])
+$$
+
+Time lag, the beginning and the end of time series, the portfolio composition are all passed by $get\_param()$ wrapper function.
+
+\section{Learning PnL function}
+
+A set of $N_x$ observable data in $D$ dimensions is available, denoted by the symbol $X \in \mathbb{R}^{N_x\times D}$, together with a vector-valued function $f(X):\mathbb{R}^{N_x}$ are the training values associated with the training variables. The input dataset is therefore 
+$$
+(X,f(X)) := \{x^n, f(x^n)\}_{n = 1,\dots,N_x}, \quad X \in \mathbb{R}^{N_x \times D}, \qquad f(X) \in \mathbb{R}^{N_x}.
+$$
+We are interested in predicting test values $f(Z):\mathbb{R}^{N_z \times D_f}$ on a new set of variables called *a test set* $Z \in \mathbb{R}^{N_z \times D}$: 
+$$ 
+(Z,f_z) := \{z^n, f_z^n\}_{n = 1,\dots,N_z}, \quad Z \in \mathbb{R}^{N_z \times D}, \qquad f_z \in \mathbb{R}^{N_z}.
+$$
+
+\section{Numerical experiments and results}
+
+\subsection{PnL Learning}
+We consider three indices "GSPC", "FTSE", "FCHI" with period ('begin_date':'01/01/2020' and 'end_date':'01/01/2021'). We use a Vanilla option as a valuation function $V$. The spot prices at time $t$ of four indices are collected in a matrix $P_t \in \mathbb{R}^{N_x\times D}$, where $N_x$ is the length of the times series and $D$ is the dimension of our portfolio. First we split the data into train and test sets, with test set is 1\% of all observed time series. We use a tensornorm kernel with unit cube mapping. 
+
+```{python, echo = FALSE, results = "hide"}
+params = get_param()
+params['test size'] = 0.01
+params['set_kernel'] = kernel_setters.kernel_helper(kernel_setters.set_tensornorm_kernel, 2,1e-8 ,map_setters.set_unitcube_map)
+scenarios = get_scenarios(**params,my_generator = [PnL_time_series_generator], my_predictor = [PnL_codpy])
+results = [scenarios.data_generator.format_output(scenarios.predictor.fz,**get_param())]
+for predictor,generator in zip(scenarios.accumulator.predictors,scenarios.accumulator.generators):
+    debug = generator.format_output(predictor.f_z,**get_param()) 
+    results.append(debug)
+rez = scenarios.results
+```
+
+```{python, echo = FALSE, results = "hide"}
+scenarios.plot_output(results = results,fun_x = lambda x : pd.to_datetime(x,format='%d/%m/%Y'),listlabels=["observed","generated","observed","mean average"],**get_param(),figsize = (5,5))
+```
+
+```{r}
+knitr::kable(py$rez, caption = "PnL prediction", col.names = c("$predictor_{id}$", "$D$", "$N_x$", "$N_y$", "$N_z$", "$D_f$", "time", "scores", "norm function", "discr.error"), escape = FALSE)%>%
+  kable_styling(latex_options = "HOLD_position")
+```
+
+\subsection{Theta-delta-gamma approximation}
+
+**Delta approximation**. First we compute the valuation function using delta approximation. For the first order approximation we use a Gaussian kernel composed with a standard mean mapping. 
+
+```{python, echo = FALSE, results = "hide"}
+params = get_param()
+params['set_kernel'] = kernel_setters.kernel_helper(kernel_setters.set_gaussian_kernel, 0 ,1e-8 ,map_setters.set_standard_mean_map)
+scenarios = get_scenarios(**get_param(),my_generator = [Valuation_time_series_generator], my_predictor = [PnL_codpy_delta])
+results = [scenarios.data_generator.format_output(scenarios.predictor.fz,**get_param())]
+for predictor,generator in zip(scenarios.accumulator.predictors,scenarios.accumulator.generators):
+    debug = generator.format_output(predictor.f_z,**get_param()) 
+    results.append(debug)
+rez1 = scenarios.results
+```
+
+```{python, echo = FALSE, results = "hide"}
+scenarios.plot_output(results = results,fun_x = lambda x : pd.to_datetime(x,format='%d/%m/%Y'),listlabels=["observation","approximation"],**get_param(), figsize = (5,5))
+```
+
+```{r}
+knitr::kable(py$rez1, caption = "Delta", col.names = c("$predictor_{id}$", "$D$", "$N_x$", "$N_y$", "$N_z$", "$D_f$", "time", "scores", "norm function", "discr.error"), escape = FALSE)%>%
+  kable_styling(latex_options = "HOLD_position")
+```
+
+**Delta-gamma approximation**.  For the second order approximation we use a linear kernel composed with a unit cube mapping. 
+
+
+```{python, echo = FALSE, results = "hide"}
+params = get_param()
+params['set_kernel'] = kernel_setters.kernel_helper(kernel_setters.set_linear_regressor_kernel, 2,1e-2 , map_setters.set_unitcube_map)
+scenarios = get_scenarios(**get_param(),my_generator = [Valuation_time_series_generator], my_predictor = [PnL_codpy_delta_gamma])
+results = [scenarios.data_generator.format_output(scenarios.predictor.fz,**get_param())]
+for predictor,generator in zip(scenarios.accumulator.predictors,scenarios.accumulator.generators):
+    debug = generator.format_output(predictor.f_z,**get_param()) 
+    results.append(debug)
+rez2 = scenarios.results
+```
+
+```{python, echo = FALSE, results = "hide"}
+scenarios.plot_output(results = results,fun_x = lambda x : pd.to_datetime(x,format='%d/%m/%Y'),listlabels=["observation","approximation"],**get_param(), figsize = (5,5))
+```
+
+```{r}
+knitr::kable(py$rez2, caption = "Delta-gamma", col.names = c("$predictor_{id}$", "$D$", "$N_x$", "$N_y$", "$N_z$", "$D_f$", "time", "scores", "norm function", "discr.error"), escape = FALSE)%>%
+  kable_styling(latex_options = "HOLD_position")
+```
+
+\section{Summary}
+
+\section{Further results}
+This approach can be extended to 
+
+* CVA PnL explain
+* New trade PnL explain
+
+\begin{thebibliography}{1}
+\bibitem{FA} Financial Service Authority CP 08/24, PS 09/20 and GL32
+\bibitem{GR} A. Gretton, K. Borgwardt, M. J. Rasch, B. Scholkopf, A. J. Smola, A Kernel Method for the Two-Sample Problem, arXiv:0805.2368
+\bibitem{JM} P.G. LeFloch, J.M. Mercier, The transport-based mesh-free method for mathematical finance and fuid dynamics. In preparation
+\bibitem{JM2} P.G. LeFloch, J.M. Mercier, The Transport‐based Mesh‐free Method: A Short Review, Volume 2020, Issue 109, Pages: 1-72, September 2020
+\bibitem{TDGJ} P. Traccucci, L. Dumontier, G. Garchery, B. Jacot, A Triptych Approach for Reverse Stress Testing of Complex Portfolios. arXiv:1906.11186
+\bibitem{MM1} J.M. Mercier, S. Miryusupov, Hedging Strategies for Net Interest Income and Economic Values of Equity 
+\bibitem{MM2} J.M. Mercier, S. Miryusupov, codpy tutorial and advanced tutorial. 
+\end{thebibliography}
+

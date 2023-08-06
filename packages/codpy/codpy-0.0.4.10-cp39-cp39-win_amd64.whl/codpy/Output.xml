@@ -1,0 +1,913 @@
+<info value = "kernel.set_polynomial_order(2)"/>
+<info value = "set_kernel(tensornorm)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_unitcube</info>
+<info value = "get_kernel_ptr()"/>
+<info value = "kernel.set_polynomial_order(2)"/>
+<info value = "set_kernel(linear_regressor)"/>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_unitcube</info>
+<info value = "get_kernel_ptr()"/>
+<info value = "set_kernel_ptr(smart_ptr<Kernel<>> & kernel_ptr)"/>
+<info value = "kernel.op.pipe_kernel_ptr(smart_ptr<Kernel<>>& k)"/>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.set_polynomial_order(2)"/>
+<info value = "set_kernel(tensornorm)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_unitcube</info>
+<info value = "get_kernel_ptr()"/>
+<info value = "kernel.set_polynomial_order(2)"/>
+<info value = "set_kernel(linear_regressor)"/>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_unitcube</info>
+<info value = "get_kernel_ptr()"/>
+<info value = "set_kernel_ptr(smart_ptr<Kernel<>> & kernel_ptr)"/>
+<info value = "kernel.op.pipe_kernel_ptr(smart_ptr<Kernel<>>& k)"/>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.set_polynomial_order(2)"/>
+<info value = "set_kernel(tensornorm)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_unitcube</info>
+<info value = "get_kernel_ptr()"/>
+<info value = "kernel.set_polynomial_order(2)"/>
+<info value = "set_kernel(linear_regressor)"/>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_unitcube</info>
+<info value = "get_kernel_ptr()"/>
+<info value = "set_kernel_ptr(smart_ptr<Kernel<>> & kernel_ptr)"/>
+<info value = "kernel.op.pipe_kernel_ptr(smart_ptr<Kernel<>>& k)"/>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.set_polynomial_order(2)"/>
+<info value = "set_kernel(tensornorm)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_unitcube</info>
+<info value = "get_kernel_ptr()"/>
+<info value = "kernel.set_polynomial_order(2)"/>
+<info value = "set_kernel(linear_regressor)"/>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_unitcube</info>
+<info value = "get_kernel_ptr()"/>
+<info value = "set_kernel_ptr(smart_ptr<Kernel<>> & kernel_ptr)"/>
+<info value = "kernel.op.pipe_kernel_ptr(smart_ptr<Kernel<>>& k)"/>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.set_polynomial_order(2)"/>
+<info value = "set_kernel(tensornorm)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_unitcube</info>
+<info value = "get_kernel_ptr()"/>
+<info value = "kernel.set_polynomial_order(2)"/>
+<info value = "set_kernel(linear_regressor)"/>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_unitcube</info>
+<info value = "get_kernel_ptr()"/>
+<info value = "set_kernel_ptr(smart_ptr<Kernel<>> & kernel_ptr)"/>
+<info value = "kernel.op.pipe_kernel_ptr(smart_ptr<Kernel<>>& k)"/>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.set_polynomial_order(2)"/>
+<info value = "set_kernel(tensornorm)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_unitcube</info>
+<info value = "get_kernel_ptr()"/>
+<info value = "kernel.set_polynomial_order(2)"/>
+<info value = "set_kernel(linear_regressor)"/>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_unitcube</info>
+<info value = "get_kernel_ptr()"/>
+<info value = "set_kernel_ptr(smart_ptr<Kernel<>> & kernel_ptr)"/>
+<info value = "kernel.op.pipe_kernel_ptr(smart_ptr<Kernel<>>& k)"/>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.set_polynomial_order(2)"/>
+<info value = "set_kernel(tensornorm)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_unitcube</info>
+<info value = "get_kernel_ptr()"/>
+<info value = "kernel.set_polynomial_order(2)"/>
+<info value = "set_kernel(linear_regressor)"/>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_unitcube</info>
+<info value = "get_kernel_ptr()"/>
+<info value = "set_kernel_ptr(smart_ptr<Kernel<>> & kernel_ptr)"/>
+<info value = "kernel.op.pipe_kernel_ptr(smart_ptr<Kernel<>>& k)"/>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.set_polynomial_order(2)"/>
+<info value = "set_kernel(tensornorm)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_unitcube</info>
+<info value = "get_kernel_ptr()"/>
+<info value = "kernel.set_polynomial_order(2)"/>
+<info value = "set_kernel(linear_regressor)"/>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_unitcube</info>
+<info value = "get_kernel_ptr()"/>
+<info value = "set_kernel_ptr(smart_ptr<Kernel<>> & kernel_ptr)"/>
+<info value = "kernel.op.pipe_kernel_ptr(smart_ptr<Kernel<>>& k)"/>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.set_polynomial_order(2)"/>
+<info value = "set_kernel(tensornorm)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_unitcube</info>
+<info value = "get_kernel_ptr()"/>
+<info value = "kernel.set_polynomial_order(2)"/>
+<info value = "set_kernel(linear_regressor)"/>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_unitcube</info>
+<info value = "get_kernel_ptr()"/>
+<info value = "set_kernel_ptr(smart_ptr<Kernel<>> & kernel_ptr)"/>
+<info value = "kernel.op.pipe_kernel_ptr(smart_ptr<Kernel<>>& k)"/>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.set_polynomial_order(2)"/>
+<info value = "set_kernel(tensornorm)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_unitcube</info>
+<info value = "get_kernel_ptr()"/>
+<info value = "kernel.set_polynomial_order(2)"/>
+<info value = "set_kernel(linear_regressor)"/>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_unitcube</info>
+<info value = "get_kernel_ptr()"/>
+<info value = "set_kernel_ptr(smart_ptr<Kernel<>> & kernel_ptr)"/>
+<info value = "kernel.op.pipe_kernel_ptr(smart_ptr<Kernel<>>& k)"/>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.set_polynomial_order(2)"/>
+<info value = "set_kernel(tensornorm)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_unitcube</info>
+<info value = "get_kernel_ptr()"/>
+<info value = "kernel.set_polynomial_order(2)"/>
+<info value = "set_kernel(linear_regressor)"/>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_unitcube</info>
+<info value = "get_kernel_ptr()"/>
+<info value = "set_kernel_ptr(smart_ptr<Kernel<>> & kernel_ptr)"/>
+<info value = "kernel.op.pipe_kernel_ptr(smart_ptr<Kernel<>>& k)"/>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.set_polynomial_order(2)"/>
+<info value = "set_kernel(tensornorm)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_unitcube</info>
+<info value = "get_kernel_ptr()"/>
+<info value = "kernel.set_polynomial_order(2)"/>
+<info value = "set_kernel(linear_regressor)"/>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_unitcube</info>
+<info value = "get_kernel_ptr()"/>
+<info value = "set_kernel_ptr(smart_ptr<Kernel<>> & kernel_ptr)"/>
+<info value = "kernel.op.pipe_kernel_ptr(smart_ptr<Kernel<>>& k)"/>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "alg.grid_projection(pi_array_type& x)"/>
+</info>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "alg.reordering(pi_array_type& x, pi_array_type& y)">
+<elapsed_time value = "positive_rearrangement::positive_rearrangement(const Matrix_type& D, std::vector<size_t>& permutation = std::vector<size_t>())">
+0.16765
+</elapsed_time>
+</info>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<elapsed_time value = "op.projection(pi_array_type& x, pi_array_type& y, pi_array_type& z, pi_array_type& fx)">
+<elapsed_time value = "Kernel::projection(const Matrix_type& x, const Matrix_type& y, const Matrix_type& z, const Matrix_type& fx_)">
+Kernel::projection Nx:2302, Ny:2302, Nz:256, Dfx:3, D:3
+<elapsed_time value = "Kernel_pipe::Knm_inv(const Matrix_type& x, const Matrix_type& y, const Matrix_type& z, const Matrix_type& fx_)">
+<elapsed_time value = "Matrix_type Kernel::projection_orth(const Matrix_type& x, const Matrix_type& y, const Matrix_type& fx = Matrix_type())">
+Kernel::projection_orth Nx:2302, Ny:2302, Nfx:2302, Dfx:3, D:3
+<elapsed_time value = "Kernel::projection(const Matrix_type& x, const Matrix_type& y, const Matrix_type& z, const Matrix_type& fx_)">
+Kernel::projection Nx:2302, Ny:2302, Nz:2302, Dfx:3, D:3
+<elapsed_time value = "linear_regressor::Knm_inv">
+<elapsed_time value = "LeastSquare_inverse">
+0.01356
+</elapsed_time>
+<elapsed_time value = "LeastSquare_inverse">
+0.00025
+</elapsed_time>
+0.01505
+</elapsed_time>
+0.05064
+</elapsed_time>
+Kernel::projection_orth nRow(fx):2302, nCol(fx):3, nRow(debug) :2302, nCol(debug) : 3
+0.05073
+</elapsed_time>
+<elapsed_time value = "Kernel::Knm_inv(const Matrix_type& x, const Matrix_type& y, const Matrix_type& z, const Matrix_type& fx_)">
+<elapsed_time value = "Kernel::Knm(const Matrix_type& x, const Matrix_type& y, const Matrix_type& fy)">
+0.05595
+</elapsed_time>
+0.62880
+</elapsed_time>
+<elapsed_time value = "linear_regressor::Knm_inv">
+<elapsed_time value = "LeastSquare_inverse">
+0.00023
+</elapsed_time>
+<elapsed_time value = "LeastSquare_inverse">
+0.00015
+</elapsed_time>
+0.00202
+</elapsed_time>
+0.68170
+</elapsed_time>
+<elapsed_time value = "Kernel::Knm(const Matrix_type& x, const Matrix_type& y, const Matrix_type& fy)">
+0.01322
+</elapsed_time>
+0.70131
+</elapsed_time>
+0.70164
+</elapsed_time>
+<info value = "kernel.set_polynomial_order(2)"/>
+<info value = "set_kernel(tensornorm)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_unitcube</info>
+<info value = "get_kernel_ptr()"/>
+<info value = "kernel.set_polynomial_order(2)"/>
+<info value = "set_kernel(linear_regressor)"/>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_unitcube</info>
+<info value = "get_kernel_ptr()"/>
+<info value = "set_kernel_ptr(smart_ptr<Kernel<>> & kernel_ptr)"/>
+<info value = "kernel.op.pipe_kernel_ptr(smart_ptr<Kernel<>>& k)"/>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "alg.grid_projection(pi_array_type& x)"/>
+</info>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "alg.reordering(pi_array_type& x, pi_array_type& y)">
+<elapsed_time value = "positive_rearrangement::positive_rearrangement(const Matrix_type& D, std::vector<size_t>& permutation = std::vector<size_t>())">
+0.14783
+</elapsed_time>
+</info>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<elapsed_time value = "op.projection(pi_array_type& x, pi_array_type& y, pi_array_type& z, pi_array_type& fx)">
+<elapsed_time value = "Kernel::projection(const Matrix_type& x, const Matrix_type& y, const Matrix_type& z, const Matrix_type& fx_)">
+Kernel::projection Nx:2302, Ny:2302, Nz:256, Dfx:3, D:3
+<elapsed_time value = "Kernel_pipe::Knm_inv(const Matrix_type& x, const Matrix_type& y, const Matrix_type& z, const Matrix_type& fx_)">
+<elapsed_time value = "Matrix_type Kernel::projection_orth(const Matrix_type& x, const Matrix_type& y, const Matrix_type& fx = Matrix_type())">
+Kernel::projection_orth Nx:2302, Ny:2302, Nfx:2302, Dfx:3, D:3
+<elapsed_time value = "Kernel::projection(const Matrix_type& x, const Matrix_type& y, const Matrix_type& z, const Matrix_type& fx_)">
+Kernel::projection Nx:2302, Ny:2302, Nz:2302, Dfx:3, D:3
+<elapsed_time value = "linear_regressor::Knm_inv">
+<elapsed_time value = "LeastSquare_inverse">
+0.00078
+</elapsed_time>
+<elapsed_time value = "LeastSquare_inverse">
+0.00409
+</elapsed_time>
+0.00739
+</elapsed_time>
+0.04939
+</elapsed_time>
+Kernel::projection_orth nRow(fx):2302, nCol(fx):3, nRow(debug) :2302, nCol(debug) : 3
+0.04949
+</elapsed_time>
+<elapsed_time value = "Kernel::Knm_inv(const Matrix_type& x, const Matrix_type& y, const Matrix_type& z, const Matrix_type& fx_)">
+<elapsed_time value = "Kernel::Knm(const Matrix_type& x, const Matrix_type& y, const Matrix_type& fy)">
+0.05508
+</elapsed_time>
+0.57012
+</elapsed_time>
+<elapsed_time value = "linear_regressor::Knm_inv">
+<elapsed_time value = "LeastSquare_inverse">
+0.00021
+</elapsed_time>
+<elapsed_time value = "LeastSquare_inverse">
+0.00019
+</elapsed_time>
+0.00204
+</elapsed_time>
+0.62178
+</elapsed_time>
+<elapsed_time value = "Kernel::Knm(const Matrix_type& x, const Matrix_type& y, const Matrix_type& fy)">
+0.01359
+</elapsed_time>
+0.64110
+</elapsed_time>
+0.64138
+</elapsed_time>
+<info value = "kernel.set_polynomial_order(2)"/>
+<info value = "set_kernel(tensornorm)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_unitcube</info>
+<info value = "get_kernel_ptr()"/>
+<info value = "kernel.set_polynomial_order(2)"/>
+<info value = "set_kernel(linear_regressor)"/>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_unitcube</info>
+<info value = "get_kernel_ptr()"/>
+<info value = "set_kernel_ptr(smart_ptr<Kernel<>> & kernel_ptr)"/>
+<info value = "kernel.op.pipe_kernel_ptr(smart_ptr<Kernel<>>& k)"/>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "alg.grid_projection(pi_array_type& x)"/>
+</info>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "alg.reordering(pi_array_type& x, pi_array_type& y)">
+<elapsed_time value = "positive_rearrangement::positive_rearrangement(const Matrix_type& D, std::vector<size_t>& permutation = std::vector<size_t>())">
+0.15076
+</elapsed_time>
+</info>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<elapsed_time value = "op.projection(pi_array_type& x, pi_array_type& y, pi_array_type& z, pi_array_type& fx)">
+<elapsed_time value = "Kernel::projection(const Matrix_type& x, const Matrix_type& y, const Matrix_type& z, const Matrix_type& fx_)">
+Kernel::projection Nx:2302, Ny:2302, Nz:256, Dfx:3, D:3
+<elapsed_time value = "Kernel_pipe::Knm_inv(const Matrix_type& x, const Matrix_type& y, const Matrix_type& z, const Matrix_type& fx_)">
+<elapsed_time value = "Matrix_type Kernel::projection_orth(const Matrix_type& x, const Matrix_type& y, const Matrix_type& fx = Matrix_type())">
+Kernel::projection_orth Nx:2302, Ny:2302, Nfx:2302, Dfx:3, D:3
+<elapsed_time value = "Kernel::projection(const Matrix_type& x, const Matrix_type& y, const Matrix_type& z, const Matrix_type& fx_)">
+Kernel::projection Nx:2302, Ny:2302, Nz:2302, Dfx:3, D:3
+<elapsed_time value = "linear_regressor::Knm_inv">
+<elapsed_time value = "LeastSquare_inverse">
+0.00024
+</elapsed_time>
+<elapsed_time value = "LeastSquare_inverse">
+0.00022
+</elapsed_time>
+0.00164
+</elapsed_time>
+0.03658
+</elapsed_time>
+Kernel::projection_orth nRow(fx):2302, nCol(fx):3, nRow(debug) :2302, nCol(debug) : 3
+0.03665
+</elapsed_time>
+<elapsed_time value = "Kernel::Knm_inv(const Matrix_type& x, const Matrix_type& y, const Matrix_type& z, const Matrix_type& fx_)">
+<elapsed_time value = "Kernel::Knm(const Matrix_type& x, const Matrix_type& y, const Matrix_type& fy)">
+0.05492
+</elapsed_time>
+0.58746
+</elapsed_time>
+<elapsed_time value = "linear_regressor::Knm_inv">
+<elapsed_time value = "LeastSquare_inverse">
+0.00020
+</elapsed_time>
+<elapsed_time value = "LeastSquare_inverse">
+0.00018
+</elapsed_time>
+0.00200
+</elapsed_time>
+0.62625
+</elapsed_time>
+<elapsed_time value = "Kernel::Knm(const Matrix_type& x, const Matrix_type& y, const Matrix_type& fy)">
+0.01261
+</elapsed_time>
+0.64562
+</elapsed_time>
+0.64592
+</elapsed_time>
+<info value = "kernel.set_polynomial_order(2)"/>
+<info value = "set_kernel(tensornorm)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_unitcube</info>
+<info value = "get_kernel_ptr()"/>
+<info value = "kernel.set_polynomial_order(2)"/>
+<info value = "set_kernel(linear_regressor)"/>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_unitcube</info>
+<info value = "get_kernel_ptr()"/>
+<info value = "set_kernel_ptr(smart_ptr<Kernel<>> & kernel_ptr)"/>
+<info value = "kernel.op.pipe_kernel_ptr(smart_ptr<Kernel<>>& k)"/>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "alg.grid_projection(pi_array_type& x)"/>
+</info>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "alg.reordering(pi_array_type& x, pi_array_type& y)">
+<elapsed_time value = "positive_rearrangement::positive_rearrangement(const Matrix_type& D, std::vector<size_t>& permutation = std::vector<size_t>())">
+0.16231
+</elapsed_time>
+</info>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<elapsed_time value = "op.projection(pi_array_type& x, pi_array_type& y, pi_array_type& z, pi_array_type& fx)">
+<elapsed_time value = "Kernel::projection(const Matrix_type& x, const Matrix_type& y, const Matrix_type& z, const Matrix_type& fx_)">
+Kernel::projection Nx:2302, Ny:2302, Nz:256, Dfx:3, D:3
+<elapsed_time value = "Kernel_pipe::Knm_inv(const Matrix_type& x, const Matrix_type& y, const Matrix_type& z, const Matrix_type& fx_)">
+<elapsed_time value = "Matrix_type Kernel::projection_orth(const Matrix_type& x, const Matrix_type& y, const Matrix_type& fx = Matrix_type())">
+Kernel::projection_orth Nx:2302, Ny:2302, Nfx:2302, Dfx:3, D:3
+<elapsed_time value = "Kernel::projection(const Matrix_type& x, const Matrix_type& y, const Matrix_type& z, const Matrix_type& fx_)">
+Kernel::projection Nx:2302, Ny:2302, Nz:2302, Dfx:3, D:3
+<elapsed_time value = "linear_regressor::Knm_inv">
+<elapsed_time value = "LeastSquare_inverse">
+0.00036
+</elapsed_time>
+<elapsed_time value = "LeastSquare_inverse">
+0.00385
+</elapsed_time>
+0.00724
+</elapsed_time>
+0.04288
+</elapsed_time>
+Kernel::projection_orth nRow(fx):2302, nCol(fx):3, nRow(debug) :2302, nCol(debug) : 3
+0.04298
+</elapsed_time>
+<elapsed_time value = "Kernel::Knm_inv(const Matrix_type& x, const Matrix_type& y, const Matrix_type& z, const Matrix_type& fx_)">
+<elapsed_time value = "Kernel::Knm(const Matrix_type& x, const Matrix_type& y, const Matrix_type& fy)">
+0.04936
+</elapsed_time>
+0.57861
+</elapsed_time>
+<elapsed_time value = "linear_regressor::Knm_inv">
+<elapsed_time value = "LeastSquare_inverse">
+0.00028
+</elapsed_time>
+<elapsed_time value = "LeastSquare_inverse">
+0.00021
+</elapsed_time>
+0.00202
+</elapsed_time>
+0.62377
+</elapsed_time>
+<elapsed_time value = "Kernel::Knm(const Matrix_type& x, const Matrix_type& y, const Matrix_type& fy)">
+0.01088
+</elapsed_time>
+0.64215
+</elapsed_time>
+0.64247
+</elapsed_time>
+<info value = "kernel.set_polynomial_order(2)"/>
+<info value = "set_kernel(tensornorm)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_unitcube</info>
+<info value = "get_kernel_ptr()"/>
+<info value = "kernel.set_polynomial_order(2)"/>
+<info value = "set_kernel(linear_regressor)"/>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_unitcube</info>
+<info value = "get_kernel_ptr()"/>
+<info value = "set_kernel_ptr(smart_ptr<Kernel<>> & kernel_ptr)"/>
+<info value = "kernel.op.pipe_kernel_ptr(smart_ptr<Kernel<>>& k)"/>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "alg.grid_projection(pi_array_type& x)"/>
+</info>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "alg.reordering(pi_array_type& x, pi_array_type& y)">
+<elapsed_time value = "positive_rearrangement::positive_rearrangement(const Matrix_type& D, std::vector<size_t>& permutation = std::vector<size_t>())">
+0.16308
+</elapsed_time>
+</info>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<elapsed_time value = "op.projection(pi_array_type& x, pi_array_type& y, pi_array_type& z, pi_array_type& fx)">
+<elapsed_time value = "Kernel::projection(const Matrix_type& x, const Matrix_type& y, const Matrix_type& z, const Matrix_type& fx_)">
+Kernel::projection Nx:2302, Ny:2302, Nz:256, Dfx:3, D:3
+<elapsed_time value = "Kernel_pipe::Knm_inv(const Matrix_type& x, const Matrix_type& y, const Matrix_type& z, const Matrix_type& fx_)">
+<elapsed_time value = "Matrix_type Kernel::projection_orth(const Matrix_type& x, const Matrix_type& y, const Matrix_type& fx = Matrix_type())">
+Kernel::projection_orth Nx:2302, Ny:2302, Nfx:2302, Dfx:3, D:3
+<elapsed_time value = "Kernel::projection(const Matrix_type& x, const Matrix_type& y, const Matrix_type& z, const Matrix_type& fx_)">
+Kernel::projection Nx:2302, Ny:2302, Nz:2302, Dfx:3, D:3
+<elapsed_time value = "linear_regressor::Knm_inv">
+<elapsed_time value = "LeastSquare_inverse">
+0.00025
+</elapsed_time>
+<elapsed_time value = "LeastSquare_inverse">
+0.00021
+</elapsed_time>
+0.00166
+</elapsed_time>
+0.04233
+</elapsed_time>
+Kernel::projection_orth nRow(fx):2302, nCol(fx):3, nRow(debug) :2302, nCol(debug) : 3
+0.04242
+</elapsed_time>
+<elapsed_time value = "Kernel::Knm_inv(const Matrix_type& x, const Matrix_type& y, const Matrix_type& z, const Matrix_type& fx_)">
+<elapsed_time value = "Kernel::Knm(const Matrix_type& x, const Matrix_type& y, const Matrix_type& fy)">
+0.05526
+</elapsed_time>
+0.65402
+</elapsed_time>
+<elapsed_time value = "linear_regressor::Knm_inv">
+<elapsed_time value = "LeastSquare_inverse">
+0.00025
+</elapsed_time>
+<elapsed_time value = "LeastSquare_inverse">
+0.00026
+</elapsed_time>
+0.00175
+</elapsed_time>
+0.69837
+</elapsed_time>
+<elapsed_time value = "Kernel::Knm(const Matrix_type& x, const Matrix_type& y, const Matrix_type& fy)">
+0.00273
+</elapsed_time>
+0.70551
+</elapsed_time>
+0.70579
+</elapsed_time>
+<info value = "kernel.set_polynomial_order(2)"/>
+<info value = "set_kernel(tensornorm)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_unitcube</info>
+<info value = "get_kernel_ptr()"/>
+<info value = "kernel.set_polynomial_order(2)"/>
+<info value = "set_kernel(linear_regressor)"/>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_unitcube</info>
+<info value = "get_kernel_ptr()"/>
+<info value = "set_kernel_ptr(smart_ptr<Kernel<>> & kernel_ptr)"/>
+<info value = "kernel.op.pipe_kernel_ptr(smart_ptr<Kernel<>>& k)"/>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "alg.grid_projection(pi_array_type& x)"/>
+</info>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "alg.reordering(pi_array_type& x, pi_array_type& y)">
+<elapsed_time value = "positive_rearrangement::positive_rearrangement(const Matrix_type& D, std::vector<size_t>& permutation = std::vector<size_t>())">
+0.14331
+</elapsed_time>
+</info>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<elapsed_time value = "op.projection(pi_array_type& x, pi_array_type& y, pi_array_type& z, pi_array_type& fx)">
+<elapsed_time value = "Kernel::projection(const Matrix_type& x, const Matrix_type& y, const Matrix_type& z, const Matrix_type& fx_)">
+Kernel::projection Nx:2302, Ny:2302, Nz:256, Dfx:3, D:3
+<elapsed_time value = "Kernel_pipe::Knm_inv(const Matrix_type& x, const Matrix_type& y, const Matrix_type& z, const Matrix_type& fx_)">
+<elapsed_time value = "Matrix_type Kernel::projection_orth(const Matrix_type& x, const Matrix_type& y, const Matrix_type& fx = Matrix_type())">
+Kernel::projection_orth Nx:2302, Ny:2302, Nfx:2302, Dfx:3, D:3
+<elapsed_time value = "Kernel::projection(const Matrix_type& x, const Matrix_type& y, const Matrix_type& z, const Matrix_type& fx_)">
+Kernel::projection Nx:2302, Ny:2302, Nz:2302, Dfx:3, D:3
+<elapsed_time value = "linear_regressor::Knm_inv">
+<elapsed_time value = "LeastSquare_inverse">
+0.00025
+</elapsed_time>
+<elapsed_time value = "LeastSquare_inverse">
+0.00023
+</elapsed_time>
+0.00167
+</elapsed_time>
+0.03645
+</elapsed_time>
+Kernel::projection_orth nRow(fx):2302, nCol(fx):3, nRow(debug) :2302, nCol(debug) : 3
+0.03653
+</elapsed_time>
+<elapsed_time value = "Kernel::Knm_inv(const Matrix_type& x, const Matrix_type& y, const Matrix_type& z, const Matrix_type& fx_)">
+<elapsed_time value = "Kernel::Knm(const Matrix_type& x, const Matrix_type& y, const Matrix_type& fy)">
+0.05337
+</elapsed_time>
+0.57093
+</elapsed_time>
+<elapsed_time value = "linear_regressor::Knm_inv">
+<elapsed_time value = "LeastSquare_inverse">
+0.00024
+</elapsed_time>
+<elapsed_time value = "LeastSquare_inverse">
+0.00019
+</elapsed_time>
+0.00210
+</elapsed_time>
+0.60971
+</elapsed_time>
+<elapsed_time value = "Kernel::Knm(const Matrix_type& x, const Matrix_type& y, const Matrix_type& fy)">
+0.01323
+</elapsed_time>
+0.62955
+</elapsed_time>
+0.62987
+</elapsed_time>
+<info value = "kernel.set_polynomial_order(2)"/>
+<info value = "set_kernel(tensornorm)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_unitcube</info>
+<info value = "get_kernel_ptr()"/>
+<info value = "kernel.set_polynomial_order(2)"/>
+<info value = "set_kernel(linear_regressor)"/>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_unitcube</info>
+<info value = "get_kernel_ptr()"/>
+<info value = "set_kernel_ptr(smart_ptr<Kernel<>> & kernel_ptr)"/>
+<info value = "kernel.op.pipe_kernel_ptr(smart_ptr<Kernel<>>& k)"/>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "alg.grid_projection(pi_array_type& x)"/>
+</info>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "alg.reordering(pi_array_type& x, pi_array_type& y)">
+<elapsed_time value = "positive_rearrangement::positive_rearrangement(const Matrix_type& D, std::vector<size_t>& permutation = std::vector<size_t>())">
+0.16238
+</elapsed_time>
+</info>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<elapsed_time value = "op.projection(pi_array_type& x, pi_array_type& y, pi_array_type& z, pi_array_type& fx)">
+<elapsed_time value = "Kernel::projection(const Matrix_type& x, const Matrix_type& y, const Matrix_type& z, const Matrix_type& fx_)">
+Kernel::projection Nx:2302, Ny:2302, Nz:256, Dfx:3, D:3
+<elapsed_time value = "Kernel_pipe::Knm_inv(const Matrix_type& x, const Matrix_type& y, const Matrix_type& z, const Matrix_type& fx_)">
+<elapsed_time value = "Matrix_type Kernel::projection_orth(const Matrix_type& x, const Matrix_type& y, const Matrix_type& fx = Matrix_type())">
+Kernel::projection_orth Nx:2302, Ny:2302, Nfx:2302, Dfx:3, D:3
+<elapsed_time value = "Kernel::projection(const Matrix_type& x, const Matrix_type& y, const Matrix_type& z, const Matrix_type& fx_)">
+Kernel::projection Nx:2302, Ny:2302, Nz:2302, Dfx:3, D:3
+<elapsed_time value = "linear_regressor::Knm_inv">
+<elapsed_time value = "LeastSquare_inverse">
+0.00027
+</elapsed_time>
+<elapsed_time value = "LeastSquare_inverse">
+0.00028
+</elapsed_time>
+0.00174
+</elapsed_time>
+0.03860
+</elapsed_time>
+Kernel::projection_orth nRow(fx):2302, nCol(fx):3, nRow(debug) :2302, nCol(debug) : 3
+0.03870
+</elapsed_time>
+<elapsed_time value = "Kernel::Knm_inv(const Matrix_type& x, const Matrix_type& y, const Matrix_type& z, const Matrix_type& fx_)">
+<elapsed_time value = "Kernel::Knm(const Matrix_type& x, const Matrix_type& y, const Matrix_type& fy)">
+0.05458
+</elapsed_time>
+0.59218
+</elapsed_time>
+<elapsed_time value = "linear_regressor::Knm_inv">
+<elapsed_time value = "LeastSquare_inverse">
+0.00020
+</elapsed_time>
+<elapsed_time value = "LeastSquare_inverse">
+0.00018
+</elapsed_time>
+0.00203
+</elapsed_time>
+0.63306
+</elapsed_time>
+<elapsed_time value = "Kernel::Knm(const Matrix_type& x, const Matrix_type& y, const Matrix_type& fy)">
+0.01232
+</elapsed_time>
+0.65208
+</elapsed_time>
+0.65240
+</elapsed_time>
+<info value = "kernel.set_polynomial_order(2)"/>
+<info value = "set_kernel(tensornorm)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_unitcube</info>
+<info value = "get_kernel_ptr()"/>
+<info value = "kernel.set_polynomial_order(2)"/>
+<info value = "set_kernel(linear_regressor)"/>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_unitcube</info>
+<info value = "get_kernel_ptr()"/>
+<info value = "set_kernel_ptr(smart_ptr<Kernel<>> & kernel_ptr)"/>
+<info value = "kernel.op.pipe_kernel_ptr(smart_ptr<Kernel<>>& k)"/>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "alg.grid_projection(pi_array_type& x)"/>
+</info>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "alg.reordering(pi_array_type& x, pi_array_type& y)">
+<elapsed_time value = "positive_rearrangement::positive_rearrangement(const Matrix_type& D, std::vector<size_t>& permutation = std::vector<size_t>())">
+0.14464
+</elapsed_time>
+</info>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<elapsed_time value = "op.projection(pi_array_type& x, pi_array_type& y, pi_array_type& z, pi_array_type& fx)">
+<elapsed_time value = "Kernel::projection(const Matrix_type& x, const Matrix_type& y, const Matrix_type& z, const Matrix_type& fx_)">
+Kernel::projection Nx:2302, Ny:2302, Nz:256, Dfx:3, D:3
+<elapsed_time value = "Kernel_pipe::Knm_inv(const Matrix_type& x, const Matrix_type& y, const Matrix_type& z, const Matrix_type& fx_)">
+<elapsed_time value = "Matrix_type Kernel::projection_orth(const Matrix_type& x, const Matrix_type& y, const Matrix_type& fx = Matrix_type())">
+Kernel::projection_orth Nx:2302, Ny:2302, Nfx:2302, Dfx:3, D:3
+<elapsed_time value = "Kernel::projection(const Matrix_type& x, const Matrix_type& y, const Matrix_type& z, const Matrix_type& fx_)">
+Kernel::projection Nx:2302, Ny:2302, Nz:2302, Dfx:3, D:3
+<elapsed_time value = "linear_regressor::Knm_inv">
+<elapsed_time value = "LeastSquare_inverse">
+0.00025
+</elapsed_time>
+<elapsed_time value = "LeastSquare_inverse">
+0.00021
+</elapsed_time>
+0.00163
+</elapsed_time>
+0.03738
+</elapsed_time>
+Kernel::projection_orth nRow(fx):2302, nCol(fx):3, nRow(debug) :2302, nCol(debug) : 3
+0.03747
+</elapsed_time>
+<elapsed_time value = "Kernel::Knm_inv(const Matrix_type& x, const Matrix_type& y, const Matrix_type& z, const Matrix_type& fx_)">
+<elapsed_time value = "Kernel::Knm(const Matrix_type& x, const Matrix_type& y, const Matrix_type& fy)">
+0.05616
+</elapsed_time>
+0.63916
+</elapsed_time>
+<elapsed_time value = "linear_regressor::Knm_inv">
+<elapsed_time value = "LeastSquare_inverse">
+0.00023
+</elapsed_time>
+<elapsed_time value = "LeastSquare_inverse">
+0.00021
+</elapsed_time>
+0.00167
+</elapsed_time>
+0.67844
+</elapsed_time>
+<elapsed_time value = "Kernel::Knm(const Matrix_type& x, const Matrix_type& y, const Matrix_type& fy)">
+0.00297
+</elapsed_time>
+0.68598
+</elapsed_time>
+0.68628
+</elapsed_time>
+<info value = "kernel.set_polynomial_order(2)"/>
+<info value = "set_kernel(tensornorm)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_unitcube</info>
+<info value = "get_kernel_ptr()"/>
+<info value = "kernel.set_polynomial_order(2)"/>
+<info value = "set_kernel(linear_regressor)"/>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_unitcube</info>
+<info value = "get_kernel_ptr()"/>
+<info value = "set_kernel_ptr(smart_ptr<Kernel<>> & kernel_ptr)"/>
+<info value = "kernel.op.pipe_kernel_ptr(smart_ptr<Kernel<>>& k)"/>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "alg.grid_projection(pi_array_type& x)"/>
+</info>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "alg.reordering(pi_array_type& x, pi_array_type& y)">
+<elapsed_time value = "positive_rearrangement::positive_rearrangement(const Matrix_type& D, std::vector<size_t>& permutation = std::vector<size_t>())">
+0.14866
+</elapsed_time>
+</info>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<elapsed_time value = "op.projection(pi_array_type& x, pi_array_type& y, pi_array_type& z, pi_array_type& fx)">
+<elapsed_time value = "Kernel::projection(const Matrix_type& x, const Matrix_type& y, const Matrix_type& z, const Matrix_type& fx_)">
+Kernel::projection Nx:2302, Ny:2302, Nz:256, Dfx:3, D:3
+<elapsed_time value = "Kernel_pipe::Knm_inv(const Matrix_type& x, const Matrix_type& y, const Matrix_type& z, const Matrix_type& fx_)">
+<elapsed_time value = "Matrix_type Kernel::projection_orth(const Matrix_type& x, const Matrix_type& y, const Matrix_type& fx = Matrix_type())">
+Kernel::projection_orth Nx:2302, Ny:2302, Nfx:2302, Dfx:3, D:3
+<elapsed_time value = "Kernel::projection(const Matrix_type& x, const Matrix_type& y, const Matrix_type& z, const Matrix_type& fx_)">
+Kernel::projection Nx:2302, Ny:2302, Nz:2302, Dfx:3, D:3
+<elapsed_time value = "linear_regressor::Knm_inv">
+<elapsed_time value = "LeastSquare_inverse">
+0.00022
+</elapsed_time>
+<elapsed_time value = "LeastSquare_inverse">
+0.00020
+</elapsed_time>
+0.00160
+</elapsed_time>
+0.03879
+</elapsed_time>
+Kernel::projection_orth nRow(fx):2302, nCol(fx):3, nRow(debug) :2302, nCol(debug) : 3
+0.03888
+</elapsed_time>
+<elapsed_time value = "Kernel::Knm_inv(const Matrix_type& x, const Matrix_type& y, const Matrix_type& z, const Matrix_type& fx_)">
+<elapsed_time value = "Kernel::Knm(const Matrix_type& x, const Matrix_type& y, const Matrix_type& fy)">
+0.05471
+</elapsed_time>
+0.61966
+</elapsed_time>
+<elapsed_time value = "linear_regressor::Knm_inv">
+<elapsed_time value = "LeastSquare_inverse">
+0.00022
+</elapsed_time>
+<elapsed_time value = "LeastSquare_inverse">
+0.00017
+</elapsed_time>
+0.00205
+</elapsed_time>
+0.66073
+</elapsed_time>
+<elapsed_time value = "Kernel::Knm(const Matrix_type& x, const Matrix_type& y, const Matrix_type& fy)">
+0.01239
+</elapsed_time>
+0.67980
+</elapsed_time>
+0.68010
+</elapsed_time>
+<info value = "kernel.set_polynomial_order(2)"/>
+<info value = "set_kernel(tensornorm)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_unitcube</info>
+<info value = "get_kernel_ptr()"/>
+<info value = "kernel.set_polynomial_order(2)"/>
+<info value = "set_kernel(linear_regressor)"/>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_unitcube</info>
+<info value = "get_kernel_ptr()"/>
+<info value = "set_kernel_ptr(smart_ptr<Kernel<>> & kernel_ptr)"/>
+<info value = "kernel.op.pipe_kernel_ptr(smart_ptr<Kernel<>>& k)"/>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "alg.grid_projection(pi_array_type& x)"/>
+</info>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "alg.reordering(pi_array_type& x, pi_array_type& y)">
+<elapsed_time value = "positive_rearrangement::positive_rearrangement(const Matrix_type& D, std::vector<size_t>& permutation = std::vector<size_t>())">
+0.16328
+</elapsed_time>
+</info>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<elapsed_time value = "op.projection(pi_array_type& x, pi_array_type& y, pi_array_type& z, pi_array_type& fx)">
+<elapsed_time value = "Kernel::projection(const Matrix_type& x, const Matrix_type& y, const Matrix_type& z, const Matrix_type& fx_)">
+Kernel::projection Nx:2302, Ny:2302, Nz:256, Dfx:3, D:3
+<elapsed_time value = "Kernel_pipe::Knm_inv(const Matrix_type& x, const Matrix_type& y, const Matrix_type& z, const Matrix_type& fx_)">
+<elapsed_time value = "Matrix_type Kernel::projection_orth(const Matrix_type& x, const Matrix_type& y, const Matrix_type& fx = Matrix_type())">
+Kernel::projection_orth Nx:2302, Ny:2302, Nfx:2302, Dfx:3, D:3
+<elapsed_time value = "Kernel::projection(const Matrix_type& x, const Matrix_type& y, const Matrix_type& z, const Matrix_type& fx_)">
+Kernel::projection Nx:2302, Ny:2302, Nz:2302, Dfx:3, D:3
+<elapsed_time value = "linear_regressor::Knm_inv">
+<elapsed_time value = "LeastSquare_inverse">
+0.00025
+</elapsed_time>
+<elapsed_time value = "LeastSquare_inverse">
+0.00020
+</elapsed_time>
+0.00160
+</elapsed_time>
+0.03654
+</elapsed_time>
+Kernel::projection_orth nRow(fx):2302, nCol(fx):3, nRow(debug) :2302, nCol(debug) : 3
+0.03661
+</elapsed_time>
+<elapsed_time value = "Kernel::Knm_inv(const Matrix_type& x, const Matrix_type& y, const Matrix_type& z, const Matrix_type& fx_)">
+<elapsed_time value = "Kernel::Knm(const Matrix_type& x, const Matrix_type& y, const Matrix_type& fy)">
+0.05338
+</elapsed_time>
+0.59933
+</elapsed_time>
+<elapsed_time value = "linear_regressor::Knm_inv">
+<elapsed_time value = "LeastSquare_inverse">
+0.00020
+</elapsed_time>
+<elapsed_time value = "LeastSquare_inverse">
+0.00017
+</elapsed_time>
+0.00202
+</elapsed_time>
+0.63810
+</elapsed_time>
+<elapsed_time value = "Kernel::Knm(const Matrix_type& x, const Matrix_type& y, const Matrix_type& fy)">
+0.01415
+</elapsed_time>
+0.65761
+</elapsed_time>
+0.65790
+</elapsed_time>
+<info value = "kernel.set_polynomial_order(2)"/>
+<info value = "set_kernel(tensornorm)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_unitcube</info>
+<info value = "get_kernel_ptr()"/>
+<info value = "kernel.set_polynomial_order(2)"/>
+<info value = "set_kernel(linear_regressor)"/>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_unitcube</info>
+<info value = "get_kernel_ptr()"/>
+<info value = "set_kernel_ptr(smart_ptr<Kernel<>> & kernel_ptr)"/>
+<info value = "kernel.op.pipe_kernel_ptr(smart_ptr<Kernel<>>& k)"/>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "alg.grid_projection(pi_array_type& x)"/>
+</info>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "alg.reordering(pi_array_type& x, pi_array_type& y)">
+<elapsed_time value = "positive_rearrangement::positive_rearrangement(const Matrix_type& D, std::vector<size_t>& permutation = std::vector<size_t>())">
+0.16248
+</elapsed_time>
+</info>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<elapsed_time value = "op.projection(pi_array_type& x, pi_array_type& y, pi_array_type& z, pi_array_type& fx)">
+<elapsed_time value = "Kernel::projection(const Matrix_type& x, const Matrix_type& y, const Matrix_type& z, const Matrix_type& fx_)">
+Kernel::projection Nx:2302, Ny:2302, Nz:256, Dfx:3, D:3
+<elapsed_time value = "Kernel_pipe::Knm_inv(const Matrix_type& x, const Matrix_type& y, const Matrix_type& z, const Matrix_type& fx_)">
+<elapsed_time value = "Matrix_type Kernel::projection_orth(const Matrix_type& x, const Matrix_type& y, const Matrix_type& fx = Matrix_type())">
+Kernel::projection_orth Nx:2302, Ny:2302, Nfx:2302, Dfx:3, D:3
+<elapsed_time value = "Kernel::projection(const Matrix_type& x, const Matrix_type& y, const Matrix_type& z, const Matrix_type& fx_)">
+Kernel::projection Nx:2302, Ny:2302, Nz:2302, Dfx:3, D:3
+<elapsed_time value = "linear_regressor::Knm_inv">
+<elapsed_time value = "LeastSquare_inverse">
+0.00025
+</elapsed_time>
+<elapsed_time value = "LeastSquare_inverse">
+0.00020
+</elapsed_time>
+0.00161
+</elapsed_time>
+0.03647
+</elapsed_time>
+Kernel::projection_orth nRow(fx):2302, nCol(fx):3, nRow(debug) :2302, nCol(debug) : 3
+0.03654
+</elapsed_time>
+<elapsed_time value = "Kernel::Knm_inv(const Matrix_type& x, const Matrix_type& y, const Matrix_type& z, const Matrix_type& fx_)">
+<elapsed_time value = "Kernel::Knm(const Matrix_type& x, const Matrix_type& y, const Matrix_type& fy)">
+0.05425
+</elapsed_time>
+0.58534
+</elapsed_time>
+<elapsed_time value = "linear_regressor::Knm_inv">
+<elapsed_time value = "LeastSquare_inverse">
+0.00022
+</elapsed_time>
+<elapsed_time value = "LeastSquare_inverse">
+0.00017
+</elapsed_time>
+0.00203
+</elapsed_time>
+0.62405
+</elapsed_time>
+<elapsed_time value = "Kernel::Knm(const Matrix_type& x, const Matrix_type& y, const Matrix_type& fy)">
+0.01357
+</elapsed_time>
+0.64308
+</elapsed_time>
+0.64338
+</elapsed_time>
