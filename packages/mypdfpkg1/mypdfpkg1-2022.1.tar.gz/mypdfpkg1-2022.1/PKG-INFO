@@ -1,0 +1,13 @@
+Metadata-Version: 1.0
+Name: mypdfpkg1
+Version: 2022.1
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Description: This is the README.md file.
+        Here we can use the markdown syntax.
+        ***HOME PAGE***
+        This text is __*really important*__.
+Platform: UNKNOWN

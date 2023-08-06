@@ -1,0 +1,9 @@
+README.md
+setup.py
+mypdfpkg/__init__.py
+mypdfpkg/pdf2image.py
+mypdfpkg/pdf2text.py
+mypdfpkg1.egg-info/PKG-INFO
+mypdfpkg1.egg-info/SOURCES.txt
+mypdfpkg1.egg-info/dependency_links.txt
+mypdfpkg1.egg-info/top_level.txt
