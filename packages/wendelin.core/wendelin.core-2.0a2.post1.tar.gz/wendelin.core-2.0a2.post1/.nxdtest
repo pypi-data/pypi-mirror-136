@@ -1,0 +1,58 @@
+# setup to run tests on Nexedi testing infrastructure.
+# https://stack.nexedi.com/test_status
+
+storv = ['fs', 'zeo', 'neo'] # storage backends to test against
+
+# test.t & friends unit-test core of UVMM and are Go-, Python- and ZODB-storage independent.
+# we don't run test.vg* because there is currently no valgrind on SlapOS.
+for kind in ['t', 'fault', 'asan', 'tsan']:
+    t = 'test.%s' % kind
+    envadj = {}
+
+    # test.fault: on Ubuntu, when apport is registered in /proc/sys/kernel/core_pattern,
+    # it is apport which is run to process core. Apport dumps core for us, but
+    # rejects to run in parallel with the following message in its log:
+    #   ERROR: apport ...: another apport instance is already running, aborting
+    # this way, when test.fault tests are run in parallel, some of them fail to
+    # find core corresponding to expected crash.
+    # -> force serial execution to workaround that.
+    if kind == 'fault':
+        envadj['MAKEFLAGS'] = '-j1'
+
+    TestCase(t, ['make', t], envadj=envadj)  # TODO summaryf=TAP.summary
+
+# test.py/<stor>-!wcfs runs unit- and functional- tests for wendelin.core in non-wcfs mode.
+for stor in storv:
+    TestCase('test.py/%s-!wcfs' % stor, ['make', 'test.py'],
+             envadj={'WENDELIN_CORE_TEST_DB': '<%s>' % stor, 'WENDELIN_CORE_VIRTMEM': 'rw:uvmm'},
+             summaryf=PyTest.summary)
+
+
+# test.go unit-tests Go bits in wcfs.
+TestCase('test.go', ['make', 'test.go'])
+
+# test.wcfs/<stor> runs unit tests for WCFS
+# test.py/<stor>-wcfs runs unit- and functional- tests for wendelin.core in wcfs mode.
+for stor in storv:
+    env = {
+        'WENDELIN_CORE_TEST_DB': '<%s>' % stor,
+        # run in verbose mode and don't capture output in the early days of WCFS
+        #
+        # non-capture is needed because if WCFS gets stuck somehow on testnode, we
+        # still want to see some test output instead of full silence and pytest
+        # being killed after 4 hours of timeout.
+        'PYTEST_ADDOPTS': '-vs',
+    }
+
+    # some bugs are only likely to trigger when there is only 1 or 2 main OS thread(s) in wcfs
+    # GOMAXPROCS='' means use `nproc`
+    gonprocv = ['1', '2', '']           # GOMAXPROCS=... to test against
+
+    for nproc in gonprocv:
+        TestCase('test.wcfs/%s:%s' % (stor, nproc), ['make', 'test.wcfs'],
+                 envadj=dict(GOMAXPROCS=nproc, **env), summaryf=PyTest.summary)
+
+    for nproc in gonprocv:
+        TestCase('test.py/%s-wcfs:%s' % (stor, nproc), ['make', 'test.py'],
+                 envadj=dict(WENDELIN_CORE_VIRTMEM='r:wcfs+w:uvmm', GOMAXPROCS=nproc, **env),
+                 summaryf=PyTest.summary)

@@ -1,0 +1,4 @@
+[console_scripts]
+demo-zbigarray = wendelin.demo.demo_zbigarray:main
+wcfs = wendelin.wcfs:main
+

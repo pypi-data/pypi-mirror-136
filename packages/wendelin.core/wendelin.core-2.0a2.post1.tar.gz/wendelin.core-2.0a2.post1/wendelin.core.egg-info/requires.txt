@@ -1,0 +1,10 @@
+numpy
+ZODB>=4
+zodbtools>=0.0.0.dev8
+pygolang>=0.1
+six
+psutil
+
+[test]
+pytest
+scipy
