@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+moxfield.egg-info/PKG-INFO
+moxfield.egg-info/SOURCES.txt
+moxfield.egg-info/dependency_links.txt
+moxfield.egg-info/top_level.txt
