@@ -1,0 +1,3 @@
+[console_scripts]
+vizserver = p3dpy.app.cli:main
+
