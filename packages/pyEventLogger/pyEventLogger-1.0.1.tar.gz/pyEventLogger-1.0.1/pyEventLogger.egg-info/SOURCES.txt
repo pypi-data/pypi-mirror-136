@@ -1,0 +1,10 @@
+README.md
+setup.py
+pyEventLogger/Exceptions.py
+pyEventLogger/__init__.py
+pyEventLogger/pyEventLogger.py
+pyEventLogger.egg-info/PKG-INFO
+pyEventLogger.egg-info/SOURCES.txt
+pyEventLogger.egg-info/dependency_links.txt
+pyEventLogger.egg-info/requires.txt
+pyEventLogger.egg-info/top_level.txt
