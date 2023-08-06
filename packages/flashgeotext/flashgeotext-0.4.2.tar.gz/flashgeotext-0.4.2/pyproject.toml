@@ -1,0 +1,71 @@
+[tool.poetry]
+name = "flashgeotext"
+version = "0.4.2"
+description = "Extract and count countries and cities (+their synonyms) from text"
+authors = ["Benjamin Ramser <ahoi@iwpnd.pw>"]
+license = "MIT"
+readme = "readme.md"
+homepage = "https://flashgeotext.iwpnd.pw"
+repository = "https://github.com/iwpnd/flashgeotext"
+keywords = ["geonames", "nlp", "text extraction"]
+classifiers = [
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Software Development :: Libraries",
+    "Typing :: Typed",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+]
+include = [
+    "LICENSE",
+]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+flashtext = "^2.7"
+loguru = ">=0.5.3"
+pydantic = "^1.8"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2"
+pytest-cov = "^3.0.0"
+awscli = "^1.22.46"
+mkdocs = "^1.2.3"
+mkdocs-material = "^8.1.9"
+markdown-include = "^0.6.0"
+pre-commit = "^2.17.0"
+black = "^22.1"
+gitlint = "^0.17.0"
+isort = "^5.10.1"
+flake8 = "^4.0.1"
+poethepoet = "^0.12.2"
+pydoc-markdown = "^4.5.0"
+python-semantic-release = "^7.24.0"
+
+[tool.semantic_release]
+version_variable = [
+    "flashgeotext/__init__.py:__version__",
+    "pyproject.toml:version",
+]
+
+commit_subject = "ci: release v{version}"
+branch = "master"
+upload_to_pypi = true
+upload_to_release = true
+build_command = "pip install poetry --upgrade && poetry build"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poe.tasks]
+test     = "poetry run pytest -vv -s tests/"
+test-cov = "poetry run pytest -vv -s --cov=flashgeotext/ tests/"
+lint     = "flake8 ."
+publish    = "poetry run semantic-release publish"
