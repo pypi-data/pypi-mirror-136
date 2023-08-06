@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: nivir
+Version: 0.3
+Summary: Nivir is a simple game engine
+Home-page: UNKNOWN
+Author: Rinka
+Author-email: labatanightcore@gmail.com
+License: MIT
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+# Welcome to Nivir! A simple game engine
+
+Create a window:
+```
+from nivir import *
+
+nivir = Nivir()
+
+nivir.run()
+```
+
