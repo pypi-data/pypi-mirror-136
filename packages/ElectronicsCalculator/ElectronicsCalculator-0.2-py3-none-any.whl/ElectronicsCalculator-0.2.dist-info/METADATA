@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: ElectronicsCalculator
+Version: 0.2
+Summary: Python module that provides methods to perform common electronics calculations.
+Home-page: https://github.com/mino827/ElectronicsCalculator
+Author: Mino Girimonti
+Author-email: mino827@protonmail.com
+License: GPL v3.0
+Project-URL: Bug Tracker, https://github.com/mino827/ElectronicsCalculator/issues
+Keywords: electronics,electrical,engineering,formula,formulae,calculation
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# ElectronicsCalculator
+Python module that provides many methods to perform common electronics calculations.
+
+A sample test file (sample_test.py) has been included in the 'tests' folder. It shows a 
+sample use of the electronics_calculator module both with and without usage of the 
+scale_factors module.
+
+We are happily accepting contributers to this project to assist in expanding it further.
+
+
