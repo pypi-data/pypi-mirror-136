@@ -1,0 +1,14 @@
+ckanext_tif_imageview-1.0.3-nspkg.pth,sha256=VaH--vNo0_vzXvZAeqyq-Bg6m47pBBRlxwvBj0KQxe0,544
+ckanext/tif_imageview/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ckanext/tif_imageview/plugin.py,sha256=NhZFXiwz4VZx5tG2xXS09yMX97aTu0yiqrJm15hsWBM,2426
+ckanext/tif_imageview/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ckanext/tif_imageview/tests/test_plugin.py,sha256=_6IOX6ZYAwHpF7yzJgkavr_GuGjHa8AA8ezDjfvFmMc,1263
+ckanext/tif_imageview/theme/templates/tif_form.html,sha256=T13B9zpgH1P-Jr0sQlfG0p1rZBEoL00XuchQ8x2JrwY,280
+ckanext/tif_imageview/theme/templates/tif_view.html,sha256=ciODG3_WhmI1cyXNB_vPewizZt8JQ8KAt1LJDUsnEz8,896
+ckanext_tif_imageview-1.0.3.dist-info/LICENSE,sha256=2lWcRAHjsQhqavGNnR30Ymxq3GJ9BaYL_dnfGO_-WFA,34500
+ckanext_tif_imageview-1.0.3.dist-info/METADATA,sha256=lKqPEUbvK2ff1DB3tIMvkJIS4B7QB5SYuBQgp0S57sc,1838
+ckanext_tif_imageview-1.0.3.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+ckanext_tif_imageview-1.0.3.dist-info/entry_points.txt,sha256=EBlbpUM3kO3zCcm3AFqDxwRUAgW3FCKZ0gvw5WPGKpE,171
+ckanext_tif_imageview-1.0.3.dist-info/namespace_packages.txt,sha256=5yjNwq-s42weaiMMUuA5lZ45g99ANsfcRBCvac1JMS4,8
+ckanext_tif_imageview-1.0.3.dist-info/top_level.txt,sha256=5yjNwq-s42weaiMMUuA5lZ45g99ANsfcRBCvac1JMS4,8
+ckanext_tif_imageview-1.0.3.dist-info/RECORD,,
