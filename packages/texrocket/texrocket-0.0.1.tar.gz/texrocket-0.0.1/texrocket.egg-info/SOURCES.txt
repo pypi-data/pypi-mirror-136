@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+texrocket/__init__.py
+texrocket/main.py
+texrocket.egg-info/PKG-INFO
+texrocket.egg-info/SOURCES.txt
+texrocket.egg-info/dependency_links.txt
+texrocket.egg-info/entry_points.txt
+texrocket.egg-info/requires.txt
+texrocket.egg-info/top_level.txt
