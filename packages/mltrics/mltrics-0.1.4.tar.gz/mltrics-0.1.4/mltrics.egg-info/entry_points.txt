@@ -1,0 +1,3 @@
+[console_scripts]
+mltrics = mltrics.cli:main
+
