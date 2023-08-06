@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test settings component snapshot test 1`] = `null`;
+
+exports[`test settings component test empty MapState 1`] = `null`;
