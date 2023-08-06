@@ -1,0 +1,3 @@
+[console_scripts]
+edges-cal = edges_cal.cli:main
+
