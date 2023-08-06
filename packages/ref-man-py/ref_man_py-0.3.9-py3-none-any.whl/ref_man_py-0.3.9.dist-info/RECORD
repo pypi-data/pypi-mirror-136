@@ -1,0 +1,17 @@
+ref_man_py/__init__.py,sha256=xmkmdvq15kb61xdtCoa1YARnvHBnUgI-0GWIJYvHNeA,22
+ref_man_py/__main__.py,sha256=TnwBpdmZK6vYffQkSdX2uKvt1oYdviEEkDQMBGcL9ok,3350
+ref_man_py/arxiv.py,sha256=oF52gxoKDn7loRB1r-2MKiLA0-pIthn8k6Q4Xil-9V0,3785
+ref_man_py/cache.py,sha256=_T7aTy5F-upFzaNCDzs8H8OQeX5a-7dH2Wv5-NvduWY,9286
+ref_man_py/const.py,sha256=LcU20SESLQbxc57Uhl2jibgdeYIiry20YjYQe73H2N0,669
+ref_man_py/dblp.py,sha256=7yq-upBMu6X9vjsR3ict726wl6yVFfBObkuMBF2-zxU,3776
+ref_man_py/debug_ss.js,sha256=O7Yzy78yWOZqSs5Ep7k-GxM0ewA_-stopPm3DyDIBzQ,959
+ref_man_py/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ref_man_py/q_helper.py,sha256=c8V9NOWLtAo_cnDH7lgVeRqkvpVsLY2YTitrfeokbOM,1803
+ref_man_py/semantic_scholar.py,sha256=nbdbbUJQGx1G-IQgTB_nlufS4ZhKKcPtw2vUeVpC-Ic,14121
+ref_man_py/server.py,sha256=CmTNpbPNtc-a_nn34-8B4xTp5ewp_C8Hho3fDP7Oxr8,20010
+ref_man_py/ss_default.json,sha256=VBf2baAxKkIPs2BfIvCLBlxcc_XbD0g6LgNEzuOOpF0,481
+ref_man_py/util.py,sha256=3bQYppSFrGK3Zi474XbFdrbyAyHXeCevL5gvk9Tihkk,4723
+ref_man_py-0.3.9.dist-info/entry_points.txt,sha256=ipHbKMz_-qC8yXYOnZsybMnJDAiWfS-s0C_27Vszz6s,69
+ref_man_py-0.3.9.dist-info/WHEEL,sha256=N0LZrBtofpkS5mJXgVHTCEy52Sam4D6PHQWC8HnMeTs,83
+ref_man_py-0.3.9.dist-info/METADATA,sha256=6ZvACCFcyATac9_eluNpnLRyGQp5OcvQ6R6m0AN-uq0,2320
+ref_man_py-0.3.9.dist-info/RECORD,,
