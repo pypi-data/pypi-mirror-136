@@ -1,0 +1,8 @@
+click
+paramiko
+scp
+boto3
+base58
+ecdsa
+requests
+blockcypher
