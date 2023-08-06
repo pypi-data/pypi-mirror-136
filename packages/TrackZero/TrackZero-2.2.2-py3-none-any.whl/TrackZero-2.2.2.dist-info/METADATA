@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: TrackZero
+Version: 2.2.2
+Summary: TrackZero official Python SDK.
+Home-page: https://github.com/leiratech/TrackZero.Python
+Author: LEİRA BİLİŞİM TİCARET LİMİTED ŞİRKETİ
+Author-email: support@trackzero.io
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/leiratech/TrackZero.Python/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+[![#](https://img.shields.io/pypi/pyversions/trackzero)](https://pypi.org/project/TrackZero/)
+![#](https://img.shields.io/github/license/leiratech/TrackZero.Python?style=flat-square)
+
+# TrackZero
+Powerful, insightful and real-time BI Platfrom for developers to add to their platform.
+It allows you to offer BI capabilities to your customers at affordable costs.
+For more details on TrackZero, please visit [TrackZero website](https://trackzero.io).
+
+# Documentation
+For full documentation on this SDK, please check [the documentation](https://www.trackzero.io/docs).
+
