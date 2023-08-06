@@ -1,0 +1,6 @@
+aiohttp
+multidict
+yarl
+backoff
+backoff-stubs
+aiofreqlimit>=0.0.7
