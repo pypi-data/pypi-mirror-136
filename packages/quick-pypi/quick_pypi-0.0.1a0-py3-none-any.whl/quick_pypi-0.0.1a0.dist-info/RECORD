@@ -1,0 +1,15 @@
+quick_pypi/__init__.py,sha256=8BRddzLKczAB3n3GT5RQNUKSWPiJ_AbjfV920_wbe9Q,32
+quick_pypi/deploy.py,sha256=hxumC-j6lpHHnryntdTxzmDobvRrelmcHennqyJq17I,8781
+quick_pypi/__pycache__/__init__.cpython-36.pyc,sha256=X0lfrLJldDjoo3jYlQgL3JObLSyNgVrYqzfzhyGUy5k,208
+quick_pypi/__pycache__/deploy.cpython-36.pyc,sha256=LAtaIKpjw3U2FqWt-TCAlnm_ccyYJBTCy1R2RO9bRA8,6124
+quick_pypi/template/LICENSE,sha256=ajxCpFG1ZxRGDKhOE45GyYsTpVBwzw4xagnZYh2Uooc,1086
+quick_pypi/template/MANIFEST.in,sha256=ATsoSiYTZ1CwmFxI9-UigAyzrHyGpuTi7J8W77SH_GQ,265
+quick_pypi/template/README.md,sha256=R6LcouscLM4ASt2vDlzN1iM_rR_9Mgb4hkHpcO172go,148
+quick_pypi/template/setup.cfg,sha256=jcl53DDYRltFXaDzE5UqBwBAUXseSF4TMayDQKjSpjg,205
+quick_pypi/template/setup.py,sha256=Cucm2i31gXDc0lsjv-uazQlvr1l0fS4B9a5xd1sUkTM,8409
+quick_pypi/template/setup_no_urls.py,sha256=ToLT6T25jO4_SqKl90wvwu5q6lh4PQYj5e_Mczkih9Y,8418
+quick_pypi-0.0.1a0.dist-info/LICENSE,sha256=ajxCpFG1ZxRGDKhOE45GyYsTpVBwzw4xagnZYh2Uooc,1086
+quick_pypi-0.0.1a0.dist-info/METADATA,sha256=8xPA6scon-KwRgdgO-3DSCvChDTk-TOfA3fNejYRXzA,3869
+quick_pypi-0.0.1a0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+quick_pypi-0.0.1a0.dist-info/top_level.txt,sha256=KHqc7GBC-Ej2OO5XiHNq4ICzYHB2NtNN3j7wG9iMaLc,11
+quick_pypi-0.0.1a0.dist-info/RECORD,,
