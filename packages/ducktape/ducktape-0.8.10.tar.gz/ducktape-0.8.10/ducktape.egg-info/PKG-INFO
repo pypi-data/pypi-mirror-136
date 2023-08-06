@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: ducktape
+Version: 0.8.10
+Summary: Distributed system test tools
+Home-page: http://github.com/confluentinc/ducktape
+Author: Confluent
+License: apache2.0
+Platform: any
+Requires-Python: >= 3.6
+
+UNKNOWN
+
