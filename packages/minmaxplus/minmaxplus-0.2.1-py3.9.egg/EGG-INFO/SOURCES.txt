@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+minmaxplus/__init__.py
+minmaxplus/minmax.py
+minmaxplus.egg-info/PKG-INFO
+minmaxplus.egg-info/SOURCES.txt
+minmaxplus.egg-info/dependency_links.txt
+minmaxplus.egg-info/not-zip-safe
+minmaxplus.egg-info/top_level.txt
