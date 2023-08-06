@@ -1,0 +1,1 @@
+from .covid import covidInfo as covidactnow
