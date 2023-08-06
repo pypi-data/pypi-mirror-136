@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+djangorestframework_microservice.egg-info/PKG-INFO
+djangorestframework_microservice.egg-info/SOURCES.txt
+djangorestframework_microservice.egg-info/dependency_links.txt
+djangorestframework_microservice.egg-info/requires.txt
+djangorestframework_microservice.egg-info/top_level.txt
+rest_framework_microservice/__init__.py
+rest_framework_microservice/apps.py
