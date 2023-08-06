@@ -1,0 +1,15 @@
+autojinja/__init__.py,sha256=KdVro8YJjIBUyn4zSJCZaMmeCUv_2fTbE5b0WOErC78,320
+autojinja/__main__.py,sha256=gcqGZ1ezFk2oIZ663jn6Z5GMfcFTxmhGNRSngO0mJxA,275
+autojinja/defaults.py,sha256=p6v_5Iy4k_u_PEZVF5rTrnH-XxrX08FXeDpnv8DZ7R8,466
+autojinja/exceptions.py,sha256=cwkQNt7A6aRbwSnBR2EAFd6SLmEowHbHN-2ozaZk3ss,13674
+autojinja/main.py,sha256=Yga82EtCSb_G16Zetz7jaN298jpAhzFRI8WGcrWxQ-k,10760
+autojinja/parser.py,sha256=s1bPz26OYKz06hHe2bU-XUMpfpHE4ae8HbfnTtsha3Y,15491
+autojinja/path.py,sha256=jowlSIpajvwvmhHUCzfSmgLjnCZ7lbFQ5plSA6fyhmA,7184
+autojinja/templates.py,sha256=qkeUkyxtedB6ohT3xjGuLJgFe1WT2z5m7keVrh_k8HI,16667
+autojinja/utils.py,sha256=woxk8tDQnMGApw9ICu2ZTMt7ZoZiJLQfKXqLGPSK7Co,5661
+autojinja-1.1.0.dist-info/LICENSE,sha256=hA8G_ASAEcUWVbM69fr7Gud2OcHsdwznz0k_eyA4Ubw,1542
+autojinja-1.1.0.dist-info/METADATA,sha256=CS178kCdY29q2QMflEe7pyNoIT11kfNBtZB0rl13IVI,6023
+autojinja-1.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+autojinja-1.1.0.dist-info/entry_points.txt,sha256=R37I8X-N44IvwRcapVlrBVHkVHx7V8jHE3E_HvVRfB8,62
+autojinja-1.1.0.dist-info/top_level.txt,sha256=H7cJM2i7RQD-d5QqI53isr4Mp6omBDvVkF-2J3S1Wys,10
+autojinja-1.1.0.dist-info/RECORD,,
