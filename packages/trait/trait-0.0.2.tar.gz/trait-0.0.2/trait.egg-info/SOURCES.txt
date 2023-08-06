@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+trait/__init__.py
+trait/util.py
+trait.egg-info/PKG-INFO
+trait.egg-info/SOURCES.txt
+trait.egg-info/dependency_links.txt
+trait.egg-info/not-zip-safe
+trait.egg-info/requires.txt
+trait.egg-info/top_level.txt
