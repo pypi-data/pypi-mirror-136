@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: fastapi-users-db-mongodb-azure
+Version: 1.1.0
+Summary: FastAPI Users database adapter for MongoDB.
+Home-page: https://github.com/cyber-guard-org/fastapi-users-db-mongodb
+Author: Simon Vlcek
+Author-email: contact@cyber-guard.co.uk
