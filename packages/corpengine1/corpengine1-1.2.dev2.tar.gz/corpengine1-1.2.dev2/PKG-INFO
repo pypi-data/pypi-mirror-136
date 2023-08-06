@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: corpengine1
+Version: 1.2.dev2
+Summary: Fast, Organized, Object-Oriented Python Game Development
+Home-page: https://corpengine.github.io/
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: MIT
+Description: github repository: https://github.com/corpengine/corpengine
+        
+        Changelog:
+        v1.2.dev2
+        
+        Added corpengine1.Rectangle functionality for the isCollidingWithMouse() method in UserInputService.
+Keywords: corpengine
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
