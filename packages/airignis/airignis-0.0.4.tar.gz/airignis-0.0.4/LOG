@@ -1,0 +1,10 @@
+Airignis 0.0.4 changes:
+- Fixed the package import issue present since version 0.0.1
+
+- Added missing dateutil install required dependency present since version 0.0.2
+
+- Added NOTICE file for copyrighted dependencies
+
+- Fixed License ambiguity issue present since 0.0.3
+
+- Added LOG file to report release changes 
