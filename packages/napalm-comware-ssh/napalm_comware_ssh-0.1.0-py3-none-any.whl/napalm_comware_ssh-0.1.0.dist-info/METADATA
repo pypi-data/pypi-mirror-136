@@ -1,0 +1,90 @@
+Metadata-Version: 2.1
+Name: napalm-comware-ssh
+Version: 0.1.0
+Summary: NAPALM driver for H3C/HPE Comware V7 network devices.
+Home-page: https://github.com/xdai555/napalm-comware-ssh
+Author: Eric Wu
+Author-email: vip@xdai.vip
+License: Apache 2.0
+Project-URL: Bug Tracker, https://github.com/xdai555/napalm-comware-ssh/issues
+Platform: UNKNOWN
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: MacOS
+Description-Content-Type: text/markdown
+License-File: LICENSE
+License-File: AUTHORS
+Requires-Dist: napalm (>=3.0.0)
+
+# napalm-comware-ssh
+
+## NAPALM
+
+[NAPALM](https://github.com/napalm-automation/napalm) (Network Automation and Programmability Abstraction Layer with Multivendor support) is a Python library that implements a set of functions to interact with different router vendor devices using a unified API.
+
+NAPALM supports several methods to connect to the devices, to manipulate configurations or to retrieve data.
+
+## napalm-comware-ssh
+
+NAPALM driver for H3C/HPE Comware V7 network devices.
+
+> [About H3C](https://www.h3c.com/en/About_Us/).
+
+# Supported devices
+
+S5100、S5500、S6800、S12500 Series Data Center Switches.
+
+# Supported functions
+
+- :white_check_mark: is_alive()
+- :white_check_mark: get_facts()
+- :white_check_mark: get_interfaces()
+- :white_check_mark: get_lldp_neighbors()
+- :white_check_mark: get_environment()
+- :white_check_mark: get_interfaces_counters()
+- :white_check_mark: get_lldp_neighbors_detail()
+- :white_check_mark: cli()
+- :white_check_mark: get_arp_table()
+- :white_check_mark: get_mac_address_move_table()
+- :white_check_mark: get_mac_address_table()
+- :white_check_mark: get_vlans()
+- :white_check_mark: get_config()
+- :white_check_mark: get_interfaces()
+- :white_check_mark: get_irf_config()
+- :white_check_mark: is_irf()
+
+
+
+# Getting Started
+
+## Install
+
+```shell
+pip install napalm-comware-ssh
+```
+
+## Upgrading
+
+```
+pip install napalm-comware-ssh -U
+```
+
+## Use
+
+```python
+from napalm import get_network_driver
+
+driver = get_network_driver("comware")
+driver = driver("192.168.56.20", "netdevops", "NetDevops@01",)
+driver.open()
+ret = driver.is_alive()
+print(ret)
+```
+
