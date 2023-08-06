@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+nnotes/nnotes.py
+nnotes/nnotes.egg-info/PKG-INFO
+nnotes/nnotes.egg-info/SOURCES.txt
+nnotes/nnotes.egg-info/dependency_links.txt
+nnotes/nnotes.egg-info/entry_points.txt
+nnotes/nnotes.egg-info/requires.txt
+nnotes/nnotes.egg-info/top_level.txt

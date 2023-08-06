@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: nnotes
+Version: 0.0.2
+Summary: A cli notetaking tool
+Home-page: https://github.com/wbwqq/nnotes
+Author: wbwqq
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/wbwqq/nnotes/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# n
+
+# Main commands help
+
+Features:
+- multiple notebooks
+- add notes
+- delete notes (single, multiple, range)
+- create notebook
+- delete notebook
+
+
+```
+Usage:
+    n [command]
+
+Available commands:
+    add [note]
+    ls 
+    rm
+    rm range
+    
+    add @[notebook] [note]
+    ls @[notebook] 
+
+    add @[notebook]         create notebook
+    ls @
+    ls @ path               show notebooks w path
+
+    set active [notebook]
+    get active
+
+    get notebooks path
+    set notebooks path [notebooks path]
+```
+
