@@ -1,0 +1,4 @@
+#!python
+
+import iso_dl
+iso_dl.main()
