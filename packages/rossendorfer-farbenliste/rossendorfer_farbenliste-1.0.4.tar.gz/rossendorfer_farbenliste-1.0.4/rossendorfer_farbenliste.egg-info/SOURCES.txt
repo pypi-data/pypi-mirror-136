@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+rossendorfer_farbenliste/__init__.py
+rossendorfer_farbenliste.egg-info/PKG-INFO
+rossendorfer_farbenliste.egg-info/SOURCES.txt
+rossendorfer_farbenliste.egg-info/dependency_links.txt
+rossendorfer_farbenliste.egg-info/top_level.txt
