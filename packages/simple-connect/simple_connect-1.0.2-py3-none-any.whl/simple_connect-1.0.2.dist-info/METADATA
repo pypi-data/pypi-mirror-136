@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: simple-connect
+Version: 1.0.2
+Summary: Simplify Connection
+Home-page: UNKNOWN
+Author: Saeed
+Author-email: sae.ar2@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: httplib2
+Requires-Dist: oauth2client
+Requires-Dist: pandas
+Requires-Dist: pymysql
+Requires-Dist: sqlalchemy
+Requires-Dist: sshtunnel
+Requires-Dist: google-api-python-client
+Requires-Dist: boto3
+Requires-Dist: tqdm
+
+Simplify Conneciton
+
