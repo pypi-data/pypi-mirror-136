@@ -1,0 +1,9 @@
+torchvision_extra/__init__.py,sha256=uM18fD-xPpY6GaneEaXwUx69yiEr5hlxKqkL03mHa6s,47
+torchvision_extra/datasets/__init__.py,sha256=m6AkP84hkp28pjcz1hg3kHXUGDBIXCbhPXbFffkC7xA,183
+torchvision_extra/datasets/oxford_iiit_cat_dog.py,sha256=tm9OmDY_nw4MTueI_3xqkyUF3Itb8IgVkwwSFmQOs3c,3511
+torchvision_extra/datasets/oxford_iiit_pet.py,sha256=dHY-l7Jyli7bOqn2a9EinKd1zRsTy5ieBzLkSWfkSq4,5452
+torchvision_extra-0.0.5.dist-info/LICENSE,sha256=qncbZW2gnVYUvS1CLhD1jTb68Lnn2iOHn_6pCc4jT3w,1070
+torchvision_extra-0.0.5.dist-info/METADATA,sha256=Up2xeI01i1PkAgYcBqcnkgWLKoU7b7B-kPEf4b-MkbI,461
+torchvision_extra-0.0.5.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+torchvision_extra-0.0.5.dist-info/top_level.txt,sha256=UrY45WCVzrf02EaITpfnj8iU1Q3T78xBhXHM8vjKlPk,18
+torchvision_extra-0.0.5.dist-info/RECORD,,
