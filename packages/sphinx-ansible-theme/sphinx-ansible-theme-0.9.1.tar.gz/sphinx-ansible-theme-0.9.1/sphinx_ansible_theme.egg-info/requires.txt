@@ -1,0 +1,3 @@
+ansible-pygments
+Sphinx>=1.6
+sphinx_rtd_theme
