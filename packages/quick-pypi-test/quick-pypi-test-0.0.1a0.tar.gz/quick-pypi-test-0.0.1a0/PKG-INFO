@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: quick-pypi-test
+Version: 0.0.1a0
+Summary: This is a quick-pypi-test package!
+Home-page: UNKNOWN
+Author: Earthling
+Author-email: Earthling@Earth.org
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.6, <4
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Provides-Extra: test
+License-File: LICENSE
+
+# quick-pypi-test
+
+This is a quick-pypi-test package!
+
+## Installation
+```pip
+pip install quick-pypi-test==0.0.1a0
+```
+
+## License
+This project follows the MIT license.
+
+
