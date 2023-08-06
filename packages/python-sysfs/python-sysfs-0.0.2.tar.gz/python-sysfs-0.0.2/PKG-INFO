@@ -1,0 +1,15 @@
+Metadata-Version: 1.2
+Name: python-sysfs
+Version: 0.0.2
+Summary: simple sysfs interface
+Home-page: http://github.com/simontegelid/python-sysfs
+Author: user2245775
+License: MIT
+Project-URL: Original source, https://stackoverflow.com/a/19330692/10901939
+Description: UNKNOWN
+Keywords: system sysfs
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Topic :: System
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3

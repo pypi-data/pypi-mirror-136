@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+python_sysfs.egg-info/PKG-INFO
+python_sysfs.egg-info/SOURCES.txt
+python_sysfs.egg-info/dependency_links.txt
+python_sysfs.egg-info/top_level.txt
+sysfs/__init__.py
