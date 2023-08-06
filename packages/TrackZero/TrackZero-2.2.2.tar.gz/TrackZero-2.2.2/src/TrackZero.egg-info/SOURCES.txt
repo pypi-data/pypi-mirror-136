@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/TrackZero/__init__.py
+src/TrackZero.egg-info/PKG-INFO
+src/TrackZero.egg-info/SOURCES.txt
+src/TrackZero.egg-info/dependency_links.txt
+src/TrackZero.egg-info/top_level.txt
