@@ -1,0 +1,16 @@
+CHANGELOG.md
+CODE_OF_CONDUCT.md
+CONTRIBUTING.md
+INSTRUCTIONS.md
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+codepropertygraph/__init__.py
+codepropertygraph.egg-info/PKG-INFO
+codepropertygraph.egg-info/SOURCES.txt
+codepropertygraph.egg-info/dependency_links.txt
+codepropertygraph.egg-info/top_level.txt
+codepropertygraph/core/__init__.py
+codepropertygraph/core/cpgraph.py
