@@ -1,0 +1,47 @@
+Changelog
+=========
+
+
+Version 1.0.1
+-------------
+
+- Documentation fix - AsyncBackend API reference was missing
+
+Version 1.0.0
+-------------
+
+- Async support has been added
+- Switching CI from Travis to GitHub Actions
+
+Version 0.3.4
+-------------
+
+- Falcon 3.0.0 has renamed the `Response.body` to `Response.text`
+
+Version 0.3.3
+-------------
+
+- Fixing the issue with multiple decorators when `@cache.cached()` is not the topmost one
+- Fixing document readability issues in Sphinx
+
+Version 0.3.1
+-------------
+
+- Added a new memoize() method to cache arbitrary methods with their arguments
+
+Version 0.3.0
+-------------
+
+- `Cache.memoize()` and `Cache.delete_memoized()` methods were added to allow you to cache the result of other non-resource related functions with their argurments.
+
+Version 0.2.0
+-------------
+
+- The ``Content-Type`` header is cached now, except when this is turned off by the ``CACHE_CONTENT_TYPE_JSON_ONLY`` setting, `see <https://github.com/zoltan-fedor/falcon-caching/issues/2>`_ and in the `docs <https://falcon-caching.readthedocs.io/en/latest/index.html#what-gets-cached>`_
+- Added a safer method to identify the `on_` methods to decorate, `see <https://github.com/zoltan-fedor/falcon-caching/issues/4>`_
+- The `request_body` is no longer included in the cache key, `see <https://github.com/zoltan-fedor/falcon-caching/issues/3>`_
+
+Version 0.1.0
+-------------
+
+- Initial public release

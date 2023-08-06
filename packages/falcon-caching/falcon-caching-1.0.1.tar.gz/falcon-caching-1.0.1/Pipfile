@@ -1,0 +1,33 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+aiofiles = "*"
+autodoc = "*"
+bump2version = "*"
+coredis = "*"
+emcache = "*"
+flit = "*"
+importlib-metadata = "*"
+pylibmc = "*"
+pytest = "*"
+pytest-asyncio = "*"
+pytest-cov = "*"
+pytest-pep8 = "*"
+pytest-rerunfailures = "*"
+pytest-xdist = "*"
+pytest-xprocess = "*"
+redis = "*"
+sphinx = "*"
+tox = "*"
+tox-pipenv-install = "*"
+uwsgi = "*"
+
+[packages]
+falcon = "*"
+msgpack = "*"
+
+[requires]
+python_version = "3.8"
