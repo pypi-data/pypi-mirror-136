@@ -1,0 +1,15 @@
+pass_audit/__init__.py,sha256=yrkc4O1IcP8TYnR_Fpontwb0v9ZykWQ4ifCINKXN7B4,671
+pass_audit/__main__.py,sha256=qd78fYwGzKbCbMHzwaXC4v4pFfpLkLdyTFENsJiJ8UE,5844
+pass_audit/audit.py,sha256=hRH8Ppg_dTVBtllWtvofbJjJ6xlgI2-P8C8QmfAKJsM,3591
+pass_audit/msg.py,sha256=HrTZLRjtC2Ki-QCzWuIh0UaGWewhGhruqOgkfXPT2nQ,1879
+pass_audit/passwordstore.py,sha256=ufTSSIfMNPac3lympEZxrH8yqMrcFpJIC7-BSY1A4Jk,5789
+usr/lib/password-store/extensions/audit.bash,sha256=T5UlOG99QBrhD9pQZRBLvRCveMIamISJpF1iQhQfiMk,1265
+usr/share/bash-completion/completions/pass-audit,sha256=Zl0VVJNbX6rTBG2ZHLGn14PYHcvUmO9fkKDLcQ89zwU,297
+usr/share/man/man1/pass-audit.1,sha256=pRacSdqpKivlAiqiQSa96tI9I0EivCPjUrjB8hxzigE,1669
+usr/share/zsh/site-functions/_pass-audit,sha256=HwmIuliKwXt3HSrY_Po5IJ1Aqj0C8cg6l2J2VPLfQso,374
+pass_audit-1.2.dist-info/LICENSE,sha256=pZitiADCK4kK6qBPUH5-JEtT0odNEE3u_w4F5CyOgZU,35081
+pass_audit-1.2.dist-info/METADATA,sha256=UFO1lquWAWftpDE4jIsRKQAvTUIT1-UvEWVmsabKNLg,8677
+pass_audit-1.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pass_audit-1.2.dist-info/top_level.txt,sha256=6Bu4Ycm672B5lF1y1aeSO1V1quDGXuyb_9iMjBeq4eo,11
+pass_audit-1.2.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+pass_audit-1.2.dist-info/RECORD,,
