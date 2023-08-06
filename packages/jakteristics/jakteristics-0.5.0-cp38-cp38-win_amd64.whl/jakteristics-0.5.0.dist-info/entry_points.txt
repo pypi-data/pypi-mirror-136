@@ -1,0 +1,3 @@
+[console_scripts]
+jakteristics = jakteristics.__main__:app
+
