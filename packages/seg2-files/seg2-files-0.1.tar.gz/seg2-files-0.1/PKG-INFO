@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: seg2-files
+Version: 0.1
+Summary: Simple tools for reading seg2-format seismic/radar files
+Home-page: https://github.com/natstoik/seg2-files
+Author: Nathan Stoikopoulos
+Author-email: nathan.stoikopoulos@gmail.com
+License: MIT
+Download-URL: https://github.com/natstoik/seg2-files/archive/refs/tags/v_01.tar.gz
+Description: UNKNOWN
+Keywords: SEISMIC,GEOPHYSICS,RADAR,GPR
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
