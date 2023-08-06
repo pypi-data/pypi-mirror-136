@@ -1,0 +1,17 @@
+README.md
+setup.cfg
+setup.py
+phonemes2ids/VERSION
+phonemes2ids/__init__.py
+phonemes2ids/__main__.py
+phonemes2ids/const.py
+phonemes2ids/py.typed
+phonemes2ids/utils.py
+phonemes2ids.egg-info/PKG-INFO
+phonemes2ids.egg-info/SOURCES.txt
+phonemes2ids.egg-info/dependency_links.txt
+phonemes2ids.egg-info/entry_points.txt
+phonemes2ids.egg-info/top_level.txt
+tests/__init__.py
+tests/test_learn_phoneme_ids.py
+tests/test_phonemes2ids.py
