@@ -1,0 +1,8 @@
+bb/__init__.py,sha256=dQ9iPqT1zcmBZWcUiQxhCbsuwl7iBiUY7heae-yuMrA,3203
+bb/util.py,sha256=9yUtalpN2exNuDcv8XhnNCMZ2sSHZe7BiOVTZ5UceJA,292
+bb/lib/darwin_amd64/bb,sha256=BADzEwXVQiKtN5yrsGdtzfd6hRhEyGVqsRD23phzut8,7256176
+bb/lib/linux_386/bb,sha256=0qGnQVDRtqapKMUDBRaWmCuEj3SKGBXTdssrEP37wRo,4558848
+bb_python-0.1.3.dist-info/METADATA,sha256=ZbhLB00m1ILrPeIhV_9BQ8JYinNnUUz8sGLt1g2DgJc,1235
+bb_python-0.1.3.dist-info/WHEEL,sha256=Ph_z28wTcU7HnQwSQ6yCQ-zkcGK4h4ehDfP8b6UoHVE,92
+bb_python-0.1.3.dist-info/top_level.txt,sha256=qBwxrGJiC5IVoU_wBUTLB6VbdlWU86s7535wkjrifPE,3
+bb_python-0.1.3.dist-info/RECORD,,
