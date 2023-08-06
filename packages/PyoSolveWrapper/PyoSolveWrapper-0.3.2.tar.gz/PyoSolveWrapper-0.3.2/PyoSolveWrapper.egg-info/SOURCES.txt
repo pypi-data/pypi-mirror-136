@@ -1,0 +1,13 @@
+LICENSE
+README.md
+README.txt
+setup.cfg
+setup.py
+PyoSolveWrapper/SolveWrapper.py
+PyoSolveWrapper/__init__.py
+PyoSolveWrapper.egg-info/PKG-INFO
+PyoSolveWrapper.egg-info/SOURCES.txt
+PyoSolveWrapper.egg-info/dependency_links.txt
+PyoSolveWrapper.egg-info/not-zip-safe
+PyoSolveWrapper.egg-info/requires.txt
+PyoSolveWrapper.egg-info/top_level.txt
