@@ -1,0 +1,4 @@
+numpy>=1.9
+matplotlib>=3.2.2
+plotly
+openmc_tally_unit_converter
