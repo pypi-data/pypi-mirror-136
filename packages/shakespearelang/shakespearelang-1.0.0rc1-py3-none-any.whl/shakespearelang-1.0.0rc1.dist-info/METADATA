@@ -1,0 +1,71 @@
+Metadata-Version: 2.1
+Name: shakespearelang
+Version: 1.0.0rc1
+Summary: An interpreter for the Shakespeare Programming Language.
+Home-page: http://shakespearelang.com
+License: MIT
+Author: Zeb Burke-Conte
+Author-email: zebburkeconte@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Interpreters
+Requires-Dist: click (>=7.1.2,<8.0.0)
+Requires-Dist: tatsu (>=5.6.1,<5.7.0)
+Project-URL: Repository, http://github.com/zmbc/shakespearelang
+Description-Content-Type: text/x-rst
+
+shakespearelang
+===============
+
+.. image:: https://codeclimate.com/github/zmbc/shakespearelang/badges/gpa.svg
+   :target: https://codeclimate.com/github/zmbc/shakespearelang
+   :alt: Code Climate
+
+.. image:: https://badge.fury.io/py/shakespearelang.svg
+   :target: https://badge.fury.io/py/shakespearelang
+   :alt: PyPI version
+
+
+A friendly interpreter for the Shakespeare Programming Language, implemented in
+Python.
+
+What is the Shakespeare Programming Language?
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The Shakespeare Programming Language (SPL) is a programming language
+with source code that looks like Shakespeare's plays. The language is
+Turing complete, so theoretically just as powerful as any other
+language. It's a lot of fun to write but not very practical. More info can be
+found `on Wikipedia`_.
+
+Note: Shakespeare's actual plays are not valid SPL. SPL does not aim to
+provide backwards compatibility with legacy code written ~400 years ago.
+
+Installation
+^^^^^^^^^^^^
+
+.. code-block::
+
+  pip install shakespearelang
+  # Or however else you install things. You do you.
+
+Documentation
+^^^^^^^^^^^^^
+
+For more on how to use shakespearelang, see `the docs`_.
+
+Contributing
+^^^^^^^^^^^^
+
+Your contributions would be much appreciated! See `CONTRIBUTING.md`_.
+
+.. _on Wikipedia: https://en.wikipedia.org/wiki/Shakespeare_Programming_Language
+
+.. _the docs: https://shakespearelang.com/
+
+.. _CONTRIBUTING.md: https://github.com/zmbc/shakespearelang/blob/main/CONTRIBUTING.md
+
