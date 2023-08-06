@@ -1,0 +1,4 @@
+docums>=1.0.0
+htmlmin>=0.1.4
+jsmin>=3.0.0
+csscompressor>=0.9.5
