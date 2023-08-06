@@ -1,0 +1,9 @@
+systemdlogging/__init__.py,sha256=ook2LdXdPL7WvqMHphuO7XlgV_8WVyMBA6Kg-MRI4G8,145
+systemdlogging/backend_ctyped.py,sha256=SVOiGY1Sico75GyhPV_k4PHRuF4YEGFR3I-kdr5MXS8,632
+systemdlogging/toolbox.py,sha256=-CrdmT50yvi6UARakO7Dkyc_fzFbts-u0Kum989V0tU,5643
+systemd_logging-1.0.1.dist-info/AUTHORS,sha256=P2lEPsLgpFDBbgL-IEfIeRJVOomHg_G6EZZu-cJmCvI,195
+systemd_logging-1.0.1.dist-info/LICENSE,sha256=mrOJyMVs4KVf-8pBUSr1K9vHvuXwHSXTu2uw3HVA6yM,1508
+systemd_logging-1.0.1.dist-info/METADATA,sha256=l9yPZ7PImUJnz2NXMERc_gUdUYA8Ha9AkvIX4kA12zg,2744
+systemd_logging-1.0.1.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+systemd_logging-1.0.1.dist-info/top_level.txt,sha256=O_j82iJuMtATuhh3boPot0fkNVrOi9VVMlkN-m8qvq0,15
+systemd_logging-1.0.1.dist-info/RECORD,,
