@@ -1,0 +1,29 @@
+package:
+  name: pycomfort
+  version: 0.0.2
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+requirements:
+  build:
+    - python:
+        - 3.7
+        - 3.8
+        - 3.9
+    - setuptools
+    - anaconda-client>=1.7.2
+  run:
+    - python:
+        - 3.7
+        - 3.8
+        - 3.9
+    - more-itertools>=8.4.0
+    - pip:
+        - pyfunctional
+test:
+  imports:
+    - pycomfort
+
+source:
+  path: ../
