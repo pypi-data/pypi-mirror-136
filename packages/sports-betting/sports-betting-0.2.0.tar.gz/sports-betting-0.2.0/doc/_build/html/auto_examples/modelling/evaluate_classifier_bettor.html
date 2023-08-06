@@ -1,0 +1,1037 @@
+<!DOCTYPE html>
+<html class="writer-html4" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Classifier bettor &mdash; sports-betting 0.1.6 documentation</title><link rel="stylesheet" href="../../_static/css/sports-betting.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/sg_gallery.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/sg_gallery-binder.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/sg_gallery-dataframe.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/sg_gallery-rendered-html.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+        <script type="text/javascript" src="../../_static/js/copybutton.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Developers" href="../../additional_information/developers.html" />
+    <link rel="prev" title="Football-Data soccer data" href="../extract_fd_soccer_data.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html" class="icon icon-home"> sports-betting
+          </a>
+              <div class="version">
+                0.1.6
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/introduction.html">Introduction</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Main Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../main_documentation/user_guide.html">User Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../main_documentation/api.html">API</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Examples</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Data Extraction</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html#model-evaluation">Model Evaluation</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Classifier bettor</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#extracting-the-training-data">Extracting the training data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id1">Classifier bettor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#backtesting-the-bettor">Backtesting the bettor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#estimating-the-value-bets">Estimating the value bets</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Additional Information</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../additional_information/developers.html">Developers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../additional_information/release_history.html">Release History</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">sports-betting</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../index.html">Data Extraction</a> &raquo;</li>
+      <li>Classifier bettor</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/auto_examples/modelling/evaluate_classifier_bettor.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="sphx-glr-download-link-note admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Click <a class="reference internal" href="#sphx-glr-download-auto-examples-modelling-evaluate-classifier-bettor-py"><span class="std std-ref">here</span></a>
+to download the full example code</p>
+</div>
+<div class="sphx-glr-example-title section" id="classifier-bettor">
+<span id="sphx-glr-auto-examples-modelling-evaluate-classifier-bettor-py"></span><h1>Classifier bettor<a class="headerlink" href="#classifier-bettor" title="Permalink to this headline">¶</a></h1>
+<p>This example illustrates how to use a classifier-based bettor
+and evaluate its performance on soccer historical data.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Author: Georgios Douzas &lt;gdouzas@icloud.com&gt;</span>
+<span class="c1"># Licence: MIT</span>
+
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">from</span> <span class="nn">sportsbet.datasets</span> <span class="kn">import</span> <a href="../../generated/sportsbet.datasets.SoccerDataLoader.html#sportsbet.datasets.SoccerDataLoader" title="sportsbet.datasets.SoccerDataLoader" class="sphx-glr-backref-module-sportsbet-datasets sphx-glr-backref-type-py-class"><a href="../../generated/sportsbet.datasets.SoccerDataLoader.html#sportsbet.datasets.SoccerDataLoader" title="sportsbet.datasets.SoccerDataLoader" class="sphx-glr-backref-module-sportsbet-datasets sphx-glr-backref-type-py-class"><span class="n">SoccerDataLoader</span></a></a>
+<span class="kn">from</span> <span class="nn">sportsbet.evaluation</span> <span class="kn">import</span> <a href="../../generated/sportsbet.evaluation.ClassifierBettor.html#sportsbet.evaluation.ClassifierBettor" title="sportsbet.evaluation.ClassifierBettor" class="sphx-glr-backref-module-sportsbet-evaluation sphx-glr-backref-type-py-class"><a href="../../generated/sportsbet.evaluation.ClassifierBettor.html#sportsbet.evaluation.ClassifierBettor" title="sportsbet.evaluation.ClassifierBettor" class="sphx-glr-backref-module-sportsbet-evaluation sphx-glr-backref-type-py-class"><span class="n">ClassifierBettor</span></a></a>
+<span class="kn">from</span> <span class="nn">sklearn.neighbors</span> <span class="kn">import</span> <a href="https://scikit-learn.org/stable/modules/generated/sklearn.neighbors.KNeighborsClassifier.html#sklearn.neighbors.KNeighborsClassifier" title="sklearn.neighbors.KNeighborsClassifier" class="sphx-glr-backref-module-sklearn-neighbors sphx-glr-backref-type-py-class"><a href="https://scikit-learn.org/stable/modules/generated/sklearn.neighbors.KNeighborsClassifier.html#sklearn.neighbors.KNeighborsClassifier" title="sklearn.neighbors.KNeighborsClassifier" class="sphx-glr-backref-module-sklearn-neighbors sphx-glr-backref-type-py-class"><span class="n">KNeighborsClassifier</span></a></a>
+<span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <a href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.cross_val_score.html#sklearn.model_selection.cross_val_score" title="sklearn.model_selection.cross_val_score" class="sphx-glr-backref-module-sklearn-model_selection sphx-glr-backref-type-py-function"><a href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.cross_val_score.html#sklearn.model_selection.cross_val_score" title="sklearn.model_selection.cross_val_score" class="sphx-glr-backref-module-sklearn-model_selection sphx-glr-backref-type-py-function"><span class="n">cross_val_score</span></a></a><span class="p">,</span> <a href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.TimeSeriesSplit.html#sklearn.model_selection.TimeSeriesSplit" title="sklearn.model_selection.TimeSeriesSplit" class="sphx-glr-backref-module-sklearn-model_selection sphx-glr-backref-type-py-class"><a href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.TimeSeriesSplit.html#sklearn.model_selection.TimeSeriesSplit" title="sklearn.model_selection.TimeSeriesSplit" class="sphx-glr-backref-module-sklearn-model_selection sphx-glr-backref-type-py-class"><span class="n">TimeSeriesSplit</span></a></a>
+</pre></div>
+</div>
+<div class="section" id="extracting-the-training-data">
+<h2>Extracting the training data<a class="headerlink" href="#extracting-the-training-data" title="Permalink to this headline">¶</a></h2>
+<p>We extract the training data for the Spanish league.
+We also remove columns that contain missing values and select the market
+maximum odds.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><a href="../../generated/sportsbet.datasets.SoccerDataLoader.html#sportsbet.datasets.SoccerDataLoader" title="sportsbet.datasets.SoccerDataLoader" class="sphx-glr-backref-module-sportsbet-datasets sphx-glr-backref-type-py-class sphx-glr-backref-instance"><a href="../../generated/sportsbet.datasets.SoccerDataLoader.html#sportsbet.datasets.SoccerDataLoader" title="sportsbet.datasets.SoccerDataLoader" class="sphx-glr-backref-module-sportsbet-datasets sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">dataloader</span></a></a> <span class="o">=</span> <a href="../../generated/sportsbet.datasets.SoccerDataLoader.html#sportsbet.datasets.SoccerDataLoader" title="sportsbet.datasets.SoccerDataLoader" class="sphx-glr-backref-module-sportsbet-datasets sphx-glr-backref-type-py-class"><a href="../../generated/sportsbet.datasets.SoccerDataLoader.html#sportsbet.datasets.SoccerDataLoader" title="sportsbet.datasets.SoccerDataLoader" class="sphx-glr-backref-module-sportsbet-datasets sphx-glr-backref-type-py-class"><span class="n">SoccerDataLoader</span></a></a><span class="p">(</span><span class="n">param_grid</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;league&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Spain&#39;</span><span class="p">]})</span>
+<a href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><a href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">X_train</span></a></a><span class="p">,</span> <a href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><a href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">Y_train</span></a></a><span class="p">,</span> <a href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><a href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">O_train</span></a></a> <span class="o">=</span> <a href="../../generated/sportsbet.datasets.SoccerDataLoader.html#sportsbet.datasets.SoccerDataLoader.extract_train_data" title="sportsbet.datasets.SoccerDataLoader.extract_train_data" class="sphx-glr-backref-module-sportsbet-datasets sphx-glr-backref-type-py-method"><a href="../../generated/sportsbet.datasets.SoccerDataLoader.html#sportsbet.datasets.SoccerDataLoader.extract_train_data" title="sportsbet.datasets.SoccerDataLoader.extract_train_data" class="sphx-glr-backref-module-sportsbet-datasets sphx-glr-backref-type-py-method"><span class="n">dataloader</span><span class="o">.</span><span class="n">extract_train_data</span></a></a><span class="p">(</span>
+    <span class="n">drop_na_thres</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">odds_type</span><span class="o">=</span><span class="s1">&#39;market_maximum&#39;</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+<p class="sphx-glr-script-out">Out:</p>
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>Football-Data.co.uk: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:00
+</pre></div>
+</div>
+<p>The input data:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><a href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><a href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">X_train</span></a></a>
+</pre></div>
+</div>
+<div class="output_subarea output_html rendered_html output_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>home_team</th>
+      <th>away_team</th>
+      <th>league</th>
+      <th>division</th>
+      <th>year</th>
+      <th>home_team_soccer_power_index</th>
+      <th>away_team_soccer_power_index</th>
+      <th>home_team_probability_win</th>
+      <th>away_team_probability_win</th>
+      <th>probability_draw</th>
+      <th>home_team_projected_score</th>
+      <th>away_team_projected_score</th>
+      <th>match_quality</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2016-08-19</th>
+      <td>La Coruna</td>
+      <td>Eibar</td>
+      <td>Spain</td>
+      <td>1</td>
+      <td>2017</td>
+      <td>66.52</td>
+      <td>62.29</td>
+      <td>0.5003</td>
+      <td>0.2260</td>
+      <td>0.2738</td>
+      <td>1.47</td>
+      <td>0.79</td>
+      <td>64.335545</td>
+    </tr>
+    <tr>
+      <th>2016-08-19</th>
+      <td>Malaga</td>
+      <td>Osasuna</td>
+      <td>Spain</td>
+      <td>1</td>
+      <td>2017</td>
+      <td>72.57</td>
+      <td>56.93</td>
+      <td>0.5475</td>
+      <td>0.1897</td>
+      <td>0.2628</td>
+      <td>1.56</td>
+      <td>0.70</td>
+      <td>63.805561</td>
+    </tr>
+    <tr>
+      <th>2016-08-20</th>
+      <td>Sevilla</td>
+      <td>Espanol</td>
+      <td>Spain</td>
+      <td>1</td>
+      <td>2017</td>
+      <td>78.76</td>
+      <td>68.75</td>
+      <td>0.5952</td>
+      <td>0.1760</td>
+      <td>0.2288</td>
+      <td>1.89</td>
+      <td>0.88</td>
+      <td>73.415362</td>
+    </tr>
+    <tr>
+      <th>2016-08-20</th>
+      <td>Granada</td>
+      <td>Villarreal</td>
+      <td>Spain</td>
+      <td>1</td>
+      <td>2017</td>
+      <td>55.69</td>
+      <td>76.79</td>
+      <td>0.3194</td>
+      <td>0.3917</td>
+      <td>0.2889</td>
+      <td>1.07</td>
+      <td>1.19</td>
+      <td>64.559709</td>
+    </tr>
+    <tr>
+      <th>2016-08-20</th>
+      <td>Barcelona</td>
+      <td>Betis</td>
+      <td>Spain</td>
+      <td>1</td>
+      <td>2017</td>
+      <td>96.35</td>
+      <td>69.95</td>
+      <td>0.9591</td>
+      <td>0.0071</td>
+      <td>0.0337</td>
+      <td>3.40</td>
+      <td>0.42</td>
+      <td>81.054510</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>2022-01-23</th>
+      <td>Girona</td>
+      <td>Lugo</td>
+      <td>Spain</td>
+      <td>2</td>
+      <td>2022</td>
+      <td>40.64</td>
+      <td>30.24</td>
+      <td>0.5490</td>
+      <td>0.1963</td>
+      <td>0.2548</td>
+      <td>1.76</td>
+      <td>0.95</td>
+      <td>34.677020</td>
+    </tr>
+    <tr>
+      <th>2022-01-23</th>
+      <td>Huesca</td>
+      <td>Ponferradina</td>
+      <td>Spain</td>
+      <td>2</td>
+      <td>2022</td>
+      <td>34.06</td>
+      <td>29.71</td>
+      <td>0.4505</td>
+      <td>0.2406</td>
+      <td>0.3089</td>
+      <td>1.30</td>
+      <td>0.86</td>
+      <td>31.736635</td>
+    </tr>
+    <tr>
+      <th>2022-01-23</th>
+      <td>Granada</td>
+      <td>Osasuna</td>
+      <td>Spain</td>
+      <td>1</td>
+      <td>2022</td>
+      <td>62.04</td>
+      <td>67.01</td>
+      <td>0.3926</td>
+      <td>0.3145</td>
+      <td>0.2929</td>
+      <td>1.27</td>
+      <td>1.10</td>
+      <td>64.429297</td>
+    </tr>
+    <tr>
+      <th>2022-01-24</th>
+      <td>Almeria</td>
+      <td>Eibar</td>
+      <td>Spain</td>
+      <td>2</td>
+      <td>2022</td>
+      <td>42.75</td>
+      <td>35.27</td>
+      <td>0.5156</td>
+      <td>0.2166</td>
+      <td>0.2677</td>
+      <td>1.64</td>
+      <td>0.97</td>
+      <td>38.651436</td>
+    </tr>
+    <tr>
+      <th>2022-01-24</th>
+      <td>Sociedad B</td>
+      <td>Cartagena</td>
+      <td>Spain</td>
+      <td>2</td>
+      <td>2022</td>
+      <td>26.28</td>
+      <td>30.22</td>
+      <td>0.4016</td>
+      <td>0.3063</td>
+      <td>0.2921</td>
+      <td>1.34</td>
+      <td>1.14</td>
+      <td>28.112623</td>
+    </tr>
+  </tbody>
+</table>
+<p>3792 rows × 13 columns</p>
+</div>
+</div>
+<br />
+<br /><p>The multi-output targets:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><a href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><a href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">Y_train</span></a></a>
+</pre></div>
+</div>
+<div class="output_subarea output_html rendered_html output_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>away_win__full_time_goals</th>
+      <th>draw__full_time_goals</th>
+      <th>home_win__full_time_goals</th>
+      <th>over_2.5__full_time_goals</th>
+      <th>under_2.5__full_time_goals</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+      <td>True</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+      <td>True</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+      <td>True</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>3787</th>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>3788</th>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>3789</th>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>3790</th>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>3791</th>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+    </tr>
+  </tbody>
+</table>
+<p>3792 rows × 5 columns</p>
+</div>
+</div>
+<br />
+<br /><p>The odds:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><a href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><a href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">O_train</span></a></a>
+</pre></div>
+</div>
+<div class="output_subarea output_html rendered_html output_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>market_maximum__away_win__odds</th>
+      <th>market_maximum__draw__odds</th>
+      <th>market_maximum__home_win__odds</th>
+      <th>market_maximum__over_2.5__odds</th>
+      <th>market_maximum__under_2.5__odds</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>3787</th>
+      <td>5.78</td>
+      <td>3.75</td>
+      <td>1.75</td>
+      <td>2.28</td>
+      <td>1.73</td>
+    </tr>
+    <tr>
+      <th>3788</th>
+      <td>3.85</td>
+      <td>3.24</td>
+      <td>2.31</td>
+      <td>2.48</td>
+      <td>1.60</td>
+    </tr>
+    <tr>
+      <th>3789</th>
+      <td>3.18</td>
+      <td>3.30</td>
+      <td>2.62</td>
+      <td>2.36</td>
+      <td>1.70</td>
+    </tr>
+    <tr>
+      <th>3790</th>
+      <td>4.00</td>
+      <td>3.45</td>
+      <td>2.05</td>
+      <td>2.26</td>
+      <td>1.74</td>
+    </tr>
+    <tr>
+      <th>3791</th>
+      <td>2.65</td>
+      <td>3.32</td>
+      <td>2.96</td>
+      <td>2.21</td>
+      <td>1.78</td>
+    </tr>
+  </tbody>
+</table>
+<p>3792 rows × 5 columns</p>
+</div>
+</div>
+<br />
+<br /><p>The simplify the training process we keep only the numerical features of the
+input data:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><a href="https://docs.python.org/3/library/stdtypes.html#list" title="builtins.list" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><a href="https://docs.python.org/3/library/stdtypes.html#list" title="builtins.list" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">num_features</span></a></a> <span class="o">=</span> <span class="p">[</span>
+    <span class="n">col</span>
+    <span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <a href="https://pandas.pydata.org/docs/reference/api/pandas.Index.html#pandas.Index" title="pandas.core.indexes.base.Index" class="sphx-glr-backref-module-pandas-core-indexes-base sphx-glr-backref-type-py-class sphx-glr-backref-instance"><a href="https://pandas.pydata.org/docs/reference/api/pandas.Index.html#pandas.Index" title="pandas.core.indexes.base.Index" class="sphx-glr-backref-module-pandas-core-indexes-base sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">X_train</span><span class="o">.</span><span class="n">columns</span></a></a>
+    <span class="k">if</span> <a href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><a href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">X_train</span></a></a><span class="p">[</span><span class="n">col</span><span class="p">]</span><span class="o">.</span><span class="n">dtype</span> <span class="ow">in</span> <span class="p">(</span><a href="https://numpy.org/doc/stable/reference/generated/numpy.dtype.html#numpy.dtype" title="numpy.dtype" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-class"><a href="https://numpy.org/doc/stable/reference/generated/numpy.dtype.html#numpy.dtype" title="numpy.dtype" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-class"><span class="n">np</span><span class="o">.</span><span class="n">dtype</span></a></a><span class="p">(</span><span class="nb">int</span><span class="p">),</span> <a href="https://numpy.org/doc/stable/reference/generated/numpy.dtype.html#numpy.dtype" title="numpy.dtype" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-class"><a href="https://numpy.org/doc/stable/reference/generated/numpy.dtype.html#numpy.dtype" title="numpy.dtype" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-class"><span class="n">np</span><span class="o">.</span><span class="n">dtype</span></a></a><span class="p">(</span><span class="nb">float</span><span class="p">))</span>
+<span class="p">]</span>
+<a href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><a href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">X_train</span></a></a> <span class="o">=</span> <a href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><a href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">X_train</span></a></a><span class="p">[</span><a href="https://docs.python.org/3/library/stdtypes.html#list" title="builtins.list" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><a href="https://docs.python.org/3/library/stdtypes.html#list" title="builtins.list" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">num_features</span></a></a><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id1">
+<h2>Classifier bettor<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<p>We can use <a class="reference internal" href="../../generated/sportsbet.evaluation.ClassifierBettor.html#sportsbet.evaluation.ClassifierBettor" title="sportsbet.evaluation.ClassifierBettor"><code class="xref py py-class docutils literal notranslate"><span class="pre">ClassifierBettor</span></code></a> class to create
+a classifier-based bettor. A <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.neighbors.KNeighborsClassifier.html#sklearn.neighbors.KNeighborsClassifier" title="(in scikit-learn v1.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">KNeighborsClassifier</span></code></a>
+is selected.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><a href="../../generated/sportsbet.evaluation.ClassifierBettor.html#sportsbet.evaluation.ClassifierBettor" title="sportsbet.evaluation.ClassifierBettor" class="sphx-glr-backref-module-sportsbet-evaluation sphx-glr-backref-type-py-class sphx-glr-backref-instance"><a href="../../generated/sportsbet.evaluation.ClassifierBettor.html#sportsbet.evaluation.ClassifierBettor" title="sportsbet.evaluation.ClassifierBettor" class="sphx-glr-backref-module-sportsbet-evaluation sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">bettor</span></a></a> <span class="o">=</span> <a href="../../generated/sportsbet.evaluation.ClassifierBettor.html#sportsbet.evaluation.ClassifierBettor" title="sportsbet.evaluation.ClassifierBettor" class="sphx-glr-backref-module-sportsbet-evaluation sphx-glr-backref-type-py-class"><a href="../../generated/sportsbet.evaluation.ClassifierBettor.html#sportsbet.evaluation.ClassifierBettor" title="sportsbet.evaluation.ClassifierBettor" class="sphx-glr-backref-module-sportsbet-evaluation sphx-glr-backref-type-py-class"><span class="n">ClassifierBettor</span></a></a><span class="p">(</span><a href="https://scikit-learn.org/stable/modules/generated/sklearn.neighbors.KNeighborsClassifier.html#sklearn.neighbors.KNeighborsClassifier" title="sklearn.neighbors.KNeighborsClassifier" class="sphx-glr-backref-module-sklearn-neighbors sphx-glr-backref-type-py-class"><a href="https://scikit-learn.org/stable/modules/generated/sklearn.neighbors.KNeighborsClassifier.html#sklearn.neighbors.KNeighborsClassifier" title="sklearn.neighbors.KNeighborsClassifier" class="sphx-glr-backref-module-sklearn-neighbors sphx-glr-backref-type-py-class"><span class="n">KNeighborsClassifier</span></a></a><span class="p">())</span>
+</pre></div>
+</div>
+<p>Any bettor is a classifier, therefore we can fit it on the training data.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><a href="../../generated/sportsbet.evaluation.ClassifierBettor.html#sportsbet.evaluation.ClassifierBettor.fit" title="sportsbet.evaluation.ClassifierBettor.fit" class="sphx-glr-backref-module-sportsbet-evaluation sphx-glr-backref-type-py-method"><a href="../../generated/sportsbet.evaluation.ClassifierBettor.html#sportsbet.evaluation.ClassifierBettor.fit" title="sportsbet.evaluation.ClassifierBettor.fit" class="sphx-glr-backref-module-sportsbet-evaluation sphx-glr-backref-type-py-method"><span class="n">bettor</span><span class="o">.</span><span class="n">fit</span></a></a><span class="p">(</span><a href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><a href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">X_train</span></a></a><span class="p">,</span> <a href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><a href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">Y_train</span></a></a><span class="p">)</span>
+</pre></div>
+</div>
+<p class="sphx-glr-script-out">Out:</p>
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>ClassifierBettor(classifier=KNeighborsClassifier())
+</pre></div>
+</div>
+<p>We can predict probabilities for the positive class.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><a href="../../generated/sportsbet.evaluation.ClassifierBettor.html#sportsbet.evaluation.ClassifierBettor.predict_proba" title="sportsbet.evaluation.ClassifierBettor.predict_proba" class="sphx-glr-backref-module-sportsbet-evaluation sphx-glr-backref-type-py-method"><a href="../../generated/sportsbet.evaluation.ClassifierBettor.html#sportsbet.evaluation.ClassifierBettor.predict_proba" title="sportsbet.evaluation.ClassifierBettor.predict_proba" class="sphx-glr-backref-module-sportsbet-evaluation sphx-glr-backref-type-py-method"><span class="n">bettor</span><span class="o">.</span><span class="n">predict_proba</span></a></a><span class="p">(</span><a href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><a href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">X_train</span></a></a><span class="p">)</span>
+</pre></div>
+</div>
+<p class="sphx-glr-script-out">Out:</p>
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>array([[0.2, 0.4, 0.4, 0.4, 0.6],
+       [0. , 0.4, 0.6, 0.4, 0.6],
+       [0. , 0.2, 0.8, 0.6, 0.4],
+       ...,
+       [0.4, 0.6, 0. , 0.2, 0.8],
+       [0.2, 0. , 0.8, 0.4, 0.6],
+       [0.8, 0.2, 0. , 0.6, 0.4]])
+</pre></div>
+</div>
+<p>We can predict the class label.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><a href="../../generated/sportsbet.evaluation.ClassifierBettor.html#sportsbet.evaluation.ClassifierBettor.predict" title="sportsbet.evaluation.ClassifierBettor.predict" class="sphx-glr-backref-module-sportsbet-evaluation sphx-glr-backref-type-py-method"><a href="../../generated/sportsbet.evaluation.ClassifierBettor.html#sportsbet.evaluation.ClassifierBettor.predict" title="sportsbet.evaluation.ClassifierBettor.predict" class="sphx-glr-backref-module-sportsbet-evaluation sphx-glr-backref-type-py-method"><span class="n">bettor</span><span class="o">.</span><span class="n">predict</span></a></a><span class="p">(</span><a href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><a href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">X_train</span></a></a><span class="p">)</span>
+</pre></div>
+</div>
+<p class="sphx-glr-script-out">Out:</p>
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>array([[False, False, False, False,  True],
+       [False, False,  True, False,  True],
+       [False, False,  True,  True, False],
+       ...,
+       [False,  True, False, False,  True],
+       [False, False,  True, False,  True],
+       [ True, False, False,  True, False]])
+</pre></div>
+</div>
+<p>Finally, we can evaluate its cross-validation accuracy.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><a href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.cross_val_score.html#sklearn.model_selection.cross_val_score" title="sklearn.model_selection.cross_val_score" class="sphx-glr-backref-module-sklearn-model_selection sphx-glr-backref-type-py-function"><a href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.cross_val_score.html#sklearn.model_selection.cross_val_score" title="sklearn.model_selection.cross_val_score" class="sphx-glr-backref-module-sklearn-model_selection sphx-glr-backref-type-py-function"><span class="n">cross_val_score</span></a></a><span class="p">(</span><a href="../../generated/sportsbet.evaluation.ClassifierBettor.html#sportsbet.evaluation.ClassifierBettor" title="sportsbet.evaluation.ClassifierBettor" class="sphx-glr-backref-module-sportsbet-evaluation sphx-glr-backref-type-py-class sphx-glr-backref-instance"><a href="../../generated/sportsbet.evaluation.ClassifierBettor.html#sportsbet.evaluation.ClassifierBettor" title="sportsbet.evaluation.ClassifierBettor" class="sphx-glr-backref-module-sportsbet-evaluation sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">bettor</span></a></a><span class="p">,</span> <a href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><a href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">X_train</span></a></a><span class="p">,</span> <a href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><a href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">Y_train</span></a></a><span class="p">,</span> <span class="n">cv</span><span class="o">=</span><a href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.TimeSeriesSplit.html#sklearn.model_selection.TimeSeriesSplit" title="sklearn.model_selection.TimeSeriesSplit" class="sphx-glr-backref-module-sklearn-model_selection sphx-glr-backref-type-py-class"><a href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.TimeSeriesSplit.html#sklearn.model_selection.TimeSeriesSplit" title="sklearn.model_selection.TimeSeriesSplit" class="sphx-glr-backref-module-sklearn-model_selection sphx-glr-backref-type-py-class"><span class="n">TimeSeriesSplit</span></a></a><span class="p">())</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+</pre></div>
+</div>
+<p class="sphx-glr-script-out">Out:</p>
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>0.17025316455696204
+</pre></div>
+</div>
+</div>
+<div class="section" id="backtesting-the-bettor">
+<h2>Backtesting the bettor<a class="headerlink" href="#backtesting-the-bettor" title="Permalink to this headline">¶</a></h2>
+<p>We can backtest the bettor using the historical data.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><a href="../../generated/sportsbet.evaluation.ClassifierBettor.html#sportsbet.evaluation.ClassifierBettor.backtest" title="sportsbet.evaluation.ClassifierBettor.backtest" class="sphx-glr-backref-module-sportsbet-evaluation sphx-glr-backref-type-py-method"><a href="../../generated/sportsbet.evaluation.ClassifierBettor.html#sportsbet.evaluation.ClassifierBettor.backtest" title="sportsbet.evaluation.ClassifierBettor.backtest" class="sphx-glr-backref-module-sportsbet-evaluation sphx-glr-backref-type-py-method"><span class="n">bettor</span><span class="o">.</span><span class="n">backtest</span></a></a><span class="p">(</span><a href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><a href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">X_train</span></a></a><span class="p">,</span> <a href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><a href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">Y_train</span></a></a><span class="p">,</span> <a href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><a href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">O_train</span></a></a><span class="p">)</span>
+</pre></div>
+</div>
+<p class="sphx-glr-script-out">Out:</p>
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>ClassifierBettor(classifier=KNeighborsClassifier())
+</pre></div>
+</div>
+<p>Various backtesting statistics are calculated.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><a href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><a href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">bettor</span><span class="o">.</span><span class="n">backtest_results_</span></a></a>
+</pre></div>
+</div>
+<div class="output_subarea output_html rendered_html output_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Training Start</th>
+      <th>Training End</th>
+      <th>Training Period</th>
+      <th>Testing Start</th>
+      <th>Testing End</th>
+      <th>Testing Period</th>
+      <th>Start Value</th>
+      <th>End Value</th>
+      <th>Total Return [%]</th>
+      <th>Max Drawdown [%]</th>
+      <th>Max Drawdown Duration</th>
+      <th>Total Bets</th>
+      <th>Win Rate [%]</th>
+      <th>Best Bet [%]</th>
+      <th>Worst Bet [%]</th>
+      <th>Avg Winning Bet [%]</th>
+      <th>Avg Losing Bet [%]</th>
+      <th>Profit Factor</th>
+      <th>Sharpe Ratio</th>
+      <th>Avg Bet Yield [%]</th>
+      <th>Std Bet Yield [%]</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>2016-08-19</td>
+      <td>2018-03-03</td>
+      <td>561 days</td>
+      <td>2018-03-16</td>
+      <td>2019-02-02</td>
+      <td>324 days</td>
+      <td>1000.0</td>
+      <td>1000.00</td>
+      <td>0.000</td>
+      <td>NaN</td>
+      <td>NaT</td>
+      <td>0.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>inf</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2016-08-19</td>
+      <td>2019-02-02</td>
+      <td>897 days</td>
+      <td>2019-02-03</td>
+      <td>2019-11-03</td>
+      <td>274 days</td>
+      <td>1000.0</td>
+      <td>1002.97</td>
+      <td>0.297</td>
+      <td>3.075409</td>
+      <td>40 days 12:00:00</td>
+      <td>212.0</td>
+      <td>41.981132</td>
+      <td>386.666667</td>
+      <td>-166.666667</td>
+      <td>119.037712</td>
+      <td>-90.112466</td>
+      <td>1.015331</td>
+      <td>0.132261</td>
+      <td>-2.308854</td>
+      <td>121.176287</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>2016-08-19</td>
+      <td>2019-11-03</td>
+      <td>1171 days</td>
+      <td>2019-11-03</td>
+      <td>2020-09-30</td>
+      <td>333 days</td>
+      <td>1000.0</td>
+      <td>1068.79</td>
+      <td>6.879</td>
+      <td>1.714371</td>
+      <td>110 days 00:00:00</td>
+      <td>455.0</td>
+      <td>49.450549</td>
+      <td>464.000000</td>
+      <td>-171.428571</td>
+      <td>105.935316</td>
+      <td>-90.853492</td>
+      <td>1.165249</td>
+      <td>1.580977</td>
+      <td>6.459655</td>
+      <td>120.084163</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>2016-08-19</td>
+      <td>2020-09-30</td>
+      <td>1503 days</td>
+      <td>2020-10-01</td>
+      <td>2021-04-19</td>
+      <td>201 days</td>
+      <td>1000.0</td>
+      <td>919.51</td>
+      <td>-8.049</td>
+      <td>10.109908</td>
+      <td>198 days 12:00:00</td>
+      <td>593.0</td>
+      <td>43.001686</td>
+      <td>630.000000</td>
+      <td>-171.428571</td>
+      <td>112.054049</td>
+      <td>-92.941063</td>
+      <td>0.846405</td>
+      <td>-2.267925</td>
+      <td>-4.632977</td>
+      <td>122.453931</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>2016-08-19</td>
+      <td>2021-04-19</td>
+      <td>1704 days</td>
+      <td>2021-04-19</td>
+      <td>2022-01-24</td>
+      <td>281 days</td>
+      <td>1000.0</td>
+      <td>949.46</td>
+      <td>-5.054</td>
+      <td>5.634760</td>
+      <td>260 days 12:00:00</td>
+      <td>572.0</td>
+      <td>43.881119</td>
+      <td>2053.000000</td>
+      <td>-171.428571</td>
+      <td>121.249602</td>
+      <td>-95.709338</td>
+      <td>0.903978</td>
+      <td>-1.101773</td>
+      <td>-0.505328</td>
+      <td>152.064310</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+<br />
+<br /><p>We can also plot the portfolio value for any testing period from the above
+backtesting results.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><a href="https://docs.python.org/3/library/functions.html#int" title="builtins.int" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><a href="https://docs.python.org/3/library/functions.html#int" title="builtins.int" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">testing_period</span></a></a> <span class="o">=</span> <span class="mi">2</span>
+<a href="../../generated/sportsbet.evaluation.ClassifierBettor.html#sportsbet.evaluation.ClassifierBettor" title="sportsbet.evaluation.ClassifierBettor" class="sphx-glr-backref-module-sportsbet-evaluation sphx-glr-backref-type-py-class sphx-glr-backref-instance"><a href="../../generated/sportsbet.evaluation.ClassifierBettor.html#sportsbet.evaluation.ClassifierBettor" title="sportsbet.evaluation.ClassifierBettor" class="sphx-glr-backref-module-sportsbet-evaluation sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">bettor</span></a></a><span class="o">.</span><span class="n">backtest_plot_value_</span><span class="p">(</span><a href="https://docs.python.org/3/library/functions.html#int" title="builtins.int" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><a href="https://docs.python.org/3/library/functions.html#int" title="builtins.int" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">testing_period</span></a></a><span class="p">)</span>
+</pre></div>
+</div>
+<div class="output_subarea output_html rendered_html output_result">
+<div>                        <script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+        <script src="https://cdn.plot.ly/plotly-2.8.3.min.js"></script>                <div id="8b1be076-10b7-4b16-97f0-d8c9139cb717" class="plotly-graph-div" style="height:350px; width:700px;"></div>            <script type="text/javascript">                                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("8b1be076-10b7-4b16-97f0-d8c9139cb717")) {                    Plotly.newPlot(                        "8b1be076-10b7-4b16-97f0-d8c9139cb717",                        [{"hoverinfo":"skip","line":{"color":"rgba(0, 0, 0, 0)","width":0},"opacity":0,"showlegend":false,"x":["2019-11-03T00:00:00","2019-11-03T00:00:00","2019-11-04T00:00:00","2019-11-04T00:00:00","2019-11-05T00:00:00","2019-11-05T00:00:00","2019-11-06T00:00:00","2019-11-06T00:00:00","2019-11-07T00:00:00","2019-11-07T00:00:00","2019-11-08T00:00:00","2019-11-08T00:00:00","2019-11-09T00:00:00","2019-11-09T00:00:00","2019-11-10T00:00:00","2019-11-10T00:00:00","2019-11-11T00:00:00","2019-11-11T00:00:00","2019-11-12T00:00:00","2019-11-12T00:00:00","2019-11-13T00:00:00","2019-11-13T00:00:00","2019-11-14T00:00:00","2019-11-14T00:00:00","2019-11-15T00:00:00","2019-11-15T00:00:00","2019-11-16T00:00:00","2019-11-16T00:00:00","2019-11-17T00:00:00","2019-11-17T00:00:00","2019-11-18T00:00:00","2019-11-18T00:00:00","2019-11-19T00:00:00","2019-11-19T00:00:00","2019-11-20T00:00:00","2019-11-20T00:00:00","2019-11-21T00:00:00","2019-11-21T00:00:00","2019-11-22T00:00:00","2019-11-22T00:00:00","2019-11-23T00:00:00","2019-11-23T00:00:00","2019-11-24T00:00:00","2019-11-24T00:00:00","2019-11-25T00:00:00","2019-11-25T00:00:00","2019-11-26T00:00:00","2019-11-26T00:00:00","2019-11-27T00:00:00","2019-11-27T00:00:00","2019-11-28T00:00:00","2019-11-28T00:00:00","2019-11-29T00:00:00","2019-11-29T00:00:00","2019-11-30T00:00:00","2019-11-30T00:00:00","2019-12-01T00:00:00","2019-12-01T00:00:00","2019-12-02T00:00:00","2019-12-02T00:00:00","2019-12-03T00:00:00","2019-12-03T00:00:00","2019-12-04T00:00:00","2019-12-04T00:00:00","2019-12-05T00:00:00","2019-12-05T00:00:00","2019-12-06T00:00:00","2019-12-06T00:00:00","2019-12-07T00:00:00","2019-12-07T00:00:00","2019-12-08T00:00:00","2019-12-08T00:00:00","2019-12-09T00:00:00","2019-12-09T00:00:00","2019-12-10T00:00:00","2019-12-10T00:00:00","2019-12-11T00:00:00","2019-12-11T00:00:00","2019-12-12T00:00:00","2019-12-12T00:00:00","2019-12-13T00:00:00","2019-12-13T00:00:00","2019-12-14T00:00:00","2019-12-14T00:00:00","2019-12-15T00:00:00","2019-12-15T00:00:00","2019-12-16T00:00:00","2019-12-16T00:00:00","2019-12-17T00:00:00","2019-12-17T00:00:00","2019-12-18T00:00:00","2019-12-18T00:00:00","2019-12-19T00:00:00","2019-12-19T00:00:00","2019-12-20T00:00:00","2019-12-20T00:00:00","2019-12-21T00:00:00","2019-12-21T00:00:00","2019-12-22T00:00:00","2019-12-22T00:00:00","2019-12-23T00:00:00","2019-12-23T00:00:00","2019-12-24T00:00:00","2019-12-24T00:00:00","2019-12-25T00:00:00","2019-12-25T00:00:00","2019-12-26T00:00:00","2019-12-26T00:00:00","2019-12-27T00:00:00","2019-12-27T00:00:00","2019-12-28T00:00:00","2019-12-28T00:00:00","2019-12-29T00:00:00","2019-12-29T00:00:00","2019-12-30T00:00:00","2019-12-30T00:00:00","2019-12-31T00:00:00","2019-12-31T00:00:00","2020-01-01T00:00:00","2020-01-01T00:00:00","2020-01-02T00:00:00","2020-01-02T00:00:00","2020-01-03T00:00:00","2020-01-03T00:00:00","2020-01-04T00:00:00","2020-01-04T00:00:00","2020-01-05T00:00:00","2020-01-05T00:00:00","2020-01-06T00:00:00","2020-01-06T00:00:00","2020-01-07T00:00:00","2020-01-07T00:00:00","2020-01-08T00:00:00","2020-01-08T00:00:00","2020-01-09T00:00:00","2020-01-09T00:00:00","2020-01-10T00:00:00","2020-01-10T00:00:00","2020-01-11T00:00:00","2020-01-11T00:00:00","2020-01-12T00:00:00","2020-01-12T00:00:00","2020-01-13T00:00:00","2020-01-13T00:00:00","2020-01-14T00:00:00","2020-01-14T00:00:00","2020-01-15T00:00:00","2020-01-15T00:00:00","2020-01-16T00:00:00","2020-01-16T00:00:00","2020-01-17T00:00:00","2020-01-17T00:00:00","2020-01-18T00:00:00","2020-01-18T00:00:00","2020-01-19T00:00:00","2020-01-19T00:00:00","2020-01-20T00:00:00","2020-01-20T00:00:00","2020-01-21T00:00:00","2020-01-21T00:00:00","2020-01-22T00:00:00","2020-01-22T00:00:00","2020-01-23T00:00:00","2020-01-23T00:00:00","2020-01-24T00:00:00","2020-01-24T00:00:00","2020-01-25T00:00:00","2020-01-25T00:00:00","2020-01-26T00:00:00","2020-01-26T00:00:00","2020-01-27T00:00:00","2020-01-27T00:00:00","2020-01-28T00:00:00","2020-01-28T00:00:00","2020-01-29T00:00:00","2020-01-29T00:00:00","2020-01-30T00:00:00","2020-01-30T00:00:00","2020-01-31T00:00:00","2020-01-31T00:00:00","2020-02-01T00:00:00","2020-02-01T00:00:00","2020-02-02T00:00:00","2020-02-02T00:00:00","2020-02-03T00:00:00","2020-02-03T00:00:00","2020-02-04T00:00:00","2020-02-04T00:00:00","2020-02-05T00:00:00","2020-02-05T00:00:00","2020-02-06T00:00:00","2020-02-06T00:00:00","2020-02-07T00:00:00","2020-02-07T00:00:00","2020-02-08T00:00:00","2020-02-08T00:00:00","2020-02-09T00:00:00","2020-02-09T00:00:00","2020-02-10T00:00:00","2020-02-10T00:00:00","2020-02-11T00:00:00","2020-02-11T00:00:00","2020-02-12T00:00:00","2020-02-12T00:00:00","2020-02-13T00:00:00","2020-02-13T00:00:00","2020-02-14T00:00:00","2020-02-14T00:00:00","2020-02-15T00:00:00","2020-02-15T00:00:00","2020-02-16T00:00:00","2020-02-16T00:00:00","2020-02-17T00:00:00","2020-02-17T00:00:00","2020-02-18T00:00:00","2020-02-18T00:00:00","2020-02-19T00:00:00","2020-02-19T00:00:00","2020-02-20T00:00:00","2020-02-20T00:00:00","2020-02-21T00:00:00","2020-02-21T00:00:00","2020-02-22T00:00:00","2020-02-22T00:00:00","2020-02-23T00:00:00","2020-02-23T00:00:00","2020-02-24T00:00:00","2020-02-24T00:00:00","2020-02-25T00:00:00","2020-02-25T00:00:00","2020-02-26T00:00:00","2020-02-26T00:00:00","2020-02-27T00:00:00","2020-02-27T00:00:00","2020-02-28T00:00:00","2020-02-28T00:00:00","2020-02-29T00:00:00","2020-02-29T00:00:00","2020-03-01T00:00:00","2020-03-01T00:00:00","2020-03-02T00:00:00","2020-03-02T00:00:00","2020-03-03T00:00:00","2020-03-03T00:00:00","2020-03-04T00:00:00","2020-03-04T00:00:00","2020-03-05T00:00:00","2020-03-05T00:00:00","2020-03-06T00:00:00","2020-03-06T00:00:00","2020-03-07T00:00:00","2020-03-07T00:00:00","2020-03-08T00:00:00","2020-03-08T00:00:00","2020-03-09T00:00:00","2020-03-09T00:00:00","2020-03-10T00:00:00","2020-03-10T00:00:00","2020-03-11T00:00:00","2020-03-11T00:00:00","2020-03-12T00:00:00","2020-03-12T00:00:00","2020-03-13T00:00:00","2020-03-13T00:00:00","2020-03-14T00:00:00","2020-03-14T00:00:00","2020-03-15T00:00:00","2020-03-15T00:00:00","2020-03-16T00:00:00","2020-03-16T00:00:00","2020-03-17T00:00:00","2020-03-17T00:00:00","2020-03-18T00:00:00","2020-03-18T00:00:00","2020-03-19T00:00:00","2020-03-19T00:00:00","2020-03-20T00:00:00","2020-03-20T00:00:00","2020-03-21T00:00:00","2020-03-21T00:00:00","2020-03-22T00:00:00","2020-03-22T00:00:00","2020-03-23T00:00:00","2020-03-23T00:00:00","2020-03-24T00:00:00","2020-03-24T00:00:00","2020-03-25T00:00:00","2020-03-25T00:00:00","2020-03-26T00:00:00","2020-03-26T00:00:00","2020-03-27T00:00:00","2020-03-27T00:00:00","2020-03-28T00:00:00","2020-03-28T00:00:00","2020-03-29T00:00:00","2020-03-29T00:00:00","2020-03-30T00:00:00","2020-03-30T00:00:00","2020-03-31T00:00:00","2020-03-31T00:00:00","2020-04-01T00:00:00","2020-04-01T00:00:00","2020-04-02T00:00:00","2020-04-02T00:00:00","2020-04-03T00:00:00","2020-04-03T00:00:00","2020-04-04T00:00:00","2020-04-04T00:00:00","2020-04-05T00:00:00","2020-04-05T00:00:00","2020-04-06T00:00:00","2020-04-06T00:00:00","2020-04-07T00:00:00","2020-04-07T00:00:00","2020-04-08T00:00:00","2020-04-08T00:00:00","2020-04-09T00:00:00","2020-04-09T00:00:00","2020-04-10T00:00:00","2020-04-10T00:00:00","2020-04-11T00:00:00","2020-04-11T00:00:00","2020-04-12T00:00:00","2020-04-12T00:00:00","2020-04-13T00:00:00","2020-04-13T00:00:00","2020-04-14T00:00:00","2020-04-14T00:00:00","2020-04-15T00:00:00","2020-04-15T00:00:00","2020-04-16T00:00:00","2020-04-16T00:00:00","2020-04-17T00:00:00","2020-04-17T00:00:00","2020-04-18T00:00:00","2020-04-18T00:00:00","2020-04-19T00:00:00","2020-04-19T00:00:00","2020-04-20T00:00:00","2020-04-20T00:00:00","2020-04-21T00:00:00","2020-04-21T00:00:00","2020-04-22T00:00:00","2020-04-22T00:00:00","2020-04-23T00:00:00","2020-04-23T00:00:00","2020-04-24T00:00:00","2020-04-24T00:00:00","2020-04-25T00:00:00","2020-04-25T00:00:00","2020-04-26T00:00:00","2020-04-26T00:00:00","2020-04-27T00:00:00","2020-04-27T00:00:00","2020-04-28T00:00:00","2020-04-28T00:00:00","2020-04-29T00:00:00","2020-04-29T00:00:00","2020-04-30T00:00:00","2020-04-30T00:00:00","2020-05-01T00:00:00","2020-05-01T00:00:00","2020-05-02T00:00:00","2020-05-02T00:00:00","2020-05-03T00:00:00","2020-05-03T00:00:00","2020-05-04T00:00:00","2020-05-04T00:00:00","2020-05-05T00:00:00","2020-05-05T00:00:00","2020-05-06T00:00:00","2020-05-06T00:00:00","2020-05-07T00:00:00","2020-05-07T00:00:00","2020-05-08T00:00:00","2020-05-08T00:00:00","2020-05-09T00:00:00","2020-05-09T00:00:00","2020-05-10T00:00:00","2020-05-10T00:00:00","2020-05-11T00:00:00","2020-05-11T00:00:00","2020-05-12T00:00:00","2020-05-12T00:00:00","2020-05-13T00:00:00","2020-05-13T00:00:00","2020-05-14T00:00:00","2020-05-14T00:00:00","2020-05-15T00:00:00","2020-05-15T00:00:00","2020-05-16T00:00:00","2020-05-16T00:00:00","2020-05-17T00:00:00","2020-05-17T00:00:00","2020-05-18T00:00:00","2020-05-18T00:00:00","2020-05-19T00:00:00","2020-05-19T00:00:00","2020-05-20T00:00:00","2020-05-20T00:00:00","2020-05-21T00:00:00","2020-05-21T00:00:00","2020-05-22T00:00:00","2020-05-22T00:00:00","2020-05-23T00:00:00","2020-05-23T00:00:00","2020-05-24T00:00:00","2020-05-24T00:00:00","2020-05-25T00:00:00","2020-05-25T00:00:00","2020-05-26T00:00:00","2020-05-26T00:00:00","2020-05-27T00:00:00","2020-05-27T00:00:00","2020-05-28T00:00:00","2020-05-28T00:00:00","2020-05-29T00:00:00","2020-05-29T00:00:00","2020-05-30T00:00:00","2020-05-30T00:00:00","2020-05-31T00:00:00","2020-05-31T00:00:00","2020-06-01T00:00:00","2020-06-01T00:00:00","2020-06-02T00:00:00","2020-06-02T00:00:00","2020-06-03T00:00:00","2020-06-03T00:00:00","2020-06-04T00:00:00","2020-06-04T00:00:00","2020-06-05T00:00:00","2020-06-05T00:00:00","2020-06-06T00:00:00","2020-06-06T00:00:00","2020-06-07T00:00:00","2020-06-07T00:00:00","2020-06-08T00:00:00","2020-06-08T00:00:00","2020-06-09T00:00:00","2020-06-09T00:00:00","2020-06-10T00:00:00","2020-06-10T00:00:00","2020-06-11T00:00:00","2020-06-11T00:00:00","2020-06-12T00:00:00","2020-06-12T00:00:00","2020-06-13T00:00:00","2020-06-13T00:00:00","2020-06-14T00:00:00","2020-06-14T00:00:00","2020-06-15T00:00:00","2020-06-15T00:00:00","2020-06-16T00:00:00","2020-06-16T00:00:00","2020-06-17T00:00:00","2020-06-17T00:00:00","2020-06-18T00:00:00","2020-06-18T00:00:00","2020-06-19T00:00:00","2020-06-19T00:00:00","2020-06-20T00:00:00","2020-06-20T00:00:00","2020-06-21T00:00:00","2020-06-21T00:00:00","2020-06-22T00:00:00","2020-06-22T00:00:00","2020-06-23T00:00:00","2020-06-23T00:00:00","2020-06-24T00:00:00","2020-06-24T00:00:00","2020-06-25T00:00:00","2020-06-25T00:00:00","2020-06-26T00:00:00","2020-06-26T00:00:00","2020-06-27T00:00:00","2020-06-27T00:00:00","2020-06-28T00:00:00","2020-06-28T00:00:00","2020-06-29T00:00:00","2020-06-29T00:00:00","2020-06-30T00:00:00","2020-06-30T00:00:00","2020-07-01T00:00:00","2020-07-01T00:00:00","2020-07-02T00:00:00","2020-07-02T00:00:00","2020-07-03T00:00:00","2020-07-03T00:00:00","2020-07-04T00:00:00","2020-07-04T00:00:00","2020-07-05T00:00:00","2020-07-05T00:00:00","2020-07-06T00:00:00","2020-07-06T00:00:00","2020-07-07T00:00:00","2020-07-07T00:00:00","2020-07-08T00:00:00","2020-07-08T00:00:00","2020-07-09T00:00:00","2020-07-09T00:00:00","2020-07-10T00:00:00","2020-07-10T00:00:00","2020-07-11T00:00:00","2020-07-11T00:00:00","2020-07-12T00:00:00","2020-07-12T00:00:00","2020-07-13T00:00:00","2020-07-13T00:00:00","2020-07-14T00:00:00","2020-07-14T00:00:00","2020-07-15T00:00:00","2020-07-15T00:00:00","2020-07-16T00:00:00","2020-07-16T00:00:00","2020-07-17T00:00:00","2020-07-17T00:00:00","2020-07-18T00:00:00","2020-07-18T00:00:00","2020-07-19T00:00:00","2020-07-19T00:00:00","2020-07-20T00:00:00","2020-07-20T00:00:00","2020-07-21T00:00:00","2020-07-21T00:00:00","2020-07-22T00:00:00","2020-07-22T00:00:00","2020-07-23T00:00:00","2020-07-23T00:00:00","2020-07-24T00:00:00","2020-07-24T00:00:00","2020-07-25T00:00:00","2020-07-25T00:00:00","2020-07-26T00:00:00","2020-07-26T00:00:00","2020-07-27T00:00:00","2020-07-27T00:00:00","2020-07-28T00:00:00","2020-07-28T00:00:00","2020-07-29T00:00:00","2020-07-29T00:00:00","2020-07-30T00:00:00","2020-07-30T00:00:00","2020-07-31T00:00:00","2020-07-31T00:00:00","2020-08-01T00:00:00","2020-08-01T00:00:00","2020-08-02T00:00:00","2020-08-02T00:00:00","2020-08-03T00:00:00","2020-08-03T00:00:00","2020-08-04T00:00:00","2020-08-04T00:00:00","2020-08-05T00:00:00","2020-08-05T00:00:00","2020-08-06T00:00:00","2020-08-06T00:00:00","2020-08-07T00:00:00","2020-08-07T00:00:00","2020-08-08T00:00:00","2020-08-08T00:00:00","2020-08-09T00:00:00","2020-08-09T00:00:00","2020-08-10T00:00:00","2020-08-10T00:00:00","2020-08-11T00:00:00","2020-08-11T00:00:00","2020-08-12T00:00:00","2020-08-12T00:00:00","2020-08-13T00:00:00","2020-08-13T00:00:00","2020-08-14T00:00:00","2020-08-14T00:00:00","2020-08-15T00:00:00","2020-08-15T00:00:00","2020-08-16T00:00:00","2020-08-16T00:00:00","2020-08-17T00:00:00","2020-08-17T00:00:00","2020-08-18T00:00:00","2020-08-18T00:00:00","2020-08-19T00:00:00","2020-08-19T00:00:00","2020-08-20T00:00:00","2020-08-20T00:00:00","2020-08-21T00:00:00","2020-08-21T00:00:00","2020-08-22T00:00:00","2020-08-22T00:00:00","2020-08-23T00:00:00","2020-08-23T00:00:00","2020-08-24T00:00:00","2020-08-24T00:00:00","2020-08-25T00:00:00","2020-08-25T00:00:00","2020-08-26T00:00:00","2020-08-26T00:00:00","2020-08-27T00:00:00","2020-08-27T00:00:00","2020-08-28T00:00:00","2020-08-28T00:00:00","2020-08-29T00:00:00","2020-08-29T00:00:00","2020-08-30T00:00:00","2020-08-30T00:00:00","2020-08-31T00:00:00","2020-08-31T00:00:00","2020-09-01T00:00:00","2020-09-01T00:00:00","2020-09-02T00:00:00","2020-09-02T00:00:00","2020-09-03T00:00:00","2020-09-03T00:00:00","2020-09-04T00:00:00","2020-09-04T00:00:00","2020-09-05T00:00:00","2020-09-05T00:00:00","2020-09-06T00:00:00","2020-09-06T00:00:00","2020-09-07T00:00:00","2020-09-07T00:00:00","2020-09-08T00:00:00","2020-09-08T00:00:00","2020-09-09T00:00:00","2020-09-09T00:00:00","2020-09-10T00:00:00","2020-09-10T00:00:00","2020-09-11T00:00:00","2020-09-11T00:00:00","2020-09-12T00:00:00","2020-09-12T00:00:00","2020-09-13T00:00:00","2020-09-13T00:00:00","2020-09-14T00:00:00","2020-09-14T00:00:00","2020-09-15T00:00:00","2020-09-15T00:00:00","2020-09-16T00:00:00","2020-09-16T00:00:00","2020-09-17T00:00:00","2020-09-17T00:00:00","2020-09-18T00:00:00","2020-09-18T00:00:00","2020-09-19T00:00:00","2020-09-19T00:00:00","2020-09-20T00:00:00","2020-09-20T00:00:00","2020-09-21T00:00:00","2020-09-21T00:00:00","2020-09-22T00:00:00","2020-09-22T00:00:00","2020-09-23T00:00:00","2020-09-23T00:00:00","2020-09-24T00:00:00","2020-09-24T00:00:00","2020-09-25T00:00:00","2020-09-25T00:00:00","2020-09-26T00:00:00","2020-09-26T00:00:00","2020-09-27T00:00:00","2020-09-27T00:00:00","2020-09-28T00:00:00","2020-09-28T00:00:00","2020-09-29T00:00:00","2020-09-29T00:00:00","2020-09-30T00:00:00","2020-09-30T00:00:00"],"type":"scatter","uid":"5c440c87-993a-46a2-a0a2-75bd5145dba4","y":[1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0]},{"connectgaps":false,"fill":"tonexty","fillcolor":"rgba(0, 128, 0, 0.3)","hoverinfo":"skip","line":{"color":"rgba(0, 0, 0, 0)","width":0},"opacity":0,"showlegend":false,"x":["2019-11-03T00:00:00","2019-11-03T00:00:00","2019-11-04T00:00:00","2019-11-04T00:00:00","2019-11-05T00:00:00","2019-11-05T00:00:00","2019-11-06T00:00:00","2019-11-06T00:00:00","2019-11-07T00:00:00","2019-11-07T00:00:00","2019-11-08T00:00:00","2019-11-08T00:00:00","2019-11-09T00:00:00","2019-11-09T00:00:00","2019-11-10T00:00:00","2019-11-10T00:00:00","2019-11-11T00:00:00","2019-11-11T00:00:00","2019-11-12T00:00:00","2019-11-12T00:00:00","2019-11-13T00:00:00","2019-11-13T00:00:00","2019-11-14T00:00:00","2019-11-14T00:00:00","2019-11-15T00:00:00","2019-11-15T00:00:00","2019-11-16T00:00:00","2019-11-16T00:00:00","2019-11-17T00:00:00","2019-11-17T00:00:00","2019-11-18T00:00:00","2019-11-18T00:00:00","2019-11-19T00:00:00","2019-11-19T00:00:00","2019-11-20T00:00:00","2019-11-20T00:00:00","2019-11-21T00:00:00","2019-11-21T00:00:00","2019-11-22T00:00:00","2019-11-22T00:00:00","2019-11-23T00:00:00","2019-11-23T00:00:00","2019-11-24T00:00:00","2019-11-24T00:00:00","2019-11-25T00:00:00","2019-11-25T00:00:00","2019-11-26T00:00:00","2019-11-26T00:00:00","2019-11-27T00:00:00","2019-11-27T00:00:00","2019-11-28T00:00:00","2019-11-28T00:00:00","2019-11-29T00:00:00","2019-11-29T00:00:00","2019-11-30T00:00:00","2019-11-30T00:00:00","2019-12-01T00:00:00","2019-12-01T00:00:00","2019-12-02T00:00:00","2019-12-02T00:00:00","2019-12-03T00:00:00","2019-12-03T00:00:00","2019-12-04T00:00:00","2019-12-04T00:00:00","2019-12-05T00:00:00","2019-12-05T00:00:00","2019-12-06T00:00:00","2019-12-06T00:00:00","2019-12-07T00:00:00","2019-12-07T00:00:00","2019-12-08T00:00:00","2019-12-08T00:00:00","2019-12-09T00:00:00","2019-12-09T00:00:00","2019-12-10T00:00:00","2019-12-10T00:00:00","2019-12-11T00:00:00","2019-12-11T00:00:00","2019-12-12T00:00:00","2019-12-12T00:00:00","2019-12-13T00:00:00","2019-12-13T00:00:00","2019-12-14T00:00:00","2019-12-14T00:00:00","2019-12-15T00:00:00","2019-12-15T00:00:00","2019-12-16T00:00:00","2019-12-16T00:00:00","2019-12-17T00:00:00","2019-12-17T00:00:00","2019-12-18T00:00:00","2019-12-18T00:00:00","2019-12-19T00:00:00","2019-12-19T00:00:00","2019-12-20T00:00:00","2019-12-20T00:00:00","2019-12-21T00:00:00","2019-12-21T00:00:00","2019-12-22T00:00:00","2019-12-22T00:00:00","2019-12-23T00:00:00","2019-12-23T00:00:00","2019-12-24T00:00:00","2019-12-24T00:00:00","2019-12-25T00:00:00","2019-12-25T00:00:00","2019-12-26T00:00:00","2019-12-26T00:00:00","2019-12-27T00:00:00","2019-12-27T00:00:00","2019-12-28T00:00:00","2019-12-28T00:00:00","2019-12-29T00:00:00","2019-12-29T00:00:00","2019-12-30T00:00:00","2019-12-30T00:00:00","2019-12-31T00:00:00","2019-12-31T00:00:00","2020-01-01T00:00:00","2020-01-01T00:00:00","2020-01-02T00:00:00","2020-01-02T00:00:00","2020-01-03T00:00:00","2020-01-03T00:00:00","2020-01-04T00:00:00","2020-01-04T00:00:00","2020-01-05T00:00:00","2020-01-05T00:00:00","2020-01-06T00:00:00","2020-01-06T00:00:00","2020-01-07T00:00:00","2020-01-07T00:00:00","2020-01-08T00:00:00","2020-01-08T00:00:00","2020-01-09T00:00:00","2020-01-09T00:00:00","2020-01-10T00:00:00","2020-01-10T00:00:00","2020-01-11T00:00:00","2020-01-11T00:00:00","2020-01-12T00:00:00","2020-01-12T00:00:00","2020-01-13T00:00:00","2020-01-13T00:00:00","2020-01-14T00:00:00","2020-01-14T00:00:00","2020-01-15T00:00:00","2020-01-15T00:00:00","2020-01-16T00:00:00","2020-01-16T00:00:00","2020-01-17T00:00:00","2020-01-17T00:00:00","2020-01-18T00:00:00","2020-01-18T00:00:00","2020-01-19T00:00:00","2020-01-19T00:00:00","2020-01-20T00:00:00","2020-01-20T00:00:00","2020-01-21T00:00:00","2020-01-21T00:00:00","2020-01-22T00:00:00","2020-01-22T00:00:00","2020-01-23T00:00:00","2020-01-23T00:00:00","2020-01-24T00:00:00","2020-01-24T00:00:00","2020-01-25T00:00:00","2020-01-25T00:00:00","2020-01-26T00:00:00","2020-01-26T00:00:00","2020-01-27T00:00:00","2020-01-27T00:00:00","2020-01-28T00:00:00","2020-01-28T00:00:00","2020-01-29T00:00:00","2020-01-29T00:00:00","2020-01-30T00:00:00","2020-01-30T00:00:00","2020-01-31T00:00:00","2020-01-31T00:00:00","2020-02-01T00:00:00","2020-02-01T00:00:00","2020-02-02T00:00:00","2020-02-02T00:00:00","2020-02-03T00:00:00","2020-02-03T00:00:00","2020-02-04T00:00:00","2020-02-04T00:00:00","2020-02-05T00:00:00","2020-02-05T00:00:00","2020-02-06T00:00:00","2020-02-06T00:00:00","2020-02-07T00:00:00","2020-02-07T00:00:00","2020-02-08T00:00:00","2020-02-08T00:00:00","2020-02-09T00:00:00","2020-02-09T00:00:00","2020-02-10T00:00:00","2020-02-10T00:00:00","2020-02-11T00:00:00","2020-02-11T00:00:00","2020-02-12T00:00:00","2020-02-12T00:00:00","2020-02-13T00:00:00","2020-02-13T00:00:00","2020-02-14T00:00:00","2020-02-14T00:00:00","2020-02-15T00:00:00","2020-02-15T00:00:00","2020-02-16T00:00:00","2020-02-16T00:00:00","2020-02-17T00:00:00","2020-02-17T00:00:00","2020-02-18T00:00:00","2020-02-18T00:00:00","2020-02-19T00:00:00","2020-02-19T00:00:00","2020-02-20T00:00:00","2020-02-20T00:00:00","2020-02-21T00:00:00","2020-02-21T00:00:00","2020-02-22T00:00:00","2020-02-22T00:00:00","2020-02-23T00:00:00","2020-02-23T00:00:00","2020-02-24T00:00:00","2020-02-24T00:00:00","2020-02-25T00:00:00","2020-02-25T00:00:00","2020-02-26T00:00:00","2020-02-26T00:00:00","2020-02-27T00:00:00","2020-02-27T00:00:00","2020-02-28T00:00:00","2020-02-28T00:00:00","2020-02-29T00:00:00","2020-02-29T00:00:00","2020-03-01T00:00:00","2020-03-01T00:00:00","2020-03-02T00:00:00","2020-03-02T00:00:00","2020-03-03T00:00:00","2020-03-03T00:00:00","2020-03-04T00:00:00","2020-03-04T00:00:00","2020-03-05T00:00:00","2020-03-05T00:00:00","2020-03-06T00:00:00","2020-03-06T00:00:00","2020-03-07T00:00:00","2020-03-07T00:00:00","2020-03-08T00:00:00","2020-03-08T00:00:00","2020-03-09T00:00:00","2020-03-09T00:00:00","2020-03-10T00:00:00","2020-03-10T00:00:00","2020-03-11T00:00:00","2020-03-11T00:00:00","2020-03-12T00:00:00","2020-03-12T00:00:00","2020-03-13T00:00:00","2020-03-13T00:00:00","2020-03-14T00:00:00","2020-03-14T00:00:00","2020-03-15T00:00:00","2020-03-15T00:00:00","2020-03-16T00:00:00","2020-03-16T00:00:00","2020-03-17T00:00:00","2020-03-17T00:00:00","2020-03-18T00:00:00","2020-03-18T00:00:00","2020-03-19T00:00:00","2020-03-19T00:00:00","2020-03-20T00:00:00","2020-03-20T00:00:00","2020-03-21T00:00:00","2020-03-21T00:00:00","2020-03-22T00:00:00","2020-03-22T00:00:00","2020-03-23T00:00:00","2020-03-23T00:00:00","2020-03-24T00:00:00","2020-03-24T00:00:00","2020-03-25T00:00:00","2020-03-25T00:00:00","2020-03-26T00:00:00","2020-03-26T00:00:00","2020-03-27T00:00:00","2020-03-27T00:00:00","2020-03-28T00:00:00","2020-03-28T00:00:00","2020-03-29T00:00:00","2020-03-29T00:00:00","2020-03-30T00:00:00","2020-03-30T00:00:00","2020-03-31T00:00:00","2020-03-31T00:00:00","2020-04-01T00:00:00","2020-04-01T00:00:00","2020-04-02T00:00:00","2020-04-02T00:00:00","2020-04-03T00:00:00","2020-04-03T00:00:00","2020-04-04T00:00:00","2020-04-04T00:00:00","2020-04-05T00:00:00","2020-04-05T00:00:00","2020-04-06T00:00:00","2020-04-06T00:00:00","2020-04-07T00:00:00","2020-04-07T00:00:00","2020-04-08T00:00:00","2020-04-08T00:00:00","2020-04-09T00:00:00","2020-04-09T00:00:00","2020-04-10T00:00:00","2020-04-10T00:00:00","2020-04-11T00:00:00","2020-04-11T00:00:00","2020-04-12T00:00:00","2020-04-12T00:00:00","2020-04-13T00:00:00","2020-04-13T00:00:00","2020-04-14T00:00:00","2020-04-14T00:00:00","2020-04-15T00:00:00","2020-04-15T00:00:00","2020-04-16T00:00:00","2020-04-16T00:00:00","2020-04-17T00:00:00","2020-04-17T00:00:00","2020-04-18T00:00:00","2020-04-18T00:00:00","2020-04-19T00:00:00","2020-04-19T00:00:00","2020-04-20T00:00:00","2020-04-20T00:00:00","2020-04-21T00:00:00","2020-04-21T00:00:00","2020-04-22T00:00:00","2020-04-22T00:00:00","2020-04-23T00:00:00","2020-04-23T00:00:00","2020-04-24T00:00:00","2020-04-24T00:00:00","2020-04-25T00:00:00","2020-04-25T00:00:00","2020-04-26T00:00:00","2020-04-26T00:00:00","2020-04-27T00:00:00","2020-04-27T00:00:00","2020-04-28T00:00:00","2020-04-28T00:00:00","2020-04-29T00:00:00","2020-04-29T00:00:00","2020-04-30T00:00:00","2020-04-30T00:00:00","2020-05-01T00:00:00","2020-05-01T00:00:00","2020-05-02T00:00:00","2020-05-02T00:00:00","2020-05-03T00:00:00","2020-05-03T00:00:00","2020-05-04T00:00:00","2020-05-04T00:00:00","2020-05-05T00:00:00","2020-05-05T00:00:00","2020-05-06T00:00:00","2020-05-06T00:00:00","2020-05-07T00:00:00","2020-05-07T00:00:00","2020-05-08T00:00:00","2020-05-08T00:00:00","2020-05-09T00:00:00","2020-05-09T00:00:00","2020-05-10T00:00:00","2020-05-10T00:00:00","2020-05-11T00:00:00","2020-05-11T00:00:00","2020-05-12T00:00:00","2020-05-12T00:00:00","2020-05-13T00:00:00","2020-05-13T00:00:00","2020-05-14T00:00:00","2020-05-14T00:00:00","2020-05-15T00:00:00","2020-05-15T00:00:00","2020-05-16T00:00:00","2020-05-16T00:00:00","2020-05-17T00:00:00","2020-05-17T00:00:00","2020-05-18T00:00:00","2020-05-18T00:00:00","2020-05-19T00:00:00","2020-05-19T00:00:00","2020-05-20T00:00:00","2020-05-20T00:00:00","2020-05-21T00:00:00","2020-05-21T00:00:00","2020-05-22T00:00:00","2020-05-22T00:00:00","2020-05-23T00:00:00","2020-05-23T00:00:00","2020-05-24T00:00:00","2020-05-24T00:00:00","2020-05-25T00:00:00","2020-05-25T00:00:00","2020-05-26T00:00:00","2020-05-26T00:00:00","2020-05-27T00:00:00","2020-05-27T00:00:00","2020-05-28T00:00:00","2020-05-28T00:00:00","2020-05-29T00:00:00","2020-05-29T00:00:00","2020-05-30T00:00:00","2020-05-30T00:00:00","2020-05-31T00:00:00","2020-05-31T00:00:00","2020-06-01T00:00:00","2020-06-01T00:00:00","2020-06-02T00:00:00","2020-06-02T00:00:00","2020-06-03T00:00:00","2020-06-03T00:00:00","2020-06-04T00:00:00","2020-06-04T00:00:00","2020-06-05T00:00:00","2020-06-05T00:00:00","2020-06-06T00:00:00","2020-06-06T00:00:00","2020-06-07T00:00:00","2020-06-07T00:00:00","2020-06-08T00:00:00","2020-06-08T00:00:00","2020-06-09T00:00:00","2020-06-09T00:00:00","2020-06-10T00:00:00","2020-06-10T00:00:00","2020-06-11T00:00:00","2020-06-11T00:00:00","2020-06-12T00:00:00","2020-06-12T00:00:00","2020-06-13T00:00:00","2020-06-13T00:00:00","2020-06-14T00:00:00","2020-06-14T00:00:00","2020-06-15T00:00:00","2020-06-15T00:00:00","2020-06-16T00:00:00","2020-06-16T00:00:00","2020-06-17T00:00:00","2020-06-17T00:00:00","2020-06-18T00:00:00","2020-06-18T00:00:00","2020-06-19T00:00:00","2020-06-19T00:00:00","2020-06-20T00:00:00","2020-06-20T00:00:00","2020-06-21T00:00:00","2020-06-21T00:00:00","2020-06-22T00:00:00","2020-06-22T00:00:00","2020-06-23T00:00:00","2020-06-23T00:00:00","2020-06-24T00:00:00","2020-06-24T00:00:00","2020-06-25T00:00:00","2020-06-25T00:00:00","2020-06-26T00:00:00","2020-06-26T00:00:00","2020-06-27T00:00:00","2020-06-27T00:00:00","2020-06-28T00:00:00","2020-06-28T00:00:00","2020-06-29T00:00:00","2020-06-29T00:00:00","2020-06-30T00:00:00","2020-06-30T00:00:00","2020-07-01T00:00:00","2020-07-01T00:00:00","2020-07-02T00:00:00","2020-07-02T00:00:00","2020-07-03T00:00:00","2020-07-03T00:00:00","2020-07-04T00:00:00","2020-07-04T00:00:00","2020-07-05T00:00:00","2020-07-05T00:00:00","2020-07-06T00:00:00","2020-07-06T00:00:00","2020-07-07T00:00:00","2020-07-07T00:00:00","2020-07-08T00:00:00","2020-07-08T00:00:00","2020-07-09T00:00:00","2020-07-09T00:00:00","2020-07-10T00:00:00","2020-07-10T00:00:00","2020-07-11T00:00:00","2020-07-11T00:00:00","2020-07-12T00:00:00","2020-07-12T00:00:00","2020-07-13T00:00:00","2020-07-13T00:00:00","2020-07-14T00:00:00","2020-07-14T00:00:00","2020-07-15T00:00:00","2020-07-15T00:00:00","2020-07-16T00:00:00","2020-07-16T00:00:00","2020-07-17T00:00:00","2020-07-17T00:00:00","2020-07-18T00:00:00","2020-07-18T00:00:00","2020-07-19T00:00:00","2020-07-19T00:00:00","2020-07-20T00:00:00","2020-07-20T00:00:00","2020-07-21T00:00:00","2020-07-21T00:00:00","2020-07-22T00:00:00","2020-07-22T00:00:00","2020-07-23T00:00:00","2020-07-23T00:00:00","2020-07-24T00:00:00","2020-07-24T00:00:00","2020-07-25T00:00:00","2020-07-25T00:00:00","2020-07-26T00:00:00","2020-07-26T00:00:00","2020-07-27T00:00:00","2020-07-27T00:00:00","2020-07-28T00:00:00","2020-07-28T00:00:00","2020-07-29T00:00:00","2020-07-29T00:00:00","2020-07-30T00:00:00","2020-07-30T00:00:00","2020-07-31T00:00:00","2020-07-31T00:00:00","2020-08-01T00:00:00","2020-08-01T00:00:00","2020-08-02T00:00:00","2020-08-02T00:00:00","2020-08-03T00:00:00","2020-08-03T00:00:00","2020-08-04T00:00:00","2020-08-04T00:00:00","2020-08-05T00:00:00","2020-08-05T00:00:00","2020-08-06T00:00:00","2020-08-06T00:00:00","2020-08-07T00:00:00","2020-08-07T00:00:00","2020-08-08T00:00:00","2020-08-08T00:00:00","2020-08-09T00:00:00","2020-08-09T00:00:00","2020-08-10T00:00:00","2020-08-10T00:00:00","2020-08-11T00:00:00","2020-08-11T00:00:00","2020-08-12T00:00:00","2020-08-12T00:00:00","2020-08-13T00:00:00","2020-08-13T00:00:00","2020-08-14T00:00:00","2020-08-14T00:00:00","2020-08-15T00:00:00","2020-08-15T00:00:00","2020-08-16T00:00:00","2020-08-16T00:00:00","2020-08-17T00:00:00","2020-08-17T00:00:00","2020-08-18T00:00:00","2020-08-18T00:00:00","2020-08-19T00:00:00","2020-08-19T00:00:00","2020-08-20T00:00:00","2020-08-20T00:00:00","2020-08-21T00:00:00","2020-08-21T00:00:00","2020-08-22T00:00:00","2020-08-22T00:00:00","2020-08-23T00:00:00","2020-08-23T00:00:00","2020-08-24T00:00:00","2020-08-24T00:00:00","2020-08-25T00:00:00","2020-08-25T00:00:00","2020-08-26T00:00:00","2020-08-26T00:00:00","2020-08-27T00:00:00","2020-08-27T00:00:00","2020-08-28T00:00:00","2020-08-28T00:00:00","2020-08-29T00:00:00","2020-08-29T00:00:00","2020-08-30T00:00:00","2020-08-30T00:00:00","2020-08-31T00:00:00","2020-08-31T00:00:00","2020-09-01T00:00:00","2020-09-01T00:00:00","2020-09-02T00:00:00","2020-09-02T00:00:00","2020-09-03T00:00:00","2020-09-03T00:00:00","2020-09-04T00:00:00","2020-09-04T00:00:00","2020-09-05T00:00:00","2020-09-05T00:00:00","2020-09-06T00:00:00","2020-09-06T00:00:00","2020-09-07T00:00:00","2020-09-07T00:00:00","2020-09-08T00:00:00","2020-09-08T00:00:00","2020-09-09T00:00:00","2020-09-09T00:00:00","2020-09-10T00:00:00","2020-09-10T00:00:00","2020-09-11T00:00:00","2020-09-11T00:00:00","2020-09-12T00:00:00","2020-09-12T00:00:00","2020-09-13T00:00:00","2020-09-13T00:00:00","2020-09-14T00:00:00","2020-09-14T00:00:00","2020-09-15T00:00:00","2020-09-15T00:00:00","2020-09-16T00:00:00","2020-09-16T00:00:00","2020-09-17T00:00:00","2020-09-17T00:00:00","2020-09-18T00:00:00","2020-09-18T00:00:00","2020-09-19T00:00:00","2020-09-19T00:00:00","2020-09-20T00:00:00","2020-09-20T00:00:00","2020-09-21T00:00:00","2020-09-21T00:00:00","2020-09-22T00:00:00","2020-09-22T00:00:00","2020-09-23T00:00:00","2020-09-23T00:00:00","2020-09-24T00:00:00","2020-09-24T00:00:00","2020-09-25T00:00:00","2020-09-25T00:00:00","2020-09-26T00:00:00","2020-09-26T00:00:00","2020-09-27T00:00:00","2020-09-27T00:00:00","2020-09-28T00:00:00","2020-09-28T00:00:00","2020-09-29T00:00:00","2020-09-29T00:00:00","2020-09-30T00:00:00","2020-09-30T00:00:00"],"type":"scatter","uid":"1f93837d-6535-4f88-9e87-72779f383b0b","y":[1000.0,1007.68,1007.68,1007.68,1007.68,1007.68,1007.68,1007.68,1007.68,1007.68,1007.68,1005.2299999999999,1005.2299999999999,1000.0,1000.0,1010.0,1010.0,1010.0,1010.0,1010.0,1010.0,1010.0,1010.0,1010.0,1010.0,1010.0,1010.0,1022.84,1022.84,1022.96,1022.96,1022.96,1022.96,1022.96,1022.96,1022.96,1022.96,1022.96,1022.96,1022.44,1022.44,1019.74,1019.74,1013.05,1013.05,1013.05,1013.05,1013.05,1013.05,1013.05,1013.05,1013.05,1013.05,1013.89,1013.89,1015.39,1015.39,1020.79,1020.79,1020.79,1020.79,1020.79,1020.79,1020.79,1020.79,1020.79,1020.79,1024.1599999999999,1024.1599999999999,1023.8299999999998,1023.8299999999998,1020.6399999999998,1020.6399999999998,1020.6399999999998,1020.6399999999998,1020.6399999999998,1020.6399999999998,1020.6399999999998,1020.6399999999998,1020.6399999999998,1020.6399999999998,1016.6399999999998,1016.6399999999998,1010.4599999999998,1010.4599999999998,1008.8199999999998,1008.8199999999998,1008.8199999999998,1008.8199999999998,1008.8199999999998,1008.8199999999998,1012.9799999999998,1012.9799999999998,1012.9799999999998,1012.9799999999998,1016.2799999999997,1016.2799999999997,1021.0799999999997,1021.0799999999997,1024.0099999999998,1024.0099999999998,1024.0099999999998,1024.0099999999998,1024.0099999999998,1024.0099999999998,1024.0099999999998,1024.0099999999998,1024.0099999999998,1024.0099999999998,1024.0099999999998,1024.0099999999998,1024.0099999999998,1024.0099999999998,1024.0099999999998,1024.0099999999998,1024.0099999999998,1024.0099999999998,1024.0099999999998,1024.0099999999998,1024.0099999999998,1024.0099999999998,1024.0099999999998,1024.0099999999998,1024.0499999999997,1024.0499999999997,1015.3599999999997,1015.3599999999997,1019.8599999999997,1019.8599999999997,1019.8599999999997,1019.8599999999997,1020.4399999999997,1020.4399999999997,1020.4399999999997,1020.4399999999997,1020.4399999999997,1020.4399999999997,1020.4399999999997,1020.4399999999997,1020.4399999999997,1020.4399999999997,1020.4399999999997,1020.4399999999997,1020.4399999999997,1020.4399999999997,1019.5099999999998,1019.5099999999998,1019.0199999999998,1019.0199999999998,1019.3999999999997,1019.3999999999997,1017.5999999999998,1017.5999999999998,1020.7599999999998,1020.7599999999998,1017.3799999999998,1017.3799999999998,1017.3799999999998,1017.3799999999998,1017.3799999999998,1017.3799999999998,1017.3799999999998,1017.3799999999998,1017.3799999999998,1017.3799999999998,1014.7199999999998,1014.7199999999998,1011.4399999999998,1011.4399999999998,1006.7999999999998,1006.7999999999998,1006.7999999999998,1006.7999999999998,1006.7999999999998,1006.7999999999998,1006.7999999999998,1006.7999999999998,1006.7999999999998,1006.7999999999998,1010.1499999999999,1010.1499999999999,1014.9299999999998,1014.9299999999998,1012.8199999999998,1012.8199999999998,1012.8199999999998,1012.8199999999998,1012.8199999999998,1012.8199999999998,1012.8199999999998,1012.8199999999998,1012.8199999999998,1012.8199999999998,1013.6799999999998,1013.6799999999998,1011.9199999999998,1011.9199999999998,1010.2399999999999,1010.2399999999999,1010.2399999999999,1010.2399999999999,1010.2399999999999,1010.2399999999999,1010.2399999999999,1010.2399999999999,1010.2399999999999,1010.2399999999999,1014.6499999999999,1014.6499999999999,1017.9799999999999,1017.9799999999999,1025.4299999999998,1025.4299999999998,1025.4299999999998,1025.4299999999998,1025.4299999999998,1025.4299999999998,1025.6299999999999,1025.6299999999999,1025.6299999999999,1025.6299999999999,1024.82,1024.82,1030.7,1030.7,1029.26,1029.26,1029.26,1029.26,1029.26,1029.26,1029.26,1029.26,1029.26,1029.26,1024.26,1024.26,1017.53,1017.53,1019.13,1019.13,1019.13,1019.13,1019.13,1019.13,1019.13,1019.13,1019.13,1019.13,1022.25,1022.25,1026.94,1026.94,1030.64,1030.64,1030.64,1030.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.47,1028.47,1028.5,1028.5,1032.96,1032.96,1038.8,1038.8,1031.99,1031.99,1035.6200000000001,1035.6200000000001,1033.7900000000002,1033.7900000000002,1039.9800000000002,1039.9800000000002,1042.5800000000002,1042.5800000000002,1039.0100000000002,1039.0100000000002,1044.2900000000002,1044.2900000000002,1052.1200000000001,1052.1200000000001,1050.3100000000002,1050.3100000000002,1045.2100000000003,1045.2100000000003,1050.0700000000002,1050.0700000000002,1049.4600000000003,1049.4600000000003,1047.4600000000003,1047.4600000000003,1045.2600000000002,1045.2600000000002,1038.6000000000001,1038.6000000000001,1037.7,1037.7,1040.29,1040.29,1041.08,1041.08,1040.3799999999999,1040.3799999999999,1041.4499999999998,1041.4499999999998,1045.9799999999998,1045.9799999999998,1051.3899999999999,1051.3899999999999,1053.1899999999998,1053.1899999999998,1051.9999999999998,1051.9999999999998,1050.4899999999998,1050.4899999999998,1058.4799999999998,1058.4799999999998,1059.0899999999997,1059.0899999999997,1066.0799999999997,1066.0799999999997,1064.1399999999996,1064.1399999999996,1056.7399999999996,1056.7399999999996,1056.7399999999996,1056.7399999999996,1056.7399999999996,1056.7399999999996,1068.3099999999995,1068.3099999999995,1073.9699999999996,1073.9699999999996,1073.9699999999996,1073.9699999999996,1076.7799999999995,1076.7799999999995,1067.1899999999996,1067.1899999999996,1067.1899999999996,1067.1899999999996,1067.1899999999996,1067.1899999999996,1067.1899999999996,1067.1899999999996,1067.1899999999996,1067.1899999999996,1067.1899999999996,1067.1899999999996,1067.1899999999996,1067.1899999999996,1067.1899999999996,1067.1899999999996,1067.1899999999996,1067.1899999999996,1067.1899999999996,1067.1899999999996,1067.1899999999996,1067.1899999999996,1067.1899999999996,1067.1899999999996,1067.1899999999996,1067.1899999999996,1067.1899999999996,1067.1899999999996,1067.1899999999996,1067.1899999999996,1067.1899999999996,1067.1899999999996,1067.1899999999996,1067.1899999999996,1067.1899999999996,1067.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.8299999999997,1064.8299999999997,1061.5399999999997,1061.5399999999997,1061.5399999999997,1061.5399999999997,1061.5399999999997,1061.5399999999997,1061.5399999999997,1061.5399999999997,1061.5399999999997,1061.5399999999997,1061.5399999999997,1061.5399999999997,1058.3199999999997,1058.3199999999997,1059.0399999999997,1059.0399999999997,1059.0399999999997,1059.0399999999997,1059.0399999999997,1059.0399999999997,1059.0399999999997,1059.0399999999997,1059.0399999999997,1059.0399999999997,1059.0399999999997,1059.0399999999997,1064.4999999999998,1064.4999999999998,1063.0699999999997,1063.0699999999997,1063.0699999999997,1063.0699999999997,1063.6699999999996,1063.6699999999996,1068.7899999999995]},{"hoverinfo":"skip","line":{"color":"rgba(0, 0, 0, 0)","width":0},"opacity":0,"showlegend":false,"x":["2019-11-03T00:00:00","2019-11-03T00:00:00","2019-11-04T00:00:00","2019-11-04T00:00:00","2019-11-05T00:00:00","2019-11-05T00:00:00","2019-11-06T00:00:00","2019-11-06T00:00:00","2019-11-07T00:00:00","2019-11-07T00:00:00","2019-11-08T00:00:00","2019-11-08T00:00:00","2019-11-09T00:00:00","2019-11-09T00:00:00","2019-11-10T00:00:00","2019-11-10T00:00:00","2019-11-11T00:00:00","2019-11-11T00:00:00","2019-11-12T00:00:00","2019-11-12T00:00:00","2019-11-13T00:00:00","2019-11-13T00:00:00","2019-11-14T00:00:00","2019-11-14T00:00:00","2019-11-15T00:00:00","2019-11-15T00:00:00","2019-11-16T00:00:00","2019-11-16T00:00:00","2019-11-17T00:00:00","2019-11-17T00:00:00","2019-11-18T00:00:00","2019-11-18T00:00:00","2019-11-19T00:00:00","2019-11-19T00:00:00","2019-11-20T00:00:00","2019-11-20T00:00:00","2019-11-21T00:00:00","2019-11-21T00:00:00","2019-11-22T00:00:00","2019-11-22T00:00:00","2019-11-23T00:00:00","2019-11-23T00:00:00","2019-11-24T00:00:00","2019-11-24T00:00:00","2019-11-25T00:00:00","2019-11-25T00:00:00","2019-11-26T00:00:00","2019-11-26T00:00:00","2019-11-27T00:00:00","2019-11-27T00:00:00","2019-11-28T00:00:00","2019-11-28T00:00:00","2019-11-29T00:00:00","2019-11-29T00:00:00","2019-11-30T00:00:00","2019-11-30T00:00:00","2019-12-01T00:00:00","2019-12-01T00:00:00","2019-12-02T00:00:00","2019-12-02T00:00:00","2019-12-03T00:00:00","2019-12-03T00:00:00","2019-12-04T00:00:00","2019-12-04T00:00:00","2019-12-05T00:00:00","2019-12-05T00:00:00","2019-12-06T00:00:00","2019-12-06T00:00:00","2019-12-07T00:00:00","2019-12-07T00:00:00","2019-12-08T00:00:00","2019-12-08T00:00:00","2019-12-09T00:00:00","2019-12-09T00:00:00","2019-12-10T00:00:00","2019-12-10T00:00:00","2019-12-11T00:00:00","2019-12-11T00:00:00","2019-12-12T00:00:00","2019-12-12T00:00:00","2019-12-13T00:00:00","2019-12-13T00:00:00","2019-12-14T00:00:00","2019-12-14T00:00:00","2019-12-15T00:00:00","2019-12-15T00:00:00","2019-12-16T00:00:00","2019-12-16T00:00:00","2019-12-17T00:00:00","2019-12-17T00:00:00","2019-12-18T00:00:00","2019-12-18T00:00:00","2019-12-19T00:00:00","2019-12-19T00:00:00","2019-12-20T00:00:00","2019-12-20T00:00:00","2019-12-21T00:00:00","2019-12-21T00:00:00","2019-12-22T00:00:00","2019-12-22T00:00:00","2019-12-23T00:00:00","2019-12-23T00:00:00","2019-12-24T00:00:00","2019-12-24T00:00:00","2019-12-25T00:00:00","2019-12-25T00:00:00","2019-12-26T00:00:00","2019-12-26T00:00:00","2019-12-27T00:00:00","2019-12-27T00:00:00","2019-12-28T00:00:00","2019-12-28T00:00:00","2019-12-29T00:00:00","2019-12-29T00:00:00","2019-12-30T00:00:00","2019-12-30T00:00:00","2019-12-31T00:00:00","2019-12-31T00:00:00","2020-01-01T00:00:00","2020-01-01T00:00:00","2020-01-02T00:00:00","2020-01-02T00:00:00","2020-01-03T00:00:00","2020-01-03T00:00:00","2020-01-04T00:00:00","2020-01-04T00:00:00","2020-01-05T00:00:00","2020-01-05T00:00:00","2020-01-06T00:00:00","2020-01-06T00:00:00","2020-01-07T00:00:00","2020-01-07T00:00:00","2020-01-08T00:00:00","2020-01-08T00:00:00","2020-01-09T00:00:00","2020-01-09T00:00:00","2020-01-10T00:00:00","2020-01-10T00:00:00","2020-01-11T00:00:00","2020-01-11T00:00:00","2020-01-12T00:00:00","2020-01-12T00:00:00","2020-01-13T00:00:00","2020-01-13T00:00:00","2020-01-14T00:00:00","2020-01-14T00:00:00","2020-01-15T00:00:00","2020-01-15T00:00:00","2020-01-16T00:00:00","2020-01-16T00:00:00","2020-01-17T00:00:00","2020-01-17T00:00:00","2020-01-18T00:00:00","2020-01-18T00:00:00","2020-01-19T00:00:00","2020-01-19T00:00:00","2020-01-20T00:00:00","2020-01-20T00:00:00","2020-01-21T00:00:00","2020-01-21T00:00:00","2020-01-22T00:00:00","2020-01-22T00:00:00","2020-01-23T00:00:00","2020-01-23T00:00:00","2020-01-24T00:00:00","2020-01-24T00:00:00","2020-01-25T00:00:00","2020-01-25T00:00:00","2020-01-26T00:00:00","2020-01-26T00:00:00","2020-01-27T00:00:00","2020-01-27T00:00:00","2020-01-28T00:00:00","2020-01-28T00:00:00","2020-01-29T00:00:00","2020-01-29T00:00:00","2020-01-30T00:00:00","2020-01-30T00:00:00","2020-01-31T00:00:00","2020-01-31T00:00:00","2020-02-01T00:00:00","2020-02-01T00:00:00","2020-02-02T00:00:00","2020-02-02T00:00:00","2020-02-03T00:00:00","2020-02-03T00:00:00","2020-02-04T00:00:00","2020-02-04T00:00:00","2020-02-05T00:00:00","2020-02-05T00:00:00","2020-02-06T00:00:00","2020-02-06T00:00:00","2020-02-07T00:00:00","2020-02-07T00:00:00","2020-02-08T00:00:00","2020-02-08T00:00:00","2020-02-09T00:00:00","2020-02-09T00:00:00","2020-02-10T00:00:00","2020-02-10T00:00:00","2020-02-11T00:00:00","2020-02-11T00:00:00","2020-02-12T00:00:00","2020-02-12T00:00:00","2020-02-13T00:00:00","2020-02-13T00:00:00","2020-02-14T00:00:00","2020-02-14T00:00:00","2020-02-15T00:00:00","2020-02-15T00:00:00","2020-02-16T00:00:00","2020-02-16T00:00:00","2020-02-17T00:00:00","2020-02-17T00:00:00","2020-02-18T00:00:00","2020-02-18T00:00:00","2020-02-19T00:00:00","2020-02-19T00:00:00","2020-02-20T00:00:00","2020-02-20T00:00:00","2020-02-21T00:00:00","2020-02-21T00:00:00","2020-02-22T00:00:00","2020-02-22T00:00:00","2020-02-23T00:00:00","2020-02-23T00:00:00","2020-02-24T00:00:00","2020-02-24T00:00:00","2020-02-25T00:00:00","2020-02-25T00:00:00","2020-02-26T00:00:00","2020-02-26T00:00:00","2020-02-27T00:00:00","2020-02-27T00:00:00","2020-02-28T00:00:00","2020-02-28T00:00:00","2020-02-29T00:00:00","2020-02-29T00:00:00","2020-03-01T00:00:00","2020-03-01T00:00:00","2020-03-02T00:00:00","2020-03-02T00:00:00","2020-03-03T00:00:00","2020-03-03T00:00:00","2020-03-04T00:00:00","2020-03-04T00:00:00","2020-03-05T00:00:00","2020-03-05T00:00:00","2020-03-06T00:00:00","2020-03-06T00:00:00","2020-03-07T00:00:00","2020-03-07T00:00:00","2020-03-08T00:00:00","2020-03-08T00:00:00","2020-03-09T00:00:00","2020-03-09T00:00:00","2020-03-10T00:00:00","2020-03-10T00:00:00","2020-03-11T00:00:00","2020-03-11T00:00:00","2020-03-12T00:00:00","2020-03-12T00:00:00","2020-03-13T00:00:00","2020-03-13T00:00:00","2020-03-14T00:00:00","2020-03-14T00:00:00","2020-03-15T00:00:00","2020-03-15T00:00:00","2020-03-16T00:00:00","2020-03-16T00:00:00","2020-03-17T00:00:00","2020-03-17T00:00:00","2020-03-18T00:00:00","2020-03-18T00:00:00","2020-03-19T00:00:00","2020-03-19T00:00:00","2020-03-20T00:00:00","2020-03-20T00:00:00","2020-03-21T00:00:00","2020-03-21T00:00:00","2020-03-22T00:00:00","2020-03-22T00:00:00","2020-03-23T00:00:00","2020-03-23T00:00:00","2020-03-24T00:00:00","2020-03-24T00:00:00","2020-03-25T00:00:00","2020-03-25T00:00:00","2020-03-26T00:00:00","2020-03-26T00:00:00","2020-03-27T00:00:00","2020-03-27T00:00:00","2020-03-28T00:00:00","2020-03-28T00:00:00","2020-03-29T00:00:00","2020-03-29T00:00:00","2020-03-30T00:00:00","2020-03-30T00:00:00","2020-03-31T00:00:00","2020-03-31T00:00:00","2020-04-01T00:00:00","2020-04-01T00:00:00","2020-04-02T00:00:00","2020-04-02T00:00:00","2020-04-03T00:00:00","2020-04-03T00:00:00","2020-04-04T00:00:00","2020-04-04T00:00:00","2020-04-05T00:00:00","2020-04-05T00:00:00","2020-04-06T00:00:00","2020-04-06T00:00:00","2020-04-07T00:00:00","2020-04-07T00:00:00","2020-04-08T00:00:00","2020-04-08T00:00:00","2020-04-09T00:00:00","2020-04-09T00:00:00","2020-04-10T00:00:00","2020-04-10T00:00:00","2020-04-11T00:00:00","2020-04-11T00:00:00","2020-04-12T00:00:00","2020-04-12T00:00:00","2020-04-13T00:00:00","2020-04-13T00:00:00","2020-04-14T00:00:00","2020-04-14T00:00:00","2020-04-15T00:00:00","2020-04-15T00:00:00","2020-04-16T00:00:00","2020-04-16T00:00:00","2020-04-17T00:00:00","2020-04-17T00:00:00","2020-04-18T00:00:00","2020-04-18T00:00:00","2020-04-19T00:00:00","2020-04-19T00:00:00","2020-04-20T00:00:00","2020-04-20T00:00:00","2020-04-21T00:00:00","2020-04-21T00:00:00","2020-04-22T00:00:00","2020-04-22T00:00:00","2020-04-23T00:00:00","2020-04-23T00:00:00","2020-04-24T00:00:00","2020-04-24T00:00:00","2020-04-25T00:00:00","2020-04-25T00:00:00","2020-04-26T00:00:00","2020-04-26T00:00:00","2020-04-27T00:00:00","2020-04-27T00:00:00","2020-04-28T00:00:00","2020-04-28T00:00:00","2020-04-29T00:00:00","2020-04-29T00:00:00","2020-04-30T00:00:00","2020-04-30T00:00:00","2020-05-01T00:00:00","2020-05-01T00:00:00","2020-05-02T00:00:00","2020-05-02T00:00:00","2020-05-03T00:00:00","2020-05-03T00:00:00","2020-05-04T00:00:00","2020-05-04T00:00:00","2020-05-05T00:00:00","2020-05-05T00:00:00","2020-05-06T00:00:00","2020-05-06T00:00:00","2020-05-07T00:00:00","2020-05-07T00:00:00","2020-05-08T00:00:00","2020-05-08T00:00:00","2020-05-09T00:00:00","2020-05-09T00:00:00","2020-05-10T00:00:00","2020-05-10T00:00:00","2020-05-11T00:00:00","2020-05-11T00:00:00","2020-05-12T00:00:00","2020-05-12T00:00:00","2020-05-13T00:00:00","2020-05-13T00:00:00","2020-05-14T00:00:00","2020-05-14T00:00:00","2020-05-15T00:00:00","2020-05-15T00:00:00","2020-05-16T00:00:00","2020-05-16T00:00:00","2020-05-17T00:00:00","2020-05-17T00:00:00","2020-05-18T00:00:00","2020-05-18T00:00:00","2020-05-19T00:00:00","2020-05-19T00:00:00","2020-05-20T00:00:00","2020-05-20T00:00:00","2020-05-21T00:00:00","2020-05-21T00:00:00","2020-05-22T00:00:00","2020-05-22T00:00:00","2020-05-23T00:00:00","2020-05-23T00:00:00","2020-05-24T00:00:00","2020-05-24T00:00:00","2020-05-25T00:00:00","2020-05-25T00:00:00","2020-05-26T00:00:00","2020-05-26T00:00:00","2020-05-27T00:00:00","2020-05-27T00:00:00","2020-05-28T00:00:00","2020-05-28T00:00:00","2020-05-29T00:00:00","2020-05-29T00:00:00","2020-05-30T00:00:00","2020-05-30T00:00:00","2020-05-31T00:00:00","2020-05-31T00:00:00","2020-06-01T00:00:00","2020-06-01T00:00:00","2020-06-02T00:00:00","2020-06-02T00:00:00","2020-06-03T00:00:00","2020-06-03T00:00:00","2020-06-04T00:00:00","2020-06-04T00:00:00","2020-06-05T00:00:00","2020-06-05T00:00:00","2020-06-06T00:00:00","2020-06-06T00:00:00","2020-06-07T00:00:00","2020-06-07T00:00:00","2020-06-08T00:00:00","2020-06-08T00:00:00","2020-06-09T00:00:00","2020-06-09T00:00:00","2020-06-10T00:00:00","2020-06-10T00:00:00","2020-06-11T00:00:00","2020-06-11T00:00:00","2020-06-12T00:00:00","2020-06-12T00:00:00","2020-06-13T00:00:00","2020-06-13T00:00:00","2020-06-14T00:00:00","2020-06-14T00:00:00","2020-06-15T00:00:00","2020-06-15T00:00:00","2020-06-16T00:00:00","2020-06-16T00:00:00","2020-06-17T00:00:00","2020-06-17T00:00:00","2020-06-18T00:00:00","2020-06-18T00:00:00","2020-06-19T00:00:00","2020-06-19T00:00:00","2020-06-20T00:00:00","2020-06-20T00:00:00","2020-06-21T00:00:00","2020-06-21T00:00:00","2020-06-22T00:00:00","2020-06-22T00:00:00","2020-06-23T00:00:00","2020-06-23T00:00:00","2020-06-24T00:00:00","2020-06-24T00:00:00","2020-06-25T00:00:00","2020-06-25T00:00:00","2020-06-26T00:00:00","2020-06-26T00:00:00","2020-06-27T00:00:00","2020-06-27T00:00:00","2020-06-28T00:00:00","2020-06-28T00:00:00","2020-06-29T00:00:00","2020-06-29T00:00:00","2020-06-30T00:00:00","2020-06-30T00:00:00","2020-07-01T00:00:00","2020-07-01T00:00:00","2020-07-02T00:00:00","2020-07-02T00:00:00","2020-07-03T00:00:00","2020-07-03T00:00:00","2020-07-04T00:00:00","2020-07-04T00:00:00","2020-07-05T00:00:00","2020-07-05T00:00:00","2020-07-06T00:00:00","2020-07-06T00:00:00","2020-07-07T00:00:00","2020-07-07T00:00:00","2020-07-08T00:00:00","2020-07-08T00:00:00","2020-07-09T00:00:00","2020-07-09T00:00:00","2020-07-10T00:00:00","2020-07-10T00:00:00","2020-07-11T00:00:00","2020-07-11T00:00:00","2020-07-12T00:00:00","2020-07-12T00:00:00","2020-07-13T00:00:00","2020-07-13T00:00:00","2020-07-14T00:00:00","2020-07-14T00:00:00","2020-07-15T00:00:00","2020-07-15T00:00:00","2020-07-16T00:00:00","2020-07-16T00:00:00","2020-07-17T00:00:00","2020-07-17T00:00:00","2020-07-18T00:00:00","2020-07-18T00:00:00","2020-07-19T00:00:00","2020-07-19T00:00:00","2020-07-20T00:00:00","2020-07-20T00:00:00","2020-07-21T00:00:00","2020-07-21T00:00:00","2020-07-22T00:00:00","2020-07-22T00:00:00","2020-07-23T00:00:00","2020-07-23T00:00:00","2020-07-24T00:00:00","2020-07-24T00:00:00","2020-07-25T00:00:00","2020-07-25T00:00:00","2020-07-26T00:00:00","2020-07-26T00:00:00","2020-07-27T00:00:00","2020-07-27T00:00:00","2020-07-28T00:00:00","2020-07-28T00:00:00","2020-07-29T00:00:00","2020-07-29T00:00:00","2020-07-30T00:00:00","2020-07-30T00:00:00","2020-07-31T00:00:00","2020-07-31T00:00:00","2020-08-01T00:00:00","2020-08-01T00:00:00","2020-08-02T00:00:00","2020-08-02T00:00:00","2020-08-03T00:00:00","2020-08-03T00:00:00","2020-08-04T00:00:00","2020-08-04T00:00:00","2020-08-05T00:00:00","2020-08-05T00:00:00","2020-08-06T00:00:00","2020-08-06T00:00:00","2020-08-07T00:00:00","2020-08-07T00:00:00","2020-08-08T00:00:00","2020-08-08T00:00:00","2020-08-09T00:00:00","2020-08-09T00:00:00","2020-08-10T00:00:00","2020-08-10T00:00:00","2020-08-11T00:00:00","2020-08-11T00:00:00","2020-08-12T00:00:00","2020-08-12T00:00:00","2020-08-13T00:00:00","2020-08-13T00:00:00","2020-08-14T00:00:00","2020-08-14T00:00:00","2020-08-15T00:00:00","2020-08-15T00:00:00","2020-08-16T00:00:00","2020-08-16T00:00:00","2020-08-17T00:00:00","2020-08-17T00:00:00","2020-08-18T00:00:00","2020-08-18T00:00:00","2020-08-19T00:00:00","2020-08-19T00:00:00","2020-08-20T00:00:00","2020-08-20T00:00:00","2020-08-21T00:00:00","2020-08-21T00:00:00","2020-08-22T00:00:00","2020-08-22T00:00:00","2020-08-23T00:00:00","2020-08-23T00:00:00","2020-08-24T00:00:00","2020-08-24T00:00:00","2020-08-25T00:00:00","2020-08-25T00:00:00","2020-08-26T00:00:00","2020-08-26T00:00:00","2020-08-27T00:00:00","2020-08-27T00:00:00","2020-08-28T00:00:00","2020-08-28T00:00:00","2020-08-29T00:00:00","2020-08-29T00:00:00","2020-08-30T00:00:00","2020-08-30T00:00:00","2020-08-31T00:00:00","2020-08-31T00:00:00","2020-09-01T00:00:00","2020-09-01T00:00:00","2020-09-02T00:00:00","2020-09-02T00:00:00","2020-09-03T00:00:00","2020-09-03T00:00:00","2020-09-04T00:00:00","2020-09-04T00:00:00","2020-09-05T00:00:00","2020-09-05T00:00:00","2020-09-06T00:00:00","2020-09-06T00:00:00","2020-09-07T00:00:00","2020-09-07T00:00:00","2020-09-08T00:00:00","2020-09-08T00:00:00","2020-09-09T00:00:00","2020-09-09T00:00:00","2020-09-10T00:00:00","2020-09-10T00:00:00","2020-09-11T00:00:00","2020-09-11T00:00:00","2020-09-12T00:00:00","2020-09-12T00:00:00","2020-09-13T00:00:00","2020-09-13T00:00:00","2020-09-14T00:00:00","2020-09-14T00:00:00","2020-09-15T00:00:00","2020-09-15T00:00:00","2020-09-16T00:00:00","2020-09-16T00:00:00","2020-09-17T00:00:00","2020-09-17T00:00:00","2020-09-18T00:00:00","2020-09-18T00:00:00","2020-09-19T00:00:00","2020-09-19T00:00:00","2020-09-20T00:00:00","2020-09-20T00:00:00","2020-09-21T00:00:00","2020-09-21T00:00:00","2020-09-22T00:00:00","2020-09-22T00:00:00","2020-09-23T00:00:00","2020-09-23T00:00:00","2020-09-24T00:00:00","2020-09-24T00:00:00","2020-09-25T00:00:00","2020-09-25T00:00:00","2020-09-26T00:00:00","2020-09-26T00:00:00","2020-09-27T00:00:00","2020-09-27T00:00:00","2020-09-28T00:00:00","2020-09-28T00:00:00","2020-09-29T00:00:00","2020-09-29T00:00:00","2020-09-30T00:00:00","2020-09-30T00:00:00"],"type":"scatter","uid":"83f23e7f-3990-4357-ae31-d66471c3e97b","y":[1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0]},{"connectgaps":false,"fill":"tonexty","fillcolor":"rgba(255, 0, 0, 0.3)","hoverinfo":"skip","line":{"color":"rgba(0, 0, 0, 0)","width":0},"opacity":0,"showlegend":false,"x":["2019-11-03T00:00:00","2019-11-03T00:00:00","2019-11-04T00:00:00","2019-11-04T00:00:00","2019-11-05T00:00:00","2019-11-05T00:00:00","2019-11-06T00:00:00","2019-11-06T00:00:00","2019-11-07T00:00:00","2019-11-07T00:00:00","2019-11-08T00:00:00","2019-11-08T00:00:00","2019-11-09T00:00:00","2019-11-09T00:00:00","2019-11-10T00:00:00","2019-11-10T00:00:00","2019-11-11T00:00:00","2019-11-11T00:00:00","2019-11-12T00:00:00","2019-11-12T00:00:00","2019-11-13T00:00:00","2019-11-13T00:00:00","2019-11-14T00:00:00","2019-11-14T00:00:00","2019-11-15T00:00:00","2019-11-15T00:00:00","2019-11-16T00:00:00","2019-11-16T00:00:00","2019-11-17T00:00:00","2019-11-17T00:00:00","2019-11-18T00:00:00","2019-11-18T00:00:00","2019-11-19T00:00:00","2019-11-19T00:00:00","2019-11-20T00:00:00","2019-11-20T00:00:00","2019-11-21T00:00:00","2019-11-21T00:00:00","2019-11-22T00:00:00","2019-11-22T00:00:00","2019-11-23T00:00:00","2019-11-23T00:00:00","2019-11-24T00:00:00","2019-11-24T00:00:00","2019-11-25T00:00:00","2019-11-25T00:00:00","2019-11-26T00:00:00","2019-11-26T00:00:00","2019-11-27T00:00:00","2019-11-27T00:00:00","2019-11-28T00:00:00","2019-11-28T00:00:00","2019-11-29T00:00:00","2019-11-29T00:00:00","2019-11-30T00:00:00","2019-11-30T00:00:00","2019-12-01T00:00:00","2019-12-01T00:00:00","2019-12-02T00:00:00","2019-12-02T00:00:00","2019-12-03T00:00:00","2019-12-03T00:00:00","2019-12-04T00:00:00","2019-12-04T00:00:00","2019-12-05T00:00:00","2019-12-05T00:00:00","2019-12-06T00:00:00","2019-12-06T00:00:00","2019-12-07T00:00:00","2019-12-07T00:00:00","2019-12-08T00:00:00","2019-12-08T00:00:00","2019-12-09T00:00:00","2019-12-09T00:00:00","2019-12-10T00:00:00","2019-12-10T00:00:00","2019-12-11T00:00:00","2019-12-11T00:00:00","2019-12-12T00:00:00","2019-12-12T00:00:00","2019-12-13T00:00:00","2019-12-13T00:00:00","2019-12-14T00:00:00","2019-12-14T00:00:00","2019-12-15T00:00:00","2019-12-15T00:00:00","2019-12-16T00:00:00","2019-12-16T00:00:00","2019-12-17T00:00:00","2019-12-17T00:00:00","2019-12-18T00:00:00","2019-12-18T00:00:00","2019-12-19T00:00:00","2019-12-19T00:00:00","2019-12-20T00:00:00","2019-12-20T00:00:00","2019-12-21T00:00:00","2019-12-21T00:00:00","2019-12-22T00:00:00","2019-12-22T00:00:00","2019-12-23T00:00:00","2019-12-23T00:00:00","2019-12-24T00:00:00","2019-12-24T00:00:00","2019-12-25T00:00:00","2019-12-25T00:00:00","2019-12-26T00:00:00","2019-12-26T00:00:00","2019-12-27T00:00:00","2019-12-27T00:00:00","2019-12-28T00:00:00","2019-12-28T00:00:00","2019-12-29T00:00:00","2019-12-29T00:00:00","2019-12-30T00:00:00","2019-12-30T00:00:00","2019-12-31T00:00:00","2019-12-31T00:00:00","2020-01-01T00:00:00","2020-01-01T00:00:00","2020-01-02T00:00:00","2020-01-02T00:00:00","2020-01-03T00:00:00","2020-01-03T00:00:00","2020-01-04T00:00:00","2020-01-04T00:00:00","2020-01-05T00:00:00","2020-01-05T00:00:00","2020-01-06T00:00:00","2020-01-06T00:00:00","2020-01-07T00:00:00","2020-01-07T00:00:00","2020-01-08T00:00:00","2020-01-08T00:00:00","2020-01-09T00:00:00","2020-01-09T00:00:00","2020-01-10T00:00:00","2020-01-10T00:00:00","2020-01-11T00:00:00","2020-01-11T00:00:00","2020-01-12T00:00:00","2020-01-12T00:00:00","2020-01-13T00:00:00","2020-01-13T00:00:00","2020-01-14T00:00:00","2020-01-14T00:00:00","2020-01-15T00:00:00","2020-01-15T00:00:00","2020-01-16T00:00:00","2020-01-16T00:00:00","2020-01-17T00:00:00","2020-01-17T00:00:00","2020-01-18T00:00:00","2020-01-18T00:00:00","2020-01-19T00:00:00","2020-01-19T00:00:00","2020-01-20T00:00:00","2020-01-20T00:00:00","2020-01-21T00:00:00","2020-01-21T00:00:00","2020-01-22T00:00:00","2020-01-22T00:00:00","2020-01-23T00:00:00","2020-01-23T00:00:00","2020-01-24T00:00:00","2020-01-24T00:00:00","2020-01-25T00:00:00","2020-01-25T00:00:00","2020-01-26T00:00:00","2020-01-26T00:00:00","2020-01-27T00:00:00","2020-01-27T00:00:00","2020-01-28T00:00:00","2020-01-28T00:00:00","2020-01-29T00:00:00","2020-01-29T00:00:00","2020-01-30T00:00:00","2020-01-30T00:00:00","2020-01-31T00:00:00","2020-01-31T00:00:00","2020-02-01T00:00:00","2020-02-01T00:00:00","2020-02-02T00:00:00","2020-02-02T00:00:00","2020-02-03T00:00:00","2020-02-03T00:00:00","2020-02-04T00:00:00","2020-02-04T00:00:00","2020-02-05T00:00:00","2020-02-05T00:00:00","2020-02-06T00:00:00","2020-02-06T00:00:00","2020-02-07T00:00:00","2020-02-07T00:00:00","2020-02-08T00:00:00","2020-02-08T00:00:00","2020-02-09T00:00:00","2020-02-09T00:00:00","2020-02-10T00:00:00","2020-02-10T00:00:00","2020-02-11T00:00:00","2020-02-11T00:00:00","2020-02-12T00:00:00","2020-02-12T00:00:00","2020-02-13T00:00:00","2020-02-13T00:00:00","2020-02-14T00:00:00","2020-02-14T00:00:00","2020-02-15T00:00:00","2020-02-15T00:00:00","2020-02-16T00:00:00","2020-02-16T00:00:00","2020-02-17T00:00:00","2020-02-17T00:00:00","2020-02-18T00:00:00","2020-02-18T00:00:00","2020-02-19T00:00:00","2020-02-19T00:00:00","2020-02-20T00:00:00","2020-02-20T00:00:00","2020-02-21T00:00:00","2020-02-21T00:00:00","2020-02-22T00:00:00","2020-02-22T00:00:00","2020-02-23T00:00:00","2020-02-23T00:00:00","2020-02-24T00:00:00","2020-02-24T00:00:00","2020-02-25T00:00:00","2020-02-25T00:00:00","2020-02-26T00:00:00","2020-02-26T00:00:00","2020-02-27T00:00:00","2020-02-27T00:00:00","2020-02-28T00:00:00","2020-02-28T00:00:00","2020-02-29T00:00:00","2020-02-29T00:00:00","2020-03-01T00:00:00","2020-03-01T00:00:00","2020-03-02T00:00:00","2020-03-02T00:00:00","2020-03-03T00:00:00","2020-03-03T00:00:00","2020-03-04T00:00:00","2020-03-04T00:00:00","2020-03-05T00:00:00","2020-03-05T00:00:00","2020-03-06T00:00:00","2020-03-06T00:00:00","2020-03-07T00:00:00","2020-03-07T00:00:00","2020-03-08T00:00:00","2020-03-08T00:00:00","2020-03-09T00:00:00","2020-03-09T00:00:00","2020-03-10T00:00:00","2020-03-10T00:00:00","2020-03-11T00:00:00","2020-03-11T00:00:00","2020-03-12T00:00:00","2020-03-12T00:00:00","2020-03-13T00:00:00","2020-03-13T00:00:00","2020-03-14T00:00:00","2020-03-14T00:00:00","2020-03-15T00:00:00","2020-03-15T00:00:00","2020-03-16T00:00:00","2020-03-16T00:00:00","2020-03-17T00:00:00","2020-03-17T00:00:00","2020-03-18T00:00:00","2020-03-18T00:00:00","2020-03-19T00:00:00","2020-03-19T00:00:00","2020-03-20T00:00:00","2020-03-20T00:00:00","2020-03-21T00:00:00","2020-03-21T00:00:00","2020-03-22T00:00:00","2020-03-22T00:00:00","2020-03-23T00:00:00","2020-03-23T00:00:00","2020-03-24T00:00:00","2020-03-24T00:00:00","2020-03-25T00:00:00","2020-03-25T00:00:00","2020-03-26T00:00:00","2020-03-26T00:00:00","2020-03-27T00:00:00","2020-03-27T00:00:00","2020-03-28T00:00:00","2020-03-28T00:00:00","2020-03-29T00:00:00","2020-03-29T00:00:00","2020-03-30T00:00:00","2020-03-30T00:00:00","2020-03-31T00:00:00","2020-03-31T00:00:00","2020-04-01T00:00:00","2020-04-01T00:00:00","2020-04-02T00:00:00","2020-04-02T00:00:00","2020-04-03T00:00:00","2020-04-03T00:00:00","2020-04-04T00:00:00","2020-04-04T00:00:00","2020-04-05T00:00:00","2020-04-05T00:00:00","2020-04-06T00:00:00","2020-04-06T00:00:00","2020-04-07T00:00:00","2020-04-07T00:00:00","2020-04-08T00:00:00","2020-04-08T00:00:00","2020-04-09T00:00:00","2020-04-09T00:00:00","2020-04-10T00:00:00","2020-04-10T00:00:00","2020-04-11T00:00:00","2020-04-11T00:00:00","2020-04-12T00:00:00","2020-04-12T00:00:00","2020-04-13T00:00:00","2020-04-13T00:00:00","2020-04-14T00:00:00","2020-04-14T00:00:00","2020-04-15T00:00:00","2020-04-15T00:00:00","2020-04-16T00:00:00","2020-04-16T00:00:00","2020-04-17T00:00:00","2020-04-17T00:00:00","2020-04-18T00:00:00","2020-04-18T00:00:00","2020-04-19T00:00:00","2020-04-19T00:00:00","2020-04-20T00:00:00","2020-04-20T00:00:00","2020-04-21T00:00:00","2020-04-21T00:00:00","2020-04-22T00:00:00","2020-04-22T00:00:00","2020-04-23T00:00:00","2020-04-23T00:00:00","2020-04-24T00:00:00","2020-04-24T00:00:00","2020-04-25T00:00:00","2020-04-25T00:00:00","2020-04-26T00:00:00","2020-04-26T00:00:00","2020-04-27T00:00:00","2020-04-27T00:00:00","2020-04-28T00:00:00","2020-04-28T00:00:00","2020-04-29T00:00:00","2020-04-29T00:00:00","2020-04-30T00:00:00","2020-04-30T00:00:00","2020-05-01T00:00:00","2020-05-01T00:00:00","2020-05-02T00:00:00","2020-05-02T00:00:00","2020-05-03T00:00:00","2020-05-03T00:00:00","2020-05-04T00:00:00","2020-05-04T00:00:00","2020-05-05T00:00:00","2020-05-05T00:00:00","2020-05-06T00:00:00","2020-05-06T00:00:00","2020-05-07T00:00:00","2020-05-07T00:00:00","2020-05-08T00:00:00","2020-05-08T00:00:00","2020-05-09T00:00:00","2020-05-09T00:00:00","2020-05-10T00:00:00","2020-05-10T00:00:00","2020-05-11T00:00:00","2020-05-11T00:00:00","2020-05-12T00:00:00","2020-05-12T00:00:00","2020-05-13T00:00:00","2020-05-13T00:00:00","2020-05-14T00:00:00","2020-05-14T00:00:00","2020-05-15T00:00:00","2020-05-15T00:00:00","2020-05-16T00:00:00","2020-05-16T00:00:00","2020-05-17T00:00:00","2020-05-17T00:00:00","2020-05-18T00:00:00","2020-05-18T00:00:00","2020-05-19T00:00:00","2020-05-19T00:00:00","2020-05-20T00:00:00","2020-05-20T00:00:00","2020-05-21T00:00:00","2020-05-21T00:00:00","2020-05-22T00:00:00","2020-05-22T00:00:00","2020-05-23T00:00:00","2020-05-23T00:00:00","2020-05-24T00:00:00","2020-05-24T00:00:00","2020-05-25T00:00:00","2020-05-25T00:00:00","2020-05-26T00:00:00","2020-05-26T00:00:00","2020-05-27T00:00:00","2020-05-27T00:00:00","2020-05-28T00:00:00","2020-05-28T00:00:00","2020-05-29T00:00:00","2020-05-29T00:00:00","2020-05-30T00:00:00","2020-05-30T00:00:00","2020-05-31T00:00:00","2020-05-31T00:00:00","2020-06-01T00:00:00","2020-06-01T00:00:00","2020-06-02T00:00:00","2020-06-02T00:00:00","2020-06-03T00:00:00","2020-06-03T00:00:00","2020-06-04T00:00:00","2020-06-04T00:00:00","2020-06-05T00:00:00","2020-06-05T00:00:00","2020-06-06T00:00:00","2020-06-06T00:00:00","2020-06-07T00:00:00","2020-06-07T00:00:00","2020-06-08T00:00:00","2020-06-08T00:00:00","2020-06-09T00:00:00","2020-06-09T00:00:00","2020-06-10T00:00:00","2020-06-10T00:00:00","2020-06-11T00:00:00","2020-06-11T00:00:00","2020-06-12T00:00:00","2020-06-12T00:00:00","2020-06-13T00:00:00","2020-06-13T00:00:00","2020-06-14T00:00:00","2020-06-14T00:00:00","2020-06-15T00:00:00","2020-06-15T00:00:00","2020-06-16T00:00:00","2020-06-16T00:00:00","2020-06-17T00:00:00","2020-06-17T00:00:00","2020-06-18T00:00:00","2020-06-18T00:00:00","2020-06-19T00:00:00","2020-06-19T00:00:00","2020-06-20T00:00:00","2020-06-20T00:00:00","2020-06-21T00:00:00","2020-06-21T00:00:00","2020-06-22T00:00:00","2020-06-22T00:00:00","2020-06-23T00:00:00","2020-06-23T00:00:00","2020-06-24T00:00:00","2020-06-24T00:00:00","2020-06-25T00:00:00","2020-06-25T00:00:00","2020-06-26T00:00:00","2020-06-26T00:00:00","2020-06-27T00:00:00","2020-06-27T00:00:00","2020-06-28T00:00:00","2020-06-28T00:00:00","2020-06-29T00:00:00","2020-06-29T00:00:00","2020-06-30T00:00:00","2020-06-30T00:00:00","2020-07-01T00:00:00","2020-07-01T00:00:00","2020-07-02T00:00:00","2020-07-02T00:00:00","2020-07-03T00:00:00","2020-07-03T00:00:00","2020-07-04T00:00:00","2020-07-04T00:00:00","2020-07-05T00:00:00","2020-07-05T00:00:00","2020-07-06T00:00:00","2020-07-06T00:00:00","2020-07-07T00:00:00","2020-07-07T00:00:00","2020-07-08T00:00:00","2020-07-08T00:00:00","2020-07-09T00:00:00","2020-07-09T00:00:00","2020-07-10T00:00:00","2020-07-10T00:00:00","2020-07-11T00:00:00","2020-07-11T00:00:00","2020-07-12T00:00:00","2020-07-12T00:00:00","2020-07-13T00:00:00","2020-07-13T00:00:00","2020-07-14T00:00:00","2020-07-14T00:00:00","2020-07-15T00:00:00","2020-07-15T00:00:00","2020-07-16T00:00:00","2020-07-16T00:00:00","2020-07-17T00:00:00","2020-07-17T00:00:00","2020-07-18T00:00:00","2020-07-18T00:00:00","2020-07-19T00:00:00","2020-07-19T00:00:00","2020-07-20T00:00:00","2020-07-20T00:00:00","2020-07-21T00:00:00","2020-07-21T00:00:00","2020-07-22T00:00:00","2020-07-22T00:00:00","2020-07-23T00:00:00","2020-07-23T00:00:00","2020-07-24T00:00:00","2020-07-24T00:00:00","2020-07-25T00:00:00","2020-07-25T00:00:00","2020-07-26T00:00:00","2020-07-26T00:00:00","2020-07-27T00:00:00","2020-07-27T00:00:00","2020-07-28T00:00:00","2020-07-28T00:00:00","2020-07-29T00:00:00","2020-07-29T00:00:00","2020-07-30T00:00:00","2020-07-30T00:00:00","2020-07-31T00:00:00","2020-07-31T00:00:00","2020-08-01T00:00:00","2020-08-01T00:00:00","2020-08-02T00:00:00","2020-08-02T00:00:00","2020-08-03T00:00:00","2020-08-03T00:00:00","2020-08-04T00:00:00","2020-08-04T00:00:00","2020-08-05T00:00:00","2020-08-05T00:00:00","2020-08-06T00:00:00","2020-08-06T00:00:00","2020-08-07T00:00:00","2020-08-07T00:00:00","2020-08-08T00:00:00","2020-08-08T00:00:00","2020-08-09T00:00:00","2020-08-09T00:00:00","2020-08-10T00:00:00","2020-08-10T00:00:00","2020-08-11T00:00:00","2020-08-11T00:00:00","2020-08-12T00:00:00","2020-08-12T00:00:00","2020-08-13T00:00:00","2020-08-13T00:00:00","2020-08-14T00:00:00","2020-08-14T00:00:00","2020-08-15T00:00:00","2020-08-15T00:00:00","2020-08-16T00:00:00","2020-08-16T00:00:00","2020-08-17T00:00:00","2020-08-17T00:00:00","2020-08-18T00:00:00","2020-08-18T00:00:00","2020-08-19T00:00:00","2020-08-19T00:00:00","2020-08-20T00:00:00","2020-08-20T00:00:00","2020-08-21T00:00:00","2020-08-21T00:00:00","2020-08-22T00:00:00","2020-08-22T00:00:00","2020-08-23T00:00:00","2020-08-23T00:00:00","2020-08-24T00:00:00","2020-08-24T00:00:00","2020-08-25T00:00:00","2020-08-25T00:00:00","2020-08-26T00:00:00","2020-08-26T00:00:00","2020-08-27T00:00:00","2020-08-27T00:00:00","2020-08-28T00:00:00","2020-08-28T00:00:00","2020-08-29T00:00:00","2020-08-29T00:00:00","2020-08-30T00:00:00","2020-08-30T00:00:00","2020-08-31T00:00:00","2020-08-31T00:00:00","2020-09-01T00:00:00","2020-09-01T00:00:00","2020-09-02T00:00:00","2020-09-02T00:00:00","2020-09-03T00:00:00","2020-09-03T00:00:00","2020-09-04T00:00:00","2020-09-04T00:00:00","2020-09-05T00:00:00","2020-09-05T00:00:00","2020-09-06T00:00:00","2020-09-06T00:00:00","2020-09-07T00:00:00","2020-09-07T00:00:00","2020-09-08T00:00:00","2020-09-08T00:00:00","2020-09-09T00:00:00","2020-09-09T00:00:00","2020-09-10T00:00:00","2020-09-10T00:00:00","2020-09-11T00:00:00","2020-09-11T00:00:00","2020-09-12T00:00:00","2020-09-12T00:00:00","2020-09-13T00:00:00","2020-09-13T00:00:00","2020-09-14T00:00:00","2020-09-14T00:00:00","2020-09-15T00:00:00","2020-09-15T00:00:00","2020-09-16T00:00:00","2020-09-16T00:00:00","2020-09-17T00:00:00","2020-09-17T00:00:00","2020-09-18T00:00:00","2020-09-18T00:00:00","2020-09-19T00:00:00","2020-09-19T00:00:00","2020-09-20T00:00:00","2020-09-20T00:00:00","2020-09-21T00:00:00","2020-09-21T00:00:00","2020-09-22T00:00:00","2020-09-22T00:00:00","2020-09-23T00:00:00","2020-09-23T00:00:00","2020-09-24T00:00:00","2020-09-24T00:00:00","2020-09-25T00:00:00","2020-09-25T00:00:00","2020-09-26T00:00:00","2020-09-26T00:00:00","2020-09-27T00:00:00","2020-09-27T00:00:00","2020-09-28T00:00:00","2020-09-28T00:00:00","2020-09-29T00:00:00","2020-09-29T00:00:00","2020-09-30T00:00:00","2020-09-30T00:00:00"],"type":"scatter","uid":"e61fa8c3-3bb4-480c-b84a-40a96b54f83a","y":[1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,996.55,996.55,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0]},{"line":{"color":"#9467bd"},"name":"Value","showlegend":true,"x":["2019-11-03T00:00:00","2019-11-03T00:00:00","2019-11-04T00:00:00","2019-11-04T00:00:00","2019-11-05T00:00:00","2019-11-05T00:00:00","2019-11-06T00:00:00","2019-11-06T00:00:00","2019-11-07T00:00:00","2019-11-07T00:00:00","2019-11-08T00:00:00","2019-11-08T00:00:00","2019-11-09T00:00:00","2019-11-09T00:00:00","2019-11-10T00:00:00","2019-11-10T00:00:00","2019-11-11T00:00:00","2019-11-11T00:00:00","2019-11-12T00:00:00","2019-11-12T00:00:00","2019-11-13T00:00:00","2019-11-13T00:00:00","2019-11-14T00:00:00","2019-11-14T00:00:00","2019-11-15T00:00:00","2019-11-15T00:00:00","2019-11-16T00:00:00","2019-11-16T00:00:00","2019-11-17T00:00:00","2019-11-17T00:00:00","2019-11-18T00:00:00","2019-11-18T00:00:00","2019-11-19T00:00:00","2019-11-19T00:00:00","2019-11-20T00:00:00","2019-11-20T00:00:00","2019-11-21T00:00:00","2019-11-21T00:00:00","2019-11-22T00:00:00","2019-11-22T00:00:00","2019-11-23T00:00:00","2019-11-23T00:00:00","2019-11-24T00:00:00","2019-11-24T00:00:00","2019-11-25T00:00:00","2019-11-25T00:00:00","2019-11-26T00:00:00","2019-11-26T00:00:00","2019-11-27T00:00:00","2019-11-27T00:00:00","2019-11-28T00:00:00","2019-11-28T00:00:00","2019-11-29T00:00:00","2019-11-29T00:00:00","2019-11-30T00:00:00","2019-11-30T00:00:00","2019-12-01T00:00:00","2019-12-01T00:00:00","2019-12-02T00:00:00","2019-12-02T00:00:00","2019-12-03T00:00:00","2019-12-03T00:00:00","2019-12-04T00:00:00","2019-12-04T00:00:00","2019-12-05T00:00:00","2019-12-05T00:00:00","2019-12-06T00:00:00","2019-12-06T00:00:00","2019-12-07T00:00:00","2019-12-07T00:00:00","2019-12-08T00:00:00","2019-12-08T00:00:00","2019-12-09T00:00:00","2019-12-09T00:00:00","2019-12-10T00:00:00","2019-12-10T00:00:00","2019-12-11T00:00:00","2019-12-11T00:00:00","2019-12-12T00:00:00","2019-12-12T00:00:00","2019-12-13T00:00:00","2019-12-13T00:00:00","2019-12-14T00:00:00","2019-12-14T00:00:00","2019-12-15T00:00:00","2019-12-15T00:00:00","2019-12-16T00:00:00","2019-12-16T00:00:00","2019-12-17T00:00:00","2019-12-17T00:00:00","2019-12-18T00:00:00","2019-12-18T00:00:00","2019-12-19T00:00:00","2019-12-19T00:00:00","2019-12-20T00:00:00","2019-12-20T00:00:00","2019-12-21T00:00:00","2019-12-21T00:00:00","2019-12-22T00:00:00","2019-12-22T00:00:00","2019-12-23T00:00:00","2019-12-23T00:00:00","2019-12-24T00:00:00","2019-12-24T00:00:00","2019-12-25T00:00:00","2019-12-25T00:00:00","2019-12-26T00:00:00","2019-12-26T00:00:00","2019-12-27T00:00:00","2019-12-27T00:00:00","2019-12-28T00:00:00","2019-12-28T00:00:00","2019-12-29T00:00:00","2019-12-29T00:00:00","2019-12-30T00:00:00","2019-12-30T00:00:00","2019-12-31T00:00:00","2019-12-31T00:00:00","2020-01-01T00:00:00","2020-01-01T00:00:00","2020-01-02T00:00:00","2020-01-02T00:00:00","2020-01-03T00:00:00","2020-01-03T00:00:00","2020-01-04T00:00:00","2020-01-04T00:00:00","2020-01-05T00:00:00","2020-01-05T00:00:00","2020-01-06T00:00:00","2020-01-06T00:00:00","2020-01-07T00:00:00","2020-01-07T00:00:00","2020-01-08T00:00:00","2020-01-08T00:00:00","2020-01-09T00:00:00","2020-01-09T00:00:00","2020-01-10T00:00:00","2020-01-10T00:00:00","2020-01-11T00:00:00","2020-01-11T00:00:00","2020-01-12T00:00:00","2020-01-12T00:00:00","2020-01-13T00:00:00","2020-01-13T00:00:00","2020-01-14T00:00:00","2020-01-14T00:00:00","2020-01-15T00:00:00","2020-01-15T00:00:00","2020-01-16T00:00:00","2020-01-16T00:00:00","2020-01-17T00:00:00","2020-01-17T00:00:00","2020-01-18T00:00:00","2020-01-18T00:00:00","2020-01-19T00:00:00","2020-01-19T00:00:00","2020-01-20T00:00:00","2020-01-20T00:00:00","2020-01-21T00:00:00","2020-01-21T00:00:00","2020-01-22T00:00:00","2020-01-22T00:00:00","2020-01-23T00:00:00","2020-01-23T00:00:00","2020-01-24T00:00:00","2020-01-24T00:00:00","2020-01-25T00:00:00","2020-01-25T00:00:00","2020-01-26T00:00:00","2020-01-26T00:00:00","2020-01-27T00:00:00","2020-01-27T00:00:00","2020-01-28T00:00:00","2020-01-28T00:00:00","2020-01-29T00:00:00","2020-01-29T00:00:00","2020-01-30T00:00:00","2020-01-30T00:00:00","2020-01-31T00:00:00","2020-01-31T00:00:00","2020-02-01T00:00:00","2020-02-01T00:00:00","2020-02-02T00:00:00","2020-02-02T00:00:00","2020-02-03T00:00:00","2020-02-03T00:00:00","2020-02-04T00:00:00","2020-02-04T00:00:00","2020-02-05T00:00:00","2020-02-05T00:00:00","2020-02-06T00:00:00","2020-02-06T00:00:00","2020-02-07T00:00:00","2020-02-07T00:00:00","2020-02-08T00:00:00","2020-02-08T00:00:00","2020-02-09T00:00:00","2020-02-09T00:00:00","2020-02-10T00:00:00","2020-02-10T00:00:00","2020-02-11T00:00:00","2020-02-11T00:00:00","2020-02-12T00:00:00","2020-02-12T00:00:00","2020-02-13T00:00:00","2020-02-13T00:00:00","2020-02-14T00:00:00","2020-02-14T00:00:00","2020-02-15T00:00:00","2020-02-15T00:00:00","2020-02-16T00:00:00","2020-02-16T00:00:00","2020-02-17T00:00:00","2020-02-17T00:00:00","2020-02-18T00:00:00","2020-02-18T00:00:00","2020-02-19T00:00:00","2020-02-19T00:00:00","2020-02-20T00:00:00","2020-02-20T00:00:00","2020-02-21T00:00:00","2020-02-21T00:00:00","2020-02-22T00:00:00","2020-02-22T00:00:00","2020-02-23T00:00:00","2020-02-23T00:00:00","2020-02-24T00:00:00","2020-02-24T00:00:00","2020-02-25T00:00:00","2020-02-25T00:00:00","2020-02-26T00:00:00","2020-02-26T00:00:00","2020-02-27T00:00:00","2020-02-27T00:00:00","2020-02-28T00:00:00","2020-02-28T00:00:00","2020-02-29T00:00:00","2020-02-29T00:00:00","2020-03-01T00:00:00","2020-03-01T00:00:00","2020-03-02T00:00:00","2020-03-02T00:00:00","2020-03-03T00:00:00","2020-03-03T00:00:00","2020-03-04T00:00:00","2020-03-04T00:00:00","2020-03-05T00:00:00","2020-03-05T00:00:00","2020-03-06T00:00:00","2020-03-06T00:00:00","2020-03-07T00:00:00","2020-03-07T00:00:00","2020-03-08T00:00:00","2020-03-08T00:00:00","2020-03-09T00:00:00","2020-03-09T00:00:00","2020-03-10T00:00:00","2020-03-10T00:00:00","2020-03-11T00:00:00","2020-03-11T00:00:00","2020-03-12T00:00:00","2020-03-12T00:00:00","2020-03-13T00:00:00","2020-03-13T00:00:00","2020-03-14T00:00:00","2020-03-14T00:00:00","2020-03-15T00:00:00","2020-03-15T00:00:00","2020-03-16T00:00:00","2020-03-16T00:00:00","2020-03-17T00:00:00","2020-03-17T00:00:00","2020-03-18T00:00:00","2020-03-18T00:00:00","2020-03-19T00:00:00","2020-03-19T00:00:00","2020-03-20T00:00:00","2020-03-20T00:00:00","2020-03-21T00:00:00","2020-03-21T00:00:00","2020-03-22T00:00:00","2020-03-22T00:00:00","2020-03-23T00:00:00","2020-03-23T00:00:00","2020-03-24T00:00:00","2020-03-24T00:00:00","2020-03-25T00:00:00","2020-03-25T00:00:00","2020-03-26T00:00:00","2020-03-26T00:00:00","2020-03-27T00:00:00","2020-03-27T00:00:00","2020-03-28T00:00:00","2020-03-28T00:00:00","2020-03-29T00:00:00","2020-03-29T00:00:00","2020-03-30T00:00:00","2020-03-30T00:00:00","2020-03-31T00:00:00","2020-03-31T00:00:00","2020-04-01T00:00:00","2020-04-01T00:00:00","2020-04-02T00:00:00","2020-04-02T00:00:00","2020-04-03T00:00:00","2020-04-03T00:00:00","2020-04-04T00:00:00","2020-04-04T00:00:00","2020-04-05T00:00:00","2020-04-05T00:00:00","2020-04-06T00:00:00","2020-04-06T00:00:00","2020-04-07T00:00:00","2020-04-07T00:00:00","2020-04-08T00:00:00","2020-04-08T00:00:00","2020-04-09T00:00:00","2020-04-09T00:00:00","2020-04-10T00:00:00","2020-04-10T00:00:00","2020-04-11T00:00:00","2020-04-11T00:00:00","2020-04-12T00:00:00","2020-04-12T00:00:00","2020-04-13T00:00:00","2020-04-13T00:00:00","2020-04-14T00:00:00","2020-04-14T00:00:00","2020-04-15T00:00:00","2020-04-15T00:00:00","2020-04-16T00:00:00","2020-04-16T00:00:00","2020-04-17T00:00:00","2020-04-17T00:00:00","2020-04-18T00:00:00","2020-04-18T00:00:00","2020-04-19T00:00:00","2020-04-19T00:00:00","2020-04-20T00:00:00","2020-04-20T00:00:00","2020-04-21T00:00:00","2020-04-21T00:00:00","2020-04-22T00:00:00","2020-04-22T00:00:00","2020-04-23T00:00:00","2020-04-23T00:00:00","2020-04-24T00:00:00","2020-04-24T00:00:00","2020-04-25T00:00:00","2020-04-25T00:00:00","2020-04-26T00:00:00","2020-04-26T00:00:00","2020-04-27T00:00:00","2020-04-27T00:00:00","2020-04-28T00:00:00","2020-04-28T00:00:00","2020-04-29T00:00:00","2020-04-29T00:00:00","2020-04-30T00:00:00","2020-04-30T00:00:00","2020-05-01T00:00:00","2020-05-01T00:00:00","2020-05-02T00:00:00","2020-05-02T00:00:00","2020-05-03T00:00:00","2020-05-03T00:00:00","2020-05-04T00:00:00","2020-05-04T00:00:00","2020-05-05T00:00:00","2020-05-05T00:00:00","2020-05-06T00:00:00","2020-05-06T00:00:00","2020-05-07T00:00:00","2020-05-07T00:00:00","2020-05-08T00:00:00","2020-05-08T00:00:00","2020-05-09T00:00:00","2020-05-09T00:00:00","2020-05-10T00:00:00","2020-05-10T00:00:00","2020-05-11T00:00:00","2020-05-11T00:00:00","2020-05-12T00:00:00","2020-05-12T00:00:00","2020-05-13T00:00:00","2020-05-13T00:00:00","2020-05-14T00:00:00","2020-05-14T00:00:00","2020-05-15T00:00:00","2020-05-15T00:00:00","2020-05-16T00:00:00","2020-05-16T00:00:00","2020-05-17T00:00:00","2020-05-17T00:00:00","2020-05-18T00:00:00","2020-05-18T00:00:00","2020-05-19T00:00:00","2020-05-19T00:00:00","2020-05-20T00:00:00","2020-05-20T00:00:00","2020-05-21T00:00:00","2020-05-21T00:00:00","2020-05-22T00:00:00","2020-05-22T00:00:00","2020-05-23T00:00:00","2020-05-23T00:00:00","2020-05-24T00:00:00","2020-05-24T00:00:00","2020-05-25T00:00:00","2020-05-25T00:00:00","2020-05-26T00:00:00","2020-05-26T00:00:00","2020-05-27T00:00:00","2020-05-27T00:00:00","2020-05-28T00:00:00","2020-05-28T00:00:00","2020-05-29T00:00:00","2020-05-29T00:00:00","2020-05-30T00:00:00","2020-05-30T00:00:00","2020-05-31T00:00:00","2020-05-31T00:00:00","2020-06-01T00:00:00","2020-06-01T00:00:00","2020-06-02T00:00:00","2020-06-02T00:00:00","2020-06-03T00:00:00","2020-06-03T00:00:00","2020-06-04T00:00:00","2020-06-04T00:00:00","2020-06-05T00:00:00","2020-06-05T00:00:00","2020-06-06T00:00:00","2020-06-06T00:00:00","2020-06-07T00:00:00","2020-06-07T00:00:00","2020-06-08T00:00:00","2020-06-08T00:00:00","2020-06-09T00:00:00","2020-06-09T00:00:00","2020-06-10T00:00:00","2020-06-10T00:00:00","2020-06-11T00:00:00","2020-06-11T00:00:00","2020-06-12T00:00:00","2020-06-12T00:00:00","2020-06-13T00:00:00","2020-06-13T00:00:00","2020-06-14T00:00:00","2020-06-14T00:00:00","2020-06-15T00:00:00","2020-06-15T00:00:00","2020-06-16T00:00:00","2020-06-16T00:00:00","2020-06-17T00:00:00","2020-06-17T00:00:00","2020-06-18T00:00:00","2020-06-18T00:00:00","2020-06-19T00:00:00","2020-06-19T00:00:00","2020-06-20T00:00:00","2020-06-20T00:00:00","2020-06-21T00:00:00","2020-06-21T00:00:00","2020-06-22T00:00:00","2020-06-22T00:00:00","2020-06-23T00:00:00","2020-06-23T00:00:00","2020-06-24T00:00:00","2020-06-24T00:00:00","2020-06-25T00:00:00","2020-06-25T00:00:00","2020-06-26T00:00:00","2020-06-26T00:00:00","2020-06-27T00:00:00","2020-06-27T00:00:00","2020-06-28T00:00:00","2020-06-28T00:00:00","2020-06-29T00:00:00","2020-06-29T00:00:00","2020-06-30T00:00:00","2020-06-30T00:00:00","2020-07-01T00:00:00","2020-07-01T00:00:00","2020-07-02T00:00:00","2020-07-02T00:00:00","2020-07-03T00:00:00","2020-07-03T00:00:00","2020-07-04T00:00:00","2020-07-04T00:00:00","2020-07-05T00:00:00","2020-07-05T00:00:00","2020-07-06T00:00:00","2020-07-06T00:00:00","2020-07-07T00:00:00","2020-07-07T00:00:00","2020-07-08T00:00:00","2020-07-08T00:00:00","2020-07-09T00:00:00","2020-07-09T00:00:00","2020-07-10T00:00:00","2020-07-10T00:00:00","2020-07-11T00:00:00","2020-07-11T00:00:00","2020-07-12T00:00:00","2020-07-12T00:00:00","2020-07-13T00:00:00","2020-07-13T00:00:00","2020-07-14T00:00:00","2020-07-14T00:00:00","2020-07-15T00:00:00","2020-07-15T00:00:00","2020-07-16T00:00:00","2020-07-16T00:00:00","2020-07-17T00:00:00","2020-07-17T00:00:00","2020-07-18T00:00:00","2020-07-18T00:00:00","2020-07-19T00:00:00","2020-07-19T00:00:00","2020-07-20T00:00:00","2020-07-20T00:00:00","2020-07-21T00:00:00","2020-07-21T00:00:00","2020-07-22T00:00:00","2020-07-22T00:00:00","2020-07-23T00:00:00","2020-07-23T00:00:00","2020-07-24T00:00:00","2020-07-24T00:00:00","2020-07-25T00:00:00","2020-07-25T00:00:00","2020-07-26T00:00:00","2020-07-26T00:00:00","2020-07-27T00:00:00","2020-07-27T00:00:00","2020-07-28T00:00:00","2020-07-28T00:00:00","2020-07-29T00:00:00","2020-07-29T00:00:00","2020-07-30T00:00:00","2020-07-30T00:00:00","2020-07-31T00:00:00","2020-07-31T00:00:00","2020-08-01T00:00:00","2020-08-01T00:00:00","2020-08-02T00:00:00","2020-08-02T00:00:00","2020-08-03T00:00:00","2020-08-03T00:00:00","2020-08-04T00:00:00","2020-08-04T00:00:00","2020-08-05T00:00:00","2020-08-05T00:00:00","2020-08-06T00:00:00","2020-08-06T00:00:00","2020-08-07T00:00:00","2020-08-07T00:00:00","2020-08-08T00:00:00","2020-08-08T00:00:00","2020-08-09T00:00:00","2020-08-09T00:00:00","2020-08-10T00:00:00","2020-08-10T00:00:00","2020-08-11T00:00:00","2020-08-11T00:00:00","2020-08-12T00:00:00","2020-08-12T00:00:00","2020-08-13T00:00:00","2020-08-13T00:00:00","2020-08-14T00:00:00","2020-08-14T00:00:00","2020-08-15T00:00:00","2020-08-15T00:00:00","2020-08-16T00:00:00","2020-08-16T00:00:00","2020-08-17T00:00:00","2020-08-17T00:00:00","2020-08-18T00:00:00","2020-08-18T00:00:00","2020-08-19T00:00:00","2020-08-19T00:00:00","2020-08-20T00:00:00","2020-08-20T00:00:00","2020-08-21T00:00:00","2020-08-21T00:00:00","2020-08-22T00:00:00","2020-08-22T00:00:00","2020-08-23T00:00:00","2020-08-23T00:00:00","2020-08-24T00:00:00","2020-08-24T00:00:00","2020-08-25T00:00:00","2020-08-25T00:00:00","2020-08-26T00:00:00","2020-08-26T00:00:00","2020-08-27T00:00:00","2020-08-27T00:00:00","2020-08-28T00:00:00","2020-08-28T00:00:00","2020-08-29T00:00:00","2020-08-29T00:00:00","2020-08-30T00:00:00","2020-08-30T00:00:00","2020-08-31T00:00:00","2020-08-31T00:00:00","2020-09-01T00:00:00","2020-09-01T00:00:00","2020-09-02T00:00:00","2020-09-02T00:00:00","2020-09-03T00:00:00","2020-09-03T00:00:00","2020-09-04T00:00:00","2020-09-04T00:00:00","2020-09-05T00:00:00","2020-09-05T00:00:00","2020-09-06T00:00:00","2020-09-06T00:00:00","2020-09-07T00:00:00","2020-09-07T00:00:00","2020-09-08T00:00:00","2020-09-08T00:00:00","2020-09-09T00:00:00","2020-09-09T00:00:00","2020-09-10T00:00:00","2020-09-10T00:00:00","2020-09-11T00:00:00","2020-09-11T00:00:00","2020-09-12T00:00:00","2020-09-12T00:00:00","2020-09-13T00:00:00","2020-09-13T00:00:00","2020-09-14T00:00:00","2020-09-14T00:00:00","2020-09-15T00:00:00","2020-09-15T00:00:00","2020-09-16T00:00:00","2020-09-16T00:00:00","2020-09-17T00:00:00","2020-09-17T00:00:00","2020-09-18T00:00:00","2020-09-18T00:00:00","2020-09-19T00:00:00","2020-09-19T00:00:00","2020-09-20T00:00:00","2020-09-20T00:00:00","2020-09-21T00:00:00","2020-09-21T00:00:00","2020-09-22T00:00:00","2020-09-22T00:00:00","2020-09-23T00:00:00","2020-09-23T00:00:00","2020-09-24T00:00:00","2020-09-24T00:00:00","2020-09-25T00:00:00","2020-09-25T00:00:00","2020-09-26T00:00:00","2020-09-26T00:00:00","2020-09-27T00:00:00","2020-09-27T00:00:00","2020-09-28T00:00:00","2020-09-28T00:00:00","2020-09-29T00:00:00","2020-09-29T00:00:00","2020-09-30T00:00:00","2020-09-30T00:00:00"],"type":"scatter","uid":"4cc0d140-1851-48d5-aa43-f7c518037f27","y":[1000.0,1007.68,1007.68,1007.68,1007.68,1007.68,1007.68,1007.68,1007.68,1007.68,1007.68,1005.2299999999999,1005.2299999999999,996.55,996.55,1010.0,1010.0,1010.0,1010.0,1010.0,1010.0,1010.0,1010.0,1010.0,1010.0,1010.0,1010.0,1022.84,1022.84,1022.96,1022.96,1022.96,1022.96,1022.96,1022.96,1022.96,1022.96,1022.96,1022.96,1022.44,1022.44,1019.74,1019.74,1013.05,1013.05,1013.05,1013.05,1013.05,1013.05,1013.05,1013.05,1013.05,1013.05,1013.89,1013.89,1015.39,1015.39,1020.79,1020.79,1020.79,1020.79,1020.79,1020.79,1020.79,1020.79,1020.79,1020.79,1024.1599999999999,1024.1599999999999,1023.8299999999998,1023.8299999999998,1020.6399999999998,1020.6399999999998,1020.6399999999998,1020.6399999999998,1020.6399999999998,1020.6399999999998,1020.6399999999998,1020.6399999999998,1020.6399999999998,1020.6399999999998,1016.6399999999998,1016.6399999999998,1010.4599999999998,1010.4599999999998,1008.8199999999998,1008.8199999999998,1008.8199999999998,1008.8199999999998,1008.8199999999998,1008.8199999999998,1012.9799999999998,1012.9799999999998,1012.9799999999998,1012.9799999999998,1016.2799999999997,1016.2799999999997,1021.0799999999997,1021.0799999999997,1024.0099999999998,1024.0099999999998,1024.0099999999998,1024.0099999999998,1024.0099999999998,1024.0099999999998,1024.0099999999998,1024.0099999999998,1024.0099999999998,1024.0099999999998,1024.0099999999998,1024.0099999999998,1024.0099999999998,1024.0099999999998,1024.0099999999998,1024.0099999999998,1024.0099999999998,1024.0099999999998,1024.0099999999998,1024.0099999999998,1024.0099999999998,1024.0099999999998,1024.0099999999998,1024.0099999999998,1024.0499999999997,1024.0499999999997,1015.3599999999997,1015.3599999999997,1019.8599999999997,1019.8599999999997,1019.8599999999997,1019.8599999999997,1020.4399999999997,1020.4399999999997,1020.4399999999997,1020.4399999999997,1020.4399999999997,1020.4399999999997,1020.4399999999997,1020.4399999999997,1020.4399999999997,1020.4399999999997,1020.4399999999997,1020.4399999999997,1020.4399999999997,1020.4399999999997,1019.5099999999998,1019.5099999999998,1019.0199999999998,1019.0199999999998,1019.3999999999997,1019.3999999999997,1017.5999999999998,1017.5999999999998,1020.7599999999998,1020.7599999999998,1017.3799999999998,1017.3799999999998,1017.3799999999998,1017.3799999999998,1017.3799999999998,1017.3799999999998,1017.3799999999998,1017.3799999999998,1017.3799999999998,1017.3799999999998,1014.7199999999998,1014.7199999999998,1011.4399999999998,1011.4399999999998,1006.7999999999998,1006.7999999999998,1006.7999999999998,1006.7999999999998,1006.7999999999998,1006.7999999999998,1006.7999999999998,1006.7999999999998,1006.7999999999998,1006.7999999999998,1010.1499999999999,1010.1499999999999,1014.9299999999998,1014.9299999999998,1012.8199999999998,1012.8199999999998,1012.8199999999998,1012.8199999999998,1012.8199999999998,1012.8199999999998,1012.8199999999998,1012.8199999999998,1012.8199999999998,1012.8199999999998,1013.6799999999998,1013.6799999999998,1011.9199999999998,1011.9199999999998,1010.2399999999999,1010.2399999999999,1010.2399999999999,1010.2399999999999,1010.2399999999999,1010.2399999999999,1010.2399999999999,1010.2399999999999,1010.2399999999999,1010.2399999999999,1014.6499999999999,1014.6499999999999,1017.9799999999999,1017.9799999999999,1025.4299999999998,1025.4299999999998,1025.4299999999998,1025.4299999999998,1025.4299999999998,1025.4299999999998,1025.6299999999999,1025.6299999999999,1025.6299999999999,1025.6299999999999,1024.82,1024.82,1030.7,1030.7,1029.26,1029.26,1029.26,1029.26,1029.26,1029.26,1029.26,1029.26,1029.26,1029.26,1024.26,1024.26,1017.53,1017.53,1019.13,1019.13,1019.13,1019.13,1019.13,1019.13,1019.13,1019.13,1019.13,1019.13,1022.25,1022.25,1026.94,1026.94,1030.64,1030.64,1030.64,1030.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.64,1028.47,1028.47,1028.5,1028.5,1032.96,1032.96,1038.8,1038.8,1031.99,1031.99,1035.6200000000001,1035.6200000000001,1033.7900000000002,1033.7900000000002,1039.9800000000002,1039.9800000000002,1042.5800000000002,1042.5800000000002,1039.0100000000002,1039.0100000000002,1044.2900000000002,1044.2900000000002,1052.1200000000001,1052.1200000000001,1050.3100000000002,1050.3100000000002,1045.2100000000003,1045.2100000000003,1050.0700000000002,1050.0700000000002,1049.4600000000003,1049.4600000000003,1047.4600000000003,1047.4600000000003,1045.2600000000002,1045.2600000000002,1038.6000000000001,1038.6000000000001,1037.7,1037.7,1040.29,1040.29,1041.08,1041.08,1040.3799999999999,1040.3799999999999,1041.4499999999998,1041.4499999999998,1045.9799999999998,1045.9799999999998,1051.3899999999999,1051.3899999999999,1053.1899999999998,1053.1899999999998,1051.9999999999998,1051.9999999999998,1050.4899999999998,1050.4899999999998,1058.4799999999998,1058.4799999999998,1059.0899999999997,1059.0899999999997,1066.0799999999997,1066.0799999999997,1064.1399999999996,1064.1399999999996,1056.7399999999996,1056.7399999999996,1056.7399999999996,1056.7399999999996,1056.7399999999996,1056.7399999999996,1068.3099999999995,1068.3099999999995,1073.9699999999996,1073.9699999999996,1073.9699999999996,1073.9699999999996,1076.7799999999995,1076.7799999999995,1067.1899999999996,1067.1899999999996,1067.1899999999996,1067.1899999999996,1067.1899999999996,1067.1899999999996,1067.1899999999996,1067.1899999999996,1067.1899999999996,1067.1899999999996,1067.1899999999996,1067.1899999999996,1067.1899999999996,1067.1899999999996,1067.1899999999996,1067.1899999999996,1067.1899999999996,1067.1899999999996,1067.1899999999996,1067.1899999999996,1067.1899999999996,1067.1899999999996,1067.1899999999996,1067.1899999999996,1067.1899999999996,1067.1899999999996,1067.1899999999996,1067.1899999999996,1067.1899999999996,1067.1899999999996,1067.1899999999996,1067.1899999999996,1067.1899999999996,1067.1899999999996,1067.1899999999996,1067.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.1899999999996,1064.8299999999997,1064.8299999999997,1061.5399999999997,1061.5399999999997,1061.5399999999997,1061.5399999999997,1061.5399999999997,1061.5399999999997,1061.5399999999997,1061.5399999999997,1061.5399999999997,1061.5399999999997,1061.5399999999997,1061.5399999999997,1058.3199999999997,1058.3199999999997,1059.0399999999997,1059.0399999999997,1059.0399999999997,1059.0399999999997,1059.0399999999997,1059.0399999999997,1059.0399999999997,1059.0399999999997,1059.0399999999997,1059.0399999999997,1059.0399999999997,1059.0399999999997,1064.4999999999998,1064.4999999999998,1063.0699999999997,1063.0699999999997,1063.0699999999997,1063.0699999999997,1063.6699999999996,1063.6699999999996,1068.7899999999995]},{"hoverinfo":"skip","line":{"color":"rgba(0, 0, 0, 0)","width":0},"opacity":0.0,"showlegend":false,"x":["2019-11-03T00:00:00","2019-11-03T00:00:00","2019-11-04T00:00:00","2019-11-04T00:00:00","2019-11-05T00:00:00","2019-11-05T00:00:00","2019-11-06T00:00:00","2019-11-06T00:00:00","2019-11-07T00:00:00","2019-11-07T00:00:00","2019-11-08T00:00:00","2019-11-08T00:00:00","2019-11-09T00:00:00","2019-11-09T00:00:00","2019-11-10T00:00:00","2019-11-10T00:00:00","2019-11-11T00:00:00","2019-11-11T00:00:00","2019-11-12T00:00:00","2019-11-12T00:00:00","2019-11-13T00:00:00","2019-11-13T00:00:00","2019-11-14T00:00:00","2019-11-14T00:00:00","2019-11-15T00:00:00","2019-11-15T00:00:00","2019-11-16T00:00:00","2019-11-16T00:00:00","2019-11-17T00:00:00","2019-11-17T00:00:00","2019-11-18T00:00:00","2019-11-18T00:00:00","2019-11-19T00:00:00","2019-11-19T00:00:00","2019-11-20T00:00:00","2019-11-20T00:00:00","2019-11-21T00:00:00","2019-11-21T00:00:00","2019-11-22T00:00:00","2019-11-22T00:00:00","2019-11-23T00:00:00","2019-11-23T00:00:00","2019-11-24T00:00:00","2019-11-24T00:00:00","2019-11-25T00:00:00","2019-11-25T00:00:00","2019-11-26T00:00:00","2019-11-26T00:00:00","2019-11-27T00:00:00","2019-11-27T00:00:00","2019-11-28T00:00:00","2019-11-28T00:00:00","2019-11-29T00:00:00","2019-11-29T00:00:00","2019-11-30T00:00:00","2019-11-30T00:00:00","2019-12-01T00:00:00","2019-12-01T00:00:00","2019-12-02T00:00:00","2019-12-02T00:00:00","2019-12-03T00:00:00","2019-12-03T00:00:00","2019-12-04T00:00:00","2019-12-04T00:00:00","2019-12-05T00:00:00","2019-12-05T00:00:00","2019-12-06T00:00:00","2019-12-06T00:00:00","2019-12-07T00:00:00","2019-12-07T00:00:00","2019-12-08T00:00:00","2019-12-08T00:00:00","2019-12-09T00:00:00","2019-12-09T00:00:00","2019-12-10T00:00:00","2019-12-10T00:00:00","2019-12-11T00:00:00","2019-12-11T00:00:00","2019-12-12T00:00:00","2019-12-12T00:00:00","2019-12-13T00:00:00","2019-12-13T00:00:00","2019-12-14T00:00:00","2019-12-14T00:00:00","2019-12-15T00:00:00","2019-12-15T00:00:00","2019-12-16T00:00:00","2019-12-16T00:00:00","2019-12-17T00:00:00","2019-12-17T00:00:00","2019-12-18T00:00:00","2019-12-18T00:00:00","2019-12-19T00:00:00","2019-12-19T00:00:00","2019-12-20T00:00:00","2019-12-20T00:00:00","2019-12-21T00:00:00","2019-12-21T00:00:00","2019-12-22T00:00:00","2019-12-22T00:00:00","2019-12-23T00:00:00","2019-12-23T00:00:00","2019-12-24T00:00:00","2019-12-24T00:00:00","2019-12-25T00:00:00","2019-12-25T00:00:00","2019-12-26T00:00:00","2019-12-26T00:00:00","2019-12-27T00:00:00","2019-12-27T00:00:00","2019-12-28T00:00:00","2019-12-28T00:00:00","2019-12-29T00:00:00","2019-12-29T00:00:00","2019-12-30T00:00:00","2019-12-30T00:00:00","2019-12-31T00:00:00","2019-12-31T00:00:00","2020-01-01T00:00:00","2020-01-01T00:00:00","2020-01-02T00:00:00","2020-01-02T00:00:00","2020-01-03T00:00:00","2020-01-03T00:00:00","2020-01-04T00:00:00","2020-01-04T00:00:00","2020-01-05T00:00:00","2020-01-05T00:00:00","2020-01-06T00:00:00","2020-01-06T00:00:00","2020-01-07T00:00:00","2020-01-07T00:00:00","2020-01-08T00:00:00","2020-01-08T00:00:00","2020-01-09T00:00:00","2020-01-09T00:00:00","2020-01-10T00:00:00","2020-01-10T00:00:00","2020-01-11T00:00:00","2020-01-11T00:00:00","2020-01-12T00:00:00","2020-01-12T00:00:00","2020-01-13T00:00:00","2020-01-13T00:00:00","2020-01-14T00:00:00","2020-01-14T00:00:00","2020-01-15T00:00:00","2020-01-15T00:00:00","2020-01-16T00:00:00","2020-01-16T00:00:00","2020-01-17T00:00:00","2020-01-17T00:00:00","2020-01-18T00:00:00","2020-01-18T00:00:00","2020-01-19T00:00:00","2020-01-19T00:00:00","2020-01-20T00:00:00","2020-01-20T00:00:00","2020-01-21T00:00:00","2020-01-21T00:00:00","2020-01-22T00:00:00","2020-01-22T00:00:00","2020-01-23T00:00:00","2020-01-23T00:00:00","2020-01-24T00:00:00","2020-01-24T00:00:00","2020-01-25T00:00:00","2020-01-25T00:00:00","2020-01-26T00:00:00","2020-01-26T00:00:00","2020-01-27T00:00:00","2020-01-27T00:00:00","2020-01-28T00:00:00","2020-01-28T00:00:00","2020-01-29T00:00:00","2020-01-29T00:00:00","2020-01-30T00:00:00","2020-01-30T00:00:00","2020-01-31T00:00:00","2020-01-31T00:00:00","2020-02-01T00:00:00","2020-02-01T00:00:00","2020-02-02T00:00:00","2020-02-02T00:00:00","2020-02-03T00:00:00","2020-02-03T00:00:00","2020-02-04T00:00:00","2020-02-04T00:00:00","2020-02-05T00:00:00","2020-02-05T00:00:00","2020-02-06T00:00:00","2020-02-06T00:00:00","2020-02-07T00:00:00","2020-02-07T00:00:00","2020-02-08T00:00:00","2020-02-08T00:00:00","2020-02-09T00:00:00","2020-02-09T00:00:00","2020-02-10T00:00:00","2020-02-10T00:00:00","2020-02-11T00:00:00","2020-02-11T00:00:00","2020-02-12T00:00:00","2020-02-12T00:00:00","2020-02-13T00:00:00","2020-02-13T00:00:00","2020-02-14T00:00:00","2020-02-14T00:00:00","2020-02-15T00:00:00","2020-02-15T00:00:00","2020-02-16T00:00:00","2020-02-16T00:00:00","2020-02-17T00:00:00","2020-02-17T00:00:00","2020-02-18T00:00:00","2020-02-18T00:00:00","2020-02-19T00:00:00","2020-02-19T00:00:00","2020-02-20T00:00:00","2020-02-20T00:00:00","2020-02-21T00:00:00","2020-02-21T00:00:00","2020-02-22T00:00:00","2020-02-22T00:00:00","2020-02-23T00:00:00","2020-02-23T00:00:00","2020-02-24T00:00:00","2020-02-24T00:00:00","2020-02-25T00:00:00","2020-02-25T00:00:00","2020-02-26T00:00:00","2020-02-26T00:00:00","2020-02-27T00:00:00","2020-02-27T00:00:00","2020-02-28T00:00:00","2020-02-28T00:00:00","2020-02-29T00:00:00","2020-02-29T00:00:00","2020-03-01T00:00:00","2020-03-01T00:00:00","2020-03-02T00:00:00","2020-03-02T00:00:00","2020-03-03T00:00:00","2020-03-03T00:00:00","2020-03-04T00:00:00","2020-03-04T00:00:00","2020-03-05T00:00:00","2020-03-05T00:00:00","2020-03-06T00:00:00","2020-03-06T00:00:00","2020-03-07T00:00:00","2020-03-07T00:00:00","2020-03-08T00:00:00","2020-03-08T00:00:00","2020-03-09T00:00:00","2020-03-09T00:00:00","2020-03-10T00:00:00","2020-03-10T00:00:00","2020-03-11T00:00:00","2020-03-11T00:00:00","2020-03-12T00:00:00","2020-03-12T00:00:00","2020-03-13T00:00:00","2020-03-13T00:00:00","2020-03-14T00:00:00","2020-03-14T00:00:00","2020-03-15T00:00:00","2020-03-15T00:00:00","2020-03-16T00:00:00","2020-03-16T00:00:00","2020-03-17T00:00:00","2020-03-17T00:00:00","2020-03-18T00:00:00","2020-03-18T00:00:00","2020-03-19T00:00:00","2020-03-19T00:00:00","2020-03-20T00:00:00","2020-03-20T00:00:00","2020-03-21T00:00:00","2020-03-21T00:00:00","2020-03-22T00:00:00","2020-03-22T00:00:00","2020-03-23T00:00:00","2020-03-23T00:00:00","2020-03-24T00:00:00","2020-03-24T00:00:00","2020-03-25T00:00:00","2020-03-25T00:00:00","2020-03-26T00:00:00","2020-03-26T00:00:00","2020-03-27T00:00:00","2020-03-27T00:00:00","2020-03-28T00:00:00","2020-03-28T00:00:00","2020-03-29T00:00:00","2020-03-29T00:00:00","2020-03-30T00:00:00","2020-03-30T00:00:00","2020-03-31T00:00:00","2020-03-31T00:00:00","2020-04-01T00:00:00","2020-04-01T00:00:00","2020-04-02T00:00:00","2020-04-02T00:00:00","2020-04-03T00:00:00","2020-04-03T00:00:00","2020-04-04T00:00:00","2020-04-04T00:00:00","2020-04-05T00:00:00","2020-04-05T00:00:00","2020-04-06T00:00:00","2020-04-06T00:00:00","2020-04-07T00:00:00","2020-04-07T00:00:00","2020-04-08T00:00:00","2020-04-08T00:00:00","2020-04-09T00:00:00","2020-04-09T00:00:00","2020-04-10T00:00:00","2020-04-10T00:00:00","2020-04-11T00:00:00","2020-04-11T00:00:00","2020-04-12T00:00:00","2020-04-12T00:00:00","2020-04-13T00:00:00","2020-04-13T00:00:00","2020-04-14T00:00:00","2020-04-14T00:00:00","2020-04-15T00:00:00","2020-04-15T00:00:00","2020-04-16T00:00:00","2020-04-16T00:00:00","2020-04-17T00:00:00","2020-04-17T00:00:00","2020-04-18T00:00:00","2020-04-18T00:00:00","2020-04-19T00:00:00","2020-04-19T00:00:00","2020-04-20T00:00:00","2020-04-20T00:00:00","2020-04-21T00:00:00","2020-04-21T00:00:00","2020-04-22T00:00:00","2020-04-22T00:00:00","2020-04-23T00:00:00","2020-04-23T00:00:00","2020-04-24T00:00:00","2020-04-24T00:00:00","2020-04-25T00:00:00","2020-04-25T00:00:00","2020-04-26T00:00:00","2020-04-26T00:00:00","2020-04-27T00:00:00","2020-04-27T00:00:00","2020-04-28T00:00:00","2020-04-28T00:00:00","2020-04-29T00:00:00","2020-04-29T00:00:00","2020-04-30T00:00:00","2020-04-30T00:00:00","2020-05-01T00:00:00","2020-05-01T00:00:00","2020-05-02T00:00:00","2020-05-02T00:00:00","2020-05-03T00:00:00","2020-05-03T00:00:00","2020-05-04T00:00:00","2020-05-04T00:00:00","2020-05-05T00:00:00","2020-05-05T00:00:00","2020-05-06T00:00:00","2020-05-06T00:00:00","2020-05-07T00:00:00","2020-05-07T00:00:00","2020-05-08T00:00:00","2020-05-08T00:00:00","2020-05-09T00:00:00","2020-05-09T00:00:00","2020-05-10T00:00:00","2020-05-10T00:00:00","2020-05-11T00:00:00","2020-05-11T00:00:00","2020-05-12T00:00:00","2020-05-12T00:00:00","2020-05-13T00:00:00","2020-05-13T00:00:00","2020-05-14T00:00:00","2020-05-14T00:00:00","2020-05-15T00:00:00","2020-05-15T00:00:00","2020-05-16T00:00:00","2020-05-16T00:00:00","2020-05-17T00:00:00","2020-05-17T00:00:00","2020-05-18T00:00:00","2020-05-18T00:00:00","2020-05-19T00:00:00","2020-05-19T00:00:00","2020-05-20T00:00:00","2020-05-20T00:00:00","2020-05-21T00:00:00","2020-05-21T00:00:00","2020-05-22T00:00:00","2020-05-22T00:00:00","2020-05-23T00:00:00","2020-05-23T00:00:00","2020-05-24T00:00:00","2020-05-24T00:00:00","2020-05-25T00:00:00","2020-05-25T00:00:00","2020-05-26T00:00:00","2020-05-26T00:00:00","2020-05-27T00:00:00","2020-05-27T00:00:00","2020-05-28T00:00:00","2020-05-28T00:00:00","2020-05-29T00:00:00","2020-05-29T00:00:00","2020-05-30T00:00:00","2020-05-30T00:00:00","2020-05-31T00:00:00","2020-05-31T00:00:00","2020-06-01T00:00:00","2020-06-01T00:00:00","2020-06-02T00:00:00","2020-06-02T00:00:00","2020-06-03T00:00:00","2020-06-03T00:00:00","2020-06-04T00:00:00","2020-06-04T00:00:00","2020-06-05T00:00:00","2020-06-05T00:00:00","2020-06-06T00:00:00","2020-06-06T00:00:00","2020-06-07T00:00:00","2020-06-07T00:00:00","2020-06-08T00:00:00","2020-06-08T00:00:00","2020-06-09T00:00:00","2020-06-09T00:00:00","2020-06-10T00:00:00","2020-06-10T00:00:00","2020-06-11T00:00:00","2020-06-11T00:00:00","2020-06-12T00:00:00","2020-06-12T00:00:00","2020-06-13T00:00:00","2020-06-13T00:00:00","2020-06-14T00:00:00","2020-06-14T00:00:00","2020-06-15T00:00:00","2020-06-15T00:00:00","2020-06-16T00:00:00","2020-06-16T00:00:00","2020-06-17T00:00:00","2020-06-17T00:00:00","2020-06-18T00:00:00","2020-06-18T00:00:00","2020-06-19T00:00:00","2020-06-19T00:00:00","2020-06-20T00:00:00","2020-06-20T00:00:00","2020-06-21T00:00:00","2020-06-21T00:00:00","2020-06-22T00:00:00","2020-06-22T00:00:00","2020-06-23T00:00:00","2020-06-23T00:00:00","2020-06-24T00:00:00","2020-06-24T00:00:00","2020-06-25T00:00:00","2020-06-25T00:00:00","2020-06-26T00:00:00","2020-06-26T00:00:00","2020-06-27T00:00:00","2020-06-27T00:00:00","2020-06-28T00:00:00","2020-06-28T00:00:00","2020-06-29T00:00:00","2020-06-29T00:00:00","2020-06-30T00:00:00","2020-06-30T00:00:00","2020-07-01T00:00:00","2020-07-01T00:00:00","2020-07-02T00:00:00","2020-07-02T00:00:00","2020-07-03T00:00:00","2020-07-03T00:00:00","2020-07-04T00:00:00","2020-07-04T00:00:00","2020-07-05T00:00:00","2020-07-05T00:00:00","2020-07-06T00:00:00","2020-07-06T00:00:00","2020-07-07T00:00:00","2020-07-07T00:00:00","2020-07-08T00:00:00","2020-07-08T00:00:00","2020-07-09T00:00:00","2020-07-09T00:00:00","2020-07-10T00:00:00","2020-07-10T00:00:00","2020-07-11T00:00:00","2020-07-11T00:00:00","2020-07-12T00:00:00","2020-07-12T00:00:00","2020-07-13T00:00:00","2020-07-13T00:00:00","2020-07-14T00:00:00","2020-07-14T00:00:00","2020-07-15T00:00:00","2020-07-15T00:00:00","2020-07-16T00:00:00","2020-07-16T00:00:00","2020-07-17T00:00:00","2020-07-17T00:00:00","2020-07-18T00:00:00","2020-07-18T00:00:00","2020-07-19T00:00:00","2020-07-19T00:00:00","2020-07-20T00:00:00","2020-07-20T00:00:00","2020-07-21T00:00:00","2020-07-21T00:00:00","2020-07-22T00:00:00","2020-07-22T00:00:00","2020-07-23T00:00:00","2020-07-23T00:00:00","2020-07-24T00:00:00","2020-07-24T00:00:00","2020-07-25T00:00:00","2020-07-25T00:00:00","2020-07-26T00:00:00","2020-07-26T00:00:00","2020-07-27T00:00:00","2020-07-27T00:00:00","2020-07-28T00:00:00","2020-07-28T00:00:00","2020-07-29T00:00:00","2020-07-29T00:00:00","2020-07-30T00:00:00","2020-07-30T00:00:00","2020-07-31T00:00:00","2020-07-31T00:00:00","2020-08-01T00:00:00","2020-08-01T00:00:00","2020-08-02T00:00:00","2020-08-02T00:00:00","2020-08-03T00:00:00","2020-08-03T00:00:00","2020-08-04T00:00:00","2020-08-04T00:00:00","2020-08-05T00:00:00","2020-08-05T00:00:00","2020-08-06T00:00:00","2020-08-06T00:00:00","2020-08-07T00:00:00","2020-08-07T00:00:00","2020-08-08T00:00:00","2020-08-08T00:00:00","2020-08-09T00:00:00","2020-08-09T00:00:00","2020-08-10T00:00:00","2020-08-10T00:00:00","2020-08-11T00:00:00","2020-08-11T00:00:00","2020-08-12T00:00:00","2020-08-12T00:00:00","2020-08-13T00:00:00","2020-08-13T00:00:00","2020-08-14T00:00:00","2020-08-14T00:00:00","2020-08-15T00:00:00","2020-08-15T00:00:00","2020-08-16T00:00:00","2020-08-16T00:00:00","2020-08-17T00:00:00","2020-08-17T00:00:00","2020-08-18T00:00:00","2020-08-18T00:00:00","2020-08-19T00:00:00","2020-08-19T00:00:00","2020-08-20T00:00:00","2020-08-20T00:00:00","2020-08-21T00:00:00","2020-08-21T00:00:00","2020-08-22T00:00:00","2020-08-22T00:00:00","2020-08-23T00:00:00","2020-08-23T00:00:00","2020-08-24T00:00:00","2020-08-24T00:00:00","2020-08-25T00:00:00","2020-08-25T00:00:00","2020-08-26T00:00:00","2020-08-26T00:00:00","2020-08-27T00:00:00","2020-08-27T00:00:00","2020-08-28T00:00:00","2020-08-28T00:00:00","2020-08-29T00:00:00","2020-08-29T00:00:00","2020-08-30T00:00:00","2020-08-30T00:00:00","2020-08-31T00:00:00","2020-08-31T00:00:00","2020-09-01T00:00:00","2020-09-01T00:00:00","2020-09-02T00:00:00","2020-09-02T00:00:00","2020-09-03T00:00:00","2020-09-03T00:00:00","2020-09-04T00:00:00","2020-09-04T00:00:00","2020-09-05T00:00:00","2020-09-05T00:00:00","2020-09-06T00:00:00","2020-09-06T00:00:00","2020-09-07T00:00:00","2020-09-07T00:00:00","2020-09-08T00:00:00","2020-09-08T00:00:00","2020-09-09T00:00:00","2020-09-09T00:00:00","2020-09-10T00:00:00","2020-09-10T00:00:00","2020-09-11T00:00:00","2020-09-11T00:00:00","2020-09-12T00:00:00","2020-09-12T00:00:00","2020-09-13T00:00:00","2020-09-13T00:00:00","2020-09-14T00:00:00","2020-09-14T00:00:00","2020-09-15T00:00:00","2020-09-15T00:00:00","2020-09-16T00:00:00","2020-09-16T00:00:00","2020-09-17T00:00:00","2020-09-17T00:00:00","2020-09-18T00:00:00","2020-09-18T00:00:00","2020-09-19T00:00:00","2020-09-19T00:00:00","2020-09-20T00:00:00","2020-09-20T00:00:00","2020-09-21T00:00:00","2020-09-21T00:00:00","2020-09-22T00:00:00","2020-09-22T00:00:00","2020-09-23T00:00:00","2020-09-23T00:00:00","2020-09-24T00:00:00","2020-09-24T00:00:00","2020-09-25T00:00:00","2020-09-25T00:00:00","2020-09-26T00:00:00","2020-09-26T00:00:00","2020-09-27T00:00:00","2020-09-27T00:00:00","2020-09-28T00:00:00","2020-09-28T00:00:00","2020-09-29T00:00:00","2020-09-29T00:00:00","2020-09-30T00:00:00","2020-09-30T00:00:00"],"type":"scatter","uid":"1ea0f53c-f28b-41b8-9c91-221894642a92","y":[1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0,1000.0]}],                        {"template":{"data":{"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5}},"type":"barpolar"}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5}},"type":"bar"}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"choropleth":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"choropleth"}],"contourcarpet":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"contourcarpet"}],"contour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"contour"}],"heatmapgl":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"heatmapgl"}],"heatmap":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"heatmap"}],"histogram2dcontour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2dcontour"}],"histogram2d":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2d"}],"histogram":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"histogram"}],"mesh3d":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"mesh3d"}],"parcoords":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"parcoords"}],"pie":[{"automargin":true,"type":"pie"}],"scatter3d":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatter3d"}],"scattercarpet":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattercarpet"}],"scattergeo":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergeo"}],"scattergl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergl"}],"scattermapbox":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermapbox"}],"scatterpolargl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolargl"}],"scatterpolar":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolar"}],"scatter":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatter"}],"scatterternary":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterternary"}],"surface":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"surface"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}]},"layout":{"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]],"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]},"colorway":["#1f77b4","#ff7f0e","#2ca02c","#dc3912","#9467bd","#8c564b","#e377c2","#7f7f7f","#bcbd22","#17becf"],"font":{"color":"#2a3f5f"},"geo":{"bgcolor":"white","lakecolor":"white","landcolor":"#E5ECF6","showlakes":true,"showland":true,"subunitcolor":"white"},"hoverlabel":{"align":"left"},"hovermode":"closest","mapbox":{"style":"light"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"bgcolor":"#E5ECF6","radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","gridwidth":2,"linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white"},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","gridwidth":2,"linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white"},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","gridwidth":2,"linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white"}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"ternary":{"aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"bgcolor":"#E5ECF6","caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"title":{"x":0.05},"xaxis":{"automargin":true,"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","zerolinewidth":2},"yaxis":{"automargin":true,"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","zerolinewidth":2}}},"margin":{"t":30,"b":30,"l":30,"r":30},"legend":{"orientation":"h","yanchor":"bottom","y":1.02,"xanchor":"right","x":1,"traceorder":"normal"},"width":700,"height":350,"shapes":[{"line":{"color":"gray","dash":"dash"},"type":"line","x0":0,"x1":1,"xref":"paper","y0":1000.0,"y1":1000.0,"yref":"y"}]},                        {"responsive": true}                    )                };                            </script>        </div>
+</div>
+<br />
+<br /></div>
+<div class="section" id="estimating-the-value-bets">
+<h2>Estimating the value bets<a class="headerlink" href="#estimating-the-value-bets" title="Permalink to this headline">¶</a></h2>
+<p>We extract the fixtures data to estimate the value bets.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><a href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><a href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">X_fix</span></a></a><span class="p">,</span> <span class="n">_</span><span class="p">,</span> <a href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><a href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">Odds_fix</span></a></a> <span class="o">=</span> <a href="../../generated/sportsbet.datasets.SoccerDataLoader.html#sportsbet.datasets.SoccerDataLoader.extract_fixtures_data" title="sportsbet.datasets.SoccerDataLoader.extract_fixtures_data" class="sphx-glr-backref-module-sportsbet-datasets sphx-glr-backref-type-py-method"><a href="../../generated/sportsbet.datasets.SoccerDataLoader.html#sportsbet.datasets.SoccerDataLoader.extract_fixtures_data" title="sportsbet.datasets.SoccerDataLoader.extract_fixtures_data" class="sphx-glr-backref-module-sportsbet-datasets sphx-glr-backref-type-py-method"><span class="n">dataloader</span><span class="o">.</span><span class="n">extract_fixtures_data</span></a></a><span class="p">()</span>
+<a href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><a href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">X_fix</span></a></a> <span class="o">=</span> <a href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><a href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">X_fix</span></a></a><span class="p">[</span><a href="https://docs.python.org/3/library/stdtypes.html#list" title="builtins.list" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><a href="https://docs.python.org/3/library/stdtypes.html#list" title="builtins.list" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">num_features</span></a></a><span class="p">]</span>
+</pre></div>
+</div>
+<p>We can estimate the value bets by using the fitted classifier.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><a href="../../generated/sportsbet.evaluation.ClassifierBettor.html#sportsbet.evaluation.ClassifierBettor.bet" title="sportsbet.evaluation.ClassifierBettor.bet" class="sphx-glr-backref-module-sportsbet-evaluation sphx-glr-backref-type-py-method"><a href="../../generated/sportsbet.evaluation.ClassifierBettor.html#sportsbet.evaluation.ClassifierBettor.bet" title="sportsbet.evaluation.ClassifierBettor.bet" class="sphx-glr-backref-module-sportsbet-evaluation sphx-glr-backref-type-py-method"><span class="n">bettor</span><span class="o">.</span><span class="n">bet</span></a></a><span class="p">(</span><a href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><a href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">X_fix</span></a></a><span class="p">,</span> <a href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><a href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="pandas.core.frame.DataFrame" class="sphx-glr-backref-module-pandas-core-frame sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">Odds_fix</span></a></a><span class="p">)</span>
+</pre></div>
+</div>
+<div class="output_subarea output_html rendered_html output_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>market_maximum__away_win__odds</th>
+      <th>market_maximum__draw__odds</th>
+      <th>market_maximum__home_win__odds</th>
+      <th>market_maximum__over_2.5__odds</th>
+      <th>market_maximum__under_2.5__odds</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>False</td>
+      <td>True</td>
+      <td>True</td>
+      <td>False</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>True</td>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+<br />
+<br /><p class="sphx-glr-timing"><strong>Total running time of the script:</strong> ( 0 minutes  44.064 seconds)</p>
+<div class="sphx-glr-footer class sphx-glr-footer-example docutils container" id="sphx-glr-download-auto-examples-modelling-evaluate-classifier-bettor-py">
+<div class="sphx-glr-download sphx-glr-download-python docutils container">
+<a class="reference download internal" download="" href="../../_downloads/99fb210a5128050c77a7f4d972aaafb5/evaluate_classifier_bettor.py"><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">Python</span> <span class="pre">source</span> <span class="pre">code:</span> <span class="pre">evaluate_classifier_bettor.py</span></code></a></div>
+<div class="sphx-glr-download sphx-glr-download-jupyter docutils container">
+<a class="reference download internal" download="" href="../../_downloads/21e9d28fc9bbbcac0b12927d3d653df3/evaluate_classifier_bettor.ipynb"><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">Jupyter</span> <span class="pre">notebook:</span> <span class="pre">evaluate_classifier_bettor.ipynb</span></code></a></div>
+</div>
+<p class="sphx-glr-signature"><a class="reference external" href="https://sphinx-gallery.github.io">Gallery generated by Sphinx-Gallery</a></p>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../extract_fd_soccer_data.html" class="btn btn-neutral float-left" title="Football-Data soccer data" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../../additional_information/developers.html" class="btn btn-neutral float-right" title="Developers" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2019, Georgios Douzas.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
