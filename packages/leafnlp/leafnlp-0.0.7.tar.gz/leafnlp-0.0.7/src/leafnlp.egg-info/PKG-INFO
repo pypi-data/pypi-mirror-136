@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: leafnlp
+Version: 0.0.7
+Summary: Domain-specific Natural Language Processing with LeafNLP
+Home-page: https://leafnlp.org
+Author: LeafNLP Team
+Author-email: 
+License: UNKNOWN
+Description: # LeafNLP - A package for domain specific natural language processing
+        
+        This package is developed for NLP.
+        
+        Check this for unittest
+        https://nox.thea.codes/en/stable/tutorial.html#writing-the-configuration-file
+        
+Keywords: leafnlp NLP Deep Learning
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.8.10
+Description-Content-Type: text/markdown
