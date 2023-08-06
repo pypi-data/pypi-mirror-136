@@ -1,0 +1,8 @@
+picsi/__init__.py,sha256=sXLh7g3KC4QCFxcZGBTpG2scR7hmmBsMjq6LqRptkRg,22
+picsi/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+picsi/commands/install.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+picsi/config.toml,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+picsi/picsi.py,sha256=dw0jbT4jmeQVqynbClPxZoTGYp1cIO1SiKUNer8XDdI,1421
+picsi-0.0.1.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+picsi-0.0.1.dist-info/METADATA,sha256=KDDuMq7OKRDVdbCi52xstexTmXJJf_ba12sAUwJ2VkQ,6208
+picsi-0.0.1.dist-info/RECORD,,
