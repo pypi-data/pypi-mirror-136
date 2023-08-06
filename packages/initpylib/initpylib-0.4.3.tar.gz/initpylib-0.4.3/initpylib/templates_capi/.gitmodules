@@ -1,0 +1,6 @@
+[submodule ".vscode"]
+	path = .vscode
+	url = https://github.com/kirin123kirin/.vscode.git
+[submodule "cmake"]
+	path = cmake
+	url = https://github.com/kirin123kirin/cmake.git
