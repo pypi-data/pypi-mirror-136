@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+versioneer.py
+src/simpleSVGD/__init__.py
+src/simpleSVGD/_version.py
+src/simpleSVGD/helpers.py
+src/simpleSVGD/kernels.py
+src/simpleSVGD.egg-info/PKG-INFO
+src/simpleSVGD.egg-info/SOURCES.txt
+src/simpleSVGD.egg-info/dependency_links.txt
+src/simpleSVGD.egg-info/requires.txt
+src/simpleSVGD.egg-info/top_level.txt
