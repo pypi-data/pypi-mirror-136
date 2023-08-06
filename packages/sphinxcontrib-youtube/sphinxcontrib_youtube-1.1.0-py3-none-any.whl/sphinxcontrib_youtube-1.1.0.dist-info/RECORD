@@ -1,0 +1,11 @@
+sphinxcontrib_youtube-1.1.0-py3.9-nspkg.pth,sha256=bvCbvTDhKUCTNtrCbu6HVe8TsYC4G4-hRkXeHdEJ6t4,574
+sphinxcontrib/youtube/__init__.py,sha256=tda1mrOWuCiJuDmwQwYFJlZivO_7BCwOAJS1-pw-PEg,255
+sphinxcontrib/youtube/utils.py,sha256=GvCgckgytTKh6iIfHsKokZdqC6Tel2U1309tDnCR6AQ,4468
+sphinxcontrib/youtube/vimeo.py,sha256=KP2oepJaMkKU9lPLdCRy5HTD0SuMo7hU5x-qpcsZK5k,833
+sphinxcontrib/youtube/youtube.py,sha256=liu20LTbJMU2ukoMBRYwUstxFAeC3Fr72v1BeGlJvzQ,844
+sphinxcontrib_youtube-1.1.0.dist-info/LICENCE,sha256=YEFJ0RnHHZ5NEK4dUqN5TODoDhTAx-MMaSyW_SOQDRo,1552
+sphinxcontrib_youtube-1.1.0.dist-info/METADATA,sha256=T2MSiBh_AmBOz6AkeKqhgYeX1sInChXHke9pHoa88Rk,910
+sphinxcontrib_youtube-1.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+sphinxcontrib_youtube-1.1.0.dist-info/namespace_packages.txt,sha256=VJrV3_vaiKQVgVpR0I1iecxoO0drzGu-M0j40PVP2QQ,14
+sphinxcontrib_youtube-1.1.0.dist-info/top_level.txt,sha256=VJrV3_vaiKQVgVpR0I1iecxoO0drzGu-M0j40PVP2QQ,14
+sphinxcontrib_youtube-1.1.0.dist-info/RECORD,,
