@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: my-personal-dummy-lib
+Version: 0.0.2
+Summary: Some dummy library
+Home-page: UNKNOWN
+Author: Cheong Shiu Hong
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: numpy (>=1.19.2)
+Requires-Dist: PyObjC ; platform_system == "Darwin"
+Requires-Dist: PyGObject ; platform_system == "Linux"
+
+Long Description here
+
