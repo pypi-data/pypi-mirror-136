@@ -1,0 +1,9 @@
+README.md
+setup.py
+Authify/__init__.py
+Authify/client.py
+Authify.egg-info/PKG-INFO
+Authify.egg-info/SOURCES.txt
+Authify.egg-info/dependency_links.txt
+Authify.egg-info/requires.txt
+Authify.egg-info/top_level.txt
