@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: Rahimcalc
+Version: 0.3
+Summary: Student pass or fail package
+Home-page: UNKNOWN
+Author: Abdurrahim
+Author-email: abdurrahim251103@gmail.com
+License: MIT
+Keywords: calculator
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: License.txt
+Requires-Dist: pyflames
+Requires-Dist: flames
+
+UNKNOWN
+
