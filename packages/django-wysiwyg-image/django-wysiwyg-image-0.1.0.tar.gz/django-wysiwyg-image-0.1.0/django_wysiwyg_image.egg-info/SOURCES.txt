@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+django_wysiwyg_image.egg-info/PKG-INFO
+django_wysiwyg_image.egg-info/SOURCES.txt
+django_wysiwyg_image.egg-info/dependency_links.txt
+django_wysiwyg_image.egg-info/top_level.txt
+wysiwyg_img/__init__.py
+wysiwyg_img/admin.py
+wysiwyg_img/apps.py
+wysiwyg_img/models.py
+wysiwyg_img/migrations/0001_initial.py
+wysiwyg_img/migrations/__init__.py
