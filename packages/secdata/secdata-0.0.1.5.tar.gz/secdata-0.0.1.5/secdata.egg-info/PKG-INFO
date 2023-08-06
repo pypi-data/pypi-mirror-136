@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: secdata
+Version: 0.0.1.5
+Summary: Easily Download Financial Data reported to SEC
+Home-page: https://github.com/voulkon/secdata
+Author: Konstantinos Voulgaropoulos
+Author-email: voulkon93@gmail.com
+License: MIT
+Project-URL: Source Code, https://github.com/voulkon/secdata
+Keywords: financial,reporting,us-gaap,gaap,sec,api
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# secdata
+
+## About
+A module to easily **Download Financial Data** reported to the Securities and Exchange Commision (SEC).
+
+It deploys SEC's RESTful APIs, which delivers JSON-formatted data without requiring authentication or API keys.
+
+Currently included in the APIs are the submissions history by filer and the XBRL data from financial statements (forms 10-Q, 10-K,8-K, 20-F, 40-F, 6-K, and their variants).
+
+The JSON structures are updated throughout the day, in real time, as submissions are disseminated.
+
+More info about the APIs can be found [here](https://www.sec.gov/edgar/sec-api-documentation)
+
+## Installation
+
+Binary installers are available at [PyPI (Python Package Index)](https://pypi.org/project/secdata/) .
+
+```sh
+pip install secdata
+```
+
+For a manual installation, source code is [hosted on Github](https://github.com/voulkon/secdata).
+
+
+## Use
+...
+
+
