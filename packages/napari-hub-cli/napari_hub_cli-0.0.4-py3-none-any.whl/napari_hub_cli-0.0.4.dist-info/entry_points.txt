@@ -1,0 +1,3 @@
+[console_scripts]
+napari-hub-cli = napari_hub_cli.cli:main
+
