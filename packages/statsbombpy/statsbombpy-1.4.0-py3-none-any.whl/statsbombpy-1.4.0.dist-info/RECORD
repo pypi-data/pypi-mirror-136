@@ -1,0 +1,11 @@
+statsbombpy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+statsbombpy/api_client.py,sha256=2qi7GnZogc1xa-2YQ47K3AYmb3fzVdaLi9wuWSPgnOY,2768
+statsbombpy/config.py,sha256=eRFZMZ1dHWPhJgbycFvUL9WhJqO9awxzEa3uDU3XGN4,1023
+statsbombpy/entities.py,sha256=X71FgrbxMu62eRpA8tmwA645jIkLFUoWTUF2jZqFESU,964
+statsbombpy/helpers.py,sha256=2lXehiPVktm4_GyZV58EwyLOLek1mYgsu9PHQAqpqIc,1913
+statsbombpy/public.py,sha256=_KUDxckS9Tf6rEcBhMjMAq9aJmBr8Bgbnx3Y1Ju4IAg,1079
+statsbombpy/sb.py,sha256=4fhVdgf5-oFsxWhfeDjytHKBvWwDzcwdxLrOtnM7E6M,7865
+statsbombpy-1.4.0.dist-info/METADATA,sha256=anl7_hsuP47zuvP2k1d1DkkdbnWGePNpcByI48nUMoY,44790
+statsbombpy-1.4.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+statsbombpy-1.4.0.dist-info/top_level.txt,sha256=nzPQVngX6S6nHtJaw8YGHVR7NtDznKNA69B72lz7QWI,12
+statsbombpy-1.4.0.dist-info/RECORD,,
