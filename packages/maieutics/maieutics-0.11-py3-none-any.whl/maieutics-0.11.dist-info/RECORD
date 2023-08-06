@@ -1,0 +1,13 @@
+maieutics/Socrates.py,sha256=zOTMuQfRxgJjBTf2Zro-zhz0yQdKzOcGPX-T--074VQ,3330
+maieutics/__init__.py,sha256=7-Pcc9r7R6XwEmH3O-6uvs7vwk5866052PTrY3au9jE,30
+maieutics/albert copy.py,sha256=wrnxcGDY4oY-9NeNiV-x0mppLDD88nymSP6Gh2Oflmc,1633
+maieutics/albert.py,sha256=wrnxcGDY4oY-9NeNiV-x0mppLDD88nymSP6Gh2Oflmc,1633
+maieutics/albert_past.py,sha256=wrnxcGDY4oY-9NeNiV-x0mppLDD88nymSP6Gh2Oflmc,1633
+maieutics/bm25_retreiver.py,sha256=Uh5e6E2Zo_KQs9gqIVNWlnW3p4k_P6ga5VCW4I648GA,1874
+maieutics/roberta.py,sha256=bA_XVe-mxIvqmOyBh9SHltZvwOiX6cSsEwLq21w68gQ,1235
+maieutics/utils.py,sha256=FebRhkfP2HxSI2L4t9z5va9sUTnpgr-1scf9SHPU474,1997
+maieutics-0.11.dist-info/LICENSE,sha256=xKHP6DxFgrF2WjBrPhR_5HQIjSHGHE13DwnvdNSWvnw,1070
+maieutics-0.11.dist-info/METADATA,sha256=R958M_iqXs22yVvCIqeIWlUxCILXnNSQRgXIxQeLmog,409
+maieutics-0.11.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+maieutics-0.11.dist-info/top_level.txt,sha256=GmXWm7AEtB7sR1Q16gv3Oo9RWR2ffoK2UXkphJwCdhg,10
+maieutics-0.11.dist-info/RECORD,,
