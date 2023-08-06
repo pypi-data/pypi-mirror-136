@@ -1,0 +1,123 @@
+Metadata-Version: 2.1
+Name: quadproj
+Version: 0.0.3
+Summary: A package to project onto quadratic hypersurface.
+Home-page: https://gitlab.com/loicvh/quadproj
+Author: Loïc Van Hoorebeeck
+Author-email: loic_quadproj@loicvh.eu
+License: UNKNOWN
+Project-URL: Bug Tracker, https://gitlab.com/loicvh/quadprojc/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# quadproj
+
+A simple library to project a point onto a quadratic surface, or *quadric*.
+
+## How to use quadproj?
+
+The class ``Quadric`` from the `quadrics` module allows to create a *non-empty*, *non-cylindrical*, and *central* quadric.
+
+We can use the `project` function from the `project` module to find (one of) the projection
+of some point onto the quadric.
+
+```python
+from quadproj import quadrics
+from quadproj.project import project
+
+import matplotlib.pyplot as plt
+import numpy as np
+
+
+# creating random data
+dim = 3
+_A = np.random.rand(dim, dim)
+A = _A + _A.T  # make sure that A is positive definite
+b = np.random.rand(dim)
+c = -1
+
+
+param = {'A': A, 'b': b, 'c': c}
+Q = quadrics.Quadric(param)
+
+x0 = np.random.rand(dim)
+x_project = project(Q, x0)
+
+if dim <= 3:
+    fig, ax = Q.plot()
+    plt.show()
+
+```
+
+## Supported quadrics
+
+### Ellipsoid
+```
+show = True
+dim = 3
+A = np.eye(dim)
+A[0, 0] = 2
+A[1, 1] = 0.5
+
+b = np.zeros(dim)
+c = -1
+param = {'A': A, 'b': b, 'c': c}
+Q = quadrics.Quadric(param)
+Q.plot(show=show)
+```
+
+To ease visualisation, the function `get_gif` lets you write gif.
+
+```
+Q.get_gif(step=2, gif_path=Q.type+'.gif')
+```
+
+Remark that the sphere is a particular case of the ellipsoid with three equal eigenvalues.
+
+![Ellipsoid](output/ellipsoid.gif)
+
+### One-sheet hyperboloid
+
+A one-sheet hyperboloid is a 3D quadratic surface with two positive eigenvalues and one negative.
+
+```
+A[0, 0] = -4
+param = {'A': A, 'b': b, 'c': c}
+Q = quadrics.Quadric(param)
+Q.plot(show=show)
+Q.get_gif(step=2, gif_path=Q.type+'.gif')
+```
+
+![One-sheet hyperboloid](output/one_sheet_hyperboloid.gif)
+
+### Two-sheet hyperboloid
+
+A Two-sheet hyperboloid is a 3D quadratic surface with two positive eigenvalues and one negative.
+
+```
+A[0, 0] = 4
+A[1, 1] = -2
+A[2, 2] = -1
+
+b = np.random.rand(dim)  # it will rotate the quadric
+
+param = {'A': A, 'b': b, 'c': c}
+
+
+Q = quadrics.Quadric(param)
+Q.plot(show=show)
+Q.get_gif(step=2, gif_path=Q.type+'.gif')
+```
+
+![two-sheet hyperboloid](output/two_sheets_hyperboloid.gif)
+
+## Dependencies
+
+See [requirements.txt](./requirements.txt).
+
+
