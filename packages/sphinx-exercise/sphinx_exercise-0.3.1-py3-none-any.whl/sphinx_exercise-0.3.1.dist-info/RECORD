@@ -1,0 +1,12 @@
+sphinx_exercise/__init__.py,sha256=0NNwd3HKs6CsN7jSg1nP5Pc1Lg1l50dXSYsS8nsVjRU,5902
+sphinx_exercise/directive.py,sha256=Idk9CDg8TVgpoaB0l_CSo_YzR_-4bhrDFU3p2P70h6o,8423
+sphinx_exercise/latex.py,sha256=psJBbxT53LTwTAA_-NmbZ06ibhbEv1nv8SS54apBNCs,312
+sphinx_exercise/nodes.py,sha256=pP_lVmqX6K6IySkZmJihcHGZ15YOIFAmVGBmm5C4E7U,4589
+sphinx_exercise/post_transforms.py,sha256=3M672OEHbRG2SRt5CQ2LdrfRIto972OqW-IZkHfe7VQ,9609
+sphinx_exercise/utils.py,sha256=EKwM40ZTQhaMm7eW0YKP9BzVBSUukGgzr58JLa5O1Hg,1059
+sphinx_exercise/assets/html/exercise.css,sha256=KWaf-DQaKcQx7AkYfuIzhTvsqvBRpPsTdDm2wlX9FuI,980
+sphinx_exercise-0.3.1.dist-info/LICENSE,sha256=SiJg1uLND1oVGh6G2_59PtVSseK-q_mUHBulxJy85IQ,1078
+sphinx_exercise-0.3.1.dist-info/METADATA,sha256=RfkrM9IPAiPVURJz5ap8w7jmdsEgqtnlK-29iRLp-K8,2922
+sphinx_exercise-0.3.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+sphinx_exercise-0.3.1.dist-info/top_level.txt,sha256=QG7WY44n7upV62w3YFX6sXN0quX1T0QgPotR49W3Uvo,16
+sphinx_exercise-0.3.1.dist-info/RECORD,,
