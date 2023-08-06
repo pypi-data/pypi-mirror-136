@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+Maxar_OGC.egg-info/PKG-INFO
+Maxar_OGC.egg-info/SOURCES.txt
+Maxar_OGC.egg-info/dependency_links.txt
+Maxar_OGC.egg-info/requires.txt
+Maxar_OGC.egg-info/top_level.txt
