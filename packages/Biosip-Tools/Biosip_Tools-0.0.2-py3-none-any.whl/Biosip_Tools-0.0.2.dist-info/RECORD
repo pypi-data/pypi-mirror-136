@@ -1,0 +1,9 @@
+biosip_tools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+biosip_tools/eeg/__init__.py,sha256=GPt7BdldJ-xomtf1q3RHcw0VD4y0omu_n8wTB7r6o3o,156
+biosip_tools/eeg/data_load.py,sha256=UjOUn7i9bs1A7sApR78EisPcnVZQ6_-eB6-DJ1F4fWc,318
+biosip_tools/eeg/preprocessing.py,sha256=K2KRvRV5nb5gwltaFhOMPU3UW1bn38oH1O_stFEwOs8,823
+biosip_tools/eeg/timeseries.py,sha256=_rQOfHQ_DxMyAEDC95XEq4yfuwn0dk-P-CAeToXobvA,1464
+Biosip_Tools-0.0.2.dist-info/METADATA,sha256=Yj76fy7dwLLQVxgYphfFgqA5HVY0TYKxIFcmjLAu3s8,423
+Biosip_Tools-0.0.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+Biosip_Tools-0.0.2.dist-info/top_level.txt,sha256=qysMQFKGaa1iq8sWP5yhCQRy3POG8waNiiwzbJXAvPE,13
+Biosip_Tools-0.0.2.dist-info/RECORD,,
