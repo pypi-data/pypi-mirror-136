@@ -1,0 +1,4 @@
+freemocap
+freemocap_blender_addon
+jon_scratch
+src
