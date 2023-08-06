@@ -1,0 +1,7 @@
+setuptools>=36.2
+plone.restapi
+plone.app.caching
+plone.app.iterate
+plone.app.upgrade
+Products.CMFPlacefulWorkflow
+Products.CMFPlone
