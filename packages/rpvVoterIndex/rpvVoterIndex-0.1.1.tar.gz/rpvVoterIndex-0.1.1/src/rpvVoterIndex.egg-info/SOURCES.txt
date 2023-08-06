@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/rpvVoterIndex/__init__.py
+src/rpvVoterIndex/rpvVoterIndex.py
+src/rpvVoterIndex.egg-info/PKG-INFO
+src/rpvVoterIndex.egg-info/SOURCES.txt
+src/rpvVoterIndex.egg-info/dependency_links.txt
+src/rpvVoterIndex.egg-info/requires.txt
+src/rpvVoterIndex.egg-info/top_level.txt
