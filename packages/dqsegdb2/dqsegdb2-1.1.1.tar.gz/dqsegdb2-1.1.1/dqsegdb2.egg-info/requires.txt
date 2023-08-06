@@ -1,0 +1,2 @@
+igwn-auth-utils[requests]
+ligo-segments
