@@ -1,0 +1,2 @@
+class TempMail(object):
+    pass
