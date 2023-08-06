@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: django-oscar-newsletter
+Version: 0.8.13
+Summary: Django app for managing multiple mass-mailing lists with both plaintext as well as HTML templates (and pluggable WYSIWYG editors for messages), images and a smart queueing system all right from the admin interface.
+Home-page: https://github.com/snake-soft/django-oscar-newsletter
+Author: Snake-Soft
+Author-email: info@snake-soft.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 6 - Mature
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 2.2
+Classifier: Framework :: Django :: 3.1
+Classifier: Framework :: Django :: 3.2
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Utilities
+License-File: LICENSE.txt
+License-File: AUTHORS.rst
+
+UNKNOWN
+
