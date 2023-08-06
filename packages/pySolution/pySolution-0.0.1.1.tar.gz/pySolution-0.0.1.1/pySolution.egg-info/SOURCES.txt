@@ -1,0 +1,8 @@
+setup.py
+pySolution/__init__.py
+pySolution/solution.py
+pySolution.egg-info/PKG-INFO
+pySolution.egg-info/SOURCES.txt
+pySolution.egg-info/dependency_links.txt
+pySolution.egg-info/requires.txt
+pySolution.egg-info/top_level.txt
