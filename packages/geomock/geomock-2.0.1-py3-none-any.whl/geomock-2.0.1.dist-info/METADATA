@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: geomock
+Version: 2.0.1
+Summary: Functions for producing mock geojson data
+Home-page: https://www.github.com/prio-data/geomock
+License: MIT
+Author: peder2911
+Author-email: pglandsverk@gmail.com
+Requires-Python: >=3.8,<=3.10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: PyMonad (>=2.4.0,<3.0.0)
+Requires-Dist: Shapely (>=1.7.1,<2.0.0)
+Requires-Dist: click (>=8.0.1,<9.0.0)
+Requires-Dist: numpy (>=1.21.2,<2.0.0)
+Requires-Dist: shapely-geojson (>=0.0.1,<0.0.2)
+Requires-Dist: toolz (>=0.11.1,<0.12.0)
+Description-Content-Type: text/markdown
+
+
+# Geomock
+
+Library and CLI for generating mock (random) geo[metric|graphic] data. Speaks GeoJSON.
+
