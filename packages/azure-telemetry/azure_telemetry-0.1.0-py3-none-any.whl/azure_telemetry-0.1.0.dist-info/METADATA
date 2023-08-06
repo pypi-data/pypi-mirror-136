@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: azure-telemetry
+Version: 0.1.0
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: RajamannarAanjaram
+Author-email: rajamannaraanjaram@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.8,<4.0
+License-File: LICENSE
+Requires-Dist: azure-mgmt-datalake-analytics (<0.7.0,>=0.6.0)
+Requires-Dist: azure-mgmt-monitor (<4.0.0,>=3.0.0)
+Requires-Dist: msrestazure (<0.7.0,>=0.6.4)
+Requires-Dist: opencensus-ext-azure (<2.0.0,>=1.1.0)
+Requires-Dist: opencensus-ext-requests (<0.8.0,>=0.7.6)
+
+This release can mount an Azure storage account of any type into Databricks using Keyvault and also extends in logging the application metrics.
+
+

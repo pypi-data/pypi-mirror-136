@@ -1,0 +1,8 @@
+azure_telemetry/__init__.py,sha256=IMjkMO3twhQzluVTo8Z6rE7Eg-9U79_LGKMcsWLKBkY,22
+azure_telemetry/logger.py,sha256=aT7vWq7BCpEGMwrAj7WbXSr5jteItWMM-J7XLkPaSCY,1600
+azure_telemetry/storage.py,sha256=6yt0ea4ZMPvZnASE0HBRh0bGkB5ooEHFzC3BkPof8C8,1969
+azure_telemetry-0.1.0.dist-info/LICENSE,sha256=ztZzPP2houPF_HzvqgtGB3A8VbJD8OfxslQYmQi54Kk,1076
+azure_telemetry-0.1.0.dist-info/METADATA,sha256=94IaIcfEce2JE3HRNr43zrcsAgQmlrWRiET8DFkwEBE,663
+azure_telemetry-0.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+azure_telemetry-0.1.0.dist-info/top_level.txt,sha256=eMQJerHEzzHAjbYHoSLyuP93A_T5aTQMWUbkVcS9TVQ,16
+azure_telemetry-0.1.0.dist-info/RECORD,,
