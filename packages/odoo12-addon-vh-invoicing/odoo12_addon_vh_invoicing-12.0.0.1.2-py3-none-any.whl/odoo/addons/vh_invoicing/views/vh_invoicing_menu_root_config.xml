@@ -1,0 +1,5 @@
+<odoo>
+  <data>
+    <menuitem name="Invoicing Config" id="vh_invoicing.menu_root_config" parent="vh.menu_root_config" />
+  </data>
+</odoo>

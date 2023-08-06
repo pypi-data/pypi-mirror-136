@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_vh_invoicing_order,vh.invoicing.order,model_vh_invoicing_order,,1,1,1,1
+access_vh_invoicing_order_item,vh.invoicing.order.item,model_vh_invoicing_order_item,,1,1,1,1
+access_vh_invoicing_contact_group,vh.invoicing.contact.group,model_vh_invoicing_contact_group,,1,1,1,1

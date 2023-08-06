@@ -1,0 +1,45 @@
+<odoo>
+  <data>
+
+    <record id="view_vh_invoicing_contact_group_window" model="ir.actions.act_window">
+      <field name="name">Invoicing contact groups</field>
+      <field name="res_model">vh.invoicing.contact.group</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <record id="view_vh_invoicing_contact_group_tree" model="ir.ui.view">
+      <field name="name">vh.invoicing.contact.group.tree</field>
+      <field name="model">vh.invoicing.contact.group</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+        </tree>
+      </field>
+    </record>
+
+    <record id="view_vh_invoicing_contact_group_form" model="ir.ui.view">
+      <field name="name">vh.invoicing.contact.group.form</field>
+      <field name="model">vh.invoicing.contact.group</field>
+      <field name="type">form</field>
+      <field name="arch" type="xml">
+        <form>
+          <sheet>
+            <notebook>
+              <page string="General">
+                <group>
+                  <field name="name" required="True"/>
+                  <field name="partner_mids"
+                    required="True"
+                    domain="[('type','in',['house_contact','inhabitant_contact'])]"/>
+                </group>
+              </page>
+            </notebook>
+          </sheet>
+        </form>
+      </field>
+    </record>
+
+    <menuitem name="Invoicing contact groups" id="vh.invoicing_contact_group_menu" 
+      parent="vh_invoicing.menu_root_config" action="view_vh_invoicing_contact_group_window" sequence="1"/>
+  </data>
+</odoo>

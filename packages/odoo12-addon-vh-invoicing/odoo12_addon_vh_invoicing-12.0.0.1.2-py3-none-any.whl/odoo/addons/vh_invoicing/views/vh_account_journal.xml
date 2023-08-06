@@ -1,0 +1,20 @@
+<odoo>
+  <data>
+
+    <record id="view_vh_account_journal_form" model="ir.ui.view">
+      <field name="name">vh.account.journal.form</field>
+      <field name="model">account.journal</field>
+      <field name="type">form</field>
+      <field name="inherit_id" ref="account.view_account_journal_form"/>
+      <field name="arch" type="xml">
+        <xpath
+          expr="//field[@name='refund_sequence']"
+          position="after"
+        >
+          <field name="is_vh_journal"/>
+        </xpath>
+      </field>
+    </record>
+
+  </data>
+</odoo>

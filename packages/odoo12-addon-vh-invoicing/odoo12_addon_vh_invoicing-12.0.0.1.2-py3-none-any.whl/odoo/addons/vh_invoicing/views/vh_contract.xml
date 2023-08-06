@@ -1,0 +1,13 @@
+<odoo>
+  <data>
+
+    <record id="view_vh_contract_window" model="ir.actions.act_window">
+      <field name="name">Contracts</field>
+      <field name="res_model">contract.contract</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem name="Contracts" id="vh.contract_menu" 
+      parent="vh.menu_root" action="view_vh_contract_window" sequence="2"/>
+  </data>
+</odoo>

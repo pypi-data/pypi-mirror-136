@@ -1,0 +1,50 @@
+<odoo>
+  <data>
+
+    <record id="view_vh_invoicing_order_item_window" model="ir.actions.act_window">
+      <field name="name">Invoicing order items</field>
+      <field name="res_model">vh.invoicing.order.item</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <record id="view_vh_invoicing_order_item_tree" model="ir.ui.view">
+      <field name="name">vh.invoicing.order.item.tree</field>
+      <field name="model">vh.invoicing.order.item</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="partner_id"/>
+          <field name="order_id"/>
+          <field name="total_invoiced"/>
+        </tree>
+      </field>
+    </record>
+
+    <record id="view_vh_invoicing_order_item_form" model="ir.ui.view">
+      <field name="name">vh.invoicing.order.item.form</field>
+      <field name="model">vh.invoicing.order.item</field>
+      <field name="type">form</field>
+      <field name="arch" type="xml">
+        <form>
+          <sheet>
+            <notebook>
+              <page string="General">
+                <group>
+                  <field name="name"
+                    attrs="{'invisible': [('id', '=', False)], 'readonly': [('id', '!=', False)]}"/>
+                  <field name="total_invoiced"/>
+                  <field name="partner_id" required="True"/>
+                  <field name="order_id" required="True"/>
+                  <field name="invoice_ids" required="True"/>
+                </group>
+              </page>
+            </notebook>
+          </sheet>
+        </form>
+      </field>
+    </record>
+
+    <menuitem name="Invoicing order items" id="vh.invoicing_order_item_menu" 
+      parent="vh.menu_root" action="view_vh_invoicing_order_item_window" sequence="4"/>
+  </data>
+</odoo>
