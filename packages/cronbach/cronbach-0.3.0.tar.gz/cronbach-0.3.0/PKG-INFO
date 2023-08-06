@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: cronbach
+Version: 0.3.0
+Summary: Compute Cronbach's alpha statistic
+Home-page: https://github.com/datagazing/cronbach
+Author: Brendan Strejcek
+Author-email: brendan@datagazing.com
