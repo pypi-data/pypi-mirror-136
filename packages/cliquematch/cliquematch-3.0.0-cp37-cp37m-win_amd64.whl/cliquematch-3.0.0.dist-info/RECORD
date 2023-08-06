@@ -1,0 +1,15 @@
+cliquematch/__init__.py,sha256=hD2FVpz0IeKTzfGG10lHiSitkop4K97e86Q_gEUygnQ,95
+cliquematch/core.cp37-win_amd64.pyd,sha256=af952WKt5CVyLfZBxfJCv9yh-unnOtibkXE1_JVmycU,545792
+cliquematch/wrappers/__init__.py,sha256=1fBRj_zUiSwjXdpPK4pBnCkxSXzZ1LNY1am1zhVxYyY,257
+cliquematch/wrappers/_gen_graph.py,sha256=rJS0gCjD1RAEOVhR-23kZRRwiq3e5_XMr1MuiNck_xs,5933
+cliquematch/wrappers/a2agraph.py,sha256=CJyp9jY7i5eZWh9j_6N16YskNQozJk4tpcGhNKDnMYA,1623
+cliquematch/wrappers/a2lgraph.py,sha256=smew0rPQ1pNhYOrEYrTVDEpp85Jk5lWVgIb8MiqoPC4,1962
+cliquematch/wrappers/aligngraph.py,sha256=2tH_hXIi5ncNgy0kJ2LlJiwF72x6nt0EzZTYP4_NyNY,7993
+cliquematch/wrappers/isograph.py,sha256=GFdaPW9URizBU-rIowprKl_-sEe1ENeZh57fW0_VXZg,4617
+cliquematch/wrappers/l2agraph.py,sha256=GMD0ZpTx3do4NIv4cno8ugWlYQjJ1PRR9ogGikkM2C0,1866
+cliquematch/wrappers/l2lgraph.py,sha256=6uo2m0lMONMoFwT_L16Af9PQTFOM232Xjse7bK77N58,1797
+cliquematch-3.0.0.dist-info/LICENSE,sha256=tgTLCBHEnHjUhy1CG4MZPZdcxXXfuo4KYR3ZKu6IXxs,1103
+cliquematch-3.0.0.dist-info/METADATA,sha256=l26t4D8uGj1Assaeu-1v4kO_FvMkvYYC-s6yG8mvoOY,3269
+cliquematch-3.0.0.dist-info/WHEEL,sha256=OmDKD3JmZjhMu_YdpkiJDfFL1rf8n9nexhWCGhSBGVE,101
+cliquematch-3.0.0.dist-info/top_level.txt,sha256=UvVog10rRXIx6RkKtSKHcCGow4jdYkI5lRauvQo1eDI,12
+cliquematch-3.0.0.dist-info/RECORD,,
