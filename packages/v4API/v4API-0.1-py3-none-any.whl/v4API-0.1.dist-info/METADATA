@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: v4API
+Version: 0.1
+Summary: v4yve API for project [v5]
+Home-page: http://vk.com/v4yve_corp
+Author: v4yve
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: requests
+Requires-Dist: uuid
+
+See http://b926723z.beget.tech/api/doc
+
