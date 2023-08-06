@@ -1,0 +1,4 @@
+include README.md
+include LICENSE
+include src/dnaio/*.c
+include src/dnaio/_version.py
