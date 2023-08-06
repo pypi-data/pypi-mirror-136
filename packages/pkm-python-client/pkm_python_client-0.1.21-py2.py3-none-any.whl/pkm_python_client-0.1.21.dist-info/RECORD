@@ -1,0 +1,5 @@
+pkm_python_client/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pkm_python_client/pkm_client.py,sha256=KP0Tjz2VjGw0ETa2TB-vCckelan7UFki4u5pmmcbFe8,8643
+pkm_python_client-0.1.21.dist-info/WHEEL,sha256=2SyTS6-hWVbCVhxpPo1j5f9gwaWw-hVIJs0s_cC8MXM,87
+pkm_python_client-0.1.21.dist-info/METADATA,sha256=comDXAYQPf6OtkMThd2bEBY3dQb6naayE_v5bR_6wz4,610
+pkm_python_client-0.1.21.dist-info/RECORD,,
