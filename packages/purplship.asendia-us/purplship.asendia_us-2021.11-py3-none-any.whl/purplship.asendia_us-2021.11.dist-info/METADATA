@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: purplship.asendia-us
+Version: 2021.11
+Summary: Purplship - Asendia US Shipping Extension
+Home-page: https://next.purplship.com/docs/guides/sdk
+License: Apache-2.0
+Author: Purplship
+Author-email: hello@purplship.com
+Requires-Python: >=3.7,<4.0
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: carrier.asendia_us
+Requires-Dist: purplship
+Project-URL: Repository, https://github.com/purplship/purplship
+Description-Content-Type: text/markdown
+
+# purplship.asendia_us
+
+This package is a Asendia US extension of the [purplship](https://pypi.org/project/purplship) multi carrier shipping SDK.
+
+## Requirements
+
+`Python 3.7+`
+
+## Installation
+
+```bash
+pip install purplship.asendia_us
+```
+
+## Usage
+
+```python
+import purplship
+from purplship.mappers.asendia_us.settings import Settings
+
+
+# Initialize a carrier gateway
+canadapost = purplship.gateway["asendia_us"].create(
+    Settings(
+        ...
+    )
+)
+```
+
+Check the [Purplship Mutli-carrier SDK docs](https://sdk.purplship.com) for Shipping API requests
+
