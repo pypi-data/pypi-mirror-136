@@ -1,0 +1,9 @@
+README.md
+setup.py
+wsq_parser/Parser.py
+wsq_parser/__init__.py
+wsq_parser.egg-info/PKG-INFO
+wsq_parser.egg-info/SOURCES.txt
+wsq_parser.egg-info/dependency_links.txt
+wsq_parser.egg-info/requires.txt
+wsq_parser.egg-info/top_level.txt
