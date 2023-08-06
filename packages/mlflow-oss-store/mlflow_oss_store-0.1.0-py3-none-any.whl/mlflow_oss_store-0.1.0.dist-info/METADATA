@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: mlflow-oss-store
+Version: 0.1.0
+Summary: MLflow artifact store plugin for AliCloud OSS
+Home-page: https://github.com/raptium/mlflow-oss-store.git
+License: MIT
+Keywords: mlflow,oss
+Author: Guan Hao
+Author-email: raptium@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Plugins
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: oss2 (>=2.15.0,<3.0.0)
+Project-URL: Repository, https://github.com/raptium/mlflow-oss-store.git

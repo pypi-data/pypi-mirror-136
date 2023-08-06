@@ -1,0 +1,3 @@
+[mlflow.artifact_repository]
+oss=mlflow_oss.artifact_repo:OSSArtifactRepository
+
