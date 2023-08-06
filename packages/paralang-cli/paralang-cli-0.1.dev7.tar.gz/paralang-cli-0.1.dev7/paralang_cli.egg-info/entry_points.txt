@@ -1,0 +1,4 @@
+[console_scripts]
+para = paralang_cli.scripts.para:cli_run
+paraproj = paralang_cli.scripts.paraproj:cli_run
+
