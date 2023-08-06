@@ -1,0 +1,105 @@
+Metadata-Version: 2.1
+Name: openmc-source-plotter
+Version: 0.1.0
+Summary: Extract data and create plots of OpenMC particle sources
+Home-page: https://github.com/fusion-energy/openmc_source_plotter
+Author: The Fusion Energy Development Team
+Author-email: mail@jshimwell.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Natural Language :: English
+Classifier: Topic :: Scientific/Engineering
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+A Python package for plotting the locations, directions or energy distributions of OpenMC source particles
+
+# Installation
+
+```bash
+pip install openmc_source_plotter
+```
+
+temporary fix
+For fixed source sources it is currently necessary to use openmc version 0.11
+and also to point the ```openmc_exec``` path to the openmc executable
+This can be installed with:
+```bash
+conda install -c conda-forge openmc=0.11
+```
+
+
+# Features
+
+The package provides functions to:
+
+- create the initial_source.h5 for a give openmc.source
+- extract the locations, directions and energy of particles
+- provides convenient plotting functions for
+    - direction
+    - energy
+    - location
+
+# Example plots
+
+Plot of energy distribution of the source
+
+```python
+import openmc_source_plotter as osp
+import openmc
+import numpy as np
+
+# initialises a new source object
+my_source = openmc.Source()
+
+# sets the energy distribution to a Muir distribution neutrons for DT fusion neutrons
+my_source.energy = openmc.stats.Muir(e0=14080000.0, m_rat=5.0, kt=20000.0)
+
+# plots the particle energy distribution
+plot = osp.plot_source_energy(
+    source=my_source,
+    number_of_particles=2000,
+    energy_bins=np.linspace(0, 20e6, 100),
+    openmc_exec="/home/jshim/miniconda3/envs/openmc_0_11_0/bin/openmc",
+)
+
+plot.show()
+```
+![openmc particle source energy plot](https://user-images.githubusercontent.com/8583900/143615694-a3578115-f8a2-4971-bf26-458177b4f113.png)
+
+
+```python
+import openmc_source_plotter as osp
+import openmc
+
+# initializes a new source object
+my_source = openmc.Source()
+
+# sets the direction to isotropic
+my_source.angle = openmc.stats.Isotropic()
+
+# plots the particle energy distribution
+plot = osp.plot_source_direction(
+    source=my_source,
+    number_of_particles=100,
+    openmc_exec="/home/jshim/miniconda3/envs/openmc_0_11_0/bin/openmc",
+)
+
+plot.show()
+```
+![openmc particle source direction plot](https://user-images.githubusercontent.com/8583900/143615706-3b3a8467-0233-42d6-a66c-d536c80a01d8.png)
+
+# Usage
+
+See the [examples folder](https://github.com/fusion-energy/openmc_source_plotter/tree/main/examples) for example usage scripts.
+
+
