@@ -1,0 +1,13 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+dbugging/__init__.py
+dbugging/decorators.py
+dbugging.egg-info/PKG-INFO
+dbugging.egg-info/SOURCES.txt
+dbugging.egg-info/dependency_links.txt
+dbugging.egg-info/entry_points.txt
+dbugging.egg-info/not-zip-safe
+dbugging.egg-info/top_level.txt
+docs/dbugging.1.md
