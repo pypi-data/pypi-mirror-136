@@ -1,0 +1,7 @@
+opentelemetry/instrumentation/asgi/__init__.py,sha256=JaL83eqx3fGoSgbCX8fgnDBRfTpJ4OcNh19bLg3d65w,15054
+opentelemetry/instrumentation/asgi/package.py,sha256=SwwjTUSz4IEojzgysgRV4QApg-etCqKBeveMhROLPgw,621
+opentelemetry/instrumentation/asgi/version.py,sha256=1f7ubneMYaoTFYX6Z5NBxzMireXuBO3G3OlLDgvvPmI,608
+opentelemetry_instrumentation_asgi-0.28b0.dist-info/METADATA,sha256=59Xq987xVktRlqc1BKsrM49V2bDuXjPuzph0pDXwR3o,2090
+opentelemetry_instrumentation_asgi-0.28b0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+opentelemetry_instrumentation_asgi-0.28b0.dist-info/top_level.txt,sha256=5p97iTMneNm1LAKDalzEVpYhvPZsaqJZzdLuD_upSaQ,14
+opentelemetry_instrumentation_asgi-0.28b0.dist-info/RECORD,,
