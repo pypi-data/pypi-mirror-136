@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: redwoodresearchwidgets
+Version: 0.0.0
+Summary: A library for React widgets in Jupyter
+Home-page: https://redwoodresearch.org
+Author: Peter Schmidt-Nielsen
+Author-email: schmditnielsenpeter@gmail.com
+License: LICENSE.txt
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: CC0 1.0 Universal (CC0 1.0) Public Domain Dedication
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# Redwood Research's Widgets
+
+React Widgets in Jupyter notebooks
+
+```
+import redwoodresearchwidgets
+redwoodresearchwidgets.init()
+```
+
+
+
