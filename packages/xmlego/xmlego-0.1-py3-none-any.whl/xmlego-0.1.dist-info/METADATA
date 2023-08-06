@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: xmlego
+Version: 0.1
+Summary: A module to bundle xml using xpath
+Home-page: https://github.com/divad1196/XMLego
+Author: Gallay David
+Author-email: davidtennis96@hotmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: igraph
+Requires-Dist: lxml
+
+XMLego
+======
+
+-  inspired by Odoo templating
+-  XML + Lego: Build template with extensions
+
