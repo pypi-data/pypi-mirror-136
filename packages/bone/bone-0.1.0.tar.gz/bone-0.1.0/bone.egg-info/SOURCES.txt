@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+setup.py
+bone/__init__.py
+bone.egg-info/PKG-INFO
+bone.egg-info/SOURCES.txt
+bone.egg-info/dependency_links.txt
+bone.egg-info/top_level.txt
