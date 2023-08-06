@@ -1,0 +1,14 @@
+fsos/__init__.py,sha256=PidfuWs08I_DML0KBKwU-VWVhvDVHnfaYN8GwKMZSOA,284
+fsos/bucket_manager.py,sha256=ulnt2MyzXLgTXqnrEns5GmDGXUeFy3ELX7UDVwmQm_c,2366
+fsos/bucket_manager_test.py,sha256=sGQmDPhXHa0MmPzvtCqOFiwNsgrFpKiKpvUArwjbs60,2769
+fsos/deco.py,sha256=DxGryS6lbAK3kzBuxXoOVkrzjO5YJNKzAWN7ty4VFfQ,1988
+fsos/deco_test.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fsos/fs_manager.py,sha256=48TE0y6nR-RP20xVOSMJnDMno8d_5UqOEwXm5OOWwQg,1553
+fsos/fs_manager_test.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fsos/os_manager.py,sha256=ttncs-5Envl2EerNt9k05yRje-2ZH8rH57ZPHAIPsm0,2921
+fsos/utils.py,sha256=xWxaB-SbOBWaNpS50OmFCU9-EcLfusd3WsYaQiK98mo,80
+fsos/utils_test.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fsos-0.0.1.dist-info/METADATA,sha256=RUM2J2fgicSqlyG7-Kv7a8w43MdTxy6Qlx-OLSegC78,385
+fsos-0.0.1.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+fsos-0.0.1.dist-info/top_level.txt,sha256=MQdLc4Wzmmdbot0lPifQb9a0fcprx88RM5hr28Z88v0,5
+fsos-0.0.1.dist-info/RECORD,,
