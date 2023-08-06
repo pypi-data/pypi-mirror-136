@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: nginx-generator
+Version: 0.1.1
+Summary: Generate nginx configs interactivly
+Home-page: http://github.com/Oliwerix/nginx-generator
+Author: Oliver Wagner
+Author-email: oliwerix@oliwerix.com
+License: AGPLv3.0
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Requires-Dist: validators
+Requires-Dist: click
+
+UNKNOWN
+
