@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: mdocfile
+Version: 0.0.2
+Summary: parse serialEM mdoc files in Python
+Home-page: https://github.com/alisterburt/mdocfile
+Author: Alister Burt
+Author-email: alisterburt@gmail.com
+License: BSD license
+Project-URL: Source Code, https://github.com/alisterburt/mdocfile
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Provides-Extra: testing
+Provides-Extra: dev
+License-File: LICENSE
+
+# mdocfile
+
+[![License](https://img.shields.io/pypi/l/mdocfile.svg?color=green)](https://github.com/alisterburt/mdocfile/raw/main/LICENSE)
+[![PyPI](https://img.shields.io/pypi/v/mdocfile.svg?color=green)](https://pypi.org/project/mdocfile)
+[![Python Version](https://img.shields.io/pypi/pyversions/mdocfile.svg?color=green)](https://python.org)
+[![CI](https://github.com/alisterburt/mdocfile/actions/workflows/ci.yml/badge.svg)](https://github.com/alisterburt/mdocfile/actions/workflows/ci.yml)
+[![codecov](https://codecov.io/gh/alisterburt/mdocfile/branch/main/graph/badge.svg)](https://codecov.io/gh/alisterburt/mdocfile)
+
+parse serialEM mdoc files in Python
+
+
