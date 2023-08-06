@@ -1,0 +1,11 @@
+crmeta/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+crmeta/admin.py,sha256=suMo4x8I3JBxAFBVIdE-5qnqZ6JAZV0FESABHOSc-vg,63
+crmeta/apps.py,sha256=j_ba4FsXErf7eQsw6t1HAkx7bIAQYXc2k7fLcr5RveM,144
+crmeta/models.py,sha256=Vjc0p2XbAPgE6HyTF6vll98A4eDhA5AvaQqsc4kQ9AQ,57
+crmeta/tests.py,sha256=ElylsHrZ9DBzfJUT9ujgjF_g9WkiMcgztqp9X9sx2j8,124
+crmeta/views.py,sha256=xc1IQHrsij7j33TUbo-_oewy3vs03pw_etpBWaMYJl0,63
+crmeta-0.0.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+crmeta-0.0.1.dist-info/METADATA,sha256=4Ukvb1aeXtIE4651k28jrLqMsVoSDS-wG9zB3Nm4BPM,912
+crmeta-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+crmeta-0.0.1.dist-info/top_level.txt,sha256=nwSCbrJY2cBwY_j33dYnr_VexrUFfHv3fYxgI-cI2aE,7
+crmeta-0.0.1.dist-info/RECORD,,
