@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+publiscord/__init__.py
+publiscord/main.py
+publiscord.egg-info/PKG-INFO
+publiscord.egg-info/SOURCES.txt
+publiscord.egg-info/dependency_links.txt
+publiscord.egg-info/top_level.txt
