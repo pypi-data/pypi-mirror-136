@@ -1,0 +1,209 @@
+Metadata-Version: 2.1
+Name: foxbit
+Version: 0.0.12
+Summary: A python client for foxbit exchange API
+Home-page: https://gitlab.com/qlrddev/foxbit/
+Author: qlrd
+Author-email: qlrddev@gmail.com
+Maintainer: qlrd
+Maintainer-email: qlrddev@gmail.com
+License: Apache License Version 2.0
+Keywords: websocket,API,exchange,foxbit
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: Portuguese (Brazilian)
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: websocket-client (>=1.2.3)
+Provides-Extra: test
+Requires-Dist: tox-wheel (>=0.7.0) ; extra == 'test'
+Requires-Dist: pytest (>=6.2.5) ; extra == 'test'
+Requires-Dist: pytest-cov (>=3.0.0) ; extra == 'test'
+Requires-Dist: flake8 (>=4.0.1) ; extra == 'test'
+Requires-Dist: coverage (>=6.3.0) ; extra == 'test'
+
+# Foxbit
+
+| Status de teste | [![Coverage Status](https://coveralls.io/repos/gitlab/qlrddev/foxbit/badge.svg?branch=development)](https://coveralls.io/gitlab/qlrddev/foxbit?branch=development) |
+------------------ | ------------------------------------------ |
+Versão    | [![Version](https://img.shields.io/pypi/v/foxbit.svg)](https://pypi.org/project/foxbit) |
+Compatibilidade | [![Version](https://img.shields.io/pypi/pyversions/foxbit.svg)](https://pypi.org/project/foxbit) |
+
+
+Cliente python para API websocket da foxbit.
+
+
+## Instalação
+
+### PIP
+Para instalar via `pip`, execute no terminal:
+
+    $> pip install foxbit
+
+### GIT
+
+Para instalar via `git`, execute no terminal:
+
+    $> git clone https://gitlab.com/qlrddev/foxbit.git
+
+## Testar
+
+Para testar o código-fonte, instale o pacote `tox` e execute:
+
+    $> tox
+    
+## Uso
+
+O exemplo apresentado aqui é feito no console. Mas também funciona em um _script_ ou em um _notebook_.
+
+Existem exemplos na pasta [`examples/`](/examples) que podem auxiliar.
+
+### Configuração do ambiente virtual
+
+Para experimentar, sem comprometer o seu sistema, é recomendado usar a abordagem `git` de instalação e configurar um ambiente virtual.
+
+Para configuração do ambiente virtual, é necessária a instalção do pacote `virtualenv`. Para isso, execute:
+
+```shell
+$> pip install virtualenv
+$> virtualenv <meu_nome_de_ambiente_virtual>
+$> source ./<meu_nome_de_ambiente_virtual>/bin/activate
+$> pip install -e .
+```
+
+### Adentre no console do python:
+
+    $> python
+    Python 3.10.1 (main, Xxx XXXX, XX:XX:XX) [GCC X.Y.Z] on linux
+    Type "help", "copyright", "credits" or "license" for more information.
+    >>>
+
+### Importe classes e métodos:
+
+O módulo `foxbit` é consituído, basicamente, de classes-cliente e de classes-mensagens.
+
+Dentre as classes-cliente, podemos importar a classe base:
+
+    >>> from foxbit.client import Client
+
+Ou uma classe-cliente de _endpoints_ públicos (que não requerem autenticação):
+
+    >>> from foxbit.client import PublicClient
+
+A classe-mensagem é a classe que cria mensagens na forma definida pela API da foxbit:
+
+    >>> from foxbit.frame import MessageFrame
+
+### Defina funções de `callback`:
+
+#### `on_open`
+
+Função que é executada assim que a conexão com os servidores da Foxbit são estabelecidos.
+
+Requer 1 argumento, `ws`, que é o próprio cliente websocket.
+
+
+```python
+>>> def on_open(ws):
+...   """Assim que a conexão for aberta, envie uma requisição"""
+...   print("Connected")
+...   public_client.getInstruments(
+...     OMSId=1,
+...     InstrumentId=1
+...   )
+>>>
+```
+
+Note que a instância `public_client` ainda será definida [posteriormente](/#defina_uma_instancia_de_cliente)
+
+#### `on_close`
+
+Função que é executada assim que a conexão com os servidores da Foxbit são fechados.
+Requer três argumento:
+
+* `ws`, que é o próprio cliente websocket;
+* `status` que é o estado durante o fechamento;
+* `msg` que é uma mensagem do servidor;
+
+```python
+>>> def on_close(ws, status, msg):
+...   """Assim que a conexão for fechada, crie uma mensagem"""
+...   print("Disconnected with status {}: {}".format(status, msg))
+>>>
+```
+
+#### `on_message`
+
+Função que é executada assim que uma mensagem é recebida.
+Requer dois argumentos, `ws`, que é o próprio cliente websocket, e `msg`, que é a mensagem recebida.
+Note que aqui podemos fechar a conexão através do método `close`.
+
+```python
+>>> def on_message(ws, msg):
+...   """"Assim que a mensagem for recebida, 
+...   transforme-a em um `dict`, imprima e feche a conexão"""
+...   parsed = MessageFrame.fromJSON(msg)
+...   print(parsed)
+...   public_client.close()
+>>>
+```
+
+#### `on_error`
+
+função que é executada assim que algum erro é estabelecido.
+Requer dois argumentos, `ws`, que é o proóprio cliente websocket, e `err`, que é o proório erro.
+
+```python
+>>> def on_error(ws, err):
+...   print(err)
+>>>
+```
+
+#### Defina uma instância de cliente
+
+```python
+>>> public_client = PublicClient(
+...  on_open=on_open,
+...  on_close=on_close,
+...  on_message=on_message,
+...  on_error=on_error
+...)
+>>>
+```
+
+
+#### Execute a função `run_forever`
+
+```python
+>>> public_client.run_forever()
+```
+
+## Classes e métodos
+
+* Classe `foxbit.client.Client`: subclasse derivada de `websocket.WebsocketApp`; não possue métodos próprios.
+
+    * Classe `foxbit.client.PublicClient`: subclasse derivada de `foxbit.client.Client`; possue métodos próprios:
+    
+        * `getInstrument`
+        * `getInstruments`
+        * `getProducts`
+        * `getL2Snapshot`
+        * `getTickerHistory`
+        * `subscribeTicker`
+        * `unsubscribeTicker`
+        * `subscribeLevel1`
+        * `unsubscribeLevel1`
+        * `subscribeLevel2`
+        * `unsubscribeLevel2`
+        * `onSubscription`
+
+
+* Classe `foxbit.frame.MessageFrame`: classe de utilidade para criar mensagens em [formato definido](https://foxbit.com.br/api/#MessageFrame):
+
+    * `toJSON`: tranforma as propriedades da classe em uma `str` JSON;
+    * `fromJSON` tranforma uma `str` JSON em uma instância de `MessageFrame`.
+
+
