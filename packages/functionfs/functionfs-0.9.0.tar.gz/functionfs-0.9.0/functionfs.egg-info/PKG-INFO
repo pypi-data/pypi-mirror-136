@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: functionfs
+Version: 0.9.0
+Summary: Pythonic API for linux's functionfs.
+Home-page: http://github.com/vpelletier/python-functionfs
+Author: Vincent Pelletier
+Author-email: plr.vincent@gmail.com
+License: GPLv3+
+Keywords: linux usb gadget functionfs
+Platform: linux
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: System :: Hardware :: Hardware Drivers
+License-File: COPYING
+
+.. contents::
+
+Pythonic API for linux's functionfs.
+
+functionfs is part of the usb gadget subsystem. Together with usb_gadget's
+configfs integration, allows userland to declare and implement an USB device.
+
+Requirements
+============
+
+- A linux-capable computer with a USB controller able to act as a device.
+  Ex: Raspberry Pi zero, Intel Edison
+
+- The linux kernel built with CONFIG_USB_CONFIGFS_F_FS enabled,
+  plus all needed peripheral drivers, including the usb device controller.
+
+- python-libaio, which itself depends on libaio.
+
+
