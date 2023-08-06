@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: stochss-compute
+Version: 0.9
+Summary: A compute delegation server for the StochSS family of stochastic simulators.
+Home-page: https://github.com/StochSS/stochss-compute
+Author: Ethan Green, Matthew Dippel, Brian Drawert
+Author-email: egreen4@unca.edu
+License: GPL
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Chemistry
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Scientific/Engineering :: Medical Science Apps.
+Classifier: Intended Audience :: Science/Research
+
+UNKNOWN
+
+
