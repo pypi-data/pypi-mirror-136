@@ -1,0 +1,1 @@
+window.FACT_EXPLORER = {};
