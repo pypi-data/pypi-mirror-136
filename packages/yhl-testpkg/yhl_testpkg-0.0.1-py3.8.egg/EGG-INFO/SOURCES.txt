@@ -1,0 +1,10 @@
+README.md
+setup.py
+yhl-testpkg/__init__.py
+yhl-testpkg/main.py
+yhl-testpkg/test1/__init__.py
+yhl-testpkg/test2/__init__.py
+yhl_testpkg.egg-info/PKG-INFO
+yhl_testpkg.egg-info/SOURCES.txt
+yhl_testpkg.egg-info/dependency_links.txt
+yhl_testpkg.egg-info/top_level.txt
