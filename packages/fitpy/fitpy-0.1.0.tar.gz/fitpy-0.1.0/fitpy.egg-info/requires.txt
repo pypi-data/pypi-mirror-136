@@ -1,0 +1,11 @@
+aspecd>0.6.4
+lmfit
+numpy
+scipy>=1.7.0
+
+[dev]
+prospector
+
+[docs]
+sphinx
+sphinx_rtd_theme
