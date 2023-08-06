@@ -1,0 +1,174 @@
+.table-calendar, .week-calendar {
+  td, th {
+    width: 14.29%;
+  }
+  h3 {
+    font-size: 16px;
+  }
+  p {
+    margin-bottom: 0;
+  }
+  .events {
+    list-style: none;
+    padding: 0;
+  }
+  a.event {
+    display: block;
+    background: lighten($brand-primary, 48%);
+    color: $brand-primary;
+    border-radius: $border-radius-base;
+    border-style: solid;
+    border-color: lighten($brand-primary, 30%);
+    border-width: 1px 1px 1px 12px;
+    border-left-color: inherit;
+
+    padding: 3px 5px;
+    margin-top: 3px;
+    font-size: 12px;
+    overflow-wrap: anywhere;
+    text-decoration: none;
+
+    &:hover {
+      background: lighten($brand-primary, 50%);
+      border-color: $brand-primary;
+    }
+    &:focus {
+      outline-color: inherit;
+    }
+
+    &.continued, &.over {
+      background: lighten(#767676, 48%);
+      border-color: lighten(#767676, 30%);
+      border-left-color: lighten(#767676, 30%);
+      color: #767676;
+      &:hover {
+        background: lighten(#767676, 50%);
+        border-color: lighten(#767676, 25%);
+      }
+    }
+
+    &.soon {
+      background: lighten($brand-primary, 53%);
+      border-color: lighten($brand-primary, 40%);
+      border-left-color: lighten($brand-primary, 20%);
+      color: lighten($brand-primary, 5%);
+      &:hover {
+        background: lighten($brand-primary, 55%);
+        border-color: lighten($brand-primary, 20%);
+      }
+    }
+
+    &.available, {
+      background: lighten($brand-success, 48%);
+      border-color: lighten($brand-success, 30%);
+      border-left-color: $brand-success;
+      color: darken($brand-success, 12%);
+
+      &:hover {
+        background: lighten($brand-success, 50%);
+        border-color: $brand-success;
+      }
+    }
+
+    &.reserved, &.soldout, {
+      background: lighten($brand-danger, 43%);
+      border-color: lighten($brand-danger, 30%);
+      border-left-color: lighten($brand-danger, 30%);
+      color: darken($brand-danger, 5%);
+
+      &:hover {
+        background: lighten($brand-danger, 45%);
+        border-color: lighten($brand-danger, 25%);
+      }
+    }
+
+    .event-name {
+      font-weight: bold;
+      display: block;
+    }
+    .event-time, .event-status {
+      display: block;
+    }
+  }
+}
+.week-calendar {
+  .weekday {
+    margin-bottom: 15px;
+  }
+  h3 {
+    margin-bottom: 5px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  h3 .fa::before {
+    content: $fa-var-caret-right;
+  }
+  details[open] h3 .fa::before {
+    content: $fa-var-caret-down;
+  }
+  .events {
+    overflow: hidden;  /* required for smooth toggle animation */
+  }
+  .no-events {
+    display: none;
+  }
+}
+@media (min-width: $screen-md-min) {
+  .week-calendar {
+    display: flex;
+    flex-direction: row;
+
+    details[open] summary {
+      cursor: default;
+      pointer-events: none;
+      h3 .fa {
+        display: none;
+      }
+    }
+
+    .weekday {
+      flex: 1;
+      margin: 0 5px;
+    }
+    .weekday:first-child {
+      margin-left: 0;
+    }
+    .weekday:last-child {
+      margin-right: 0;
+    }
+    .no-events {
+      display: block;
+    }
+  }
+}
+@media (min-width: $screen-sm-min) {
+  .table-calendar, .week-calendar {
+    .selected-day {
+      display: none !important;
+    }
+  }
+}
+@media (max-width: $screen-xs-max) {
+  .table-calendar .day .events {
+    display: none;
+  }
+  .table-calendar td.day.has-events {
+    background: $brand-primary;
+    cursor: pointer;
+    color: white;
+  }
+  .table-calendar td.day.has-events:hover {
+    background: darken($brand-primary, 15%);
+  }
+}
+#monthselform .row {
+  margin: 0 -15px;
+}
+#monthselform .row > div {
+  margin-bottom: 15px;
+}
+@media(min-width: $screen-sm-min) {
+   .select-calendar-week-short {
+     max-width: 50%;
+   }
+}
