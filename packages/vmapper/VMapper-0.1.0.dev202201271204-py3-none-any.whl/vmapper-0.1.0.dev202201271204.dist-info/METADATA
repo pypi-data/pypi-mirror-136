@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: vmapper
+Version: 0.1.0.dev202201271204
+Summary: V-Mapper
+Home-page: https://github.com/yusuke-imoto-lab/V-Mapper
+Author: Yusuke Imoto
+Requires-Python: >=3.7,<3.10
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: graphviz (>=0.17)
+Requires-Dist: matplotlib (>=3.4.3)
+Requires-Dist: numpy (>=1.20)
+Requires-Dist: scikit-learn (>=0.24)
+Project-URL: Documentation, https://yusuke-imoto-lab.github.io/V-Mapper/
+Project-URL: Repository, https://github.com/yusuke-imoto-lab/V-Mapper
+Description-Content-Type: text/markdown
+
+# V-Mapper - 
+
+## Installation
+To install V-Mapper package, use `pip` as follows:
+
+```
+$ pip install vmapper
+```
+
+## Requirements
+* Python3
+* numpy
+* scipy
+* scikit-learn
+
