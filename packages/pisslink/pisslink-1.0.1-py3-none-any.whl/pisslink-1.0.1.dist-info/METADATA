@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: pisslink
+Version: 1.0.1
+Summary: Minimalistic lavalink wrapper based on wavelink. Made for Pycord.
+Home-page: https://github.com/BigCord-py/Pisslink
+Author: KaasToast
+License: MIT
+Platform: UNKNOWN
+License-File: LICENSE
+Requires-Dist: aiohttp (<3.9.0,>=3.6.0)
+
+UNKNOWN
+
