@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+dropboxdrivefs/__init__.py
+dropboxdrivefs/core.py
+dropboxdrivefs.egg-info/PKG-INFO
+dropboxdrivefs.egg-info/SOURCES.txt
+dropboxdrivefs.egg-info/dependency_links.txt
+dropboxdrivefs.egg-info/not-zip-safe
+dropboxdrivefs.egg-info/requires.txt
+dropboxdrivefs.egg-info/top_level.txt
+test/test.py
