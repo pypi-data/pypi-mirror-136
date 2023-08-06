@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: numpydoc_validation
+Version: 0.1.0
+Summary: Generate Numpydoc validation report.
+Author-email: Alex Kaszynski <akascap@gmail.com>
+Requires-Dist: numpydoc >=1.0
+Requires-Dist: pytest >=2.7.3 ; extra == "test"
+Requires-Dist: pytest-cov ; extra == "test"
+Project-URL: Home, https://github.com/pyvista/numpydoc_validation
+Provides-Extra: test
