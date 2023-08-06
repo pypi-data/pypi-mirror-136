@@ -1,0 +1,8 @@
+benpy.cp310-win_amd64.pyd,sha256=zy5y3yZ6MERuoPAPgZ0az_B-VKruvp1eYm3w9bEcYe8,208384
+gsl.dll,sha256=gOdVRGROsosMUeq3Mg21o4EVnd_uIF0GA_ZrJ5UjZnQ,2668544
+gslcblas.dll,sha256=7nq7b6B_0LFYAYsTqGIy9Lo9b0IWpIY8INv3g1MiP3g,417792
+benpy-2.4.2.dist-info/LICENSE,sha256=nA9Ea7WP5RilFYqGi4Sf17Ssw21UDalZxNgx1GuxrLs,96
+benpy-2.4.2.dist-info/METADATA,sha256=y_Jd6U-9KwXoIzJHV_1c01gCMnrNBTrnZo4swGQ6U1o,312
+benpy-2.4.2.dist-info/WHEEL,sha256=W26pYN7HLsBT1jrDSL9udgf_mdNKJmYmL23sIP-FcgM,102
+benpy-2.4.2.dist-info/top_level.txt,sha256=3qdtHkQ6jwLZq91VpjTTkaJtkTAl97XfSrD5Ww5Uf0s,6
+benpy-2.4.2.dist-info/RECORD,,
