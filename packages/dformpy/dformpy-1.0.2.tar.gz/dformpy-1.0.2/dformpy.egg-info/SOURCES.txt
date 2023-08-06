@@ -1,0 +1,10 @@
+CHANGELOG.txt
+MANIFEST.in
+README.txt
+setup.py
+dformpy/__init__.py
+dformpy/dformpy.py
+dformpy.egg-info/PKG-INFO
+dformpy.egg-info/SOURCES.txt
+dformpy.egg-info/dependency_links.txt
+dformpy.egg-info/top_level.txt
