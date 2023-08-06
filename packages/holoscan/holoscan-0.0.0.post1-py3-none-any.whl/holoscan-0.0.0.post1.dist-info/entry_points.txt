@@ -1,0 +1,3 @@
+[console_scripts]
+holoscan = holoscan.cli.main:main
+
