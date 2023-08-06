@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: geobootstrap
+Version: 0.1
+Summary: Python tools for geobootstrapping
+Home-page: https://github.com/tastatham/geobootstrap
+Author: Thomas Statham
+Author-email: tastatham@gmail.com
+License: MIT
+Description: # Geobootstrap
+        
+        Python tools for geo-bootstrapping spatial data.
+        
+        This package 
+Keywords: bootstrap,spatial
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
