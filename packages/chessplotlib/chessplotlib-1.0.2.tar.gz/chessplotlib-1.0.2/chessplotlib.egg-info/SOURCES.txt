@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+bin/pgn-viewer
+chessplotlib/__init__.py
+chessplotlib/pgn.py
+chessplotlib/plot.py
+chessplotlib.egg-info/PKG-INFO
+chessplotlib.egg-info/SOURCES.txt
+chessplotlib.egg-info/dependency_links.txt
+chessplotlib.egg-info/requires.txt
+chessplotlib.egg-info/top_level.txt
+test/test_plot.py
