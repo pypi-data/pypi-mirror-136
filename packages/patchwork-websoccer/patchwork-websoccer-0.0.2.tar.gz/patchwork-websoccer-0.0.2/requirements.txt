@@ -1,0 +1,6 @@
+pydantic>=1.8.2
+humanize>=3.11.0
+importlib_metadata>=4.8.1
+patchwork-node>=0.0.26
+patchwork-contrib[fastapi]>=0.0.25
+aioredis>=2.0.1
