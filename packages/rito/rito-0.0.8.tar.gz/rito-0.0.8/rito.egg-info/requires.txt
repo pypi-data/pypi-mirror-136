@@ -1,0 +1,4 @@
+requests
+click
+markdown
+opencv-python
