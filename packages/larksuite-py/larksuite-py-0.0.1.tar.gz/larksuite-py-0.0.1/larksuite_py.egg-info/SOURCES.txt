@@ -1,0 +1,8 @@
+README.md
+setup.py
+larksuite/__init__.py
+larksuite_py.egg-info/PKG-INFO
+larksuite_py.egg-info/SOURCES.txt
+larksuite_py.egg-info/dependency_links.txt
+larksuite_py.egg-info/requires.txt
+larksuite_py.egg-info/top_level.txt
