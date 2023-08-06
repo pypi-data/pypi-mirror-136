@@ -1,0 +1,10 @@
+biopython
+cutadapt
+jinja2
+pandas
+pyyaml
+snakemake
+sqlalchemy
+termcolor
+tqdm
+wopmars>=0.1.4
