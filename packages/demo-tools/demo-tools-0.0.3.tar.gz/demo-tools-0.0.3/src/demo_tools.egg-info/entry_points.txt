@@ -1,0 +1,4 @@
+[console_scripts]
+demo-tools = demotools.command_line:main
+dt = demotools.command_line:dt
+
