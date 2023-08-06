@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: ovpn3
+Version: 0.1.3
+Summary: OpenVPN3 CLI
+License: GNU Affero General Public License
+Author: Janusz Skonieczny
+Author-email: pypi@wooyek.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: backoff (>=1.11.1,<2.0.0)
+Requires-Dist: click (>=8.0.3,<9.0.0)
+Requires-Dist: click-log (>=0.3.2,<0.4.0)
+Requires-Dist: cryptography (>=36.0.1,<37.0.0)
+Requires-Dist: keyring (>=23.4.0,<24.0.0)
+Requires-Dist: xdg (>=5.1.1,<6.0.0)
