@@ -1,0 +1,9 @@
+sitecrawl/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sitecrawl/__main__.py,sha256=hB47JmaAXNJWCr2MSyiKNE0_Smts4wSocvbIbhPg0Ck,65
+sitecrawl/crawl.py,sha256=qSqmBZ_j33BnIlpKYzJ17AkMbBPMlhGsqDObtO4d3ss,8517
+sitecrawl-1.0.5.dist-info/LICENSE,sha256=WdxTfKZuj5aCBA1zP_55AX-i0jAo5J_s7GIDz_KEf38,1073
+sitecrawl-1.0.5.dist-info/METADATA,sha256=cWPofniKfF_vJQZPqNEZxTY2qdRzWHBlmlAu3tT7-K0,2684
+sitecrawl-1.0.5.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+sitecrawl-1.0.5.dist-info/entry_points.txt,sha256=GoqzsX3NbQVXkNnmgfjqyIg7NunpwyT6bpoC3rWh5Yw,52
+sitecrawl-1.0.5.dist-info/top_level.txt,sha256=SKw9wpuodNUo4jkUpNs8murWAdi17zaqZTrmPLcEKWQ,10
+sitecrawl-1.0.5.dist-info/RECORD,,

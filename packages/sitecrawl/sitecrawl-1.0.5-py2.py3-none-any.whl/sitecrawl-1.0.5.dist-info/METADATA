@@ -1,0 +1,109 @@
+Metadata-Version: 2.1
+Name: sitecrawl
+Version: 1.0.5
+Summary: Simple Python3 module to crawl a website and extract URLs
+Home-page: https://github.com/gabfl/sitecrawl
+Author: Gabriel Bordeaux
+Author-email: pypi@gab.lc
+License: MIT
+Platform: UNKNOWN
+Classifier: Topic :: Internet
+Classifier: Topic :: Internet :: WWW/HTTP :: Site Management :: Link Checking
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python
+Classifier: Development Status :: 4 - Beta
+Requires-Dist: requests
+Requires-Dist: bs4
+
+sitecrawl
+=========
+
+|Pypi| |Build Status| |codecov| |MIT licensed|
+
+Simple Python module to crawl a website and extract URLs.
+
+Installation
+------------
+
+Using pip:
+
+.. code:: bash
+
+   pip3 install sitecrawl
+
+   sitecrawl --help
+
+Or build from sources:
+
+.. code:: bash
+
+   # Clone project
+   git clone https://github.com/gabfl/sitecrawl && cd sitecrawl
+
+   # Installation
+   pip3 install .
+
+Usage
+-----
+
+CLI
+~~~
+
+.. code:: bash
+
+   sitecrawl --url https://www.yahoo.com/ --depth 2 --max 4 --verbose
+
+->
+
+::
+
+   * Found 4 internal URLs
+     https://www.yahoo.com
+     https://www.yahoo.com/entertainment
+     https://www.yahoo.com/lifestyle
+     https://www.yahoo.com/plus
+
+   * Found 5 external URLs
+     https://mail.yahoo.com/
+     https://news.yahoo.com/
+     https://finance.yahoo.com/
+     https://sports.yahoo.com/
+     https://shopping.yahoo.com/
+
+   * Skipped 0 URLs
+
+As a module
+~~~~~~~~~~~
+
+Basic example:
+
+.. code:: py
+
+   from sitecrawl import crawl
+
+   crawl.base_url = 'https://www.yahoo.com'
+   crawl.deep_crawl(depth=2)
+
+   print('Internal URLs:', crawl.get_internal_urls())
+   print('External URLs:', crawl.get_external_urls())
+   print('Skipped URLs:', crawl.get_skipped_urls())
+
+A more detailed example is available in
+`example.py <https://github.com/gabfl/sitecrawl/blob/main/example.py>`__.
+
+.. |Pypi| image:: https://img.shields.io/pypi/v/sitecrawl.svg
+   :target: https://pypi.org/project/sitecrawl
+.. |Build Status| image:: https://github.com/gabfl/sitecrawl/actions/workflows/ci.yml/badge.svg?branch=main
+   :target: https://github.com/gabfl/sitecrawl/actions
+.. |codecov| image:: https://codecov.io/gh/gabfl/sitecrawl/branch/main/graph/badge.svg
+   :target: https://codecov.io/gh/gabfl/sitecrawl
+.. |MIT licensed| image:: https://img.shields.io/badge/license-MIT-green.svg
+   :target: https://raw.githubusercontent.com/gabfl/sitecrawl/main/LICENSE
+
+
