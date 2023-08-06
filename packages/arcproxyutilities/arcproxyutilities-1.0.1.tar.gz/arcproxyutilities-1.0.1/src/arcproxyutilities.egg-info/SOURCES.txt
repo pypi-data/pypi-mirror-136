@@ -1,0 +1,12 @@
+License.txt
+README.md
+setup.py
+src/arcproxyutilities/__init__.py
+src/arcproxyutilities/_utils.py
+src/arcproxyutilities/constants.py
+src/arcproxyutilities/csputility.py
+src/arcproxyutilities.egg-info/PKG-INFO
+src/arcproxyutilities.egg-info/SOURCES.txt
+src/arcproxyutilities.egg-info/dependency_links.txt
+src/arcproxyutilities.egg-info/requires.txt
+src/arcproxyutilities.egg-info/top_level.txt
