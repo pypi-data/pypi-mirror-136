@@ -1,0 +1,15 @@
+# Scaleup
+
+Scale-up Suite Automation. This library provides a set of high level methods for scripting automation of Dynochem(R)  and Reaction Lab(TM) models through the ```RunScript Automation``` interface. These methods wrap the COM calls to Scale-up Suite's ```ModelAutomation.exe``` allowing end users to write shorter and simpler scripts and focus on what they want to achieve rather than the mechanics of doing it.  
+
+Contact your [Scale-up Systems](https://www.scale-up.com) representative to obtain access to the ```RunScript Automation``` product to which this library connects.
+
+## Dependencies
+
+* [pywin32](https://github.com/mhammond/pywin32)
+
+## Installation
+
+```python
+pip install scaleup
+```
