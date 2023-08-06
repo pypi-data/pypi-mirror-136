@@ -1,0 +1,11 @@
+pybasics/__init__.py,sha256=AyidMaBdI1AShlBjkalsFI6MeaxMr1s0D2KXJR8-A7U,590
+pybasics/biology.py,sha256=jDL_de3nMmwokY0uzEw63LcPbo6csbJvtKFVjf8riSc,924
+pybasics/globals.py,sha256=MsSFjiLMLJZ7QhUPpVBWKiyDnCzryquRyr329NoCACI,2
+pybasics/main.py,sha256=K1yaXyItiiD1JQyRsDJsMk0p_oNl6OdPKkeB5FZiLJQ,1896
+pybasics/mongodb.py,sha256=gEiRiRDf2yqxDiZwbK0mqOM_oxIr_jeYzPEdKd8WFWg,424
+pybasics/request.py,sha256=WyNvxz-BCGUSZGRTeaRFzLXvTakTLb0kieZbPYWamls,510
+pybasics-0.3.dist-info/LICENSE,sha256=qJUlFMuk---X4uBt_6yiDsMoEMSZVUx7Q7OcCUyBE-4,35133
+pybasics-0.3.dist-info/METADATA,sha256=991kKS9b3NXmARkzPnhMKFu8Liy7Qnx-1L8Tj1Oyr0w,1169
+pybasics-0.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pybasics-0.3.dist-info/top_level.txt,sha256=3Tkst-euFKb7HebH8TgkYbTN0Mg-Zv8Ue_3oP1fR_kQ,9
+pybasics-0.3.dist-info/RECORD,,
