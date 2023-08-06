@@ -1,0 +1,8 @@
+
+.eggs/
+onyx.core.egg-info/
+dist/
+onyx/__pycache__/
+onyx/core/__pycache__/
+onyx/core/*/__pycache__/
+*.pyc
