@@ -1,0 +1,3 @@
+[console_scripts]
+django_jp_birthday = jp_birthday.cli:main
+
