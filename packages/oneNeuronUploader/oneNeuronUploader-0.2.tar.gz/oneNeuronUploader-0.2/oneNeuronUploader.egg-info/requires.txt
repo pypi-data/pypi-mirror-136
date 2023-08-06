@@ -1,0 +1,4 @@
+PyVimeo==1.1.0
+PyYAML==6.0
+Flask-Cors
+Flask
