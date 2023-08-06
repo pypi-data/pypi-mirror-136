@@ -1,0 +1,12 @@
+castutils/__init__.py,sha256=qk03V_cjuALug9XGXfkvIJnVUHMFMmIzQpo6DIN9N5g,439
+castutils/builtins/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+castutils/builtins/booleans.py,sha256=YcTqO8Jw_bbshHVrjLUaZPp8r9irKgzkybFUvime2sk,1453
+castutils/builtins/floats.py,sha256=ceD79bf3-NmQ0TfuMux3PNem5CimcDleNU0UxjXWVCc,1248
+castutils/builtins/integers.py,sha256=c7G0YctbWimN3Wx_oTAdAXaom3Ksf_weU_bYQnmPI18,1214
+castutils/builtins/strings.py,sha256=LA6JyexmtqL6nu0AslGTC2LaZF9FIbPGYv1jrOi-RFk,1338
+castutils/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+castutils/types.py,sha256=u5V-puq7it70cdGCooWyI26-nmXj4y37aeoD5sZnG_0,65
+castutils-0.2.4.dist-info/LICENSE,sha256=BBrO4AAFytN4epBnYSfW26kfRUMzd-K9pn20RJrzNvk,1073
+castutils-0.2.4.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+castutils-0.2.4.dist-info/METADATA,sha256=UZQdXvXyXkkiL67S6F3UonQMajhV6ARfhZM37NpzA6o,990
+castutils-0.2.4.dist-info/RECORD,,
