@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+MLAstra/Classfication.py
+MLAstra/Functional.py
+MLAstra/__init__.py
+MLAstra.egg-info/PKG-INFO
+MLAstra.egg-info/SOURCES.txt
+MLAstra.egg-info/dependency_links.txt
+MLAstra.egg-info/requires.txt
+MLAstra.egg-info/top_level.txt
