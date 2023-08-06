@@ -1,0 +1,69 @@
+---
+# This config file specifies how to setup the annotations tab for VPV
+available_options:
+  - ['present','absent','abnormal','unobservable','ambiguous','imageOnly']
+  - ['yes','no','unobservable']
+
+options_requiring_points: 
+  - abnormal
+  - ambiguous
+  - absent
+
+centers:
+  H:
+    short_name: H
+    procedures:
+      IMPC_EOL_002:
+        file_: e9_5/har_terms_eol.yaml
+      IMPC_EML_002:
+        file_: e9_5/har_terms_eml.yaml
+      IMPC_EMO_002:
+        file_: e14_5/har_terms.yaml
+      IMPC_EMA_002: 
+        file_: e18_5/har_terms.yaml
+  J:
+    short_name: J
+    procedures:
+      IMPC_EMO_002:
+        file_:  e15_5/jax_terms.yaml
+      IMPC_EMA_002:
+        file_: e18_5/jax_terms.yaml
+
+  BCM:
+    short_name: BCM
+    procedures:
+      IMPC_EMO_002:
+        file_: e15_5/bcm_terms.yaml
+
+  UCD:
+    short_name: UCD
+    procedures:
+      IMPC_EMO_002:
+        file_: e15_5/ucd_terms.yaml
+
+
+#centers:
+#  J:
+#    short_name: J
+#    stages:
+#      e15.5:
+#        file_: e15_5/jax_terms.yaml
+#  BCM:
+#    short_name: BCM
+#    stages:
+#      e15.5:
+#        file_: e15_5/bcm_terms.yaml
+#  H:
+#    short_name: H
+#    procedures:
+#      e14.5:
+#        file_: e14_5/har_terms.yaml
+#  UCD:
+#    short_name: UCD
+#    stages:
+#      e15.5:
+#        file_: e15_5/ucd_terms.yaml
+
+
+
+#tcp short name: TCP
