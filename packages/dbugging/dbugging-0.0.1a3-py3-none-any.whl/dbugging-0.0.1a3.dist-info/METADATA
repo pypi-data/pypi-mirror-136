@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: dbugging
+Version: 0.0.1a3
+Summary: Tools to help with debugging your Python code
+Author: Niklas Larsson
+License: UNKNOWN
+Project-URL: Source, https://github.com/nikkelarsson/dbugging
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+UNKNOWN
+
