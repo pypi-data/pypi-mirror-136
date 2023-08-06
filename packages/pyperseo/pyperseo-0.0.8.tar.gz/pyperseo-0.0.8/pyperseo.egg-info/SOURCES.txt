@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+pyperseo/_init_.py
+pyperseo/docker_script.py
+pyperseo/functions.py
+pyperseo.egg-info/PKG-INFO
+pyperseo.egg-info/SOURCES.txt
+pyperseo.egg-info/dependency_links.txt
+pyperseo.egg-info/top_level.txt

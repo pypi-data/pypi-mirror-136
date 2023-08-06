@@ -1,0 +1,42 @@
+Metadata-Version: 1.0
+Name: pyperseo
+Version: 0.0.8
+Summary: Personal Semantic Objects
+Home-page: https://github.com/pabloalarconm/PERSEO
+Author: Pablo Alarcón Moreno
+Author-email: pabloalarconmoreno@gmail.com
+License: MIT
+Description: # PERSEO
+        
+        ### **Personal Semantics Objects**
+        
+        <hr>
+        
+        ### **Instalation:**
+        
+        Install locally after cloning the repo usingor using  [Pypi repository](https://pypi.org/project/py-perseo/):
+        
+        ```bash
+        pip install py-perseo
+        ```
+        
+        ####  **Unique identifier generator:**
+        
+        Milisecond timestamp for CSV spreadsheets
+        
+        [Documentation here](https://github.com/pabloalarconm/PERSEO/tree/main/perseo)
+        
+        <hr>
+        
+        #### **N-Triples to Turtle transformation**
+        
+        RDF data transformation from N-Triples representation to Turtle
+        
+        [Documentation here](https://github.com/pabloalarconm/PERSEO/tree/main/perseo)
+        
+        
+        
+        
+        
+Keywords: Semantics,RDF,FAIR,EJP
+Platform: UNKNOWN

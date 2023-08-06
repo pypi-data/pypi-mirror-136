@@ -1,0 +1,5 @@
+include requirements.txt
+include README.md
+include pyperseo/functions.py
+include pyperseo/__init__.py
+include setup.py
