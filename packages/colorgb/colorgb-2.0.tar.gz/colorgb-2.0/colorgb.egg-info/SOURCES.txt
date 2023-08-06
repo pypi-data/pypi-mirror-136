@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+colorgb/__init__.py
+colorgb/backrounds.py
+colorgb/foregrounds.py
+colorgb/styles.py
+colorgb.egg-info/PKG-INFO
+colorgb.egg-info/SOURCES.txt
+colorgb.egg-info/dependency_links.txt
+colorgb.egg-info/requires.txt
+colorgb.egg-info/top_level.txt
