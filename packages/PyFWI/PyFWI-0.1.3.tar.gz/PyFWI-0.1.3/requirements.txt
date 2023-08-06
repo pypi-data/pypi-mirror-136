@@ -1,0 +1,8 @@
+numpy
+pyopencl
+matplotlib
+scipy
+hdf5storage
+requests
+segyio
+datetime
