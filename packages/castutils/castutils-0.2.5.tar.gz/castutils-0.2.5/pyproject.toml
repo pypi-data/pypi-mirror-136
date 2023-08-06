@@ -1,0 +1,48 @@
+[tool.poetry]
+name = "castutils"
+version = "0.2.5"
+description = "Variable transformation and casting utilities (Python)"
+authors = ["Shane Spencer <305301+whardier@users.noreply.github.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/whardier/castutils-python"
+repository = "https://github.com/whardier/castutils-python"
+keywords = [
+  "cast",
+  "coerce",
+  "coercion",
+  "transform",
+  "transformation",
+  "typing",
+  "typecast",
+]
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Intended Audience :: Developers",
+  "Operating System :: OS Independent",
+]
+
+[tool.poetry.urls]
+"Funding" = "https://github.com/sponsors/whardier"
+
+[tool.poetry-dynamic-versioning]
+enable = false
+vcs = "git"
+style = "semver"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+
+[tool.poetry.dev-dependencies]
+black = "^21.12b0"
+flake8 = "^4.0.1"
+isort = "^5.10.1"
+pre-commit = "^2.16.0"
+mypy = "^0.930"
+autoflake = "^1.4"
+pytest = "^6.2.5"
+hypothesis = "^6.34.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0", "poetry-dynamic-versioning"]
+build-backend = "poetry.core.masonry.api"
