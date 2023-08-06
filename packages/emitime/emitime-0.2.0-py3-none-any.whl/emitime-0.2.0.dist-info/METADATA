@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: emitime
+Version: 0.2.0
+Summary: UNKNOWN
+Home-page: https://github.com/rilshok/emitime
+Author: Vladislav A. Proskurov
+Author-email: rilshok@pm.me
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pytest
+Requires-Dist: plum-dispatch
+
+# emiTime
+Emit Time from any time!
+
+# Installation
+
+```
+pip install emitime
+```
+
+# Usage example
+
+```python
+from emitime import Moment, Interval
+```
+
+---
+Emit and enjoy.
+
+
