@@ -1,0 +1,11 @@
+unmanic_api/__init__.py,sha256=lQLvABK2Rm0tkOnWl13BR4jy2DdBN8mrQ9k8fwEvK-Q,333
+unmanic_api/__version__.py,sha256=z8GI9iowYr02YmaB7Z8yF-Uf5T7C2X85VFINTL4JW4A,69
+unmanic_api/client.py,sha256=GXaDFCfvLPCoe6JsKd5Ucw7xY1RMF2S1WTPUvpc_qbk,4814
+unmanic_api/exceptions.py,sha256=lpubclEqRVJuKNySgsvgUfVwrD8_EPC9dk7GwyrL_ec,723
+unmanic_api/models.py,sha256=Z2s87BMUHrR4ZyxWrs8zraj7mRTmbMtlp4AGzAzKPJs,6970
+unmanic_api/unmanic.py,sha256=8vp3WmoRiHXsPqfwbjMVljy_gIH80IiirFWlpLdszQ0,9550
+unmanic_api-0.0.5.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+unmanic_api-0.0.5.dist-info/METADATA,sha256=h024btgLtrJK5VFTbnrcLFZRS5vgBobX7gKEA2IlY7A,2251
+unmanic_api-0.0.5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+unmanic_api-0.0.5.dist-info/top_level.txt,sha256=A2RU9T0vAI7v5lufJkNuAO56xhLSn3WFFyNdVZCmilo,12
+unmanic_api-0.0.5.dist-info/RECORD,,
