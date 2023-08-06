@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: gsitk
+Version: 0.2.5
+Summary: gsitk is a library on top of scikit-learn that eases the development process on NLP machine learning driven projects.
+Home-page: https://github.com/gsi-upm/gsitk
+Author: Oscar Araque
+Author-email: oscar.aiborra@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/gsi-upm/gsitk/tarball/0.2.5
+Keywords: sentiment analysis,nlp,machine learning
+Platform: UNKNOWN
+License-File: LICENSE.txt
+License-File: NOTICE
+Requires-Dist: scikit-learn
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: gensim
+Requires-Dist: nltk
+Requires-Dist: pyyaml
+Requires-Dist: pytest
+Requires-Dist: pytreebank
+Requires-Dist: beautifulsoup4
+Requires-Dist: lxml
+
+UNKNOWN
+
