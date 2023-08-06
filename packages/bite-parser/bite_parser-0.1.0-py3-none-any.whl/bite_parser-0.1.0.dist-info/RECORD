@@ -1,0 +1,16 @@
+bite/__init__.py,sha256=n35TFVhg4vnLmYbobgqV6Z45Jp-5On1eECmiSfKXWgc,102
+bite/core.py,sha256=mZrQpFbiYgWvMdu0qm1Hl-cZADy1Sp47yPGPAXqqOD0,6170
+bite/io.py,sha256=qHDycuFvUo3C50hWqc6i9Xxvj-V-2_AeXwnlTl_bBJE,996
+bite/parse_functions.py,sha256=BVuqs1GXp3XUt3VvG5fvCBUJJpnkkiIhfnDo-az0U54,537
+bite/parsers.py,sha256=Fe8UULy4eM_plJPEOaM2HwnYs49yWaw7vB-tm4s26O8,6640
+bite/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bite/tests/mock_reader.py,sha256=0pGKy7ey031yUjShbKC8ILI1wpyaBoVtNLhkbikCwE8,752
+bite/tests/test_io.py,sha256=Y05OZAY-wZQZ8HNIHl9ApmczmT64sGjaCvoM1GM-YiY,2002
+bite/tests/test_parse_functions.py,sha256=3d0qIRYE6ziO9qK3RX4x7_ZnSFxrdjQ7Ke3Wm2aOeHY,470
+bite/tests/test_parsers.py,sha256=iRzaH8ej2Q0Fa-7YGFFc_h1SDEntA4ZAtBYMc6eKGwM,14710
+bite/tests/test_transformers.py,sha256=nXxYzlsacrr8cclTZA5Gjp7siN4SoYtEcgYEn2tIlMw,2081
+bite/transformers.py,sha256=0_PoN4Vbgk6Uheqg4TpZ0p-RPzPc9KIY9evcDRUdV-A,2832
+bite_parser-0.1.0.dist-info/LICENSE,sha256=p5kKM-KPlQZMbZsehnphDgeIFEyuDUPrx6VOvkwKZR4,1068
+bite_parser-0.1.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+bite_parser-0.1.0.dist-info/METADATA,sha256=aEwqNGalLwTH-q6vB4Rl-SsFfe5M8JJ8lOwGyoW5Nwc,1850
+bite_parser-0.1.0.dist-info/RECORD,,
