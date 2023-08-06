@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: bitbucketserver
+Version: 1.1.0
+Summary: Wrapper for the Stash/Bitbucket Server REST API.
+Home-page: https://github.com/Schweitzer-Engineering-Laboratories/bitbucketserver
+Author: Jason Kemp
+Author-email: jason_kemp@selinc.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Intended Audience :: Developers
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Topic :: Software Development :: Version Control :: Git
+Classifier: Topic :: Utilities
+Requires-Python: >=3.6
+License-File: LICENSE
+
+UNKNOWN
+
