@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+bcb/__init__.py
+bcb/currency.py
+bcb/odata.py
+bcb/sgs.py
+bcb/utils.py
+python_bcb.egg-info/PKG-INFO
+python_bcb.egg-info/SOURCES.txt
+python_bcb.egg-info/dependency_links.txt
+python_bcb.egg-info/requires.txt
+python_bcb.egg-info/top_level.txt
