@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/scraping_mixins/__init__.py
+src/scraping_mixins/csv.py
+src/scraping_mixins.egg-info/PKG-INFO
+src/scraping_mixins.egg-info/SOURCES.txt
+src/scraping_mixins.egg-info/dependency_links.txt
+src/scraping_mixins.egg-info/top_level.txt
