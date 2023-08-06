@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: sensirion-i2c-sfm-sf06
+Version: 0.1.0
+Summary: I2C driver for the Sensirion SFM_SF06 sensor family
+Home-page: https://sensirion.github.io/python-i2c-sfm-sf06/
+Author: Rolf Laich
+Author-email: rolf.laich@sensirion.com
+License: UNKNOWN
+Keywords: I2C SFM-SF06 Sensirion
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.6, <4
+Requires-Dist: sensirion-i2c-driver
+Requires-Dist: sensirion-i2c-adapter (~=1.0.0)
+Requires-Dist: enum34 ; python_version < "3.4"
+Provides-Extra: docs
+Requires-Dist: sphinx (~=2.2.1) ; extra == 'docs'
+Requires-Dist: sphinx-rtd-theme (~=0.4.3) ; extra == 'docs'
+Provides-Extra: test
+Requires-Dist: flake8 (~=3.7.8) ; extra == 'test'
+Requires-Dist: pytest (~=3.5.0) ; extra == 'test'
+Requires-Dist: pytest-cov (~=2.5.1) ; extra == 'test'
+Requires-Dist: sensirion-shdlc-sensorbridge (~=0.1.1) ; extra == 'test'
+
+sensirion-i2c-sfm-sf06
+======================
+
+This package contains the driver to communicate with Sensirion sensors of the SFM-SF06
+sensor family.
+
+Installation and Usage
+----------------------
+
+The user manual is available at
+https://sensirion.github.io/python-i2c-sfm-sf06
+
+CHANGELOG
+---------
+
+0.1.0
+:::::
+- Initial release of SFM_SF06 IÂ²C driver
+
+
