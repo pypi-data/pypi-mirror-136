@@ -1,0 +1,7 @@
+drb<1.1.0,>=1.0.1
+drb-impl-zip==1.0.0
+drb-impl-file==1.0.0
+fsspec
+aiohttp
+versioneer~=0.21
+zarr~=2.10.2
