@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: rsacrack
+Version: 1.0.0
+Summary: A module to crack rsa.
+Home-page: UNKNOWN
+Author: JamesJ
+Author-email: GGJamesQQ@yeah.net
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Development Status :: 4 - Beta
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
+Requires-Dist: rsa
+
+UNKNOWN
+
