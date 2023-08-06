@@ -1,0 +1,9 @@
+pykingas/KineticGas.so,sha256=FOVwjHhRUO8eecNa6sHfloHLIcHa5XZQ10WecLjhHSs,205680
+pykingas/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pykingas/py_KineticGas.py,sha256=fYMFNJ3UE6wjSy2ou7XCID3aTUwAM-93ouV1zwcBMyU,9733
+pykingas/test.py,sha256=Zwrptyv-GNZrKaM2OKWwSeTfBOfxc49ie8iiV-uhoE8,138
+pykingas-1.0.0.dist-info/LICENSE,sha256=C09R_GqW7xLtbbYV5PEIJ-9-8uOzfMtoYQq9KSGDPvE,1070
+pykingas-1.0.0.dist-info/METADATA,sha256=7pZW0h1Z9kAHgrK7vVG4OdRj2VueROusEWzM2J12Zb8,2429
+pykingas-1.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pykingas-1.0.0.dist-info/top_level.txt,sha256=IQ10q-Lm74ChbHnKmuJKh3MQoiCfQxvGLz68roAQeI0,9
+pykingas-1.0.0.dist-info/RECORD,,
