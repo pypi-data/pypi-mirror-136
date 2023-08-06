@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: statuspage-agent
+Version: 0.3.0
+Summary: Flexible requests for Internal Status Page API applications
+Home-page: http://github.com/shinznatkid/statuspage-agent
+Author: ShinZ Natkid
+Author-email: shinznatkid@gmail.com
+License: GPLv3
+Description: A flexible way to handle requests within a complex Internal Status Page API application.
+Keywords: api
+Platform: Platform Independent
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires: requests

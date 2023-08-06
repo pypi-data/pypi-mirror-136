@@ -1,0 +1,7 @@
+setup.py
+statuspage_agent/__init__.py
+statuspage_agent/agent.py
+statuspage_agent.egg-info/PKG-INFO
+statuspage_agent.egg-info/SOURCES.txt
+statuspage_agent.egg-info/dependency_links.txt
+statuspage_agent.egg-info/top_level.txt
