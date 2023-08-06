@@ -1,0 +1,3 @@
+[console_scripts]
+vk_photos_uploader=vk_photos_uploader.photos_uploader:upload_photos_to_album
+
