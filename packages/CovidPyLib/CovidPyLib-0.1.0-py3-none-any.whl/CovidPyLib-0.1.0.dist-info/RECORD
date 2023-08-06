@@ -1,0 +1,10 @@
+covidpy/__init__.py,sha256=XedhJH_wdmbO6ySWTa_uLHpEACznkQyb3SaPmylqRvs,602
+covidpy/errors.py,sha256=6l1Tt74wqxW4R4cqJG0wAtD5RcYRqy6W3pXrSL-gAZk,653
+covidpy/lib.py,sha256=tkqA2X0NMk6m6IwHJ-REJ9ekgkyt5mIa7bgp1ThVqSM,6650
+covidpy/types.py,sha256=fXvjWIHmMIbenLa0HCs2MmBaaPF1xwaS3N-PquCnMgM,13974
+covidpy/verifier.py,sha256=_4i9IID73oNEA37nPl73QmM9Cmps42uGRfCEE-7jvic,4192
+CovidPyLib-0.1.0.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+CovidPyLib-0.1.0.dist-info/METADATA,sha256=q1u2xIT6gceD7VpC7q15V14nVReyFQt1AjXkU4Y3aP0,3190
+CovidPyLib-0.1.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+CovidPyLib-0.1.0.dist-info/top_level.txt,sha256=wYUPC9_4G52mhDIWni9RWUwdQvyDggzrR3JI5iLVwxo,8
+CovidPyLib-0.1.0.dist-info/RECORD,,
