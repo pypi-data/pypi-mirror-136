@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: tsts
+Version: 1.0.0
+Summary: toolset for time series forecasting
+Home-page: https://github.com/TakuyaShintate/tsts
+Author: Takuya Shintate
+Author-email: kmdbn2hs@gmail.com
+License: MIT License
+Keywords: tsts
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: torch
+Requires-Dist: tqdm
+Requires-Dist: yacs
+Requires-Dist: numba
+Requires-Dist: seaborn
+Requires-Dist: terminaltables
+
+<div align="center">
+  <img src="img/tsts-logo.png" width="600"/>
+</div>
+
+---
+
+[![pypi](https://img.shields.io/pypi/v/tsts?style=flat)](https://pypi.org/project/tsts/1.0.0/)
+[![license](https://img.shields.io/github/license/TakuyaShintate/tsts?style=flat)](https://github.com/TakuyaShintate/tsts/blob/main/LICENSE)
+
+([docs](https://takuyashintate.github.io/tsts/))
+
+## 🏁 Introduction
+
+tsts is an open-source easy-to-use toolset for **time series forecasting**.
+
+## ✨ State of the Art
+
+`tsts` provides many state-of-the-art models. See [here](https://takuyashintate.github.io/tsts/modules/models.html) for the full list of available models.
+
+## 🔧 Installation
+
+```
+pip install tsts
+```
+
+## ⚡️ Gatting Started
+
+- [Train on a Custom Dataset](https://takuyashintate.github.io/tsts/tutorials/train.html)
+- [Test on a Custom Data](https://takuyashintate.github.io/tsts/tutorials/test.html)
+
+
