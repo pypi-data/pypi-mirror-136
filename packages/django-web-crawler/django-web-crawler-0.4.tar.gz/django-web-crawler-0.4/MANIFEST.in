@@ -1,0 +1,5 @@
+include LICENSE
+include README.rst
+recursive-include gatherlinks/static *
+recursive-include gatherlinks/templates *
+recursive-include gatherlinks/crawler *
