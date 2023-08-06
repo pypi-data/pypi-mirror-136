@@ -1,0 +1,9 @@
+idl2py/__init__.py,sha256=RsZjRjMprNcDm97wqRRSk6rTLgTX8N0GyicZyZ8OsBQ,22
+idl2py/idl2py.py,sha256=PXsxxLWh3pc9TDUq-EkEoZI-ovnHQVx145pxBI9dEyo,10930
+idl2py/data/idl2py_sed.txt,sha256=2m7FfPkWMsBq4Aq4MsC-Qk7Bqu3XnKsqE-whBfJWgxs,903
+idl2py-1.0.0.data/scripts/idl2py,sha256=JCTzLx6O43qWx2CXt5vsGlP7gQkyx19ZSsLTMYLlGSc,386
+idl2py-1.0.0.dist-info/LICENSE,sha256=6rp2Tnrr0tWROHuPD488TLyFP2NFRe-rt_6SeCpDf_8,1070
+idl2py-1.0.0.dist-info/METADATA,sha256=A1q_B-WpsHNkcJaN5uh5DGG0a087mWwXUZQBX0gpcBg,1173
+idl2py-1.0.0.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+idl2py-1.0.0.dist-info/top_level.txt,sha256=Y10NKEJseCwr0g1f1JD1oxst4DaZbt__JO84SMPrNkE,7
+idl2py-1.0.0.dist-info/RECORD,,
