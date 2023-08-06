@@ -1,0 +1,10 @@
+leanix/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+leanix/plugin.py,sha256=5rlURatkU__EOniwoZ8LaLTS4kAbTAn6iKT1VDLNoA4,7988
+leanix/templates/factsheet.jinja2,sha256=xvBNJtVUu2P8KRfr8IpIzeIyWpsGH5UHg_jUtCQ_Q1k,955
+leanix/templates/factsheet_material.jinja2,sha256=YuBZNNaAEGnG6CRHTW_vDV4cs2etTLkW8mh2LWGxzg4,1477
+mkdocs_leanix_plugin-1.0.2.dist-info/LICENSE,sha256=8DjfdjPkwzLlUf000Fc3rnWqcmqT5QdtsJAjyb_QMbM,1058
+mkdocs_leanix_plugin-1.0.2.dist-info/METADATA,sha256=jp38TPPhKikrtZ14a9UvLAv6SgFhBFC_adH5VUN0eo4,4027
+mkdocs_leanix_plugin-1.0.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+mkdocs_leanix_plugin-1.0.2.dist-info/entry_points.txt,sha256=S8k_LPavq6x2AGoVbClfkqebH7kPS2q3UyDPcp2mafU,54
+mkdocs_leanix_plugin-1.0.2.dist-info/top_level.txt,sha256=Vy7tNNubI0WhqxwXGF3u63ZE6zmxxq6FCEq8hamIJCM,7
+mkdocs_leanix_plugin-1.0.2.dist-info/RECORD,,
