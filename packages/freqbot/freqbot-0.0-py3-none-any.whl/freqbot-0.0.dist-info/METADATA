@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: freqbot
+Version: 0.0
+Summary: A bot for crypto trading
+Home-page: https://github.com/AndrewSultan/freqbot
+Author: Andrei Zoltan
+Author-email: 
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v2 (GPLv2)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+Just another crypto bot
+
+
