@@ -1,0 +1,3 @@
+[console_scripts]
+spectrafit=spectrafit.spectrafit:command_line_runner
+
