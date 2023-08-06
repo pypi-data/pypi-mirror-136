@@ -1,0 +1,3 @@
+include versioneer.py
+include botcity/document_processing/_version.py
+include requirements.txt
