@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: python-whatanime
+Version: 0.1.1
+Summary: An Unofficial python wrapper for trace.moe
+Home-page: https://github.com/Black-Bulls-Bots/WhatAnime
+Author: Joker Hacker
+Author-email: jokerhacker.6521@protonmail.com
+License: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Project-URL: Discussion, https://t.me/blackbulls_support
+Platform: UNKNOWN
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+
+# python-whatanime
+[![Documentation Status](https://readthedocs.org/projects/whatanime/badge/?version=latest)](https://whatanime.readthedocs.io/en/latest/?badge=latest)
+
+An unofficial python wrapper/library to interact with trace.moe.
+I have no relationship with the API owner.
+
+## Installation
+
+### Install with `setup.py`:
+
+    python setup.py build
+
+### Install from pip:
+Installing pip requires python version >=3.9
+
+    pip install python-whatanime
+
+## Example
+
+```py
+from WhatAnime import Client
+
+client = Client(token=" ")
+me = client.get_me()
+url_search = client.search_url(url="sample.com/image.jpg", anilist=False)
+result = client.search_file("image.jpeg")
+```
+
+## Documentaion 
+
+* Documentation for this library can be found [here.](https://whatanime.readthedocs.io/en/latest/)
+* Documentation for the API can be found [here](https://soruly.github.io/trace.moe-api/)
+
