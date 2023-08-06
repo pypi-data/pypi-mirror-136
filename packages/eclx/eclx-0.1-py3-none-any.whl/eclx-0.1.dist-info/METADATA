@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: eclx
+Version: 0.1
+Summary: Tools for extracting information from Eclipse run decks and results.
+Home-page: https://github.com/trhallam/eclx
+Author-email: trhallam@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: ecl (>2.10)
+Requires-Dist: click (>=8.0)
+Requires-Dist: tqdm
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: more-itertools
+Requires-Dist: loguru
+Provides-Extra: docs
+Requires-Dist: jupytext ; extra == 'docs'
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+Requires-Dist: pandas ; extra == 'test'
+Requires-Dist: numpy ; extra == 'test'
+Requires-Dist: xarray ; extra == 'test'
+
+UNKNOWN
+
