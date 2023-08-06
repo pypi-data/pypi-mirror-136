@@ -1,0 +1,16 @@
+spoc/__init__.py,sha256=CmxaKKqCEBcjWrH7BCISmip_qkAhJ7ent8ygfbck5lY,3183
+spoc/bibtex.py,sha256=DOB0BaHgpFLAG1SgIVY0HQHo9WdrZoiI_XaVEA6rXpU,1763
+spoc/constants.py,sha256=NJCPw_EysoFDz27GO96kMTrUiigx74dMrKSAkRSrsX8,1641
+spoc/spoc_logo.png,sha256=c7Ciii9PtYvku0VjJUjL2ksnqAwC_cULBSPESg1ADSo,20132
+spoc/protocols/__init__.py,sha256=GfRnDztGkRJlc3mHV928zNMmCXnD1qACcXbPSpaMX9o,1186
+spoc/protocols/protocol_fsc_fdr_control.py,sha256=Dk55KMZw28U5Gbu6vmB5WP7Rxzm7jDOyYY5izNKnuqE,7830
+spoc/tests/__init__.py,sha256=dM9APpODHHYmXoh30IJ6Uifk5XOUUa5HYeXcd3WM5tc,1150
+spoc/tests/test_protocols_spoc.py,sha256=CtL5-nNQXPlePFUckG6XkwS-Cn-Gg-FXySTLdU4qy9Q,2880
+spoc/viewers/__init__.py,sha256=w3qvjv8MBPq8EIPeBdBb-PEYWLPvaIlabVkBMDsfi_g,1209
+spoc/viewers/viewer_fsc_fdr_control.py,sha256=LWJDP_yEMy_9r4wvnnxsGPM2F-Xs--cCHJlKysLs0Us,3759
+scipion_em_spoc-1.0.3.dist-info/LICENSE,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+scipion_em_spoc-1.0.3.dist-info/METADATA,sha256=b03XCNak_u3iNpSU2LryHvZxsUL93gN2uA06YllV5kk,2453
+scipion_em_spoc-1.0.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+scipion_em_spoc-1.0.3.dist-info/entry_points.txt,sha256=UoyrHWoXQTqrALB8B7h86En8BIQ6WaR7dTmHoKzwk6w,33
+scipion_em_spoc-1.0.3.dist-info/top_level.txt,sha256=VhE4y0p4LIjiCme9bNOhINVnmTgb5G9diIOy4VI_kx8,5
+scipion_em_spoc-1.0.3.dist-info/RECORD,,
