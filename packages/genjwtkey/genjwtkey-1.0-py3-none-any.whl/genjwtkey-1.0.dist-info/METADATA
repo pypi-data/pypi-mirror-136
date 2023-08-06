@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: genjwtkey
+Version: 1.0
+Summary: "This package is a generator of assertion key pair for LINE Bot."
+Home-page: UNKNOWN
+Author: Wataru Nishimura
+Author-email: wataru.nishimura@irenkakotan.co.jp
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.4
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: jwcrypto
+Requires-Dist: pathlib
+
+# genjwtkey
+
+This package is a generator of assertion key pair for LINE Bot.
+
+このパッケージは、LINEボットで利用可能な、アサーション用のキーペアを生成します。
+
+## Requirements
+
+You need to install rust, because cryptography packages needs rust to build its own.
+
+cryptographyパッケージの利用に、Rustのインストールが必要です。
+
+---------
+
+## installation
+
+``` pip install genjwtkey ```
+
+## quick start
+
+``` python -m genjwtkey ```
+
+Two file outputs
+
+- ./publick_key.json
+- ./private_key.json
+
+
