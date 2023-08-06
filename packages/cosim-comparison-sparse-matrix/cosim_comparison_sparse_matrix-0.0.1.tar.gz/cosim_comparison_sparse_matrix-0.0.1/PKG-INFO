@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: cosim_comparison_sparse_matrix
+Version: 0.0.1
+Summary: compute the cosinus similarity comparison between 2 columns of a sparse matrix very fast and selecting only the top-n best scores with a threshold
+Home-page: UNKNOWN
+Author: camillebrl (Camille Barboule)
+Author-email: camille.barboule@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+UNKNOWN
+

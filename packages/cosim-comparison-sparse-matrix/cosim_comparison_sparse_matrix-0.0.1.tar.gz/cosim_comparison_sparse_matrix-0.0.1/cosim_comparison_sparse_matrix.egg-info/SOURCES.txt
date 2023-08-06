@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+cosim_comparison_sparse_matrix/__init__.py
+cosim_comparison_sparse_matrix/awesome_cossim_topn.py
+cosim_comparison_sparse_matrix.egg-info/PKG-INFO
+cosim_comparison_sparse_matrix.egg-info/SOURCES.txt
+cosim_comparison_sparse_matrix.egg-info/dependency_links.txt
+cosim_comparison_sparse_matrix.egg-info/not-zip-safe
+cosim_comparison_sparse_matrix.egg-info/requires.txt
+cosim_comparison_sparse_matrix.egg-info/top_level.txt
