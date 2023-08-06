@@ -1,0 +1,67 @@
+Metadata-Version: 2.1
+Name: wsipc
+Version: 0.0.3
+Summary: Async Python IPC using WebSockets
+Home-page: https://github.com/vcokltfre/wsipc
+License: MIT
+Author: vcokltfre
+Author-email: vcokltfre@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: aiohttp (>=3.8.1,<4.0.0)
+Requires-Dist: pre-commit (>=2.17.0,<3.0.0)
+Project-URL: Repository, https://github.com/vcokltfre/wsipc
+Description-Content-Type: text/markdown
+
+# wsipc
+
+Async Python IPC using WebSockets
+
+## Server Example (Simple Broker)
+
+```py
+from asyncio import run
+
+from wsipc import WSIPCServer
+
+server = WSIPCServer(heartbeat=45)
+
+run(server.start(block=True))
+```
+
+## Client Example
+
+```py
+from asyncio import create_task, run, sleep
+
+from wsipc import WSIPCClient
+
+
+client = WSIPCClient()
+
+@client.listener()
+async def on_message(message):
+    print(message)
+
+@client.listener()
+def sync_listener(message):
+    print(message)
+
+async def main() -> None:
+    create_task(client.connect())
+
+    await client.connected.wait()
+
+    await client.send("Hello World!")
+
+    await sleep(1)
+
+    await client.close()
+
+run(main())
+```
+

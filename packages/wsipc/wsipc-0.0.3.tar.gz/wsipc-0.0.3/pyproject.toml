@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "wsipc"
+version = "0.0.3"
+description = "Async Python IPC using WebSockets"
+authors = ["vcokltfre <vcokltfre@gmail.com>"]
+license = "MIT"
+repository = "https://github.com/vcokltfre/wsipc"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+aiohttp = "^3.8.1"
+pre-commit = "^2.17.0"
+
+[tool.poetry.dev-dependencies]
+black = "^21.12b0"
+isort = "^5.10.1"
+taskipy = "^1.9.0"
+
+[tool.taskipy.tasks]
+lint = "black . && isort --profile black ."
+pre-commit = "pre-commit install"
+
+[tool.black]
+line-length = 120
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
