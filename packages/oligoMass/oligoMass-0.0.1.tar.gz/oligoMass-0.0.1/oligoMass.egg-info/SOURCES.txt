@@ -1,0 +1,9 @@
+README.rst
+setup.py
+oligoMass/__init__.py
+oligoMass/dna.py
+oligoMass.egg-info/PKG-INFO
+oligoMass.egg-info/SOURCES.txt
+oligoMass.egg-info/dependency_links.txt
+oligoMass.egg-info/requires.txt
+oligoMass.egg-info/top_level.txt
