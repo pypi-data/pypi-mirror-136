@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "syntok"
+version = "1.4.1"
+description = "Text tokenization and sentence segmentation (segtok v2)."
+authors = ["Florian Leitner <me@fnl.es>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = ">=3.6 <4.0"
+regex = ">2016"
+
+[tool.poetry.dev-dependencies]
+tox = ">2"
+mypy = "*"
+pytest = ">4"
+flake8 = ">2"
+debugpy = "*"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
