@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.txt
+setup.py
+behradbasiccalculator/__init__.py
+behradbasiccalculator.egg-info/PKG-INFO
+behradbasiccalculator.egg-info/SOURCES.txt
+behradbasiccalculator.egg-info/dependency_links.txt
+behradbasiccalculator.egg-info/top_level.txt
