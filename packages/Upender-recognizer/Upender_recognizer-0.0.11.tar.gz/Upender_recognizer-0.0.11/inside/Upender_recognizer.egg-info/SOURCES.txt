@@ -1,0 +1,12 @@
+MANIFEST.in
+licence.txt
+readme.md
+setup.py
+inside/Upender_recognizer.egg-info/PKG-INFO
+inside/Upender_recognizer.egg-info/SOURCES.txt
+inside/Upender_recognizer.egg-info/dependency_links.txt
+inside/Upender_recognizer.egg-info/requires.txt
+inside/Upender_recognizer.egg-info/top_level.txt
+inside/jarvis/__init__.py
+inside/jarvis/call/__init__.py
+inside/jarvis/call/recognizer.py
