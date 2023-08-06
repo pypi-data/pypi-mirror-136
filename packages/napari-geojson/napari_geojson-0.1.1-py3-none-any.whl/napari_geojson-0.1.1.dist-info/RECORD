@@ -1,0 +1,14 @@
+napari_geojson/__init__.py,sha256=_Cde-wK7yurtkshscIHVfPp1-EP_TpHvNoyX8S1WhFU,299
+napari_geojson/_reader.py,sha256=qaUe7asNnb_z7RauSPNV7PBxZbycaPctrjtbRxWK52Y,4443
+napari_geojson/_version.py,sha256=Ok7XR8wZrOp38SaOYinpYmIxf_sT0PLyMemjrG3VZsI,142
+napari_geojson/_writer.py,sha256=rE8BGFziJ5LceQ3fy98nRTHmuPXxBW77bBBWU7lp6U0,1685
+napari_geojson/napari.yaml,sha256=q1z8uUBQh1tTjpDn_J96ytQf4m2oYWUr9v2icG_vL74,634
+napari_geojson/_tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+napari_geojson/_tests/test_reader.py,sha256=RYLD3QxMhgy2I507T0G53YULxHWbOqcY8mA1uymBkWY,1353
+napari_geojson/_tests/test_writer.py,sha256=K4qE3SqeL-dos-lgFkB3W2Jde2Kg2u0gzFnGGvcv0S4,1240
+napari_geojson-0.1.1.dist-info/LICENSE,sha256=Mrilrr1RD7CzkAdEZ8i-seGx3-BUmh9uJDrcKac-eso,1484
+napari_geojson-0.1.1.dist-info/METADATA,sha256=AKOpSzDkikchJ1IT1vvPJuEubMLxtOdgqBkg3ZsrRsQ,4566
+napari_geojson-0.1.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+napari_geojson-0.1.1.dist-info/entry_points.txt,sha256=KzhfsWODYvf_DwZA_hQM-npdm4JSINE4WMOjgtzdRlo,63
+napari_geojson-0.1.1.dist-info/top_level.txt,sha256=L1DY_zeaTELFVF3S9iXVo39RdbTQ_Q5zgoP--tUI768,15
+napari_geojson-0.1.1.dist-info/RECORD,,
