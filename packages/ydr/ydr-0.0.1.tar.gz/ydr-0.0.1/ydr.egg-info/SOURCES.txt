@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+ydr/__init__.py
+ydr/ydr.py
+ydr.egg-info/PKG-INFO
+ydr.egg-info/SOURCES.txt
+ydr.egg-info/dependency_links.txt
+ydr.egg-info/not-zip-safe
+ydr.egg-info/top_level.txt
