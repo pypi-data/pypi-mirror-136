@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: selenium_python_tools
+Version: 0.0.1
+Summary: Quick driver instantiation for M1 Selenium
+Home-page: https://github.com/JameyPMcDowell/selenium_python_tools
+Author: James McDowell
+Author-email: jameypmcdowell@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/JameyPMcDowell/selenium_python_tools/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Selenium Python Tools
+
+Sets chrome driver options appropriately for python selenium on Macbook w M1 chip
+

@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/selenium_python_tools/__init__.py
+src/selenium_python_tools/get_driver.py
+src/selenium_python_tools.egg-info/PKG-INFO
+src/selenium_python_tools.egg-info/SOURCES.txt
+src/selenium_python_tools.egg-info/dependency_links.txt
+src/selenium_python_tools.egg-info/top_level.txt
