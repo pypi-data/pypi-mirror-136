@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+plunk/__init__.py
+plunk.egg-info/PKG-INFO
+plunk.egg-info/SOURCES.txt
+plunk.egg-info/dependency_links.txt
+plunk.egg-info/not-zip-safe
+plunk.egg-info/top_level.txt
