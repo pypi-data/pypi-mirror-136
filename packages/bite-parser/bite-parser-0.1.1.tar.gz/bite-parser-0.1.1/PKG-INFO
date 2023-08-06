@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: bite-parser
+Version: 0.1.1
+Summary: Asynchronous parser taking incremental bites out of your byte input stream.
+Home-page: https://github.com/jgosmann/bite-parser/
+License: MIT
+Keywords: asyncio,parser,PEG,incremental,parser expression grammar
+Author: Jan Gosmann
+Author-email: jan@hyper-world.de
+Requires-Python: >=3.7,<=3.10
+Classifier: Development Status :: 3 - Alpha
+Classifier: Framework :: AsyncIO
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Compilers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Project-URL: Repository, https://github.com/jgosmann/bite-parser/
+Description-Content-Type: text/x-rst
+
+.. image:: https://github.com/jgosmann/bite/actions/workflows/ci.yml/badge.svg
+  :target: https://github.com/jgosmann/bite/actions/workflows/ci.yml
+  :alt: CI and release pipeline
+.. image:: https://codecov.io/gh/jgosmann/bite/branch/main/graph/badge.svg?token=O4M05YWNQK
+  :target: https://codecov.io/gh/jgosmann/bite
+  :alt: Codecov coverage
+.. image:: https://img.shields.io/pypi/v/bite
+  :target: https://pypi.org/project/bite/
+  :alt: PyPI
+.. image:: https://img.shields.io/pypi/pyversions/bite
+  :target: https://pypi.org/project/bite/
+  :alt: PyPI - Python Version
+.. image:: https://img.shields.io/pypi/l/bite
+  :target: https://pypi.org/project/bite/
+  :alt: PyPI - License
+
+bite parser
+===========
+
+Asynchronous parser taking incremental bites out of your byte input stream.
+
