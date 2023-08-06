@@ -1,0 +1,5 @@
+streamlit>=0.86
+compress_pickle
+hydralit_components>=1.0.7
+validators
+bokeh
