@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: covidactnow
+Version: 0.0.5
+Summary: A wrapper allowing users to get specific state-based COVID information from the Covid Act Now database.
+Home-page: UNKNOWN
+Author: Prerit Das
+Author-email: <preritdas@gmail.com>
+License: UNKNOWN
+Keywords: python,covid,rest,information,wrapper
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Dist: requests
+
+UNKNOWN
+
+
