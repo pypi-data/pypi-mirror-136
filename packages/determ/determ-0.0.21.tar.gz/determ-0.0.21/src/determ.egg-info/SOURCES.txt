@@ -1,0 +1,11 @@
+LICENCE
+README.md
+pyproject.toml
+setup.cfg
+src/determ.egg-info/PKG-INFO
+src/determ.egg-info/SOURCES.txt
+src/determ.egg-info/dependency_links.txt
+src/determ.egg-info/top_level.txt
+src/determ_package/__init__.py
+src/determ_package/determ.py
+src/determ_package/test.py
