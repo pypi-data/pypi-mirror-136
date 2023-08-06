@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+aio_stdout/__init__.py
+aio_stdout/_aio_stdout.py
+aio_stdout.egg-info/PKG-INFO
+aio_stdout.egg-info/SOURCES.txt
+aio_stdout.egg-info/dependency_links.txt
+aio_stdout.egg-info/top_level.txt
