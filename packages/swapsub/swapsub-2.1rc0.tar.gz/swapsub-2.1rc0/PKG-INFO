@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: swapsub
+Version: 2.1rc0
+Summary: a subtitle file format converter
+Home-page: https://github.com/cybytess/swapsub
+Author: cybytess
+Author-email: p2002817@outlook.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3 
+Classifier: Topic :: Multimedia :: Sound/Audio
+Classifier: Topic :: Multimedia :: Video
+Classifier: Intended Audience :: Customer Service
+Classifier: Intended Audience :: Developers

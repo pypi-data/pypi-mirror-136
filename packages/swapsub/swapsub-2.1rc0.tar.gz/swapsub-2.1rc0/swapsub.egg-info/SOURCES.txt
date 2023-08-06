@@ -1,0 +1,14 @@
+README.md
+setup.py
+./README.md
+./__init__.py
+./setup.py
+./swapsub.py
+./swapsub.egg-info/PKG-INFO
+./swapsub.egg-info/SOURCES.txt
+./swapsub.egg-info/dependency_links.txt
+./swapsub.egg-info/top_level.txt
+swapsub.egg-info/PKG-INFO
+swapsub.egg-info/SOURCES.txt
+swapsub.egg-info/dependency_links.txt
+swapsub.egg-info/top_level.txt
