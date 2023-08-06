@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+runnamegen/__init__.py
+runnamegen/commands.py
+runnamegen.egg-info/PKG-INFO
+runnamegen.egg-info/SOURCES.txt
+runnamegen.egg-info/dependency_links.txt
+runnamegen.egg-info/entry_points.txt
+runnamegen.egg-info/top_level.txt
