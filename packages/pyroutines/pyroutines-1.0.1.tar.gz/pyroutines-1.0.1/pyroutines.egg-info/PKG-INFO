@@ -1,0 +1,64 @@
+Metadata-Version: 2.1
+Name: pyroutines
+Version: 1.0.1
+Summary: This package contains helper methods to perform certain routine activitiesin the act of image processing with pyautogui
+Home-page: https://github.com/lucas-fsousa/pyroutines
+Author: Lucas Sousa
+Author-email: lucasads18@outlook.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# Routines
+
+This package contains helper methods to perform certain routine activities in the act of image processing with pyautogui
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install routines.
+
+```bash
+pip install pyroutines
+```
+
+## Usage
+
+```python
+import pyroutines as pyrout
+
+
+# returns 'boolean'
+pyrout.move_to_image(path_of_images, auto_click=True)
+"""
+Note that the auto_click parameter is optional
+and setting it to True, when locating the image, a click will automatically be executed.
+The necessary parameter "list of images" must contain at
+least 1 item in the source directory so that it is possible to read the 
+image and search for it elsewhere
+"""
+
+
+# returns 'None'
+pyrout.save_logs(message, method_name, error=False)
+"""
+Auxiliary method to save logs and print the information on the console.
+The 'message' parameter refers to the message that will be displayed
+in the log file and in the console, the method_name parameter serves
+ to identify the name of the routine where the error occurred and the 
+optional 'error' parameter serves to indicate the type of message to be displayed
+"""
+
+
+```
+
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
+
