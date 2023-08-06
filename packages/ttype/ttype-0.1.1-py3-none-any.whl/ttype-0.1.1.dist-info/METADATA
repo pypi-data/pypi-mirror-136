@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: ttype
+Version: 0.1.1
+Summary: A typing test on terminal
+Home-page: https://github.com/truongluan303/Typing_Test_with_Terminal_UI
+Author: Luan Truong
+Author-email: truongluan303@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Typing Test on Terminal
+A typing practice/test with Terminal UI written in Python
+
+
+### Description
+The application first asks the user to enter the number of sentences to type, then will display random short sentences about a science fact for the user to type. A correct character will be highlighted as green and a wrong character will be highlighted as red. After the user finishes the test, the program will displays the statistics about the result.
+
+
+### External Library
+The program uses curses module for the Terminal UI. If curses module is not already installed on the user's device, then the program will automatically install the module using pip package manager
+
+
+### PiPy Link: 
+https://pypi.org/project/ttype/
+
+
+### Demo
+Below is a demo of a typing test (with 3 sentences)
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/83048295/144738905-75e05d34-dba6-44b4-86bf-34aada664685.gif)
+
+
