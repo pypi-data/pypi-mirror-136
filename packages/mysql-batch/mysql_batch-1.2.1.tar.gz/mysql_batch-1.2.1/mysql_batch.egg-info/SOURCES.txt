@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+mysql_batch.egg-info/PKG-INFO
+mysql_batch.egg-info/SOURCES.txt
+mysql_batch.egg-info/dependency_links.txt
+mysql_batch.egg-info/entry_points.txt
+mysql_batch.egg-info/requires.txt
+mysql_batch.egg-info/top_level.txt
+src/__init__.py
+src/__main__.py
+src/mysql_batch.py
