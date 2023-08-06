@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: epiccakeking_journal
+Version: 0.0.3
+Summary: A simple journal application
+Home-page: https://github.com/epiccakeking/journal
+Author: epiccakeking
+Author-email: epiccakeking@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/epiccakeking/journal/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: POSIX :: Linux
+Description-Content-Type: text/markdown
+License-File: COPYING
+
+# Journal
+A simple journal application using GTK.
+
+## Installation
+
+From pypi:
+```
+pip install epiccakeking_journal
+```
+
+From source:
+```
+git clone https://github.com/epiccakeking/journal.git
+pip install ./journal
+```
+
+Run without installing:
+```
+git clone https://github.com/epiccakeking/journal.git
+python journal/epiccakeking_journal
+```
+
+
