@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+tests/__init__.py
+tests/test.py
+vdataset/__init__.py
+vdataset/labelmap.py
+vdataset/vdataset.py
+vdataset.egg-info/PKG-INFO
+vdataset.egg-info/SOURCES.txt
+vdataset.egg-info/dependency_links.txt
+vdataset.egg-info/requires.txt
+vdataset.egg-info/top_level.txt
