@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+envy/__init__.py
+python_envy.egg-info/PKG-INFO
+python_envy.egg-info/SOURCES.txt
+python_envy.egg-info/dependency_links.txt
+python_envy.egg-info/top_level.txt
