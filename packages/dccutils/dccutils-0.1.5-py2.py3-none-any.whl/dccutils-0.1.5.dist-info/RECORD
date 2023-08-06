@@ -1,0 +1,12 @@
+dccutils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dccutils/__version__.py,sha256=rPSfWgIeq2YWVPyESOAwCBt8vftsTpIkuLAGDEzyRQc,22
+dccutils/blender.py,sha256=TYV6e6SHQF6FZE9YnKpE8Y6vHkE8Mme9kJlKXiiMUes,8665
+dccutils/guess.py,sha256=JCCmZWWgQxlqbvaZNywx5qPcF1N-S_5Lz7PMgw8nyBw,399
+dccutils/houdini.py,sha256=TFOh8hOWBRe_qvL0XljY95YIljt_xfDf37NwjTwg3ts,5214
+dccutils/maya.py,sha256=xWS9IHkf_CE9um7POdmRxDaQvNNRc5ZwhVNMYgYCyhM,8403
+dccutils/software.py,sha256=PpR_AWurSRMtF6lv6wsoDFAHoxfabaDLZej3bnNQZR8,2172
+dccutils-0.1.5.dist-info/LICENSE,sha256=KhTLyPEX5Q7kiEhTX69HaqmwHjjpRFRRKhKApfGTinI,1067
+dccutils-0.1.5.dist-info/METADATA,sha256=JA7JDhBSvDhmXQpBu4X6IkVLHTIoPUsJXh5Xz0jn-Gg,2490
+dccutils-0.1.5.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+dccutils-0.1.5.dist-info/top_level.txt,sha256=b4MS8qU3bPqx_wD1NCAXIV-MX0IKAy-GFhslzKwnIFA,9
+dccutils-0.1.5.dist-info/RECORD,,
