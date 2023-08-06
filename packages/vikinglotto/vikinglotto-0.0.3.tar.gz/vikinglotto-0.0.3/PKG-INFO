@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: vikinglotto
+Version: 0.0.3
+Summary: Generate Vikinglotto lottery numbers
+Home-page: https://github.com/chaosrun/vikinglotto-generator
+Author: Zhaosi Qu
+Author-email: pypi@chaos.run
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/chaosrun/vikinglotto-generator/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# vikinglotto-generator
+
+This program generates a set of randomly picked 
+[Vikinglotto](https://en.wikipedia.org/wiki/Vikinglotto) lottery numbers.
+
+The program's output supports showing the result using `cowsay` for added fun.
+The generated numbers are stored in a log file and can be reviewed if necessary. 
+
+[中文说明](./README_CN.md)
+
+## Requirements
+
+If you need the program to display the results as `cowsay`, you need to have `cowsay` installed on your system.
+
+Take Debian & Ubuntu as an example:
+
+```bash
+sudo apt update
+sudo apt install cowsay -y
+```
+
+## Installation
+
+Use `pip`:
+
+```
+python3 -m pip install vikinglotto
+```
+
+## Usage
+
+Run the program in `cowsay` mode:
+
+```bash
+vikinglotto
+```
+
+Without using `cowsay`, print the result directly:
+
+```bash
+vikinglotto --plain
+```
+
+
