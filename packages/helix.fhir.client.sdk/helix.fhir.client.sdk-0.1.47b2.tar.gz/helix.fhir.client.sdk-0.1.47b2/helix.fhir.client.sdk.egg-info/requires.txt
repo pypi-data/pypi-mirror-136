@@ -1,0 +1,4 @@
+furl
+requests
+urllib3
+chardet
