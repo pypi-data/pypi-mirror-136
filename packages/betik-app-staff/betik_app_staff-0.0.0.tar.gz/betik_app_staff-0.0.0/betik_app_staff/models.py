@@ -1,0 +1,53 @@
+from django.db import models
+from django.utils.translation import ugettext_lazy as _
+
+from betik_app_staff.enums import StaffStatusEnum
+
+
+class DepartmentModel(models.Model):
+    name = models.CharField(max_length=255, unique=True, verbose_name=_('Department'))
+
+    class Meta:
+        verbose_name = _('Department')
+        verbose_name_plural = _('Departments')
+
+
+class TitleModel(models.Model):
+    name = models.CharField(max_length=255, unique=True, verbose_name=_('Name'))
+
+    class Meta:
+        verbose_name = _('Title')
+        verbose_name_plural = _('Titles')
+
+
+class StaffTypeModel(models.Model):
+    name = models.CharField(max_length=255, unique=True, verbose_name=_('Name'))
+
+    class Meta:
+        verbose_name = _('Staff Type')
+        verbose_name_plural = _('Staff Types')
+
+
+class StaffModel(models.Model):
+    person = models.ForeignKey('betik_app_person.NaturalPersonModel', on_delete=models.CASCADE, related_name='staffs',
+                               verbose_name=_('Person'))
+    registration_number = models.CharField(max_length=50, unique=True, verbose_name=_('Registration Number'))
+    department = models.ForeignKey(DepartmentModel, on_delete=models.DO_NOTHING, related_name='staffs',
+                                   verbose_name=_('Department'))
+    staff_type = models.ForeignKey(StaffTypeModel, on_delete=models.DO_NOTHING, related_name='staffs',
+                                   verbose_name=_('Staff Type'))
+    title = models.ForeignKey(TitleModel, on_delete=models.DO_NOTHING, related_name='staffs', null=True, blank=True,
+                              verbose_name=_('Title'))
+    start_date = models.DateField(verbose_name=_('Start Date'))
+    finish_date = models.DateField(null=True, blank=True, verbose_name=_('Finish Date'))
+    status = models.IntegerField(choices=StaffStatusEnum.types, default=StaffStatusEnum.ACTIVE,
+                                 verbose_name=_('Status'))
+
+    class Meta:
+        indexes = [
+            models.Index(fields=['person', 'registration_number', 'start_date']),
+            models.Index(fields=['registration_number', 'start_date']),
+            models.Index(fields=['start_date'])
+        ]
+        verbose_name = _('Staff')
+        verbose_name_plural = _('Staffs')
