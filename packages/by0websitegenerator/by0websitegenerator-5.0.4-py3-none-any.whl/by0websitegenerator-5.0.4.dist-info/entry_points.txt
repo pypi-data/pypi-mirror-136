@@ -1,0 +1,7 @@
+
+	[console_scripts]
+	websitegenerator=wg.py:main
+    generatewebsite=wg.py:main
+    gw=wg.py:main
+    makewebsite=wg.py:main
+	
