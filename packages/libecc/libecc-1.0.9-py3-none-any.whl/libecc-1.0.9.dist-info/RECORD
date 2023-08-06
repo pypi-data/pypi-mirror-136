@@ -1,0 +1,9 @@
+libecc/__init__.py,sha256=97sB14232LaFPX6ebfQgYmB5ZYHXYTI1XKusiSGJqY8,172
+libecc/_libecc_cffi.cpython-38-x86_64-linux-gnu.so,sha256=Y2cHI1hE-rj6W7kbczKIFIzEwUU5ozPy6btQIBZL3o8,1086272
+libecc/_libecc_cffi.cpython-39-darwin.so,sha256=Zj1nknuLxTaELih0Ropk3576Gf2wYRRtA408ttzu_GY,1212800
+libecc/libecc.py,sha256=iww4BQfonJuU0twW6_M_lyuwBU5J328_spI11p6bA_s,141842
+libecc-1.0.9.dist-info/LICENSE,sha256=2MgyKirGuzd3yOnytBORjn2EpA6ILko37dG7JJbLaCs,1061
+libecc-1.0.9.dist-info/METADATA,sha256=JfQVkZCGEFq6ekOoOTPYlG-mZo8Q7Vc2MdX3WmgbpkE,10115
+libecc-1.0.9.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+libecc-1.0.9.dist-info/top_level.txt,sha256=4ejFc1uoBOEzfkaab6nwKcZSjn4AUamB8Hm2bR3smXI,7
+libecc-1.0.9.dist-info/RECORD,,
