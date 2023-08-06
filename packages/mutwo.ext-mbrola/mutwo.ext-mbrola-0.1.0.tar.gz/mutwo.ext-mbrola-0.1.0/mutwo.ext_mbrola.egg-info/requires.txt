@@ -1,0 +1,7 @@
+mutwo.ext-core<1.00.0,>=0.55.0
+mutwo.ext-music<1.0.0,>=0.7.0
+voxpopuli<1,>=0.3.7
+
+[testing]
+nose
+coveralls
