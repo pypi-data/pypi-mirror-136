@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+leanix/__init__.py
+leanix/plugin.py
+leanix/templates/factsheet.jinja2
+leanix/templates/factsheet_material.jinja2
+mkdocs_leanix_plugin.egg-info/PKG-INFO
+mkdocs_leanix_plugin.egg-info/SOURCES.txt
+mkdocs_leanix_plugin.egg-info/dependency_links.txt
+mkdocs_leanix_plugin.egg-info/entry_points.txt
+mkdocs_leanix_plugin.egg-info/requires.txt
+mkdocs_leanix_plugin.egg-info/top_level.txt
