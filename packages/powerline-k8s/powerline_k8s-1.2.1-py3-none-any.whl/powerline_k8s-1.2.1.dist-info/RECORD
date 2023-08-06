@@ -1,0 +1,9 @@
+powerline_k8s/__init__.py,sha256=o7VIUu_Rb6jI1v7Jj8DmBmn56jDUUhY3WAw3kW9GuZ8,99
+powerline_k8s/segments.py,sha256=K_ACECxDllyedqT8-BC7N3ej_YFirmiAlKxLlQPeCpc,3933
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_powerline_k8s.py,sha256=1JWXzyrnRXLXss_3ddYJiIM-t_wQH57dJ14LEo9B8Ro,3286
+powerline_k8s-1.2.1.dist-info/LICENSE,sha256=05sGm-_Vd_sZrTMothV2B9VG5Re_UcQ1ZjE2eoH1XWk,1069
+powerline_k8s-1.2.1.dist-info/METADATA,sha256=TUuT1sRHjSzehxEDe2zmdaRMQ-lr2scyq-4KCth8xOs,4910
+powerline_k8s-1.2.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+powerline_k8s-1.2.1.dist-info/top_level.txt,sha256=cgIRMzmUg8VrbW-LXLatDLUy7p9Z_6eLaFnLxD_Tqjc,20
+powerline_k8s-1.2.1.dist-info/RECORD,,
