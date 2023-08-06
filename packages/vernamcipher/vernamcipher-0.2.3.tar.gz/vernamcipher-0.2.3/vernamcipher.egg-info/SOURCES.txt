@@ -1,0 +1,12 @@
+.gitattributes
+.gitignore
+LICENSE
+README.md
+requirements_dev.txt
+setup.py
+vernamcipher/__init__.py
+vernamcipher/cryptographic.py
+vernamcipher.egg-info/PKG-INFO
+vernamcipher.egg-info/SOURCES.txt
+vernamcipher.egg-info/dependency_links.txt
+vernamcipher.egg-info/top_level.txt
