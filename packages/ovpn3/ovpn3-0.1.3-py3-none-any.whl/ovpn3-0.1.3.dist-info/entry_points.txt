@@ -1,0 +1,3 @@
+[console_scripts]
+ovpn3=ovpn3:main
+
