@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: shiftql_parser
+Version: 0.0.1
+Summary: ShiftQL Parser
+Home-page: UNKNOWN
+Author: Xiaozhe Yao
+Author-email: askxzyao@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Image Recognition
+Classifier: Topic :: Software Development
+Description-Content-Type: text/markdown
+
+UNKNOWN
+

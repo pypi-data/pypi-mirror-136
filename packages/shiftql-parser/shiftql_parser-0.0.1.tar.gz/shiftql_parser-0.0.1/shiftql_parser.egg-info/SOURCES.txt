@@ -1,0 +1,13 @@
+README.md
+setup.py
+libparser/__init__.py
+libparser/dml.py
+libparser/exceptions.py
+libparser/lexer.py
+libparser/parser.py
+libparser/parsetab.py
+shiftql_parser.egg-info/PKG-INFO
+shiftql_parser.egg-info/SOURCES.txt
+shiftql_parser.egg-info/dependency_links.txt
+shiftql_parser.egg-info/requires.txt
+shiftql_parser.egg-info/top_level.txt
