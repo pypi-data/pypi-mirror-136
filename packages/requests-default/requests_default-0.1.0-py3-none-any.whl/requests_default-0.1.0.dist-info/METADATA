@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: requests-default
+Version: 0.1.0
+Summary: Request for default
+Home-page: https://github.com/ultimatelife/requests-default
+Keywords: requests,requests-default
+Author: geonwoo.kim
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: pylint (>=2.12.2,<3.0.0)
+Requires-Dist: requests (>=2.16.0,<3.0.0)
+Project-URL: Documentation, https://github.com/ultimatelife/requests-default
+Project-URL: Repository, https://github.com/ultimatelife/requests-default
+Description-Content-Type: text/markdown
+
+# requests-default
+## Info
+This set default `requests <https://docs.python-requests.org/en/latest/>`_'s `url`, `headers` etc...
+
+```python
+from requests_base import DefaultSession
+    session = DefaultSession(base_url='https://example.com/resource/', headers={'api-key': 'aabbcc'})
+    r = session.get('sub-resource/', params={'foo': 'bar'})
+    print(r.request.url)
+```
+
+## License
+Distributed under the terms of the MIT license, pytest is free and open source software.
