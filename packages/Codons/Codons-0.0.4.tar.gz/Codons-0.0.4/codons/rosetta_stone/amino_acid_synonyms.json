@@ -1,0 +1,82 @@
+{
+    "alanine": {
+        "three_letter": "ala",
+        "one_letter": "A"
+    },
+    "arginine": {
+        "three_letter": "arg",
+        "one_letter": "R"
+    },
+    "asparagine": {
+        "three_letter": "asn",
+        "one_letter": "N"
+    },
+    "aspartic acid": {
+        "three_letter": "asp",
+        "one_letter": "D"
+    },
+    "cysteine": {
+        "three_letter": "cys",
+        "one_letter": "C"
+    },
+    "glutamic acid": {
+        "three_letter": "glu",
+        "one_letter": "E"
+    },
+    "glutamine": {
+        "three_letter": "gln",
+        "one_letter": "Q"
+    },
+    "glycine": {
+        "three_letter": "gly",
+        "one_letter": "G"
+    },
+    "histidine": {
+        "three_letter": "his",
+        "one_letter": "H"
+    },
+    "isoleucine": {
+        "three_letter": "ile",
+        "one_letter": "I"
+    },
+    "leucine": {
+        "three_letter": "leu",
+        "one_letter": "L"
+    },
+    "lysine": {
+        "three_letter": "lys",
+        "one_letter": "K"
+    },
+    "methionine": {
+        "three_letter": "met",
+        "one_letter": "M"
+    },
+    "phenylalanine": {
+        "three_letter": "phe",
+        "one_letter": "F"
+    },
+    "proline": {
+        "three_letter": "pro",
+        "one_letter": "P"
+    },
+    "serine": {
+        "three_letter": "ser",
+        "one_letter": "S"
+    },
+    "threonine": {
+        "three_letter": "thr",
+        "one_letter": "T"
+    },
+    "tryptophan": {
+        "three_letter": "trp",
+        "one_letter": "W"
+    },
+    "tyrosine": {
+        "three_letter": "tyr",
+        "one_letter": "Y"
+    },
+    "valine": {
+        "three_letter": "val",
+        "one_letter": "V"
+    }
+}

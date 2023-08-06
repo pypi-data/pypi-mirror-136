@@ -1,0 +1,47 @@
+{
+    "vertebrate_mitochondrial": {
+        "AGA":"stop",
+        "AGG":"stop",
+        "ATA":"methionine",
+        "AUA":"methionine",
+        "TGA":"tryptophan",
+        "UGA":"tryptophan"
+        },
+    "yeast_mitochondrial": {
+        "ATA":"methionine",
+        "AUA":"methionine",
+        "CUU":"threonine",
+        "CTT":"threonine",
+        "CTC":"threonine",
+        "CUC":"threonine",
+        "CTA":"threonine",
+        "CUA":"threonine",
+        "CTG":"threonine",
+        "CUG":"threonine",
+        "TGA":"tryptophan",
+        "UGA":"tryptophan",
+        "CGA": null,
+        "CGC": null
+    },
+    "mold": {
+        "TGA":"tryptophan",
+        "UGA":"tryptophan"
+    },
+    "protozoan": {
+        "TGA":"tryptophan",
+        "UGA":"tryptophan"
+    },
+    "coelenterate_mitochondrial": {
+        "TGA":"tryptophan",
+        "UGA":"tryptophan"
+    },
+    "mycoplasma": {
+        "TGA":"tryptophan",
+        "UGA":"tryptophan"
+    },
+    "spiroplasma": {
+        "TGA":"tryptophan",
+        "UGA":"tryptophan"
+    }
+
+}
