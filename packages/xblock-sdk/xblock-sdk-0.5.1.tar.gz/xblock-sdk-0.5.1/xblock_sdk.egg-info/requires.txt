@@ -1,0 +1,13 @@
+lxml
+Django
+webob
+requests
+simplejson
+cookiecutter
+fs-s3fs
+XBlock
+pypng
+boto
+lazy
+web-fragments
+django-pyfs
