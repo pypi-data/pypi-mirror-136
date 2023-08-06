@@ -1,0 +1,13 @@
+onlinespreadsheet/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+onlinespreadsheet/editconfig.py,sha256=psAe8RsqsrE3AC8EzP9CIYk8DN93_CGjJgo1vQBtDDw,3440
+onlinespreadsheet/loginBlueprint.py,sha256=ZENsccGin23zmBctg_Y-0a9CiSytMBOoIw38nuaDWJU,12645
+onlinespreadsheet/profile.py,sha256=UdtETNH6BKRniPeI6nJFRxYyHgNjVEjESG99pij4fnw,7417
+onlinespreadsheet/spreadsheet.py,sha256=wW-G8Ynxz879jNBVwwW8uM7rd9LQUuazTxvmcmghNmI,15360
+onlinespreadsheet/tableediting.py,sha256=2qaoGuooJKJAzyLfX8sCLpvz-JpMicDegEw-syVSkcY,1882
+onlinespreadsheet/tablequery.py,sha256=5G15WhnSvHjGpx7N0d_FoOpSo9d3896W7rNQDON8Zec,7111
+onlinespreadsheet/webserver.py,sha256=Ec0OjFMNmiQHyvwZVPNSC98VLmDLyF0Y3ANZFslsBmY,16663
+pyOnlineSpreadSheetEditing-0.0.5.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+pyOnlineSpreadSheetEditing-0.0.5.dist-info/METADATA,sha256=88ne6-Hpw9UWjO7dBJXzxDSZGi_oyl49CIMagNN7eIo,2427
+pyOnlineSpreadSheetEditing-0.0.5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pyOnlineSpreadSheetEditing-0.0.5.dist-info/top_level.txt,sha256=cANoOEXU19-rHsuMpYO2vvlig90Zqmcnd0OiYszzANQ,18
+pyOnlineSpreadSheetEditing-0.0.5.dist-info/RECORD,,
