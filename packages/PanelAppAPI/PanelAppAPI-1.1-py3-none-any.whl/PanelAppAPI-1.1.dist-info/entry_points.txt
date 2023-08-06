@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        panelapp_dump=PanelAppAPI.PanelApp_tool:dumpPanels
+    
