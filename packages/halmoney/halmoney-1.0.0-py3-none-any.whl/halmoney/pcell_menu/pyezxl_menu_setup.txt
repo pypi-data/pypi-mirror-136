@@ -1,0 +1,44 @@
+0, 추가하기, Insert, nofaceid, none
+	1, 추가 : 문자열 추가 (왼쪽에), pyezxl_100_add_text_at_left_01.py, nofaceid, none
+	1, 추가 : 문자열 추가 (오른쪽에), pyezxl_100_add_text_at_right_01.py, nofaceid, none
+	1, 추가 : 새로운 행 추가, pyezxl_110_insert_column_new_01.py, nofaceid, none
+0, 채워넣기, Insert, nofaceid, none
+	1, 채워넣기 : 빈셀 위의것으로 채워넣기, pyezxl_140_fill_empty_cell_as_above_value_01.py, nofaceid, none
+0, 바꾸기, nofaceid, nofaceid, none
+	1, 바꾸기 : 대소문자 변경 (전부), pyezxl_120_change_text_swap_small_capital_01.py, nofaceid, none
+	1, 바꾸기 : 대문자로 변경 (전부), pyezxl_120_change_text_to_cap_01.py, nofaceid, none
+	1, 바꾸기 : 대문자로 변경 (첫글자만), pyezxl_120_change_text_first_capital_01.py, nofaceid, none
+	1, 바꾸기 : 소문자로 변경 (전부), pyezxl_120_change_text_all_small_01.py, nofaceid, none
+0, 삭제하기, del, nofaceid, none
+	1, 삭제 : 빈행 삭제, pyezxl_130_delete_empty_line_01.py, nofaceid, popup
+	1, 삭제 : 이름삭제 (입력받은 한개만), pyezxl_130_delete_name_one_01.py, nofaceid, none
+	1, 삭제 : 같은자료 삭제 (위치는 그대로), pyezxl_130_delete_samedata_at_same_position_01.py, nofaceid, none
+	1, 삭제 : 공백삭제 (왼쪽과 오른쪽), pyezxl_130_delete_space_both_side_01.py, nofaceid, none
+	1, 삭제 : 공백삭제 (왼쪽만), pyezxl_130_delete_space_left_side_01.py, nofaceid, none
+	1, 삭제 : 공백삭제 (오른쪽만), pyezxl_130_delete_space_right_side_01.py, nofaceid, none
+	1, 삭제 : N번째의 가로값을 모두 지우기(선택영역), pyezxl_130_delete_n_step_01.py, nofaceid, none
+	1, 삭제 : 모든 선 삭제하기 (선택영역), pyezxl_130_delete_all_line_drawing_01.py, nofaceid, none
+0, 복사하기, Copy, nofaceid, none
+	1, 복사 : 현재 가로 한줄을 특정시트의 첫번째 열에 복사, pyezxl_150_copy_one_line_to_another_sheet_01.py, nofaceid, none
+0, 갯수세기, Count, nofaceid, none
+	1, 갯수세기 : 빈셀 색칠하고 갯수세기, pyezxl_200_count_paint_empty_cell_01.py, nofaceid, none
+0, 찾기_바꾸기, Search, nofaceid, none
+	1, 찾기 : 각열의 최소값에 색깔 (선택자료), pyezxl_300_paint_min_vaue_at_each_row_01.py, nofaceid, none
+	1, 찾기 : 최대값에 색칠 (선택영역), pyezxl_400_search_paint_max_num_01.py, nofaceid, popup
+	1, 찾기 : 최소값에 색칠 (선택영역), pyezxl_400_search_paint_min_num_01.py, nofaceid, none
+	1, 찾기 : 특정문자가 있는 셀에 색칠 (선택영역), pyezxl_400_search_paint_specific_text_01.py, nofaceid, none
+	1, 찾기 : 고유한값 찾아서 새로운행 만든후 쓰기, pyezxl_400_search_unique_and_write_at_new_col_01.py, nofaceid, none
+	1, 찾기 : 빈셀처럼 보이는 Space들어간 셀 찾기, pyezxl_400_search_real_empty_cell_01.py, nofaceid, none
+0, 옮기기, move, nofaceid, none
+	1, 자료옮기기 : N번째 자료를 좌로 X만큼 우로 Y만큼 이동시키기, pyezxl_700_move_data_001_01.py, nofaceid, none
+0, 그리기_색칠, dwg, nofaceid, none
+	1, 그리기 : 자주사용하는 윤곽선, pyezxl_300_draw_line_well_used_01.py, nofaceid, none
+	1, 색칠 : RGB값으로 색칠 (선택영역), pyezxl_300_paint_rgb_color_01.py, nofaceid, none
+0, 설정, Set, nofaceid, none
+	1, Grid를 on- Off하기, pyezxl_800_etc_toggle_grid_onoff_01.py, nofaceid, none
+	1, 자주사용하는 글씨체/크기등, pyezxl_800_setup_well_used_font_01.py, nofaceid, none
+0, 기타, Etc, nofaceid, none
+	1, 입력받은 폴더안의 화일이름 갖고오기, pyezxl_900_etc_get_filenames_in_folder_01, nofaceid, none
+0, Help_Update, nofaceid, nofaceid, none
+	1, 나는 누구일까요, pyezxl_990_who_am_i.py, nofaceid, none
+	1, 간단 설명서, pyezxl_990_short_manual.py, nofaceid, none
