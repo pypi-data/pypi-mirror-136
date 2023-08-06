@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/my_first_plugin/__init__.py
+src/my_first_plugin/my_first_plugin.py
+src/my_first_plugin_goahead_jakemyday.egg-info/PKG-INFO
+src/my_first_plugin_goahead_jakemyday.egg-info/SOURCES.txt
+src/my_first_plugin_goahead_jakemyday.egg-info/dependency_links.txt
+src/my_first_plugin_goahead_jakemyday.egg-info/top_level.txt
