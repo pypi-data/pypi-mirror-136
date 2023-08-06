@@ -1,0 +1,14 @@
+amd/__init__.py,sha256=PfNADslLH0rTp0XveCIfDbb-tVh1sFfZIYxbeHh7KlU,127
+amd/_nearest_neighbours.py,sha256=pG7a389E_XWfMOQFPRSFOTtZ_tw33m7pKYHU7266qQc,5836
+amd/_network_simplex.py,sha256=tTOIMiqBq8ujWYy3DdD6GljSwyjYas6ZFIrDoA5CPjw,15959
+amd/auto.py,sha256=WzlBXnQ6VVESmcAFy1XGxHu5kiuwZS2eyd7v6OTGRnE,4897
+amd/calculate.py,sha256=lCO5zaXEhI09t6Jaj8Yw52U32tBvHei_wTgexP5EAvk,15649
+amd/ccdc_utils.py,sha256=ZCQXO7e4rC3W3lj20EQLF58s7-LS_I09Wtf3j3fPOFc,2951
+amd/compare.py,sha256=36r-EL8w3Vfi-uEv_dwMoTcxOyIJNY4szwmPxn8jd8Q,18943
+amd/io.py,sha256=6WlBgdhM80iqaxJSgRBPl5nAZhi9oAvfBUp9U_hab1A,34237
+amd/periodicset.py,sha256=7x83uy7TaYMkXixw8AujpcDv3mXJ7nmmmp3VjO7vLUs,3944
+amd/utils.py,sha256=AFL3FmBs3UlUwIRr-uobGTKCxKjX9lI2L0FMzFLU258,7037
+average_minimum_distance-1.1.7.dist-info/METADATA,sha256=GOKdfDkbhwpPviMhDwKztXcAAdkpx2QChufgL-aI42U,7039
+average_minimum_distance-1.1.7.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+average_minimum_distance-1.1.7.dist-info/top_level.txt,sha256=WTbupo3iitBZ-1qY8AqLpPc8YnH6wn2XZhZpYjbnKlo,4
+average_minimum_distance-1.1.7.dist-info/RECORD,,
