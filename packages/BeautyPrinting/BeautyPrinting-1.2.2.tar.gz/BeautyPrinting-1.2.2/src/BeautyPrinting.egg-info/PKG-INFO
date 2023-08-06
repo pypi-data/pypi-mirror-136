@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: BeautyPrinting
+Version: 1.2.2
+Summary: BeautyPrinting · 一个专为美观打印而设计的模块
+Home-page: UNKNOWN
+Author: YunDuanModule
+License: UNKNOWN
+Keywords: BeautyPrinting,Beauty,Printing,Print,beautiful,colorful,loading,bar
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# 欢迎下载BeautyPrinting！
+## 你是否想要拥有幻彩的打印输出？
+```python
+import BeautyPrinting
+
+BeautyPrinting.BtPrint.btprint('Colorful Hello World!', color='cyan')
+```
+###### 两行代码，就可以拥有炫彩的“Hello World”
+## 你是否想要拥有炫酷的加载进度条？
+```python
+import BeautyPrinting
+
+BeautyPritning.ProgressBar.loading_bar('Loading......', items=50, color='cyan')
+```
+###### 两行代码，轻松拥有多彩的加载条
+## 赶紧下载我们BeautyPrinting吧！一定能满足您的美学需求！
+
