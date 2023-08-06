@@ -1,0 +1,17 @@
+oceandata/__init__.py,sha256=n2J0g30O9yI2KuHxac4iDXTBeBjh1qvpenZhMKeaSaU,64
+oceandata/chl/__init__.py,sha256=28Wyy_vq-UM5f7h67OM7c3SxqG3Ir1Mm6aK-w-mhehM,23
+oceandata/chl/valente.py,sha256=Lf0ZwsZ9br2Wazi11o_p9QD7lZxLiRsfJeO3p2ZhRdw,4837
+oceandata/export_production/__init__.py,sha256=v7ofybh0FVgP5FHF_JaVrxKuIuLTvszb-v6nuxxixQs,19
+oceandata/export_production/mouw.py,sha256=eFEcQ4aBG3FieM16mANxr9thqWn3S12JRzB2TfMQf-k,4519
+oceandata/gdp.py,sha256=irGiyU_wsMfL-AqK4OQHqd5dp0irnHenkmNmM2LuFps,3814
+oceandata/mapps.py,sha256=ByGak_3tnIi8q11eiJcs86ELrqUqkCkrFGJ7t4P4ITs,3625
+oceandata/primary_production/__init__.py,sha256=ijyzUrxfjwc1-5eqdYvjNmnAkdcVmt7d2CovxDU9K_c,33
+oceandata/primary_production/buitenhuis.py,sha256=9O2v2a_L4cuxgFfX91nQDYbb8a1E6rmuPPowQTwSe68,3277
+oceandata/primary_production/mattei.py,sha256=6jlGSgSamKesOzk-LcVZ7Bi6D8B4qP50bhJ79eLXLPk,4964
+oceandata/primary_production/pp_decorr_time.py,sha256=nbccbVCG90VwQj5vPp-v-VDDX8fmQdpD-_XKM0G0Up4,4149
+oceandata/primary_production/primary_production.py,sha256=_khgG1UG8qPesPUc0hMkU_AZEHwMhxHE2qeBeMk4bJw,884
+oceandata/seabass_pic.py,sha256=ehN771BkahRnoGmRWrOtMkNdfrnhKWzJRN6nb_YNSmw,4741
+oceandata-0.3.1.dist-info/LICENSE,sha256=K_eVD2sHcfxshO5hJ-GMGlC8BZKW2vLdDA1y_b332rQ,1069
+oceandata-0.3.1.dist-info/WHEEL,sha256=FMw6u7Kp3jrdDDtJRZ3hkPV-9adLQT8pbM4iifKUGfw,85
+oceandata-0.3.1.dist-info/METADATA,sha256=BmSr8IDWv1AajJafED2EcUxyu-yQ3oEN_NW_QBPh52s,513
+oceandata-0.3.1.dist-info/RECORD,,
