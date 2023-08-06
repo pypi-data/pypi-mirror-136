@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: abfn
+Version: 0.0.8
+Summary: ABFN rules for text filtering
+Home-page: UNKNOWN
+Author: Shubham Randive
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# ABFN
+ABFN text filter rules for indic languages
+
+ref:  https://www.unicode.org/L2/L2016/16161-indic-text-seg.pdf
+
+
