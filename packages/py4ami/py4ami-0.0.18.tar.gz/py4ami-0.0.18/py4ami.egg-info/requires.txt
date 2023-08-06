@@ -1,0 +1,14 @@
+beautifulsoup4
+braceexpand
+lxml
+matplotlib
+nltk
+pdfminer3
+Pillow
+psutil
+PyPDF2
+python-rake
+setuptools
+SPARQLWrapper
+tkinterhtml
+tkinterweb
