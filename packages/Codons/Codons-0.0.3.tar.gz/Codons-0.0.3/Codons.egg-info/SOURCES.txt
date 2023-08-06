@@ -1,0 +1,15 @@
+LICENSE
+README.rst
+setup.py
+Codons.egg-info/PKG-INFO
+Codons.egg-info/SOURCES.txt
+Codons.egg-info/dependency_links.txt
+Codons.egg-info/requires.txt
+Codons.egg-info/top_level.txt
+codons/__init__.py
+codons/genes.py
+codons/rosetta_stone/amino_acid_synonyms.json
+codons/rosetta_stone/changed_codons.json
+codons/rosetta_stone/standard_table.json
+test/__init__.py
+test/test_codons.py
