@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/betalibpy/__init__.py
+src/betalibpy/networking.py
+src/betalibpy.egg-info/PKG-INFO
+src/betalibpy.egg-info/SOURCES.txt
+src/betalibpy.egg-info/dependency_links.txt
+src/betalibpy.egg-info/top_level.txt
