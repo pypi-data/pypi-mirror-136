@@ -1,0 +1,18 @@
+sgp4>=2.12
+numpy>=1.22
+scipy>=1.7.3
+orbit-predictor
+click
+rich
+httpx
+timezonefinder
+
+[:python_version < "3.9"]
+backports.zoneinfo
+
+[dev]
+Cython
+pytest>=6.2.5
+pytest-html
+pytest-cov
+flake8
