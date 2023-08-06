@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: proxymloxy
+Version: 1.2.2
+Summary: Reverse Proxy Manager with simple YAML configuration
+Keywords: reverse-proxy,proxmox
+Author-email: Johannes Krattenmacher <proxymloxy@dev.krateng.ch>
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Dist: jinja2
+Requires-Dist: ipaddress
+Requires-Dist: PyYAML
+Requires-Dist: doreah
+Project-URL: repository, https://github.com/krateng/proxymloxy
+
+# proxymloxy
+
+Proxymloxy helps you make your Proxmox containers easily accessible via HTTPS without lots of boilerplate configuration.
+
