@@ -1,0 +1,12 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+sn3218/__init__.py
+sn3218.egg-info/PKG-INFO
+sn3218.egg-info/SOURCES.txt
+sn3218.egg-info/dependency_links.txt
+sn3218.egg-info/top_level.txt
