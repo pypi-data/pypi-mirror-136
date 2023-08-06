@@ -1,0 +1,14 @@
+LICENCE.txt
+MANIFEST.in
+README.md
+__init__.py
+integration.py
+setup.cfg
+setup.py
+numericalintegratorr.egg-info/PKG-INFO
+numericalintegratorr.egg-info/SOURCES.txt
+numericalintegratorr.egg-info/dependency_links.txt
+numericalintegratorr.egg-info/top_level.txt
+numericalintegratorzxy.egg-info/SOURCES.txt
+numericalintegratorzxy.egg-info/dependency_links.txt
+numericalintegratorzxy.egg-info/top_level.txt
