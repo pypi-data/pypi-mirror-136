@@ -1,0 +1,11 @@
+.gitignore
+setup.cfg
+setup.py
+./adhoctx/__init__.py
+adhoctx/__init__.py
+adhoctx.egg-info/PKG-INFO
+adhoctx.egg-info/SOURCES.txt
+adhoctx.egg-info/dependency_links.txt
+adhoctx.egg-info/not-zip-safe
+adhoctx.egg-info/requires.txt
+adhoctx.egg-info/top_level.txt
