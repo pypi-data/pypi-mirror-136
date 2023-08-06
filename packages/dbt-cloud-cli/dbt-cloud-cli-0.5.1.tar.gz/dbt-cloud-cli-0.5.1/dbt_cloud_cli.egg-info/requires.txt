@@ -1,0 +1,13 @@
+requests
+click
+pydantic
+mergedeep
+
+[lint]
+black
+
+[test]
+pytest
+pytest-cov
+pytest-datadir
+requests-mock
