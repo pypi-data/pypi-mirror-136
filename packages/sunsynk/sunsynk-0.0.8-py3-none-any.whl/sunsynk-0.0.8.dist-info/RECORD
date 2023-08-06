@@ -1,0 +1,10 @@
+sunsynk/__init__.py,sha256=vafg8mkBVihfyElLLZCYonuqgXRg5WXCJhiGB4jzvUg,157
+sunsynk/definitions.py,sha256=3F1OmMIVi9rb8FHBHFEhVMQpChC_dIHL7j9XLw4JIWM,4082
+sunsynk/sensor.py,sha256=53Yy4ux4Vpe8gfcTWZgBnGkVHrnYHuJY3h-7sAxNYRk,5026
+sunsynk/sunsynk.py,sha256=M3WQcTQ-JhOiTkOqKQv5DWRRz9xukH7K2Mji0geovq0,4037
+sunsynk-0.0.8.dist-info/LICENSE,sha256=9PIydcbNDxRvjsnv5pgZ0zpNoYo1wDLaIVVBSmCBso0,1073
+sunsynk-0.0.8.dist-info/METADATA,sha256=s2BUpgJU7gxWe1pquMi89EeTCJ6XqlGqeXvGzglaOHY,3369
+sunsynk-0.0.8.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+sunsynk-0.0.8.dist-info/top_level.txt,sha256=uPMfNMlDGBh0ORpGv_dVYo4-q49nwI2KJhyWDQD3p5Y,8
+sunsynk-0.0.8.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+sunsynk-0.0.8.dist-info/RECORD,,
