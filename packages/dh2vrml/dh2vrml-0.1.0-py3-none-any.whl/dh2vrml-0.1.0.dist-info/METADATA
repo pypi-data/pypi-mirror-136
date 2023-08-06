@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: dh2vrml
+Version: 0.1.0
+Summary: Library and CLI tool to convert Denavit–Hartenberg parameters to an X3D model
+Author: Jasper Chan
+Author-email: jasperchan515@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: PyYAML (>=6.0,<7.0)
+Requires-Dist: click (>=8.0.3,<9.0.0)
+Requires-Dist: numpy (>=1.22.1,<2.0.0)
+Requires-Dist: pandas (>=1.4.0,<2.0.0)
+Requires-Dist: x3d (>=4.0.47,<5.0.0)
+Requires-Dist: xmlschema (>=1.9.2,<2.0.0)
