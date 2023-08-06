@@ -1,0 +1,3 @@
+[console_scripts]
+detect-gh-actions-unused-secrets = detect_gh_actions_unused_secrets:main
+
