@@ -1,0 +1,5 @@
+django==3.2.11
+graphene-django
+lxml>=4.2.3
+monotonic>=1.5
+requests!=2.9.0
