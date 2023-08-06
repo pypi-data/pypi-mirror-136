@@ -1,0 +1,2 @@
+# Category
+> Categorical data transformation
