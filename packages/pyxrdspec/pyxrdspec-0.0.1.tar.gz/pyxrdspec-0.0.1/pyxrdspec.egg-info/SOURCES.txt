@@ -1,0 +1,7 @@
+setup.py
+pyxrdspec/__init__.py
+pyxrdspec/pyxrdspec.py
+pyxrdspec.egg-info/PKG-INFO
+pyxrdspec.egg-info/SOURCES.txt
+pyxrdspec.egg-info/dependency_links.txt
+pyxrdspec.egg-info/top_level.txt
