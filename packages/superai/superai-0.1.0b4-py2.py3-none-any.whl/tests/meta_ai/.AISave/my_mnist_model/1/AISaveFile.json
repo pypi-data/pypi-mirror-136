@@ -1,0 +1,10 @@
+{
+ "input_params": "{\"py/object\": \"superai.meta_ai.schema.SchemaParameters\"}",
+ "output_params": "{\"py/object\": \"superai.meta_ai.schema.SchemaParameters\", \"choices\": {\"py/reduce\": [{\"py/type\": \"builtins.map\"}, {\"py/tuple\": [{\"py/type\": \"builtins.str\"}, {\"py/reduce\": [{\"py/function\": \"builtins.iter\"}, {\"py/tuple\": [{\"py/reduce\": [{\"py/type\": \"builtins.range\"}, {\"py/tuple\": [0, 10, 1]}]}]}, 0]}]}]}}",
+ "configuration": null,
+ "name": "my_mnist_model",
+ "version": 1,
+ "stage": null,
+ "description": null,
+ "weights_path": null
+}

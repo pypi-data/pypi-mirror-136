@@ -1,0 +1,16 @@
+{
+ "description": "Template for my new awesome project",
+ "input_schema": "{\"py/object\": \"superai.meta_ai.schema.Schema\", \"kwargs\": {}, \"params\": {\"py/object\": \"superai.meta_ai.schema.SchemaParameters\"}}",
+ "output_schema": "{\"py/object\": \"superai.meta_ai.schema.Schema\", \"kwargs\": {}, \"params\": {\"py/object\": \"superai.meta_ai.schema.SchemaParameters\", \"choices\": {\"py/reduce\": [{\"py/type\": \"builtins.map\"}, {\"py/tuple\": [{\"py/type\": \"builtins.str\"}, {\"py/reduce\": [{\"py/function\": \"builtins.iter\"}, {\"py/tuple\": [{\"py/reduce\": [{\"py/type\": \"builtins.range\"}, {\"py/tuple\": [0, 10, 1]}]}]}, 0]}]}]}}}",
+ "configuration": "{\"py/object\": \"superai.meta_ai.parameters.Config\", \"kwargs\": {}}",
+ "name": "My_template",
+ "requirements": ".AISave/my_mnist_model/1/requirements.txt",
+ "code_path": null,
+ "conda_env": null,
+ "model_class": "MyKerasModel",
+ "model_class_path": ".",
+ "artifacts": null,
+ "environs": {
+  "MODEL_NAME": "MyKerasModel"
+ }
+}
