@@ -1,0 +1,3 @@
+[console_scripts]
+nep29 = nep29.nep29:main
+
