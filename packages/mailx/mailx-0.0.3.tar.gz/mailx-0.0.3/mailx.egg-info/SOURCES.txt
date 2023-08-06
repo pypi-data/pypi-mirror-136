@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+mailx/__init__.py
+mailx.egg-info/PKG-INFO
+mailx.egg-info/SOURCES.txt
+mailx.egg-info/dependency_links.txt
+mailx.egg-info/requires.txt
+mailx.egg-info/top_level.txt
