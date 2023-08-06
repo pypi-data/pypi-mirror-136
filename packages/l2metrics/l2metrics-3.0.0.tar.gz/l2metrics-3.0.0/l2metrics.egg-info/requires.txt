@@ -1,0 +1,14 @@
+l2logger>=1.7.0
+ipykernel
+ipympl
+matplotlib
+numpy
+pandas
+pyarrow
+python-dateutil
+pytz
+scipy
+seaborn
+six
+tabulate
+tqdm
