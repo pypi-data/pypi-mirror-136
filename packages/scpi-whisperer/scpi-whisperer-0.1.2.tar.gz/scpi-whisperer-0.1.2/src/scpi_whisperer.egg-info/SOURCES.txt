@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+doc/deleteme.txt
+src/scpi_whisperer.egg-info/PKG-INFO
+src/scpi_whisperer.egg-info/SOURCES.txt
+src/scpi_whisperer.egg-info/dependency_links.txt
+src/scpi_whisperer.egg-info/requires.txt
+src/scpi_whisperer.egg-info/top_level.txt
+src/whisperer/__init__.py
+src/whisperer/Rigol/DS1000de.py
+src/whisperer/Rigol/__init__.py
