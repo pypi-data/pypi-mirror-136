@@ -1,0 +1,17 @@
+README.md
+setup.py
+pilapse/__init__.py
+pilapse/__main__.py
+pilapse/arguments.py
+pilapse/capture.py
+pilapse/cleanup.py
+pilapse/compileVideo.py
+pilapse/config.py
+pilapse/interface.py
+pilapse/logger.py
+pilapserec.egg-info/PKG-INFO
+pilapserec.egg-info/SOURCES.txt
+pilapserec.egg-info/dependency_links.txt
+pilapserec.egg-info/entry_points.txt
+pilapserec.egg-info/requires.txt
+pilapserec.egg-info/top_level.txt
