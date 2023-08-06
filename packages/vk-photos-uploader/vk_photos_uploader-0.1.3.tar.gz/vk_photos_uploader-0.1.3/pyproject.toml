@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "vk_photos_uploader"
+version = "0.1.3"
+description = ""
+authors = ["Gevorg Vardanyan <gevorg_vardanyan@protonmail.ch>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+vk-api = "^11.9.6"
+click = "^8.0.3"
+tqdm = "^4.62.3"
+
+[tool.poetry.dev-dependencies]
+
+[tool.poetry.scripts]
+vk-up-photos = 'vk_photos_uploader.photos_uploader:upload_photos_to_album'
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
