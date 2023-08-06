@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: python-outreach
+Version: 0.0.2
+Summary: Python-outreach is a Python wrapper functions for Outreach APIs
+Home-page: https://github.com/ptoraskar/python-outreach.git
+Author: RedHat Marketing Operations Data Engineering
+Author-email: mkt-ops-de@redhat.com,
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown; charset=UTF-8
+Requires-Dist: backoff (>=1.8.0)
+Requires-Dist: requests (>=2.26.0)
+Requires-Dist: argparse (>=1.4.0)
+Requires-Dist: singer-python (>=5.12.2)
+Requires-Dist: python-dotenv (>=0.19.0)
+Requires-Dist: virtualenv-api (<3.0.0,>=2.1.18)
+Requires-Dist: virtualenv (<21.0.0,>=20.4.7)
+Provides-Extra: all
+Requires-Dist: coverage[toml] ; extra == 'all'
+Requires-Dist: pylint ; extra == 'all'
+Requires-Dist: pytest (>=6.2.2) ; extra == 'all'
+Requires-Dist: pytest-cov ; extra == 'all'
+Provides-Extra: test
+Requires-Dist: coverage[toml] ; extra == 'test'
+Requires-Dist: pylint ; extra == 'test'
+Requires-Dist: pytest (>=6.2.2) ; extra == 'test'
+Requires-Dist: pytest-cov ; extra == 'test'
+
+# outreach
+Python wrapper functions for Outreach APIs, tested with Python 3.8 - 3.9.
+
+
