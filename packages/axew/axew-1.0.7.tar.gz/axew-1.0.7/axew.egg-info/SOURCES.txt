@@ -1,0 +1,10 @@
+setup.py
+axew/__init__.py
+axew/client.py
+axew/entry.py
+axew/exceptions.py
+axew.egg-info/PKG-INFO
+axew.egg-info/SOURCES.txt
+axew.egg-info/dependency_links.txt
+axew.egg-info/requires.txt
+axew.egg-info/top_level.txt
