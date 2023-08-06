@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: castutils
+Version: 0.2.4
+Summary: Variable transformation and casting utilities (Python)
+Home-page: https://github.com/whardier/castutils-python
+License: MIT
+Keywords: cast,coerce,coercion,transform,transformation,typing,typecast
+Author: Shane Spencer
+Author-email: 305301+whardier@users.noreply.github.com
+Requires-Python: >=3.7,<4.0
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Project-URL: Repository, https://github.com/whardier/castutils-python
+Description-Content-Type: text/markdown
+
+# Castutils (Python)
+
+Variable transformation and casting utilities
+
