@@ -1,0 +1,12 @@
+yadc/__init__.py,sha256=OjwoIXsBb3U_mEDZUK1jCiBbsTBQLM1LkK_3BfboQpw,65
+yadc/browser.py,sha256=oqwHd-FTqa-02Nh3VSBBf-yAh64ziGFEOQ7JOdYPCn0,13345
+yadc/cli.py,sha256=aWU86N_DYYbKD1CwIvfxYUXG04u9YPCH4xJhP4r6wOo,412
+yadc/humanlike.py,sha256=vkE6KSWwilecP1aEb0n2XqjmUyFH0rCZ3YoxODLA9ds,832
+yadc/scraper.py,sha256=7bOP12F-R07XLyI1ShMdy-hqoXNxBd2uri8BCW-K8n4,14689
+yadc/undetected_browser.py,sha256=Ap88EaAemiGenKYPFSG7nW56W_SKMM7Q_TVwg8qwNI4,4388
+yadc/utils.py,sha256=t-jARSubR9ulGOAbubtbyRn5O4OpUEbQ2eolGfnvQQk,1634
+yadc-0.5.0.dist-info/entry_points.txt,sha256=AZTnkJ4ncTNGkJlHmmyNLjEg7FaWaNGigz77o_3WyNk,38
+yadc-0.5.0.dist-info/LICENSE,sha256=D_7OtkBNq4mi8tPSnzlSqJnMI74M-2g-BAXjZsqG8Qk,1063
+yadc-0.5.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+yadc-0.5.0.dist-info/METADATA,sha256=tAVWrr42VUFMcXmwdCD2_gcAbXjCFk4La-qzAL3kJ6k,6045
+yadc-0.5.0.dist-info/RECORD,,
