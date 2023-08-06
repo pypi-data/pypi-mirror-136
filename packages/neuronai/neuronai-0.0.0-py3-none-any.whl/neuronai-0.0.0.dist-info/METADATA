@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: neuronai
+Version: 0.0.0
+Summary: Neuron AI implementations and designs
+Home-page: https://github.com/neuron-ai/neuronai
+Author: Neuron AI
+Author-email: user@example.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/neuron-ai/neuronai/issues
+Keywords: python,AI,ML,machine learning,neuronai,neuron-ai,easyneuron,easyNeuron
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+Neuron AI implementations and designs
+
