@@ -1,0 +1,3 @@
+[console_scripts]
+chk = chk.commands.chk_run:execute
+
