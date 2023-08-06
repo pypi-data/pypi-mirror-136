@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: iipythonpy
+Version: 1.1a0
+Summary: iiPython's Python Module for better abilities
+Home-page: UNKNOWN
+Author: iiPython
+Author-email: ben@iipython.cf
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires: cryptography
+Requires-Python: >=3.8, <4
+Description-Content-Type: text/markdown
+
+# iiPython.py
+### Module for better Python objects
+
+
