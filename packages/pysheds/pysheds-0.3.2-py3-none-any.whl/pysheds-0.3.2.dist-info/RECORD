@@ -1,0 +1,16 @@
+pysheds/__init__.py,sha256=vNiWJ14r_cw5t_7UDqDQIVZvladKFGyHH2avsLpN7Vg,22
+pysheds/_sgrid.py,sha256=qWP8jC0LwPZ8Mv8ek7ivJWOppWf1zb09_4BZJotjPWI,70536
+pysheds/_sview.py,sha256=2lt-LKXf7NOzbVccJnVlPuA2O5s-Jv4DtILvL343x0c,5453
+pysheds/grid.py,sha256=LZt8MbM0U-Xl_goin4KPhB4616E9DMhycBSSdBjfp10,183
+pysheds/io.py,sha256=mk_knBX3j4KgRMPryjviyY18o4lzfdDPrpdYpMl7cRQ,12898
+pysheds/pgrid.py,sha256=5XMjVD6_QPq4kFEKvSvblp91yxJmeFHOQhddFSu1E9A,169170
+pysheds/pview.py,sha256=-d19MfRx9h4osVMHrx-FvT0MXa4rL5tJzT3KaYuxxb8,14886
+pysheds/rfsm.py,sha256=g1EX9GcFKRZ0GVGIMWsaTa4uQULB2iMcyIKDoVp5hdw,24804
+pysheds/sgrid.py,sha256=7Mx3c9Kbp9VTt-qpAAJ0v48tU1TIzANEEJzx7cbLtI4,111518
+pysheds/sview.py,sha256=HyAHZSltKBx6NWdia8ouT85Vft6x8ZT1h1sCnw8aZnc,39294
+pysheds/view.py,sha256=czvgi7b_77vrZ40usLhNJA1t3Onqg5a36uak8wHFe7I,313
+pysheds-0.3.2.dist-info/LICENSE,sha256=WJ7YI-moTFb-uVrFjnzzhGJrnL9P2iqQe8NuED3hutI,35141
+pysheds-0.3.2.dist-info/METADATA,sha256=73kCHm0r0sXX4gsCWnEQZjLOtWAWQ8IRzCMiw-aqlCM,477
+pysheds-0.3.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pysheds-0.3.2.dist-info/top_level.txt,sha256=VRlfK-iPAPLukY_KamInnWasWGgU1wzN3mNHThPNxR8,8
+pysheds-0.3.2.dist-info/RECORD,,
