@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: wheel-axle
+Version: 0.0.1.dev20220128072321
+Summary: Axle is Python wheel enhancement library
+Home-page: https://github.com/karellen/axle
+Author: Karellen, Inc.
+Author-email: supervisor@karellen.co
+Maintainer: Arcadiy Ivanov
+Maintainer-email: arcadiy@karellen.co
+License: Apache License, Version 2.0
+Project-URL: Bug Tracker, https://github.com/karellen/axle/issues
+Project-URL: Documentation, https://github.com/karellen/axle/
+Project-URL: Source Code, https://github.com/karellen/axle/
+Keywords: wheel packaging setuptools bdist_wheel symlink postinstall
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Topic :: System :: Archiving :: Packaging
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Intended Audience :: Developers
+Classifier: Development Status :: 4 - Beta
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# Axle - Python Wheel enhancement library
+
+
+## Problem
+
+Python `wheel` doesn't support symlinks.
+ 
+
+
