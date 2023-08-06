@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+seg_mask_modifs/seg_mask_modifs.egg-info/PKG-INFO
+seg_mask_modifs/seg_mask_modifs.egg-info/SOURCES.txt
+seg_mask_modifs/seg_mask_modifs.egg-info/dependency_links.txt
+seg_mask_modifs/seg_mask_modifs.egg-info/top_level.txt
