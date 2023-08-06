@@ -1,0 +1,14 @@
+CHANGELOG.txt
+LICENCE
+MANIFEST.in
+README.txt
+pyproject.toml
+setup.py
+alprotobuff/__init__.py
+alprotobuff/example.py
+alprotobuff/simple_example_pb2.py
+alprotobuff.egg-info/PKG-INFO
+alprotobuff.egg-info/SOURCES.txt
+alprotobuff.egg-info/dependency_links.txt
+alprotobuff.egg-info/requires.txt
+alprotobuff.egg-info/top_level.txt

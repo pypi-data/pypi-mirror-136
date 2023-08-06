@@ -1,0 +1,28 @@
+Metadata-Version: 1.2
+Name: alprotobuff
+Version: 0.0.1
+Summary: basic test pypi package
+Home-page: UNKNOWN
+Author: Alok Dadarya
+Author-email: alokd3@gmail.com
+License: MIT
+Description: This is simple create python module and create a package with dependencies.
+        
+        
+        Change Log
+        ==========
+        
+        0.0.1 (30/01/2022)
+        -------------------
+        - First Release
+        
+Keywords: test test pypi package v1
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: Operating System :: Unix
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
