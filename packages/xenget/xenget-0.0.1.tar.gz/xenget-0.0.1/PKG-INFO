@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: xenget
+Version: 0.0.1
+Summary: A library for Python to get information from a XenForo forum.
+Home-page: UNKNOWN
+Author: Cinar Yilmaz
+Author-email: <youremail@email.com>
+License: GPLv3
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# XenGet
+A library for Python to get information from a XenForo forum.
+
+## Usage
+See [documentation](docs.md).
+
+Installation:
+```sh
+pip install xenget
+```
+
