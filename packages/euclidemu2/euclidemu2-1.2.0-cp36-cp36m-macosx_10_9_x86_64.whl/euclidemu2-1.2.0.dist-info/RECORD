@@ -1,0 +1,15 @@
+euclidemu2.cpython-36m-darwin.so,sha256=uBWZ5a64nUrbCUZIGeYuLcyUlU2oAxcKTzo1Tf4FWL0,266024
+euclidemu2/.DS_Store,sha256=1lFlJ5EFymdzGAUAaI30vcaaLHt3F1LwpG7xILf9jsM,6148
+euclidemu2/cosmo.cxx,sha256=SjPu7bYLhO6q9NbxO3m39BMAVy692gQPFKNUSYzXML4,12310
+euclidemu2/cosmo.h,sha256=W0osqtmZWZQGGjE2mhQhsose7eWoEYXVIIW5yqmVgxE,2406
+euclidemu2/ee2_bindata.dat,sha256=YkzYZ8M06ZQ5RD_DsrydyePQTaOHU0a38XzTLmb47QE,7698560
+euclidemu2/emulator.cxx,sha256=G_LqFizDrlfkSYLtr8IQYUg7SrxJ7AkeFhegPogj7uQ,7880
+euclidemu2/emulator.h,sha256=nnVk2gjqEaFgl5PvhqaheJFrRFcwepnx2mrZmYciHtA,2260
+euclidemu2/euclidemu2.cpp,sha256=uQwak5xQdUQceJg2uy1-pi0r68v3AmqouFPC1ISfrvU,632310
+euclidemu2/euclidemu2.pyx,sha256=nVDUNYMuficfEHq0m57G5AR3cEDl0QuUMWEl43uFvoQ,20786
+euclidemu2/units_and_constants.h,sha256=Yh5YtesE8Mr0ve_h8obB3AuMm573Lc1DVZzwm_jtKbw,5470
+euclidemu2-1.2.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+euclidemu2-1.2.0.dist-info/METADATA,sha256=6YFfU0yzSdM6qVNFaim-Jk0l_aDpPfpNu_X7cMJgIe0,5004
+euclidemu2-1.2.0.dist-info/WHEEL,sha256=2O8ns9G5CGUmZ-9QG9-0pcFXmdu_eRx1PYUpMvzbnbc,110
+euclidemu2-1.2.0.dist-info/top_level.txt,sha256=HaKuj9lP9NaQqxMU3LyVohMRP3RsW3XUulQKPHpi3Jg,11
+euclidemu2-1.2.0.dist-info/RECORD,,
