@@ -1,0 +1,14 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+convstruct/__init__.py
+convstruct.egg-info/PKG-INFO
+convstruct.egg-info/SOURCES.txt
+convstruct.egg-info/dependency_links.txt
+convstruct.egg-info/top_level.txt
+convstruct/api/__init__.py
+convstruct/api/core.py
+convstruct/api/ops.py
+convstruct/api/util.py
+convstruct/evaluator/__init__.py
