@@ -1,0 +1,12 @@
+myutils/__init__.py,sha256=nIxltoEkNUpP3bk32IZWQyJqxedwcfhoPIS7R8Fgsag,664
+myutils/geo.py,sha256=uT_RLW3u55p4-ope4eDmBzVpysPXZR7JpLtCrJlM6rE,3857
+myutils/graph.py,sha256=UJtYGQIs9_FDawv7HTZv1gZNY1MbBZsfjyLHvAg6WK8,1397
+myutils/image.py,sha256=h9ugfYPZB_707J5WzsC6u3Zy9ZvXsvkN3rmLpo6hbAU,484
+myutils/plot.py,sha256=G-6LfQGO2VxxfbEcBepZA9ihJlhILYFvDP71cb73NIs,4030
+myutils/transform.py,sha256=foEPZG7wfIppFGzEH-q0bO0LquQk9J1TIoEAG4G-FIY,1416
+myutils/xnet.py,sha256=muAJEkuNFAEpI4yZ_f6iKpTgVKKl7JLPtP3XdAppzsk,12172
+erikunicamp_myutils-0.0.60.dist-info/LICENSE,sha256=xB7lguHrRpApYatBpQLCtNo7B22EqpPOVvQf2ljceyI,1071
+erikunicamp_myutils-0.0.60.dist-info/METADATA,sha256=zSw8I7teHC3QDQ5818UFa-Ms2mzE1E3V36jf_7CmnvM,485
+erikunicamp_myutils-0.0.60.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+erikunicamp_myutils-0.0.60.dist-info/top_level.txt,sha256=tpfkIXHAJq_DB1s6KTMC2q50M5vTIRcGcfCvdVKRXHA,8
+erikunicamp_myutils-0.0.60.dist-info/RECORD,,
