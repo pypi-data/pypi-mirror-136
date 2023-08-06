@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+setup.py
+dfysetters/__init__.py
+dfysetters/constants.py
+dfysetters/facebook_tracking.py
+dfysetters/roles.py
+dfysetters.egg-info/PKG-INFO
+dfysetters.egg-info/SOURCES.txt
+dfysetters.egg-info/dependency_links.txt
+dfysetters.egg-info/requires.txt
+dfysetters.egg-info/top_level.txt
