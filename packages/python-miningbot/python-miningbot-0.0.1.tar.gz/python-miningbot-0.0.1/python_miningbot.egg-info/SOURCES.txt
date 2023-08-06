@@ -1,0 +1,7 @@
+README.md
+python-miningbot.py
+setup.py
+python_miningbot.egg-info/PKG-INFO
+python_miningbot.egg-info/SOURCES.txt
+python_miningbot.egg-info/dependency_links.txt
+python_miningbot.egg-info/top_level.txt
