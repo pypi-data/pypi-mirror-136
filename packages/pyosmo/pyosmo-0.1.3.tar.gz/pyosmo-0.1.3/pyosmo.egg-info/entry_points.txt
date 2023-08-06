@@ -1,0 +1,3 @@
+[console_scripts]
+pyosmo = pyosmo.main:pyosmo_cli
+
