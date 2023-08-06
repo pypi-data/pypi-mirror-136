@@ -1,0 +1,54 @@
+{
+  "options": [
+    {
+      "line_number": 4,
+      "line": "--no-use-wheel",
+      "no_use_wheel": true
+    },
+    {
+      "line_number": 10,
+      "line": "--index-url https://foo.com some trailing junk",
+      "index_url": "https://foo.com"
+    }
+  ],
+  "requirements": [],
+  "invalid_lines": [
+    {
+      "line_number": 4,
+      "line": "--no-use-wheel",
+      "error_message": "Unsupported, legacy option: --no-use-wheel"
+    },
+    {
+      "line_number": 7,
+      "line": "--unknown-options",
+      "error_message": "pip_requirements_parser: error: no such option: --unknown-options"
+    },
+    {
+      "line_number": 10,
+      "line": "--index-url https://foo.com some trailing junk",
+      "error_message": "Incorrect and ignored trailing argument(s): some, trailing, junk"
+    }
+  ],
+  "comments": [
+    {
+      "line_number": 1,
+      "line": "# from https://github.com/pypa/pip/blob/49e9ac1a86ac2ee5174ca9c8f87b4cbf4fcbcca9/tests/data/reqfiles/supported_options.txt"
+    },
+    {
+      "line_number": 2,
+      "line": "# requirement file containing various unsupported and legacy options"
+    },
+    {
+      "line_number": 3,
+      "line": "# legacy"
+    },
+    {
+      "line_number": 6,
+      "line": "# unknown"
+    },
+    {
+      "line_number": 9,
+      "line": "# trailing arugment"
+    }
+  ]
+}
