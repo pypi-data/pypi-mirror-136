@@ -1,0 +1,6 @@
+selenium
+structlog
+requests
+mechanicalsoup
+beautifulsoup4
+xdg
