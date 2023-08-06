@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: iterstring
+Version: 1.2.0
+Summary: Simple class that allows writing lists and dicts as heredoc strings
+Home-page: https://github.com/datagazing/iterstring
+Author: Brendan Strejcek
+Author-email: brendan@datagazing.com
