@@ -1,0 +1,69 @@
+Flask>=1.0.4
+flask-compress
+plotly>=5.0.0
+dash_html_components==2.0.0
+dash_core_components==2.0.0
+dash_table==5.0.0
+
+[:python_version < "3.7"]
+importlib-metadata==4.8.3
+
+[celery]
+redis>=3.5.3
+celery[redis]>=5.1.2
+
+[ci]
+black==21.6b0
+dash-flow-example==0.0.5
+dash-dangerously-set-inner-html
+flake8==3.9.2
+flaky==3.7.0
+flask-talisman==0.8.1
+mimesis
+mock==4.0.3
+numpy
+preconditions
+pylint==2.10.2
+pytest-mock==3.2.0
+pytest-sugar==0.9.4
+
+[ci:python_version < "3.7"]
+isort==4.3.21
+orjson==3.5.4
+pyarrow<3
+
+[ci:python_version < "3.8"]
+pandas==1.1.5
+xlrd<2
+
+[ci:python_version >= "3.7"]
+orjson==3.6.3
+pyarrow
+
+[ci:python_version >= "3.8"]
+openpyxl
+pandas>=1.4.0
+xlrd>=2.0.1
+
+[dev]
+coloredlogs>=15.0.1
+fire>=0.4.0
+PyYAML>=5.4.1
+
+[diskcache]
+diskcache>=5.2.1
+multiprocess>=0.70.12
+psutil>=5.8.0
+
+[testing]
+beautifulsoup4>=4.8.2
+lxml>=4.6.2
+percy>=2.0.2
+pytest>=6.0.2
+requests[security]>=2.21.0
+selenium>=3.141.0
+waitress>=1.4.4
+webdriver-manager>=3.5.1
+
+[testing:python_version < "3.7"]
+cryptography<3.4
