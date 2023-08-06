@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+setup.py
+bin/iso-dl
+src/iso_dl/__init__.py
+src/iso_dl/__main__.py
+src/iso_dl/distros.py
+src/iso_dl.egg-info/PKG-INFO
+src/iso_dl.egg-info/SOURCES.txt
+src/iso_dl.egg-info/dependency_links.txt
+src/iso_dl.egg-info/top_level.txt
