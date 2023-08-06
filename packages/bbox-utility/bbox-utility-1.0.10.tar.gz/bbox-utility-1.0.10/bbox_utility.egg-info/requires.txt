@@ -1,0 +1,6 @@
+numba>=0.54.0
+joblib
+numpy
+pandas
+tqdm
+loguru
