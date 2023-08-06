@@ -1,0 +1,3 @@
+[console_scripts]
+mdvseg = mdvoxelsegmentation.do_segmentaton:main
+
