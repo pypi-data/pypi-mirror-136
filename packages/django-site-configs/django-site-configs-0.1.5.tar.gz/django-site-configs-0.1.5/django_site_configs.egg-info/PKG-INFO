@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: django-site-configs
+Version: 0.1.5
+Summary: A Django app that manages configurations per-site on a multi-site setup.  These configs can be made avaialble to users of different sites or administerd via the Django admin.
+Home-page: https://github.com/renderbox/django-site-configs/
+Author: Grant Viklund
+Author-email: renderbox@gmail.com
+License: MIT license
+Keywords: django,app
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.6
+Provides-Extra: dev
+Provides-Extra: test
+Provides-Extra: prod
+Provides-Extra: build
+Provides-Extra: docs
+License-File: LICENSE.mit.txt
+
+
+
+.. image:: https://github.com/renderbox/django-site-settings/workflows/Site%20Configs%20CI/badge.svg
+   :target: https://github.com/renderbox/django-site-settings/workflows/Site%20Configs%20CI/badge.svg
+   :alt: Site Configs CI
+
+
+
+.. image:: https://github.com/renderbox/django-site-settings/workflows/Site%20Configs%20Develop/badge.svg
+   :target: https://github.com/renderbox/django-site-settings/workflows/Site%20Configs%20Develop/badge.svg
+   :alt: Site Configs CI
+
+
+Site Configs
+============
+
+A Django app that manages configurations per-site on a multi-site setup.  These settings can be made avaialble to users of different sites or administerd via the Django admin.
+
+
