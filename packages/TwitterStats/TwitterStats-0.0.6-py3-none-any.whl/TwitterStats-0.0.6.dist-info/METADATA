@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: TwitterStats
+Version: 0.0.6
+Summary: Python Package to collect stats from Twitter API
+Home-page: https://bas.codes
+Author: Bas Steins
+Author-email: blog@bascodes.com
+License: MIT
+Project-URL: Bug Tracker, https://bas.codes
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENCE
+License-File: AUTHORS
+Requires-Dist: setuptools (>=42)
+Requires-Dist: wheel
+Requires-Dist: TwitterAPI (>=2.7.11)
+
+# TwitterStats
+
+This packages downloads relevant Tweet and Follower Stats for your account.
+
+## Usage
+
+```python
+from twitterstats import Fetcher
+
+consumer_key        = "<YOUR API KEY>"
+consumer_secret     = "<YOUR API KEY SECRET>"
+access_token        = "<YOUR ACCESS TOKEN>"
+access_token_secret = "<YOUR ACCESS TOKEN SECRET>"
+
+fetcher = Fetcher(consumer_key, consumer_secret, access_token, access_token_secret)
+
+promoted_tweets = fetcher.get_tweets(promoted=True)
+unpromoted_tweets = fetcher.get_tweets(promoted=False)
+followers = fetcher.get_followers()
+```
+
+For further details, consult this article:
+[Using Twitter's API to Gather Tweet Stats (and Follower Data) in Python](https://dev.to/bascodes/using-twitters-api-to-gather-tweet-stats-and-follower-data-in-python-kkk)
+
+## Thanks
+
+This package makes use of the [`TwitterAPI` package](https://github.com/geduldig/TwitterAPI/).
+
