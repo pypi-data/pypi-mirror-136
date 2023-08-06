@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+pytorch_eff_vis_pretraining/__init__.py
+pytorch_eff_vis_pretraining/download.py
+pytorch_eff_vis_pretraining/layers.py
+pytorch_eff_vis_pretraining/resnet.py
+pytorch_eff_vis_pretraining.egg-info/PKG-INFO
+pytorch_eff_vis_pretraining.egg-info/SOURCES.txt
+pytorch_eff_vis_pretraining.egg-info/dependency_links.txt
+pytorch_eff_vis_pretraining.egg-info/requires.txt
+pytorch_eff_vis_pretraining.egg-info/top_level.txt
