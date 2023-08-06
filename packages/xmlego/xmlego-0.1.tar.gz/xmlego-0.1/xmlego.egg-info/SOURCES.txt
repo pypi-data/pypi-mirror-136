@@ -1,0 +1,14 @@
+LICENSE
+Python Package.md
+README.md
+TODO.md
+setup.py
+xmlego/__init__.py
+xmlego/templating.py
+xmlego/utils.py
+xmlego/xmlego.py
+xmlego.egg-info/PKG-INFO
+xmlego.egg-info/SOURCES.txt
+xmlego.egg-info/dependency_links.txt
+xmlego.egg-info/requires.txt
+xmlego.egg-info/top_level.txt
