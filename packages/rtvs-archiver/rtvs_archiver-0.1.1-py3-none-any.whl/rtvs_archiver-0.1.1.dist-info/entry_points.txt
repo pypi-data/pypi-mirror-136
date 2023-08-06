@@ -1,0 +1,3 @@
+[console_scripts]
+rtvs_archiver=rtvs_archiver.cli:main
+
