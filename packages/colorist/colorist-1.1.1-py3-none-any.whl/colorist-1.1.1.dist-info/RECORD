@@ -1,0 +1,13 @@
+colorist/__init__.py,sha256=X3o62tGIJue2Kii83Vi58xOAYTiLF6CFR8ccLAsnMF8,4094
+colorist/version.py,sha256=RdqnIXy940NC4V3PneCkM7vWuKJBpR9g8wufynVzvDc,80
+colorist/model/__init__.py,sha256=LbXHIFK07SGaRBBtoi_ewhaobDZq950yRA6_aK4TZcg,179
+colorist/model/background_bright_color.py,sha256=ZEkxGINGlMZcLwYI15jrYOuVQD6sIQH1YfjqYX28rpc,453
+colorist/model/background_color.py,sha256=geOKfw9IsOubVdUmGnJ4Cubs7eauvIYKHeW_BrhtRMo,396
+colorist/model/bright_color.py,sha256=9YNPr66ojhGtfUkWWY7Vtq8QK0rthKVjM56rOfic8Dw,403
+colorist/model/color.py,sha256=Pz8VkQ08MB8ZoV_Eur_3DY-OR4cQgYjgThyWS1GThak,369
+colorist/model/effect.py,sha256=KfT89WWd7ftPoRzNslEZYL7CKrp9USSB6l4B7wgfC4M,519
+colorist-1.1.1.dist-info/LICENSE.md,sha256=nkRSdihu6ylS0faftaw57gdMA5DncDDIhAXUNFL3nJ0,1084
+colorist-1.1.1.dist-info/METADATA,sha256=H3tdKPMI0ultHyUk6lTo4rxn6dfB47elH-l_IurCcZQ,28718
+colorist-1.1.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+colorist-1.1.1.dist-info/top_level.txt,sha256=fp6sVTf3zjXTvQpmizk_0mLSfwEojUhk4_mRhg7KsWI,9
+colorist-1.1.1.dist-info/RECORD,,
