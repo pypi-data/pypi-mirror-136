@@ -1,0 +1,33 @@
+{
+  "type" : "record",
+  "name" : "RecordWithUnion",
+  "namespace" : "records",
+  "fields" : [ {
+    "name" : "optionalString",
+    "type" : [ "string", "null" ]
+  }, {
+    "name" : "intOrThing",
+    "type" : [ "int", {
+      "type" : "record",
+      "name" : "Thing",
+      "fields" : [ {
+        "name" : "id",
+        "type" : "int"
+      } ]
+    } ]
+  }, {
+     "name" : "nullOrThingArray",
+     "type" : [ "null", {
+        "type" : "array",
+        "items" : "Thing"
+     } ]
+  }, {
+     "name" : "nullOrMap",
+     "type" : [ "null", {
+        "type" : "map",
+        "values": "float"
+     } ]
+  }
+  ]
+}
+
