@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: udgram
+Version: 1.2.1
+Summary: Compute probabilities in N-grams model for tags in UD format
+Home-page: UNKNOWN
+Author: Wellington Silva
+Author-email: wellington.71219@gmail.com
+License: MIT
+Platform: UNKNOWN
+License-File: LICENCE
+
+Compute probabilities in N-grams model for tags in UD format
+
+Usage
+===========
+
+  - bigram  : function for bigrams with specify tag
+  - trigram : function for trigrams with specify tag
+  - ngram   : general function for ngram with specify tag
+
+  - bigram_matrizs	: matriz with bigram probabilities for tags
+  - ngram_matriz	: matriz with ngram probabilities for tags
+
+
+
