@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: jkx
+Version: 1.0.2
+Summary: UNKNOWN
+Home-page: https://github.com/AndrewHeaney/json-key-explorer
+Author: Andrew Heaney
+Author-email: heaneyandrew11@gmail.com
+License: MIT
+Keywords: json
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# json-key-explorer
+CLI tool to explore the keys in a JSON file.
+
+## Use Case
+Useful for discovering the various key paths inside a large JSON file that are hard to view in a raw file.
+
+
