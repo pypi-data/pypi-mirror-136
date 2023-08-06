@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: cyanbot
+Version: 0.1.1
+Summary: An integrated manager for Cyan Python SDK for QQ Bot.
+Home-page: https://gitlab.huajitech.net/huajitech/cyan-bot
+License: MIT
+Keywords: bot,qq,qqbot
+Author: worldmozara
+Author-email: worldmozara@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: concap (>=0.2.1,<0.3.0)
+Requires-Dist: cookiecutter (>=1.7,<2.0)
+Requires-Dist: cyansdk (>=0.2.0,<0.3.0)
+Project-URL: Repository, https://gitlab.huajitech.net/huajitech/cyan-bot
+Description-Content-Type: text/markdown
+
+# cyan-bot
+
+基于 Cyan SDK 的 QQ 机器人集成式管理工具

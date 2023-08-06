@@ -1,0 +1,3 @@
+[console_scripts]
+cyanbot=cyanbot.__main__:main
+
