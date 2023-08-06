@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+waifu/waifu.egg-info/PKG-INFO
+waifu/waifu.egg-info/SOURCES.txt
+waifu/waifu.egg-info/dependency_links.txt
+waifu/waifu.egg-info/top_level.txt
