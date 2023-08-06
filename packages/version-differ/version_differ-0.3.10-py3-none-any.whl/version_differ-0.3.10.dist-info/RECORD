@@ -1,0 +1,11 @@
+version_differ/__init__.py,sha256=TjfV9arvOKIWBjw_eQFwUzpQeeLwWAZuedglX1Y5jY0,134
+version_differ/__main__.py,sha256=CEj0rI1lwoINDFZ6iyd4qoaeLj_7tvNy2Mo-QhsoudM,362
+version_differ/common.py,sha256=jpMikCJve0E-mIPC9TR3IR5N6-JClf8Hep6cicbaa9Y,203
+version_differ/download.py,sha256=OlbZ7N97sJ5y9_PiqrSEJz_ugBhcZ4RW0zqyh4kF-s8,5846
+version_differ/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+version_differ/version_differ.py,sha256=zVGcRNx0FkseQirMG6Cs0qd6qgkmZVCZstbyeWXuZ9Y,11053
+version_differ-0.3.10.dist-info/entry_points.txt,sha256=c6F-5I7DvUN-wIAQQR5t7twz1pc-Hk9c5SQI6lqQNEw,63
+version_differ-0.3.10.dist-info/LICENSE,sha256=qhgGSqs83OwOoas7B65NQbGe-jQfr_0q9N5ebVqa9wk,1070
+version_differ-0.3.10.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+version_differ-0.3.10.dist-info/METADATA,sha256=10SwPTnMrmNdIK2cbWG0eXehNtyncc-CwH-RWaW7iac,4267
+version_differ-0.3.10.dist-info/RECORD,,
