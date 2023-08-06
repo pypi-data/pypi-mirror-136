@@ -1,0 +1,4 @@
+grpcio<2,>=1
+google-auth<3,>=2
+uologging==0.6.1
+requests<3,>=2

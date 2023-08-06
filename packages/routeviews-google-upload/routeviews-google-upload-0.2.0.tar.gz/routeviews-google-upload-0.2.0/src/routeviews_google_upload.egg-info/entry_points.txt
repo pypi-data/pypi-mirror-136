@@ -1,0 +1,4 @@
+[console_scripts]
+routeviews-google-upload = routeviews_google_upload.__main__:main
+routeviews-google-upload-test-server = routeviews_google_upload.echo_server:serve
+
