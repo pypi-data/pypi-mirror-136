@@ -1,0 +1,4 @@
+[console_scripts]
+galaxy = gravity.cli:galaxy
+galaxyctl = gravity.cli:galaxyctl
+
