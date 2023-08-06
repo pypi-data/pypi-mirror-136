@@ -1,0 +1,97 @@
+os: linux
+dist: xenial
+language: python
+
+python:
+  # - 2.7
+  - 3.6
+  - 3.7
+
+# jobs:
+#   allow_failures:
+#     - python: 2.7
+
+services:
+  - xvfb
+
+before_install:
+  - export ORIGINAL_PATH=$(pwd)
+  - echo $ORIGINAL_PATH
+  - export PACKAGES_DIR=required_packages
+
+  - if [ "$TRAVIS_OS_NAME" == "linux" ]; then
+      sudo apt-get update;
+      sudo updatedb;
+      sudo apt install -y libnfft3-dev;
+      wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh -O miniconda.sh;
+    fi
+  - if [ "$TRAVIS_OS_NAME" == "osx" ]; then
+      brew update;
+      brew install cmake libomp;
+      brew install fftw;
+      brew install python3;
+      wget https://repo.continuum.io/miniconda/Miniconda3-latest-MacOSX-x86_64.sh -O miniconda.sh;
+    fi
+  - if [ "$TRAVIS_PYTHON_VERSION" == "3.6" ]; then
+      export CPLUS_INCLUDE_PATH=/opt/python/3.6.3/include/python3.6m;
+    fi
+  - chmod +x miniconda.sh
+  - ./miniconda.sh -b -p $HOME/miniconda
+  - export PATH=$HOME/miniconda/bin:$PATH
+  - hash -r
+  - conda update --all -y
+  - conda info -a
+  # now we create and activate the python virtualenv
+  - conda create -n testenv --yes pip python=$TRAVIS_PYTHON_VERSION
+  - source activate testenv
+  - pip install --upgrade pip
+  - python --version
+  - pip --version
+  - locate pyconfig.h
+  
+install:
+  - pip install coverage==4.5.4  # temporary fix for coveralls
+  - pip install coveralls
+  - pip install python-coveralls
+  - pip install codecov
+  - if [ "$TRAVIS_PYTHON_VERSION" == "2.7" ]; then pip install PySide; else pip install PyQt5==5.14.0; fi
+  - pip install -r test/test_requirements.txt
+  # - pip install python-pysap
+
+  # # install the right branch of the fork of pysap
+  - cd $ORIGINAL_PATH
+  - cd ..
+  - mkdir $PACKAGES_DIR
+
+  # to install pySAP from a specific fork
+  # - cd $PACKAGES_DIR
+  # - git clone https://github.com/aymgal/pysap.git
+  # - cd pysap
+  # - git checkout master
+  # - pip install .
+  # - pip install -e git://github.com/aymgal/pysap@dev-aym#egg=pysap
+
+  # install the right branch of the fork of lenstronomy
+  - cd $ORIGINAL_PATH
+  - cd ..
+  - cd $PACKAGES_DIR
+  - git clone https://github.com/aymgal/lenstronomy.git
+  - cd lenstronomy
+  - git checkout dev-slit-ps
+  - pip install .
+
+  # finally (!) install SLITronomy
+  - cd $ORIGINAL_PATH
+  - pip install .
+
+before_script: # configure a headless display to test plot generation
+  - export DISPLAY=:99.0
+  - sleep 3 # give xvfb some time to start
+
+# command to run tests
+script:
+  - coverage run --source slitronomy setup.py test
+
+after_success:
+  - coveralls
+  - codecov

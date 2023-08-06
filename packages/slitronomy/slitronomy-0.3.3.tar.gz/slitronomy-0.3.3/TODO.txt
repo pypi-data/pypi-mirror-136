@@ -1,0 +1,2 @@
+TODO :
+- implement hybrid dictionaries to complete starlets (e.g. for highest frequencies)
