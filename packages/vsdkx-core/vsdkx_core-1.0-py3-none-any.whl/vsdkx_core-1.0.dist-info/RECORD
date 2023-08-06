@@ -1,0 +1,17 @@
+vsdkx_core-1.0-py3.10-nspkg.pth,sha256=e13FxU7i7oit_J17iZ3XxtWXLToD5iXe5ONeY0mn7CY,534
+vsdkx/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vsdkx/core/detector.py,sha256=_-BwwffA2jcszcoVM35QeEPNrOivD_ZujQGpencGFN0,6951
+vsdkx/core/interfaces.py,sha256=FhDQA_39aSS3NepTMDiUYT7ePJvqEQBIdvE2xM5K8w4,2919
+vsdkx/core/runner.py,sha256=1OltjjZjpgrdPAXWvwE9LcWwPmGgHYCcKeXr5q16XZk,3981
+vsdkx/core/structs.py,sha256=AMdbKJuRtFT92h46S3e59FNmogvABcGzRERwV6OjZlY,1311
+vsdkx/core/util/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vsdkx/core/util/drawing.py,sha256=ejhgLgf8yfV6gR3n0V3kNbpyVj5zLeO46jyDyePgpes,3685
+vsdkx/core/util/imp.py,sha256=AXBjqXflv0ngerItR1s70cCL8VN20Aa-jt0FsKTYFug,241
+vsdkx/core/util/io.py,sha256=yYtgXYw_FNk6FDF0TEPWd1OMqSCQw6Oj0kf4D0xY1rI,2193
+vsdkx/core/util/model.py,sha256=XVSeN0ZJKQlvdHudrB5a2ZxKiBEuvfHk88oOjPCVWK0,1712
+vsdkx_core-1.0.dist-info/LICENSE,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+vsdkx_core-1.0.dist-info/METADATA,sha256=3-6vQvJ_GKpYlJutUW5yHT7xu3T9lPPwN6S_NNyzCuU,408
+vsdkx_core-1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+vsdkx_core-1.0.dist-info/namespace_packages.txt,sha256=3YZfwQkNtlLPo0IgWV1mp6zYg8v8RW5_5G7hYeRGK9s,6
+vsdkx_core-1.0.dist-info/top_level.txt,sha256=3YZfwQkNtlLPo0IgWV1mp6zYg8v8RW5_5G7hYeRGK9s,6
+vsdkx_core-1.0.dist-info/RECORD,,
