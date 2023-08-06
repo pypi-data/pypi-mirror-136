@@ -1,0 +1,13 @@
+
+[black]
+black>=22.1.0
+
+[dev]
+pre-commit
+
+[isort]
+isort
+
+[test]
+coverage[toml]<7,>=6
+Django
