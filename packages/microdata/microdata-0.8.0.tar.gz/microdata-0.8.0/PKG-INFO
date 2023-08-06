@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: microdata
+Version: 0.8.0
+Summary: html5lib extension for parsing microdata
+Home-page: http://github.com/edsu/microdata
+Author: Ed Summers
+Author-email: ehs@pobox.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.3
+License-File: LICENSE
+License-File: LICENSE.md
+
+UNKNOWN
+
