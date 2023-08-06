@@ -1,0 +1,8 @@
+astor
+astunparse
+gast
+pymore
+pytype
+
+[:python_version < "3.8"]
+typing-extensions
