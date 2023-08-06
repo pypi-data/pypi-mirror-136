@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "uni-say"
+version = "0.1.7"
+description = ""
+authors = ["Eyal Levin <eyalev@gmail.com>"]
+
+[tool.poetry.scripts]
+uni-say = "uni_say.cli:cli"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+click = "^8.0.3"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+black = {version = "^21.12b0", allow-prereleases = true}
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
