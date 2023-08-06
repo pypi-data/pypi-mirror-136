@@ -1,0 +1,10 @@
+somosweep/__init__.py,sha256=9hfuVFMTbUUYFuIchwBYMlAQmDNFZEe9nFFat1hJC9Y,208
+somosweep/_version.py,sha256=sCzOckwiRjLUSK7z8QkQbqLhwrKbEx4F-SHG9NKxxfc,323
+somosweep/batch_simulations.py,sha256=fVJA8SYnkqrcOY4Q-uiiLrvWJODbPO7pG0PKCmRIjYs,2353
+somosweep/generate_runs.py,sha256=Fi_4CWnnVse-n7XISSr7waI8iOtjBAKOvYFCqKlMGFM,6782
+somosweep/iter_utils.py,sha256=uUL3t24SVEXhSVqd9bUXow5hzwXb2_6la1bdqJ_ugZU,13127
+somosweep-0.1.2.dist-info/LICENSE,sha256=-QF6h92Qdc1GJWuAoJCtyQzfylpZmvSC7pY4D-NR5QE,1072
+somosweep-0.1.2.dist-info/METADATA,sha256=HvYT9NmdL2J1szgufvTTa3Sa4ZFDSyFVEXom1hhVOsk,2378
+somosweep-0.1.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+somosweep-0.1.2.dist-info/top_level.txt,sha256=kgGr-msNFBminVauzTZQEXenpqAJu-0-butjvMkjvzQ,10
+somosweep-0.1.2.dist-info/RECORD,,
