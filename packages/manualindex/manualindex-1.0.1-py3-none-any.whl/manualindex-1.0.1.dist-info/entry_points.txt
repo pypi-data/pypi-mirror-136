@@ -1,0 +1,3 @@
+[console_scripts]
+manualindex=manualindex.console:main
+

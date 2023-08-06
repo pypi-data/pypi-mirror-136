@@ -1,0 +1,11 @@
+manualindex/__init__.py,sha256=qbdtBGWxBcXQwoe9cdoyJHDGXpMeAWZIzeCxf79YYIo,1677
+manualindex/__main__.py,sha256=YbwReUuCsve1_7_CjktekenaUpbMTdeRqsu1EgFTQf0,94
+manualindex/console.py,sha256=VQCeC4xkUFLDJtZtKdKhoEgiCJG6C9Y_g2GPo2qSEZI,2062
+manualindex/manualindex.py,sha256=Ann0dzLwN9L6oVE2ePIoRlgPfnD88iz3FYi1ryDTydw,5821
+manualindex/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+manualindex/templates/manualindex.html.j2,sha256=r28oTjinrNWN7_X7y2TB1hqQL5mU6nkWTUf8riz1UNw,1608
+manualindex-1.0.1.dist-info/entry_points.txt,sha256=aKFLxD8cyQ5wMszfffu4U2flB7rO4VmsyEs0mqfYCoo,56
+manualindex-1.0.1.dist-info/LICENSE.txt,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+manualindex-1.0.1.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+manualindex-1.0.1.dist-info/METADATA,sha256=VkrpmS3VUFc8iuV49sDLhnKon7fmh6sO60HzUsm_khA,3452
+manualindex-1.0.1.dist-info/RECORD,,
