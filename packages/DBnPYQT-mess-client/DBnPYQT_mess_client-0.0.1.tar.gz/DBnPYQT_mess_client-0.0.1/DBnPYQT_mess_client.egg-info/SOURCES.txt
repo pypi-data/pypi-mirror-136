@@ -1,0 +1,8 @@
+setup.py
+DBnPYQT_mess_client.egg-info/PKG-INFO
+DBnPYQT_mess_client.egg-info/SOURCES.txt
+DBnPYQT_mess_client.egg-info/dependency_links.txt
+DBnPYQT_mess_client.egg-info/requires.txt
+DBnPYQT_mess_client.egg-info/top_level.txt
+client/__init__.py
+client/client_start.py
