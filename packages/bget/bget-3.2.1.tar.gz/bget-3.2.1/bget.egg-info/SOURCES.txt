@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+bget.egg-info/PKG-INFO
+bget.egg-info/SOURCES.txt
+bget.egg-info/dependency_links.txt
+bget.egg-info/entry_points.txt
+bget.egg-info/requires.txt
+bget.egg-info/top_level.txt
+bget.egg-info/zip-safe
+bgetcli/__init__.py
+bgetcli/bget.py
+bgetcli/downloader.py
+bgetcli/runtime.py
+bgetcli/utils.py
