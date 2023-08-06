@@ -1,0 +1,3 @@
+[console_scripts]
+ingeniiadfg=ingeniiadfg.main:app
+
