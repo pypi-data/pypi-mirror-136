@@ -1,0 +1,8 @@
+pypypan/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pypypan/excel.py,sha256=wKIOywhOlZI5z0rFAic49ZiD5P8NB9m1FO4FMzxVjj4,3911
+pypypan/main.py,sha256=7zjTvFXf6H3QwoFUaR6DaeL949kM2lEw56zgO2FMo7g,2483
+pypypan/upload.py,sha256=cKcJWZzwrGFCLuFQBzRiV8dEthDzZWYYgDZRKOh5vKk,2183
+pypypan-0.5.0.dist-info/entry_points.txt,sha256=X2yRYPdObzMaVFR5Cu1ixJhMqH_ka5No-jUW3_P4Z3c,45
+pypypan-0.5.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+pypypan-0.5.0.dist-info/METADATA,sha256=R1A1xSq9CX5emD2CI8KrkNQmoUkpBFWRynGsxjOc9YQ,597
+pypypan-0.5.0.dist-info/RECORD,,
