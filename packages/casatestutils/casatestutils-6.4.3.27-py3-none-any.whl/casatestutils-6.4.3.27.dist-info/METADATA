@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: casatestutils
+Version: 6.4.3.27
+Summary: Tools for use with casatest and testing
+Home-page: https://open-bitbucket.nrao.edu/projects/CASA/repos/casa6/browse
+Author: A. Wells
+Author-email: awells@nrao.edu
+License: UNKNOWN
+Download-URL: https://casa.nrao.edu/download/
+Description-Content-Type: text/markdown
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Requires-Dist: pytest
+
+# casatestutils Package
+
+casatestutils: A generic testhelper module for use with CASA testing
+Documentation: https://open-confluence.nrao.edu/display/CASA/casatestutils%3A+A+generic+test+helper+module
+
+
