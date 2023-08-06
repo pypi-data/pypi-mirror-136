@@ -1,0 +1,21 @@
+LICENSE
+MANIFEST.in
+README.rst
+pyproject.toml
+setup.py
+dparcel/__init__.py
+dparcel/environment.py
+dparcel/parcel.py
+dparcel/thermo.py
+dparcel.egg-info/PKG-INFO
+dparcel.egg-info/SOURCES.txt
+dparcel.egg-info/dependency_links.txt
+dparcel.egg-info/not-zip-safe
+dparcel.egg-info/requires.txt
+dparcel.egg-info/top_level.txt
+examples/SYDNEY AIRPORT (94767) 16 Jul 2021 00Z.txt
+examples/parcel_motion.ipynb
+examples/real_sounding.ipynb
+tests/test_soundings/idealised_rh50.csv
+tests/test_soundings/idealised_rh80.csv
+tests/test_soundings/sydney_20210716_00Z.csv

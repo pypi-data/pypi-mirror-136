@@ -1,0 +1,3 @@
+numpy
+metpy>=1.2
+scipy
