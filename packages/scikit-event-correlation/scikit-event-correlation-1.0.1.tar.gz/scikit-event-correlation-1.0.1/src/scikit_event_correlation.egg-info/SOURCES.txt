@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/scikit_event_correlation/__init__.py
+src/scikit_event_correlation/classifiers.py
+src/scikit_event_correlation/cumsum.py
+src/scikit_event_correlation/shewahart.py
+src/scikit_event_correlation.egg-info/PKG-INFO
+src/scikit_event_correlation.egg-info/SOURCES.txt
+src/scikit_event_correlation.egg-info/dependency_links.txt
+src/scikit_event_correlation.egg-info/requires.txt
+src/scikit_event_correlation.egg-info/top_level.txt
