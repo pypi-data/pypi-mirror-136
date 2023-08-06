@@ -1,0 +1,9 @@
+dparcel/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dparcel/environment.py,sha256=VHCRF00_tPIzwk36BBYFmXhYgc71_B5IWS35sZl2je0,16100
+dparcel/parcel.py,sha256=vnD94h7GcQt1ed56TbYa0MPtmWyjVISfZwH_try2s0A,42216
+dparcel/thermo.py,sha256=NSR-E7fG5YhQTwIAxWBj5GQaNxnU-edVV1KkP5Vrqmg,30630
+dparcel-0.1.dist-info/LICENSE,sha256=svTfCB9Vs0n6u3r35XfgO10Hx57VxW_FetlvHF3VHPI,1523
+dparcel-0.1.dist-info/METADATA,sha256=s3LHU3hg3qYQhLqgeyRZIcgIqCTZ0p8J0P2qRponFrQ,2787
+dparcel-0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+dparcel-0.1.dist-info/top_level.txt,sha256=sLsjcZmiyoiX9lRZ04HmmkJQMSpvbLR_n7lI-y-FABs,8
+dparcel-0.1.dist-info/RECORD,,
