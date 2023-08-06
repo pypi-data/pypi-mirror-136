@@ -1,0 +1,4 @@
+protobuf>=3.13.0
+pypubsub>=4.0.3
+requests
+paho-mqtt

@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: meshtastic-mqtt
+Version: 1.0.1
+Summary: A python script to translate Meshtastic MQTT location messages into a format that Traccar can understand.
+Home-page: https://github.com/joshpirihi/meshtastic-mqtt
+Author: joshpirihi
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# meshtastic-mqtt
+A python script to translate Meshtastic MQTT location messages into a plain format that other systems can easily understand.  Currently takes position data and submits it to a Traccar instance, also publishes battery levels and environmental plugin temperatures and humidity readings to mqtt as raw values.
+
+The latest build of Meshtastic-device has support for publishing decrypted payloads, which you'll need in order to use this script.
+
+There's a few config definitions at the top of meshtastic-mqtt.py that you'll need to change for your MQTT server.
+
+
+
+There are some comments in meshtastic-mqtt.py that detail the tweaks needed to make this run under AppDaemon in Home Assistant.
+
+
