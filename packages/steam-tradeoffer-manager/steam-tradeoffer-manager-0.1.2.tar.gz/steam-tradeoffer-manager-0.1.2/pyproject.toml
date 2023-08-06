@@ -1,0 +1,51 @@
+[tool.poetry]
+name = "steam-tradeoffer-manager"
+version = "0.1.2"
+description = "Small package that help managing steam trade offers and steam bots"
+license = "MIT"
+authors = ["somespecialone <tkachenkodmitriy@yahoo.com>"]
+readme = "README.md"
+homepage = "https://github.com/somespecialone/python-steam-tradeoffer-manager/"
+repository = "https://github.com/somespecialone/python-steam-tradeoffer-manager/"
+documentation = "https://somespecialone.github.io/python-steam-tradeoffer-manager/"
+keywords = ["steam", "offer", "trade", "steamio"]
+classifiers = [
+    "Framework :: AsyncIO",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Operating System :: OS Independent",
+    "Typing :: Typed"
+]
+
+include = ["LICENSE"]
+packages = [{ include = "steam_tradeoffer_manager" }]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+steamio = "^0.8.6"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.5"
+pytest-asyncio = "0.17.2"
+pytest-mock = "^3.6.1"
+pytest-cov = "^3.0.0"
+mkdocs = "^1.2.3"
+mkdocs-material = "^8.1.8"
+mkdocs-git-revision-date-localized-plugin = "^0.11.1"
+black = "*"
+
+[tool.black]
+line-length = 120
+target-version = ['py310']
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.coverage.run]
+source = ["steam_tradeoffer_manager"]
+omit = ["*/_monkey_patch.py", "*/__init__.py", "*/abc.py"]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
