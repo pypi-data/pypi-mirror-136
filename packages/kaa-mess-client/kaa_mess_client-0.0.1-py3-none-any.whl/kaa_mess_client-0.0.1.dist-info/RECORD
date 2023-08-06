@@ -1,0 +1,16 @@
+client/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+client/client.py,sha256=7mfEkxusOFx2T8CRalU3Aty6wigGmFjBvIH-0Uzt8rA,3097
+client/decorators.py,sha256=El4FXzf62PQTuzeyaHBVr7nqJOiUb2yqmPd0MuFItfE,802
+client/errors.py,sha256=bPJjEr7MEnJ1MRsuyoVE8hUWhyCnJM882wK6g5Kussw,585
+client/client/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+client/client/add_contact.py,sha256=pPwxEqE1E_UfIlTjx2IsW-BM23-W3ky5uWf4JE-5lOk,2607
+client/client/client_db_storage.py,sha256=pch44UH_bCa6HscJ7FTTUMayfrEAcqlTmI2BTWw3Jx4,5584
+client/client/delete_contact.py,sha256=6RtWYDObxyeR-UtcAaWdmkiqzYY49IUCgJ6j0DBt7fQ,1484
+client/client/main_window.py,sha256=ZWLmd7tJcc2UHv6alKrEkerXCb7_RZWNKwj9IEsAX2s,12285
+client/client/main_window_conv.py,sha256=OdjrMv7eHJiL7Jls2pcpyhN-iSHIva7mwEt60as-lrA,5484
+client/client/start_window.py,sha256=G753qxFGdX3BWFs4N0Jk5xKcXLD_DHu8wVttj1O7xXI,1609
+client/client/transport.py,sha256=JA4OB3wwClaRGfDgUyJTAsWN4hy8WpusDdmMOa1QVV8,9785
+kaa_mess_client-0.0.1.dist-info/METADATA,sha256=mVSmES5mZNKlA0cAGOGTRF5Q-5dnMwUL6d8OxNb_tWI,294
+kaa_mess_client-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+kaa_mess_client-0.0.1.dist-info/top_level.txt,sha256=DJiuN0ty6vOMYewH87cxtQ0LWVaJpE0bZ1Blm0e3RCE,7
+kaa_mess_client-0.0.1.dist-info/RECORD,,
