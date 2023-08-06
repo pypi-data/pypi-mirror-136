@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: youtube2ipfs
+Version: 0.3
+Summary: Download videos from YouTube (and similar video platforms) and add them to IPFS.
+Home-page: https://github.com/dokterbob/youtube2ipfs
+Author: Mathijs de Bruin
+Author-email: mathijs@mathijsfietst.nl
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Utilities
+Description-Content-Type: text/markdown
+Requires-Dist: ipfshttpclient (>=2.25.1)
+Requires-Dist: youtube-dl (>=2021.12.17)
+
+# youtube2ipfs
+Download videos from YouTube (and similar video platforms) and add them to IPFS.
+
+Based on [youtube-dl](https://ytdl-org.github.io/youtube-dl/) and [py-ipfs-http-client](https://github.com/ipfs-shipyard/py-ipfs-http-client).
+
+## Requirements
+* [ffmpeg](https://www.ffmpeg.org/)
+* [Python 3.8 or later](https://www.python.org/downloads/)
+* [IPFS](https://docs.ipfs.io/install/)
+
+## Installation
+Latest published version:
+```sh
+$ pip install youtube2ipfs
+```
+
+Bleeding edge:
+```sh
+$ pip install git+https://github.com/dokterbob/youtube2ipfs
+```
+
+## Usage
+First, make sure you have IPFS running. Then:
+
+```sh
+$ youtube2ipfs https://www.youtube.com/watch?v=FHH6hIc2GyE
+QmaqcMNVRvet1ZfRFoEBkGaEVLHKTUtkgX3139gpPc1zve
+```
+
+You can view the result through the IPFS gateway: `https://gateway.ipfs.io/ipfs/QmaqcMNVRvet1ZfRFoEBkGaEVLHKTUtkgX3139gpPc1zve`
+
+It accepts multiple URL's, as well as channels and playlists. Multiple files will be added to the same top-level directory. Subtitles will also be downloaded and metadata is added to the video file.
+
+For more details, use the `--verbose` or `-v` option (once or twice). A custom IPFS node can also be specified.
+
+
