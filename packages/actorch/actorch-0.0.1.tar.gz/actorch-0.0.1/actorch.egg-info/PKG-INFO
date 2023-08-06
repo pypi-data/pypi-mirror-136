@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: actorch
+Version: 0.0.1
+Summary: Deep reinforcement learning framework for fast prototyping based on PyTorch
+Home-page: https://github.com/lucadellalib/actorch
+Author: Luca Della Libera
+Author-email: luca.dellalib@gmail.com
+License: UNKNOWN
+Description: ![logo](docs/_static/images/actorch-logo.png)
+        
+        ---------------------------------------------------------------------------------------------------------
+        
+        [![Python version: >=3.7](https://img.shields.io/badge/python-%3E=3.7-blue)](https://www.python.org/downloads/)
+        [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+        [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit)
+        
+        ---------------------------------------------------------------------------------------------------------
+        
+        # Work in progress
+        
+        ---------------------------------------------------------------------------------------------------------
+        
+        ## Contact
+        
+        luca.dellalib@gmail.com
+        
+        ---------------------------------------------------------------------------------------------------------
+        
+Keywords: Deep reinforcement learning,PyTorch
+Platform: OS Independent
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Environment :: Console
+Classifier: Environment :: GPU :: NVIDIA CUDA
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Science/Research
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Typing :: Typed
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Provides-Extra: test
