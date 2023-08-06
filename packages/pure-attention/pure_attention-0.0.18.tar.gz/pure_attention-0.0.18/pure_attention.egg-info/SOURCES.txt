@@ -1,0 +1,13 @@
+CHANGELOG.md
+MANIFEST.in
+README.md
+package.json
+requirements.txt
+setup.py
+pure_attention/__init__.py
+pure_attention.egg-info/PKG-INFO
+pure_attention.egg-info/SOURCES.txt
+pure_attention.egg-info/dependency_links.txt
+pure_attention.egg-info/requires.txt
+pure_attention.egg-info/top_level.txt
+script/vision_controller.py
