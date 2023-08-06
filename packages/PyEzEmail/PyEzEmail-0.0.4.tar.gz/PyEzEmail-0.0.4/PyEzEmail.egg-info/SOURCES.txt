@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+PyEzEmail/__init__.py
+PyEzEmail.egg-info/PKG-INFO
+PyEzEmail.egg-info/SOURCES.txt
+PyEzEmail.egg-info/dependency_links.txt
+PyEzEmail.egg-info/top_level.txt
