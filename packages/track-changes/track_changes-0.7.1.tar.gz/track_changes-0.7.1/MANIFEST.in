@@ -1,0 +1,10 @@
+include README.md
+include HISTORY.md
+include versioneer.py
+
+recursive-exclude * __pycache__
+recursive-exclude * *.py[co]
+include track_changes/*.pyx
+include track_changes/_version.py
+recursive-include track_changes/resources *
+include requirements.txt
