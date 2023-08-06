@@ -1,0 +1,13 @@
+innerscope/__init__.py,sha256=5mW5JmzZNfBsX6kEnJ5uGLCcBiOnorqRdekVk1anAFg,161
+innerscope/_version.py,sha256=_0vVIhqAWVPrb3GZWDC9kLdGIJipG1KaCblcLLnYClk,497
+innerscope/cfg.py,sha256=6G3nlKx183KaIQiXI1b8oVbx-jkihwzWa_ngUyIHCeM,28
+innerscope/core.py,sha256=MVfoIOpQo8n-3A2fXaPl1K43Y3cXq2pG6z4wvn_MiW4,32395
+innerscope/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+innerscope/tests/conftest.py,sha256=SIKu15S1aUHerR5fPUYx13LhJWrVj5t7nR2hU6y7F-M,215
+innerscope/tests/test_core.py,sha256=olUzLyEDh9Vj2ksPf_ZAC5N5GxMXvGGrloGAykbnVW8,17417
+innerscope/tests/test_repr.py,sha256=qya44c5FRPygdxLGSd0EqvgvCgpfK8MXrmgk0EvkijY,8785
+innerscope-0.5.1.dist-info/LICENSE,sha256=NG1c8V_vVzVlCV5Ru0O9eiDe9BWh8G6-n3SGpqF7CyE,1492
+innerscope-0.5.1.dist-info/METADATA,sha256=AXkJWHyFWZXFRiRNUMW27VPV4VZg7xetHEzwcgWwb1o,5961
+innerscope-0.5.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+innerscope-0.5.1.dist-info/top_level.txt,sha256=0WwbF5sjirCjYAr2oEvII2wwdCqNraoOSSxJJiFjPJE,11
+innerscope-0.5.1.dist-info/RECORD,,
