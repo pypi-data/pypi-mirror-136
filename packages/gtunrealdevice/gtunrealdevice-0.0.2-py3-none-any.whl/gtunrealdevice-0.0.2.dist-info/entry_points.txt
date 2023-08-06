@@ -1,0 +1,6 @@
+[console_scripts]
+gt-device-app = gtunrealdevice.application:execute
+gt-unreal-device-app = gtunrealdevice.application:execute
+gtdeviceapp = gtunrealdevice.application:execute
+gtunrealdeviceapp = gtunrealdevice.application:execute
+
