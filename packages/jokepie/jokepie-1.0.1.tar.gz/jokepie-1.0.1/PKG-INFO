@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: jokepie
+Version: 1.0.1
+Summary: API Wrapper for sv443's joke api
+Home-page: UNKNOWN
+Author: TheWever (Wever#3255)
+Author-email: <nonarrator@gmail.com>
+License: UNKNOWN
+Keywords: python,jokes,api-wrapper,api wrapper,nv443,requests
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+
+
+# JokeAPI Wrapper by TheWever
+### Import jokeapie
+```
+import jokepie # imports package
+```
+
+### Create a client
+```
+client = jokepie.Client() # returns client objects
+```
+
+### Get a joke
+```
+joke = client.get_joke() # returns Joke object
+```
+
+### Post a joke
+```
+client.upload_joke('Insert Joke', 'category') # returns True on exception
+```
+
+### Sample:
+```
+import jokepie
+client = jokepie.Client()
+joke = client.get_joke('dog')
+print(joke.joke)
+```
+
