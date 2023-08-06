@@ -1,0 +1,14 @@
+mpl_qtthread/__init__.py,sha256=V9saKyaMVi-Dt97G99c2eik5WDyPrvb_1PR2nXQp_po,1418
+mpl_qtthread/_version.py,sha256=Tjb_poy6EuGRi7TlrksJa9Qpx1MXOCO3p3F6tJ8xa5o,142
+mpl_qtthread/backend.py,sha256=gK3sW7yK1e2kLNh7bridnGqKv9hnNb7zJFKGPnl4sGQ,5221
+mpl_qtthread/backend_agg.py,sha256=8Q71VvsqXzr7oTFfzdyswaevhyR7hDo4gUvKH_9S9IU,298
+mpl_qtthread/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mpl_qtthread/tests/conftest.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mpl_qtthread/tests/test_examples.py,sha256=Hm1x01HZ9BiYYw4dS44uo0o_ku16oFRwSMjIh8_Uu-s,99
+mpl_qtthread-0.0.1.dist-info/AUTHORS.rst,sha256=92FuKBlIvA3K8WpmAnrcutsmeWuHR3sO1vTSs185Mqk,182
+mpl_qtthread-0.0.1.dist-info/LICENSE,sha256=NdLKcXpb8O3nxskC-ayNrjoRnkvTpZvM1kBjtIA9_kg,1538
+mpl_qtthread-0.0.1.dist-info/METADATA,sha256=olRe-4FxVSHk63hhnqrL0z9SWnq80RnG14mdqnHgkWs,1507
+mpl_qtthread-0.0.1.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+mpl_qtthread-0.0.1.dist-info/entry_points.txt,sha256=eqGnTHtEVMYwfXVk1Z9MhC8O2N8wuqAbr0lisLmrkxs,20
+mpl_qtthread-0.0.1.dist-info/top_level.txt,sha256=hLnHcRswvQ7hoNjZUY7VcZ9IGWKgzSCKq691eoL_pGM,13
+mpl_qtthread-0.0.1.dist-info/RECORD,,
