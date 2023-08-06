@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: MyPythonDataProject
+Version: 1.0
+Summary: UNKNOWN
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+License-File: LICENSE
+
+This is my python project.
+
+The instructions are available on execution. Compatible files json, dat and csv. It's possible to export the data as a csv file.
+
