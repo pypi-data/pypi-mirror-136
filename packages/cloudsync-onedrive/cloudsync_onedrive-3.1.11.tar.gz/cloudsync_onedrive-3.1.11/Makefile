@@ -1,0 +1,25 @@
+SHELL := /bin/bash
+ifeq ($(OS),Windows_NT)
+	ENVBIN="scripts"
+else
+	ENVBIN="bin"
+endif
+
+env:
+	python -m virtualenv env
+
+requirements:
+	pip install -r requirements.txt
+
+lint:
+	pylint *.py
+	mypy .
+
+test:
+	pytest -v --cov=. --cov-report=xml --durations=1 -n=2 --provider=onedrive,testodbiz tests
+
+format:
+	autopep8 --in-place -r -j 8 cloudsync/
+
+coverage:
+	diff-cover coverage.xml --compare-branch=$(shell git merge-base HEAD origin/master)
