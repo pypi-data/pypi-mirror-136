@@ -1,0 +1,33 @@
+// House - number of floors, width, depth
+H,2,3,4
+// Room ID - floor, x, y, name, n, e, s, w
+RBR1,2,0,0,BedRoom1,0,0,C1,0
+RBR,2,3,0,BathRoom,0,0,C2,0
+RBR2,2,6,0,BedRoom2,0,0,C3,0
+RL1,2,0,3,Landing1,C1,C4,C6,0
+RL2,2,3,3,Landing2,C2,C5,C7,C4
+RL3,2,6,3,Landing3,C3,0,C8,C5
+RBR3,2,0,6,BedRoom3,C6,0,0,0
+RSTUp,2,3,6,UpStairs,C7,0,C9,0
+RBR4,2,6,6,BedRoom4,C8,0,0,0
+//
+// Room ID - floor, x, y, name, n, e, s, w
+RSTDown,1,3,1,DownStairs,C9,0,C10,0
+RHALL,1,3,4,Hallway,C10,0,C11,0
+ROUT,1,3,7,Outside,C11,0,0,0
+//
+// Connector - name, r1, r2, door or gap, x, y, colspan, rowspan, orientation
+C1,2,RBR1,RL1,D,0,2,2,1,H
+C2,2,RBR,RL2,D,3,2,2,1,H
+C3,2,RBR2,RL3,D,6,2,2,1,H
+C4,2,RL1,RL2,G,2,3,1,2,V
+C5,2,RL2,RL3,G,5,3,1,2,V
+C6,2,RL1,RBR3,D,0,5,2,1,H
+C7,2,RL2,RSTUp,G,3,5,2,1,H
+C8,2,RL3,RBR4,D,6,5,2,1,H
+C9,1,RSTUp,RSTDown,G,3,0,2,1,H
+C10,1,RSTDown,RHALL,G,3,3,2,1,H
+C11,1,RHALL,ROUT,D,3,6,7,1,H
+//
+// Starting - floor, room, direction
+S,1,Outside,N
