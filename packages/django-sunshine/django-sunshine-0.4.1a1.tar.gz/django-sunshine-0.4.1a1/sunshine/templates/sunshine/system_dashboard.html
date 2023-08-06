@@ -1,0 +1,89 @@
+{% extends 'sunshine/base.html' %}
+{% comment %}
+# This code is a part of sunshine package: https://github.com/letuananh/sunshine
+# :copyright: (c) 2013-2021 Le Tuan Anh <tuananh.ke@gmail.com>
+# :license: MIT, see LICENSE for more details.
+{% endcomment %}
+
+{% block style %}
+<style>
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="container-fluid">
+  <!-- Page Heading -->
+  <div class="d-sm-flex align-items-center justify-content-between mb-4">
+    <h1 class="h3 mb-0 text-gray-800">Administrator Dashboard</h1>
+  </div>
+  
+  <!-- Content Row -->
+  <div class="row">
+    <!-- Content Column -->
+    <div class="col-lg-12 mb-12">
+
+      {% if flash_msg %}
+      <div class="alert alert-primary" role="alert">
+        {{ flash_msg }}
+      </div>
+      {% endif %}
+      
+      {% if errors %}
+      <div class="alert alert-danger" role="alert">
+        <ul>
+          {% for error in errors %}
+          <li>{{ error }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+      {% endif %}
+
+      <!-- General information -->
+      <div class="card shadow mb-4">
+        <div class="card-header py-3">
+          <h6 class="m-0 font-weight-bold text-primary">Runtime Engines</h6>
+        </div>
+        <div class="card-body">
+          <h2>Platform</h2>
+          <span class="badge badge-primary">Python</span> version {{ python_version }}<br/>
+          <span class="badge badge-primary">Django</span> version {{ django_version }}<br/>
+
+          <h2 class="mt-3">Installed modules</h2>
+          {% if modules %}
+          {% for m in modules %}
+          <div>
+            <span class="badge badge-info">{{ m.name }}</span>
+            version {{ m.version }}
+            {% if m.build %}
+            (Build: {{ m.build }})
+            {% endif %}
+          </div>
+          {% endfor %}
+          {% endif %}
+          <span class="badge badge-info">Sunshine Portal runtime</span> version {{ sunshine_version }}
+        </div>
+      </div>
+
+      
+      <!-- General information -->
+      <div class="card shadow mb-4">
+        <div class="card-header py-3">
+          <h6 class="m-0 font-weight-bold text-primary">System status</h6>
+        </div>
+        <div class="card-body">
+          {% if space_used %}
+          <div>Used space: {{ space_used }}</div>
+          {% endif %}
+          {% if space_usable %}
+          <div>Usable space: {{ space_usable }}</div>
+          {% endif %}
+          {% if space_free %}
+          <div>Free space: {{ space_free }}</div>
+          {% endif %}
+        </div>
+      </div>
+      
+    </div>
+  </div><!-- End of Content Row -->
+</div>
+{% endblock %}

@@ -1,0 +1,52 @@
+{% extends "admin/base.html" %}
+{% load staticfiles %}
+{% comment %}
+# This code is a part of sunshine package: https://github.com/letuananh/sunshine
+# :copyright: (c) 2013-2021 Le Tuan Anh <tuananh.ke@gmail.com>
+# :license: MIT, see LICENSE for more details.
+{% endcomment %}
+
+{% block extrahead %}
+{# customize CSS here #}
+{% if SUNSHINE_ENV == 'DEV' %}
+<style>
+ #header {
+   background: #ee2277;
+ } 
+</style>
+{% elif SUNSHINE_ENV == 'UAT' %}
+<style>
+ #header {
+   background: green;
+ } 
+</style>
+{% else  %}
+<style>
+ #header {
+   /*background: #1E97CE;*/
+ } 
+</style>
+
+{% endif %}
+{% endblock %}
+
+{% block title %}{{ title }} | {{ site_title|default:_('Django site admin') }}{% endblock %}
+
+{% block branding %}
+<h1 id="site-name">
+  <a href="{% url 'admin:index' %}">
+    {% if SUNSHINE_ADMIN_LOGO %}
+    <img src="{% static SUNSHINE_ADMIN_LOGO %}" height="40px" />
+    {% elif SUNSHINE_ENV == 'DEV' %}
+    <img src="{% static 'sunshine/images/local.png' %}" height="40px" />
+    {% elif SUNSHINE_ENV == 'UAT' %}
+    <img src="{% static 'sunshine/images/uat.png' %}" height="40px" />
+    {% else %}
+    <img src="{% static 'sunshine/images/prod.png' %}" height="40px" />
+    {% endif %}
+    {{ site_header|default:_('Django administration') }}
+  </a>
+</h1>
+{% endblock %}
+
+{% block nav-global %}{% endblock %}

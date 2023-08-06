@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: django-sunshine
+Version: 0.4.1a1
+Summary: A bootstrap-based boilerplate for building modern Django websites
+Home-page: https://github.com/letuananh/sunshine
+Author: Le Tuan Anh
+Author-email: tuananh.ke@gmail.com
+License: MIT License
+Project-URL: Bug Tracker, https://github.com/letuananh/sunshine/issues/
+Project-URL: Source Code, https://github.com/letuananh/sunshine/
+Description: # Sunshine
+        
+        **django-sunshine** is a Bootstrap-based boilerplate for building modern Django websites.
+        
+        ## Installation
+        
+        **django-sunshine** is available on [PyPI](https://pypi.org/project/django-sunshine/) and can be installed using pip:
+        
+        ```
+        pip install django-sunshine
+        ```
+        
+        ## Development
+        
+        1. Install Python requirements
+        2. Run migration `python manage.py migrate`
+        3. Create super user with `python manage.py createsuperuser`
+        4. View front-end page on browser: https://localhost:8000
+           - Back-end page for admin is available at: http://localhost:8000/sunshine/home/
+        
+        ## License
+        
+        **django-sunshine** package is licensed under MIT License.
+        The following packages are included:
+        
+        - [jQuery 3.5.1](https://jquery.org/license/) - MIT License
+        - [Bootstrap 4.6](https://getbootstrap.com/docs/4.6/getting-started/introduction/) - MIT License
+        - [Vue 2.6.12](https://vuejs.org/) - MIT License
+        - [sb-admin-2](https://github.com/StartBootstrap/startbootstrap-sb-admin-2) - MIT License
+        - [jquery-easing](http://gsgd.co.uk/sandbox/jquery/easing) - MIT License
+        - [Font Awesome Free 5.13.1](https://fontawesome.com) - [Icons -CC BY 4.0 -Fonts: SIL OFL 1.1 - Code: MIT License](https://fontawesome.com/license/free)
+        
+Keywords: bootstrap,django,portal
+Platform: any
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Plugins
+Classifier: Intended Audience :: Developers
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 2.2
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
