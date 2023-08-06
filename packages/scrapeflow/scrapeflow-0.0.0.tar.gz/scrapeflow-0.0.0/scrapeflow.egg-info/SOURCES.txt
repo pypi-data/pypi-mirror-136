@@ -1,0 +1,8 @@
+MANIFEST.in
+requirements.txt
+setup.py
+scrapeflow/__init__.py
+scrapeflow.egg-info/PKG-INFO
+scrapeflow.egg-info/SOURCES.txt
+scrapeflow.egg-info/dependency_links.txt
+scrapeflow.egg-info/top_level.txt
