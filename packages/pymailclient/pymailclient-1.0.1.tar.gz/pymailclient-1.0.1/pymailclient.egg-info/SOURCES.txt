@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+email_client/__init__.py
+email_client/client.py
+email_client/pymail.py
+pymailclient.egg-info/PKG-INFO
+pymailclient.egg-info/SOURCES.txt
+pymailclient.egg-info/dependency_links.txt
+pymailclient.egg-info/requires.txt
+pymailclient.egg-info/top_level.txt
