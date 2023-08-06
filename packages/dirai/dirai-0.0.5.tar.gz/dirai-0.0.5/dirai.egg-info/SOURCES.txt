@@ -1,0 +1,8 @@
+setup.py
+dirai/__init__.py
+dirai/dirai.py
+dirai.egg-info/PKG-INFO
+dirai.egg-info/SOURCES.txt
+dirai.egg-info/dependency_links.txt
+dirai.egg-info/requires.txt
+dirai.egg-info/top_level.txt
