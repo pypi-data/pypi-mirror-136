@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: udgram
+Version: 1.1.3
+Summary: 
+Author: wellington36
+Author-email: wellington.71319@gmail.com
+Requires-Python: >3.8
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: conllu (==4.4.1)
