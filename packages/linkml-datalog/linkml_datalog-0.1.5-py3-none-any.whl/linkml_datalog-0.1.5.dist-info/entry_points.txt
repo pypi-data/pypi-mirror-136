@@ -1,0 +1,3 @@
+[console_scripts]
+linkml-dl=linkml_datalog.engines.datalog_engine:cli
+

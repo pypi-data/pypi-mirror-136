@@ -1,0 +1,11 @@
+linkml_datalog/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+linkml_datalog/dumpers/tupledumper.py,sha256=N13ibWGWPYW9VYOcyF_uim_8aoKN1tsGrdoyhnDhRJM,2517
+linkml_datalog/engines/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+linkml_datalog/engines/datalog_engine.py,sha256=mqzXvSNo5Wr-_sxUf6Vpfk9_h8K53cCtAM5fmBSPrZY,6473
+linkml_datalog/generators/dataloggen.py,sha256=2xDG7Gbv7DBLAUNCdDXZIfHXLroX1RGnixtZMBgtseI,14311
+linkml_datalog/model/validation.py,sha256=roDqQ7EK0N5Hvm0OxNbMXL3qB-OnFbLMzjqItOIKwzo,9101
+linkml_datalog/utils/json_to_eav.py,sha256=ODj1EF9eXVRoL1eNH-T-cz9q6Hp1ssAHuE43eP5HOTk,4817
+linkml_datalog-0.1.5.dist-info/entry_points.txt,sha256=GO75rBcf7keBro-Q4rkf805V3uNMCRytzPAgPWn0p1s,71
+linkml_datalog-0.1.5.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+linkml_datalog-0.1.5.dist-info/METADATA,sha256=jXZMSKeT7OWj4KCsbL4WpYos7Rnrz6gzYnJa9JJwGD4,1268
+linkml_datalog-0.1.5.dist-info/RECORD,,
