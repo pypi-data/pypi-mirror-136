@@ -1,0 +1,6 @@
+__pycache__/
+/.*_cache/
+/setup.cfg
+/.venvs/
+/dist/
+/.task/
