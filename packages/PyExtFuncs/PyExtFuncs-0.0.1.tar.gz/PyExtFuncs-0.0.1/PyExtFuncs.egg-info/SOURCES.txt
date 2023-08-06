@@ -1,0 +1,4 @@
+PyExtFuncs.egg-info/PKG-INFO
+PyExtFuncs.egg-info/SOURCES.txt
+PyExtFuncs.egg-info/dependency_links.txt
+PyExtFuncs.egg-info/top_level.txt
