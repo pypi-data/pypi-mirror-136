@@ -1,0 +1,14 @@
+pyemail_sender/__init__.py,sha256=z_iL4tXnzmRrEQLjCrrLiubQFW0lKY_43srhvB9T2Qo,268
+pyemail_sender/abstract_pyemail_sender.py,sha256=RDRXcT0mun94oyT6jb0iSQl4rgKDbhwWGgWUOllWjlc,733
+pyemail_sender/gmail_pyemail_sender.py,sha256=_DRiJrC1ddy4qLptfctlYzb98Tvwfjxa5Fc94KAnIdU,2617
+pyemail_sender/pyemail_sender_config.py,sha256=0jzkyKBkyVUaUh37SVnUpRNOpkCrydBinsh-BZilZXU,912
+pyemail_sender/pyemail_sender_schema.json,sha256=wjO9a1tDIlnFh3wrEtsQ8yfVz2HWk3KWJNjYjJ6VBB4,1030
+pyemail_sender-1.0.1.data/data/pyemail_sender_schema.json,sha256=wjO9a1tDIlnFh3wrEtsQ8yfVz2HWk3KWJNjYjJ6VBB4,1030
+tests/__init__.py,sha256=gDc6SIViMk8GCqpnDjydFPvB5YfPw9As1ikdCEH5bkM,19
+tests/test_gmail_pyemail_sender.py,sha256=HgkpGgiN3H4xqDCDd6pnrtNUEek9P1yr4e7Mx6fACXE,6188
+pyemail_sender-1.0.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+pyemail_sender-1.0.1.dist-info/METADATA,sha256=NZiGdTuJyu9NWE5pyWycKYD7-qMHCqls0N6LJyP44Lw,6947
+pyemail_sender-1.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pyemail_sender-1.0.1.dist-info/entry_points.txt,sha256=eqGnTHtEVMYwfXVk1Z9MhC8O2N8wuqAbr0lisLmrkxs,20
+pyemail_sender-1.0.1.dist-info/top_level.txt,sha256=ek7TTDdvqt3cO2qV1VM0L7WcrzeZ0PmX-f-l6DBZJAo,21
+pyemail_sender-1.0.1.dist-info/RECORD,,
