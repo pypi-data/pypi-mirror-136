@@ -1,0 +1,7 @@
+setup.py
+michalidesi-repo/__init__.py
+michalidesi-repo/functions.py
+michalidesi_repo.egg-info/PKG-INFO
+michalidesi_repo.egg-info/SOURCES.txt
+michalidesi_repo.egg-info/dependency_links.txt
+michalidesi_repo.egg-info/top_level.txt
