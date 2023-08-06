@@ -1,0 +1,9 @@
+ocifs/.version.json,sha256=V0rhgiFBVRSJiCCYe8Clke-7F9GJKqGN5WPvN7PwFho,27
+ocifs/__init__.py,sha256=f-Mn-pWTKrQrIok6KyO4Ylr2VUGC_DD44jW0Um2x1Do,604
+ocifs/core.py,sha256=Fn-QkyX5uJdVTGdS1FJmEPbOuh8nGcH4o5q-wPFi9eA,45588
+ocifs/errors.py,sha256=6Wy38iPTX7EZnNoFF8CSQu_y1R2hMmkat8g89eeX57U,3576
+ocifs-1.0.1.dist-info/LICENSE.txt,sha256=u95B_0zSUJZY9L0XXeogEyj11l5Oy-KR13uCdso3cZQ,1845
+ocifs-1.0.1.dist-info/METADATA,sha256=F5d8HE8IuToXwxU02wOHJ28BUySkA3ZSeh4YBNeozW8,2774
+ocifs-1.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+ocifs-1.0.1.dist-info/top_level.txt,sha256=hU9vehWhtGuLHaXejcC1nceoa2HdNsNVycm388hE3O0,6
+ocifs-1.0.1.dist-info/RECORD,,
