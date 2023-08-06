@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: BeautyPrinting
+Version: 1.3.0.dev1
+Summary: BeautyPrinting · 一个专为美观打印而设计的模块
+Home-page: UNKNOWN
+Author: YunDuanModule
+License: UNKNOWN
+Keywords: BeautyPrinting,Beauty,Printing,Print,beautiful,colorful,loading,bar
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: colorama
+Requires-Dist: enlighten
+
+# 欢迎下载BeautyPrinting dev 试用版！
+## 试用功能：enlighten progress bar
+```python
+import BeautyPrinting
+
+BeautyPrinting.ProgressBar.enlighten_loading_bar(text='Loading', items=200, sleep=0.01, color='cyan')
+```
+## 非常感谢您的支持！
+
