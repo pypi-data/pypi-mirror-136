@@ -1,0 +1,4 @@
+tqdm
+mwparserfromhell
+orjson
+nltk
