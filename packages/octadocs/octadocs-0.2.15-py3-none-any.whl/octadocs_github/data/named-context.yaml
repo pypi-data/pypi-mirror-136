@@ -1,0 +1,22 @@
+$context:
+  $vocab: https://octadocs.io/github/
+  gh: https://octadocs.io/github/
+  spdx: http://spdx.org/licenses/
+
+  updated_at:
+    $type: xsd:dateTime
+
+  pushed_at:
+    $type: xsd:dateTime
+
+  license:
+    $type: gh:License
+    $context:
+      $base: http://spdx.org/licenses/
+      terms: http://spdx.org/rdf/terms#
+
+      spdx_id: $id
+      key: terms:licenseId
+      name: terms:name
+      url:
+        $type: $id
