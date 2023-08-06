@@ -1,0 +1,13 @@
+dmpfold/__init__.py,sha256=ZY7ksyKhzvotWsOm0J5pCbAlO04G4UsnjAIgBUFgAfI,48
+dmpfold/network.py,sha256=eGLIUrBU74AR_1_CZ5lyEv4_wmDfcv9vPw83YfCHCmA,11431
+dmpfold/predict.py,sha256=d6bDJ2IjOkMdZnk13SjXqpe-uYAGotvyjpztGUQqM3s,8285
+dmpfold/train.py,sha256=9gST2lh346EMsb7BVb1n6Y0Vo1bqMgxaQyMq4CtIj50,14984
+dmpfold/train_clust.lst,sha256=S3aQSlDNWvqfq2XjTVwygWfRNoMklbQxbs17bw--VDg,403995
+dmpfold/example/3FGX.pdb,sha256=_tkwdKajgiv0FVp1GqjwA286uV_E5QljS9xy5glzlAo,159165
+dmpfold/example/PF10963.aln,sha256=XXN7D-RKk727y2ym6uBLKaGSpM8twoHLed4kScMCfWg,20916
+dmpfold-2.0.data/scripts/dmpfold,sha256=4OmyJuVvJw-QS77r9Gdq0aY7ojtdBO1DleAPLY3aCOk,57
+dmpfold-2.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+dmpfold-2.0.dist-info/METADATA,sha256=vzff0bbHx5cl0DHyO6MmTuupq89L8bxr8jUJW8L6KEE,6185
+dmpfold-2.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+dmpfold-2.0.dist-info/top_level.txt,sha256=4s6Gd-pJmhxFKTw8SPsa8GggNDvJmH2YefM9U6Pt4q8,8
+dmpfold-2.0.dist-info/RECORD,,
