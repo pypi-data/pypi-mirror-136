@@ -1,0 +1,15 @@
+dnnf/__init__.py,sha256=IYRJRnwsOWKmqfTLvUtG-xxY_tyGXDXhofMWZyZCZkM,111
+dnnf/__main__.py,sha256=JBlz6L-n-QhKzZc9pnE7VRQcRi6whLJagAMzdQtCJV8,2306
+dnnf/__version__.py,sha256=XEqb2aiIn8fzGE68Mph4ck1FtQqsR_am0wRWvrYPffQ,22
+dnnf/backends.py,sha256=AxS66x3kTVfSrcpLIbhZWMtt7K8e2jFlVmZ7mKGV47k,3888
+dnnf/cli.py,sha256=Z5msAI6iRKBrirhUdzvCAhJcxpCrHho4Dkb7hc09wQY,7475
+dnnf/falsifier.py,sha256=DizjRFH_s9d8Yi_xA-eUDSRhqnV_U7YVS3rZE_fqYPQ,10272
+dnnf/model.py,sha256=OOlggamthVatypmbt3_kmXKI5TeaLtO8c4tQP0PUjCo,3223
+dnnf/pytorch.py,sha256=rfQYR_YgXu8suyIiWfsZcegE8pwRTK6f9A-l5-hcPbM,13734
+dnnf/reduction.py,sha256=UXOeu0yRhTKD1hsBHQywYIlKTbv-5QJ9LxqvPWDBrsI,24005
+dnnf/utils.py,sha256=7Pupw8cwMRuGVrzdrdZuHM8Glzxm4fkBjECSN8379C0,1974
+dnnf-0.1.3.dist-info/entry_points.txt,sha256=6s75wxr0XiKZAL4AZCUMpj6krhQ3GlURAw04tNV5hRs,47
+dnnf-0.1.3.dist-info/LICENSE,sha256=1mUNKVPhfbeeb2q1N47KQX292kTabX1Nd5tGMVExKKg,1070
+dnnf-0.1.3.dist-info/WHEEL,sha256=jPMR_Dzkc4X4icQtmz81lnNY_kAsfog7ry7qoRvYLXw,81
+dnnf-0.1.3.dist-info/METADATA,sha256=E1vDButIcXHV8bHRp75VJLZsV8QgxhkRscyf53YtDN4,6363
+dnnf-0.1.3.dist-info/RECORD,,
