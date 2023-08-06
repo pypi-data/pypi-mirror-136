@@ -1,0 +1,11 @@
+ytdl_gui/__init__.py,sha256=mSPgYyzF8ibn6iJMxWSPa1TJEDPTNZdtwKGcVzRil2w,64
+ytdl_gui/const.py,sha256=HNRa1jcAW3TmPIUvSE6KsYH_0wYhSp0WViDLAKmbLeA,187
+ytdl_gui/css/style.css,sha256=1VW7Zcea2Xha0FGUDhuFMA9eW10WTI0UQo6QkqqanOg,147
+ytdl_gui/dialog.py,sha256=zTUCXuKLthJEMA9mYwddJ4pME9J1hzMHLi_1vxV5b3U,1641
+ytdl_gui/images/wall.png,sha256=wb36vqDXsnSNJW0kc4YMK1PibhorTouGL5BU6OoEyuM,291459
+ytdl_gui/main.py,sha256=Q7i0zOo6BZoEb5oy84fF6ByGdm0rwwm_Ocoh9CPgCUQ,5899
+ytdl_gui/youtube.py,sha256=idGaPV5H7q4CUm1NufHQIUDQ02VhilYf2X3DeQT_cbw,1500
+ytdl_gui-0.1.5.dist-info/entry_points.txt,sha256=VuBi1azZCGKwW15jruhvxqHXa2KYVl_hKwgtYGvDjkk,42
+ytdl_gui-0.1.5.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+ytdl_gui-0.1.5.dist-info/METADATA,sha256=nfkfMP-j96JUBrXd-p0TJU-6wabKXLIlS9T4ExW2Q8g,496
+ytdl_gui-0.1.5.dist-info/RECORD,,

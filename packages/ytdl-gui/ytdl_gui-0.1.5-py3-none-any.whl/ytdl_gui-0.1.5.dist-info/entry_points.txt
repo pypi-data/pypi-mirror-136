@@ -1,0 +1,3 @@
+[console_scripts]
+ytdl-gui=ytdl_gui:main
+
