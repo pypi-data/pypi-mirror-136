@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: nmrformd
+Version: 0.0.1
+Summary: Calculate NMR relaxation time from molecular dynamics trajectory file
+Home-page: https://github.com/simongravelle/nmrformd
+Author: Simon Gravelle
+Author-email: simon.gravelle@live.fr
+License: GNU GENERAL PUBLIC LICENSE
+Download-URL: https://github.com/simongravelle/nmrformd/archive/refs/tags/v0.0.1.tar.gz
+Description: NMRforMD 
+        ########
+        
+        NMRforMD is a python script to calculate NMR relaxation times from
+        molecular dynamics trajectory files. Used in combination with
+        MDAnalysis, it allows for the analysis of trajectory files from LAMMPS,
+        GROMACS, or AMBER simulation package.
+        
+Platform: UNKNOWN
