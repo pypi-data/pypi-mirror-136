@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: miguxespy
+Version: 1.0.2
+Summary: Modulo que traduz português para miguxês e suas variações (arcaico, moderno e NEO-miguxês). Inspirado no projeto de Aurelio Jargas, que pode ser encontrado em: https://aurelio.net/coisinha/miguxeitor
+Home-page: https://github.com/matheuszinn/miguxes_py
+Keywords: emo,miguxes,RegEx
+Author: Matheus Alves
+Author-email: theustloz@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Project-URL: Repository, https://github.com/matheuszinn/miguxes_py
+Description-Content-Type: text/markdown
+
+
+Miguxes\_py
+===========
+<img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/matheuszeen?style=for-the-badge">
+<img alt="PyPI" src="https://img.shields.io/pypi/v/miguxespy?style=for-the-badge">
+
+`miguxes_py` é um modulo que traduz português para as seguintes
+variações de miguxês:
+
+- arcaico;
+- moderno;
+- NEO-miguxês.
+
+A principal função do módulo é a função `miguxar(texto, dialeto)`, que
+recebe um texto para ser transformado e um dialeto.
+
+Instalação
+----------
+
+Pode ser instalada através do pip, utilizando o comando:
+
+> `pip install miguxes_py`
+
+Exemplo de uso:
+
+```python
+from miguxes_py.miguxes import miguxar
+from miguxes_py.dialetos import DialetoMiguxes
+
+if __name__ == "__main__":
+    print(miguxar("Você acha engraçado tirar screenshots dos NFTs das pessoas, hein?""", DialetoMiguxes.MIGUXES_MODERNO))
+```
+
+A saída seria:
+
+    vc axa engrassadu tirah screenxots dus nfts das pessoas... hein??!?!
+
+Inspirado no projeto de Aurelio Jargas, que pode ser encontrado em: <https://aurelio.net/coisinha/miguxeitor>
+------------------------------------------------------------------------
+
