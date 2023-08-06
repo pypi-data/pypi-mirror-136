@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: package-gen
+Version: 0.0.2
+Summary: Generate python package
+Home-page: https://github.com/suifengpiaoyang/pk-gen
+Author: Zhang
+Author-email: 
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6.0
