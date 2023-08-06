@@ -1,0 +1,11 @@
+simple_perms/__init__.py,sha256=yitCnybYiivxFGq2JmLrfHZXZZQq_2xLhJXo90NTrLc,129
+simple_perms/apps.py,sha256=heBp8mxpj9IbVayAsdfFPOmVLYb8amSBUTzTtuG9-sw,317
+simple_perms/backend.py,sha256=jxoBsGm_G87KDzNv-Q-pyQxcnvj1IT90tmN4ME5sd90,820
+simple_perms/helpers.py,sha256=Ju8KAWSTz6ZYV-IF3Gb8W3SoFdVwvEd9GcNzOGVS0rA,2848
+simple_perms/logic.py,sha256=xoDHw-rCCoDOA-Uh8z9VA65cunHjJrRdOVhsbb_flS4,217
+simple_perms/registry.py,sha256=G9OucUiYfqQFCS_tTEC1D11T9g9cRxVYiDCSOtHwzP0,298
+simple_perms/settings.py,sha256=v7_09ZHtvRN-bxuJpPVUa_RXq9fdHlVG45-s30SIFSg,509
+django_simple_perms-1.0.2.dist-info/LICENSE,sha256=UcTyH69hNmpHn_FCU00INQqbuMH_91R8qlC5B4cFJgA,438
+django_simple_perms-1.0.2.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+django_simple_perms-1.0.2.dist-info/METADATA,sha256=OzjE9D3ZmAeJVISyCAjbvy9ikM4gXSiI5pBxrhzrRWc,5366
+django_simple_perms-1.0.2.dist-info/RECORD,,
