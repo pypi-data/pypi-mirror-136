@@ -1,0 +1,4 @@
+[console_scripts]
+ben_build_csv_sets=bigearthnet_common.sets:build_csv_sets_cli
+ben_constant_prompt=bigearthnet_common.constants:constants_prompt
+
