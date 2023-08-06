@@ -1,0 +1,7 @@
+scom==0.7.3
+Cython
+pyserial>=3.5
+python-dotenv
+
+[ThingsBoard]
+tb-mqtt-client
