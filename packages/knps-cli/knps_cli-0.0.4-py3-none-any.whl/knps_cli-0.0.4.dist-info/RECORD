@@ -1,0 +1,10 @@
+knps/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+knps/knps.py,sha256=Sp_W-AxTKXqnLNxWAfgTETzpJX2EJGJXnh9907KrLNM,35355
+knps/personal.py,sha256=a_Uup7Sjt60M0E5EtZkLnSC3pIw4gcRtth57SvMVluc,29
+knps/settings.py,sha256=yo22Jx7DHClkZP5zPvyLc8yZKwdbK_xM7oapkwl3nss,461
+knps_cli-0.0.4.dist-info/LICENSE,sha256=eGKyChuWB3ozna4Ii7ij_nUwUyjuGCPv3HVVce5ohqw,1066
+knps_cli-0.0.4.dist-info/METADATA,sha256=7o5SEwHqMyJzkk_sDYRlTnOCVGA1dYqf2Br_XRdI1lw,697
+knps_cli-0.0.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+knps_cli-0.0.4.dist-info/entry_points.txt,sha256=YndHefLVguXhkZzMbOgc_Q1XOR2cds-KMIQZAIb65n4,100
+knps_cli-0.0.4.dist-info/top_level.txt,sha256=A2FIXCF3jxqPvEDpFKZjVMIn9gUGiIjHGxqoYYDzshY,5
+knps_cli-0.0.4.dist-info/RECORD,,
