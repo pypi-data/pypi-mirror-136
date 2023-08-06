@@ -1,0 +1,8 @@
+matrix_registration_bot/__init__.py,sha256=vH7lkU9xgXC3hQgc3Fm2TasSQZgQizwg7W6IAebLi04,58
+matrix_registration_bot/bot.py,sha256=QkP4jwN8MvUkCKhW3XiTbqZZgeBkiwHI3JttdcBP8Qo,5296
+matrix_registration_bot/registration_api.py,sha256=vwTiB6V6DhVZpR165rOazUxum8er4DXaOBQr0IiLnvc,5621
+matrix_registration_bot-0.0.2.dist-info/LICENSE.TXT,sha256=6d9MTk5kuBaKccPGdmjc_6u-j8oR1KxKfVSCVizRZ5w,34524
+matrix_registration_bot-0.0.2.dist-info/METADATA,sha256=7-RYJUUaawjx3uDJglHlUZNsvpeUbtHCq0V4mzV-JuQ,4135
+matrix_registration_bot-0.0.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+matrix_registration_bot-0.0.2.dist-info/top_level.txt,sha256=z1cPLB6W-pz0Q5AHErsWDflEYZYKk8YA0I3hTuYhDm0,24
+matrix_registration_bot-0.0.2.dist-info/RECORD,,
