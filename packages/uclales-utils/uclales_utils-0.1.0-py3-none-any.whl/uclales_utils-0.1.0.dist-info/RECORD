@@ -1,0 +1,17 @@
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/conftest.py,sha256=NQH1M4tJGSkKy-RvuMmHJoCn7WkIwkb5oZ1NnZdJTxE,1237
+tests/test_aggregation.py,sha256=8DoWVg0xSaSpbmv0rw8JDD1ediZIbksC_O9Qp24hq8c,545
+tests/test_utils.py,sha256=COeln0RZu52NBFWnkaeThp4dWlCXmhtptBQ-THhxuD0,79
+uclales/__init__.py,sha256=VHfxy9N8JQ5SZA1_zP6S_Dv_czGWmlHs4LAe7WPxw6E,103
+uclales/check_cross_sections.py,sha256=M8LSXbnqg26BCtSmglePLhzocbR3CGu_VqT4BwAadIs,792
+uclales/generate_derived_fields.py,sha256=-OZt52RB25K5k3281hAdF4A56O_Ho9BfxOowC-fFaGk,6810
+uclales/loader.py,sha256=ZyCU8C9DEmRMNTsCkn3S9SZXPSvd7jDapKBr7Z-Mojo,5783
+uclales/output/__init__.py,sha256=X81qW1RdMvmNd8barE4ihLTW-8sAT1HUac8-ulybLDU,40
+uclales/output/common.py,sha256=dxperjpGt4DrC1Ixe359dbeLs0Q1XCyij-aILJWZq3U,1497
+uclales/output/extraction.py,sha256=X7aimoHG0iY3at-nvwqQRFbPvvMCLOpov-MT1MSUqHQ,22188
+uclales/plots/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+uclales/plots/timeseries_statistics.py,sha256=kejsJfQTITG1ZOwoFxQU2pJlQ6Aronx_ju_hoS4NYXo,1450
+uclales_utils-0.1.0.dist-info/METADATA,sha256=wgX4_vsVhb5A9sh7gcQVTEXrIdzIeSfs_xTAOiJFZ5A,3398
+uclales_utils-0.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+uclales_utils-0.1.0.dist-info/top_level.txt,sha256=Utyx6vnrxaX2I0qcXwTZGce-O3pf2gqofL_u_39NeSM,14
+uclales_utils-0.1.0.dist-info/RECORD,,
