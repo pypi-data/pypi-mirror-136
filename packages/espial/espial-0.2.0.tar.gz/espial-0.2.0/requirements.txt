@@ -1,0 +1,9 @@
+spacy
+numpy
+flask
+click
+networkx
+html2text
+readability-lxml
+requests
+flask_cors
