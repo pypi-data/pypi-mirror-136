@@ -1,0 +1,8 @@
+README.md
+setup.py
+substrateinterface/__init__.py
+substrateinterface.egg-info/PKG-INFO
+substrateinterface.egg-info/SOURCES.txt
+substrateinterface.egg-info/dependency_links.txt
+substrateinterface.egg-info/requires.txt
+substrateinterface.egg-info/top_level.txt
