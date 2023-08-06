@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: promote
+Version: 1.11.0
+Summary: Client for deploying Python models to Promote.
+Home-page: https://github.com/alteryx/promote-python
+Author: Alteryx
+Author-email: promotedev@alteryx.com
+License: BSD
+Project-URL: Source, https://github.com/alteryx/promote-python
+Keywords: alteryx,scikit-learn,numpy,pandas
+Platform: UNKNOWN
+
+UNKNOWN
+
