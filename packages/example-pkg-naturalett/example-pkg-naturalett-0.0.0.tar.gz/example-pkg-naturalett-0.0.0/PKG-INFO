@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: example-pkg-naturalett
+Version: 0.0.0
+Summary: A small example package
+Home-page: https://github.com/naturalett/getting-started
+Author: Foo Bar
+Author-email: lidor.ettinger@example.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.9
