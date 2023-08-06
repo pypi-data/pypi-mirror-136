@@ -1,0 +1,16 @@
+pyror/__init__.py,sha256=lUx7fE485WIPjQ41sKusSel8B_8PKLQG5b0XkLRtPeU,206
+pyror/request.py,sha256=IJCkzbjUoNqH_2SoBudLHVU23pCuF6s3P-qH-z1tNWs,439
+pyror/ror.py,sha256=62Y3lIung2BdVrnkcAVvTnMuFKmOvk5Zf0oq0TZHLbM,2205
+pyror/utils.py,sha256=QUeASw9tkTD_FXb3c-A2aXrdqK3Kr6Ag_g_8ya-ZJo8,254
+pyror/scripts/__init__.py,sha256=sOXoUmhqzhZDKEL-f0uebq99uhtActCVbv6lped0giE,23
+pyror/scripts/rorid.py,sha256=kxXMI8aDD0yT62zh9jAXTcCxulj_KYXZZP20A5Wr_PE,1080
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/test-ror_id.py,sha256=2uG6IERg_maVzSjsDRXfxHOUo20O8acVNjhwXVONJL8,165
+test/test-ror_match.py,sha256=myGvV8EV_2Q9NQMvhM1bIO55YTfDVsg8kPMtRqf0ng0,338
+test/test-ror_search.py,sha256=5jK4JBY09l7tqMk57zRrVxEQO11b-rZOHOMEQyMCYc0,202
+pyror-0.1.0.dist-info/LICENSE,sha256=WQYZ1QQz8rJko8kHcVb6hTHHdNvfIXWoQy0aKzc_iFE,1062
+pyror-0.1.0.dist-info/METADATA,sha256=xrP6cloBHLM4j19hm1ynGIIsjSzzFNwNKjugQwym2sY,1663
+pyror-0.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pyror-0.1.0.dist-info/entry_points.txt,sha256=sJKIpRA4SCdqWCHZw6u31_fGdD9BEGloZ844ApkX02c,49
+pyror-0.1.0.dist-info/top_level.txt,sha256=KO_kfhXyimrpydAbTh8iv8WDOMSYT-XUnwQ-2RZOFaE,11
+pyror-0.1.0.dist-info/RECORD,,
