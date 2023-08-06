@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "poetry-demo-alphaae"
+version = "0.1.0"
+description = ""
+authors = ["alphaAE <a1226123914@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+numpy = "^1.22.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[[tool.poetry.source]]
+name = "aliyun"
+url = "https://mirrors.aliyun.com/pypi/simple/"
+default = true
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
