@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+mailinator_public_api.egg-info/PKG-INFO
+mailinator_public_api.egg-info/SOURCES.txt
+mailinator_public_api.egg-info/dependency_links.txt
+mailinator_public_api.egg-info/requires.txt
+mailinator_public_api.egg-info/top_level.txt
+mailinatorapi/__init__.py
+mailinatorapi/mailinator.py
