@@ -1,0 +1,2 @@
+jupyterlab>=3
+jupyter_client>=6.1.0
