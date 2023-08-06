@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+src/pycpdflib/__init__.py
+src/pycpdflib/pycpdflib.py
+src/pycpdflib.egg-info/PKG-INFO
+src/pycpdflib.egg-info/SOURCES.txt
+src/pycpdflib.egg-info/dependency_links.txt
+src/pycpdflib.egg-info/top_level.txt
