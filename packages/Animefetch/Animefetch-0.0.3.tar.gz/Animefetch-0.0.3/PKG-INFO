@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: Animefetch
+Version: 0.0.3
+Summary: Anime Command-Line System Information Tool
+Home-page: https://github.com/Thadeuks
+Author: Tadeo Asael 'Thadeuks'
+Author-email: ass.hurtado2008@gmail.com
+License: MIT
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+# Animefetch
+An anime command-line system information tool written in python.
+
+## Description 
+Anime fetch is an anime command-line system information tool written in python.
+It allows you to display information about your system in a minimal and aesthetic way, acompained by  a cute ASCII anime art! 
+
+*Only tested in windows.*
+
+## Usage 
+Anime fetch is pretty simple to use, you  just have to run the following code:
+`python -m Animefetch`
+
+If you want to change the theme that shows on the console you can add the following parameter:
+`python -m Animefetch --theme=2`
+Animefetch have 4 available themes with a different ASCII art.
+
+###### Made by [Thadeuks](https://github.com/Thadeuks "Thadeuks")
+
