@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+FLIT_USERNAME=derekwanclsa FLIT_PASSWORD='Frisk carport corpsman' flit publish
