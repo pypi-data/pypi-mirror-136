@@ -1,0 +1,17 @@
+rest_friendship/__init__.py,sha256=FVHPBGkfhbQDi_z3v0PiKJrXXqXOx0vGW_1VaqNJi7U,22
+rest_friendship/apps.py,sha256=736QNu9Hp9MOSCMjRCi_53MvbQFMjunzbv1CNBHPpIs,198
+rest_friendship/serializers.py,sha256=aIVK9rCocXLNAarl7ryrNTvO62Y_awXK5KlhEI4xtM8,996
+rest_friendship/urls.py,sha256=8LN90v0QMWBXLzUe0fFYfsvQH-fsJAMrbHSke_OBN8U,240
+rest_friendship/views.py,sha256=hrLFwOjQ9IojvoF0_4ytWSdMi6ZPL6BkVOmljtP4uGM,6481
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/conftest.py,sha256=-Ia3swQt8JNqSoVAUnCvaXORMocEAgiCcBEh2fQLPd8,1997
+tests/factories.py,sha256=ChQMWhBuVrsw6445zZkYLX79q0KFdVRlDIsQ97YELK4,440
+tests/models.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/serializers.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_views.py,sha256=270VkdwcLGNnHL2QECaaYG1_d_28lMHhee7lGZljGLo,13647
+tests/urls.py,sha256=-3HZFjakgBTDRgRjCGUsZC8yD9dozCDIDLhkz-4xXJU,154
+django_rest_friendship-0.2.0.dist-info/LICENSE,sha256=t2tQsrnD-8YFgEG3fwVRiK9gtE5G-UzatxfZi5y4HEw,761
+django_rest_friendship-0.2.0.dist-info/METADATA,sha256=jrsQKR8UVMpLJhqQYdimWJgRwKF9bdyiuj2PzkPbaks,4874
+django_rest_friendship-0.2.0.dist-info/WHEEL,sha256=WzZ8cwjh8l0jtULNjYq1Hpr-WCqCRgPr--TX4P5I1Wo,110
+django_rest_friendship-0.2.0.dist-info/top_level.txt,sha256=YYxTchcsO_qWd-ChpW8m07VOgf4j1FRtfmXk6xGNqpk,22
+django_rest_friendship-0.2.0.dist-info/RECORD,,
