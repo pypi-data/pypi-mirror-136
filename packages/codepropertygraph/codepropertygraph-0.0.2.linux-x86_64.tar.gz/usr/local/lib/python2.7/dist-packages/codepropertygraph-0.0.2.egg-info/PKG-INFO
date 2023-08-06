@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: codepropertygraph
+Version: 0.0.2
+Summary: A Python implementation of a Code Property Graph.
+Home-page: https://github.com/markgacoka/codepropertygraph
+Author: Gacoka Mbui
+Author-email: <markgacoka@gmail.com>
+License: Apache License 2.0
+Download-URL: https://github.com/markgacoka/codepropertygraph/releases
+Description: ## Code Property Graph
+        This library is an implementation of a Code Property Graph as seen in the paper published by [Fabian Yamaguchi](https://fabianyamaguchi.com/) on *Modeling and Discovering Vulnerabilities with [Code Property Graphs](https://www.sec.cs.tu-bs.de/pubs/2014-ieeesp.pdf)*
+        
+        ## Installation
+        ```
+        pip install codepropertygraph
+        ```
+Keywords: cybersecurity,static analysis,code tokenization,property graph
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
