@@ -1,0 +1,10 @@
+colorist/__init__.py,sha256=8iMJwd0ziQgcV41WEipiQFeTu31tpXgiA0EaNmmG1ug,2418
+colorist/bright_color.py,sha256=FOr87X9Q1mMsDGRmlAhlfjEIltp2Drd3ARcyg7paxr0,398
+colorist/color.py,sha256=izx2XSd7whANFuF8CnO46BBsKh9Em-0HUgNp4irorrQ,362
+colorist/effect.py,sha256=jEE35GYPZF44cmf9pbVyPtnm04qsjATgBccvZ10TX6U,528
+colorist/version.py,sha256=YJdRr2NzLp3AnzNC-Z_Qi39VyWdTx37GNdOukdxptNg,80
+colorist-1.0.0.dist-info/LICENSE.md,sha256=nkRSdihu6ylS0faftaw57gdMA5DncDDIhAXUNFL3nJ0,1084
+colorist-1.0.0.dist-info/METADATA,sha256=WFsaYL4R9xpEXIAsHnBvX5OjWCPH0vAxfnI4VyhYbak,11699
+colorist-1.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+colorist-1.0.0.dist-info/top_level.txt,sha256=fp6sVTf3zjXTvQpmizk_0mLSfwEojUhk4_mRhg7KsWI,9
+colorist-1.0.0.dist-info/RECORD,,
