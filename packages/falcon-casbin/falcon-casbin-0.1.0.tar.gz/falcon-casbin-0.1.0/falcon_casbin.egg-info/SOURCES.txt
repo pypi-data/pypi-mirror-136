@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+falcon_casbin/__init__.py
+falcon_casbin/falcon_casbin.py
+falcon_casbin.egg-info/PKG-INFO
+falcon_casbin.egg-info/SOURCES.txt
+falcon_casbin.egg-info/dependency_links.txt
+falcon_casbin.egg-info/not-zip-safe
+falcon_casbin.egg-info/requires.txt
+falcon_casbin.egg-info/top_level.txt

@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: falcon-casbin
+Version: 0.1.0
+Summary: Falcon Casbin middleware
+Home-page: http://github.com/alexferl/falcon-casbin
+Author: Alexandre Ferland
+Author-email: me@alexferl.com
+License: MIT
+Platform: any
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+License-File: LICENSE
+
+UNKNOWN
+
