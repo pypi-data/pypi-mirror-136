@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: zhaostephen-rebrn
+Version: 0.1.2
+Summary: A CLI for bulk renaming files using dfregex search and replace.
+Home-page: https://github.com/stephen-zhao/rebrn
+Author: Stephen Zhao
+Author-email: mail@zhaostephen.com
+License: UNKNOWN
+Keywords: rename,file,bulk rename,pattern match rename,renaming,files,regex,regular expression,datetime,date,time,format,reformat,extract,strftime,strptime,parse,format code,search,find,replace
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: System :: Systems Administration
+Classifier: Topic :: Utilities
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# rebrn 📘⇶🖊⇶📗
+
+rebrn is a CLI tool for bulk renaming files using dfregex (datetime-format
+enabled regex) to perform search and replace within file names.
+
+
