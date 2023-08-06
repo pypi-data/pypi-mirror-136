@@ -1,0 +1,127 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ostorlab.co/agentgrp_schema.json",
+  "title": "Agent Group Schema",
+  "description": "Agent Group json-specification : A full description of fields of an agent group definition yaml file.",
+  "CustomTypes": {
+    "ArrayOfStrings": {
+      "description": "An array of strings custom type.",
+      "type": "array",
+      "items": {
+        "type": "string",
+        "maxLength": 4096
+      }
+    },
+    "agentArgument": {
+      "description": "Dictionary-like object of the argument.",
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "Name of the agent group argument.",
+          "type": "string",
+          "maxLength": 2048
+        },
+        "type": {
+          "description": "Name of the agent group argument.",
+          "type": "string",
+          "maxLength": 2048
+        },
+        "description": {
+          "description": "[Optional] - Description of the agent group argument.",
+          "type": "string"
+        },
+        "value": {
+          "description": "[Optional] - Value of the agent group argument.",
+          "type": ["string", "number", "boolean"]
+        }
+      }
+    },
+    "agentPortMapping": {
+      "description": "[Optional] - Array of dictionary-like objects, defining the port mapping.",
+      "type": "array",
+      "items": {
+        "description": "Dictionary-like object of the argument.",
+        "type": "object",
+        "properties": {
+          "src_port": {
+            "description": "Source port.",
+            "type": "number"
+          },
+          "dest_port": {
+            "description": "Destination port.",
+            "type": "number"
+          }
+        }
+      }
+    }
+  },
+  "properties": {
+    "kind": {
+      "description": "[Required] - Full name of the agent group.",
+      "type": "string",
+      "enum": [
+        "AgentGroup"
+      ]
+    },
+    "description": {
+      "description": "[Required] - Text fully describing the agent group.",
+      "type": "string"
+    },
+    "image": {
+      "description": "[Optional] - Path to the agent group image.",
+      "type": "string",
+      "pattern": "((?:[^/]*/)*)(.*)"
+    },
+    "restart_policy": {
+      "description": "[Optional] - Restart policy of the agent group, e.g., none, any, on-failure.",
+      "type": "string",
+      "maxLength": 1024,
+      "enum": [
+        "on-failure",
+        "none",
+        "any"
+      ]
+    },
+    "restrictions": {
+      "description": "[Optional] - Array of strings explaining the restrictions of the agent group.",
+      "$ref": "#/CustomTypes/ArrayOfStrings"
+    },
+    "constraints": {
+      "description": "[Optional] - Array of strings explaning the constraints of the agent group.",
+      "$ref": "#/CustomTypes/ArrayOfStrings"
+    },
+    "agents": {
+      "description": "[Required] - List of dictionary-like objects explaining the agents belonging to the current agent group.",
+      "type": "array",
+      "items": {
+        "description": "Dictionary-like object of the agent.",
+        "type": "object",
+        "properties": {
+          "key": {
+            "description": "[Optional] - Key of the agent of the form agent/<organisation prefix>/<agent name>.",
+            "type": "string"
+          },
+          "args": {
+            "description": "[Optional] - List of the agent arguments.",
+            "type": "array",
+            "items": {
+              "$ref": "#/CustomTypes/agentArgument"
+            }
+          },
+          "port_mapping": {
+            "description": "[Optional] - List of the agent port maping.",
+            "type": "array",
+            "items": {
+              "$ref": "#/CustomTypes/agentPortMapping"
+            }
+          }
+        }
+      }
+    }
+  },
+  "required": [
+    "kind",
+    "description",
+    "agents"
+  ]
+}
