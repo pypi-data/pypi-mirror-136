@@ -1,0 +1,5 @@
+[console_scripts]
+SDF = SecurityDelFile:run
+SecurityDelFile = SecurityDelFile:run
+sdf = SecurityDelFile:run
+

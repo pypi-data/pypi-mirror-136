@@ -1,0 +1,8 @@
+setup.py
+SecurityDelFile/SecurityDelFile.py
+SecurityDelFile/__init__.py
+SecurityDelFile.egg-info/PKG-INFO
+SecurityDelFile.egg-info/SOURCES.txt
+SecurityDelFile.egg-info/dependency_links.txt
+SecurityDelFile.egg-info/entry_points.txt
+SecurityDelFile.egg-info/top_level.txt
