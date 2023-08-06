@@ -1,0 +1,8 @@
+sasdbpy/__init__.py,sha256=3QXIhYG6X59ijPlj2aAhGLmEYXZGQgzursJviYWRQ2s,24
+sasdbpy/sasdbreader.py,sha256=HtAy8vhQ0G5dk0FnTQUccWJGBW2K3NeUd-IEx8s8c1w,6607
+test/__init__.py,sha256=Cd6mNNuSt79yrp4jgPNlzSy_PpyjkPQhfOUPv5PCE10,28
+test/testSasDbReader.py,sha256=6TQIlc6hOLQeO4hoec9QLLuXAJcVIncrtZcfbKwCyKM,4345
+sasdbpy-0.0.8.dist-info/METADATA,sha256=JEgyfDDGz4zl9VomEIrgPigh1V492OWdrnPSYnS81cE,1891
+sasdbpy-0.0.8.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+sasdbpy-0.0.8.dist-info/top_level.txt,sha256=V_rdOSEBfSIF0lhInwHWyHk0Q2wUxY32qQEk4pOsbJM,13
+sasdbpy-0.0.8.dist-info/RECORD,,
