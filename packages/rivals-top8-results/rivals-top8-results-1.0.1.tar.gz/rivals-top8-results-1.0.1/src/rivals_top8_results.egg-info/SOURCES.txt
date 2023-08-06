@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/rivals_top8_results/__init__.py
+src/rivals_top8_results/draw_example.py
+src/rivals_top8_results/draw_gui.py
+src/rivals_top8_results/draw_qt.py
+src/rivals_top8_results/draw_results.py
+src/rivals_top8_results.egg-info/PKG-INFO
+src/rivals_top8_results.egg-info/SOURCES.txt
+src/rivals_top8_results.egg-info/dependency_links.txt
+src/rivals_top8_results.egg-info/top_level.txt
