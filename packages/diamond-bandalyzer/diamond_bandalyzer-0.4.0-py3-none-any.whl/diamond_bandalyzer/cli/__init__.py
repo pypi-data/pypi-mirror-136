@@ -1,0 +1,2 @@
+
+GLOBAL_VARS = {'LOGGING_LEVEL': 0}
