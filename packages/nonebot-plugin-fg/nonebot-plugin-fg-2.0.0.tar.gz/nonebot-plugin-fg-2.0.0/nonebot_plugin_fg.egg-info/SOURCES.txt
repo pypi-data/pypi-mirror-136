@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+nonebot-plugin-fg/Segmentation.py
+nonebot-plugin-fg/TextRank4Keyword.py
+nonebot-plugin-fg/__init__.py
+nonebot-plugin-fg/config.py
+nonebot-plugin-fg/core.py
+nonebot-plugin-fg/group_rule.py
+nonebot-plugin-fg/record.py
+nonebot-plugin-fg/util.py
+nonebot_plugin_fg.egg-info/PKG-INFO
+nonebot_plugin_fg.egg-info/SOURCES.txt
+nonebot_plugin_fg.egg-info/dependency_links.txt
+nonebot_plugin_fg.egg-info/requires.txt
+nonebot_plugin_fg.egg-info/top_level.txt
