@@ -1,0 +1,6 @@
+mojap_airflow_tools/__init__.py,sha256=wAxkK8w13vqoF47A8iqWdSlIgRRXmZiQ0R4wePZfzhs,22
+mojap_airflow_tools/constants.py,sha256=3rs4gjcltGLq6z1aGffz6n6PfkVXgb3LUDmIPtWEFxk,64
+mojap_airflow_tools/operators.py,sha256=KzWotH_jzZooSwDCKl7BvURM7nBX3JwosUh3g-qFEuc,5380
+mojap_airflow_tools-2.0.2.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+mojap_airflow_tools-2.0.2.dist-info/METADATA,sha256=DhYFoCAKHq_F0Uz9dbUdWihsv7EJMcGut3sEMkO26AM,565
+mojap_airflow_tools-2.0.2.dist-info/RECORD,,
