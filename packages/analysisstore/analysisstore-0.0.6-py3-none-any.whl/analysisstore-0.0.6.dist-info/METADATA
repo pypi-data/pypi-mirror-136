@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: analysisstore
+Version: 0.0.6
+Summary: Prototype analysis results database (for the MX beamlines)
+Home-page: https://github.com/NSLS-II/analysisstore.git
+License: BSD (3-clause)
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+License-File: LICENSE
+Requires-Dist: doct
+Requires-Dist: six
+Requires-Dist: mongoquery
+Requires-Dist: jsonschema
+Requires-Dist: pymongo
+Requires-Dist: pyyaml
+Requires-Dist: requests
+Requires-Dist: tornado
+Requires-Dist: ujson
+
+Mongo backed data analysis tracker service
+
+
