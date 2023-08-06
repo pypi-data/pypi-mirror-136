@@ -1,0 +1,149 @@
+Metadata-Version: 2.1
+Name: redturtle.chefcookie
+Version: 0.2.2
+Summary: Cookie policy integration with chefookie
+Home-page: https://github.com/collective/redturtle.chefcookie
+Author: RedTurtle
+Author-email: info@redturtle.it
+License: GPL version 2
+Project-URL: PyPI, https://pypi.python.org/pypi/redturtle.chefcookie
+Project-URL: Source, https://github.com/collective/redturtle.chefcookie
+Project-URL: Tracker, https://github.com/collective/redturtle.chefcookie/issues
+Description: .. This README is meant for consumption by humans and pypi. Pypi can render rst files so please do not use Sphinx features.
+           If you want to learn more about writing documentation, please check out: http://docs.plone.org/about/documentation_styleguide.html
+           This text does not appear on pypi or github. It is a comment.
+        
+        ====================
+        RedTurtle Chefcookie
+        ====================
+        
+        Product's goal is to manage the insertion of tracking codes on the page like analytics, tagmanager, facebook, etc...
+        This allows to comply with latest gdpr's indications.
+        
+        The plugin is based on chefcookie js plugin that you can find here: https://github.com/vielhuber/chefcookie/
+        
+        
+        Features
+        --------
+        
+        In this first version you can use control panel to configure the plugin.
+        
+        
+        Examples
+        --------
+        
+        This add-on can be seen in action at the following sites:
+        
+        - http://www.unife.it/it
+        
+        
+        Translations
+        ------------
+        
+        This product has been translated into
+        
+        - Italian
+        
+        
+        Installation
+        ------------
+        
+        Install redturtle.chefcookie by adding it to your buildout::
+        
+            [buildout]
+        
+            ...
+        
+            eggs =
+                redturtle.chefcookie
+        
+        
+        and then running ``bin/buildout``
+        
+        
+        Contribute
+        ----------
+        
+        - Issue Tracker: https://github.com/RedTurtle/redturtle.chefcookie/issues
+        - Source Code: https://github.com/RedTurtle/redturtle.chefcookie
+        
+        
+        License
+        -------
+        
+        The project is licensed under the GPLv2.
+        
+        
+        Contributors
+        ============
+        
+        - RedTurtle, info@redturtle.it
+        
+        
+        Changelog
+        =========
+        
+        0.2.2 (2022-01-27)
+        ------------------
+        
+        - Align text with label of buttons.
+        - Removed cookie_setting_open button when only_technical_cookies is checked.
+          [eikichi18]
+        
+        
+        0.2.1 (2022-01-11)
+        ------------------
+        
+        - Fix layers in adapters.
+          [cekk]
+        
+        0.2.0 (2022-01-11)
+        ------------------
+        
+        - Add facebook script manually (copied from original chefcookie script).
+          [cekk]
+        - Allow to handle social based on link/script like twitter timeline
+          [lucabel]
+        
+        
+        0.1.3 (2022-01-10)
+        ------------------
+        
+        - Remove YouTube unused field.
+          [cekk]
+        
+        
+        0.1.2 (2022-01-10)
+        ------------------
+        
+        - Fix accept_iframe loading.
+          [cekk]
+        
+        0.1.1 (2022-01-10)
+        ------------------
+        
+        - Fix domain names when saving cookie settings.
+          [cekk]
+        
+        
+        0.1.0 (2022-01-10)
+        ------------------
+        
+        - Initial release.
+          [cekk, lucabel]
+        
+Keywords: Python Plone
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Plone
+Classifier: Framework :: Plone :: Addon
+Classifier: Framework :: Plone :: 5.2
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: GNU General Public License v2 (GPLv2)
+Requires-Python: ==2.7, >=3.6
+Provides-Extra: test

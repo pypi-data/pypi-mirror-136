@@ -1,0 +1,259 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2022-01-11 11:01+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
+"Last-Translator: RedTurtle Technology <sviluppoplone@redturtle.it>\n"
+"Language-Team: RedTurtle Technology <sviluppoplone@redturtle.it>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: en\n"
+"Language-Name: English\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: redturtle.chefcookie\n"
+
+#: ../profiles/default/controlpanel.xml
+msgid "Chefcookie Configuration"
+msgstr "Configurazione Chefcookie"
+
+#: ../browser/controlpanel.py:28
+msgid "Chefcookie settings"
+msgstr "Configurazione Chefcookie"
+
+#: ../configure.zcml:35
+msgid "Installs the redturtle.chefcookie add-on."
+msgstr "Install redturtle.chefcookie."
+
+#: ../configure.zcml:35
+msgid "RedTurtle: Chefcookie"
+msgstr ""
+
+#: ../configure.zcml:43
+msgid "RedTurtle: Chefcookie (uninstall)"
+msgstr ""
+
+#: ../configure.zcml:43
+msgid "Uninstalls the redturtle.chefcookie add-on."
+msgstr "Disinstalla redturtle.chefcookie."
+
+#. Default: "Analytics cookies labels"
+#: ../interfaces.py:207
+msgid "chefcookie_analytics_cookies_labels"
+msgstr "Etichette per Analytics"
+
+#. Default: "If compiled, this will enable the \"Analytics cookies\" flag in the banner."
+#: ../interfaces.py:211
+msgid "chefcookie_analytics_cookies_labels_help"
+msgstr "Se compilato, verrà attivato il flag per accettare o meno i cookie di Google Analytics nel banner di consenso."
+
+#. Default: "If set and the user has accepted the Analytics cookies, this id will be used to track the user."
+#: ../interfaces.py:54
+msgid "chefcookie_analytics_id_help"
+msgstr "Se compilato e l'utente ha accettato i cookie di Analytics, questo id verrà utilizzato per tracciare l'utente."
+
+#. Default: "Analytics Id"
+#: ../interfaces.py:53
+msgid "chefcookie_analytics_id_label"
+msgstr "Id Analytics"
+
+#. Default: "If set and the user has accepted the Facebook cookies, this id will be used to track the user."
+#: ../interfaces.py:63
+msgid "chefcookie_facebook_id_help"
+msgstr "Se compilato e l'utente ha accettato i cookie di Facebook, questo id verrà utilizzato per tracciare l'utente."
+
+#. Default: "Facebook Id"
+#: ../interfaces.py:62
+msgid "chefcookie_facebook_id_label"
+msgstr "Id Facebook"
+
+#. Default: "Functional cookies labels"
+#: ../interfaces.py:193
+msgid "chefcookie_functional_cookies_labels"
+msgstr "Etichette per i cookie funzionali"
+
+#. Default: "If compiled, this will enable the \"Functional cookies\" flag in the banner."
+#: ../interfaces.py:197
+msgid "chefcookie_functional_cookies_labels_help"
+msgstr "Se compilato, verrà attivato il flag per accettare o meno i cookie funzionali nel banner di consenso."
+
+#. Default: "General labels"
+#: ../interfaces.py:173
+msgid "chefcookie_general_labels"
+msgstr "Etichette generali"
+
+#: ../interfaces.py:174
+msgid "chefcookie_general_labels_help"
+msgstr ""
+
+#. Default: "Insert the text of the banner header. Once per each site languages. If you want to insert a link to the policy page, use the placeholder {policy_url}."
+#: ../interfaces.py:161
+msgid "chefcookie_header_help"
+msgstr "Inserisci il testo dell'intestazione del banner. Per ogni lingua del sito. Se vuoi inserire un link alla pagina della policy, usa il placeholder {policy_url}."
+
+#. Default: "Banner header"
+#: ../interfaces.py:160
+msgid "chefcookie_header_label"
+msgstr "Intestazione banner di consenso"
+
+#. Default: "If set and the user has accepted the HotJar cookies, this id will be used to track the user."
+#: ../interfaces.py:72
+msgid "chefcookie_hotjar_id_help"
+msgstr "Se compilato e l'utente ha accettato i cookie di HotJar, questo id verrà utilizzato per tracciare l'utente."
+
+#. Default: "HotJar Id"
+#: ../interfaces.py:71
+msgid "chefcookie_hotjar_id_label"
+msgstr "Id HotJar"
+
+#. Default: "Iframes mapping"
+#: ../interfaces.py:133
+msgid "chefcookie_iframes_mapping_labels"
+msgstr "Mappatura iframe"
+
+#. Default: "Insert a list of mappings between a provider and a list of possible domains for their iframes. If the user blocks their cookies, the iframes will be blocked as well."
+#: ../interfaces.py:136
+msgid "chefcookie_iframes_mapping_labels_help"
+msgstr "Inserisci una lista di configurazioni per bloccare gli iframe dei vari provider. Se l'utente blocca il cookie di uno di questi, tutti gli iframe con il relativo dominio verranno bloccati di conseguenza."
+
+#. Default: "If set and the user has accepted the LinkedIn cookies, this id will be used to track the user."
+#: ../interfaces.py:81
+msgid "chefcookie_linkedin_id_help"
+msgstr "Se compilato e l'utente ha accettato i cookie di LinkedIn, questo id verrà utilizzato per tracciare l'utente."
+
+#. Default: "LinkedIn Id"
+#: ../interfaces.py:80
+msgid "chefcookie_linkedin_id_label"
+msgstr "Id LinkedIn"
+
+#. Default: "Links mapping "
+#: ../interfaces.py:146
+msgid "chefcookie_links_mapping_labels"
+msgstr "Mapping per la trasformazione dei link"
+
+#. Default: "Insert a list of mappings between a provider and a list of possible links xpath selector for their anchor. If the user blocks their cookies, the provider will be blocked as well."
+#: ../interfaces.py:147
+msgid "chefcookie_links_mapping_labels_help"
+msgstr "Inserisci una lista di mapping fra provider e una lista di classi che saranno usate come selettore dei link da trasformare"
+
+#. Default: "Select if your website only provide technical cookies."
+#: ../interfaces.py:116
+msgid "chefcookie_only_technical_cookies_help"
+msgstr "Seleziona se il sito utilizza solo cookie tecnici."
+
+#. Default: "Only technical cookies"
+#: ../interfaces.py:112
+msgid "chefcookie_only_technical_cookies_label"
+msgstr "Solo cookie tecnici"
+
+#. Default: "Insert the cookie policy page URL. This can be used in \"Banner header\" field as \"{policy_url}\" to dynamically replace it with the given URL."
+#: ../interfaces.py:125
+msgid "chefcookie_policy_url_help"
+msgstr "Inserisci l'URL della pagina della policy dei cookie. Può essere utilizzato nel campo \"Intestazione banner\" con il placeholder \"{policy_url}\" per sostituirlo dinamicamente con l'URL fornito."
+
+#. Default: "Policy URL"
+#: ../interfaces.py:124
+msgid "chefcookie_policy_url_label"
+msgstr "Pagina policy"
+
+#. Default: "Profiling cookies labels"
+#: ../interfaces.py:221
+msgid "chefcookie_profiling_cookies_labels"
+msgstr "Etichette cookie di profilazione"
+
+#: ../interfaces.py:225
+msgid "chefcookie_profiling_cookies_labels_help"
+msgstr ""
+
+#. Default: "Profiling cookies specific labels"
+#: ../interfaces.py:234
+msgid "chefcookie_profiling_cookies_specific_labels"
+msgstr "Etichette cookie di profilazione specifiche"
+
+#. Default: "Labels for specific providers. If the relative id/flag is set, this will enable the flag in the banner."
+#: ../interfaces.py:238
+msgid "chefcookie_profiling_cookies_specific_labels_help"
+msgstr "Etichette per i singoli provider impostati. Se il relativo id/flag sono stati impsotati, questo attiverà il flag nel banner di consenso."
+
+#. Default: "Technical cookies labels"
+#: ../interfaces.py:181
+msgid "chefcookie_technical_cookies_labels"
+msgstr "Etichette cookie tecnici"
+
+#: ../interfaces.py:185
+msgid "chefcookie_technical_cookies_labels_help"
+msgstr ""
+
+#. Default: "Select if you want to add Twitter timeline to consent panel (in profiling cookies section) to allow users disable its tracking."
+#: ../interfaces.py:104
+msgid "chefcookie_twittertimeline_help"
+msgstr ""
+
+#. Default: "Add Twitter timeline to consent panel"
+#: ../interfaces.py:100
+msgid "chefcookie_twittertimeline_label"
+msgstr ""
+
+#. Default: "Select if you want to add YouTube to consent panel (in profiling cookies section) to allow users disable its tracking."
+#: ../interfaces.py:92
+msgid "chefcookie_youtube_help"
+msgstr "Seleziona se vuoi aggiungere il consenso per YouTube tra le opzioni del banner (nella sezione cookie di profilazione)."
+
+#. Default: "Add YouTube to consent panel"
+#: ../interfaces.py:89
+msgid "chefcookie_youtube_label"
+msgstr "Aggiungi il consenso a YouTube"
+
+#. Default: "You need to enable ${name} cookies to see this content."
+#: ../defaults.py:157
+msgid "iframe_placeholder_text_1"
+msgstr "Devi accettare i cookie di ${name} per vedere questo contenuto."
+
+#. Default: "Please"
+#: ../defaults.py:168
+msgid "iframe_placeholder_text_2"
+msgstr "Per favore"
+
+#. Default: "enable them"
+#: ../defaults.py:175
+msgid "iframe_placeholder_text_3"
+msgstr "abilitali"
+
+#. Default: " or "
+#: ../defaults.py:182
+msgid "iframe_placeholder_text_4"
+msgstr " oppure "
+
+#. Default: "manage your preferences"
+#: ../defaults.py:189
+msgid "iframe_placeholder_text_5"
+msgstr "gestisci le tue preferenze"
+
+#. Default: "JSON root must be a mapping (dict)"
+#: ../interfaces.py:42
+msgid "invalid_cfg_no_dict"
+msgstr "Il JSON deve essere un'oggetto"
+
+#. Default: "JSON is not valid, parser complained: ${message}"
+#: ../interfaces.py:32
+msgid "invalid_json"
+msgstr "JSON non valito: ${message}"
+
+#. Default: "Manage cookie settings"
+#: ../browser/cookie_config.py:177
+msgid "manage_cookie_settings_label"
+msgstr "Gestisci impostazioni cookie"
+
+#. Default: "Settings"
+#: ../browser/controlpanel.py:12
+msgid "settings_default_label"
+msgstr "Impostazioni"
+
+#. Default: "Labels"
+#: ../browser/controlpanel.py:17
+msgid "settings_labels_label"
+msgstr "Etichette"
+
+msgid "twittertimeline"
+msgstr "\"Twitter timeline\""

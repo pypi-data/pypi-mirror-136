@@ -1,0 +1,235 @@
+html.chefcookie--fade body:after,
+html.chefcookie--blur body:after {
+  z-index: 0;
+  width: 0px;
+  height: 0px;
+}
+
+#cc-banner .close {
+  position: absolute;
+  right: 32px;
+  top: 32px;
+  width: 32px;
+  height: 32px;
+  opacity: 0.3;
+}
+#cc-banner .close:hover {
+  opacity: 1;
+}
+#cc-banner .close:before,
+#cc-banner .close:after {
+  position: absolute;
+  left: 15px;
+  content: " ";
+  height: 33px;
+  width: 2px;
+  background-color: #333;
+}
+#cc-banner .close:before {
+  transform: rotate(45deg);
+}
+#cc-banner .close:after {
+  transform: rotate(-45deg);
+}
+#cc-banner .chefcookie--bottom .chefcookie__box {
+  background-color: #505050;
+}
+#cc-banner .chefcookie--noscroll body {
+  position: unset;
+  width: auto;
+  overflow: unset;
+}
+#cc-banner .chefcookie--blur body:after {
+  backdrop-filter: unset;
+  background-color: unset;
+}
+#cc-banner .chefcookie__button--accept {
+  border-color: unset;
+  color: inherit !important;
+}
+#cc-banner .chefcookie__script-description-collapse {
+  display: none;
+}
+#cc-banner .chefcookie__script-description-content {
+  height: auto;
+}
+
+#cc-banner
+  .chefcookie__group.chefcookie__group--disabled
+  .chefcookie__group-checkbox[data-status="2"]
+  ~ .chefcookie__group-checkbox-icon {
+  background-color: #02c102;
+}
+#cc-banner
+  .chefcookie__group.chefcookie__group--disabled
+  .chefcookie__group-checkbox[data-status="2"]
+  ~ .chefcookie__group-checkbox-icon:after {
+  background-color: #ccc;
+}
+#cc-banner
+  .chefcookie__group.chefcookie__group--disabled
+  ul.chefcookie__scripts
+  .chefcookie__script-checkbox-icon {
+  background-color: #02c102;
+}
+#cc-banner
+  .chefcookie__group
+  .chefcookie__group-checkbox[data-status="0"]
+  ~ .chefcookie__group-checkbox-icon {
+  background-color: #ff0000;
+}
+#cc-banner
+  .chefcookie__group
+  .chefcookie__group-checkbox[data-status="1"]
+  ~ .chefcookie__group-checkbox-icon {
+  background-color: #d3d3d3;
+}
+#cc-banner
+  .chefcookie__group
+  .chefcookie__group-checkbox[data-status="2"]
+  ~ .chefcookie__group-checkbox-icon {
+  background-color: #02c102;
+}
+#cc-banner
+  .chefcookie__group
+  .chefcookie__group-checkbox[data-status="0"]
+  ~ .chefcookie__group-checkbox-icon:after {
+  background-color: #eee;
+}
+#cc-banner
+  .chefcookie__group
+  .chefcookie__group-checkbox[data-status="1"]
+  ~ .chefcookie__group-checkbox-icon:after {
+  background-color: #eee;
+}
+#cc-banner
+  .chefcookie__group
+  .chefcookie__group-checkbox[data-status="2"]
+  ~ .chefcookie__group-checkbox-icon:after {
+  background-color: #eee;
+}
+#cc-banner
+  .chefcookie__group.chefcookie__group
+  ul.chefcookie__scripts
+  .chefcookie__script-label
+  .chefcookie__script-checkbox-icon:after {
+  background-color: #eee;
+}
+#cc-banner
+  .chefcookie__group.chefcookie__group--disabled
+  ul.chefcookie__scripts
+  .chefcookie__script-label
+  .chefcookie__script-checkbox-icon:after {
+  background-color: #ccc;
+}
+#cc-banner
+  .chefcookie__group.chefcookie__group
+  ul.chefcookie__scripts
+  .chefcookie__script-checkbox-icon {
+  background-color: #ff0000;
+}
+#cc-banner
+  .chefcookie__group.chefcookie__group
+  ul.chefcookie__scripts
+  input:checked
+  ~ .chefcookie__script-checkbox-icon {
+  background-color: #02c102;
+}
+
+#cc-banner .chefcookie__box .chefcookie__message a:focus {
+  opacity: 0.5;
+}
+
+#cc-banner
+  .chefcookie__group
+  label
+  input.chefcookie__group-checkbox[disabled][type="checkbox"],
+#cc-banner
+  .chefcookie__group
+  label
+  input.chefcookie__script-checkbox[disabled][type="checkbox"] {
+  display: none;
+}
+
+#cc-banner .chefcookie__buttons a.context {
+  color: #fff;
+}
+#cc-banner .chefcookie__buttons a.chefcookie__button:hover,
+.chefcookie__buttons a.chefcookie__button:focus {
+  opacity: 1;
+}
+#cc-banner .chefcookie__buttons a.chefcookie__button:not(.context):hover,
+.chefcookie__buttons a.chefcookie__button:not(.context):focus {
+  background-color: #cccccc;
+}
+
+#cc-banner .chefcookie__box .chefcookie__settings-container {
+  display: none;
+  height: auto;
+}
+#cc-banner
+  .chefcookie__box
+  .chefcookie__settings-container.chefcookie__settings-container--visible {
+  display: block;
+}
+
+#cc-banner
+  .chefcookie__group
+  label.chefcookie__group-label
+  input.chefcookie__group-checkbox:focus
+  + .chefcookie__group-title
+  + .chefcookie__group-checkbox-icon,
+#cc-banner
+  .chefcookie__script
+  label
+  input.chefcookie__script-checkbox:focus
+  + .chefcookie__script-title
+  + .chefcookie__script-checkbox-icon {
+  box-shadow: 0 0 5px 5px #aaa;
+}
+
+#cc-banner
+  .chefcookie__groups
+  .chefcookie__script-checkbox
+  ~ .chefcookie__script-checkbox-icon:before,
+#cc-banner
+  .chefcookie__groups
+  .chefcookie__group-checkbox
+  ~ .chefcookie__group-checkbox-icon:before {
+  width: 0;
+  content: "";
+}
+
+a#cookie-settings-open {
+  position: fixed;
+  bottom: calc(50% - 17.5px);
+  right: 0;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  width: 35px;
+  height: 35px;
+  text-decoration: none;
+  transition: all 0.3s linear;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+a#cookie-settings-open svg {
+  color: #000;
+  margin: 0;
+  font-size: 10px;
+  transition: all 0.3s ease;
+  width: 20px;
+  height: 20px;
+}
+
+@media screen and (max-width: 840px) {
+  .close {
+    right: 10px;
+    top: 10px;
+  }
+}

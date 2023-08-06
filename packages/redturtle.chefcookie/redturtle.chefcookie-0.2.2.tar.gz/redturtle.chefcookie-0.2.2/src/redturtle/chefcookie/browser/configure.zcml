@@ -1,0 +1,46 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    i18n_domain="redturtle.chefcookie"
+    >
+
+  <!-- Publish static files -->
+  <!--plone:static
+      name="redturtle.chefcookie"
+      type="plone"
+      directory="static"
+      /-->
+
+  <browser:resourceDirectory
+      name="redturtle.chefcookie"
+      directory="static"
+      />
+
+  <browser:page
+      name="cookie-settings"
+      for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+      class=".controlpanel.CookieSettingsControlPanel"
+      permission="cmf.ManagePortal"
+      layer="redturtle.chefcookie.interfaces.IRedturtleChefcookieLayer"
+      />
+
+  <browser:page
+      name="cookie_config.js"
+      for="*"
+      class=".cookie_config.View"
+      permission="zope.Public"
+      layer="redturtle.chefcookie.interfaces.IRedturtleChefcookieLayer"
+      />
+
+  <browser:viewlet
+      name="redturtle.chefcookiejs"
+      for="*"
+      manager="plone.app.layout.viewlets.interfaces.IHtmlHead"
+      class=".viewlets.GetChefcookieJs"
+      template="templates/get_chefcookie_js.pt"
+      permission="zope2.View"
+      layer="redturtle.chefcookie.interfaces.IRedturtleChefcookieLayer"
+      />
+
+</configure>

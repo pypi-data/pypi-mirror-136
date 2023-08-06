@@ -1,0 +1,8 @@
+<tal:js tal:condition="view/have_chefcookie_configuration">
+    <tal:links tal:repeat="url python:view.get_js_urls()">
+        <script type="text/javascript" tal:attributes="src url" src=""></script>
+    </tal:links>
+
+    <link rel="stylesheet" href="" tal:attributes="href view/get_css_link">
+    
+</tal:js>
