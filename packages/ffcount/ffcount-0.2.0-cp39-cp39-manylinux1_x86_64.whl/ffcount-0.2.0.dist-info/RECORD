@@ -1,0 +1,11 @@
+ffcount-0.2.0.dist-info/entry_points.txt,sha256=u4XaPNskLjbxLI7GRlMWa17w-T-nNDWlV-y1kkxoaio,51
+ffcount-0.2.0.dist-info/WHEEL,sha256=ieuC8Vv7a4Lxq8jfQJ-x1beMvjYNP_LKilYokdMTB0U,108
+ffcount-0.2.0.dist-info/RECORD,,
+ffcount-0.2.0.dist-info/METADATA,sha256=MECC4cu3Wn41c3dTioaUOCR0JrNIrALitlMPt2tdScQ,2556
+ffcount-0.2.0.dist-info/LICENSE,sha256=tAkwu8-AdEyGxGoSvJ2gVmQdcicWw3j1ZZueVV74M-E,11357
+ffcount-0.2.0.dist-info/top_level.txt,sha256=MuXaiMWmhQn1JRmmIj2FaXUROEAnXYfRYgWvDDecEak,8
+ffcount/__version__.py,sha256=JB7hAlTr2a7rzqHBFu6rl24n-JXG4ALMoViYrTFAWHE,89
+ffcount/__main__.py,sha256=Ha050ki-IMX-Q_IPh2CrDkFiDiPV7Hc7Ro7FpzNvQdU,2007
+ffcount/__init__.py,sha256=CnlXhPqZ43nguagPqN-OzmC8o-sOsnJ1O4UUNba12Ow,1492
+ffcount/count.cpython-39-x86_64-linux-gnu.so,sha256=Ms0jPZIIyTzlHwgvzUMhycL6bC8TJFcyqPCRH99wHfQ,144608
+ffcount/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
