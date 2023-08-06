@@ -1,0 +1,3 @@
+[console_scripts]
+lto = lto_cli.cli:main
+
