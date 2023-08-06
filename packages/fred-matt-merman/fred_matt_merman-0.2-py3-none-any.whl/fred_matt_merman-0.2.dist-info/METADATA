@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: fred-matt-merman
+Version: 0.2
+Summary: UNKNOWN
+Home-page: https://github.com/matt-merman
+Author: Mattia Di Battista
+Author-email: geom.dibattistamattia@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: numpy
+Requires-Dist: requests
+Requires-Dist: sqlite3
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+
+UNKNOWN
+
+
