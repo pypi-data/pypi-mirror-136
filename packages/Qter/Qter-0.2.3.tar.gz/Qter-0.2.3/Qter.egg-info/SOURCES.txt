@@ -1,0 +1,11 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.md
+setup.py
+Qter/__init__.py
+Qter.egg-info/PKG-INFO
+Qter.egg-info/SOURCES.txt
+Qter.egg-info/dependency_links.txt
+Qter.egg-info/requires.txt
+Qter.egg-info/top_level.txt
