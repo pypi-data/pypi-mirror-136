@@ -1,0 +1,6 @@
+opentelemetry/exporter/richconsole/__init__.py,sha256=fyen0iTMUZy1IHtf1wD9SObxV5id-aOnGUXxKkwa6M0,5960
+opentelemetry/exporter/richconsole/version.py,sha256=0aVi6CQVN6owJvia58MfV2U7QDhpcdEvHlvDAZMJt9M,608
+opentelemetry_exporter_richconsole-0.28b1.dist-info/METADATA,sha256=2rAHANDq2lOarsYYDxL6xO_E5haNkkOR5i-jjwN9s20,1907
+opentelemetry_exporter_richconsole-0.28b1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+opentelemetry_exporter_richconsole-0.28b1.dist-info/top_level.txt,sha256=5p97iTMneNm1LAKDalzEVpYhvPZsaqJZzdLuD_upSaQ,14
+opentelemetry_exporter_richconsole-0.28b1.dist-info/RECORD,,
