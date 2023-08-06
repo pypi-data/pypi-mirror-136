@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: fluidly-pubsub
+Version: 0.3.0
+Summary: Pubssub subscription helpers
+Home-page: https://github.com/fluidly/python-shared
+Author: Fluidly
+Author-email: tech@fluidly.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
+Requires-Dist: google-cloud-pubsub
+
+Pubssub subscription helpers
+
