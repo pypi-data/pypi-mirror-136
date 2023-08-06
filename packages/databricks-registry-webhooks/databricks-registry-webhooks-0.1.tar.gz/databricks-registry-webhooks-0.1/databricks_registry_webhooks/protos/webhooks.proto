@@ -1,0 +1,296 @@
+syntax = "proto2";
+
+package mlflow;
+
+import "scalapb/scalapb.proto";
+import "databricks.proto";
+
+option java_package = "com.databricks.api.proto.mlflow";
+option java_generate_equals_and_hash = true;
+option py_generic_services = true;
+option (scalapb.options) = {
+  flat_package: true,
+  import: "com.databricks.mlflow.api.RegistryRPC",
+};
+
+service ModelRegistryWebhooksService {
+
+  rpc createRegistryWebhook (CreateRegistryWebhook) returns (CreateRegistryWebhook.Response) {
+    option (rpc) = {
+      endpoints: [{
+        method: "POST",
+        path: "/preview/mlflow/registry-webhooks/create"
+        since {major: 2, minor: 0},
+      }, {
+        method: "POST",
+        path: "/mlflow/registry-webhooks/create"
+        since {major: 2, minor: 0},
+      }],
+      visibility: PUBLIC_UNDOCUMENTED,
+      rpc_doc_title: "Create a webhook",
+    };
+  }
+
+  rpc listRegistryWebhooks (ListRegistryWebhooks) returns (ListRegistryWebhooks.Response) {
+    option (rpc) = {
+      endpoints: [{
+        method: "GET",
+        path: "/preview/mlflow/registry-webhooks/list"
+        since {major: 2, minor: 0},
+      }, {
+        method: "GET",
+        path: "/mlflow/registry-webhooks/list"
+        since {major: 2, minor: 0},
+      }],
+      visibility: PUBLIC_UNDOCUMENTED,
+      rpc_doc_title: "List webhooks for a given registered model",
+    };
+  }
+
+  rpc testRegistryWebhook (TestRegistryWebhook) returns (TestRegistryWebhook.Response) {
+    option (rpc) = {
+      endpoints: [{
+        method: "POST",
+        path: "/preview/mlflow/registry-webhooks/test"
+        since {major: 2, minor: 0},
+      }, {
+        method: "POST",
+        path: "/mlflow/registry-webhooks/test"
+        since {major: 2, minor: 0},
+      }],
+      visibility: PUBLIC_UNDOCUMENTED,
+      rpc_doc_title: "Test trigger a webhook",
+    };
+  }
+
+  rpc updateRegistryWebhook (UpdateRegistryWebhook) returns (UpdateRegistryWebhook.Response) {
+    option (rpc) = {
+      endpoints: [{
+        method: "PATCH",
+        path: "/preview/mlflow/registry-webhooks/update"
+        since {major: 2, minor: 0},
+      }, {
+        method: "PATCH",
+        path: "/mlflow/registry-webhooks/update"
+        since {major: 2, minor: 0},
+      }],
+      visibility: PUBLIC_UNDOCUMENTED,
+      rpc_doc_title: "Update a webhook",
+    };
+  }
+
+  rpc deleteRegistryWebhook (DeleteRegistryWebhook) returns (DeleteRegistryWebhook.Response) {
+    option (rpc) = {
+      endpoints: [{
+        method: "DELETE",
+        path: "/preview/mlflow/registry-webhooks/delete"
+        since {major: 2, minor: 0},
+      }, {
+        method: "DELETE",
+        path: "/mlflow/registry-webhooks/delete"
+        since {major: 2, minor: 0},
+      }],
+      visibility: PUBLIC_UNDOCUMENTED,
+      rpc_doc_title: "Delete a webhook",
+    };
+  }
+}
+
+enum RegistryWebhookEvent {
+  MODEL_VERSION_CREATED = 1;
+
+  MODEL_VERSION_TRANSITIONED_STAGE = 2;
+
+  TRANSITION_REQUEST_CREATED = 3;
+
+  COMMENT_CREATED = 4;
+
+  REGISTERED_MODEL_CREATED = 5;
+
+  MODEL_VERSION_TAG_SET = 6;
+
+  MODEL_VERSION_TRANSITIONED_TO_STAGING = 7;
+
+  MODEL_VERSION_TRANSITIONED_TO_PRODUCTION = 8;
+
+  MODEL_VERSION_TRANSITIONED_TO_ARCHIVED = 9;
+
+  TRANSITION_REQUEST_TO_STAGING_CREATED = 10;
+
+  TRANSITION_REQUEST_TO_PRODUCTION_CREATED = 11;
+
+  TRANSITION_REQUEST_TO_ARCHIVED_CREATED = 12;
+}
+
+enum RegistryWebhookStatus {
+  // Event and test triggers will be sent.
+  ACTIVE = 1;
+
+  // No triggers will be sent.
+  DISABLED = 2;
+
+  // Test triggers will be sent, but not actual events.
+  TEST_MODE = 3;
+}
+
+message JobSpec {
+  // unique job id within a workspace
+  optional string job_id = 1;
+
+  // the databricks url; allows cross-workspace invocations.
+  optional string workspace_url = 2;
+
+  // Databricks personal access token for authentication
+  optional string access_token = 3;
+}
+
+// .. note::
+//     Experimental: This entity may change or be removed in a future release without warning.
+message HttpUrlSpec {
+  // HTTPS url which the webhook will send event messages to
+  optional string url = 1;
+
+  // Enable/disable SSL certificate validation
+  optional bool enable_ssl_verification = 2 [default = true];
+
+  // Shared secret for validating the authenticity of a message. Will not be returned as part of
+  // a queried RegistryWebhook.
+  optional string secret = 3;
+
+  // Authorization header for validating the authenticity of a message. Should be formatted as
+  // "<auth type> <credentials>" or contain an empty string.
+  // If set to empty string, authorization header won't be included in the request.
+  // Will not be returned as part of a queried RegistryWebhook
+  optional string authorization = 4;
+}
+
+message RegistryWebhook {
+  optional string id = 1;
+
+  // Events that trigger the webhook
+  repeated RegistryWebhookEvent events = 2;
+
+  // Timestamp recorded when this webhook was created.
+  optional int64 creation_timestamp = 3;
+
+  // Timestamp recorded when metadata was last updated.
+  optional int64 last_updated_timestamp = 4;
+
+  // Description of endpoint called, additional metadata
+  optional string description = 5;
+
+  // Current status
+  optional RegistryWebhookStatus status = 6;
+
+  // HTTP-based webhook parameters
+  optional HttpUrlSpec http_url_spec = 7;
+
+  // Jobs webhooks parameters
+  optional JobSpec job_spec = 8;
+
+  // The registered model associated with this webhook.
+  // If not included, this webhook is a registry-wide webhook.
+  optional string model_name = 9;
+}
+
+message CreateRegistryWebhook {
+  option (scalapb.message).extends = "RegistryRPC[$this.Response]";
+  option (scalapb.message).extends = "com.databricks.mlflow.api.ModelRegistryMessage";
+
+  // Registered model name
+  // If not included, this webhook is a registry-wide webhook.
+  optional string model_name = 1;
+
+  // Events that trigger the webhook
+  repeated RegistryWebhookEvent events = 2;
+
+  // Description of endpoint called, additional metadata
+  optional string description = 3;
+
+  // Enable or disable triggering the webhook. The default is active.
+  optional RegistryWebhookStatus status = 4 [default = ACTIVE];
+
+  // HTTP-based webhook parameters
+  // NOTE: You can only specify either HttpUrlSpec or JobSpec
+  optional HttpUrlSpec http_url_spec = 5;
+
+  // Jobs webhooks parameters
+  // NOTE: You can only specify either HttpUrlSpec or JobSpec
+  optional JobSpec job_spec = 6;
+
+  message Response {
+    optional RegistryWebhook webhook = 1;
+  }
+}
+
+message ListRegistryWebhooks {
+  // Registered model name
+  // If not included, this API will return all webhooks, including registry-wide webhooks.
+  optional string model_name = 1;
+
+  // Events that trigger the webhook. If not specified, return webhooks for all events
+  repeated RegistryWebhookEvent events = 2;
+
+  // Pagination token to go to the next page based on a previous query.
+  optional string page_token = 3;
+
+  optional int64 max_results = 4 [default = 1000];
+
+  message Response {
+    repeated RegistryWebhook webhooks = 1;
+
+    // Pagination token to request next page of webhooks for the same query.
+    optional string next_page_token = 2;
+  }
+}
+
+message TestRegistryWebhook {
+  optional string id = 1;
+
+  // Event to trigger. If not specified, the test trigger will be based on an event
+  // randomly chosen from the list of events for the webhook.
+  optional RegistryWebhookEvent event = 2;
+
+  message Response {
+    // HTTP response status code from the webhook URL endpoint
+    optional int32 status_code = 1;
+
+    // HTTP response body
+    optional string body = 2;
+  }
+}
+
+message UpdateRegistryWebhook {
+  // Unique webhook id
+  optional string id = 1;
+
+  // Events that trigger the webhook
+  repeated RegistryWebhookEvent events = 2;
+
+  // Description of endpoint called, additional metadata
+  optional string description = 3;
+
+  // Enable or disable triggering the webhook
+  optional RegistryWebhookStatus status = 4;
+
+  // HTTP-based webhook parameters
+  // NOTE: You can only specify either HttpUrlSpec or JobSpec, and you cannot update an HTTP
+  // webhook to a Job webhook or vice versa
+  optional HttpUrlSpec http_url_spec = 5;
+
+  // Jobs webhooks parameters
+  // NOTE: You can only specify either HttpUrlSpec or JobSpec, and you cannot update an HTTP
+  // webhook to a Job webhook or vice versa
+  optional JobSpec job_spec = 6;
+
+  message Response {
+    optional RegistryWebhook webhook = 1;
+  }
+}
+
+message DeleteRegistryWebhook {
+  // Unique webhook id
+  optional string id = 1;
+
+  message Response {}
+}
