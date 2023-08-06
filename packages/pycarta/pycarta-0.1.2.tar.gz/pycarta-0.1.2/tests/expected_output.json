@@ -1,0 +1,199 @@
+{
+  "api": {
+      "user": {
+              "id": "e6e25ef3-ed88-4210-a4c5-ea9cf3bb2cd8",
+              "name": "branden.kappes",
+              "email": "branden.kappes@contextualize.us.com",
+              "firstName": "Branden",
+              "lastName": "Kappes",
+              "groups": []
+          },
+      "filtered users": [
+              {
+                  "id": "552e85ab-b6b8-4061-a305-d0046f6f65bd",
+                  "name": "m.miller",
+                  "email": "matthew.miller@contextualize.us.com",
+                  "firstName": "Matthew",
+                  "lastName": "Miller"
+              },
+              {
+                  "id": "61da8b53-6bf8-4a4b-8b41-bf7e4b03df12",
+                  "name": "matt_m",
+                  "email": "matthewm8m@gmail.com",
+                  "firstName": "Matthew",
+                  "lastName": "Miller"
+              },
+              {
+                  "id": "f70e7861-98ac-4703-b05a-03a9e3c75b59",
+                  "name": "michelle",
+                  "email": "michelle.daya@gmail.com",
+                  "firstName": "Michelle",
+                  "lastName": "Daya"
+              },
+              {
+                  "id": "d5cc7b83-d590-4abe-9b17-1f64596e0965",
+                  "name": "michellec",
+                  "email": "michelle.daya@contextualize.us.com",
+                  "firstName": "Michelle",
+                  "lastName": "Daya"
+              }
+          ],
+      "sources": [
+              "Synthetic",
+              "User",
+              "HyperThought"
+          ],
+      "synthetic resources": [
+              "FiniteUndirectedGraph",
+              "InfiniteDirectedGraph"
+          ]
+  },
+  "integrations": {
+    "hyperthought": {
+      "base": {
+        "workspace": {
+          "name": "KappesBR",
+          "alias": "KappesBR",
+          "startDate": "2021-10-08T02:19:23.862793Z",
+          "creator": "KappesBR",
+          "poc": "KappesBR",
+          "status": "Initiated",
+          "description": "",
+          "keywords": [],
+          "majorOutcomes": "",
+          "futureWork": "",
+          "files": [],
+          "id": "07b519d0-7a0d-44fd-b985-75610c5db46b",
+          "metadata": [],
+          "distributionStatement": "Distribution A",
+          "members": [
+              {
+                  "username": "KappesBR",
+                  "role": "Manager"
+              },
+              {
+                  "username": "ThieseJM",
+                  "role": "Member"
+              },
+              {
+                  "username": "uribet1",
+                  "role": "Member"
+              }
+          ],
+          "resources": {
+              "id": "/api/workspace/07b519d0-7a0d-44fd-b985-75610c5db46b/"
+          }
+      },
+        "template": {
+          "title": "UTEP",
+          "key": "fb60fb3b-2bf0-4530-9ab1-bf89975f7a63",
+          "icon": "fas fa-project-diagram",
+          "name": "UTEP",
+          "createdOn": "2021-12-07T23:29:47.045796Z",
+          "modifiedOn": "2021-12-08T00:51:39.557544Z",
+          "createdBy": "KappesBR",
+          "createdByFullName": "Branden Kappes",
+          "modifiedBy": "uribet1",
+          "modifiedByFullName": "Tristan Uribe",
+          "lazy": true
+        },
+        "document": {
+          "id": "f2311939-c18b-4b23-bae5-22ec7db4be17",
+           "name": "Build001",
+           "dueDate": "",
+           "assignee": "",
+           "children": ["b6d8e31c-8dac-42d4-82dc-8c8926ec3827",
+            "14f7a729-794e-4287-b280-9b2d5e236dc4"],
+           "clientId": "3a0bb064-7bb6-46ea-9d1e-6be13214de12",
+           "completed": "",
+           "created": "2021-10-04T17:20:46.318162+00:00",
+           "creator": "KappesBR",
+           "fromTemplate": null,
+           "managerReview": "",
+           "comments": null,
+           "decisionQuestion": null,
+           "decisionPath": null,
+           "decisionAnswer": null,
+           "modified": "2021-12-03T15:24:44.231539+00:00",
+           "modifier": "KappesBR",
+           "notes": "",
+           "parentProcess": "22823501-3df4-404d-beb8-a3c4fe83664b",
+           "predecessors": [],
+           "processType": "workflow",
+           "started": "",
+           "status": "",
+           "successors": [],
+           "template": true,
+           "xml": "<mxGraphModel dx=\"695\" dy=\"132\" grid=\"1\" gridSize=\"10\" guides=\"1\" tooltips=\"1\" connect=\"1\" arrows=\"1\" fold=\"1\" page=\"1\" pageScale=\"1\" pageWidth=\"850\" pageHeight=\"1100\" background=\"#ffffff\"><root><mxCell id=\"a20c7331-8af9-4e7b-ab85-187544c266a2\"/><mxCell id=\"69ef29f0-55d9-40c8-bb97-9230ef6275ec\" parent=\"a20c7331-8af9-4e7b-ab85-187544c266a2\"/><mxCell id=\"533df90f-797b-41c4-abf1-a17dd8dd4955\" value=\"Build Parameters\" style=\"rounded=0;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"69ef29f0-55d9-40c8-bb97-9230ef6275ec\"><mxGeometry x=\"40\" y=\"40\" width=\"80\" height=\"80\" as=\"geometry\"/></mxCell><mxCell id=\"1392483e-2409-4efa-8096-a4153302fff5\" value=\"Part01\" style=\"shape=process;whiteSpace=wrap;html=1;\" vertex=\"1\" parent=\"69ef29f0-55d9-40c8-bb97-9230ef6275ec\"><mxGeometry x=\"160\" y=\"50\" width=\"120\" height=\"60\" as=\"geometry\"/></mxCell></root></mxGraphModel>",
+           "workspaceName": "UTEP Demo",
+           "parentName": "Aconity",
+           "metadata": [],
+           "restrictions": {"distribution": "Distribution A",
+            "exportControl": "",
+            "securityMarking": ""},
+           "permissions": {"workspaces": {"84d11cc8-2344-4ac9-9d43-3069999c2420": "edit"},
+            "users": {}},
+           "resources": {"id": "/api/workflow/process/f2311939-c18b-4b23-bae5-22ec7db4be17/",
+            "workspace": "/api/workspace/84d11cc8-2344-4ac9-9d43-3069999c2420/",
+            "workspaceView": "/workspace/84d11cc8-2344-4ac9-9d43-3069999c2420/detail/",
+            "parentDesigner": "/workflow/22823501-3df4-404d-beb8-a3c4fe83664b/designer/?workspaceId=84d11cc8-2344-4ac9-9d43-3069999c2420",
+            "parent": "/api/workflow/process/22823501-3df4-404d-beb8-a3c4fe83664b/",
+            "doTask": "/workflow/notifications/f2311939-c18b-4b23-bae5-22ec7db4be17/"}},
+        "process": {
+          "content": {
+            "status": "",
+            "xml": "",
+            "name": "Build Parameters",
+            "parent_process": "f2311939-c18b-4b23-bae5-22ec7db4be17",
+            "pid": "",
+            "client_id": "533df90f-797b-41c4-abf1-a17dd8dd4955",
+            "successors": [],
+            "process_type": "process",
+            "template": true,
+            "children": [],
+            "predecessors": [],
+            "assignee": "taylorhu",
+            "started": "",
+            "completed": "",
+            "notes": "",
+            "template_files": [],
+            "process_files": [],
+            "data_model": "",
+            "data_model_fields": [],
+            "data_model_instance": "",
+            "section": {},
+            "created": "2021-10-04T17:21:15.212267+00:00",
+            "creator": "KappesBR",
+            "modified": "2021-10-04T17:25:57.407043+00:00",
+            "modifier": "KappesBR",
+            "pk": "b6d8e31c-8dac-42d4-82dc-8c8926ec3827",
+            "process_sub_type": "form",
+            "manager_review": false},
+           "hyperthought": {"name": "Process", "objectType": "workflow"},
+           "triples": [],
+           "metadata": [{"keyName": "Laser Speed",
+             "value": {"link": 750, "type": "integer"},
+             "annotation": "",
+             "unit": "mm/s"},
+            {"keyName": "Log File",
+             "value": {"link": "/files/filesystementry/c0894521-f748-4060-add8-18028f697b28/versions/0.json",
+              "type": "link",
+              "displayText": "/Praxair IN625 Data Package/3 - Metallography/10965-01/2-S6_H.csv"},
+             "annotation": "",
+             "unit": ""}],
+           "permissions": {"workspaces": {"84d11cc8-2344-4ac9-9d43-3069999c2420": "edit"},
+            "users": {}},
+           "restrictions": {"distribution": "Distribution A",
+            "exportControl": "",
+            "securityMarking": ""},
+           "headers": {"canonical-uri": "/workflow/process/b6d8e31c-8dac-42d4-82dc-8c8926ec3827",
+            "sys-creation-timestamp": "2021-10-04T17:21:15.241195Z",
+            "sys-last-modified": "2021-10-04T17:25:57.4154Z",
+            "createdBy": "KappesBR",
+            "modifiedBy": "KappesBR",
+            "uri": "/workflow/process/b6d8e31c-8dac-42d4-82dc-8c8926ec3827/versions/0",
+            "pid": "8b8bcd8c-e0f5-427c-9825-32e134783a35"}}
+      }
+    }
+  }
+}

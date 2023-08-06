@@ -1,0 +1,1909 @@
+[
+    {
+        "id": "Build",
+        "type": "WorkflowBuilder",
+        "contains": [
+            {
+                "type": "Feedstock",
+                "name": "Feedstock"
+            },
+            {
+                "type": "MachineInfo",
+                "name": "Machine Info"
+            },
+            {
+                "type": "Monitoring",
+                "name": "Monitoring"
+            },
+            {
+                "type": "Parts",
+                "name": "Parts"
+            }
+        ]
+    },
+    {
+        "id": "CrossSection",
+        "type": "WorkflowBuilder",
+        "contains": [
+            {
+                "type": "HardnessSequence",
+                "name": "Hardness"
+            },
+            {
+                "type": "Measurement",
+                "name": "Image"
+            },
+            {
+                "type": "Defect",
+                "name": "Defect"
+            }
+        ]
+    },
+    {
+        "id": "Feedstock",
+        "type": "WorkflowBuilder",
+        "contains": [
+            {
+                "type": "FeedstockSample",
+                "name": "Sample 1"
+            }
+        ]
+    },
+    {
+        "id": "Face",
+        "type": "WorkflowBuilder",
+        "contains": [
+            {
+                "type": "SurfaceRoughness",
+                "name": "Surface Roughness"
+            }
+        ]
+    },
+    {
+        "id": "Face40Up",
+        "type": "Face",
+        "contains": [
+            {
+                "type": "Line",
+                "name": "Line"
+            }
+        ]
+    },
+    {
+        "id": "Face90",
+        "type": "Face",
+        "contains": [
+            {
+                "type": "Cylinder",
+                "name": "Cylinder A"
+            },
+            {
+                "type": "Cylinder",
+                "name": "Cylinder B"
+            },
+            {
+                "type": "Cylinder",
+                "name": "Cylinder C"
+            },
+            {
+                "type": "Hole",
+                "name": "Hole 1"
+            },
+            {
+                "type": "Hole",
+                "name": "Hole 2"
+            },
+            {
+                "type": "Hole",
+                "name": "Hole 3"
+            },
+            {
+                "type": "Hole",
+                "name": "Hole 4"
+            },
+            {
+                "type": "Rectangle",
+                "name": "Rectangle 1"
+            },
+            {
+                "type": "Rectangle",
+                "name": "Rectangle 1.6"
+            },
+            {
+                "type": "Rectangle",
+                "name": "Rectangle 2"
+            },
+            {
+                "type": "Rectangle",
+                "name": "Rectangle 3"
+            },
+            {
+                "type": "Rectangle",
+                "name": "Rectangle 3.4"
+            },
+            {
+                "type": "Rectangle",
+                "name": "Rectangle 4"
+            },
+            {
+                "type": "Rectangle",
+                "name": "Rectangle 5"
+            },
+            {
+                "type": "Rectangle",
+                "name": "Rectangle 6"
+            }
+        ]
+    },
+    {
+        "id": "Face90C",
+        "type": "Face90",
+        "contains": [
+            {
+                "type": "ThinWall",
+                "name": "Thin Wall 1"
+            },
+            {
+                "type": "ThinWall",
+                "name": "Thin Wall 2"
+            },
+            {
+                "type": "ThinWall",
+                "name": "Thin Wall 3"
+            }
+        ]
+    },
+    {
+        "id": "Face90D",
+        "type": "Face90",
+        "contains": [
+            {
+                "type": "Line",
+                "name": "Triangle"
+            },
+            {
+                "type": "Profile",
+                "name": "Triangle Cut"
+            }
+        ]
+    },
+    {
+        "id": "FeedstockSample",
+        "type": "WorkflowBuilder",
+        "contains": [
+            {
+                "type": "CompositionAnalysis",
+                "name": "Composition"
+            },
+            {
+                "type": "ParticleAnalysis",
+                "name": "Particle Analysis"
+            }
+        ]
+    },
+    {
+        "id": "Galvonometer",
+        "type": "WorkflowBuilder",
+        "contains": [
+            {
+                "type": "GalvonometerMachine",
+                "name": "Galvonometer"
+            },
+            {
+                "type": "GalvonometerCalibration",
+                "name": "Galvonometer Calibration"
+            }
+        ]
+    },
+    {
+        "id": "GTADExPArtifact",
+        "type": "WorkflowBuilder",
+        "contains": [
+            {
+                "type": "CompositionAnalysis",
+                "name": "Composition Analysis"
+            },
+            {
+                "type": "ScanSettings",
+                "name": "Scan Settings"
+            },
+            {
+                "type": "ThermalProcessing",
+                "name": "Heat Treatment 1"
+            },
+            {
+                "type": "ThermalProcessing",
+                "name": "HIP"
+            },
+            {
+                "type": "ThermalProcessing",
+                "name": "Stress Relief"
+            },
+            {
+                "type": "ResidualStress",
+                "name": "Residual Stress"
+            },
+            {
+                "type": "SurfaceRoughness",
+                "name": "Surface Roughness"
+            },
+            {
+                "type": "SideAB",
+                "name": "Side A"
+            },
+            {
+                "type": "SideAB",
+                "name": "Side B"
+            },
+            {
+                "type": "SideC",
+                "name": "Side C"
+            },
+            {
+                "type": "SideD",
+                "name": "Side D"
+            },
+            {
+                "type": "TensileSpecimen",
+                "name": "Tensile 1"
+            },
+            {
+                "type": "TensileSpecimen",
+                "name": "Tensile 2"
+            },
+            {
+                "type": "TensileSpecimen",
+                "name": "Tensile 3"
+            },
+            {
+                "type": "TensileSpecimen",
+                "name": "Tensile 4"
+            },
+            {
+                "type": "TensileSpecimen",
+                "name": "Tensile 5"
+            },
+            {
+                "type": "TensileSpecimen",
+                "name": "Tensile 6"
+            },
+            {
+                "type": "TensileSpecimen",
+                "name": "Tensile 7"
+            },
+            {
+                "type": "TopA",
+                "name": "Top A"
+            },
+            {
+                "type": "TopB",
+                "name": "Top B"
+            },
+            {
+                "type": "CrossSection",
+                "name": "XY Cross Section"
+            },
+            {
+                "type": "CrossSection",
+                "name": "Z Cross Section"
+            }
+        ]
+    },
+    {
+        "id": "HardnessSequence",
+        "type": "WorkflowBuilder",
+        "contains": [
+            {
+                "type": "Hardness",
+                "name": "Indent 1"
+            },
+            {
+                "type": "Hardness",
+                "name": "Indent 2"
+            },
+            {
+                "type": "Hardness",
+                "name": "Indent 3"
+            },
+            {
+                "type": "Hardness",
+                "name": "Indent 4"
+            },
+            {
+                "type": "Hardness",
+                "name": "Indent 5"
+            },
+            {
+                "type": "Hardness",
+                "name": "Indent 6"
+            },
+            {
+                "type": "Hardness",
+                "name": "Indent 7"
+            },
+            {
+                "type": "Hardness",
+                "name": "Indent 8"
+            },
+            {
+                "type": "Hardness",
+                "name": "Indent 9"
+            },
+            {
+                "type": "Hardness",
+                "name": "Indent 10"
+            },
+            {
+                "type": "Hardness",
+                "name": "Indent 11"
+            },
+            {
+                "type": "Hardness",
+                "name": "Indent 12"
+            },
+            {
+                "type": "Hardness",
+                "name": "Indent 13"
+            },
+            {
+                "type": "Hardness",
+                "name": "Indent 14"
+            },
+            {
+                "type": "Hardness",
+                "name": "Indent 15"
+            },
+            {
+                "type": "Hardness",
+                "name": "Indent 16"
+            },
+            {
+                "type": "Hardness",
+                "name": "Indent 17"
+            },
+            {
+                "type": "Hardness",
+                "name": "Indent 18"
+            },
+            {
+                "type": "Hardness",
+                "name": "Indent 19"
+            },
+            {
+                "type": "Hardness",
+                "name": "Indent 20"
+            },
+            {
+                "type": "Hardness",
+                "name": "Indent 21"
+            },
+            {
+                "type": "Hardness",
+                "name": "Indent 22"
+            },
+            {
+                "type": "Hardness",
+                "name": "Indent 23"
+            },
+            {
+                "type": "Hardness",
+                "name": "Indent 24"
+            },
+            {
+                "type": "Hardness",
+                "name": "Indent 25"
+            },
+            {
+                "type": "Hardness",
+                "name": "Indent 26"
+            },
+            {
+                "type": "Hardness",
+                "name": "Indent 27"
+            },
+            {
+                "type": "Hardness",
+                "name": "Indent 28"
+            },
+            {
+                "type": "Hardness",
+                "name": "Indent 29"
+            },
+            {
+                "type": "Hardness",
+                "name": "Indent 30"
+            },
+            {
+                "type": "Hardness",
+                "name": "Indent 31"
+            },
+            {
+                "type": "Hardness",
+                "name": "Indent 32"
+            },
+            {
+                "type": "Hardness",
+                "name": "Indent 33"
+            },
+            {
+                "type": "Hardness",
+                "name": "Indent 34"
+            },
+            {
+                "type": "Hardness",
+                "name": "Indent 35"
+            },
+            {
+                "type": "Hardness",
+                "name": "Indent 36"
+            },
+            {
+                "type": "Hardness",
+                "name": "Indent 37"
+            },
+            {
+                "type": "Hardness",
+                "name": "Indent 38"
+            },
+            {
+                "type": "Hardness",
+                "name": "Indent 39"
+            },
+            {
+                "type": "Hardness",
+                "name": "Indent 40"
+            },
+            {
+                "type": "Hardness",
+                "name": "Indent 41"
+            },
+            {
+                "type": "Hardness",
+                "name": "Indent 42"
+            },
+            {
+                "type": "Hardness",
+                "name": "Indent 43"
+            },
+            {
+                "type": "Hardness",
+                "name": "Indent 44"
+            },
+            {
+                "type": "Hardness",
+                "name": "Indent 45"
+            },
+            {
+                "type": "Hardness",
+                "name": "Indent 46"
+            },
+            {
+                "type": "Hardness",
+                "name": "Indent 47"
+            },
+            {
+                "type": "Hardness",
+                "name": "Indent 48"
+            },
+            {
+                "type": "Hardness",
+                "name": "Indent 49"
+            },
+            {
+                "type": "Hardness",
+                "name": "Indent 50"
+            }
+        ]
+    },
+    {
+        "id": "Laser",
+        "type": "WorkflowBuilder",
+        "contains": [
+            {
+                "type": "Machine",
+                "name": "Laser"
+            },
+            {
+                "type": "LaserProfileCalibration",
+                "name": "Laser Profile Calibration"
+            },
+            {
+                "type": "LaserPowerCalibration",
+                "name": "Laser Power Calibration"
+            }
+        ]
+    },
+    {
+        "id": "MachineInfo",
+        "type": "WorkflowBuilder",
+        "contains": [
+            {
+                "type": "Laser",
+                "name": "Laser"
+            },
+            {
+                "type": "LPBFMachine",
+                "name": "Machine"
+            },
+            {
+                "type": "Galvonometer",
+                "name": "Galvonometer"
+            }
+        ]
+    },
+    {
+        "id": "Monitoring",
+        "type": "WorkflowBuilder",
+        "contains": [
+            {
+                "type": "ChamberConditions",
+                "name": "Chamber Conditions"
+            },
+            {
+                "type": "LayerImage",
+                "name": "Layer Images"
+            }
+        ]
+    },
+    {
+        "id": "Parts",
+        "type": "WorkflowBuilder",
+        "contains": [
+            {
+                "type": "GTADExPArtifact",
+                "name": "GTADExP Artifact 1"
+            }
+        ]
+    },
+    {
+        "id": "ScanSettings",
+        "type": "WorkflowBuilder",
+        "contains": [
+            {
+                "type": "LaserContour",
+                "name": "Contour 1"
+            },
+            {
+                "type": "LaserContour",
+                "name": "Contour 2"
+            },
+            {
+                "type": "LaserContour",
+                "name": "Contour 3"
+            },
+            {
+                "type": "LaserUpDownContour",
+                "name": "Down Contour 1"
+            },
+            {
+                "type": "LaserUpDownContour",
+                "name": "Down Contour 2"
+            },
+            {
+                "type": "LaserUpDownContour",
+                "name": "Down Contour 3"
+            },
+            {
+                "type": "LaserUpDownFill",
+                "name": "Downfill 1"
+            },
+            {
+                "type": "LaserInfill",
+                "name": "Infill"
+            },
+            {
+                "type": "LaserUpDownContour",
+                "name": "Up Contour 1"
+            },
+            {
+                "type": "LaserUpDownContour",
+                "name": "Up Contour 2"
+            },
+            {
+                "type": "LaserUpDownContour",
+                "name": "Up Contour 3"
+            },
+            {
+                "type": "LaserUpDownFill",
+                "name": "Upfill 1"
+            }
+        ]
+    },
+    {
+        "id": "Side",
+        "type": "WorkflowBuilder",
+        "contains": [
+            {
+                "type": "Face",
+                "name": "40° Face"
+            },
+            {
+                "type": "Face",
+                "name": "60° Face A1"
+            },
+            {
+                "type": "Face",
+                "name": "60° Face A2"
+            }
+        ]
+    },
+    {
+        "id": "SideAB",
+        "type": "Side",
+        "contains": [
+            {
+                "type": "Face90",
+                "name": "90° Face"
+            },
+			{
+                "type": "Face",
+                "name": "60° Up Face"
+            },
+			{
+                "type": "Face40Up",
+                "name": "40° Up Face"
+            }
+        ]
+    },
+    {
+        "id": "SideC",
+        "type": "Side",
+        "contains": [
+            {
+                "type": "Face90C",
+                "name": "90° Face"
+            },
+			{
+                "type": "Face",
+                "name": "60° Up Face"
+            },
+			{
+                "type": "Face40Up",
+                "name": "40° Up Face"
+            }
+        ]
+    },
+    {
+        "id": "SideD",
+        "type": "Side",
+        "contains": [
+            {
+                "type": "Face90D",
+                "name": "90° Face"
+            }
+        ]
+    },
+    {
+        "id": "TensileSpecimen",
+        "type": "WorkflowBuilder",
+        "contains": [
+            {
+                "type": "Tensile",
+                "name": "Tensile Measurement"
+            },
+            {
+                "type": "SurfaceRoughness",
+                "name": "Surface Roughness"
+            }
+        ]
+    },
+    {
+        "id": "TopA",
+        "type": "WorkflowBuilder",
+        "contains": [
+            {
+                "type": "Pin",
+                "name": "Center Pin"
+            },
+            {
+                "type": "Ring",
+                "name": "Outer Ring"
+            },
+            {
+                "type": "PinRing",
+                "name": "Pin/Ring"
+            },
+            {
+                "type": "Pin",
+                "name": "Pin A"
+            },
+            {
+                "type": "Pin",
+                "name": "Pin B"
+            },
+            {
+                "type": "Pin",
+                "name": "Pin C"
+            },
+            {
+                "type": "Pin",
+                "name": "Pin D"
+            },
+            {
+                "type": "Pin",
+                "name": "Pin E"
+            },
+            {
+                "type": "Pin",
+                "name": "Pin F"
+            },
+            {
+                "type": "Pin",
+                "name": "Pin G"
+            },
+            {
+                "type": "Pin",
+                "name": "Pin H"
+            },
+            {
+                "type": "Pin",
+                "name": "Pin I"
+            },
+            {
+                "type": "Pin",
+                "name": "Pin J"
+            },
+            {
+                "type": "Pin",
+                "name": "Pin K"
+            },
+            {
+                "type": "Pin",
+                "name": "Pin L"
+            }
+        ]
+    },
+    {
+        "id": "TopB",
+        "type": "WorkflowBuilder",
+        "contains": [
+            {
+                "type": "Arm",
+                "name": "Arm 1"
+            },
+            {
+                "type": "Arm",
+                "name": "Arm 2"
+            },
+            {
+                "type": "Arm",
+                "name": "Arm 3"
+            },
+            {
+                "type": "Arm",
+                "name": "Arm 4"
+            },
+            {
+                "type": "Hole",
+                "name": "Hole A"
+            },
+            {
+                "type": "Hole",
+                "name": "Hole B"
+            }
+        ]
+    },
+    {
+        "id": "Arm",
+        "type": "Profile",
+        "contains": [
+            {
+                "key": "Parallelism",
+                "units": "mm"
+            },
+            {
+                "key": "Perpendicularity",
+                "units": "mm"
+            }
+        ]
+    },
+    {
+        "id": "ChamberConditions",
+        "type": "Measurement",
+        "contains": [
+            {
+                "key": "Ave. Build Plate Temperature",
+                "units": "°C"
+            },
+            {
+                "key": "Ave. Chamber Temperature",
+                "units": "°C"
+            },
+            {
+                "key": "Ave. Humidity",
+                "units": "ppm"
+            },
+            {
+                "key": "Ave. Layer Time",
+                "units": "s"
+            },
+            {
+                "key": "Ave. Oxygen Concentration",
+                "units": "ppm"
+            },
+            {
+                "key": "Ave. Chamber Pressure",
+                "units": "mbar"
+            },
+            {
+                "key": "Build Time",
+                "units": "min"
+            },
+            {
+                "key": "Filter Pressure",
+                "units": "mbar"
+            },
+            {
+                "key": "Max. Humidity",
+                "units": "ppm"
+            },
+            {
+                "key": "Max. Oxygen Concentration",
+                "units": "ppm"
+            },
+            {
+                "key": "Max. Chamber Pressure",
+                "units": "mbar"
+            },
+            {
+                "key": "Min. Humidity",
+                "units": "ppm"
+            },
+            {
+                "key": "Min. Oxygen Concentration",
+                "units": "ppm"
+            },
+            {
+                "key": "Min. Chamber Pressure",
+                "units": "mbar"
+            }
+        ]
+    },
+    {
+        "id": "CompositionAnalysis",
+        "type": "Measurement",
+        "contains": [
+            {
+                "key": "[element]",
+                "units": "wt%"
+            }
+        ]
+    },
+    {
+        "id": "Defect",
+        "type": "Measurement",
+        "contains": [
+            {
+                "key": "Circularity"
+            },
+            {
+                "key": "Area",
+                "units": "mm^2"
+            },
+            {
+                "key": "Diameter X",
+                "units": "mm"
+            },
+            {
+                "key": "Diameter Z",
+                "units": "mm"
+            },
+            {
+                "key": "Equivalent Diameter",
+                "units": "mm"
+            },
+            {
+                "key": "Plane Equation"
+            },
+            {
+                "key": "Porosity",
+                "units": "%"
+            },
+            {
+                "key": "Position X",
+                "units": "mm"
+            },
+            {
+                "key": "Position Y",
+                "units": "mm"
+            },
+            {
+                "key": "Position Z",
+                "units": "mm"
+            }
+        ]
+    },
+    {
+        "id": "Cylinder",
+        "type": "Measurement",
+        "contains": [
+            {
+                "key": "Cylindricity",
+                "units": "mm"
+            }
+        ]
+    },
+    {
+        "id": "GalvonometerCalibration",
+        "type": "Measurement",
+        "contains": [
+            {
+                "key": "True Speed at 1000 mm/s Set Point",
+                "units": "mm/s"
+            }
+        ]
+    },
+    {
+        "id": "GalvonometerMachine",
+        "type": "Machine",
+        "contains": [
+            {
+                "key": "Firmware Version"
+            },
+            {
+                "key": "Communication Protocol"
+            },
+            {
+                "key": "Field Size"
+            }
+        ]
+    },
+    {
+        "id": "Hardness",
+        "type": "Measurement",
+        "contains": [
+            {
+                "key": "Hardness",
+                "units": "Hv"
+            },
+            {
+                "key": "Position X",
+                "units": "mm"
+            },
+            {
+                "key": "Position Y",
+                "units": "mm"
+            },
+            {
+                "key": "Position Z",
+                "units": "mm"
+            }
+        ]
+    },
+    {
+        "id": "Hole",
+        "type": "Measurement",
+        "contains": [
+            {
+                "key": "Circularity"
+            },
+            {
+                "key": "Diameter X",
+                "units": "mm"
+            },
+            {
+                "key": "Diameter Y",
+                "units": "mm"
+            },
+            {
+                "key": "Position X",
+                "units": "mm"
+            },
+            {
+                "key": "Position Z",
+                "units": "mm"
+            }
+        ]
+    },
+    {
+        "id": "LaserContour",
+        "type": "LaserPath",
+        "contain": [
+            {
+                "key": "Polygon Delay",
+                "units": "µs"
+            },
+            {
+                "key": "Skywriting Angle",
+                "units": "°"
+            },
+            {
+                "key": "Start Point Relocation"
+            }
+        ]
+    },
+    {
+        "id": "LaserInfill",
+        "type": "LaserPath",
+        "contains": [
+            {
+                "key": "Cone Angle",
+                "units": "°"
+            },
+            {
+                "key": "Hatch Offset",
+                "units": "mm"
+            },
+            {
+                "key": "Hatch Overlap",
+                "units": "mm"
+            },
+            {
+                "key": "Hatch Spacing",
+                "units": "mm"
+            },
+            {
+                "key": "Power Reduction Factor"
+            },
+            {
+                "key": "Restriction Zone",
+                "units": "°"
+            },
+            {
+                "key": "Rotation Angle",
+                "units": "°"
+            },
+            {
+                "key": "Start Angle",
+                "units": "°"
+            },
+            {
+                "key": "Start Point Relocation",
+                "units": "mm"
+            },
+            {
+                "key": "Stripe Length",
+                "units": "mm"
+            },
+			{
+                "key": "Stripe Width",
+                "units": "mm"
+            },
+            {
+                "key": "Time Homogenization"
+            }
+        ]
+    },
+    {
+        "id": "LaserPath",
+        "type": "ProcessBuilder",
+        "contains": [
+            {
+                "key": "Acceleration Delay",
+                "units": "µs"
+            },
+            {
+                "key": "Deceleration Delay",
+                "units": "µs"
+            },
+            {
+                "key": "Jump Delay",
+                "units": "µs"
+            },
+            {
+                "key": "Offset",
+                "units": "mm"
+            },
+            {
+                "key": "Optimize Jumps"
+            },
+            {
+                "key": "Power",
+                "units": "W"
+            },
+            {
+                "key": "Remelt"
+            },
+			{
+                "key": "Scan Order"
+            },
+            {
+                "key": "Skywriting Off Delay",
+                "units": "µs"
+            },
+            {
+                "key": "Skywriting On Delay",
+                "units": "µs"
+            },
+            {
+                "key": "Skywriting Time",
+                "units": "µs"
+            },
+            {
+                "key": "Speed",
+                "units": "mm/s"
+            }
+        ]
+    },
+    {
+        "id": "LaserPowerCalibration",
+        "type": "Measurement",
+        "contains": [
+            {
+                "key": "Laser Serial Number",
+                "value": ""
+            },
+            {
+                "key": "Max. Power",
+                "value": "",
+                "units": "W"
+            },
+            {
+                "key": "Power at 10%",
+                "value": "",
+                "units": "W"
+            },
+            {
+                "key": "Power at 20%",
+                "value": "",
+                "units": "W"
+            },
+            {
+                "key": "Power at 30%",
+                "value": "",
+                "units": "W"
+            },
+            {
+                "key": "Power at 40%",
+                "value": "",
+                "units": "W"
+            },
+            {
+                "key": "Power at 50%",
+                "value": "",
+                "units": "W"
+            },
+            {
+                "key": "Power at 60%",
+                "value": "",
+                "units": "W"
+            },
+            {
+                "key": "Power at 70%",
+                "value": "",
+                "units": "W"
+            },
+            {
+                "key": "Power at 80%",
+                "value": "",
+                "units": "W"
+            },
+            {
+                "key": "Power at 90%",
+                "value": "",
+                "units": "W"
+            },
+            {
+                "key": "Power at 100%",
+                "value": "",
+                "units": "W"
+            }
+        ]
+    },
+    {
+        "id": "LaserProfileCalibration",
+        "type": "Measurement",
+        "contains": [
+            {
+            	"key": "d4σ x -10mm",
+            	"value": "",
+            	"units": "mm"
+            },
+            {
+            	"key": "d4σ x -9mm",
+            	"value": "",
+            	"units": "mm"
+            },
+            {
+            	"key": "d4σ x -8mm",
+            	"value": "",
+            	"units": "mm"
+            },
+            {
+            	"key": "d4σ x -7mm",
+            	"value": "",
+            	"units": "mm"
+            },
+            {
+            	"key": "d4σ x -6mm",
+            	"value": "",
+            	"units": "mm"
+            },
+            {
+            	"key": "d4σ x -5mm",
+            	"value": "",
+            	"units": "mm"
+            },
+            {
+            	"key": "d4σ x -4mm",
+            	"value": "",
+            	"units": "mm"
+            },
+            {
+            	"key": "d4σ x -3mm",
+            	"value": "",
+            	"units": "mm"
+            },
+            {
+            	"key": "d4σ x -2mm",
+            	"value": "",
+            	"units": "mm"
+            },
+            {
+            	"key": "d4σ x -1mm",
+            	"value": "",
+            	"units": "mm"
+            },
+            {
+            	"key": "d4σ x  0mm",
+            	"value": "",
+            	"units": "mm"
+            },
+            {
+            	"key": "d4σ x 1mm",
+            	"value": "",
+            	"units": "mm"
+            },
+            {
+                "key": "d4σ x 2mm",
+            	"value": "",
+            	"units": "mm"
+            },
+            {
+            	"key": "d4σ x 3mm",
+            	"value": "",
+            	"units": "mm"
+            },
+            {
+            	"key": "d4σ x 4mm",
+            	"value": "",
+            	"units": "mm"
+            },
+            {
+            	"key": "d4σ x 5mm",
+            	"value": "",
+            	"units": "mm"
+            },
+            {
+            	"key": "d4σ x 6mm",
+            	"value": "",
+            	"units": "mm"
+            },
+            {
+            	"key": "d4σ x 7mm",
+            	"value": "",
+            	"units": "mm"
+            },
+            {
+            	"key": "d4σ x 8mm",
+            	"value": "",
+            	"units": "mm"
+            },
+            {
+            	"key": "d4σ x 9mm",
+            	"value": "",
+            	"units": "mm"
+            },
+            {
+            	"key": "d4σ x 10mm",
+            	"value": "",
+            	"units": "mm"
+            },
+            {
+            	"key": "d4σ y -10mm",
+            	"value": "",
+            	"units": "mm"
+            },
+            {
+            	"key": "d4σ y -9mm",
+            	"value": "",
+            	"units": "mm"
+            },
+            {
+            	"key": "d4σ y -8mm",
+            	"value": "",
+            	"units": "mm"
+            },
+            {
+            	"key": "d4σ y -7mm",
+            	"value": "",
+            	"units": "mm"
+            },
+            {
+            	"key": "d4σ y -6mm",
+            	"value": "",
+            	"units": "mm"
+            },
+            {
+            	"key": "d4σ y -5mm",
+            	"value": "",
+            	"units": "mm"
+            },
+            {
+            	"key": "d4σ y -4mm",
+            	"value": "",
+            	"units": "mm"
+            },
+            {
+            	"key": "d4σ y -3mm",
+            	"value": "",
+            	"units": "mm"
+            },
+            {
+            	"key": "d4σ y -2mm",
+            	"value": "",
+            	"units": "mm"
+            },
+            {
+            	"key": "d4σ y -1mm",
+            	"value": "",
+            	"units": "mm"
+            },
+            {
+            	"key": "d4σ y  0mm",
+            	"value": "",
+            	"units": "mm"
+            },
+            {
+            	"key": "d4σ y 1mm",
+            	"value": "",
+            	"units": "mm"
+            },
+            {
+            	"key": "d4σ y 2mm",
+            	"value": "",
+            	"units": "mm"
+            },
+            {
+            	"key": "d4σ y 3mm",
+            	"value": "",
+            	"units": "mm"
+            },
+            {
+            	"key": "d4σ y 4mm",
+            	"value": "",
+            	"units": "mm"
+            },
+            {
+            	"key": "d4σ y 5mm",
+            	"value": "",
+            	"units": "mm"
+            },
+            {
+            	"key": "d4σ y 6mm",
+            	"value": "",
+            	"units": "mm"
+            },
+            {
+            	"key": "d4σ y 7mm",
+            	"value": "",
+            	"units": "mm"
+            },
+            {
+            	"key": "d4σ y 8mm",
+            	"value": "",
+            	"units": "mm"
+            },
+            {
+            	"key": "d4σ y 9mm",
+            	"value": "",
+            	"units": "mm"
+            },
+            {
+            	"key": "d4σ y 10mm",
+            	"value": "",
+            	"units": "mm"
+            },
+            {
+                "key": "M^2 X",
+                "value": ""
+            },
+            {
+                "key": "M^2 Y",
+                "value": ""
+            },
+            {
+                "key": "Rayleigh Length X",
+                "units": "mm"
+            },
+            {
+                "key": "Rayleigh Length Y",
+                "units": "mm"
+            }
+        ]
+    },
+    {
+        "id": "LaserUpDownContour",
+        "type": "LaserContour",
+        "contains": [
+            {
+                "key": "ds angle",
+                "units": "°"
+            },
+            {
+                "key": "Offset",
+                "units": "mm"
+            },
+			{
+                "key": "Thickness",
+                "units": "mm"
+            }
+        ]
+    },
+    {
+        "id": "LaserUpDownFill",
+        "type": "LaserInfill",
+        "contains": [
+            {
+                "key": "Angle",
+                "units": "°"
+            },
+            {
+                "key": "Merge Short Vector Length",
+                "units": "mm"
+            },
+            {
+                "key": "Thickness",
+                "units": "mm"
+            }
+        ]
+    },
+    {
+        "id": "LayerImage",
+        "type": "ProcessBuilder",
+        "contains": [
+            {
+                "key": "Image Folder"
+            }
+        ]
+    },
+    {
+        "id": "LPBFMachine",
+        "type": "Machine",
+        "contains": [
+            {
+                "key": "Firmware Version"
+            },
+            {
+                "key": "Preventative Maintenance Date"
+            },
+            {
+                "key": "Software Version"
+            }
+        ]
+    },
+    {
+        "id": "Line",
+        "type": "Measurement",
+        "contains": [
+            {
+                "key": "Straighness",
+                "units": "mm"
+            }
+        ]
+    },
+    {
+        "id": "Machine",
+        "type": "ProcessBuilder",
+        "contains": [
+            {
+                "key": "Make"
+            },
+            {
+                "key": "Model"
+            },
+            {
+                "key": "Serial Number"
+            }
+        ]
+    },
+    {
+        "id": "Measurement",
+        "type": "Machine",
+        "contains": [
+            {
+                "key": "Date"
+            },
+            {
+                "key": "File"
+            },
+            {
+                "key": "Method"
+            }
+        ]
+    },
+    {
+        "id": "ParticleAnalysis",
+        "type": "Measurement",
+        "contains": [
+            {
+                "key": "Excel Summary"
+            },
+            {
+                "key": "PDF File"
+            },
+            {
+                "key": "RAW File"
+            },
+            {
+                "key": "Diameter Metric Definition"
+            },
+            {
+                "key": "No. Particles"
+            },
+            {
+                "key": "<10 µm",
+                "units": "%"
+            },
+            {
+                "key": "10–20 µm",
+                "units": "%"
+            },
+            {
+                "key": "20–30 µm",
+                "units": "%"
+            },
+            {
+                "key": "30–40 µm",
+                "units": "%"
+            },
+            {
+                "key": "40–50 µm",
+                "units": "%"
+            },
+            {
+                "key": "50–60 µm",
+                "units": "%"
+            },
+            {
+                "key": "60–70 µm",
+                "units": "%"
+            },
+            {
+                "key": "70–80 µm",
+                "units": "%"
+            },
+            {
+                "key": "80–90 µm",
+                "units": "%"
+            },
+            {
+                "key": ">90 µm",
+                "units": "%"
+            },
+            {
+                "key": "D10",
+                "units": "µm"
+            },
+            {
+                "key": "D50",
+                "units": "µm"
+            },
+            {
+                "key": "D90",
+                "units": "µm"
+            },
+            {
+                "key": "Circularity"
+            },
+            {
+                "key": "Compactness"
+            },
+            {
+                "key": "Mean Diameter",
+                "units": "µm"
+            },
+            {
+                "key": "Roundness"
+            }
+        ]
+    },
+    {
+        "id": "Pin",
+        "type": "ProcessBuilder",
+        "contains": [
+            {
+                "key": "Position X",
+                "units": "mm"
+            },
+            {
+                "key": "Position Y",
+                "units": "mm"
+            },
+            {
+                "key": "Diameter",
+                "units": "mm"
+            }
+        ]
+    },
+    {
+        "id": "PinRing",
+        "type": "Ring",
+        "contains": [
+            {
+                "key": "Concentricity",
+                "units": "mm"
+            }
+        ]
+    },
+    {
+        "id": "Profile",
+        "type": "Measurement",
+        "contains": [
+            {
+                "key": "profile",
+                "units": "mm"
+            }
+        ]
+    },
+    {
+        "id": "Rectangle",
+        "type": "Measurement",
+        "contains": [
+            {
+                "key": "Depth",
+                "units": "mm"
+            },
+            {
+                "key": "Distance",
+                "units": "mm"
+            },
+            {
+                "key": "Height",
+                "units": "mm"
+            },
+            {
+                "key": "Position X",
+                "units": "mm"
+            },
+            {
+                "key": "Width",
+                "units": "mm"
+            }
+        ]
+    },
+    {
+        "id": "ResidualStress",
+        "type": "Measurement",
+        "contains": [
+            {
+                "key": "Curvature"
+            },
+            {
+                "key": "Volume Displaced"
+            }
+        ]
+    },
+    {
+        "id": "Ring",
+        "type": "Pin",
+        "contains": [
+            {
+                "key": "Inner Diameter",
+                "units": "mm"
+            },
+            {
+                "key": "Outer Diameter",
+                "units": "mm"
+            }
+        ]
+    },
+	    {
+        "id": "SurfaceRoughness",
+        "type": "Measurement",
+        "contains": [
+            {
+            	"key": "Sa",
+            	"value": "",
+            	"units": "µm"
+            },
+                        {
+            	"key": "Sal",
+            	"value": "",
+            	"units": "µm"
+            },
+                        {
+            	"key": "Sdq",
+            	"value": "",
+            	"units": ""
+            },
+                        {
+            	"key": "Sdr",
+            	"value": "",
+            	"units": ""
+            },
+                        {
+            	"key": "Sk",
+            	"value": "",
+            	"units": "µm"
+            },
+                        {
+            	"key": "Sku",
+            	"value": "",
+            	"units": ""
+            },
+                        {
+            	"key": "Smc(mr)",
+            	"value": "",
+            	"units": ""
+            },
+            {
+            	"key": "Smr(c)",
+            	"value": "",
+            	"units": ""
+            },
+            {
+            	"key": "Smr1",
+            	"value": "",
+            	"units": "%"
+            },
+                        {
+            	"key": "Smr2",
+            	"value": "",
+            	"units": "%"
+            },
+            {
+            	"key": "Sp",
+            	"value": "",
+            	"units": "µm"
+            },
+            {
+            	"key": "Spc",
+            	"value": "",
+            	"units": "1/mm"
+            },
+            {
+            	"key": "Spd",
+            	"value": "",
+            	"units": "1/mm^2"
+            },
+            {
+            	"key": "Spk",
+            	"value": "",
+            	"units": "µm"
+            },
+            {
+            	"key": "Sq",
+            	"value": "",
+            	"units": "µm"
+            },
+            {
+            	"key": "Ssk",
+            	"value": "",
+            	"units": ""
+            },
+            {
+            	"key": "Std",
+            	"value": "",
+            	"units": "°"
+            },
+            {
+            	"key": "Sv",
+            	"value": "",
+            	"units": "µm"
+            },
+            {
+            	"key": "Svk",
+            	"value": "",
+            	"units": "µm"
+            },
+            {
+            	"key": "Sxp",
+            	"value": "",
+            	"units": "µm"
+            },
+            {
+            	"key": "Sz",
+            	"value": "",
+            	"units": "µm"
+            },
+                        {
+            	"key": "Vmc",
+            	"value": "",
+            	"units": "mL/m^2"
+            },
+                        {
+            	"key": "Vmp",
+            	"value": "",
+            	"units": "mL/m^2"
+            },
+            {
+            	"key": "Vvc",
+            	"value": "",
+            	"units": "mL/m^2"
+            },
+            {
+            	"key": "Vvv",
+            	"value": "",
+            	"units": "mL/m^2"
+            }
+        ]
+    },
+    {
+        "id": "Tensile",
+        "type": "Measurement",
+        "contains": [
+            {
+                "key": "0.2% Yield Strength",
+                "units": "MPa"
+            },
+            {
+                "key": "Diameter Bottom",
+                "units": "mm"
+            },
+            {
+                "key": "Diameter Middle",
+                "units": "mm"
+            },
+            {
+                "key": "Diameter Top",
+                "units": "mm"
+            },
+            {
+                "key": "Elongation at Break",
+                "units": "%"
+            },
+            {
+                "key": "Gage Length",
+                "units": "mm"
+            },
+            {
+                "key": "Image of Broken Sample"
+            },
+            {
+                "key": "Reduction in Area",
+                "units": "%"
+            },
+            {
+                "key": "Ultimate Strength",
+                "units": "MPa"
+            },
+            {
+                "key": "Z Height at Break",
+                "units": "mm"
+            }
+        ]
+    },
+    {
+        "id": "ThermalProcessing",
+        "type": "ProcessBuilder",
+        "contains": [
+            {
+                "key": "File"
+            },
+            {
+                "key": "Atmosphere"
+            },
+            {
+                "key": "Cooling Rate",
+                "units": "°C/min"
+            },
+            {
+                "key": "Hold Temperature",
+                "units": "°C"
+            },
+            {
+                "key": "Hold Time",
+                "units": "min"
+            },
+            {
+                "key": "Pressure",
+                "units": "MPa"
+            },
+            {
+                "key": "Ramp Rate",
+                "units": "°C/min"
+            }
+        ]
+    },
+    {
+        "id": "ThinWall",
+        "type": "Measurement",
+        "contains": [
+            {
+                "key": "Width",
+                "units": "mm"
+            }
+        ]
+    }
+]
