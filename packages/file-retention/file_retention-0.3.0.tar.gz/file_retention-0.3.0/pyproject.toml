@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "file_retention"
+version = "0.3.0"
+description = "Delete files based on predefined dates"
+authors = ["Gabriel de Mello Barbosa"]
+repository = "https://github.com/ollemg/file_retention"
+homepage = "https://github.com/ollemg/file_retention"
+
+readme = 'README.md'  # Markdown files are supported
+
+[tool.poetry.dependencies]
+python = "^3.7"
+PyYAML = "^6.0"
+click = "^8.0.3"
+
+[tool.poetry.dev-dependencies]
+black = "^21.12b0"
+ipython = "^7.30.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

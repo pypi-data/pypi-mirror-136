@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: file-retention
+Version: 0.3.0
+Summary: Delete files based on predefined dates
+Home-page: https://github.com/ollemg/file_retention
+Author: Gabriel de Mello Barbosa
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: PyYAML (>=6.0,<7.0)
+Requires-Dist: click (>=8.0.3,<9.0.0)
+Project-URL: Repository, https://github.com/ollemg/file_retention
+Description-Content-Type: text/markdown
+
+# file-retention
+CLI para retenção de arquivos com base em qualquer data 
+
+Como instalar:
+~~~
+python3 -m pip install --upgrade pip
+python3 -m pip install file_retention
+~~~
+
+Como utilizar:
+
+Primeiro é necessário executar com o comando install para 
+criar os diretórios e arquivos de configuração necessários
+~~~
+python3 -m file_retention install
+~~~
+
+Tirar um snapshot dos arquivos recursivamente:
+~~~
+python3 -m file_retention snapshot /tmp/create_files/ -e ini
+~~~
+
+Deletar os arquivos:
+~~~
+python3 -m file_retention delete -r 15 -y
+~~~
+
+
+Enviar e-mail:
+~~~
+python3 -m file_retention mail ~/.file_retention/mail.yml -r 15
+~~~
+
+Para mais informaões:
+~~~
+python3 -m file_retention --help
+python3 -m file_retention snapshot --help
+python3 -m file_retention mail --help
+python3 -m file_retention delete --help
+~~~
+
