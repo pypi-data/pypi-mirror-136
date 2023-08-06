@@ -1,0 +1,74 @@
+Metadata-Version: 2.1
+Name: tophack
+Version: 0.2.0
+Summary: Get top links from HN
+Home-page: https://github.com/confuzeus/top_hack
+Author: Josh Michael Karamuth
+Author-email: michael@confuzeus.com
+License: MIT license
+Keywords: top_hack
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+License-File: LICENSE
+License-File: AUTHORS.rst
+
+========
+Top Hack
+========
+
+Get top links from HN
+
+
+* Free software: MIT license
+
+Usage guide
+-----------
+
+Install with pip
+
+    pip install tophack
+
+or
+
+    pip install --user tophack
+
+Then run `tophack` from the terminal.
+
+Select the number of the entry you like.
+
+You will be asked for **o/c/q**.
+
+- **o** means open the url in your web browser.
+- **c** means open the HN comments.
+- **q** means quit and choose another submission.
+
+You can customise using CLI arguments. Type
+`tophack -h` to view all options.
+
+Credits
+-------
+
+This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+
+.. _Cookiecutter: https://github.com/audreyr/cookiecutter
+.. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+
+
+=======
+History
+=======
+
+0.1.0 (2022-01-12)
+------------------
+
+* First release on PyPI.
+
+
