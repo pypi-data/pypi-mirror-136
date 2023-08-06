@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+feast_snowflake/__init__.py
+feast_snowflake/snowflake_offline.py
+feast_snowflake/snowflake_online.py
+feast_snowflake/snowflake_source.py
+feast_snowflake/snowflake_type_map.py
+feast_snowflake/snowflake_utils.py
+feast_snowflake.egg-info/PKG-INFO
+feast_snowflake.egg-info/SOURCES.txt
+feast_snowflake.egg-info/dependency_links.txt
+feast_snowflake.egg-info/requires.txt
+feast_snowflake.egg-info/top_level.txt

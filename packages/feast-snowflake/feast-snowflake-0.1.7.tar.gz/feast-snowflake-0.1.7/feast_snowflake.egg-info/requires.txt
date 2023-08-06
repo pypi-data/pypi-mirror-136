@@ -1,0 +1,2 @@
+feast>=0.17.*
+snowflake-connector-python[pandas]>=2.6.*
