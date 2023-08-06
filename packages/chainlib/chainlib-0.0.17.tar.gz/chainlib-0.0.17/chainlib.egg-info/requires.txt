@@ -1,0 +1,6 @@
+funga~=0.5.1
+pysha3==1.0.2
+hexathon~=0.1.0
+
+[xdg]
+pyxdg~=0.27
