@@ -1,0 +1,8 @@
+.gitignore
+LICENSE
+README.md
+setup.py
+supai.egg-info/PKG-INFO
+supai.egg-info/SOURCES.txt
+supai.egg-info/dependency_links.txt
+supai.egg-info/top_level.txt
