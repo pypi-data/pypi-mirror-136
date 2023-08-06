@@ -1,0 +1,3 @@
+[entry_points]
+app=xmltree2xml.main:main
+
