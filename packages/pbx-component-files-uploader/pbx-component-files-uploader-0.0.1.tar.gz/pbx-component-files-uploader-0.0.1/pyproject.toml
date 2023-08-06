@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "pbx-component-files-uploader"
+version = "0.0.1"
+description = "Files uploader to custom storages"
+authors = [
+    "Ivan Kalashnikov <ivan@leadvertex.ru>"
+]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/leadvertex/pbx-component-files-uploader"
+repository = "https://github.com/leadvertex/pbx-component-files-uploader"
+keywords = ["leadvertex", "selectel", "storage", "remote storage", "uploader"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+requests = "2.27.1"
+
+[tool.poetry.dev-dependencies]
+bump2version = "^0"
+
+[build-system]
+requires = ["poetry>=1.1.12"]
+build-backend = "poetry.masonry.api"
