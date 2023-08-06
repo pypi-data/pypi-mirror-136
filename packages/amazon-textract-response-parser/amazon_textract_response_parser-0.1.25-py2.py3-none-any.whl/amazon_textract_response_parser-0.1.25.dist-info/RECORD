@@ -1,0 +1,14 @@
+a2i/__init__.py,sha256=jJhyX_YqgMlpbzYBIQ3RqBWzDRjLsELZ7uLD4uoGFTM,109
+a2i/a2irp.py,sha256=L2HGS9iH6WqLT14aW_ab5HLPJDtyXUsS6M0PFGl2W7g,7188
+a2i/a2irptest.py,sha256=d8kKIgqvZvfzwwuccb6IM7HVZ-n_UNSmX_C_xH24M6c,1355
+amazon_textract_response_parser-0.1.25.data/scripts/amazon-textract-pipeline,sha256=7NSdKm5H-2ZZV90_a8LW2-NkYlZL7rCG5ik4fah2W1Y,1683
+trp/__init__.py,sha256=2zuF1JkGbJE5eJ0Iagtn2B6b0M4-f1CkZlwx5IOvueo,17309
+trp/t_pipeline.py,sha256=xHArqe4ayu73b9TdEcyjaHc37cjMAagOGbORHL-zt84,6239
+trp/t_tables.py,sha256=CPjf2Dx2AoyTCacvsQcFr8TK0WlbUAzzV1b_6jxXGHI,5033
+trp/trp2.py,sha256=RR5ubGUBEeSGWVyGg9370G96iYFgTVkyvxv0XgMKf28,28446
+trp/trp2_analyzeid.py,sha256=gKlGGmeHoOk2nL3ebBAUEqQJWl50jnRoe-uLBM9RxzM,7438
+trp/trp2_expense.py,sha256=XA71e316pjjCbPmzFMqOBo9wubSm37vnBq_j-KpEPIE,14956
+amazon_textract_response_parser-0.1.25.dist-info/METADATA,sha256=gluInwxG4NYlcRB07BJadIkTZZSWUhUiO6Y3hkM4HUg,11000
+amazon_textract_response_parser-0.1.25.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+amazon_textract_response_parser-0.1.25.dist-info/top_level.txt,sha256=tIp-gNCVgreOXtVLfU9xvbqWupQzOTeGQYsO4TZ1aBo,8
+amazon_textract_response_parser-0.1.25.dist-info/RECORD,,
