@@ -1,0 +1,3 @@
+[console_scripts]
+ryuso = ryuso:__main__
+
