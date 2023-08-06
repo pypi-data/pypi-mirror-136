@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: pie-sensor
+Version: 0.1.0
+Summary: 
+Author: HBartha
+Author-email: hunor.bartha@frequentis.frq
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: Adafruit-Blinka (>=6.17.0,<7.0.0)
+Requires-Dist: adafruit-circuitpython-dht (>=3.7.0,<4.0.0)
+Requires-Dist: gpiozero (>=1.6.2,<2.0.0)
+Requires-Dist: prometheus-client (>=0.12.0,<0.13.0)
