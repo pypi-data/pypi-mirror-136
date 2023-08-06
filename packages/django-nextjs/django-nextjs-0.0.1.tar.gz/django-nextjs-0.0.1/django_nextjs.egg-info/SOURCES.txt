@@ -1,0 +1,6 @@
+setup.py
+django_nextjs.egg-info/PKG-INFO
+django_nextjs.egg-info/SOURCES.txt
+django_nextjs.egg-info/dependency_links.txt
+django_nextjs.egg-info/requires.txt
+django_nextjs.egg-info/top_level.txt
