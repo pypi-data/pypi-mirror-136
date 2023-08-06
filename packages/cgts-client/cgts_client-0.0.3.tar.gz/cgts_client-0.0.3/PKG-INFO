@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: cgts_client
+Version: 0.0.3
+Summary: Computer Go Tournament Client
+Home-page: https://github.com/Chicoryn/cgts_client
+Author: Karl Sundequist Blomdahl
+Author-email: karl.sundequist.blomdahl@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/Chicoryn/cgts_client/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Computer Go Tournament Client
+
+Client for connecting a GTP-based engine to a CGTS [[1]](https://github.com/Chicoryn/cgts) tournament.
+
+## Usage
+
+```bash
+cgts_client --key 8rFI5u0qhk -- gnugo --mode gtp --level 10
+```
+
+

@@ -1,0 +1,3 @@
+[console_scripts]
+cgts_client = cgts_client:main
+
