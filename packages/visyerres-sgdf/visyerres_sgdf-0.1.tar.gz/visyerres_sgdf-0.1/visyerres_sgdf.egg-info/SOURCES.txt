@@ -1,0 +1,11 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+visyerres_sgdf/__init__.py
+visyerres_sgdf.egg-info/PKG-INFO
+visyerres_sgdf.egg-info/SOURCES.txt
+visyerres_sgdf.egg-info/dependency_links.txt
+visyerres_sgdf.egg-info/not-zip-safe
+visyerres_sgdf.egg-info/top_level.txt

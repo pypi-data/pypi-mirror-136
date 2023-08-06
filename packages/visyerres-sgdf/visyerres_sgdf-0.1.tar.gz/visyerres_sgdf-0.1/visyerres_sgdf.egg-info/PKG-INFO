@@ -1,0 +1,19 @@
+Metadata-Version: 1.2
+Name: visyerres-sgdf
+Version: 0.1
+Summary: interactions with SGDF digital resources for Vis'Yerres
+Home-page: https://sgdf.visyerres.org/
+Author: Thomas Touhey
+Author-email: thomas@touhey.fr
+License: Proprietary
+Description: Vis'Yerres - SGDF
+        =================
+        
+        This project allows interacting with SGDF resources, using its intranet and
+        other resources.
+        
+        For now the PyPI project is a placeholder in order to prevent people
+        making scams around the name.
+        
+Platform: UNKNOWN
+Requires-Python: >=3.6
