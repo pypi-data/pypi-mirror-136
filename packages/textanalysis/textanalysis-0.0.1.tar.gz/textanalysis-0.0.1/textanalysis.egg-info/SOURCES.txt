@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+textanalysis.egg-info/PKG-INFO
+textanalysis.egg-info/SOURCES.txt
+textanalysis.egg-info/dependency_links.txt
+textanalysis.egg-info/not-zip-safe
+textanalysis.egg-info/requires.txt
+textanalysis.egg-info/top_level.txt
+tfa/__init__.py
+tfa/diff.py
