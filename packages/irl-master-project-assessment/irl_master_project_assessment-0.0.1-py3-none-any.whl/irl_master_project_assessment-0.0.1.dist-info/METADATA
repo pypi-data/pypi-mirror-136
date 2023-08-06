@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: irl-master-project-assessment
+Version: 0.0.1
+Summary: Car Race Simulation Package
+Home-page: UNKNOWN
+Author: Jeremy Plaza
+License: UNKNOWN
+Keywords: python,irl,project assessment,simple car simulation
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: pytest
+
+A program that simulates the functionality of three models of cars on an Infinitely Long Road(IRL):namely FastCar, SlowCar, and UniqueCar
+
