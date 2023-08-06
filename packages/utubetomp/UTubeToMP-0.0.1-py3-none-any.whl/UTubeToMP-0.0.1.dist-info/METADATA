@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: UTubeToMP
+Version: 0.0.1
+Summary: Convert a YouTube video to MP4 or MP3.
+Home-page: https://github.com/Russian-Dev/UTubeToMP
+Author: Russian-Dev
+Author-email: russian.devv@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/Russian-Dev/UTubeToMP/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.0
+
+UNKNOWN
+
+
