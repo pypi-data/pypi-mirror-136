@@ -1,0 +1,16 @@
+gooddata_sdk/__init__.py,sha256=O8RSRu9DRlOuaTAfmbsWDM0yeFo0CuH_efwzkU9OVxA,1267
+gooddata_sdk/_version.py,sha256=3b9nuDWwhkHJMFkUA34lyaCROD4WN-soO5iI7WxZ4oQ,222
+gooddata_sdk/catalog.py,sha256=HBhxraY5ZZr3rDrmGL6lxVC5pN4huEHmyu_N0LuweI8,20163
+gooddata_sdk/client.py,sha256=22KLLxE_7o102Utvd1rN6ux5w3Ml8orN4Ug7YK5piWM,3352
+gooddata_sdk/compute.py,sha256=84jDb_wwAJxtK44-T4GibXH60J91HEWlBIFPTUvBDzQ,6869
+gooddata_sdk/compute_model.py,sha256=NVzDuXW86uHVkqoa_whuNb2oVjZVu9gxZXvkMkvu7rc,21996
+gooddata_sdk/insight.py,sha256=Ebk22SgT9EYD7TFP2sc8_Kk62f2Ps-0AbnUf_CdmAxM,16319
+gooddata_sdk/sdk.py,sha256=04I4grLq2CzbP_Wn3AS335GzMfJc-aijbLtJKUr68OA,2085
+gooddata_sdk/table.py,sha256=5cXRVJN0P-FuTY9i_nAlh_oAA_KmhkYO6TnpB4VVxlA,9194
+gooddata_sdk/type_converter.py,sha256=Rb7pEvTeGHnUnE9MYIx3TqJjF1TONmIE0CPnSycWK7I,10528
+gooddata_sdk/utils.py,sha256=oVFJ-XiMUZBoW6mE0FE8wHPPs2w0k5p_S6Xu6Q61j7g,4305
+gooddata_sdk-0.7.0.dist-info/LICENSE.txt,sha256=jb-j7FMPdYCyvYcc8QKHP5tXc8nnaFjOB5Xbff_TGl4,21895
+gooddata_sdk-0.7.0.dist-info/METADATA,sha256=UPEtal1t28YFkWXCse5ubYsGn6KIq5m0nTBFMCtY6G8,2912
+gooddata_sdk-0.7.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+gooddata_sdk-0.7.0.dist-info/top_level.txt,sha256=NUlNwxZHiw_vK8SCnSGyHXLzyS32kP7GpGlFUcwz0Eg,13
+gooddata_sdk-0.7.0.dist-info/RECORD,,
