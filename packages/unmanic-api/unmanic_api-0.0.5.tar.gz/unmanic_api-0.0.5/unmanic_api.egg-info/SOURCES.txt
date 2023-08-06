@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+unmanic_api/__init__.py
+unmanic_api/__version__.py
+unmanic_api/client.py
+unmanic_api/exceptions.py
+unmanic_api/models.py
+unmanic_api/unmanic.py
+unmanic_api.egg-info/PKG-INFO
+unmanic_api.egg-info/SOURCES.txt
+unmanic_api.egg-info/dependency_links.txt
+unmanic_api.egg-info/requires.txt
+unmanic_api.egg-info/top_level.txt
