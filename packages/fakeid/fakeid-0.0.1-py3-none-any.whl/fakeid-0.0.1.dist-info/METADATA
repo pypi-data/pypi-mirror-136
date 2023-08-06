@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: fakeid
+Version: 0.0.1
+Summary: A fake id creator
+Home-page: UNKNOWN
+Author: Jai Sloper
+Author-email: jaimaddoxsloper@gmail.com
+License: MIT
+Keywords: fake id
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: random
+
+this is a python library that can create fake data for human identification
+
+such as:
+ - fake names
+ - fake birthdays
+ - fake addresses
+ - and more stuff will be added in the future
+
+Change Log
+----------
+
+0.0.1 (30/01/2022)
+------------------
+ - First Release
+ - Added Fake Birthday Creation
+
