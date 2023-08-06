@@ -1,0 +1,20 @@
+#!/usr/bin/env python3
+
+import click
+from pypelinez.feature import feature
+from pypelinez.apple import apple
+from pypelinez.python import python
+
+
+@click.group()
+@click.version_option()
+def main():
+    pass
+
+
+main.add_command(feature)
+main.add_command(apple)
+main.add_command(python)
+
+if __name__ == "__main__":
+    main()
