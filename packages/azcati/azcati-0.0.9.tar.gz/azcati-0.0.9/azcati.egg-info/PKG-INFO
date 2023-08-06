@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: azcati
+Version: 0.0.9
+Summary: Arizona Center for Algae Technology & Innovation Cloud Database Library
+Home-page: https://gitlab.com/evantaylor/azcati-cloud
+Author: Evan Taylor
+Author-email: evan.taylor@asu.edu
+License: UNKNOWN
+Keywords: miprobe,labprobe,algae,ASU,AzCATI
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: POSIX :: BSD :: FreeBSD
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+UNKNOWN
+

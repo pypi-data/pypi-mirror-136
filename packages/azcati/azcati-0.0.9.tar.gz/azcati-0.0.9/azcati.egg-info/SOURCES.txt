@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+azcati/__init__.py
+azcati/azcati_cloud.py
+azcati.egg-info/PKG-INFO
+azcati.egg-info/SOURCES.txt
+azcati.egg-info/dependency_links.txt
+azcati.egg-info/requires.txt
+azcati.egg-info/top_level.txt
