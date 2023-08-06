@@ -1,0 +1,6 @@
+codefast==0.6.3
+pydantic
+authc
+requests
+redis
+feedparser
