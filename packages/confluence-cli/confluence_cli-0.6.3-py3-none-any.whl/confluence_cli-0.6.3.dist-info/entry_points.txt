@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        confluence_cmd=confluence_cmd:cli
+    

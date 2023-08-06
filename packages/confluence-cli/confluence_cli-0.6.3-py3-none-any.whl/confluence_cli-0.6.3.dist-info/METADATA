@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: confluence-cli
+Version: 0.6.3
+Summary: Just another Atlassian Confluence API cli extension
+Home-page: UNKNOWN
+Author: juguerre
+Author-email: juguerre@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: requests (>=2.23.0)
+Requires-Dist: atlassian-python-api (>=3.14.1)
+Requires-Dist: Click (>=7.0)
+Requires-Dist: click-completion
+Requires-Dist: tqdm (>=4.30.0)
+Requires-Dist: coloredlogs (>=14.0)
+Requires-Dist: pytest (>=6.2.1)
+Requires-Dist: responses (>=0.12.1)
+Requires-Dist: setuptools (>=45.2.0)
+Requires-Dist: urllib3 (>=1.25.11)
+Requires-Dist: pylint (>=2.7.2)
+Requires-Dist: python-decouple (>=3.4)
+Requires-Dist: python-box (>=5.2.0)
+Requires-Dist: PyYAML (>=5.3.1)
+Requires-Dist: aiohttp (>=3.7.0)
+Requires-Dist: aiologger (>=0.6.1)
+
+# confluence-cli
+
+confluence-cli is a convenient wrapper module for python atlassian confluence original package.
+
+## confluence-cli installation
+
+```shell
+# Desde la raiz del repositorio
+python3 -m pip install  confluence-cli
+```
+
+## Examples
+
+```python
+
+params = {
+        "baseURL": "http://confluence:8090",
+        "user": "myuser",
+        "password": "mypass",
+        "proxies": {
+            "http": "",
+            "https": ""
+        },
+        "verify_ssl": False
+    }
+
+confluence_api = ConfluenceWrapper(params)
+# This class method, for example, is not available in original atlassian confluence module.
+confluence_api.add_content_restrictions("3407893",["read","update"],group_name, "group")
+# This class method, for example, is not available in original atlassian confluence module.
+confluence_api.add_space_permissions_rpc(space_key="ds",permissions="SETSPACEPERMISSIONS","EXPORTSPACE"],entity_name=group_name)
+    
+
+```
+
+
