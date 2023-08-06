@@ -1,0 +1,26 @@
+Metadata-Version: 1.2
+Name: twintel
+Version: 1.5
+Summary: Twitter data for signals intelligence
+Home-page: http://github.com/mikkokotila
+Author: Mikko Kotila
+Author-email: mailme@mikkokotila.com
+Maintainer: Mikko Kotila
+Maintainer-email: mailme@mikkokotila.com
+License: MIT
+Download-URL: https://github.com/mikkokotila/twintel
+Description: 
+        twintel is a Python package that provides a
+        very high level abstraction layer to Twitter
+        API and provides the preprocessed results in a
+        pandas dataframe. The system have been built with
+        several concerns in mind:
+        
+        
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS
