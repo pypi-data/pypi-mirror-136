@@ -1,0 +1,12 @@
+pytorch_h5dataset/__init__.py,sha256=5tq2nZQTww7DhsOhSOc558hmu2fIPcismXBubn3gt2w,177
+pytorch_h5dataset/h5dataloader.py,sha256=seH6oj05nFwWS-1L_R8vHuWIVtxkrV69AzNoCvbgtG8,3799
+pytorch_h5dataset/h5dataset.py,sha256=HXybSA6qjVP5YSVmXaZIMyEXvDcsmlDc_sxMJMQGIkY,35006
+pytorch_h5dataset/utils.py,sha256=qMYoLZQioxIDjaU2YOrp6wkBzDMr-hqrMnOTwc5tWcU,119
+pytorch_h5dataset/benchmark/__init__.py,sha256=ZjiDkejAO3iieoPvo2DqFho5xqc4v2u-gxoalEP8IaA,83
+pytorch_h5dataset/benchmark/benchmardataset.py,sha256=nDkXTrmop7beMgyTD0A0WkIrtCFshvlDAMleEN0EPg4,6828
+pytorch_h5dataset/benchmark/benchmarker.py,sha256=JLh82fYeKZlVDMoqHua0QBSNxO478D8HzuCiAb7axy8,4901
+pytorch_h5dataset-0.2.1.dist-info/LICENSE,sha256=u1DeqzZb38-IzFnU5ybexoKjhJ8zcriw6RlVcGf1geE,1547
+pytorch_h5dataset-0.2.1.dist-info/METADATA,sha256=w_6q0QuI_PFJsUt2teFZb6274529_ajeGVq803nVQwI,1122
+pytorch_h5dataset-0.2.1.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+pytorch_h5dataset-0.2.1.dist-info/top_level.txt,sha256=h5yjDXxSb7uH3vU0WNy8w6hyopBqGHdm8EULD2xogW8,18
+pytorch_h5dataset-0.2.1.dist-info/RECORD,,
