@@ -1,0 +1,11 @@
+need_an_image/__init__.py,sha256=EoBSoyIBzq7RZcfoX41GBxYYt_UZ1e2-psxyFN1xgUs,534
+need_an_image/engines/__init__.py,sha256=x1Oe58KCuPZm6r81m2zOSiCjxzAMMxnuxz5tCds0GIM,89
+need_an_image/engines/bing.py,sha256=zFSO6wSlO8ngwpVybZbLGTIXSYdh4PK2Ybr34096mgo,2928
+need_an_image/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+need_an_image/utils/decorators.py,sha256=Ak_nvfmf0CS3zEliXRYWCA2Cbv9S9uAkGrKsOEuS7tY,552
+need_an_image/utils/store.py,sha256=roPgfLW-trGQgmTpWL-fNf6SJTn85Akr5XzrY9qrNW8,455
+i_need_an_image-0.3.4.dist-info/LICENSE,sha256=l6aOXWhBugJpoJA1NHhovUi2vb3HQUBpETkQRJalj_4,1066
+i_need_an_image-0.3.4.dist-info/METADATA,sha256=OunlbUMXz1zhuViz6CGPkLsC9s-SBmcamCu3N3UnbWM,2110
+i_need_an_image-0.3.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+i_need_an_image-0.3.4.dist-info/top_level.txt,sha256=UHjLvz5EIwvK_U4Nhycnp9uzJf7DvX3-Dzu4grVoEyY,14
+i_need_an_image-0.3.4.dist-info/RECORD,,
