@@ -1,0 +1,10 @@
+pyyaml>=5.4.1
+
+[dev]
+sphinx~=4.4.0
+sphinx-rtd-theme~=1.0.0
+Pygments~=2.11.2
+
+[mypy]
+mypy
+types-PyYAML
