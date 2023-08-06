@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: nqdc
+Version: 0.0.1
+Summary: Download neuroimaging articles and extract text and stereotactic coordinates.
+Home-page: https://neuroquery.github.io/nqdc/
+Author: Jérôme Dockès
+Author-email: jerome@dockes.org
+Maintainer: Jérôme Dockès
+Maintainer-email: jerome@dockes.org
+License: MIT License
+Description: UNKNOWN
+Keywords: neuroimaging,meta-analysis,text-mining
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Provides-Extra: dev

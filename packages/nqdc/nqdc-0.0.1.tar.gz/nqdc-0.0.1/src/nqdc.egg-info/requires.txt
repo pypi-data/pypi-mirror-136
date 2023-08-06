@@ -1,0 +1,16 @@
+lxml
+neuroquery
+numpy
+pandas
+requests
+scikit-learn
+scipy
+
+[dev]
+pytest
+coverage
+pytest-cov
+flake8
+mypy
+types-requests
+pdoc
