@@ -1,0 +1,17 @@
+CHANGELOG.md
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/tox_gh_matrix/__init__.py
+src/tox_gh_matrix/plugin.py
+src/tox_gh_matrix/version.py
+src/tox_gh_matrix/version_utils.py
+src/tox_gh_matrix.egg-info/PKG-INFO
+src/tox_gh_matrix.egg-info/SOURCES.txt
+src/tox_gh_matrix.egg-info/dependency_links.txt
+src/tox_gh_matrix.egg-info/entry_points.txt
+src/tox_gh_matrix.egg-info/requires.txt
+src/tox_gh_matrix.egg-info/top_level.txt
+src/tox_gh_matrix.egg-info/zip-safe
