@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: arweave-client-python
+Version: 1.0.15.dev0
+Summary: Client interface for sending transactions on the Arweave permaweb
+Home-page: https://github.com/george-omosun-e/arweave-python-client
+Author: George Omosun E.
+Author-email: george@blacheinc.com
+License: UNKNOWN
+Download-URL: https://github.com/george-omosun-e/arweave-python-client
+Keywords: arweave,crypto,python
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+License-File: LICENSE
+
+UNKNOWN
+
