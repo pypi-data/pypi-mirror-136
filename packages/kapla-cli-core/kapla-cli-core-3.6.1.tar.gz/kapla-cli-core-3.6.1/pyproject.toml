@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "kapla-cli-core"
+version = "3.6.1"
+description = ""
+authors = ["Guillaume Charbonnier <guillaume.charbonnier@araymond.com>"]
+packages = [{ include = "kapla" }]
+
+[tool.poetry.dependencies]
+python = ">=3.7,<4.0"
+typer = "0.*"
+loguru = "0.*"
+pydantic = "1.*"
+tomlkit = "0.*"
+stdlib-list = "0.*"
+python-on-whales = "0.*"
+rich = "11.*"
+colorama = "0.*"
+
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
