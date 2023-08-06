@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: pySolution
+Version: 0.0.2
+Summary: Computes details of solution for modeling purposes
+Home-page: UNKNOWN
+Author: Sartaaj Khan
+License: UNKNOWN
+Keywords: python,solution chemistry,activity coefficient,osmosis,reverse osmosis,chemistry
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scipy
+Requires-Dist: joblib
+Requires-Dist: proplot
+Requires-Dist: matplotlib
+
+
+A package that was created for the purpose of process modeling in different membranes. This is a solution chemistry toolkit
+that can compute details of "saline" solutions such as the activity coefficient of each ion (using the Pitzer model),
+osmotic coefficient, ionic strength, density of the solution, etc.
+
+
