@@ -1,0 +1,5 @@
+setup.py
+src/Lateksii_invoicegen.egg-info/PKG-INFO
+src/Lateksii_invoicegen.egg-info/SOURCES.txt
+src/Lateksii_invoicegen.egg-info/dependency_links.txt
+src/Lateksii_invoicegen.egg-info/top_level.txt
