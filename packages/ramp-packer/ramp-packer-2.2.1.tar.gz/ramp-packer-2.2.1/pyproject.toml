@@ -1,0 +1,48 @@
+[tool.poetry]
+name = "ramp-packer"
+version = "2.2.1"
+description = "Packs for Redis modules into a distributable format"
+authors = [ "Redis OSS <oss@redis.com>" ]
+license = "BSD-2-Clause"
+readme = "README.md"
+classifiers = [
+  "Topic :: Database",
+  "Programming Language :: Python",
+  "Intended Audience :: Developers",
+  "Programming Language :: Python :: 2.7",
+  "Programming Language :: Python :: 3.6",
+  "Programming Language :: Python :: 3.7",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "License :: OSI Approved :: BSD License",
+  "Development Status :: 4 - Beta"
+]
+
+  [[tool.poetry.packages]]
+  include = "RAMP"
+
+  [tool.poetry.scripts]
+  ramp = "RAMP.ramp:ramp"
+
+  [tool.poetry.dependencies]
+  python = "^2.7,<2.8 || >= 3.6,<4"
+  redis = "^3.5.3"
+  PyYAML = "5.3.1"
+  semantic-version = "^2.8.5"
+  typing = "^3.0.0"
+
+    [[tool.poetry.dependencies.click]]
+    version = "^7"
+    python = "~2.7"
+
+    [[tool.poetry.dependencies.click]]
+    version = "^8"
+    python = ">=3.6"
+
+  [tool.poetry.dev-dependencies]
+  coverage = "^5.4"
+
+[build-system]
+requires = [ "poetry-core>=1.0.0" ]
+build-backend = "poetry.core.masonry.api"
