@@ -1,0 +1,5 @@
+numpy
+scikit-learn
+scipy
+tqdm
+uravu>=1.2.5
