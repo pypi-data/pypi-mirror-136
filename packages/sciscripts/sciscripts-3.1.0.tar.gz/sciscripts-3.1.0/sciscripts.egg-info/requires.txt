@@ -1,0 +1,8 @@
+asdf
+h5py
+matplotlib
+numpy
+pandas
+pyserial
+scipy
+sounddevice
