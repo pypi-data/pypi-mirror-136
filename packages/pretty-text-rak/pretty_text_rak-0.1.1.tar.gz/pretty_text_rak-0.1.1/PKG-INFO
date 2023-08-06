@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: pretty-text-rak
+Version: 0.1.1
+Summary: 
+Author: Rakesh Singh
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: pyfiglet (>=0.8.post1,<0.9)
+Requires-Dist: termcolor (>=1.1.0,<2.0.0)
