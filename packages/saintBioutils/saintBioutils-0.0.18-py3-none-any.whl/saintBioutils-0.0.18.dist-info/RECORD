@@ -1,0 +1,15 @@
+saintBioutils/__init__.py,sha256=qxiYgdjd29iZIBkYAZrQK5zMGM7ulNOkIv6wgAjIZxE,1520
+saintBioutils/genbank/__init__.py,sha256=N17ql0H-qOOMFjOhZgBzHvY2Kcwvf629udLh4xYUkm4,2751
+saintBioutils/genbank/get_genomes.py,sha256=vepAx5PaKwjQC6JGa1TH1VOVTX0h5ACvyWh23uzESxU,6151
+saintBioutils/genbank/parse_genomes.py,sha256=4-Afd3I_UCARxroCwLAFJQ7pNzgWoaFoF4cFc5DqV78,4549
+saintBioutils/misc/__init__.py,sha256=ifUAS85uVtUYurYKLS_VbNaNHZDsTpB3R4T0oLq8BP8,2373
+saintBioutils/uniprot/__init__.py,sha256=pqDHtUAeWgL7RUq2CQtZ0MD7R94fvDQN2z52eTwdOsw,4450
+saintBioutils/utilities/__init__.py,sha256=piFL23lj5pdkb0l4_I2oxZJBNolGCvKPA4sXE_COi14,1545
+saintBioutils/utilities/file_io/__init__.py,sha256=5-JoioHMNyYEd0FmhlRKEPODRT18y0P6t5IfAHyWBwc,3050
+saintBioutils/utilities/file_io/get_paths.py,sha256=h2DYRwlDGNINiAHl-mkdsbJaOfumlvWkYL7y6GhnfFc,4678
+saintBioutils/utilities/logger/__init__.py,sha256=hmTkEBVFXztstk-dKeCVadz8-e3EQnliow60i3hYEiM,3600
+saintBioutils-0.0.18.dist-info/LICENSE,sha256=VlfN1LA7SpBEgEWGetGZClnmxeR48Ww-azBpuv_OnK0,1184
+saintBioutils-0.0.18.dist-info/METADATA,sha256=5KoVYPilDdQIdJc_Z893RrsnC603Ud3hYM-zUOeZwSE,2501
+saintBioutils-0.0.18.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+saintBioutils-0.0.18.dist-info/top_level.txt,sha256=Fb8w87VcfxmsMcPERCYb-wil4-ykicEi2xaEF2OcQLg,14
+saintBioutils-0.0.18.dist-info/RECORD,,
