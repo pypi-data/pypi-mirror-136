@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+autolv/__init__.py
+autolv/datatypes.py
+autolv/interface.py
+autolv/vistrings.py
+autolv.egg-info/PKG-INFO
+autolv.egg-info/SOURCES.txt
+autolv.egg-info/dependency_links.txt
+autolv.egg-info/requires.txt
+autolv.egg-info/top_level.txt
