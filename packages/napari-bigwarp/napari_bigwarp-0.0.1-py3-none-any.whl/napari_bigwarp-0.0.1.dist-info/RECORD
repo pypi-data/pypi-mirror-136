@@ -1,0 +1,11 @@
+napari_bigwarp/__init__.py,sha256=rei4W-pXayQ377aPgAU19oFOh-rPEDiP-wG0QfbBUVg,162
+napari_bigwarp/_bigwarp_widget.py,sha256=il-i8B3_2wOFdvDCMvDV28zQ4LFZ8gSeOQ9ZbyYIJds,7434
+napari_bigwarp/bigwarp.py,sha256=oiYqnyW5zzefI9dLWabYoKF3gJqLkSGIHUsymDW182A,975
+napari_bigwarp/_tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+napari_bigwarp/_tests/test_dock_widget.py,sha256=uBd6cl_s120NneFsTHOae-eeVRApLkNq55BwsNDPy2k,924
+napari_bigwarp-0.0.1.dist-info/LICENSE,sha256=vTB57Mu21kiq9EpMvCPapn9usV3h9_ExiD7buRCYNmY,1483
+napari_bigwarp-0.0.1.dist-info/METADATA,sha256=-QqlQMOZZgaBbv6IrcII_TU4QvuCHi1qUm9piAqLJ9M,3971
+napari_bigwarp-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+napari_bigwarp-0.0.1.dist-info/entry_points.txt,sha256=8lVtBXhhdv6tM8Qoxiogwa_JfWd69sBqrehSBqpLdnk,49
+napari_bigwarp-0.0.1.dist-info/top_level.txt,sha256=nx3Q852k7QpGgLxBxv_mnDh6W7wfxZhpNfxGGwyT0qc,15
+napari_bigwarp-0.0.1.dist-info/RECORD,,
