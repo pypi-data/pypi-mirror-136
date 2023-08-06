@@ -1,0 +1,64 @@
+Metadata-Version: 2.1
+Name: kbot-py-client
+Version: 1.0.1
+Summary: Client for Konverso Kbot
+Home-page: https://www.konverso.ai
+Author: Konverso
+Author-email: contact@konverso.ai
+License: UNKNOWN
+Description: # README #
+        This package contains utilities which you may use to easily interact with Konverso Kbot application. 
+         
+        In particular, you may:
+        
+        * Invoke some of the APIs to view / update / create Kbot configuration objects such as Intents, Message, etc.
+        * Collect metrics showing how the bot is performing.
+        * Create a Conversation and interact with it, sending message and getting responses
+        
+        # See also #
+        
+        ## Access Konverso Support
+        You may contact us: 
+        
+        * For any commercial inquiry: contact@konverso.ai
+        * For support: https://konverso.atlassian.net/servicedesk/customer/portals
+        
+        ## Alliance for Open ChatBot
+        Alternatively, you may also connect using the standard Alliance for Open Chatbot APIs to any Konverso bot: 
+        See a ready to use python package: https://github.com/konverso-ai/open-chatbot-py-client
+         
+        ### Installation ###
+        
+        You may use pip3 to install the software on your Kbot instance: 
+        
+        First Navigate to your work-area and then invoke: 
+        
+        	pip3 install -e git+https://konverso@bitbucket.org/konversoai/kbot-py-client.git
+        
+        # Usage #
+        
+        You would typically first need to login and then invoke some of the API wrapped methods.
+        
+        ## Login ##
+        
+        	import json
+        	
+        	from kbot_client import Client
+        	
+        	cli = Client("metabot.konverso.ai")
+        	cli.login("monitor", "mysecretcodehere")
+        	
+        
+        ## Collect metrics ##
+        Once authenticated, you can for example retrieve useful usage metrics, these can be used by a Monitoring application or for some business intelligence rendering: 
+        
+        	metrics = cli.metric().json()
+        	print("Collected metrics:")
+        	print(json.dumps(metrics, indent=4))
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
