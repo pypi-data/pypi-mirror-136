@@ -1,0 +1,9 @@
+.cache/
+dist/
+*.egg-info/
+README.rst
+build/
+*.png
+.pytest_cache/
+.coverage
+.tox/
