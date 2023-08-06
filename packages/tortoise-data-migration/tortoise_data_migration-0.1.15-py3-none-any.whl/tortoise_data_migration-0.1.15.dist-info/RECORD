@@ -1,0 +1,7 @@
+tortoise_data_migration/__init__.py,sha256=oc597J1BEIg63Y86qUvG9ioFHO5oHBuD1vHEhttT2ok,3169
+tortoise_data_migration/exception.py,sha256=TuG9crhVY9aBxR0HLt1e5WCv1Suskq-bTzHPF7gCL5I,106
+tortoise_data_migration/models.py,sha256=VRT4N6f1Un5X4ML7JPqgX-mbWg4Hr3I1CkH5s6cFAtU,143
+tortoise_data_migration-0.1.15.dist-info/LICENSE,sha256=cEPO608YBUIpVXezOyLF5UMQ7Ldb0c1gYgokC-Q1IPU,1068
+tortoise_data_migration-0.1.15.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+tortoise_data_migration-0.1.15.dist-info/METADATA,sha256=ApNjsBIezbF9KbjL5QHMVjA-mdT2K4hpWXkHiAUZWYg,3851
+tortoise_data_migration-0.1.15.dist-info/RECORD,,
