@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "utubetomp"
+version = "0.1.0.1"
+description = "Converts a YouTube video to MP4 or MP3.."
+authors = ["Russian-Dev"]
+license = "None"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.0"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
