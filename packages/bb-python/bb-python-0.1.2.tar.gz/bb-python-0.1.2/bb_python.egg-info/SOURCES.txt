@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.py
+bb/__init__.py
+bb/util.py
+bb/lib/darwin_amd64/bb
+bb/lib/linux_386/bb
+bb_python.egg-info/PKG-INFO
+bb_python.egg-info/SOURCES.txt
+bb_python.egg-info/dependency_links.txt
+bb_python.egg-info/top_level.txt
