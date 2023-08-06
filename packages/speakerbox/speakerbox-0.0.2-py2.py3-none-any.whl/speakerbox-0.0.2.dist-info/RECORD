@@ -1,0 +1,10 @@
+speakerbox/__init__.py,sha256=SQLUaypQKLBd76PYBDX5PIbrflaH8izn1mCiGW8FNTs,311
+speakerbox/datasets.py,sha256=PB3KP0P2_47tBd9ymY3UzjZAZPXULuYVWUno0C2CBFA,11867
+speakerbox/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+speakerbox/data/seattle-2021-proto.zip,sha256=tVMKB-1qPWNyu7Pc5UbguVGuuCdznBuXcNEbFaoM33E,37352
+speakerbox-0.0.2.dist-info/LICENSE,sha256=aA9uAF_cbVB6JUHbwXT3Y95uh6P8wRDh_xJraTEIpcI,1081
+speakerbox-0.0.2.dist-info/METADATA,sha256=WxcIRD0XBCceeZi_BirMKXI8ZYWkZTQQBvlsHJLXD7I,4948
+speakerbox-0.0.2.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+speakerbox-0.0.2.dist-info/entry_points.txt,sha256=eqGnTHtEVMYwfXVk1Z9MhC8O2N8wuqAbr0lisLmrkxs,20
+speakerbox-0.0.2.dist-info/top_level.txt,sha256=HXboj2aHRpz6BULCBzir4WLcwuA5VdXZB3OXoLEr3dM,11
+speakerbox-0.0.2.dist-info/RECORD,,

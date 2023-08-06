@@ -1,0 +1,119 @@
+Metadata-Version: 2.1
+Name: speakerbox
+Version: 0.0.2
+Summary: Speaker Annotation for Transcripts using Audio Classification
+Home-page: https://github.com/CouncilDataProject/speakerbox
+Author: Jackson Maxfield Brown
+Author-email: jmaxfieldbrown@gmail.com
+License: MIT license
+Keywords: speakerbox
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: cdp-backend (>=3.0.3)
+Requires-Dist: pandas (>=1.4.0)
+Provides-Extra: all
+Requires-Dist: cdp-backend (>=3.0.3) ; extra == 'all'
+Requires-Dist: pandas (>=1.4.0) ; extra == 'all'
+Requires-Dist: pytest-runner (>=5.2) ; extra == 'all'
+Requires-Dist: black (>=19.10b0) ; extra == 'all'
+Requires-Dist: codecov (>=2.1.4) ; extra == 'all'
+Requires-Dist: flake8 (>=3.8.3) ; extra == 'all'
+Requires-Dist: flake8-debugger (>=3.2.1) ; extra == 'all'
+Requires-Dist: isort (>=5.7.0) ; extra == 'all'
+Requires-Dist: mypy (>=0.790) ; extra == 'all'
+Requires-Dist: pytest (>=5.4.3) ; extra == 'all'
+Requires-Dist: pytest-cov (>=2.9.0) ; extra == 'all'
+Requires-Dist: pytest-raises (>=0.11) ; extra == 'all'
+Requires-Dist: tox (>=3.15.2) ; extra == 'all'
+Requires-Dist: bump2version (>=1.0.1) ; extra == 'all'
+Requires-Dist: coverage (>=5.1) ; extra == 'all'
+Requires-Dist: jupyterlab (>=3.2.8) ; extra == 'all'
+Requires-Dist: m2r2 (>=0.2.7) ; extra == 'all'
+Requires-Dist: Sphinx (>=3.4.3) ; extra == 'all'
+Requires-Dist: sphinx-rtd-theme (>=0.5.1) ; extra == 'all'
+Requires-Dist: twine (>=3.1.1) ; extra == 'all'
+Requires-Dist: wheel (>=0.34.2) ; extra == 'all'
+Provides-Extra: dev
+Requires-Dist: pytest-runner (>=5.2) ; extra == 'dev'
+Requires-Dist: black (>=19.10b0) ; extra == 'dev'
+Requires-Dist: codecov (>=2.1.4) ; extra == 'dev'
+Requires-Dist: flake8 (>=3.8.3) ; extra == 'dev'
+Requires-Dist: flake8-debugger (>=3.2.1) ; extra == 'dev'
+Requires-Dist: isort (>=5.7.0) ; extra == 'dev'
+Requires-Dist: mypy (>=0.790) ; extra == 'dev'
+Requires-Dist: pytest (>=5.4.3) ; extra == 'dev'
+Requires-Dist: pytest-cov (>=2.9.0) ; extra == 'dev'
+Requires-Dist: pytest-raises (>=0.11) ; extra == 'dev'
+Requires-Dist: tox (>=3.15.2) ; extra == 'dev'
+Requires-Dist: bump2version (>=1.0.1) ; extra == 'dev'
+Requires-Dist: coverage (>=5.1) ; extra == 'dev'
+Requires-Dist: jupyterlab (>=3.2.8) ; extra == 'dev'
+Requires-Dist: m2r2 (>=0.2.7) ; extra == 'dev'
+Requires-Dist: Sphinx (>=3.4.3) ; extra == 'dev'
+Requires-Dist: sphinx-rtd-theme (>=0.5.1) ; extra == 'dev'
+Requires-Dist: twine (>=3.1.1) ; extra == 'dev'
+Requires-Dist: wheel (>=0.34.2) ; extra == 'dev'
+Provides-Extra: setup
+Requires-Dist: pytest-runner (>=5.2) ; extra == 'setup'
+Provides-Extra: test
+Requires-Dist: black (>=19.10b0) ; extra == 'test'
+Requires-Dist: codecov (>=2.1.4) ; extra == 'test'
+Requires-Dist: flake8 (>=3.8.3) ; extra == 'test'
+Requires-Dist: flake8-debugger (>=3.2.1) ; extra == 'test'
+Requires-Dist: isort (>=5.7.0) ; extra == 'test'
+Requires-Dist: mypy (>=0.790) ; extra == 'test'
+Requires-Dist: pytest (>=5.4.3) ; extra == 'test'
+Requires-Dist: pytest-cov (>=2.9.0) ; extra == 'test'
+Requires-Dist: pytest-raises (>=0.11) ; extra == 'test'
+Requires-Dist: tox (>=3.15.2) ; extra == 'test'
+
+# speakerbox
+
+[![Build Status](https://github.com/CouncilDataProject/speakerbox/workflows/Build/badge.svg)](https://github.com/CouncilDataProject/speakerbox/actions)
+[![Documentation](https://github.com/CouncilDataProject/speakerbox/workflows/Documentation/badge.svg)](https://CouncilDataProject.github.io/speakerbox)
+[![Code Coverage](https://codecov.io/gh/CouncilDataProject/speakerbox/branch/main/graph/badge.svg)](https://codecov.io/gh/CouncilDataProject/speakerbox)
+
+Speaker Annotation for Transcripts using Audio Classification
+
+---
+
+## Installation
+
+**Stable Release:** `pip install speakerbox`<br>
+**Development Head:** `pip install git+https://github.com/CouncilDataProject/speakerbox.git`
+
+## Documentation
+
+For full package documentation please visit [councildataproject.github.io/speakerbox](https://councildataproject.github.io/speakerbox).
+
+## Quickstart
+
+Load the 2021 Seattle Prototype Dataset, get summary statistics
+about speaker time, finally pull the matching audio file for each annotation file
+and store annotation file matched to audio as a `pandas.DataFrame`.
+
+```python
+from speakerbox import datasets
+
+seattle_2021_ds_dir = datasets.unpack_seattle_2021_proto(clean=True)
+seattle_2021_ds_summary_stats = datasets.summarize_annotation_statistics(
+    seattle_2021_ds_dir / "annotations"
+)
+seattle_2021_ds = datasets.pull_seattle_2021_proto_audio()
+```
+
+## Development
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for information related to developing the code.
+
+**MIT license**
+
+
