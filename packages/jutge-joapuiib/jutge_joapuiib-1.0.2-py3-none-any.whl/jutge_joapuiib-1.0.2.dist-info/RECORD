@@ -1,0 +1,15 @@
+jutge/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jutge/check_repo.py,sha256=qr4mCmK17LdXy10deLFdy2A6LxW8YLLcGKoIiMLaNKk,772
+jutge/grade_repo.py,sha256=GhdQc1gDGgYRVnQfbn6VNhDZPWlNPxvt8XRuLYmonfs,5951
+jutge/process.py,sha256=wexRjLBPgcBKICPC6vmB8OjYbwsJm0qjT4d39IB38g4,1684
+jutge/status.py,sha256=2NxbCoAZEpT2VoSBBMR4xjIQvT5RYnBcc04zKHm-maM,894
+jutge/utils.py,sha256=_7XaV7wQQ3IywXz8D37SMB87C50L86fxhGwxYlT3oIc,7111
+jutge/judges/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jutge/judges/base_judge.py,sha256=fjZF8ia3E4a3t4jatIxQBd3laGYa6TqgmaamX5Pa5Mo,290
+jutge/judges/java_judge.py,sha256=PeZskQ3Y1KvaDndDZAd-s6fwwZJXHoSEkUmFdJkGOjM,6873
+jutge/judges/sql_judge.py,sha256=eQtsOfizRpC7Sx5UOpeTeUDaq2KjF_ZUhFbe02ND9Jg,13828
+jutge_joapuiib-1.0.2.dist-info/METADATA,sha256=PoaOgQfXPno22W96IyUGWRy6M86gHt9c5cX_5AJi8XA,1561
+jutge_joapuiib-1.0.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+jutge_joapuiib-1.0.2.dist-info/entry_points.txt,sha256=kUK2Cn61iEANtKyIotSicKlKOh9UTxblXsGnV-Q6jps,89
+jutge_joapuiib-1.0.2.dist-info/top_level.txt,sha256=irrVRnCHQea1zAMaDKBpbfoCv50uKGJcGDNEj6SvDqk,6
+jutge_joapuiib-1.0.2.dist-info/RECORD,,
