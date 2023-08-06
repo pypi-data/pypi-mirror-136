@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+decfunc/__init__.py
+decfunc.egg-info/PKG-INFO
+decfunc.egg-info/SOURCES.txt
+decfunc.egg-info/dependency_links.txt
+decfunc.egg-info/top_level.txt
