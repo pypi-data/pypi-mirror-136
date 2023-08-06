@@ -1,0 +1,8 @@
+pytest_trytond/__init__.py,sha256=DsAHdxLC16H2VjdFOU5tBx2xT9VnNQ-XbTS24fRCa_w,22
+pytest_trytond/plugin.py,sha256=386DAqCOn5SP_Yl_G8TJeRws_PwbvbBa7NtxnRg_0j8,2382
+pytest_trytond/tools.py,sha256=f_tsOWYw2Btv2b6L7a6umUEK_NyU7QHxLhxzXTO6eQw,2146
+pytest_trytond-0.0.1.dist-info/METADATA,sha256=NwXgZYQkTkkcRBE854s8tlwERMNoDsCHt-XM1NPrUXs,1060
+pytest_trytond-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pytest_trytond-0.0.1.dist-info/entry_points.txt,sha256=gOHuQzUHeut_pMkywzCXEGpd6jaT8csVSzHVfAYfsDE,44
+pytest_trytond-0.0.1.dist-info/top_level.txt,sha256=Tu0RxhvVtHM1hvsaEoGGFdz_BkXcJ5ECgvFoCcoT7tk,15
+pytest_trytond-0.0.1.dist-info/RECORD,,
