@@ -1,0 +1,13 @@
+autocorns/DarkForest.py,sha256=bUtBPxUNALWx4InAF6SnvPauKsz9BhtyHQVyJQTiJA0,44318
+autocorns/ERC721.py,sha256=ZUbgn0TzCEzt4LhB2RTWp3XtQrZkTsQhT25dVze9pJg,20761
+autocorns/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+autocorns/cli.py,sha256=fpUJHpV0LBO8MvwzWRJAI8P_k0V0MFwqatjfrfWPSsM,465
+autocorns/warden.py,sha256=exygPJ1p1LSwJeBWClkW_CXtZ3q7GiBGWB2CkDti_vQ,3066
+autocorns/build/contracts/DarkForest.json,sha256=WxRrfODzRQJr6SxXJNF2YsPWoLH-JZwsJYa_xvhZuQc,15361
+autocorns/build/contracts/ERC721.json,sha256=gbDPHPxVvOe4m9tGQj2ULsni1KxraZbtxGMwLhaHnOc,8735
+autocorns-0.0.4.dist-info/LICENSE,sha256=Vu5VEwbB3yP9qKnc7fBqttGXXkDU5Wq3uquHwOGbIxQ,1071
+autocorns-0.0.4.dist-info/METADATA,sha256=Z6caPA4fSCyg98IPAjpb5MNDT9NqNAJtxVcF_FyG1X4,2057
+autocorns-0.0.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+autocorns-0.0.4.dist-info/entry_points.txt,sha256=BldwB5q7MLVzFFYgFDMCiEJ1VlvgAgIjfoPoqieZYzo,50
+autocorns-0.0.4.dist-info/top_level.txt,sha256=bBfFyiJvh7jjKi0vltL0l9cVj6dGavsZI0OlK0VmDXU,10
+autocorns-0.0.4.dist-info/RECORD,,
