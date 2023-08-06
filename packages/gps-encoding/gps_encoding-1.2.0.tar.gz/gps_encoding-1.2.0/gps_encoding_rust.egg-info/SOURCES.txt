@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+gps_encoding/__init__.py
+gps_encoding_rust.egg-info/PKG-INFO
+gps_encoding_rust.egg-info/SOURCES.txt
+gps_encoding_rust.egg-info/dependency_links.txt
+gps_encoding_rust.egg-info/not-zip-safe
+gps_encoding_rust.egg-info/top_level.txt

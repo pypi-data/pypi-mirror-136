@@ -1,0 +1,14 @@
+[package]
+name = "gps_encoding"
+version = "1.2.0"
+edition = "2018"
+authors = ["Raphael Stefanini <raphael@rphlo.com>"]
+classifier = ["Programming Language :: Python"]
+
+[lib]
+name = "gps_encoding"
+crate-type = ["cdylib"]
+
+[dependencies.cpython]
+version = "0.6"
+features = ["extension-module"]
