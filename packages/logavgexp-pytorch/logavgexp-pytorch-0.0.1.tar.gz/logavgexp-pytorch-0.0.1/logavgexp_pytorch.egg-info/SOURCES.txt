@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+logavgexp_pytorch/__init__.py
+logavgexp_pytorch/logavgexp_pytorch.py
+logavgexp_pytorch.egg-info/PKG-INFO
+logavgexp_pytorch.egg-info/SOURCES.txt
+logavgexp_pytorch.egg-info/dependency_links.txt
+logavgexp_pytorch.egg-info/requires.txt
+logavgexp_pytorch.egg-info/top_level.txt
