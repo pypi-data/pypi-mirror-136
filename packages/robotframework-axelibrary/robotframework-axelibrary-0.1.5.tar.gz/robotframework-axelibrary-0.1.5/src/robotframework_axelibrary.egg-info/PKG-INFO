@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: robotframework-axelibrary
+Version: 0.1.5
+Summary: Robot Framework keyword library wrapper around axe-selenium-python library
+Home-page: https://github.com/adiralashiva8/robotframework-axelibrary
+Author: Shiva Adirala
+Author-email: adiralashiva8@gmail.com
+License: MIT
+Keywords: robotframework testing automation axe-selenium-python
+Platform: any
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Testing
+License-File: LICENSE
+
+Robot Framework keyword library wrapper around the axe-selenium-python library.
+

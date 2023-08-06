@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+src/AxeLibrary/__init__.py
+src/AxeLibrary/axe.py
+src/AxeLibrary/version.py
+src/robotframework_axelibrary.egg-info/PKG-INFO
+src/robotframework_axelibrary.egg-info/SOURCES.txt
+src/robotframework_axelibrary.egg-info/dependency_links.txt
+src/robotframework_axelibrary.egg-info/requires.txt
+src/robotframework_axelibrary.egg-info/top_level.txt
