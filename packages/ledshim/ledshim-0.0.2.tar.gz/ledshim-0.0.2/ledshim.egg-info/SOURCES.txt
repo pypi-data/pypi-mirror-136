@@ -1,0 +1,12 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+ledshim/__init__.py
+ledshim/is31fl3731.py
+ledshim.egg-info/PKG-INFO
+ledshim.egg-info/SOURCES.txt
+ledshim.egg-info/dependency_links.txt
+ledshim.egg-info/top_level.txt
