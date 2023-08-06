@@ -1,0 +1,16 @@
+setup.py
+loess/CHANGELOG.rst
+loess/LICENSE.txt
+loess/README.rst
+loess/__init__.py
+loess/loess_1d.py
+loess/loess_2d.py
+loess.egg-info/PKG-INFO
+loess.egg-info/SOURCES.txt
+loess.egg-info/dependency_links.txt
+loess.egg-info/requires.txt
+loess.egg-info/top_level.txt
+loess.egg-info/zip-safe
+loess/examples/__init__.py
+loess/examples/loess_1d_example.py
+loess/examples/loess_2d_example.py
