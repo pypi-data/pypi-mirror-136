@@ -1,0 +1,16 @@
+pure_attention/__init__.py,sha256=jB_zx2sqEQ6MTaPtahN-7PNhzcLx24gLdW9bNH2M5H0,119
+pure_attention/backbone_bert/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pure_attention/backbone_bert/bert_layer.py,sha256=BeD_FvHeb6K6PoXZibaPLd_qSZotdk6TLTWPOQijdtw,13846
+pure_attention/backbone_bert/bert_model.py,sha256=BP5svT8SXqr0PXRm4x8ouWfRfKV41r1hkhSV-UDC0_I,7660
+pure_attention/backbone_bert/package.py,sha256=0U-oJvy5n9ngHbiex51rGjgb8xxRuq3J-XSRSzNGT3I,1056
+pure_attention/common/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pure_attention/common/activate.py,sha256=61KJ6rkCPV6_Aoel3OyEsE6LT-95WkpUDxNwnngG480,1069
+pure_attention/common/fetch_newest_version.py,sha256=7vXFL1N35q0HvGCVkga6NVNRSHeXORsAGMUuf-_xKp0,2023
+pure_attention/common/layers.py,sha256=UaoAvB5qYn6cpglURJi1OddgoRlpaX4QKuvgD6Xi3dE,1598
+pure_attention/common/logger.py,sha256=ZIYQkP9tYskNGXjbOMFDxVNGLzHxKYXCga7x-2SKMTY,2850
+pure_attention/common/nlp/__init__.py,sha256=UKxtr0wukxjKJIK6L50hX3-x3GsHYS9mJ2OOUoiCKD0,119
+pure_attention/common/nlp/tokenization.py,sha256=EJ3mjUoOWe8dpDEky3A5LwB8zl9vEqheOQ9ktWM_U6g,13760
+pure_attention-0.0.10.dist-info/METADATA,sha256=z92vFkWC4HxkvB-vwuYROXEUdVxSa4rrITGPIMN99KM,2952
+pure_attention-0.0.10.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pure_attention-0.0.10.dist-info/top_level.txt,sha256=6eFiPRHFHeJ-4G79qx0f-o6KhSFVJL7pcFCMZS7W4fY,15
+pure_attention-0.0.10.dist-info/RECORD,,
