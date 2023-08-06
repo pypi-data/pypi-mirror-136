@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: jw-nx
+Version: 1.1.2
+Summary: A Django app to conduct web-based polls.
+Home-page: UNKNOWN
+Author: ShayestehHS
+Author-email: shayestehhs1@Gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 3.2
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Requires-Python: >=3.8
+License-File: LICENSE
+
+=====
+JW-NX
+=====
+
+#ToDO
+
+Quick start
+-----------
+
+1. Add "jw_nx and knox" to your INSTALLED_APPS setting like this::
+
+    INSTALLED_APPS = [
+        ...
+        'knox',
+        'jw_nx',
+        ...
+    ]
+
+2. Include the polls URLconf in your project urls.py like this::
+
+    path('jw_nx/', include('jw_nx.urls')),
+
+3. Run ``python manage.py makemigrations``.
+4. Run ``python manage.py migrate``.
+
