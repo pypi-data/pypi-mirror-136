@@ -1,0 +1,42 @@
+#!/usr/bin/env python3
+# This file is placed in the Public Domain.
+
+
+"24/7 channel daemon"
+
+
+from bot.evt import Event
+from bot.fnc import format
+from bot.krn import Cfg, boot, kcmd, root, wait
+from bot.obj import Object, update, values
+from bot.prs import parse
+from bot.hdl import Handler
+from bot.thr import launch
+
+
+from bot.irc import IRC
+from bot.irc import Cfg as ICfg
+from bot.rss import Fetcher
+
+
+import bot.all
+
+
+ICfg.channel = "#botd"
+ICfg.nick = "botd"
+ICfg.username = "botd"
+ICfg.realname = "24/7 channel daemon"
+
+
+Cfg.wd = "/var/lib/botd/"
+
+
+def main():
+    i = IRC()
+    launch(i.start)
+    f = Fetcher()
+    f.start()
+    wait()
+
+
+main()
