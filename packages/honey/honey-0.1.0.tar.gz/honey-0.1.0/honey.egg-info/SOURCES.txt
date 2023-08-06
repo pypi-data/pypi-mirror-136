@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+setup.py
+honey/__init__.py
+honey.egg-info/PKG-INFO
+honey.egg-info/SOURCES.txt
+honey.egg-info/dependency_links.txt
+honey.egg-info/top_level.txt
