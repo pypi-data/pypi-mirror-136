@@ -1,0 +1,10 @@
+README.md
+setup.py
+eyja_elasticsearch_hub.egg-info/PKG-INFO
+eyja_elasticsearch_hub.egg-info/SOURCES.txt
+eyja_elasticsearch_hub.egg-info/dependency_links.txt
+eyja_elasticsearch_hub.egg-info/requires.txt
+eyja_elasticsearch_hub.egg-info/top_level.txt
+eyja_elasticsearch_hub.egg-info/zip-safe
+eyja_es/__init__.py
+eyja_es/es_hub.py
