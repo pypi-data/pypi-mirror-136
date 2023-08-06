@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: cogstream-py
+Version: 0.1.0
+Summary: CogStream: AI-based video analytics system
+Home-page: https://github.com/cognitivexr/cogstream
+Author: Thomas Rausch
+Author-email: thomas@cognitivexr.at
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: numpy (==1.19.4)
+Requires-Dist: opencv-python
+Requires-Dist: websocket-client
+
+UNKNOWN
+
+
