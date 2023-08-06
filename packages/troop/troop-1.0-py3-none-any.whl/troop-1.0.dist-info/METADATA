@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: troop
+Version: 1.0
+Summary: UNKNOWN
+Home-page: https://github.com/koogordo/troop
+Author: kieran gordon
+Author-email: koo.m.gordon@outlook.com
+License: MIT
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: networkx (==2.6.3)
+
+UNKNOWN
+
