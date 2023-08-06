@@ -1,0 +1,10 @@
+setup.py
+Landonius13_distributions/Binomialdistribution.py
+Landonius13_distributions/Gaussiandistribution.py
+Landonius13_distributions/Generaldistribution.py
+Landonius13_distributions/__init__.py
+Landonius13_distributions.egg-info/PKG-INFO
+Landonius13_distributions.egg-info/SOURCES.txt
+Landonius13_distributions.egg-info/dependency_links.txt
+Landonius13_distributions.egg-info/not-zip-safe
+Landonius13_distributions.egg-info/top_level.txt
