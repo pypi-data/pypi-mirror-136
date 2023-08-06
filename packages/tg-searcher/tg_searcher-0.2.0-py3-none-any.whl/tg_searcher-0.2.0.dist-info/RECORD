@@ -1,0 +1,13 @@
+tg_searcher/__init__.py,sha256=-bBNFYOq80A2Egtpo5V5zWJtYOxQfRZFQ_feve5lkFU,23
+tg_searcher/__main__.py,sha256=vBQ82334kX06ImDbFlPFgiBRiLIinwNk3z8Khs6hd74,31
+tg_searcher/backend_bot.py,sha256=jUZP0ypHJ7p06-lafe4W2z2Q6_0AHCC7Ex8heEN3tlc,8218
+tg_searcher/common.py,sha256=Ht0d1FlCsem0Kng2wjOLvN4fBeLXHGb4ULniZsTfagM,1726
+tg_searcher/frontend_bot.py,sha256=FUP7shlx0eMMeSoUIR1GCPFYYLeGfPoQL45kWgAWP4g,16610
+tg_searcher/indexer.py,sha256=7_P9dBBctf-8Jqr9DnCL5kiMU37tPaLJaoXOM7uEvjY,4932
+tg_searcher/main.py,sha256=fUjdpiv3L0lvV1eqO4jQVbKMhtG-lnmWZU9HowYtPK8,3043
+tg_searcher-0.2.0.dist-info/LICENSE,sha256=Mnu1ZZkZ5z86GCr7w9-FPsXBtXgVNPUbEkZgFsIFWe0,1063
+tg_searcher-0.2.0.dist-info/METADATA,sha256=8n_tkO0NYVODeBZj0-t6eaqAbys7r8saTLTY0r9qcvE,6911
+tg_searcher-0.2.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+tg_searcher-0.2.0.dist-info/entry_points.txt,sha256=oX9glGYeZmXcN5NEdQx-v7lM-FNHoRZd_2fEdQdssqw,50
+tg_searcher-0.2.0.dist-info/top_level.txt,sha256=Cp7mgx6m8HPJmxV9XNuOJXezkbJW-1go3IJLUzaeYa0,12
+tg_searcher-0.2.0.dist-info/RECORD,,
