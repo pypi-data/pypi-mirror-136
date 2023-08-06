@@ -1,0 +1,16 @@
+bobcat_miner/__init__.py,sha256=eP7W9kTE3vH1bQOZu6Soqk2TiR1uJB3a3C0IC9AOjCs,480
+bobcat_miner/api.py,sha256=XCjsdcjM45yEAQI5dfZa8UrkwmwdWYvCHjByVjUGg9A,5318
+bobcat_miner/autopilot.py,sha256=kznbY1J7aRjQEpx1W1b_vRwnHByVtJPzZsrthyTGm1M,7668
+bobcat_miner/base.py,sha256=a1FUDmHAMfOYIB611YZ_BJDsyp0ygEwuqJpna3uKb8I,1569
+bobcat_miner/bobcat.py,sha256=ungsHzDJp4rQSMsyIvJczPgusUuDf-kKgdyb_pjMqRk,8340
+bobcat_miner/cli.py,sha256=6SvziF02R0sy_hWJ6ym0_-RROEH1RUprV5POaB3qzvI,5280
+bobcat_miner/connection.py,sha256=yE6YY_T5HRoKl_qL0S8uZXG-oH9p3EdAHfLHqN8lQ8Q,7226
+bobcat_miner/constants.py,sha256=N6wSt0tJDr9n5KfcUXFjB9HxY6FFsV9No3G_VYJbZbE,236
+bobcat_miner/diagnoser.py,sha256=eAH9_VUfn_tKj4Fno_j8S1sVWzvtAMhCUd2SjFb7gKY,30258
+bobcat_miner/errors.py,sha256=WpIqFjYEsjx2p0NbZ3_zWzBripryTvbCvEPO9Y1Aaho,107
+bobcat_miner/logger.py,sha256=ApCJOTpxRDmD1rSBAii001zaMikQ7hWAXn62dxRFX24,6362
+bobcat_miner-0.12.0.dist-info/entry_points.txt,sha256=xOBBXsnptJ0WsGT12JqsDERMSNt8FcUDUxksmm1JN-M,47
+bobcat_miner-0.12.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+bobcat_miner-0.12.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+bobcat_miner-0.12.0.dist-info/METADATA,sha256=qbKWHypeRToqSYyp9p0ATdke_qRYeY8Qmq0lIMzqDaY,6648
+bobcat_miner-0.12.0.dist-info/RECORD,,
