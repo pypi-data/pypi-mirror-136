@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: yamhl
+Version: 0.0.0.0a2
+Summary: Yet Another Markdown 2 HTML Library
+Home-page: https://yamhl.pages.dev
+Author: whinee
+Author-email: whinyaan@gmail.com
+License: MIT
+Project-URL: Documentation, https://yamhl.pages.dev/docs
+Project-URL: Source, https://github.com/Pirate-Kings/yamhl
+Project-URL: Tracker, https://github.com/Pirate-Kings/yamhl/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+
+UNKNOWN
+
