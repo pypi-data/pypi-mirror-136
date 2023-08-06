@@ -1,0 +1,42 @@
+[tool.poetry]
+name = "homestead"
+version = "0.0.3"
+description = "Python \"framework\" built on top of several popular frameworks and tools such as FastAPI."
+authors = ["Brandon Braner <brandon.braner@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/HomesteadFramework/homestead"
+repository = "https://github.com/HomesteadFramework/homestead"
+keywords = ["FastAPI", "Homestead"]
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "License :: OSI Approved :: MIT License",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python",
+    "Topic :: Internet",
+    "Topic :: Software Development :: Libraries :: Application Frameworks",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Software Development",
+]
+
+[tool.poetry.scripts]
+craft = "homestead.craft.main:app"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.70.1"
+sqlmodel = "^0.0.6"
+typer = {extras = ["all"], version = "^0.4.0"}
+questionary = "^1.10.0"
+cookiecutter = "^1.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

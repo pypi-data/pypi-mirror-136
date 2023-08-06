@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: homestead
+Version: 0.0.3
+Summary: Python "framework" built on top of several popular frameworks and tools such as FastAPI.
+Home-page: https://github.com/HomesteadFramework/homestead
+License: MIT
+Keywords: FastAPI,Homestead
+Author: Brandon Braner
+Author-email: brandon.braner@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Internet
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: cookiecutter (>=1.0,<2.0)
+Requires-Dist: fastapi (>=0.70.1,<0.71.0)
+Requires-Dist: questionary (>=1.10.0,<2.0.0)
+Requires-Dist: sqlmodel (>=0.0.6,<0.0.7)
+Requires-Dist: typer[all] (>=0.4.0,<0.5.0)
+Project-URL: Repository, https://github.com/HomesteadFramework/homestead
+Description-Content-Type: text/markdown
+
+
