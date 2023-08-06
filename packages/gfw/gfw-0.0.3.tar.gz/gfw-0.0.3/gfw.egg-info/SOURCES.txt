@@ -1,0 +1,11 @@
+README.md
+setup.py
+gfw/__init__.py
+gfw/datasets.json
+gfw/gfw.py
+gfw.egg-info/PKG-INFO
+gfw.egg-info/SOURCES.txt
+gfw.egg-info/dependency_links.txt
+gfw.egg-info/entry_points.txt
+gfw.egg-info/requires.txt
+gfw.egg-info/top_level.txt
