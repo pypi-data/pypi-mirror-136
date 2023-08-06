@@ -1,0 +1,6 @@
+requests
+typing
+websocket-client==0.57.0
+setuptools
+json_minify
+six
