@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "cachingutils"
+version = "1.0.6"
+description = "Utilities to make caching data easier"
+authors = ["vcokltfre <vcokltfre@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/vcokltfre/cachingutils"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+lru-dict = "^1.1.7"
+
+[tool.poetry.dev-dependencies]
+black = "^21.12b0"
+isort = "^5.10.1"
+taskipy = "^1.9.0"
+pre-commit = "^2.16.0"
+
+[tool.taskipy.tasks]
+pre-commit = "pre-commit install"
+lint = "black . && isort --profile black ."
+
+[tool.black]
+line-length = 120
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
