@@ -1,0 +1,9 @@
+holeysheet/__init__.py,sha256=q40aQjEtbPYqJE3NT1O-g0pp7SyWX_Re4kQJy2yJDSM,65
+holeysheet/cli.py,sha256=D2kdxaPh8wHnjxDJvMW4x8hv3rHZ5tX2XY6TKWsKoV0,378
+holeysheet/excel.py,sha256=GYGMFM4t3zEig-E0RB-zC05jJSR_711g8Rj46-ywV7E,5385
+holeysheet/extract_data.py,sha256=NbpJEY6dg8cQDz_3Z63U7F0KC7vOVbSkDZogaKMsZek,330
+holeysheet/parser.py,sha256=jt495tFBS86HFfHsKQ5ezH9WwF-7mkDwR5LZvdeRQis,69
+holeysheet/schema.py,sha256=qU-9BEJ3xWiJ2L8q9jFCaFOYNhXtOeQjh6ZlapQbPpo,2470
+holeysheet-0.1.2.dist-info/WHEEL,sha256=DRf8A_Psd1SF2kVqTQOOFU1Xzl3-A2qljAxBMTOusUs,83
+holeysheet-0.1.2.dist-info/METADATA,sha256=NChzfM8spxYZqxBwLJozH8bKZdUI0b95E3fklzuL1Wc,453
+holeysheet-0.1.2.dist-info/RECORD,,
