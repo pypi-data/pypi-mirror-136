@@ -1,0 +1,3 @@
+[console_scripts]
+meshtastic-mqtt = meshtastic_mqtt.meshtastic_mqtt:main
+
