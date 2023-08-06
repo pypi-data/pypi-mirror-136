@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+crmeta/__init__.py
+crmeta/admin.py
+crmeta/apps.py
+crmeta/models.py
+crmeta/tests.py
+crmeta/views.py
+crmeta.egg-info/PKG-INFO
+crmeta.egg-info/SOURCES.txt
+crmeta.egg-info/dependency_links.txt
+crmeta.egg-info/requires.txt
+crmeta.egg-info/top_level.txt
