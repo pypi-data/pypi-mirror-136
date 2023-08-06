@@ -1,0 +1,10 @@
+pedalboard_native.cpython-36m-darwin.so,sha256=V8e3Nh15EmoCD4z83wmu0d5Wr5A7weo7jBqQFbvJ5Dg,9793232
+pedalboard/__init__.py,sha256=fjqTFeKx6JDK5M6IuWQRRl0kUsj5IzdEJfM9EgatMRU,865
+pedalboard/pedalboard.py,sha256=7skeijxg2mO0vfNcFOPEZ5nqyyKTUErm1jrr1FVZHmc,27552
+pedalboard/version.py,sha256=6uYtNtc79APJtZ3Ov7u40FQXtq_mvGez900Zt8RMhr4,684
+pedalboard-0.3.14.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+pedalboard-0.3.14.dist-info/METADATA,sha256=1voEd_M8Z2r2wiakCt0-034OuE5teNznOGXmevYu0ZE,13082
+pedalboard-0.3.14.dist-info/NOTICE,sha256=0f9GCXYbfqFLpqAZPM5Zk_TdQx7s6EMTittG6GS5Rg0,573
+pedalboard-0.3.14.dist-info/WHEEL,sha256=ye8A2lA8pjGNe7-ueOpggarJAhczq3EZGqnLZzzfQYQ,110
+pedalboard-0.3.14.dist-info/top_level.txt,sha256=jXwDvqMjquuPLra-PGmmayt3AFe5_l7hpSqbUgOvP9g,29
+pedalboard-0.3.14.dist-info/RECORD,,
