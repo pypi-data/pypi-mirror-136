@@ -1,0 +1,13 @@
+lppa/__init__.py,sha256=K8k8rAyOmU3cQF68TZ_kTKGPCtx-f022vIteL4Qi3x4,1714
+lppa/__main__.py,sha256=2RHksYTCnP9wiNQYiWEn-wtP_k7kmOyXBA3G1qd4VQA,718
+lppa/auth.py,sha256=MoO__i0IgIIsnuj2tJ8PDnv7l71iXz1-Z8YHxWUy3PY,3097
+lppa/cli.py,sha256=f3hG2iBzpGGJUIuQirWEpiiMzFafDc_HV7jkxuI6cYA,3792
+lppa/ppa.py,sha256=6JN-Panw-HjsDvUsGYlrYBIkE8H6TkhQSR5kF9BpvGU,5163
+lppa/processors.py,sha256=8FTXhQkjY2pcMGjGRB1b3aUCW2MVwmQjCCeLZyAYNMw,2188
+lppa/utils.py,sha256=-LLsTfwgLXC75Zl_VUlLnX0d_S4AacLZu565903Eh9M,954
+lppa-0.2.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+lppa-0.2.1.dist-info/METADATA,sha256=8fhT9WwvNj40uXs-rfOizDyqrje-boRKCmdoI_DE0lA,2749
+lppa-0.2.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+lppa-0.2.1.dist-info/entry_points.txt,sha256=zYcPM_RCdTH5-hY7RMCsLaCfH9GHSG4yzcdBbGQ-Ngk,39
+lppa-0.2.1.dist-info/top_level.txt,sha256=WpA2dpwG-CblDf4JwBLInEwauToye0Lyl6jJBQezqcM,5
+lppa-0.2.1.dist-info/RECORD,,
