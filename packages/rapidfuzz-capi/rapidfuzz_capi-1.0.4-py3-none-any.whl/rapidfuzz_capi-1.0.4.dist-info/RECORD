@@ -1,0 +1,9 @@
+rapidfuzz_capi/__init__.pxd,sha256=BOILi0YlCzju_VAu_SApjSWHS2TPAaqpuBBnLm9ZEyc,2121
+rapidfuzz_capi/__init__.py,sha256=H27r1folLfJXxu67UZEIeOaKPMJx0b19M4CeNKMhcFk,606
+rapidfuzz_capi/rapidfuzz_capi.h,sha256=cUpId3SXIubDmau92vc-UHl0jIGZdjrkFdWafe4Z1Wo,5479
+rapidfuzz_capi-1.0.4.dist-info/LICENSE,sha256=UJth2DMQ-EdLsAsEAQfn7D3w4RNUkebzRNH0vR3jOy8,1053
+rapidfuzz_capi-1.0.4.dist-info/METADATA,sha256=X-HiIwI5LkVm-mrJL6D8jbCxPuSbz3UOyyeIvqSLYvg,1689
+rapidfuzz_capi-1.0.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+rapidfuzz_capi-1.0.4.dist-info/top_level.txt,sha256=htQHnJHgVI3iKZaRE-PTNgpmg9crWMEqUTJSaQLDTHM,15
+rapidfuzz_capi-1.0.4.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+rapidfuzz_capi-1.0.4.dist-info/RECORD,,
