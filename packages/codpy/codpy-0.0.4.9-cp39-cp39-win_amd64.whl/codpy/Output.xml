@@ -1,0 +1,2348 @@
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(gaussian)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_mean_distance</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(gaussian)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_mean_distance</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.discrepancy_error(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.discrepancy_error(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(gaussian)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_mean_distance</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(gaussian)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_mean_distance</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.discrepancy_error(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.discrepancy_error(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(gaussian)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_mean_distance</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(gaussian)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_mean_distance</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "alg.match(pi_array_type& x, size_t N, size_t iterations = 10)"/>
+<elapsed_time value = "rearrangement_functional::rearrangement_functional()(std::vector<size_t>& permutation)">
+
+<info cost =" W_ ">0.148584 </info>
+
+<info cost ="0.00237845" count = "4"/>
+0.00006
+</elapsed_time>
+<elapsed_time value = "grad_match::grad_match(const Matrix_type& y_)">
+0.00006
+</elapsed_time>
+<elapsed_time value = "descent_algorithm">
+<elapsed_time value = "grad_match::grad">
+0.00043
+</elapsed_time>
+<loop error_ = 0.474851test_grad_:-1.07914e-05 grad22_: 1.08152e-05 dt: 44002.9 a: 4.75756</loop>
+******descent_algorithm r.first:3967.74 error: 0.678356 a: 2.5453e-10
+******descent_algorithm r.first:229.21 error: 0.473603 a: 6.25425e-10
+<elapsed_time value = "grad_match::grad">
+0.00044
+</elapsed_time>
+<loop error_ = 0.473603test_grad_:-3.09752e-06 grad22_: 3.07941e-06 dt: 152897 a: -3.6226</loop>
+******descent_algorithm r.first:152897 error: 1.20129 a: 1.02536e-10
+******descent_algorithm r.first:2723.96 error: 0.501579 a: 7.96945e-11
+******descent_algorithm r.first:280.901 error: 0.473173 a: 4.68817e-10
+<elapsed_time value = "grad_match::grad">
+0.00043
+</elapsed_time>
+<loop error_ = 0.473173test_grad_:-1.59872e-06 grad22_: 1.57162e-06 dt: 295970 a: -5.42037</loop>
+******descent_algorithm r.first:76216.3 error: 0.779788 a: 9.73535e-12
+******descent_algorithm r.first:3436.21 error: 0.503976 a: 4.9859e-11
+******descent_algorithm r.first:240.194 error: 0.472984 a: 1.27941e-10
+<elapsed_time value = "grad_match::grad">
+0.00044
+</elapsed_time>
+<loop error_ = 0.472984test_grad_:-6.66134e-07 grad22_: 6.50706e-07 dt: 710044 a: -3.08552</loop>
+******descent_algorithm r.first:490628 error: 1.2 a: 4.15053e-12
+******descent_algorithm r.first:14471.7 error: 0.636225 a: 1.3406e-11
+******descent_algorithm r.first:278.116 error: 0.472886 a: 3.16754e-12
+<elapsed_time value = "grad_match::grad">
+0.00043
+</elapsed_time>
+<loop error_ = 0.472886test_grad_:-4.10783e-07 grad22_: 3.92468e-07 dt: 1.15118e+06 a: -3.66285</loop>
+******descent_algorithm r.first:103802 error: 0.898527 a: 7.03852e-13
+******descent_algorithm r.first:4679.92 error: 0.484129 a: 9.71143e-12
+******descent_algorithm r.first:302.986 error: 0.472827 a: 2.17695e-11
+<elapsed_time value = "grad_match::grad">
+0.00045
+</elapsed_time>
+<loop error_ = 0.472827test_grad_:-2.88658e-07 grad22_: 2.95618e-07 dt: 1.63802e+06 a: 1.39192</loop>
+******descent_algorithm r.first:147700 error: 1.15537 a: 5.41316e-13
+******descent_algorithm r.first:6659.05 error: 0.495559 a: 9.0581e-12
+******descent_algorithm r.first:263.866 error: 0.472788 a: 7.03228e-12
+<elapsed_time value = "grad_match::grad">
+0.00043
+</elapsed_time>
+<end error = "0.472827" grad22_= "2.95618e-07" dt= "131.933 iter: 6"/>
+0.00571
+</elapsed_time>
+</info>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(gaussian)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_mean_distance</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<elapsed_time value = "op.projection(pi_array_type& x, pi_array_type& y, pi_array_type& z, pi_array_type& fx)">
+<elapsed_time value = "Kernel::projection(const Matrix_type& x, const Matrix_type& y, const Matrix_type& z, const Matrix_type& fx_)">
+Kernel::projection Nx:100, Ny:5, Nz:100, Dfx:5, D:2
+<elapsed_time value = "Kernel::Knm_inv(const Matrix_type& x, const Matrix_type& y, const Matrix_type& z, const Matrix_type& fx_)">
+0.00272
+</elapsed_time>
+0.00278
+</elapsed_time>
+0.00282
+</elapsed_time>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(gaussian)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_mean_distance</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.discrepancy_error(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.discrepancy_error(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(gaussian)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_mean_distance</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(gaussian)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_mean_distance</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.discrepancy_error(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.discrepancy_error(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(gaussian)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_mean_distance</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.discrepancy_error(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.discrepancy_error(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(gaussian)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_mean_distance</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(gaussian)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_mean_distance</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "alg.match(pi_array_type& x, size_t N, size_t iterations = 10)"/>
+<elapsed_time value = "rearrangement_functional::rearrangement_functional()(std::vector<size_t>& permutation)">
+
+<info cost =" W_ ">0.00440193 </info>
+
+<info cost ="0.00106972" count = "8"/>
+0.18868
+</elapsed_time>
+<elapsed_time value = "grad_match::grad_match(const Matrix_type& y_)">
+0.08635
+</elapsed_time>
+<elapsed_time value = "descent_algorithm">
+<elapsed_time value = "grad_match::grad">
+0.10258
+</elapsed_time>
+<loop error_ = 0.619554test_grad_:-1.11022e-08 grad22_: 4.22409e-08 dt: 5.58045e+07 a: 6.22773</loop>
+******descent_algorithm r.first:3.85599e+07 error: 1.00781 a: 1.29542e-15
+******descent_algorithm r.first:8.57035e+06 error: 1.00783 a: 2.04297e-14
+******descent_algorithm r.first:49001.5 error: 0.622733 a: 3.55436e-14
+******descent_algorithm r.first:9693.09 error: 0.619349 a: 6.81511e-13
+<elapsed_time value = "grad_match::grad">
+0.11033
+</elapsed_time>
+<loop error_ = 0.619349test_grad_:5.55112e-08 grad22_: 5.42072e-09 dt: -4.55518e-09 a: 12.1864</loop>
+******descent_algorithm r.first:-4.55518e-09 error: 0.619349 a: 8.32108
+******descent_algorithm r.first:-6.67114e-09 error: 0.619349 a: 13.3428
+******descent_algorithm r.first:-4.16039e-09 error: 0.619349 a: -15.4343
+<elapsed_time value = "grad_match::grad">
+0.11288
+</elapsed_time>
+<loop error_ = 0.619349test_grad_:1.11022e-08 grad22_: 5.42072e-09 dt: -3.35964e-09 a: 3.30459</loop>
+******descent_algorithm r.first:-3.35964e-09 error: 0.619349 a: 75.4622
+******descent_algorithm r.first:-1.67982e-09 error: 0.619349 a: 308.303
+******descent_algorithm r.first:-8.3991e-10 error: 0.619349 a: 616.606
+******descent_algorithm r.first:-4.19955e-10 error: 0.619349 a: -25.8157
+<elapsed_time value = "grad_match::grad">
+0.10770
+</elapsed_time>
+<loop error_ = 0.619349test_grad_:0 grad22_: 5.42072e-09 dt: -0 a: 1.08414</loop>
+******descent_algorithm r.first:-0 error: 0.619349 a: -nan(ind)
+<elapsed_time value = "grad_match::grad">
+0.12090
+</elapsed_time>
+<loop error_ = 0.619349test_grad_:0 grad22_: 5.42072e-09 dt: -0 a: 1.08414</loop>
+******descent_algorithm r.first:-0 error: 0.619349 a: -nan(ind)
+<elapsed_time value = "grad_match::grad">
+0.10708
+</elapsed_time>
+<loop error_ = 0.619349test_grad_:0 grad22_: 5.42072e-09 dt: -0 a: 1.08414</loop>
+******descent_algorithm r.first:-0 error: 0.619349 a: -nan(ind)
+<elapsed_time value = "grad_match::grad">
+0.11112
+</elapsed_time>
+<end error = "0.619349" grad22_= "5.42072e-09" dt= "-0 iter: 6"/>
+2.00316
+</elapsed_time>
+</info>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(gaussian)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_mean_distance</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<elapsed_time value = "op.projection(pi_array_type& x, pi_array_type& y, pi_array_type& z, pi_array_type& fx)">
+<elapsed_time value = "Kernel::projection(const Matrix_type& x, const Matrix_type& y, const Matrix_type& z, const Matrix_type& fx_)">
+Kernel::projection Nx:6000, Ny:128, Nz:10000, Dfx:10, D:784
+<elapsed_time value = "Kernel::Knm_inv(const Matrix_type& x, const Matrix_type& y, const Matrix_type& z, const Matrix_type& fx_)">
+0.10789
+</elapsed_time>
+0.26242
+</elapsed_time>
+0.44436
+</elapsed_time>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(gaussian)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_mean_distance</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.discrepancy_error(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.discrepancy_error(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(gaussian)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_mean_distance</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "alg.match(pi_array_type& x, size_t N, size_t iterations = 10)"/>
+<elapsed_time value = "rearrangement_functional::rearrangement_functional()(std::vector<size_t>& permutation)">
+
+<info cost =" W_ ">0.00205553 </info>
+
+<info cost ="0.000390999" count = "13"/>
+0.95454
+</elapsed_time>
+<elapsed_time value = "grad_match::grad_match(const Matrix_type& y_)">
+0.09936
+</elapsed_time>
+<elapsed_time value = "descent_algorithm">
+<elapsed_time value = "grad_match::grad">
+0.24542
+</elapsed_time>
+<loop error_ = 0.618875test_grad_:0 grad22_: 6.35572e-09 dt: -0 a: 1.27114</loop>
+******descent_algorithm r.first:-0 error: 0.618875 a: -nan(ind)
+<elapsed_time value = "grad_match::grad">
+0.21497
+</elapsed_time>
+<loop error_ = 0.618875test_grad_:0 grad22_: 6.35572e-09 dt: -0 a: 1.27114</loop>
+******descent_algorithm r.first:-0 error: 0.618875 a: -nan(ind)
+<elapsed_time value = "grad_match::grad">
+0.23533
+</elapsed_time>
+<loop error_ = 0.618875test_grad_:0 grad22_: 6.35572e-09 dt: -0 a: 1.27114</loop>
+******descent_algorithm r.first:-0 error: 0.618875 a: -nan(ind)
+<elapsed_time value = "grad_match::grad">
+0.21647
+</elapsed_time>
+<loop error_ = 0.618875test_grad_:0 grad22_: 6.35572e-09 dt: -0 a: 1.27114</loop>
+******descent_algorithm r.first:-0 error: 0.618875 a: -nan(ind)
+<elapsed_time value = "grad_match::grad">
+0.26435
+</elapsed_time>
+<loop error_ = 0.618875test_grad_:0 grad22_: 6.35572e-09 dt: -0 a: 1.27114</loop>
+******descent_algorithm r.first:-0 error: 0.618875 a: -nan(ind)
+<elapsed_time value = "grad_match::grad">
+0.21906
+</elapsed_time>
+<loop error_ = 0.618875test_grad_:0 grad22_: 6.35572e-09 dt: -0 a: 1.27114</loop>
+******descent_algorithm r.first:-0 error: 0.618875 a: -nan(ind)
+<elapsed_time value = "grad_match::grad">
+0.24545
+</elapsed_time>
+<end error = "0.618875" grad22_= "6.35572e-09" dt= "-0 iter: 6"/>
+2.44951
+</elapsed_time>
+</info>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(gaussian)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_mean_distance</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<elapsed_time value = "op.projection(pi_array_type& x, pi_array_type& y, pi_array_type& z, pi_array_type& fx)">
+<elapsed_time value = "Kernel::projection(const Matrix_type& x, const Matrix_type& y, const Matrix_type& z, const Matrix_type& fx_)">
+Kernel::projection Nx:6000, Ny:256, Nz:10000, Dfx:10, D:784
+<elapsed_time value = "Kernel::Knm_inv(const Matrix_type& x, const Matrix_type& y, const Matrix_type& z, const Matrix_type& fx_)">
+0.19653
+</elapsed_time>
+0.38048
+</elapsed_time>
+0.49989
+</elapsed_time>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(gaussian)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_mean_distance</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.discrepancy_error(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.discrepancy_error(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(gaussian)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_mean_distance</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(gaussian)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_mean_distance</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.discrepancy_error(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.discrepancy_error(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(gaussian)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_mean_distance</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.discrepancy_error(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.discrepancy_error(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(gaussian)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_mean_distance</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(gaussian)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_mean_distance</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "alg.match(pi_array_type& x, size_t N, size_t iterations = 10)"/>
+<elapsed_time value = "rearrangement_functional::rearrangement_functional()(std::vector<size_t>& permutation)">
+
+<info cost =" W_ ">0.0509404 </info>
+
+<info cost ="0.0384238" count = "5"/>
+0.00007
+</elapsed_time>
+<elapsed_time value = "grad_match::grad_match(const Matrix_type& y_)">
+0.01125
+</elapsed_time>
+<elapsed_time value = "descent_algorithm">
+<elapsed_time value = "grad_match::grad">
+0.00703
+</elapsed_time>
+<loop error_ = 0.660696test_grad_:-0.00478141 grad22_: 0.00478141 dt: 138.18 a: 0.395898</loop>
+******descent_algorithm r.first:12.4597 error: 0.649352 a: 5.05207e-06
+<elapsed_time value = "grad_match::grad">
+0.00683
+</elapsed_time>
+<loop error_ = 0.649352test_grad_:-0.00196042 grad22_: 0.00196044 dt: 331.231 a: 3.33474</loop>
+******descent_algorithm r.first:331.231 error: 1.42285 a: 2.59376e-05
+******descent_algorithm r.first:7.75598 error: 0.641598 a: 2.60851e-06
+<elapsed_time value = "grad_match::grad">
+0.00692
+</elapsed_time>
+<loop error_ = 0.641598test_grad_:-3.59268e-05 grad22_: 3.59398e-05 dt: 17858.5 a: 2.5959</loop>
+******descent_algorithm r.first:12339.9 error: 1.1 a: 5.65585e-09
+******descent_algorithm r.first:6169.95 error: 1.1 a: 3.57331e-08
+******descent_algorithm r.first:156.011 error: 0.642283 a: 1.24488e-08
+******descent_algorithm r.first:58.2574 error: 0.64066 a: 3.79922e-07
+<elapsed_time value = "grad_match::grad">
+0.00684
+</elapsed_time>
+<loop error_ = 0.64066test_grad_:-0.000184608 grad22_: 0.000184603 dt: 3470.38 a: -0.945107</loop>
+******descent_algorithm r.first:312.924 error: 1.03799 a: 7.55747e-08
+******descent_algorithm r.first:6.12437 error: 0.639956 a: 3.48299e-08
+<elapsed_time value = "grad_match::grad">
+0.00693
+</elapsed_time>
+<loop error_ = 0.639956test_grad_:-2.16493e-05 grad22_: 2.16408e-05 dt: 29560 a: -1.71204</loop>
+******descent_algorithm r.first:8625.5 error: 1.1 a: 1.48022e-09
+******descent_algorithm r.first:388.881 error: 0.72214 a: 9.74199e-09
+******descent_algorithm r.first:27.5438 error: 0.639658 a: 1.57912e-08
+<elapsed_time value = "grad_match::grad">
+0.00677
+</elapsed_time>
+<loop error_ = 0.639658test_grad_:-5.04707e-05 grad22_: 5.04586e-05 dt: 12673.8 a: -2.42221</loop>
+******descent_algorithm r.first:1142.8 error: 1.07023 a: 6.07914e-09
+******descent_algorithm r.first:51.5231 error: 0.643674 a: 4.05243e-08
+******descent_algorithm r.first:9.91313 error: 0.639408 a: 7.55101e-07
+<elapsed_time value = "grad_match::grad">
+0.00678
+</elapsed_time>
+<end error = "0.639658" grad22_= "5.04586e-05" dt= "4.95657 iter: 6"/>
+0.12213
+</elapsed_time>
+</info>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<elapsed_time value = "Knm(pi_array_type& x, pi_array_type& y)">
+0.00217
+</elapsed_time>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(gaussian)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_mean_distance</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.discrepancy_error(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.discrepancy_error(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(gaussian)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_mean_distance</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "alg.match(pi_array_type& x, size_t N, size_t iterations = 10)"/>
+<elapsed_time value = "rearrangement_functional::rearrangement_functional()(std::vector<size_t>& permutation)">
+
+<info cost =" W_ ">0.0219908 </info>
+
+<info cost ="0.0152003" count = "3"/>
+0.00012
+</elapsed_time>
+<elapsed_time value = "grad_match::grad_match(const Matrix_type& y_)">
+0.01319
+</elapsed_time>
+<elapsed_time value = "descent_algorithm">
+<elapsed_time value = "grad_match::grad">
+0.00746
+</elapsed_time>
+<loop error_ = 0.637472test_grad_:-0.000885736 grad22_: 0.000885715 dt: 719.709 a: -4.18904</loop>
+******descent_algorithm r.first:719.709 error: 1.32122 a: 5.10137e-06
+******descent_algorithm r.first:14.5276 error: 0.630437 a: 3.86901e-07
+<elapsed_time value = "grad_match::grad">
+0.00674
+</elapsed_time>
+<loop error_ = 0.630437test_grad_:-1.83076e-05 grad22_: 1.83136e-05 dt: 34435.8 a: 1.21166</loop>
+******descent_algorithm r.first:23794.6 error: 1.05 a: 1.44259e-09
+******descent_algorithm r.first:11897.3 error: 1.05 a: 9.00694e-09
+******descent_algorithm r.first:183.28 error: 0.636808 a: 4.70932e-09
+******descent_algorithm r.first:30.197 error: 0.630161 a: 6.60968e-08
+<elapsed_time value = "grad_match::grad">
+0.00654
+</elapsed_time>
+<loop error_ = 0.630161test_grad_:-1.56097e-05 grad22_: 1.56022e-05 dt: 40369.8 a: -1.51612</loop>
+******descent_algorithm r.first:21309.7 error: 1.05 a: 9.23248e-10
+******descent_algorithm r.first:960.749 error: 0.820355 a: 3.61474e-09
+******descent_algorithm r.first:28.3577 error: 0.629943 a: 1.94255e-09
+<elapsed_time value = "grad_match::grad">
+0.00635
+</elapsed_time>
+<loop error_ = 0.629943test_grad_:-1.20681e-05 grad22_: 1.20786e-05 dt: 52198.9 a: 2.09022</loop>
+******descent_algorithm r.first:27553.9 error: 1.05 a: 5.5262e-10
+******descent_algorithm r.first:13777 error: 1.05 a: 6.17965e-09
+******descent_algorithm r.first:176.091 error: 0.633663 a: 3.06639e-09
+******descent_algorithm r.first:30.9344 error: 0.629757 a: 4.83583e-08
+<elapsed_time value = "grad_match::grad">
+0.00624
+</elapsed_time>
+<loop error_ = 0.629757test_grad_:-1.12688e-05 grad22_: 1.12839e-05 dt: 55885.2 a: 3.0195</loop>
+******descent_algorithm r.first:29499.8 error: 1.05 a: 4.82279e-10
+******descent_algorithm r.first:1330 error: 0.866651 a: 2.31571e-09
+******descent_algorithm r.first:27.4489 error: 0.629601 a: 6.98807e-10
+<elapsed_time value = "grad_match::grad">
+0.00608
+</elapsed_time>
+<loop error_ = 0.629601test_grad_:-8.40439e-06 grad22_: 8.3963e-06 dt: 74913.4 a: -1.61718</loop>
+******descent_algorithm r.first:39544.1 error: 1.05 a: 2.68147e-10
+******descent_algorithm r.first:18775.4 error: 1.05 a: 2.95724e-09
+******descent_algorithm r.first:256.26 error: 0.635446 a: 1.97999e-09
+******descent_algorithm r.first:32.5031 error: 0.629466 a: 1.66855e-08
+<elapsed_time value = "grad_match::grad">
+0.00600
+</elapsed_time>
+<end error = "0.629601" grad22_= "8.3963e-06" dt= "16.2516 iter: 6"/>
+0.14592
+</elapsed_time>
+</info>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<elapsed_time value = "Knm(pi_array_type& x, pi_array_type& y)">
+0.00366
+</elapsed_time>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(gaussian)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_mean_distance</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.discrepancy_error(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.discrepancy_error(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(gaussian)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_mean_distance</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = " tools.hot_encoder(x_array_type& x)"/>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(gaussian)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_mean_distance</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.discrepancy_error(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.discrepancy_error(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(gaussian)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_mean_distance</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.discrepancy_error(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.discrepancy_error(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(gaussian)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_mean_distance</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = " tools.hot_encoder(x_array_type& x)"/>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(gaussian)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_mean_distance</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "alg.match(pi_array_type& x, size_t N, size_t iterations = 10)"/>
+<elapsed_time value = "rearrangement_functional::rearrangement_functional()(std::vector<size_t>& permutation)">
+
+<info cost =" W_ ">0.0595651 </info>
+
+<info cost ="0.0178122" count = "3"/>
+0.00355
+</elapsed_time>
+<elapsed_time value = "grad_match::grad_match(const Matrix_type& y_)">
+0.00043
+</elapsed_time>
+<elapsed_time value = "descent_algorithm">
+<elapsed_time value = "grad_match::grad">
+0.00099
+</elapsed_time>
+<loop error_ = 0.607176test_grad_:-1.82854e-05 grad22_: 1.82851e-05 dt: 33205.6 a: -0.0555516</loop>
+******descent_algorithm r.first:33205.6 error: 1.10002 a: 1.99528e-09
+******descent_algorithm r.first:826.346 error: 0.610303 a: 4.34298e-10
+******descent_algorithm r.first:338.27 error: 0.604094 a: 3.63612e-08
+<elapsed_time value = "grad_match::grad">
+0.00065
+</elapsed_time>
+<loop error_ = 0.604094test_grad_:-3.43059e-06 grad22_: 3.42499e-06 dt: 176091 a: -1.12005</loop>
+******descent_algorithm r.first:15878.1 error: 0.879353 a: 2.12617e-11
+******descent_algorithm r.first:953.958 error: 0.602444 a: 5.1307e-11
+<elapsed_time value = "grad_match::grad">
+0.00065
+</elapsed_time>
+<loop error_ = 0.602444test_grad_:-5.15143e-06 grad22_: 5.15967e-06 dt: 116947 a: 1.64627</loop>
+******descent_algorithm r.first:116947 error: 1.1 a: 1.61e-10
+******descent_algorithm r.first:31996.5 error: 1.12144 a: 1.3364e-09
+******descent_algorithm r.first:350.216 error: 0.601527 a: 1.19772e-10
+<elapsed_time value = "grad_match::grad">
+0.00068
+</elapsed_time>
+<loop error_ = 0.601527test_grad_:-1.18794e-06 grad22_: 1.21097e-06 dt: 506362 a: 4.60608</loop>
+******descent_algorithm r.first:45658.6 error: 1.05791 a: 3.99119e-12
+******descent_algorithm r.first:2058.52 error: 0.601449 a: 9.26675e-12
+<elapsed_time value = "grad_match::grad">
+0.00072
+</elapsed_time>
+<loop error_ = 0.601449test_grad_:-9.34808e-06 grad22_: 9.31065e-06 dt: 64339.3 a: -7.48646</loop>
+******descent_algorithm r.first:64339.3 error: 1.10066 a: 5.30615e-10
+******descent_algorithm r.first:1588.56 error: 0.625557 a: 2.50655e-10
+******descent_algorithm r.first:291.027 error: 0.600098 a: 4.30639e-09
+<elapsed_time value = "grad_match::grad">
+0.00088
+</elapsed_time>
+<loop error_ = 0.600098test_grad_:-2.88658e-07 grad22_: 2.217e-07 dt: 2.07892e+06 a: -13.3916</loop>
+******descent_algorithm r.first:187456 error: 1.09936 a: 2.50268e-13
+******descent_algorithm r.first:9082.75 error: 0.601146 a: 6.97203e-13
+******descent_algorithm r.first:2936.39 error: 0.599782 a: 3.25414e-11
+<elapsed_time value = "grad_match::grad">
+0.00072
+</elapsed_time>
+<end error = "0.600098" grad22_= "2.217e-07" dt= "1468.2 iter: 6"/>
+0.02049
+</elapsed_time>
+</info>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<elapsed_time value = "Knm(pi_array_type& x, pi_array_type& y)">
+0.00041
+</elapsed_time>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(gaussian)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_mean_distance</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.discrepancy_error(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.discrepancy_error(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(gaussian)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_mean_distance</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "alg.match(pi_array_type& x, size_t N, size_t iterations = 10)"/>
+<elapsed_time value = "rearrangement_functional::rearrangement_functional()(std::vector<size_t>& permutation)">
+
+<info cost =" W_ ">0.021748 </info>
+
+<info cost ="0.00652525" count = "7"/>
+0.00146
+</elapsed_time>
+<elapsed_time value = "grad_match::grad_match(const Matrix_type& y_)">
+0.00048
+</elapsed_time>
+<elapsed_time value = "descent_algorithm">
+<elapsed_time value = "grad_match::grad">
+0.00154
+</elapsed_time>
+<loop error_ = 0.595889test_grad_:-2.59792e-06 grad22_: 2.59566e-06 dt: 229371 a: -0.453253</loop>
+******descent_algorithm r.first:20682.4 error: 0.875793 a: 1.26813e-11
+******descent_algorithm r.first:812.916 error: 0.594756 a: 1.82682e-11
+<elapsed_time value = "grad_match::grad">
+0.00163
+</elapsed_time>
+<loop error_ = 0.594756test_grad_:-9.88098e-07 grad22_: 9.86971e-07 dt: 601920 a: -0.225561</loop>
+******descent_algorithm r.first:415916 error: 1.05 a: 4.77905e-12
+******descent_algorithm r.first:206756 error: 1.05 a: 3.0846e-11
+******descent_algorithm r.first:1600.36 error: 0.593905 a: 1.4194e-12
+<elapsed_time value = "grad_match::grad">
+0.00158
+</elapsed_time>
+<loop error_ = 0.593905test_grad_:-1.26565e-06 grad22_: 1.26146e-06 dt: 469247 a: -0.839267</loop>
+******descent_algorithm r.first:413860 error: 1.05 a: 8.8846e-12
+******descent_algorithm r.first:12845.1 error: 0.681918 a: 1.0271e-11
+******descent_algorithm r.first:842.105 error: 0.593376 a: 2.58576e-11
+<elapsed_time value = "grad_match::grad">
+0.00158
+</elapsed_time>
+<loop error_ = 0.593376test_grad_:-5.44009e-07 grad22_: 5.29718e-07 dt: 1.09075e+06 a: -2.85821</loop>
+******descent_algorithm r.first:575765 error: 1.05 a: 1.28033e-12
+******descent_algorithm r.first:25958.4 error: 0.691058 a: 2.68914e-12
+******descent_algorithm r.first:1445.74 error: 0.592992 a: 4.53788e-12
+<elapsed_time value = "grad_match::grad">
+0.00224
+</elapsed_time>
+<loop error_ = 0.592992test_grad_:-6.66134e-07 grad22_: 6.71753e-07 dt: 890199 a: 1.12392</loop>
+******descent_algorithm r.first:615113 error: 1.05 a: 2.19624e-12
+******descent_algorithm r.first:303306 error: 1.05 a: 1.43651e-11
+******descent_algorithm r.first:4181.33 error: 0.596912 a: 6.25837e-12
+******descent_algorithm r.first:859.233 error: 0.592704 a: 1.32269e-10
+<elapsed_time value = "grad_match::grad">
+0.00159
+</elapsed_time>
+<loop error_ = 0.592704test_grad_:-2.88658e-07 grad22_: 3.06547e-07 dt: 2.05331e+06 a: 3.57783</loop>
+******descent_algorithm r.first:1.08387e+06 error: 1.05 a: 3.74544e-13
+******descent_algorithm r.first:541934 error: 1.05 a: 4.24543e-12
+******descent_algorithm r.first:6130.9 error: 0.594837 a: 1.73585e-12
+******descent_algorithm r.first:1434.09 error: 0.592484 a: 4.67639e-11
+<elapsed_time value = "grad_match::grad">
+0.00159
+</elapsed_time>
+<end error = "0.592704" grad22_= "3.06547e-07" dt= "717.043 iter: 6"/>
+0.04628
+</elapsed_time>
+</info>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<elapsed_time value = "Knm(pi_array_type& x, pi_array_type& y)">
+0.00042
+</elapsed_time>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(gaussian)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_mean_distance</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.discrepancy_error(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.discrepancy_error(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(gaussian)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_mean_distance</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(gaussian)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_mean_distance</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.discrepancy_error(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.discrepancy_error(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(gaussian)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_mean_distance</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.discrepancy_error(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.discrepancy_error(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(gaussian)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_mean_distance</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.discrepancy_error(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.discrepancy_error(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(gaussian)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_mean_distance</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.discrepancy_error(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.discrepancy_error(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(gaussian)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_mean_distance</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.discrepancy_error(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.discrepancy_error(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(gaussian)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_mean_distance</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.discrepancy_error(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.discrepancy_error(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(gaussian)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_mean_distance</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.discrepancy_error(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.discrepancy_error(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(gaussian)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_mean_distance</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(gaussian)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_mean_distance</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "alg.match(pi_array_type& x, size_t N, size_t iterations = 10)"/>
+<elapsed_time value = "rearrangement_functional::rearrangement_functional()(std::vector<size_t>& permutation)">
+
+<info cost =" W_ ">0.0170557 </info>
+
+<info cost ="0.012524" count = "3"/>
+0.00008
+</elapsed_time>
+<elapsed_time value = "grad_match::grad_match(const Matrix_type& y_)">
+0.00146
+</elapsed_time>
+<elapsed_time value = "descent_algorithm">
+<elapsed_time value = "grad_match::grad">
+0.00077
+</elapsed_time>
+<loop error_ = 0.441646test_grad_:-0.00186916 grad22_: 0.00186903 dt: 236.28 a: -27.0091</loop>
+******descent_algorithm r.first:21.3054 error: 0.838479 a: 1.56427e-05
+******descent_algorithm r.first:0.960553 error: 0.445418 a: 9.81227e-05
+******descent_algorithm r.first:0.151658 error: 0.441504 a: 0.00123098
+<elapsed_time value = "grad_match::grad">
+0.00050
+</elapsed_time>
+<loop error_ = 0.441504test_grad_:-0.000313971 grad22_: 0.000314132 dt: 1406.19 a: 32.1832</loop>
+******descent_algorithm r.first:126.797 error: 1.49995 a: 1.11084e-06
+******descent_algorithm r.first:5.71662 error: 0.480605 a: 2.03496e-05
+******descent_algorithm r.first:0.128865 error: 0.441484 a: 5.01694e-06
+<elapsed_time value = "grad_match::grad">
+0.00060
+</elapsed_time>
+<loop error_ = 0.441484test_grad_:-5.3757e-05 grad22_: 5.38134e-05 dt: 8212.59 a: 11.274</loop>
+******descent_algorithm r.first:740.529 error: 1.5 a: 3.25699e-08
+******descent_algorithm r.first:33.3867 error: 0.597461 a: 2.30165e-06
+******descent_algorithm r.first:1.50524 error: 0.441795 a: 2.80989e-06
+******descent_algorithm r.first:0.155136 error: 0.44148 a: 1.47416e-05
+<elapsed_time value = "grad_match::grad">
+0.00058
+</elapsed_time>
+<loop error_ = 0.44148test_grad_:-1.63203e-05 grad22_: 1.61537e-05 dt: 27051 a: -33.3143</loop>
+******descent_algorithm r.first:2439.19 error: 1.5 a: 3.00078e-09
+******descent_algorithm r.first:109.971 error: 0.953523 a: 6.90891e-07
+******descent_algorithm r.first:2.13 error: 0.441725 a: 9.9946e-07
+******descent_algorithm r.first:0.131413 error: 0.441479 a: 1.87161e-06
+<elapsed_time value = "grad_match::grad">
+0.00060
+</elapsed_time>
+<loop error_ = 0.441479test_grad_:-3.80806e-06 grad22_: 3.7844e-06 dt: 115933 a: -4.73246</loop>
+******descent_algorithm r.first:10453.6 error: 1.5 a: 1.634e-10
+******descent_algorithm r.first:471.302 error: 1.42417 a: 7.20711e-08
+******descent_algorithm r.first:4.76437 error: 0.44174 a: 1.99916e-07
+******descent_algorithm r.first:0.154307 error: 0.441479 a: 1.0295e-07
+<elapsed_time value = "grad_match::grad">
+0.00061
+</elapsed_time>
+<loop error_ = 0.441479test_grad_:-1.27676e-06 grad22_: 1.26308e-06 dt: 345782 a: -2.73587</loop>
+******descent_algorithm r.first:31179.1 error: 1.5 a: 1.8365e-11
+******descent_algorithm r.first:1405.71 error: 1.49067 a: 8.64871e-09
+******descent_algorithm r.first:13.3112 error: 0.442317 a: 7.848e-08
+******descent_algorithm r.first:0.600137 error: 0.44148 a: 7.86334e-08
+******descent_algorithm r.first:0.130596 error: 0.441479 a: 1.83198e-06
+<elapsed_time value = "grad_match::grad">
+0.00058
+</elapsed_time>
+<end error = "0.441479" grad22_= "1.26308e-06" dt= "0.0652978 iter: 6"/>
+0.01625
+</elapsed_time>
+</info>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<elapsed_time value = "Knm(pi_array_type& x, pi_array_type& y)">
+0.00008
+</elapsed_time>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(gaussian)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_mean_distance</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.discrepancy_error(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.discrepancy_error(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(gaussian)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_mean_distance</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "alg.match(pi_array_type& x, size_t N, size_t iterations = 10)"/>
+<elapsed_time value = "rearrangement_functional::rearrangement_functional()(std::vector<size_t>& permutation)">
+
+<info cost =" W_ ">0.0255916 </info>
+
+<info cost ="0.0003955" count = "8"/>
+0.00075
+</elapsed_time>
+<elapsed_time value = "grad_match::grad_match(const Matrix_type& y_)">
+0.00135
+</elapsed_time>
+<elapsed_time value = "descent_algorithm">
+<elapsed_time value = "grad_match::grad">
+0.00071
+</elapsed_time>
+<loop error_ = 0.429517test_grad_:-3.61378e-05 grad22_: 3.61692e-05 dt: 11885.6 a: 6.28775</loop>
+******descent_algorithm r.first:1071.72 error: 1.19889 a: 1.14414e-08
+******descent_algorithm r.first:48.3185 error: 0.474168 a: 3.23167e-07
+******descent_algorithm r.first:0.966356 error: 0.429501 a: 6.2989e-08
+<elapsed_time value = "grad_match::grad">
+0.00088
+</elapsed_time>
+<loop error_ = 0.429501test_grad_:-2.13496e-05 grad22_: 2.13348e-05 dt: 20117.5 a: -2.962</loop>
+******descent_algorithm r.first:5870.21 error: 1.2 a: 4.42652e-09
+******descent_algorithm r.first:2935.11 error: 1.2 a: 1.93415e-07
+******descent_algorithm r.first:9.95319 error: 0.43212 a: 4.6472e-07
+******descent_algorithm r.first:0.371044 error: 0.429497 a: 3.1966e-07
+<elapsed_time value = "grad_match::grad">
+0.00097
+</elapsed_time>
+<loop error_ = 0.429497test_grad_:-4.55191e-06 grad22_: 4.5932e-06 dt: 94355.2 a: 8.25764</loop>
+******descent_algorithm r.first:27532.5 error: 1.2 a: 2.01499e-10
+******descent_algorithm r.first:13766.2 error: 1.2 a: 8.79887e-09
+******descent_algorithm r.first:46.6476 error: 0.438594 a: 6.95808e-08
+******descent_algorithm r.first:2.1031 error: 0.429506 a: 7.01672e-08
+******descent_algorithm r.first:0.532336 error: 0.429496 a: 2.21116e-06
+<elapsed_time value = "grad_match::grad">
+0.00096
+</elapsed_time>
+<loop error_ = 0.429496test_grad_:-4.31877e-06 grad22_: 4.35129e-06 dt: 99448.7 a: 6.50485</loop>
+******descent_algorithm r.first:29018.7 error: 1.2 a: 1.81349e-10
+******descent_algorithm r.first:14276.9 error: 1.2 a: 7.91013e-09
+******descent_algorithm r.first:49.2309 error: 0.441177 a: 7.98121e-08
+******descent_algorithm r.first:2.21957 error: 0.42951 a: 8.09025e-08
+******descent_algorithm r.first:0.437386 error: 0.429495 a: 1.54522e-06
+<elapsed_time value = "grad_match::grad">
+0.00093
+</elapsed_time>
+<loop error_ = 0.429495test_grad_:-3.16414e-06 grad22_: 3.14335e-06 dt: 135738 a: -4.15665</loop>
+******descent_algorithm r.first:19804 error: 1.2 a: 9.03946e-11
+******descent_algorithm r.first:9901.98 error: 1.2 a: 1.63516e-08
+******descent_algorithm r.first:17.4485 error: 0.430304 a: 4.61316e-08
+******descent_algorithm r.first:0.552964 error: 0.429494 a: 2.28325e-08
+<elapsed_time value = "grad_match::grad">
+0.00093
+</elapsed_time>
+<loop error_ = 0.429494test_grad_:-3.69704e-06 grad22_: 3.74308e-06 dt: 116172 a: 9.20708</loop>
+******descent_algorithm r.first:16949.3 error: 1.2 a: 1.23585e-10
+******descent_algorithm r.first:8474.65 error: 1.20001 a: 2.23403e-08
+******descent_algorithm r.first:14.922 error: 0.430373 a: 6.82737e-08
+******descent_algorithm r.first:0.446404 error: 0.429493 a: 3.00317e-08
+<elapsed_time value = "grad_match::grad">
+0.00092
+</elapsed_time>
+<end error = "0.429494" grad22_= "3.74308e-06" dt= "0.223202 iter: 6"/>
+0.02584
+</elapsed_time>
+</info>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<elapsed_time value = "Knm(pi_array_type& x, pi_array_type& y)">
+0.00012
+</elapsed_time>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(gaussian)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_mean_distance</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.discrepancy_error(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.discrepancy_error(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(gaussian)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_mean_distance</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "alg.match(pi_array_type& x, size_t N, size_t iterations = 10)"/>
+<elapsed_time value = "rearrangement_functional::rearrangement_functional()(std::vector<size_t>& permutation)">
+
+<info cost =" W_ ">0.0485333 </info>
+
+<info cost ="0.000101901" count = "21"/>
+0.00216
+</elapsed_time>
+<elapsed_time value = "grad_match::grad_match(const Matrix_type& y_)">
+0.00142
+</elapsed_time>
+<elapsed_time value = "descent_algorithm">
+<elapsed_time value = "grad_match::grad">
+0.00084
+</elapsed_time>
+<loop error_ = 0.429224test_grad_:-5.72875e-06 grad22_: 5.81196e-06 dt: 74924.5 a: 16.6425</loop>
+******descent_algorithm r.first:21862.7 error: 1.125 a: 2.93156e-10
+******descent_algorithm r.first:10931.3 error: 1.125 a: 1.27087e-08
+******descent_algorithm r.first:40.6462 error: 0.432414 a: 3.37246e-08
+******descent_algorithm r.first:1.49936 error: 0.429219 a: 2.11013e-08
+<elapsed_time value = "grad_match::grad">
+0.00090
+</elapsed_time>
+<loop error_ = 0.429219test_grad_:-8.50431e-06 grad22_: 8.43088e-06 dt: 50470.8 a: -14.6856</loop>
+******descent_algorithm r.first:34874.5 error: 1.125 a: 7.77138e-10
+******descent_algorithm r.first:10943.1 error: 1.12513 a: 1.31634e-08
+******descent_algorithm r.first:58.2551 error: 0.453639 a: 1.19362e-07
+******descent_algorithm r.first:2.62643 error: 0.429249 a: 1.2272e-07
+******descent_algorithm r.first:0.558404 error: 0.429217 a: 2.73004e-06
+<elapsed_time value = "grad_match::grad">
+0.00089
+</elapsed_time>
+<loop error_ = 0.429217test_grad_:-2.84217e-06 grad22_: 2.80817e-06 dt: 151017 a: -6.79948</loop>
+******descent_algorithm r.first:22033.1 error: 1.125 a: 6.64429e-11
+******descent_algorithm r.first:11016.6 error: 1.125 a: 1.19758e-08
+******descent_algorithm r.first:21.3997 error: 0.429695 a: 1.91092e-08
+******descent_algorithm r.first:1.23711 error: 0.429215 a: 3.03158e-08
+<elapsed_time value = "grad_match::grad">
+0.00090
+</elapsed_time>
+<loop error_ = 0.429215test_grad_:-5.41789e-06 grad22_: 5.5467e-06 dt: 79221.9 a: 25.763</loop>
+******descent_algorithm r.first:23116.6 error: 1.125 a: 2.62585e-10
+******descent_algorithm r.first:11558.3 error: 1.125 a: 1.13761e-08
+******descent_algorithm r.first:42.9435 error: 0.437674 a: 7.66826e-08
+******descent_algorithm r.first:1.93611 error: 0.429223 a: 7.81834e-08
+******descent_algorithm r.first:0.576636 error: 0.429214 a: 3.41331e-06
+<elapsed_time value = "grad_match::grad">
+0.00084
+</elapsed_time>
+<loop error_ = 0.429214test_grad_:-2.44249e-06 grad22_: 2.43977e-06 dt: 175728 a: -0.543292</loop>
+******descent_algorithm r.first:25638.4 error: 1.125 a: 4.91147e-11
+******descent_algorithm r.first:1155.9 error: 0.921135 a: 6.02127e-09
+******descent_algorithm r.first:36.5769 error: 0.430501 a: 1.67259e-08
+******descent_algorithm r.first:1.23528 error: 0.429212 a: 9.00955e-09
+<elapsed_time value = "grad_match::grad">
+0.00089
+</elapsed_time>
+<loop error_ = 0.429212test_grad_:-4.9627e-06 grad22_: 4.94919e-06 dt: 86487.7 a: -2.70224</loop>
+******descent_algorithm r.first:45653.7 error: 1.125 a: 2.4645e-10
+******descent_algorithm r.first:20136.8 error: 1.125 a: 3.9234e-09
+******descent_algorithm r.first:114.056 error: 0.480083 a: 6.42957e-08
+******descent_algorithm r.first:5.1422 error: 0.4293 a: 6.94997e-08
+******descent_algorithm r.first:0.578192 error: 0.429211 a: 4.3292e-07
+<elapsed_time value = "grad_match::grad">
+0.00087
+</elapsed_time>
+<end error = "0.429212" grad22_= "4.94919e-06" dt= "0.289096 iter: 6"/>
+0.03031
+</elapsed_time>
+</info>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<elapsed_time value = "Knm(pi_array_type& x, pi_array_type& y)">
+0.00014
+</elapsed_time>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(gaussian)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_mean_distance</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.discrepancy_error(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.discrepancy_error(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(gaussian)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_mean_distance</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "alg.match(pi_array_type& x, size_t N, size_t iterations = 10)"/>
+<elapsed_time value = "rearrangement_functional::rearrangement_functional()(std::vector<size_t>& permutation)">
+
+<info cost =" W_ ">0.0414541 </info>
+
+<info cost ="4.59889e-05" count = "9"/>
+0.00134
+</elapsed_time>
+<elapsed_time value = "grad_match::grad_match(const Matrix_type& y_)">
+0.00147
+</elapsed_time>
+<elapsed_time value = "descent_algorithm">
+<elapsed_time value = "grad_match::grad">
+0.00106
+</elapsed_time>
+<loop error_ = 0.429168test_grad_:-6.4837e-06 grad22_: 6.43987e-06 dt: 66191.8 a: -8.76576</loop>
+******descent_algorithm r.first:58378.9 error: 1.09091 a: 4.73687e-10
+******descent_algorithm r.first:13687.7 error: 1.09492 a: 8.04785e-09
+******descent_algorithm r.first:72.6449 error: 0.434904 a: 1.91178e-08
+******descent_algorithm r.first:2.75304 error: 0.429159 a: 1.34141e-08
+<elapsed_time value = "grad_match::grad">
+0.00123
+</elapsed_time>
+<loop error_ = 0.429159test_grad_:-1.05471e-05 grad22_: 1.0576e-05 dt: 40689.7 a: 5.77078</loop>
+******descent_algorithm r.first:35886.9 error: 1.09091 a: 1.25786e-09
+******descent_algorithm r.first:8384.96 error: 1.09304 a: 2.14076e-08
+******descent_algorithm r.first:44.4251 error: 0.44283 a: 1.16509e-07
+******descent_algorithm r.first:0.699455 error: 0.429155 a: 1.46329e-08
+<elapsed_time value = "grad_match::grad">
+0.00128
+</elapsed_time>
+<loop error_ = 0.429155test_grad_:-2.14273e-06 grad22_: 2.10524e-06 dt: 200284 a: -7.49835</loop>
+******descent_algorithm r.first:58442.2 error: 1.09091 a: 3.91281e-11
+******descent_algorithm r.first:29221.1 error: 1.09091 a: 1.6941e-09
+******descent_algorithm r.first:114.049 error: 0.437403 a: 1.0611e-08
+******descent_algorithm r.first:1.82969 error: 0.429153 a: 1.27457e-09
+<elapsed_time value = "grad_match::grad">
+0.00135
+</elapsed_time>
+<loop error_ = 0.429153test_grad_:-3.89688e-06 grad22_: 3.87109e-06 dt: 110127 a: -5.15879</loop>
+******descent_algorithm r.first:32134.7 error: 1.09091 a: 1.29642e-10
+******descent_algorithm r.first:16067.4 error: 1.09091 a: 5.60856e-09
+******descent_algorithm r.first:62.6509 error: 0.439363 a: 4.33002e-08
+******descent_algorithm r.first:2.82462 error: 0.429164 a: 4.3746e-08
+******descent_algorithm r.first:0.719408 error: 0.429152 a: 1.39623e-06
+<elapsed_time value = "grad_match::grad">
+0.00205
+</elapsed_time>
+<loop error_ = 0.429152test_grad_:-1.16573e-06 grad22_: 1.09131e-06 dt: 368139 a: -14.8851</loop>
+******descent_algorithm r.first:53710.7 error: 1.09091 a: 1.06307e-11
+******descent_algorithm r.first:26855.4 error: 1.09099 a: 1.91662e-09
+******descent_algorithm r.first:54.8434 error: 0.43003 a: 5.07097e-09
+******descent_algorithm r.first:1.81937 error: 0.429151 a: 2.64012e-09
+<elapsed_time value = "grad_match::grad">
+0.00172
+</elapsed_time>
+<loop error_ = 0.429151test_grad_:-2.03171e-06 grad22_: 2.07499e-06 dt: 211227 a: 8.65609</loop>
+******descent_algorithm r.first:61635.1 error: 1.09091 a: 3.53971e-11
+******descent_algorithm r.first:30817.6 error: 1.09091 a: 1.52825e-09
+******descent_algorithm r.first:119.875 error: 0.448709 a: 2.24136e-08
+******descent_algorithm r.first:5.40458 error: 0.429181 a: 2.30461e-08
+******descent_algorithm r.first:0.731672 error: 0.42915 a: 2.0791e-07
+<elapsed_time value = "grad_match::grad">
+0.00113
+</elapsed_time>
+<end error = "0.429151" grad22_= "2.07499e-06" dt= "0.365836 iter: 6"/>
+0.05568
+</elapsed_time>
+</info>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<elapsed_time value = "Knm(pi_array_type& x, pi_array_type& y)">
+0.00017
+</elapsed_time>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(gaussian)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_mean_distance</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.discrepancy_error(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.discrepancy_error(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(gaussian)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_mean_distance</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "alg.match(pi_array_type& x, size_t N, size_t iterations = 10)"/>
+<elapsed_time value = "rearrangement_functional::rearrangement_functional()(std::vector<size_t>& permutation)">
+
+<info cost =" W_ ">0.0319189 </info>
+
+<info cost ="5.59119e-05" count = "4"/>
+0.00108
+</elapsed_time>
+<elapsed_time value = "grad_match::grad_match(const Matrix_type& y_)">
+0.00142
+</elapsed_time>
+<elapsed_time value = "descent_algorithm">
+<elapsed_time value = "grad_match::grad">
+0.00131
+</elapsed_time>
+<loop error_ = 0.429178test_grad_:-2.02061e-06 grad22_: 1.99989e-06 dt: 212401 a: -4.14336</loop>
+******descent_algorithm r.first:212401 error: 1.08117 a: 4.77357e-11
+******descent_algorithm r.first:42329 error: 1.09178 a: 8.34105e-10
+******descent_algorithm r.first:218.435 error: 0.441667 a: 4.40518e-09
+******descent_algorithm r.first:3.79072 error: 0.429174 a: 6.59859e-10
+<elapsed_time value = "grad_match::grad">
+0.00174
+</elapsed_time>
+<loop error_ = 0.429174test_grad_:-5.55112e-06 grad22_: 5.53309e-06 dt: 77313.1 a: -3.60523</loop>
+******descent_algorithm r.first:77313.1 error: 1.0789 a: 3.60532e-10
+******descent_algorithm r.first:15397 error: 1.08796 a: 6.27649e-09
+******descent_algorithm r.first:79.749 error: 0.449172 a: 5.22603e-08
+******descent_algorithm r.first:3.59548 error: 0.429196 a: 5.22356e-08
+******descent_algorithm r.first:0.861562 error: 0.429172 a: 1.47492e-06
+<elapsed_time value = "grad_match::grad">
+0.00152
+</elapsed_time>
+<loop error_ = 0.429172test_grad_:-1.18794e-06 grad22_: 1.17184e-06 dt: 361274 a: -3.21925</loop>
+******descent_algorithm r.first:361274 error: 1.07453 a: 1.63764e-11
+******descent_algorithm r.first:72539.8 error: 1.08125 a: 2.8015e-10
+******descent_algorithm r.first:382.353 error: 0.467726 a: 4.33825e-09
+******descent_algorithm r.first:4.43423 error: 0.42917 a: 2.0376e-10
+<elapsed_time value = "grad_match::grad">
+0.00143
+</elapsed_time>
+<loop error_ = 0.42917test_grad_:-7.79377e-06 grad22_: 7.81426e-06 dt: 55065.8 a: 4.09947</loop>
+******descent_algorithm r.first:55065.8 error: 1.08125 a: 7.13912e-10
+******descent_algorithm r.first:10917 error: 1.09123 a: 1.25418e-08
+******descent_algorithm r.first:56.0339 error: 0.444323 a: 8.07431e-08
+******descent_algorithm r.first:2.52628 error: 0.429183 a: 8.17258e-08
+******descent_algorithm r.first:0.77735 error: 0.429167 a: 3.80726e-06
+<elapsed_time value = "grad_match::grad">
+0.00150
+</elapsed_time>
+<loop error_ = 0.429167test_grad_:-8.32667e-07 grad22_: 8.60502e-07 dt: 515413 a: 5.56701</loop>
+******descent_algorithm r.first:515413 error: 1.07242 a: 8.18197e-12
+******descent_algorithm r.first:9176.47 error: 0.994749 a: 1.10744e-10
+******descent_algorithm r.first:413.721 error: 0.448412 a: 1.86215e-09
+******descent_algorithm r.first:6.71147 error: 0.429165 a: 1.69319e-10
+<elapsed_time value = "grad_match::grad">
+0.00148
+</elapsed_time>
+<loop error_ = 0.429165test_grad_:-7.88258e-06 grad22_: 7.92286e-06 dt: 54444.7 a: 8.05562</loop>
+******descent_algorithm r.first:54444.7 error: 1.07991 a: 7.30107e-10
+******descent_algorithm r.first:10796.5 error: 1.09752 a: 1.29352e-08
+******descent_algorithm r.first:54.9487 error: 0.44445 a: 8.4663e-08
+******descent_algorithm r.first:0.772169 error: 0.429162 a: 8.19704e-09
+<elapsed_time value = "grad_match::grad">
+0.00146
+</elapsed_time>
+<end error = "0.429165" grad22_= "7.92286e-06" dt= "0.386085 iter: 6"/>
+0.06263
+</elapsed_time>
+</info>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<elapsed_time value = "Knm(pi_array_type& x, pi_array_type& y)">
+0.00022
+</elapsed_time>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(gaussian)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_mean_distance</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.discrepancy_error(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.discrepancy_error(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(gaussian)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_mean_distance</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "alg.match(pi_array_type& x, size_t N, size_t iterations = 10)"/>
+<elapsed_time value = "rearrangement_functional::rearrangement_functional()(std::vector<size_t>& permutation)">
+
+<info cost =" W_ ">0.0230003 </info>
+
+<info cost ="2.18358e-05" count = "8"/>
+0.00256
+</elapsed_time>
+<elapsed_time value = "grad_match::grad_match(const Matrix_type& y_)">
+0.00138
+</elapsed_time>
+<elapsed_time value = "descent_algorithm">
+<elapsed_time value = "grad_match::grad">
+0.00137
+</elapsed_time>
+<loop error_ = 0.429144test_grad_:-5.21805e-07 grad22_: 4.75392e-07 dt: 822422 a: -9.28266</loop>
+******descent_algorithm r.first:434127 error: 1.05882 a: 2.47217e-12
+******descent_algorithm r.first:211072 error: 1.05882 a: 3.27722e-11
+******descent_algorithm r.first:1435.7 error: 0.473975 a: 3.59063e-10
+******descent_algorithm r.first:64.7286 error: 0.429272 a: 6.17664e-10
+******descent_algorithm r.first:5.99369 error: 0.429142 a: 2.72615e-09
+<elapsed_time value = "grad_match::grad">
+0.00138
+</elapsed_time>
+<loop error_ = 0.429142test_grad_:-1.05471e-06 grad22_: 1.06731e-06 dt: 406881 a: 2.51936</loop>
+******descent_algorithm r.first:386372 error: 1.05882 a: 1.25889e-11
+******descent_algorithm r.first:83781.2 error: 1.06011 a: 2.05259e-10
+******descent_algorithm r.first:463.333 error: 0.496024 a: 5.10359e-09
+******descent_algorithm r.first:18.6346 error: 0.429242 a: 5.58618e-09
+******descent_algorithm r.first:1.55669 error: 0.429141 a: 1.91366e-08
+<elapsed_time value = "grad_match::grad">
+0.00139
+</elapsed_time>
+<loop error_ = 0.429141test_grad_:-4.44089e-07 grad22_: 3.53902e-07 dt: 966341 a: -18.0374</loop>
+******descent_algorithm r.first:510096 error: 1.05882 a: 1.73526e-12
+******descent_algorithm r.first:255048 error: 1.05882 a: 2.21352e-11
+******descent_algorithm r.first:20062.5 error: 1.07671 a: 3.25299e-09
+******descent_algorithm r.first:12.3098 error: 0.429153 a: 1.69759e-09
+******descent_algorithm r.first:1.69569 error: 0.429141 a: 1.58408e-08
+<elapsed_time value = "grad_match::grad">
+0.00131
+</elapsed_time>
+<loop error_ = 0.429141test_grad_:-2.33147e-07 grad22_: 3.34077e-07 dt: 1.84065e+06 a: 20.1859</loop>
+******descent_algorithm r.first:537094 error: 1.05882 a: 4.77637e-13
+******descent_algorithm r.first:268547 error: 1.05882 a: 1.99507e-11
+******descent_algorithm r.first:11686.1 error: 1.1137 a: 1.00825e-08
+******descent_algorithm r.first:1.59929 error: 0.429141 a: 9.98765e-10
+<elapsed_time value = "grad_match::grad">
+0.00151
+</elapsed_time>
+<loop error_ = 0.429141test_grad_:-2.55351e-07 grad22_: 2.83041e-07 dt: 1.68059e+06 a: 5.53802</loop>
+******descent_algorithm r.first:490390 error: 1.05882 a: 5.44178e-13
+******descent_algorithm r.first:245195 error: 1.05882 a: 2.32561e-11
+******descent_algorithm r.first:10980 error: 1.1145 a: 1.14212e-08
+******descent_algorithm r.first:1.70238 error: 0.429141 a: 9.63928e-10
+<elapsed_time value = "grad_match::grad">
+0.00127
+</elapsed_time>
+<loop error_ = 0.429141test_grad_:-2.33147e-07 grad22_: 2.72755e-07 dt: 1.84065e+06 a: 7.92158</loop>
+******descent_algorithm r.first:537093 error: 1.05882 a: 4.58196e-13
+******descent_algorithm r.first:268547 error: 1.05882 a: 1.94941e-11
+******descent_algorithm r.first:11959.9 error: 1.10276 a: 9.46426e-09
+******descent_algorithm r.first:1.60299 error: 0.42914 a: 7.20155e-10
+<elapsed_time value = "grad_match::grad">
+0.00170
+</elapsed_time>
+<end error = "0.429141" grad22_= "2.72755e-07" dt= "0.801493 iter: 6"/>
+0.06132
+</elapsed_time>
+</info>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<elapsed_time value = "Knm(pi_array_type& x, pi_array_type& y)">
+0.00022
+</elapsed_time>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(gaussian)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_mean_distance</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.discrepancy_error(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.discrepancy_error(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(gaussian)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_mean_distance</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "alg.match(pi_array_type& x, size_t N, size_t iterations = 10)"/>
+<elapsed_time value = "rearrangement_functional::rearrangement_functional()(std::vector<size_t>& permutation)">
+
+<info cost =" W_ ">0.0249386 </info>
+
+<info cost ="1.39197e-05" count = "12"/>
+0.00578
+</elapsed_time>
+<elapsed_time value = "grad_match::grad_match(const Matrix_type& y_)">
+0.00155
+</elapsed_time>
+<elapsed_time value = "descent_algorithm">
+<elapsed_time value = "grad_match::grad">
+0.00184
+</elapsed_time>
+<loop error_ = 0.429136test_grad_:-6.66134e-08 grad22_: 5.95052e-08 dt: 6.44219e+06 a: -1.42163</loop>
+******descent_algorithm r.first:6.37772e+06 error: 1.05 a: 4.82087e-14
+******descent_algorithm r.first:1.38177e+06 error: 1.05107 a: 7.37609e-13
+******descent_algorithm r.first:90309.9 error: 1.06773 a: 1.57915e-10
+******descent_algorithm r.first:38.0363 error: 0.429157 a: 2.61714e-10
+******descent_algorithm r.first:1.85006 error: 0.429136 a: 3.04364e-10
+<elapsed_time value = "grad_match::grad">
+0.00185
+</elapsed_time>
+<loop error_ = 0.429136test_grad_:-8.88178e-08 grad22_: 4.83518e-08 dt: 4.83164e+06 a: -8.09321</loop>
+******descent_algorithm r.first:4.74484e+06 error: 1.05 a: 7.28461e-14
+******descent_algorithm r.first:1.21925e+06 error: 1.05052 a: 9.1531e-13
+******descent_algorithm r.first:97035.8 error: 1.07394 a: 1.37957e-10
+******descent_algorithm r.first:58.0521 error: 0.429172 a: 1.89703e-10
+******descent_algorithm r.first:2.07157 error: 0.429136 a: 1.18881e-10
+<elapsed_time value = "grad_match::grad">
+0.00186
+</elapsed_time>
+<loop error_ = 0.429136test_grad_:-5.55112e-08 grad22_: 5.07476e-08 dt: 7.73062e+06 a: -0.952705</loop>
+******descent_algorithm r.first:6.81814e+06 error: 1.05 a: 3.23571e-14
+******descent_algorithm r.first:1.71558e+06 error: 1.05018 a: 4.8118e-13
+******descent_algorithm r.first:115365 error: 1.0592 a: 9.5562e-11
+******descent_algorithm r.first:52.379 error: 0.42917 a: 2.20734e-10
+******descent_algorithm r.first:1.8702 error: 0.429136 a: 1.38383e-10
+<elapsed_time value = "grad_match::grad">
+0.00176
+</elapsed_time>
+<loop error_ = 0.429136test_grad_:-4.44089e-08 grad22_: 4.38157e-08 dt: 9.66327e+06 a: -0.118652</loop>
+******descent_algorithm r.first:6.67716e+06 error: 1.05 a: 1.95639e-14
+******descent_algorithm r.first:2.26994e+06 error: 1.05 a: 2.79595e-13
+******descent_algorithm r.first:158833 error: 1.05733 a: 5.03531e-11
+******descent_algorithm r.first:79.5253 error: 0.429199 a: 1.70843e-10
+******descent_algorithm r.first:2.08323 error: 0.429136 a: 5.772e-11
+<elapsed_time value = "grad_match::grad">
+0.00172
+</elapsed_time>
+<loop error_ = 0.429136test_grad_:-1.11022e-08 grad22_: 4.71238e-08 dt: 3.86531e+07 a: 7.20432</loop>
+******descent_algorithm r.first:5.63941e+06 error: 1.05 a: 1.18685e-15
+******descent_algorithm r.first:2.81971e+06 error: 1.05 a: 1.89603e-13
+******descent_algorithm r.first:58555.3 error: 1.07687 a: 3.79437e-10
+******descent_algorithm r.first:1.87643 error: 0.429135 a: 1.03295e-10
+<elapsed_time value = "grad_match::grad">
+0.00173
+</elapsed_time>
+<loop error_ = 0.429135test_grad_:-4.44089e-08 grad22_: 4.12258e-08 dt: 9.66327e+06 a: -0.636626</loop>
+******descent_algorithm r.first:6.67716e+06 error: 1.05 a: 1.91935e-14
+******descent_algorithm r.first:2.31374e+06 error: 1.05 a: 2.67588e-13
+******descent_algorithm r.first:165960 error: 1.05757 a: 4.61302e-11
+******descent_algorithm r.first:86.8054 error: 0.429206 a: 1.60475e-10
+******descent_algorithm r.first:2.086 error: 0.429135 a: 4.56366e-11
+<elapsed_time value = "grad_match::grad">
+0.00167
+</elapsed_time>
+<end error = "0.429135" grad22_= "4.12258e-08" dt= "1.043 iter: 6"/>
+0.07249
+</elapsed_time>
+</info>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<elapsed_time value = "Knm(pi_array_type& x, pi_array_type& y)">
+0.00020
+</elapsed_time>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(gaussian)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_mean_distance</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.discrepancy_error(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.discrepancy_error(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(gaussian)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_mean_distance</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(gaussian)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_mean_distance</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.discrepancy_error(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.discrepancy_error(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(gaussian)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_mean_distance</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.discrepancy_error(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.discrepancy_error(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(gaussian)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_mean_distance</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.discrepancy_error(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.discrepancy_error(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(gaussian)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_mean_distance</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.discrepancy_error(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.discrepancy_error(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(gaussian)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_mean_distance</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.discrepancy_error(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.discrepancy_error(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(gaussian)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_mean_distance</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.discrepancy_error(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.discrepancy_error(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(gaussian)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_mean_distance</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.discrepancy_error(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.discrepancy_error(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(gaussian)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_mean_distance</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(gaussian)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_mean_distance</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "alg.match(pi_array_type& x, size_t N, size_t iterations = 10)"/>
+<elapsed_time value = "rearrangement_functional::rearrangement_functional()(std::vector<size_t>& permutation)">
+
+<info cost =" W_ ">0.161721 </info>
+
+<info cost ="0.0473698" count = "4"/>
+0.00018
+</elapsed_time>
+<elapsed_time value = "grad_match::grad_match(const Matrix_type& y_)">
+0.00492
+</elapsed_time>
+<elapsed_time value = "descent_algorithm">
+<elapsed_time value = "grad_match::grad">
+0.00181
+</elapsed_time>
+<loop error_ = 0.496272test_grad_:-0.00053918 grad22_: 0.000539329 dt: 920.421 a: 29.8447</loop>
+******descent_algorithm r.first:82.9943 error: 0.49466 a: 1.01866e-07
+<elapsed_time value = "grad_match::grad">
+0.00181
+</elapsed_time>
+<loop error_ = 0.49466test_grad_:-0.000484934 grad22_: 0.000484804 dt: 1020.06 a: -25.987</loop>
+******descent_algorithm r.first:91.9784 error: 0.498149 a: 9.24159e-08
+******descent_algorithm r.first:42.9372 error: 0.484153 a: 9.74837e-06
+<elapsed_time value = "grad_match::grad">
+0.00171
+</elapsed_time>
+<loop error_ = 0.484153test_grad_:-8.89289e-06 grad22_: 8.94234e-06 dt: 54442.7 a: 9.89088</loop>
+******descent_algorithm r.first:4909.1 error: 1.25469 a: 5.49549e-10
+******descent_algorithm r.first:266.666 error: 0.484638 a: 9.52653e-10
+******descent_algorithm r.first:108.061 error: 0.483676 a: 5.5094e-08
+<elapsed_time value = "grad_match::grad">
+0.00181
+</elapsed_time>
+<loop error_ = 0.483676test_grad_:-7.9492e-06 grad22_: 7.85572e-06 dt: 60846 a: -18.6953</loop>
+******descent_algorithm r.first:5486.48 error: 1.37858 a: 5.06724e-10
+******descent_algorithm r.first:247.358 error: 0.485629 a: 1.0354e-09
+******descent_algorithm r.first:62.6088 error: 0.48343 a: 3.20467e-08
+<elapsed_time value = "grad_match::grad">
+0.00167
+</elapsed_time>
+<loop error_ = 0.48343test_grad_:-2.80886e-06 grad22_: 2.72114e-06 dt: 172109 a: -17.5455</loop>
+******descent_algorithm r.first:15519 error: 1.4955 a: 7.11847e-11
+******descent_algorithm r.first:699.675 error: 0.488385 a: 2.27827e-10
+******descent_algorithm r.first:94.3713 error: 0.483302 a: 2.10434e-09
+<elapsed_time value = "grad_match::grad">
+0.00169
+</elapsed_time>
+<loop error_ = 0.483302test_grad_:-2.4758e-06 grad22_: 2.60062e-06 dt: 195211 a: 24.9647</loop>
+******descent_algorithm r.first:17602.1 error: 1.49931 a: 5.5726e-11
+******descent_algorithm r.first:793.591 error: 0.495229 a: 3.61265e-10
+******descent_algorithm r.first:58.7829 error: 0.483225 a: 9.70541e-10
+<elapsed_time value = "grad_match::grad">
+0.00166
+</elapsed_time>
+<end error = "0.483302" grad22_= "2.60062e-06" dt= "29.3915 iter: 6"/>
+0.04227
+</elapsed_time>
+</info>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<elapsed_time value = "Knm(pi_array_type& x, pi_array_type& y)">
+0.00593
+</elapsed_time>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(gaussian)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_mean_distance</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.discrepancy_error(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.discrepancy_error(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(gaussian)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_mean_distance</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "alg.match(pi_array_type& x, size_t N, size_t iterations = 10)"/>
+<elapsed_time value = "rearrangement_functional::rearrangement_functional()(std::vector<size_t>& permutation)">
+
+<info cost =" W_ ">0.0554472 </info>
+
+<info cost ="0.0186191" count = "3"/>
+0.00047
+</elapsed_time>
+<elapsed_time value = "grad_match::grad_match(const Matrix_type& y_)">
+0.00471
+</elapsed_time>
+<elapsed_time value = "descent_algorithm">
+<elapsed_time value = "grad_match::grad">
+0.00166
+</elapsed_time>
+<loop error_ = 0.467522test_grad_:-6.04294e-05 grad22_: 6.04486e-05 dt: 7736.65 a: 3.83055</loop>
+******descent_algorithm r.first:697.614 error: 0.529818 a: 3.49059e-09
+******descent_algorithm r.first:131.569 error: 0.463558 a: 6.55883e-08
+<elapsed_time value = "grad_match::grad">
+0.00151
+</elapsed_time>
+<loop error_ = 0.463558test_grad_:-9.9698e-06 grad22_: 1.00292e-05 dt: 46496.2 a: 11.8852</loop>
+******descent_algorithm r.first:4192.56 error: 0.723275 a: 2.79166e-10
+******descent_algorithm r.first:348.219 error: 0.461782 a: 7.81e-10
+<elapsed_time value = "grad_match::grad">
+0.00157
+</elapsed_time>
+<loop error_ = 0.461782test_grad_:-1.35447e-05 grad22_: 1.36471e-05 dt: 34093.1 a: 20.477</loop>
+******descent_algorithm r.first:34093.1 error: 1.2 a: 2.0708e-09
+******descent_algorithm r.first:589.784 error: 0.46958 a: 7.408e-10
+******descent_algorithm r.first:149.168 error: 0.460764 a: 2.34028e-08
+<elapsed_time value = "grad_match::grad">
+0.00162
+</elapsed_time>
+<loop error_ = 0.460764test_grad_:-3.9968e-06 grad22_: 4.05279e-06 dt: 115283 a: 11.1979</loop>
+******descent_algorithm r.first:79658.7 error: 1.2 a: 1.59829e-10
+******descent_algorithm r.first:2254.86 error: 0.486494 a: 1.11519e-10
+******descent_algorithm r.first:305.866 error: 0.460142 a: 9.72764e-10
+<elapsed_time value = "grad_match::grad">
+0.00152
+</elapsed_time>
+<loop error_ = 0.460142test_grad_:-5.36238e-06 grad22_: 5.33759e-06 dt: 85809.4 a: -4.95814</loop>
+******descent_algorithm r.first:85809.4 error: 1.2 a: 3.25365e-10
+******descent_algorithm r.first:1486.1 error: 0.490441 a: 2.81494e-10
+******descent_algorithm r.first:150.572 error: 0.459741 a: 1.45599e-09
+<elapsed_time value = "grad_match::grad">
+0.00170
+</elapsed_time>
+<loop error_ = 0.459741test_grad_:-1.64313e-06 grad22_: 1.73895e-06 dt: 279796 a: 19.1644</loop>
+******descent_algorithm r.first:147694 error: 1.2 a: 2.54732e-11
+******descent_algorithm r.first:64504.3 error: 1.2 a: 4.09742e-10
+******descent_algorithm r.first:310.159 error: 0.459471 a: 3.35867e-11
+<elapsed_time value = "grad_match::grad">
+0.00161
+</elapsed_time>
+<end error = "0.459741" grad22_= "1.73895e-06" dt= "155.079 iter: 6"/>
+0.04345
+</elapsed_time>
+</info>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<elapsed_time value = "Knm(pi_array_type& x, pi_array_type& y)">
+0.00569
+</elapsed_time>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(gaussian)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_mean_distance</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.discrepancy_error(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.discrepancy_error(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(gaussian)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_mean_distance</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "alg.match(pi_array_type& x, size_t N, size_t iterations = 10)"/>
+<elapsed_time value = "rearrangement_functional::rearrangement_functional()(std::vector<size_t>& permutation)">
+
+<info cost =" W_ ">0.0372474 </info>
+
+<info cost ="0.00861153" count = "6"/>
+0.00141
+</elapsed_time>
+<elapsed_time value = "grad_match::grad_match(const Matrix_type& y_)">
+0.00473
+</elapsed_time>
+<elapsed_time value = "descent_algorithm">
+<elapsed_time value = "grad_match::grad">
+0.00213
+</elapsed_time>
+<loop error_ = 0.457514test_grad_:-1.5099e-05 grad22_: 1.5125e-05 dt: 30300.9 a: 5.18667</loop>
+******descent_algorithm r.first:30300.9 error: 1.12501 a: 2.45234e-09
+******descent_algorithm r.first:555.176 error: 0.45893 a: 5.17716e-10
+******descent_algorithm r.first:236.434 error: 0.455729 a: 4.64743e-08
+<elapsed_time value = "grad_match::grad">
+0.00209
+</elapsed_time>
+<loop error_ = 0.455729test_grad_:-3.9857e-06 grad22_: 3.94346e-06 dt: 114341 a: -8.44887</loop>
+******descent_algorithm r.first:100845 error: 1.125 a: 1.63219e-10
+******descent_algorithm r.first:2201.89 error: 0.466083 a: 6.385e-11
+******descent_algorithm r.first:506.073 error: 0.454729 a: 1.64366e-09
+<elapsed_time value = "grad_match::grad">
+0.00217
+</elapsed_time>
+<loop error_ = 0.454729test_grad_:-4.67404e-06 grad22_: 4.66257e-06 dt: 97288.2 a: -2.29347</loop>
+******descent_algorithm r.first:97288.2 error: 1.125 a: 2.37482e-10
+******descent_algorithm r.first:1774.69 error: 0.475963 a: 1.52357e-10
+******descent_algorithm r.first:242.826 error: 0.454163 a: 1.43905e-09
+<elapsed_time value = "grad_match::grad">
+0.00208
+</elapsed_time>
+<loop error_ = 0.454163test_grad_:-1.26565e-06 grad22_: 1.36346e-06 dt: 358837 a: 19.5618</loop>
+******descent_algorithm r.first:32356.3 error: 1.05439 a: 1.00082e-11
+******descent_algorithm r.first:488.679 error: 0.453807 a: 2.36818e-12
+<elapsed_time value = "grad_match::grad">
+0.00215
+</elapsed_time>
+<loop error_ = 0.453807test_grad_:-1.65423e-06 grad22_: 1.63678e-06 dt: 274331 a: -3.48951</loop>
+******descent_algorithm r.first:241950 error: 1.125 a: 2.83617e-11
+******descent_algorithm r.first:58326.3 error: 1.12645 a: 4.51567e-10
+******descent_algorithm r.first:264.481 error: 0.453589 a: 3.20458e-11
+<elapsed_time value = "grad_match::grad">
+0.00204
+</elapsed_time>
+<loop error_ = 0.453589test_grad_:-7.32747e-07 grad22_: 6.62885e-07 dt: 619025 a: -13.9725</loop>
+******descent_algorithm r.first:55817.5 error: 1.08273 a: 3.47679e-12
+******descent_algorithm r.first:2516.53 error: 0.456322 a: 1.13e-11
+******descent_algorithm r.first:477.035 error: 0.453431 a: 1.99673e-10
+<elapsed_time value = "grad_match::grad">
+0.00197
+</elapsed_time>
+<end error = "0.453589" grad22_= "6.62885e-07" dt= "238.517 iter: 6"/>
+0.05717
+</elapsed_time>
+</info>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<elapsed_time value = "Knm(pi_array_type& x, pi_array_type& y)">
+0.00611
+</elapsed_time>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(gaussian)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_mean_distance</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.discrepancy_error(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.discrepancy_error(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(gaussian)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_mean_distance</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "alg.match(pi_array_type& x, size_t N, size_t iterations = 10)"/>
+<elapsed_time value = "rearrangement_functional::rearrangement_functional()(std::vector<size_t>& permutation)">
+
+<info cost =" W_ ">0.0489034 </info>
+
+<info cost ="0.00812401" count = "4"/>
+0.00155
+</elapsed_time>
+<elapsed_time value = "grad_match::grad_match(const Matrix_type& y_)">
+0.00486
+</elapsed_time>
+<elapsed_time value = "descent_algorithm">
+<elapsed_time value = "grad_match::grad">
+0.00220
+</elapsed_time>
+<loop error_ = 0.457027test_grad_:-7.64944e-06 grad22_: 7.62292e-06 dt: 59746.4 a: -5.30251</loop>
+******descent_algorithm r.first:23149 error: 1.06649 a: 4.4034e-10
+******descent_algorithm r.first:1043.67 error: 0.463112 a: 2.09616e-10
+******descent_algorithm r.first:291.857 error: 0.455916 a: 8.18687e-09
+<elapsed_time value = "grad_match::grad">
+0.00208
+</elapsed_time>
+<loop error_ = 0.455916test_grad_:-1.60982e-06 grad22_: 1.55922e-06 dt: 283209 a: -10.121</loop>
+******descent_algorithm r.first:249781 error: 1.09091 a: 2.55452e-11
+******descent_algorithm r.first:5682.39 error: 0.475317 a: 1.4232e-11
+******descent_algorithm r.first:894.351 error: 0.455217 a: 1.72323e-10
+<elapsed_time value = "grad_match::grad">
+0.00324
+</elapsed_time>
+<loop error_ = 0.455217test_grad_:-3.24185e-06 grad22_: 3.19656e-06 dt: 140419 a: -9.0583</loop>
+******descent_algorithm r.first:140419 error: 1.09091 a: 1.10009e-10
+******descent_algorithm r.first:2657.22 error: 0.48092 a: 7.87562e-11
+******descent_algorithm r.first:317.496 error: 0.454711 a: 5.75895e-10
+<elapsed_time value = "grad_match::grad">
+0.00196
+</elapsed_time>
+<loop error_ = 0.454711test_grad_:-9.65894e-07 grad22_: 1.01434e-06 dt: 470767 a: 9.68968</loop>
+******descent_algorithm r.first:42449 error: 0.924999 a: 4.63264e-12
+******descent_algorithm r.first:630.649 error: 0.454288 a: 9.61345e-13
+<elapsed_time value = "grad_match::grad">
+0.00232
+</elapsed_time>
+<loop error_ = 0.454288test_grad_:-1.39888e-06 grad22_: 1.38905e-06 dt: 324751 a: -1.96653</loop>
+******descent_algorithm r.first:308381 error: 1.09091 a: 2.01962e-11
+******descent_algorithm r.first:69264.5 error: 1.09605 a: 3.07643e-10
+******descent_algorithm r.first:498.563 error: 0.453942 a: 3.3585e-11
+<elapsed_time value = "grad_match::grad">
+0.00196
+</elapsed_time>
+<loop error_ = 0.453942test_grad_:-1.44329e-06 grad22_: 1.45468e-06 dt: 314519 a: 2.27834</loop>
+******descent_algorithm r.first:298665 error: 1.09091 a: 2.1662e-11
+******descent_algorithm r.first:6007.81 error: 0.497719 a: 2.36602e-11
+******descent_algorithm r.first:458.64 error: 0.453609 a: 7.40326e-11
+<elapsed_time value = "grad_match::grad">
+0.00195
+</elapsed_time>
+<end error = "0.453942" grad22_= "1.45468e-06" dt= "229.32 iter: 6"/>
+0.08243
+</elapsed_time>
+</info>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<elapsed_time value = "Knm(pi_array_type& x, pi_array_type& y)">
+0.00624
+</elapsed_time>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(gaussian)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_mean_distance</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.discrepancy_error(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.discrepancy_error(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(gaussian)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_mean_distance</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "alg.match(pi_array_type& x, size_t N, size_t iterations = 10)"/>
+<elapsed_time value = "rearrangement_functional::rearrangement_functional()(std::vector<size_t>& permutation)">
+
+<info cost =" W_ ">0.0274002 </info>
+
+<info cost ="0.00322234" count = "9"/>
+0.00595
+</elapsed_time>
+<elapsed_time value = "grad_match::grad_match(const Matrix_type& y_)">
+0.00483
+</elapsed_time>
+<elapsed_time value = "descent_algorithm">
+<elapsed_time value = "grad_match::grad">
+0.00315
+</elapsed_time>
+<loop error_ = 0.452125test_grad_:-2.70894e-06 grad22_: 2.75081e-06 dt: 166901 a: 8.3725</loop>
+******descent_algorithm r.first:166901 error: 1.07143 a: 7.74282e-11
+******descent_algorithm r.first:3154.73 error: 0.47555 a: 5.24538e-11
+******descent_algorithm r.first:413.795 error: 0.451556 a: 4.58007e-10
+<elapsed_time value = "grad_match::grad">
+0.00377
+</elapsed_time>
+<loop error_ = 0.451556test_grad_:-7.43849e-07 grad22_: 7.67377e-07 dt: 607053 a: 4.70551</loop>
+******descent_algorithm r.first:54738 error: 1.00102 a: 3.21004e-12
+******descent_algorithm r.first:784.976 error: 0.451216 a: 7.00261e-13
+<elapsed_time value = "grad_match::grad">
+0.00285
+</elapsed_time>
+<loop error_ = 0.451216test_grad_:-8.32667e-07 grad22_: 8.03252e-07 dt: 541893 a: -5.88304</loop>
+******descent_algorithm r.first:477931 error: 1.07143 a: 6.83889e-12
+******descent_algorithm r.first:121755 error: 1.07235 a: 9.69946e-11
+******descent_algorithm r.first:492.814 error: 0.451016 a: 5.30525e-12
+<elapsed_time value = "grad_match::grad">
+0.00293
+</elapsed_time>
+<loop error_ = 0.451016test_grad_:-4.44089e-07 grad22_: 4.04169e-07 dt: 1.0156e+06 a: -7.98399</loop>
+******descent_algorithm r.first:91576.4 error: 1.04053 a: 1.21486e-12
+******descent_algorithm r.first:4128.72 error: 0.454027 a: 4.46387e-12
+******descent_algorithm r.first:729.307 error: 0.450869 a: 6.92266e-11
+<elapsed_time value = "grad_match::grad">
+0.00327
+</elapsed_time>
+<loop error_ = 0.450869test_grad_:-3.9968e-07 grad22_: 4.43247e-07 dt: 1.12807e+06 a: 8.71328</loop>
+******descent_algorithm r.first:779479 error: 1.07143 a: 1.51831e-12
+******descent_algorithm r.first:263240 error: 1.07143 a: 2.12782e-11
+******descent_algorithm r.first:1693.71 error: 0.451406 a: 7.30328e-12
+******descent_algorithm r.first:493.114 error: 0.450759 a: 3.04786e-10
+<elapsed_time value = "grad_match::grad">
+0.00274
+</elapsed_time>
+<loop error_ = 0.450759test_grad_:-2.88658e-07 grad22_: 2.27236e-07 dt: 1.56157e+06 a: -12.2844</loop>
+******descent_algorithm r.first:824296 error: 1.07143 a: 6.62686e-13
+******descent_algorithm r.first:37163.4 error: 0.6168 a: 2.05439e-12
+******descent_algorithm r.first:693.238 error: 0.450675 a: 4.23324e-13
+<elapsed_time value = "grad_match::grad">
+0.00228
+</elapsed_time>
+<end error = "0.450759" grad22_= "2.27236e-07" dt= "346.619 iter: 6"/>
+0.09309
+</elapsed_time>
+</info>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<elapsed_time value = "Knm(pi_array_type& x, pi_array_type& y)">
+0.01159
+</elapsed_time>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(gaussian)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_mean_distance</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.discrepancy_error(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.discrepancy_error(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(gaussian)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_mean_distance</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "alg.match(pi_array_type& x, size_t N, size_t iterations = 10)"/>
+<elapsed_time value = "rearrangement_functional::rearrangement_functional()(std::vector<size_t>& permutation)">
+
+<info cost =" W_ ">0.0267229 </info>
+
+<info cost ="0.00292905" count = "6"/>
+0.00579
+</elapsed_time>
+<elapsed_time value = "grad_match::grad_match(const Matrix_type& y_)">
+0.00484
+</elapsed_time>
+<elapsed_time value = "descent_algorithm">
+<elapsed_time value = "grad_match::grad">
+0.00420
+</elapsed_time>
+<loop error_ = 0.451832test_grad_:-1.16573e-06 grad22_: 1.11254e-06 dt: 387594 a: -10.6391</loop>
+******descent_algorithm r.first:387594 error: 1.05882 a: 1.38216e-11
+******descent_algorithm r.first:7605.05 error: 0.492161 a: 1.37176e-11
+******descent_algorithm r.first:628.184 error: 0.451482 a: 4.83742e-11
+<elapsed_time value = "grad_match::grad">
+0.00361
+</elapsed_time>
+<loop error_ = 0.451482test_grad_:-6.55032e-07 grad22_: 6.35425e-07 dt: 689253 a: -3.92125</loop>
+******descent_algorithm r.first:607898 error: 1.05882 a: 4.18303e-12
+******descent_algorithm r.first:14120 error: 0.520534 a: 6.36377e-12
+******descent_algorithm r.first:762.147 error: 0.45124 a: 9.71984e-12
+<elapsed_time value = "grad_match::grad">
+0.00357
+</elapsed_time>
+<loop error_ = 0.45124test_grad_:-5.77316e-07 grad22_: 5.63936e-07 dt: 781618 a: -2.67592</loop>
+******descent_algorithm r.first:759839 error: 1.05882 a: 3.39185e-12
+******descent_algorithm r.first:170207 error: 1.05919 a: 4.85971e-11
+******descent_algorithm r.first:610.339 error: 0.451058 a: 2.29583e-12
+<elapsed_time value = "grad_match::grad">
+0.00349
+</elapsed_time>
+<loop error_ = 0.451058test_grad_:-3.44169e-07 grad22_: 3.3294e-07 dt: 1.31057e+06 a: -2.2459</loop>
+******descent_algorithm r.first:905582 error: 1.05882 a: 1.05877e-12
+******descent_algorithm r.first:325065 error: 1.05882 a: 1.35518e-11
+******descent_algorithm r.first:848.68 error: 0.450907 a: 4.07268e-13
+<elapsed_time value = "grad_match::grad">
+0.00340
+</elapsed_time>
+<loop error_ = 0.450907test_grad_:-2.77556e-07 grad22_: 3.65151e-07 dt: 1.62456e+06 a: 17.5191</loop>
+******descent_algorithm r.first:857549 error: 1.05882 a: 6.97976e-13
+******descent_algorithm r.first:397658 error: 1.05882 a: 9.52524e-12
+******descent_algorithm r.first:2627.46 error: 0.45187 a: 4.5293e-12
+******descent_algorithm r.first:652.319 error: 0.450788 a: 1.38113e-10
+<elapsed_time value = "grad_match::grad">
+0.00325
+</elapsed_time>
+<loop error_ = 0.450788test_grad_:-1.22125e-07 grad22_: 2.51614e-07 dt: 3.69122e+06 a: 25.8978</loop>
+******descent_algorithm r.first:1.07708e+06 error: 1.05882 a: 1.29033e-13
+******descent_algorithm r.first:538541 error: 1.05882 a: 5.12739e-12
+******descent_algorithm r.first:739.184 error: 0.450688 a: 3.03636e-13
+<elapsed_time value = "grad_match::grad">
+0.00298
+</elapsed_time>
+<end error = "0.450788" grad22_= "2.51614e-07" dt= "369.592 iter: 6"/>
+0.11377
+</elapsed_time>
+</info>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<elapsed_time value = "Knm(pi_array_type& x, pi_array_type& y)">
+0.00703
+</elapsed_time>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(gaussian)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_mean_distance</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.discrepancy_error(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.discrepancy_error(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(gaussian)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_mean_distance</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "alg.match(pi_array_type& x, size_t N, size_t iterations = 10)"/>
+<elapsed_time value = "rearrangement_functional::rearrangement_functional()(std::vector<size_t>& permutation)">
+
+<info cost =" W_ ">0.0207113 </info>
+
+<info cost ="0.0026428" count = "7"/>
+0.00832
+</elapsed_time>
+<elapsed_time value = "grad_match::grad_match(const Matrix_type& y_)">
+0.00505
+</elapsed_time>
+<elapsed_time value = "descent_algorithm">
+<elapsed_time value = "grad_match::grad">
+0.00397
+</elapsed_time>
+<loop error_ = 0.451545test_grad_:-8.99281e-07 grad22_: 9.07104e-07 dt: 502118 a: 1.56466</loop>
+******descent_algorithm r.first:502118 error: 1.05 a: 8.36043e-12
+******descent_algorithm r.first:107564 error: 1.06004 a: 1.22051e-10
+******descent_algorithm r.first:736.595 error: 0.451212 a: 1.23192e-11
+<elapsed_time value = "grad_match::grad">
+0.00328
+</elapsed_time>
+<loop error_ = 0.451212test_grad_:-4.21885e-07 grad22_: 4.9824e-07 dt: 1.06951e+06 a: 15.2711</loop>
+******descent_algorithm r.first:943275 error: 1.05 a: 1.8687e-12
+******descent_algorithm r.first:225764 error: 1.05023 a: 2.7919e-11
+******descent_algorithm r.first:928.907 error: 0.450977 a: 1.99852e-12
+<elapsed_time value = "grad_match::grad">
+0.00349
+</elapsed_time>
+<loop error_ = 0.450977test_grad_:-5.21805e-07 grad22_: 4.72975e-07 dt: 864264 a: -9.7659</loop>
+******descent_algorithm r.first:762251 error: 1.05 a: 2.56924e-12
+******descent_algorithm r.first:203097 error: 1.05048 a: 3.37256e-11
+******descent_algorithm r.first:708.958 error: 0.450795 a: 1.28565e-12
+<elapsed_time value = "grad_match::grad">
+0.00321
+</elapsed_time>
+<loop error_ = 0.450795test_grad_:-2.33147e-07 grad22_: 2.7202e-07 dt: 1.93353e+06 a: 7.77467</loop>
+******descent_algorithm r.first:1.02064e+06 error: 1.05 a: 4.69083e-13
+******descent_algorithm r.first:497027 error: 1.05 a: 5.94575e-12
+******descent_algorithm r.first:3535.78 error: 0.451277 a: 1.87758e-12
+******descent_algorithm r.first:1179.34 error: 0.450635 a: 1.02585e-10
+<elapsed_time value = "grad_match::grad">
+0.00327
+</elapsed_time>
+<loop error_ = 0.450635test_grad_:-4.21885e-07 grad22_: 3.9222e-07 dt: 1.06815e+06 a: -5.933</loop>
+******descent_algorithm r.first:942069 error: 1.05 a: 1.69836e-12
+******descent_algorithm r.first:248407 error: 1.05055 a: 2.26021e-11
+******descent_algorithm r.first:547.247 error: 0.450509 a: 5.06691e-13
+<elapsed_time value = "grad_match::grad">
+0.00356
+</elapsed_time>
+<loop error_ = 0.450509test_grad_:-1.22125e-07 grad22_: 1.36147e-07 dt: 3.68893e+06 a: 2.80443</loop>
+******descent_algorithm r.first:332630 error: 1.04899 a: 9.46149e-14
+******descent_algorithm r.first:8997.07 error: 0.451115 a: 1.32391e-13
+******descent_algorithm r.first:3116.03 error: 0.450294 a: 2.07197e-11
+<elapsed_time value = "grad_match::grad">
+0.00322
+</elapsed_time>
+<end error = "0.450509" grad22_= "1.36147e-07" dt= "1558.02 iter: 6"/>
+0.11553
+</elapsed_time>
+</info>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<elapsed_time value = "Knm(pi_array_type& x, pi_array_type& y)">
+0.00719
+</elapsed_time>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(gaussian)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_mean_distance</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.discrepancy_error(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.discrepancy_error(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(gaussian)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_mean_distance</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(gaussian)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_mean_distance</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.discrepancy_error(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.discrepancy_error(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(gaussian)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_mean_distance</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.discrepancy_error(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.discrepancy_error(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(gaussian)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_mean_distance</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.discrepancy_error(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.discrepancy_error(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(gaussian)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_mean_distance</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(gaussian)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_mean_distance</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "alg.match(pi_array_type& x, size_t N, size_t iterations = 10)"/>
+<elapsed_time value = "rearrangement_functional::rearrangement_functional()(std::vector<size_t>& permutation)">
+
+<info cost =" W_ ">0.0874528 </info>
+
+<info cost ="0.000356238" count = "7"/>
+0.02704
+</elapsed_time>
+<elapsed_time value = "grad_match::grad_match(const Matrix_type& y_)">
+0.00195
+</elapsed_time>
+<elapsed_time value = "descent_algorithm">
+<elapsed_time value = "grad_match::grad">
+0.00578
+</elapsed_time>
+<loop error_ = 0.4017test_grad_:-4.44089e-08 grad22_: 3.87493e-09 dt: 9.04549e+06 a: -8.1068</loop>
+******descent_algorithm r.first:9.04549e+06 error: 1.05843 a: 1.69097e-14
+******descent_algorithm r.first:236807 error: 0.405601 a: 1.3973e-15
+******descent_algorithm r.first:22502.9 error: 0.401657 a: 6.21947e-15
+<elapsed_time value = "grad_match::grad">
+0.00468
+</elapsed_time>
+<loop error_ = 0.401657test_grad_:-5.55112e-08 grad22_: 1.77712e-09 dt: 7.2356e+06 a: -10.7468</loop>
+******descent_algorithm r.first:652434 error: 0.411998 a: 4.39332e-16
+******descent_algorithm r.first:32241.1 error: 0.401628 a: 5.38614e-16
+<elapsed_time value = "grad_match::grad">
+0.00555
+</elapsed_time>
+<loop error_ = 0.401628test_grad_:0 grad22_: 1.76595e-09 dt: -0 a: 0.353189</loop>
+******descent_algorithm r.first:-0 error: 0.401628 a: -nan(ind)
+<elapsed_time value = "grad_match::grad">
+0.00446
+</elapsed_time>
+<loop error_ = 0.401628test_grad_:0 grad22_: 1.76595e-09 dt: -0 a: 0.353189</loop>
+******descent_algorithm r.first:-0 error: 0.401628 a: -nan(ind)
+<elapsed_time value = "grad_match::grad">
+0.00433
+</elapsed_time>
+<loop error_ = 0.401628test_grad_:0 grad22_: 1.76595e-09 dt: -0 a: 0.353189</loop>
+******descent_algorithm r.first:-0 error: 0.401628 a: -nan(ind)
+<elapsed_time value = "grad_match::grad">
+0.00464
+</elapsed_time>
+<loop error_ = 0.401628test_grad_:0 grad22_: 1.76595e-09 dt: -0 a: 0.353189</loop>
+******descent_algorithm r.first:-0 error: 0.401628 a: -nan(ind)
+<elapsed_time value = "grad_match::grad">
+0.00489
+</elapsed_time>
+<end error = "0.401628" grad22_= "1.76595e-09" dt= "-0 iter: 6"/>
+0.06579
+</elapsed_time>
+</info>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(gaussian)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_mean_distance</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<elapsed_time value = "op.projection(pi_array_type& x, pi_array_type& y, pi_array_type& z, pi_array_type& fx)">
+<elapsed_time value = "Kernel::projection(const Matrix_type& x, const Matrix_type& y, const Matrix_type& z, const Matrix_type& fx_)">
+Kernel::projection Nx:499, Ny:60, Nz:284308, Dfx:2, D:30
+<elapsed_time value = "Kernel::Knm_inv(const Matrix_type& x, const Matrix_type& y, const Matrix_type& z, const Matrix_type& fx_)">
+0.00842
+</elapsed_time>
+0.28850
+</elapsed_time>
+0.38481
+</elapsed_time>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(gaussian)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_mean_distance</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.discrepancy_error(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.discrepancy_error(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(gaussian)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_mean_distance</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "alg.match(pi_array_type& x, size_t N, size_t iterations = 10)"/>
+<elapsed_time value = "rearrangement_functional::rearrangement_functional()(std::vector<size_t>& permutation)">
+
+<info cost =" W_ ">0.0862717 </info>
+
+<info cost ="0.000264261" count = "6"/>
+0.02603
+</elapsed_time>
+<elapsed_time value = "grad_match::grad_match(const Matrix_type& y_)">
+0.00172
+</elapsed_time>
+<elapsed_time value = "descent_algorithm">
+<elapsed_time value = "grad_match::grad">
+0.00695
+</elapsed_time>
+<loop error_ = 0.401608test_grad_:-1.11022e-08 grad22_: 2.19515e-09 dt: 3.61737e+07 a: -1.78142</loop>
+******descent_algorithm r.first:3.61737e+07 error: 1.01493 a: 1.05879e-15
+******descent_algorithm r.first:945500 error: 0.434831 a: 6.42063e-16
+******descent_algorithm r.first:26775.7 error: 0.401579 a: 2.61725e-16
+<elapsed_time value = "grad_match::grad">
+0.00638
+</elapsed_time>
+<loop error_ = 0.401579test_grad_:0 grad22_: 9.0182e-10 dt: -0 a: 0.180364</loop>
+******descent_algorithm r.first:-0 error: 0.401579 a: -nan(ind)
+<elapsed_time value = "grad_match::grad">
+0.00666
+</elapsed_time>
+<loop error_ = 0.401579test_grad_:0 grad22_: 9.0182e-10 dt: -0 a: 0.180364</loop>
+******descent_algorithm r.first:-0 error: 0.401579 a: -nan(ind)
+<elapsed_time value = "grad_match::grad">
+0.00671
+</elapsed_time>
+<loop error_ = 0.401579test_grad_:0 grad22_: 9.0182e-10 dt: -0 a: 0.180364</loop>
+******descent_algorithm r.first:-0 error: 0.401579 a: -nan(ind)
+<elapsed_time value = "grad_match::grad">
+0.00620
+</elapsed_time>
+<loop error_ = 0.401579test_grad_:0 grad22_: 9.0182e-10 dt: -0 a: 0.180364</loop>
+******descent_algorithm r.first:-0 error: 0.401579 a: -nan(ind)
+<elapsed_time value = "grad_match::grad">
+0.00621
+</elapsed_time>
+<loop error_ = 0.401579test_grad_:0 grad22_: 9.0182e-10 dt: -0 a: 0.180364</loop>
+******descent_algorithm r.first:-0 error: 0.401579 a: -nan(ind)
+<elapsed_time value = "grad_match::grad">
+0.00566
+</elapsed_time>
+<end error = "0.401579" grad22_= "9.0182e-10" dt= "-0 iter: 6"/>
+0.06837
+</elapsed_time>
+</info>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(gaussian)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_mean_distance</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<elapsed_time value = "op.projection(pi_array_type& x, pi_array_type& y, pi_array_type& z, pi_array_type& fx)">
+<elapsed_time value = "Kernel::projection(const Matrix_type& x, const Matrix_type& y, const Matrix_type& z, const Matrix_type& fx_)">
+Kernel::projection Nx:499, Ny:75, Nz:284308, Dfx:2, D:30
+<elapsed_time value = "Kernel::Knm_inv(const Matrix_type& x, const Matrix_type& y, const Matrix_type& z, const Matrix_type& fx_)">
+0.00159
+</elapsed_time>
+0.29999
+</elapsed_time>
+0.39764
+</elapsed_time>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(gaussian)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_mean_distance</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.discrepancy_error(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.discrepancy_error(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(gaussian)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_mean_distance</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "alg.match(pi_array_type& x, size_t N, size_t iterations = 10)"/>
+<elapsed_time value = "rearrangement_functional::rearrangement_functional()(std::vector<size_t>& permutation)">
+
+<info cost =" W_ ">0.0853679 </info>
+
+<info cost ="0.000208937" count = "9"/>
+0.05631
+</elapsed_time>
+<elapsed_time value = "grad_match::grad_match(const Matrix_type& y_)">
+0.00159
+</elapsed_time>
+<elapsed_time value = "descent_algorithm">
+<elapsed_time value = "grad_match::grad">
+0.00730
+</elapsed_time>
+<loop error_ = 0.401553test_grad_:0 grad22_: 1.34482e-09 dt: -0 a: 0.268964</loop>
+******descent_algorithm r.first:-0 error: 0.401553 a: -nan(ind)
+<elapsed_time value = "grad_match::grad">
+0.00722
+</elapsed_time>
+<loop error_ = 0.401553test_grad_:0 grad22_: 1.34482e-09 dt: -0 a: 0.268964</loop>
+******descent_algorithm r.first:-0 error: 0.401553 a: -nan(ind)
+<elapsed_time value = "grad_match::grad">
+0.00703
+</elapsed_time>
+<loop error_ = 0.401553test_grad_:0 grad22_: 1.34482e-09 dt: -0 a: 0.268964</loop>
+******descent_algorithm r.first:-0 error: 0.401553 a: -nan(ind)
+<elapsed_time value = "grad_match::grad">
+0.00762
+</elapsed_time>
+<loop error_ = 0.401553test_grad_:0 grad22_: 1.34482e-09 dt: -0 a: 0.268964</loop>
+******descent_algorithm r.first:-0 error: 0.401553 a: -nan(ind)
+<elapsed_time value = "grad_match::grad">
+0.00709
+</elapsed_time>
+<loop error_ = 0.401553test_grad_:0 grad22_: 1.34482e-09 dt: -0 a: 0.268964</loop>
+******descent_algorithm r.first:-0 error: 0.401553 a: -nan(ind)
+<elapsed_time value = "grad_match::grad">
+0.00708
+</elapsed_time>
+<loop error_ = 0.401553test_grad_:0 grad22_: 1.34482e-09 dt: -0 a: 0.268964</loop>
+******descent_algorithm r.first:-0 error: 0.401553 a: -nan(ind)
+<elapsed_time value = "grad_match::grad">
+0.00744
+</elapsed_time>
+<end error = "0.401553" grad22_= "1.34482e-09" dt= "-0 iter: 6"/>
+0.06288
+</elapsed_time>
+</info>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(gaussian)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_mean_distance</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<elapsed_time value = "op.projection(pi_array_type& x, pi_array_type& y, pi_array_type& z, pi_array_type& fx)">
+<elapsed_time value = "Kernel::projection(const Matrix_type& x, const Matrix_type& y, const Matrix_type& z, const Matrix_type& fx_)">
+Kernel::projection Nx:499, Ny:90, Nz:284308, Dfx:2, D:30
+<elapsed_time value = "Kernel::Knm_inv(const Matrix_type& x, const Matrix_type& y, const Matrix_type& z, const Matrix_type& fx_)">
+0.00712
+</elapsed_time>
+0.31040
+</elapsed_time>
+0.40845
+</elapsed_time>
+<info value = "kernel.set_polynomial_order(0)"/>
+<info value = "set_kernel(gaussian)"/>
+<info value = "kernel.op.set_map(const std::string& kernel)">scale_to_mean_distance</info>
+<info value = "kernel.set_regularization(0.000000)"/>
+<info value = "kernel.rescale(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.discrepancy_error(pi_array_type& x, pi_array_type& y)">
+</info>
+<info value = "kernel.discrepancy_error(pi_array_type& x, pi_array_type& y)">
+</info>
