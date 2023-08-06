@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+setup.py
+src/pyqi/__init__.py
+src/pyqi/__main__.py
+src/pyqi_v1.egg-info/PKG-INFO
+src/pyqi_v1.egg-info/SOURCES.txt
+src/pyqi_v1.egg-info/dependency_links.txt
+src/pyqi_v1.egg-info/top_level.txt

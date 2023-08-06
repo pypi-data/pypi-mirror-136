@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: pyqi-v1
+Version: 1.1.0
+Summary: It can help you quicker install python
+Home-page: https://github.com/redish101/pyqi
+Author: Redish101
+Author-email: jiayunluo@outlook.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/Redish101/pyqi/discussions
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# Python quick install
+>一个轻量化的Python安装器
+## 安装
+在安装之前，请确保您的计算机装有以下软件：
+* make
+* curl
+* gcc
+然后从发行版下载软件  
+解压到/usr/bin文件夹
+## 使用
+在终端中输入:
+```sh
+pyqi
+```
+按照提示操作
+
