@@ -1,0 +1,14 @@
+vsdx/__init__.py,sha256=tCF0Ypy_bfF76Vb9aCeXZpmprakTXLA4TMULw-sC1rE,847
+vsdx/connectors.py,sha256=GRXwZ5JD6ji8VkMYYWkdr8AqCXHm7KSZlcOUlvJnmZE,5399
+vsdx/geometry.py,sha256=A34pcKgxyArNC7tJjCM0EIh5klUx6eZ2sd9cgtFh9eA,6034
+vsdx/media.py,sha256=wCsm3P8_-tp-PgL2bkYzcIAQ6wKMASSqLfV1CUQ70ao,703
+vsdx/pages.py,sha256=1BCDXYs-5ey61MzIyI1Jgv3eMHYZBKVOYnvy0HDoeuY,6833
+vsdx/shapes.py,sha256=e0SJRtYcgb078GmNtjaRv-vuSg68uloFWCvhAxHIDJ0,20490
+vsdx/vsdxdiff.py,sha256=THUMchzJzhb3vXzc-Dl4j3lIdG0QS98bkQEnggYFvJU,4215
+vsdx/vsdxfile.py,sha256=LeOmXMC34AQSjirXjYgVZwcj_xC6Eko83TYUI5kgqqM,45617
+vsdx/media/media.vsdx,sha256=9erSIFW-N7hnqFjPlPHsyk_gbZVMfDn0TMpylYpEEK8,20056
+vsdx-0.4.17.dist-info/LICENSE,sha256=hjW8jURVv0FtZAq0t5-ACgWoYsWbdIwhXg_0pOLjGcY,1546
+vsdx-0.4.17.dist-info/METADATA,sha256=esRajbIBfbLrl3MJRI5nhrRCQPEkPXGyYoAMOH2hQMo,7213
+vsdx-0.4.17.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+vsdx-0.4.17.dist-info/top_level.txt,sha256=LjKzLj4YJxCTauFKVrxAkFEdGM0t2sEa7pgbAud0QdQ,5
+vsdx-0.4.17.dist-info/RECORD,,
