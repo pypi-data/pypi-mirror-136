@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.py
+QuickICS.egg-info/PKG-INFO
+QuickICS.egg-info/SOURCES.txt
+QuickICS.egg-info/dependency_links.txt
+QuickICS.egg-info/top_level.txt
+quickics/__init__.py
