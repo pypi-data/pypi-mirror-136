@@ -1,0 +1,3 @@
+[console_scripts]
+rebrn = zhaostephen.rebrn._internal.cli.main:main
+
