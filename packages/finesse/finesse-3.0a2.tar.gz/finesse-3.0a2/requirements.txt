@@ -1,0 +1,15 @@
+### NOTE See https://finesse.docs.ligo.org/finesse3/developer/codeguide/requirements.html
+
+numpy >= 1.20.0 # 1.19 causes a segfault, 1.20 is not available on conda so we must specify it here, see #306
+scipy >= 1.4.0
+matplotlib >= 3.0.0
+networkx >= 2.4
+sly == 0.4
+h5py >= 2.10.0
+click >= 7.1.0
+click-default-group >= 1.2.2
+tabulate >= 0.8.7
+control >= 0.9.0
+sympy >= 1.6.0
+more_itertools
+pyspellchecker

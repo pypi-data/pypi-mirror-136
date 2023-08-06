@@ -1,0 +1,18 @@
+# Conda development environment for Windows.
+
+channels:
+  - default
+  - msys2
+dependencies:
+  # NOTE: these are the dependencies required only to be able to build Finesse. The pip
+  # call below takes care of installing Python dependencies.
+  - m2-base # unix command line tools
+  - m2w64-make
+  - m2w64-gcc
+  - m2w64-suitesparse
+  - libpython
+  - pip
+  - pip:
+    # Can run arbitrary pip commands here; see e.g.
+    # https://stackoverflow.com/a/59056234/2251982.
+    - -e .[test,docs,lint,inplacebuild]

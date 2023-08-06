@@ -1,0 +1,20 @@
+[build-system]
+# See https://finesse.docs.ligo.org/finesse3/developer/codeguide/requirements.html.
+# Numpy and Cython requirements should match that in setup.cfg install_requires and
+# extra_requires, respectively.
+requires = ["setuptools", "wheel", "setuptools_scm[toml]", "numpy >= 1.20", "cython", "scipy >= 1.4", "tqdm", "h5py"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools_scm]
+write_to = "src/finesse/version.py"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.doc8]
+# Documentation line length consistent with Black, and roughly maximum to avoid
+# horizontal scrollbars appearing in code/preformatted blocks.
+max-line-length = 88
+
+[tool.coverage.run]
+plugins = "Cython.Coverage"

@@ -1,0 +1,37 @@
+repos:
+    - repo: https://github.com/pre-commit/pre-commit-hooks
+      rev: v2.4.0
+      hooks:
+        - id: check-yaml
+        - id: end-of-file-fixer
+        - id: mixed-line-ending
+          args: ['--fix', 'lf']
+        - id: trailing-whitespace
+    - repo: https://github.com/myint/docformatter
+      rev: v1.4
+      hooks:
+        - id: docformatter
+          args: ["--in-place", "--wrap-summaries", "88", "--wrap-descriptions", "88"]
+    - repo: local
+      hooks:
+        - id: check-class-docstrings
+          name: Check class docstrings
+          description: Check class docstrings conform to numpydoc recommendations.
+          entry: ./scripts/check_docstrings.py
+          language: system
+          types: [python]
+    - repo: https://github.com/psf/black
+      rev: 21.7b0
+      hooks:
+        - id: black
+          # Don't format some of the parser code, which would just become a mess with
+          # black.
+          exclude: ^src/finesse/script/(parser.py|tokens.py)
+    - repo: https://gitlab.com/pycqa/flake8
+      rev: 3.9.2
+      hooks:
+        - id: flake8
+    - repo: https://github.com/kynan/nbstripout
+      rev: 0.3.9
+      hooks:
+        - id: nbstripout

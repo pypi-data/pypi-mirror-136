@@ -1,0 +1,16 @@
+# Conda development environment for Linux and Mac OSX.
+
+channels:
+  - conda-forge
+dependencies:
+  # NOTE: these are the dependencies required only to be able to build Finesse. The pip
+  # call below takes care of installing Python dependencies.
+  - make
+  - c-compiler
+  - suitesparse
+  - python = 3.9
+  - pip
+  - pip:
+    # Can run arbitrary pip commands here; see e.g.
+    # https://stackoverflow.com/a/59056234/2251982.
+    - -e .[test,docs,lint,inplacebuild]
