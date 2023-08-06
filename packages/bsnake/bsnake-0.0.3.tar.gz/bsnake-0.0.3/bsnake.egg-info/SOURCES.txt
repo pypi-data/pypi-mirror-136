@@ -1,0 +1,8 @@
+setup.py
+bsnake.egg-info/PKG-INFO
+bsnake.egg-info/SOURCES.txt
+bsnake.egg-info/dependency_links.txt
+bsnake.egg-info/top_level.txt
+bundlesnake/Commands.py
+bundlesnake/__init__.py
+bundlesnake/bsnake.py
