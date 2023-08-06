@@ -1,0 +1,69 @@
+Metadata-Version: 2.1
+Name: pyefergy
+Version: 22.1.1
+Summary: An API library for Efergy energy meters.
+Home-page: https://github.com/tkdrob/pyefergy
+Author: Robert Hillis
+Author-email: tkdrob4390@yahoo.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: aiohttp (>=3.4.4)
+Requires-Dist: iso4217 (>=1.2.20150619)
+Requires-Dist: pytz
+
+# pyefergy
+
+[![codecov](https://codecov.io/gh/tkdrob/pyefergy/branch/master/graph/badge.svg)](https://codecov.io/gh/tkdrob/pyefergy)
+![python version](https://img.shields.io/badge/Python-3.8=><=3.10-blue.svg)
+[![PyPI](https://img.shields.io/pypi/v/pyefergy)](https://pypi.org/project/pyefergy)
+![Actions](https://github.com/tkdrob/pyefergy/workflows/Actions/badge.svg?branch=master)
+
+_Python API client for Efergy._
+
+## Installation
+
+```bash
+python3 -m pip install pyefergy
+```
+
+## Example usage
+
+More examples can be found in the `tests` directory.
+
+```python
+"""Example usage of pyefergy."""
+import asyncio
+from pyefergy import Efergy
+
+TOKEN = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+OFFSET = "America/New_York"  # Accepts either a time zone or literal offset
+
+
+async def async_example():
+    """Example usage of pyefergy."""
+    api = Efergy(TOKEN, utc_offset=OFFSET)
+    async with api:
+        print(await api.async_get_reading("instant_readings"))
+
+asyncio.get_event_loop().run_until_complete(async_example())
+```
+
+## Contribute
+
+**All** contributions are welcome!
+
+1. Fork the repository
+2. Clone the repository locally and open the devcontainer or use GitHub codespaces
+3. Do your changes
+4. Lint the files with `make lint`
+5. Ensure all tests passes with `make test`
+6. Ensure 100% coverage with `make coverage`
+7. Commit your work, and push it to GitHub
+8. Create a PR against the `master` branch
+
