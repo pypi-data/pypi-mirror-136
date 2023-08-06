@@ -1,0 +1,13 @@
+mango_library-0.1-py3.8-nspkg.pth,sha256=e1ZAtLM8LBvxEqWe6ku3yGTXr0u8nsnw4o8dw-G3K0w,574
+mango_library/coalition/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mango_library/coalition/core.py,sha256=u6uE8Y9M4qex-6jxoRw2_TXmoAZ1Cz2ve4iWBiXawmE,11069
+mango_library/negotiation/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mango_library/negotiation/cohda.py,sha256=wZ-ZdSqOpZNhh-T9O5Yd12Kzj06dbxdtCj312gDxG7I,11613
+mango_library/negotiation/core.py,sha256=DLvxTXxzUxB1wGHRjzMd_Lhd3VFCiuTKWxnQx3h_5fg,7982
+mango_library/negotiation/termination.py,sha256=TRIjx9WPxLzoQkF_9nP9cs5ECsNeQu1dV2T3lVDjvYw,5313
+mango_library-0.1.dist-info/LICENSE,sha256=vxg-CsO_7m0yZ4ubr-Ede_hMjaQaVE972pJK2gouUaA,1067
+mango_library-0.1.dist-info/METADATA,sha256=hi-Y121UxSob0aAfRJiB7H3QFBckl6rFvhaSQNB3Xb8,705
+mango_library-0.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+mango_library-0.1.dist-info/namespace_packages.txt,sha256=x2rsRBduBPAcPqenGkWZxNDgS0WYl-JwPQxs4AangeU,14
+mango_library-0.1.dist-info/top_level.txt,sha256=x2rsRBduBPAcPqenGkWZxNDgS0WYl-JwPQxs4AangeU,14
+mango_library-0.1.dist-info/RECORD,,
