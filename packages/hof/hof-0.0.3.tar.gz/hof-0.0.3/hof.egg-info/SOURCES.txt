@@ -1,0 +1,10 @@
+README.md
+setup.py
+hof/__init__.py
+hof/cmd.py
+hof.egg-info/PKG-INFO
+hof.egg-info/SOURCES.txt
+hof.egg-info/dependency_links.txt
+hof.egg-info/entry_points.txt
+hof.egg-info/requires.txt
+hof.egg-info/top_level.txt
