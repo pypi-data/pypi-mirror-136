@@ -1,0 +1,2 @@
+dbt-core>=0.21.0
+vertica-python>=0.10.0
