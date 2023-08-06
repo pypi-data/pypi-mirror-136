@@ -1,0 +1,2 @@
+parse
+pyusb>=1.0.0
