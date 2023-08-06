@@ -1,0 +1,3 @@
+[console_scripts]
+simple-steganography = simple_steganography.__main__:run
+
