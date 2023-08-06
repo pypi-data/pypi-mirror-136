@@ -1,0 +1,11 @@
+query_counter/__init__.py,sha256=lw8PCtZs1Gd11Qqq--PLjEuXvvWl6HZ0c9kWdnepMBE,90
+query_counter/apps.py,sha256=zAEKlS637fEwZyFRqVyFFiqrJ9sEndNyq1ImylJQaW0,372
+query_counter/decorators.py,sha256=UJFIQwvNEdyKWgYcCJ0z6ihH334WRFffgVqOhtb6skk,5719
+query_counter/middleware.py,sha256=1lgCmtrchRRYjsLZHlqzva-Gb3b4o-pCRay9_NddRd8,255
+query_counter/settings.py,sha256=31_qezQW-Iotp3CY7J8sF9PrzODukh6Wfba1DF25Hoo,364
+django_query_counter-0.2.0.dist-info/AUTHORS.md,sha256=r4CzzXDasAuGfoOkyx7ictjJ1WZt8rnEfTEU9fDh1ic,112
+django_query_counter-0.2.0.dist-info/LICENSE,sha256=-G-QbnUUG9BhXqOpYx5rRT6FZ4qB2y0XDp3YPcgEM1g,1069
+django_query_counter-0.2.0.dist-info/METADATA,sha256=0fMuQQKk_Rk8AWv99xc-LgXR_WCNK-p_j_lKUWoclaU,3898
+django_query_counter-0.2.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+django_query_counter-0.2.0.dist-info/top_level.txt,sha256=1So1RuMkNoH_HEkdbHo9GKKekjRXBkuAmrbToS_iQHk,14
+django_query_counter-0.2.0.dist-info/RECORD,,
