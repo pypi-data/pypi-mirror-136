@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+src/pyEmpatica.egg-info/PKG-INFO
+src/pyEmpatica.egg-info/SOURCES.txt
+src/pyEmpatica.egg-info/dependency_links.txt
+src/pyEmpatica.egg-info/top_level.txt
+src/pyempatica/__init__.py
+src/pyempatica/empaticae4.py
