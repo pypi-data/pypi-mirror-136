@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+setup.cfg
+echostream_managed_app.egg-info/PKG-INFO
+echostream_managed_app.egg-info/SOURCES.txt
+echostream_managed_app.egg-info/dependency_links.txt
+echostream_managed_app.egg-info/entry_points.txt
+echostream_managed_app.egg-info/requires.txt
+echostream_managed_app.egg-info/top_level.txt
