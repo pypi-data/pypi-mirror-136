@@ -1,0 +1,6 @@
+[console_scripts]
+invenio-subjects-gnd = invenio_subjects_gnd.cli:main
+
+[invenio_rdm_records.fixtures]
+invenio_subjects_gnd = invenio_subjects_gnd.vocabularies
+
