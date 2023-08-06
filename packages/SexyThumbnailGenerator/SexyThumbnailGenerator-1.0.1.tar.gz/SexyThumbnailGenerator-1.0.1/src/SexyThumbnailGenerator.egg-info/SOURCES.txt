@@ -1,0 +1,17 @@
+LICENCE
+README.md
+pyproject.toml
+setup.cfg
+src/SexyThumbnailGenerator/__init__.py
+src/SexyThumbnailGenerator/thumbnails.py
+src/SexyThumbnailGenerator.egg-info/PKG-INFO
+src/SexyThumbnailGenerator.egg-info/SOURCES.txt
+src/SexyThumbnailGenerator.egg-info/dependency_links.txt
+src/SexyThumbnailGenerator.egg-info/top_level.txt
+src/SexyThumbnailGenerator/nudenet/__init__.py
+src/SexyThumbnailGenerator/nudenet/classifier.py
+src/SexyThumbnailGenerator/nudenet/detector.py
+src/SexyThumbnailGenerator/nudenet/detector_utils.py
+src/SexyThumbnailGenerator/nudenet/image_utils.py
+src/SexyThumbnailGenerator/nudenet/lite_classifier.py
+src/SexyThumbnailGenerator/nudenet/video_utils.py
