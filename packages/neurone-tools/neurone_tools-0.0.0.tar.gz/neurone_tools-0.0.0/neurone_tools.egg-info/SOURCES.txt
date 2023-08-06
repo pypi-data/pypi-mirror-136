@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+neurone_tools/__init__.py
+neurone_tools/main.py
+neurone_tools.egg-info/PKG-INFO
+neurone_tools.egg-info/SOURCES.txt
+neurone_tools.egg-info/dependency_links.txt
+neurone_tools.egg-info/requires.txt
+neurone_tools.egg-info/top_level.txt
