@@ -1,0 +1,3 @@
+[napari.manifest]
+napari-molecule-reader = napari_molecule_reader:napari.yml
+

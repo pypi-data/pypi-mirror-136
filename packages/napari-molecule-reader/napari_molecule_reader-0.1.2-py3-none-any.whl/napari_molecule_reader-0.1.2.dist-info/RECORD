@@ -1,0 +1,15 @@
+napari_molecule_reader/__init__.py,sha256=JfJUXwOl7q7VLFKyCcxnGDL4l-xWoyAkeys_48grOls,103
+napari_molecule_reader/_reader.py,sha256=wIMDY0GtjAYoNREfti4lhoT87i-hUMjWWvpKOx7cU5U,94
+napari_molecule_reader/_version.py,sha256=nJw07NaAOarsjNXV62uCKxBueTVXsMnv45wa1HFr3pM,142
+napari_molecule_reader/bonds.py,sha256=W4OrE0_tskLapQj17mQ7aURbrOIFZ8NBe8glxIwiwiM,2103
+napari_molecule_reader/colors.py,sha256=v6fWAH1MNrqwI-C1DGGqLdIZE4NmZrDAN9NGEbo8bDQ,2886
+napari_molecule_reader/molecule_reader.py,sha256=eD5x4kYHENWubz8gr_NdBMpUf0FwX_QqmCJMMF_lp4Y,4344
+napari_molecule_reader/napari.yml,sha256=pEJSE557w67goMUvwk9J5SBH7z8ocXcyMlcSWXIrnco,388
+napari_molecule_reader/_tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+napari_molecule_reader/_tests/test_reader.py,sha256=uPr0e0cVepzQwtPAmKYP-1_kqXkEcbftl5ROnrm-_w0,717
+napari_molecule_reader-0.1.2.dist-info/LICENSE,sha256=bo_BdzyJMpSRZ-7nPYv7p_fpKn9XwReMtzN-bJlIltM,1495
+napari_molecule_reader-0.1.2.dist-info/METADATA,sha256=TEc0juikYV0rXg33XPWfBa_ywbojXaV-Xtp1FQozJps,4602
+napari_molecule_reader-0.1.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+napari_molecule_reader-0.1.2.dist-info/entry_points.txt,sha256=f7tpaFm66LQNG9Xd_dPE9LR5vp2DmC3mfIrBNo7owSA,78
+napari_molecule_reader-0.1.2.dist-info/top_level.txt,sha256=XTBF53eX__5bgA4WtNuSKPQXIyzVEft0xOzTfzVM1uY,23
+napari_molecule_reader-0.1.2.dist-info/RECORD,,
