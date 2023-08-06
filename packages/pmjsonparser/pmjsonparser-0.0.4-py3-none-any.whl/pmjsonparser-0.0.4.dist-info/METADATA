@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: pmjsonparser
+Version: 0.0.4
+Summary: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: argparse (~=1.4.0)
+
+UNKNOWN
+
