@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+lr35902dis/__init__.py
+lr35902dis/lr35902.py
+lr35902dis.egg-info/PKG-INFO
+lr35902dis.egg-info/SOURCES.txt
+lr35902dis.egg-info/dependency_links.txt
+lr35902dis.egg-info/top_level.txt
