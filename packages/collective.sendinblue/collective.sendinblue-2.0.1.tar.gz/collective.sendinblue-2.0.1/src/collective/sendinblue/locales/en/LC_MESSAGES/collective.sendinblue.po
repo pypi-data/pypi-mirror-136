@@ -1,0 +1,266 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Sendinblue\n"
+"POT-Creation-Date: 2022-01-28 14:23+0000\n"
+"PO-Revision-Date: 2016-03-30 11:42+0100\n"
+"Last-Translator: Laurent Lasudry <laurent.lasudry@affinitic.be>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Language-Code: en\n"
+"Language-Name: English\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: collective.sendinblue\n"
+
+#: ../browser/controlpanel.pt:60
+msgid "${mail_plan_plan_type} &mdash; credits : ${mail_plan_credits} (${mail_plan_credit_type})"
+msgstr ""
+
+#: ../browser/controlpanel.pt:67
+msgid "${sms_plan_plan_type} &mdash; credits : ${sms_plan_credits} (${sms_plan_credit_type})"
+msgstr ""
+
+#: ../interfaces.py:78
+msgid "API Key"
+msgstr ""
+
+#: ../browser/controlpanel.pt:113
+msgid "Account"
+msgstr ""
+
+#: ../browser/controlpanel.pt:53
+msgid "Account key:"
+msgstr ""
+
+#: ../browser/portlet.py:120
+msgid "Add Sendinblue Portlet"
+msgstr ""
+
+#: ../browser/redirection_portlet.py:105
+msgid "Add redirect Sendinblue Portlet"
+msgstr ""
+
+#: ../browser/controlpanel.pt:87
+msgid "Address:"
+msgstr ""
+
+#: ../browser/portlet.py:214
+msgid "An error occured while triyng to subscribe to the newsletter"
+msgstr ""
+
+#: ../browser/portlet.py:57
+msgid "Archive link"
+msgstr ""
+
+#: ../browser/redirection_portlet.py:47
+msgid "Base url of the registration form to redirect to"
+msgstr ""
+
+#: ../browser/redirection_portlet.py:46
+msgid "Base url to redirect to"
+msgstr ""
+
+#: ../browser/controlpanel.pt:95
+msgid "City:"
+msgstr ""
+
+#: ../browser/controlpanel.pt:83
+msgid "Company:"
+msgstr ""
+
+#: ../browser/controlpanel.pt:99
+msgid "Country:"
+msgstr ""
+
+#: ../browser/controlpanel.pt:117
+msgid "Date created"
+msgstr ""
+
+#: ../browser/portlet.py:45
+#: ../browser/redirection_portlet.py:41
+msgid "Description of the rendered portlet"
+msgstr ""
+
+#: ../browser/portlet.py:143
+msgid "Edit Sendinblue Portlet"
+msgstr ""
+
+#: ../browser/redirection_portlet.py:128
+msgid "Edit redirect Sendinblue Portlet"
+msgstr ""
+
+#: ../browser/portlet.py:167
+#: ../browser/redirection_portlet.py:144
+#: ../interfaces.py:17
+msgid "Email address"
+msgstr ""
+
+#: ../browser/controlpanel.pt:71
+msgid "Email:"
+msgstr ""
+
+#: ../browser/controlpanel.pt:75
+msgid "First name:"
+msgstr ""
+
+#: ../browser/controlpanel.pt:114
+msgid "ID"
+msgstr ""
+
+#: ../browser/controlpanel.pt:45
+msgid "Key"
+msgstr ""
+
+#: ../browser/controlpanel.pt:79
+msgid "Last name:"
+msgstr ""
+
+#: ../browser/portlet.py:58
+msgid "Link to a page where you store previous newsletters"
+msgstr ""
+
+#: ../browser/portlet.py:50
+msgid "List"
+msgstr ""
+
+#: ../browser/controlpanel.pt:57
+msgid "Mail plan:"
+msgstr ""
+
+#: ../browser/controlpanel.pt:115
+msgid "Name"
+msgstr ""
+
+#: ../browser/redirection_portlet.py:53
+msgid "Others informations and descriptions"
+msgstr ""
+
+#: ../browser/portlet.py:189
+msgid "Please check the captcha to prove you're a human"
+msgstr ""
+
+#: ../browser/portlet.py:44
+#: ../browser/redirection_portlet.py:40
+msgid "Portlet description"
+msgstr ""
+
+#: ../browser/portlet.py:38
+#: ../browser/redirection_portlet.py:34
+msgid "Portlet header"
+msgstr ""
+
+#: ../browser/controlpanel.pt:64
+msgid "SMS plan:"
+msgstr ""
+
+#: ../browser/portlet.py:51
+msgid "Select list to enable subscriptions to"
+msgstr ""
+
+#: ../profiles/default/controlpanel.xml
+msgid "Sendinblue"
+msgstr ""
+
+#: ../interfaces.py:70
+msgid "Sendinblue API Key(s)"
+msgstr ""
+
+#: ../browser/controlpanel.pt:40
+msgid "Sendinblue Account(s)"
+msgstr ""
+
+#: ../browser/controlpanel.pt:108
+msgid "Sendinblue Lists"
+msgstr ""
+
+#: ../browser/controlpanel.py:22
+msgid "Sendinblue integration for Plone"
+msgstr ""
+
+#: ../configure.zcml:20
+msgid "Sendinblue integration for Plone."
+msgstr ""
+
+#: ../browser/controlpanel.py:21
+msgid "Sendinblue settings"
+msgstr ""
+
+#: ../browser/controlpanel.pt:18
+msgid "Site Setup"
+msgstr ""
+
+#: ../browser/controlpanel.pt:32
+msgid "Standard"
+msgstr ""
+
+#: ../browser/portlet.py:179
+#: ../browser/redirection_portlet.py:151
+msgid "Subscribe"
+msgstr ""
+
+#: ../browser/redirection_portlet.py:52
+msgid "Text"
+msgstr ""
+
+#: ../browser/redirection_portlet.py:106
+msgid "This portlet displays a redirect form to a Sendinblue list subscribe form."
+msgstr ""
+
+#: ../browser/portlet.py:121
+msgid "This portlet displays a subscription form for a Sendinblue newsletter."
+msgstr ""
+
+#: ../browser/portlet.py:39
+#: ../browser/redirection_portlet.py:35
+msgid "Title of the rendered portlet"
+msgstr ""
+
+#: ../browser/controlpanel.pt:116
+msgid "Total subscribers"
+msgstr ""
+
+#: ../browser/portlet.py:64
+msgid "Use a captcha to protect your subscription form against robots"
+msgstr ""
+
+#: ../browser/portlet.py:63
+msgid "Use captcha"
+msgstr ""
+
+#: ../browser/controlpanel.pt:46
+msgid "Value"
+msgstr ""
+
+#: ../browser/portlet.py:208
+msgid "You are successfully subscribed to the newsletter !"
+msgstr ""
+
+#: ../browser/controlpanel.pt:91
+msgid "Zip:"
+msgstr ""
+
+#. Default: "Archives"
+#: ../browser/portlet.pt:29
+msgid "archives"
+msgstr ""
+
+#: ../configure.zcml:20
+msgid "collective.sendinblue"
+msgstr ""
+
+#. Default: "Enter in your Sendinblue key here. If you have several Sendinblue accounts, you can enter one key per line. Log into https://account.sendinblue.com/advanced/api and copy the API Key to this field."
+#: ../interfaces.py:71
+msgid "help_api_keys"
+msgstr ""
+
+#. Default: "Please enter your email address."
+#: ../interfaces.py:18
+msgid "help_email"
+msgstr ""
+
+#. Default: "You have no valid account linked to the site yet."
+#: ../browser/controlpanel.pt:33
+msgid "msg_sendinblue_no_account"
+msgstr ""
