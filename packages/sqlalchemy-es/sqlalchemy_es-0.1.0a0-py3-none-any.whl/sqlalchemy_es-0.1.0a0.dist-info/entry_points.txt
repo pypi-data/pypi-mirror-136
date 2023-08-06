@@ -1,0 +1,8 @@
+[sqlalchemy.dialects]
+es = sqlalchemy_dialects.es:ES_HTTP_DIALECT
+es.aws = sqlalchemy_dialects.es.aws:ES_AWS_HTTP_DIALECT
+es.aws.http = sqlalchemy_dialects.es.aws:ES_AWS_HTTP_DIALECT
+es.aws.https = sqlalchemy_dialects.es.aws:ES_AWS_HTTP_DIALECT
+es.http = sqlalchemy_dialects.es:ES_HTTP_DIALECT
+es.https = sqlalchemy_dialects.es:ES_HTTP_DIALECT
+
