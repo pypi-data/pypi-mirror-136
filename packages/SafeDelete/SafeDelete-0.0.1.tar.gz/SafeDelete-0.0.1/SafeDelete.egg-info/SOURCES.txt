@@ -1,0 +1,9 @@
+LICENSE
+setup.py
+SafeDelete/SafeDelete.py
+SafeDelete/__init__.py
+SafeDelete.egg-info/PKG-INFO
+SafeDelete.egg-info/SOURCES.txt
+SafeDelete.egg-info/dependency_links.txt
+SafeDelete.egg-info/requires.txt
+SafeDelete.egg-info/top_level.txt
