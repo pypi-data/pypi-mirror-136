@@ -1,0 +1,9 @@
+kapla/cli/console.py,sha256=SM75v3r6hCey5bAokqh8EdsNKLGl8Dd3FZ5ckDpNRow,451
+kapla/cli/datatypes.py,sha256=qjUeKFSiftCE_01uAjNvglLQ4IJAgOouQZWJdmrkljI,4099
+kapla/cli/errors.py,sha256=3ytdzUa-kUn9WmQm89N2avq-otIwU3YosDGgpd2_jRE,176
+kapla/cli/projects.py,sha256=zxMgcoc7xUejuNILXBawzU3-ChgbFcQ11_s6XzEdqVw,25609
+kapla/cli/repo.py,sha256=omC_rOZS5SVRYLTxxTfvTWsNn9GM0gXDgjxZ64RIX_k,643
+kapla/cli/utils.py,sha256=bEJC4SL_kAGcgb2Xfouxe_01oaiFV7L7_MIOZ2V-pxI,1829
+kapla_cli_core-3.5.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+kapla_cli_core-3.5.0.dist-info/METADATA,sha256=p1xUJLt305CdfrAEPYQcbw4uNfEN6Iuq98956igN580,813
+kapla_cli_core-3.5.0.dist-info/RECORD,,
