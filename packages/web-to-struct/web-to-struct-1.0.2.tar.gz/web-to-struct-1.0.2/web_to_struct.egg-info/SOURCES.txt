@@ -1,0 +1,9 @@
+README.md
+setup.py
+web_to_struct/__init__.py
+web_to_struct/web_to_struct.py
+web_to_struct.egg-info/PKG-INFO
+web_to_struct.egg-info/SOURCES.txt
+web_to_struct.egg-info/dependency_links.txt
+web_to_struct.egg-info/requires.txt
+web_to_struct.egg-info/top_level.txt
