@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: pyclicksign
+Version: 0.0.1
+Summary: Implementação da api rest da plataforma de assinaturas eletrônicas Clicksign.
+Home-page: https://github.com/candango/pyclicksign
+Author: Flavio Garcia
+Author-email: piraz@candango.org
+License: Apache License V2.0
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Environment :: Console
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Software Development :: Libraries
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# PyClicksign
+
+Implementação da api rest da plataforma de assinaturas  eletrônicas Clicksign.
+
+Seguindo: https://developers.clicksign.com/
+
+## License
+
+**Apache License V2.0**
+
+Copyright © 2021-2022 Flavio Gonçalves Garcia
+
