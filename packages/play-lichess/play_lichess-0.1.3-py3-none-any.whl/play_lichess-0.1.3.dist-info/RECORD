@@ -1,0 +1,11 @@
+play_lichess/__init__.py,sha256=WxDzf8Uzydbgk9pGDuB3BGOJUQRmpK-VCEaSFVLyWGI,129
+play_lichess/constants.py,sha256=7TLljMkGh82XKyyp8k7qW1qb5kqGucKEzBxSvk9RLLQ,897
+play_lichess/exceptions.py,sha256=QFftSykkK5svppyYaVl-MDJV29DoqLKr5lVKMRi4grA,901
+play_lichess/main.py,sha256=zV8JW1PYnG0z-NI9luNo14FEbhtPakxLOpJyg9NrJF0,5064
+play_lichess/match.py,sha256=0I36hqT_WA0Nkyyof-LjoJfnGIv8_LckmhGn1p2D6vE,747
+play_lichess/option.py,sha256=iVCN_vUi8XixYmkXNN9_NnR_mwS5p8OL0X0of5osxOg,627
+play_lichess-0.1.3.dist-info/LICENSE,sha256=ttCM-oAedkCM1R7Pfd1pKduaF3uD16hLaeJlteeCXDk,1071
+play_lichess-0.1.3.dist-info/METADATA,sha256=ccb2s3ZOQXaplYbEk-t6wJCJC9vXzc6TP_sWSAEXCqs,5466
+play_lichess-0.1.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+play_lichess-0.1.3.dist-info/top_level.txt,sha256=9TGTwetKhkp9QOGxmIoO4UbEP_M2NVL2651FKVnMkA4,13
+play_lichess-0.1.3.dist-info/RECORD,,
