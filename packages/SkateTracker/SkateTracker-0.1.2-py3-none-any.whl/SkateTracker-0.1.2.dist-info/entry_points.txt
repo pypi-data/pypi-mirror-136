@@ -1,0 +1,3 @@
+[console_scripts]
+SkateTracker = SkateTracker.main:main
+
