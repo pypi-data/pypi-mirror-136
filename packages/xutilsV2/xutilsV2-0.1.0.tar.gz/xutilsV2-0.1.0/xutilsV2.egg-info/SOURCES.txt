@@ -1,0 +1,7 @@
+setup.py
+xutilsV2/__init__.py
+xutilsV2/xutilsV2.py
+xutilsV2.egg-info/PKG-INFO
+xutilsV2.egg-info/SOURCES.txt
+xutilsV2.egg-info/dependency_links.txt
+xutilsV2.egg-info/top_level.txt
