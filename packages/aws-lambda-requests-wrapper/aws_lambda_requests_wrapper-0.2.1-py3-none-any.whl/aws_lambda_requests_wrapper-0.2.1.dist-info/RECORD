@@ -1,0 +1,9 @@
+LICENSE,sha256=FBa02tQO6BOhtqP4sAXV81GvsF9zKGTtkq0MEAknm8Y,1074
+aws_lambda_requests_wrapper/__init__.py,sha256=6APKBgnz38ZLvG8zTnY-AIRKjE9fQVuRVtrmxnOa7kA,443
+aws_lambda_requests_wrapper/lambda_handler.py,sha256=MHYI6jy7HT0uNPsKxq9nTFzQBsT64iO6wRSV7ZRWiYo,1665
+aws_lambda_requests_wrapper/models.py,sha256=gAfHZchENlJsiwaIshEsy8IkDd949obfY29Iwv2Rnl4,3079
+aws_lambda_requests_wrapper/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aws_lambda_requests_wrapper-0.2.1.dist-info/LICENSE,sha256=FBa02tQO6BOhtqP4sAXV81GvsF9zKGTtkq0MEAknm8Y,1074
+aws_lambda_requests_wrapper-0.2.1.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+aws_lambda_requests_wrapper-0.2.1.dist-info/METADATA,sha256=adO-JogwDkFwhMgAiR68tKyzORiLoRP_EaJW9sSL2k0,4713
+aws_lambda_requests_wrapper-0.2.1.dist-info/RECORD,,
