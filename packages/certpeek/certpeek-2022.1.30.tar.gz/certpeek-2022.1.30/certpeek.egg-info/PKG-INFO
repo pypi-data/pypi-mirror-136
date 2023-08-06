@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: certpeek
+Version: 2022.1.30
+Summary: Peeks at certificates exposed by other hosts.
+Home-page: https://github.com/magnuswatn/certpeek
+Author: Magnus Watn
+Author-email: magnus@watn.no
+License: License :: OSI Approved :: MIT License
+Description: # certpeek
+        
+        
+        Certpeek peeks at the certificates exposed by SSL/TLS enabled hosts. Perfect for a quick look for debugging.
+        
+        And, it support tunneling through a HTTP proxy!
+        
+        <p align="center"><img width="707" alt="Certpeek in action" src="https://github.com/magnuswatn/certpeek/blob/main/certpeek.png?raw=true"></p>
+        
+        Usage:
+        ```
+        Usage: certpeek [OPTIONS] HOST
+        
+          Peeks at certificates exposed by other hosts.
+        
+        Options:
+          --version          Show the version and exit.
+          --proxy TEXT       Proxy to use.
+          --servername TEXT  Custom SNI name to send in handshake.
+          --no-servername    Do not send SNI in the handshake.
+          --print-pem        Print certs in PEM format.
+          --first-only       Only process the first retrieved cert.
+          -h, --help         Show this message and exit.
+        ```
+        
+        Install with pip:
+        
+        ```
+        pip install certpeek
+        ```
+        
+        or with pipx:
+        ```
+        pipx install certpeek
+        ```
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.4
+Description-Content-Type: text/markdown
