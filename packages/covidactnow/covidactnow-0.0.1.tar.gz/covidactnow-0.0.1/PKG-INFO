@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: covidactnow
+Version: 0.0.1
+Summary: A wrapper allowing users to get specific state-based COVID information from the Covid Act Now database.
+Home-page: UNKNOWN
+Author: Prerit Das
+Author-email: <preritdas@gmail.com>
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: python,video,stream,video stream,camera stream,sockets
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
