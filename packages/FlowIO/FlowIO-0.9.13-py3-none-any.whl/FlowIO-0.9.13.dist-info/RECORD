@@ -1,0 +1,9 @@
+FlowIO-0.9.13.data/data/LICENSE,sha256=Ur_J2a2iCXSxwdsTdvjJ96aVjXo1p5iJwGK1B21jC8o,1511
+flowio/__init__.py,sha256=B26fYldVz9btoAjaUY0UsEgYs5deen02HhzJOXmNdrU,66
+flowio/create_fcs.py,sha256=0-1SM40--qMcVzMKk4j-j3u4maT8K1rf37uvz6PXUCQ,7739
+flowio/flowdata.py,sha256=3U56VEvCXTqTusVH0KqSHKBzIOqqAAQ0nq5r18BuHrI,15021
+FlowIO-0.9.13.dist-info/LICENSE,sha256=Ur_J2a2iCXSxwdsTdvjJ96aVjXo1p5iJwGK1B21jC8o,1511
+FlowIO-0.9.13.dist-info/METADATA,sha256=WjeaMjSVIpnhiR4UYqU54cZO_c5ff-WUz8vZO-jrhwc,2600
+FlowIO-0.9.13.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+FlowIO-0.9.13.dist-info/top_level.txt,sha256=PsjL54xxA7x5QYkF3XCgq8AjeWWr8Uj_kS2HIS530j0,7
+FlowIO-0.9.13.dist-info/RECORD,,
