@@ -1,0 +1,30 @@
+descr: "Fio device plan"
+descr_long: |
+  "Runs example fio command"
+hooks: []
+#evars:
+  #FIO_FILENAME: ""
+  #FIO_BIN: ""
+  #FIO_IODEPTH: ""
+  #FIO_BS: ""
+  #FIO_NUMJOBS: ""
+  #FIO_IOENGINE: ""
+  #FIO_RW: ""
+  #FIO_IODIRECT: ""
+  #FIO_TEST_NAME: ""
+  #FIO_STATUS_INTERVAL: ""
+  #FIO_USE_OFFSET_INCREMENT: ""
+  #FIO_OFFSET_INCREMENT: ""
+  #FIO_USE_WRITE_RATE: ""
+  #FIO_WRITE_RATE: ""
+  #FIO_OUTPUT_FILE: ""
+  #FIO_OUTPUT_FORMAT: ""
+  #FIO_RUNTIME: ""
+
+testsuites:
+  - name: "fio_example"
+    hooks: []
+    evars:
+      FIO_FILENAME: fio_example
+    testcases:
+      - fio_example.sh
