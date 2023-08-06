@@ -1,0 +1,11 @@
+gapmm2/__init__.py,sha256=nMXg9GFsk8gCcyBnh1MAeUPvo4Zcuv3sdwGHZrxfpPE,36
+gapmm2/__main__.py,sha256=bCktOUJ9Iw8XgPGiP6r6ChpL_AS1lJVkO9Flfp-X_gs,8635
+gapmm2/__version__.py,sha256=64ozm8LOjf9u7pPpOMvkrvDywCJuu_rZwX808gBCZRA,63
+gapmm2/align.py,sha256=zoKXbn5Z8RFFSQRC6CuuRF9DzkBWwfMpikktqZK4I_w,20847
+gapmm2/utils.py,sha256=37ZAe_w1mivAxecw4OQ_BPz6VysjUmWNwHdHRobNR2s,4200
+gapmm2-0.2.0.dist-info/LICENSE.md,sha256=VdYBpkd6cd35sexfp_phzcaqjeR4giyzhHD6Hx_tOuk,1322
+gapmm2-0.2.0.dist-info/METADATA,sha256=kSis_5ODBxLAPcXeTkDdc1itjoDdYZS-W5DCxh7PXdQ,5306
+gapmm2-0.2.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+gapmm2-0.2.0.dist-info/entry_points.txt,sha256=kwiP9xdgx81G3LJn7MfcR-1-dQUsKUfPnZA4HhawvdQ,49
+gapmm2-0.2.0.dist-info/top_level.txt,sha256=Mu4iJzJzepR9baMPyKa0Yj9gxpeOQ_DxpjjuJ2ypFmI,7
+gapmm2-0.2.0.dist-info/RECORD,,
