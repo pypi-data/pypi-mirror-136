@@ -1,0 +1,2 @@
+powerapi[influxdb,mongodb,opentsdb,prometheus]>=1.0.7
+scikit-learn
