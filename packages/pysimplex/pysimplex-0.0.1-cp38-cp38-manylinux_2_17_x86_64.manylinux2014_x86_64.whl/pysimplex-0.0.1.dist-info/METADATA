@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: pysimplex
+Version: 0.0.1
+Summary: A fast Clifford circuit simulator
+Home-page: https://github.com/CQCL/simplex
+Author: Alec Edgington
+Author-email: alec.edgington@cambridgequantum.com
+License: Apache 2
+Platform: UNKNOWN
+Classifier: Environment :: Console
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.8
+
+Based on https://arxiv.org/abs/2109.08629. Very alpha! Known bugs.
+
