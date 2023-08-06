@@ -1,0 +1,7 @@
+MANIFEST.in
+pyproject.toml
+setup.cfg
+JaqalPaw.egg-info/PKG-INFO
+JaqalPaw.egg-info/SOURCES.txt
+JaqalPaw.egg-info/dependency_links.txt
+JaqalPaw.egg-info/top_level.txt
