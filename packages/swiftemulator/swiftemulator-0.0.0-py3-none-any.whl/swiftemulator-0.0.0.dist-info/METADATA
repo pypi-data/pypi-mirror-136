@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: swiftemulator
+Version: 0.0.0
+Summary: Gaussian process emulator for creating synthetic model data across high dimensional parameter spaces, initially developed for use with the SWIFT simulation code.
+Home-page: https://github.com/SWIFTSIM/emulator
+Author: Josh Borrow
+Author-email: josh@joshborrow.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+Requires-Dist: numpy
+Requires-Dist: unyt
+Requires-Dist: attrs
+Requires-Dist: george
+Requires-Dist: SALib
+Requires-Dist: scikit-learn
+Requires-Dist: corner
+
+SWIFT Emulator
+==============
+
+[![Documentation Status](https://readthedocs.org/projects/swiftemulator/badge/?version=latest)](https://swiftemulator.readthedocs.io/en/latest/?badge=latest)
+![Test Status](https://github.com/swiftsim/emulator/actions/workflows/pytest.yml/badge.svg)
+
+Emulator for SWIFT (http://swift.dur.ac.uk) outputs, used to predict 
+outputs of simulations without having to run them. Employs Gaussian Process
+Regression with `george` and sensitivity analysis with `SALib`.
+
+Dcumentation is available at [ReadTheDocs](https://swiftemulator.readthedocs.io/).
+
+
+Requirements
+------------
+
+The package requires a number of numerical and experimental design packages.
+These have been tested (and are continuously tested) using GitHub actions CI
+to use the latest versions available on PyPI. See `requirements.txt` for
+details.
+
+
+Authors
+-------
+
++ Roi Kugel
++ Josh Borrow
+
+
