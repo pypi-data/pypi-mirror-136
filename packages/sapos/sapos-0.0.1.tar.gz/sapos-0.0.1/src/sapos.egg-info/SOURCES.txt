@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+src/sapos.egg-info/PKG-INFO
+src/sapos.egg-info/SOURCES.txt
+src/sapos.egg-info/dependency_links.txt
+src/sapos.egg-info/top_level.txt
