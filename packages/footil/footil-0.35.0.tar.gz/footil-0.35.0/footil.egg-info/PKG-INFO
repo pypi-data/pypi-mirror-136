@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: footil
+Version: 0.35.0
+Summary: Various Python helpers for other projects
+Home-page: https://github.com/focusate/footil
+Maintainer: Andrius Laukavičius
+Maintainer-email: dev@focusate.eu
+License: LGPLv3
+Platform: UNKNOWN
+Classifier: Environment :: Other Environment
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development
+Classifier: Topic :: Utilities
+Requires-Python: >=3.5
+Provides-Extra: test
+License-File: LICENSE
+
+Various Helper Modules
+######################
+
+- **date**, **datetime**, **time** - date/datetime/time manipulation helpers.
+- **decor** - helper decorators.
+- **file** - file manipulation helpers.
+- **formatting** - string formatting.
+- **log** - helpers with stdout, stderr management, logging setup.
+- **parsing** - parse arbitrary data using various helpers.
+- **path** - functions for paths manipulation.
+- **patterns** - design pattern helper classes for better re-usability.
+- **sorting** - sorting helpers.
+- **version** - manage version validation and bumping.
+- **xcollections** - functions for collections.
+- **xdata** - data manipulation helpers.
+- **xiter** - iteration helpers.
+- **xtyping** - type checking.
+
+Source code in:
+
+* `github <https://github.com/focusate/footil/>`_.
+* `pypi <https://pypi.org/project/footil/>`_.
+
+Contributors
+============
+
+* Silvija Butko (Focusate)
+* Andrius Laukavičius (Focusate)
+
+

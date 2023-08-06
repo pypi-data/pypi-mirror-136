@@ -1,0 +1,9 @@
+yattag
+python-dateutil
+verboselogs
+semver<=2.13.0
+natsort
+
+[test]
+pytest
+mock
