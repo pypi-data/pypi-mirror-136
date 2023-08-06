@@ -1,0 +1,8 @@
+README.md
+qcalc.py
+setup.py
+qcalc.egg-info/PKG-INFO
+qcalc.egg-info/SOURCES.txt
+qcalc.egg-info/dependency_links.txt
+qcalc.egg-info/entry_points.txt
+qcalc.egg-info/top_level.txt
