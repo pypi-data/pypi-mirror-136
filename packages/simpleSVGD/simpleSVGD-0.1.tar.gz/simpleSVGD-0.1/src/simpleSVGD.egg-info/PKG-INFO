@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: simpleSVGD
+Version: 0.1
+Summary: A very basic implementation of SVGD, based on https://github.com/dilinwang820/Stein-Variational-Gradient-Descent
+Home-page: https://github.com/larsgeb/simpleSVGD
+Author: Lars Gebraad
+Author-email: lars.gebraad@erdw.ethz.ch
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/larsgeb/simpleSVGD/issues
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+License-File: LICENSE
+
+# simpleSVGD
+
+This package is a tiny SVGD algorithm specifically developed to operate on distributions found in [HMCLab](https://github.com/larsgeb/HMCLab).
+## Stein Variational Gradient Descent (SVGD) 
+SVGD is a general purpose variational inference algorithm that forms a natural counterpart of gradient descent for optimization. SVGD iteratively transports a set of particles to match with the target distribution, by applying a form of functional gradient descent that minimizes the KL divergence.
+
+For more information, please visit the original implementers project website - [SVGD](http://www.cs.utexas.edu/~qlearning/project.html?p=vgd), or their publication Qiang Liu and Dilin Wang. [Stein Variational Gradient Descent (SVGD): A General Purpose Bayesian Inference Algorithm](http://arxiv.org/abs/1608.04471). NIPS, 2016.
+
+
