@@ -1,0 +1,11 @@
+numpy
+opencv-python
+matplotlib
+pyyaml
+scikit-spatial
+pytesseract
+google-cloud-vision
+
+[interactive]
+ipython
+ipywidgets
