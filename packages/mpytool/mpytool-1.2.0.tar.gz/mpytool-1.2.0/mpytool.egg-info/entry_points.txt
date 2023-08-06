@@ -1,0 +1,3 @@
+[console_scripts]
+mpytool = mpytool.mpytool:main
+

@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: mpytool
+Version: 1.2.0
+Summary: MPY tool - manage files on devices running MicroPython
+Home-page: https://github.com/pavelrevak/mpytool
+Author: Pavel Revak
+Author-email: pavel.revak@gmail.com
+License: MIT
+Keywords: MPY micropython
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Embedded Systems
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >3.5
+License-File: LICENSE
+
+MPY tool - manage files on devices running MicroPython
+
+https://github.com/pavelrevak/mpytool
+
