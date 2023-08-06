@@ -1,0 +1,4 @@
+loguru
+dateutil
+pe_accounting_python_api
+pydantic
