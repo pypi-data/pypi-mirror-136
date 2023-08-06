@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+tscache/__init__.py
+tscache/tscache.py
+tscache.egg-info/PKG-INFO
+tscache.egg-info/SOURCES.txt
+tscache.egg-info/dependency_links.txt
+tscache.egg-info/requires.txt
+tscache.egg-info/top_level.txt
