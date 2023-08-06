@@ -1,0 +1,17 @@
+[tasks.maturin]
+script = '''
+source .env/bin/activate
+maturin develop
+'''
+
+[tasks.ipython]
+script = '''
+source .env/bin/activate
+ipython
+'''
+
+[tasks.python]
+script = '''
+source .env/bin/activate
+python "${@}"
+'''
