@@ -1,0 +1,11 @@
+CHANGELOG.txt
+LICENCE
+MANIFEST.in
+README.md
+README_pip.txt
+setup.py
+udgram/__init__.py
+udgram.egg-info/PKG-INFO
+udgram.egg-info/SOURCES.txt
+udgram.egg-info/dependency_links.txt
+udgram.egg-info/top_level.txt
