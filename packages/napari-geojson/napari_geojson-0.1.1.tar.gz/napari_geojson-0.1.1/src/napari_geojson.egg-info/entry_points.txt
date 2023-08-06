@@ -1,0 +1,3 @@
+[napari.manifest]
+napari-geojson = napari_geojson:napari.yaml
+
