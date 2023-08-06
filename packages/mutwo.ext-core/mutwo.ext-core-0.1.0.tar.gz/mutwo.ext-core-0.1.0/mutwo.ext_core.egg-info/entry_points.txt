@@ -1,0 +1,8 @@
+[mutwo]
+core_constants = mutwoext_core:constants
+core_converters = mutwoext_core:converters
+core_events = mutwoext_core:events
+core_generators = mutwoext_core:generators
+core_parameters = mutwoext_core:parameters
+core_utilities = mutwoext_core:utilities
+
