@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: tremetrics
+Version: 0.1.0
+Summary: Tremendous Metrics
+Home-page: https://gitlab.com/BCLegon/tremetrics
+Author: B.C. Legon
+Author-email: pypi@legon.it
+License: MIT
+Platform: UNKNOWN
+License-File: LICENSE.txt
+Requires-Dist: numpy
+Requires-Dist: pytest
+Requires-Dist: scikit-learn
+
+UNKNOWN
+
