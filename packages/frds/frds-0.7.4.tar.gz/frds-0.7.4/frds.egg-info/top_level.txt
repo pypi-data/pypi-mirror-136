@@ -1,0 +1,5 @@
+docs
+frds
+images
+overrides
+tests
