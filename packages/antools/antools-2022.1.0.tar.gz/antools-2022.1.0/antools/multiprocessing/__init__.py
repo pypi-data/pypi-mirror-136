@@ -1,0 +1,1 @@
+from ._mp_process_class import MultiProcess

@@ -1,0 +1,7 @@
+Change Log
+==========
+
+2022.1.0 (18/06/2021)
+-------------------
+Complete rework of previous platform.
+Start package includes Logger, MultiProcess, ThreadProcess and ApproachComparator with examples.
