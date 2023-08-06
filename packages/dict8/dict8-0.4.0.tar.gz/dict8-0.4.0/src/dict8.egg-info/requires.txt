@@ -1,0 +1,13 @@
+attrs
+typing-inspect
+
+[dev]
+flake8-annotations
+flake8-typing-imports
+pyflakes<=2.4.0
+
+[tests]
+pytest-mock
+pytest-watch
+pytest-cov
+pdbpp

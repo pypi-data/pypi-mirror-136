@@ -1,0 +1,10 @@
+README.rst
+pyproject.toml
+setup.cfg
+setup.py
+src/dict8.py
+src/dict8.egg-info/PKG-INFO
+src/dict8.egg-info/SOURCES.txt
+src/dict8.egg-info/dependency_links.txt
+src/dict8.egg-info/requires.txt
+src/dict8.egg-info/top_level.txt
