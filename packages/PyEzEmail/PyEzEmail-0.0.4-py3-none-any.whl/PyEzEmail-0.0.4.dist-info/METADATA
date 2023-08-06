@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: PyEzEmail
+Version: 0.0.4
+Summary: Libreria para facilitar el envio de mails
+Home-page: https://github.com/shinraxor
+Author: Pedro Lamarca
+Author-email: pedro.lamarca.1997@gmail.com
+License: MIT
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# PyEzEmail
+
+_Libreria para facilitar el envio de mails_
+
+### Pre-requisitos 📋
+
+_Ninguno_
+
+### Instalación 🔧
+
+```
+pip install PyEzEmail
+```
+
+## Autores ✒️
+
+* **Pedro Lamarca** - *Trabajo Inicial* - [shinraxor](https://github.com/shinraxor)
+
+
