@@ -1,0 +1,3 @@
+[console_scripts]
+pc=pocketchemist.cli:main
+
