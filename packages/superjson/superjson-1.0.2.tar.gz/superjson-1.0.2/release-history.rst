@@ -1,0 +1,103 @@
+.. _release_history:
+
+Release and Version History
+==============================================================================
+
+
+1.0.3 (TODO)
+------------------------------------------------------------------------------
+
+**Features and Improvements**
+
+**Minor Improvements**
+
+**Bugfixes**
+
+**Miscellaneous**
+
+
+1.0.2 (2022-01-30)
+------------------------------------------------------------------------------
+
+**Minor Improvements**
+
+- remove unnecessary ``numpy``, ``pandas`` import to avoid long import time.
+
+**Bugfixes**
+
+**Miscellaneous**
+
+- use typehint notation
+
+
+1.0.1 (2021-10-07)
+------------------------------------------------------------------------------
+**Features and Improvements**
+
+- Drop built in Object hook for ``pahtlib.Path``, ``numpy.array``, ``pandas.DataFrame``.
+- Remove unnecessary embedded packages.
+- Drop support for Python2.7, support Python3.6 + only
+
+**Minor Improvements**
+
+**Bugfixes**
+
+**Miscellaneous**
+
+- First API stable release
+
+
+0.0.13 (2019-04-10)
+------------------------------------------------------------------------------
+**Bugfixes**
+
+fix import error when pathlib2 not installed in python2.7
+
+
+0.0.12 (2019-04-09)
+------------------------------------------------------------------------------
+**Miscellaneous**
+
+update README
+
+
+0.0.11 (2019-04-09)
+------------------------------------------------------------------------------
+**Features and Improvements**
+
+- support ``pathlib.Path``, ``pathlib2.Path``, and ``pathlib_mate.Path``
+
+**Minor Improvements**
+
+- better document
+
+**Miscellaneous**
+
+- apply ``cookiecutter-pygitrepo==0.0.2`` skeleton.
+
+
+0.0.10 (2018-09-06)
+------------------------------------------------------------------------------
+**Miscellaneous**
+
+- update docs.
+
+
+0.0.9 (2018-09-06)
+------------------------------------------------------------------------------
+**Features and Improvements**
+
+- ``SuperJson.safe_dump`` is removed. now ``atomicwrites`` is used in ``SuperJson.dump``
+
+**Minor Improvements**
+
+- improved PY2/3 compatibility.
+
+**Miscellaneous**
+
+- apply ``pygitrepo==0.0.21`` skeleton.
+
+
+0.0.7 (2017-09-12)
+------------------------------------------------------------------------------
+- First stable release

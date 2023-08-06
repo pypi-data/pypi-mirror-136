@@ -1,0 +1,6 @@
+# dependencies for test
+pytest                  # test framework
+pytest-cov              # coverage test
+
+# dependencies for serializer / deserializer
+python-dateutil
