@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: Racial_Polarized_Voting_Tools
+Version: 0.1.0
+Summary: Tool to analyse Racial Polarized Voting
+Home-page: https://github.com/RobertEdwardes/Racial_Polarized_Voting_Tools
+Author: Robert Edwardes
+Author-email: robie@fairlines.org
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.6, <4
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+Racial Block Voting Tools
+===
+
+## Homogeneous Precinct Analysis
+> Homogeneous_Precinct(df, idx, MajorityPopCol, MinorityPopCol, TotalPopCol, MajorityParty, MinorityParty)
+## Ecological Regression Analysis
+> Ecological_Regression(df, TotalPopCol, MinorityPopCol, MajorityParty, MinorityParty)
+
+df - pandas Dataframe 
+
+MajorityPopCol - Column name for column that has Majority population
+
+MinorityPopCol - Column name for column that has Minority population
+
+TotalPopCol - Column name for column that has Total population
+
+MajorityParty - Column name for column that has Majority Vote
+
+MinorityParty - Column name for column that has Minority Vote
+
