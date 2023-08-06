@@ -1,0 +1,8 @@
+# @package _global_
+defaults:
+- /base/supervised/data/imagenet
+run:
+  data_root: ./data/imagewoof2
+learner:
+  hparams:
+    num_classes: 10

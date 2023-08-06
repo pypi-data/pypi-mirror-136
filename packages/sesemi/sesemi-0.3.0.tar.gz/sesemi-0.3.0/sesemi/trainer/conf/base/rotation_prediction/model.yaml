@@ -1,0 +1,10 @@
+# @package _global_
+learner:
+  hparams:
+    model:
+      regularization_loss_heads:
+        rotation_prediction:
+          head:
+            _target_: sesemi.models.heads.loss.RotationPredictionLossHead
+            input_data: rotation_prediction
+            input_backbone: backbone

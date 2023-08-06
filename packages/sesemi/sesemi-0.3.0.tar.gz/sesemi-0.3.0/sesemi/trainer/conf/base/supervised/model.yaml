@@ -1,0 +1,19 @@
+# @package _global_
+defaults:
+  - /base/config
+run:
+  accelerator: dp
+  num_epochs: 80
+learner:
+  hparams:
+    model:
+      supervised_loss:
+        callable:
+          _target_: torch.nn.CrossEntropyLoss
+trainer:
+  callbacks:
+    - _target_: pytorch_lightning.callbacks.ModelCheckpoint
+      monitor: val/top1
+      mode: max
+      save_top_k: 1
+      save_last: True

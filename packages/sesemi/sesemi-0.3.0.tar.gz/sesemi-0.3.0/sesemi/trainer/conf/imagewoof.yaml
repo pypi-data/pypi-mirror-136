@@ -1,0 +1,10 @@
+# @package _global_
+defaults:
+  - /base/supervised/model/baseline
+  - /base/supervised/data/imagewoof
+run:
+  seed: 42
+  gpus: 2
+  batch_size_per_gpu: 32
+  num_epochs: 100
+  id: imagewoof
