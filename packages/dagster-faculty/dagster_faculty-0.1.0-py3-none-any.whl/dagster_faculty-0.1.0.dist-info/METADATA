@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: dagster-faculty
+Version: 0.1.0
+Summary: Python library for using Dagster in Faculty platform.
+Home-page: https://faculty.ai/products-services/platform/
+Author: Faculty
+Author-email: opensource@faculty.ai
+License: Apache Software License
+Platform: UNKNOWN
+Requires-Python: >=3.8
+License-File: LICENSE
+
+# Dagster Faculty
+
+
