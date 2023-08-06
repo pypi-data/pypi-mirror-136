@@ -1,0 +1,3 @@
+[console_scripts]
+skde=spatial_kde.cli:app
+
