@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: MHDataLearn
+Version: 1.1.21
+Summary: A package to preprocess raw Mental Health Services Data Sets (MHSDS), apply classification machine learning algorithmsand select the best performing using algorithm metrics
+Home-page: UNKNOWN
+Author: Kris Bennett, Samuel Nyeko, Kuang Myat wai yan YanSimon Wellesley Miller
+Author-email: UNKNOWN
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
