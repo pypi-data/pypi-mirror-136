@@ -1,0 +1,12 @@
+setup.py
+evo_featureflags_protobuf.egg-info/PKG-INFO
+evo_featureflags_protobuf.egg-info/SOURCES.txt
+evo_featureflags_protobuf.egg-info/dependency_links.txt
+evo_featureflags_protobuf.egg-info/top_level.txt
+featureflags/__init__.py
+featureflags/protobuf/__init__.py
+featureflags/protobuf/backend_pb2.py
+featureflags/protobuf/graph_pb2.py
+featureflags/protobuf/service_grpc.py
+featureflags/protobuf/service_pb2.py
+featureflags/protobuf/service_pb2_grpc.py
