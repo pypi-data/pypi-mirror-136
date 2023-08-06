@@ -1,0 +1,88 @@
+Metadata-Version: 2.1
+Name: APIFredTorVergata
+Version: 0.1.0
+Summary: Download e analisi dati tramite API Fred 
+Home-page: UNKNOWN
+Author: Luca Fiscariello
+Author-email: <lucafiscariello@gmail.com>
+License: UNKNOWN
+Description: 
+        # ApiFred
+        ## Introduzione
+        Il progetto propone la realizzazione di una libreria python che permette di scaricare, memorizzare in un database e analizzare tramite grafici delle informazioni ottenute dall'API Fred. La classe più importante della libreria è senza dubbio 'Fred'. Nel momento in cui viene creata un'istanza di questa classe viene istanziato anche un oggetto della classe 'Datamanager' che si occupa di gestire le interazioni con il database. Tale classe infatti ha come obiettivo quello di leggere e scrivere informazioni in opportune taballe Mysql. La struttura di queste tabelle è descritta nella documentazione della classe Fred. 
+        L'idea di base è che tutti i dati scaricati debbano essere memorizzati in un database in questo modo quando l'utente ha bisogno nuovamente di queste informazioni esse varranno prelevarle dal database, a meno che non venga chiesto esplicitamente un aggiornamento dei dati tramite API.
+        
+        ##Esempi di codice
+        Poter utilizzare un'istanza della classe Fred è necessario fornire due parametri che sono la connessione con il database e la chiave dell'API. Una volta creata l'istanza è possibile scaricare e graficare i dati.
+        
+        ### Scaricare categorie figlie di una categoria data
+        fred= Fred(connection,apy_key)
+        fred.dowloadSubCategoryByCategory(1)
+        
+        ### Scaricare serie da una categoria data
+        fred= Fred(connection,apy_key)
+        fred.dowloadSeriesByCategory(1)
+        
+        ### Scaricare Osservazioni di una serie data
+        fred= Fred(connection,apy_key)
+        fred.dowloadObservationBySeries('BABANAICS11NSAUS')
+        
+        ## Grafici
+        I grafici realizzati sono principalmente di 7 tipologie:
+        
+        1. Andamento delle osservabili di una serie
+        2. Grafico della media mobile delle osservabili di una data serie
+        3. Grafico delle differenze prime delle osservabili di una data serie
+        4. Grafico delle differenze prime percentuali delle osservabili di una data serie
+        5. Matrice delle covarianze di un gruppo di serie
+        6. Matride delle correlazioni di un gruppo di serie
+        7. Regressione lineare di una data serie
+        
+        Di seguito verranno mostrati alcuni esempi.
+        
+        ### Andamento delle osservabili di una serie
+        fred= Fred(connection,apy_key)
+        fred.plotOservationBySeries('BABANAICS11NSAUS').show()
+        
+        ### Grafico della media mobile delle osservabili di una data serie
+        fred= Fred(connection,apy_key)
+        fred.plotMovingAverage(11,'BABANAICS11NSAUS').show()
+        
+        ### Grafico delle differenze prime delle osservabili di una data serie
+        fred= Fred(connection,apy_key)
+        fred.plotPrimeDifferenceSeries('BABANAICS11NSAUS').show()
+        
+        ## Combinazioni grafici
+        La classe Fred mette a disposizione una serie di metodi che restituiscono dati grezzi utili per personalizzare e comporre i propri grafici. In partiolare questi metodi sono utili per creare dei 'collage' di grafici. E' possibile combinare più grafici in un'unica immagine in maniera molto agevole. Ad esempio nel codice che segue è possibile combinare i grafici di 3 serie differenti in uno. 
+        
+        ### Esempio
+        
+            x1,y1 = fred.giveDataPlotOservationBySeries('BABANAICS11NSAUS')
+            x2,y2 = fred.giveDataPlotOservationBySeries('BABANAICS23SAUS')
+            x3,y3 = fred.giveDataPlotOservationBySeries('BFBF8QNAICS71SAUS')
+            
+            fig, axs = plt.subplots(3,sharex=True)
+            
+            step = int(len(x1) / 8)
+            
+            axs[0].set_title('BABANAICS11NSAUS')
+            axs[0].plot(x1, y1,'tab:red')
+            
+            axs[1].set_title('BABANAICS23SAUS')
+            axs[1].plot(x2, y2,'tab:green')
+            
+            axs[2].set_title('BFBF8QNAICS71SAUS')
+            axs[2].plot(x3, y3)
+            
+            plt.xticks(x1[::step], x1[::step],rotation=-45)
+            plt.gcf().set_size_inches(16, 9)
+        
+Keywords: API,Fred,Database,Download
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown

@@ -1,0 +1,10 @@
+README.md
+setup.py
+APIFredTorVergata/APIFred.py
+APIFredTorVergata/DBFred.py
+APIFredTorVergata/__init__.py
+APIFredTorVergata.egg-info/PKG-INFO
+APIFredTorVergata.egg-info/SOURCES.txt
+APIFredTorVergata.egg-info/dependency_links.txt
+APIFredTorVergata.egg-info/requires.txt
+APIFredTorVergata.egg-info/top_level.txt
