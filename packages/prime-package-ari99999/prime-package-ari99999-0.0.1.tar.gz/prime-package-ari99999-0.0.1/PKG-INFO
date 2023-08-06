@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: prime-package-ari99999
+Version: 0.0.1
+Summary: A small package that test prime
+Home-page: https://github.com/ari99999/Primes
+Author: ariana gran
+Author-email: arianagran999@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/ari99999/Primes/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+This is a simple example package.
+
