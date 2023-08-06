@@ -1,0 +1,10 @@
+json2xml/__init__.py,sha256=7z_L8xP7B3wZwdCpk9Ro4Ct2vPwsty52hi2N4l5w7gE,191
+json2xml/dicttoxml.py,sha256=uPTnwT_YSTCDFToAFTBWaxylDXhiZ72OHAspKYApLjE,14933
+json2xml/json2xml.py,sha256=gqJJGhYpAs4LuYyeAQdcR0Ufs90wetav9IBg5zNIzGI,1052
+json2xml/utils.py,sha256=XvIs6gIp-Ra2bOjgFunYG-Pqhd9EQy20sJDA2Ak8eeI,1709
+json2xml-3.10.0.dist-info/AUTHORS.rst,sha256=O8XGX8kb1oJqbpKH_C4tZNujPOaDBESuKm4q50kW3h4,159
+json2xml-3.10.0.dist-info/LICENSE,sha256=7VxmszTjT2tJRJEtF9UYYRr_YeVAssMwTRaxNgyAXCE,583
+json2xml-3.10.0.dist-info/METADATA,sha256=fzCLIa4o7qShuDBeL2IMQJFguCe-YrYVozSRKLwzrS0,11463
+json2xml-3.10.0.dist-info/WHEEL,sha256=WzZ8cwjh8l0jtULNjYq1Hpr-WCqCRgPr--TX4P5I1Wo,110
+json2xml-3.10.0.dist-info/top_level.txt,sha256=OrR6qzhNuPTXFQeO-kO23SSvEb_afmOAR8aAIfCEnLg,9
+json2xml-3.10.0.dist-info/RECORD,,
