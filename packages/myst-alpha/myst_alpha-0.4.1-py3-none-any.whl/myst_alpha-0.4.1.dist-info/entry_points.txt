@@ -1,0 +1,3 @@
+[console_scripts]
+generate-openapi-client=tools.generate_openapi_client:app
+
