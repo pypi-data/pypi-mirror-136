@@ -1,0 +1,3 @@
+orjson
+pypiwin32
+pywin32

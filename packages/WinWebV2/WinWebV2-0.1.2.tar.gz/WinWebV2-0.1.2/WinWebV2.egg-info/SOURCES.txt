@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+WinWebV2/WinWebV2.py
+WinWebV2/__init__.py
+WinWebV2.egg-info/PKG-INFO
+WinWebV2.egg-info/SOURCES.txt
+WinWebV2.egg-info/dependency_links.txt
+WinWebV2.egg-info/requires.txt
+WinWebV2.egg-info/top_level.txt
+WinWebV2/dll/WebV2dll.dll
+WinWebV2/dll/WebView2Loader.dll
