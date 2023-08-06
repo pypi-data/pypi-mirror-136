@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: oparactl
+Version: 0.0.2
+Summary: Message consumer from AWS SQS
+Home-page: https://gitlab.com/bayzat/bayzat-sre-interview-NnabuezeOpara
+Author: Nnabueze Opara
+Author-email: villavelle101@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: typer (>=0.4.0)
+Requires-Dist: mysql-connector-python (>=8.0.28)
+Requires-Dist: boto3 (>=1.20.46)
+Requires-Dist: virtualenv (>=20.13.0)
+Requires-Dist: setuptools (>=45.2.0)
+
+Message consumer from AWS SQS
+
