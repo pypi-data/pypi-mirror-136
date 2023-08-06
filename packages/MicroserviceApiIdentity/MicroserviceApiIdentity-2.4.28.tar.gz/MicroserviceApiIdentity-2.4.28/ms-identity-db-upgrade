@@ -1,0 +1,5 @@
+#!/usr/bin/env sh
+
+PATH=$PATH:$HOME/.local/bin
+APP_MIGRATIONS_DIR=$(ms-manage-identity get-migrations-dir)
+ms-identity-manage db upgrade -d "${APP_MIGRATIONS_DIR}"

@@ -1,0 +1,8 @@
+#!/usr/bin/env python3
+
+from MicroserviceApiIdentity.app import init_manage
+
+manager = init_manage()
+
+if __name__ == "__main__":
+    manager.run()
