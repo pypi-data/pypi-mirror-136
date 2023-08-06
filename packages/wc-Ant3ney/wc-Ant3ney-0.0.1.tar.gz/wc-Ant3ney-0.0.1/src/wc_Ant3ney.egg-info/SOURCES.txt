@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/wc/__init__.py
+src/wc/genCover.py
+src/wc_Ant3ney.egg-info/PKG-INFO
+src/wc_Ant3ney.egg-info/SOURCES.txt
+src/wc_Ant3ney.egg-info/dependency_links.txt
+src/wc_Ant3ney.egg-info/top_level.txt
