@@ -1,0 +1,3 @@
+[console_scripts]
+greparl = greparl.__main__:main
+
