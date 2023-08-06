@@ -1,0 +1,8 @@
+distro
+openpaperwork-core
+openpaperwork-gtk
+paperwork-backend>=2.1.1
+pycountry
+pyocr>=0.3.0
+python-Levenshtein
+pyxdg>=0.25
