@@ -1,0 +1,4 @@
+[gui_scripts]
+zap = zap.zap:run
+zipped-album-player = zap.zap:run
+
