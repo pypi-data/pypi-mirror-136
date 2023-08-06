@@ -1,0 +1,30 @@
+[build-system]
+# PEP 518: The minimum build requirement used in setup.py (before install depndencies)
+requires = ["setuptools", "wheel", "pybind11>=2.6.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.pytest.ini_options]
+addopts = "-ra --import-mode=importlib --ignore-glob=tutorials/*.py"
+filterwarnings = [
+    # By default, all warnings are treated as errors
+    "error",
+    # pytorch warns about vmap usage since it's experimental
+    "ignore:torch.vmap is an experimental prototype.*:UserWarning",
+    # pandas sometimes complains about binary compatibility with numpy
+    "default:numpy.ufunc size changed, may indicate binary incompatibility.*:RuntimeWarning",
+    # flowtorch warnings
+    "ignore:DenseAutoregressive input_dim = 1. Consider using an affine transformation instead.*:UserWarning",
+    # nbval fspath deprecation not supported in sphinx
+    "ignore::DeprecationWarning:nbval",
+    # PyTorch 1.10 warns against creating a tensor from a list of numpy arrays
+    "default:Creating a tensor from a list of numpy.ndarrays is extremely slow.*:UserWarning",
+    # xarray uses a module that's deprecated since setuptools 60.0.0. This has been
+    # fixed in xarray/pull/6096, so we can remove this filter with the next xarray
+    # release
+    "default:distutils Version classes are deprecated.*:DeprecationWarning",
+    # statsmodels imports a module that's deprecated since pandas 1.14.0
+    "default:pandas.Int64Index is deprecated *:FutureWarning",
+]
+
+[tool.usort]
+first_party_detection=false
