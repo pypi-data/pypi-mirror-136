@@ -1,0 +1,71 @@
+Metadata-Version: 2.1
+Name: lhs
+Version: 0.3.2
+Summary: Latin hypercube sampler for scenario modelling
+Home-page: https://bitbucket.org/robmoss/latin-hypercube-sampling/
+Author: Rob Moss
+Author-email: rgmoss@unimelb.edu.au
+License: BSD 3-Clause License
+Project-URL: Documentation, https://lhs.readthedocs.io/en/latest/
+Project-URL: Changelog, https://lhs.readthedocs.io/en/latest/changelog.html
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Requires-Python: >=3.6
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: numpy (>=1.17)
+Requires-Dist: scipy (>=0.11)
+
+Latin hypercube sampler for scenario modelling
+==================================================
+
+|version| |docs| |tests| |coverage|
+
+Description
+-----------
+
+A Latin hypercube sampling framework that is primarily intended to support scenario modelling.
+See the `online documentation <https://lhs.readthedocs.io/>`_ for details.
+
+License
+-------
+
+The code is distributed under the terms of the `BSD 3-Clause license <https://opensource.org/licenses/BSD-3-Clause>`_ (see
+``LICENSE``), and the documentation is distributed under the terms of the
+`Creative Commons BY-SA 4.0 license
+<http://creativecommons.org/licenses/by-sa/4.0/>`_.
+
+Installation
+------------
+
+To install the latest release::
+
+    pip install lhs
+
+To install the latest development version, clone this repository and run::
+
+    pip install .
+
+.. |version| image:: https://badge.fury.io/py/lhs.svg
+   :alt: Latest version
+   :target: https://pypi.org/project/lhs/
+
+.. |docs| image::  https://readthedocs.org/projects/lhs/badge/
+   :alt: Documentation
+   :target: https://lhs.readthedocs.io/
+
+.. |tests| image:: https://gitlab.unimelb.edu.au/rgmoss/latin-hypercube-sampler/badges/master/pipeline.svg
+   :alt: Test cases
+   :target: https://gitlab.unimelb.edu.au/rgmoss/latin-hypercube-sampler
+
+.. |coverage| image:: https://gitlab.unimelb.edu.au/rgmoss/latin-hypercube-sampler/badges/master/coverage.svg
+   :alt: Test coverage
+   :target: https://gitlab.unimelb.edu.au/rgmoss/latin-hypercube-sampler
+
+
