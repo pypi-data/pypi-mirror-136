@@ -1,0 +1,13 @@
+little_helpers/__init__.py,sha256=wRyzJiOoFSjKSQ7a3t_B3QPA2ZovWD7pEZihng4SP2E,268
+little_helpers/array_tools.py,sha256=FDpGHd0LUH9ahcwC7lLnWcy5IK-v5Q1ZCX2WUVl4LVA,5436
+little_helpers/geometry.py,sha256=jsSpAT6ulbvmTYHZ7bqx2FxOyw9TQ7JZNhcBTyT-Rhs,8603
+little_helpers/hydrogel_conversions.py,sha256=GAr9W7G_ukOjLZvquxwNbGfQ1K37Dszbxx2YG_FZRXA,1877
+little_helpers/math_functions.py,sha256=1w-oN6tcwTMjDMEkVBexIGoH5oqGI5-Op7cB7SL7Lh0,17541
+little_helpers/math_to_word.py,sha256=xYQ-h0vfzyg8kjIwvUS_0xJOaBth1yz--b0S9HQV6D4,2843
+little_helpers/num_derive.py,sha256=qsKKKCSCkiXiBzbealrgIeEWMnj3YLhegPXXJWxUwn8,2242
+little_helpers/statsmodel_wrapper.py,sha256=LiJwJVUCXgjrLY4rSubXbe5FL1mlibBPiAHjS1juobE,834
+little_helpers-0.0.4.dist-info/LICENSE,sha256=teBFwcTAbB467bEwab3N6Q1JZaYQV07Ljh2O5j81cmY,1074
+little_helpers-0.0.4.dist-info/METADATA,sha256=Yu9Py-HtymZWW6MgPp6uZslM69SJUC83n1A3Ywyo2Ao,2832
+little_helpers-0.0.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+little_helpers-0.0.4.dist-info/top_level.txt,sha256=I-VIrYqy-MFMQ0zllp9ntXLAV3nEnpE8NwPkxUjiAY8,15
+little_helpers-0.0.4.dist-info/RECORD,,
