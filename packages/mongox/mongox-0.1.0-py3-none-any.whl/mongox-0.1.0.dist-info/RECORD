@@ -1,0 +1,12 @@
+mongox/__init__.py,sha256=z5I7EfUBvjhiBe3RUsJpvJnpFAE2T8cDMAZby4Za2ZQ,560
+mongox/_helpers.py,sha256=EipHl1fLD1gjp5S_AtZyXvvCTFjEwdFzbfdGoSAfLZs,187
+mongox/database.py,sha256=u1zFMfQK3TRADfTyVRO2mV-_HZC2hP7rxyucx2bsV8g,2134
+mongox/exceptions.py,sha256=sBHkLMZsxgewtFIB0YJ-EK8ksXMLCDsjZdc25hLYsgQ,198
+mongox/expressions.py,sha256=sXgfmAK0xuirw4VP5BE_ilBWIECY3P4_VfxyiV2_Yl4,3525
+mongox/fields.py,sha256=YPV157oo9eHCVCAGyyNJAIbrOyL2tNUoMBGUKCvCs2o,2930
+mongox/index.py,sha256=YgECilawc6Esu01Tk7IasyVe6VPYM8dnQzqBZwuicug,1057
+mongox/models.py,sha256=_Nxyw3x8B2hZ5bOuVVTM5ATPABi4boiwelmyWYqyikc,13249
+mongox-0.1.0.dist-info/LICENSE,sha256=5lc5C_8bb_PSt-tTD6TS2YiLG2VhbApXonqa3QRSELg,1076
+mongox-0.1.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+mongox-0.1.0.dist-info/METADATA,sha256=pgBW1rBs8D3a8flFMX8bJnpsCqa2qbBEo7mY3b4TLTQ,4925
+mongox-0.1.0.dist-info/RECORD,,
