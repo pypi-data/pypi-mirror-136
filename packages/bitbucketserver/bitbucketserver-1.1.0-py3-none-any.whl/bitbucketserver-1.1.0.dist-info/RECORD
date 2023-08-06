@@ -1,0 +1,10 @@
+bitbucketserver/__init__.py,sha256=1C3GxqLRKt2XxeLyfApHk--B2gvM8rsPuZGTbxDsydU,253
+bitbucketserver/bitbucketserver.py,sha256=TiXA3AEFeqcL6YlYoQs_mt2d5o64vunftI85F8FvxRw,105969
+bitbucketserver/connection.py,sha256=0lZ9ODk14UQoWcFae7svLs7EQ3NRsG8asHpeQQMNA2A,11438
+bitbucketserver/resources.py,sha256=qAV9j6GyeH-L-zGdkktHoHn7ysMJeLVJUdmKEezCIXY,50936
+bitbucketserver/utils.py,sha256=batl8B4aDs86ty1jc366F2Zm2RJMOHLTh_TQVetOc0Q,601
+bitbucketserver-1.1.0.dist-info/LICENSE,sha256=aTxWJmDKuEdZ7tzRWmhT3U8V-IK2q4LIYZglYBaJGYM,1491
+bitbucketserver-1.1.0.dist-info/METADATA,sha256=gfuGt3qB9qB6UiKofxIJaFcZRteu0H7K1M4aStLWTp8,927
+bitbucketserver-1.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+bitbucketserver-1.1.0.dist-info/top_level.txt,sha256=QeD5srvdxJOaDfBqAAICi0WeFw3yaXKysUIcyc32YoA,16
+bitbucketserver-1.1.0.dist-info/RECORD,,
