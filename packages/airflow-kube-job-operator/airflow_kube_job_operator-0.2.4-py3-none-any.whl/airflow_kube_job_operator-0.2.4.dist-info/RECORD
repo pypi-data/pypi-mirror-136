@@ -1,0 +1,10 @@
+airflow_kjo/__init__.py,sha256=e_JCcHyA99M5bRBVkiLAC3EqyEvYdT173E95xxgNTu8,259
+airflow_kjo/__version__,sha256=4BhdxOZ37_fN_xNvjO-ozepP2vmHeIFkdO9ZTPVmvjM,6
+airflow_kjo/kubernetes_job_launcher.py,sha256=PV8TNohB3kH4cqEJl2_neJAn3-6Txq6Epk2W-0Exg2o,8193
+airflow_kjo/kubernetes_job_operator.py,sha256=R7OqfMWb7I8d8DB7fInvY1rtJIdtKq5E3NuLX2hPtr0,4912
+airflow_kjo/kubernetes_util.py,sha256=ChSFxvqTNy9H5GqfiVEChFCrgTi3m3rhYDM0hK4AKJI,1619
+airflow_kube_job_operator-0.2.4.dist-info/LICENSE,sha256=czn6QYya0-jhLnStD9JqnMS-hwP5wRByipkrGTvoXLI,11355
+airflow_kube_job_operator-0.2.4.dist-info/METADATA,sha256=9SBSMWucsLITHVmB_BdkcBfje5cLe_QbgrMSgZVKH7Q,12914
+airflow_kube_job_operator-0.2.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+airflow_kube_job_operator-0.2.4.dist-info/top_level.txt,sha256=JVNbWFz39v4tZG2riEBTNMXwe08I_53iYZ5OsQAeMmQ,12
+airflow_kube_job_operator-0.2.4.dist-info/RECORD,,
