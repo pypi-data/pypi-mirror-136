@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+requirements.txt
+setup.py
+tidy3d/__init__.py
+tidy3d/__main__.py
+tidy3d/constants.py
+tidy3d/log.py
+tidy3d/material_library.py
+tidy3d/version.py
+tidy3d_beta.egg-info/PKG-INFO
+tidy3d_beta.egg-info/SOURCES.txt
+tidy3d_beta.egg-info/dependency_links.txt
+tidy3d_beta.egg-info/requires.txt
+tidy3d_beta.egg-info/top_level.txt
