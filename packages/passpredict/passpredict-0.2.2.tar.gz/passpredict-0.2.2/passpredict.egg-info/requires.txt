@@ -1,0 +1,16 @@
+sgp4>=2.12
+numpy>=1.22
+scipy>=1.7.3
+orbit-predictor
+pydantic
+click
+rich
+httpx
+timezonefinder
+
+[dev]
+Cython
+pytest>=6.2.5
+pytest-html
+pytest-cov
+flake8
