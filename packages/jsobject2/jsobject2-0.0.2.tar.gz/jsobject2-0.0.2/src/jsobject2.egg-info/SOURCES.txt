@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/jsobject2/__init__.py
+src/jsobject2/_jsobject2.py
+src/jsobject2.egg-info/PKG-INFO
+src/jsobject2.egg-info/SOURCES.txt
+src/jsobject2.egg-info/dependency_links.txt
+src/jsobject2.egg-info/top_level.txt
