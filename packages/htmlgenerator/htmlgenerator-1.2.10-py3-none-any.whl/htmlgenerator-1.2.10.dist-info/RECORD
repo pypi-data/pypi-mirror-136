@@ -1,0 +1,16 @@
+htmlgenerator/__init__.py,sha256=QXFWGUIbmgQChtxidYoTxOmXrSJ97Hq2b_jGEUFqjDs,389
+htmlgenerator/base.py,sha256=u3quPx2NKuSfLQh75s97v4lFX2Ot7msfiFTIxUGPp2Q,15187
+htmlgenerator/htmltags.py,sha256=y9J8lflvY8YNyVq-2mWCwuH21alkq_wU5O-1KMpktus,13161
+htmlgenerator/lazy.py,sha256=6H7SIS_y3Q0tzKdmWyZc6kiGOFx5Tkqdya48KjgN5q4,4639
+htmlgenerator/safestring.py,sha256=vW8d3fWw2KmydMhwng-KzNRq5Rksw06fEiQ8FFpTfiU,1142
+htmlgenerator/contrib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+htmlgenerator/contrib/convertfromhtml.py,sha256=OhxsLfrVGF-5feiBxjPDTgf8YvCDIovxhUDxp1rWc2g,4823
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_html_id.py,sha256=RvFtke7WwbHcDNheVrwMTh4tj94HgbGl4GaXw1Vw_Ik,312
+tests/test_parsing.py,sha256=dWOlIqlaOJSnI1v13_xwMs33q7n1Lg5tiL5iWZrEoXI,459
+htmlgenerator-1.2.10.dist-info/LICENSE,sha256=Cdi3W1mLaaT3wORSOmsRphtcBknZntl2Q3pu9wsmDOs,1482
+htmlgenerator-1.2.10.dist-info/METADATA,sha256=vwYQO7yrfZ4JGvwXcWOsrogGj3HzbHbZO0dEjMya2is,10374
+htmlgenerator-1.2.10.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+htmlgenerator-1.2.10.dist-info/entry_points.txt,sha256=oxtskL3joELuJt1VOSL7b3ovc0WqwGwI2CAunyRU7E4,80
+htmlgenerator-1.2.10.dist-info/top_level.txt,sha256=QbhA1apjlbcIkdqrQx5VFuU8H0ImFRpkKTo6zMWFU_Y,20
+htmlgenerator-1.2.10.dist-info/RECORD,,
