@@ -1,0 +1,14 @@
+high_sql/__init__.py,sha256=XYK-rS1RsdYuOS3RmT3HSuGyhNe1vilNygR6O2ubHGc,224
+high_sql/abstract_highsql.py,sha256=y_KoRuuJTOz6huZnbF6FJzYyw_CAzB0Bwpgu_hc-MnE,1821
+high_sql/high_config.py,sha256=uI4MzXy73iSfR-MMwJUbF6mhjmtxcBLojYkGs5QSm8k,879
+high_sql/high_mysql.py,sha256=yo1uzXCv6cvQ8tSzLhAWbkAOM_KBtfuFYow3iZzbVco,5925
+high_sql/sql_schema.json,sha256=FIfusFJOyhv-gJVZoBHI0tZbAwR0QhAO9p5uwgiYNkk,1409
+high_sql-1.0.2.data/data/sql_schema.json,sha256=FIfusFJOyhv-gJVZoBHI0tZbAwR0QhAO9p5uwgiYNkk,1409
+tests/__init__.py,sha256=gDc6SIViMk8GCqpnDjydFPvB5YfPw9As1ikdCEH5bkM,19
+tests/test_high_sql.py,sha256=rsfjp_EpnWTcZ3BQy7VXqDOdiYc9oENoSUPNcdL8_oY,5054
+high_sql-1.0.2.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+high_sql-1.0.2.dist-info/METADATA,sha256=iTSbON1Op5Zowt8MgtJGRF6hnN2GOg9Ulo1CN0hbSv4,6840
+high_sql-1.0.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+high_sql-1.0.2.dist-info/entry_points.txt,sha256=eqGnTHtEVMYwfXVk1Z9MhC8O2N8wuqAbr0lisLmrkxs,20
+high_sql-1.0.2.dist-info/top_level.txt,sha256=Qk_A21s4qYv0hCMYTtTZlIMJoSka5ljc7GU8q5EmBk0,15
+high_sql-1.0.2.dist-info/RECORD,,
