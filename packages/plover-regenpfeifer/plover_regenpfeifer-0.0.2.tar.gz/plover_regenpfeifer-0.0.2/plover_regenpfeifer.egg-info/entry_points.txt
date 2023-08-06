@@ -1,0 +1,3 @@
+[plover.system]
+Regenpfeifer = plover_regenpfeifer.system
+

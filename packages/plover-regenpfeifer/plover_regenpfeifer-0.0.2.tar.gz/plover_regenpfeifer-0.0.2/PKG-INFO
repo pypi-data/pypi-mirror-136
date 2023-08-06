@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: plover_regenpfeifer
+Version: 0.0.2
+Summary: German realtime system for Plover
+Home-page: https://github.com/mkrnr/plover_regenpfeifer
+Author: Martin Koerner
+Author-email: info@mkoerner.de
+License: GNU General Public License v3 or later (GPLv3+)
+Keywords: plover plover_plugin
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Plugins
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: GNU General Public License v2 or later (GPLv2+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+License-File: LICENSE
+
+==========================
+Plover Regenpfeifer
+==========================
+
+Regenpfeifer (German stenography system) support for Plover.
+
+For now it only remaps -Z to -N but it is planned to add orthography rules in the future.
+
+Installation
+------------
+
+To install the cloned git repository, you can run the following command:
+
+.. code:: powershell
+
+	.\plover_console.exe -s plover_plugins install <path-to-plover-regenpfeifer-git-repo>
+
+
+Special Thanks
+--------------
+
+Special thanks to Benoit Pierre, Ted Morin, and Nicholas Markopoulos for providing source code and valuable hints on how to set up the plugin.
+
+License
+-------
+
+This plugin is licensed under GPLv3, or any later version.
+
+
