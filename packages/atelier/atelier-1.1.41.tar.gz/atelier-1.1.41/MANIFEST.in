@@ -1,0 +1,4 @@
+include atelier/sphinxconf/templates/*
+include atelier/sphinxconf/static/*
+global-include *.py
+prune docs
