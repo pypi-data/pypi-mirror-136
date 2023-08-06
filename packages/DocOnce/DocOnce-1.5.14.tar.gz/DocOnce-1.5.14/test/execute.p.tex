@@ -1,0 +1,598 @@
+%%
+%% File automatically generated using DocOnce (https://github.com/doconce/doconce/):
+%% doconce format latex execute.do.txt --examples_as_exercises --execute
+%%
+% #ifdef PTEX2TEX_EXPLANATION
+%%
+%% The file follows the ptex2tex extended LaTeX format, see
+%% ptex2tex: https://code.google.com/p/ptex2tex/
+%%
+%% Run
+%%      ptex2tex myfile
+%% or
+%%      doconce ptex2tex myfile
+%%
+%% to turn myfile.p.tex into an ordinary LaTeX file myfile.tex.
+%% (The ptex2tex program: https://code.google.com/p/ptex2tex)
+%% Many preprocess options can be added to ptex2tex or doconce ptex2tex
+%%
+%%      ptex2tex -DMINTED myfile
+%%      doconce ptex2tex myfile envir=minted
+%%
+%% ptex2tex will typeset code environments according to a global or local
+%% .ptex2tex.cfg configure file. doconce ptex2tex will typeset code
+%% according to options on the command line (just type doconce ptex2tex to
+%% see examples). If doconce ptex2tex has envir=minted, it enables the
+%% minted style without needing -DMINTED.
+% #endif
+
+% #define PREAMBLE
+
+% #ifdef PREAMBLE
+%-------------------- begin preamble ----------------------
+
+\documentclass[%
+oneside,                 % oneside: electronic viewing, twoside: printing
+final,                   % draft: marks overfull hboxes, figures with paths
+chapterprefix=true,      % "Chapter" word at beginning of each chapter
+open=right,              % start new chapters on odd-numbered pages
+10pt]{book}
+
+\listfiles               %  print all files needed to compile this document
+
+\usepackage{relsize,epsfig,makeidx,color,setspace,amsmath,amsfonts,amssymb}
+\usepackage[table]{xcolor}
+\usepackage{bm,ltablex,microtype}
+
+\usepackage{graphicx}
+
+\usepackage{ptex2tex}
+% #ifdef MINTED
+\usepackage{minted}
+\usemintedstyle{default}
+% #endif
+\usepackage{fancyvrb}
+
+\usepackage[T1]{fontenc}
+%\usepackage[latin1]{inputenc}
+\usepackage{ucs}
+\usepackage[utf8x]{inputenc}
+
+\usepackage{lmodern}         % Latin Modern fonts derived from Computer Modern
+
+% Hyperlinks in PDF:
+\definecolor{linkcolor}{rgb}{0,0,0.4}
+\usepackage{hyperref}
+\hypersetup{
+    breaklinks=true,
+    colorlinks=true,
+    linkcolor=linkcolor,
+    urlcolor=linkcolor,
+    citecolor=black,
+    filecolor=black,
+    %filecolor=blue,
+    pdfmenubar=true,
+    pdftoolbar=true,
+    bookmarksdepth=3   % Uncomment (and tweak) for PDF bookmarks with more levels than the TOC
+    }
+%\hyperbaseurl{}   % hyperlinks are relative to this root
+
+\setcounter{tocdepth}{3}  % levels in table of contents
+
+% prevent orhpans and widows
+\clubpenalty = 10000
+\widowpenalty = 10000
+
+% Redefine double page clear to make it a blank page without headers
+% (from BYUTextbook)
+\makeatletter
+\def\cleardoublepage{\clearpage\if@twoside \ifodd\c@page\else
+\hbox{}
+\thispagestyle{empty}
+\newpage
+\if@twocolumn\hbox{}\newpage\fi\fi\fi}
+\makeatother
+% These commands fiddle with the space left for page numbers in the TOC
+% (from BYUTextbook)
+\makeatletter
+%\renewcommand{\@pnumwidth}{2em}
+%\renewcommand{\@tocrmarg}{2.85em}
+\makeatother
+
+% Make sure blank even-numbered pages before new chapters are
+% totally blank with no header
+\newcommand{\clearemptydoublepage}{\clearpage{\pagestyle{empty}\cleardoublepage}}
+%\let\cleardoublepage\clearemptydoublepage % caused error in the toc
+
+% --- end of standard preamble for documents ---
+
+
+% insert custom LaTeX commands...
+
+\raggedbottom
+\makeindex
+\usepackage[totoc]{idxlayout}   % for index in the toc
+\usepackage[nottoc]{tocbibind}  % for references/bibliography in the toc
+
+%-------------------- end preamble ----------------------
+
+\begin{document}
+
+% matching end for #ifdef PREAMBLE
+% #endif
+
+\newcommand{\exercisesection}[1]{\subsection*{#1}}
+
+\input{newcommands_bfmath}
+\input{newcommands_replace}
+
+% ------------------- main content ----------------------
+
+\chapter{Automatic execution of code blocks}
+
+Convert this document to \texttt{ipynb}, \texttt{latex} or \texttt{html} with e.g.:
+
+
+
+\bsh
+doconce format ipynb execute.do.txt --execute
+
+\esh
+
+
+\section{Code blocks in different languages}
+\subsection{Python}
+
+Python code
+
+
+
+
+\bpy
+for i in [1,2,3]:
+  print(i)
+
+\epy
+
+\bpy
+1
+2
+3
+\epy
+
+
+
+\bpy
+print(i)
+
+\epy
+
+\bpy
+3
+\epy
+
+\subsection{Bash}
+Bash code
+
+
+
+
+\bsh
+if [ 1 -eq 1 ] ; then echo 1; fi
+var_bash=10
+
+\esh
+
+\bpy
+1
+\epy
+
+
+
+\bsh
+echo $var_bash
+
+\esh
+
+\bpy
+10
+\epy
+
+\subsection{Julia}
+
+Julia code
+
+
+
+
+\bjl
+var_julia = 11
+print(var_julia)
+
+\ejl
+
+\bba
+\eba
+
+
+
+
+
+
+\bjl
+for n = 2:4
+  var_julia = var_julia + n
+end
+print(var_julia)
+
+\ejl
+
+\bba
+\eba
+
+\subsection{R }
+
+R code
+
+
+
+
+
+
+
+\br
+x <- 1:3
+print(x)
+#pdf("plot.pdf")
+plot(x)
+#dev.off()
+
+\er
+
+\bba
+\eba
+
+\subsection{Other languages}
+
+Then Cython (with -h option so it is hidden in html/sphinx):
+
+
+
+
+\bcycod
+cpdef f(double x):
+    return x + 1
+
+\ecycod
+
+
+Java code
+
+
+
+
+\bjava
+for (int i = 0; i < 5; i++) {
+  System.out.println(i);
+}
+
+\ejava
+
+
+Javascript code
+
+
+\bjs
+for (var x in [0,1,2]) {console.log(x)}
+
+\ejs
+
+
+matlab code
+
+
+
+
+\bdat
+for i = 1:2:10
+  disp(A(i))
+end
+
+\edat
+
+
+html code
+
+
+\bhtml
+<a href='test'></a>
+
+\ehtml
+
+
+C code
+
+
+
+
+
+
+
+
+
+
+
+
+\bc
+#include <stdio.h>
+
+int main() {
+  int i;
+
+  for (i = 1; i < 11; ++i)
+  {
+    printf("%d ", i);
+  }
+  return 0;
+}
+
+\ec
+
+
+\section{Code block environments}
+
+Hidden execution cells (\texttt{pyhid}, \texttt{pycod-e}) can be used to perform operations (e.g.~imports, variable initializations) without showing any cell.
+The \texttt{pyhid} environment executes and hides the cell in formats other than .ipynb:
+
+This is a normal python block using the \texttt{pycod} environment
+
+
+\bpycod
+print('pycod')
+
+\epycod
+
+\bpy
+pycod
+\epy
+
+
+
+
+
+
+
+The \texttt{pycod-e} environment executes but hides the cell also in .ipynb files:
+
+
+
+
+
+
+
+\texttt{pycod} is a normal cell that should execute automatically when using \texttt{--execute}. Note that this cells relies on code executed in a previous hidden cell:
+
+
+
+
+
+
+\bpycod
+print(sys.version)
+b = 2
+c = a + b
+print("The result is {}".format(c))
+c
+
+\epycod
+
+\bpy
+3.9.0 (default, Nov 15 2020, 14:28:56) 
+[GCC 7.3.0]
+The result is 3
+\epy
+\bpy
+3\epy
+
+% !split
+\section{Special environments}
+
+The \texttt{*-t} environment (e.g. \texttt{pycod-t}) formats a cell to text, and can be used to print an example
+
+
+
+
+\bpycod
+# This is a for-loop example
+for i in [0,10]:
+  print(i)
+
+\epycod
+
+
+The \texttt{*out}  (e.g. \texttt{pycod-out}) environment can be used to write a cell output:
+
+
+
+\bpycod
+# This is a text cell using pycod-t
+1/0
+
+\epycod
+
+
+
+
+\bpy
+# This is a output cell using the `pycod-out` environment
+1/0: You cannot divide by zero
+
+\epy
+
+\bpy
+# This is a output cell using the `pycod-out` environment
+1/0: You cannot divide by zero
+\epy
+
+The \texttt{-h} postfix can be used in the \texttt{html} format to show a Show/Hide button that toggles the code visibility.
+
+The \texttt{pyscpro} environment creates an interactive cell using \href{{https://github.com/sagemath/sagecell/}}{Sage} in the \texttt{html} format
+
+% !split
+\section{Plotting}
+
+This is a cell that should plot and output:
+
+
+
+
+
+
+\bpycod
+from pylab import *
+x = linspace(0, 10, 100)
+plot(x, x*x)
+show()
+
+\epycod
+
+\begin{center}
+   \includegraphics[width=0.8\textwidth]{.doconce_figure_cache/595e59a8-29df-4e2f-8cb0-6d322c366116.pdf}
+   \caption{figure}{$y=x^2$}
+   \label{python_plot}
+\end{center}
+
+
+
+
+We can now refer to this plot as Figure~\ref{python_plot}.
+
+To improve quality when exporting to {\LaTeX}, the following code has automatically
+been run to enable PDF export in notebooks.
+
+
+
+
+\bpycod
+from IPython.display import set_matplotlib_formats
+set_matplotlib_formats('png', 'pdf')
+
+\epycod
+
+
+% !split
+\section{Ignore output}
+
+Predefined output can be omitted by passing \Verb!--ignore_output! to DocOnce.
+This will remove all environments ending with \texttt{out}.
+
+
+
+
+\bpycod
+a = 2
+print(a)
+
+\epycod
+
+\bpy
+2
+\epy
+
+
+
+\bpy
+2
+
+\epy
+
+\bpy
+2
+\epy
+
+% !split
+\section{Code with errors}
+
+If code contains errors, it will still be run and the exception shown as part
+of the output:
+
+
+
+
+\bpycod
+for a in range(10)
+    print(a)
+
+\epycod
+
+\bpy
+  File "/tmp/ipykernel_671/3806628970.py", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+\epy
+
+% !split
+\section{Opening files}
+
+The working directory is the same as the .do.txt file.
+You may want to use \texttt{os.chdir} to change the directory.
+
+
+
+
+\bpycod
+with open("../LICENSE") as f:
+    print(f.read())
+
+\epycod
+
+\bpy
+Copyright (c) 2007-2015, Hans Petter Langtangen <hpl@simula.no> and
+Simula Resarch Laboratory.
+
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are
+met:
+
+    * Redistributions of source code must retain the above copyright
+      notice, this list of conditions and the following disclaimer.
+
+    * Redistributions in binary form must reproduce the above copyright
+      notice, this list of conditions and the following disclaimer in
+      the documentation and/or other materials provided with the
+      distribution.
+
+    * Neither the name of Simula Research Laboratory nor the names of
+      its contributors may be used to endorse or promote products
+      derived from this software without specific prior written
+      permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+"AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED
+TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+Remarks:
+
+The figure and movie files in doc/manual/* were made by the Doconce
+author and is released under the same conditions as Doconce.
+
+
+\epy
+
+% ------------------- end of main content ---------------
+
+% #ifdef PREAMBLE
+\end{document}
+% #endif
+

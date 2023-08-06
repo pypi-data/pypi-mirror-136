@@ -1,0 +1,14 @@
+.. File automatically generated using DocOnce (https://github.com/doconce/doconce/):
+
+.. doconce format sphinx tmp_copyright.do.txt COPYRIGHT={copyright|Released under the MIT license.} BOOK=True --cite_doconce
+
+.. provide COPYRIGHT="..." and BOOK=False/True on the command line
+
+.. Document title:
+
+Test
+%%%%
+
+:Authors: Hans Petter Langtangen (hpl at simula.no), Kaare Dump (kd at simula.no), Joe Doe
+:Date: Jan 32, 1999
+

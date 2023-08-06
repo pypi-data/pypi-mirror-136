@@ -1,0 +1,414 @@
+<!--
+File automatically generated using DocOnce (https://github.com/doconce/doconce/):
+doconce format html markdown_input.do.txt --markdown --md2do_output=mdinput2do.do.txt
+-->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="DocOnce: https://github.com/doconce/doconce/" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title></title>
+<style type="text/css">
+/* blueish style */
+body {
+  margin-top: 1.0em;
+  background-color: #ffffff;
+  font-family: Helvetica, Arial, FreeSans, san-serif;
+  color: #000000;
+}
+h1 { font-size: 1.8em; color: #1e36ce; }
+h2 { font-size: 1.6em; color: #1e36ce; }
+h3 { font-size: 1.4em; color: #1e36ce; }
+h4 { font-size: 1.2em; color: #1e36ce; }
+a { color: #1e36ce; text-decoration:none; }
+tt { font-family: "Courier New", Courier; }
+p { text-indent: 0px; }
+hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
+p.caption { width: 80%; font-style: normal; text-align: left; }
+hr.figure { border: 0; width: 80%; border-bottom: 1px solid #aaa; }
+/* pre style removed because it will interfer with pygments */
+div.highlight {
+    border: 1px solid #cfcfcf;
+    border-radius: 2px;
+    line-height: 1.21429em;
+}
+div.cell {
+    width: 100%;
+    padding: 5px 5px 5px 0;
+    margin: 0;
+    outline: none;
+}
+div.input {
+    page-break-inside: avoid;
+    box-orient: horizontal;
+    box-align: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+div.inner_cell {
+    box-orient: vertical;
+    box-align: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    box-flex: 1;
+    flex: 1;
+}
+div.input_area {
+    border: 1px solid #cfcfcf;
+    border-radius: 4px;
+    background: #f7f7f7;
+    line-height: 1.21429em;
+}
+div.input_area > div.highlight {
+    margin: .4em;
+    border: none;
+    padding: 0;
+    background-color: transparent;
+}
+div.output_wrapper {
+    position: relative;
+    box-orient: vertical;
+    box-align: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+.output {
+    box-orient: vertical;
+    box-align: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+div.output_area {
+    padding: 0;
+    page-break-inside: avoid;
+    box-orient: horizontal;
+    box-align: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+div.output_subarea {
+    padding: .4em .4em 0 .4em;
+    box-flex: 1;
+    flex: 1;
+}
+div.output_text {
+    text-align: left;
+    color: #000;
+    line-height: 1.21429em;
+}
+div { text-align: justify; text-justify: inter-word; }
+.tab {
+  padding-left: 1.5em;
+}
+div.toc p,a {
+  line-height: 1.3;
+  margin-top: 1.1;
+  margin-bottom: 1.1;
+}
+</style>
+</head>
+
+<!-- tocinfo
+{'highest level': 1,
+ 'sections': [('Table of contents',
+               1,
+               'table_of_contents',
+               'table_of_contents'),
+              ('Test of inline formatting',
+               2,
+               None,
+               'test-of-inline-formatting'),
+              ('Subsubsection heading', 3, None, 'subsubsection-heading'),
+              ('Typesetting of computer code',
+               1,
+               None,
+               'typesetting-of-computer-code'),
+              ('Test of quoted sections', 1, None, 'test-of-quoted-sections'),
+              ('Test of lists', 1, None, 'test-of-lists'),
+              ('Test of tables', 1, None, 'test-of-tables'),
+              ('Test of mathematics', 1, None, 'test-of-mathematics')]}
+end of tocinfo -->
+
+<body>
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  TeX: {
+     equationNumbers: {  autoNumber: "AMS"  },
+     extensions: ["AMSmath.js", "AMSsymbols.js", "autobold.js", "color.js"]
+  }
+});
+</script>
+<script type="text/javascript" async
+ src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+<!-- ------------------- main content ---------------------- -->
+<center>
+<h1>Test of Markdown input syntax in DocOnce</h1>
+</center>  <!-- document title -->
+
+<p>DocOnce can recognize basic Markdown as input in the <code>.do.txt</code> file
+and transform such text to native DocOnce.
+</p>
+
+<!-- DocOnce comments also start with #, and can be confused with -->
+<!-- Markdown headings. The confusion is avoided by not having blanks -->
+<!-- after the # character in single-line comments. Multi-line -->
+<!-- comments work well and are never confused with Markdown headings. -->
+
+<!-- Markdown applies standard HTML -->
+<!-- comments -->
+
+<p>
+<!-- begin inline comment -->
+<font color="red">(<b>hpl 1</b>: This is a special comment on text that is rendered by extended Markdown versions.)</font>
+<!-- end inline comment -->
+</p>
+
+<p>
+<!-- begin inline comment -->
+<font color="red">(<b>comment 2</b>: This is another version of the special comment on text; this one without any author name and colon in the beginning.)</font>
+<!-- end inline comment -->
+</p>
+<h1 id="table_of_contents">Table of contents</h1>
+
+<div class='toc'>
+<p><span class="tab"> <a href="#test-of-inline-formatting"> Test of inline formatting </a></p>
+<p><a href="#typesetting-of-computer-code"> Typesetting of computer code </a></p>
+<p><a href="#test-of-quoted-sections"> Test of quoted sections </a></p>
+<p><a href="#test-of-lists"> Test of lists </a></p>
+<p><a href="#test-of-tables"> Test of tables </a></p>
+<p><a href="#test-of-mathematics"> Test of mathematics </a></p>
+</div>
+<br>
+<h2 id="test-of-inline-formatting">Test of inline formatting </h2>
+
+<p>Markdown has <b>boldface</b> and <em>emphasize</em> typesetting, as well
+as <code>inline verbatim computer code</code>.
+</p>
+
+<p>
+<b>Paragraph headings.</b>
+These are written using standard Markdown
+boldface syntax.
+</p>
+<h3 id="subsubsection-heading">Subsubsection heading </h3>
+
+<p>The Markdown headings can only be of three types: section, subsection,
+and subsubsection.
+</p>
+<h1 id="typesetting-of-computer-code">Typesetting of computer code </h1>
+
+<p>Here is a plain code snippet without language specification:</p>
+
+
+<!-- code=text (!bc dat) typeset with pygments style "default" -->
+<div class="cell border-box-sizing code_cell rendered">
+  <div class="input">
+    <div class="inner_cell">
+      <div class="input_area">
+        <div class="highlight" style="background: #f8f8f8">
+  <pre style="line-height: 125%;">file=$1
+if [ -f $file ]; then
+  cp $file $file.cop
+fi
+# This is Bash - what happens to this comment?
+</pre>
+</div>
+      </div>
+    </div>
+  </div>
+  <div class="output_wrapper">
+    <div class="output">
+      <div class="output_area">
+        <div class="output_subarea output_stream output_stdout output_text">          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<p>The same snippet typeset explicitly as Bash, but with a common
+indentation to be removed:
+</p>
+
+
+<!-- code=bash (!bc shcod) typeset with pygments style "default" -->
+<div class="cell border-box-sizing code_cell rendered">
+  <div class="input">
+    <div class="inner_cell">
+      <div class="input_area">
+        <div class="highlight" style="background: #f8f8f8">
+  <pre style="line-height: 125%;"><span style="color: #19177C">file</span><span style="color: #666666">=</span><span style="color: #19177C">$1</span>
+<span style="color: #008000; font-weight: bold">if</span> <span style="color: #666666">[</span> -f <span style="color: #19177C">$file</span> <span style="color: #666666">]</span>; <span style="color: #008000; font-weight: bold">then</span>
+  cp <span style="color: #19177C">$file</span> <span style="color: #19177C">$file</span>.cop
+<span style="color: #008000; font-weight: bold">fi</span>
+<span style="color: #408080; font-style: italic"># This is Bash - what happens to this comment?</span>
+</pre>
+</div>
+      </div>
+    </div>
+  </div>
+  <div class="output_wrapper">
+    <div class="output">
+      <div class="output_area">
+        <div class="output_subarea output_stream output_stdout output_text">          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<p>And here is Python:</p>
+
+
+<!-- code=python (!bc pycod) typeset with pygments style "default" -->
+<div class="cell border-box-sizing code_cell rendered">
+  <div class="input">
+    <div class="inner_cell">
+      <div class="input_area">
+        <div class="highlight" style="background: #f8f8f8">
+  <pre style="line-height: 125%;"><span style="color: #008000; font-weight: bold">from</span> <span style="color: #0000FF; font-weight: bold">math</span> <span style="color: #008000; font-weight: bold">import</span> sin
+
+<span style="color: #008000; font-weight: bold">def</span> <span style="color: #0000FF">f</span>(x):
+    <span style="color: #008000; font-weight: bold">return</span> x<span style="color: #666666">*</span>sin(x)
+
+x <span style="color: #666666">=</span> <span style="color: #666666">1.4</span>
+<span style="color: #008000">print</span>(f(x))
+</pre>
+</div>
+      </div>
+    </div>
+  </div>
+  <div class="output_wrapper">
+    <div class="output">
+      <div class="output_area">
+        <div class="output_subarea output_stream output_stdout output_text">          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<p>And HTML:</p>
+
+
+<!-- code=html (!bc htmlcod) typeset with pygments style "default" -->
+<div class="cell border-box-sizing code_cell rendered">
+  <div class="input">
+    <div class="inner_cell">
+      <div class="input_area">
+        <div class="highlight" style="background: #f8f8f8">
+  <pre style="line-height: 125%;">&lt;<span style="color: #008000; font-weight: bold">h1</span>&gt;Some heading&lt;/<span style="color: #008000; font-weight: bold">h1</span>&gt;
+# And a comment
+</pre>
+</div>
+      </div>
+    </div>
+  </div>
+  <div class="output_wrapper">
+    <div class="output">
+      <div class="output_area">
+        <div class="output_subarea output_stream output_stdout output_text">          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<h1 id="test-of-quoted-sections">Test of quoted sections </h1>
+
+<div class="alert alert-block alert-block alert-text-normal">
+<b></b>
+<p>
+<p>Markdown also features quoted
+paragraphs that start with a greater
+than sign, either just in the beginning
+or at every line.
+</p>
+</div>
+
+
+<p>If a quoted paragraph with blank lines is desired, you
+must use <code>&gt;</code> on the beginning of every line.
+</p>
+
+<div class="alert alert-block alert-block alert-text-normal">
+<b></b>
+<p>
+<b>NOTE</b>:
+
+<p>This quoted paragragraph is a simulation of a primitive
+admon in Markdown.
+</p>
+</div>
+
+<h1 id="test-of-lists">Test of lists </h1>
+
+<p>Markdown applies the dash in itemized lists:</p>
+
+<ul>
+ <li> This is item 1</li>
+ <li> This is item 2</li>
+ <li> This is item 3</li>
+</ul>
+<p>Let us test this in a quoted environment too:</p>
+
+<div class="alert alert-block alert-block alert-text-normal">
+<b></b>
+<p>
+<b>List</b>:
+<ul>
+  <li> This is item 1</li>
+  <li> This is item 2, which cannot be split between lines</li>
+  <li> This is item 3</li>
+</ul>
+</div>
+
+
+<p>Enumerated lists go as follows.</p>
+
+<ol>
+<li> Item 1</li>
+<li> Item 2</li>
+<li> Item 3</li>
+</ol>
+<h1 id="test-of-tables">Test of tables </h1>
+
+<p><b>Markdown Extra</b> has a special syntax for tables:</p>
+
+<table class="dotable" border="1">
+<thead>
+<tr><th align="center">  Item  </th> <th align="center"> Value  </th> <th align="center">Qty</th> </tr>
+</thead>
+<tbody>
+<tr><td align="left">   Computer    </td> <td align="right">   1600 USD    </td> <td align="center">   5      </td> </tr>
+<tr><td align="left">   Phone       </td> <td align="right">   12 USD      </td> <td align="center">   12     </td> </tr>
+<tr><td align="left">   Pipe        </td> <td align="right">   1 USD       </td> <td align="center">   234    </td> </tr>
+</tbody>
+</table>
+<!-- Horizontal marker/rule -->
+
+<hr>
+<h1 id="test-of-mathematics">Test of mathematics </h1>
+
+<p>You can render <em>LaTeX</em> mathematical expressions using <b>MathJax</b>, as on <a href="https://math.stackexchange.com/" target="_self">math.stackexchange.com</a>:</p>
+
+<p>The <em>Gamma function</em> satisfying \( \Gamma(n) = (n-1)!\quad\forall
+n\in\mathbb N \) is via the Euler integral
+</p>
+
+$$ \Gamma(z) = \int_0^\infty t^{z-1}e^{-t}dt\,. $$
+
+<!-- ------------------- end of main content --------------- -->
+</body>
+</html>
+

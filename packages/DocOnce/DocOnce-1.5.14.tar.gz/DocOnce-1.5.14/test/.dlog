@@ -1,0 +1,36 @@
+*** error : destination folder not found:
+    this means failure
+ERROR: 1 !bc do not match 0 !ec directives
+Missing !ec after final !bc
+*** error in code block: 
+    syntax for a a code block line: `!bc X[cod|pro][postfix]`
+    where X is a programming language. Offending line:
+    !bc pycod -t
+
+*** error : destination folder not found:
+    this means failure
+ERROR: 1 !bc do not match 0 !ec directives
+Missing !ec after final !bc
+*** error in code block: 
+    syntax for a a code block line: `!bc X[cod|pro][postfix]`
+    where X is a programming language. Offending line:
+    !bc pycod -t
+
+*** error : destination folder not found:
+    this means failure
+ERROR: 1 !bc do not match 0 !ec directives
+Missing !ec after final !bc
+*** error in code block: 
+    syntax for a a code block line: `!bc X[cod|pro][postfix]`
+    where X is a programming language. Offending line:
+    !bc pycod -t
+
+*** error : destination folder not found:
+    this means failure
+ERROR: 1 !bc do not match 0 !ec directives
+Missing !ec after final !bc
+*** error in code block: 
+    syntax for a a code block line: `!bc X[cod|pro][postfix]`
+    where X is a programming language. Offending line:
+    !bc pycod -t
+

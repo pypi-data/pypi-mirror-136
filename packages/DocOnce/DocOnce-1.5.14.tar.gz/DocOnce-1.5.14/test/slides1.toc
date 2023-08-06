@@ -1,0 +1,4 @@
+\beamer@endinputifotherversion {3.36pt}
+\select@language {english}
+\beamer@sectionintoc {1}{This is the first section}{2}{0}{1}
+\beamer@sectionintoc {2}{Second section}{12}{0}{2}

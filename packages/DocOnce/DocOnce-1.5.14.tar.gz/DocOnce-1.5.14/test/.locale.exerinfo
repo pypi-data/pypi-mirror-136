@@ -1,0 +1,50 @@
+# Information about all exercises in the file locale.do.txt.
+# The information can be loaded into a Python list of dicts by
+#
+# f = open('.locale.exerinfo', 'r')
+# exer = eval(f.read())
+#
+[{'ans_docend': '',
+  'answer': '3.',
+  'chapter_exercise': None,
+  'chapter_no': None,
+  'chapter_title': None,
+  'chapter_type': None,
+  'closing_remarks': '',
+  'file': ['legg_sammen'],
+  'heading': '=====',
+  'hints': [],
+  'keywords': None,
+  'label': None,
+  'no': 1,
+  'sol_docend': '',
+  'solution': 'Ganske enkelt tell fingre: en finger, to fingre, tell opp til '
+              'tre fingre\n'
+              'tilsammen.',
+  'solution_file': None,
+  'subex': [],
+  'text': 'idx{addisjon}\n\nRegn ut $1+2$.',
+  'title': 'Legg sammen to tall',
+  'type': 'Problem',
+  'type_visible': True},
+ {'ans_docend': '',
+  'answer': '',
+  'chapter_exercise': None,
+  'chapter_no': None,
+  'chapter_title': None,
+  'chapter_type': None,
+  'closing_remarks': 'Faktisk er $3\\cdot 4 = 4\\cdot 3$.',
+  'file': ['multipliser'],
+  'heading': '=====',
+  'hints': ['Oppgaven kan regnes ut ved hjelp av en kalkulator.'],
+  'keywords': None,
+  'label': None,
+  'no': 2,
+  'sol_docend': '',
+  'solution': '',
+  'solution_file': None,
+  'subex': [],
+  'text': 'Regn ut $3\\cdot 4$.',
+  'title': 'Multipliser to tall',
+  'type': 'Project',
+  'type_visible': True}]

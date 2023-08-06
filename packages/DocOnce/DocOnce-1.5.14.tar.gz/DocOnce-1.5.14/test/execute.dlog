@@ -1,0 +1,1253 @@
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+*** No Jupyter kernels found for julia. The kernels available are:
+    python3,bash
+    To install Jupyter kernels see https://github.com/jupyter/jupyter/wiki/Jupyter-kernels
+*** No Jupyter kernels found for r. The kernels available are:
+    python3,bash
+    To install Jupyter kernels see https://github.com/jupyter/jupyter/wiki/Jupyter-kernels
+*** Warning: found error in code block:
+      File "/tmp/ipykernel_411/3806628970.py", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+*** No Jupyter kernels found for julia. The kernels available are:
+    python3,bash
+    To install Jupyter kernels see https://github.com/jupyter/jupyter/wiki/Jupyter-kernels
+*** No Jupyter kernels found for r. The kernels available are:
+    python3,bash
+    To install Jupyter kernels see https://github.com/jupyter/jupyter/wiki/Jupyter-kernels
+*** Warning: found error in code block:
+      File "/tmp/ipykernel_466/3806628970.py", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+*** Warning: found error in code block:
+      File "/tmp/ipykernel_527/1044153563.py", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+*** No Jupyter kernels found for julia. The kernels available are:
+    python3,bash
+    To install Jupyter kernels see https://github.com/jupyter/jupyter/wiki/Jupyter-kernels
+*** No Jupyter kernels found for r. The kernels available are:
+    python3,bash
+    To install Jupyter kernels see https://github.com/jupyter/jupyter/wiki/Jupyter-kernels
+*** Warning: found error in code block:
+      File "/tmp/ipykernel_550/3806628970.py", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+*** No Jupyter kernels found for julia. The kernels available are:
+    python3,bash
+    To install Jupyter kernels see https://github.com/jupyter/jupyter/wiki/Jupyter-kernels
+*** No Jupyter kernels found for r. The kernels available are:
+    python3,bash
+    To install Jupyter kernels see https://github.com/jupyter/jupyter/wiki/Jupyter-kernels
+*** Warning: found error in code block:
+      File "/tmp/ipykernel_606/3806628970.py", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+*** No Jupyter kernels found for julia. The kernels available are:
+    python3,bash
+    To install Jupyter kernels see https://github.com/jupyter/jupyter/wiki/Jupyter-kernels
+*** No Jupyter kernels found for r. The kernels available are:
+    python3,bash
+    To install Jupyter kernels see https://github.com/jupyter/jupyter/wiki/Jupyter-kernels
+*** Warning: found error in code block:
+      File "/tmp/ipykernel_40/3806628970.py", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+
+...doconce translation: insertion of verbatim and latex blocks 17.3 s (accumulated time: 17.5)
+
+
+...doconce format used 18.6 s to translate the document (935 lines)
+
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+*** No Jupyter kernels found for julia. The kernels available are:
+    python3,bash
+    To install Jupyter kernels see https://github.com/jupyter/jupyter/wiki/Jupyter-kernels
+*** No Jupyter kernels found for r. The kernels available are:
+    python3,bash
+    To install Jupyter kernels see https://github.com/jupyter/jupyter/wiki/Jupyter-kernels
+*** Warning: found error in code block:
+      File "/tmp/ipykernel_98/3806628970.py", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+*** Warning: found error in code block:
+      File "/tmp/ipykernel_159/1044153563.py", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+*** No Jupyter kernels found for julia. The kernels available are:
+    python3,bash
+    To install Jupyter kernels see https://github.com/jupyter/jupyter/wiki/Jupyter-kernels
+*** No Jupyter kernels found for r. The kernels available are:
+    python3,bash
+    To install Jupyter kernels see https://github.com/jupyter/jupyter/wiki/Jupyter-kernels
+*** Warning: found error in code block:
+      File "/tmp/ipykernel_182/3806628970.py", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+*** No Jupyter kernels found for julia. The kernels available are:
+    python3,bash
+    To install Jupyter kernels see https://github.com/jupyter/jupyter/wiki/Jupyter-kernels
+*** No Jupyter kernels found for r. The kernels available are:
+    python3,bash
+    To install Jupyter kernels see https://github.com/jupyter/jupyter/wiki/Jupyter-kernels
+*** Warning: found error in code block:
+      File "/tmp/ipykernel_238/3806628970.py", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+*** No Jupyter kernels found for julia. The kernels available are:
+    python3,bash
+    To install Jupyter kernels see https://github.com/jupyter/jupyter/wiki/Jupyter-kernels
+*** No Jupyter kernels found for r. The kernels available are:
+    python3,bash
+    To install Jupyter kernels see https://github.com/jupyter/jupyter/wiki/Jupyter-kernels
+*** error: Error in code block:
+      File "/tmp/ipykernel_52/3806628970.py", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+*** No Jupyter kernels found for julia. The kernels available are:
+    python3,bash
+    To install Jupyter kernels see https://github.com/jupyter/jupyter/wiki/Jupyter-kernels
+*** No Jupyter kernels found for r. The kernels available are:
+    python3,bash
+    To install Jupyter kernels see https://github.com/jupyter/jupyter/wiki/Jupyter-kernels
+*** error: Error in code block:
+      File "/tmp/ipykernel_110/3806628970.py", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+*** error: Error in code block:
+      File "/tmp/ipykernel_171/1044153563.py", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+*** No Jupyter kernels found for julia. The kernels available are:
+    python3,bash
+    To install Jupyter kernels see https://github.com/jupyter/jupyter/wiki/Jupyter-kernels
+*** No Jupyter kernels found for r. The kernels available are:
+    python3,bash
+    To install Jupyter kernels see https://github.com/jupyter/jupyter/wiki/Jupyter-kernels
+*** error: Error in code block:
+      File "/tmp/ipykernel_194/3806628970.py", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+*** No Jupyter kernels found for julia. The kernels available are:
+    python3,bash
+    To install Jupyter kernels see https://github.com/jupyter/jupyter/wiki/Jupyter-kernels
+*** No Jupyter kernels found for r. The kernels available are:
+    python3,bash
+    To install Jupyter kernels see https://github.com/jupyter/jupyter/wiki/Jupyter-kernels
+*** error: Error in code block:
+      File "/tmp/ipykernel_250/3806628970.py", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+*** No Jupyter kernels found for julia. The kernels available are:
+    python3,bash
+    To install Jupyter kernels see https://github.com/jupyter/jupyter/wiki/Jupyter-kernels
+*** No Jupyter kernels found for r. The kernels available are:
+    python3,bash
+    To install Jupyter kernels see https://github.com/jupyter/jupyter/wiki/Jupyter-kernels
+*** error: Error in code block:
+      File "/tmp/ipykernel_2693/3806628970.py", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+*** No Jupyter kernels found for julia. The kernels available are:
+    python3,bash
+    To install Jupyter kernels see https://github.com/jupyter/jupyter/wiki/Jupyter-kernels
+*** No Jupyter kernels found for r. The kernels available are:
+    python3,bash
+    To install Jupyter kernels see https://github.com/jupyter/jupyter/wiki/Jupyter-kernels
+*** error: Error in code block:
+      File "/tmp/ipykernel_2748/3806628970.py", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+*** error: Error in code block:
+      File "/tmp/ipykernel_2809/1044153563.py", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+*** No Jupyter kernels found for julia. The kernels available are:
+    python3,bash
+    To install Jupyter kernels see https://github.com/jupyter/jupyter/wiki/Jupyter-kernels
+*** No Jupyter kernels found for r. The kernels available are:
+    python3,bash
+    To install Jupyter kernels see https://github.com/jupyter/jupyter/wiki/Jupyter-kernels
+*** error: Error in code block:
+      File "/tmp/ipykernel_2832/3806628970.py", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+*** No Jupyter kernels found for julia. The kernels available are:
+    python3,bash
+    To install Jupyter kernels see https://github.com/jupyter/jupyter/wiki/Jupyter-kernels
+*** No Jupyter kernels found for r. The kernels available are:
+    python3,bash
+    To install Jupyter kernels see https://github.com/jupyter/jupyter/wiki/Jupyter-kernels
+*** error: Error in code block:
+      File "/tmp/ipykernel_2888/3806628970.py", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+*** No Jupyter kernels found for bash. The kernels available are:
+    julia-1.6,python3
+    To install Jupyter kernels see https://github.com/jupyter/jupyter/wiki/Jupyter-kernels
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+*** No Jupyter kernels found for julia. The kernels available are:
+    python3,bash
+    To install Jupyter kernels see https://github.com/jupyter/jupyter/wiki/Jupyter-kernels
+*** No Jupyter kernels found for r. The kernels available are:
+    python3,bash
+    To install Jupyter kernels see https://github.com/jupyter/jupyter/wiki/Jupyter-kernels
+*** error: Error in code block:
+      File "/tmp/ipykernel_3951/3806628970.py", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+
+...doconce translation: insertion of verbatim and latex blocks 22.1 s (accumulated time: 22.9)
+
+
+...doconce format used 23.9 s to translate the document (935 lines)
+
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+*** No Jupyter kernels found for julia. The kernels available are:
+    python3,bash
+    To install Jupyter kernels see https://github.com/jupyter/jupyter/wiki/Jupyter-kernels
+*** No Jupyter kernels found for r. The kernels available are:
+    python3,bash
+    To install Jupyter kernels see https://github.com/jupyter/jupyter/wiki/Jupyter-kernels
+*** No Jupyter kernels found for julia. The kernels available are:
+    python3,bash
+    To install Jupyter kernels see https://github.com/jupyter/jupyter/wiki/Jupyter-kernels
+*** No Jupyter kernels found for r. The kernels available are:
+*** Warning: found error in code block:
+    python3,bash
+      File "/tmp/ipykernel_35/3806628970.py", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+    To install Jupyter kernels see https://github.com/jupyter/jupyter/wiki/Jupyter-kernels
+***
+
+...doconce translation: insertion of verbatim and latex blocks 33.0 s (accumulated time: 33.7)
+*** error: Error in code block:
+      File "/tmp/ipykernel_4006/3806628970.py", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+output in execute.p.tex
+
+
+...doconce format used 34.8 s to translate the document (935 lines)
+
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+output in execute.ipynb
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+*** error: Error in code block:
+      File "/tmp/ipykernel_4067/1044153563.py", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+output in execute.ipynb
+*** No Jupyter kernels found for julia. The kernels available are:
+    python3,bash
+    To install Jupyter kernels see https://github.com/jupyter/jupyter/wiki/Jupyter-kernels
+*** No Jupyter kernels found for r. The kernels available are:
+    python3,bash
+    To install Jupyter kernels see https://github.com/jupyter/jupyter/wiki/Jupyter-kernels
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+*** Warning: found error in code block:
+      File "/tmp/ipykernel_93/3806628970.py", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+output in execute.p.tex
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+*** No Jupyter kernels found for julia. The kernels available are:
+    python3,bash
+    To install Jupyter kernels see https://github.com/jupyter/jupyter/wiki/Jupyter-kernels
+*** No Jupyter kernels found for r. The kernels available are:
+    python3,bash
+    To install Jupyter kernels see https://github.com/jupyter/jupyter/wiki/Jupyter-kernels
+*** Warning: found error in code block:
+      File "/tmp/ipykernel_154/1044153563.py", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+output in execute.ipynb
+*** error: Error in code block:
+      File "/tmp/ipykernel_4090/3806628970.py", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+
+...doconce translation: insertion of verbatim and latex blocks 15.4 s (accumulated time: 16.2)
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+
+
+...doconce format used 17.2 s to translate the document (592 lines)
+
+output in execute.p.tex
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+*** No Jupyter kernels found for julia. The kernels available are:
+    python3,bash
+    To install Jupyter kernels see https://github.com/jupyter/jupyter/wiki/Jupyter-kernels
+*** No Jupyter kernels found for r. The kernels available are:
+    python3,bash
+    To install Jupyter kernels see https://github.com/jupyter/jupyter/wiki/Jupyter-kernels
+*** Warning: found error in code block:
+      File "/tmp/ipykernel_177/3806628970.py", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+*** No Jupyter kernels found for julia. The kernels available are:
+    python3,bash
+    To install Jupyter kernels see https://github.com/jupyter/jupyter/wiki/Jupyter-kernels
+*** No Jupyter kernels found for r. The kernels available are:
+    python3,bash
+    To install Jupyter kernels see https://github.com/jupyter/jupyter/wiki/Jupyter-kernels
+output in execute.html
+*** error: Error in code block:
+      File "/tmp/ipykernel_4146/3806628970.py", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+
+...doconce translation: insertion of verbatim and latex blocks 15.1 s (accumulated time: 15.7)
+
+
+...doconce format used 16.7 s to translate the document (935 lines)
+
+output in execute.html
+*** No Jupyter kernels found for julia. The kernels available are:
+    python3,bash
+    To install Jupyter kernels see https://github.com/jupyter/jupyter/wiki/Jupyter-kernels
+*** No Jupyter kernels found for r. The kernels available are:
+    python3,bash
+    To install Jupyter kernels see https://github.com/jupyter/jupyter/wiki/Jupyter-kernels
+*** Warning: found error in code block:
+      File "/tmp/ipykernel_233/3806628970.py", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+
+...doconce translation: insertion of verbatim and latex blocks 20.6 s (accumulated time: 21.4)
+
+
+...doconce format used 22.5 s to translate the document (935 lines)
+
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+*** No Jupyter kernels found for julia. The kernels available are:
+    python3,bash
+    To install Jupyter kernels see https://github.com/jupyter/jupyter/wiki/Jupyter-kernels
+*** No Jupyter kernels found for r. The kernels available are:
+    python3,bash
+    To install Jupyter kernels see https://github.com/jupyter/jupyter/wiki/Jupyter-kernels
+*** error: Error in code block:
+      File "/tmp/ipykernel_4288/3806628970.py", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+
+...doconce translation: insertion of verbatim and latex blocks 15.8 s (accumulated time: 16.6)
+
+
+...doconce format used 17.6 s to translate the document (935 lines)
+
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+*** No Jupyter kernels found for julia. The kernels available are:
+    python3,bash
+    To install Jupyter kernels see https://github.com/jupyter/jupyter/wiki/Jupyter-kernels
+*** No Jupyter kernels found for r. The kernels available are:
+    python3,bash
+    To install Jupyter kernels see https://github.com/jupyter/jupyter/wiki/Jupyter-kernels
+*** error: Error in code block:
+      File "/tmp/ipykernel_4343/3806628970.py", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+
+...doconce translation: insertion of verbatim and latex blocks 16.4 s (accumulated time: 16.9)
+
+
+...doconce format used 17.9 s to translate the document (592 lines)
+
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+*** error: Error in code block:
+      File "/tmp/ipykernel_4404/1044153563.py", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+*** No Jupyter kernels found for julia. The kernels available are:
+    python3,bash
+    To install Jupyter kernels see https://github.com/jupyter/jupyter/wiki/Jupyter-kernels
+*** No Jupyter kernels found for r. The kernels available are:
+    python3,bash
+    To install Jupyter kernels see https://github.com/jupyter/jupyter/wiki/Jupyter-kernels
+*** error: Error in code block:
+      File "/tmp/ipykernel_4427/3806628970.py", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+
+...doconce translation: insertion of verbatim and latex blocks 17.6 s (accumulated time: 18.3)
+
+
+...doconce format used 19.4 s to translate the document (592 lines)
+
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+*** No Jupyter kernels found for julia. The kernels available are:
+    python3,bash
+    To install Jupyter kernels see https://github.com/jupyter/jupyter/wiki/Jupyter-kernels
+*** No Jupyter kernels found for r. The kernels available are:
+    python3,bash
+    To install Jupyter kernels see https://github.com/jupyter/jupyter/wiki/Jupyter-kernels
+*** error: Error in code block:
+      File "/tmp/ipykernel_4483/3806628970.py", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+
+...doconce translation: insertion of verbatim and latex blocks 21.5 s (accumulated time: 22.5)
+
+
+...doconce format used 23.6 s to translate the document (935 lines)
+
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+*** No Jupyter kernels found for julia. The kernels available are:
+    python3,bash
+    To install Jupyter kernels see https://github.com/jupyter/jupyter/wiki/Jupyter-kernels
+*** No Jupyter kernels found for r. The kernels available are:
+    python3,bash
+    To install Jupyter kernels see https://github.com/jupyter/jupyter/wiki/Jupyter-kernels
+*** error: Error in code block:
+      File "/tmp/ipykernel_4648/3806628970.py", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+
+...doconce translation: insertion of verbatim and latex blocks 35.8 s (accumulated time: 37.9)
+
+
+...doconce format used 38.9 s to translate the document (935 lines)
+
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+*** No Jupyter kernels found for julia. The kernels available are:
+    python3,bash
+    To install Jupyter kernels see https://github.com/jupyter/jupyter/wiki/Jupyter-kernels
+*** No Jupyter kernels found for r. The kernels available are:
+    python3,bash
+    To install Jupyter kernels see https://github.com/jupyter/jupyter/wiki/Jupyter-kernels
+*** error: Error in code block:
+      File "/tmp/ipykernel_4703/3806628970.py", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+
+...doconce translation: insertion of verbatim and latex blocks 22.2 s (accumulated time: 23.3)
+
+
+...doconce format used 24.3 s to translate the document (594 lines)
+
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+*** error: Error in code block:
+      File "/tmp/ipykernel_4764/1044153563.py", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+*** No Jupyter kernels found for julia. The kernels available are:
+    python3,bash
+    To install Jupyter kernels see https://github.com/jupyter/jupyter/wiki/Jupyter-kernels
+*** No Jupyter kernels found for r. The kernels available are:
+    python3,bash
+    To install Jupyter kernels see https://github.com/jupyter/jupyter/wiki/Jupyter-kernels
+*** error: Error in code block:
+      File "/tmp/ipykernel_4787/3806628970.py", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+
+...doconce translation: insertion of verbatim and latex blocks 17.3 s (accumulated time: 17.9)
+
+
+...doconce format used 18.9 s to translate the document (592 lines)
+
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+*** No Jupyter kernels found for julia. The kernels available are:
+    python3,bash
+    To install Jupyter kernels see https://github.com/jupyter/jupyter/wiki/Jupyter-kernels
+*** No Jupyter kernels found for r. The kernels available are:
+    python3,bash
+    To install Jupyter kernels see https://github.com/jupyter/jupyter/wiki/Jupyter-kernels
+*** error: Error in code block:
+      File "/tmp/ipykernel_4843/3806628970.py", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+
+...doconce translation: insertion of verbatim and latex blocks 24.4 s (accumulated time: 25.3)
+
+
+...doconce format used 26.3 s to translate the document (935 lines)
+
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+*** No Jupyter kernels found for julia. The kernels available are:
+    python3,bash
+    To install Jupyter kernels see https://github.com/jupyter/jupyter/wiki/Jupyter-kernels
+*** No Jupyter kernels found for r. The kernels available are:
+    python3,bash
+    To install Jupyter kernels see https://github.com/jupyter/jupyter/wiki/Jupyter-kernels
+*** error: Error in code block:
+      File "/tmp/ipykernel_4999/3806628970.py", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+
+...doconce translation: insertion of verbatim and latex blocks 20.2 s (accumulated time: 20.7)
+
+
+...doconce format used 21.7 s to translate the document (937 lines)
+
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+*** No Jupyter kernels found for julia. The kernels available are:
+    python3,bash
+    To install Jupyter kernels see https://github.com/jupyter/jupyter/wiki/Jupyter-kernels
+*** No Jupyter kernels found for r. The kernels available are:
+    python3,bash
+    To install Jupyter kernels see https://github.com/jupyter/jupyter/wiki/Jupyter-kernels
+*** error: Error in code block:
+      File "/tmp/ipykernel_5054/3806628970.py", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+
+...doconce translation: insertion of verbatim and latex blocks 16.7 s (accumulated time: 17.1)
+
+
+...doconce format used 18.2 s to translate the document (592 lines)
+
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+*** error: Error in code block:
+      File "/tmp/ipykernel_5115/1044153563.py", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+*** No Jupyter kernels found for julia. The kernels available are:
+    python3,bash
+    To install Jupyter kernels see https://github.com/jupyter/jupyter/wiki/Jupyter-kernels
+*** No Jupyter kernels found for r. The kernels available are:
+    python3,bash
+    To install Jupyter kernels see https://github.com/jupyter/jupyter/wiki/Jupyter-kernels
+*** error: Error in code block:
+      File "/tmp/ipykernel_5138/3806628970.py", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+
+...doconce translation: insertion of verbatim and latex blocks 15.9 s (accumulated time: 16.2)
+
+
+...doconce format used 17.2 s to translate the document (592 lines)
+
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+*** No Jupyter kernels found for julia. The kernels available are:
+    python3,bash
+    To install Jupyter kernels see https://github.com/jupyter/jupyter/wiki/Jupyter-kernels
+*** No Jupyter kernels found for r. The kernels available are:
+    python3,bash
+    To install Jupyter kernels see https://github.com/jupyter/jupyter/wiki/Jupyter-kernels
+*** error: Error in code block:
+      File "/tmp/ipykernel_5194/3806628970.py", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+
+
+...doconce format used 16.3 s to translate the document (935 lines)
+
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+*** No Jupyter kernels found for julia. The kernels available are:
+    python3,bash
+    To install Jupyter kernels see https://github.com/jupyter/jupyter/wiki/Jupyter-kernels
+*** No Jupyter kernels found for r. The kernels available are:
+    python3,bash
+    To install Jupyter kernels see https://github.com/jupyter/jupyter/wiki/Jupyter-kernels
+*** error: Error in code block:
+      File "/tmp/ipykernel_5505/3806628970.py", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+*** No Jupyter kernels found for julia. The kernels available are:
+    python3,bash
+    To install Jupyter kernels see https://github.com/jupyter/jupyter/wiki/Jupyter-kernels
+*** No Jupyter kernels found for r. The kernels available are:
+    python3,bash
+    To install Jupyter kernels see https://github.com/jupyter/jupyter/wiki/Jupyter-kernels
+*** error: Error in code block:
+      File "/tmp/ipykernel_5560/3806628970.py", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+*** error: Error in code block:
+      File "/tmp/ipykernel_5621/1044153563.py", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+*** No Jupyter kernels found for julia. The kernels available are:
+    python3,bash
+    To install Jupyter kernels see https://github.com/jupyter/jupyter/wiki/Jupyter-kernels
+*** No Jupyter kernels found for r. The kernels available are:
+    python3,bash
+    To install Jupyter kernels see https://github.com/jupyter/jupyter/wiki/Jupyter-kernels
+*** error: Error in code block:
+      File "/tmp/ipykernel_5644/3806628970.py", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+*** No Jupyter kernels found for julia. The kernels available are:
+    python3,bash
+    To install Jupyter kernels see https://github.com/jupyter/jupyter/wiki/Jupyter-kernels
+*** No Jupyter kernels found for r. The kernels available are:
+    python3,bash
+    To install Jupyter kernels see https://github.com/jupyter/jupyter/wiki/Jupyter-kernels
+*** error: Error in code block:
+      File "/tmp/ipykernel_5700/3806628970.py", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+*** error: reference ref{image} to non-defined label
+    run the generated script tmp_missing_labels.sh
+    to search for these missing labels!
+Causes of missing labels:
+1: label is defined in another document. Use generalized references
+   ref[][][], or use --allow_refs_to_external_docs (to ignore this error)
+   (if generalized reference and this error occur: syntax of generalized
+   reference is wrong!)
+2: preprocessor if-else has left the label out
+3: forgotten to define the label
+
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+*** warning: Missing figure label 'python_plot'
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+*** warning: Missing figure label 'python_plot'
+*** Warning: found error in code block:
+      File "/tmp/ipykernel_40/1044153563.py", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+*** warning: Missing figure label 'python_plot'
+*** Warning: found error in code block:
+      File "/tmp/ipykernel_65/1044153563.py", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+*** No Jupyter kernels found for julia. The kernels available are:
+    python3,bash
+    To install Jupyter kernels see https://github.com/jupyter/jupyter/wiki/Jupyter-kernels
+*** No Jupyter kernels found for r. The kernels available are:
+    python3,bash
+    To install Jupyter kernels see https://github.com/jupyter/jupyter/wiki/Jupyter-kernels
+*** Warning: found error in code block:
+      File "/tmp/ipykernel_96/3806628970.py", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+*** No Jupyter kernels found for julia. The kernels available are:
+    python3,bash
+    To install Jupyter kernels see https://github.com/jupyter/jupyter/wiki/Jupyter-kernels
+*** No Jupyter kernels found for r. The kernels available are:
+    python3,bash
+    To install Jupyter kernels see https://github.com/jupyter/jupyter/wiki/Jupyter-kernels
+*** Warning: found error in code block:
+      File "/tmp/ipykernel_151/3806628970.py", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+*** warning: Missing figure label 'python_plot'
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+*** warning: Missing figure label 'python_plot'
+*** Warning: found error in code block:
+      File "/tmp/ipykernel_212/1044153563.py", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+*** No Jupyter kernels found for julia. The kernels available are:
+    python3,bash
+    To install Jupyter kernels see https://github.com/jupyter/jupyter/wiki/Jupyter-kernels
+*** No Jupyter kernels found for r. The kernels available are:
+    python3,bash
+    To install Jupyter kernels see https://github.com/jupyter/jupyter/wiki/Jupyter-kernels
+*** Warning: found error in code block:
+      File "/tmp/ipykernel_235/3806628970.py", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+*** No Jupyter kernels found for julia. The kernels available are:
+    python3,bash
+    To install Jupyter kernels see https://github.com/jupyter/jupyter/wiki/Jupyter-kernels
+*** No Jupyter kernels found for r. The kernels available are:
+    python3,bash
+    To install Jupyter kernels see https://github.com/jupyter/jupyter/wiki/Jupyter-kernels
+*** Warning: found error in code block:
+      File "/tmp/ipykernel_291/3806628970.py", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+*** No Jupyter kernels found for julia. The kernels available are:
+    python3,bash
+    To install Jupyter kernels see https://github.com/jupyter/jupyter/wiki/Jupyter-kernels
+*** No Jupyter kernels found for r. The kernels available are:
+    python3,bash
+    To install Jupyter kernels see https://github.com/jupyter/jupyter/wiki/Jupyter-kernels
+*** Warning: found error in code block:
+      File "/tmp/ipykernel_532/3806628970.py", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+*** No Jupyter kernels found for julia. The kernels available are:
+    python3,bash
+    To install Jupyter kernels see https://github.com/jupyter/jupyter/wiki/Jupyter-kernels
+*** No Jupyter kernels found for r. The kernels available are:
+    python3,bash
+    To install Jupyter kernels see https://github.com/jupyter/jupyter/wiki/Jupyter-kernels
+*** Warning: found error in code block:
+      File "/tmp/ipykernel_587/3806628970.py", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+*** warning: Missing figure label 'python_plot'
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+*** warning: Missing figure label 'python_plot'
+*** Warning: found error in code block:
+      File "/tmp/ipykernel_648/1044153563.py", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+Warning: found "!bc cycod-h", but cycod-h is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+Warning: found "!bc py-out", but py-out is not a standard predefined code environment
+*** No Jupyter kernels found for julia. The kernels available are:
+    python3,bash
+    To install Jupyter kernels see https://github.com/jupyter/jupyter/wiki/Jupyter-kernels
+*** No Jupyter kernels found for r. The kernels available are:
+    python3,bash
+    To install Jupyter kernels see https://github.com/jupyter/jupyter/wiki/Jupyter-kernels
+*** Warning: found error in code block:
+      File "/tmp/ipykernel_671/3806628970.py", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+*** No Jupyter kernels found for julia. The kernels available are:
+    python3,bash
+    To install Jupyter kernels see https://github.com/jupyter/jupyter/wiki/Jupyter-kernels
+*** No Jupyter kernels found for r. The kernels available are:
+    python3,bash
+    To install Jupyter kernels see https://github.com/jupyter/jupyter/wiki/Jupyter-kernels
+*** Warning: found error in code block:
+      File "/tmp/ipykernel_727/3806628970.py", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+
+***
+output in execute.html

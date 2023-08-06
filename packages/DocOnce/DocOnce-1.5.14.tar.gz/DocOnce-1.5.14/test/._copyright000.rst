@@ -1,0 +1,14 @@
+.. File automatically generated using DocOnce (https://github.com/doconce/doconce/):
+
+.. doconce format sphinx copyright.do.txt COPYRIGHT={copyright,date} BOOK=False
+
+.. provide COPYRIGHT="..." and BOOK=False/True on the command line
+
+.. Document title:
+
+Test
+%%%%
+
+:Authors: Hans Petter Langtangen (hpl at simula.no), Kaare Dump (kd at simula.no), Joe Doe
+:Date: Jan 32, 1999
+
