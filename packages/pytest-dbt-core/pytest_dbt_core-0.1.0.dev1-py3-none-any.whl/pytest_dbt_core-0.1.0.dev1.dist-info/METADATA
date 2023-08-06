@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: pytest-dbt-core
+Version: 0.1.0.dev1
+Summary: Pytest extension for dbt.
+Home-page: https://github.com/godatadriven/pytest-dbt-core
+Author: Cor Zuurmond
+Maintainer: Cor Zuurmond
+Maintainer-email: corzuurmond@godatadriven.com
+License: Apache 2.0
+Project-URL: Source, https://github.com/godatadriven/pytest-dbt-core
+Project-URL: Tracker, https://github.com/godatadriven/pytest-dbt-core/issues
+Keywords: dbt,SQL,data,data transformation,testing,pytest
+Platform: any
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: dbt-spark (<2.0.0,>=1.0.0)
+Requires-Dist: pyspark (<4.0.0,>=3.0.0)
+Provides-Extra: test
+Requires-Dist: pre-commit (>=2.14.1) ; extra == 'test'
+Requires-Dist: pytest (>=6.2.5) ; extra == 'test'
+Requires-Dist: pytest-spark (>=0.6.0) ; extra == 'test'
+Requires-Dist: pytest-cov (>=2.12.1) ; extra == 'test'
+
+<p align="center"><h1>pytest-dbt-core</h1><br/><b>Unit test dbt logic.</b></p>
+
+<p align="center">
+  <a href="https://github.com/godatadriven/pytest-dbt-core/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-Apache%202-blue.svg" alt="License: Apache 2.0"></a>
+</p>
+
+Pytest dbt core is a [pytest](https://docs.pytest.org) extension for testing
+your [dbt](https://www.getdbt.com/) projects. It is intended to get quicker
+feedback about if your SQL does what you expect through writing unit tests as
+you are used to with pytest.
+
+# Install
+
+From your shell, execute the following command.
+
+``` sh
+$ pip install pytest-dbt-core
+```
+
+
