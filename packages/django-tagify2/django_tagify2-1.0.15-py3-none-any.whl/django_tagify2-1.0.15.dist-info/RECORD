@@ -1,0 +1,15 @@
+tagify/__init__.py,sha256=Gq6LvSpZg7K0OoMLH2iNlPyi8Imtvx01N9MBwnyBj1w,48
+tagify/apps.py,sha256=nCieGjel_-fI41kv7FjbASVaWFfRk7kDszAUtpepNKI,87
+tagify/consts.py,sha256=z9jnKV2q2-UDHW0_pb3woIrRlURUhzbqB_dErrSAoE8,210
+tagify/fields.py,sha256=WiEuLtt59RChqsK-PEBuYUL5wG50_a4Sl_QWHWw8ef0,2039
+tagify/models.py,sha256=i-XWOP4fKgokqqpkBRPR1iiQYILMNNgFV8q_SpYe678,1602
+tagify/widgets.py,sha256=sI8UQXZrk8okp65ujF2Bu_B4w5G11WM9nV-tFTTkN8I,1071
+tagify/static/tagify/css/tagify.css,sha256=UUMyMuC6HK8s2r5LkzNfg89-8EqK25GBhCCryqt2GPA,10283
+tagify/static/tagify/js/tagify.min.js,sha256=Y2hkk8G28SPKylasmu8zAV0MSzjHIAc5me3-eQyWbJU,52877
+tagify/static/tagify/js/tagify.polyfills.min.js,sha256=gJL229LDxsf-Tl3ShQAhL5fqtPmli_XvsbtMKahaHC8,12221
+tagify/templates/tagify/tagify_input.html,sha256=jdEHi6FwIH5EE1WmMmQZR6SzBNZtK1NZKvfWswsSRn8,894
+django_tagify2-1.0.15.dist-info/LICENSE,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+django_tagify2-1.0.15.dist-info/METADATA,sha256=qQpy9cIqIUWr2lDC825lAlihRBHKPFTM4wkphxVRheg,4356
+django_tagify2-1.0.15.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+django_tagify2-1.0.15.dist-info/top_level.txt,sha256=4L8Fez5sONVYp7vZ5h-9ZXHxFwy8iPC-dOD_vDeI_2w,7
+django_tagify2-1.0.15.dist-info/RECORD,,
