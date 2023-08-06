@@ -1,0 +1,8 @@
+setup.py
+danielduchouquette/__init__.py
+danielduchouquette/add.py
+danielduchouquette/subtract.py
+danielduchouquette.egg-info/PKG-INFO
+danielduchouquette.egg-info/SOURCES.txt
+danielduchouquette.egg-info/dependency_links.txt
+danielduchouquette.egg-info/top_level.txt
