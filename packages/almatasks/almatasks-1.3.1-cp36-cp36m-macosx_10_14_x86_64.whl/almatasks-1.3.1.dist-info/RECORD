@@ -1,0 +1,15 @@
+almatasks/LICENSE.txt,sha256=IEfzsTvSd8f8JBZn3LoATY_RkNKJnAyr2p020oPTVfQ,25454
+almatasks/__init__.py,sha256=s8RN9-goJZLFGizgqHxCB4mQQyf6RufxlTht7MmD_dw,414
+almatasks/wvrgcal.py,sha256=cvNdMzzVxqjeAtTG3AH09_mE9APJGx5br6r3s8g0_sI,11909
+almatasks/__bin__/wvrgcal,sha256=QE258CLgWh-CdUkB41IFN1zv1z5GWjPI_mZEEGOCXmE,59192864
+almatasks/__lib__/libc++.1.dylib,sha256=E-slnROuL2gN_5A5GQO3SRwwEv-imSiYC_FtAtA8sBI,1432816
+almatasks/__lib__/libc++abi.dylib,sha256=yaJQH_g8x2J49uTfdHvKxQzYBLYRK69e1wI8ECXxSfQ,339520
+almatasks/gotasks/__init__.py,sha256=Hwi2r-tqou_0EESac_p0TbXggWHfwY94n43nuVLQ9TQ,228
+almatasks/gotasks/wvrgcal.py,sha256=nflM9Ub8qd9wNqH7gJsGfLRY2e_87nBR_kisD5508gA,47696
+almatasks/private/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+almatasks/private/almahelpers.py,sha256=PTwh1yobSwezdaSNy5V0wfcOaYt-iUwcx5O6XDc7H9Q,29391
+almatasks/private/task_wvrgcal.py,sha256=6KiQDhzlnwIzaczsXXjY9fChyOU8XAazmz9o6FI5a7Y,17045
+almatasks-1.3.1.dist-info/METADATA,sha256=3_GWBysJUeeH434H_ePaB5wplJ4js9x8LC4Apkvct8M,531
+almatasks-1.3.1.dist-info/WHEEL,sha256=dushfQTgksSU5ysvLIsWtFIpTHGocvpS502Xe3sbFWM,111
+almatasks-1.3.1.dist-info/top_level.txt,sha256=Lr5RRrkDtRFHNHoWL-p5oIBn5z5dtnHSayyEDzXNI8I,10
+almatasks-1.3.1.dist-info/RECORD,,
