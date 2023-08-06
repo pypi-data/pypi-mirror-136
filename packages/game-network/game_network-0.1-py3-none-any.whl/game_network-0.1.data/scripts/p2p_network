@@ -1,0 +1,5 @@
+#!python
+# -*- coding: utf-8 -*-
+
+from p2p_network.app import run
+run()

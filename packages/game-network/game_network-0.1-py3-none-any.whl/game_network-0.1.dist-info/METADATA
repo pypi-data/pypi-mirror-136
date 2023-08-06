@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: game-network
+Version: 0.1
+Summary: P2P Game Network
+Home-page: https://github.com/bayrell-os/p2p-network
+License: GPL-3.0 License
+Keywords: game network,peervpn
+Platform: UNKNOWN
+Classifier: Environment :: X11 Applications :: Qt
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Internet
+Classifier: Topic :: System :: Operating System
+Classifier: Topic :: Utilities
+Description-Content-Type: text/markdown
+Requires-Dist: PyQt5
+Requires-Dist: PyQtWebEngine
+
+# p2p-chat
+
+

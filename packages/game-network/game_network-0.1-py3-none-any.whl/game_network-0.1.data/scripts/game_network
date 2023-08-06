@@ -1,0 +1,5 @@
+#!python
+# -*- coding: utf-8 -*-
+
+from game_network.app import run
+run()
