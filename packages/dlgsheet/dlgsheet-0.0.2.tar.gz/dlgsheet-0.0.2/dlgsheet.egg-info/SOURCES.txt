@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+dlgsheet/__init__.py
+dlgsheet/__main__.py
+dlgsheet/cli.py
+dlgsheet/download_data.py
+dlgsheet/save_data.py
+dlgsheet.egg-info/PKG-INFO
+dlgsheet.egg-info/SOURCES.txt
+dlgsheet.egg-info/dependency_links.txt
+dlgsheet.egg-info/entry_points.txt
+dlgsheet.egg-info/requires.txt
+dlgsheet.egg-info/top_level.txt
