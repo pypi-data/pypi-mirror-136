@@ -1,0 +1,3 @@
+[console_scripts]
+sdgs-tools=sdgs_tools.__main__:main
+
