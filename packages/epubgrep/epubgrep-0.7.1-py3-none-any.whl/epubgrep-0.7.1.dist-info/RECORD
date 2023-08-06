@@ -1,0 +1,7 @@
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_epugrep.py,sha256=12P7jx6CtzImod5qJHB2d9QsgpUbvDLL6hT2OXcs_zc,203
+epubgrep-0.7.1.dist-info/METADATA,sha256=Q6Gaa5ZrZRbOJtLapKBDaTvSeA6c1EHXeWomZiY-Ggs,858
+epubgrep-0.7.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+epubgrep-0.7.1.dist-info/entry_points.txt,sha256=izYKdC_Dh6ezcYYgoiEXbK243PkscHsfdpWYZxNanbk,44
+epubgrep-0.7.1.dist-info/top_level.txt,sha256=EdW7283x-lr_cbuivW8Ij7ANAP-ZJ9sLtILQseEPxXg,6
+epubgrep-0.7.1.dist-info/RECORD,,
