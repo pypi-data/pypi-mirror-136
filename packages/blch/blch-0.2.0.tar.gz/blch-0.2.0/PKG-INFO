@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: blch
+Version: 0.2.0
+Summary: A module to help you make a blockchain
+Home-page: UNKNOWN
+Author: Advaith S
+Author-email: <popular9adu@gmail.com>
+License: UNKNOWN
+Keywords: python,blockchain,python3,cryptocurrency
+Platform: UNKNOWN
+Classifier: Development Status :: 6 - Mature
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+
+This package helps make a blockchain with less than 10 lines of code!
+
