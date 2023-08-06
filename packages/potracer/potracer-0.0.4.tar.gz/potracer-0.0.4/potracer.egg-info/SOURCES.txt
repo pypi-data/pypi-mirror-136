@@ -1,0 +1,13 @@
+README.md
+setup.cfg
+setup.py
+./potrace/__init__.py
+./potrace/potrace.py
+potrace/__init__.py
+potrace/potrace.py
+potracer.egg-info/PKG-INFO
+potracer.egg-info/SOURCES.txt
+potracer.egg-info/dependency_links.txt
+potracer.egg-info/requires.txt
+potracer.egg-info/top_level.txt
+potracer.egg-info/zip-safe
