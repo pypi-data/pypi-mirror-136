@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+nnotes/__init__.py
+nnotes/nnotes.py
+nnotes.egg-info/PKG-INFO
+nnotes.egg-info/SOURCES.txt
+nnotes.egg-info/dependency_links.txt
+nnotes.egg-info/entry_points.txt
+nnotes.egg-info/requires.txt
+nnotes.egg-info/top_level.txt
+nnotes/defaults/notebooks.txt
+nnotes/defaults/settings.ini
