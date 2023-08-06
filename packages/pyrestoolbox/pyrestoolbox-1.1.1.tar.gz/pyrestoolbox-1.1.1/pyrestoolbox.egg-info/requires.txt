@@ -1,0 +1,10 @@
+requests
+importlib
+numpy
+scipy
+pandas
+collections
+tabulate
+enum
+gwr_inversion
+mpmath
