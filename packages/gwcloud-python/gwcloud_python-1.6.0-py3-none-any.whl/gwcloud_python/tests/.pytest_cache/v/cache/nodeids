@@ -1,0 +1,10 @@
+[
+  "test_bilby_job.py::test_bilby_job_full_file_list",
+  "test_bilby_job.py::test_bilby_job_file_lists",
+  "test_bilby_job.py::test_register_file_list_filter",
+  "test_gwcloud_python.py::test_get_job_by_id",
+  "test_gwcloud_python.py::test_get_user_jobs",
+  "test_file_reference.py::test_file_reference",
+  "test_file_reference.py::test_file_reference_list",
+  "test_gwcloud_python.py::test_gwcloud_files_by_job_id"
+]

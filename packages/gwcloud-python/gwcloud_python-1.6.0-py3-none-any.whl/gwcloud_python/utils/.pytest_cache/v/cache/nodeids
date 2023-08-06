@@ -1,0 +1,6 @@
+[
+  "tests/test_file_lists.py::test_default_file_list",
+  "tests/test_file_lists.py::test_png_file_list",
+  "tests/test_file_lists.py::test_config_file_list",
+  "tests/test_file_lists.py::test_corner_file_list"
+]
