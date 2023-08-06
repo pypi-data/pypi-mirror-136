@@ -1,0 +1,17 @@
+BUGS
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+test.py
+./sockschain/__init__.py
+./sockschain/__main__.py
+scripts/rpm-install.sh
+scripts/rpm-setup.sh
+sockschain.egg-info/PKG-INFO
+sockschain.egg-info/SOURCES.txt
+sockschain.egg-info/dependency_links.txt
+sockschain.egg-info/entry_points.txt
+sockschain.egg-info/requires.txt
+sockschain.egg-info/top_level.txt
