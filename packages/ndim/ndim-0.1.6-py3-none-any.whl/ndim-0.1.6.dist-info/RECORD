@@ -1,0 +1,12 @@
+ndim/__about__.py,sha256=n3oM6B_EMz93NsTI18NNZd-jKFcUPzUkbIKj5VFK5ok,22
+ndim/__init__.py,sha256=FY1Nm6q7R5OOEzZ_K_JuPkd1CjFIAZpO6tgBjmZ3e44,206
+ndim/enr.py,sha256=z4Jv86PlJv_dQuqUzyCQ-kEkBflSG5thyGYdqNMfwuQ,1225
+ndim/enr2.py,sha256=Vcs-hxfS5uFv2Pbx8CUE0Abab1FgFWeF0-8BsotZL0c,1980
+ndim/nball.py,sha256=roicVvkqRqfxzedNAcJ1CjwH09Xg4Go0cD1YqZkaOok,1188
+ndim/ncube.py,sha256=285sBVUaG--RMP-aZmcUGvWHlyL1q0XPUYmINxQpMwo,674
+ndim/nsimplex.py,sha256=HmPo94tLHDH48r2PIHkPvlZe71scZM6H5YO3xayaSPQ,1641
+ndim/nsphere.py,sha256=VENuBWrsFabSuwICOOmVvlfCOxhVXOs7oue0YYhMvX0,921
+ndim-0.1.6.dist-info/LICENSE,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+ndim-0.1.6.dist-info/WHEEL,sha256=jPMR_Dzkc4X4icQtmz81lnNY_kAsfog7ry7qoRvYLXw,81
+ndim-0.1.6.dist-info/METADATA,sha256=KVOvjNSG2ern6YUdcgFmAq_xZYMrDHpJxEy1nFT5FOM,13014
+ndim-0.1.6.dist-info/RECORD,,
