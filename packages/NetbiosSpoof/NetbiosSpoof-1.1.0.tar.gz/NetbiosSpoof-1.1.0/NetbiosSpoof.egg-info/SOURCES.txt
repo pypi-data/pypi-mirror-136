@@ -1,0 +1,11 @@
+LICENSE.txt
+MANIFEST.in
+NetbiosSpoof.py
+README.md
+setup.py
+NetbiosSpoof.egg-info/PKG-INFO
+NetbiosSpoof.egg-info/SOURCES.txt
+NetbiosSpoof.egg-info/dependency_links.txt
+NetbiosSpoof.egg-info/entry_points.txt
+NetbiosSpoof.egg-info/requires.txt
+NetbiosSpoof.egg-info/top_level.txt
