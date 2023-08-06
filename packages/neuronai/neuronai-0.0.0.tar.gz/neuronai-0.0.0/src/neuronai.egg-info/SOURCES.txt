@@ -1,0 +1,17 @@
+CHANGELOG.md
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+dist/easyIntelligence-0.0.1-py3-none-any.whl
+dist/easyIntelligence-0.0.1.tar.gz
+src/easyIntelligence/__init__.py
+src/easyIntelligence.egg-info/PKG-INFO
+src/easyIntelligence.egg-info/SOURCES.txt
+src/easyIntelligence.egg-info/dependency_links.txt
+src/easyIntelligence.egg-info/top_level.txt
+src/neuronai.egg-info/PKG-INFO
+src/neuronai.egg-info/SOURCES.txt
+src/neuronai.egg-info/dependency_links.txt
+src/neuronai.egg-info/top_level.txt

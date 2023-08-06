@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/easyIntelligence/__init__.py
+src/easyIntelligence.egg-info/PKG-INFO
+src/easyIntelligence.egg-info/SOURCES.txt
+src/easyIntelligence.egg-info/dependency_links.txt
+src/easyIntelligence.egg-info/top_level.txt
