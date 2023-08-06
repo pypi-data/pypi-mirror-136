@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+rudypdf/__init__.py
+rudypdf/pdf2image.py
+rudypdf/pdf2text.py
+rudypdf.egg-info/PKG-INFO
+rudypdf.egg-info/SOURCES.txt
+rudypdf.egg-info/dependency_links.txt
+rudypdf.egg-info/top_level.txt
