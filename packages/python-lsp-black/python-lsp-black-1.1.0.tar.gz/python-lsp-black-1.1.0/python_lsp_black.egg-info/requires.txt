@@ -1,0 +1,14 @@
+black>=19.3b0
+python-lsp-server
+toml
+
+[dev]
+flake8
+isort>=5.0
+mypy
+pre-commit
+pytest
+pytest
+types-pkg_resources
+types-setuptools
+types-toml
