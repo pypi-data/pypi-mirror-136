@@ -1,0 +1,9 @@
+mutwo.ext-core<1.00.0,>=0.54.0
+numpy<2.00,>=1.18
+scipy<2.0.0,>=1.4.1
+expenvelope<1.0.0,>=0.6.5
+python-ranges<1.0.0,>=0.2.0
+
+[testing]
+nose
+coveralls
