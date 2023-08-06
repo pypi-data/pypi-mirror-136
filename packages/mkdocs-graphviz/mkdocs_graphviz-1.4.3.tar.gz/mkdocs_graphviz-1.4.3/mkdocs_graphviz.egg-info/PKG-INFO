@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: mkdocs-graphviz
+Version: 1.4.3
+Summary: Render Graphviz graphs in Mkdocs, as inline SVGs and PNGs, natively compatible with Mkdocs Light & Dark Themes, directly from your Markdown (python3 version)
+Home-page: https://gitlab.com/rodrigo.schwencke/mkdocs-graphviz.git
+Author: Rodrigo Schwencke
+Author-email: dev.hopper@lyceeperier.fr
+License: GPLv3+
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Documentation
+Classifier: Topic :: Text Processing
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Operating System :: OS Independent
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+Project Page : [rodrigo.schwencke/mkdocs-graphviz](https://gitlab.com/rodrigo.schwencke/mkdocs-graphviz)
+
+Some examples in these pages:
+
+* Trees : https://eskool.gitlab.io/tnsi/donnees/arbres/quelconques/
+* Graphs : https://eskool.gitlab.io/tnsi/donnees/graphes/definitions/
+
+This project is one of others mkdocs-related projects. Please have a complete look at this page for a more complete view:
+
+* https://eskool.gitlab.io/mkhack3rs/
+
+This project was initially a continuation of the great job of (from newer to older) :
+
+* All newer Credits: [rodrigo.schwencke/mkdocs-graphviz](https://gitlab.com/rodrigo.schwencke/mkdocs-graphviz)
+* Cesare Morel [cesaremorel/markdown-inline-graphviz](https://github.com/cesaremorel/markdown-inline-graphviz), and before him,
+* Steffen Prince in [sprin/markdown-inline-graphviz](https://github.com/sprin/markdown-inline-graphviz), 
+* Initially inspired by Jawher Moussa [jawher/markdown-dot](https://github.com/jawher/markdown-dot)
+    
+In order to get it work with pip (python3) and mkdocs.
+
+If you use python 2, please use the original extension instead.
+
+Licences:
+
+* The older parts are MIT
+* All newer parts (from Rodrigo Schwencke) are GPLv3+
+
