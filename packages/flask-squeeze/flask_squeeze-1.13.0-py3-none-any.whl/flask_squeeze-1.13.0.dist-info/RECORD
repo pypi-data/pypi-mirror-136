@@ -1,0 +1,6 @@
+flask_squeeze/__init__.py,sha256=5pEgeQp7Uh1IG_FNhzFcupOYzBRQjNoVrDCARm5_em8,36
+flask_squeeze/flask_squeeze.py,sha256=DWOLj7k8PTSXM-hm4N1R3GAmAdIS5tjpdtCfv8b-7gQ,5807
+flask_squeeze-1.13.0.dist-info/LICENSE,sha256=K5UtC48AYqnFvsyehrIGmeQuulWtwct7euvR2o9nWwM,1061
+flask_squeeze-1.13.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+flask_squeeze-1.13.0.dist-info/METADATA,sha256=COVjcJkiQSbzAiUNOcUaYm9AkGTYMCz0tzpcaank_hc,3019
+flask_squeeze-1.13.0.dist-info/RECORD,,
