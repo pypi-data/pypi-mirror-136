@@ -1,0 +1,13 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+pickitup/command_line.py
+pickitup/picker.py
+pickitup.egg-info/PKG-INFO
+pickitup.egg-info/SOURCES.txt
+pickitup.egg-info/dependency_links.txt
+pickitup.egg-info/entry_points.txt
+pickitup.egg-info/not-zip-safe
+pickitup.egg-info/top_level.txt
