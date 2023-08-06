@@ -1,0 +1,16 @@
+kxy_datasets/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kxy_datasets/base.py,sha256=0fjyMtjfsvmr9PnncAflFTc4HWP8tvxYgnOAHniDte4,5006
+kxy_datasets/classifications.py,sha256=1FEtXu39ihSXUM14ZI7coofY1l1iFPfXr-45T3r3Fhc,1680
+kxy_datasets/kaggle_classifications.py,sha256=bhi9BhuflPo4dehRImaB2RvUWOmon6RJxYSpFpyAN3w,2581
+kxy_datasets/kaggle_regressions.py,sha256=B9BTKZGdhUKO6qSMNih2Sq4F-P5vrEAmx0l9KaiAkCo,1023
+kxy_datasets/regressions.py,sha256=uISx0up0IQu58oVmANSxS4jSvEASq8JUBIneqxVOv3o,1401
+kxy_datasets/synthetic_classifications.py,sha256=mzTIZazzHNbqrVPZbtVk_ll6eQtsxjgrI0Xu-b__sRM,7420
+kxy_datasets/synthetic_regressions.py,sha256=NhEfTBJ600aMtyiAiCb2SIBkMwiqwPW3bHPn_yXhSmo,6087
+kxy_datasets/uci_classifications.py,sha256=2GNjCdjdQAJWN4yAqCSBE2lyCmYUXgbyz91sMeDzZOg,12918
+kxy_datasets/uci_regressions.py,sha256=CAFOSDkNgRxuhQRvqpyrUwc92z6Nbew0EOzbBm3c72Q,15425
+kxy_datasets/utils.py,sha256=Mh3E1TwRiw6B-i_Jc9qDvXu9axLKKBmh9vcua1fB-Wc,823
+kxy_datasets/value_datasets.py,sha256=a0GFWU2K4KVwg14GIys9IQrK29cptvLkB-hN1y-eD4c,3988
+kxy_datasets-0.0.14.dist-info/METADATA,sha256=oTYsOruZN9P95OneeX6arP2Lu0IFLCx7_i7IVt-pOkk,7006
+kxy_datasets-0.0.14.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+kxy_datasets-0.0.14.dist-info/top_level.txt,sha256=qLwiUT0VhFimMEbn_Ms6nwSaJUKnrHNur1mCGuZcX8Q,13
+kxy_datasets-0.0.14.dist-info/RECORD,,
