@@ -1,0 +1,7 @@
+licence.txt
+setup.py
+skmCalc/__init__.py
+skmCalc.egg-info/PKG-INFO
+skmCalc.egg-info/SOURCES.txt
+skmCalc.egg-info/dependency_links.txt
+skmCalc.egg-info/top_level.txt
