@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/BeautyPrinting/BtPrint.py
+src/BeautyPrinting/ProgressBar.py
+src/BeautyPrinting.egg-info/PKG-INFO
+src/BeautyPrinting.egg-info/SOURCES.txt
+src/BeautyPrinting.egg-info/dependency_links.txt
+src/BeautyPrinting.egg-info/requires.txt
+src/BeautyPrinting.egg-info/top_level.txt
