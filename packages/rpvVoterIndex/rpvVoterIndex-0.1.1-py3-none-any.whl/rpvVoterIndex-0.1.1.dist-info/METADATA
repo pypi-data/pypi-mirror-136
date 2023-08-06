@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: rpvVoterIndex
+Version: 0.1.1
+Summary: Tool to analyse poltical geogrpahies for maliprortation
+Home-page: https://github.com/RobertEdwardes/Vote_Power_Indexes
+Author: Robert Edwardes
+Author-email: robie@fairlines.org
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.6, <4
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: pandas
+
+Voter Power Indexes
+======
+
+Vote Power Index provides tools to run both Banzhaf Power Index and Shapley–Shubik Index to analyse 2 party poltical geographies like US Congresstional Districts to see if the reapproation process maintained Mintorities communties to elect their candidate of choice
+
+# Usage
+> power_index(df, OtherPopCol, TargetPopCol, Party1, Party2, vIndex=None, filename=None)
+
+## Parameters 
+
+df - Pandas Dataframe
+
+OtherPopCol - Majority community 
+
+TargetPopCol - Minority community
+
+OtherParty - None colitlition party of choice
+
+ColilitionParty - Colitlition party of choice
+
+vIndex (ssi/bpi/none): 
+- **None** both indexes 
+- **ssi** Shapley–Shubik Index
+- **bpi** Banzhaf Power Inde
+
+filename - optional
+
