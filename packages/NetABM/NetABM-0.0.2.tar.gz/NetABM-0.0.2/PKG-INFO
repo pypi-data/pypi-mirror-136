@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: NetABM
+Version: 0.0.2
+Summary: Enabling different Network Configurations for ABM
+Home-page: UNKNOWN
+Author: Christoph Krueger
+Author-email: <christoph.kruger@yahoo.com>
+License: UNKNOWN
+Keywords: python,ABM,Network,stochastic
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+
+
+Alpha Version
+
+install via pip install NetABM
+
+run:
+from NetABM import ABM
+
+model = ABM(network_list)
+model.run_model()
+
+get attributes via
+model.agents.items()
+
+returns key and item from dictionary
+
+
+
+______________________________________________________________________
+network_list is a python list variable with networkx object as indices
+other attributes can be added to the class. 
+
