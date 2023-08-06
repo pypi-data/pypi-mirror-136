@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: IndonesiaVolcanoStatusByFaqih
+Version: 0.0.1
+Summary: This package will get latest the status of Indonesia's volcanoes is above normal
+Home-page: https://github.com/Faqih0776/Indonesian-Volcano-Status
+Author: Faqih Fakhruddin
+Author-email: faqih0776@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/Faqih0776
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 5 - Production/Stable
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Indonesian-Volcano-Status
+The status of Indonesia's volcanoes is above normal
+## HOW IT WORK?
+This package will scrape from Ministry of Energy and Mineral Resources Indonesia (https://vsi.esdm.go.id) to get latest 
+status volcano in indonesia
+
+this package will use BeautifulSoup4 and Request, to produce output in the form of JSON that is ready to be used in web 
+or mobile applications
+
+## How To Use
+    import Volcano_Status
+
+    if __name__ == '__main__':
+    result = Volcano_Status.ekstraksi_data()
+    Volcano_Status.tampilkan_data(result)
+## AUTHOR
+
+Faqih Fakhruddin
+
