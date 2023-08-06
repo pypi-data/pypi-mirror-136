@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+mdinlatex.egg-info/PKG-INFO
+mdinlatex.egg-info/SOURCES.txt
+mdinlatex.egg-info/dependency_links.txt
+mdinlatex.egg-info/requires.txt
+mdinlatex.egg-info/top_level.txt
