@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+src/paws.lambda_time_trigger.egg-info/PKG-INFO
+src/paws.lambda_time_trigger.egg-info/SOURCES.txt
+src/paws.lambda_time_trigger.egg-info/dependency_links.txt
+src/paws.lambda_time_trigger.egg-info/requires.txt
+src/paws.lambda_time_trigger.egg-info/top_level.txt
+src/paws/lambda-time-trigger/__init__.py
+src/paws/lambda-time-trigger/py.typed
+src/paws/lambda-time-trigger/_jsii/__init__.py
+src/paws/lambda-time-trigger/_jsii/paws-lambda-time-trigger@1.0.0.jsii.tgz
