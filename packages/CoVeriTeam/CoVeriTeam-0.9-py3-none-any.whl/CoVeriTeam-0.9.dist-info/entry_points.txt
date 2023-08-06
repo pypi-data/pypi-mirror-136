@@ -1,0 +1,3 @@
+[console_scripts]
+coveriteam = coveriteam.coveriteam:main
+
