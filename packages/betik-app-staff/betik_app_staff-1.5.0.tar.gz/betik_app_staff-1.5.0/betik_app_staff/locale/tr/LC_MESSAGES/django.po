@@ -1,0 +1,1741 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-29 12:23+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: .\betik_app_staff\enums.py:10
+#: .\betik_app_staff\serializers\annual_leave_rule.py:137
+#: .\betik_app_staff\serializers\business_day.py:152
+#: .\betik_app_staff\serializers\shift_rule.py:191
+msgid "Active"
+msgstr "Aktif"
+
+#: .\betik_app_staff\enums.py:11
+msgid "Passive"
+msgstr "Pasif"
+
+#: .\betik_app_staff\enums.py:12
+msgid "Dismiss"
+msgstr "İhraç"
+
+#: .\betik_app_staff\enums.py:21
+#: .\betik_app_staff\serializers\bank_holiday.py:26
+msgid "Day"
+msgstr "Gün"
+
+#: .\betik_app_staff\enums.py:22
+msgid "Business Day"
+msgstr "Mesai Günü"
+
+#: .\betik_app_staff\enums.py:33
+msgid "Hour"
+msgstr "Saat"
+
+#: .\betik_app_staff\enums.py:34
+msgid "Week"
+msgstr "Hafta"
+
+#: .\betik_app_staff\enums.py:36
+#: .\betik_app_staff\serializers\bank_holiday.py:27
+msgid "Month"
+msgstr "Ay"
+
+#: .\betik_app_staff\enums.py:37
+msgid "Year"
+msgstr "Yıl"
+
+#: .\betik_app_staff\enums.py:48
+msgid "Overtime Shift"
+msgstr "Fazla Mesai"
+
+#: .\betik_app_staff\enums.py:49
+msgid "Weekend Shift"
+msgstr "Haftasonu Mesai"
+
+#: .\betik_app_staff\enums.py:50
+msgid "Holiday Shift"
+msgstr "Tatil Günü Mesai"
+
+#: .\betik_app_staff\enums.py:51
+msgid "Normal Shift"
+msgstr "Normal Mesai"
+
+#: .\betik_app_staff\enums.py:59
+#: .\betik_app_staff\management\commands\create_leave_types.py:24
+msgid "Annual Leave"
+msgstr "Yıllık İzin"
+
+#: .\betik_app_staff\filters.py:24 .\betik_app_staff\filters.py:86
+#: .\betik_app_staff\filters.py:127 .\betik_app_staff\filters.py:168
+#: .\betik_app_staff\filters.py:267 .\betik_app_staff\filters.py:299
+msgid "identity, tax number, name, last name"
+msgstr "kimlik no, vergi no, ad, soyad"
+
+#: .\betik_app_staff\leave_calculator.py:31
+#, python-format
+msgid "%(duration_type)s duration type not found"
+msgstr "%(duration_type)s süre tipi bulunamadı"
+
+#: .\betik_app_staff\leave_calculator.py:63
+#: .\betik_app_staff\leave_calculator.py:129
+#: .\betik_app_staff\tests\test_staff_leave.py:713
+#, python-format
+msgid "Working hours were not determined for the %(staff_type)s on %(date)s"
+msgstr "%(date)s tarihinde, %(staff_type)s için çalışma saatleri belirlenmemiş"
+
+#: .\betik_app_staff\leave_calculator.py:85
+#: .\betik_app_staff\serializers\staff_leave.py:115
+#: .\betik_app_staff\tests\test_staff_leave.py:752
+#, python-format
+msgid ""
+"Annual leave rule were not determined for the %(staff_type)s on %(date)s"
+msgstr ""
+"%(date)s tarihinde %(staff_type)s için yıllık izin kuralı belirlenmemiş"
+
+#: .\betik_app_staff\leave_calculator.py:103
+#: .\betik_app_staff\tests\test_staff_leave.py:800
+msgid ""
+"Considering the date of employment of the staff, they have not yet obtained "
+"the right to take annual leave."
+msgstr ""
+"Personelin işe giriş tarihi dikkate alındığında, henüz yıllık izin kullanma "
+"hakkını elde edememiştir."
+
+#: .\betik_app_staff\management\commands\create_bank_holidays.py:56
+#, python-format
+msgid "%s file not found"
+msgstr "%s dosya bulunamadı"
+
+#: .\betik_app_staff\models.py:19 .\betik_app_staff\models.py:23
+#: .\betik_app_staff\models.py:59 .\betik_app_staff\serializers\staff.py:25
+#: .\betik_app_staff\serializers_statistic.py:72
+msgid "Department"
+msgstr "Birim"
+
+#: .\betik_app_staff\models.py:24
+msgid "Departments"
+msgstr "Birimler"
+
+#: .\betik_app_staff\models.py:31 .\betik_app_staff\models.py:43
+#: .\betik_app_staff\serializers\bank_holiday.py:28
+#: .\betik_app_staff\serializers\business_day.py:141
+#: .\betik_app_staff\serializers\holiday.py:22
+msgid "Name"
+msgstr "Ad"
+
+#: .\betik_app_staff\models.py:35 .\betik_app_staff\models.py:63
+#: .\betik_app_staff\serializers\staff.py:41
+#: .\betik_app_staff\serializers_statistic.py:100
+msgid "Title"
+msgstr "Ünvan"
+
+#: .\betik_app_staff\models.py:36
+msgid "Titles"
+msgstr "Ünvanlar"
+
+#: .\betik_app_staff\models.py:47 .\betik_app_staff\models.py:61
+#: .\betik_app_staff\serializers\annual_leave_rule.py:136
+#: .\betik_app_staff\serializers\business_day.py:151
+#: .\betik_app_staff\serializers\staff.py:56
+#: .\betik_app_staff\serializers_statistic.py:86
+msgid "Staff Type"
+msgstr "Personel Tipi"
+
+#: .\betik_app_staff\models.py:48
+msgid "Staff Types"
+msgstr "Personel Tipleri"
+
+#: .\betik_app_staff\models.py:56
+msgid "Person"
+msgstr "Kişi"
+
+#: .\betik_app_staff\models.py:57 .\betik_app_staff\serializers\staff.py:103
+msgid "Registration Number"
+msgstr "Sicil No"
+
+#: .\betik_app_staff\models.py:64
+#: .\betik_app_staff\serializers\annual_leave_rule.py:130
+#: .\betik_app_staff\serializers\bank_holiday.py:24
+#: .\betik_app_staff\serializers\business_day.py:142
+#: .\betik_app_staff\serializers\custom_shift.py:155
+#: .\betik_app_staff\serializers\holiday.py:20
+#: .\betik_app_staff\serializers\shift_rule.py:186
+#: .\betik_app_staff\serializers\staff.py:104
+msgid "Start Date"
+msgstr "Başlama Tarihi"
+
+#: .\betik_app_staff\models.py:65
+#: .\betik_app_staff\serializers\annual_leave_rule.py:131
+#: .\betik_app_staff\serializers\bank_holiday.py:25
+#: .\betik_app_staff\serializers\business_day.py:143
+#: .\betik_app_staff\serializers\custom_shift.py:156
+#: .\betik_app_staff\serializers\holiday.py:21
+#: .\betik_app_staff\serializers\shift_rule.py:187
+#: .\betik_app_staff\serializers\staff.py:105
+msgid "Finish Date"
+msgstr "Bitiş Tarihi"
+
+#: .\betik_app_staff\models.py:67 .\betik_app_staff\serializers\staff.py:102
+msgid "Status"
+msgstr "Durum"
+
+#: .\betik_app_staff\models.py:71
+msgid "Employment Agreement"
+msgstr "İş Sözleşmesi"
+
+#: .\betik_app_staff\models.py:76
+msgid "Statement of Insured Employment"
+msgstr "SGK İşe Giriş Bildirgesi"
+
+#: .\betik_app_staff\models.py:92
+#: .\betik_app_staff\serializers\custom_shift.py:168
+#: .\betik_app_staff\serializers\shift_rule.py:653
+msgid "Staff"
+msgstr "Personel"
+
+#: .\betik_app_staff\models.py:93
+msgid "Staffs"
+msgstr "Personeller"
+
+#: .\betik_app_staff\models.py:110
+#: .\betik_app_staff\serializers\staff_passive.py:23
+msgid "Passive Reason"
+msgstr "Pasif Nedeni"
+
+#: .\betik_app_staff\models.py:111
+msgid "Passive Reasons"
+msgstr "Pasif Nedenleri"
+
+#: .\betik_app_staff\models.py:123
+msgid "Passive Staff Event"
+msgstr "Pasif Personel Olayı"
+
+#: .\betik_app_staff\models.py:124
+msgid "Passive Staff Events"
+msgstr "Pasif Personel Olayları"
+
+#: .\betik_app_staff\models.py:132
+#: .\betik_app_staff\serializers\staff_dismiss.py:24
+msgid "Dismiss Reason"
+msgstr "İhraç Nedeni"
+
+#: .\betik_app_staff\models.py:133
+msgid "Dismiss Reasons"
+msgstr "İhraç Nedenleri"
+
+#: .\betik_app_staff\models.py:145
+msgid "Dismiss Staff Log"
+msgstr "İhraç Personel Günlüğü"
+
+#: .\betik_app_staff\models.py:146
+msgid "Dismiss Staff Logs"
+msgstr "İhraç Personel Günlükleri"
+
+#: .\betik_app_staff\models.py:154
+#: .\betik_app_staff\serializers\staff_active.py:23
+msgid "Active Reason"
+msgstr "Aktif Nedeni"
+
+#: .\betik_app_staff\models.py:155
+msgid "Active Reasons"
+msgstr "Aktif Nedenleri"
+
+#: .\betik_app_staff\models.py:167
+msgid "Active Staff Log"
+msgstr "Aktif Personel Günlüğü"
+
+#: .\betik_app_staff\models.py:168
+msgid "Active Staff Logs"
+msgstr "Aktif Personel Günlükleri"
+
+#: .\betik_app_staff\models.py:172
+msgid "the start date the bank holiday becomes official"
+msgstr "resmi tatilin, resmi hale geldiği tarih"
+
+#: .\betik_app_staff\models.py:173
+msgid "the date of the abolition of the bank holiday"
+msgstr "resmi tatilin kaldırıldığı tarih"
+
+#: .\betik_app_staff\models.py:185
+msgid "the first day of holiday"
+msgstr "tatilin ilk günü"
+
+#: .\betik_app_staff\models.py:186
+msgid "one day after the last day of holiday"
+msgstr "tatilin son gününden bir gün sonrası"
+
+#: .\betik_app_staff\models.py:239 .\betik_app_staff\models.py:334
+msgid "And Later"
+msgstr "Ve Sonrası"
+
+#: .\betik_app_staff\serializers\annual_leave_rule.py:21
+#: .\betik_app_staff\serializers\annual_leave_rule.py:29
+#: .\betik_app_staff\serializers\annual_leave_rule.py:33
+#: .\betik_app_staff\serializers\annual_leave_rule.py:38
+#: .\betik_app_staff\serializers\annual_leave_rule.py:45
+#: .\betik_app_staff\serializers\business_day.py:28
+#: .\betik_app_staff\serializers\business_day.py:32
+#: .\betik_app_staff\serializers\business_day.py:37
+#: .\betik_app_staff\serializers\business_day.py:42
+#: .\betik_app_staff\serializers\shift_rule.py:33
+#: .\betik_app_staff\serializers\shift_rule.py:58
+#: .\betik_app_staff\serializers\shift_rule.py:62
+#: .\betik_app_staff\tests\test_annual_leave_rule.py:119
+#: .\betik_app_staff\tests\test_annual_leave_rule.py:130
+#: .\betik_app_staff\tests\test_business_day.py:118
+#: .\betik_app_staff\tests\test_business_day.py:137
+#: .\betik_app_staff\tests\test_shift_rule.py:346
+#: .\betik_app_staff\tests\test_shift_rule.py:416
+#: .\betik_app_staff\tests\test_shift_rule.py:455
+msgid "required"
+msgstr "zorunlu"
+
+#: .\betik_app_staff\serializers\annual_leave_rule.py:25
+#: .\betik_app_staff\serializers\business_day.py:24
+#: .\betik_app_staff\serializers\shift_rule.py:23
+#: .\betik_app_staff\tests\test_business_day.py:157
+#: .\betik_app_staff\tests\test_shift_rule.py:331
+#, python-format
+msgid "Incorrect type. Expected a dict, but got %s"
+msgstr "Hatalı tip. dict tipi beklenirken %s tipi geldi"
+
+#: .\betik_app_staff\serializers\annual_leave_rule.py:51
+#: .\betik_app_staff\serializers\annual_leave_rule.py:57
+#: .\betik_app_staff\serializers\annual_leave_rule.py:72
+#: .\betik_app_staff\tests\test_annual_leave_rule.py:141
+#: .\betik_app_staff\tests\test_annual_leave_rule.py:152
+#: .\betik_app_staff\tests\test_annual_leave_rule.py:163
+msgid "must be number"
+msgstr "sayı olmalı"
+
+#: .\betik_app_staff\serializers\annual_leave_rule.py:61
+#: .\betik_app_staff\tests\test_annual_leave_rule.py:196
+msgid "must be bigger than or equal 0"
+msgstr "sıfırdan büyük yada eşit olmalı"
+
+#: .\betik_app_staff\serializers\annual_leave_rule.py:65
+#: .\betik_app_staff\tests\test_annual_leave_rule.py:174
+msgid "must be bigger than or equal zero"
+msgstr "sıfırdan büyük yada eşit olmalı"
+
+#: .\betik_app_staff\serializers\annual_leave_rule.py:76
+#: .\betik_app_staff\serializers\shift_rule.py:43
+#: .\betik_app_staff\serializers\shift_rule.py:78
+#: .\betik_app_staff\tests\test_annual_leave_rule.py:185
+#: .\betik_app_staff\tests\test_shift_rule.py:376
+#: .\betik_app_staff\tests\test_shift_rule.py:485
+msgid "must be bigger than 0"
+msgstr "sıfırdan büyük olmalı"
+
+#: .\betik_app_staff\serializers\annual_leave_rule.py:80
+#: .\betik_app_staff\tests\test_annual_leave_rule.py:209
+#, python-format
+msgid "must be bigger than start year(%(v)d)"
+msgstr "başlangıç yılından(%(v)d) büyük olmalı"
+
+#: .\betik_app_staff\serializers\annual_leave_rule.py:100
+#, python-format
+msgid "%(y1)d - %(y2)d Years; %(duration)d"
+msgstr "%(y1)d - %(y2)d Yıl; %(duration)d"
+
+#: .\betik_app_staff\serializers\annual_leave_rule.py:106
+#, python-format
+msgid "%(y1)d Years and beyond; %(duration)d"
+msgstr "%(y1)d Yıl ve sonrası; %(duration)d"
+
+#: .\betik_app_staff\serializers\annual_leave_rule.py:132
+msgid "Periods"
+msgstr "Dönemler"
+
+#: .\betik_app_staff\serializers\annual_leave_rule.py:133
+msgid "Duration Type"
+msgstr "Süre Tipi"
+
+#: .\betik_app_staff\serializers\annual_leave_rule.py:134
+msgid "Forward Next Year"
+msgstr "Sonraki Yıla Devir"
+
+#: .\betik_app_staff\serializers\annual_leave_rule.py:135
+msgid "Forward Year"
+msgstr "Sonraki Yıla Kaç Yıl Devrediyor"
+
+#: .\betik_app_staff\serializers\annual_leave_rule.py:138
+#: .\betik_app_staff\serializers\bank_holiday.py:29
+#: .\betik_app_staff\serializers\business_day.py:153
+#: .\betik_app_staff\serializers\custom_shift.py:159
+#: .\betik_app_staff\serializers\holiday.py:23
+#: .\betik_app_staff\serializers\shift_rule.py:193
+#: .\betik_app_staff\serializers\staff.py:26
+#: .\betik_app_staff\serializers\staff.py:42
+#: .\betik_app_staff\serializers\staff.py:57
+#: .\betik_app_staff\serializers\staff.py:106
+#: .\betik_app_staff\serializers\staff_active.py:24
+#: .\betik_app_staff\serializers\staff_active.py:98
+#: .\betik_app_staff\serializers\staff_dismiss.py:25
+#: .\betik_app_staff\serializers\staff_dismiss.py:98
+#: .\betik_app_staff\serializers\staff_leave.py:29
+#: .\betik_app_staff\serializers\staff_leave.py:71
+#: .\betik_app_staff\serializers\staff_passive.py:24
+#: .\betik_app_staff\serializers\staff_passive.py:101
+#: .\betik_app_staff\serializers\working_hour.py:44
+msgid "Created Time"
+msgstr "Oluşturulma Zamanı"
+
+#: .\betik_app_staff\serializers\annual_leave_rule.py:139
+#: .\betik_app_staff\serializers\bank_holiday.py:30
+#: .\betik_app_staff\serializers\business_day.py:154
+#: .\betik_app_staff\serializers\custom_shift.py:160
+#: .\betik_app_staff\serializers\holiday.py:24
+#: .\betik_app_staff\serializers\shift_rule.py:194
+#: .\betik_app_staff\serializers\staff.py:27
+#: .\betik_app_staff\serializers\staff.py:43
+#: .\betik_app_staff\serializers\staff.py:58
+#: .\betik_app_staff\serializers\staff.py:107
+#: .\betik_app_staff\serializers\staff_active.py:25
+#: .\betik_app_staff\serializers\staff_active.py:99
+#: .\betik_app_staff\serializers\staff_dismiss.py:26
+#: .\betik_app_staff\serializers\staff_dismiss.py:99
+#: .\betik_app_staff\serializers\staff_leave.py:30
+#: .\betik_app_staff\serializers\staff_leave.py:72
+#: .\betik_app_staff\serializers\staff_passive.py:25
+#: .\betik_app_staff\serializers\staff_passive.py:102
+#: .\betik_app_staff\serializers\working_hour.py:45
+msgid "Created User"
+msgstr "Oluşturan Kullanıcı"
+
+#: .\betik_app_staff\serializers\annual_leave_rule.py:140
+#: .\betik_app_staff\serializers\bank_holiday.py:31
+#: .\betik_app_staff\serializers\business_day.py:155
+#: .\betik_app_staff\serializers\custom_shift.py:161
+#: .\betik_app_staff\serializers\holiday.py:25
+#: .\betik_app_staff\serializers\shift_rule.py:195
+#: .\betik_app_staff\serializers\staff.py:28
+#: .\betik_app_staff\serializers\staff.py:44
+#: .\betik_app_staff\serializers\staff.py:59
+#: .\betik_app_staff\serializers\staff.py:108
+#: .\betik_app_staff\serializers\staff_active.py:26
+#: .\betik_app_staff\serializers\staff_active.py:100
+#: .\betik_app_staff\serializers\staff_dismiss.py:27
+#: .\betik_app_staff\serializers\staff_dismiss.py:100
+#: .\betik_app_staff\serializers\staff_leave.py:31
+#: .\betik_app_staff\serializers\staff_leave.py:73
+#: .\betik_app_staff\serializers\staff_passive.py:26
+#: .\betik_app_staff\serializers\staff_passive.py:103
+#: .\betik_app_staff\serializers\working_hour.py:46
+msgid "Updated Time"
+msgstr "Güncellenme Zamanı"
+
+#: .\betik_app_staff\serializers\annual_leave_rule.py:141
+#: .\betik_app_staff\serializers\bank_holiday.py:32
+#: .\betik_app_staff\serializers\business_day.py:156
+#: .\betik_app_staff\serializers\custom_shift.py:162
+#: .\betik_app_staff\serializers\holiday.py:26
+#: .\betik_app_staff\serializers\shift_rule.py:196
+#: .\betik_app_staff\serializers\staff.py:29
+#: .\betik_app_staff\serializers\staff.py:45
+#: .\betik_app_staff\serializers\staff.py:60
+#: .\betik_app_staff\serializers\staff.py:109
+#: .\betik_app_staff\serializers\staff_active.py:27
+#: .\betik_app_staff\serializers\staff_active.py:101
+#: .\betik_app_staff\serializers\staff_dismiss.py:28
+#: .\betik_app_staff\serializers\staff_dismiss.py:101
+#: .\betik_app_staff\serializers\staff_leave.py:32
+#: .\betik_app_staff\serializers\staff_leave.py:74
+#: .\betik_app_staff\serializers\staff_passive.py:27
+#: .\betik_app_staff\serializers\staff_passive.py:104
+#: .\betik_app_staff\serializers\working_hour.py:47
+msgid "Updated User"
+msgstr "Güncelleyen Kullanıcı"
+
+#: .\betik_app_staff\serializers\annual_leave_rule.py:167
+#: .\betik_app_staff\serializers\business_day.py:188
+#: .\betik_app_staff\serializers\shift_rule.py:254
+#: .\betik_app_staff\tests\test_annual_leave_rule.py:479
+#: .\betik_app_staff\tests\test_business_day.py:494
+#: .\betik_app_staff\tests\test_shift_rule.py:585
+msgid ""
+"Anything other than the finish date of active registrations cannot be changed"
+msgstr "Aktif kayıtların bitiş tarihi dışında hiçbir alanı değiştirilemez."
+
+#: .\betik_app_staff\serializers\annual_leave_rule.py:172
+#: .\betik_app_staff\serializers\business_day.py:193
+#: .\betik_app_staff\serializers\shift_rule.py:259
+#: .\betik_app_staff\tests\test_annual_leave_rule.py:499
+#: .\betik_app_staff\tests\test_business_day.py:514
+#: .\betik_app_staff\tests\test_shift_rule.py:605
+msgid "expired records cannot be changed in any way"
+msgstr "Geçmiş kayıtlar hiçbir şekilde değiştirilemez"
+
+#: .\betik_app_staff\serializers\annual_leave_rule.py:177
+#: .\betik_app_staff\serializers\annual_leave_rule.py:182
+#: .\betik_app_staff\serializers\annual_leave_rule.py:187
+#: .\betik_app_staff\serializers\annual_leave_rule.py:192
+#: .\betik_app_staff\serializers\business_day.py:198
+#: .\betik_app_staff\serializers\business_day.py:203
+#: .\betik_app_staff\serializers\business_day.py:209
+#: .\betik_app_staff\serializers\business_day.py:214
+#: .\betik_app_staff\serializers\custom_shift.py:33
+#: .\betik_app_staff\serializers\shift_rule.py:264
+#: .\betik_app_staff\serializers\shift_rule.py:269
+#: .\betik_app_staff\serializers\shift_rule.py:274
+#: .\betik_app_staff\serializers\shift_rule.py:279
+#: .\betik_app_staff\tests\test_annual_leave_rule.py:270
+#: .\betik_app_staff\tests\test_annual_leave_rule.py:283
+#: .\betik_app_staff\tests\test_annual_leave_rule.py:517
+#: .\betik_app_staff\tests\test_annual_leave_rule.py:535
+#: .\betik_app_staff\tests\test_business_day.py:250
+#: .\betik_app_staff\tests\test_business_day.py:263
+#: .\betik_app_staff\tests\test_business_day.py:532
+#: .\betik_app_staff\tests\test_business_day.py:550
+#: .\betik_app_staff\tests\test_custom_shift.py:105
+#: .\betik_app_staff\tests\test_shift_rule.py:179
+#: .\betik_app_staff\tests\test_shift_rule.py:623
+#: .\betik_app_staff\tests\test_shift_rule.py:641
+msgid "bigger than today"
+msgstr "Bugünden sonraki bir tarih olmalı"
+
+#: .\betik_app_staff\serializers\annual_leave_rule.py:196
+#: .\betik_app_staff\serializers\business_day.py:218
+#: .\betik_app_staff\serializers\shift_rule.py:283
+#: .\betik_app_staff\tests\test_annual_leave_rule.py:257
+#: .\betik_app_staff\tests\test_business_day.py:237
+#: .\betik_app_staff\tests\test_shift_rule.py:116
+#, python-format
+msgid "bigger than start date(%(date)s)"
+msgstr "Başlama tarihinden(%(date)s), sonraki bir tarih olmalı"
+
+#: .\betik_app_staff\serializers\annual_leave_rule.py:205
+#: .\betik_app_staff\serializers\annual_leave_rule.py:215
+msgid "must not be set year"
+msgstr "yıl girilemez"
+
+#: .\betik_app_staff\serializers\annual_leave_rule.py:211
+#: .\betik_app_staff\tests\test_annual_leave_rule.py:223
+msgid "must be set a year"
+msgstr "yıl girilmeli"
+
+#: .\betik_app_staff\serializers\annual_leave_rule.py:225
+#: .\betik_app_staff\tests\test_annual_leave_rule.py:240
+#, python-format
+msgid "must be equal to %(p)d. period's finish year(%(year)d)"
+msgstr "%(p)d. dönemin bitiş yılına(%(year)d) eşit olmalı"
+
+#: .\betik_app_staff\serializers\annual_leave_rule.py:246
+#: .\betik_app_staff\serializers\annual_leave_rule.py:272
+#: .\betik_app_staff\serializers\business_day.py:240
+#: .\betik_app_staff\serializers\business_day.py:266
+#: .\betik_app_staff\tests\test_annual_leave_rule.py:306
+#: .\betik_app_staff\tests\test_annual_leave_rule.py:359
+#: .\betik_app_staff\tests\test_business_day.py:286
+#: .\betik_app_staff\tests\test_business_day.py:339
+#, python-format
+msgid "Conflicts with the dates(%(date1)s - %(date1)s) of record #%(id)s"
+msgstr "#%(id)s nolu kaydın tarihleri(%(date1)s - %(date1)s) ile çakışıyor"
+
+#: .\betik_app_staff\serializers\annual_leave_rule.py:252
+#: .\betik_app_staff\serializers\annual_leave_rule.py:278
+#: .\betik_app_staff\serializers\business_day.py:246
+#: .\betik_app_staff\serializers\business_day.py:272
+#: .\betik_app_staff\tests\test_annual_leave_rule.py:333
+#: .\betik_app_staff\tests\test_annual_leave_rule.py:386
+#: .\betik_app_staff\tests\test_business_day.py:313
+#: .\betik_app_staff\tests\test_business_day.py:366
+#, python-format
+msgid "Conflicts with the dates(%(date1)s and later) of record #%(id)s"
+msgstr "#%(id)s nolu kaydın tarihleri(%(date1)s ve sonrası) ile çakışıyor"
+
+#: .\betik_app_staff\serializers\annual_leave_rule.py:299
+#: .\betik_app_staff\serializers\annual_leave_rule.py:323
+#: .\betik_app_staff\serializers\business_day.py:293
+#: .\betik_app_staff\serializers\business_day.py:317
+#: .\betik_app_staff\tests\test_annual_leave_rule.py:410
+#: .\betik_app_staff\tests\test_annual_leave_rule.py:433
+#: .\betik_app_staff\tests\test_business_day.py:390
+#: .\betik_app_staff\tests\test_business_day.py:413
+#, python-format
+msgid "Contains with the dates(%(date1)s - %(date2)s) of record #%(id)s"
+msgstr "#%(id)s nolu kaydın tarihlerini(%(date1)s - %(date2)s) kapsıyor"
+
+#: .\betik_app_staff\serializers\annual_leave_rule.py:305
+#: .\betik_app_staff\serializers\business_day.py:299
+#, python-format
+msgid ""
+"The start date(%(date1)s) of record #%(id)did, conflicts with the entered "
+"dates"
+msgstr ""
+"#%(id)d nolu kaydın başlangıç tarihi(%(date1)s), girilen tarihlerle çakışıyor"
+
+#: .\betik_app_staff\serializers\annual_leave_rule.py:329
+#: .\betik_app_staff\serializers\business_day.py:323
+#: .\betik_app_staff\tests\test_annual_leave_rule.py:456
+#: .\betik_app_staff\tests\test_business_day.py:436
+#, python-format
+msgid "Contains with the dates(%(date1)s and later) of record #%(id)s"
+msgstr "#%(id)s nolu kaydın tarihlerini(%(date1)s ve sonrası) kapsıyor"
+
+#: .\betik_app_staff\serializers\bank_holiday.py:45
+#: .\betik_app_staff\serializers\holiday.py:37
+#, python-format
+msgid "must be greater than start date(%(date)s)"
+msgstr "başlama tarihinden(%(date)s), sonraki bir tarih olmalı"
+
+#: .\betik_app_staff\serializers\bank_holiday.py:50
+#: .\betik_app_staff\serializers\bank_holiday.py:55
+#: .\betik_app_staff\serializers\bank_holiday.py:60
+#, python-format
+msgid "must be less than or equal %(day)d"
+msgstr "%(day)d sayısına eşit veya küçük olmalı"
+
+#: .\betik_app_staff\serializers\bank_holiday.py:69
+#, python-format
+msgid "%(day_month)s is already a bank holiday"
+msgstr "%(day_month)s zaten resmi tatil olarak eklenmiş"
+
+#: .\betik_app_staff\serializers\business_day.py:48
+#: .\betik_app_staff\serializers\shift_rule.py:39
+#: .\betik_app_staff\serializers\shift_rule.py:74
+#: .\betik_app_staff\tests\test_business_day.py:168
+#: .\betik_app_staff\tests\test_shift_rule.py:361
+#: .\betik_app_staff\tests\test_shift_rule.py:470
+msgid "must be a number"
+msgstr "Sayı olmalı"
+
+#: .\betik_app_staff\serializers\business_day.py:52
+#: .\betik_app_staff\tests\test_business_day.py:179
+msgid "bigger than zero"
+msgstr "Sıfırdan büyük olmalı"
+
+#: .\betik_app_staff\serializers\business_day.py:56
+#: .\betik_app_staff\tests\test_business_day.py:195
+msgid "less than 25"
+msgstr "25'den küçük olmalı"
+
+#: .\betik_app_staff\serializers\business_day.py:62
+#: .\betik_app_staff\serializers\shift_rule.py:68
+#: .\betik_app_staff\tests\test_business_day.py:206
+#: .\betik_app_staff\tests\test_shift_rule.py:432
+msgid "Incorrect time format. Expected `%H:%M`"
+msgstr "Hatalı zaman formatı. Format `%H:%M` olmalı"
+
+#: .\betik_app_staff\serializers\business_day.py:144
+#: .\betik_app_staff\serializers\shift_rule.py:204
+msgid "Monday"
+msgstr "Pazartesi"
+
+#: .\betik_app_staff\serializers\business_day.py:145
+#: .\betik_app_staff\serializers\shift_rule.py:205
+msgid "Tuesday"
+msgstr "Salı"
+
+#: .\betik_app_staff\serializers\business_day.py:146
+#: .\betik_app_staff\serializers\shift_rule.py:206
+msgid "Wednesday"
+msgstr "Çarşamba"
+
+#: .\betik_app_staff\serializers\business_day.py:147
+#: .\betik_app_staff\serializers\shift_rule.py:207
+msgid "Thursday"
+msgstr "Perşembe"
+
+#: .\betik_app_staff\serializers\business_day.py:148
+#: .\betik_app_staff\serializers\shift_rule.py:208
+msgid "Friday"
+msgstr "Cuma"
+
+#: .\betik_app_staff\serializers\business_day.py:149
+#: .\betik_app_staff\serializers\shift_rule.py:209
+msgid "Saturday"
+msgstr "Cumartesi"
+
+#: .\betik_app_staff\serializers\business_day.py:150
+#: .\betik_app_staff\serializers\shift_rule.py:210
+msgid "Sunday"
+msgstr "Pazar"
+
+#: .\betik_app_staff\serializers\business_day.py:222
+#: .\betik_app_staff\tests\test_business_day.py:223
+msgid "required a day at least"
+msgstr "En az bir gün gerekli"
+
+#: .\betik_app_staff\serializers\business_day.py:354
+#: .\betik_app_staff\serializers\business_day.py:390
+#: .\betik_app_staff\serializers\business_day.py:396
+#: .\betik_app_staff\serializers\shift_rule.py:109
+#: .\betik_app_staff\serializers\shift_rule.py:152
+#: .\betik_app_staff\serializers\shift_rule.py:157
+#: .\betik_app_staff\serializers\shift_rule.py:332
+#: .\betik_app_staff\serializers\shift_rule.py:337
+#: .\betik_app_staff\tests\test_business_day.py:456
+#: .\betik_app_staff\tests\test_business_day.py:474
+#: .\betik_app_staff\tests\test_shift_rule.py:247
+#: .\betik_app_staff\tests\test_shift_rule.py:277
+#: .\betik_app_staff\tests\test_shift_rule.py:527
+#: .\betik_app_staff\tests\test_shift_rule.py:547
+#, python-format
+msgid "bigger than or equal %(time)s"
+msgstr "%(time)s saatinden büyük veya eşit olmalı"
+
+#: .\betik_app_staff\serializers\custom_shift.py:39
+#: .\betik_app_staff\tests\test_custom_shift.py:121
+msgid "for this shift type, only sunday shift can be entered"
+msgstr "Bu vardiya tipi için sadece pazar günü mesai girilebilir"
+
+#: .\betik_app_staff\serializers\custom_shift.py:46
+#: .\betik_app_staff\tests\test_custom_shift.py:132
+msgid "for this shift type, only holiday days can be entered"
+msgstr "Bu vardiya tipi için sadece tatil günleri mesai girilebilir"
+
+#: .\betik_app_staff\serializers\custom_shift.py:52
+#: .\betik_app_staff\tests\test_custom_shift.py:146
+msgid "this shift type cannot be used on holidays"
+msgstr "Bu vardiya tipi için tatil güleri mesai girilemez"
+
+#: .\betik_app_staff\serializers\custom_shift.py:56
+msgid "this shift type cannot be used on sunday"
+msgstr "Bu vardiya tipi için pazar günü mesai girilemez"
+
+#: .\betik_app_staff\serializers\custom_shift.py:65
+#: .\betik_app_staff\serializers\custom_shift.py:80
+#: .\betik_app_staff\tests\test_custom_shift.py:161
+#: .\betik_app_staff\tests\test_custom_shift.py:184
+#, python-format
+msgid ""
+"staff who has %(identity)s identity, %(name)s %(last_name)s names, conflict "
+"with individual shift which has #%(id)d no. Conflicting shift's dates are "
+"%(date1)s - %(date2)s"
+msgstr ""
+"%(identity)s kimliğine sahip, %(name)s %(last_name)s adlı personelin, #"
+"%(id)d no'lu bireysel vardiyası ile çakışıyor. Çakışan vardiyanın tarihleri: "
+"%(date1)s - %(date2)s"
+
+#: .\betik_app_staff\serializers\custom_shift.py:95
+#: .\betik_app_staff\tests\test_custom_shift.py:216
+#, python-format
+msgid ""
+"staff who has with %(identity)s identity, %(name)s %(last_name)s named, "
+"individual shift which has #%(id)d ID, is covered. Shift's covered dates: "
+"%(date1)s to %(date2)s"
+msgstr ""
+"%(identity)s kimliğine sahip, %(name)s %(last_name)s adlı personelin, #"
+"%(id)d no'lu bireysel vardiyasının tarihlerini kapsamaktadır. Kapsanan "
+"vardiyanın tarihleri: %(date1)s - %(date2)s"
+
+#: .\betik_app_staff\serializers\custom_shift.py:157
+#: .\betik_app_staff\serializers\working_hour.py:39
+msgid "Work Hour"
+msgstr "Çalışma Saati"
+
+#: .\betik_app_staff\serializers\custom_shift.py:158
+msgid "Shift Type"
+msgstr "Vardiya Tipi"
+
+#: .\betik_app_staff\serializers\shift_rule.py:50
+#: .\betik_app_staff\tests\test_shift_rule.py:400
+msgid "not found"
+msgstr "Bulunamadı"
+
+#: .\betik_app_staff\serializers\shift_rule.py:82
+#: .\betik_app_staff\tests\test_shift_rule.py:506
+#, python-format
+msgid "must be less than %(hour)d"
+msgstr "%(hour)d saatinden küçük olmalı"
+
+#: .\betik_app_staff\serializers\shift_rule.py:188
+msgid "Period Start Date"
+msgstr "Vardiya Dönemi Başlama Tarihi"
+
+#: .\betik_app_staff\serializers\shift_rule.py:189
+msgid "Period Finish Date"
+msgstr "Vardiya Dönemi Bitiş Tarihi"
+
+#: .\betik_app_staff\serializers\shift_rule.py:190
+msgid "Period Duration"
+msgstr "Vardiya Dönemi"
+
+#: .\betik_app_staff\serializers\shift_rule.py:192
+msgid "Business Days"
+msgstr "Mesai Günleri"
+
+#: .\betik_app_staff\serializers\shift_rule.py:214
+#: .\betik_app_staff\serializers\shift_rule.py:641
+msgid "Shift No"
+msgstr "Vardiya No"
+
+#: .\betik_app_staff\serializers\shift_rule.py:288
+#: .\betik_app_staff\serializers\shift_rule.py:293
+#: .\betik_app_staff\tests\test_shift_rule.py:139
+#: .\betik_app_staff\tests\test_shift_rule.py:159
+msgid "must fall on monday"
+msgstr "Pazartesi gününden başlamalı"
+
+#: .\betik_app_staff\serializers\shift_rule.py:301
+#: .\betik_app_staff\tests\test_shift_rule.py:195
+#: .\betik_app_staff\tests\test_shift_rule.py:206
+#, python-format
+msgid "must be %(no)d"
+msgstr "%(no)d olmalı"
+
+#: .\betik_app_staff\serializers\shift_rule.py:380
+#: .\betik_app_staff\serializers\shift_rule.py:387
+#: .\betik_app_staff\tests\test_shift_rule.py:315
+#, python-format
+msgid "bigger than %(time)s"
+msgstr "%(time)s saatinden sonraki bir saat olmalı"
+
+#: .\betik_app_staff\serializers\shift_rule.py:421
+#: .\betik_app_staff\tests\test_shift_rule.py:672
+#, python-format
+msgid ""
+"There are %(count)d joint staff both in this shift and in the shift named "
+"%(shift_name)s. Unable to edit because the dates of these two shifts overlap"
+msgstr ""
+"Hem bu vardiyada hem de %(shift_name)s adlı vardiyada, %(count)d müşterek "
+"personel bulunmaktadır. Bu iki vardiyanın tarihleri çakıştığı için "
+"düzenlenemiyor"
+
+#: .\betik_app_staff\serializers\shift_rule.py:515
+#: .\betik_app_staff\tests\test_shift_rule_staff.py:107
+msgid "No action can be taken for an out-of-date shift rule"
+msgstr "Güncel olmayan bir vardiya kuralı için herhangi bir işlem yapılamaz"
+
+#: .\betik_app_staff\serializers\shift_rule.py:524
+#: .\betik_app_staff\tests\test_shift_rule_staff.py:128
+#, python-format
+msgid "The shift number should have the these values; %(values)s"
+msgstr "Vardiya numarası şu değerlere sahip olmalıdır; %(values)s"
+
+#: .\betik_app_staff\serializers\shift_rule.py:535
+#: .\betik_app_staff\tests\test_shift_rule_staff.py:160
+#, python-format
+msgid ""
+"Staff who %(identity)s identity, named %(name)s %(last_name)s, are already "
+"registered in the %(shift_no)d. shift no of this shift."
+msgstr ""
+"%(identity)s kimlik nolu, %(name)s %(last_name)s adlı personel, aynı vardiya "
+"kuralında %(shift_no)d nolu vardiyaya kayıtlı."
+
+#: .\betik_app_staff\serializers\shift_rule.py:550
+#: .\betik_app_staff\tests\test_shift_rule_staff.py:202
+#, python-format
+msgid ""
+"Staff who %(identity)s identity, named %(name)s %(last_name)s, is registered "
+"to the shift named %(registered_shift_name)s. the dates of this shift "
+"conflict with the dates of the shift named %(new_shift_name)s"
+msgstr ""
+"%(identity)s kimlik nolu, %(name)s %(last_name)s adlı personelin kayıtlı "
+"olduğu %(registered_shift_name)s adlı vardiya ile %(new_shift_name)s adlı "
+"vardiya kuralının tarihleri çakışıyor"
+
+#: .\betik_app_staff\serializers\shift_rule.py:647
+msgid "Shift Rule"
+msgstr "Vardiya Kuralı"
+
+#: .\betik_app_staff\serializers\staff.py:24
+msgid "Department ID"
+msgstr "Birim ID"
+
+#: .\betik_app_staff\serializers\staff.py:40
+msgid "Title ID"
+msgstr "Ünvan ID"
+
+#: .\betik_app_staff\serializers\staff.py:55
+msgid "Staff Type ID"
+msgstr "Personel Tipi ID"
+
+#: .\betik_app_staff\serializers\staff.py:101
+msgid "Status Code"
+msgstr "Durum Kodu"
+
+#: .\betik_app_staff\serializers\staff.py:117
+msgid "Person ID"
+msgstr "Kişi ID"
+
+#: .\betik_app_staff\serializers\staff.py:140
+msgid "Required for inactive staff"
+msgstr "Pasif personel için gerekli"
+
+#: .\betik_app_staff\serializers\staff.py:142
+msgid "Not required for active staff"
+msgstr "Aktif personel için gerekli değil"
+
+#: .\betik_app_staff\serializers\staff.py:161
+#: .\betik_app_staff\serializers\staff.py:232
+#, python-format
+msgid ""
+"Statement of insured employment of staff who has identity number "
+"%(identity)s and register number %(register_no)s and name %(name)s "
+"%(last_name)s"
+msgstr ""
+"%(identity)s kimlik numarası ve %(register_no)s sicil numarası ve %(name)s "
+"%(last_name)s adlı personelin SGK şe giriş bildirgesi"
+
+#: .\betik_app_staff\serializers\staff.py:184
+#: .\betik_app_staff\serializers\staff.py:266
+#, python-format
+msgid ""
+"Employment agreement of staff who has identity number %(identity)s and "
+"register number %(register_no)s and name %(name)s %(last_name)s"
+msgstr ""
+"%(identity)s kimlik numarası ve %(register_no)s sicil numarası ve %(name)s "
+"%(last_name)s adlı personelin iş sözleşmesi"
+
+#: .\betik_app_staff\serializers\staff_active.py:22
+msgid "Active Reason ID"
+msgstr "Aktif Nedeni ID"
+
+#: .\betik_app_staff\serializers\staff_active.py:53
+msgid "Staff is active"
+msgstr "Personel aktif"
+
+#: .\betik_app_staff\serializers\staff_active.py:88
+#: .\betik_app_staff\serializers\staff_dismiss.py:88
+#: .\betik_app_staff\serializers\staff_leave.py:80
+#: .\betik_app_staff\serializers\staff_passive.py:91
+#: .\betik_app_staff\serializers\working_hour.py:33
+msgid "Staff ID"
+msgstr "Personel ID"
+
+#: .\betik_app_staff\serializers\staff_active.py:95
+msgid "Active ID"
+msgstr "Aktif ID"
+
+#: .\betik_app_staff\serializers\staff_active.py:96
+msgid "Active Date"
+msgstr "Aktif Tarihi"
+
+#: .\betik_app_staff\serializers\staff_active.py:97
+#: .\betik_app_staff\serializers\staff_dismiss.py:97
+#: .\betik_app_staff\serializers\staff_passive.py:100
+msgid "Detail"
+msgstr "Detay"
+
+#: .\betik_app_staff\serializers\staff_dismiss.py:23
+msgid "Dismiss Reason ID"
+msgstr "İhraç Neden ID"
+
+#: .\betik_app_staff\serializers\staff_dismiss.py:54
+msgid "Staff is dismiss"
+msgstr "Personel zaten ihraç edilmiş"
+
+#: .\betik_app_staff\serializers\staff_dismiss.py:95
+msgid "Dismiss ID"
+msgstr "İhraç ID"
+
+#: .\betik_app_staff\serializers\staff_dismiss.py:96
+msgid "Dismiss Date"
+msgstr "İhraç Tarihi"
+
+#: .\betik_app_staff\serializers\staff_leave.py:27
+#: .\betik_app_staff\serializers\staff_leave.py:62
+msgid "Leave Type ID"
+msgstr "İzin Tipi ID"
+
+#: .\betik_app_staff\serializers\staff_leave.py:28
+#: .\betik_app_staff\serializers\staff_leave.py:63
+#: .\betik_app_staff\serializers\staff_leave.py:64
+#: .\betik_app_staff\serializers\staff_leave.py:65
+#: .\betik_app_staff\serializers\staff_leave.py:66
+#: .\betik_app_staff\serializers\staff_leave.py:67
+#: .\betik_app_staff\serializers\staff_leave.py:68
+#: .\betik_app_staff\serializers\staff_leave.py:69
+#: .\betik_app_staff\serializers\staff_leave.py:70
+msgid "Leave Type"
+msgstr "İzin Tipi"
+
+#: .\betik_app_staff\serializers\staff_leave.py:101
+#: .\betik_app_staff\tests\test_staff_leave.py:423
+msgid "Staff is passive"
+msgstr "Personel pasif"
+
+#: .\betik_app_staff\serializers\staff_leave.py:110
+#: .\betik_app_staff\tests\test_staff_leave.py:592
+msgid "If leave type is annual leave, not required"
+msgstr "İzin türü yıllık izin ise gerekli değildir"
+
+#: .\betik_app_staff\serializers\staff_leave.py:129
+#: .\betik_app_staff\tests\test_staff_leave.py:622
+msgid "If leave type is not annual leave, required"
+msgstr "İzin türü yıllık izin değil ise gereklidir"
+
+#: .\betik_app_staff\serializers\staff_leave.py:135
+#: .\betik_app_staff\tests\test_staff_leave.py:457
+msgid "It should be in 15-minute periods"
+msgstr "15'er dakikalık periyotlar halinde olmalı"
+
+#: .\betik_app_staff\serializers\staff_leave.py:138
+#: .\betik_app_staff\tests\test_staff_leave.py:491
+msgid "It should be hourly"
+msgstr "Tam saat olmalı"
+
+#: .\betik_app_staff\serializers\staff_leave.py:145
+#: .\betik_app_staff\serializers\staff_leave.py:159
+#: .\betik_app_staff\serializers\staff_leave.py:180
+#: .\betik_app_staff\serializers\staff_leave.py:194
+#: .\betik_app_staff\tests\test_staff_leave.py:525
+#: .\betik_app_staff\tests\test_staff_leave.py:912
+#: .\betik_app_staff\tests\test_staff_leave.py:1060
+#, python-format
+msgid "Bigger than %(dt)s"
+msgstr "%(dt)s tarihinden sonraki bir tarih olmalı"
+
+#: .\betik_app_staff\serializers\staff_leave.py:149
+#: .\betik_app_staff\serializers\staff_leave.py:167
+#: .\betik_app_staff\serializers\staff_leave.py:184
+#: .\betik_app_staff\serializers\staff_leave.py:202
+#: .\betik_app_staff\tests\test_staff_leave.py:559
+#: .\betik_app_staff\tests\test_staff_leave.py:950
+#: .\betik_app_staff\tests\test_staff_leave.py:1097
+msgid "Bigger than today"
+msgstr "Bugünden sonraki bir tarih olmalı"
+
+#: .\betik_app_staff\serializers\staff_leave.py:156
+#: .\betik_app_staff\serializers\staff_leave.py:164
+#: .\betik_app_staff\tests\test_staff_leave.py:838
+#: .\betik_app_staff\tests\test_staff_leave.py:874
+msgid "The start date cannot be changed because the leave has started"
+msgstr "Başlangıç tarihi değiştirilemez, çünkü izin başlamış"
+
+#: .\betik_app_staff\serializers\staff_leave.py:191
+#: .\betik_app_staff\serializers\staff_leave.py:199
+#: .\betik_app_staff\tests\test_staff_leave.py:986
+#: .\betik_app_staff\tests\test_staff_leave.py:1022
+msgid "The finish date cannot be changed because the leave has finished"
+msgstr "Bitiş tarihi değiştirilemez, çünkü izin bitmiş"
+
+#: .\betik_app_staff\serializers\staff_leave.py:212
+#: .\betik_app_staff\tests\test_staff_leave.py:668
+#, python-format
+msgid ""
+"There is conflict with another leave date(%(leave_type)s %(date1)s - "
+"%(date2)s)"
+msgstr ""
+"Başka bir izin tarihi ile çakışma var(%(leave_type)s %(date1)s - %(date2)s)"
+
+#: .\betik_app_staff\serializers\staff_leave.py:241
+msgid ""
+"the start date of each working year, based on the employment date of the "
+"staff"
+msgstr ""
+"personelin işe alınma tarihine göre her çalışma yılının başlangıç tarihi"
+
+#: .\betik_app_staff\serializers\staff_leave.py:243
+msgid "1 year after the starting date of the period of the staff"
+msgstr ""
+"Personelin o dönem için, görev süresinin başladığı tarihten 1 yıl sonra"
+
+#: .\betik_app_staff\serializers\staff_leave.py:244
+msgid "vested annual leave entitlement at period"
+msgstr "dönemde kazanılmış yıllık izin hakkı"
+
+#: .\betik_app_staff\serializers\staff_leave.py:245
+msgid "annual leave used at period"
+msgstr "dönemde kullanılan yıllık izin"
+
+#: .\betik_app_staff\serializers\staff_leave.py:246
+#: .\betik_app_staff\serializers\staff_leave.py:247
+msgid "annual leave unused at period"
+msgstr "dönemde kullanılmayaan yıllık izin"
+
+#: .\betik_app_staff\serializers\staff_leave.py:248
+msgid "working time of the staff as year"
+msgstr "personelin yıl olarak çalışma süresi"
+
+#: .\betik_app_staff\serializers\staff_leave.py:250
+msgid ""
+"total leave entitlement at the end of the period, with any past unused leaves"
+msgstr ""
+"geçmiş kullanılmayan izinlerle birlikte dönem sonundaki toplam izin hakkı"
+
+#: .\betik_app_staff\serializers\staff_leave.py:252
+msgid "which annual leave rule is subject to at that period"
+msgstr "o dönemde hangi yıllık izin kuralına tabidir"
+
+#: .\betik_app_staff\serializers\staff_passive.py:22
+msgid "Passive Reason ID"
+msgstr "Pasif Nedeni ID"
+
+#: .\betik_app_staff\serializers\staff_passive.py:53
+msgid "Staff is not active"
+msgstr "Personel aktif değil"
+
+#: .\betik_app_staff\serializers\staff_passive.py:98
+#: .\betik_app_staff\serializers\working_hour.py:36
+msgid "Passive Log ID"
+msgstr "Pasif Günlük ID"
+
+#: .\betik_app_staff\serializers\staff_passive.py:99
+msgid "Passive Date"
+msgstr "Pasif Tarihi"
+
+#: .\betik_app_staff\serializers\working_hour.py:37
+msgid "Start Working Time"
+msgstr "Mesai Başlama Zamanı"
+
+#: .\betik_app_staff\serializers\working_hour.py:38
+msgid "Finish Working Time"
+msgstr "Mesai Bitiş Zamanı"
+
+#: .\betik_app_staff\serializers\working_hour.py:40
+msgid "Working Type"
+msgstr "Mesai Tipi"
+
+#: .\betik_app_staff\serializers\working_hour.py:41
+msgid "Staff Start Working Time"
+msgstr "Personelin İşe Başlama Zamanı"
+
+#: .\betik_app_staff\serializers\working_hour.py:42
+msgid "Staff Finish Working Time"
+msgstr "Personelin İşten Çıkış Zamanı"
+
+#: .\betik_app_staff\serializers\working_hour.py:43
+msgid "Late Duration"
+msgstr "Geciktiği Süre"
+
+#: .\betik_app_staff\serializers_merge.py:76
+#: .\betik_app_staff\tests\test_staff_type.py:128
+msgid "There is a general business rule conflict after this merge."
+msgstr ""
+"Bu birleştirme işleminden sonra, genel iş kuralı tarihlerinde çakışmalar "
+"oluştu."
+
+#: .\betik_app_staff\serializers_merge.py:78
+#: .\betik_app_staff\tests\test_staff_type.py:130
+#, python-format
+msgid ""
+"Business rule id #%(id1)d(%(date_range1)s) conflicts with business rule id #"
+"%(id2)d(%(date_range2)s)"
+msgstr ""
+"#%(id1)d ID nolu genel iş kuralı ile(%(date_range1)s), #%(id2)d ID nolu "
+"genel iş kuralının(%(date_range2)s) tarihleri çakışıyor"
+
+#: .\betik_app_staff\serializers_merge.py:94
+#: .\betik_app_staff\tests\test_staff_type.py:169
+msgid "There is a annual leave rule conflict after this merge."
+msgstr ""
+"Bu birleştirme işleminden sonra, yıllık izin kuralı tarihlerinde çakışmalar "
+"oluştu."
+
+#: .\betik_app_staff\serializers_merge.py:96
+#: .\betik_app_staff\tests\test_staff_type.py:171
+#, python-format
+msgid ""
+"Annual leave rule id #%(id1)d(%(date_range1)s) conflicts with annual leave "
+"rule id #%(id2)d(%(date_range2)s)"
+msgstr ""
+"#%(id1)d ID nolu yıllık izin kuralı ile(%(date_range1)s), #%(id2)d ID nolu "
+"yıllık izin kuralının(%(date_range2)s) tarihleri çakışıyor"
+
+#: .\betik_app_staff\serializers_statistic.py:15
+#: .\betik_app_staff\serializers_statistic.py:29
+#: .\betik_app_staff\serializers_statistic.py:43
+#: .\betik_app_staff\serializers_statistic.py:57
+#: .\betik_app_staff\serializers_statistic.py:71
+#: .\betik_app_staff\serializers_statistic.py:85
+#: .\betik_app_staff\serializers_statistic.py:99
+msgid "Count"
+msgstr "Sayı"
+
+#: .\betik_app_staff\serializers_statistic.py:16
+msgid "Gender"
+msgstr "Cinsiyet"
+
+#: .\betik_app_staff\serializers_statistic.py:30
+msgid "Blood Group"
+msgstr "Kan Grubu"
+
+#: .\betik_app_staff\serializers_statistic.py:44
+msgid "Education Status"
+msgstr "Eğitim Durumu"
+
+#: .\betik_app_staff\serializers_statistic.py:58
+msgid "Province Name"
+msgstr "İl Adı"
+
+#: .\betik_app_staff\tests\test_annual_leave_rule.py:554
+#: .\betik_app_staff\tests\test_business_day.py:569
+#: .\betik_app_staff\tests\test_shift_rule.py:796
+#: .\betik_app_staff\tests\test_staff_leave.py:1124
+#: .\betik_app_staff\views\annual_leave_rule.py:47
+#: .\betik_app_staff\views\business_day.py:56
+#: .\betik_app_staff\views\shift_rule.py:57
+#: .\betik_app_staff\views\staff_leave.py:57
+msgid "active record can not be deleted"
+msgstr "Aktif kayıt silinemez"
+
+#: .\betik_app_staff\tests\test_annual_leave_rule.py:573
+#: .\betik_app_staff\tests\test_business_day.py:588
+#: .\betik_app_staff\tests\test_shift_rule.py:815
+#: .\betik_app_staff\tests\test_shift_rule_staff.py:243
+#: .\betik_app_staff\tests\test_staff_leave.py:1151
+#: .\betik_app_staff\views\annual_leave_rule.py:52
+#: .\betik_app_staff\views\business_day.py:61
+#: .\betik_app_staff\views\shift_rule.py:62
+#: .\betik_app_staff\views\shift_rule.py:202
+#: .\betik_app_staff\views\staff_leave.py:62
+msgid "outdated record can not be deleted"
+msgstr "Geçmiş kayıt silinemez"
+
+#: .\betik_app_staff\tests\test_custom_shift.py:87
+#: .\betik_app_staff\views\custom_shift.py:66
+#, python-format
+msgid "Those before %(date)s cannot be deleted"
+msgstr "%(date)s tarihinden önceki kayıtlar silinemez"
+
+#: .\betik_app_staff\tests\test_custom_shift.py:270
+#: .\betik_app_staff\tests\test_custom_shift.py:341
+#: .\betik_app_staff\tests\test_custom_shift.py:411
+#: .\betik_app_staff\tests\test_custom_shift.py:482
+#: .\betik_app_staff\tests\test_custom_shift.py:553
+#: .\betik_app_staff\tests\test_custom_shift.py:625
+#: .\betik_app_staff\tests\test_custom_shift.py:693
+#: .\betik_app_staff\tests\test_custom_shift.py:760
+#: .\betik_app_staff\tests\test_custom_shift.py:828
+#: .\betik_app_staff\tests\test_custom_shift.py:897
+#: .\betik_app_staff\tests\test_custom_shift.py:965
+#: .\betik_app_staff\tests\test_custom_shift.py:1034
+#: .\betik_app_staff\tests\test_shift_rule.py:750
+#: .\betik_app_staff\validators.py:85
+#, python-format
+msgid "Conflicts detected on %(count)d shift times"
+msgstr "%(count)d tane mesai saati çakışması algılandı"
+
+#: .\betik_app_staff\tests\test_custom_shift.py:274
+#: .\betik_app_staff\tests\test_custom_shift.py:345
+#: .\betik_app_staff\tests\test_custom_shift.py:415
+#: .\betik_app_staff\tests\test_custom_shift.py:486
+#: .\betik_app_staff\tests\test_custom_shift.py:557
+#: .\betik_app_staff\tests\test_custom_shift.py:629
+#: .\betik_app_staff\tests\test_custom_shift.py:697
+#: .\betik_app_staff\tests\test_custom_shift.py:764
+#: .\betik_app_staff\tests\test_custom_shift.py:832
+#: .\betik_app_staff\tests\test_custom_shift.py:901
+#: .\betik_app_staff\tests\test_custom_shift.py:969
+#: .\betik_app_staff\tests\test_custom_shift.py:1038
+#: .\betik_app_staff\tests\test_shift_rule.py:754
+#: .\betik_app_staff\validators.py:97
+#, python-format
+msgid "Staff named %(name)s %(last_name)s with ID number %(identity)s,"
+msgstr "%(name)s %(last_name)s adlı ve %(identity)s kimlik nolu personel,"
+
+#: .\betik_app_staff\tests\test_custom_shift.py:280
+#: .\betik_app_staff\tests\test_custom_shift.py:359
+#: .\betik_app_staff\tests\test_custom_shift.py:429
+#: .\betik_app_staff\tests\test_custom_shift.py:500
+#: .\betik_app_staff\tests\test_custom_shift.py:571
+#: .\betik_app_staff\tests\test_custom_shift.py:643
+#: .\betik_app_staff\tests\test_shift_rule.py:770
+#: .\betik_app_staff\validators.py:115
+#, python-format
+msgid ""
+"working hours depending on the shift rule name %(name)s(%(date1)s - "
+"%(date2)s)"
+msgstr ""
+"%(name)s adlı vardiya kuralına bağlı olan çalışma saatleri(%(date1)s - "
+"%(date2)s)"
+
+#: .\betik_app_staff\tests\test_custom_shift.py:286
+#: .\betik_app_staff\tests\test_custom_shift.py:357
+#: .\betik_app_staff\tests\test_custom_shift.py:427
+#: .\betik_app_staff\tests\test_custom_shift.py:498
+#: .\betik_app_staff\tests\test_custom_shift.py:569
+#: .\betik_app_staff\tests\test_custom_shift.py:641
+#: .\betik_app_staff\tests\test_custom_shift.py:710
+#: .\betik_app_staff\tests\test_custom_shift.py:776
+#: .\betik_app_staff\tests\test_custom_shift.py:844
+#: .\betik_app_staff\tests\test_custom_shift.py:913
+#: .\betik_app_staff\tests\test_custom_shift.py:981
+#: .\betik_app_staff\tests\test_custom_shift.py:1050
+#: .\betik_app_staff\tests\test_shift_rule.py:767
+#: .\betik_app_staff\validators.py:128
+msgid "with"
+msgstr "ile"
+
+#: .\betik_app_staff\tests\test_custom_shift.py:288
+#: .\betik_app_staff\tests\test_custom_shift.py:351
+#: .\betik_app_staff\tests\test_custom_shift.py:421
+#: .\betik_app_staff\tests\test_custom_shift.py:492
+#: .\betik_app_staff\tests\test_custom_shift.py:563
+#: .\betik_app_staff\tests\test_custom_shift.py:635
+#: .\betik_app_staff\tests\test_custom_shift.py:712
+#: .\betik_app_staff\tests\test_custom_shift.py:770
+#: .\betik_app_staff\tests\test_custom_shift.py:838
+#: .\betik_app_staff\tests\test_custom_shift.py:907
+#: .\betik_app_staff\tests\test_custom_shift.py:975
+#: .\betik_app_staff\tests\test_custom_shift.py:1044
+#: .\betik_app_staff\tests\test_shift_rule.py:761
+#: .\betik_app_staff\validators.py:121
+#, python-format
+msgid ""
+"working hours depending on the individual shift id #%(id)d(%(date1)s - "
+"%(date2)s)"
+msgstr ""
+"#%(id)d id nolu özel vardiyasına bağlı olan çalışma saatleri(%(date1)s - "
+"%(date2)s)"
+
+#: .\betik_app_staff\tests\test_custom_shift.py:294
+#: .\betik_app_staff\tests\test_custom_shift.py:364
+#: .\betik_app_staff\tests\test_custom_shift.py:434
+#: .\betik_app_staff\tests\test_custom_shift.py:505
+#: .\betik_app_staff\tests\test_custom_shift.py:576
+#: .\betik_app_staff\tests\test_custom_shift.py:648
+#: .\betik_app_staff\tests\test_custom_shift.py:717
+#: .\betik_app_staff\tests\test_custom_shift.py:784
+#: .\betik_app_staff\tests\test_custom_shift.py:852
+#: .\betik_app_staff\tests\test_custom_shift.py:921
+#: .\betik_app_staff\tests\test_custom_shift.py:989
+#: .\betik_app_staff\tests\test_custom_shift.py:1058
+#: .\betik_app_staff\tests\test_shift_rule.py:776
+#: .\betik_app_staff\validators.py:130
+msgid "overlap"
+msgstr "çakışıyor"
+
+#: .\betik_app_staff\tests\test_custom_shift.py:704
+#: .\betik_app_staff\tests\test_custom_shift.py:779
+#: .\betik_app_staff\tests\test_custom_shift.py:847
+#: .\betik_app_staff\tests\test_custom_shift.py:916
+#: .\betik_app_staff\tests\test_custom_shift.py:984
+#: .\betik_app_staff\tests\test_custom_shift.py:1053
+#: .\betik_app_staff\validators.py:109
+#, python-format
+msgid ""
+"working hours depending on the general business rule name %(name)s(%(date1)s "
+"- %(date2)s)"
+msgstr ""
+"%(name)s adlı genel iş kuralına bağlı çalışma saatleri (%(date1)s - "
+"%(date2)s)"
+
+#: .\betik_app_staff\tests\test_leave_type.py:81
+#: .\betik_app_staff\views\leave_type.py:60
+msgid "This leave type can not be deleted"
+msgstr "Bu izin tipi silinemez"
+
+#: .\betik_app_staff\tests\test_shift_rule.py:564
+msgid "shift rule model with this name already exists."
+msgstr "Bu isimde başka bir vardiya kuralı var"
+
+#: .\betik_app_staff\urls.py:57
+msgid "Paginate departments"
+msgstr "Birimleri sayfala"
+
+#: .\betik_app_staff\urls.py:66
+msgid "Create a department"
+msgstr "Birim ekle"
+
+#: .\betik_app_staff\urls.py:75
+msgid "Update a department"
+msgstr "Birim güncelle"
+
+#: .\betik_app_staff\urls.py:84
+msgid "Delete a department"
+msgstr "Birim sil"
+
+#: .\betik_app_staff\urls.py:93
+msgid "Merge bulk departments"
+msgstr "Birimleri birleştir"
+
+#: .\betik_app_staff\urls.py:103
+msgid "Paginate titles"
+msgstr "Ünvanları sayfala"
+
+#: .\betik_app_staff\urls.py:112
+msgid "Create a title"
+msgstr "Ünvan ekle"
+
+#: .\betik_app_staff\urls.py:121
+msgid "Update a title"
+msgstr "Ünvan güncelle"
+
+#: .\betik_app_staff\urls.py:130
+msgid "Delete a title"
+msgstr "Ünvan sil"
+
+#: .\betik_app_staff\urls.py:139
+msgid "Merge bulk titles"
+msgstr "Ünvanları birleştir"
+
+#: .\betik_app_staff\urls.py:149
+msgid "Paginate staff types"
+msgstr "Personel tiplerini sayfala"
+
+#: .\betik_app_staff\urls.py:158
+msgid "Create a staff type"
+msgstr "Personel tipi ekle"
+
+#: .\betik_app_staff\urls.py:167
+msgid "Update a staff type"
+msgstr "Personel tipi güncelle"
+
+#: .\betik_app_staff\urls.py:176
+msgid "Delete a staff type"
+msgstr "Personel tipi sil"
+
+#: .\betik_app_staff\urls.py:185
+msgid "Merge staff types"
+msgstr "Personel tiplerini birleştir"
+
+#: .\betik_app_staff\urls.py:195
+msgid "Paginate staffs"
+msgstr "Personelleri sayfala"
+
+#: .\betik_app_staff\urls.py:204
+msgid "Send bulk emails to staff"
+msgstr "Personele toplu email gönder"
+
+#: .\betik_app_staff\urls.py:213
+msgid "Send bulk sms to staff"
+msgstr "Personele toplu sms gönder"
+
+#: .\betik_app_staff\urls.py:222
+msgid "Create a staff"
+msgstr "Personel ekle"
+
+#: .\betik_app_staff\urls.py:231
+msgid "Update a staff"
+msgstr "Personel güncelle"
+
+#: .\betik_app_staff\urls.py:240
+msgid "Create a passive reason"
+msgstr "Pasifleştirme nedeni ekle"
+
+#: .\betik_app_staff\urls.py:249
+msgid "Update a passive reason"
+msgstr "Pasifleştirme nedeni güncelle"
+
+#: .\betik_app_staff\urls.py:258
+msgid "Delete a passive reason"
+msgstr "Pasifleştirme nedenisil"
+
+#: .\betik_app_staff\urls.py:267
+msgid "Paginate passive reasons"
+msgstr "Pasifleştirme nedenlerini sayfala"
+
+#: .\betik_app_staff\urls.py:276
+msgid "Merge passive reasons"
+msgstr "Pasifleştirme nedenlerini birleştir"
+
+#: .\betik_app_staff\urls.py:286
+msgid "Make a staff passive"
+msgstr "Personeli pasifleştir"
+
+#: .\betik_app_staff\urls.py:295
+msgid "Paginate passive staff logs"
+msgstr "Personel pasifleştirme günlüklerini sayfala"
+
+#: .\betik_app_staff\urls.py:304
+msgid "Create a dismiss reason"
+msgstr "İhraç nedeni ekle"
+
+#: .\betik_app_staff\urls.py:313
+msgid "Update a dismiss reason"
+msgstr "İhraç nedeni güncelle"
+
+#: .\betik_app_staff\urls.py:322
+msgid "Delete a dismiss reason"
+msgstr "İhraç nedeni sil"
+
+#: .\betik_app_staff\urls.py:331
+msgid "Paginate dismiss reasons"
+msgstr "İhraç nedenlerini sayfala"
+
+#: .\betik_app_staff\urls.py:340
+msgid "Merge dismiss reasons"
+msgstr "İhraç nedenlerini birleştir"
+
+#: .\betik_app_staff\urls.py:350
+msgid "Dismiss a staff"
+msgstr "Personeli ihraç et"
+
+#: .\betik_app_staff\urls.py:359
+msgid "Paginate dismiss staff logs"
+msgstr "Personel ihraç günlüklerini sayfala"
+
+#: .\betik_app_staff\urls.py:368
+msgid "Create a active reason"
+msgstr "Aktifleştirme nednei ekle"
+
+#: .\betik_app_staff\urls.py:377
+msgid "Update a active reason"
+msgstr "Aktifleştirme nedeni güncelle"
+
+#: .\betik_app_staff\urls.py:386
+msgid "Delete a active reason"
+msgstr "Aktifleştirme nedeni sil"
+
+#: .\betik_app_staff\urls.py:395
+msgid "Paginate active reasons"
+msgstr "Aktifleştirme nedenlerini sayfala"
+
+#: .\betik_app_staff\urls.py:404
+msgid "Merge active reasons"
+msgstr "Aktifleştirme nedenlerini birleştir"
+
+#: .\betik_app_staff\urls.py:414
+msgid "Make a staff active"
+msgstr "Personeli aktifleştir"
+
+#: .\betik_app_staff\urls.py:423
+msgid "Paginate active staff logs"
+msgstr "Personel aktifleştirme günlüklerini sayfala"
+
+#: .\betik_app_staff\urls.py:432
+msgid "Create a bank holiday"
+msgstr "Resmi tatil ekle"
+
+#: .\betik_app_staff\urls.py:441
+msgid "Update a bank holiday"
+msgstr "Resmi tatil güncelle"
+
+#: .\betik_app_staff\urls.py:450
+msgid "Delete a bank holiday"
+msgstr "Resmi tatil sil"
+
+#: .\betik_app_staff\urls.py:459
+msgid "Paginate bank holidays"
+msgstr "Resmi tatilleri sayfala"
+
+#: .\betik_app_staff\urls.py:468
+msgid "Create a holiday"
+msgstr "Tatil ekle"
+
+#: .\betik_app_staff\urls.py:477
+msgid "Update a holiday"
+msgstr "Tatil güncelle"
+
+#: .\betik_app_staff\urls.py:486
+msgid "Delete a holiday"
+msgstr "Tatil sil"
+
+#: .\betik_app_staff\urls.py:495
+msgid "Paginate holidays"
+msgstr "Tatilleri sayfala"
+
+#: .\betik_app_staff\urls.py:504
+msgid "Create a business day"
+msgstr "Mesai günü ekle"
+
+#: .\betik_app_staff\urls.py:513
+msgid "Update a business day"
+msgstr "Mesai günü güncelle"
+
+#: .\betik_app_staff\urls.py:522
+msgid "Delete a business day"
+msgstr "Mesai günü sil"
+
+#: .\betik_app_staff\urls.py:531
+msgid "Paginate business days"
+msgstr "Mesai günlerini sayfala"
+
+#: .\betik_app_staff\urls.py:540
+msgid "Create a annual leave rule"
+msgstr "Yıllık izin kuralı ekle"
+
+#: .\betik_app_staff\urls.py:549
+msgid "Update a annual leave rule"
+msgstr "Yıllık izin kuralı güncelle"
+
+#: .\betik_app_staff\urls.py:558
+msgid "Delete a annual leave rule"
+msgstr "Yıllık izin kuralı sil"
+
+#: .\betik_app_staff\urls.py:567
+msgid "Paginate annual leave rules"
+msgstr "Yıllık izin kurallarını sayfala"
+
+#: .\betik_app_staff\urls.py:576
+msgid "Paginate leave types"
+msgstr "İzin tiplerini sayfala"
+
+#: .\betik_app_staff\urls.py:585
+msgid "Create a leave type"
+msgstr "İzin tipi ekle"
+
+#: .\betik_app_staff\urls.py:594
+msgid "Update a leave type"
+msgstr "İzin tipi güncelle"
+
+#: .\betik_app_staff\urls.py:603
+msgid "Delete a leave type"
+msgstr "İzin tipi sil"
+
+#: .\betik_app_staff\urls.py:612
+msgid "Create a shift rule"
+msgstr "Vardiya kuralı ekle"
+
+#: .\betik_app_staff\urls.py:621
+msgid "Update a shift rule"
+msgstr "Vardiya kuralı güncelle"
+
+#: .\betik_app_staff\urls.py:630
+msgid "Delete a shift rule"
+msgstr "Vardiya kuralı sil"
+
+#: .\betik_app_staff\urls.py:639
+msgid "Paginate shift rules"
+msgstr "Vardiya kuralalrını satfala"
+
+#: .\betik_app_staff\urls.py:648
+msgid "Assign shift rule to bulk staff"
+msgstr "Vardiyaya toplu personel ata"
+
+#: .\betik_app_staff\urls.py:649
+msgid "Assigns bulk staffs to the selected shift"
+msgstr "Seçili vardiyaya, toplu personel atar"
+
+#: .\betik_app_staff\urls.py:658
+msgid "Remove staff from shift rule"
+msgstr "Personeli vardiyadan çıkar"
+
+#: .\betik_app_staff\urls.py:667
+msgid "Paginate staffs who depends on shift rule"
+msgstr "Vardiyaya bağlı personelleri sayfala"
+
+#: .\betik_app_staff\urls.py:676
+msgid "Create bulk custom shift"
+msgstr "Toplu özel vardiya ekle"
+
+#: .\betik_app_staff\urls.py:685
+msgid "Delete a custom shift"
+msgstr "Özel vardiya sil"
+
+#: .\betik_app_staff\urls.py:694
+msgid "Paginate custom shifts"
+msgstr "Özel vardiyaları sayfala"
+
+#: .\betik_app_staff\urls.py:703
+msgid "List devices(Staff Module)"
+msgstr "Personel modülündeki cihazları listele"
+
+#: .\betik_app_staff\urls.py:713
+msgid "Change a device status(Staff Module)"
+msgstr "Personel modülündeki cihazın durumunu değiştir"
+
+#: .\betik_app_staff\urls.py:714
+msgid "The device can be active or passive"
+msgstr "Cihaz aktif yada pasif yapılabilir"
+
+#: .\betik_app_staff\urls.py:724
+msgid "Create a device(Staff Module)"
+msgstr "Personel modülünde cihaz ekle"
+
+#: .\betik_app_staff\urls.py:735
+msgid "Update a device(Staff Module)"
+msgstr "Personel modülündeki cihazı güncelle"
+
+#: .\betik_app_staff\urls.py:745
+msgid "List device events(Staff Module)"
+msgstr "Personel modülündeki cihazların olay günlüklerini sayfala"
+
+#: .\betik_app_staff\urls.py:755
+msgid "List person's device permissions(Staff Module)"
+msgstr "Personellerin cihaz yetkilerini listele"
+
+#: .\betik_app_staff\urls.py:765
+msgid "Assign device permission to bulk staff(Staff Module)"
+msgstr "Personellere cihaz yetkilerini ata"
+
+#: .\betik_app_staff\urls.py:775
+msgid "Paginate person's attendance logs(Staff Module)"
+msgstr "Personellerin cihaz günlüklerini sayfala"
+
+#: .\betik_app_staff\urls.py:785
+msgid "Create a staff leave"
+msgstr "Personel izni ekle"
+
+#: .\betik_app_staff\urls.py:794
+msgid "Update a staff leave"
+msgstr "Personel izni güncelle"
+
+#: .\betik_app_staff\urls.py:803
+msgid "Delete a staff leave"
+msgstr "Personel izni sil"
+
+#: .\betik_app_staff\urls.py:812
+msgid "Paginate staff leaves"
+msgstr "Personel izinlerini sayfala"
+
+#: .\betik_app_staff\urls.py:821
+msgid "Paginate absentee staff on date"
+msgstr "Verilen tarihde gelmeyen personelleri sayfala"
+
+#: .\betik_app_staff\urls.py:830
+msgid "Paginate late staff on date"
+msgstr "Verilen tarihde geciken personelleri sayfala"
+
+#: .\betik_app_staff\urls.py:839
+msgid "List annual leave report that belongs to staff"
+msgstr "Personele ait yıllık izin raporu listele"
+
+#: .\betik_app_staff\urls.py:848
+msgid "Staff-Gender statistic paginate"
+msgstr "Personel-Cinsiyet istatistiğini sayfala"
+
+#: .\betik_app_staff\urls.py:857
+msgid "Staff-Blood statistic paginate"
+msgstr "Personel-Kan Grubu istatistiğini sayfala"
+
+#: .\betik_app_staff\urls.py:866
+msgid "Staff-Education statistic paginate"
+msgstr "Personel-Eğitim Durumu istatistiğini sayfala"
+
+#: .\betik_app_staff\urls.py:875
+msgid "Staff-Register Province statistic paginate"
+msgstr "Personel-Kütüğe Bağlı İl istatistiğini sayfala"
+
+#: .\betik_app_staff\urls.py:884
+msgid "Staff-Department statistic paginate"
+msgstr "Personel-Birim istatistiğini sayfala"
+
+#: .\betik_app_staff\urls.py:893
+msgid "Staff-Staff Type statistic paginate"
+msgstr "Personel-Personel Tipi istatistiğini sayfala"
+
+#: .\betik_app_staff\urls.py:902
+msgid "Staff-Title statistic paginate"
+msgstr "Personel-Ünvan istatistiğini sayfala"
+
+#: .\betik_app_staff\urls.py:911
+msgid "Shift type list"
+msgstr "Vardiya tiplerini listele"
+
+#: .\betik_app_staff\views\enum.py:23
+msgid "Code"
+msgstr "Kod"
+
+#: .\betik_app_staff\views\enum.py:24
+msgid "Explanation"
+msgstr "Açıklama"
+
+#: .\core\urls.py:16
+msgid ""
+"This application provides opportunities such as recording all personal and "
+"registration information of employees in a corporate company, leave "
+"tracking, report, entry-exit times, overtime information."
+msgstr ""
+"Bu uygulama, kurumsal bir şirkette çalışanların tüm kişisel ve sicil "
+"bilgilerinin kayıt altına alınması, izin, rapor, giriş-çıkış saatleri, fazla "
+"mesai gibi bilgilerin takibini sağlar."
+
+#: .\core\urls.py:36
+msgid "Staff Application"
+msgstr "Personel Uygulaması"
+
+#: .\core\urls.py:56
+msgid "Auth Application"
+msgstr "Kullanıcı Uygulaması"
+
+#: .\core\urls.py:76
+msgid "Sms Application"
+msgstr "Sms Uygulaması"

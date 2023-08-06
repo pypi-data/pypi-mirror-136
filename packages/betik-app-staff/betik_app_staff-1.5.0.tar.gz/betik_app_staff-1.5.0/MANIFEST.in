@@ -1,0 +1,8 @@
+include LICENSE
+include README.rst
+recursive-include betik_app_staff/locale *
+recursive-include betik_app_staff/resource *
+recursive-include betik_app_staff/management *
+recursive-include betik_app_staff/tests *
+recursive-include betik_app_staff/serializers *
+recursive-include betik_app_staff/views *
