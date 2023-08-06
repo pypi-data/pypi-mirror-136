@@ -1,0 +1,12 @@
+slise/__init__.py,sha256=SVskn1w7_w_ExLBfuoCsTSFkdIytiSAkYTpI2AE7XFU,1748
+slise/data.py,sha256=fXrGKQgp-CLaQyW72pzqSWLIq3BsCU-IwqCR_gaHo8Q,8987
+slise/initialisation.py,sha256=4Tlky2u7SONZB4BQ7Ff3qtQk6FvQbi2JXYepPg9L924,12180
+slise/optimisation.py,sha256=cgGNnu0dHtuvoy86VxjOqtAhacsaSwXWIwyliopxaNc,13512
+slise/plot.py,sha256=RSep1BUFQNPeRcClBB4z2PnUR_TZuplNXqlN51dRk6I,24958
+slise/slise.py,sha256=3loSkMCkLfZikYO0iHn-3ODzxdXUft3SygH_q30unpY,39191
+slise/utils.py,sha256=vMcm1fTNYLtFuEJwsfBKqkGr8kdHMcGVZ19f6IxDG4Q,2790
+slise-2.0.0.dist-info/LICENSE,sha256=6p0YviQ6q5hJrxo_XZlxnlWP_wSjqvt4IQ4hFXZbkWA,1073
+slise-2.0.0.dist-info/METADATA,sha256=TszgrWYdzLouEseB9wKVJa6AE1XHV0hxkcFvzaMwToI,4504
+slise-2.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+slise-2.0.0.dist-info/top_level.txt,sha256=9aItPHDt0SRKoAnG7xix2CLIvYp2Xr5hzv-O9wEXFn0,6
+slise-2.0.0.dist-info/RECORD,,
