@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/ElectronicsCalculator/__init__.py
+src/ElectronicsCalculator/electronics_calculator.py
+src/ElectronicsCalculator/scale_factors.py
+src/ElectronicsCalculator.egg-info/PKG-INFO
+src/ElectronicsCalculator.egg-info/SOURCES.txt
+src/ElectronicsCalculator.egg-info/dependency_links.txt
+src/ElectronicsCalculator.egg-info/top_level.txt
