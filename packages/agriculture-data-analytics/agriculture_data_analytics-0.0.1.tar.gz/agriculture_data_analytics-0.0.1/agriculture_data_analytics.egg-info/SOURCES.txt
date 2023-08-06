@@ -1,0 +1,12 @@
+license
+pyproject.toml
+setup.cfg
+agriculture_data_analytics/__init__.py
+agriculture_data_analytics/cso_ie.py
+agriculture_data_analytics/dataframe_labels.py
+agriculture_data_analytics/project_manager.py
+agriculture_data_analytics/sentiment_analysis.py
+agriculture_data_analytics.egg-info/PKG-INFO
+agriculture_data_analytics.egg-info/SOURCES.txt
+agriculture_data_analytics.egg-info/dependency_links.txt
+agriculture_data_analytics.egg-info/top_level.txt

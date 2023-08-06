@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: agriculture_data_analytics
+Version: 0.0.1
+Summary: Data analytic functions for the project.
+Home-page: https://github.com/markcrowe-com/data-analytics-project-template/
+Author: Mark Crowe
+Author-email: YOUR_EMAIL@users.noreply.github.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/markcrowe-com/data-analytics-project-template/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: license
+
+# [Data Analytics Project Template](./../../../)
+
+A group assessment to study population trends in the Republic of Ireland based on Central Statistics Office (CSO) data.  
+
+## Requirements
+
+- [Python &GreaterEqual; 3.8.0](https://www.python.org/downloads/)
+
+### Python packages (pip)
+
+- [markcrowe](https://pypi.org/project/markcrowe/)
+
+
+---
+**Template footnote**  
+This project started from the template <https://github.com/markcrowe-com/data-analytics-project-template>. Permission is granted to reproduce for personal and educational use only. Commercial copying, hiring, lending is prohibited. In all cases this notice must remain intact. Author [Mark Crowe](https://github.com/markcrowe-com/) Copyright &copy; 2021, All rights reserved.
+
