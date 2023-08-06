@@ -1,0 +1,8 @@
+setup.py
+reqbar/__init__.py
+reqbar/code.py
+reqbar.egg-info/PKG-INFO
+reqbar.egg-info/SOURCES.txt
+reqbar.egg-info/dependency_links.txt
+reqbar.egg-info/not-zip-safe
+reqbar.egg-info/top_level.txt
