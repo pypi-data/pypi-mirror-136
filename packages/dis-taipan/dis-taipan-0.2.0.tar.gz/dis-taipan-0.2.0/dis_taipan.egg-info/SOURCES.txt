@@ -1,0 +1,12 @@
+README.md
+setup.py
+dis_taipan/__init__.py
+dis_taipan/botguild.py
+dis_taipan/py.typed
+dis_taipan/sentry.py
+dis_taipan/updater.py
+dis_taipan.egg-info/PKG-INFO
+dis_taipan.egg-info/SOURCES.txt
+dis_taipan.egg-info/dependency_links.txt
+dis_taipan.egg-info/requires.txt
+dis_taipan.egg-info/top_level.txt
