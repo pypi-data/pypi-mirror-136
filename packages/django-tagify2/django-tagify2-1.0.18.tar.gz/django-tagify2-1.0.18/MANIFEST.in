@@ -1,0 +1,4 @@
+include README.rst
+include LICENSE
+recursive-include tagify/static *
+recursive-include tagify/templates *
