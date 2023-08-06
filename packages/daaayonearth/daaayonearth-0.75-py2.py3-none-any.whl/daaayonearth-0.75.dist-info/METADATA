@@ -1,0 +1,123 @@
+Metadata-Version: 2.1
+Name: daaayonearth
+Version: 0.75
+Summary: Easy access to geographic, meteorologic and photovoltaic performance data/services.
+Home-page: https://www.blackward.de
+Author: Dominik Niedenzu
+Author-email: blythooon@blackward.de
+Maintainer: Dominik Niedenzu
+License: Proprietary License
+Platform: any platform which provides python
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Other Audience
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development
+Requires-Python: >= 2.2
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: pandas (<=1.4.0)
+Requires-Dist: matplotlib
+Requires-Dist: geopy
+Requires-Dist: timezonefinder
+
+The 'Daaayonearth' library contains three classes: **Location, TimeZone and EnvConditions**.
+These provide easy access to **geographical**, **meteorological** and **photovoltaic performance** data/services, namely: 
+
+- the (latitude, longitude) tuple belonging to a specific address / location string (**geocoding**)
+- the **timezone** belonging to a specific location (at a given date)
+- the typical environmental conditions belonging to a day at a specific location & date, including:  
+
+- air temperature
+- air pressure
+- air humidity
+- wind speed
+- wind direction
+- sun height
+- solar irradiance
+- maximal photovoltaic performance 
+
+For each of said parameters there is a **function** as well as a belonging **plot** available,
+which provide the course of said parameter over the chosen day.
+
+
+Examples
+========
+
+
+```python
+	#import from daaayonearth
+	import daaayonearth
+	from   daaayonearth import Location, TimeZone, EnvConditions
+
+
+	#import from standard library
+	from   datetime     import datetime as Datetime
+	from   datetime     import date     as Date
+
+
+	#set application name
+	daaayonearth.UserAgentNameS = "DaaayExampleApp"
+
+
+	#get (latitude, longitude) tuple from address string
+	deu = Location(  "Willy-Brandt-Str., 10557 Berlin" )                             # ==> (52.5202262, 13.3704874)
+
+
+	#get timezone (Python tzfile) belonging to location
+	tzDeu = TimeZone( deu )                                                          # ==> tzfile('Europe/Berlin')
+
+
+	#convert a date to another timezone
+	date = Datetime(2021, 11, 1, 20, 40, 0, tzinfo=tzDeu)                            # ==> 2021-11-01 20:40:00+01:00
+	date.astimezone( TimeZone("Pennsylvania Ave. NW, Washington, DC 20020, USA") )   # ==> 2021-11-01 15:40:00-04:00
+
+
+	#get the typical temperature at 12 o'clock 
+	#in the Willy Brandt Street, Berlin - on the 2th of November (year is ignored)
+	envConds = EnvConditions( Location("Willy-Brandt-Str., 10557 Berlin"), Date(2021, 11, 2) )
+	envConds.functionsD["T(2m) [Â°C]"](12 * 3600)                                     # ==> 5.03
+
+
+	#get a matplotlib figure of the belonging course of temperature for said location/day
+	envConds.getFigureOf( "T(2m) [Â°C]" )                                             # ==> plot (course of temperature)
+
+
+	#get the list of available parameters (for envConds.functionsD[...] and envConds.getFigureOf(...))
+	list( envConds.functionsD.keys() )   # ==> [ 'T(2m) [Â°C]', 'Humidity [%]', 'Irradiance [W/m^2]', 
+							 #       'WindSpeed(10m) [m/s]', 'WindDirection(10m) [Â°]', 
+							 #       'Pressure(0m) [Pa]', 'PvPower [W]', 'SunHeight [Â°]' ]
+
+      #it is also possible to setup the environment conditions 'manually' - using the 'auto' parameter
+      #as the Tmy-part is far less time consuming than the Pvp-part, this e.g. can be used to minimize 
+      #waiting times
+      envConds = EnvConditions( "Willy-Brandt-Str., 10557 Berlin", "11-02", auto=False )
+
+      envConds.loadTmy()
+      envConds.processTmy()    #after this, one already has access to all functions/figures 
+                               #but 'SunHeight [Â°]' and 'PvPower [W]' 
+      
+      envConds.loadPvp()       #the Pvp-block needs about 5 times more time (e.g. some 20s!)
+      envConds.processPvp()
+
+      envConds.cleanUp()       #do not forget to clean up - also if you just use the Tmy-part
+```    
+
+If you use this library you might ('under the hood') use data and/or services connected with
+'OpenStreetMap', 'Nominatim' and/or 'PVGIS' - please find more informations concerning this
+topic in the LICENSE text!
+
+Further infomations and links also can be found on my homepage
+[https://www.blackward.de](https://www.blackward.de)  
+
+
+Have Fun!
+
+
+

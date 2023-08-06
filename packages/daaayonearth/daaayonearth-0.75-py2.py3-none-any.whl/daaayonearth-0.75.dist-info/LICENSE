@@ -1,0 +1,118 @@
+# Daaayonearth - Copyright & Contact Notice
+#############################################
+#  Created by Dominik Niedenzu              #      
+#  Copyright (C) 2021-2022 Dominik Niedenzu #       
+#      All Rights Reserved                  #
+#                                           #
+#            Contact:                       #
+#       blythooon@blackward.de              #
+#       www.blackward.de                    #         
+#############################################
+
+# Daaayonearth - Version & Modification Notice
+##############################################
+# Based on Daaayonearth Version 0.75         #
+# Modified by --- (date: ---)                #
+##############################################
+
+# Daaayonearth - License
+#######################################################################################################################
+# Use and redistribution of this software in source and binary forms, without or with modification,                   #
+# are permitted (free of charge) provided that the following conditions are met (including the disclaimer):           #
+#                                                                                                                     #
+# 1. Redistributions of source code must retain the above copyright & contact notice and                              #
+#    this license text (including the permission notice, this list of conditions and the following disclaimer).       #
+#                                                                                                                     #
+#    a) If said source code is redistributed unmodified, the belonging file name must be daaayonearth.py and          #
+#       said file must retain the above version & modification notice too.                                            #
+#                                                                                                                     #
+#    b) Whereas if said source code is redistributed modified (this includes redistributions of                       #
+#       substantial portions of the source code), the belonging file name(s) must be daaayonearth_modified*.py        #
+#       (where the asterisk stands for an arbitrary intermediate string) and said files                               #
+#       must contain the above version & modification notice too - updated with the name(s) of the change             #
+#       maker(s) as well as the date(s) of the modification(s).                                                       #
+#                                                                                                                     #
+# 2. Redistributions in binary form must reproduce the above copyright & contact notice and                           #
+#    this license text (including the permission notice, this list of conditions and the following disclaimer).       #
+#    They must also reproduce a version & modification notice similar to the one above - in the                       #
+#    sense of 1. a) resp. b).                                                                                         #
+#                                                                                                                     #
+# 3. Neither the name "Dominik Niedenzu", nor the name resp. trademark "Blackward", nor the names of authors resp.    #
+#    contributors resp. change makers may be used to endorse or promote products derived from this software without   #
+#    specific prior written permission.                                                                               #
+#                                                                                                                     #
+# 4. This software is able to request and download third party data from the internet resp. from third party web      #
+#    services / pages. Said third party data as well as the belonging third party web services / pages come           #
+#    with their own (different) licenses / terms and conditions. The user resp. redistributor of this software        #
+#    (or parts of this software) must also take into account, respect and comply with all third party licenses /      #
+#    terms and conditions.                                                                                            #
+#    Using (including modifying) or/and redistributing this software in a way that leads to the infringement          #
+#    (whether immediately or indirectly) of one or several third party licenses or other third party rights will      #
+#    automatically terminate the user's resp. redistributor's rights under this license.                              #
+#                                                                                                                     #
+# 5. By using (including modifying) this software, the user confirms that he has also taken note of all further       #
+#    license hints and that he complies with them. By using (including modifying) this software, the user also        #
+#    confirms that he has taken note of all terms and conditions of web services / pages from which this software     #
+#    might request / download data - in particular: https://www.openstreetmap.org, https://nominatim.org/ and         #
+#    https://ec.europa.eu/jrc/en/pvgis - and that he complies with them.                                              #
+#                                                                                                                     #
+# THIS SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO   #
+# THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.                            #
+#                                                                                                                     #
+# IN NO EVENT SHALL DOMINIK NIEDENZU OR AUTHORS OR CONTRIBUTORS OR CHANGE MAKERS BE LIABLE FOR ANY CLAIM, ANY         #
+# (DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY OR CONSEQUENTIAL) DAMAGE OR ANY OTHER LIABILITY, WHETHER IN AN    #
+# ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THIS SOFTWARE (OR PARTS OF THIS   #
+# SOFTWARE) OR THE USE OR REDISTRIBUTION OR OTHER DEALINGS IN THIS SOFTWARE (OR PARTS OF THIS SOFTWARE).              #
+#                                                                                                                     #
+# THE USERS RESP. REDISTRIBUTORS OF THIS SOFTWARE (OR PARTS OF THIS SOFTWARE) ARE SOLELY RESPONSIBLE FOR ENSURING     #
+# THAT AFOREMENTIONED CONDITIONS ALL ARE MET AND COMPLIANT WITH THE LAW IN THE RESPECTIVE JURISDICTION - BEFORE (!)   #
+# THEY USE RESP. REDISTRIBUTE.                                                                                        #
+#######################################################################################################################
+
+# Daaayonearth - Further License Hints
+#######################################################################################################################
+#                                                                                                                     #
+# The 'Location' class uses the 'Nominatim' geocoding service / API of 'OpenStreetMap' ((C) OpenStreetMap             #
+# contributors - data licensed under the 'ODbL' by the OpenStreetMap Foundation) - via the 'geopy' library.           #
+#                                                                                                                     #
+# Please note, that the Nominatim’s Usage Policy requires you to specify a valid HTTP Referer resp. User-Agent        #
+# identifying the application (stock User-Agents as set by http libraries will not do). Have a look at the module's   #
+# global variable 'userAgentNameS' used in the 'Location' class.                                                      #
+#                                                                                                                     #
+# Further informations about the belonging licenses resp. terms and conditions can be found on the following web      #
+# pages:                                                                                                              #
+#                                                                                                                     #
+# https://geopy.readthedocs.io/en/stable/#nominatim                                                                   #
+# https://nominatim.org/                                                                                              #
+# https://operations.osmfoundation.org/policies/nominatim/                                                            #
+# https://opendatacommons.org/licenses/odbl/1-0/                                                                      #
+# https://www.openstreetmap.org/about                                                                                 #
+# https://www.openstreetmap.org/copyright                                                                             #
+#                                                                                                                     #
+#                                                                                                                     #
+# The 'EnvConditions' class uses the non-interactive service / API of 'PVGIS' ((C) European Communities, 2001-2021)   #
+# of the 'EU SCIENCE HUB' for acquiring geographical, meteorological and photovoltaic informations.                   #
+#                                                                                                                     #
+# Please feel free to also have a look at the publication of Huld, T., Müller, R. and Gambardella, A., 2012:          #
+# 'A new solar radiation database for estimating PV performance in Europe and Africa'. Solar Energy, 86, 1803-1815.   #
+#                                                                                                                     #
+# Further informations about the belonging licenses resp. terms and conditions can be found on the following web      #
+# pages:                                                                                                              #
+#                                                                                                                     #
+# https://ec.europa.eu/jrc/en/pvgis                                                                                   #
+# https://ec.europa.eu/jrc/en/PVGIS/docs/noninteractive                                                               #
+# https://ec.europa.eu/info/legal-notice_en                                                                           #
+# https://creativecommons.org/licenses/by/4.0/                                                                        #
+#                                                                                                                     #
+#                                                                                                                     #
+# This 'Further License Hints' section is just meant as a convenience to support giving you an entry point into the   #
+# topic of licenses, terms and conditions and so on. Said section (and its contents) is NOT intended to have legal    #
+# significance - one cannot rely on resp. refer to it.                                                                #
+#                                                                                                                     #
+# It just reflects the knowledge of the author at the time of this writing - it or/and its contents may be            #
+# incomplete, incorrect or/and outdated!                                                                              #
+#                                                                                                                     #
+# Accordingling, reading said section is not an equal replacement for reading all licenses, terms and                 #
+# conditions, notes and texts belonging to the data, APIs, services or/and web pages used.                            #
+#                                                                                                                     #
+#######################################################################################################################
