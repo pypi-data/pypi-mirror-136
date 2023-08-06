@@ -1,0 +1,3 @@
+[console_scripts]
+ndnt = ndnt.__main__:main
+
