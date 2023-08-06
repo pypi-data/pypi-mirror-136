@@ -1,0 +1,5 @@
+numpy
+requests
+sqlite3
+pandas
+matplotlib
