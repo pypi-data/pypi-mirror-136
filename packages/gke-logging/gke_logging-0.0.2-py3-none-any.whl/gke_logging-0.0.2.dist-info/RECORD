@@ -1,0 +1,9 @@
+gke_logging/__init__.py,sha256=RWHwriig5-ROS9-46G7yYzedJbLORAcYB-gu9PPP4FY,67
+gke_logging/asgi.py,sha256=1JmVXJhfmdp0KwYMvNfGmpSoUF1a_90-1fDb4ruQlx4,6049
+gke_logging/context.py,sha256=N0aboQxrbNrOM5FWeCMX0El1YQOSDQgh4mJRBvToCPQ,1841
+gke_logging/pylogging.py,sha256=K78I64wd5hRDDMSPp1HhFtOhzjQ98lGatURIfjP2s5I,2729
+gke_logging/types.py,sha256=1IjSTWyW6LMAsD4EdKvF_7ned4fPZZShr_-AFhctxfQ,2954
+gke_logging-0.0.2.dist-info/LICENSE,sha256=6eaM2YlwRWmmOnTaN5l3eKG-QlsfBoinLUfF0H2VZ4w,1066
+gke_logging-0.0.2.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+gke_logging-0.0.2.dist-info/METADATA,sha256=CxC0Cp3ahgVBTVuiIOy10q2aNp7ir7dfC8rOJRctRgk,5646
+gke_logging-0.0.2.dist-info/RECORD,,
