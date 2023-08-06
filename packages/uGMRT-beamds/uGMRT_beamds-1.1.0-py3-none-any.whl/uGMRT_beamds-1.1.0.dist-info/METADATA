@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: uGMRT-beamds
+Version: 1.1.0
+Summary: A python package to make and plot dynamic spectrum from uGMRT beamformer observations
+Home-page: https://github.com/devojyoti96/uGMRT_beamds
+Author: Devojyoti Kansabanik
+Author-email: dkansabanik@ncra.tifr.res.in
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+Requires-Dist: numpy (==1.19.0)
+Requires-Dist: scipy (==1.6.2)
+Requires-Dist: astropy (==4.3)
+Requires-Dist: pandas
+Requires-Dist: seaborn
+Requires-Dist: pysigproc
+
+uGMRT_beamds
+============
+A python package to make and plot dynamic spectrum from uGMRT beamformer observations
+
+Requirements
+************
+1. python3
+
+2. numpy==1.19.0, scipy==1.6.2, astropy==4.3, pandas, seaborn, pysigproc
+
+Tasks
+*****
+1. make\_uGMRT\_ds : Task to made dynamic spectrum from the uGMRT beamformer raw data file and save it as a Pandas Dataframe. Type **make\_uGMRT\_ds -h** in terminal for more details.
+
+2. plot\_uGMRT\_ds : Plot the dynamic spectrum from the Pandas Dataframe file made using **make\_uGMRT\_ds**. Type **plot\_uGMRT\_ds -h** in terminal for more details.
+
+
