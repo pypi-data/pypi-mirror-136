@@ -1,0 +1,17 @@
+[console_scripts]
+compile-proto = ubii.compiletools.compile:compile_proto [cli]
+rewrite-proto = ubii.compiletools.compile:rewrite_proto [cli]
+
+[distutils.commands]
+build_py_proto = ubii.compiletools.cmd:UbiiBuildPy
+compile_betterproto = ubii.compiletools.cmd:CompileBetterproto
+compile_mypy = ubii.compiletools.cmd:CompileProtoMypy
+compile_proto = ubii.compiletools.cmd:CompileProto
+compile_protoplus = ubii.compiletools.cmd:CompileProtoPlus
+compile_python = ubii.compiletools.cmd:CompileProtoPython
+generate_inits = ubii.compiletools.cmd:GenerateInits
+rewrite_proto = ubii.compiletools.cmd:RewriteProto
+
+[egg_info.writers]
+proto_package.txt = ubii.compiletools.cmd:write_package
+
