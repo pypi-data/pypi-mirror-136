@@ -1,0 +1,13 @@
+README.md
+setup.py
+iamtokenizing/__init__.py
+iamtokenizing/base_tokenizer.py
+iamtokenizing/chargrams.py
+iamtokenizing/context_detector.py
+iamtokenizing/ngrams.py
+iamtokenizing/regex_detector.py
+iamtokenizing.egg-info/PKG-INFO
+iamtokenizing.egg-info/SOURCES.txt
+iamtokenizing.egg-info/dependency_links.txt
+iamtokenizing.egg-info/requires.txt
+iamtokenizing.egg-info/top_level.txt
