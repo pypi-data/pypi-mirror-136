@@ -1,0 +1,8 @@
+id: d61c923a-5f1b-11ec-bf63-0242ac130002
+label: 'ftp'
+category: CONTAINER
+factory:
+  name: ftp
+  classpath: 'drb_impl_ftp.drb_impl_ftp:DrbFtpFactory'
+signatures:
+  - path : ^(ftp|sftp|ftps)://.*
