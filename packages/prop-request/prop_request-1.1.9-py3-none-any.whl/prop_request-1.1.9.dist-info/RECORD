@@ -1,0 +1,13 @@
+prop/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+prop/__main__.py,sha256=fq_Idodue_Rg6ouDGU3Lv9C9Kj2OwnBui3oA3ZVumMI,65417
+prop/config.json,sha256=-_6FatgN31FDfdm_NGctcmHEG9VDmqrTPYCj-iJq5NQ,633
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_parse.py,sha256=ofJHQsCkvOk3plYPGugj29ZFckax_wZHbwvuYkOSQzE,460
+tests/test_recursive.py,sha256=51Nt-I9nPpv2iPYQ7rVfwEE_dakQB_SVaOXsaFhPBCA,316
+tests/test_request.py,sha256=jF05Bf9SLWeaOcWZ3r6Zy1xQJxpzwa5pwmTKhAx7BgM,137
+prop_request-1.1.9.dist-info/LICENSE,sha256=fo_7u0k-VdHmC8hMtlyUlG67JIGlAH8Ve-dSmwJb2IE,1064
+prop_request-1.1.9.dist-info/METADATA,sha256=CdfV5BuCuLuOK6epNyZ5PeWTkQhfo9qDgxAeiDotg4g,6987
+prop_request-1.1.9.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+prop_request-1.1.9.dist-info/entry_points.txt,sha256=EmMqLyFzsnqkPvbCOoasWVnUgj_vgZfUgFyXpcwFKWc,45
+prop_request-1.1.9.dist-info/top_level.txt,sha256=5tJJJ3X0mkscfJlnBW8uryyTQMc3FY6lVc8oDYk-7Nw,11
+prop_request-1.1.9.dist-info/RECORD,,
