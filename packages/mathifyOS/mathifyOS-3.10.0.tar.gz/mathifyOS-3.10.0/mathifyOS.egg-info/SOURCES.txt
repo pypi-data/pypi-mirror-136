@@ -1,0 +1,6 @@
+setup.py
+mathifyOS/__init__.py
+mathifyOS.egg-info/PKG-INFO
+mathifyOS.egg-info/SOURCES.txt
+mathifyOS.egg-info/dependency_links.txt
+mathifyOS.egg-info/top_level.txt
