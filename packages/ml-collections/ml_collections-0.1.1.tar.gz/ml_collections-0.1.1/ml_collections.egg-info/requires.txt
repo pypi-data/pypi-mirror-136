@@ -1,0 +1,10 @@
+PyYAML
+absl-py
+contextlib2
+six
+
+[:python_version < "3.5"]
+typing
+
+[:python_version < "3.7"]
+dataclasses
