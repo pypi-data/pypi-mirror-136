@@ -1,0 +1,10 @@
+Dockerfile
+README.md
+action.yaml
+setup.py
+aicore_hangman.egg-info/PKG-INFO
+aicore_hangman.egg-info/SOURCES.txt
+aicore_hangman.egg-info/dependency_links.txt
+aicore_hangman.egg-info/top_level.txt
+hangman_test/__init__.py
+hangman_test/__main__.py

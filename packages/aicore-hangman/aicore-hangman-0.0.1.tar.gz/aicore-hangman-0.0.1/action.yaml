@@ -1,0 +1,5 @@
+name: 'Correct the Hangman Project'
+description: 'Corrects the code in the Hangman project'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
