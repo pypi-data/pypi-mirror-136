@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: eyja-influxdb-hub
+Version: 0.1.4
+Summary: InfluxDB Plugin for Eyja
+Home-page: https://gitlab.com/public.eyja.dev/eyja-influxdb-hub
+Maintainer: Anton Berdnikov
+Maintainer-email: agratoth@yandex.ru
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: eyja-internal (>=0.4.1)
+Requires-Dist: influxdb-client (>=1.25.0)
+
+# eyja-influxdb-hub
+
+InfluxDB Plugin for Eyja
+
+
+
