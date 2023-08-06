@@ -1,0 +1,11 @@
+stim/_stim_march_polyfill.cpython-37m-i386-linux-gnu.so,sha256=KeREixHXEi8s-kPlXqoENxzIA2bElaxWsbKjvt9xRxU,2988352
+stim/_stim_march_sse2.cpython-37m-i386-linux-gnu.so,sha256=8ThFy9vnjuJp10YeQ8pDIZZMKX61BST1XqY_Db6Ia_4,2988332
+stim/__init__.py,sha256=11j5e4xMRLvCPJF6QEMbxFD0vZdgGyJaozZNaeIWafw,868
+stim/_stim_march_avx2.cpython-37m-i386-linux-gnu.so,sha256=I7343EhdADmt8YA25BHqgz_-AvaJaxlZtWn6Xl2HR-0,3021152
+stim-1.9.dev1643533574.dist-info/WHEEL,sha256=5tZ1jhQp7QE5qmPsh4H0qeuam6ryxn2gu46n9P15_I8,146
+stim-1.9.dev1643533574.dist-info/RECORD,,
+stim-1.9.dev1643533574.dist-info/METADATA,sha256=vvii0Dyoo-3bXiRNMx1bZGEcT0oePjW4Xy7GVaKreN0,4211
+stim-1.9.dev1643533574.dist-info/top_level.txt,sha256=_h6lQZBgzVLumwrXyf13DY71YT6dUkd4SY-ZRjcljFQ,5
+stim-1.9.dev1643533574.dist-info/LICENSE,sha256=WNHhf_5RCaeuKWyq_K39vmp9F28LxKsB4SpomwSZ2L0,11357
+stim-1.9.dev1643533574.data/data/README.md,sha256=qITm7I9S_CK9r32v57jRmEmPZVya_bUNgwHQ7beDi8c,3846
+stim-1.9.dev1643533574.data/data/pyproject.toml,sha256=bti68-in3So37StSZ8v9T8rwQd-JxzfNb-tPjzET49I,109
