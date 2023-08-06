@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: xarrayMannKendall
+Version: 0.1
+Summary: Mann-Kendall statistical test to assess if a monotonic upward or downward trend exists over time.
+Home-page: https://github.com/josuemtzmo/xarrayMannKendall
+Author: josuemtzmo
+Author-email: josue.martinezmoreno@anu.edu.au
+License: MIT License
+Platform: UNKNOWN
+License-File: LICENSE
+
+UNKNOWN
+
