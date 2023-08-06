@@ -1,0 +1,2 @@
+include versioneer.py
+include improc/_version.py

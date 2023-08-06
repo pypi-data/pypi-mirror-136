@@ -1,0 +1,12 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+versioneer.py
+improc/_version.py
+improc.egg-info/PKG-INFO
+improc.egg-info/SOURCES.txt
+improc.egg-info/dependency_links.txt
+improc.egg-info/requires.txt
+improc.egg-info/top_level.txt
