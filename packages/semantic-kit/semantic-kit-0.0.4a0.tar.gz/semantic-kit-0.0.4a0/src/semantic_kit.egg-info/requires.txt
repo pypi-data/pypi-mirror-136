@@ -1,0 +1,14 @@
+nltk
+gensim
+sklearn
+numpy
+similarity
+jieba
+strsimpy
+quick-csv
+
+[dev]
+check-manifest
+
+[test]
+coverage
