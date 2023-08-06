@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: ulearn-scoring
+Version: 0.2.1
+Summary: Scoring of statements in ulearn by weeks
+Home-page: https://github.com/daniel55411/ulearn-scoring
+Author: zhenikhov d.k.
+License: Apache License, Version 2.0
+Project-URL: Issues, https://github.com/daniel55411/ulearn-scoring/issues
+Project-URL: CI, https://github.com/daniel55411/ulearn-scoring/actions
+Project-URL: Changelog, https://github.com/daniel55411/ulearn-scoring/releases
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: click (<9.0.0,>=8.0.1)
+Requires-Dist: pydantic-yaml[ruamel] (<1.0.0,>=0.6.0)
+Requires-Dist: openpyxl (<4.0.0,>=3.0.0)
+Requires-Dist: punq
+Requires-Dist: ujson
+Requires-Dist: pydantic
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+Requires-Dist: pytest-mock ; extra == 'test'
+
+# ulearn-scoring
+
+[![PyPI](https://img.shields.io/pypi/v/ulearn-scoring.svg)](https://pypi.org/project/ulearn-scoring/)
+[![Changelog](https://img.shields.io/github/v/release/daniel55411/ulearn-scoring?include_prereleases&label=changelog)](https://github.com/daniel55411/ulearn-scoring/releases)
+[![Tests](https://github.com/daniel55411/ulearn-scoring/workflows/Test/badge.svg)](https://github.com/daniel55411/ulearn-scoring/actions?query=workflow%3ATest)
+[![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/daniel55411/ulearn-scoring/blob/master/LICENSE)
+
+Scoring of statements in ulearn by weeks
+
+## Installation
+
+Install this tool using `pip`:
+
+    $ pip install ulearn-scoring
+
+## Usage
+
+    ulearn-scoring -c path/to/config.yaml -o path/to/result.csv
+    
+Example of config file is located at `tests/resources/config.yaml`
+
+## Development
+
+To contribute to this tool, first checkout the code. Then create a new virtual environment:
+
+    cd ulearn-scoring
+    python -m venv venv
+    source venv/bin/activate
+
+Or if you are using `pipenv`:
+
+    pipenv shell
+
+Now install the dependencies and test dependencies:
+
+    pip install -e '.[test]'
+
+To run the tests:
+
+    pytest
+
+

@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        ulearn-scoring=ulearn_scoring.cli:cli
+    
