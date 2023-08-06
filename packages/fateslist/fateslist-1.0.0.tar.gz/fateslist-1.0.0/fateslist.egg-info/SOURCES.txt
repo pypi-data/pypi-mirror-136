@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+fateslist/__init__.py
+fateslist/classes.py
+fateslist/config.py
+fateslist/http.py
+fateslist/main.py
+fateslist/system.py
+fateslist/utils.py
+fateslist/ws.py
+fateslist.egg-info/PKG-INFO
+fateslist.egg-info/SOURCES.txt
+fateslist.egg-info/dependency_links.txt
+fateslist.egg-info/requires.txt
+fateslist.egg-info/top_level.txt
