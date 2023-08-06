@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+src/wsutil.py
+src/globalnoc/__init__.py
+src/globalnoc/wsc/__init__.py
+src/globalnoc_wsc.egg-info/PKG-INFO
+src/globalnoc_wsc.egg-info/SOURCES.txt
+src/globalnoc_wsc.egg-info/dependency_links.txt
+src/globalnoc_wsc.egg-info/requires.txt
+src/globalnoc_wsc.egg-info/top_level.txt
