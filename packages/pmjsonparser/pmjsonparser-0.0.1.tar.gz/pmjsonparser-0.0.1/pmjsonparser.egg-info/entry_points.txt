@@ -1,0 +1,3 @@
+[console_scripts]
+pmjsonparser = cli.main:run
+
