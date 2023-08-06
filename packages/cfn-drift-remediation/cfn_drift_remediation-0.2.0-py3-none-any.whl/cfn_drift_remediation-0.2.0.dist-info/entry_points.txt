@@ -1,0 +1,3 @@
+[console_scripts]
+cfn-drift-remediation=cfn_drift_remediation.cli:run
+
