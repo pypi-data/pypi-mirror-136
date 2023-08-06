@@ -1,0 +1,10 @@
+uuslug/__init__.py,sha256=asfOn3zOE6swL5noDFC4hJjY7n8PJlyFsonSbeu_g_k,76
+uuslug/__version__.py,sha256=UAxVkQSQ4umjvB9-Xr8BuCbxinoTA5pblYxYqSX0I8A,323
+uuslug/apps.py,sha256=MWMiZqzfScUsXexgwavq-1FP9HpxYG5w-cvoXTu1ffg,272
+uuslug/models.py,sha256=ZKd3yT-oCAJ0VUoIXyUrKA_ITwJiSngfxeMhpBP9Vkk,3471
+uuslug/uuslug.py,sha256=htL272QtsSMjcvTCiuK5TGkbAH4KqstEfo0ngUaFC7o,2022
+django_uuslug-2.0.0.dist-info/LICENSE,sha256=U7e37TA-xTEwNqp3tHpu25UpaWxdQ6XaPu8P8fbsmjU,1104
+django_uuslug-2.0.0.dist-info/METADATA,sha256=5Nbz8wK0EuVYey3SOCzC05SE4y50a_z81cbogfKisvk,7820
+django_uuslug-2.0.0.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+django_uuslug-2.0.0.dist-info/top_level.txt,sha256=rfXcc6_sDflQrKQl2AYz3PeElFIKo0_ZS7ejHHqHL0A,7
+django_uuslug-2.0.0.dist-info/RECORD,,
