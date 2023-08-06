@@ -1,0 +1,3 @@
+[console_scripts]
+tp2ctl = tp2ctl.tp2ctl:main
+
