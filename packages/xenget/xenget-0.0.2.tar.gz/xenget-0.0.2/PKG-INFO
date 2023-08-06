@@ -1,0 +1,68 @@
+Metadata-Version: 2.1
+Name: xenget
+Version: 0.0.2
+Summary: A library for Python to get information from a XenForo forum.
+Home-page: UNKNOWN
+Author: Cinar Yilmaz
+Author-email: <youremail@email.com>
+License: GPLv3
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# XenGet
+A library for Python to get information from a XenForo forum.
+
+## Usage
+Installation:
+```sh
+pip install xenget
+```
+
+### Documentation
+This documentation is temporary, and will be moved to a better place soon.
+
+```py
+import xenget
+```
+
+#### Forum
+Returns a Forum class. Usage:
+```py
+forum = xenget.Forum("https://yourforum.com")
+```
+
+##### Forum.get_member(id)
+Returns a Member class. Usage:
+```py
+member = forum.get_member(12345)
+```
+
+##### Member
+###### Member.get_avatar()
+Returns an image. Usage:
+```py
+member = member.get_avatar()
+```
+
+###### Member.get_banner()
+Returns an image. Usage:
+```py
+member = member.get_banner()
+```
+
+###### Member.get_username()
+Returns a string. Usage:
+```py
+member = member.get_username()
+```
+
+###### Member.get_joindate()
+Returns a string. Usage:
+```py
+member = member.get_joindate()
+```
+
