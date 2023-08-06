@@ -1,0 +1,6 @@
+jip
+cython
+drb<1.1.0,>=1.0.1
+versioneer>=0.20
+jnius
+pyjnius>=1.4.1

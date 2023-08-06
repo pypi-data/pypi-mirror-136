@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: drb-impl-java
+Version: 1.0.0
+Summary: DRB Java implementation
+Home-page: https://gitlab.com/drb-python/impl/java
+Author: GAEL Systems
+Author-email: drb-python@gael.fr
+License: UNKNOWN
+Description: # JavaNode Implementation
+        The drb-impl-java python module aims to wrap Java version of DRB model. It is able to navigates among java nodes content.
+        
+        See [documentation]() for details.
+        # Library usage 
+        Java must be present in the system
+        
+        Normally if java is correctly installed, the ``JAVA_HOME`` environment _variable_ is set
+        You can check it by command line below
+        
+        ```commandline
+        echo $JAVA_HOME
+        ```
+        
+        Installing this library with execute the following in a terminal
+        ```commandline
+        pip install jip
+        pip install drb-impl-java
+        ```
+        
+        If you want add schema or addon you have eventually ``CLASSPATH_ADDON`` to define    
+        ```commandline
+        export CLASSPATH_ADDON=/path_addon_one/*;
+        ```
+        
+        ## Java Factory and Java Node
+        The module implements the basic factory model defined in DRB in its node resolver. Based on the python entry point mechanism, this module can be dynamically imported into applications.
+        
+        The entry point group reference is `drb.impl`.<br/>
+        The implementation name is `java`.<br/>
+        The factory class is encoded into `drb_impl_java.drb_impl_signature`.<br/>
+        
+        The java factory creates a JavaNode from an existing java content. It uses a base node to access the content data using a streamed implementation from the base node.
+        
+        The base node can be a DrbFileNode, DrbHttpNode, DrbTarNode or any other nodes able to provide streamed (`BufferedIOBase`, `RawIOBase`, `IO`) java content.
+        ## limitations
+        The current version does not manage child modification and insertion. JavaNode is currently read only.
+        ## Using this module
+        To include this module into your project, the `drb-impl-java` module shall be referenced into `requirements.txt` file, or the following pip line can be run:
+        ```commandline
+        pip install jip
+        pip install drb-impl-java
+        ```
+        Set eventually environment variable ``CLASSPATH_ADDON`` and ``JAVA_HOME``
+        
+        [documentation]: https://drb-python.gitlab.io/impl/java
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
