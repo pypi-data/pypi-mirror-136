@@ -1,0 +1,8 @@
+id: 83720abe-2c0e-11ec-8d3d-0242ac130003
+label: 'netcdf'
+category: FORMATTING
+factory:
+  name: netcdf
+  classpath: 'drb_impl_netcdf.netcdf_node_factory:DrbNetcdfFactory'
+signatures:
+  - name: (?i).*\.nc
