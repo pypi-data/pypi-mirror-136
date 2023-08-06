@@ -1,0 +1,16 @@
+patchwork/websoccer/__init__.py,sha256=ZxKwmdtpj7FBTIgw1F3pbBZVawrS5rp9ugJlQQeINNA,134
+patchwork/websoccer/fastapi.py,sha256=GL4nRIhutUc4kLIFg4C2KlPaQARb1sN-G_-TqzX-9OQ,4435
+patchwork/websoccer/soccer.py,sha256=yRGhrOYJLFWZqWy6Yv0vvPUDEa7hQmmwd__5aZytEtQ,1100
+patchwork/websoccer/court/__init__.py,sha256=iwhKnzeBJLKxpRVjvzwiRE63_zNpIBfaKLITauVph-0,24
+patchwork/websoccer/court/base.py,sha256=UQn-GPpEnowfG0MFHIu8QGMMd4zg6733iUtm41zy_lA,1327
+patchwork/websoccer/court/local.py,sha256=7GDP-iS7vbq-SQrFPbudGS0c8U0YgFu66oR0XAcQkl0,2154
+patchwork/websoccer/court/redis.py,sha256=CVMD_oFJqKJ0bmzl_YbUq5Co4B2_gqQtpL1Pys7BBoQ,2194
+tests/__init__.py,sha256=iwhKnzeBJLKxpRVjvzwiRE63_zNpIBfaKLITauVph-0,24
+tests/conftest.py,sha256=wVcHwYJWWxIjUALKFonN6zUdQAHz3TU3ME-ZZFX_a7s,314
+tests/test_local_court.py,sha256=d1W_v-2v2tcl3r3bhuAFZ8aPTr9AwIQckVK9e1WY56o,1016
+tests/test_usage.py,sha256=HZPk9OQBYYjDCVDKXqbsv8b31UHK5ZAp4HME53vbXtQ,3731
+patchwork_websoccer-0.0.3.dist-info/LICENSE,sha256=2j7OLS2vXIEshgbSkiCU9RgYJY1M4OBBtO6ECbo7OB8,1056
+patchwork_websoccer-0.0.3.dist-info/METADATA,sha256=4YUSoAHpzYrluck7TYfugEkWYOZ6THDMHYrUeepuQSQ,1310
+patchwork_websoccer-0.0.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+patchwork_websoccer-0.0.3.dist-info/top_level.txt,sha256=tXcRNXuRMaHJWrftinoq3NG__MPm-Fv2-VGKu2m3rLo,20
+patchwork_websoccer-0.0.3.dist-info/RECORD,,
