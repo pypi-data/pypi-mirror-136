@@ -1,0 +1,17 @@
+CHANGELOG.md,sha256=syETTzZQCTMT16rkopYEUy-LSsubo1Rte0mgn0ClP5A,267
+bin/cmdr.py,sha256=hckA8oS5no5_byyJoBjPNfZVbUMN-53Wy7bfq3Hl1g0,12282
+bin/simple,sha256=GHxWP1_a2l1oJYdWYgsLFQJfUYBXlI_Tda1U851B1nk,1306
+bin/upb,sha256=54H3wWr2P-R1rtal2PXFBQ4Lo0MoMt0rcs5gcoXxa2M,2609
+upb_lib/__init__.py,sha256=r7-ETQSOOCqNwd8bv-MGXUvfrtoJwZmNr4K-WH0Eqmg,54
+upb_lib/const.py,sha256=DpGKPig1v7V2dExkdLIi5c2AOiSxGv1AP9ESsllXX2U,5149
+upb_lib/devices.py,sha256=sy3ZD8SW8OruCTCYpLOYlm8ZyizqtfYnookh3St7M_Y,5485
+upb_lib/elements.py,sha256=II6FA3IEJw75EuTf2es9K3U1W3kNMFY8ir4WobrbeQU,3657
+upb_lib/links.py,sha256=qelB_KetqfNu_iSjRkMmT160HNzshpgEb58VtYqZ9UY,5088
+upb_lib/message.py,sha256=MPcbTDv1nrrl6o0Bh5lFqsK269cF7lamas0HXeu-Tf8,5017
+upb_lib/parse_upstart.py,sha256=m79SH8rapPSfpJ1syurrN6AaiFO4ljvcTCva8aB9dyU,3084
+upb_lib/proto.py,sha256=caiYkSGdTTu7ztPtJWg0i278QCTbLTFBl0BLhaudSfA,7675
+upb_lib/upb.py,sha256=rHGsef6GYODUlbadfq1a7QIlhKceZQ1U7djFJX2Xx6k,7587
+upb_lib/util.py,sha256=BdARyv0Pg_WX6rQVXyMKvm3NDfPbs1vdBZrVc6GjvLA,1933
+upb_lib-0.5.1.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+upb_lib-0.5.1.dist-info/METADATA,sha256=NjAWvBaig2oEh_Lu1ECmq6UMbPz6mP1E-uNi7KiSXX4,7467
+upb_lib-0.5.1.dist-info/RECORD,,
