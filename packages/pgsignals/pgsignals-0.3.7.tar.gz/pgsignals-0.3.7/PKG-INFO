@@ -1,0 +1,15 @@
+Metadata-Version: 1.2
+Name: pgsignals
+Version: 0.3.7
+Summary: Allows handle PostgreSQL notifies via listener as regular Django signal.
+Home-page: https://github.com/gtors/django-pgsignals/
+Author: gtors
+Author-email: andrey.torsunov@gmail.com
+License: mit
+Description: UNKNOWN
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.7
