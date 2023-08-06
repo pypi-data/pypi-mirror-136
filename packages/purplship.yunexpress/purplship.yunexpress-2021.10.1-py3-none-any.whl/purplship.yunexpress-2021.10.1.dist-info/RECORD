@@ -1,0 +1,12 @@
+purplship/mappers/yunexpress/__init__.py,sha256=XS4jByQdmyu4uBt0yurIQN5_US2NJ6Ntu4qsqmqBsak,584
+purplship/mappers/yunexpress/mapper.py,sha256=GqYM8nLcXFLWjGUlxAm_EWmTUSVTE2T3pD_jhKKwfWE,4273
+purplship/mappers/yunexpress/proxy.py,sha256=3HOalBM1YSgpcv2jh-5Tli-QwUu3DDNQcEszrzPRd4k,762
+purplship/mappers/yunexpress/settings.py,sha256=SveU199S5WYUDf8uoPSlNdlUenvYq3hFls3PhG2bNlw,444
+purplship/providers/yunexpress/__init__.py,sha256=OE7xe4FqRSjPIT3Eq3w90y5pVR1gmCkdBd6NeRSoeSg,805
+purplship/providers/yunexpress/error.py,sha256=L_Hp28PzC1dCULLD2s93Ga-Jv6W-PJYBGpw5XCd2Rcg,780
+purplship/providers/yunexpress/tracking.py,sha256=esze4GvGiW2W0mk1Jr55BjtWUjtaLLHSj_HVuE0_xKY,1296
+purplship/providers/yunexpress/units.py,sha256=Fh2iQ_I_k7jOUwng9fUKQ0_y3rJMAXWVxTU5rK659V4,1340
+purplship/providers/yunexpress/utils.py,sha256=b_hx30jzOuqX-uDAIN5nabND4J19T_qnuLyHGQNREgQ,633
+purplship.yunexpress-2021.10.1.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+purplship.yunexpress-2021.10.1.dist-info/METADATA,sha256=hXDAJXKuAVkIvE6da0drz5fpemZqXThVxg_decejjyE,1404
+purplship.yunexpress-2021.10.1.dist-info/RECORD,,
