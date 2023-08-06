@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: py-monadic
+Version: 0.2.1
+Summary: Monads in python
+Home-page: https://gitlab.com/jrbrown/py-monadic
+Author: Jason Brown
+Author-email: jasonbrown_dev@protonmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://gitlab.com/jrbrown/py-monadic/-/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v2 (LGPLv2)
+Classifier: Operating System :: POSIX
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+# Py Monadic
+
+Have you ever wanted monads in python?
+
+If you have then you're in the right place. If not, learn some category theory and come back when you do ;)
+
+Fairly type safe
+
+
+
