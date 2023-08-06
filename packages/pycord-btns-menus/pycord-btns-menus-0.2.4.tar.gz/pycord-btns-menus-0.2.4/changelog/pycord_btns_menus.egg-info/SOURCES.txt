@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+changelog/pycord_btns_menus.egg-info/PKG-INFO
+changelog/pycord_btns_menus.egg-info/SOURCES.txt
+changelog/pycord_btns_menus.egg-info/dependency_links.txt
+changelog/pycord_btns_menus.egg-info/top_level.txt

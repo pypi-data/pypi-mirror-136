@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: pycord-btns-menus
+Version: 0.2.4
+Summary: A responsive package for Buttons, DropMenus, Combinations and Paginator
+Home-page: https://github.com/Modern-Realm/discord_btns_menus
+Author: P. Sai Keerthan Reddy
+Author-email: saikeerthan.keerthan.9@gmail.com
+License: MIT
+Project-URL: Documentation, https://modern-realm.github.io/discord_btns_menus/
+Project-URL: Bug Tracker, https://github.com/Modern-Realm/discord_btns_menus/issues
+Project-URL: Examples, https://github.com/Modern-Realm/discord_btns_menus/tree/main/Examples
+Project-URL: Source, https://github.com/Modern-Realm/discord_btns_menus/tree/main/package/btns_menus
+Project-URL: Discord Server, https://discord.gg/GVMWx5EaAN
+Keywords: py-cord,pycord,buttons,dropmenus,menus,nextcord,disnake,discordpy,pycord-btns-menus
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Natural Language :: English
+Classifier: Topic :: Internet
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Classifier: Typing :: Typed
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# 📢 ANNOUNCEMENT [![Generic badge](https://img.shields.io/badge/ARCHIVED-ff0000.svg)](https://shields.io/)
+
+## Repository has been TRANSFERRED to [Modern-Realm/discord_btns_menus](https://github.com/Modern-Realm/discord_btns_menus)
+
+<hr/>
+
+# Package Name: [discord-btns-menus](https://pypi.org/project/discord-btns-menus/) [![Generic badge](https://img.shields.io/badge/RENAMED-lime.svg)](https://shields.io/)
+
+#### A responsive package for Buttons, DropMenus, Combinations and Paginator
+
+##### • This module makes the process a lot easier !
+
+[![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
+
+[![Generic badge](https://img.shields.io/badge/Python-3.8-blue.svg)](https://shields.io/)
+[![GitHub license](https://badgen.net/github/license/Naereen/Strapdown.js)](https://github.com/Naereen/StrapDown.js/blob/master/LICENSE)
+[![Windows](https://svgshare.com/i/ZhY.svg)](https://svgshare.com/i/ZhY.svg)
+[![Linux](https://svgshare.com/i/Zhy.svg)](https://svgshare.com/i/Zhy.svg)
+
+### Join [Official Discord Server](https://discord.gg/GVMWx5EaAN) for more guidance !
+
+<hr/>
+
+# Key Features
+
+### <li> Buttons </li>
+
+### <li> DropMenus </li>
+
+### <li> Combinations (Usage of both Buttons & DropMenus) </li>
+
+### <li> Paginator [![Generic badge](https://img.shields.io/badge/NEW-gold.svg)](https://shields.io/) </li>
+
+<hr/>
+
