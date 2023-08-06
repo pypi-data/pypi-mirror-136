@@ -1,0 +1,7 @@
+cryptography
+django>=3.2
+djangorestframework
+
+[dev]
+
+[test]
