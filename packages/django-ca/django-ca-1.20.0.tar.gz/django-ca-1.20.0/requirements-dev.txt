@@ -1,0 +1,16 @@
+-rrequirements/requirements-docs.txt
+-rrequirements/requirements-dist.txt
+-rrequirements/requirements-test.txt
+-rrequirements/requirements-lint.txt
+-rrequirements/requirements-mypy.txt
+ipython>=7.28.0
+docker-compose==1.29.2
+pip>=21.3
+
+tox>=3.24.4
+
+flake8-isort==4.1.1
+tabulate==0.8.9
+termcolor==1.1.0
+toml>=0.10.2
+wheel-inspect
