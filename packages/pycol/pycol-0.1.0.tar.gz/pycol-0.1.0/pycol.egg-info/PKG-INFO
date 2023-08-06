@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: pycol
+Version: 0.1.0
+Summary: Simple Python File Packer
+Home-page: https://github.com/suzrz/pycol
+Author: suzrz
+Author-email: nemcova.silva@gmail.com
+License: UNKNOWN
+Project-URL: Bug Reports, https://github.com/suzrz/pycol/issues
+Project-URL: Source, https://github.com/suzrz/pycol
+Keywords: packager,packing,files
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# File Collector
+
+PyCol is a tool written in Python for easy and fast file collecting.
+

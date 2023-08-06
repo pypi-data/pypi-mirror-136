@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+pycol/Collector.py
+pycol/__init__.py
+pycol/util.py
+pycol.egg-info/PKG-INFO
+pycol.egg-info/SOURCES.txt
+pycol.egg-info/dependency_links.txt
+pycol.egg-info/top_level.txt
