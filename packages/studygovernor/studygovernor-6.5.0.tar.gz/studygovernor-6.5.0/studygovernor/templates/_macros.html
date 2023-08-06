@@ -1,0 +1,95 @@
+{% macro render_field_with_errors(field, description) %}
+    <div class="form-group">
+        {{field.label}}
+        {% if description %}
+            {{ field(class_="form-control", aria_describedby=field.name + "Help", **kwargs)|safe }}
+            <small id="{{field.name}}Help" class="form-text text-muted">{{description}}</small>
+        {% else %}
+            {{ field(class_="form-control", **kwargs)|safe }}
+        {% endif %}
+        {% if field.errors %}
+        <ul>
+            {% for error in field.errors %}
+                <li class="has-error">{{ error }}</li>
+            {% endfor %}    
+        </ul>
+        {% endif %}
+    </div>
+{% endmacro %}
+
+{% macro render_remember_forgot(field, render_forgot=False) %}
+    <div class="clearfix">
+        {{ field.label }} {{ field(**kwargs)|safe }}
+        {% if render_forgot %}
+            <a href="{{ url_for('security.forgot_password') }}" class="pull-right">Forgot password?</a>
+        {% endif %}
+    </div>
+{% endmacro %}
+
+{% macro render_field(field) %}
+    <div class="form-group">
+        {{ field(**kwargs)|safe }}
+    </div>
+{% endmacro %}
+
+{% macro collapse_card_start(title, show=True, data_count=None) %}
+    <a id="{{ title|hyphenate }}" class="anchor"></a>
+    <div class="card">
+        <h5 class="card-header">
+        <a data-toggle="collapse" href="#collapse-{{ title|hyphenate }}" aria-expanded="true" aria-controls="collapse-{{ title|hyphenate }}" id="header-{{ title|hyphenate }}" class="d-block">
+            <span class="fa fa-chevron-down fa-pull-right"></span>
+            {{ title }} {{ '<span class="badge badge-primary">'|safe ~ data_count ~ '</span>'|safe if data_count is not none }}
+        </a>
+        </h5>
+        <div id="collapse-{{ title|hyphenate }}" class="collapse{{ ' show' if show }}" aria-labelledby="header-{{ title|hyphenate }}">
+            <div class="card-body">
+{% endmacro %}
+
+{% macro collapse_card_end(title=None) %}
+            </div>
+        </div> {{ "<!-- end collapse-"|safe ~ title|hyphenate ~ "-->"|safe if title is not none }}
+    </div>
+{% endmacro %}
+
+{% macro card_link_by_title(title, prefix=None) %}
+    <a href="{{ prefix if prefix is not none }}#{{ title|hyphenate }}">
+{% endmacro %}
+
+{% macro paginate(pagination, endpoint, object_id=None) %}
+
+{% if pagination.pages > 1 %}
+    <ul class="pagination justify-content-end">
+        
+        {#  previous button enabled if not on or before first page #}
+        <li class="page-item {% if not pagination.has_prev %}disabled{% endif %}">
+            <a href="{{ url_for(endpoint, page=pagination.prev_num, id=object_id) }}" class="page-link">
+                Previous
+            </a>
+        </li>
+        
+        {#  loop over pages #}
+        {% for page_num in pagination.iter_pages(left_edge=1, right_edge=1, left_current=1, right_current=1) %}
+            {% if page_num %}
+                <li class="page-item {% if pagination.page == page_num %}active{%endif%}">
+                    <a href="{{ url_for(endpoint, page=page_num, id=object_id) }}" class="page-link">
+                        {{ page_num }}
+                    </a>
+                </li>
+            {% else %}
+                <li class="page-item disabled">
+                    ...
+                </li>
+            {% endif %}
+        {% endfor %}    
+        
+        {#  next button enabled if not on last page #}
+        <li class="page-item {% if not pagination.has_next %}disabled{% endif %}">
+            <a href="{{ url_for(endpoint, page=pagination.next_num, id=object_id) }}" class="page-link">
+                Next
+            </a>
+        </li>
+
+    </ul>
+{% endif %}
+
+{% endmacro %}

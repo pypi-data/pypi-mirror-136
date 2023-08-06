@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="card">
+  <h5 class="card-header">Bulk email sent!</h5>
+  <div class="card-body">
+    <dl class="dl-horizontal">
+        <dt class="col-sm-3">Recipients</dt>
+        <dd class="col-sm-9">
+            {% for user in recipients %}
+                <span class="badge badge-primary">{{ user.name }} ({{ user.email }})</span>
+            {% endfor %}
+        </dd>
+
+        <dt class="col-sm-3">Subject</dt>
+        <dd class="col-sm-9">{{ subject }}</dd>
+
+        <dt>Message body</dt>
+        <dd class="col-sm-9">
+            <pre class="line-numbers"><code>{{ body }}</code></pre>
+        </dd>
+      </dl>
+  </div>
+</div>
+
+{% endblock %}

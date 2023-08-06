@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% from "_macros.html" import render_field_with_errors, render_field %}
+
+{% block content %}
+    <div class="card">
+        <h5 class="card-header">Send bulk mail</h5>
+        <div class="card-body">
+            <form action="{{ url_for('web.mail') }}" method="POST" name="mail_form">
+                {{ mail_form.hidden_tag() }}
+                {{ render_field_with_errors(mail_form.recipients, description="Note: selecting no users will send an email to ALL users!") }}
+                {{ render_field_with_errors(mail_form.subject) }}
+                {{ render_field_with_errors(mail_form.body,
+                                            description="In the message body, you can use the format syntax with the user variable to add user-specific information, e.g. {user.name}") }}
+                {{ render_field(mail_form.submit) }}
+            </form>
+        </div>
+    </div>
+{% endblock %}
