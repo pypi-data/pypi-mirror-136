@@ -1,0 +1,2 @@
+sphinx >= 4.4.0, < 5
+myst_parser >= 0.16.1
