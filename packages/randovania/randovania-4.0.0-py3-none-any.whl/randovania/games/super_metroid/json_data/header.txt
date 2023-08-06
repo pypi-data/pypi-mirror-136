@@ -1,0 +1,62 @@
+====================
+Templates
+
+====================
+Dock Weaknesses
+
+> Door
+  * Normal Door; Lock type: FRONT_ALWAYS_BACK_FREE
+      Trivial
+
+  * Missile Door; Lock type: FRONT_BLAST_BACK_FREE_UNLOCK
+      Missile ≥ 5
+
+  * Super Missile Door; Lock type: FRONT_BLAST_BACK_FREE_UNLOCK
+      Super Missile
+
+  * Power Bomb Door; Lock type: FRONT_BLAST_BACK_FREE_UNLOCK
+      Morph Ball and Power Bombs
+
+  * Permanently Locked; Lock type: FRONT_ALWAYS_BACK_FREE
+      Impossible
+
+  * Locked until Draygon Defeated; Lock type: FRONT_ALWAYS_BACK_FREE
+      After Draygon Defeated
+
+  * Locked until Kraid Defeated; Lock type: FRONT_ALWAYS_BACK_FREE
+      After Kraid Defeated
+
+  * Locked until Wrecked Ship Powered; Lock type: FRONT_ALWAYS_BACK_FREE
+      After Power Wrecked Ship
+
+  * Locked until Golden Torizo Defeated; Lock type: FRONT_ALWAYS_BACK_FREE
+      After Golden Torizo Defeated
+
+  * Locked until Metal Pirates Defeated; Lock type: FRONT_ALWAYS_BACK_FREE
+      After Metal Pirates Defeated
+
+  * Locked until Ridley Defeated; Lock type: FRONT_ALWAYS_BACK_FREE
+      After Ridley Defeated
+
+  * Locked until Metroid Room 1 Cleared; Lock type: FRONT_ALWAYS_BACK_FREE
+      After Metroid Room 1 Cleared
+
+  * Locked until Metroid Room 2 Cleared; Lock type: FRONT_ALWAYS_BACK_FREE
+      After Metroid Room 2 Cleared
+
+  * Locked until Metroid Room 3 Cleared; Lock type: FRONT_ALWAYS_BACK_FREE
+      After Metroid Room 3 Cleared
+
+  * Locked until Metroid Room 4 Cleared; Lock type: FRONT_ALWAYS_BACK_FREE
+      After Metroid Room 4 Cleared
+
+> Morph Ball Door
+  * Morph Ball Door; Lock type: FRONT_ALWAYS_BACK_FREE
+      Morph Ball
+
+> Dock
+  * Open Passage; Lock type: FRONT_ALWAYS_BACK_FREE
+      Trivial
+
+  * Not Determined; Lock type: FRONT_ALWAYS_BACK_FREE
+      Impossible
