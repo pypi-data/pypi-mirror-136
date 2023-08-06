@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: EasyThreadings
+Version: 1.0.0
+Summary: EasyThreadings · 一个专为简单线程而设计的模块
+Home-page: UNKNOWN
+Author: YunDuanModule
+License: UNKNOWN
+Keywords: Easy,Threading,EasyThreading,EasyThread,Thread
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# 欢迎下载EasyThreadings！
+## 入门：如何在EasyThreads中创建线程？
+```python
+from EasyThreadings import thread
+
+@thread
+def hello_thread():
+    print('Hello from threading!')
+
+hello_thread()
+```
+无需更多代码，每次调用自动启动新线程
+## 高级：如何控制线程？
+```python
+from EasyThreadings import thread
+from EasyThreadings.More import join
+
+@thread(name='thread')
+def hello_thread():
+    print('Hello from threading!')
+
+hello_thread()
+join('thread')
+```
+利用name支持，轻松控制线程
+# 赶紧下载我们的EasyThreadings吧！
+
