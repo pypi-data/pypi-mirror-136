@@ -1,0 +1,14 @@
+skit_fixdf/__init__.py,sha256=C69ADlbQREQlR15trneyA2sk8x0-oH4rDAX5fsv19_U,22
+skit_fixdf/cli.py,sha256=-LKdDQlCHo6oOP0QIJFzWR7HEof3jgn757_RkkCzO8w,2282
+skit_fixdf/constants.py,sha256=hO0jMjedIhd8WyunCJLIj6Ymd3g0v4R8W3_3QpeVjqM,2459
+skit_fixdf/fix/__init__.py,sha256=Toqz9-qMdwGSf1onDrouW2xDry-YnqAXWZyXuQTsmuc,177
+skit_fixdf/fix/calls_df.py,sha256=lk8Jhr26VlkYOeO3_ZYFE8wpjRVfXwbvvtAo-5eFtbI,5791
+skit_fixdf/fix/datetime.py,sha256=uXu9o3UW1tC_VYbKCftYSpK7KBS1ilhzficf_mLoXEg,992
+skit_fixdf/fix/df.py,sha256=gDaZCcIDYVgKhFN8Vf3QNJuXeETPIr9HjWd7RS7UFNU,4751
+skit_fixdf/fix/labels_df.py,sha256=q5eavbiI2wyfvbcSGZrRWlbLr1NPaWTELHFAmLHGMbU,9759
+skit_fixdf/utils.py,sha256=iUjrwKgvS1nwKlJsOoQlMC0RQxQQY_fk1QsrEeKUUK0,1857
+skit_fixdf-0.1.8.dist-info/entry_points.txt,sha256=nsUrXPS965ZJfeymjUEWSIgsABJO5_ObE7dqJ28laUc,50
+skit_fixdf-0.1.8.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+skit_fixdf-0.1.8.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+skit_fixdf-0.1.8.dist-info/METADATA,sha256=3byOveHzads-WOIOe2GQvMhYp8pHYf5j6sYPU8kj4jY,632
+skit_fixdf-0.1.8.dist-info/RECORD,,
