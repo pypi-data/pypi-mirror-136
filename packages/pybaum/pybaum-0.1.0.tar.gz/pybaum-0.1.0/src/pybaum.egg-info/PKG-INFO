@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: pybaum
+Version: 0.1.0
+Summary: Tools to work with pytrees.
+Home-page: https://github.com/OpenSourceEconomics/pybaum
+Author: Janos Gabler, Tobias Raabe
+Author-email: janos.gabler@gmail.com
+License: MIT
+Platform: unix
+Platform: linux
+Platform: osx
+Platform: cygwin
+Platform: win32
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Utilities
+Requires-Python: >=3.7
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+
+======
+pybaum
+======
+
+
+Tools to work with pytrees.
+
+
