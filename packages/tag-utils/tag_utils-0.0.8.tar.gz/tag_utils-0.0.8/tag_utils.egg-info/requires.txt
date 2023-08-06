@@ -1,0 +1,16 @@
+pyyaml
+koji
+toolchest>=0.0.6
+koji_wrapper
+
+[docs]
+sphinx
+sphinx-autobuild
+sphinx-rtd-theme
+
+[test]
+coverage
+flake8
+pytest
+pytest-datadir
+tox
