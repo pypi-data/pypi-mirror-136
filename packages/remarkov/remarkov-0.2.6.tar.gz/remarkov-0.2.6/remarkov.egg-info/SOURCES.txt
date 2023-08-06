@@ -1,0 +1,16 @@
+README.md
+setup.py
+remarkov/__init__.py
+remarkov/__main__.py
+remarkov/cli.py
+remarkov/error.py
+remarkov/model.py
+remarkov/persistance.py
+remarkov/py.typed
+remarkov/tokenizer.py
+remarkov/types.py
+remarkov.egg-info/PKG-INFO
+remarkov.egg-info/SOURCES.txt
+remarkov.egg-info/dependency_links.txt
+remarkov.egg-info/entry_points.txt
+remarkov.egg-info/top_level.txt
