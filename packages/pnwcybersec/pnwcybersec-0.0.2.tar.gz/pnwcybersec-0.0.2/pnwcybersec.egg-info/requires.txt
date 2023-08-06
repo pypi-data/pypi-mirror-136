@@ -1,0 +1,6 @@
+fastai
+pandas
+numpy
+os
+PIL
+matplotlib
