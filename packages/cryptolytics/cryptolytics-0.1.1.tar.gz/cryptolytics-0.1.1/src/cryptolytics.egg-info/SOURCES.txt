@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/cryptolytics/__init__.py
+src/cryptolytics/_about.py
+src/cryptolytics/_cli.py
+src/cryptolytics/py.typed
+src/cryptolytics/test.py
+src/cryptolytics.egg-info/PKG-INFO
+src/cryptolytics.egg-info/SOURCES.txt
+src/cryptolytics.egg-info/dependency_links.txt
+src/cryptolytics.egg-info/entry_points.txt
+src/cryptolytics.egg-info/not-zip-safe
+src/cryptolytics.egg-info/requires.txt
+src/cryptolytics.egg-info/top_level.txt
