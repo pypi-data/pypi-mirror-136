@@ -1,0 +1,11 @@
+ocrd_page_to_alto/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ocrd_page_to_alto/cli.py,sha256=AbNw87t2kgFat03YXqzbYZio5hjlQ0odMRSIoddD_c4,3167
+ocrd_page_to_alto/convert.py,sha256=CCde_k6jLqyYPfEZ43iins0GUYnLH4_fV6NXOgSeHAo,20386
+ocrd_page_to_alto/styles.py,sha256=jF_2nvENCaOX0LQ8ekwH4eEdzCxlPJTRoFwXs69MdU8,5823
+ocrd_page_to_alto/utils.py,sha256=A2YP9wtUbg_P3MxM6MdJqUbolEqDWxfOQ4dUShr8blU,2662
+tests/assets/__init__.py,sha256=1h0C1sU6OQHKsndSV61DjJOp_DrukMYXuhyZo_XXoug,1053
+ocrd_page_to_alto-1.1.0.dist-info/METADATA,sha256=WAuuo762l7Ok447NKm8MZKSjmMCAIbXnzuRTIM89vFg,4388
+ocrd_page_to_alto-1.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+ocrd_page_to_alto-1.1.0.dist-info/entry_points.txt,sha256=xR15sadLqySb_wpQbv0_gsJHxIwobkjm9Wx2LDF6nyM,61
+ocrd_page_to_alto-1.1.0.dist-info/top_level.txt,sha256=GbpNzhK1n35cMzBerr7d-oxeXisdx89IwM_3Iu8xOuo,24
+ocrd_page_to_alto-1.1.0.dist-info/RECORD,,
