@@ -1,0 +1,17 @@
+odoo/addons/l10n_fr_department_oversea/README.rst,sha256=f8Y0Z4401vWvJYGcqdGFY3ISgkNx1t0pPagpWzYnU-M,3105
+odoo/addons/l10n_fr_department_oversea/__init__.py,sha256=zpt_H9YpDs9THPlIb4rRNj-in91A7NVZN2SV6a-dN00,60
+odoo/addons/l10n_fr_department_oversea/__manifest__.py,sha256=XUKj1gSSA4bysCjrn4qok112s8jrdufgy_fF8ZinYFU,812
+odoo/addons/l10n_fr_department_oversea/post_install.py,sha256=kb-_V-4u4VwTrLLH4pv0IaJ9revD0hXbzvpnnRcKcv8,1089
+odoo/addons/l10n_fr_department_oversea/data/res_country_department.xml,sha256=n64DTH2gkJL2RDDxgDTX3VZlehqzn8YNKj5hScNOvbs,1455
+odoo/addons/l10n_fr_department_oversea/data/res_country_state.xml,sha256=NFqzSzjWbjPBVfzhR5p9l7HncMKbGGJKPOyabcMH17g,1315
+odoo/addons/l10n_fr_department_oversea/i18n/l10n_fr_department_oversea.pot,sha256=BIyTShSvBhiJMqh2td4QGlxB8SDDzDZd0Pqu6WZgBR8,341
+odoo/addons/l10n_fr_department_oversea/readme/CONTRIBUTORS.rst,sha256=axjgT4EO-E-OLK5vea5LhZrBWtoNEDFm5c_GKL5NLuc,94
+odoo/addons/l10n_fr_department_oversea/readme/DESCRIPTION.rst,sha256=ohzTdCNORRDYxeIjG8doYCKszXn_HI3wbvVJjiQztQ0,153
+odoo/addons/l10n_fr_department_oversea/static/description/icon.png,sha256=6xBPJauaFOF0KDHfHgQopSc28kKvxMaeoQFQWZtfZDo,9455
+odoo/addons/l10n_fr_department_oversea/static/description/index.html,sha256=1lXIPlTLXwb2uOkHdsQ32hYYjmoKdxstTedR_38wprw,12345
+odoo/addons/l10n_fr_department_oversea/tests/__init__.py,sha256=_Zog46RFkVQuGRr07vWNhMB5bSdTc4_o2MXbIdLB8TI,38
+odoo/addons/l10n_fr_department_oversea/tests/test_department_oversea.py,sha256=WD1X2tYPbgE7Z8R-2BC5fzdifxK0X_k9LkWqajYA5ro,1383
+odoo_addon_l10n_fr_department_oversea-15.0.1.0.0.2.dist-info/METADATA,sha256=_dsEl5_gDyqI5KthZ3y43Qlu1dS6Zm9rPhJhp1JstpE,3770
+odoo_addon_l10n_fr_department_oversea-15.0.1.0.0.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+odoo_addon_l10n_fr_department_oversea-15.0.1.0.0.2.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
+odoo_addon_l10n_fr_department_oversea-15.0.1.0.0.2.dist-info/RECORD,,
