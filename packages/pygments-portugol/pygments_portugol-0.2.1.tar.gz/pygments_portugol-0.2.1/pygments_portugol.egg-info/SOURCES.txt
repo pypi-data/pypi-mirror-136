@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+pygments_portugol/__init__.py
+pygments_portugol.egg-info/PKG-INFO
+pygments_portugol.egg-info/SOURCES.txt
+pygments_portugol.egg-info/dependency_links.txt
+pygments_portugol.egg-info/entry_points.txt
+pygments_portugol.egg-info/requires.txt
+pygments_portugol.egg-info/top_level.txt
