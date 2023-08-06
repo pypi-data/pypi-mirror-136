@@ -1,0 +1,10 @@
+README.md
+setup.py
+mkdocs_semos_plugin/__init__.py
+mkdocs_semos_plugin/plugin.py
+mkdocs_semos_plugin.egg-info/PKG-INFO
+mkdocs_semos_plugin.egg-info/SOURCES.txt
+mkdocs_semos_plugin.egg-info/dependency_links.txt
+mkdocs_semos_plugin.egg-info/entry_points.txt
+mkdocs_semos_plugin.egg-info/requires.txt
+mkdocs_semos_plugin.egg-info/top_level.txt
