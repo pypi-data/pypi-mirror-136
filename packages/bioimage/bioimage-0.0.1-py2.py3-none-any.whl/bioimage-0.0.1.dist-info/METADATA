@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: bioimage
+Version: 0.0.1
+Summary: bioimage - library to make working with biomedical images more confortable
+Home-page: UNKNOWN
+Author: antonkulaga (Anton Kualga)
+Author-email: <antonkulaga@gmail.com>
+License: UNKNOWN
+Keywords: python,utils,files,bioimages,microscopy,imaging
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: bioimage
+Requires-Dist: matplotlib
+Requires-Dist: pandas
+Requires-Dist: pycomfort
+Requires-Dist: more-itertools
+Requires-Dist: pims
+Requires-Dist: scikit-image
+Requires-Dist: jpype1
+Requires-Dist: opencv-python
+
+
+# bioimage
+Library for convenient handling of bioimages
+
+Contains the following modules:
+
+## io
+
+Convenient file management, uses pims and pycomfort under the hood.
+
+def load_bio_image(from_file: Path) allows loading microscopy images
+def load_frame(from_file: Path) loads first frame of the microscopy image from system path
+

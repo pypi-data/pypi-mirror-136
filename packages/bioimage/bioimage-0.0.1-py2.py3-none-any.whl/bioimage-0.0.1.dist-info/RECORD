@@ -1,0 +1,9 @@
+bioimage/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bioimage/comparison.py,sha256=EpbDr8n-P9dgNh818vbwB6ZyS5yI2UXcCj2RUeUtijk,2255
+bioimage/filters.py,sha256=0hh9uJs3HRLhquR-y7LNu6YQ-sQlatgMkVA95TdMiHA,1723
+bioimage/io.py,sha256=kBu9DHfg_mWUnRNAjNYmyAZJYLEv7OKNPGCEkrQiffM,2752
+bioimage-0.0.1.dist-info/LICENSE,sha256=gIRiMWd-3HJCwW4gWGyVAyLUClqMBLI2pqaVm_6yYzw,1069
+bioimage-0.0.1.dist-info/METADATA,sha256=ZEhypygP_K9qRM9muVQXbbP9Zp8UOVWgk9QeU4zY7Zk,1270
+bioimage-0.0.1.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+bioimage-0.0.1.dist-info/top_level.txt,sha256=zS9zaZIoqt503SKSZ4vrgEgR-2j4eb5DfkUyvLpBUow,9
+bioimage-0.0.1.dist-info/RECORD,,
