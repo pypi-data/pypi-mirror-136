@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: Tixonyia-mess-client
+Version: 0.2.0
+Summary: Mess Client
+Home-page: UNKNOWN
+Author: Vasilev Artem
+Author-email: 220220220220@rambler.ru
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: PyQt5
+Requires-Dist: sqlalchemy
+Requires-Dist: pycryptodome
+Requires-Dist: pycryptodomex
+
+UNKNOWN
+
