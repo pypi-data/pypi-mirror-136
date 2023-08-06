@@ -1,0 +1,13 @@
+audiotag/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+audiotag/audiotag.py,sha256=Mq2oKpCM7JvzEETRuqfE4BIUNQbNvldFvf_fc7kf5f4,6206
+audiotag/modes.py,sha256=0SwqmW7dgnhYu9KF3pc1BOK-pkX5f9WfamolWx-J1i4,6867
+audiotag/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+audiotag/styles.py,sha256=BZo8bYSdSHPXCE7xnxCZbEe85tr6kpKTqGP5XGuFoiQ,173
+audiotag/track.py,sha256=KsVMFaiMkNBFeF4o0uwIo2speQzjiMh2fEWwCRmG4pU,11041
+audiotag/util.py,sha256=4Nc14ppzbQOi9DjMnh01Q9keMqlfqeE-CYXGNXKZjkw,4481
+audiotag-0.6.0.data/scripts/audiotag,sha256=6csqWZFJ-3U3SqEsE2nFSvB62EfBQmRG6qCC5bqkNM0,95
+audiotag-0.6.0.dist-info/LICENSE,sha256=anfpLt8f4ngC-52zhszoWAFFuZDjGYAIdiLpMU8LR7Y,1067
+audiotag-0.6.0.dist-info/METADATA,sha256=v4RND5Id3-EDSIwqF-2unaihPcT93HHKJSHtiYx6re4,6601
+audiotag-0.6.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+audiotag-0.6.0.dist-info/top_level.txt,sha256=ut4y4Yyt-QY3R0dF4ZBvugNbbJ9F0_AKwjMx0uhhmTc,9
+audiotag-0.6.0.dist-info/RECORD,,
