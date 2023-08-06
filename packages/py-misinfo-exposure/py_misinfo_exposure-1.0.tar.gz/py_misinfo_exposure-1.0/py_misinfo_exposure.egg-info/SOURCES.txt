@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+py_misinfo_exposure/__init__.py
+py_misinfo_exposure/py_misinfo_exposure.py
+py_misinfo_exposure.egg-info/PKG-INFO
+py_misinfo_exposure.egg-info/SOURCES.txt
+py_misinfo_exposure.egg-info/dependency_links.txt
+py_misinfo_exposure.egg-info/requires.txt
+py_misinfo_exposure.egg-info/top_level.txt
+py_misinfo_exposure/data/falsity_scores.csv
