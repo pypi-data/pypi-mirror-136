@@ -1,0 +1,10 @@
+anakinls/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+anakinls/__main__.py,sha256=KgAKfTw4lpUtdhciknEdIHwhzoQ6fdYR1tLIwg6CD1Q,2214
+anakinls/server.py,sha256=QA3db1DPHHFVU0esYU2T0PHSonCfFbCbRFe3tpAnbUc,31270
+anakinls/version.py,sha256=3vRPPh4Dj_GRrM3wa_rV-ipQ4ZPRTR66D6hq0-BPH9s,869
+anakin_language_server-1.16.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+anakin_language_server-1.16.dist-info/METADATA,sha256=QnXCxBemqzMhkBjcBlDLJ3CUNul6L4-2Gi6fv3iCxzo,5163
+anakin_language_server-1.16.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+anakin_language_server-1.16.dist-info/entry_points.txt,sha256=LYanfLEuqyBU7sSPROARLdVE4W52-_5QeMnCWbL_IrI,53
+anakin_language_server-1.16.dist-info/top_level.txt,sha256=P7jLtBimFQ-O0wZ0Yke0kIFfxmaSEftoSFs3Mbyy_pE,9
+anakin_language_server-1.16.dist-info/RECORD,,
