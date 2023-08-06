@@ -1,0 +1,8 @@
+setup.py
+anime_or_not/__init__.py
+anime_or_not/predict.py
+anime_or_not.egg-info/PKG-INFO
+anime_or_not.egg-info/SOURCES.txt
+anime_or_not.egg-info/dependency_links.txt
+anime_or_not.egg-info/requires.txt
+anime_or_not.egg-info/top_level.txt
