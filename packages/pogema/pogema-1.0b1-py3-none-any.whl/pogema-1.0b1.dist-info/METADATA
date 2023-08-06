@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: pogema
+Version: 1.0b1
+Summary: Partially Observable Grid Environment for Multi-Agent RL
+Home-page: https://github.com/AIRI-Institute/pogema
+Author: Alexey Skrynnik
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: gym (>=0.18.3)
+Requires-Dist: numpy (>=1.19.2)
+Requires-Dist: pydantic (>=1.8.2)
+Requires-Dist: drawSvg (>=1.8.2)
+Provides-Extra: numba
+Requires-Dist: numba (>=0.53.1) ; extra == 'numba'
+
+# Pogema environment
+
+## Installation
+
+Just install from PyPI:
+
+```pip install pogema```
+
+## Using Example
+
+
+```python
+import gym
+from pogema.grid_config import GridConfig
+from pogema.wrappers.multi_time_limit import MultiTimeLimit
+from pogema.animation import AnimationMonitor
+
+env = gym.make('Pogema-v0', config=GridConfig(num_agents=2, size=8))
+env = MultiTimeLimit(env, max_episode_steps=64)
+env = AnimationMonitor(env)
+
+obs = env.reset()
+
+done = [False, ...]
+while not all(done):
+    obs, reward, done, info = env.step([env.action_space.sample() for _ in range(env.config.num_agents)])
+```
+

@@ -1,0 +1,14 @@
+pogema/__init__.py,sha256=0e8eWndGHOKizA9RNLy57fM0B-sftpxsTyt-n1KB4_A,284
+pogema/animation.py,sha256=J3xxy7dCqKV7IYW-OjOi97u8lJW6V7OSM8jI9hOf1VY,16015
+pogema/envs.py,sha256=pgTlWp4t8fejnYeJIOppbV3UjoaAgl45ZgT4szzNNKk,3698
+pogema/generator.py,sha256=wccMphYmC5PLbnrikQ7PpHuPC2rDbaIIeZtPQVKUwzE,6316
+pogema/grid.py,sha256=D1HnZcmYoJGJHhiH7QQbfsK6Uf_XSTfotGUBosnFD8k,7074
+pogema/grid_config.py,sha256=ZF7Ufjnv-wM9Q98-_ui-j1W5i9EE3SZ-4OHqlgv-1jM,2082
+pogema/wrappers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pogema/wrappers/multi_time_limit.py,sha256=cZiEWXnvIdH7MHSxmsrr3DazpRI939nVhZ9TGMD6xS8,486
+pogema/wrappers/seed_wrapper.py,sha256=fsDynmEIFuZSoAD07x93JDoAHZ5tkr_iKeZfZzSBN0Q,411
+pogema-1.0b1.dist-info/LICENSE,sha256=AERPTcX4iH_QQTbzg5EICacAmcvR4cHiHAntjLG3Zsc,1097
+pogema-1.0b1.dist-info/METADATA,sha256=CJMxL4Gr-EXpVhFLtIkgGYMWJFTGcjvg4Es2Ajs8Ur8,1107
+pogema-1.0b1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pogema-1.0b1.dist-info/top_level.txt,sha256=QUWGvrT9FUAky1o0XOzV20mLNf-NBjRgoW0tdT5stwI,7
+pogema-1.0b1.dist-info/RECORD,,
