@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: modelify
+Version: 0.0.1
+Summary: New Version of MLOps Platforms.
+Home-page: UNKNOWN
+Author: Muzaffer Senkal
+Author-email: info@modelify.ai
+License: MIT
+Keywords: mlops,machine learning,model deployment,deploy model,data science,computer vision
+Platform: UNKNOWN
+Requires-Dist: numpy
+Requires-Dist: cloudpickle
+Requires-Dist: pyminizip
+Requires-Dist: onnxmltools
+Requires-Dist: onnxruntime
+Requires-Dist: skl2onnx
+Requires-Dist: requests-toolbelt
+Requires-Dist: tf2onnx
+Requires-Dist: pydantic
+
+Modelify takes over all devops jobs from data scientists and machine learning practitioners and brings their models to production.
+
+
