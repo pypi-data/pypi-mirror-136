@@ -1,0 +1,10 @@
+bs4
+requests[socks]
+tqdm
+aiohttp
+pathvalidate
+
+[docs]
+sphinx
+furo
+myst-parser[linkify]
