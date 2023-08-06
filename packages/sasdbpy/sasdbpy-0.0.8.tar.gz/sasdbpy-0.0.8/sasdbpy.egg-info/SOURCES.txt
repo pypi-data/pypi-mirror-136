@@ -1,0 +1,12 @@
+README.md
+setup.py
+./sasdbpy/__init__.py
+./sasdbpy/sasdbreader.py
+./sasdbpy.egg-info/PKG-INFO
+./sasdbpy.egg-info/SOURCES.txt
+./sasdbpy.egg-info/dependency_links.txt
+./sasdbpy.egg-info/requires.txt
+./sasdbpy.egg-info/top_level.txt
+./test/__init__.py
+./test/testSasDbReader.py
+test/testSasDbReader.py
