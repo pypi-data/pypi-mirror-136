@@ -1,0 +1,7 @@
+numpy
+pandas
+sklearn
+SALib
+matplotlib>=3.5
+tslearn
+ujson
