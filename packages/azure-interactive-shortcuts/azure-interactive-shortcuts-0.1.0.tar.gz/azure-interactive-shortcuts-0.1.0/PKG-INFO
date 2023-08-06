@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: azure-interactive-shortcuts
+Version: 0.1.0
+Summary: Helpful tools for using Azure resources interactively at the command line
+Home-page: https://github.com/aatifsyed/azure-interactive-shortcuts
+License: MIT
+Author: Aatif Syed
+Author-email: aatifsyedyp@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: argcomplete (>=2.0.0,<3.0.0)
+Requires-Dist: dataclasses-json (>=0.5.6,<0.6.0)
+Requires-Dist: logging-actions (>=0.1.6,<0.2.0)
+Requires-Dist: prompt-toolkit (>=3.0.24,<4.0.0)
+Requires-Dist: returns (>=0.18.0,<0.19.0)
+Requires-Dist: rich (>=11.0.0,<12.0.0)
+Project-URL: Repository, https://github.com/aatifsyed/azure-interactive-shortcuts
+Description-Content-Type: text/markdown
+
+# Shortcuts for interacting with Azure resources
+## Usage
+### Print a VM IP after fuzzy searching
+```
+$ azure-interactive-shortcuts public-vm-ip
+⠙ Collecting IP addresses from all VMs using Azure CLI
+```
+```
+$ azure-interactive-shortcuts public-vm-ip
+azis public-vm-ip
+[19:12:24] Found 180 virtual machines, and 96 public ip   _public_vm_ip.py:76
+           addresses                                                         
+           4 ip addresses have the same name, and have    _public_vm_ip.py:85
+           been discarded                                                    
+Select an IP address:
+ aatifs-cool-vm1-ip1   Resource group: my-rg1, VMs: aatifs-cool-VM1... 
+ aatifs-cool-vm1-ip2   Resource group: my-rg1, VMs: aatifs-cool-VM1... 
+ aatifs-cool-vm2-ip3   Resource group: my-rg2, VMs: aatifs-cool-VM2... 
+ aatifs-cool-vm2-ip4   Resource group: my-rg2, VMs: aatifs-cool-VM2... 
+```
+
+This allows you to have quick one-liners:
+```bash
+ssh azureuser@"$(azis public-vm-ip)"
+```
+
+## Installation
+Recommended installation is with [pipx](https://github.com/pypa/pipx):
+```bash
+python3 -m pip install --user pipx
+python3 -m pipx ensurepath
+python3 -m pipx install azure-interactive-shortcuts
+```
+
+### Autocompletion
+Autocompletion is done with [argcomplete](https://github.com/kislyuk/argcomplete)
+```bash
+pipx install --force argcomplete
+
+# ~/.bashrc
+eval "$(register-python-argcomplete azis)"
+eval "$(register-python-argcomplete azure-interactive-shortcuts)"
+```
