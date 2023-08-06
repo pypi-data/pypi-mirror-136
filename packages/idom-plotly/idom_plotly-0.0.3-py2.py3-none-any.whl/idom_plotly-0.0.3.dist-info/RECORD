@@ -1,0 +1,9 @@
+idom_plotly/__init__.py,sha256=i301hVi-jiOgH2KjNJraTTEcUsRLerAyHSJMKbfy344,208
+idom_plotly/bundle.js,sha256=ga8w89MG_lW3q33ad656vY5HwoMAYh-sCcfr2ycHdLs,8825028
+idom_plotly/component.py,sha256=Jurv-3x6_qOmBsNcusGq4NysFKH1TQesx3gdB5As-CM,3507
+idom_plotly/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+idom_plotly-0.0.3.dist-info/LICENSE,sha256=sPDKSA4TrM9_-1t0Fmqs5NXkazF97kCl4fRCzaafKCs,1083
+idom_plotly-0.0.3.dist-info/METADATA,sha256=JUcdalQdvuHaPVlI7O__--mb0rO43eld1O3oXBMoqLw,2033
+idom_plotly-0.0.3.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+idom_plotly-0.0.3.dist-info/top_level.txt,sha256=OalUgBT_SLjal-JIhFU_c5jjw04Qa-JvaXmjamWM3OI,12
+idom_plotly-0.0.3.dist-info/RECORD,,
