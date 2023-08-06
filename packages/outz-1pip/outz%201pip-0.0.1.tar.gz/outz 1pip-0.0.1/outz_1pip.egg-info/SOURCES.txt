@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+outz 1pip/__init__.py
+outz_1pip.egg-info/PKG-INFO
+outz_1pip.egg-info/SOURCES.txt
+outz_1pip.egg-info/dependency_links.txt
+outz_1pip.egg-info/top_level.txt
