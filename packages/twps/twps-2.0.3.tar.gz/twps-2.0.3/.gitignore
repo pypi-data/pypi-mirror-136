@@ -1,0 +1,12 @@
+twps.egg-info/*
+
+twps/*.pyc
+twps/version.py
+
+docs/build/*
+
+test/*res.t
+
+MANIFEST
+
+dist
