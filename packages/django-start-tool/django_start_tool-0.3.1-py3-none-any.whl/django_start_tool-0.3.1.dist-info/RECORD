@@ -1,0 +1,17 @@
+django_start_tool/__init__.py,sha256=TZkGuMIRSRmUY3XCIs5owt2o60vXyqYMHWIkhx65uYE,22
+django_start_tool/cli.py,sha256=o6ztnRUiNpHg-KiRad1kJTMIvFJpQbijB2Hs5j7O0mg,1945
+django_start_tool/handlers.py,sha256=lewu6WkkkqrvRdjJ_R2ig76kuT5vhCS9xZd-8eKUdy8,2228
+django_start_tool/types.py,sha256=7xqIHJFKtvjWW6tQnYgyG2ONE8GeUb1kUY25luFmOUQ,514
+django_start_tool/utils.py,sha256=BWCZC3UCDgsPuIg4fYA2ERs3bRZyDHhTZv-Q_sfirGY,848
+django_start_tool/template/manage.py-tpl,sha256=F3pKoy7OhybGQKsQkAN4uVmUKX2aeOSbUmiUVQskj4o,578
+django_start_tool/template/project_name/__init__.py-tpl,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_start_tool/template/project_name/asgi.py-tpl,sha256=NF1j7pCtYal6r8lc3qFXXAYVXF8HHb6eojXzondZNbA,180
+django_start_tool/template/project_name/settings.py-tpl,sha256=M3-KVnSvhF3BiYdNWIPHSbjFdY_-r7GsVhv0NoLBn3c,2059
+django_start_tool/template/project_name/urls.py-tpl,sha256=iCTSLZkugwTz4jf-F2aFTpUCqKxq6f4-rQXy4ij38eM,119
+django_start_tool/template/project_name/wsgi.py-tpl,sha256=jFWoYGx0C8Gx3d7DfrmAW4tZmVmoggxrJziCDqKIfdM,180
+django_start_tool-0.3.1.dist-info/LICENSE,sha256=ehG_aR33PtSe7PQYwnPchEmhCC-nbR6aRO_Bw6U6SHA,1080
+django_start_tool-0.3.1.dist-info/METADATA,sha256=_nR53JPg3IWdAHrzxjELzutqXAhxv85JtkWoOuzOtO8,2335
+django_start_tool-0.3.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+django_start_tool-0.3.1.dist-info/entry_points.txt,sha256=FCHX9UTPdpbP4rqQn5aIZCwzxyFrtNDip5GwCZC27SI,61
+django_start_tool-0.3.1.dist-info/top_level.txt,sha256=yb9wScD42HpXnRlj_vVb1y-P1OruUexzRS9Jo2El8eo,18
+django_start_tool-0.3.1.dist-info/RECORD,,
