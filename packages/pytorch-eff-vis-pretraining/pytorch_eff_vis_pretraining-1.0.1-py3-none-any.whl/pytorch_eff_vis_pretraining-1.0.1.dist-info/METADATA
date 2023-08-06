@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: pytorch-eff-vis-pretraining
+Version: 1.0.1
+Summary: Pytorch version of resnet50 and resnet200 checkpoints of
+Home-page: https://github.com/silentz/pytorch-eff-vis-pretraining-deepmind
+Author: Pershin Maxim
+Author-email: mepershin@example.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/silentz/pytorch-eff-vis-pretraining-deepmind/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: tqdm
+Requires-Dist: torch (>=1.8)
+
+Pytorch version of resnet50 and resnet200 checkpoints of
+"Efficient Visual Pretraining with Contrastive Detection" model
+

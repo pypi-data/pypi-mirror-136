@@ -1,0 +1,9 @@
+pytorch_eff_vis_pretraining/__init__.py,sha256=9ktXArwBPR2UkcjajPELYpY1vbcKXOd6d12IyOMP7Rg,112
+pytorch_eff_vis_pretraining/download.py,sha256=ETNXgx2xSGe3ra5gt5vzbbi46qzv860ks7IAf_8yeLY,2009
+pytorch_eff_vis_pretraining/layers.py,sha256=tYG0hTjLnRd5lbsfJsc0rifkj-JwZN0w-q6kCtFXK_c,4008
+pytorch_eff_vis_pretraining/resnet.py,sha256=yd7EkZxMADuOIthwJAT0Y6_ZPD-Ux2EDARc6aUgAOY8,2935
+pytorch_eff_vis_pretraining-1.0.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+pytorch_eff_vis_pretraining-1.0.1.dist-info/METADATA,sha256=KstW9NBZQYRwIHiP9d24qtrMsaGiOa-UqcjNchDeedg,754
+pytorch_eff_vis_pretraining-1.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pytorch_eff_vis_pretraining-1.0.1.dist-info/top_level.txt,sha256=34dnmhuf8yuub5S6imrkjL-OLZx6x45iTCnL2ckQ4YE,28
+pytorch_eff_vis_pretraining-1.0.1.dist-info/RECORD,,
