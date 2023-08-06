@@ -1,0 +1,10 @@
+aws_cdk/aws_macie/__init__.py,sha256=GoHzl_hqE8o7raqnTw9CenX9sYdUiUKLfrNSUEsYdQU,53285
+aws_cdk/aws_macie/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+aws_cdk/aws_macie/_jsii/__init__.py,sha256=Wz9L5sSzN3FYjchdO5gra6X6iHbxCR-pLkjCq3TEXvk,345
+aws_cdk/aws_macie/_jsii/aws-macie@1.141.0.jsii.tgz,sha256=hM6Vx06xQiB0ZDewgBRka-fW_WK7ufCeRSL2CaG8DK0,34096
+aws_cdk.aws_macie-1.141.0.dist-info/LICENSE,sha256=wX3LqRrxZ97zcDpw0dQ58Zb9AQalEDmXs6nP39muv7o,11391
+aws_cdk.aws_macie-1.141.0.dist-info/METADATA,sha256=nvMoMK4lF4ag89kMtNx1yLr8EkvT0V1FFeDSiUXxSC8,2423
+aws_cdk.aws_macie-1.141.0.dist-info/NOTICE,sha256=piksgoXop22-zO1J9i3rVrv57wUN9siPK1pqGzZ7-AE,113
+aws_cdk.aws_macie-1.141.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+aws_cdk.aws_macie-1.141.0.dist-info/top_level.txt,sha256=1TALAKbuUGsMSrfKWEf268lySCmcqSEO6cDYe_XlLHM,8
+aws_cdk.aws_macie-1.141.0.dist-info/RECORD,,
