@@ -1,0 +1,14 @@
+dedomena/__init__.py,sha256=qpMrSkNkM5SCbZDUXte_NLMr1LB8-q1ELNECD7MXCeU,66
+dedomena/apis/__init__.py,sha256=qYa3u_sKgVgYxihASW0loioYvMXzaa5-RNNozKjRdDw,56
+dedomena/apis/pubmed.py,sha256=4F9SvjPwflltceJp5insDewBPSIyrssjVae1ixxPx2g,1439
+dedomena/apis/twitter.py,sha256=MHRom39JN565ED52TO_Dov3TlG66CNdikAg_r4J_CJ8,140
+dedomena/datasets/__init__.py,sha256=buwWsGs5-hV-0lzvlwxl5L3uyn8c1aWwA0yqplKPasI,56
+dedomena/datasets/autonomio.py,sha256=pX8c0ANtTqgMj8rQcjMl5JeSxuxZ_CJt5cGqgw-664Q,1452
+dedomena/datasets/mimic.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dedomena/datasets/pmlb.py,sha256=SukTQC3ofPMfH3mOsBxEqXxotvi9GLxYPZdVP6fPpCo,749
+dedomena/generators/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+Dedomena-0.0.7.dist-info/LICENSE,sha256=aeQCh-Ab_t0VxtgCjArw6mUrKkgWPgaxvno0V7_pruU,1066
+Dedomena-0.0.7.dist-info/METADATA,sha256=MP-jjuuF4fSw2kG4cKqObr_YKtQn-SxjP9o3RJNU7yI,1128
+Dedomena-0.0.7.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+Dedomena-0.0.7.dist-info/top_level.txt,sha256=l9HJkD3x4QhvGXAj4RPSfGC8B18e9k2HXUCJuhf8o5s,9
+Dedomena-0.0.7.dist-info/RECORD,,
