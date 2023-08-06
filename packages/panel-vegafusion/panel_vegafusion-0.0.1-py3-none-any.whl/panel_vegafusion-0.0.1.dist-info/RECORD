@@ -1,0 +1,10 @@
+panel_vegafusion/__init__.py,sha256=bJk0meec_kGxa3xaZpKJWVSOF1Gqmd2urW3DK9-MdB4,1234
+panel_vegafusion/update.py,sha256=buM36I3bzDTlNMCjSx6MXY16C9B1d4SZ4DnABxH5ygU,580
+panel_vegafusion/utils.py,sha256=bAFdwKNPwrTpWPiCII6qnCNcfNqubJaC-VmwfBGN1Qo,2295
+panel_vegafusion/vegafusion_pane.py,sha256=IFCxwZ-PYma7HRsINQ0uXueOAiTMdehDzlzY3ggOATs,12944
+panel_vegafusion/vegafusion_pane_bokeh_ext.py,sha256=3wzbq5iuGcwtKubddc-YmK5IEyWxZvirvmbT4NMcERI,3390
+panel_vegafusion-0.0.1.dist-info/LICENSE,sha256=ILBn-G3jdarm2w8oOrLmXeJNU3czuJvVhDLBASWdhM8,34522
+panel_vegafusion-0.0.1.dist-info/METADATA,sha256=JWriPyxc7Tbnp1xtj-P58Rwao3co-B3AyVq5rOjzCi8,6759
+panel_vegafusion-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+panel_vegafusion-0.0.1.dist-info/top_level.txt,sha256=-MfUjELZX01Ek-A2F41qPGMzfo_xGgmnMeXHULbG_zo,17
+panel_vegafusion-0.0.1.dist-info/RECORD,,
