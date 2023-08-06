@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+enforce_typehints.egg-info/PKG-INFO
+enforce_typehints.egg-info/SOURCES.txt
+enforce_typehints.egg-info/dependency_links.txt
+enforce_typehints.egg-info/requires.txt
+enforce_typehints.egg-info/top_level.txt
+typeforce/__init__.py
+typeforce/enforcing.py
