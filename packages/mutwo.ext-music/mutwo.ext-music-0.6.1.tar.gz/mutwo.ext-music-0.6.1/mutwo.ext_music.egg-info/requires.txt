@@ -1,0 +1,6 @@
+mutwo.ext-core<0.53.0,>=0.52.1
+
+[testing]
+nose
+coveralls
+mutwo.ext-common-generators<1.0.0,>=0.3.0
