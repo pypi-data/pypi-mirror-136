@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+src/importers/__init__.py
+src/importers/binance_us.py
+src/importers/bitmart.py
+src/importers/coinbase.py
+src/importers/coinbasepro.py
+src/importers/kraken.py
+src/rp2_conv.egg-info/PKG-INFO
+src/rp2_conv.egg-info/SOURCES.txt
+src/rp2_conv.egg-info/dependency_links.txt
+src/rp2_conv.egg-info/requires.txt
+src/rp2_conv.egg-info/top_level.txt

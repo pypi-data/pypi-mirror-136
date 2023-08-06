@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: rp2_conv
+Version: 1.26.21
+Summary: Convert CSV trade files from common Crypto exchanges to a normalized CSV / ODS file for use with eprbell/rp2 (https://github.com/eprbell/rp2) for tax reporting.
+Home-page: https://github.com/h3rb/rp2_conv
+Author: h3rb
+License: MIT License
+Project-URL: Source Code, https://github.com/h3rb/rp2_conv
+Project-URL: Contact, https://github.com/h3rb/rp2_conv/issues
+Project-URL: User Documentation, https://github.com/h3rb/rp2_conv/blob/main/README.md
+Project-URL: Developer Documentation, https://github.com/h3rb/rp2_conv/blob/main/README.dev.md
+Keywords: accounting,altcoin,bitcoin,BTC,capital gains,cost basis,crypto,cryptocurrency,ETH,ethereum,finance,form 8949,privacy,tax,coinbase,bitmart,kraken,binance,exchange,crypto exchanges,converter
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Office/Business :: Financial :: Accounting
+Classifier: Topic :: Utilities
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# rp2_conv
+
+Convert CSV trade files from common Crypto exchanges to a normalized CSV / ODS file for use with [eprbell/rp2](https://github.com/eprbell/rp2/) for tax reporting.
+
+## Purpose
+
+A simplistic series of importers that can be used to normalize transactions from common exchanges.
+
+### Supported Exchanges
+
+* Coinbase & Coinbase Pro
+* Kraken.com
+* BitMart.com
+* Binance.US
+* ... add yours here!  Help us out by contributing.
+
+## Usage
+
+Tbd
+
+## Contributing
+
+We need importers for various exchanges!  Help us out by contributing.
+
+### Roadmap
+
+It would be nice to support public transactions from wallet addresses.
+
+## License
+
+MIT License, See [LICENSE](LICENSE)
+
+
