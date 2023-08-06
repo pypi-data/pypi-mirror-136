@@ -1,0 +1,15 @@
+.gitignore
+LICENSE.txt
+README.rst
+pyproject.toml
+setup.cfg
+setup.py
+sungrow_websocket/__init__.py
+sungrow_websocket/version.py
+sungrow_websocket.egg-info/PKG-INFO
+sungrow_websocket.egg-info/SOURCES.txt
+sungrow_websocket.egg-info/dependency_links.txt
+sungrow_websocket.egg-info/entry_points.txt
+sungrow_websocket.egg-info/not-zip-safe
+sungrow_websocket.egg-info/requires.txt
+sungrow_websocket.egg-info/top_level.txt
