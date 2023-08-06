@@ -1,0 +1,10 @@
+cef_logger/__init__.py,sha256=7B7zWYakv9l6J9D_6sBvaQbhym7rnwHEe3iY24vI2CU,221
+cef_logger/event.py,sha256=s2eAWJ1-wGNFIDangb964Sq1bVHVC8bVki8DKh0yZp0,1996
+cef_logger/event.pyi,sha256=gRyc0-j9Mvu_RHZVIZkJpd6019DBII80_zktkpC1lr8,3304
+cef_logger/fields.py,sha256=DJiXg0lfcLfn7Fw__jpzIHqDWQRNhucQYd-qdak6cZI,3659
+cef_logger/fields.pyi,sha256=YIkepIzl6oZbJZiS358wpHJqCQ5KcqCVPNRlSwi4Tb8,928
+cef_logger/schemas.py,sha256=fkIp8UlUWlIjNNeG7whlUijmfi8J66urAXJBLSDiax4,9463
+cef_logger-1.0.0.dist-info/LICENSE,sha256=uR9qVtQ3rWnU1pnsSBSA9UDl9MDqFfSLggUNaPI4sns,1074
+cef_logger-1.0.0.dist-info/WHEEL,sha256=jPMR_Dzkc4X4icQtmz81lnNY_kAsfog7ry7qoRvYLXw,81
+cef_logger-1.0.0.dist-info/METADATA,sha256=nlL2u6y9YLjP304sWGnlKit1wkHNp_rHfJEjYG8j3HY,5752
+cef_logger-1.0.0.dist-info/RECORD,,
