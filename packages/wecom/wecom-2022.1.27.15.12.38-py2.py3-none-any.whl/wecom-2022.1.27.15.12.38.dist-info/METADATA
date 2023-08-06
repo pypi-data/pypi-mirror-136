@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: wecom
+Version: 2022.1.27.15.12.38
+Summary: 企业微信SDK
+Home-page: https://github.com/Jie-Yuan/wecom
+Author: Betterme
+Author-email: yuanjie@example.com
+License: MIT license
+Keywords: wecom
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+License-File: AUTHORS.rst
+Requires-Dist: meutils
+Requires-Dist: xmltodict
+Requires-Dist: pycryptodome
+
+
+
+![image](https://img.shields.io/pypi/v/wecom.svg) ![image](https://img.shields.io/travis/Jie-Yuan/wecom.svg) ![image](https://readthedocs.org/projects/wecom/badge/?version=latest)
+
+
+
+<h1 align = "center">🔥wecom🔥</h1>
+
+---
+# Install
+```python
+pip install -U wecom
+```
+
+# [Docs](https://jie-yuan.github.io/wecom/)
+
+# Usages
+```
+import wecom
+```
+
+---
+# TODO
+
+
+=======
+History
+=======
+
+0.0.0 (2021-12-24)
+------------------
+
+* First release on PyPI.
+
+
