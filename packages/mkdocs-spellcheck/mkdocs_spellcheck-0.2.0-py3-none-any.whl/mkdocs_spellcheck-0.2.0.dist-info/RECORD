@@ -1,0 +1,10 @@
+mkdocs_spellcheck/__init__.py,sha256=3p5d4at4GVmlUCkTdODcCxUdHqYPPzYW28bTU4Vj6Qg,71
+mkdocs_spellcheck/loggers.py,sha256=VhCDvVPkeEAQmMh8Bw9JnKcFzXa-c2kH8yUWxevNxic,1198
+mkdocs_spellcheck/plugin.py,sha256=ISegNArTe1rgWAdu7rk_hRfh7T5_5KwuHgO2hmlLn50,3598
+mkdocs_spellcheck/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mkdocs_spellcheck/words.py,sha256=W6nlunr3U8bLSVs9Pix4fMlQfVLjAxQ3zNCWXvSeCBU,2694
+mkdocs_spellcheck-0.2.0.dist-info/entry_points.txt,sha256=GP7wJpp2ylbpwrofCwZcTVaPw57Z8o8XdRZFSDPB7YI,71
+mkdocs_spellcheck-0.2.0.dist-info/WHEEL,sha256=SrSTYe6-mWQWWVjlctKugPkHJzVGJ5YrnflXlDWGTtk,88
+mkdocs_spellcheck-0.2.0.dist-info/METADATA,sha256=GiDCyvH54qAUc9bX4u8znYlmpoyhTy9GwtMzOFX5ZoA,3380
+mkdocs_spellcheck-0.2.0.dist-info/LICENSE,sha256=eZQBcJKqlN0QepmOi0u09hlqKMPFdzWjY6NUWYeJGZs,754
+mkdocs_spellcheck-0.2.0.dist-info/RECORD,,
