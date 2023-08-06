@@ -1,0 +1,6 @@
+metaflow_extensions/helloworld/plugins/cards/hello_world_card/__init__.py,sha256=cyVTKyBU1hT1UMAAJ4Yje6TzQyn--IdpzntHutq0VBc,492
+metaflow_card-1.0.0.dist-info/LICENSE,sha256=S5xOtU8_XnXdobniniuf8-xf2TRiOSY3b1uGcpL8udY,11352
+metaflow_card-1.0.0.dist-info/METADATA,sha256=5C13NF9OO-bZje3aWycje_uYTNjU_PiDQ2cA5vckv4o,2181
+metaflow_card-1.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+metaflow_card-1.0.0.dist-info/top_level.txt,sha256=NwG0ukwjygtanDETyp_BUdtYtqIA_lOjzFFh1TsnxvI,20
+metaflow_card-1.0.0.dist-info/RECORD,,
