@@ -1,0 +1,14 @@
+scrapy_poet/__init__.py,sha256=fA2EPNMP3i2X2nkgtDGbsGGGUv0WdXXy5yetRMFH0i0,210
+scrapy_poet/api.py,sha256=5h_ttV64PiiJbeR45p8UZlL4m34JGVrdXiduRv-ZWEs,3360
+scrapy_poet/cache.py,sha256=K8jJw6FJBvsGkYUhkGYyfdLqAbGESTEWXgsF9uKB-CI,2032
+scrapy_poet/injection.py,sha256=SLh4PLx8GP4C2vBhDGCZjnCXYurh1wy-raTLcDNGrT0,15063
+scrapy_poet/injection_errors.py,sha256=iSrtTlo-OFGkg10oxhS1-Y0UrOl4dMIehlRHdRsSD7g,226
+scrapy_poet/middleware.py,sha256=e5KywADtHh5XrkmI4crRsqw0V10QUDsGN-ON7-dJ6qE,4099
+scrapy_poet/overrides.py,sha256=BcHkur0egPtuJa62_8gohluqabzAKCsnpFaP4InAtnU,1246
+scrapy_poet/page_input_providers.py,sha256=xGR9t4VYRKQ6iSmsxCxMp-NHHFR3JnVQo3FJyA2ghkE,7057
+scrapy_poet/utils.py,sha256=mYRfQe18aZVd26FMOf2CDdtsu4q2MhzsaklL5US7b8k,914
+scrapy_poet-0.3.0.dist-info/LICENSE,sha256=OwF91yZTgMQUkBEqH_5wV5MAzisd6zo3ATth7OmQNsU,1513
+scrapy_poet-0.3.0.dist-info/METADATA,sha256=JYZlcUPS7XsQpPCdU_J6MeNU0eIRD7BqqRc2Nyu35CE,2432
+scrapy_poet-0.3.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+scrapy_poet-0.3.0.dist-info/top_level.txt,sha256=d_98MQ_Sflo6c1RkuSxXbEpJfmL5JEh3MMbBSTryJHg,12
+scrapy_poet-0.3.0.dist-info/RECORD,,
