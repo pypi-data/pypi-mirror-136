@@ -1,0 +1,9 @@
+req_project/__init__.py,sha256=ryAfvAaW7VM8g1gnCrFCPrXmcbbm99Xw44aLkwGZzaI,23
+req_project/commands/delete_project.py,sha256=xsph5HU-YMYpWbhRmONClVtNzpIyFL4eza2P83RYEHM,1879
+req_project/commands/init_project.py,sha256=WeSGuaJRp1bMN7P_iZgYB0ybxQr4xVzx2AtMcTIhDiM,2353
+req_project/commands/version.py,sha256=wcx8kKBl-HttzB0nOia0LpUhp8ElKznKuD2M3eFF8zs,369
+req_project/req_project.py,sha256=0MmVT9LNLsndDKmBzXreUiCLILfhtf9mgOb3ShbVhb8,1223
+req_project/tools/configuration.py,sha256=bWpESq-q2dzpQcihamjMA_r5rq-eLoMMWLM1q2fXGj4,1522
+req_project-0.1.1.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+req_project-0.1.1.dist-info/METADATA,sha256=8wwBT3T-X658ruFdgZI9ZCYVnHUJPSWCbnjhk2_wkN4,808
+req_project-0.1.1.dist-info/RECORD,,
