@@ -1,0 +1,16 @@
+CONTRIBUTING.md
+LICENSE
+MANIFEST.in
+README.md
+settings.ini
+setup.py
+openmusickit/__init__.py
+openmusickit/_nbdev.py
+openmusickit/tonal_algebra.py
+openmusickit.egg-info/PKG-INFO
+openmusickit.egg-info/SOURCES.txt
+openmusickit.egg-info/dependency_links.txt
+openmusickit.egg-info/entry_points.txt
+openmusickit.egg-info/not-zip-safe
+openmusickit.egg-info/requires.txt
+openmusickit.egg-info/top_level.txt

@@ -1,0 +1,6 @@
+pip
+packaging
+music21
+networkx
+
+[dev]
