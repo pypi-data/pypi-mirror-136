@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+libpythonpro/__init__.py
+libpythonpro/github_api.py
+libpythonpro_rtrevisan1.egg-info/PKG-INFO
+libpythonpro_rtrevisan1.egg-info/SOURCES.txt
+libpythonpro_rtrevisan1.egg-info/dependency_links.txt
+libpythonpro_rtrevisan1.egg-info/not-zip-safe
+libpythonpro_rtrevisan1.egg-info/requires.txt
+libpythonpro_rtrevisan1.egg-info/top_level.txt
