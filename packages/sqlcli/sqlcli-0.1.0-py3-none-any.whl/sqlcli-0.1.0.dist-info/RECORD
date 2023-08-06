@@ -1,0 +1,13 @@
+sqlcli/__init__.py,sha256=kUR5RAFc7HCeiqdlX36dZOHkUI5wI6V_43RpEcD8b-0,22
+sqlcli/__main__.py,sha256=W4KnMPXd5TItS9GiM-hgs79wPM0lyocoz7dLVFCOHN0,47
+sqlcli/_console.py,sha256=c2hl1TBB7JeHULdGGnbw16zijAUA8TBOMjHiwC5Jm9M,244
+sqlcli/_demo/data.py,sha256=VLvbLJiCsO3re_gICUaubwenaUGfZfwR9aFT28HXTL4,601
+sqlcli/_demo/models.py,sha256=MACBfJlkuv851ytVWH6P9hYiXrZVR6jW5Iu0EOZcGtg,526
+sqlcli/_help.py,sha256=4r-IE8DpzqI2RwDjBZ_57rCbltJXP5-ickSSwIIut80,678
+sqlcli/_utils.py,sha256=lMahzklYCxpZw0fAMO5OYDMVLF26rc19OGglgdq3kJQ,4231
+sqlcli/main.py,sha256=vfffu3YtYtZZEyp-6O7-NLGsBSQF0lllf7-9q0xgNns,12494
+sqlcli-0.1.0.dist-info/entry_points.txt,sha256=LFRrDDSQA-RLe31wp11lZZYeVofc7heRBHqZmf2cvyU,42
+sqlcli-0.1.0.dist-info/LICENSE,sha256=xnpWDH-LSWm7a4XH09aphWrfXP7VZnRYHVuRUpKdnIY,1069
+sqlcli-0.1.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+sqlcli-0.1.0.dist-info/METADATA,sha256=tFza4d8AkJYImSUJPpXtLP9g46opjw84fb8cph7M5qo,3022
+sqlcli-0.1.0.dist-info/RECORD,,
