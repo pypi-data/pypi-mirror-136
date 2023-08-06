@@ -1,0 +1,14 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.py
+launchchess/__init__.py
+launchchess/_version.py
+launchchess/config.py
+launchchess/launchchess.py
+launchchess.egg-info/PKG-INFO
+launchchess.egg-info/SOURCES.txt
+launchchess.egg-info/dependency_links.txt
+launchchess.egg-info/entry_points.txt
+launchchess.egg-info/requires.txt
+launchchess.egg-info/top_level.txt

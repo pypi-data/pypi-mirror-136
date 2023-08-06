@@ -1,0 +1,3 @@
+[console_scripts]
+launchchess = launchchess.launchchess:main
+
