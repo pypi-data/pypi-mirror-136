@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+catbox/__init__.py
+catbox/catbox.py
+pycatbox.egg-info/PKG-INFO
+pycatbox.egg-info/SOURCES.txt
+pycatbox.egg-info/dependency_links.txt
+pycatbox.egg-info/requires.txt
+pycatbox.egg-info/top_level.txt
