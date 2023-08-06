@@ -1,0 +1,135 @@
+Metadata-Version: 2.1
+Name: beanmachine
+Version: 0.1.1
+Summary: Probabilistic Programming Language for Bayesian Inference
+Home-page: https://beanmachine.org
+Author: Meta Platforms, Inc.
+License: MIT
+Project-URL: Documentation, https://beanmachine.org
+Project-URL: Source, https://github.com/facebookresearch/beanmachine
+Keywords: Probabilistic Programming Language,Bayesian Inference,Statistical Modeling,MCMC,Variational Inference,PyTorch
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Scientific/Engineering
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: torch (>=1.9.0)
+Requires-Dist: numpy (>=1.18.1)
+Requires-Dist: pandas (>=0.24.2)
+Requires-Dist: plotly (>=2.2.1)
+Requires-Dist: scipy (>=0.16)
+Requires-Dist: statsmodels (>=0.12.0)
+Requires-Dist: tqdm (>=4.46.0)
+Requires-Dist: astor (>=0.7.1)
+Requires-Dist: black (>=19.3b0)
+Requires-Dist: gpytorch (>=1.3.0)
+Requires-Dist: botorch (>=0.5.1)
+Requires-Dist: xarray (>=0.16.0)
+Requires-Dist: arviz (>=0.11.0)
+Requires-Dist: flowtorch (>=0.3)
+Requires-Dist: parameterized (>=0.8.1)
+Requires-Dist: graphviz (>=0.17)
+Provides-Extra: dev
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+Requires-Dist: bokeh ; extra == 'dev'
+Requires-Dist: cma ; extra == 'dev'
+Requires-Dist: ipywidgets ; extra == 'dev'
+Requires-Dist: jupyter ; extra == 'dev'
+Requires-Dist: matplotlib ; extra == 'dev'
+Requires-Dist: scikit-learn (>=1.0.0) ; extra == 'dev'
+Requires-Dist: seaborn ; extra == 'dev'
+Requires-Dist: torchvision ; extra == 'dev'
+Requires-Dist: black (==20.8b1) ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: flake8-bugbear ; extra == 'dev'
+Requires-Dist: sphinx (==4.2.0) ; extra == 'dev'
+Requires-Dist: sphinx-autodoc-typehints ; extra == 'dev'
+Requires-Dist: sphinx-rtd-theme ; extra == 'dev'
+Requires-Dist: toml (>=0.10.2) ; extra == 'dev'
+Requires-Dist: usort ; extra == 'dev'
+Requires-Dist: nbval ; extra == 'dev'
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+Requires-Dist: pytest-cov ; extra == 'test'
+Provides-Extra: tutorials
+Requires-Dist: bokeh ; extra == 'tutorials'
+Requires-Dist: cma ; extra == 'tutorials'
+Requires-Dist: ipywidgets ; extra == 'tutorials'
+Requires-Dist: jupyter ; extra == 'tutorials'
+Requires-Dist: matplotlib ; extra == 'tutorials'
+Requires-Dist: scikit-learn (>=1.0.0) ; extra == 'tutorials'
+Requires-Dist: seaborn ; extra == 'tutorials'
+Requires-Dist: torchvision ; extra == 'tutorials'
+
+# Bean Machine
+<div align="center">
+  <a href="http://beanmachine.org"> <img width="220px" height="220px" src="https://beanmachine.org/img/beanmachine.svg"></a>
+</div>
+
+[![Lint](https://github.com/facebookresearch/beanmachine/actions/workflows/lint.yml/badge.svg)](https://github.com/facebookresearch/beanmachine/actions/workflows/lint.yml)
+[![Tests](https://github.com/facebookresearch/beanmachine/actions/workflows/test.yml/badge.svg)](https://github.com/facebookresearch/beanmachine/actions/workflows/test.yml)
+[![PyPI](https://img.shields.io/pypi/v/beanmachine)](https://pypi.org/project/beanmachine)
+
+
+## Overview
+
+Bean Machine is a probabilistic programming language for inference over statistical models written in the Python language using a declarative syntax. Bean Machine is built on top of PyTorch and Bean Machine Graph, a custom C++ backend.
+Check out our [tutorials](https://beanmachine.org/docs/tutorials/) and [Quick Start](https://beanmachine.org/docs/overview/quick_start/) to get started!
+
+## Installation
+Bean Machine supports Python 3.7-3.9 and PyTorch 1.10.
+
+### Install the Latest Release with Pip
+
+```bash
+pip install beanmachine
+```
+
+### Install from Source
+
+To download the latest Bean Machine source code from GitHub:
+
+```bash
+git clone https://github.com/facebookresearch/beanmachine.git
+cd beanmachine
+```
+
+Then, you can choose from any of the following installation options.
+
+#### Anaconda
+
+We recommend using [conda](https://docs.conda.io/en/latest/) to manage the virtual environment and install the necessary build dependencies.
+
+```bash
+conda create -n {env name} python=3.7; conda activate {env name}
+conda install boost eigen
+pip install .
+```
+
+#### Docker
+
+```bash
+docker build -t beanmachine .
+docker run -it beanmachine:latest bash
+```
+
+#### Validate Installation
+
+If you would like to run the builtin unit tests:
+
+```bash
+# install pytest 7.0 from GitHub
+pip install git+https://github.com/pytest-dev/pytest.git@7.0.0.dev0
+pytest .
+```
+
+## License
+Bean Machine is MIT licensed, as found in the [LICENSE](LICENSE) file.
+
+
