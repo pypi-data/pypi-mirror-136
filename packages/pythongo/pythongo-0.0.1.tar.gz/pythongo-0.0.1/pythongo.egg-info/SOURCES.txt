@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+pythongo/__init__.py
+pythongo.egg-info/PKG-INFO
+pythongo.egg-info/SOURCES.txt
+pythongo.egg-info/dependency_links.txt
+pythongo.egg-info/requires.txt
+pythongo.egg-info/top_level.txt

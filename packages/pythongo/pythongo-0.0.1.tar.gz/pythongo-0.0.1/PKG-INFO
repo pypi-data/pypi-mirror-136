@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: pythongo
+Version: 0.0.1
+Summary: Minimal MongoDB OOP client based on motor package.
+Home-page: https://gitlab.com/aiocat/pythongo
+Author: aiocat
+Author-email: 
+License: MIT
+Project-URL: Bug Tracker, https://gitlab.com/aiocat/pythongo/-/issues
+Keywords: mongodb,oop,motor
+Platform: UNKNOWN
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Pythongo
+Minimal MongoDB OOP client based on motor package.
+
