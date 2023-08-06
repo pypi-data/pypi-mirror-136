@@ -1,0 +1,12 @@
+purge_static/__init__.py,sha256=EzWrdcejMEJUlUG59xVQb4IwTH5Ss1ivLlcLnjV0mCQ,74
+purge_static/__main__.py,sha256=EzWrdcejMEJUlUG59xVQb4IwTH5Ss1ivLlcLnjV0mCQ,74
+purge_static/main.py,sha256=E57LhLjGNMbl62vmYmn8i6uYbJ1jAPAfBi3PkW1Fxi0,4852
+purge_static/utils.py,sha256=EYB4h6Shg25ahpBgg61oH7YJouhq9_KIzDZ7JFq0sOg,122
+purge_static/cdn/__init__.py,sha256=SOtEBbw6X76VsaebUY1jxyySh-SxVF8tAb7EEEM1vfY,54
+purge_static/cdn/cloudflare.py,sha256=hseKYs8E-O4h_-KbcfXq66_PqNAaucAaO7d-qlMDHLM,1954
+purge_static-0.2.0.dist-info/LICENSE,sha256=fD441LHxolszurAkoVcUEfn6q7Kd53u0h78DGezg84A,1076
+purge_static-0.2.0.dist-info/METADATA,sha256=Bt_iH4vqsU1q9ucrTmVqADLaTLsefMCOi0xO_711Ges,3090
+purge_static-0.2.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+purge_static-0.2.0.dist-info/entry_points.txt,sha256=AXK8_6h2TcMTutw4zAG3tsdcAmun1HqVhr6MgvDuIOw,52
+purge_static-0.2.0.dist-info/top_level.txt,sha256=NttlC6LVF1EIIK8tZLBgvy4owj2DzfnLQuEkpr23et4,13
+purge_static-0.2.0.dist-info/RECORD,,
