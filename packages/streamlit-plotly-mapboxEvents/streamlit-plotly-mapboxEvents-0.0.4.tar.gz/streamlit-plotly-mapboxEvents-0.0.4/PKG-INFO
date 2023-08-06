@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: streamlit-plotly-mapboxEvents
+Version: 0.0.4
+Summary: Plotly mapbox component for Streamlit that also allows for events to bubble back up to Streamlit.
+Home-page: https://github.com/reyemb/streamlit-plotly-mapbox-events
+Author: Reyemb
+Author-email: reyemb.coding@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/plain
+License-File: LICENSE
+
+Plotly mapbox component for Streamlit that also allows for events to bubble back up to Streamlit.
+
