@@ -1,0 +1,17 @@
+nlubridge/__init__.py,sha256=QvW_5cZovljIX6uvxAEaTeaDdW6VeYjCllPlDI6Yd-Q,430
+nlubridge/datasets.py,sha256=vl1ORSzHEeDHSNCCPlWvvcq7t9Z02GuwzCuZZ_7W3Ww,16469
+nlubridge/huggingface.py,sha256=-VXqZppt53n7loCA1fozjx1BbZ1uRAmO8i_xfD_1L-8,6189
+nlubridge/vendors/__init__.py,sha256=TZbeZjNlQ3Ksbux9wjQVMGY5BATCVTCPrACR7jMM7RM,541
+nlubridge/vendors/fasttext.py,sha256=-txUD1opqosCCGuNRfEFDJ7H7bOdeNxUTxkXIejDr88,3493
+nlubridge/vendors/luis.py,sha256=DKcJIKHXpBoDAcefmsUgPDJ7C_ZKeJz2D2VpH5aGOAo,12883
+nlubridge/vendors/rasa.py,sha256=pcNFZyWnIe94thYrvIGWady-b_hagYpM0ZrsTG_ekmc,4237
+nlubridge/vendors/spacy.py,sha256=s8yMcJ6JjArmJxnZ5NAoM2g9YLE7jMb-aE-SnWXUXfY,2389
+nlubridge/vendors/telekom.py,sha256=XjeWjaNIejDe67dy-u1Co32AHzWMirBU56sA7FcJMsU,9176
+nlubridge/vendors/tfidf_intent_classifier.py,sha256=Afu5NMdgI1-RwilKWB8qXg0EmjbjrBMwZc4WVmizRm8,2364
+nlubridge/vendors/vendors.py,sha256=10-BT20FUq-PISufR8OwBG8MlSDH9tIHxKbFOikO9no,3409
+nlubridge/vendors/watson.py,sha256=PlCufEkrcEm0P_V1Zr4xzHf8t34HlMuuErlpG1gsqZY,15170
+nlubridge/vendors/config/rasa_nlu_config.yml,sha256=hyd2BH7DA-ZvWcqMaZObhTFu0BapgM-n-KaFQRIqBPE,942
+nlubridge-0.1.0.dist-info/LICENSE,sha256=8ciH67hVLQ2oNiG9SNlECONAOHf-eABQXMbhY2RpK4E,1168
+nlubridge-0.1.0.dist-info/WHEEL,sha256=LVOPL_YDMEiGvRLgDK1hLkfhFCnTcxcAYZJtpNFses0,81
+nlubridge-0.1.0.dist-info/METADATA,sha256=4yQHobUm5CbuM8_7Zn1Q6o9eDVsExXLgoyFieczVi_I,8086
+nlubridge-0.1.0.dist-info/RECORD,,
