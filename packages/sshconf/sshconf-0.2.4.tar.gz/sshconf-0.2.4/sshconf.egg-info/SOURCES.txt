@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+sshconf.py
+version.txt
+sshconf.egg-info/PKG-INFO
+sshconf.egg-info/SOURCES.txt
+sshconf.egg-info/dependency_links.txt
+sshconf.egg-info/top_level.txt
