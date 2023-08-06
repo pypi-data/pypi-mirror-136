@@ -1,0 +1,6 @@
+disnake
+aiosqlite
+fuzzywuzzy
+python-Levenshtein
+dotenv
+disnake-paginator
