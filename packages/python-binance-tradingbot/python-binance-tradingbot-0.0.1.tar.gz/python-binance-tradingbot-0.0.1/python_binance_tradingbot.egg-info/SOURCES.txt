@@ -1,0 +1,7 @@
+README.md
+python-binance-tradingbot.py
+setup.py
+python_binance_tradingbot.egg-info/PKG-INFO
+python_binance_tradingbot.egg-info/SOURCES.txt
+python_binance_tradingbot.egg-info/dependency_links.txt
+python_binance_tradingbot.egg-info/top_level.txt
