@@ -1,0 +1,3 @@
+[console_scripts]
+ciftostr = ciftostr.cli:main
+
