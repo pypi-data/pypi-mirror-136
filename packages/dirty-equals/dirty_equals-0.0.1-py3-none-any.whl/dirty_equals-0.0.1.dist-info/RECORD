@@ -1,0 +1,11 @@
+dirty_equals/__init__.py,sha256=QNkiVnN6z6ATinLujQCKOQRYpMtegE-xbex6ESPmMVQ,1071
+dirty_equals/_base.py,sha256=3Tc58oXX8t6UQR-JobaVo9jDyDwojVlA5mNsHv4Pfa0,4491
+dirty_equals/_datetime.py,sha256=F94hia2TP38baPwDmzrNfvcr8YWH49Ie3a6zC-FmSUs,2557
+dirty_equals/_numeric.py,sha256=7pqp7csPz_0-hF9kyXBLvjXL5eFKql3GX7-1gHbbyiw,4525
+dirty_equals/_other.py,sha256=WBHUodIekLY_to973UD2aSZjEn3twrldpQsz7UmxTjY,809
+dirty_equals/_strings.py,sha256=whoVMQFrW2Vcwbv57XWVQn27rBII2hfH3cURi-zyRHA,1928
+dirty_equals/_utils.py,sha256=H-FlCs2WNjWsOg9kOvnb8Z9YkAswtDQwJEzC86JHCq0,271
+dirty_equals-0.0.1.dist-info/LICENSE,sha256=Kv3TDVS01itvSIprzBVG6E7FBh8T9CCcA9ASNIeDeVo,1080
+dirty_equals-0.0.1.dist-info/WHEEL,sha256=FMw6u7Kp3jrdDDtJRZ3hkPV-9adLQT8pbM4iifKUGfw,85
+dirty_equals-0.0.1.dist-info/METADATA,sha256=kqFiPYsCO-PGQJtch0Yk7ZuxjRSTuAulF2pXch3_QsA,2162
+dirty_equals-0.0.1.dist-info/RECORD,,
