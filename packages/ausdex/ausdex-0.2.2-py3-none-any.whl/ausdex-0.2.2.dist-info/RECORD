@@ -1,0 +1,17 @@
+ausdex/__init__.py,sha256=dBe0BsPsrE0G6Zxtl72i_rmhe7saeJtB89MEVqNluVk,38
+ausdex/data_viz.py,sha256=MJK4z9QNUeklbrUzrfRW2IEzhmMie5ODoNMngHF-78Q,1593
+ausdex/dates.py,sha256=SQ3gR5l3omIDYI1zRuiJLioqA6GvjJRHPCpe_XBWb94,2088
+ausdex/files.py,sha256=07V1PzTZbxDehLnIrM-_a0nPo9YrUiGmRmXvSmpXwno,1203
+ausdex/gis_utils.py,sha256=SZcrp0_Ux-opAyydx3n4fkcrQVVAqg8qWp5RDJ_4VyQ,1664
+ausdex/inflation.py,sha256=D80d6kpHzcQKR8qO4IZ0Cg651QlLZOacePvU4ujlrPs,13166
+ausdex/main.py,sha256=u3uxucZKpfP0MQqGuYwNXgNPU-W-_BWEGCHRKl8_5Ec,11508
+ausdex/seifa_vic/__init__.py,sha256=05PQyYbjQlma9F9-jMhUi6fH-qDGCCoHPIOFtOTWtU8,166
+ausdex/seifa_vic/data_io.py,sha256=lZ6Y-VEa1aMvOzwqId9nEbxCKAXP9F_YcwH0pyv7st8,7395
+ausdex/seifa_vic/data_wrangling.py,sha256=nhdI4sRNia6fKP44n4QDwtNzavLwyVDBc3SxhjEid2U,10740
+ausdex/seifa_vic/metadata/victorian_locations.csv,sha256=adFti_Hu8jDcei_wtwX4rxsam4C5Lilax3Th_aY62BE,182955
+ausdex/seifa_vic/seifa_vic.py,sha256=XW4X-pKBd0CfbEMcTaEhMJyf6Pgf2eNz5w3fz819Ycw,30163
+ausdex-0.2.2.dist-info/entry_points.txt,sha256=edzVtPD360vEIyS0l-vAnK5eVO_bMbyUHPsgjwiXKmc,42
+ausdex-0.2.2.dist-info/LICENSE,sha256=Zrbm5hRF2Ulgi51hodZlG52nAUSNhDy4BKpgVqEHiIo,11365
+ausdex-0.2.2.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+ausdex-0.2.2.dist-info/METADATA,sha256=5Pf6VTgLCNVSzL0pMMnLrYc5pT3uvWVsyC65nozaDmI,6610
+ausdex-0.2.2.dist-info/RECORD,,
