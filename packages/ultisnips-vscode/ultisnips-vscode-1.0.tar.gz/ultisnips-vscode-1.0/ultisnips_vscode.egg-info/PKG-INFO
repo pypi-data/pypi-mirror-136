@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: ultisnips-vscode
+Version: 1.0
+Summary: Converts a directory of ultisnips snippets to json for vscode
+Home-page: https://github.com/erietz/ultisnips-vscode
+Author: Ethan Rietz
+Author-email: ewrietz@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: vim ultisnips snippets vscode json
+Platform: UNKNOWN
