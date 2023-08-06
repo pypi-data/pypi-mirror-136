@@ -1,0 +1,14 @@
+nfog/__init__.py,sha256=J-j-u0itpEFT6irdmWmixQqYMadNl1X91TxUmoiLHMI,22
+nfog/artwork/Artwork.py,sha256=djrPRUlZYHGNNcVN85Y3j4otkdBOuobWkj3HWhecSCo,237
+nfog/artwork/__init__.py,sha256=xhZhRnX2vL2AphCEPgyDsVpz54FmxS4OJVBhS7_FhLA,63
+nfog/config.py,sha256=vLyeJfsAdUJH8fyQEKxp_X343D1K2CV8SrrbJ8UGfks,569
+nfog/constants.py,sha256=NTUiSmcR0WiW5xAU-DWLFpVGYNbsYKVYtrf5Octccgk,366
+nfog/nfog.py,sha256=AoiTFoZX8xOgFk0XITvTgqiejzc1d_2ILo6uYGHgLy4,7198
+nfog/templates/Group.py,sha256=PkIUkF_w4F33m8Y71XgjNXbkSEsuQ5eVAw6x_rzAY04,1303
+nfog/templates/Template.py,sha256=1NW5VGaGdDemYnEwqepRgzZHreUIVKVR-WCgZv63k8I,12016
+nfog/templates/__init__.py,sha256=Rrmj9KgCGs69sNTkjzm7-5hsqfyMZ4kpU29tCf2mxqc,129
+nfog-1.0.0.dist-info/entry_points.txt,sha256=r6Z_C4h5luBO_4Vh8s08s4cwznBV5s0YnQ1gxrLSqPo,37
+nfog-1.0.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+nfog-1.0.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+nfog-1.0.0.dist-info/METADATA,sha256=TCk9ECwS2I-AVgO1W0Q8QcAi4SaX24Rqz-4Go1N6jz0,4442
+nfog-1.0.0.dist-info/RECORD,,
