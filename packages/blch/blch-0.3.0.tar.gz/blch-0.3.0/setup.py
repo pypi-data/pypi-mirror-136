@@ -1,0 +1,31 @@
+from setuptools import setup, find_packages
+import codecs
+import os
+from pathlib import Path
+
+VERSION = '0.3.0'
+DESCRIPTION = 'A module to help you make a blockchain'
+this_directory = Path(__file__).parent
+LONG_DESCRIPTION = (this_directory / "README.md").read_text()
+
+
+setup(
+    name="blch",
+    version=VERSION,
+    author="Advaith S",
+    author_email="<popular9adu@gmail.com>",
+    description=DESCRIPTION,
+    long_description_content_type="text/markdown",
+    long_description=LONG_DESCRIPTION,
+    packages=find_packages(),
+    install_requires=[],
+    keywords=['python', 'blockchain', 'python3', 'cryptocurrency'],
+    classifiers=[
+        "Development Status :: 6 - Mature",
+        "Intended Audience :: Developers",
+        "Programming Language :: Python :: 3",
+        "Operating System :: Unix",
+        "Operating System :: MacOS :: MacOS X",
+        "Operating System :: Microsoft :: Windows",
+    ]
+)
