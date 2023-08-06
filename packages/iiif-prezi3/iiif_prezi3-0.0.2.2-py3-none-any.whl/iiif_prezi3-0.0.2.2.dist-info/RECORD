@@ -1,0 +1,14 @@
+iiif_prezi3/__init__.py,sha256=ijGApZv-MA-N-zSy_U2sv565UR3oR70ajTtEHn8zZb8,126
+iiif_prezi3/base.py,sha256=7S83wq9S374fNgiJyAPHwl-RQJKTrAMmG-NjLuePbg0,66
+iiif_prezi3/loader.py,sha256=off-cqt7p_168nJsRFm_1rlsIG30mkA-dHk4aQF5PUg,728
+iiif_prezi3/skeleton.py,sha256=d_h7Rmg0bshqo6iE89p8eNy0hEib3aIfK4Y3Q76Zkqo,8561
+iiif_prezi3/config/extensions.json,sha256=KGpa8JRV9fvyFJ7mJNNuy2xOpopqVLw8vHu_3BeqpYk,25
+iiif_prezi3/extensions/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+iiif_prezi3/extensions/example_extension.py,sha256=B6eRP_hSbbjYaDkr8ya47xviRNR1ZCZRS97nhTazN-A,193
+iiif_prezi3/helpers/__init__.py,sha256=vCO4mUlYxPw71z8XeLSeu-FjZFem2VmggMqevLHK2Ps,47
+iiif_prezi3/helpers/canvas_sizes.py,sha256=QQd51lcL0uHFctA_VlmNCUKWt47xUyykkgjp8V6uirY,600
+iiif_prezi3-0.0.2.2.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+iiif_prezi3-0.0.2.2.dist-info/METADATA,sha256=MAIA5yTKeLXL8x4UhonPOOL0su-4e2-hJ26V7J4-NmI,4443
+iiif_prezi3-0.0.2.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+iiif_prezi3-0.0.2.2.dist-info/top_level.txt,sha256=T1xxJ0c3FMi-LuoAlDgTKlIaojPETH9_iSJ4YOsNa-0,12
+iiif_prezi3-0.0.2.2.dist-info/RECORD,,
