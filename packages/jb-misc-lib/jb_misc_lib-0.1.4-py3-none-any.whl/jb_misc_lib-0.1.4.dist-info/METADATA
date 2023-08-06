@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: jb-misc-lib
+Version: 0.1.4
+Summary: Shared code for various personal and public projects
+Home-page: https://gitlab.com/jrbrown/jb-misc-lib
+Author: Jason Brown
+Author-email: jasonbrown_dev@protonmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://gitlab.com/jrbrown/jb-misc-lib/-/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v2 (LGPLv2)
+Classifier: Operating System :: POSIX
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+# JB Misc Lib
+
+A package of various miscellaneous code that is used for public and personal projects
+
+
+
