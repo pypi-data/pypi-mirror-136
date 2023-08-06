@@ -1,0 +1,6 @@
+numpy
+pyquaternion
+pyserial
+PyYAML
+scipy
+sklearn
