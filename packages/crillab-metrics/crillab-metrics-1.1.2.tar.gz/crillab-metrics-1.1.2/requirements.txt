@@ -1,0 +1,9 @@
+crillab-autograph
+dash-bootstrap-components
+deprecated
+jsonpickle
+myst-parser
+pandas
+pyparsing
+tenacity
+pyyaml

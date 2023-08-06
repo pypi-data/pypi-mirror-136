@@ -1,0 +1,14 @@
+dist: bionic
+language: python
+python:
+  - "3.8"
+addons:
+  sonarcloud:
+    organization: "cril"
+install:
+  - pip install -r requirements.txt
+script:
+  # the following command line builds the project, runs the tests with coverage and then execute the SonarCloud analysis
+  - make pylint
+  - make test
+  - make sonar
