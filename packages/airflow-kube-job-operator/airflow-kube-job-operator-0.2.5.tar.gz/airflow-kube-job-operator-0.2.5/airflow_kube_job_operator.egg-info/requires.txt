@@ -1,0 +1,6 @@
+apache-airflow>=2.0.0
+kubernetes>=11.0.0
+Jinja2>=2.11.3
+
+[tests]
+pytest
