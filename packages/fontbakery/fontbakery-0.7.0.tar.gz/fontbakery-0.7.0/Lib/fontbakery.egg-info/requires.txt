@@ -1,0 +1,17 @@
+beautifulsoup4
+defcon
+defusedxml
+font-v
+fontTools[lxml,ufo]>=3.34
+lxml
+opentype-sanitizer
+protobuf>=3.7.0
+requests
+ttfautohint-py
+ufolint
+Unidecode
+
+[docs]
+sphinx>=1.4
+sphinx_rtd_theme
+recommonmark
