@@ -1,0 +1,14 @@
+efemarai/__init__.py,sha256=haJIvQkoCa_TzgXuV5MCsYmavUYYiOO0omMAK3BZQkQ,60
+efemarai/cli.py,sha256=JK5syYLuo-XKuhqMK9pwMS_R5WrH_dkM1_RjAWqf29w,370
+efemarai/dataset.py,sha256=1t8dDKiFlOEKbEV2TCfKtLWdHQ2h1A988zfwGGgd-Fs,2251
+efemarai/domain.py,sha256=PF4bvcvtrUMCn037j50GckcOarGMZC_aBolHoCole8U,2375
+efemarai/model.py,sha256=VvAV-121fYYE4qwD1nRPs0jtrhdOXHwDCPnwNztSSgw,2320
+efemarai/problem_type.py,sha256=RwFFLQLMfAJWZKY_BU24rV35-nrgsqAWiolMfuScKSM,381
+efemarai/project.py,sha256=7jiq5gu8Yl1A-RdqRXa_kI2aC6gZu8gSsT5YjVe2WnA,5011
+efemarai/session.py,sha256=FQjxe6DecSU_jsbKn_SbK3lUnFf8Vb5f-W0eTlCi6Sg,8896
+efemarai/stress_test.py,sha256=_Gnao-968iD1pxJjSCEDZ5hxjMSqukelmcQ9icZhueA,6575
+efemarai-0.0.5.dist-info/METADATA,sha256=CZATRRTPvX1RIzXvGTIkWODNzLMlSiWYcD70YpGnKlw,2295
+efemarai-0.0.5.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+efemarai-0.0.5.dist-info/entry_points.txt,sha256=xFagCgVq7tra82UkFM9YL5-5VUndg3S11pzmXFZhtbA,48
+efemarai-0.0.5.dist-info/top_level.txt,sha256=QB_kmG5fuF1PzzkZdb6jkPYOikvrAecZyjzM3iPs_Pc,9
+efemarai-0.0.5.dist-info/RECORD,,
