@@ -1,0 +1,4 @@
+[console_scripts]
+aliyunpan = aliyunpan.main:main
+aliyunpan-cli = aliyunpan.main:main
+
