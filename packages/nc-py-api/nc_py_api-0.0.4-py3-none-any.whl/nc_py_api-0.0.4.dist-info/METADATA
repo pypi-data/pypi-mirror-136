@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: nc-py-api
+Version: 0.0.4
+Summary: Python 3.7+ client interface for Nextcloud nc_py_api framework.
+Home-page: https://github.com/bigcat88/cloud_py_api
+Author: Alexander Piskun, Andrey Borysenko
+Author-email: bigcat88@users.noreply.github.com
+License: UNKNOWN
+Keywords: cloud_py_api nextcloud api
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: protobuf
+
+# nc_py_api
+![pypi](https://img.shields.io/pypi/v/nc_py_api.svg)
+![PythonVersion](https://img.shields.io/badge/python-3.7%20%7C%203.8%20%7C%203.9%20%7C%203.10-blue)
+
+## Description
+Will be written later.
+
+## Installation
+Will be written later.
+
+## Usage
+Will be written later.
+
+
