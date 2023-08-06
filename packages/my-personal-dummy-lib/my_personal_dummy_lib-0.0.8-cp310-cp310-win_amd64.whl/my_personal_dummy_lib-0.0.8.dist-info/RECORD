@@ -1,0 +1,6 @@
+mydummylib/package1/main.cp310-win_amd64.pyd,sha256=ZDhYWbQyXENy5FBskWYM9zGAHHA17bfaxapFKifslMo,20480
+mydummylib/package2/main.cp310-win_amd64.pyd,sha256=EfZZxDWbNhmkuKVnlYDZcQuX7sa0CZ-evRd-genrSAw,20992
+my_personal_dummy_lib-0.0.8.dist-info/METADATA,sha256=IGDmpOberhMlJfA4DYEiFTIW4HwOSLEh_mi_Ylw40g0,821
+my_personal_dummy_lib-0.0.8.dist-info/WHEEL,sha256=W26pYN7HLsBT1jrDSL9udgf_mdNKJmYmL23sIP-FcgM,102
+my_personal_dummy_lib-0.0.8.dist-info/top_level.txt,sha256=yNCSAaN6izCymvSO0ZNkgp-jA6QC1xx0iyDuSWrn4F4,11
+my_personal_dummy_lib-0.0.8.dist-info/RECORD,,
