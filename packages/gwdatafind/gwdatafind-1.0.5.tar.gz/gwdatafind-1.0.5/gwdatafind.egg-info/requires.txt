@@ -1,0 +1,14 @@
+ligo-segments
+six>=1.9.0
+pyOpenSSL
+
+[docs]
+numpydoc
+sphinx>=1.8.0
+sphinx_automodapi
+sphinx_rtd_theme
+sphinx_tabs
+
+[test]
+pytest>=2.8.0
+pytest-cov

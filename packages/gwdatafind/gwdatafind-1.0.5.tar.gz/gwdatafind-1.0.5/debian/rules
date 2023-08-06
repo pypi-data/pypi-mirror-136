@@ -1,0 +1,21 @@
+#!/usr/bin/make -f
+
+# build man page for gw_data_find for python3
+# Automatically generate man pages with help2man
+export PYBUILD_AFTER_INSTALL_python3 := \
+	echo 'Generating man pages with help2man' && \
+	mkdir -p {destdir}/usr/share/man/man1 && \
+	env PYTHONPATH={destdir}{install_dir} \
+	help2man \
+		--output {destdir}/usr/share/man/man1/gw_data_find.1 \
+		--name "discover available GW data" \
+		--no-discard-stderr \
+		--no-info \
+		--section 1 \
+		--source $(DEB_SOURCE) \
+		--version-string $(DEB_VERSION_UPSTREAM) \
+		{destdir}/usr/bin/gw_data_find \
+	;
+
+%:
+	dh $@ --with python3 --buildsystem=pybuild
