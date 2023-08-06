@@ -1,0 +1,3 @@
+[console_scripts]
+av = av_toolkit._av_base:_main
+
