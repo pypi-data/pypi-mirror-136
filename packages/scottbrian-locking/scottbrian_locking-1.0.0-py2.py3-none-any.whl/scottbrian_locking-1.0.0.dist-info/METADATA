@@ -1,0 +1,104 @@
+Metadata-Version: 2.1
+Name: scottbrian-locking
+Version: 1.0.0
+Summary: Parallel processing tools
+Home-page: https://github.com/ScottBrian/scottbrian_locking.git
+Author: Scott Tuttle
+Author-email: sbtuttle@outlook.com
+License: MIT
+Project-URL: Documentation, https://scottbrian-locking.readthedocs.io/en/latest/
+Project-URL: Source, https://github.com/ScottBrian/scottbrian_locking.git
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: System :: Recovery Tools
+Classifier: Topic :: Utilities
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: POSIX :: Linux
+Requires-Python: >=3.9
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: typing-extensions
+Requires-Dist: scottbrian-utils
+
+==================
+scottbrian-locking
+==================
+
+Intro
+=====
+
+The SELock is a shared/exclusive lock that you can use to safely read
+and write shared resources in a multi-threaded application.
+
+:Example: use SELock to coordinate access to a shared resource
+
+
+
+>>> from scottbrian_locking import se_lock as sel
+>>> a_lock = sel.SELock()
+>>> # Get lock in exclusive mode
+>>> with sel.SELockExcl(a_lock):
+...     msg = 'lock obtained exclusive'
+>>> print(msg)
+lock obtained exclusive
+
+>>> # Get lock in shared mode
+>>> with sel.SELockShare(a_lock):
+...     msg = 'lock obtained shared'
+>>> print(msg)
+lock obtained shared
+
+
+.. image:: https://img.shields.io/badge/security-bandit-yellow.svg
+    :target: https://github.com/PyCQA/bandit
+    :alt: Security Status
+
+.. image:: https://readthedocs.org/projects/pip/badge/?version=stable
+    :target: https://pip.pypa.io/en/stable/?badge=stable
+    :alt: Documentation Status
+
+
+Installation
+============
+
+Linux:
+
+``pip install scottbrian-locking``
+
+
+Development setup
+=================
+
+See tox.ini
+
+Release History
+===============
+
+* 1.0.0
+    * Initial release
+
+
+Meta
+====
+
+Scott Tuttle
+
+Distributed under the MIT license. See ``LICENSE`` for more information.
+
+
+Contributing
+============
+
+1. Fork it (<https://github.com/yourname/yourproject/fork>)
+2. Create your feature branch (`git checkout -b feature/fooBar`)
+3. Commit your changes (`git commit -am 'Add some fooBar'`)
+4. Push to the branch (`git push origin feature/fooBar`)
+5. Create a new Pull Request
+
+
+
+
