@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        gitoo=gitoo.cli:entry_point
+    
