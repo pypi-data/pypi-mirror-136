@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+ystreamer/__init__.py
+ystreamer/yaticker_pb2.py
+ystreamer.egg-info/PKG-INFO
+ystreamer.egg-info/SOURCES.txt
+ystreamer.egg-info/dependency_links.txt
+ystreamer.egg-info/requires.txt
+ystreamer.egg-info/top_level.txt
