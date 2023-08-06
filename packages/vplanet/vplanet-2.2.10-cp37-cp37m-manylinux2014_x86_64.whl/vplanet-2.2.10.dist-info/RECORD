@@ -1,0 +1,16 @@
+vplanet-2.2.10.dist-info/WHEEL,sha256=cCcIocQWsRcjbZ8DFZU6x3YDrwDcwVuuUbwJVUWc_xU,112
+vplanet-2.2.10.dist-info/RECORD,,
+vplanet-2.2.10.dist-info/METADATA,sha256=emC5oDFvks-cRgFLPlhW1pL1uU_qN7cytG0F1ojxzks,10455
+vplanet-2.2.10.dist-info/top_level.txt,sha256=qE3DBQmLhEBpUBSatljH1qHCDeeDx4cOYbfvTXq_leU,8
+vplanet-2.2.10.dist-info/LICENSE,sha256=RM9umOkZGcXW9UAWQMojMBQxZeFXyet7AeEwO8aqyTk,1073
+vplanet-2.2.10.dist-info/entry_points.txt,sha256=xI-Ev_jTpdLcR6P1LfgmZSfEoYHN2BnAskPYUAQMjWI,58
+vplanet/output.py,sha256=LAZxIP5vPbbRKBIwT_VexH7djagiyz2HU7-6iKxPN4k,10699
+vplanet/logger.py,sha256=dCXQEJ-DBFL-ebebHdzPlblvbzRqTnqQG4aX0lcd2uc,242
+vplanet/vplanet_core.cpython-37m-x86_64-linux-gnu.so,sha256=LWqzf6LLflZlUn-44dP4JfGzZ8ZTBq7zWuOEiqeJ0sU,19566088
+vplanet/vplanet_help.py,sha256=mh9yCMyRbw_X23EMJ6hkdM_m9j1m3ROtdaGDjtWiaWw,507
+vplanet/log.py,sha256=BS0XK79JEdaZotMEeOWKim1yi4XRzlt4wpcundb_iCQ,11378
+vplanet/custom_units.py,sha256=QiUm9uhAmoQWb4Y3DAd6d9_1SCKlqrSeloMJti-0PSc,1124
+vplanet/wrapper.py,sha256=HZaD8b795a2VBrXhm6TYJuSEzykRBude6qnpCueRj3Y,2782
+vplanet/__init__.py,sha256=OLWR_MhQpxwVHfohiP1IVxs6q0paxSMnO9xkhaJokF0,460
+vplanet/quantity.py,sha256=kOHpyHJuhbGDeXusKgdJRHZ1BBu-siDXHIcTXAEPxQY,10429
+vplanet/quantity_support.py,sha256=hEInBGrXtIWKxYl_J9HVGVKadyrs-20U3ld2y9GgGgM,2027
