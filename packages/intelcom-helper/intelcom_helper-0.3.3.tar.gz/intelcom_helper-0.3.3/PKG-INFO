@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: intelcom_helper
+Version: 0.3.3
+Summary: long description
+Home-page: https://github.com/your/github/project
+Author: Simon Prudhomme
+Author-email: sphomme@intelcomexpress.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+
+python setup.py sdist bdist_wheel
+twine upload dist/*  
+
