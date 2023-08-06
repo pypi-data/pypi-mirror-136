@@ -1,0 +1,126 @@
+[![](https://img.shields.io/pypi/pyversions/python-codicefiscale.svg?logoColor=white&color=blue&logo=python)](https://www.python.org/)
+[![](https://img.shields.io/pypi/v/python-codicefiscale.svg?color=blue&logo=pypi&logoColor=white)](https://pypi.org/project/python-codicefiscale/)
+[![](https://pepy.tech/badge/python-codicefiscale/month)](https://pepy.tech/project/python-codicefiscale)
+[![](https://img.shields.io/github/stars/fabiocaccamo/python-codicefiscale?logo=github)](https://github.com/fabiocaccamo/python-codicefiscale/)
+[![](https://badges.pufler.dev/visits/fabiocaccamo/python-codicefiscale?label=visitors&color=blue)](https://badges.pufler.dev)
+[![](https://img.shields.io/pypi/l/python-codicefiscale.svg?color=blue&)](https://github.com/fabiocaccamo/python-codicefiscale/blob/master/LICENSE)
+
+[![](https://img.shields.io/github/workflow/status/fabiocaccamo/python-codicefiscale/Test%20package?label=build&logo=github)](https://github.com/fabiocaccamo/python-codicefiscale)
+[![](https://img.shields.io/codecov/c/gh/fabiocaccamo/python-codicefiscale?logo=codecov)](https://codecov.io/gh/fabiocaccamo/python-codicefiscale)
+[![](https://img.shields.io/codacy/grade/8927f48c9498408f85167da9287edd86?logo=codacy)](https://www.codacy.com/app/fabiocaccamo/python-codicefiscale)
+[![](https://img.shields.io/scrutinizer/quality/g/fabiocaccamo/python-codicefiscale?logo=scrutinizer)](https://scrutinizer-ci.com/g/fabiocaccamo/python-codicefiscale/?branch=master)
+[![](https://img.shields.io/codeclimate/maintainability/fabiocaccamo/python-codicefiscale?logo=code-climate)](https://codeclimate.com/github/fabiocaccamo/python-codicefiscale/)
+[![](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+
+# python-codicefiscale
+python-codicefiscale is a tiny library for encode/decode Italian fiscal code - **codifica/decodifica del Codice Fiscale**.
+
+![Codice Fiscale](https://user-images.githubusercontent.com/1035294/72058207-fa77dd80-32cf-11ea-8995-52324e7d3efe.png)
+
+## Features
+- **Transliteration** for name/surname
+- **Multiple** birthdate formats (datetime/string) *(you can see all the supported string formats in* `tests/tests.py` *)*
+- **Automatic** birthplace city/foreign-country code detection from name
+- **Omocodia** support
+
+## Installation
+`pip install python-codicefiscale`
+
+## Usage
+
+#### Import
+```python
+from codicefiscale import codicefiscale
+```
+#### Encode
+```python
+codicefiscale.encode(surname='Caccamo', name='Fabio', sex='M', birthdate='03/04/1985', birthplace='Torino')
+
+# 'CCCFBA85D03L219P'
+```
+#### Decode
+```python
+codicefiscale.decode('CCCFBA85D03L219P')
+
+# {
+#     'code': 'CCCFBA85D03L219P',
+#     'sex': 'M',
+#     'birthdate': datetime.datetime(1985, 4, 3, 0, 0),
+#     'birthplace': {
+#         'name': 'TORINO'
+#         'province': 'TO',
+#         'code': 'L219',
+#     },
+#     'omocodes': [
+#         'CCCFBA85D03L219P',
+#         'CCCFBA85D03L21VE',
+#         'CCCFBA85D03L2MVP',
+#         'CCCFBA85D03LNMVE',
+#         'CCCFBA85D0PLNMVA',
+#         'CCCFBA85DLPLNMVL',
+#         'CCCFBA8RDLPLNMVX',
+#         'CCCFBAURDLPLNMVU',
+#     ],
+#     'raw': {
+#         'code': 'CCCFBA85D03L219P',
+#         'surname': 'CCC',
+#         'name': 'FBA',
+#         'birthdate': '85D03',
+#         'birthdate_year': '85'
+#         'birthdate_month': 'D',
+#         'birthdate_day': '03',
+#         'birthplace': 'L219',
+#         'cin': 'P',
+#     },
+# }
+```
+
+#### Check
+```python
+codicefiscale.is_valid('CCCFBA85D03L219P')
+
+# True
+```
+```python
+codicefiscale.is_omocode('CCCFBA85D03L219P')
+
+# False
+```
+
+## Testing
+```bash
+# create python virtual environment
+virtualenv testing_codicefiscale
+
+# activate virtualenv
+cd testing_codicefiscale && . bin/activate
+
+# clone repo
+git clone https://github.com/fabiocaccamo/python-codicefiscale.git src && cd src
+
+# install requirements
+pip install -r requirements.txt
+pip install -r requirements-test.txt
+
+# run tests using tox
+tox
+
+# or run tests using unittest
+python -m unittest tests.tests
+
+# or run tests using setuptools
+python setup.py test
+```
+
+## License
+Released under [MIT License](LICENSE.txt).
+
+---
+
+## See also
+
+- [`python-benedict`](https://github.com/fabiocaccamo/python-benedict) - dict subclass with keylist/keypath support, I/O shortcuts (base64, csv, json, pickle, plist, query-string, toml, xml, yaml) and many utilities. 📘
+
+- [`python-fontbro`](https://github.com/fabiocaccamo/python-fontbro) - friendly font operations. 🧢
+
+- [`python-fsutil`](https://github.com/fabiocaccamo/python-fsutil) - file-system utilities for lazy devs. 🧟‍♂️
