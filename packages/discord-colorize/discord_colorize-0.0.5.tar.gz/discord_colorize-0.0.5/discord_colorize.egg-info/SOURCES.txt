@@ -1,0 +1,9 @@
+README.md
+setup.py
+discord_colorize/__init__.py
+discord_colorize/colorize.py
+discord_colorize.egg-info/PKG-INFO
+discord_colorize.egg-info/SOURCES.txt
+discord_colorize.egg-info/dependency_links.txt
+discord_colorize.egg-info/requires.txt
+discord_colorize.egg-info/top_level.txt
