@@ -1,0 +1,17 @@
+CMakeLists.txt
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+cmake/googletest.cmake
+cmake/pybind11.cmake
+cmake/Modules/FetchContent.cmake
+cmake/Modules/README.md
+cmake/Modules/FetchContent/CMakeLists.cmake.in
+kaldi_native_io/CMakeLists.txt
+kaldi_native_io.egg-info/PKG-INFO
+kaldi_native_io.egg-info/SOURCES.txt
+kaldi_native_io.egg-info/dependency_links.txt
+kaldi_native_io.egg-info/not-zip-safe
+kaldi_native_io.egg-info/top_level.txt
+kaldi_native_io/python/kaldi_native_io/__init__.py
