@@ -1,0 +1,12 @@
+pywalletconnect/__init__.py,sha256=HblIY0oWNaafOZVR_ik4Z5iJdaklNgJfQB7XvxuYtBk,904
+pywalletconnect/client.py,sha256=zIeMhUNL6F2lL94Gq6ymgTLGFmew7cDtAYwlItlqWfs,25649
+pywalletconnect/enc_tunnel.py,sha256=6B6FS6uK6pJRrqB6CyWIm7MCTfatxO3P-lYJ_4AGrGI,6809
+pywalletconnect/json_rpc.py,sha256=WFfliUmnGJ5ASSBWOOPsTDcGLUXsOSohZ73S-hrDvqY,2665
+pywalletconnect/tls_socket.py,sha256=A2ck6SCM7utMIMrmN6Z_Flff0AHys82itsCmQLwzwl0,2277
+pywalletconnect/version.py,sha256=cuGZCoJcxkYYDaMejLR4gBNNtbdLzKT761NzWzpbOII,58
+pywalletconnect/websocket.py,sha256=9UFmqYYaDxziMdSF0huauAqypsOzF_YCZwMDaL7-Prc,7672
+pyWalletConnect-1.2.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+pyWalletConnect-1.2.0.dist-info/METADATA,sha256=h5gZJV9KOCd1662eZdTTgIyQjm2MdN5DQl6uqFfpMIw,10287
+pyWalletConnect-1.2.0.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+pyWalletConnect-1.2.0.dist-info/top_level.txt,sha256=MeiZvwObGZFsa0avWx0Bg--YOWz1SZQF7PV-Q1z3OLo,16
+pyWalletConnect-1.2.0.dist-info/RECORD,,
