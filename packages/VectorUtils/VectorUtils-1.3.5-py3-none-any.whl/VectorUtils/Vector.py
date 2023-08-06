@@ -1,0 +1,91 @@
+from math import sqrt, atan2, hypot, cos, sin
+from random import uniform
+from typing import Tuple
+
+
+class Vector2:
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+
+    @staticmethod
+    def random(min: float=-1, max: float=1):
+        return Vector2(uniform(min, max), uniform(min, max))
+
+    @staticmethod
+    def fromTuple(tuple: Tuple):
+        return Vector2(tuple[0], tuple[1])
+
+    def copy(self):
+        return Vector2(self.x, self.y)
+
+    def normalize(self):
+        mag = self.getMag()
+        if mag > 0:
+            self.x /= mag
+            self.y /= mag
+
+    def rotate(self, radians: float):
+        h = atan2(self.y, self.x) + radians
+        mag = self.getMag()
+        self.x = cos(h) * mag
+        self.y = sin(h) * mag
+
+    def getMag(self):
+        return sqrt(self.x**2 + self.y**2)
+
+    def setMag(self, magnitude: float):
+        newX = self.x * magnitude / self.getMag()
+        newY = self.y * magnitude / self.getMag()
+        self.x = newX
+        self.y = newY
+
+    def getClosest(self, others: list):
+        diffs = []
+        for i in range(len(others)):
+            other = others[i]
+            diffs.append(self.getDist(other))
+
+        return others[min(range(len(diffs)), key=diffs.__getitem__)]
+
+    def getAngle(self, other):
+        return atan2((other.y - self.y), (other.x - self.x))
+
+    def getDist(self, other):
+        return hypot((other.x - self.x), (other.y - self.y))
+
+    def toTuple(self):
+        return self.x, self.y
+
+    def toInt(self):
+        return Vector2(int(self.x), int(self.y))
+
+    def toFloat(self):
+        return Vector2(float(self.x), float(self.y))
+
+    def __repr__(self):
+        return f'Vector2({self.x}, {self.y})'
+
+    def __add__(self, other):
+        if type(other) == Vector2:
+            return Vector2(self.x + other.x, self.y + other.y)
+        elif type(other) == int or float:
+            return Vector2(self.x + other, self.y + other)
+
+    def __sub__(self, other):
+        if type(other) == Vector2:
+            return Vector2(self.x - other.x, self.y - other.y)
+        elif type(other) == int or float:
+            return Vector2(self.x - other, self.y - other)
+
+    def __mul__(self, other):
+        if type(other) == Vector2:
+            return Vector2(self.x * other.x, self.y * other.y)
+        elif type(other) == int or float:
+            return Vector2(self.x * other, self.y * other)
+
+    def __truediv__(self, other):
+        if type(other) == Vector2:
+            return Vector2(self.x / other.x, self.y / other.y)
+        elif type(other) == int or float:
+            return Vector2(self.x / other, self.y / other)
