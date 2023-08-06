@@ -1,0 +1,53 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "tag": {
+      "type": "string"
+    },
+    "pyemail-sender": {
+      "$ref": "#/definitions/pyemail-sender"
+    }
+  },
+  "required": [
+    "pyemail-sender"
+  ],
+  "definitions": {
+    "pyemail-sender": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      },
+      "required": [
+        "config",
+        "type"
+      ],
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "gmail"
+          ]
+        },
+        "config": {
+          "type": "object",
+          "required": [
+            "api_key",
+            "email_address"
+          ],
+          "properties": {
+            "api_key": {
+              "type": "string"
+            },
+            "email_address": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": true
+}
