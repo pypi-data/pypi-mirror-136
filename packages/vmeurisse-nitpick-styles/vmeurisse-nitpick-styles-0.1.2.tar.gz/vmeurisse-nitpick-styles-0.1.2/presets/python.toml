@@ -1,0 +1,9 @@
+[nitpick.styles]
+include = [
+    "base",
+    "../styles/python-base",
+    "../styles/bandit",
+    "../styles/black",
+    "../styles/isort",
+    "../styles/pylint",
+]

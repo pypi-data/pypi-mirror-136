@@ -1,0 +1,11 @@
+["pyproject.toml".tool.bandit]
+skips = [
+  # Subprocess module
+  "B404",
+  # subprocess_without_shell_equals_true
+  "B603",
+  # start_process_with_no_shell
+  "B606",
+  # start_process_with_partial_path
+  "B607",
+]

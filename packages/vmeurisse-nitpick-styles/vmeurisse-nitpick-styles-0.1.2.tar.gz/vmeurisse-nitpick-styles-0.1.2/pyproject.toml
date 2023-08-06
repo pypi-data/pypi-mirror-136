@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "vmeurisse-nitpick-styles"
+version = "0.1.2"
+description = "Personal styles for nitpick"
+readme = "Readme.md"
+authors = ["Vincent Meurisse <dev@meurisse.org>"]
+license = "MIT"
+include = [
+  "presets/*",
+  "styles/*",
+]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+nitpick = "0.31.0"
+
+[tool.poetry.dev-dependencies]
+argcomplete = "^2.0.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.nitpick]
+style = [
+  "./presets/base",
+  "./styles/python-base",
+  "./styles/poetry",
+]
+cache = "never"

@@ -1,0 +1,41 @@
+["pyproject.toml".tool.pylint.config]
+score = "n"
+output-format = "colorized"
+enable = ["useless-suppression"]
+
+# https://pylint.pycqa.org/en/latest/technical_reference/features.html
+disable = [
+    "fixme",
+
+    # Else is important for readability
+    "no-else-break",
+    "no-else-continue",
+    "no-else-raise",
+    "no-else-return",
+
+    # Format is ensured by black
+    "format",
+
+    # Not all files are modules. This causes a lot of false positive
+    "invalid-name",
+    "missing-module-docstring",
+    "missing-class-docstring",
+    "missing-function-docstring",
+
+    # Imports are checked by pyright
+    "unused-import",
+    "import-error",
+    "relative-beyond-top-level",
+
+    # Order is checked by isort
+    "wrong-import-order",
+
+    # Causes issues with subclasses that don"t modify public methods
+    "too-few-public-methods",
+
+    # Complaining on dataclasses
+    "too-many-instance-attributes",
+
+    # Needed for caches
+    "global-statement",
+]
