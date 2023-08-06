@@ -1,0 +1,34 @@
+#conntrack(ctstate=ESTABLISHED,RELATED)
+Func:
+  Name: Conntrack
+  Version: beta
+  Body:
+    Main: "-m conntrack"
+    Arguments:
+      ctstate:
+        Definition: "--ctstate <state>"
+        Optional: false
+      srcIP:
+        Definition: "--source <srcIP>"
+      dstIP:
+        Definition: "--destination <dstIP>"
+      srcSet:
+        Definition: "-m set --match-set <srcSet> src"
+      dstSet:
+        Definition: "-m set --match-set <dstSet> dst"
+      comment:
+        Definition: "-m comment --comment <comment>"
+    Variables:
+      state:
+        Type: List
+        Default: ESTABLISHED
+      srcIP:
+        Type: Single
+      dstIP:
+        Type: Single
+      srcSet:
+        Type: Single
+      dstSet:
+        Type: Single
+      comment:
+        Type: Single

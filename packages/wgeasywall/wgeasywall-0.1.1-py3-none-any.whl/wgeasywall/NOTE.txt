@@ -1,0 +1,2 @@
+When create a new graphfile you should open it via yED before do update !
+after each update you need to open the graph with yED. (Problem in find group method)

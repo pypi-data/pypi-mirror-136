@@ -1,0 +1,737 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:java="http://www.yworks.com/xml/yfiles-common/1.0/java" xmlns:sys="http://www.yworks.com/xml/yfiles-common/markup/primitives/2.0" xmlns:x="http://www.yworks.com/xml/yfiles-common/markup/2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:y="http://www.yworks.com/xml/graphml" xmlns:yed="http://www.yworks.com/xml/yed/3" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://www.yworks.com/xml/schema/graphml/1.1/ygraphml.xsd">
+  <!--Created by yEd 3.21.1-->
+  <key for="port" id="d0" yfiles.type="portgraphics"/>
+  <key for="port" id="d1" yfiles.type="portgeometry"/>
+  <key for="port" id="d2" yfiles.type="portuserdata"/>
+  <key attr.name="Type" attr.type="string" for="node" id="d3"/>
+  <key attr.name="IPAddress" attr.type="string" for="node" id="d4"/>
+  <key attr.name="PublicIPAddress" attr.type="string" for="node" id="d5"/>
+  <key attr.name="Name" attr.type="string" for="node" id="d6"/>
+  <key attr.name="Hostname" attr.type="string" for="node" id="d7"/>
+  <key attr.name="Group" attr.type="string" for="node" id="d8"/>
+  <key attr.name="UnderControl" attr.type="string" for="node" id="d9"/>
+  <key attr.name="Port" attr.type="string" for="node" id="d10"/>
+  <key attr.name="Subnet" attr.type="string" for="node" id="d11"/>
+  <key attr.name="NetworkName" attr.type="string" for="node" id="d12"/>
+  <key attr.name="Routes" attr.type="string" for="node" id="d13"/>
+  <key attr.name="COLOR" attr.type="string" for="node" id="d14"/>
+  <key attr.name="url" attr.type="string" for="node" id="d15"/>
+  <key attr.name="description" attr.type="string" for="node" id="d16"/>
+  <key for="node" id="d17" yfiles.type="nodegraphics"/>
+  <key for="graphml" id="d18" yfiles.type="resources"/>
+  <key attr.name="Protocol" attr.type="string" for="edge" id="d19"/>
+  <key attr.name="SrcPorts" attr.type="string" for="edge" id="d20"/>
+  <key attr.name="DstPorts" attr.type="string" for="edge" id="d21"/>
+  <key attr.name="Action" attr.type="string" for="edge" id="d22"/>
+  <key attr.name="RaaC" attr.type="string" for="edge" id="d23"/>
+  <key attr.name="url" attr.type="string" for="edge" id="d24"/>
+  <key attr.name="description" attr.type="string" for="edge" id="d25"/>
+  <key for="edge" id="d26" yfiles.type="edgegraphics"/>
+  <graph edgedefault="directed" id="G">
+    <node id="n0">
+      <data key="d3" xml:space="preserve"><![CDATA[Server]]></data>
+      <data key="d4" xml:space="preserve"><![CDATA[192.168.0.1]]></data>
+      <data key="d5" xml:space="preserve"><![CDATA[185.1.1.1]]></data>
+      <data key="d6" xml:space="preserve"><![CDATA[Server1]]></data>
+      <data key="d7" xml:space="preserve"><![CDATA[Server1.wg1.cloudarmin.me]]></data>
+      <data key="d8" xml:space="preserve"><![CDATA[NULL]]></data>
+      <data key="d9" xml:space="preserve"><![CDATA[NULL]]></data>
+      <data key="d10" xml:space="preserve"><![CDATA[51200]]></data>
+      <data key="d11" xml:space="preserve"><![CDATA[192.168.0.0/24]]></data>
+      <data key="d12" xml:space="preserve"><![CDATA[WGNet1]]></data>
+      <data key="d13" xml:space="preserve"><![CDATA[192.168.0.0/24,172.16.0.0/24]]></data>
+      <data key="d14" xml:space="preserve"><![CDATA[#211165]]></data>
+      <data key="d17">
+        <y:ShapeNode>
+          <y:Geometry height="30.0" width="173.3984375" x="0.0" y="403.0"/>
+          <y:Fill color="#211165" transparent="false"/>
+          <y:BorderStyle color="#000000" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="bolditalic" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="163.3984375" x="5.0" xml:space="preserve" y="5.6494140625">Server1.wg1.cloudarmin.me</y:NodeLabel>
+          <y:Shape type="roundrectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n1">
+      <data key="d3" xml:space="preserve"><![CDATA[Resource]]></data>
+      <data key="d4" xml:space="preserve"><![CDATA[178.1.2.0/24]]></data>
+      <data key="d5" xml:space="preserve"><![CDATA[NULL]]></data>
+      <data key="d6" xml:space="preserve"><![CDATA[Resource1]]></data>
+      <data key="d7" xml:space="preserve"><![CDATA[NULL]]></data>
+      <data key="d8" xml:space="preserve"><![CDATA[NULL]]></data>
+      <data key="d9" xml:space="preserve"><![CDATA[NULL]]></data>
+      <data key="d10" xml:space="preserve"><![CDATA[NULL]]></data>
+      <data key="d11" xml:space="preserve"><![CDATA[NULL]]></data>
+      <data key="d12" xml:space="preserve"><![CDATA[NULL]]></data>
+      <data key="d13" xml:space="preserve"><![CDATA[NULL]]></data>
+      <data key="d14" xml:space="preserve"><![CDATA[#75D536]]></data>
+      <data key="d17">
+        <y:ShapeNode>
+          <y:Geometry height="30.0" width="72.03125" x="455.0" y="403.0"/>
+          <y:Fill color="#2341E8" transparent="false"/>
+          <y:BorderStyle color="#000000" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="italic" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="62.03125" x="5.0" xml:space="preserve" y="5.6494140625">Resource1</y:NodeLabel>
+          <y:Shape type="octagon"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n2">
+      <data key="d3" xml:space="preserve"><![CDATA[Resource]]></data>
+      <data key="d4" xml:space="preserve"><![CDATA[NULL]]></data>
+      <data key="d5" xml:space="preserve"><![CDATA[NULL]]></data>
+      <data key="d6" xml:space="preserve"><![CDATA[Resource2]]></data>
+      <data key="d7" xml:space="preserve"><![CDATA[google.com]]></data>
+      <data key="d8" xml:space="preserve"><![CDATA[NULL]]></data>
+      <data key="d9" xml:space="preserve"><![CDATA[NULL]]></data>
+      <data key="d10" xml:space="preserve"><![CDATA[NULL]]></data>
+      <data key="d11" xml:space="preserve"><![CDATA[NULL]]></data>
+      <data key="d12" xml:space="preserve"><![CDATA[NULL]]></data>
+      <data key="d13" xml:space="preserve"><![CDATA[NULL]]></data>
+      <data key="d14" xml:space="preserve"><![CDATA[#F6201C]]></data>
+      <data key="d17">
+        <y:ShapeNode>
+          <y:Geometry height="30.0" width="72.03125" x="337.0" y="403.0"/>
+          <y:Fill color="#5B1AF9" transparent="false"/>
+          <y:BorderStyle color="#000000" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="italic" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="62.03125" x="5.0" xml:space="preserve" y="5.6494140625">Resource2</y:NodeLabel>
+          <y:Shape type="octagon"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n3">
+      <data key="d3" xml:space="preserve"><![CDATA[Resource]]></data>
+      <data key="d4" xml:space="preserve"><![CDATA[1.1.1.1]]></data>
+      <data key="d5" xml:space="preserve"><![CDATA[NULL]]></data>
+      <data key="d6" xml:space="preserve"><![CDATA[Resource3]]></data>
+      <data key="d7" xml:space="preserve"><![CDATA[NULL]]></data>
+      <data key="d8" xml:space="preserve"><![CDATA[NULL]]></data>
+      <data key="d9" xml:space="preserve"><![CDATA[NULL]]></data>
+      <data key="d10" xml:space="preserve"><![CDATA[NULL]]></data>
+      <data key="d11" xml:space="preserve"><![CDATA[NULL]]></data>
+      <data key="d12" xml:space="preserve"><![CDATA[NULL]]></data>
+      <data key="d13" xml:space="preserve"><![CDATA[NULL]]></data>
+      <data key="d14" xml:space="preserve"><![CDATA[#5A9D44]]></data>
+      <data key="d17">
+        <y:ShapeNode>
+          <y:Geometry height="30.0" width="72.03125" x="219.0" y="403.0"/>
+          <y:Fill color="#54383B" transparent="false"/>
+          <y:BorderStyle color="#000000" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="italic" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="62.03125" x="5.0" xml:space="preserve" y="5.6494140625">Resource3</y:NodeLabel>
+          <y:Shape type="octagon"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n4" yfiles.foldertype="group">
+      <data key="d3"/>
+      <data key="d4"/>
+      <data key="d5"/>
+      <data key="d6"/>
+      <data key="d7"/>
+      <data key="d8"/>
+      <data key="d9"/>
+      <data key="d10"/>
+      <data key="d11"/>
+      <data key="d12"/>
+      <data key="d13"/>
+      <data key="d14"/>
+      <data key="d16" xml:space="preserve"><![CDATA[Group,Clients]]></data>
+      <data key="d17">
+        <y:ProxyAutoBoundsNode>
+          <y:Realizers active="0">
+            <y:GroupNode>
+              <y:Geometry height="357.20703125" width="1040.3363994295635" x="0.0" y="0.0"/>
+              <y:Fill color="#FFCC00" transparent="false"/>
+              <y:BorderStyle color="#000000" type="line" width="1.0"/>
+              <y:NodeLabel alignment="center" autoSizePolicy="content" borderDistance="0.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="40.6796875" x="499.82835596478174" xml:space="preserve" y="0.0">Clients</y:NodeLabel>
+              <y:Shape type="rectangle"/>
+              <y:State closed="false" closedHeight="80.0" closedWidth="100.0" innerGraphDisplayEnabled="false"/>
+              <y:Insets bottom="15" bottomF="15.0" left="15" leftF="15.0" right="15" rightF="15.0" top="15" topF="15.0"/>
+              <y:BorderInsets bottom="0" bottomF="0.0" left="0" leftF="0.0" right="0" rightF="0.0" top="0" topF="0.0"/>
+            </y:GroupNode>
+            <y:GroupNode>
+              <y:Geometry height="80.0" width="100.0" x="-15.0" y="-15.0"/>
+              <y:Fill color="#FFCC00" transparent="false"/>
+              <y:BorderStyle color="#000000" type="line" width="1.0"/>
+              <y:NodeLabel alignment="center" autoSizePolicy="content" borderDistance="0.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="40.6796875" x="29.66015625" xml:space="preserve" y="0.0">Clients</y:NodeLabel>
+              <y:Shape type="rectangle"/>
+              <y:State closed="true" closedHeight="80.0" closedWidth="100.0" innerGraphDisplayEnabled="false"/>
+              <y:Insets bottom="15" bottomF="15.0" left="15" leftF="15.0" right="15" rightF="15.0" top="15" topF="15.0"/>
+              <y:BorderInsets bottom="0" bottomF="0.0" left="0" leftF="0.0" right="0" rightF="0.0" top="0" topF="0.0"/>
+            </y:GroupNode>
+          </y:Realizers>
+        </y:ProxyAutoBoundsNode>
+      </data>
+      <graph edgedefault="directed" id="n4:">
+        <node id="n4::n0">
+          <data key="d3" xml:space="preserve"><![CDATA[Client]]></data>
+          <data key="d4" xml:space="preserve"><![CDATA[192.168.0.58]]></data>
+          <data key="d5" xml:space="preserve"><![CDATA[NULL]]></data>
+          <data key="d6" xml:space="preserve"><![CDATA[Client9]]></data>
+          <data key="d7" xml:space="preserve"><![CDATA[Client9.wg1.cloudarmin.me]]></data>
+          <data key="d8" xml:space="preserve"><![CDATA[NULL]]></data>
+          <data key="d9" xml:space="preserve"><![CDATA[True]]></data>
+          <data key="d10" xml:space="preserve"><![CDATA[NULL]]></data>
+          <data key="d11" xml:space="preserve"><![CDATA[NULL]]></data>
+          <data key="d12" xml:space="preserve"><![CDATA[WGNet1]]></data>
+          <data key="d13" xml:space="preserve"><![CDATA[192.168.0.0/24,172.16.0.0/24]]></data>
+          <data key="d14" xml:space="preserve"><![CDATA[#211165]]></data>
+          <data key="d17">
+            <y:ShapeNode>
+              <y:Geometry height="30.0" width="158.732421875" x="866.6039775545635" y="282.20703125"/>
+              <y:Fill color="#FF0000" transparent="false"/>
+              <y:BorderStyle color="#000000" type="line" width="1.0"/>
+              <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="148.732421875" x="5.0" xml:space="preserve" y="5.6494140625">Client9.wg1.cloudarmin.me</y:NodeLabel>
+              <y:Shape type="ellipse"/>
+            </y:ShapeNode>
+          </data>
+        </node>
+        <node id="n4::n1">
+          <data key="d3" xml:space="preserve"><![CDATA[Client]]></data>
+          <data key="d4" xml:space="preserve"><![CDATA[192.168.0.60]]></data>
+          <data key="d5" xml:space="preserve"><![CDATA[NULL]]></data>
+          <data key="d6" xml:space="preserve"><![CDATA[Client10]]></data>
+          <data key="d7" xml:space="preserve"><![CDATA[Client10.wg1.cloudarmin.me]]></data>
+          <data key="d8" xml:space="preserve"><![CDATA[NULL]]></data>
+          <data key="d9" xml:space="preserve"><![CDATA[True]]></data>
+          <data key="d10" xml:space="preserve"><![CDATA[NULL]]></data>
+          <data key="d11" xml:space="preserve"><![CDATA[NULL]]></data>
+          <data key="d12" xml:space="preserve"><![CDATA[WGNet1]]></data>
+          <data key="d13" xml:space="preserve"><![CDATA[192.168.0.0/24,172.16.0.0/24]]></data>
+          <data key="d14" xml:space="preserve"><![CDATA[#211165]]></data>
+          <data key="d17">
+            <y:ShapeNode>
+              <y:Geometry height="30.0" width="165.40625" x="15.0" y="282.20703125"/>
+              <y:Fill color="#FF0000" transparent="false"/>
+              <y:BorderStyle color="#000000" type="line" width="1.0"/>
+              <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="155.40625" x="5.0" xml:space="preserve" y="5.6494140625">Client10.wg1.cloudarmin.me</y:NodeLabel>
+              <y:Shape type="ellipse"/>
+            </y:ShapeNode>
+          </data>
+        </node>
+        <node id="n4::n2" yfiles.foldertype="group">
+          <data key="d3"/>
+          <data key="d4"/>
+          <data key="d5"/>
+          <data key="d6"/>
+          <data key="d7"/>
+          <data key="d8"/>
+          <data key="d9"/>
+          <data key="d10"/>
+          <data key="d11"/>
+          <data key="d12"/>
+          <data key="d13"/>
+          <data key="d14"/>
+          <data key="d16" xml:space="preserve"><![CDATA[Group,Bonn,#D0DEE8]]></data>
+          <data key="d17">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Geometry height="127.40234375" width="626.1976190476191" x="210.40629960317455" y="214.8046875"/>
+                  <y:Fill color="#D0DEE8" transparent="false"/>
+                  <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                  <y:NodeLabel alignment="center" autoSizePolicy="content" borderDistance="0.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="32.025390625" x="297.08611421130956" xml:space="preserve" y="0.0">Bonn</y:NodeLabel>
+                  <y:Shape type="rectangle"/>
+                  <y:State closed="false" closedHeight="80.0" closedWidth="100.0" innerGraphDisplayEnabled="false"/>
+                  <y:Insets bottom="15" bottomF="15.0" left="15" leftF="15.0" right="15" rightF="15.0" top="15" topF="15.0"/>
+                  <y:BorderInsets bottom="0" bottomF="0.0" left="0" leftF="5.890376991146695E-5" right="0" rightF="0.0" top="0" topF="0.0"/>
+                </y:GroupNode>
+                <y:GroupNode>
+                  <y:Geometry height="80.0" width="100.0" x="-15.0" y="-15.0"/>
+                  <y:Fill color="#D0DEE8" transparent="false"/>
+                  <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                  <y:NodeLabel alignment="center" autoSizePolicy="content" borderDistance="0.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="32.025390625" x="33.9873046875" xml:space="preserve" y="0.0">Bonn</y:NodeLabel>
+                  <y:Shape type="rectangle"/>
+                  <y:State closed="true" closedHeight="80.0" closedWidth="100.0" innerGraphDisplayEnabled="false"/>
+                  <y:Insets bottom="15" bottomF="15.0" left="15" leftF="15.0" right="15" rightF="15.0" top="15" topF="15.0"/>
+                  <y:BorderInsets bottom="0" bottomF="0.0" left="0" leftF="0.0" right="0" rightF="0.0" top="0" topF="0.0"/>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph edgedefault="directed" id="n4::n2:">
+            <node id="n4::n2::n0">
+              <data key="d3" xml:space="preserve"><![CDATA[Client]]></data>
+              <data key="d4" xml:space="preserve"><![CDATA[192.168.0.53]]></data>
+              <data key="d5" xml:space="preserve"><![CDATA[NULL]]></data>
+              <data key="d6" xml:space="preserve"><![CDATA[Client4]]></data>
+              <data key="d7" xml:space="preserve"><![CDATA[Client4.wg1.cloudarmin.me]]></data>
+              <data key="d8" xml:space="preserve"><![CDATA[Bonn]]></data>
+              <data key="d9" xml:space="preserve"><![CDATA[True]]></data>
+              <data key="d10" xml:space="preserve"><![CDATA[NULL]]></data>
+              <data key="d11" xml:space="preserve"><![CDATA[NULL]]></data>
+              <data key="d12" xml:space="preserve"><![CDATA[WGNet1]]></data>
+              <data key="d13" xml:space="preserve"><![CDATA[192.168.0.0/24,172.16.0.0/24]]></data>
+              <data key="d14" xml:space="preserve"><![CDATA[#211165]]></data>
+              <data key="d17">
+                <y:ShapeNode>
+                  <y:Geometry height="30.0" width="158.732421875" x="225.40635850694446" y="282.20703125"/>
+                  <y:Fill color="#FF0000" transparent="false"/>
+                  <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                  <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="148.732421875" x="5.0" xml:space="preserve" y="5.6494140625">Client4.wg1.cloudarmin.me</y:NodeLabel>
+                  <y:Shape type="ellipse"/>
+                </y:ShapeNode>
+              </data>
+            </node>
+            <node id="n4::n2::n1" yfiles.foldertype="group">
+              <data key="d3"/>
+              <data key="d4"/>
+              <data key="d5"/>
+              <data key="d6"/>
+              <data key="d7"/>
+              <data key="d8"/>
+              <data key="d9"/>
+              <data key="d10"/>
+              <data key="d11"/>
+              <data key="d12"/>
+              <data key="d13"/>
+              <data key="d14"/>
+              <data key="d16" xml:space="preserve"><![CDATA[Group,Bonn::Dep1,#726D04]]></data>
+              <data key="d17">
+                <y:ProxyAutoBoundsNode>
+                  <y:Realizers active="0">
+                    <y:GroupNode>
+                      <y:Geometry height="78.701171875" width="188.7325396825397" x="414.1388392857143" y="248.505859375"/>
+                      <y:Fill color="#726D04" transparent="false"/>
+                      <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                      <y:NodeLabel alignment="center" autoSizePolicy="content" borderDistance="0.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="32.6875" x="78.02251984126985" xml:space="preserve" y="0.0">Dep1</y:NodeLabel>
+                      <y:Shape type="rectangle"/>
+                      <y:State closed="false" closedHeight="80.0" closedWidth="100.0" innerGraphDisplayEnabled="false"/>
+                      <y:Insets bottom="15" bottomF="15.0" left="15" leftF="15.0" right="15" rightF="15.0" top="15" topF="15.0"/>
+                      <y:BorderInsets bottom="0" bottomF="0.0" left="0" leftF="5.8903769797780114E-5" right="0" rightF="5.890376996831037E-5" top="0" topF="0.0"/>
+                    </y:GroupNode>
+                    <y:GroupNode>
+                      <y:Geometry height="80.0" width="100.0" x="-15.0" y="-15.0"/>
+                      <y:Fill color="#726D04" transparent="false"/>
+                      <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                      <y:NodeLabel alignment="center" autoSizePolicy="content" borderDistance="0.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="32.6875" x="33.65625" xml:space="preserve" y="0.0">Dep1</y:NodeLabel>
+                      <y:Shape type="rectangle"/>
+                      <y:State closed="true" closedHeight="80.0" closedWidth="100.0" innerGraphDisplayEnabled="false"/>
+                      <y:Insets bottom="15" bottomF="15.0" left="15" leftF="15.0" right="15" rightF="15.0" top="15" topF="15.0"/>
+                      <y:BorderInsets bottom="0" bottomF="0.0" left="0" leftF="0.0" right="0" rightF="0.0" top="0" topF="0.0"/>
+                    </y:GroupNode>
+                  </y:Realizers>
+                </y:ProxyAutoBoundsNode>
+              </data>
+              <graph edgedefault="directed" id="n4::n2::n1:">
+                <node id="n4::n2::n1::n0">
+                  <data key="d3" xml:space="preserve"><![CDATA[Client]]></data>
+                  <data key="d4" xml:space="preserve"><![CDATA[192.168.0.51]]></data>
+                  <data key="d5" xml:space="preserve"><![CDATA[NULL]]></data>
+                  <data key="d6" xml:space="preserve"><![CDATA[Client1]]></data>
+                  <data key="d7" xml:space="preserve"><![CDATA[Client1.wg1.cloudarmin.me]]></data>
+                  <data key="d8" xml:space="preserve"><![CDATA[Bonn::Dep1]]></data>
+                  <data key="d9" xml:space="preserve"><![CDATA[True]]></data>
+                  <data key="d10" xml:space="preserve"><![CDATA[NULL]]></data>
+                  <data key="d11" xml:space="preserve"><![CDATA[NULL]]></data>
+                  <data key="d12" xml:space="preserve"><![CDATA[WGNet1]]></data>
+                  <data key="d13" xml:space="preserve"><![CDATA[0.0.0.0/0]]></data>
+                  <data key="d14" xml:space="preserve"><![CDATA[#211165]]></data>
+                  <data key="d17">
+                    <y:ShapeNode>
+                      <y:Geometry height="30.0" width="158.732421875" x="429.1388981894841" y="282.20703125"/>
+                      <y:Fill color="#FF0000" transparent="false"/>
+                      <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                      <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="148.732421875" x="5.0" xml:space="preserve" y="5.6494140625">Client1.wg1.cloudarmin.me</y:NodeLabel>
+                      <y:Shape type="ellipse"/>
+                    </y:ShapeNode>
+                  </data>
+                </node>
+              </graph>
+            </node>
+            <node id="n4::n2::n2" yfiles.foldertype="group">
+              <data key="d3"/>
+              <data key="d4"/>
+              <data key="d5"/>
+              <data key="d6"/>
+              <data key="d7"/>
+              <data key="d8"/>
+              <data key="d9"/>
+              <data key="d10"/>
+              <data key="d11"/>
+              <data key="d12"/>
+              <data key="d13"/>
+              <data key="d14"/>
+              <data key="d16" xml:space="preserve"><![CDATA[Group,Bonn::Dep2,#CCE36A]]></data>
+              <data key="d17">
+                <y:ProxyAutoBoundsNode>
+                  <y:Realizers active="0">
+                    <y:GroupNode>
+                      <y:Geometry height="78.701171875" width="188.7325396825396" x="632.871378968254" y="248.505859375"/>
+                      <y:Fill color="#CCE36A" transparent="false"/>
+                      <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                      <y:NodeLabel alignment="center" autoSizePolicy="content" borderDistance="0.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="32.6875" x="78.02251984126974" xml:space="preserve" y="0.0">Dep2</y:NodeLabel>
+                      <y:Shape type="rectangle"/>
+                      <y:State closed="false" closedHeight="80.0" closedWidth="100.0" innerGraphDisplayEnabled="false"/>
+                      <y:Insets bottom="15" bottomF="15.0" left="15" leftF="15.0" right="15" rightF="15.0" top="15" topF="15.0"/>
+                      <y:BorderInsets bottom="0" bottomF="0.0" left="0" leftF="5.8903769740936696E-5" right="0" rightF="5.890376985462353E-5" top="0" topF="0.0"/>
+                    </y:GroupNode>
+                    <y:GroupNode>
+                      <y:Geometry height="80.0" width="100.0" x="-15.0" y="-15.0"/>
+                      <y:Fill color="#CCE36A" transparent="false"/>
+                      <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                      <y:NodeLabel alignment="center" autoSizePolicy="content" borderDistance="0.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="32.6875" x="33.65625" xml:space="preserve" y="0.0">Dep2</y:NodeLabel>
+                      <y:Shape type="rectangle"/>
+                      <y:State closed="true" closedHeight="80.0" closedWidth="100.0" innerGraphDisplayEnabled="false"/>
+                      <y:Insets bottom="15" bottomF="15.0" left="15" leftF="15.0" right="15" rightF="15.0" top="15" topF="15.0"/>
+                      <y:BorderInsets bottom="0" bottomF="0.0" left="0" leftF="0.0" right="0" rightF="0.0" top="0" topF="0.0"/>
+                    </y:GroupNode>
+                  </y:Realizers>
+                </y:ProxyAutoBoundsNode>
+              </data>
+              <graph edgedefault="directed" id="n4::n2::n2:">
+                <node id="n4::n2::n2::n0">
+                  <data key="d3" xml:space="preserve"><![CDATA[Client]]></data>
+                  <data key="d4" xml:space="preserve"><![CDATA[192.168.0.52]]></data>
+                  <data key="d5" xml:space="preserve"><![CDATA[NULL]]></data>
+                  <data key="d6" xml:space="preserve"><![CDATA[Client3]]></data>
+                  <data key="d7" xml:space="preserve"><![CDATA[Client3.wg1.cloudarmin.me]]></data>
+                  <data key="d8" xml:space="preserve"><![CDATA[Bonn::Dep2]]></data>
+                  <data key="d9" xml:space="preserve"><![CDATA[True]]></data>
+                  <data key="d10" xml:space="preserve"><![CDATA[NULL]]></data>
+                  <data key="d11" xml:space="preserve"><![CDATA[NULL]]></data>
+                  <data key="d12" xml:space="preserve"><![CDATA[WGNet1]]></data>
+                  <data key="d13" xml:space="preserve"><![CDATA[192.168.0.0/24,172.16.0.0/24]]></data>
+                  <data key="d14" xml:space="preserve"><![CDATA[#211165]]></data>
+                  <data key="d17">
+                    <y:ShapeNode>
+                      <y:Geometry height="30.0" width="158.732421875" x="647.8714378720238" y="282.20703125"/>
+                      <y:Fill color="#FF0000" transparent="false"/>
+                      <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                      <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="148.732421875" x="5.0" xml:space="preserve" y="5.6494140625">Client3.wg1.cloudarmin.me</y:NodeLabel>
+                      <y:Shape type="ellipse"/>
+                    </y:ShapeNode>
+                  </data>
+                </node>
+              </graph>
+            </node>
+          </graph>
+        </node>
+        <node id="n4::n3" yfiles.foldertype="group">
+          <data key="d3"/>
+          <data key="d4"/>
+          <data key="d5"/>
+          <data key="d6"/>
+          <data key="d7"/>
+          <data key="d8"/>
+          <data key="d9"/>
+          <data key="d10"/>
+          <data key="d11"/>
+          <data key="d12"/>
+          <data key="d13"/>
+          <data key="d14"/>
+          <data key="d16" xml:space="preserve"><![CDATA[Group,Berlin,#348CA9]]></data>
+          <data key="d17">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Geometry height="176.103515625" width="874.9301587301588" x="82.703125" y="33.701171875"/>
+                  <y:Fill color="#348CA9" transparent="false"/>
+                  <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                  <y:NodeLabel alignment="center" autoSizePolicy="content" borderDistance="0.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="34.6796875" x="420.1252356150794" xml:space="preserve" y="0.0">Berlin</y:NodeLabel>
+                  <y:Shape type="rectangle"/>
+                  <y:State closed="false" closedHeight="80.0" closedWidth="100.0" innerGraphDisplayEnabled="false"/>
+                  <y:Insets bottom="15" bottomF="15.0" left="15" leftF="15.0" right="15" rightF="15.0" top="15" topF="15.0"/>
+                  <y:BorderInsets bottom="0" bottomF="0.0" left="0" leftF="0.0" right="0" rightF="1.1368683772161603E-13" top="0" topF="0.0"/>
+                </y:GroupNode>
+                <y:GroupNode>
+                  <y:Geometry height="80.0" width="100.0" x="-15.0" y="-15.0"/>
+                  <y:Fill color="#348CA9" transparent="false"/>
+                  <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                  <y:NodeLabel alignment="center" autoSizePolicy="content" borderDistance="0.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="34.6796875" x="32.66015625" xml:space="preserve" y="0.0">Berlin</y:NodeLabel>
+                  <y:Shape type="rectangle"/>
+                  <y:State closed="true" closedHeight="80.0" closedWidth="100.0" innerGraphDisplayEnabled="false"/>
+                  <y:Insets bottom="15" bottomF="15.0" left="15" leftF="15.0" right="15" rightF="15.0" top="15" topF="15.0"/>
+                  <y:BorderInsets bottom="0" bottomF="0.0" left="0" leftF="0.0" right="0" rightF="0.0" top="0" topF="0.0"/>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph edgedefault="directed" id="n4::n3:">
+            <node id="n4::n3::n0" yfiles.foldertype="group">
+              <data key="d3"/>
+              <data key="d4"/>
+              <data key="d5"/>
+              <data key="d6"/>
+              <data key="d7"/>
+              <data key="d8"/>
+              <data key="d9"/>
+              <data key="d10"/>
+              <data key="d11"/>
+              <data key="d12"/>
+              <data key="d13"/>
+              <data key="d14"/>
+              <data key="d16" xml:space="preserve"><![CDATA[Group,Berlin::Dep4,#02E9BA]]></data>
+              <data key="d17">
+                <y:ProxyAutoBoundsNode>
+                  <y:Realizers active="0">
+                    <y:GroupNode>
+                      <y:Geometry height="78.701171875" width="188.7325396825397" x="97.703125" y="101.103515625"/>
+                      <y:Fill color="#02E9BA" transparent="false"/>
+                      <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                      <y:NodeLabel alignment="center" autoSizePolicy="content" borderDistance="0.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="32.6875" x="78.02251984126985" xml:space="preserve" y="0.0">Dep4</y:NodeLabel>
+                      <y:Shape type="rectangle"/>
+                      <y:State closed="false" closedHeight="80.0" closedWidth="100.0" innerGraphDisplayEnabled="false"/>
+                      <y:Insets bottom="15" bottomF="15.0" left="15" leftF="15.0" right="15" rightF="15.0" top="15" topF="15.0"/>
+                      <y:BorderInsets bottom="0" bottomF="0.0" left="0" leftF="5.890376985462353E-5" right="0" rightF="5.890376985462353E-5" top="0" topF="0.0"/>
+                    </y:GroupNode>
+                    <y:GroupNode>
+                      <y:Geometry height="80.0" width="100.0" x="-15.0" y="-15.0"/>
+                      <y:Fill color="#02E9BA" transparent="false"/>
+                      <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                      <y:NodeLabel alignment="center" autoSizePolicy="content" borderDistance="0.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="32.6875" x="33.65625" xml:space="preserve" y="0.0">Dep4</y:NodeLabel>
+                      <y:Shape type="rectangle"/>
+                      <y:State closed="true" closedHeight="80.0" closedWidth="100.0" innerGraphDisplayEnabled="false"/>
+                      <y:Insets bottom="15" bottomF="15.0" left="15" leftF="15.0" right="15" rightF="15.0" top="15" topF="15.0"/>
+                      <y:BorderInsets bottom="0" bottomF="0.0" left="0" leftF="0.0" right="0" rightF="0.0" top="0" topF="0.0"/>
+                    </y:GroupNode>
+                  </y:Realizers>
+                </y:ProxyAutoBoundsNode>
+              </data>
+              <graph edgedefault="directed" id="n4::n3::n0:">
+                <node id="n4::n3::n0::n0">
+                  <data key="d3" xml:space="preserve"><![CDATA[Client]]></data>
+                  <data key="d4" xml:space="preserve"><![CDATA[192.168.0.55]]></data>
+                  <data key="d5" xml:space="preserve"><![CDATA[NULL]]></data>
+                  <data key="d6" xml:space="preserve"><![CDATA[Client6]]></data>
+                  <data key="d7" xml:space="preserve"><![CDATA[Client6.wg1.cloudarmin.me]]></data>
+                  <data key="d8" xml:space="preserve"><![CDATA[Berlin::Dep4]]></data>
+                  <data key="d9" xml:space="preserve"><![CDATA[True]]></data>
+                  <data key="d10" xml:space="preserve"><![CDATA[NULL]]></data>
+                  <data key="d11" xml:space="preserve"><![CDATA[NULL]]></data>
+                  <data key="d12" xml:space="preserve"><![CDATA[WGNet1]]></data>
+                  <data key="d13" xml:space="preserve"><![CDATA[192.168.0.0/24,172.16.0.0/24]]></data>
+                  <data key="d14" xml:space="preserve"><![CDATA[#211165]]></data>
+                  <data key="d17">
+                    <y:ShapeNode>
+                      <y:Geometry height="30.0" width="158.732421875" x="112.70318390376985" y="134.8046875"/>
+                      <y:Fill color="#FF0000" transparent="false"/>
+                      <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                      <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="148.732421875" x="5.0" xml:space="preserve" y="5.6494140625">Client6.wg1.cloudarmin.me</y:NodeLabel>
+                      <y:Shape type="ellipse"/>
+                    </y:ShapeNode>
+                  </data>
+                </node>
+              </graph>
+            </node>
+            <node id="n4::n3::n1" yfiles.foldertype="group">
+              <data key="d3"/>
+              <data key="d4"/>
+              <data key="d5"/>
+              <data key="d6"/>
+              <data key="d7"/>
+              <data key="d8"/>
+              <data key="d9"/>
+              <data key="d10"/>
+              <data key="d11"/>
+              <data key="d12"/>
+              <data key="d13"/>
+              <data key="d14"/>
+              <data key="d16" xml:space="preserve"><![CDATA[Group,Berlin::Dep5,#B9B77E]]></data>
+              <data key="d17">
+                <y:ProxyAutoBoundsNode>
+                  <y:Realizers active="0">
+                    <y:GroupNode>
+                      <y:Geometry height="78.701171875" width="188.73253968253965" x="316.4356646825397" y="101.103515625"/>
+                      <y:Fill color="#B9B77E" transparent="false"/>
+                      <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                      <y:NodeLabel alignment="center" autoSizePolicy="content" borderDistance="0.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="32.6875" x="78.02251984126985" xml:space="preserve" y="0.0">Dep5</y:NodeLabel>
+                      <y:Shape type="rectangle"/>
+                      <y:State closed="false" closedHeight="80.0" closedWidth="100.0" innerGraphDisplayEnabled="false"/>
+                      <y:Insets bottom="15" bottomF="15.0" left="15" leftF="15.0" right="15" rightF="15.0" top="15" topF="15.0"/>
+                      <y:BorderInsets bottom="0" bottomF="0.0" left="0" leftF="5.8903769797780114E-5" right="0" rightF="5.890376985462353E-5" top="0" topF="0.0"/>
+                    </y:GroupNode>
+                    <y:GroupNode>
+                      <y:Geometry height="80.0" width="100.0" x="-15.0" y="-15.0"/>
+                      <y:Fill color="#B9B77E" transparent="false"/>
+                      <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                      <y:NodeLabel alignment="center" autoSizePolicy="content" borderDistance="0.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="32.6875" x="33.65625" xml:space="preserve" y="0.0">Dep5</y:NodeLabel>
+                      <y:Shape type="rectangle"/>
+                      <y:State closed="true" closedHeight="80.0" closedWidth="100.0" innerGraphDisplayEnabled="false"/>
+                      <y:Insets bottom="15" bottomF="15.0" left="15" leftF="15.0" right="15" rightF="15.0" top="15" topF="15.0"/>
+                      <y:BorderInsets bottom="0" bottomF="0.0" left="0" leftF="0.0" right="0" rightF="0.0" top="0" topF="0.0"/>
+                    </y:GroupNode>
+                  </y:Realizers>
+                </y:ProxyAutoBoundsNode>
+              </data>
+              <graph edgedefault="directed" id="n4::n3::n1:">
+                <node id="n4::n3::n1::n0">
+                  <data key="d3" xml:space="preserve"><![CDATA[Client]]></data>
+                  <data key="d4" xml:space="preserve"><![CDATA[192.168.0.56]]></data>
+                  <data key="d5" xml:space="preserve"><![CDATA[NULL]]></data>
+                  <data key="d6" xml:space="preserve"><![CDATA[Client7]]></data>
+                  <data key="d7" xml:space="preserve"><![CDATA[Client7.wg1.cloudarmin.me]]></data>
+                  <data key="d8" xml:space="preserve"><![CDATA[Berlin::Dep5]]></data>
+                  <data key="d9" xml:space="preserve"><![CDATA[True]]></data>
+                  <data key="d10" xml:space="preserve"><![CDATA[NULL]]></data>
+                  <data key="d11" xml:space="preserve"><![CDATA[NULL]]></data>
+                  <data key="d12" xml:space="preserve"><![CDATA[WGNet1]]></data>
+                  <data key="d13" xml:space="preserve"><![CDATA[192.168.0.0/24,172.16.0.0/24]]></data>
+                  <data key="d14" xml:space="preserve"><![CDATA[#211165]]></data>
+                  <data key="d17">
+                    <y:ShapeNode>
+                      <y:Geometry height="30.0" width="158.732421875" x="331.4357235863095" y="134.8046875"/>
+                      <y:Fill color="#FF0000" transparent="false"/>
+                      <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                      <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="148.732421875" x="5.0" xml:space="preserve" y="5.6494140625">Client7.wg1.cloudarmin.me</y:NodeLabel>
+                      <y:Shape type="ellipse"/>
+                    </y:ShapeNode>
+                  </data>
+                </node>
+              </graph>
+            </node>
+            <node id="n4::n3::n2" yfiles.foldertype="group">
+              <data key="d3"/>
+              <data key="d4"/>
+              <data key="d5"/>
+              <data key="d6"/>
+              <data key="d7"/>
+              <data key="d8"/>
+              <data key="d9"/>
+              <data key="d10"/>
+              <data key="d11"/>
+              <data key="d12"/>
+              <data key="d13"/>
+              <data key="d14"/>
+              <data key="d16" xml:space="preserve"><![CDATA[Group,Berlin::Dep3,#287B10]]></data>
+              <data key="d17">
+                <y:ProxyAutoBoundsNode>
+                  <y:Realizers active="0">
+                    <y:GroupNode>
+                      <y:Geometry height="127.40234375" width="407.4650793650793" x="535.1682043650794" y="67.40234375"/>
+                      <y:Fill color="#287B10" transparent="false"/>
+                      <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                      <y:NodeLabel alignment="center" autoSizePolicy="content" borderDistance="0.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="32.6875" x="187.3887896825397" xml:space="preserve" y="0.0">Dep3</y:NodeLabel>
+                      <y:Shape type="rectangle"/>
+                      <y:State closed="false" closedHeight="80.0" closedWidth="100.0" innerGraphDisplayEnabled="false"/>
+                      <y:Insets bottom="15" bottomF="15.0" left="15" leftF="15.0" right="15" rightF="15.0" top="15" topF="15.0"/>
+                      <y:BorderInsets bottom="0" bottomF="0.0" left="0" leftF="5.8903769740936696E-5" right="0" rightF="0.0" top="0" topF="0.0"/>
+                    </y:GroupNode>
+                    <y:GroupNode>
+                      <y:Geometry height="80.0" width="100.0" x="-15.0" y="-15.0"/>
+                      <y:Fill color="#287B10" transparent="false"/>
+                      <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                      <y:NodeLabel alignment="center" autoSizePolicy="content" borderDistance="0.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="32.6875" x="33.65625" xml:space="preserve" y="0.0">Dep3</y:NodeLabel>
+                      <y:Shape type="rectangle"/>
+                      <y:State closed="true" closedHeight="80.0" closedWidth="100.0" innerGraphDisplayEnabled="false"/>
+                      <y:Insets bottom="15" bottomF="15.0" left="15" leftF="15.0" right="15" rightF="15.0" top="15" topF="15.0"/>
+                      <y:BorderInsets bottom="0" bottomF="0.0" left="0" leftF="0.0" right="0" rightF="0.0" top="0" topF="0.0"/>
+                    </y:GroupNode>
+                  </y:Realizers>
+                </y:ProxyAutoBoundsNode>
+              </data>
+              <graph edgedefault="directed" id="n4::n3::n2:">
+                <node id="n4::n3::n2::n0">
+                  <data key="d3" xml:space="preserve"><![CDATA[Client]]></data>
+                  <data key="d4" xml:space="preserve"><![CDATA[192.168.0.54]]></data>
+                  <data key="d5" xml:space="preserve"><![CDATA[NULL]]></data>
+                  <data key="d6" xml:space="preserve"><![CDATA[Client5]]></data>
+                  <data key="d7" xml:space="preserve"><![CDATA[Client5.wg1.cloudarmin.me]]></data>
+                  <data key="d8" xml:space="preserve"><![CDATA[Berlin::Dep3]]></data>
+                  <data key="d9" xml:space="preserve"><![CDATA[True]]></data>
+                  <data key="d10" xml:space="preserve"><![CDATA[NULL]]></data>
+                  <data key="d11" xml:space="preserve"><![CDATA[NULL]]></data>
+                  <data key="d12" xml:space="preserve"><![CDATA[WGNet1]]></data>
+                  <data key="d13" xml:space="preserve"><![CDATA[192.168.0.0/24,172.16.0.0/24]]></data>
+                  <data key="d14" xml:space="preserve"><![CDATA[#211165]]></data>
+                  <data key="d17">
+                    <y:ShapeNode>
+                      <y:Geometry height="30.0" width="158.732421875" x="550.1682632688492" y="134.8046875"/>
+                      <y:Fill color="#FF0000" transparent="false"/>
+                      <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                      <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="148.732421875" x="5.0" xml:space="preserve" y="5.6494140625">Client5.wg1.cloudarmin.me</y:NodeLabel>
+                      <y:Shape type="ellipse"/>
+                    </y:ShapeNode>
+                  </data>
+                </node>
+                <node id="n4::n3::n2::n1" yfiles.foldertype="group">
+                  <data key="d3"/>
+                  <data key="d4"/>
+                  <data key="d5"/>
+                  <data key="d6"/>
+                  <data key="d7"/>
+                  <data key="d8"/>
+                  <data key="d9"/>
+                  <data key="d10"/>
+                  <data key="d11"/>
+                  <data key="d12"/>
+                  <data key="d13"/>
+                  <data key="d14"/>
+                  <data key="d16" xml:space="preserve"><![CDATA[Group,Berlin::Dep3::Team1,#B8C67F]]></data>
+                  <data key="d17">
+                    <y:ProxyAutoBoundsNode>
+                      <y:Realizers active="0">
+                        <y:GroupNode>
+                          <y:Geometry height="78.701171875" width="188.7325396825397" x="738.900744047619" y="101.103515625"/>
+                          <y:Fill color="#B8C67F" transparent="false"/>
+                          <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                          <y:NodeLabel alignment="center" autoSizePolicy="content" borderDistance="0.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="41.34765625" x="73.69244171626985" xml:space="preserve" y="0.0">Team1</y:NodeLabel>
+                          <y:Shape type="rectangle"/>
+                          <y:State closed="false" closedHeight="80.0" closedWidth="100.0" innerGraphDisplayEnabled="false"/>
+                          <y:Insets bottom="15" bottomF="15.0" left="15" leftF="15.0" right="15" rightF="15.0" top="15" topF="15.0"/>
+                          <y:BorderInsets bottom="0" bottomF="0.0" left="0" leftF="5.890376985462353E-5" right="0" rightF="5.890376985462353E-5" top="0" topF="0.0"/>
+                        </y:GroupNode>
+                        <y:GroupNode>
+                          <y:Geometry height="80.0" width="100.0" x="-15.0" y="-15.0"/>
+                          <y:Fill color="#B8C67F" transparent="false"/>
+                          <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                          <y:NodeLabel alignment="center" autoSizePolicy="content" borderDistance="0.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="41.34765625" x="29.326171875" xml:space="preserve" y="0.0">Team1</y:NodeLabel>
+                          <y:Shape type="rectangle"/>
+                          <y:State closed="true" closedHeight="80.0" closedWidth="100.0" innerGraphDisplayEnabled="false"/>
+                          <y:Insets bottom="15" bottomF="15.0" left="15" leftF="15.0" right="15" rightF="15.0" top="15" topF="15.0"/>
+                          <y:BorderInsets bottom="0" bottomF="0.0" left="0" leftF="0.0" right="0" rightF="0.0" top="0" topF="0.0"/>
+                        </y:GroupNode>
+                      </y:Realizers>
+                    </y:ProxyAutoBoundsNode>
+                  </data>
+                  <graph edgedefault="directed" id="n4::n3::n2::n1:">
+                    <node id="n4::n3::n2::n1::n0">
+                      <data key="d3" xml:space="preserve"><![CDATA[Client]]></data>
+                      <data key="d4" xml:space="preserve"><![CDATA[192.168.0.57]]></data>
+                      <data key="d5" xml:space="preserve"><![CDATA[NULL]]></data>
+                      <data key="d6" xml:space="preserve"><![CDATA[Client8]]></data>
+                      <data key="d7" xml:space="preserve"><![CDATA[Client8.wg1.cloudarmin.me]]></data>
+                      <data key="d8" xml:space="preserve"><![CDATA[Berlin::Dep3::Team1]]></data>
+                      <data key="d9" xml:space="preserve"><![CDATA[True]]></data>
+                      <data key="d10" xml:space="preserve"><![CDATA[NULL]]></data>
+                      <data key="d11" xml:space="preserve"><![CDATA[NULL]]></data>
+                      <data key="d12" xml:space="preserve"><![CDATA[WGNet1]]></data>
+                      <data key="d13" xml:space="preserve"><![CDATA[192.168.0.0/24,172.16.0.0/24]]></data>
+                      <data key="d14" xml:space="preserve"><![CDATA[#211165]]></data>
+                      <data key="d17">
+                        <y:ShapeNode>
+                          <y:Geometry height="30.0" width="158.732421875" x="753.9008029513889" y="134.8046875"/>
+                          <y:Fill color="#FF0000" transparent="false"/>
+                          <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="148.732421875" x="5.0" xml:space="preserve" y="5.6494140625">Client8.wg1.cloudarmin.me</y:NodeLabel>
+                          <y:Shape type="ellipse"/>
+                        </y:ShapeNode>
+                      </data>
+                    </node>
+                  </graph>
+                </node>
+              </graph>
+            </node>
+          </graph>
+        </node>
+      </graph>
+    </node>
+    <edge id="n4::e0" source="n4::n2::n0" target="n4::n3">
+      <data key="d19" xml:space="preserve"/>
+      <data key="d20" xml:space="preserve"/>
+      <data key="d21" xml:space="preserve"/>
+      <data key="d22" xml:space="preserve"/>
+      <data key="d23" xml:space="preserve"/>
+      <data key="d26">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="-15.0" tx="-215.39563492063496" ty="88.0517578125"/>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+  </graph>
+  <data key="d18">
+    <y:Resources/>
+  </data>
+</graphml>

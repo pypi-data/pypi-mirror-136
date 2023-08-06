@@ -1,0 +1,3 @@
+[console_scripts]
+wgeasywall=wgeasywall.main:app
+
