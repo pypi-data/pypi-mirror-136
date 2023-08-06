@@ -1,0 +1,3 @@
+[console_scripts]
+mthasher=mthasher.__main__:entrypoint
+
