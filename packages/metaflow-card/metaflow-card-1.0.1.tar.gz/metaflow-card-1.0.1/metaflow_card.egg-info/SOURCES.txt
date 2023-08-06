@@ -1,0 +1,9 @@
+MANIFEST.in
+README.md
+setup.py
+metaflow_card.egg-info/PKG-INFO
+metaflow_card.egg-info/SOURCES.txt
+metaflow_card.egg-info/dependency_links.txt
+metaflow_card.egg-info/not-zip-safe
+metaflow_card.egg-info/top_level.txt
+metaflow_extensions/helloworld/plugins/cards/hello_world_card/__init__.py

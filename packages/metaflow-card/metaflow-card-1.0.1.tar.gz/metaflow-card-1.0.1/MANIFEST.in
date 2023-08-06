@@ -1,0 +1,3 @@
+include metaflow_extensions/helloworld/plugins/cards/*/*.html
+include metaflow_extensions/helloworld/plugins/cards/*/*.js
+include metaflow_extensions/helloworld/plugins/cards/*/*.css
