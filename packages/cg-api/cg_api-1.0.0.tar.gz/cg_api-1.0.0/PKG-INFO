@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: cg_api
+Version: 1.0.0
+Summary: Python project for CoingeckoAPI
+Home-page: https://github.com/emrebekar/cg_api
+Author: Emre Bekar
+Author-email: emre.bekar@hotmail.com.tr
+License: MIT
+Download-URL: https://github.com/emrebekar/coingeckoapi/archive/cg_api-1.0.0.tar.gz
+Description: # Python Coingecko Api
+        Simple Coingecko Python 3 library
+        
+        ## Installation
+        
+        ```
+        pip install coingeckoapi
+        ````
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
