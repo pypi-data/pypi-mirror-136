@@ -1,0 +1,85 @@
+Metadata-Version: 2.1
+Name: koldar-utils
+Version: 2.104.5
+Summary: Some stuff that i used when developing with python. You can use this library pretty much anywhere
+Home-page: https://github.com/Koldar/django-koldar-common-apps
+Author: Massimo Bono
+Author-email: massimobono1@gmail.com
+License: MIT
+Keywords: utils
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+License-File: README.md
+License-File: requirements.txt
+License-File: setup.py
+Requires-Dist: datasize (>=1.0.0)
+Requires-Dist: docutils (>=0.17.1)
+Requires-Dist: jmespath (>=0.10.0)
+Requires-Dist: m2r (>=0.2.1)
+Requires-Dist: mistune (>=0.8.4)
+Requires-Dist: Pillow (>=8.3.2)
+Requires-Dist: semantic-version (>=2.8.5)
+Requires-Dist: stringcase (>=1.2.0)
+Provides-Extra: docs
+Requires-Dist: sphinx ; extra == 'docs'
+Requires-Dist: sphinx-rtd-theme ; extra == 'docs'
+Requires-Dist: sphinx-autodoc-typehints ; extra == 'docs'
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+Requires-Dist: mock ; extra == 'test'
+
+
+Introduction
+============
+
+Generic django providing models and function used to better developer other apps.
+In itself, this is **not** a django app 
+
+.. code-block::
+
+   pip install django-koldar-utils
+
+Capabilities
+============
+
+
+* ``AbstractModelMetaclass`` which can be used to create django models with abc capabilities;
+* ``AbstractPermissionMixin`` which does not rely on ``groups`` and ``permissions`` relationships;
+* ``Orm`` class that provides the creation of popular django fields, just for your convenience;
+* ``ArrowAuditMixin`` for providing ``created_at`` and  ``updated_at`` fields using ``arrow`` project;
+* convenience class to easily create django backends, middlesware, validators;
+* ``ArrowField`` implementation (taken from ``django-arrow-field``\ );
+* convenience methods to interact with django framework without remembering how to do certain tasks;
+* classes used to create graphql CRUD operation easily;
+
+Upload new version
+==================
+
+Use setup.py directly:
+
+.. code-block::
+
+   # create .pypirc in your home directory
+   python setup.py update_version_patch bdist_wheel upload
+
+Generate new doc
+================
+
+.. code-block::
+
+   python setup.py build_sphinx
+
+Or ``pmake``\ :
+
+.. code-block::
+
+   # pmakeup is a Massimo Bono project used to automatize the build; per se it is not necessary
+   pip install pmakeup 
+   # add in TWINE_PYPI_PASSWORD the pypi password
+   pmakeup update-version-patch build upload-to-pypi
+
+
