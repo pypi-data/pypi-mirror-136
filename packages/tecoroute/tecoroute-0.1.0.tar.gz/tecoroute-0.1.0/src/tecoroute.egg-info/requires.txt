@@ -1,0 +1,4 @@
+tornado~=6.1
+
+[uvloop]
+uvloop~=0.16

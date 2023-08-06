@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/tecoroute/__init__.py
+src/tecoroute/__main__.py
+src/tecoroute/_cli.py
+src/tecoroute/_http.py
+src/tecoroute/_misc.py
+src/tecoroute/connector.py
+src/tecoroute.egg-info/PKG-INFO
+src/tecoroute.egg-info/SOURCES.txt
+src/tecoroute.egg-info/dependency_links.txt
+src/tecoroute.egg-info/entry_points.txt
+src/tecoroute.egg-info/requires.txt
+src/tecoroute.egg-info/top_level.txt
+src/tecoroute.egg-info/zip-safe
