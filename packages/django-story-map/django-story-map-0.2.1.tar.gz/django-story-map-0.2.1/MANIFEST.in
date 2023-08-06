@@ -1,0 +1,2 @@
+recursive-include story_map/data *
+recursive-include story_map/templates *
