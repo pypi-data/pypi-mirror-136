@@ -1,0 +1,5 @@
+h5netcdf
+pyorbital
+pyspectral
+satpy>=0.19
+trollsift
