@@ -1,0 +1,5 @@
+jedi>=0.18.0
+pygls<0.11,>=0.10.2
+pyflakes~=2.2
+pycodestyle~=2.5
+yapf~=0.30
