@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+majormode/__init__.py
+majormode/perseus/__init__.py
+majormode/perseus/agent/__init__.py
+majormode/perseus/agent/base.py
+perseus_agent_library.egg-info/PKG-INFO
+perseus_agent_library.egg-info/SOURCES.txt
+perseus_agent_library.egg-info/dependency_links.txt
+perseus_agent_library.egg-info/requires.txt
+perseus_agent_library.egg-info/top_level.txt

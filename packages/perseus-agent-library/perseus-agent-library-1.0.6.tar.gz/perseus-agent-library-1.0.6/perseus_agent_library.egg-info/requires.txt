@@ -1,0 +1,3 @@
+perseus-core-library
+perseus-getenv-library
+perseus-microrm-library
