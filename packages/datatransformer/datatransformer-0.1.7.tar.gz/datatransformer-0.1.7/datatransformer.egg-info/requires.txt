@@ -1,0 +1,2 @@
+tensorflow>=2.6.0
+vaex>=4.4.0
