@@ -1,0 +1,49 @@
+[tool.poetry]
+name = "sdgs-tools"
+version = "0.8.3"
+description = ""
+authors = ["hexatester <hexatester@protonmail.com>"]
+license = "GPL-3.0-only"
+keywords = ["sdgs", "sdgs-dashboard", "survey-sdgs", "kemendesa"]
+readme = "README.md"
+homepage = "https://github.com/hexatester/sdgs-tools"
+repository = "https://github.com/hexatester/sdgs-tools"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+]
+
+[tool.poetry.dependencies]
+python = "^3.7.10"
+openpyxl = "^3.0.7"
+click = "^8.0.1"
+python-dateutil = "^2.8.1"
+uiautomator2 = "^2.16.7"
+beautifulsoup4 = "^4.9.3"
+attrs = "^21.2.0"
+cattrs = "^1.8.0"
+ujson = {version = "^4.1.0", optional = true}
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+mypy = "^0.910"
+black = "^21.7b0"
+pyinstaller = "^4.5.1"
+weditor = "^0.6.4"
+types-python-dateutil = "^0.1.6"
+types-requests = "^2.25.6"
+
+[tool.poetry.extras]
+ujson = ["ujson"]
+
+[tool.poetry.scripts]
+sdgs-tools = 'sdgs_tools.__main__:main'
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
