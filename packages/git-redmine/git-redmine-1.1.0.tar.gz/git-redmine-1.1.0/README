@@ -1,0 +1,125 @@
+git-redmine
+===========
+
+Redmine integration to git.
+
+Configuration
+-------------
+
+Add the following snippet to your .config/git/config file.::
+
+   [redmine]
+   url = https://redmine.mycompany.org/
+   key = apikey
+
+      OR
+
+   username = username
+   password = password
+
+Usage
+-----
+
+project
+.......
+
+Show the current default project.
+
+project set
+...........
+
+Set the current default project for this repository, useful for creating new
+issues.::
+
+   git redmine project set myproject-id
+
+rebase
+......
+
+Checkout master, pull origin/master on master then rebase current feature
+branch on master, if it fails it reset the branch. Checkout the original branch
+after all this.
+
+  git redmine rebase
+
+issue new
+.........
+
+Given a default project, create a new issue, an editor is launched to define
+subject and description of the issue.::
+
+  git redmine issue new
+
+issue take
+..........
+
+Handle the given issue by creating or switching to a branch named
+`wip/<issue-number>-<slugified-issue-subject>` forking from `master`.::
+
+  git redmine issue take 123
+
+It will propose applying patches attached to the issue.
+
+issue show
+..........
+
+Show information about the current issue.::
+
+  git redmine issue show
+
+Show informations about issue 9999.::
+
+  git redmine issue show --issue 9999
+
+issue submit
+............
+
+It first does a `git redmine rebase` then use `git format-patch` to create the
+patch serie from `master` and attach it to the current issue. An editor is
+launched to add a commment.::
+
+  git redmine issue submit
+
+To submit only the last commit::
+
+  git redmine issue submit 1
+
+To submit the last commit to issue 9999::
+
+  git redmine issue submit --issue 9999 1
+
+issue apply
+...........
+
+Apply patches attached to the current issue.::
+
+  git redmine issue apply
+
+Apply patched atteched to issue 9999.::
+
+  git redmine issue apply --issue 9999
+
+link
+----
+
+  git redmine link 9999
+
+Link current branch issue to issue 9999.
+
+merge-and-push
+..............
+
+Merge current feature branch in a target branch (default is master), push
+target branch to origin, delete feature branch locally and on origin; if before
+that those operations pass: pull-rebase the target branch, rebase feature
+branch on target.
+
+  git rebase merge-and-push
+
+clean
+-----
+
+Remove local and remote branch for issues closed more than 21 days ago. Use
+--no-local to only clean local branches.
+
+  git redmine clean [--local/--no-local]
