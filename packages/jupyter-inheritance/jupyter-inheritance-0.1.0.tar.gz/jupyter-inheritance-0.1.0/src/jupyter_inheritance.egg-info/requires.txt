@@ -1,0 +1,8 @@
+dill>=0.3.4
+jupyter_client>=7.0.6
+jupyter_core>=4.9.1
+jupyter_server>=1.11.2
+requests
+
+[tests]
+pytest

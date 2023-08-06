@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+src/jupyter_inheritance/__init__.py
+src/jupyter_inheritance.egg-info/PKG-INFO
+src/jupyter_inheritance.egg-info/SOURCES.txt
+src/jupyter_inheritance.egg-info/dependency_links.txt
+src/jupyter_inheritance.egg-info/requires.txt
+src/jupyter_inheritance.egg-info/top_level.txt
