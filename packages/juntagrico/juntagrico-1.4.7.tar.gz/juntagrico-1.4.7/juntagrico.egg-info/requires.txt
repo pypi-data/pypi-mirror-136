@@ -1,0 +1,10 @@
+Django==3.2.10
+django-admin-sortable2==1.0.2
+django-crispy-forms==1.13.0
+django-impersonate==1.7.3
+django-polymorphic==3.0.0
+django-richtextfield==1.6.1
+icalendar==4.0.9
+schwifty==2021.10.2
+xhtml2pdf==0.2.4
+XlsxWriter==3.0.2
