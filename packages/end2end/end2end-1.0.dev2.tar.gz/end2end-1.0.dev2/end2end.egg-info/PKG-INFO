@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: end2end
+Version: 1.0.dev2
+Summary: Python end two end encryption designed for socket
+Home-page: https://www.python.org/sigs/distutils-sig/
+Author: Julian Wandhoven
+Author-email: jwandhoven@gmail.com
+License: MIT
+Description: # end2end-encryption
+        hello this is a file.
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
