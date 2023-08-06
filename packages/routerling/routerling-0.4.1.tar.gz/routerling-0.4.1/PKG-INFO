@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: routerling
+Version: 0.4.1
+Summary: Extremely Stupid Simple, Blazing Fast, Get Out of your way immediately Microframework for building Python Web Applications.
+License: MIT
+Author: Raymond Ortserga
+Author-email: ortserga@gmail.com
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: uvicorn (>=0.14.0,<0.15.0)
+Description-Content-Type: text/markdown
+
+# Routerling
+
+<img src="https://img.shields.io/badge/coverage-92%25-green" />
+
+Build web applications and enterprise microservices with the _**simplest**_ and possibly the fastest or one of the _**fastest**_ web microframeworks for python.
+
+[Go To Docs](https://rayattack.github.io/routerling)
+
