@@ -1,0 +1,43 @@
+[tool.poetry]
+name = "cyanbot"
+version = "0.1.1"
+description = "An integrated manager for Cyan Python SDK for QQ Bot."
+authors = ["worldmozara <worldmozara@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+repository = "https://gitlab.huajitech.net/huajitech/cyan-bot"
+keywords = ["bot", "qq", "qqbot"]
+packages = [
+  { include = "cyanbot" },
+]
+include = ["cyanbot/py.typed"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+cyansdk = "^0.2.0"
+concap = "^0.2.1"
+cookiecutter = "^1.7"
+
+[tool.poetry.dev-dependencies]
+flake8 = "^4.0.1"
+pyright = "^0.0.13"
+toml = "^0.10.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pyright]
+include = ["cyanbot"]
+exclude = ["**/node_modules", "**/__pycache__"]
+pythonVersion = "3.7"
+typeCheckingMode = "strict"
+reportImportCycles = "none"
+
+[tool.poetry.scripts]
+cyanbot = "cyanbot.__main__:main"
+
+[[tool.poetry.source]]
+name = "tsinghua"
+url = "https://pypi.tuna.tsinghua.edu.cn/simple/"
+default = true
