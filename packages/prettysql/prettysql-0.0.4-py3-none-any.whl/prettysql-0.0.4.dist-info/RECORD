@@ -1,0 +1,9 @@
+prettysql/__init__.py,sha256=EqXo6SYbpemRzfNS4k77xtJV8tEo6WKJvCEJs9YMUvc,46
+prettysql/prettysql.py,sha256=hs6W_lci4uUuLSOhR4BXh7yXVs9SZUw4zALDbs1O-2Q,5896
+prettysql/queries/abc.txt,sha256=ungWv48Bz-pBQUDeXa4iI7ADYaOWF3qctBD_YfIAFa0,3
+prettysql/queries/query.sql,sha256=nNxRdDX_yByb_Y8T33iQ1puVR0fk4Ldr_Sm0N3dw37Y,710
+prettysql-0.0.4.dist-info/METADATA,sha256=-C2PDodvSHK_0wuGzke9lFPQHJmQXRqv9KGFAn12Pg8,680
+prettysql-0.0.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+prettysql-0.0.4.dist-info/entry_points.txt,sha256=KjirwUddO1KVz_ph7RwtOfwrfanCOUt9q0mf_B36rUY,56
+prettysql-0.0.4.dist-info/top_level.txt,sha256=eZj3YovGKR8JPcMuoJ6gw61O3-in3vA_8HnQg_iUm08,10
+prettysql-0.0.4.dist-info/RECORD,,

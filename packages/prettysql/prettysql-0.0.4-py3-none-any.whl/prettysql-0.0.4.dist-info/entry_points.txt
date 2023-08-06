@@ -1,0 +1,3 @@
+[console_scripts]
+prettysql = prettysql.prettysql:main
+
