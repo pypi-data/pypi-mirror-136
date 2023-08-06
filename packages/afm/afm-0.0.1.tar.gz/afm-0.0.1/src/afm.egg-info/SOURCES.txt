@@ -1,0 +1,6 @@
+LICENSE
+setup.py
+src/afm.egg-info/PKG-INFO
+src/afm.egg-info/SOURCES.txt
+src/afm.egg-info/dependency_links.txt
+src/afm.egg-info/top_level.txt
