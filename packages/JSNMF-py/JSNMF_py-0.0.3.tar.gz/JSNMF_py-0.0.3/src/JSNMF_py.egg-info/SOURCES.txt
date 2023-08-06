@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/JSNMF/__init__.py
+src/JSNMF/model.py
+src/JSNMF/utils.py
+src/JSNMF_py.egg-info/PKG-INFO
+src/JSNMF_py.egg-info/SOURCES.txt
+src/JSNMF_py.egg-info/dependency_links.txt
+src/JSNMF_py.egg-info/top_level.txt
