@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: Qtalk
+Version: 2.0
+Summary: Mattermost integration package
+Home-page: UNKNOWN
+Author: Lucia Kina
+Author-email: <lkina@quanticotrends.com>
+License: UNKNOWN
+Description: Use these functions to send alerts to Mattermost using webhooks
+Keywords: python,mattermost,alerts,qtalk
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows

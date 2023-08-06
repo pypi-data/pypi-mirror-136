@@ -1,0 +1,9 @@
+README.md
+setup.py
+Qtalk/__init__.py
+Qtalk/alert_manager.py
+Qtalk/integration.py
+Qtalk.egg-info/PKG-INFO
+Qtalk.egg-info/SOURCES.txt
+Qtalk.egg-info/dependency_links.txt
+Qtalk.egg-info/top_level.txt
