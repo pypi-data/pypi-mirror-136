@@ -1,0 +1,14 @@
+mautrix==0.14.7
+aiohttp<4,>=3
+aiosqlite<0.18,>=0.16
+python-olm<4,>=3
+pycryptodome<4,>=3
+unpaddedbase64<2,>=1
+psycopg2-binary<3,>=2
+asyncpg<0.26,>=0.20
+SQLAlchemy<1.4,>=1
+pyyaml==6.0
+
+[lint]
+pylint
+pep8
