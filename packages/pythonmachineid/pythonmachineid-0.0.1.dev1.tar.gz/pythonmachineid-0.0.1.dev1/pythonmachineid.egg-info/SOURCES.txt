@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.py
+pythonmachineid/__init__.py
+pythonmachineid/machineid.py
+pythonmachineid.egg-info/PKG-INFO
+pythonmachineid.egg-info/SOURCES.txt
+pythonmachineid.egg-info/dependency_links.txt
+pythonmachineid.egg-info/requires.txt
+pythonmachineid.egg-info/top_level.txt
