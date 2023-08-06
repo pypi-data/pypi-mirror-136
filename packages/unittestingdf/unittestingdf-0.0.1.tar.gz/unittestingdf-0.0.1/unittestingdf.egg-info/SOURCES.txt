@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+unittestingdf.py
+unittestingdf.egg-info/PKG-INFO
+unittestingdf.egg-info/SOURCES.txt
+unittestingdf.egg-info/dependency_links.txt
+unittestingdf.egg-info/top_level.txt
