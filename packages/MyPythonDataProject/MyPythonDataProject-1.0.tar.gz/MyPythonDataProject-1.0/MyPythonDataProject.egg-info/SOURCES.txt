@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+MyPythonDataProject.egg-info/PKG-INFO
+MyPythonDataProject.egg-info/SOURCES.txt
+MyPythonDataProject.egg-info/dependency_links.txt
+MyPythonDataProject.egg-info/top_level.txt
+dataproject/__init__.py
+dataproject/datahandler.py
+dataproject/identifier.py
+dataproject/utils.py
