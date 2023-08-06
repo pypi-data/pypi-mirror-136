@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: pnwcybersec
+Version: 0.0.1
+Summary: A deep learning malware detection module.
+Home-page: UNKNOWN
+Author: Ryan Frederick, Joseph Shapiro
+Author-email: freder20@pnw.edu
+License: Apache License 2.0
+Keywords: Deep Learning,Cyber Security
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier:  License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE.TXT
+
+A deep learning malware detection module.
+
+
+Change Log
+#########################
+0.0.1(01/30/2022)
+-----------------
+- First Release
+
+
