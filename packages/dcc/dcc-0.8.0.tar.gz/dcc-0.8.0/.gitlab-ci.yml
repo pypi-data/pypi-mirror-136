@@ -1,0 +1,146 @@
+## GitLab CI configuration.
+
+# Include IGWN computing templates. These set up common testing environments such as
+# conda.
+include:
+  - project: computing/gitlab-ci-templates
+    # Use a fixed git commit for forward compatibility. This can be periodically changed
+    # to pull in later enhancements to the templates.
+    ref: e7e044213b11cf8604dec59c728a56d781329f6c  # 2022-01-25
+    file: conda.yml
+
+stages:
+  - build
+  - test
+  - docs
+  - deploy
+
+###############
+# Build stage #
+###############
+
+build/any:
+  stage: build
+  image: python:3.8
+  before_script:
+    - pip install build
+  script:
+    - python -m build
+  artifacts:
+    paths:
+      - dist
+
+##############
+# Test stage #
+##############
+
+test/py38:
+  stage: test
+  needs:
+    - build/any
+  extends:
+    - .conda:base
+  before_script:
+    # Run the `before_script` from the template.
+    - !reference [".conda:base", before_script]
+    # Install ciecplib with conda rather than pip due to its need for upstream
+    # dependencies not available in normal environments.
+    - mamba create -n test python=3.8 ciecplib make
+    - mamba activate test
+    - pip install dist/dcc-*-py3-none-any.whl
+    # Install testing dependencies.
+    - pip install pytest requests-mock
+  script:
+    - pytest
+
+test/py310:
+  stage: test
+  needs:
+    - build/any
+  extends:
+    - .conda:base
+  before_script:
+    # Run the `before_script` from the template.
+    - !reference [".conda:base", before_script]
+    # Install ciecplib with conda rather than pip due to its need for upstream
+    # dependencies not available in normal environments.
+    - mamba create -n test python=3.10 ciecplib make
+    - mamba activate test
+    - pip install dist/dcc-*-py3-none-any.whl
+    # Install testing dependencies.
+    - pip install pytest requests-mock
+  script:
+    - pytest
+
+##############
+# Docs stage #
+##############
+
+docs/html:
+  stage: docs
+  needs:
+    - build/any
+  extends:
+    - .conda:base
+  before_script:
+    # Run the `before_script` from the template.
+    - !reference [".conda:base", before_script]
+    # Install ciecplib with conda rather than pip due to its need for upstream
+    # dependencies not available in normal environments.
+    - mamba create -n docs python=3.8 ciecplib make
+    - mamba activate docs
+    - pip install dist/dcc-*-py3-none-any.whl
+    # Install documentation dependencies.
+    - pip install sphinx sphinxcontrib-programoutput insipid-sphinx-theme numpydoc
+  script:
+    - cd docs
+    - make html
+    - cd ..
+  artifacts:
+    paths:
+      - docs/build/html
+
+################
+# Deploy stage #
+################
+
+# Publish the documentation only for tagged releases.
+pages:
+  stage: deploy
+  needs:
+    - docs/html
+    # Ideally we'd have a "stage: test" here too, but this isn't possible yet; see
+    # https://gitlab.com/gitlab-org/gitlab/-/issues/220758
+    - test/py38
+    - test/py310
+  only:
+    - tags@sean-leavey/dcc
+    - /^dcc-\d(.\d){2}$/
+  script:
+    - mv docs/build/html public
+  artifacts:
+    paths:
+      - public
+
+# Publish PyPI release only for tagged releases.
+pypi:
+  stage: deploy
+  image: python:3.8
+  needs:
+    - build/any
+    # Ideally we'd have a "stage: test" here too, but this isn't possible yet; see
+    # https://gitlab.com/gitlab-org/gitlab/-/issues/220758
+    - test/py38
+    - test/py310
+  only:
+    - tags@sean-leavey/dcc
+    - /^dcc-\d(.\d){2}$/
+  variables:
+    # PyPI credentials (overridden by protected variables in CI configuration).
+    TWINE_USERNAME: "__token__"
+    TWINE_PASSWORD: ""
+  before_script:
+    # Install packaging dependencies.
+    - pip install twine
+  script:
+    - twine upload dist/dcc-*

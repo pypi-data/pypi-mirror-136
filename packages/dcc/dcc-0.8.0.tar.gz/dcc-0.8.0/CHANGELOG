@@ -1,0 +1,86 @@
+
+# Change log
+All notable changes to `dcc` will be documented in this file.
+
+## 0.8.0
+- CLI:
+  - Changed `dcc update` `--dry-run` flag to `--confirm/--no-confirm`; now it shows
+    the changes and prompts for confirmation
+  - Added interactive mode to `dcc archive` command, which prompts before downloading
+    files
+  - Changed `dcc archive` arguments to accept DCC numbers by default, instead allowing
+    loading of numbers from file using `--from-file`
+- Package:
+  - Made remote file stream handling (for progress bars, too large files, etc.) more
+    generic, allowing for greater flexibility over downloads
+  - Added `DCCFile.exists` method
+  - Titles and filename strings are now sanitised upon `DCCFile` instantiation
+  - Added `DCCArchive.latest_revisions` method
+  - Moved default session function to `dcc.sessions`
+  - Exposed some imports on the package scope
+- Developer tools:
+  - Added archive tests
+  - Renamed test data files
+- Documentation:
+  - Added link to PyPI project on installation page
+  - Updated release procedure
+
+## 0.7.6 (hotfix)
+- Developer tools:
+  - Fixed PyPI deployment on CI
+
+## 0.7.4
+- Package:
+  - Renamed `DCCNumber.string_repr` to `DCCNumber.format`
+  - Fixed bug with `DCCNumber` parsing
+  - Added `documents` property to `DCCArchive`
+  - Fixed bug with public sessions requiring IDP parameter (#21)
+  - Made file system writes (meta and attachment files) atomic
+  - Fixed various docstrings
+- CLI:
+  - Changed `dcc scrape`:
+    - Renamed to `dcc convert`
+    - Changed function to extract DCC numbers from arbitrary text documents (HTML or
+      otherwise)
+    - Changed to accept local paths as well as URLs
+    - Changed to output a file (or stdout)
+  - Changed behaviour of `dcc archive` to accept only a file (or stdin) containing DCC
+    numbers to archive
+  - Fixed bug with archive directory
+  - Changed `--prefer-local` flag to `--ignore-version`
+  - Added descriptions for R and X record types
+  - Fixed bug with `dcc open-file` when no `-s`/`--archive-dir` flag is given
+- Documentation:
+  - Changed documentation for changed CLI commands
+  - Added stdin pipe example
+  - Added examples page
+- Developer tools:
+  - Added tests
+  - Added test stage to CI
+  - Added functions to compare DCC numbers, authors, records, and sets of records
+  - Added automated PyPI deploy job for tagged releases
+
+## 0.7.3 (hotfix)
+- Fixed bug loading archived TOML files
+
+## 0.7.2
+- Added support for accessing the public DCC
+- Pinned dependency versions
+- Fixed `DCCJournalRef` to not require a URL
+- Changed to using `tomli` instead of `toml` for reading/writing TOML
+- CLI:
+  - Archival results now displayed even after keyboard interrupts
+  - Added `--debug` flag to show exceptions
+  - Added `--public` flag for public DCC access
+
+## 0.7.1
+- Added Sphinx documentation
+- Added simple continuous integration configuration to build and deploy the online
+  documentation
+- Updated project URLs to point to new online documentation
+- CLI:
+  - Rearranged shared options
+  - Changed "no archive dir" warning to an info level message
+  - Added `--locate` flag to `dcc open-file` command
+  - Renamed `dcc list-archives` to `dcc list`
+- Simplified `meta.toml` schema versioning
