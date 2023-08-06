@@ -1,0 +1,14 @@
+splusdata/__init__.py,sha256=25AvhM7Ze5sWQETSbdShfWSg70psfkgwiKyIJwP_RLA,101
+splusdata/connect.py,sha256=pT6SyYnlK0jvKRD4absLfeCF56D5pmyOT8yTYU0wXUI,10435
+splusdata/features/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+splusdata/features/filterbw.py,sha256=5gTxfQx33LhO6R3yMoi-Qf_iea8jUf13gMNN2A4VK8c,7397
+splusdata/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+splusdata/models/star_gal_quasar.py,sha256=keoD5JUYHN6Futeu9S9czVDay80wpnxKhA-rKOcUsew,12215
+splusdata/vacs/__init__.py,sha256=3nIdhXDRGIZ7vCo83-sUpQREM9ewEZBt6YjyOn1hCxY,66
+splusdata/vacs/pdfs.py,sha256=0POHSQXINmnUy8bbpCJ9rvVjdbMMJxPLvnxyZ1mJzxQ,760
+splusdata/vacs/sqg.py,sha256=jDapJJHssMyogLziIiCMUwBDS1G69Iac7tVYqDityac,13528
+splusdata-3.83.dist-info/LICENSE,sha256=TRD-XzqhdrBbIpokiGa61wuDTBc_ElKoFP9HSNihODc,10255
+splusdata-3.83.dist-info/METADATA,sha256=W6uaJ6Evl6P7OEzmHwU_PTrAtVNe5psnc9_OS-1kx6o,510
+splusdata-3.83.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+splusdata-3.83.dist-info/top_level.txt,sha256=AhhSeP7Zw8JdgbX6waqMUKVjfXLucnDgFJ2RBh2D5AI,10
+splusdata-3.83.dist-info/RECORD,,
