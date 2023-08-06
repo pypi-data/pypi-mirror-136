@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: TurbineGeneratorHealthScoreEvaluate
+Version: 0.4
+Summary: ......
+Home-page: UNKNOWN
+Author: zhaozl1123
+Author-email: 545362989@qq.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.7.0
+Description-Content-Type: text/markdown
+Requires-Dist: pandas (==1.1.0)
+Requires-Dist: matplotlib (==3.3.0)
+Requires-Dist: sklearn (==0.0)
+Requires-Dist: PyMySQL (==0.10.0)
+Requires-Dist: numpy (==1.18.5)
+Requires-Dist: joblib (==0.16.0)
+Requires-Dist: commonMethods-zhaozl-green (==1.2)
+
+......
+
