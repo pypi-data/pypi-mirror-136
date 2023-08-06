@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+ezplugins/__init__.py
+ezplugins/decorators.py
+ezplugins/exceptions.py
+ezplugins/manager.py
+ezplugins/plugin.py
+ezplugins/plugin_method.py
+ezplugins/plugin_module.py
+ezplugins.egg-info/PKG-INFO
+ezplugins.egg-info/SOURCES.txt
+ezplugins.egg-info/dependency_links.txt
+ezplugins.egg-info/top_level.txt
