@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: hl7_encoder
+Version: 1.0.0
+Summary: Parse HL7 messages
+Home-page: https://github.com/seanvelasco/hl7-encoder
+Author: Sean Velasco
+Author-email: seanvelasco@ieee.org
+License: MIT
+Download-URL: https://github.com/seanvelasco/hl7-encoder/archive/v_01.tar.gz
+Description: UNKNOWN
+Keywords: hl7,astm,fhir,healthcare,parser
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.9
