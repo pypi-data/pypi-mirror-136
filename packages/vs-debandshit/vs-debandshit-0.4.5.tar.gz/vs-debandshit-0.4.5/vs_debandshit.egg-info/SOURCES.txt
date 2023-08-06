@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+debandshit/__init__.py
+debandshit/debanders.py
+debandshit/f3kdb.py
+debandshit/placebo.py
+debandshit/py.typed
+vs_debandshit.egg-info/PKG-INFO
+vs_debandshit.egg-info/SOURCES.txt
+vs_debandshit.egg-info/dependency_links.txt
+vs_debandshit.egg-info/not-zip-safe
+vs_debandshit.egg-info/requires.txt
+vs_debandshit.egg-info/top_level.txt
