@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: pyozzi-test
+Version: 0.9.19
+Summary: test library
+Home-page: https://github.com/pyozzi
+Author: pyozzi
+Author-email: pyozzi@toss.im
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+hi im pyozzi
+
