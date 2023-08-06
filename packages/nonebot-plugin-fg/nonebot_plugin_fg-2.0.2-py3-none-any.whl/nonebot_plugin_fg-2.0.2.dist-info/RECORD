@@ -1,0 +1,15 @@
+nonebot_plugin_fg/Segmentation.py,sha256=CqLCxz0Z99eMdOdiskRT7Q2nrtJJUcp8izyMzEQPph4,5925
+nonebot_plugin_fg/TextRank4Keyword.py,sha256=57H0WZtDZLhehdL9xMIEVF6jwbiN3E5TwCSHq6dAZdw,5709
+nonebot_plugin_fg/__init__.py,sha256=Fwp58EX4Va_ZNrimHUzUX1fpBVadih8YGzmWiEYG78k,923
+nonebot_plugin_fg/base.py,sha256=2-6XGIQGDi7AktRVbGy9wsw1A2bF8KU1kb0EBfXqeiE,1494
+nonebot_plugin_fg/config.py,sha256=2iUR_YCQgDmjTgavtpqvJRMA-OjvlPZMG6YS4xSyBGw,2147
+nonebot_plugin_fg/core.py,sha256=NrehklVfMPFxtghYM7mwtGMja4liAWblUDlGDSRUX24,6138
+nonebot_plugin_fg/group_rule.py,sha256=nRwbRg-MjCBayLp1zzo4xklLOR9Hi-Umo5u0k79_EEk,1326
+nonebot_plugin_fg/record.py,sha256=VGdhdaWacFSXZSNOr_rFOnPr9hUiln_sInpuIQiKMUI,2208
+nonebot_plugin_fg/stopwords.txt,sha256=6PicYNm_ktohic3c0Oh3zs-OCiNXjCh7jpyexOK5DMg,7374
+nonebot_plugin_fg/util.py,sha256=xcil6ge7tU_1QqNtJFiOk_1BkfSv4KvCwrtfVvQkWX4,6387
+nonebot_plugin_fg-2.0.2.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+nonebot_plugin_fg-2.0.2.dist-info/METADATA,sha256=PiecRpKnOHjJ2fMdfZ1ZCxDmcUpJAJSymsMbTyYs4Pc,5404
+nonebot_plugin_fg-2.0.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+nonebot_plugin_fg-2.0.2.dist-info/top_level.txt,sha256=J8ff3S4Eor7kcNxJ8MsoXPWx6k6oQ0j_rvWluCzti_w,18
+nonebot_plugin_fg-2.0.2.dist-info/RECORD,,
