@@ -1,0 +1,11 @@
+tidy3d/__init__.py,sha256=uJaj_M1HRY2f02YwYi3YbFt03-45f9jge2Tet1uDWIw,2114
+tidy3d/__main__.py,sha256=OeLl-8-m3nlmwI_2HAjGaohD7K4MPiojtpuiEr5jRgE,2481
+tidy3d/constants.py,sha256=8TJECuU3aB8FtXxLBBrv1xDxCD8DhGkhLGXwpftqaeE,1102
+tidy3d/log.py,sha256=AE3bjCBiZNyIvF7iugpgPr9A2HajgFM2wId3zb85OSY,3410
+tidy3d/material_library.py,sha256=c75MRcpDO8fjVvtvHzolGBBfs2i9X3gD7JcMvlV2LOU,24428
+tidy3d/version.py,sha256=nxdODfY992rWh9_yMlAQNF7vUKhHvzB2NnkdfY7gZuE,69
+tidy3d_beta-0.2.2.dist-info/LICENSE,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+tidy3d_beta-0.2.2.dist-info/METADATA,sha256=LBUhjSgG46GFzMS0scr3UioILpMbdfmHHtEJfUdoK84,2773
+tidy3d_beta-0.2.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+tidy3d_beta-0.2.2.dist-info/top_level.txt,sha256=cFzhiWh7iNuTuzO1dqe_yjK46PWQgVVHYd7MKIECPOw,7
+tidy3d_beta-0.2.2.dist-info/RECORD,,
