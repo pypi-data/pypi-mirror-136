@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+twitch_info/__init__.py
+twitch_info/twitch_info.py
+twitch_info.egg-info/PKG-INFO
+twitch_info.egg-info/SOURCES.txt
+twitch_info.egg-info/dependency_links.txt
+twitch_info.egg-info/requires.txt
+twitch_info.egg-info/top_level.txt
