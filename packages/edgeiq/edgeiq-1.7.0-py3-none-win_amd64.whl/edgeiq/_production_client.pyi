@@ -1,0 +1,39 @@
+from edgeiq import constants as constants
+from typing import Any
+
+class ProdClientError(Exception): ...
+
+CREDENTIAL_ENDPOINT: Any
+ENDPOINT: Any
+CLIENT_ID: Any
+CERTIFICATE_FOLDER: str
+CERTIFICATES: Any
+CREDENTIALS_EXIST: bool
+PATH_TO_CERT: Any
+PATH_TO_KEY: Any
+PATH_TO_ROOT: Any
+PROJECT_TAG: Any
+TOPIC_PREFIX: str
+TOPIC: Any
+
+class AnalyticsCloudWriter:
+    mqtt_connection: Any
+    exit_event: Any
+    topic: Any
+    def __init__(self) -> None: ...
+    def publish_analytics(self, results, type, base_service, tag) -> None: ...
+    def publish(self, message, topic) -> None: ...
+    def stop(self) -> None: ...
+
+class AnalyticsFileWriter:
+    def __init__(self, file_size_bytes: int = ...) -> None: ...
+    def publish_analytics(self, results, type, base_service, tag) -> None: ...
+    def stop(self) -> None: ...
+
+class ClientManager:
+    def __init__(self) -> None: ...
+    def add_client(self, client_class, *args) -> None: ...
+    def publish_analytics(self, results, type, base_service, tag) -> None: ...
+    def stop(self) -> None: ...
+
+PRODUCTION_CLIENT: Any

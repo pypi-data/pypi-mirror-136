@@ -1,0 +1,6 @@
+from .object_tracking import DEFAULT_DEREGISTER_FRAMES as DEFAULT_DEREGISTER_FRAMES, DEFAULT_MAX_DISTANCE as DEFAULT_MAX_DISTANCE, DEFAULT_MIN_INERTIA as DEFAULT_MIN_INERTIA, TrackerAlgorithm as TrackerAlgorithm, TrackingResults as TrackingResults
+from typing import Any
+
+class CentroidTracker:
+    def __init__(self, deregister_frames=..., max_distance=..., min_inertia=..., enter_cb: Any | None = ..., exit_cb: Any | None = ..., **kwargs) -> None: ...
+    def update(self, predictions): ...
