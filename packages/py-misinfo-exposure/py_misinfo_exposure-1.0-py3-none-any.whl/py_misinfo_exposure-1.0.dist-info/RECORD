@@ -1,0 +1,8 @@
+py_misinfo_exposure/__init__.py,sha256=qXkUNH_jMATrU2cDPwgmu2tdFscoZ01zSJYs45HMOZI,50
+py_misinfo_exposure/py_misinfo_exposure.py,sha256=mJuUM-fkOnyo87clt1HQbkijZV553Djg0DG7IQ-BG-w,11167
+py_misinfo_exposure/data/falsity_scores.csv,sha256=A17hDdgAgnma-5Svyb_Bu4paPMX6sYMWd-7f-ymeH2A,40431
+py_misinfo_exposure-1.0.dist-info/LICENSE,sha256=ogEPNDSH0_dhiv_lT3ifVIdgIzHAqNA_SemnxUfPBJk,7048
+py_misinfo_exposure-1.0.dist-info/METADATA,sha256=JoWTBFvWfq7cO35eD27RuC430EJq1e1Kqfr7crpAAW4,5590
+py_misinfo_exposure-1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+py_misinfo_exposure-1.0.dist-info/top_level.txt,sha256=2AYsntFO07TnHhAy8BNlyhRIaHiHRW0vhgng3-WBFMg,20
+py_misinfo_exposure-1.0.dist-info/RECORD,,
