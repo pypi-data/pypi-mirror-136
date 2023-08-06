@@ -1,0 +1,6 @@
+Pillow
+geojson
+scikit-image
+
+[:platform_system != "Emscripten"]
+requests
