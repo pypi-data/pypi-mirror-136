@@ -1,0 +1,11 @@
+LICENSE,sha256=jc8HXH4eCmj435_lNBsgJ15VG483ZhU3QQVWoVa7fLQ,1061
+bigtableql/__init__.py,sha256=Irp-dWeuYAKbiCv_-_YRV-IbHIdjNve4Tkj3bgthPrE,110
+bigtableql/client.py,sha256=LLW6Ou61sQVpNyn5TzFGXDHL4mRVGLgKgrMFgvnVZDM,2587
+bigtableql/composer.py,sha256=dPdnvU-4Bd_f6guFPyfP0JqJgHI2UJITw5y3tSymMGg,1810
+bigtableql/executor.py,sha256=WAHJ2gim_l3GxkvLE6uswxLgXb-yOb33gPpSkhK1Lm4,327
+bigtableql/parser.py,sha256=F6ks_j5Va_xJwFtf5z6n-nZbWEGh6fsqu1l-0eZFlgo,4860
+bigtableql/scanner.py,sha256=EBjAChWGpVuIwKpou4y4KDtXY2SuEpBmlm_1i6S0QOQ,3065
+bigtableql-0.1.1.dist-info/LICENSE,sha256=jc8HXH4eCmj435_lNBsgJ15VG483ZhU3QQVWoVa7fLQ,1061
+bigtableql-0.1.1.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+bigtableql-0.1.1.dist-info/METADATA,sha256=Wm7vBi2GF1Ym2LPclr2X_sgI_WLgjCzNI6yw8Dy84ug,5568
+bigtableql-0.1.1.dist-info/RECORD,,
