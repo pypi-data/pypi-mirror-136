@@ -1,0 +1,11 @@
+mailer/__init__.py,sha256=unGYE863EjCBHRDNcIh7BtaoEVINdzLQvh7_-ke_IYU,1249
+mailer/exceptions.py,sha256=QQd2bV2Gqb8oc0y_M1hkDeFTVHc3gbUFzdY3R3EJljE,940
+mailer/login.py,sha256=NGv9iUkfdqK0KWZ6wlqXTBtqP8xZUZbin_npIMk96Bc,2025
+mailer/mailer.py,sha256=R-j5sEuci93SHnx9deL6tFeaDCl6xZemYHkMd0M0Tc0,1559
+mailer/send.py,sha256=hOudfDI46TWCNmxzH_pGBvo1sfTxgf3A7deC06fo1-U,6318
+mailer/utils.py,sha256=pih_asuB-nRxWorm7yFU_YXAVQB8WnHolzd0PP3Oflw,1498
+quick_mailer-2022.2.2.dist-info/LICENSE,sha256=qqU-m3NDs1crXqhKBiVPhhWN4fMa9ng1zYgMehUjPNc,1085
+quick_mailer-2022.2.2.dist-info/METADATA,sha256=babRIsIGpUuZTMd8BO9uVIx8n85DLzbq9hOcObO2mNs,4506
+quick_mailer-2022.2.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+quick_mailer-2022.2.2.dist-info/top_level.txt,sha256=-PywdDbt2d6l6dOeR7C9DI1Ktz-iG4I6gjHNiK6rwag,7
+quick_mailer-2022.2.2.dist-info/RECORD,,
