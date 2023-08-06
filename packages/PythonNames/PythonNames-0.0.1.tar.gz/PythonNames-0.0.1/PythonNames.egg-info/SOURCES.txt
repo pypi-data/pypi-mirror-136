@@ -1,0 +1,12 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+__init__.py
+lastname.json
+names.json
+setup.py
+PythonNames.egg-info/PKG-INFO
+PythonNames.egg-info/SOURCES.txt
+PythonNames.egg-info/dependency_links.txt
+PythonNames.egg-info/top_level.txt

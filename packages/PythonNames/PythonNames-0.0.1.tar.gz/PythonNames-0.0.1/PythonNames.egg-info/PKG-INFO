@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: PythonNames
+Version: 0.0.1
+Summary: A package that can return random First Names, Last Names, and Full Names.
+Home-page: UNKNOWN
+Author: Jerry Lin
+Author-email: linjerry28@gmail.com
+License: MIT
+Keywords: names
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+License-File: LICENCE.txt
+
+A simple package that can return random names. You can choose first names,
+last names, and full names.
+
+Change Log
+==========
+
+0.0.1 (26/01/2022)
+-------------------
+- Initial Release
+
