@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: sphinx_metavar
+Version: 0.1
+Summary: Sphinx extension adding semantic markup for metasyntactic variables.
+Author-email: Jean Abou-Samra <jean@abou-samra.fr>
+Project-URL: Home, https://gitlab.com/jeanas/sphinx-metavar
