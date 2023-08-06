@@ -1,0 +1,13 @@
+numpy>=1.19.3
+
+[docs]
+myst-parser
+sphinx
+sphinx-rtd-theme
+
+[test]
+coverage[toml]
+julia
+parameterized
+pytest
+pytest-cov
