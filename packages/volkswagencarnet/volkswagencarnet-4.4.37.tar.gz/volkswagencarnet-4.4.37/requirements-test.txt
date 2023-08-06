@@ -1,0 +1,7 @@
+lxml
+beautifulsoup4
+aiohttp
+pyjwt
+pytest
+setuptools
+pytest-asyncio
