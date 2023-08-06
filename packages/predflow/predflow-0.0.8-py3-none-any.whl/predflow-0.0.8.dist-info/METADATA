@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: predflow
+Version: 0.0.8
+Summary: Predictive coding with tensorflow
+Home-page: UNKNOWN
+Author: Arno Granier
+Author-email: <arno.granier@unibe.ch>
+License: UNKNOWN
+Keywords: python,tensorflow,predictive coding
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Environment :: GPU :: NVIDIA CUDA :: 11.2
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: tensorflow-datasets
+Provides-Extra: cpu
+Requires-Dist: tensorflow ; extra == 'cpu'
+Provides-Extra: gpu
+Requires-Dist: tensorflow-gpu ; extra == 'gpu'
+
+A python library for predictive coding simulations based on tensorflow.
+ Documentation and Usage can be found at https://arnogranier.github.io/PredFlow
+
