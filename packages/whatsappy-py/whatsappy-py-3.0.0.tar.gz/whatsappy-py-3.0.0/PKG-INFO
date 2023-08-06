@@ -1,0 +1,87 @@
+Metadata-Version: 2.1
+Name: whatsappy-py
+Version: 3.0.0
+Summary: Whatsappy is a Python library for creating whatsapp bots.
+Home-page: https://github.com/italoseara/whatsappy
+Author: Italo Seara
+Author-email: italo.sseara@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Home Automation
+Classifier: Topic :: Internet
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# whatsappy
+
+Whatsappy is a Python library for creating whatsapp bots.
+
+Creator: [Italo Seara](https://github.com/italoseara)
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install whatsappy.
+
+```bash
+pip install whatsappy-py
+```
+
+## Usage
+
+```python
+from whatsappy import whatsapp
+
+whatsapp.login(visible=False) # Login whatsapp (Headless mode)
+
+chat = whatsapp.chat('Mom') # Goes to the selected chat
+chat.send('Hello') # Send a message
+
+whatsapp.close() # Exit
+```
+
+You can find more examples [HERE](https://github.com/italoseara/whatsappy/tree/main/examples)
+
+## Supported features
+
+| Feature  | Status |
+| ------------- | ------------- |
+| Send messages  | âœ… |
+| Receive messages  | âœ… |
+| Send media (images/audio/documents)  | âœ… |
+| Send media (video)  | âœ… |
+| Send stickers | _pending_ |
+| Receive media (images/audio/video/documents)  | âœ… |
+| Send contact cards | _pending_ |
+| Send location | _pending_ |
+| Receive contact cards | âœ… | 
+| Receive location | âœ… |
+| Message replies | âœ… |
+| Join groups by invite  | _pending_ |
+| Get invite for group  | âœ… |
+| Modify group info (subject, description)  | âœ… |
+| Modify group settings (send messages, edit info)  | âœ… |
+| Add group participants  | âœ… |
+| Kick group participants  | âœ… |
+| Promote group participants | âœ… |
+| Demote group participants | âœ… |
+| Mention users | âœ… |
+| Mute/unmute chats | _pending_ |
+| Block/unblock contacts | _pending_ |
+| Get contact info | âœ… |
+| Get profile pictures | âœ… |
+| Set user status message | âœ… |
+
+## Contributing
+
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
+## License
+
+[MIT](https://github.com/italoseara/whatsappy/blob/main/LICENSE)
+
+
