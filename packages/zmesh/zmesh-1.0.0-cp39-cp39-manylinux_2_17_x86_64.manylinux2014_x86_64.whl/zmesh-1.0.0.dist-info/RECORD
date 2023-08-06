@@ -1,0 +1,11 @@
+zmesh/mesh.py,sha256=hTehHoQhIcoKaH1kKsykDy2HnUxCIK3Oj8q7GzGgIPk,6607
+zmesh/_zmesh.pyx,sha256=dsrzu7cs_sllNly3hXfgDL31IQkt8ZjXx2e6RB10H6E,14386
+zmesh/_zmesh.cpp,sha256=0FnkZa9bGA4gtMlcxv69Zc86rJz5qYSL_tsvbXNl_NI,954528
+zmesh/__init__.py,sha256=IedFivpKR_gh1zVz5NRVt2nJvClvHgxlxyPMjvoACL8,78
+zmesh/_zmesh.cpython-39-x86_64-linux-gnu.so,sha256=qHva6nPjBYMiN3bzKH8CX1FofTGWYdiJwX0Xu_NUroY,7577144
+zmesh-1.0.0.dist-info/WHEEL,sha256=ts1NGDem03kTrzsJp50lKy9cpDxDoGil0Q-wLa_TR_0,148
+zmesh-1.0.0.dist-info/AUTHORS,sha256=Aa4H7O3dtmfq0lF_eATudy11i8K6QAI8LykzASr9bL0,52
+zmesh-1.0.0.dist-info/RECORD,,
+zmesh-1.0.0.dist-info/METADATA,sha256=xOzFir8mTGKbFDHFOZh5wDzjQ1_xh-ZLbszOqLUr1_E,4891
+zmesh-1.0.0.dist-info/top_level.txt,sha256=nI43ZuTLu-QmoPDDGO5U-Wflyq_6Ec4Bhv-VAMjCPeY,6
+zmesh-1.0.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
