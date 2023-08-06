@@ -1,0 +1,10 @@
+{
+  "version": "1.2.0",
+  "repository": "github:guendto/jomiel",
+  "scripts": {
+    "release": "standard-version -s --releaseCommitMessageFormat 'chore(release): jomiel version {{currentTag}} (tG)'"
+  },
+  "devDependencies": {
+    "standard-version": "^9.3.1"
+  }
+}

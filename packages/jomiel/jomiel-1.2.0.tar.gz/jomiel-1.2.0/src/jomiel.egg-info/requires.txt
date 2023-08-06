@@ -1,0 +1,4 @@
+jomiel-comm
+jomiel-kore>=0.2.2
+requests
+validators
