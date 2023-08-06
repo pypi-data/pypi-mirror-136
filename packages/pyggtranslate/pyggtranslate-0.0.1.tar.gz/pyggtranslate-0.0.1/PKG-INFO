@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: pyggtranslate
+Version: 0.0.1
+Summary: python translate by google
+Home-page: https://github.com/lichv/pyggtranslate
+Author: pyggtranslate
+Author-email: lichvy@126.com
+License: UNKNOWN
+Description: python translate by google
+Platform: UNKNOWN
+Requires-Python: >=3.6

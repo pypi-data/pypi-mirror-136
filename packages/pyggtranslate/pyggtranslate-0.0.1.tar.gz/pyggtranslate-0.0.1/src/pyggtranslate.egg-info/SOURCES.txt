@@ -1,0 +1,14 @@
+README.md
+setup.py
+src/pyggtranslate/__init__.py
+src/pyggtranslate/constants.py
+src/pyggtranslate/gauthtoken.py
+src/pyggtranslate/models.py
+src/pyggtranslate/translate.py
+src/pyggtranslate/urls.py
+src/pyggtranslate/utils.py
+src/pyggtranslate.egg-info/PKG-INFO
+src/pyggtranslate.egg-info/SOURCES.txt
+src/pyggtranslate.egg-info/dependency_links.txt
+src/pyggtranslate.egg-info/requires.txt
+src/pyggtranslate.egg-info/top_level.txt
