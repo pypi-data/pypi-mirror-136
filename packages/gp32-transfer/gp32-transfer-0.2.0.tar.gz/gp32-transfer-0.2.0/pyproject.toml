@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "gp32-transfer"
+version = "0.2.0"
+description = ""
+authors = ["Julien Muller <muller.julien.02@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pyserial = "3.5"
+pandas = "^1.3.5"
+typer = "^0.4.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+flake8 = "^4.0.1"
+black = "^21.12b0"
+
+[tool.poetry.scripts]
+gp32_transfer = "gp32_transfer.main:app"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
