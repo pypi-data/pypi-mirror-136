@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+ImagineS.egg-info/PKG-INFO
+ImagineS.egg-info/SOURCES.txt
+ImagineS.egg-info/dependency_links.txt
+ImagineS.egg-info/top_level.txt
+imagines/__init__.py
+imagines/core.py
+tests/__init__.py
+tests/datasetaugmentation_unittests.py
+tests/webscrapper_unittests.py
