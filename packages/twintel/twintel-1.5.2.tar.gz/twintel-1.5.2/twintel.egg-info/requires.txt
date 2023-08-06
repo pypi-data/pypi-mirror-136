@@ -1,0 +1,5 @@
+pandas
+nltk
+tweepy
+twython
+aiohttp_socks
