@@ -1,0 +1,76 @@
+Metadata-Version: 2.1
+Name: ip-link
+Version: 0.4.1
+Summary: Visualizing the relationships between different IP from network traffic capture.
+Home-page: https://sr.ht/~cedric/ip-link
+License: GPL-3.0-or-later
+Author: Cédric Bonhomme
+Author-email: cedric@cedricbonhomme.org
+Requires-Python: >=3.8,<4.0
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Security
+Requires-Dist: Pillow (>=9.0.0,<10.0.0)
+Requires-Dist: matplotlib (>=3.5.1,<4.0.0)
+Requires-Dist: networkx (>=2.6.3,<3.0.0)
+Requires-Dist: numpy (>=1.22.1,<2.0.0)
+Requires-Dist: pypacker (>=5.1,<6.0)
+Project-URL: Repository, https://git.sr.ht/~cedric/ip-link
+Description-Content-Type: text/markdown
+
+# IP-Link
+
+## Presentation
+
+The goal of [IP-Link](https://git.sr.ht/~cedric/ip-link)
+is to see the relationships between different IP from network traffic capture,
+thus quickly for a given address with the IP that communicates the most.
+IP-Link offers several visualization methods.
+
+
+## Installation
+
+Python >= 3.8.
+
+```bash
+$ sudo apt install libpcap0.8
+$ git clone https://git.sr.ht/~cedric/ip-link
+$ cd ip-link/
+$ poetry install
+$ poetry shell
+```
+
+## Quick example
+
+```bash
+$ mkdir captures data
+$ sudo tcpdump -p -i enp5s0 -s 0 -w captures/snif.pcap
+$ ip-link/pcap_to_object.py -i captures/snif.pcap -o data/dic.pyobj
+$ ip-link/object_to_graphviz.py -i ./data/dic.pyobj
+$ dot -Tpng -o ./data/graphviz.png ./data/ip.dot
+$ xdg-open ./data/graphviz.png &
+```
+
+
+
+## Tutorial and examples
+
+The site of IP-Link provides a complete
+[tutorial](https://ip-link.readthedocs.io/en/latest/tutorial.html).
+
+
+## License
+
+This software is licensed under
+[GNU General Public License version 3](https://www.gnu.org/licenses/gpl-3.0.html).
+
+Copyright (C) 2010-2022 [Cédric Bonhomme](https://www.cedricbonhomme.org).
+
