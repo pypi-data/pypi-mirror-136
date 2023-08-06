@@ -1,0 +1,3 @@
+[console_scripts]
+how = how.__main__:run
+
