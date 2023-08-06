@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: addci
+Version: 0.1.0
+Summary: Get info about confidence intervals
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: irene.pp@yandex.ru
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: sqlalchemy (==1.4.31)
+Requires-Dist: plotly
+
+UNKNOWN
+
+
