@@ -1,0 +1,106 @@
+Metadata-Version: 1.1
+Name: betik-app-staff
+Version: 0.0.4
+Summary: This application provides opportunities such as recording all personal and registration information of employees in a corporate company, leave tracking, report, entry-exit times, overtime information.
+Home-page: https://www.example.com/
+Author: Erhan KOÃ‡LAR
+Author-email: e.koclar@betik.com.tr
+License: BSD-3-Clause  # Example license
+Description: =========================
+        Betik Application Staff
+        =========================
+        
+        This application provides opportunities such as recording all personal and registration information of employees in a corporate company, leave tracking, report, entry-exit times, overtime information.
+        
+        Quick start
+        -----------
+        
+        - Install 3rd. party application::
+        
+            pip install django-filter
+            pip install djangorestframework
+            pip install drf-yasg
+        
+        - Add ``betik_app_staff`` and 3rd. party application to your INSTALLED_APPS setting like this::
+        
+            INSTALLED_APPS = [
+                ...
+                "django_filters",
+                "rest_framework",
+                "drf-yasg",
+        
+                "betik_app_staff",
+            ]
+        
+        - install ``betik_app_util``. See documentation:
+            http://188.132.205.203/lidyum/betik_app_util/-/blob/master/README.rst
+        
+        - install ``betik_app_auth``. See documentation:
+        
+            http://188.132.205.203/lidyum/betik_app_auth/-/blob/master/README.rst
+        
+        
+        - Add the following options in settings like this ::
+        
+            SWAGGER_SETTINGS = {
+                'LOGIN_URL': 'rest_framework:login',
+                'LOGOUT_URL': 'rest_framework:logout'
+            }
+        
+        
+        - Run ``python manage.py migrate`` to create the location models.
+        
+        - Include the location URLconf in your project urls.py like this::
+        
+            schema_view = get_schema_view(
+                openapi.Info(
+                    title="Betik Application",
+                    default_version='0.0.0',
+                    description="Description",
+                    contact=openapi.Contact(email="info@info.com.tr"),
+                ),
+                public=True,
+                permission_classes=(permissions.IsAuthenticatedOrReadOnly,)
+            )
+        
+            urlpatterns = [
+                re_path(r'^api/doc(?P<format>\.json|\.yaml)/', schema_view.without_ui(cache_timeout=0), name='schema-json'),
+                path('api/doc/', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
+                path('api/redoc/', schema_view.with_ui('redoc', cache_timeout=0), name='schema-redoc'),
+                path('api/auth/', include('rest_framework.urls', namespace='rest_framework')),
+                path('api/admin/', admin.site.urls),
+        
+                path(
+                    'betik-app-staff/',
+                    include('betik_app_staff.urls'),
+                    kwargs={
+                        'accept': True,
+                        'code': 'betik_app_staff',
+                        'name': _('Staff Application')
+                    }
+                ),
+            ]
+        
+            if settings.DEBUG:
+                urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+        
+        - Visit http://127.0.0.1:8000/betik-app-staff/ to participate.
+        
+        - Visit http://127.0.0.1:8000/api/doc/ to swagger documentation.
+        
+        - Visit http://127.0.0.1:8000/api/admin/ to admin site
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 3.0
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
