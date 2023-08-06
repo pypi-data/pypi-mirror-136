@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+prathampdf.egg-info/PKG-INFO
+prathampdf.egg-info/SOURCES.txt
+prathampdf.egg-info/dependency_links.txt
+prathampdf.egg-info/top_level.txt
