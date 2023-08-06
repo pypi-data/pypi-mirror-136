@@ -1,0 +1,20 @@
+.gitignore
+LICENSE
+Python Package.md
+README.md
+TODO.md
+run_build.sh
+run_tests.sh
+setup.py
+tests/test.py
+tests/test.xml
+tests/test2.xml
+xmlego/__init__.py
+xmlego/templating.py
+xmlego/utils.py
+xmlego/xmlego.py
+xmlego.egg-info/PKG-INFO
+xmlego.egg-info/SOURCES.txt
+xmlego.egg-info/dependency_links.txt
+xmlego.egg-info/requires.txt
+xmlego.egg-info/top_level.txt
