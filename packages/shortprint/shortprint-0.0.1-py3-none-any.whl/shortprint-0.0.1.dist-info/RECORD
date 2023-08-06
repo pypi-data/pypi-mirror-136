@@ -1,0 +1,12 @@
+shortprint/__init__.py,sha256=gsW0b3QHzB-Z9wxTI2bsP-mSZRNlfSu1KpNReRptbjc,79
+shortprint/config.py,sha256=XIaV6YUr3a3_wOx1lzxapOLa0Sxr3rmbteL-gXDYP9k,44
+shortprint/shortprint.py,sha256=Hzo2X4S_vnBVs5mSinx5UjDvecH98td0X7TfB-BAnog,1446
+shortprint/utils.py,sha256=qwQEKKMUknCBxjx64x4wXKO_PmYpjsqO_tz_vKfP3a0,510
+shortprint/typers/__init__.py,sha256=u0eSVU9ZwSQRFMP8dRG_TIbKWv2oVOF-UyWYtj5FOEw,197
+shortprint/typers/dataclasses_typer.py,sha256=WAlk9jGv6X5oOpYEGEpKAQoCGm7GV-TShsayg6zgC4I,845
+shortprint/typers/dict_typer.py,sha256=nL8C86YYcu7G5mseQ6vyDISMAkS5USiJRyMEKONCSi4,1625
+shortprint/typers/list_typer.py,sha256=IWXrIAKhGLYY95Z-TUjGHw0_5FetTGCKPqyB2-s5hvM,1133
+shortprint-0.0.1.dist-info/METADATA,sha256=BkBa5NKE0-rIhBh54eyA_vDVuwvvZtH1AkBUCwduDu0,502
+shortprint-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+shortprint-0.0.1.dist-info/top_level.txt,sha256=Ic9vyDVQZbFRQJjiFfUZ6ZTaDs9CHxPRtmAol_5DM9c,11
+shortprint-0.0.1.dist-info/RECORD,,
