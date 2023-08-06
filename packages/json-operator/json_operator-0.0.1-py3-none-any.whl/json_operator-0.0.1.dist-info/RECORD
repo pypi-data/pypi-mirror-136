@@ -1,0 +1,13 @@
+json_operator/__init__.py,sha256=vKYKVN12-5rio-IHJc-QKJ7E0j4btTlWN19FqXequ1k,120
+json_operator/equal.py,sha256=UiSWH_2vWKJCO1qYQGuP2JZKbKgDrxukp9AYjl83KNQ,978
+json_operator/intersection.py,sha256=io6R6PjCQzu7wACuQdkidjWJv6652c3NhCoGYrrPWmE,1058
+json_operator/subtract.py,sha256=3dwy7PkVBbSPsutzWj9c4xEkp9KiSZgQcRRNJFQSoWM,987
+json_operator/union.py,sha256=2MTJLpnKXTPqMWNJj22eNQW_SpbJS0FFYmjYAZPY29Q,1142
+json_operator/cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+json_operator/cli/main.py,sha256=u3NewCpghMRAhrmt9bbAgTNfaAASRzqbKcBTXfnydjk,2098
+json_operator-0.0.1.dist-info/LICENSE,sha256=3KVdbf9wBiC0JFSQGG1gXE0CbmdQd5b3pUVISWnKToo,1055
+json_operator-0.0.1.dist-info/METADATA,sha256=puUmHqNWUoajwGH3j_4GvxDOReLY9NMzxrRHAWinZSk,2139
+json_operator-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+json_operator-0.0.1.dist-info/entry_points.txt,sha256=nZqZ45rBUo5TC7xbmQ1ShxLVqj6_WjbPG_zTTieMGhU,63
+json_operator-0.0.1.dist-info/top_level.txt,sha256=MkRXK628uhJ0GwdRE7iF_8jyPfwwN7QL7QyunsOO6hQ,14
+json_operator-0.0.1.dist-info/RECORD,,
