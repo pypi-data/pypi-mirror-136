@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+bin/dmpfold
+dmpfold/__init__.py
+dmpfold/network.py
+dmpfold/predict.py
+dmpfold/train.py
+dmpfold/train_clust.lst
+dmpfold.egg-info/PKG-INFO
+dmpfold.egg-info/SOURCES.txt
+dmpfold.egg-info/dependency_links.txt
+dmpfold.egg-info/requires.txt
+dmpfold.egg-info/top_level.txt
+dmpfold/example/3FGX.pdb
+dmpfold/example/PF10963.aln
