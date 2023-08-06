@@ -1,0 +1,11 @@
+LICENSE
+README.rst
+setup.py
+onehalfpiece/__init__.py
+onehalfpiece/main.py
+onehalfpiece/test_onehalfpiece.py
+onehalfpiece.egg-info/PKG-INFO
+onehalfpiece.egg-info/SOURCES.txt
+onehalfpiece.egg-info/dependency_links.txt
+onehalfpiece.egg-info/requires.txt
+onehalfpiece.egg-info/top_level.txt

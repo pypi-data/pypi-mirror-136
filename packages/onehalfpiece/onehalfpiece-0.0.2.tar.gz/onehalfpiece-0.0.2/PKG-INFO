@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: onehalfpiece
+Version: 0.0.2
+Summary: Learn python how to package
+Home-page: https://github.com/ryanzhang/onehalfpiece
+Author: ryanzhang
+Author-email: ryanzhangcheng@gmail.com
+License: MIT License
+Platform: UNKNOWN
+Provides-Extra: dev
+Provides-Extra: test
+Provides-Extra: docs
+License-File: LICENSE
+
+UNKNOWN
+
