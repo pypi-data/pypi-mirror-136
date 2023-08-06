@@ -1,0 +1,3 @@
+[console_scripts]
+jupyter-starters = jupyter_starters.app:main
+
