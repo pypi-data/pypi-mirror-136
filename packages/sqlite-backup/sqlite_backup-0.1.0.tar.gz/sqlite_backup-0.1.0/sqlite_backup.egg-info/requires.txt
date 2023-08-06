@@ -1,0 +1,6 @@
+click>=7.0
+atomicwrites
+
+[testing]
+pytest
+mypy
