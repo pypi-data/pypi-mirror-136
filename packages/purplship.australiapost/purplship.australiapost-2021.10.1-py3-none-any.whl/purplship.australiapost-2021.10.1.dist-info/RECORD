@@ -1,0 +1,12 @@
+purplship/mappers/australiapost/__init__.py,sha256=8IkAMbebc72oLUQUq6ezQbARA8DAJWId2dp_gkroNvI,603
+purplship/mappers/australiapost/mapper.py,sha256=GcqvtGOWA7eTx3PQNPjyTsG9HFj_LyAjpXuyKrFilec,4272
+purplship/mappers/australiapost/proxy.py,sha256=En_tf-DdfOAj6rM3Zh7TMhTbqKQH2M1j0oTJ7PfAADM,885
+purplship/mappers/australiapost/settings.py,sha256=sm02W9f_p7I7OGxC_RfTQTNDBqzr1yAyqSsj9hjJgog,470
+purplship/providers/australiapost/__init__.py,sha256=rCycI_P7xsuOvgG4h6VIElCsTSKRRSg5mtfhpknJajQ,823
+purplship/providers/australiapost/error.py,sha256=4v99LkqsY1uKhd_gmUc6_sSqb0_1AenV6uz7XKC1RcU,818
+purplship/providers/australiapost/tracking.py,sha256=gsP5pRqqpNoUj6Pg4VMq83GcHnKHg6it1qrV-OKc_1s,2363
+purplship/providers/australiapost/units.py,sha256=Y6uEJmuD1AnBCKD8103ZyuS7_XDa7jGz_6idh7JnpIY,1343
+purplship/providers/australiapost/utils.py,sha256=a3U5Sd4ST0RUFk_JrYJJbDAQi4Rn8JhBknjZE1PfhIk,794
+purplship.australiapost-2021.10.1.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+purplship.australiapost-2021.10.1.dist-info/METADATA,sha256=ISM2CCSP1pgjVIg4CGZjNfp6KVFBEjVI1LspYQY9eFQ,1427
+purplship.australiapost-2021.10.1.dist-info/RECORD,,
