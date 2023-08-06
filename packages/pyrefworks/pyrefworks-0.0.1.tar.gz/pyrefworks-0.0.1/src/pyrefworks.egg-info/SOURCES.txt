@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+src/pyrefworks/__init__.py
+src/pyrefworks/pyrefworks.py
+src/pyrefworks.egg-info/PKG-INFO
+src/pyrefworks.egg-info/SOURCES.txt
+src/pyrefworks.egg-info/dependency_links.txt
+src/pyrefworks.egg-info/requires.txt
+src/pyrefworks.egg-info/top_level.txt
+src/pyrefworks/__pycache__/__init__.cpython-36.pyc
+src/pyrefworks/__pycache__/pyrefworks.cpython-36.pyc
