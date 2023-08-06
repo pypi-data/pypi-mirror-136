@@ -1,0 +1,3 @@
+asyncio
+discord_webhook
+requests
