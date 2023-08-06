@@ -1,0 +1,7 @@
+aiogram==3.*
+jinja2
+cachetools==4.*
+magic_filter
+
+[tools]
+diagrams
