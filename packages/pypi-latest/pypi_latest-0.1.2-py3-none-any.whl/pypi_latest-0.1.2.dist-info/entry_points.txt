@@ -1,0 +1,3 @@
+[console_scripts]
+pypi-latest=pypi_latest.__main__:main
+
