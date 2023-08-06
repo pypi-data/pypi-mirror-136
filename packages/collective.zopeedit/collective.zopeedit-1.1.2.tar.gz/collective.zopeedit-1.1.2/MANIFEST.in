@@ -1,0 +1,13 @@
+global-include *.po
+global-include *.desktop
+global-include zopeedit.1
+recursive-include docs *.txt
+include make-deb.py
+include WINDOWS-BUILD.txt
+include ZopeEdit.spec
+global-exclude *.mo
+exclude tests/test_installer.py
+recursive-include collective *.pth
+recursive-include collective *.py
+recursive-include collective *.sh
+prune collective/zopeedit/win32

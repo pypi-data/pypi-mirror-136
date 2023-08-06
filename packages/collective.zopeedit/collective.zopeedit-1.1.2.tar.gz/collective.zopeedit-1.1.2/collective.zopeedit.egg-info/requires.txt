@@ -1,0 +1,3 @@
+setuptools
+pyobjc-core
+pyobjc-framework-LaunchServices
