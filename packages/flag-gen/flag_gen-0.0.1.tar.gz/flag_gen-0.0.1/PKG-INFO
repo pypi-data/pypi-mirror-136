@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: flag_gen
+Version: 0.0.1
+Summary: A CTF leet flag generator
+Home-page: https://github.com/Konano/ctf-flag-generator
+Author: Konano
+Author-email: w@nano.ac
+License: MIT
+Keywords: ctf,flag,generator
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Security
+Classifier: Topic :: Security :: Cryptography
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# CTF Flag Generator
+
+A CTF leet flag generator
+
+## Install
+
+```
+pip install flag-gen
+```
+
+## Usage
+
+To translate alpha characters to leet string:
+
+```
+flag-gen 'this is your flag' 
+````
+
+And output maybe:
+
+```
+TH1S_i5_yOUr_fL@6
+Entropy: 20.92 bits
+```
+
+You can use it in your code:
+
+```python
+import flag_gen
+
+print(flag_gen.leet('this is your flag'))
+# ('7H1s_1$_youR_fL46', 20.92481250360578)
+```
+
+
