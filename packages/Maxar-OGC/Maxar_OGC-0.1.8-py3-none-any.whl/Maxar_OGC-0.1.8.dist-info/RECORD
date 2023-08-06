@@ -1,0 +1,13 @@
+Maxar_OGC/__init__.py,sha256=UqR_fkx4VM2a0ACpBio6atC44KTECSltS2wTMhph3zs,34
+Maxar_OGC/auth.py,sha256=i6CPOPqgfFpaeScCjgk04V3wazI4WODQaGAFrf-HYAw,3916
+Maxar_OGC/interface.py,sha256=GoTr2t9JRurSasPfXoyKsdfcUiVQk85CTqngdabV7vU,15549
+Maxar_OGC/process.py,sha256=qUNl1nIJIeGcbwTa0ImKeiSdr0wQocmTZSfZ9dq7U2o,4035
+Maxar_OGC/wcs.py,sha256=rJcYQTV_9RVPHH9hMv1JlD4bariH_Tvml5cBInss63M,3530
+Maxar_OGC/wfs.py,sha256=ZBmYtvvZWIwR3KCTSqPYjTP_sXUHrqWcrXTx3WTngaI,3034
+Maxar_OGC/wms.py,sha256=0c0oQXXX0m_OMbo_n9sxvlrbS5EzIyKSzwmP7l5JqOc,2807
+Maxar_OGC/wmts.py,sha256=NTQUUY9Li2zFTXsDE69W8QaYTs5VIlJdTNCLZOReplo,5387
+Maxar_OGC-0.1.8.dist-info/LICENSE,sha256=BsMrknuqjQGyzbJ9MuuKRaSq-yNvqInY3gvy3NBe9_I,15959
+Maxar_OGC-0.1.8.dist-info/METADATA,sha256=VVF_Oe68wzrsDf6lRYX0zXuyhV-EklADYVtfFy7_ZmI,1412
+Maxar_OGC-0.1.8.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+Maxar_OGC-0.1.8.dist-info/top_level.txt,sha256=z1rIgs12vBf2D-XHq4rNStwyiqUyX9c2-tW-6xb_4pY,10
+Maxar_OGC-0.1.8.dist-info/RECORD,,
