@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+featureform/__init__.py
+featureform/embeddinghub.py
+featureform.egg-info/PKG-INFO
+featureform.egg-info/SOURCES.txt
+featureform.egg-info/dependency_links.txt
+featureform.egg-info/requires.txt
+featureform.egg-info/top_level.txt
+featureform/proto/__init__.py
+featureform/proto/embedding_store_pb2.py
+featureform/proto/embedding_store_pb2_grpc.py
