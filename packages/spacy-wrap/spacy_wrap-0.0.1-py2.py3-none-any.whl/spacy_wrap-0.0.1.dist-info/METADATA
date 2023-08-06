@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: spacy-wrap
+Version: 0.0.1
+Summary: Wrappers for including pre-trained transformers in spaCy pipelines
+Home-page: UNKNOWN
+Author: Kenneth Enevoldsen
+Author-email: kennethcenevoldsen@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: spacy-transformers (<1.2.0,>=1.1.4)
+Requires-Dist: spacy (<3.3.0,>=3.2.1)
+Provides-Extra: cuda
+Requires-Dist: cupy (>=5.0.0b4) ; extra == 'cuda'
+Provides-Extra: cuda100
+Requires-Dist: cupy-cuda100 (>=5.0.0b4) ; extra == 'cuda100'
+Provides-Extra: cuda101
+Requires-Dist: cupy-cuda101 (>=5.0.0b4) ; extra == 'cuda101'
+Provides-Extra: cuda102
+Requires-Dist: cupy-cuda102 (>=5.0.0b4) ; extra == 'cuda102'
+Provides-Extra: cuda110
+Requires-Dist: cupy-cuda110 (>=5.0.0b4) ; extra == 'cuda110'
+Provides-Extra: cuda111
+Requires-Dist: cupy-cuda111 (>=5.0.0b4) ; extra == 'cuda111'
+Provides-Extra: cuda112
+Requires-Dist: cupy-cuda112 (>=5.0.0b4) ; extra == 'cuda112'
+Provides-Extra: cuda80
+Requires-Dist: cupy-cuda80 (>=5.0.0b4) ; extra == 'cuda80'
+Provides-Extra: cuda90
+Requires-Dist: cupy-cuda90 (>=5.0.0b4) ; extra == 'cuda90'
+Provides-Extra: cuda91
+Requires-Dist: cupy-cuda91 (>=5.0.0b4) ; extra == 'cuda91'
+Provides-Extra: cuda92
+Requires-Dist: cupy-cuda92 (>=5.0.0b4) ; extra == 'cuda92'
+
+UNKNOWN
+
