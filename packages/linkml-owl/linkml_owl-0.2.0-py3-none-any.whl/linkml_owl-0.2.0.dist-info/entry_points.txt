@@ -1,0 +1,3 @@
+[console_scripts]
+linkml-data2owl=linkml_owl.owl_dumper:cli
+
