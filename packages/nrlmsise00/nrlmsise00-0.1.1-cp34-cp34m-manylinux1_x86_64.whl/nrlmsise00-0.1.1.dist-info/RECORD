@@ -1,0 +1,9 @@
+nrlmsise00/_nrlmsise00.cpython-34m.so,sha256=_4UsZFLedxLNPZaDu_9g2uJin3OF1jiTOoxQiXI9f40,147997
+nrlmsise00/core.py,sha256=rpuB0ynw6FNCcBmjovwVEgvYOkZ1phfSGsV0Brg9J3Y,7182
+nrlmsise00/__init__.py,sha256=BW0zYr3iEsAxsEOl6PgV2JsYQjE5TJBeHjFEW77Fft8,595
+nrlmsise00/dataset/core.py,sha256=hJQFr_lWci3yugp2f0VYE8hKXwMU2q944AJt7t0bp0w,9230
+nrlmsise00/dataset/__init__.py,sha256=39OapBTbkDqg2UgKlS3_WJ_ERW0auY3v7pUdG912jGs,842
+nrlmsise00-0.1.1.dist-info/WHEEL,sha256=x7uUT1DITuOWfNQ5Z5nxxiCgay-5C46SfoISIjrweYE,109
+nrlmsise00-0.1.1.dist-info/RECORD,,
+nrlmsise00-0.1.1.dist-info/METADATA,sha256=3Ag-KwFZwXBF67lper5j0mLkIubO--AJu5uOXxMEXY0,15790
+nrlmsise00-0.1.1.dist-info/top_level.txt,sha256=R2hqc0W_g7YUebtAkXyrY7cqk9wHtSf0oB35DXmjA0M,11
