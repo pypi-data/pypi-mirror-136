@@ -1,0 +1,5 @@
+[intake.drivers]
+sdmx_data=intake_sdmx:SDMXData
+sdmx_dataflows=intake_sdmx:SDMXDataflows
+sdmx_sources=intake_sdmx:SDMXSources
+
