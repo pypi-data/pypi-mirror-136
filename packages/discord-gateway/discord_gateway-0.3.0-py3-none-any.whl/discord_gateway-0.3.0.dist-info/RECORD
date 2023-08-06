@@ -1,0 +1,9 @@
+discord_gateway/__init__.py,sha256=jOZB7S-PbD4pe7rv0wD6S6TTHEEbP3mw0P05FgAlK-I,363
+discord_gateway/conn.py,sha256=0hIsUdkgXmExwLrPdMjFebagunT1b4Od4VU0DT-uv1s,25147
+discord_gateway/errors.py,sha256=y1gTvA9NTL69wPBb0mk2z-BpHDsDqho9_ehp57VnzQE,2001
+discord_gateway/opcode.py,sha256=JjPQoyXtECUBmLztNa45c2AVa4f1730G2LDA0ZvSDtg,2697
+discord_gateway/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+discord_gateway-0.3.0.dist-info/LICENSE,sha256=BVYqop98Mhf45d1IhVBABCyXV_OOEUYytWYnrBMQWOY,1084
+discord_gateway-0.3.0.dist-info/WHEEL,sha256=LVOPL_YDMEiGvRLgDK1hLkfhFCnTcxcAYZJtpNFses0,81
+discord_gateway-0.3.0.dist-info/METADATA,sha256=fGuOacWftB8YpsBS7_KAODX5mDWp3ovqZeMrL2Wgle4,10746
+discord_gateway-0.3.0.dist-info/RECORD,,
