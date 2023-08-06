@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "kapla-cli"
+version = "3.6.1"
+description = ""
+authors = ["Guillaume Charbonnier <guillaume.charbonnier@araymond.com>"]
+packages = [{ include = "kapla" }]
+
+[tool.poetry.dependencies]
+python = ">=3.7,<4.0"
+kapla-cli-core = ">=3.4"
+commitizen = "2.*"
+pytest = "6.*"
+pytest-cov = "3.*"
+black = { version = "*", allow-prereleases = true }
+flake8 = "4.*"
+isort = "5.*"
+mypy = "0.*"
+pre-commit = "2.*"
+twine = "3.*"
+snakeviz = "2.*"
+types-pkg-resources = "0.*"
+types-PyYAML = "6.*"
+
+[tool.poetry.dev-dependencies]
+kapla-cli-core = { path = "../core/" }
+
+[tool.poetry.scripts]
+k = "kapla.cli.app:app"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
