@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+__init__.py
+setup.py
+suriyabasiccalculator.egg-info/PKG-INFO
+suriyabasiccalculator.egg-info/SOURCES.txt
+suriyabasiccalculator.egg-info/dependency_links.txt
+suriyabasiccalculator.egg-info/top_level.txt
