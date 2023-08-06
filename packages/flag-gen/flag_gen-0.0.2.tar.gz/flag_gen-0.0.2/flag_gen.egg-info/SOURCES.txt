@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+flag_gen/__init__.py
+flag_gen/__main__.py
+flag_gen.egg-info/PKG-INFO
+flag_gen.egg-info/SOURCES.txt
+flag_gen.egg-info/dependency_links.txt
+flag_gen.egg-info/entry_points.txt
+flag_gen.egg-info/top_level.txt
