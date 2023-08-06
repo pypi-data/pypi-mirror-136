@@ -1,0 +1,4 @@
+pyperclip
+empty-files
+bs4
+pytest
