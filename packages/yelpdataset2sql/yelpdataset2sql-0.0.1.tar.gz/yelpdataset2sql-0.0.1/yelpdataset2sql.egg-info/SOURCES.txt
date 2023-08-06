@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+yelpdataset2sql/datasetparser.py
+yelpdataset2sql.egg-info/PKG-INFO
+yelpdataset2sql.egg-info/SOURCES.txt
+yelpdataset2sql.egg-info/dependency_links.txt
+yelpdataset2sql.egg-info/entry_points.txt
+yelpdataset2sql.egg-info/top_level.txt
