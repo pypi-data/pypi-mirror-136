@@ -1,0 +1,11 @@
+click>=8.0.0
+loguru>=0.5.3
+requests
+yt-dlp
+
+[dev]
+mypy
+mypy-extensions
+pylint
+rope
+types-requests>=2.25.9
