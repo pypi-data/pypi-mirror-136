@@ -1,0 +1,3 @@
+[console_scripts]
+sitemap_maker = sitemap_maker.sitemap:main
+
