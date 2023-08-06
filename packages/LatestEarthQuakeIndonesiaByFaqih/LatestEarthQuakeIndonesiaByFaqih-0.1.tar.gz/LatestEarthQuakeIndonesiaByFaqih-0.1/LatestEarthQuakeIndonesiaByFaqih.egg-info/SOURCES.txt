@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+LatestEarthQuakeIndonesiaByFaqih.egg-info/PKG-INFO
+LatestEarthQuakeIndonesiaByFaqih.egg-info/SOURCES.txt
+LatestEarthQuakeIndonesiaByFaqih.egg-info/dependency_links.txt
+LatestEarthQuakeIndonesiaByFaqih.egg-info/top_level.txt
+Latest_EarthQuake_BMKG/__init__.py
