@@ -1,0 +1,5 @@
+asyncssh
+importlib_resources
+pyyaml
+docopt
+pip

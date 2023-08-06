@@ -1,0 +1,3 @@
+[console_scripts]
+ftl = faster_than_light.cli:entry_point
+
