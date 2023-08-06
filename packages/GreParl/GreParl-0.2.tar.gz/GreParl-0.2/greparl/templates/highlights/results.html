@@ -1,0 +1,27 @@
+{% extends "actions_base.html" %}
+
+{% block title %}Highlights{% endblock %}
+
+{% block action_header %}Highlight the Greek Parliament{% endblock %}
+
+{% block action_hint %}Top {{ highlights|length }} Highligths of "{{ value.title().replace("_"," ") }}" {% if d_start %} from {{ d_start }} to {{ d_end }} {% endif %}{% endblock %}
+
+{% block content %}
+  <table class="table table-striped table-hover table-bordered shadow text-center w-50 mx-auto">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Highlight</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for highlight in highlights %}
+        <tr>
+          <th scope="row">{{ loop.index }}</th>
+          <td>{{ highlight.title() }}</td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+
+{% endblock %}

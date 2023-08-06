@@ -1,0 +1,29 @@
+{% extends "actions_base.html" %}
+
+{% block title %}Predictions{% endblock %}
+
+{% block action_header %}Predict the Greek Parliament{% endblock %}
+
+{%block action_hint %}Provide a quote, a topic or a set of keywords and find out which party is likely to have discussed about it in the Greek Parliament{% endblock %}
+
+{% block content %}
+  <form class="container border shadow p-2 w-50" name="predict-form" onsubmit="return validateForm()" action="/predict" method="post" autocomplete="off">
+    <div class="row">
+      <label class="col col-form-label" for="pString">Quote:</label>
+    </div>
+    <div class="row py-2">
+      <input class="col mx-3" type="text" size="50" id="pString" name="pString" autocomplete="off"><br>
+    </div>
+    <div class="d-flex flex-row-reverse py-2">
+        <input type="submit" name="predict" value="Predict">
+    </div>
+  </form>
+  <script>
+    function validateForm() {
+      let x = document.forms["predict-form"]["pString"].value;
+      if (x == "") {
+        return false;
+      }
+    }
+  </script>
+{% endblock %}
