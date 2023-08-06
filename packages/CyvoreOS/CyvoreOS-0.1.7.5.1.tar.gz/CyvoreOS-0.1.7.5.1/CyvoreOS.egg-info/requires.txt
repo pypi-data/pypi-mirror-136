@@ -1,0 +1,12 @@
+levenshtein
+requests
+colorama
+future
+urlextract
+blockcypher
+urlexpander
+python-whois
+eml_parser
+python-magic
+extract_msg
+vt-py
