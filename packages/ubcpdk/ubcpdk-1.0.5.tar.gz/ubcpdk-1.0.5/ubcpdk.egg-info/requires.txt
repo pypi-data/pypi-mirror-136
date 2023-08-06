@@ -1,0 +1,16 @@
+lygadgets
+triangle
+gdsfactory[full]
+
+[basic]
+lygadgets
+triangle
+gdsfactory[full]
+
+[full]
+gdsfactory[full]
+tqdm
+triangle
+modes
+lygadgets
+gdslib==0.3.3
