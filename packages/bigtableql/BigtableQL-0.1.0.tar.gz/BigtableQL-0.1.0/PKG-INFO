@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: bigtableql
+Version: 0.1.0
+Summary: Query Layer for Google Cloud Bigtable
+Author: jychen7
+Author-email: jychen7@users.noreply.github.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: datafusion (==0.4.0)
+Requires-Dist: google-cloud-bigtable (==2.4.0)
+Requires-Dist: pyarrow (==6.0.1)
+Requires-Dist: sqloxide (==0.1.13)
