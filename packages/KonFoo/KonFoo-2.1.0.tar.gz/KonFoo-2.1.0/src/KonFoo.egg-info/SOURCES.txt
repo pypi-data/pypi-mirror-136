@@ -1,0 +1,116 @@
+.editorconfig
+.gitattributes
+.gitignore
+.readthedocs.yaml
+.travis.yml
+CHANGELOG.rst
+CONTRIBUTING.md
+LICENSE
+MANIFEST.in
+Makefile
+README.md
+make.bat
+pyproject.toml
+requirements.txt
+runtime.txt
+setup.cfg
+setup.py
+.github/workflows/pages.yml
+assets/logo.xcf
+binder/requirements.txt
+docs/Makefile
+docs/conf.py
+docs/foo.ini
+docs/genindex.rst
+docs/index.rst
+docs/make.bat
+docs/requirements.txt
+docs/_static/array.csv
+docs/_static/array.ini
+docs/_static/container.csv
+docs/_static/container.ini
+docs/_static/pointer.csv
+docs/_static/pointer.ini
+docs/_static/reading.bin
+docs/_static/sequence.csv
+docs/_static/sequence.ini
+docs/_static/structure.csv
+docs/_static/structure.ini
+docs/_static/writing.bin
+docs/_static/images/logo.png
+docs/annex/changelog.rst
+docs/annex/contributing.rst
+docs/annex/license.rst
+docs/api/index.rst
+docs/bytestream/deserializing.rst
+docs/bytestream/reading.rst
+docs/bytestream/writing.rst
+docs/containers/array.rst
+docs/containers/sequence.rst
+docs/containers/structure.rst
+docs/content/concept.rst
+docs/content/containers.rst
+docs/content/fields.rst
+docs/content/intro.rst
+docs/content/mapper.rst
+docs/pointers/index.rst
+docs/providers/index.rst
+notebooks/containers/Array.csv
+notebooks/containers/Array.ini
+notebooks/containers/Array.ipynb
+notebooks/containers/Array.json
+notebooks/containers/Pointer.csv
+notebooks/containers/Pointer.ini
+notebooks/containers/Pointer.ipynb
+notebooks/containers/Pointer.json
+notebooks/containers/Sequence.csv
+notebooks/containers/Sequence.ini
+notebooks/containers/Sequence.ipynb
+notebooks/containers/Sequence.json
+notebooks/containers/Structure.csv
+notebooks/containers/Structure.ini
+notebooks/containers/Structure.ipynb
+notebooks/containers/Structure.json
+notebooks/fields/Bipolar field.ipynb
+notebooks/fields/Bit field.ipynb
+notebooks/fields/Bitset field.ipynb
+notebooks/fields/Bool field.ipynb
+notebooks/fields/Byte field.ipynb
+notebooks/fields/Char field.ipynb
+notebooks/fields/Datetime field.ipynb
+notebooks/fields/Decimal field.ipynb
+notebooks/fields/Double field.ipynb
+notebooks/fields/Enum field.ipynb
+notebooks/fields/Float field.ipynb
+notebooks/fields/Fraction field.ipynb
+notebooks/fields/IPv4Address field.ipynb
+notebooks/fields/Pointer field.ipynb
+notebooks/fields/Scaled field.ipynb
+notebooks/fields/Signed field.ipynb
+notebooks/fields/Stream field.ipynb
+notebooks/fields/String field.ipynb
+notebooks/fields/Unipolar field.ipynb
+notebooks/fields/Unsigned field.ipynb
+src/KonFoo.egg-info/PKG-INFO
+src/KonFoo.egg-info/SOURCES.txt
+src/KonFoo.egg-info/dependency_links.txt
+src/KonFoo.egg-info/not-zip-safe
+src/KonFoo.egg-info/top_level.txt
+src/konfoo/__init__.py
+src/konfoo/categories.py
+src/konfoo/core.py
+src/konfoo/enums.py
+src/konfoo/exceptions.py
+src/konfoo/fields.py
+src/konfoo/globals.py
+src/konfoo/options.py
+src/konfoo/pointers.py
+src/konfoo/providers.py
+src/konfoo/utils.py
+tests/foo.ini
+tests/pytest.ini
+tests/.pytest_cache/.gitignore
+tests/.pytest_cache/CACHEDIR.TAG
+tests/.pytest_cache/README.md
+tests/.pytest_cache/v/cache/nodeids
+tests/.pytest_cache/v/cache/stepwise
