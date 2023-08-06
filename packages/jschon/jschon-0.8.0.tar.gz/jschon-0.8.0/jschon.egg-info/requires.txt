@@ -1,0 +1,16 @@
+rfc3986
+requests
+
+[dev]
+pytest
+coverage
+hypothesis
+pytest-benchmark
+pytest-httpserver
+
+[doc]
+sphinx
+sphinx-rtd-theme
+
+[test]
+tox
