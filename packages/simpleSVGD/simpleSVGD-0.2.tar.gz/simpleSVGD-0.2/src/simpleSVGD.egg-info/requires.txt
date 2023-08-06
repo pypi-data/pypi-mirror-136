@@ -1,0 +1,9 @@
+numpy
+tqdm
+scipy
+matplotlib
+versioneer
+
+[dev]
+black
+pytest

@@ -1,0 +1,2 @@
+include versioneer.py
+include src/simpleSVGD/_version.py
