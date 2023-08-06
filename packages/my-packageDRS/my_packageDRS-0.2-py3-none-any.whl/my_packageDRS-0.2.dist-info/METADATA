@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: my-packageDRS
+Version: 0.2
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: <author’s name
+Author-email: maharaja77725@kgpian.iitkgp.ac.in
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Dist: pillow
+Requires-Dist: numpy
+Requires-Dist: json-lines
+Requires-Dist: torch
+Requires-Dist: torchvision
+
+UNKNOWN
+
+
