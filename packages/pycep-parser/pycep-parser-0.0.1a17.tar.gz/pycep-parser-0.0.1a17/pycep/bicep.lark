@@ -1,0 +1,224 @@
+start: element*
+
+element: "targetScope" "=" QUOTED_INTERPOLATION                             -> scope
+       | [decorator] "param" STRING data_type ["=" param_value]             -> param
+       | "var" STRING "=" var_value                                         -> var
+       | "output" STRING data_type "=" output_value                         -> output
+       | [decorator] "resource" STRING type_api_pair "=" resource_value     -> resource
+       | [decorator] "module" STRING module_path "=" module_value           -> module
+
+?value: "null"                                      -> null
+      | "true"                                      -> true
+      | "false"                                     -> false
+      | INT                                         -> int
+      | STRING                                      -> string
+      | QUOTED_INTERPOLATION                        -> string
+      | INDEXED                                     -> string
+      | array
+      | object
+      | function
+      | operator_numeric
+
+?value_brackets: value
+               | "(" value ")"
+
+// element values
+
+?param_value: value_brackets
+            | MULTI_LINE_STRING                     -> multi_line_string
+            | operator
+
+?var_value: param_value | loop
+
+?output_value: param_value | loop
+
+?resource_value: object | loop
+
+?module_value: object | loop
+
+// element type extras
+
+data_type: STRING
+
+type_api_pair: QUOTED_INTERPOLATION
+
+module_path: QUOTED_INTERPOLATION
+
+// loops
+
+loop: "[" "for" (loop_index | loop_array | loop_array_index | loop_object) ":" ["if" "(" value_brackets ")"] value_brackets "]"
+
+loop_index: STRING "in" "range" "(" value_brackets "," value_brackets ")"
+
+loop_array: STRING "in" value_brackets
+
+loop_array_index: "(" STRING "," STRING ")" "in" value_brackets
+
+loop_object: STRING "in" "items" "(" value_brackets ")"
+
+// data types
+
+?quoted_string: STRING | QUOTED_INTERPOLATION
+
+array: "[" value_brackets* "]"
+
+object: "{" pair* "}"
+
+pair: key ":" (value_brackets | loop | operator)
+
+key: quoted_string
+
+// decorators
+
+decorator: ("@" (deco_allowed | deco_batch | deco_description | deco_min_len | deco_max_len | deco_min_val | deco_max_val | deco_metadata | deco_secure))+
+
+deco_allowed: "allowed" "(" array ")"
+
+deco_batch: "batchSize" "(" /\d+/ ")"
+
+deco_description: "description" "(" QUOTED_INTERPOLATION ")"
+
+deco_min_len: "minLength" "(" /\d+/ ")"
+
+deco_max_len: "maxLength" "(" /\d+/ ")"
+
+deco_min_val: "minValue" "(" /\d+/ ")"
+
+deco_max_val: "maxValue" "(" /\d+/ ")"
+
+deco_metadata: "metadata" "(" object ")"
+
+deco_secure: "secure" "(" ")"
+
+// functions
+
+function: function_any | function_array | function_object | function_resource | function_scope | function_string
+
+// functions - any
+
+?function_any: any_func
+
+any_func: ("any" | "sys.any") "(" value_brackets ")"
+
+// functions - array
+
+?function_array: contains | empty | length | union
+
+contains: ("contains" | "sys.contains") "(" value_brackets "," value_brackets ")"
+
+length: ("length" | "sys.length") "(" value_brackets ")"
+
+empty: ("empty" | "sys.empty") "(" value_brackets ")"
+
+union: ("union" | "sys.union") "(" value_brackets ("," value_brackets)+ ")" ["." STRING]
+
+// functions - object
+
+?function_object: json_func
+
+json_func: ("json" | "sys.json") "(" value_brackets ")"
+
+// functions - resource
+
+?function_resource: extension_resource_id | resource_id | subscription_resource_id | tenant_resource_id
+
+_EXTENSION_RESOURCE_ID: /(az.)?extensionResourceId\s*\(/
+extension_resource_id: _EXTENSION_RESOURCE_ID quoted_string ("," quoted_string)~2..3 ")"
+
+// this rule results in a weird behaviour of "resourceId" being a TERM
+// and then matching a key named "resourceId" in an object
+//resource_id: ("resourceId" | "az.resourceId") "(" quoted_string ("," quoted_string)~1..4 ")"
+_RESOURCE_ID: /(az.)?resourceId\s*\(/
+resource_id: _RESOURCE_ID quoted_string ("," quoted_string)~1..4 ")"
+
+_SUBSCRIPTION_RESOURCE_ID: /(az.)?subscriptionResourceId\s*\(/
+subscription_resource_id: _SUBSCRIPTION_RESOURCE_ID quoted_string ("," quoted_string)~1..3 ")"
+
+_TENANT_RESOURCE_ID: /(az.)?tenantResourceId\s*\(/
+tenant_resource_id: _TENANT_RESOURCE_ID quoted_string ("," quoted_string)~1..2 ")"
+
+// functions - scope
+
+?function_scope: resource_group | subscription
+
+resource_group: ("resourceGroup" | "az.resourceGroup") "(" [quoted_string ","? [quoted_string]] ")" ["." STRING]
+
+subscription: ("subscription" | "az.subscription") "(" [quoted_string] ")" ["." STRING]
+
+// functions - string
+
+?function_string: guid | index_of | last_index_of | split | string_func | substring
+
+guid: ("guid" | "sys.guid") "(" value_brackets ("," value_brackets)* ")"
+
+index_of: ("indexOf" | "sys.indexOf") "(" value_brackets "," value_brackets ")"
+
+last_index_of: ("lastIndexOf" | "sys.lastIndexOf") "(" value_brackets "," value_brackets ")"
+
+split: ("split" | "sys.split") "(" value_brackets "," value_brackets ")"
+
+string_func: ("string" | "sys.string") "(" value_brackets ")"
+
+substring: ("substring" | "sys.substring") "(" value_brackets "," value_brackets ["," value_brackets] ")"
+
+// operators
+
+operator: operator_comparison | operator_logical
+
+// operators - comparison
+
+?operator_comparison: greater_than_or_equals | greater_than | less_than_or_equals | less_than
+                    | equals | not_equals | equals_case_insens | not_equals_case_insens
+
+greater_than_or_equals: value_brackets ">=" value_brackets
+
+greater_than: value_brackets ">" value_brackets
+
+less_than_or_equals: value_brackets "<=" value_brackets
+
+less_than: value_brackets "<" value_brackets
+
+equals: value_brackets "==" value_brackets
+
+not_equals: value_brackets "!=" value_brackets
+
+equals_case_insens: value_brackets "=~" value_brackets
+
+not_equals_case_insens: value_brackets "!~" value_brackets
+
+// operators - logical
+
+?operator_logical: and_op | or_op | not_op | coalesce | conditional
+
+and_op: value_brackets ("&&" value_brackets)+
+
+or_op: value_brackets ("||" value_brackets)+
+
+not_op: "!" "("? (not_op | value_brackets) ")"?
+
+coalesce: value_brackets ("??" value_brackets)+
+
+conditional: "("? (STRING | function | operator_comparison | and_op | or_op) ")"? "?" param_value ":" param_value
+
+// operators - numeric
+
+// make it a rule for now, till the general operator rule is fixed
+operator_numeric: substract
+
+substract: value_brackets "-" value_brackets
+
+// Terms
+
+STRING: /[a-zA-Z][\w_.]*/
+INDEXED: /(?=[\w_]+[\[\]]+)[\w_\-\[\]\/.,'= ]+/
+QUOTED_INTERPOLATION: /'(\\'|[^'])*'/
+
+MULTI_LINE_STRING: "'''" (/./ | NEWLINE)+ "'''"
+
+%import common.CPP_COMMENT
+%import common.NEWLINE
+%import common.INT
+%import common.WS
+%ignore CPP_COMMENT
+%ignore NEWLINE
+%ignore WS
