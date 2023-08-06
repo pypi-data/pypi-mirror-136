@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: hooknet
+Version: 0.0.4
+Summary: UNKNOWN
+Home-page: http://pypi.python.org/pypi/hooknet/
+Author: Mart van Rijthoven
+Author-email: mart.vanrijthoven@gmail.com
+License: LICENSE.txt
+Description: HookNet: multi-resolution whole-slide image segmentation
+Platform: UNKNOWN
