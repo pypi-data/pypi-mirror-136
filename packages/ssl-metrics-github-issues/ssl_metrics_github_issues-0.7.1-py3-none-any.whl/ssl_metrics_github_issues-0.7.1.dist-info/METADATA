@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: ssl-metrics-github-issues
+Version: 0.7.1
+Summary: SSL Metrics - GitHub Issues Analysis
+Home-page: https://ssl.cs.luc.edu/projects/metricsDashboard
+Author: Software and Systems Laboratory - Loyola University Chicago
+Author-email: ssl-metrics@ssl.luc.edu
+License: BSD
+Project-URL: Bug Tracker, https://github.com/SoftwareSystemsLaboratory/ssl-metrics-github-issues/issues
+Project-URL: GitHub Repository, https://github.com/SoftwareSystemsLaboratory/ssl-metrics-github-issues
+Keywords: bus factor,commits,engineering,git,github,issue density,issues,kloc,loyola,loyola university chicago,luc,mining,metrics,repository,repository mining,simple,software,software engineering,software metrics,software systems laboratory,ssl
+Platform: UNKNOWN
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: intervaltree (>=3.1.0)
+Requires-Dist: numpy (>1.21.2)
+Requires-Dist: matplotlib (>=3.4.3)
+Requires-Dist: pandas (>=1.3.3)
+Requires-Dist: progress (>=1.6)
+Requires-Dist: python-dateutil (>=2.8.2)
+Requires-Dist: requests (>=2.26.0)
+
+# Software Systems Laboratory Metrics GitHub Issues
+
+
