@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+cyberjake/__init__.py
+cyberjake/check_update.py
+cyberjake/database.py
+cyberjake/discord_common.py
+cyberjake/file_utils.py
+cyberjake/make_logger.py
+cyberjake.egg-info/PKG-INFO
+cyberjake.egg-info/SOURCES.txt
+cyberjake.egg-info/dependency_links.txt
+cyberjake.egg-info/not-zip-safe
+cyberjake.egg-info/top_level.txt

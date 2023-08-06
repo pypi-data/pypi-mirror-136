@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: cyberjake
+Version: 0.0.5
+Summary: Common code used in my programs
+Home-page: https://github.com/Cyb3r-Jak3/common-python
+Author: Cyber_Jake
+Author-email: jake@jwhite.network
+License: MPL 2.0
+Download-URL: https://github.com/Cyb3r-Jak3/common/releases/latest
+Project-URL: Changelog, https://github.com/Cyb3r-Jak3/common-python/blob/main/CHANGELOG.md
+Project-URL: Issues, https://github.com/Cyb3r-Jak3/common-python/issues
+Description: # Python common
+        
+        [![Documentation Status](https://readthedocs.org/projects/cyb3rjak3-common/badge/?version=latest)](https://common-py.docs.jwhite.network/en/latest/?badge=latest) [![Python Checking](https://github.com/Cyb3r-Jak3/common-python/actions/workflows/python.yml/badge.svg)](https://github.com/Cyb3r-Jak3/common-python/actions/workflows/python.yml)
+        
+        This is common python code that I use between my programs. I also have [common-go](https://github.com/Cyb3r-Jak3/common-go) for common go code.
+        Documentation is available via [readthedocs](https://common-py.docs.jwhite.network)
+        
+        To make this smaller there are no requirements but certain functions will require other modules and will raise ModuleNotFoundError if a function is used
+        
+        
+Keywords: common,cyb3rjak3
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Description-Content-Type: text/markdown
