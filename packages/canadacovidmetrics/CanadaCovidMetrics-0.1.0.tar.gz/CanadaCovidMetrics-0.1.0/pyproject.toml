@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "CanadaCovidMetrics"
+version = "0.1.0"
+description = "This package enables obtain key metrics regarding covid situation in Canada"
+authors = ["Valli A", "Luke Collins", "Brandon Lam", "Adam Morphy"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pandas = "^1.3.5"
+requests = "^2.27.1"
+pytest = "^6.2.5"
+DateTime = "^4.3"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.5"
+pytest-cov = "^3.0.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
