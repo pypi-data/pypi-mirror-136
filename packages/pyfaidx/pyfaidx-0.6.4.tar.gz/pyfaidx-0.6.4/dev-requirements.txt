@@ -1,0 +1,13 @@
+six
+pytest
+pytest-cov
+setuptools
+mock
+cython 
+pysam 
+requests 
+coverage 
+pyfasta 
+pyvcf 
+numpy 
+biopython
