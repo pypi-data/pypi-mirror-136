@@ -1,0 +1,11 @@
+views_query_planning/__init__.py,sha256=3NPoy1iU0KKvbQfHdYJizxnEOvHzinwE_0-Glo_nI9o,107
+views_query_planning/cli.py,sha256=jQ10H3-DmXzsbYGKZo13sZg-kGX09gErfZIZdjgqmgM,3313
+views_query_planning/composer.py,sha256=xfzOLZQmbm1D-DFhIedt0y9bCg97rgV71KHYICf8q4k,9008
+views_query_planning/definitions.py,sha256=hwryiLq4oyWu23Uq2c05P75JWoqDRBZF_rqqQJMSWpc,167
+views_query_planning/exceptions.py,sha256=iJVLipgg4_-4vQMrURgfmotO9qBnSHdZJMTWDNy1AcQ,127
+views_query_planning/query_planning.py,sha256=DiH2kDYOiufGHQ9diFujA09cfIVd0m001d2B_o1ykeo,5495
+views_query_planning-1.3.1.dist-info/entry_points.txt,sha256=uabKiDxHHMgrEi8DAVERPnnCEVa-n97LTBr-MTxCYo0,52
+views_query_planning-1.3.1.dist-info/LICENSE,sha256=9nf0Ilw1tFcCX5_BJt5uZkKXaJLT9pzK8i77sJDCtF8,1093
+views_query_planning-1.3.1.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+views_query_planning-1.3.1.dist-info/METADATA,sha256=IYkPLz2KaKc3ZAFhgatpwUmIIH3-dU9sJ0guip6rEDo,1424
+views_query_planning-1.3.1.dist-info/RECORD,,
