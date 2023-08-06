@@ -1,0 +1,17 @@
+MANIFEST.in
+README.md
+setup.py
+package_gen.egg-info/PKG-INFO
+package_gen.egg-info/SOURCES.txt
+package_gen.egg-info/dependency_links.txt
+package_gen.egg-info/entry_points.txt
+package_gen.egg-info/top_level.txt
+packagegenerator/__init__.py
+packagegenerator/__main__.py
+packagegenerator/templates/base/setup.py-tmpl
+packagegenerator/templates/base/$packagename_format/__init__.py-tmpl
+packagegenerator/templates/base/$packagename_format/__main__.py-tmpl
+packagegenerator/templates/moreparams/README.md
+packagegenerator/templates/moreparams/setup.py-tmpl
+packagegenerator/templates/moreparams/$packagename_format/__init__.py-tmpl
+packagegenerator/templates/moreparams/$packagename_format/__main__.py-tmpl
