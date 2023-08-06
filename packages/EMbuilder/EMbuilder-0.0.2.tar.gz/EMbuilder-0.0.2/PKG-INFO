@@ -1,0 +1,24 @@
+Metadata-Version: 1.0
+Name: EMbuilder
+Version: 0.0.2
+Summary: Etemenanki Builder -- Python-controlled YARRRML builder
+Home-page: https://github.com/pabloalarconm/EMbuilder
+Author: Pablo Alarcón Moreno
+Author-email: pabloalarconmoreno@gmail.com
+License: MIT
+Description: # **EMbuilder** -- **Etemenanki Builder**
+        ### Python-controlled YARRRML builder for creating YAML based RML templates using Python.
+        
+        ### **Instalation:** install locally or using Pypi repository.
+        
+        ```bash
+        python3 setup.py install
+        ```
+        
+        ```bash
+        pip install EMbuilder
+        ```
+        ### **Example:** 
+        ### Use ```trial.py``` as a trial for creating your templates.
+Keywords: YAML,YARRRML,RDF,FAIR,EJP
+Platform: UNKNOWN
