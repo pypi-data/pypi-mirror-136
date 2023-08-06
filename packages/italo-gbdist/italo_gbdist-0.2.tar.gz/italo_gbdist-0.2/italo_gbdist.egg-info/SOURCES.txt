@@ -1,0 +1,11 @@
+setup.py
+italo_gbdist/Binomialdistribution.py
+italo_gbdist/Gaussiandistribution.py
+italo_gbdist/Generaldistribution.py
+italo_gbdist/__init__.py
+italo_gbdist/test.py
+italo_gbdist.egg-info/PKG-INFO
+italo_gbdist.egg-info/SOURCES.txt
+italo_gbdist.egg-info/dependency_links.txt
+italo_gbdist.egg-info/not-zip-safe
+italo_gbdist.egg-info/top_level.txt
