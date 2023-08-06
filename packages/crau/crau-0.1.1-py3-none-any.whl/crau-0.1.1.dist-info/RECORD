@@ -1,0 +1,13 @@
+crau/__init__.py,sha256=sz9-UPGPCf3PikgnUL1Bd3zFHBjP33vb8NSvHjzZ3Xg,109
+crau/__main__.py,sha256=Huz0dExiaH0XTMLhfe3skkFD9-VH7ZUiWMbDR_J8TIY,28
+crau/cli.py,sha256=Z3X91asLP2MtoeNM73pbGW05G2nf3uE0tR8F_lcIe6w,3894
+crau/spider.py,sha256=orSWBJ0Dx5CDjbtPeuQmQqWrbQrEOySENTPmyjaeYuw,11459
+crau/storage.py,sha256=qcLW5ic0_px06-WceC4qC1_qnXezILNTvrXIJTuxkSI,1205
+crau/utils.py,sha256=fr2MGKzFMyLkuI1IDi1Haijuijq5Ktrff0dL9Chf42Y,6639
+crau/version.py,sha256=rnObPjuBcEStqSO0S6gsdS_ot8ITOQjVj_-P1LUUYpg,22
+crau-0.1.1.dist-info/LICENSE,sha256=46mU2C5kSwOnkqkw9XQAJlhBL2JAf1_uCD8lVcXyMRg,7652
+crau-0.1.1.dist-info/METADATA,sha256=OCxYiRcgVmEXjBxswdhNiWMNnBS5B-I4gZ4VGC9nXcQ,632
+crau-0.1.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+crau-0.1.1.dist-info/entry_points.txt,sha256=V_dcLNDweRN4d6J3vwfOW5K8SPEUZDxV3nTgMtbtAOE,39
+crau-0.1.1.dist-info/top_level.txt,sha256=QFGfiNALnlNRvEOscwRHOT4BICjqkCxNXuiY6iZy5xQ,5
+crau-0.1.1.dist-info/RECORD,,
