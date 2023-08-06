@@ -1,0 +1,12 @@
+bgetcli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bgetcli/bget.py,sha256=AfuQod_aZoj0DrJLheEZ-cdBFnYxVXyTtwOMWa5_sQk,7469
+bgetcli/downloader.py,sha256=GedyoibiG5iutpcRFqmKg6D0ze6RNyZtuAptdpkr9go,3153
+bgetcli/runtime.py,sha256=VNew6Z2mHy9WOYj1TF_Wwn7JTEn7gp-YwZVKaaH7PXA,6014
+bgetcli/utils.py,sha256=XYVwcIAmdzZEQ10fBmtHAfuGMg_Ewl7h8IZgL-_U9no,2181
+bget-3.2.1.dist-info/LICENSE,sha256=bSyY49WBvS97FOxU7WC4UhrvoD8PdioaimU7lY1prPc,1051
+bget-3.2.1.dist-info/METADATA,sha256=7g1rQD0QHETD35IwD4tqPRZMI1_a8LQEgwr0--vgkMA,1244
+bget-3.2.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+bget-3.2.1.dist-info/entry_points.txt,sha256=8HqQFmhYC80EUh3J10PGJ8PVXtLWVbCaNGyiVv7NyDE,44
+bget-3.2.1.dist-info/top_level.txt,sha256=QjxwylyDPXxdE-VtTnpQbkWAP4oSGqvrqi6_R381Nz8,8
+bget-3.2.1.dist-info/zip-safe,sha256=frcCV1k9oG9oKj3dpUqdJg1PxRT2RSN_XKdLCPjaYaY,2
+bget-3.2.1.dist-info/RECORD,,
