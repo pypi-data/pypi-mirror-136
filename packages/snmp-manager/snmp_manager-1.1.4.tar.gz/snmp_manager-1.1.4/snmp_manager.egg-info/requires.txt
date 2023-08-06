@@ -1,0 +1,4 @@
+pyserial>=3
+easydict>=1
+pysnmp>=4
+async-timeout>=3
