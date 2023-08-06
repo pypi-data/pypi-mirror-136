@@ -1,0 +1,4 @@
+[console_scripts]
+ndschans = ndscope.channel_select:main
+ndscope = ndscope.__main__:main
+
