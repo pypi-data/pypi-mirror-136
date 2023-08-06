@@ -1,0 +1,11 @@
+plover_regenpfeifer/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+plover_regenpfeifer/system.py,sha256=nmJJ68iHAVFcmGdOGBmnm8_eUa0C5nwhPsOLjwl3ORE,4811
+plover_regenpfeifer/dictionaries/regenpfeifer_main.json,sha256=EwbVoFz994jNBlGw4yBZX0ANMiG7wWy54pdL66GUACI,6539305
+plover_regenpfeifer/dictionaries/regenpfeifer_user.json,sha256=yj0WO6sFU4GCciYUBWjzvvfqrBh869doeOC2Pp5EI1Y,3
+plover_regenpfeifer-0.0.2.dist-info/LICENSE,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+plover_regenpfeifer-0.0.2.dist-info/METADATA,sha256=Xa3zdEuZDY5tIMyoJ_LUKyUYMsh0plJnKScdAm3k8_c,1436
+plover_regenpfeifer-0.0.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+plover_regenpfeifer-0.0.2.dist-info/entry_points.txt,sha256=U2MJIiBvsTo5THo8xX9I-TlsEmXZ5TPmFOyOmvCaPdg,59
+plover_regenpfeifer-0.0.2.dist-info/top_level.txt,sha256=i3tFMT_oWI-QyeaFcUnJb3O5RD0CMUiq-l7Td5aFqMg,20
+plover_regenpfeifer-0.0.2.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+plover_regenpfeifer-0.0.2.dist-info/RECORD,,
