@@ -1,0 +1,11 @@
+CHANGES
+=======
+
+0.1.0
+-----
+
+* register releasing jobs (#1)
+* Rename to otc-api-ref
+* make pdf generation finally things working
+* make blocks open by default
+* initial import

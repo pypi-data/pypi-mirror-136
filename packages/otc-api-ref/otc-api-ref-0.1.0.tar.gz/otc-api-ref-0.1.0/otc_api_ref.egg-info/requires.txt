@@ -1,0 +1,4 @@
+pbr!=2.1.0,>=2.0.0
+PyYAML>=3.12
+sphinx>=4.0.0
+openstackdocstheme>=2.2.1
