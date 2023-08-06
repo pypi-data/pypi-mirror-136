@@ -1,0 +1,12 @@
+argparse
+dataclasses
+loguru
+
+[dev]
+build
+coverage
+coverage-badge
+black
+pdoc
+pydeps
+pylint
