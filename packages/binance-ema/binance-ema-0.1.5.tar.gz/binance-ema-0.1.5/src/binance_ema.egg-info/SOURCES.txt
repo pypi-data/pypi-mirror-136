@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+src/binance_ema.egg-info/PKG-INFO
+src/binance_ema.egg-info/SOURCES.txt
+src/binance_ema.egg-info/dependency_links.txt
+src/binance_ema.egg-info/requires.txt
+src/binance_ema.egg-info/top_level.txt
+src/binancema/__init__.py
+src/binancema/coininfo.py
+src/binancema/indicators.py
