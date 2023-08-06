@@ -1,0 +1,10 @@
+numpy
+networkx
+biopython
+scipy
+pillow
+pygraphviz
+gspan_mining
+requests
+cairosvg
+pysmiles
