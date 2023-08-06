@@ -1,0 +1,142 @@
+Metadata-Version: 2.1
+Name: circuits_py
+Version: 0.0.3
+Summary: A python package for creating logic circuits.
+Author: 0xA4
+License: UNKNOWN
+Project-URL: usage examples, https://gist.github.com/Himaghna-Senarath/6a5fda03bc9bb73142d3ead2685f1e29
+Keywords: 'circuits logic gates'
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: The Unlicense (Unlicense)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+## Circuits-py
+
+A python package for creating logic circuits.
+
+see [examples](https://gist.github.com/Himaghna-Senarath/6a5fda03bc9bb73142d3ead2685f1e29)
+
+```python
+from circuits_py import State
+
+class DLatch():
+    def __init__(self, Q, QI):
+        self.Q = Q
+        self.QI = QI
+    def d_latch(self, Clock, D):
+        self.Q = State(D).NOT().AND(Clock).NOR(self.QI).state
+        self.QI = State(D).AND(Clock).NOR(self.Q).state
+
+l = DLatch(1, 0)
+
+while True:
+    l.d_latch(1, 0)
+```
+
+
+
+
+```python
+from circuits_py import State, logic, divide, combine
+
+def addCircuit(a, b, carry):
+    a = State(a)  # A State object represents current up to the next logic gate.
+
+    divide(a.XOR(b),  # when an circuit path divides
+                lambda e: e.XOR(carry),
+                lambda e: a.AND(carry).OR(a.AND(b).state)
+            )
+
+addCircuit(1, 1, 0)
+```
+
+### Design
+
+using plain functions to create circuits make it harder to understand and write:
+```python
+out = AND(0, AND(0, XOR(input, 0))) # gates are nested
+#     <----<----<----<----<-----
+#     the circuit flows in the opposite direction of the code
+```
+
+instead:
+
+```python
+State(1).XOR(0).AND(0).AND(0)
+#     ----->---->---->---->
+#     the circuit flows in the direction of the code
+
+```
+### State
+
+A State object represents path of electrical current up to the next logical gate, a state can be initialized either 0 or 1.
+
+```python
+a = State(0)
+b = State(1)
+```
+
+supported logic functions: AND, OR, XOR, NOT, NOR, NAND, XNOR and BUFFER
+
+when a logic gate is invoked a new State() object is returned initialized output of that gate
+
+```python
+State(1).XOR(0).AND(1)  # returns State(1)
+```
+
+the output state can be accessed by get_output()
+
+```python
+print(State(1).XOR(0).AND(1).get_output()) # prints 1
+```
+
+### Custom Logic
+
+use the combine() function to use custom logic,
+```python
+from circuits_py import combine, logic_gate
+
+@logic_gate
+def custom_logic(A, B):
+    if ((A) and (not B)):
+      return True
+    else:
+      return False
+
+# combine() takes two or more paths and combines it to a logic function
+
+combine(      
+  State(1).AND(1),
+  State(0).AND(0),      
+    Logic=custom_logic  # pass the logic function
+)
+```
+
+### combine()
+
+combine two or more paths to a logic gate
+
+example:
+```python
+
+@logic_gate
+def OR(A, B):
+    return A or B
+
+combine(
+    State(b).NOT().AND(a),  # source
+    State(a).NOT().AND(b),  # source
+        Logic=OR   # Logic function
+)
+```
+
+`def combine(*sources, Logic=None)`<br>
+
+- `*sources` State() objects,
+- `Logic` a logic function which takes *source parameters and returns a `bool` output (the function should use the @logic_gate decorator)
+
+
