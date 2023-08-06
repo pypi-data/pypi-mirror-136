@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: CulturelandPython
+Version: 0.1.1.1
+Summary: An Unofficial Python Library for Cultureland
+Home-page: https://github.com/gooday2die/CulturelandPython
+Author: Gooday2die
+Author-email: edina00@naver.com
+License: GPL
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: selenium
+Requires-Dist: webdriver-manager
+
+UNKNOWN
+
+
