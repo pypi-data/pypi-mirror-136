@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+access_parser_c/__init__.py
+access_parser_c/access_parser.py
+access_parser_c/parsing_primitives.py
+access_parser_c/utils.py
+access_parser_c.egg-info/PKG-INFO
+access_parser_c.egg-info/SOURCES.txt
+access_parser_c.egg-info/dependency_links.txt
+access_parser_c.egg-info/requires.txt
+access_parser_c.egg-info/top_level.txt
