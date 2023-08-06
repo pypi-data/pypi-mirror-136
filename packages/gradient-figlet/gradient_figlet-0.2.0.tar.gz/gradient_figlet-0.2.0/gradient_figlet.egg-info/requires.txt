@@ -1,0 +1,7 @@
+colour
+rich
+
+[testing]
+setuptools
+pytest
+pytest-cov

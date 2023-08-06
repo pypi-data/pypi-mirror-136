@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: gradient-figlet
+Version: 0.2.0
+Summary: Prints beautiful gradient figlets to the terminal
+Home-page: https://github.com/wasi-master/gradient_figlet/
+Author: Wasi Master
+Author-email: arianmollik323@gmail.com
+License: MIT
+Project-URL: Documentation, https://github.com/wasi-master/gradient_figlet#readme
+Project-URL: Source, https://github.com/wasi-master/gradient_figlet
+Project-URL: Changelog, https://github.com/wasi-master/gradient_figlet/blob/main/CHANGELOG.md
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Description-Content-Type: text/markdown; charset=UTF-8
+Provides-Extra: testing
+License-File: LICENSE
+
+# gradient_figlet
+
+Prints gradient figlets using [rich](https://github.com/Textualize/rich "Rich is a Python library for rich text and beautiful formatting in the terminal.") and [pyfiglet](https://github.com/pwaller/pyfiglet "An implementation of figlet written in Python.")
+
+## Screenshots
+
+![image_1](./screenshots/image_1.png)
+![image_2](./screenshots/image_2.png)
+![image_3](./screenshots/image_3.png)
+![image_4](./screenshots/image_4.png)
+![image_5](./screenshots/image_5.png)
+![image_6](./screenshots/image_6.png)
+
+

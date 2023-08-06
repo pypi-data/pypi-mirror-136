@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+gradient_figlet/__init__.py
+gradient_figlet/__main__.py
+gradient_figlet/pleasing_items.py
+gradient_figlet.egg-info/PKG-INFO
+gradient_figlet.egg-info/SOURCES.txt
+gradient_figlet.egg-info/dependency_links.txt
+gradient_figlet.egg-info/requires.txt
+gradient_figlet.egg-info/top_level.txt
+gradient_figlet.egg-info/zip-safe
