@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+cFp_Zoo/HOST/custom/uppercase/languages/cplusplus/src/uppercase_host.cpp
+cFp_Zoo/HOST/custom/uppercase/languages/cplusplus/src/uppercase_host_fwd_tb.cpp
+cFp_Zoo/HOST/custom/uppercase/languages/python/trieres.i
+cFp_Zoo/HOST/custom/uppercase/languages/python/trieres.egg-info/PKG-INFO
+cFp_Zoo/HOST/custom/uppercase/languages/python/trieres.egg-info/SOURCES.txt
+cFp_Zoo/HOST/custom/uppercase/languages/python/trieres.egg-info/dependency_links.txt
+cFp_Zoo/HOST/custom/uppercase/languages/python/trieres.egg-info/top_level.txt
