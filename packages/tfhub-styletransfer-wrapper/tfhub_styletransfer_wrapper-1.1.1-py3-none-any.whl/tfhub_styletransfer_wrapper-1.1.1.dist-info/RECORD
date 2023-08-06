@@ -1,0 +1,8 @@
+tfhub_styletransfer_wrapper/__init__.py,sha256=cUTaTMcqcnooYKzRAzPI7A5tnfc_zI_hyvdwUZcazXs,167
+tfhub_styletransfer_wrapper/hubFnc.py,sha256=klvpfBfH84n2pRRmbyn5MQMbcK4KuTxlQEhwRRBiRJo,2305
+tfhub_styletransfer_wrapper/imgFnc.py,sha256=ywbYDJ6Y4l1NrZ5_FKzucWuvYLton3Un2GZaIfcVhjk,2014
+tfhub_styletransfer_wrapper-1.1.1.dist-info/LICENSE,sha256=7R2pqnVXuJIVwBhMJtiZYcCM6gfuuJ4IFJ2o8BvxlZE,1073
+tfhub_styletransfer_wrapper-1.1.1.dist-info/METADATA,sha256=KFmMvFY19K77D1mxZR_i2I0ciJCMWZZKWjYpN4QM4JE,2465
+tfhub_styletransfer_wrapper-1.1.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+tfhub_styletransfer_wrapper-1.1.1.dist-info/top_level.txt,sha256=hFcB7MU74PYUxCmA5s334XYU3XBvczmBxiJw1w26lz4,28
+tfhub_styletransfer_wrapper-1.1.1.dist-info/RECORD,,
