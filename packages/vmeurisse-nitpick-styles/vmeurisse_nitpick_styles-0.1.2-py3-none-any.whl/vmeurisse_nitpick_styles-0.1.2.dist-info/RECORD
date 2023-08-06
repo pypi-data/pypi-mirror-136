@@ -1,0 +1,14 @@
+presets/base.toml,sha256=mRwkd_kbMDiBJgZJ7FU8BUFdbJSoI0XyTw-mgpVjtL4,124
+presets/python.toml,sha256=tMMasYwz4Hk53jcFIN6LZl-dhFHToQha7HT2BQQpfpw,166
+styles/bandit.toml,sha256=R4XOrPyVTHP3U__2pC1G8wtbTCW9Tk9pqkEJO5o6-CI,214
+styles/black.toml,sha256=sS-2UwQT3pxJH0rfvf8vWSPLrD9BkMtuqhBUlKCylU0,48
+styles/editorconfig.toml,sha256=-s4lceW4Ha9KuEnJjutqxnklHGwd-TBquCeOe2fWrhM,387
+styles/isort.toml,sha256=S158U_DAEAaCSzjTXh1z7q0boF9eTOKpJ6M1aiHFNXo,86
+styles/nitpick.toml,sha256=I6G5TT7gxYbJ8KQSOhFitjpxPYxXrJ7_VFsXkuGTYJs,44
+styles/poetry.toml,sha256=_pYv8EwoaHcemK7kiumC_rCGbNUDdimm8x1kTIa4LWM,135
+styles/pylint.toml,sha256=jSlVXYDbwZdc1KdLB70vqH1t37Yi4JOO73ZBiy7gwe0,964
+styles/python-base.toml,sha256=Vv_HZZutz1ys1F3NH3Qe0gQes3K3xjW1Zl57f7rzktM,48
+vmeurisse_nitpick_styles.py,sha256=kVSeqHXh_11Onr3AGBRq4zynXS3AzPHaEycJ8ogFJ3o,121
+vmeurisse_nitpick_styles-0.1.2.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+vmeurisse_nitpick_styles-0.1.2.dist-info/METADATA,sha256=x6VcZK0y71wje7h87d8G5MfSjqclI-Vhbv9rZTL2kgU,688
+vmeurisse_nitpick_styles-0.1.2.dist-info/RECORD,,

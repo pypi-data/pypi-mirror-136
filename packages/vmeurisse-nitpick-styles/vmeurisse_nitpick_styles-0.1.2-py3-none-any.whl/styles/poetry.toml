@@ -1,0 +1,8 @@
+[[".gitignore".contains]]
+line = "/.venv/"
+
+[[".gitignore".contains]]
+line = "/dist/"
+
+[[".gitignore".contains]]
+line = "/poetry.lock"

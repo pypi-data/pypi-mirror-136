@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: vmeurisse-nitpick-styles
+Version: 0.1.2
+Summary: Personal styles for nitpick
+License: MIT
+Author: Vincent Meurisse
+Author-email: dev@meurisse.org
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: nitpick (==0.31.0)
+Description-Content-Type: text/markdown
+
+# Nitpick Styles
+
+This repo contain my personal presets for [nitpick](https://github.com/andreoliwa/nitpick).
+

@@ -1,0 +1,4 @@
+["pyproject.toml".tool.isort]
+profile = 'black'
+line_length = 120
+py_version = 'auto'
