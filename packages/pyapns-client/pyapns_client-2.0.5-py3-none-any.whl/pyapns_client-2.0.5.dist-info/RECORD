@@ -1,0 +1,10 @@
+pyapns_client/__init__.py,sha256=GpZronORPFnC0IepPFb4w9sYvG9CaOuUMuofwfuuOEQ,1237
+pyapns_client/client.py,sha256=EL5P8HablsUI7EWVFZHgyffBvTIwoAfAcHaEqCLMT-s,5462
+pyapns_client/exceptions.py,sha256=gBV16IyBM07UykDqxa0IT_Bq35h5GdDQjnNE_EEnabk,6151
+pyapns_client/logging.py,sha256=hH7ShVUVaC7YG-O5L7N4BJao_I-tKyvvyNcMCfY8dRM,61
+pyapns_client/notification.py,sha256=JitaJxrUS49_yDE8LemRWFavWeWCqbUM-7jWcwblNB4,8684
+pyapns_client-2.0.5.dist-info/LICENSE.rst,sha256=QtBfhQwzer_YoWpeOZDKOgWljCAgQIDUD_FkPCblZ2k,1094
+pyapns_client-2.0.5.dist-info/METADATA,sha256=OysBXYfEgHlPJXA6s258joYh-EcL2DAdBd8w_-ok2ig,4019
+pyapns_client-2.0.5.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+pyapns_client-2.0.5.dist-info/top_level.txt,sha256=LlaGLbur5Hv-4aDMmRqzK4xBvG0LYhdDb1Sq3iNIkaY,14
+pyapns_client-2.0.5.dist-info/RECORD,,
