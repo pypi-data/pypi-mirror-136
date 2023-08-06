@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: BaconEngine
+Version: 3.1
+Summary: App Platform made in tkinter.
+Home-page: https://github.com/KodeyCode/BaconEngine
+Author: LJDev
+Author-email: lfwjohns@googlemail.com
+License: MIT
+Download-URL: https://github.com/KodeyCode/BaconEngine/archive/v_03.tar.gz
+Description: UNKNOWN
+Keywords: GAME-ENGINE,EASY-TO-USE,APP-PLATFORM
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
