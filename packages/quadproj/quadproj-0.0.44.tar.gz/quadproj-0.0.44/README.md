@@ -1,0 +1,246 @@
+# quadproj
+
+A simple library to project a point onto a quadratic surface, or *quadric*.
+
+Please cite us if you use this package.
+
+## How to install quadproj?
+
+```
+python3 -m pip install quadproj
+```
+
+## How does quadproj works?
+
+Roughly speaking, the projection is obtained by computing exhaustively all KKT point from the optimization problem defining the projection. We show in [[1]](#anchor-1) that for non-cylindrical central quadrics, the solutions belong to the KKT points that consist in the intersection between:
+
+- a unique root of a nonlinear function on a specific interval;
+- a set of closed-form points.
+
+Either set can be empty but for a nonempty quadric, at least one is nonempty and contains (one of the) projections.
+
+The full explanation is provided in [[1]](#anchor-1).
+
+
+## How to use quadproj?
+
+The class ``Quadric`` from the `quadrics` module allows to create a *non-empty*, *non-cylindrical*, and *central* quadric.
+
+We can use the `project` function from the `project` module to find (one of) the projections
+of some point onto the quadric.
+
+### Simple N dimensional example
+
+```python
+from quadproj import quadrics
+from quadproj.project import project
+
+import matplotlib.pyplot as plt
+import numpy as np
+
+
+# creating random data
+dim = 42
+_A = np.random.rand(dim, dim)
+A = _A + _A.T  # make sure that A is positive definite
+b = np.random.rand(dim)
+c = -1.42
+
+
+param = {'A': A, 'b': b, 'c': c}
+Q = quadrics.Quadric(param)
+
+x0 = np.random.rand(dim)
+x_project = project(Q, x0)
+
+```
+
+### Visualise the solution
+
+Let us try a simple 2D case.
+
+```
+
+A = np.array([[1, 0.1], [0.1, 2]])
+b = np.zeros(2)
+c = -1
+
+
+Q = quadrics.Quadric({'A': A, 'b': b, 'c': c})
+x0 = np.array([2, 1])
+x_project = project(Q, x0)
+
+fig, ax = plot_x0_x_project(Q, x0, x_project)
+plt.savefig(join('output', 'ellipse_no_circle.png'))
+plt.show()
+
+```
+The output is the following picture.
+
+[Ellipse without circle](https://gitlab.com/Loicvh/quadproj/-/blob/master/src/quadproj/output/ellipse_no_circle.png)
+
+
+![](src/quadproj/output/ellipse_no_circle.png)
+
+Be aware that the axis are not equal! Hence, one could think that the solution is not optimal. Hopefully, by changing the argument `flag_circle=True` we have the following plot
+
+```
+
+fig, ax = plot_x0_x_project(Q, x0, x_project, flag_circle=True)
+plt.savefig(join('output', 'ellipse_circle.png'))
+plt.show()
+
+```
+
+
+[Ellipse with circle](https://gitlab.com/Loicvh/quadproj/-/blob/master/src/quadproj/output/ellipse_circle.png)
+
+
+![](src/quadproj/output/ellipse_circle.png)
+
+### Quid of multiple solutions?
+
+The projection is not unique in general! We denote as *degenerate case* the cases where `x0` is located on one of the principal axes of the quadric.
+
+In this degenerate case, it is possible (though not always the case) that multiple points are optima.
+
+For constructing a degenerate case we can:
+
+- Either a quadric in standard form, *i.e.*, with a diagonal matrix `A`, a nul vector `b`, and `c=-1` and define `x0` with a least one entry equal to zero;
+- Or choose any quadric and select `x0` to be on any axis.
+
+
+Let us illustrate the second option. We create `x0` by applying the (inverse) standardization from some `x0` with at least one entry equal to zero.
+
+Here, we chose to be close to the center and on the longest axis of the ellipse so as to be sure that there are multiple (two) solutions.
+
+Note that the program returns **only one solution**.
+Multiple solutions is planned in future releases.
+
+```
+x0 = Q.to_non_standardized(np.array([0, 0.1]))
+x_project = project(Q, x0)
+fig, ax = plot_x0_x_project(Q, x0, x_project, flag_circle=True)
+plt.savefig(join('output', 'ellipse_degenerated.png'))
+plt.show()
+```
+
+
+[Degenerated ellipse](https://gitlab.com/Loicvh/quadproj/-/blob/master/src/quadproj/output/ellipse_degenerated.png)
+
+
+![](src/quadproj/output/ellipse_degenerated.png)
+
+
+One observe that there is effectively another solution obtained by mirroring along the longest axis.
+
+
+
+**Remark**: All tests from this README are available in [test_README.py](https://gitlab.com/Loicvh/quadproj/-/blob/master/src/quadproj/test_README.py)
+
+## Supported quadrics
+
+### Ellipse
+
+See previous section for examples of ellipses.
+
+### Hyperbola
+
+We illustrate a degenerated projection onto an hyperbola.
+
+In this case, there is no root to the nonlinear function. This is not an issue because two solutions are obtained from the other set of KKT points (see [`How does quadproj work?`](#how-does-quadproj-works) ).
+
+
+```
+A[0, 0] = -2
+Q = quadrics.Quadric({'A': A, 'b': b, 'c': c})
+x0 = Q.to_non_standardized(np.array([0, 0.1]))
+x_project = project(Q, x0)
+fig, ax = plot_x0_x_project(Q, x0, x_project, flag_circle=True)
+plt.savefig(join('output', 'hyperbola_degenerated.png'))
+plt.show()
+```
+
+
+[Degenerated hyperbola](https://gitlab.com/Loicvh/quadproj/-/blob/master/src/quadproj/output/hyperbola_degenerated.png)
+
+![](src/quadproj/output/hyperbola_degenerated.png)
+
+
+### Ellipsoid
+```
+show = True
+dim = 3
+A = np.eye(dim)
+A[0, 0] = 2
+A[1, 1] = 0.5
+
+b = np.zeros(dim)
+c = -1
+param = {'A': A, 'b': b, 'c': c}
+Q = quadrics.Quadric(param)
+Q.plot(show=show)
+```
+
+To ease visualisation, the function `get_gif` lets you write gif.
+
+```
+Q.get_gif(step=2, gif_path=Q.type+'.gif')
+```
+
+Remark that the sphere is a particular case of the ellipsoid with three equal eigenvalues.
+
+![](src/quadproj/output/ellipsoid.gif)\
+
+
+![Gif of an ellipsoid](https://gitlab.com/Loicvh/quadproj/-/blob/master/src/quadproj/output/ellipsoid.gif)
+
+### One-sheet hyperboloid
+
+A one-sheet hyperboloid is a 3D quadratic surface with two positive eigenvalues and one negative.
+
+```
+A[0, 0] = -4
+param = {'A': A, 'b': b, 'c': c}
+Q = quadrics.Quadric(param)
+Q.plot(show=show)
+Q.get_gif(step=2, gif_path=Q.type+'.gif')
+```
+
+![](src/quadproj/output/one_sheet_hyperboloid.gif)\
+
+
+[Gif of a one-sheet hyperboloid](https://gitlab.com/Loicvh/quadproj/-/blob/master/src/quadproj/output/one_sheet_hyperboloid.gif)
+
+
+### Two-sheet hyperboloid
+
+A Two-sheet hyperboloid is a 3D quadratic surface with two positive eigenvalues and one negative.
+
+```
+A[0, 0] = 4
+A[1, 1] = -2
+A[2, 2] = -1
+
+b = np.random.rand(dim)  # it will rotate the quadric
+
+param = {'A': A, 'b': b, 'c': c}
+
+
+Q = quadrics.Quadric(param)
+Q.plot(show=show)
+Q.get_gif(step=2, gif_path=Q.type+'.gif')
+```
+
+![](src/quadproj/output/two_sheets_hyperboloid.gif)\
+
+
+[Gif of a one-sheet hyperboloid](https://gitlab.com/Loicvh/quadproj/-/blob/master/src/quadproj/output/two_sheets_hyperboloid.gif)
+
+## Dependencies
+
+See [requirements.txt](./requirements.txt).
+
+## [1]
+(2021) L. Van Hoorebeeck, P.-A. Absil and A. Papavasiliou, “Projection onto quadratic hypersurfaces”, submitted. ([preprint](https://perso.uclouvain.be/loic.vanhoorebeeck/_downloads/dc8ab520a768f81e13569c647c7553d7/OJMO_2022_preprint.pdf), [abstract/BibTex](https://perso.uclouvain.be/loic.vanhoorebeeck/abstracts/OJMO_2022.html))
+
