@@ -1,0 +1,13 @@
+adjustText
+click
+matplotlib
+pandas
+tabulate
+
+[all]
+pytest>=6.2.2
+pytest-cov
+
+[test]
+pytest>=6.2.2
+pytest-cov
