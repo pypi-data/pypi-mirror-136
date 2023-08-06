@@ -1,0 +1,9 @@
+imghelp/__init__.py,sha256=40G09iWBY5IdXzWej1U4Fxa8QJZrwmdCD9N4-eoEqms,110
+imghelp/colorconv.py,sha256=dHVLtP46fQb4kx5JpGdLnUHzsHsgibjuZ9c2ccng7Ss,1651
+imghelp/crop.py,sha256=Rbvorjhxy6mvQX28uZY3Z_kAPJhrKkzUsCwQIbApk3k,2370
+imghelp/imgcompress.py,sha256=Uot_iA17a5w4qPlRjfVj2tMUSh4-rEKc5SQKhHM854o,2754
+imghelp/imgrotate.py,sha256=BhmM6Hf9rDxwe78gMDOmnVeMFgzgz8av0IzmRZDT4TU,1932
+imghelp-1.0.7.dist-info/LICENSE,sha256=FDTWlcvsaTpd-NZBQbkYNviFIoVdBI1R59KwN9G6MDk,1109
+imghelp-1.0.7.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+imghelp-1.0.7.dist-info/METADATA,sha256=nl9qlizkWK0fi6ZhpvS5uvJ-l33x3zN-POv1dIOWCtM,4634
+imghelp-1.0.7.dist-info/RECORD,,
