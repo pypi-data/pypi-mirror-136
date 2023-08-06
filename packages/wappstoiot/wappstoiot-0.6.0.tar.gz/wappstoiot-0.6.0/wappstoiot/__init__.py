@@ -1,0 +1,339 @@
+"""This the the Simple Wappsto Python user-interface to the Wappsto devices."""
+
+# #############################################################################
+#                             MOdules Import Stuff
+# #############################################################################
+
+from .modules.network import Network
+# from .modules.network import ConnectionStatus
+# from .modules.network import ConnectionTypes
+# from .modules.network import NetworkChangeType  # NOt needed anymore.
+# from .modules.network import NetworkRequestType  # NOt needed anymore.
+# from .modules.network import ServiceStatus
+# from .modules.network import StatusID
+
+from .modules.device import Device
+from .service.template import ServiceClass
+
+from .modules.value import Value
+from .modules.value import Delta
+from .modules.value import Period
+from .modules.value import PermissionType
+from .modules.value import ValueBaseType
+from .modules.template import ValueType
+
+from .service import template as service
+
+from .connections import protocol as connection
+
+from .utils.offline_storage import OfflineStorage
+
+
+# #############################################################################
+#                             __init__ Setup Stuff
+# #############################################################################
+
+__version__ = "v0.6.0"
+__auther__ = "Seluxit A/S"
+
+__all__ = [
+    'Network',
+    'Device',
+    'Value',
+    'onStatusChange',
+    'config',
+    'createNetwork',
+    'connect',
+    'disconnect',
+    'close',
+    'OfflineStorage',
+    'service',
+    'connection',
+]
+
+
+# #############################################################################
+#                  Import Stuff for setting up WappstoIoT
+# #############################################################################
+
+import __main__
+import atexit
+import netrc
+import json
+import logging
+
+from pathlib import Path
+from enum import Enum
+
+
+from typing import Any, Dict, Optional, Union, Callable
+
+
+from .utils.certificateread import CertificateRead
+from .utils.offline_storage import OfflineStorage
+from .utils.offline_storage import OfflineStorageFiles
+
+from .service.iot_api import IoTAPI
+
+# from .utils import observer 
+
+
+__log = logging.getLogger("wappstoiot")
+__log.addHandler(logging.NullHandler())
+
+# #############################################################################
+#                             Status Stuff
+# #############################################################################
+
+
+from .utils import observer
+from .service import template as service
+
+
+def onStatusChange(
+    StatusID: Union[service.StatusID, connection.StatusID],
+    callback: Callable[[Union[service.StatusID, connection.StatusID], Any], None]
+):
+    """
+    Configure an action when the Status have changed.
+
+    def callback(StatusID: StatusID, newStatus: Any):
+
+    """
+    observer.subscribe(
+        event_name=StatusID,
+        callback=callback
+    )
+
+
+# #############################################################################
+#                             Config Stuff
+# #############################################################################
+
+__config_folder: Path
+__the_connection: Optional[ServiceClass] = None
+
+
+class ConnectionTypes(str, Enum):
+    IOTAPI = "jsonrpc"
+    RESTAPI = "HTTPS"
+
+
+def config(
+    config_folder: Union[Path, str] = ".",  # Relative to the main.py-file.
+    connection: ConnectionTypes = ConnectionTypes.IOTAPI,
+    # JPC_timeout=3
+    # mix_max_enforce="warning",  # "ignore", "enforce"
+    # step_enforce="warning",  # "ignore", "enforce"
+    fast_send: bool = True,  # TODO: jsonrpc.params.meta.fast=true
+    # delta_handling="",
+    # period_handling="",
+    ping_pong_period_sec: Optional[int] = None,  # Period between a RPC ping-pong.
+    # # Send: {"jsonrpc":"2.0","method":"HEAD","id":"PING-15","params":{"url":"/services/2.0/network"}}
+    # # receive: {"jsonrpc":"2.0","id":"PING-15","result":{"value":true,"meta":{"server_send_time":"2021-12-15T14:33:11.952629Z"}}}
+    offline_storage: Union[OfflineStorage, bool] = False,
+    # none_blocking=True,  # Whether the post should wait for reply or not.
+) -> None:
+    """
+    Configure the WappstoIoT settings.
+
+    This function call is optional.
+    If it is not called, the default settings will be used for WappstoIoT.
+    This function will also connect to the WappstoIoT API on call.
+    In the cases that this function is not called, the connection will be
+    make when an action is make that requests the connection.
+
+    The 'minMaxEnforce' is default set to "Warning" where a warning is
+    reading to log, when the value range is outside the minimum & maximum
+    range.
+    The 'ignore' is where it do nothing when it is outside range.
+    The 'enforce' is where the range are enforced to fit the minimum &
+    maximum range. Meaning if it is above the maximum it is changed to
+    the maximum, if it is below the minimum, it is set to the minimum value.
+    """
+    global __config_folder
+
+    if not isinstance(config_folder, Path):
+        if config_folder == "." and hasattr(__main__, '__file__'):
+            __config_folder = Path(__main__.__file__).absolute().parent / Path(config_folder)
+        else:
+            __config_folder = Path(config_folder)
+
+    _setup_ping_pong(ping_pong_period_sec)
+    _setup_offline_storage(offline_storage)
+
+    if connection == ConnectionTypes.IOTAPI:
+        _setup_IoTAPI(__config_folder, fast_send=fast_send)
+
+    elif connection == ConnectionTypes.RESTAPI:
+        # TODO: Find & load configs.
+        configs: Dict[Any, Any] = {}
+        _setup_RestAPI(__config_folder, configs)  # FIXME:
+
+
+def _setup_IoTAPI(__config_folder, configs=None, fast_send=False):
+    # TODO: Setup the Connection.
+    global __the_connection
+    kwargs = _certificate_check(__config_folder)
+    __the_connection = IoTAPI(**kwargs, fast_send=fast_send)
+
+
+def _setup_RestAPI(__config_folder, configs):
+    # TODO: Setup the Connection.
+    global __the_connection
+    token = configs.get("token")
+    login = netrc.netrc().authenticators(configs.end_point)
+    if token:
+        kwargs = {"token": token}
+    elif login:
+        kwargs = {"username": login[0], "password": login[1]}
+    else:
+        raise ValueError("No login was found.")
+    __the_connection = RestAPI(**kwargs, url=configs.end_point)
+
+
+def _certificate_check(path) -> Dict[str, Path]:
+    """
+    Check if the right certificates are at the given path.
+    """
+    certi_path = {
+        "ca": "ca.crt",
+        "crt": "client.crt",
+        "key": "client.key",
+    }
+    r_paths: Dict[str, Path] = {}
+    for k, f in certi_path.items():
+        r_paths[k] = path / f
+        if not r_paths[k].exists():
+            raise FileNotFoundError(f"'{f}' was not found in at: {path}")
+
+    return r_paths
+
+
+def _setup_ping_pong(period_s: Optional[int] = None):
+    # TODO: Test me!
+    if not period_s:
+        return
+    import threading
+
+    # TODO: Need a close check so it do not hold wappstoiot open.
+    def _ping():
+        __log.debug("Ping-Pong called!")
+        nonlocal thread
+        global __connection_closed
+        if __connection_closed:
+            return
+        try:
+            thread = threading.Timer(period_s, _ping)
+            thread.start()
+            __the_connection.ping()
+        except Exception:
+            __log.exception("Ping-Pong:")
+    thread = threading.Timer(period_s, _ping)
+    thread.daemon = True
+    thread.start()
+    atexit.register(lambda: thread.cancel())
+
+
+def _setup_offline_storage(
+    offlineStorage: Union[OfflineStorage, bool],
+) -> None:
+    global __the_connection
+
+    if offlineStorage is False:
+        return
+    # if offlineStorage is True:
+    offline_storage: OfflineStorage = OfflineStorageFiles(
+        location=__config_folder
+    ) if offlineStorage is True else offlineStorage
+    # else:
+    #     offline_storage: OfflineStorage = offlineStorage
+
+    observer.subscribe(
+        service.StatusID.SENDERROR,
+        lambda _, data: offline_storage.save(data.json(exclude_none=True))
+    )
+
+    def _resend_logic(status, status_data):
+        nonlocal offline_storage
+        global __connection_closed
+        __log.debug(f"Resend called with: status={status}")
+        try:
+            __log.debug("Resending Offline data")
+            while True:
+                data = offline_storage.load(10)
+                if not data:
+                    return
+
+                s_data = [json.loads(d) for d in data]
+                __log.debug(f"Sending Data: {s_data}")
+                __the_connection._resend_data(
+                    json.dumps(s_data)
+                )
+
+        except Exception:
+            __log.exception("Resend Logic")
+
+    observer.subscribe(
+        connection.StatusID.CONNECTED,
+        _resend_logic
+    )
+
+
+# #############################################################################
+#                             Create Stuff
+# #############################################################################
+
+__connection_closed = False
+
+
+def createNetwork(
+    name: str = "TheNetwork",
+    description: str = "",
+) -> Network:
+    global __config_folder
+    global __the_connection
+
+    if not __the_connection:
+        config()
+
+    if not __config_folder:
+        __config_folder = Path('.')
+
+    cer = CertificateRead(crt=__config_folder / "client.crt")
+    uuid = cer.network
+
+    atexit.register(close)
+
+    return Network(
+        name=name,
+        connection=__the_connection,
+        network_uuid=uuid,
+        description=description
+    )
+
+# -------------------------------------------------------------------------
+#   Connection methods
+# -------------------------------------------------------------------------
+
+
+def connect():
+    pass
+
+
+def disconnect():
+    pass
+
+
+def close():
+    """."""
+    atexit.unregister(close)
+    # atexit._run_exitfuncs()
+    global __connection_closed
+    global __the_connection
+
+    if not __connection_closed:
+        __the_connection.close()
+        __connection_closed = True
+    # Disconnect
+    pass
