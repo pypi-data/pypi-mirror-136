@@ -1,0 +1,11 @@
+fbro/__init__.py,sha256=bvkamyl7jMoSBat3fyIxma_3Lyiaj2UQnmRJmWwZYUY,68
+fbro/_version.py,sha256=n3oM6B_EMz93NsTI18NNZd-jKFcUPzUkbIKj5VFK5ok,22
+fbro/aws.py,sha256=Y86-WU-AMOThPe5CHEzOPIEuVKkHQPsygZTK0jQLeho,1341
+fbro/cli.py,sha256=AxN35cygyZdTpZgRtcJqB8-0bLXk89KwIJcxjm1ws3s,686
+fbro/interactive.py,sha256=zXl791mAn_mxWG16cvnzik-XPy7rsmzZY7zjH6CgjK8,3459
+fbro-0.1.6.dist-info/LICENSE,sha256=FHaa7FZJ75FBDAZvfzdy5vlfg9R6M_XyI1sNp_BW2cg,1069
+fbro-0.1.6.dist-info/METADATA,sha256=KiRb2RmE5aoGMhB6j7Lxbh7U0Vq-_kAlhhCE6lXQTI0,1645
+fbro-0.1.6.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+fbro-0.1.6.dist-info/entry_points.txt,sha256=kyEj-HPKscPyRsveid5vyyaSxGEdwpOVx_pRxmsqNb8,47
+fbro-0.1.6.dist-info/top_level.txt,sha256=AHY-95mCJ3VrD2PvbpOsdm7UBsxlpv-jUQshgPfHAkk,5
+fbro-0.1.6.dist-info/RECORD,,
