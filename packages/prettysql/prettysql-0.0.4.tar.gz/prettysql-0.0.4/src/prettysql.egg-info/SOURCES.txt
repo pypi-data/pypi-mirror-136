@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+src/prettysql/__init__.py
+src/prettysql/prettysql.py
+src/prettysql.egg-info/PKG-INFO
+src/prettysql.egg-info/SOURCES.txt
+src/prettysql.egg-info/dependency_links.txt
+src/prettysql.egg-info/entry_points.txt
+src/prettysql.egg-info/requires.txt
+src/prettysql.egg-info/top_level.txt
+src/prettysql/queries/abc.txt
+src/prettysql/queries/query.sql

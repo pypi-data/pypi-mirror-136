@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: prettysql
+Version: 0.0.4
+Summary: pretty sql
+Home-page: https://github.com/iuiu34/prettysql
+Author: iuiu34
+Author-email: 
+License: COPYRIGHT
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
+
+# prettysql
+![](https://img.shields.io/badge/version-v0.0.4-blue.svg?style=for-the-badge)
+![](https://img.shields.io/badge/python-3.9-blue.svg)
+![](https://img.shields.io/badge/dev-orange.svg)
+
+Format big query `*.sql` files.
+
+
+Run in the files directory
+```sh
+prettysql
+```
+
+
+
