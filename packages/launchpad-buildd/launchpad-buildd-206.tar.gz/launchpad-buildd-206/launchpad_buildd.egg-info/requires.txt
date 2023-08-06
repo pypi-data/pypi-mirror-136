@@ -1,0 +1,9 @@
+python-debian>=0.1.23
+requests
+six
+Twisted
+zope.interface
+
+[lxd]
+netaddr
+pylxd

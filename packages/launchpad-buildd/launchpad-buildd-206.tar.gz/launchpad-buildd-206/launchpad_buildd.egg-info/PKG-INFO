@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: launchpad-buildd
+Version: 206
+Summary: Launchpad buildd slave
+Home-page: https://launchpad.net/launchpad-buildd
+Maintainer: Launchpad Developers
+Maintainer-email: launchpad-dev@lists.launchpad.net
+License: Affero GPL v3
+Platform: UNKNOWN
+Provides-Extra: lxd
+License-File: LICENSE
+
+The Launchpad buildd slave libraries.  The PyPI version of this
+package will not produce a complete installation on its own, and is
+mostly useful for testing other pieces of software against
+launchpad-buildd; for a real Launchpad buildd slave, install the
+launchpad-buildd package from ppa:launchpad/ubuntu/ppa.
+
