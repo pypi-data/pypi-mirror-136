@@ -1,0 +1,355 @@
+{
+  "options": [
+    {
+      "line_number": 17,
+      "line": "-r other-requirements.txt",
+      "requirements": [
+        "other-requirements.txt"
+      ]
+    }
+  ],
+  "requirements": [
+    {
+      "name": "pytest",
+      "specifier": [],
+      "is_editable": false,
+      "is_pinned": false,
+      "requirement_line": {
+        "line_number": 5,
+        "line": "pytest"
+      },
+      "link": null,
+      "marker": null,
+      "install_options": [],
+      "global_options": [],
+      "hash_options": [],
+      "is_constraint": false,
+      "extras": [],
+      "invalid_options": {},
+      "is_archive": null,
+      "is_wheel": false,
+      "is_url": null,
+      "is_vcs_url": null,
+      "is_name_at_url": false,
+      "is_local_path": null,
+      "has_egg_fragment": false
+    },
+    {
+      "name": "pytest-cov",
+      "specifier": [],
+      "is_editable": false,
+      "is_pinned": false,
+      "requirement_line": {
+        "line_number": 6,
+        "line": "pytest-cov"
+      },
+      "link": null,
+      "marker": null,
+      "install_options": [],
+      "global_options": [],
+      "hash_options": [],
+      "is_constraint": false,
+      "extras": [],
+      "invalid_options": {},
+      "is_archive": null,
+      "is_wheel": false,
+      "is_url": null,
+      "is_vcs_url": null,
+      "is_name_at_url": false,
+      "is_local_path": null,
+      "has_egg_fragment": false
+    },
+    {
+      "name": "beautifulsoup4",
+      "specifier": [],
+      "is_editable": false,
+      "is_pinned": false,
+      "requirement_line": {
+        "line_number": 7,
+        "line": "beautifulsoup4"
+      },
+      "link": null,
+      "marker": null,
+      "install_options": [],
+      "global_options": [],
+      "hash_options": [],
+      "is_constraint": false,
+      "extras": [],
+      "invalid_options": {},
+      "is_archive": null,
+      "is_wheel": false,
+      "is_url": null,
+      "is_vcs_url": null,
+      "is_name_at_url": false,
+      "is_local_path": null,
+      "has_egg_fragment": false
+    },
+    {
+      "name": "docopt",
+      "specifier": [
+        "==0.6.1"
+      ],
+      "is_editable": false,
+      "is_pinned": true,
+      "requirement_line": {
+        "line_number": 11,
+        "line": "docopt == 0.6.1"
+      },
+      "link": null,
+      "marker": null,
+      "install_options": [],
+      "global_options": [],
+      "hash_options": [],
+      "is_constraint": false,
+      "extras": [],
+      "invalid_options": {},
+      "is_archive": null,
+      "is_wheel": false,
+      "is_url": null,
+      "is_vcs_url": null,
+      "is_name_at_url": false,
+      "is_local_path": null,
+      "has_egg_fragment": false
+    },
+    {
+      "name": "keyring",
+      "specifier": [
+        ">=4.1.1"
+      ],
+      "is_editable": false,
+      "is_pinned": false,
+      "requirement_line": {
+        "line_number": 12,
+        "line": "keyring >= 4.1.1"
+      },
+      "link": null,
+      "marker": null,
+      "install_options": [],
+      "global_options": [],
+      "hash_options": [],
+      "is_constraint": false,
+      "extras": [],
+      "invalid_options": {},
+      "is_archive": null,
+      "is_wheel": false,
+      "is_url": null,
+      "is_vcs_url": null,
+      "is_name_at_url": false,
+      "is_local_path": null,
+      "has_egg_fragment": false
+    },
+    {
+      "name": "coverage",
+      "specifier": [
+        "!=3.5"
+      ],
+      "is_editable": false,
+      "is_pinned": false,
+      "requirement_line": {
+        "line_number": 13,
+        "line": "coverage != 3.5"
+      },
+      "link": null,
+      "marker": null,
+      "install_options": [],
+      "global_options": [],
+      "hash_options": [],
+      "is_constraint": false,
+      "extras": [],
+      "invalid_options": {},
+      "is_archive": null,
+      "is_wheel": false,
+      "is_url": null,
+      "is_vcs_url": null,
+      "is_name_at_url": false,
+      "is_local_path": null,
+      "has_egg_fragment": false
+    },
+    {
+      "name": "Mopidy-Dirble",
+      "specifier": [
+        "~=1.1"
+      ],
+      "is_editable": false,
+      "is_pinned": false,
+      "requirement_line": {
+        "line_number": 14,
+        "line": "Mopidy-Dirble ~= 1.1"
+      },
+      "link": null,
+      "marker": null,
+      "install_options": [],
+      "global_options": [],
+      "hash_options": [],
+      "is_constraint": false,
+      "extras": [],
+      "invalid_options": {},
+      "is_archive": null,
+      "is_wheel": false,
+      "is_url": null,
+      "is_vcs_url": null,
+      "is_name_at_url": false,
+      "is_local_path": null,
+      "has_egg_fragment": false
+    },
+    {
+      "name": "numpy",
+      "specifier": [
+        "==1.9.2"
+      ],
+      "is_editable": false,
+      "is_pinned": true,
+      "requirement_line": {
+        "line_number": 20,
+        "line": "./downloads/numpy-1.9.2-cp34-none-win32.whl"
+      },
+      "link": "./downloads/numpy-1.9.2-cp34-none-win32.whl",
+      "marker": null,
+      "install_options": [],
+      "global_options": [],
+      "hash_options": [],
+      "is_constraint": false,
+      "extras": [],
+      "invalid_options": {},
+      "is_archive": true,
+      "is_wheel": true,
+      "is_url": false,
+      "is_vcs_url": false,
+      "is_name_at_url": false,
+      "is_local_path": true,
+      "has_egg_fragment": false
+    },
+    {
+      "name": "wxPython-Phoenix",
+      "specifier": [
+        "==3.0.3.dev1820+49a8884"
+      ],
+      "is_editable": false,
+      "is_pinned": true,
+      "requirement_line": {
+        "line_number": 21,
+        "line": "http://wxpython.org/Phoenix/snapshot-builds/wxPython_Phoenix-3.0.3.dev1820+49a8884-cp34-none-win_amd64.whl"
+      },
+      "link": "http://wxpython.org/Phoenix/snapshot-builds/wxPython_Phoenix-3.0.3.dev1820+49a8884-cp34-none-win_amd64.whl",
+      "marker": null,
+      "install_options": [],
+      "global_options": [],
+      "hash_options": [],
+      "is_constraint": false,
+      "extras": [],
+      "invalid_options": {},
+      "is_archive": true,
+      "is_wheel": true,
+      "is_url": true,
+      "is_vcs_url": false,
+      "is_name_at_url": false,
+      "is_local_path": true,
+      "has_egg_fragment": false
+    },
+    {
+      "name": "rejected",
+      "specifier": [],
+      "is_editable": false,
+      "is_pinned": false,
+      "requirement_line": {
+        "line_number": 25,
+        "line": "rejected"
+      },
+      "link": null,
+      "marker": null,
+      "install_options": [],
+      "global_options": [],
+      "hash_options": [],
+      "is_constraint": false,
+      "extras": [],
+      "invalid_options": {},
+      "is_archive": null,
+      "is_wheel": false,
+      "is_url": null,
+      "is_vcs_url": null,
+      "is_name_at_url": false,
+      "is_local_path": null,
+      "has_egg_fragment": false
+    },
+    {
+      "name": "green",
+      "specifier": [],
+      "is_editable": false,
+      "is_pinned": false,
+      "requirement_line": {
+        "line_number": 26,
+        "line": "green"
+      },
+      "link": null,
+      "marker": null,
+      "install_options": [],
+      "global_options": [],
+      "hash_options": [],
+      "is_constraint": false,
+      "extras": [],
+      "invalid_options": {},
+      "is_archive": null,
+      "is_wheel": false,
+      "is_url": null,
+      "is_vcs_url": null,
+      "is_name_at_url": false,
+      "is_local_path": null,
+      "has_egg_fragment": false
+    }
+  ],
+  "invalid_lines": [],
+  "comments": [
+    {
+      "line_number": 1,
+      "line": "# example from"
+    },
+    {
+      "line_number": 2,
+      "line": "# https://pip.pypa.io/en/stable/reference/requirements-file-format/"
+    },
+    {
+      "line_number": 4,
+      "line": "###### Requirements without Version Specifiers ######"
+    },
+    {
+      "line_number": 9,
+      "line": "###### Requirements with Version Specifiers ######"
+    },
+    {
+      "line_number": 10,
+      "line": "#   See https://www.python.org/dev/peps/pep-0440/#version-specifiers"
+    },
+    {
+      "line_number": 11,
+      "line": "# Version Matching. Must be version 0.6.1"
+    },
+    {
+      "line_number": 12,
+      "line": "# Minimum version 4.1.1"
+    },
+    {
+      "line_number": 13,
+      "line": "# Version Exclusion. Anything except version 3.5"
+    },
+    {
+      "line_number": 14,
+      "line": "# Compatible release. Same as >= 1.1, == 1.*"
+    },
+    {
+      "line_number": 16,
+      "line": "###### Refer to other requirements files ######"
+    },
+    {
+      "line_number": 19,
+      "line": "###### A particular file ######"
+    },
+    {
+      "line_number": 23,
+      "line": "###### Additional Requirements without Version Specifiers ######"
+    },
+    {
+      "line_number": 24,
+      "line": "#   Same as 1st section, just here to show that you can put things in any order."
+    }
+  ]
+}
