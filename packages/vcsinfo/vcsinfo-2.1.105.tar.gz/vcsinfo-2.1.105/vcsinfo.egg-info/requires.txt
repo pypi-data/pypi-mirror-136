@@ -1,0 +1,8 @@
+GitPython<4
+gitdb<5
+
+[hg]
+mercurial
+
+[p4]
+p4python
