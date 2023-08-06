@@ -1,0 +1,5 @@
+coloredlogs
+aurore>0.0.9
+pyyaml
+jinja2
+quakeio

@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: rendre
+Version: 0.0.15
+Summary: Utilities
+Home-page: https://github.com/claudioperez/rendre
+Author: Claudio Perez
+Author-email: claudio_perez@berkeley.edu
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+rendre
+
+
