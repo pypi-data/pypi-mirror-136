@@ -1,0 +1,17 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+diddiparser2/__init__.py
+diddiparser2/__main__.py
+diddiparser2/cli.py
+diddiparser2/diddiscript_types.py
+diddiparser2/messages.py
+diddiparser2/parser.py
+diddiparser2.egg-info/PKG-INFO
+diddiparser2.egg-info/SOURCES.txt
+diddiparser2.egg-info/dependency_links.txt
+diddiparser2.egg-info/entry_points.txt
+diddiparser2.egg-info/not-zip-safe
+diddiparser2.egg-info/requires.txt
+diddiparser2.egg-info/top_level.txt
