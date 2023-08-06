@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+VERSION
+setup.py
+aws-cli-config/__init__.py
+aws-cli-config/aws-cli-config
+aws-cli-config/template.yml
+aws_cli_config.egg-info/PKG-INFO
+aws_cli_config.egg-info/SOURCES.txt
+aws_cli_config.egg-info/dependency_links.txt
+aws_cli_config.egg-info/requires.txt
+aws_cli_config.egg-info/top_level.txt
