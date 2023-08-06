@@ -1,0 +1,9 @@
+README.md
+setup.py
+myImport/__init__.py
+myImport/valueInfo.py
+myImport.egg-info/PKG-INFO
+myImport.egg-info/SOURCES.txt
+myImport.egg-info/dependency_links.txt
+myImport.egg-info/requires.txt
+myImport.egg-info/top_level.txt
