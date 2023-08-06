@@ -1,0 +1,11 @@
+pandas
+numpy
+scipy
+plotly
+xlsxwriter
+xlrd
+openpyxl
+tqdm
+pysam
+biopython
+seaborn
