@@ -1,0 +1,11 @@
+README.md
+setup.py
+singleflight/__init__.py
+singleflight/asynchronous.py
+singleflight/basic.py
+singleflight/gevent.py
+singleflight.egg-info/PKG-INFO
+singleflight.egg-info/SOURCES.txt
+singleflight.egg-info/dependency_links.txt
+singleflight.egg-info/not-zip-safe
+singleflight.egg-info/top_level.txt
