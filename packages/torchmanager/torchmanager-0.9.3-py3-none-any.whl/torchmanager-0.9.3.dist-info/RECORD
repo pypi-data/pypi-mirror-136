@@ -1,0 +1,10 @@
+torchmanager/__init__.py,sha256=rFQaoSl_nM1-xQAlJPVxe3PxFG4D_qFMBGJwt5LSUuA,64
+torchmanager/callbacks.py,sha256=C50o1JIWcAy0gMB6Q_hooCO5ysIFmI8VqtcfYMGiev8,7384
+torchmanager/losses.py,sha256=v-bKjh-htBZlR6te687bfXq2tF7LTiLWv2J8QzxxO7c,1530
+torchmanager/managers.py,sha256=DlsZMBLo5NXY4KGhtivm0EV5MCzujjABc2IrzMR90qk,13374
+torchmanager/metrics.py,sha256=ormhBvHmoMHwFf-o2LuRtZGCBSoGvOL4UwRd3jr4UnE,3007
+torchmanager-0.9.3.dist-info/LICENSE,sha256=iqzaMhMDjD_Go-Jay_3ertdUbT1xPOZqKtkavzKjjI8,1318
+torchmanager-0.9.3.dist-info/METADATA,sha256=X197mL42K1zdcAyGv4yiEdzuKjE1M6h5ajL6ewPIMTY,1877
+torchmanager-0.9.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+torchmanager-0.9.3.dist-info/top_level.txt,sha256=DsMMRRVrk6D-9KrK44los8GRDHGfFkaTTmxXH_Mr0ts,13
+torchmanager-0.9.3.dist-info/RECORD,,
