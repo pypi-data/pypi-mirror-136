@@ -1,0 +1,3 @@
+[console_scripts]
+diamondsolve = diamond_bandalyzer.cli.__main__:main
+
