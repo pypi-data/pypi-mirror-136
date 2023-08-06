@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: sarase
+Version: 0.1.7
+Summary: 
+Author: Alec Heckert
+Author-email: alecheckert@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: numpy (>=1.22.1,<2.0.0)
+Requires-Dist: pybind11 (>=2.9.0,<3.0.0)
+Requires-Dist: setuptools (>=60,<61)
