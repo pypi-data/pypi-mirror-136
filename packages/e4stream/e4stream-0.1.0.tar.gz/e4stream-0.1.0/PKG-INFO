@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: e4stream
+Version: 0.1.0
+Summary: Python package that provides a simple API for interacting with packets coming from the Empatica E4 Streaming Server
+Author: Jason Raether
+Author-email: jasondraether@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9

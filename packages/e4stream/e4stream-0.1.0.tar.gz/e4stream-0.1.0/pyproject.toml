@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "e4stream"
+version = "0.1.0"
+description = "Python package that provides a simple API for interacting with packets coming from the Empatica E4 Streaming Server"
+authors = ["Jason Raether <jasondraether@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
