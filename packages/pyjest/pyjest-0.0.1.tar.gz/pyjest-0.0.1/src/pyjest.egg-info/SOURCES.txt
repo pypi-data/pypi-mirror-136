@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+src/jest/__init__.py
+src/jest/magic.py
+src/jest/tests/__init__.py
+src/jest/tests/tests.py
+src/pyjest.egg-info/PKG-INFO
+src/pyjest.egg-info/SOURCES.txt
+src/pyjest.egg-info/dependency_links.txt
+src/pyjest.egg-info/requires.txt
+src/pyjest.egg-info/top_level.txt
