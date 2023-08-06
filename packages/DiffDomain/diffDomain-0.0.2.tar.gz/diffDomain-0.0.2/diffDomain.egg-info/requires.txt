@@ -1,0 +1,7 @@
+hic-straw==0.0.6
+TracyWidom==0.3.0
+pandas==0.18.1
+numpy==1.15.0
+docopt==0.6.2
+matplotlib==1.5.1
+statsmodels==0.6.1
