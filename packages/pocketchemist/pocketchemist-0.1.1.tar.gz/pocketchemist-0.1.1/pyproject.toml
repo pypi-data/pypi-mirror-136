@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "pocketchemist"
+version = "0.1.1"
+description = "Software for the analysis of spectra and molecules"
+authors = ["J Lorieau"]
+
+[tool.poetry.dependencies]
+python = ">=3.8,<3.11"
+numpy = "^1.22.0"
+scipy = "^1.7.3"
+click = "^8.0.3"
+PyYAML = "^6.0"
+
+# Optional dependencies
+torch = {version = "^1.10", optional = true}
+loguru = "^0.5.3"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[tool.poetry.extras]
+torch = ["torch"]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+pc = "pocketchemist.cli:main"
