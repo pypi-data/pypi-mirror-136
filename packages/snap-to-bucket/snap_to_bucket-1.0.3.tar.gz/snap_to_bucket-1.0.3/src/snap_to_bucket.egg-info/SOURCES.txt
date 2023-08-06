@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+pyproject.toml
+setup.py
+src/snap_to_bucket/__init__.py
+src/snap_to_bucket/ec_2_handler.py
+src/snap_to_bucket/fs_handler.py
+src/snap_to_bucket/run.py
+src/snap_to_bucket/s3_handler.py
+src/snap_to_bucket/snap_handler.py
+src/snap_to_bucket.egg-info/PKG-INFO
+src/snap_to_bucket.egg-info/SOURCES.txt
+src/snap_to_bucket.egg-info/dependency_links.txt
+src/snap_to_bucket.egg-info/entry_points.txt
+src/snap_to_bucket.egg-info/requires.txt
+src/snap_to_bucket.egg-info/top_level.txt
