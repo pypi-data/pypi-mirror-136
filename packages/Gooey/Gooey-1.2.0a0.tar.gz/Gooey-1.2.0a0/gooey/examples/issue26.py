@@ -1,0 +1,29 @@
+import argparse
+import pandas as pd
+
+
+from gooey import Gooey, GooeyParser
+import wx
+
+df = pd.read_csv(
+        index_col=None,
+        header=None,
+        error_bad_lines=False,
+        sep=",",
+        warn_bad_lines=False,
+    )
+
+# @Gooey(clear_before_run=True)
+# def main():
+#     settings_msg = 'Example'
+#     parser = GooeyParser(description=settings_msg)
+#
+#     args=parser.parse_args()
+#     print("Howdy")
+#     xs = ['1.0.7', '1.0.8.1', '1.0.8', '1.0.9', '1.0.7.1']
+#     print(sorted(xs))
+
+if __name__ == '__main__':
+    main()
+
+
