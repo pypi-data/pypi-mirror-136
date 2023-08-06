@@ -1,0 +1,3 @@
+[console_scripts]
+monaistream = monaistream.util.entry:main
+
