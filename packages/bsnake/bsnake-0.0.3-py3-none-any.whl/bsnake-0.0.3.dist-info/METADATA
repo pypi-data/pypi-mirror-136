@@ -1,0 +1,83 @@
+Metadata-Version: 2.1
+Name: bsnake
+Version: 0.0.3
+Summary: Package manager
+Home-page: UNKNOWN
+Author: astroxiii (abderrahim mokhnache)
+Author-email: <abderrahimokhnache@gmail.com>
+License: UNKNOWN
+Keywords: python
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+
+
+# Bundlesnake
+
+
+
+## Usage :
+
+
+
+> Install :
+
+```
+
+
+
+pip install bsnake
+
+
+
+```
+
+
+
+> import :
+
+
+
+```
+
+
+
+from bundlesnake import bsnake
+
+
+
+```
+
+
+
+> to create a new package pass the name as a system arg  
+
+```
+
+
+
+py -m bundlesnake.bsnake Package:package
+
+
+
+```
+
+
+
+> if no args passed a Gui window will popup
+
+```
+
+
+
+py -m bundlesnake.bsnake 
+
+
+
+```
+
