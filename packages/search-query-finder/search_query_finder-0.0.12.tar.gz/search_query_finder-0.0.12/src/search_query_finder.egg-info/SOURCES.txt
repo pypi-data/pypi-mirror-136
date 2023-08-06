@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/search_query_finder/__init__.py
+src/search_query_finder/find_query.py
+src/search_query_finder.egg-info/PKG-INFO
+src/search_query_finder.egg-info/SOURCES.txt
+src/search_query_finder.egg-info/dependency_links.txt
+src/search_query_finder.egg-info/requires.txt
+src/search_query_finder.egg-info/top_level.txt
