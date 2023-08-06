@@ -1,0 +1,9 @@
+swissparlpy.egg-info
+*.pyc
+*.swp
+.coverage
+pyenv
+.env
+dist/
+examples/voting50/
+examples/.ipynb_checkpoints/
