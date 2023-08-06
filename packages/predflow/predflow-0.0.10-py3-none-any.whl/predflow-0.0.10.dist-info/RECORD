@@ -1,0 +1,14 @@
+predflow/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+predflow/datasets_utils.py,sha256=XFKIrUlrPAoHPl4E8WAZMzbReVNMjMThsFRZKuV2of0,1151
+predflow/pc_utils.py,sha256=VDaZNSaSmXcLMLLtZrHDkzAPJFYunRNAzole3eCZBbU,17954
+predflow/precision_modulated_supervised_autodiff_pc.py,sha256=ynwZwyuKsUkC6N_uLgNLJYX34iaX_RXXL6ayWGvk1jo,4650
+predflow/precision_modulated_supervised_explicit_pc.py,sha256=aDb3Q1jqi2_gLmgei4UZHeQDq8n1apPNzG2qaZ673l4,7114
+predflow/precisions_utils.py,sha256=3DPrfSwEZzH4s5UARg9GhlB8VSWpDQupcKMmyhe86sc,11229
+predflow/supervised_autodiff_pc.py,sha256=CRZgpQNMuGcedxObYSEtxTUCQ3PjqjjiuoHFrhHJl3o,4103
+predflow/supervised_fullyconnected_stricthierarchy_explicit_pc.py,sha256=ZtX04Lp6PALnizMGHScnEfCEoaanZkHLnG-dDf52ABY,6289
+predflow/tf_utils.py,sha256=nJNmj9GhnZ2hUd2IW51d4MaWSPLh_6n6J4qfuts9Kp0,8807
+predflow-0.0.10.dist-info/LICENSE,sha256=XSRFbho-Es3dNKxVrJIXPNStr2ga3XJsVlLYgV8tiUI,1069
+predflow-0.0.10.dist-info/METADATA,sha256=Uhz7w8mt6rYfcOJD3LuZ_lvWVGoWvYurrwlLDvP-Vlo,974
+predflow-0.0.10.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+predflow-0.0.10.dist-info/top_level.txt,sha256=pZUbpPIlE1yD-X8Ayk6w9CrRM6O-0-hAch92FfLOXIM,9
+predflow-0.0.10.dist-info/RECORD,,
