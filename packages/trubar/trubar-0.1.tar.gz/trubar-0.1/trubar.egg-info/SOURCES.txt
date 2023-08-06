@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+trubar.egg-info/PKG-INFO
+trubar.egg-info/SOURCES.txt
+trubar.egg-info/dependency_links.txt
+trubar.egg-info/entry_points.txt
+trubar.egg-info/requires.txt
+trubar.egg-info/top_level.txt
