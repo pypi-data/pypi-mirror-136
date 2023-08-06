@@ -1,0 +1,6 @@
+setup.py
+InvoiceGen/__init__.py
+Lateksii_invoicegen.egg-info/PKG-INFO
+Lateksii_invoicegen.egg-info/SOURCES.txt
+Lateksii_invoicegen.egg-info/dependency_links.txt
+Lateksii_invoicegen.egg-info/top_level.txt
