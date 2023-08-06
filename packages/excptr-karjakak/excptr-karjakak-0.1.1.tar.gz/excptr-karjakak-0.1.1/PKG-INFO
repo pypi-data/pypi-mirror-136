@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: excptr-karjakak
+Version: 0.1.1
+Summary: Decorator for catching exception and print them nicely.
+Home-page: https://github.com/kakkarja/Excptr
+Author: karjakak
+Author-email: kakkarja.github@gmail.com
+License: BSD3 License
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: BSD License
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+# Excptr
+## Decorator for catching exception and print them nicely
+### [Production-Development]
+
+## Installation
+```
+pip install excptr-karjakak
+```
+
