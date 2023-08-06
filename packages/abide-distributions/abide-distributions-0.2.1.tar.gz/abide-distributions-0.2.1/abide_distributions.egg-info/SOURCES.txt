@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+abide-distributions/Binomialdistribution.py
+abide-distributions/Gaussiandistribution.py
+abide-distributions/Generaldistribution.py
+abide-distributions/__init__.py
+abide_distributions.egg-info/PKG-INFO
+abide_distributions.egg-info/SOURCES.txt
+abide_distributions.egg-info/dependency_links.txt
+abide_distributions.egg-info/not-zip-safe
+abide_distributions.egg-info/top_level.txt
