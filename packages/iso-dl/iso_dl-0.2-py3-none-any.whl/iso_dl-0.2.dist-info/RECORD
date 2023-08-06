@@ -1,0 +1,10 @@
+iso_dl/__init__.py,sha256=CSovZxPsXxgGVZ6c-EhZbYmO3m1CYkEPe20TEH41f_0,1744
+iso_dl/__main__.py,sha256=AVyveF2w9DKp2IJM7ke8oYvZ7XoHWHtFVsOfDCMTIx0,51
+iso_dl/classes.py,sha256=E50nQFcVITuP0zapJQg8dT5lITmbN_NE6yPW8WFtpFM,2520
+iso_dl/distros.py,sha256=9zKO9Oq_J2pQfa6EPX039rdgkBUx5nK6oSn9DmLEwzk,1130
+iso_dl/download.py,sha256=na8EVGlseR4ff3kSdp4F4vvefFttF-Q1SqmldE1pHw8,1438
+iso_dl-0.2.data/scripts/iso-dl,sha256=lGFIAxaJ8Ypeb73jNIiHhF7dlFFldhydVuuAMnwYwi4,38
+iso_dl-0.2.dist-info/METADATA,sha256=xrKFzD6LslEaYYOezhCiY6bvltddMtZuKpsv0jLazvI,507
+iso_dl-0.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+iso_dl-0.2.dist-info/top_level.txt,sha256=IhqxR7rVDMSeUqvaLtfsXhuybtRvjSSmlSiySufQrXw,7
+iso_dl-0.2.dist-info/RECORD,,
