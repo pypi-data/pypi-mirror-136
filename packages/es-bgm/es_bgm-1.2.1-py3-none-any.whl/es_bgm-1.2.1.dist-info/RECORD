@@ -1,0 +1,11 @@
+bgm/__init__.py,sha256=DbXkwXgvklWSIYlrHMdc41ODvwBzPHTg69dOdre2M9c,1155
+bgm/__version__.py,sha256=xREoRKnfp6GJmCOdqChUqGKS6-R4sX1nvPwiOLuQcp0,39
+bgm/config_default.yaml,sha256=Ks2R8JMkGiGqevdDyUvf8F72Q13KQlN484GUtLyI6TM,1304
+bgm/config_processor.py,sha256=BBWN26Y45o3xkF3K_Hqet-ys-Rc2Y1lE_fwd-vTG0zc,1682
+bgm/music_player.py,sha256=WSKRmlg9IRDDqmoqT4uPIoHXLe9ZOyWoJfas1lkv1cM,2097
+bgm/music_state_machine.py,sha256=q26FYUVL2PeorVK4uUJj-ebuTeX981DSc00ipbcHng0,7148
+bgm/process_service.py,sha256=aCzJ_wP24sHk2ORHt2XsoIWdnQ1VMaaLMjDWBD9Toq4,763
+es_bgm-1.2.1.dist-info/entry_points.txt,sha256=5xTySkhruVaPtgOqABmNJ3aNaaULM9m9XzNBW0x26Fc,34
+es_bgm-1.2.1.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+es_bgm-1.2.1.dist-info/METADATA,sha256=zT15UMKsHD4R9vl-aaayW1ef3bMHPRyUTm6D4swKyfk,946
+es_bgm-1.2.1.dist-info/RECORD,,
