@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: picozero
+Version: 0.0.0
+Summary: 0.0.0
+Home-page: https://github.com/raspberrypilearning/picozero
+Author: Raspberry Pi Foundation
+Author-email: learning@raspberrypi.org
+License: MIT
+Description: 
+        A beginner-friendly library for using common electronics components with the Raspberry Pi Pico. This packaged is still in development and has not yet been released.
+        
+Keywords: raspberry,pi,pico,electronics
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: Implementation :: MicroPython
+Description-Content-Type: text/markdown
