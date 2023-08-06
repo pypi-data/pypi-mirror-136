@@ -1,0 +1,7 @@
+MANIFEST.in
+pyproject.toml
+setup.cfg
+QSCOUT_gatepulses.egg-info/PKG-INFO
+QSCOUT_gatepulses.egg-info/SOURCES.txt
+QSCOUT_gatepulses.egg-info/dependency_links.txt
+QSCOUT_gatepulses.egg-info/top_level.txt
