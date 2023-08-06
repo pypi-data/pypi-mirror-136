@@ -1,0 +1,16 @@
+README.md
+setup.py
+embedding_encoder/__init__.py
+embedding_encoder/_version.py
+embedding_encoder/compose.py
+embedding_encoder/core.py
+embedding_encoder.egg-info/PKG-INFO
+embedding_encoder.egg-info/SOURCES.txt
+embedding_encoder.egg-info/dependency_links.txt
+embedding_encoder.egg-info/requires.txt
+embedding_encoder.egg-info/top_level.txt
+embedding_encoder/tests/__init__.py
+embedding_encoder/tests/test_basics.py
+embedding_encoder/tests/test_contrib.py
+embedding_encoder/tests/test_invert.py
+embedding_encoder/tests/test_sklearn.py
