@@ -1,0 +1,10 @@
+include LICENSE
+include README.md
+include requirements.txt
+include src/halmoney/pcell_addin/*.*
+include src/halmoney/pcell_code/*.*
+include src/halmoney/halmoney_history/*.*
+include src/halmoney/halmoney_manual/*.*
+include src/halmoney/pcell_menu/*.*
+include src/halmoney/user_code/*.*
+include src/halmoney/user_menu/*.*

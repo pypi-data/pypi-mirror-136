@@ -1,0 +1,14 @@
+0, popup_복사하기, Copy, nofaceid, none
+	1, 복사 : 현재 가로 한줄을 특정시트의 첫번째 열에 복사, pyezxl_150_copy_one_line_to_another_sheet_01.py, nofaceid, none
+0, Popup_추가하기, Insert, nofaceid, none
+	1, Popup_추가 : 문자열 추가 (왼쪽에), pyezxl_100_add_text_at_left_01.py, nofaceid, none
+	1, Popup_추가 : 문자열 추가 (오른쪽에), pyezxl_100_add_text_at_right_01.py, nofaceid, none
+	1, Popup_추가 : 새로운 행 추가, pyezxl_110_insert_column_new_01.py, nofaceid, none
+0, Popup_바꾸기, nofaceid, nofaceid, none
+	1, Popup_바꾸기 : 대소문자 변경 (전부), pyezxl_120_change_text_swap_small_capital_01.py, nofaceid, none
+	1, Popup_바꾸기 : 대문자로 변경 (전부), pyezxl_120_change_text_to_cap_01.py, nofaceid, none
+	1, Popup_바꾸기 : 대문자로 변경 (첫글자만), pyezxl_120_change_text_first_capital_01.py, nofaceid, none
+	1, 바꾸기 : 소문자로 변경 (전부), pyezxl_120_change_text_all_small_01.py, nofaceid, none
+0, Popup_삭제하기, del, nofaceid, none
+	1, Popup_삭제 : 공백삭제 (왼쪽과 오른쪽), pyezxl_130_delete_space_both_side_01.py, nofaceid, none
+	1, Popup_삭제 : 공백삭제 (왼쪽만), pyezxl_130_delete_space_left_side_01.py, nofaceid, none
