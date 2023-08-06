@@ -1,0 +1,9 @@
+Pillow
+Whoosh
+openpaperwork-core
+psutil
+pycountry
+pyocr
+pypillowfight>=0.3.0
+python-Levenshtein
+scikit-learn
