@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: dqsegdb2
+Version: 1.1.0
+Summary: 'Simplified python interface to DQSEGDB
+Home-page: https://github.com/duncanmmacleod/dqsegdb2/
+Author: Duncan Macleod
+Author-email: 'duncan.macleod@ligo.org
+License: GPL-3.0-or-later
+Download-URL: https://pypi.org/project/dqsegdb2/
+Project-URL: Bug Tracker, https://github.com/duncanmmacleod/dqsegdb2/issues
+Project-URL: Documentation, https://dqsegdb2.readthedocs.io
+Project-URL: Source Code, https://github.com/duncanmmacleod/dqsegdb2.git
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Astronomy
+Classifier: Topic :: Scientific/Engineering :: Physics
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+UNKNOWN
+
