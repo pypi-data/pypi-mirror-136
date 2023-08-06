@@ -1,0 +1,9 @@
+hikvisionapi/__init__.py,sha256=vHRxrYrXGSPk4j4QHRxO6vcSZFS19F8HHJkB9Rcycpo,217
+hikvisionapi/hikvisionapi.py,sha256=OzcRePVuNToLAasW2wQVNoy3kEPl2PwSvWIbj-to7b4,11292
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_hikvisionapi.py,sha256=HhEaAzeuwi_zLmXKq107WdO6Ct2otdzlCLu7sAl2vqc,1061
+hikvisionapi-0.2.1.dist-info/LICENSE.txt,sha256=oHA0BMaykvxHdR7tlnoy1-2BhCCFtcsBk6JlYHVrygM,1081
+hikvisionapi-0.2.1.dist-info/METADATA,sha256=2lqoRZH5IyKNoIZO_h_CFAzsu-SEGwwR_4CVkbxGnL4,5138
+hikvisionapi-0.2.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+hikvisionapi-0.2.1.dist-info/top_level.txt,sha256=PW5Use2XLpcmB84wz1gJSYMxMIm940nLSyej1KKus1Q,19
+hikvisionapi-0.2.1.dist-info/RECORD,,
