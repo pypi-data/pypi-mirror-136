@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/pybet/__init__.py
+src/pybet/odds.py
+src/pybet.egg-info/PKG-INFO
+src/pybet.egg-info/SOURCES.txt
+src/pybet.egg-info/dependency_links.txt
+src/pybet.egg-info/top_level.txt
