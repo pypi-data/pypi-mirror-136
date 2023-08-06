@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+cbpi4-Actori2cPWM/__init__.py
+cbpi4-Actori2cPWM/config.yaml
+cbpi4-Actori2cPWM/static/cbpi.png
+cbpi4-Actori2cPWM/static/index.html
+cbpi4-Actori2cPWM/static/style.css
+cbpi4_Actori2cPWM.egg-info/PKG-INFO
+cbpi4_Actori2cPWM.egg-info/SOURCES.txt
+cbpi4_Actori2cPWM.egg-info/dependency_links.txt
+cbpi4_Actori2cPWM.egg-info/requires.txt
+cbpi4_Actori2cPWM.egg-info/top_level.txt
