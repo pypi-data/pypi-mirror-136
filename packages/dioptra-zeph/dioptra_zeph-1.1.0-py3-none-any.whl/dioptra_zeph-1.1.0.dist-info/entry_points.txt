@@ -1,0 +1,5 @@
+[console_scripts]
+zeph=zeph.__main__:run
+zeph-bgp-convert=zeph_utils.zeph_bgp_convert:run
+zeph-bgp-download=zeph_utils.zeph_bgp_download:run
+
