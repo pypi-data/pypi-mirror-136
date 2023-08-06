@@ -1,0 +1,6 @@
+torch>=1.9.1
+numpy>=1.21.2
+
+[dev]
+coverage>=6.0.2
+pre-commit>=2.15.0
