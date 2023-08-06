@@ -1,0 +1,11 @@
+emcommon/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+emcommon/common.py,sha256=TikwiMVgPjy56VmfvwaJs0SVfKeuixWvkxJ_OImQZTU,664
+emcommon/items.py,sha256=nKETotwjXaNtjgteW611pnztceWPzgFDulf_EggV_f0,1353
+emcommon/regions.py,sha256=1Cmh4mqjOflwV8kUMvhvN6TUTNclzFzYT9YXKmCs-JI,911
+emcommon/systems.py,sha256=bgF7BCk873C205HJoQMOTW8nhyHjUv83PDS-e_m3ExM,1384
+emcommon/universe.py,sha256=zpMIbKWnYzj619whtMVS3G75Lm9EIdkjFSyL-RSZWEs,1150
+emcommon-0.1.8.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+emcommon-0.1.8.dist-info/METADATA,sha256=g3eIuzti_4AD9SxL_fsB59uUKmPHKZmo6geeXO-xrVI,685
+emcommon-0.1.8.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+emcommon-0.1.8.dist-info/top_level.txt,sha256=6-ecFjJPugcxfKHZJ_bvh-1-OtZnxyH2-fytiouC4fY,9
+emcommon-0.1.8.dist-info/RECORD,,
