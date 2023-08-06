@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: make-runner
+Version: 0.2.1
+Summary: Enhanced Makefile-based task runner
+Home-page: https://github.com/de9uch1/make-runner
+License: MIT
+Author: Hiroyuki Deguchi
+Author-email: deguchi.hiroyuki.db0@is.naist.jp
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Project-URL: Repository, https://github.com/de9uch1/make-runner
+Description-Content-Type: text/x-rst
+
+.. image:: https://user-images.githubusercontent.com/12455831/122683398-cd0bbf00-d239-11eb-95cc-39a1bf911224.png
+   :alt: banner
+
+Installation
+############
+You can install via pip.
+
+::
+
+   pip install make-runner
+
+Usage
+#####
+All you have to do is add a comment starting with :code:`##` to your Makefile.
+The comment should be added to the end of line of PHONY targets and the above line of constant settings.
+
+.. code-block:: makefile
+
+   ## source filename
+   SRC_FILE := source.txt
+   ## target filename
+   TGT_FILE := target.txt
+
+   $(TGT_FILE): $(SRC_FILE)
+        cp $(SRC_FILE) $(TGT_FILE)
+
+   .PHONY: copy
+   copy: $(TGT_FILE) ## copy a file from SRC_FILE to TGT_FILE
+
+
+Then, type :code:`mrun` in the same directory as your Makefile.
+
+.. image:: https://github.com/de9uch1/make-runner/blob/master/example/mrun.png
+   :alt: screenshot
+
