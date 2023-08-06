@@ -1,0 +1,17 @@
+google_keep_tasks/__init__.py,sha256=gHQLL_1_UbHnOqTXuNHj0nJgl9mmypw_voEFhaHx75c,22
+google_keep_tasks/_compat.py,sha256=krApfL2j1MM3zSzuCY36MqsFGu74gpmge1sgxlYog-A,96
+google_keep_tasks/auth.py,sha256=3xlj3ijcGW4zn-8Bj0T3AT5fVBzHPNb1EIk2W54-Qhg,3525
+google_keep_tasks/cli.py,sha256=HyTJiMnLhEU4fTlLmHQ2ygaRPt4b5MPI-s93_sTIjOs,1554
+google_keep_tasks/exceptions.py,sha256=fMduj4D4mbtPnWv2xChA0swQZRAFycOh563liVcoEkE,1247
+google_keep_tasks/items.py,sha256=p5Hjh2xIX72ijmPVFjpXbrIR70tRWSNzJNN1Im2O8gM,4051
+google_keep_tasks/labels.py,sha256=c7oHr9Wq2CxJhUG4Em5FjYDqyO_t6WumwMuay4JYjsw,3369
+google_keep_tasks/management.py,sha256=GBVLD95SbxrXOyT1uvOPhkKMJFuZB7nC8WKaQnbDCqs,598
+google_keep_tasks/notes.py,sha256=ARAspvqvpYdtyylq4WnJNyg8dU3HC65d1ZTdt2KlkQs,10637
+google_keep_tasks/utils.py,sha256=J2T9cTU-4CvqnizsGe0a0O-zptpbuPUjLZ9gl2F_4ZA,1306
+gkeep-1.0.1.dist-info/AUTHORS.rst,sha256=nZ5Zh3J3fDnzir-lJ1s8mcbH5LqbfI90JJDeltxUUSM,149
+gkeep-1.0.1.dist-info/METADATA,sha256=LiJwUK0e9uYN7VkDcHdo9mEzPYkecfZuc8POG0pT9NU,1956
+gkeep-1.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+gkeep-1.0.1.dist-info/entry_points.txt,sha256=w7GsgzXnuCq40scMWEvMzz8giSjkLbFehtBxBpsATuI,60
+gkeep-1.0.1.dist-info/pbr.json,sha256=nOzejI8T_TrxiGglK-b4wA4DcW1IJd5LI-WB02kUlKw,47
+gkeep-1.0.1.dist-info/top_level.txt,sha256=O0bmqnAJvu_ub5gx5s_SNTlyRUDPglEJcub5BXAOHsE,18
+gkeep-1.0.1.dist-info/RECORD,,
