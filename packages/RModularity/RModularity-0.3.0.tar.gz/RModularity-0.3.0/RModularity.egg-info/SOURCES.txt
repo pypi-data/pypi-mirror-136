@@ -1,0 +1,8 @@
+README.md
+setup.py
+RModularity/Core.py
+RModularity/__init__.py
+RModularity.egg-info/PKG-INFO
+RModularity.egg-info/SOURCES.txt
+RModularity.egg-info/dependency_links.txt
+RModularity.egg-info/top_level.txt
