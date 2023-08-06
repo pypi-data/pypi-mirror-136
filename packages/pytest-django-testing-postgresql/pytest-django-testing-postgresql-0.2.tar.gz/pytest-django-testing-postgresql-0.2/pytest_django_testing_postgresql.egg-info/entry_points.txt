@@ -1,0 +1,3 @@
+[pytest11]
+django_testing_postgresql = pytest_django_testing_postgresql
+

@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.rst
+pytest_django_testing_postgresql.py
+setup.py
+pytest_django_testing_postgresql.egg-info/PKG-INFO
+pytest_django_testing_postgresql.egg-info/SOURCES.txt
+pytest_django_testing_postgresql.egg-info/dependency_links.txt
+pytest_django_testing_postgresql.egg-info/entry_points.txt
+pytest_django_testing_postgresql.egg-info/not-zip-safe
+pytest_django_testing_postgresql.egg-info/requires.txt
+pytest_django_testing_postgresql.egg-info/top_level.txt
