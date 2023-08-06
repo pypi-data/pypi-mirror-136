@@ -1,0 +1,15 @@
+configirl/__init__.py,sha256=Hc5h407TutVFEvzt4FgUZgV6oyN-PmrWfNbLvg-sMrw,38610
+configirl/_version.py,sha256=tb4il8D9xFqLztI_9tVOvFIpnx3Uhgeg5eol4ZXeyTA,195
+configirl/__pycache__/__init__.cpython-38.pyc,sha256=96ayujW6jqxNXGoV1V4rfLwR1BqQVRcInDvZyUsiIEU,39028
+configirl/docs/__init__.py,sha256=f-E2GGaAOnea7U51BKWcRtFHZ6p2iPnvGoXR6VvBtGg,43
+configirl/tests/__init__.py,sha256=O9CT1B2F-cVB8elT0EoCJbgkcffjvlmqteqavs4giDg,25
+configirl/tests/config.py,sha256=ajfcAlRh1zP7M3PDeMfW0U6mtmApClb5_GA-Jsd83i0,631
+configirl/tests/__pycache__/__init__.cpython-38.pyc,sha256=DYq5-xtpe7ot_eSXjAjV8n4qhBWxLUd1CHaPR9KWISo,168
+configirl/tests/__pycache__/config.cpython-38.pyc,sha256=lAEoEd2Wa6ElgudY7lUKNPHtpr7LzBbKAJFhz_IEazA,1087
+configirl-1.0.1.dist-info/AUTHORS.rst,sha256=3Gm1CahEXjS16SnhbNFm1g4QS8tcRr0qRqeP8l0hN2E,600
+configirl-1.0.1.dist-info/LICENSE.txt,sha256=seL4eNt62WrosOT59hl-dyqtMc4s3Rp0f_z0-mff6Eo,1119
+configirl-1.0.1.dist-info/METADATA,sha256=q8cRnlEWOZl6efG7AGsR9pBhquSr3WHhb_MDE61Dd7I,5888
+configirl-1.0.1.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+configirl-1.0.1.dist-info/entry_points.txt,sha256=bTtzcxFHc85WNh-uth85aQLXgEgf9DNCQNvQtWvAq1o,46
+configirl-1.0.1.dist-info/top_level.txt,sha256=L0STjKERmrpiq7lyX46zakOgHG6fz7MFdFUtNJND1c8,10
+configirl-1.0.1.dist-info/RECORD,,
