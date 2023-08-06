@@ -1,0 +1,16 @@
+# required for running tidy3d (note xarray)
+xarray
+scipy
+h5py
+rich
+nlopt
+matplotlib
+shapely==1.7.1
+descartes
+pydantic
+PyYAML
+boto3
+requests
+
+# required to get xarray to not complain
+dask
